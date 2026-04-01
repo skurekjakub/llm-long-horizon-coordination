@@ -1,0 +1,79 @@
+{
+  "chapterNumber": 4,
+  "editorType": "developmental",
+  "generatedAt": "2025-07-24T14:30:00Z",
+  "overallAssessment": "Chapter 4 delivers a strong POV shift to Lirien, establishing the operative-in-crisis perspective with skill. The three-scene structure — internal reckoning, confrontation, negotiation — mirrors the outline's emotional arc effectively. Scene 2 carries the bulk of chapter weight and packs significant revelations (Pallor sabotage, Warden-lineage, Quietus, kinetic memory, five-day deadline) into a single conversation. This density risks overwhelming the relational tension that should drive the scene. Scene 1 is tightly effective. Scene 3 functions as denouement but feels lower-stakes after Scene 2's heavy revelations. The dual-arc interleave is strong: fantasy revelations arrive through the framework of an enemies-to-lovers negotiation, so neither arc floats free of the other.",
+  "findings": [
+    {
+      "id": "DEV-004-001",
+      "severity": "major",
+      "category": "pacing",
+      "location": "Scene 2 (lines ~60-220)",
+      "finding": "Scene 2 delivers too many revelations in a single unbroken exchange: kill contract confirmation, Pallor sabotage, Warden-lineage capacity, kinetic memory, the Quietus, and the five-day deadline. The conversation reads as sequential information delivery rather than a negotiation where each revelation is extracted at cost. The outline specified separate beats for the dangerous question (SCN-011) and the intelligence exchange (SCN-012), but the draft merges these into one extended tavern scene.",
+      "recommendation": "Introduce more resistance into the information flow. Let Kaelith extract each revelation through pressure rather than Lirien volunteering them sequentially. Add physical action beats and environmental interruption to break the verbal exchange. Consider moving the kinetic memory explanation to Scene 3 when Kaelith returns, so each scene delivers its own major revelation."
+    },
+    {
+      "id": "DEV-004-002",
+      "severity": "major",
+      "category": "time-of-day",
+      "location": "Scene 1 (line ~30, 'pre-dawn tide')",
+      "finding": "Scene 1 describes 'fishing boats bobbing in the pre-dawn tide' and the harbor in pre-dawn conditions, but Chapter 3 events (enforcer arrival at dawn, scaffolding collapse, escape, warehouse discussion) concluded in the late morning of Day 2. Lirien's report-writing scene explicitly references the scaffolding intervention, placing it after Ch3's events. The time-of-day description is inconsistent with the established timeline.",
+      "recommendation": "Change pre-dawn harbor descriptions to morning or early afternoon. The boat departs 'in four hours' — if departure is late afternoon, Scene 1 occurs around noon, consistent with post-Ch3 timeline. Adjust harbor imagery accordingly."
+    },
+    {
+      "id": "DEV-004-003",
+      "severity": "minor",
+      "category": "scene-balance",
+      "location": "Scene 3 (lines ~220-end)",
+      "finding": "Scene 3 covers Kaelith's return and the Oathbrand discussion, but after Scene 2's revelations about the Pallor, Ythara, and civilizational stakes, the Oathbrand removal question feels lower-stakes. The scene functions as logistics and denouement rather than carrying its own dramatic weight.",
+      "recommendation": "Elevate Scene 3 by making it the scene where kinetic memory is explained (moved from Scene 2), giving it its own major revelation. The Oathbrand discussion then becomes a gateway to the kinetic memory reveal, and the scene earns its own emotional pivot."
+    },
+    {
+      "id": "DEV-004-004",
+      "severity": "minor",
+      "category": "chapter-close",
+      "location": "Final paragraphs",
+      "finding": "The chapter close ('This one, at least, had a name.') is emotionally resonant but slightly diffuse — the preceding paragraphs catalogue Lirien's tactical state (hours, departure, paradox) before landing on the personal beat. The close could be tighter, with less recapping of stakes the reader already knows.",
+      "recommendation": "Trim the tactical inventory before the close. Let the name exchange land with less preamble. The emotional beat is earned; the infrastructure around it dilutes impact."
+    },
+    {
+      "id": "DEV-004-005",
+      "severity": "suggestion",
+      "category": "vulnerability-ladder",
+      "location": "Scene 2, name exchange moment",
+      "finding": "Kaelith asking 'What's your name?' is a strong vulnerability ladder rung — the first time identification shifts from operational to personal. This beat could land harder if Lirien's internal reaction was more operationally destabilized rather than simply surprised.",
+      "recommendation": "Show the name exchange as a classification failure for Lirien: she has no framework for someone asking her name outside operational context. The surprise should register as a system error, consistent with her voice fingerprint's response to unclassifiable inputs."
+    },
+    {
+      "id": "DEV-004-006",
+      "severity": "suggestion",
+      "category": "dual-arc",
+      "location": "Scene 1",
+      "finding": "Scene 1 effectively establishes Lirien's operational crisis but is almost entirely internal fantasy-arc material (contract logistics, binding mechanics). A brief romantic-arc beat — even a single line about Kaelith's face or presence registering in Lirien's assessment — would strengthen the dual-arc interleave from the chapter's opening.",
+      "recommendation": "Add one observation about Kaelith to Scene 1's internal monologue — something that does not fit neatly into the operational report, flagging the intrusion of personal regard into professional assessment."
+    }
+  ],
+  "structuralVerdict": "Sound. Three-scene architecture delivers the outline's emotional arc (defensive rationalization → exposed uncertainty → uneasy truce). Scene 2 needs internal pacing work to distribute revelations more effectively, but the overall structure holds.",
+  "outlineCompliance": "Partial. SCN-010 fully compliant. SCN-011 and SCN-012 merged into a single extended Scene 2, delivering both the confrontation and the intelligence exchange without the outline's intended separation. The content matches but the pacing diverges from the planned two-scene build.",
+  "arcProgressionNotes": {
+    "fantasyArc": "Strong advancement. The Pallor sabotage, Warden-lineage, and Quietus path are all revealed to Kaelith, establishing the civilizational stakes that will drive the journey. The five-day binding deadline creates immediate urgency.",
+    "romanceArc": "On track for 'grudging respect' stage. The confrontation establishes mutual competence recognition, and the name exchange at the end is a well-placed vulnerability ladder rung. The 'Why haven't you killed me yet?' beat functions as both fantasy interrogation and romantic forcing function — Kaelith's directness destabilizes Lirien's operational framework in ways that mirror attraction.",
+    "dualArcInterleave": "Effective. Fantasy stakes create the conditions for romantic negotiation. The kill contract paradox is simultaneously the fantasy problem (how to reach the Quietus) and the romantic problem (how to trust someone who was sent to kill you). Neither arc advances without the other."
+  },
+  "pacingAssessment": "Scene 1: tight and effective (15% of chapter). Scene 2: overloaded, carrying 60% of chapter weight with sequential revelations that could be staggered. Scene 3: functional but underweighted at 25%. Redistribution of revelations between Scenes 2 and 3 would create more even pacing.",
+  "chapterStrengths": [
+    "Lirien's internal voice is distinctive and consistent — the operative classification system failing under pressure reads as both character work and thematic argument.",
+    "The confrontation dialogue is economical and charged, with effective subtext beneath the surface exchange.",
+    "The binding countdown creates genuine structural tension without melodrama.",
+    "The name exchange at the chapter's close is a precisely calibrated vulnerability ladder rung.",
+    "Scene 1's failed-report framework is an elegant way to show Lirien's crisis without telling."
+  ],
+  "prioritizedRevisionOrder": [
+    "DEV-004-002 (time-of-day fix — continuity critical)",
+    "DEV-004-001 (Scene 2 pacing — redistribute revelations)",
+    "DEV-004-003 (Scene 3 elevation)",
+    "DEV-004-004 (chapter close tightening)",
+    "DEV-004-005 (name exchange enhancement)",
+    "DEV-004-006 (Scene 1 dual-arc beat)"
+  ]
+}

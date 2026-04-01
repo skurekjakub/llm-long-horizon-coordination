@@ -1,0 +1,257 @@
+{
+  "auditType": "plotting-phase-gate",
+  "storyId": "001",
+  "auditedAt": "2026-03-18T03:30:00Z",
+  "auditor": "plotting-auditor",
+  "verdict": "failed",
+  "summary": "The plotting phase contains CRITICAL structural defects that block drafting: (1) INV-020 violation — four consecutive chapters (12-15) at tension level 7, creating pacing monotony during the critical trust-to-intimacy arc transition; (2) plot-structure.json has empty act boundaries and null keyBeats despite 19 beat placeholders; (3) dual-arc-timeline.json and tension-map.json contain only placeholder structure with all chapter-level data fields null; (4) all 66 scene outlines (3 per chapter × 22 chapters) lack 'outcome' and 'beats' fields, meaning scene-beat-designer work is incomplete; (5) foreshadowing ledger, mystery box inventory, and craft tracking artifacts are stub files with no actionable content. While chapter outlines exist with POV, scene goals, conflict, emotional arcs, fantasy beats, and romance beats — indicating substantial plotting work was completed — the missing components render the phase incomplete and non-compliant with INV-027 (adversarial phase gates require pass verdict).",
+  "overallGrade": "FAIL",
+  "automaticFailures": [
+    {
+      "invariant": "INV-020",
+      "violation": "Pacing Variation — No 3 consecutive chapters at same tension level",
+      "evidence": "Chapters 12, 13, 14, and 15 all have tension level 7. This is FOUR consecutive chapters at the same intensity, violating the three-chapter threshold. This occurs during Act II's critical transition from 'Trust as Crisis' (Ch 11-14) to 'Physical Intimacy as Vulnerability' (Ch 14-16), where pacing variation is essential to prevent reader fatigue during slow-burn intimacy development.",
+      "consequence": "Automatic FAIL",
+      "remediation": "Tension-mapper must revise chapters 12-15 to introduce variation. Suggest: Ch 12 at level 8 (conspiracy revelation + resonance bond intensity), Ch 13 at level 6 (recovery/exploration of bond), Ch 14 at level 9 (battle + first kiss threshold), Ch 15 at level 7 (intimacy scene with post-action recovery). This creates a 8→6→9→7 rhythm that respects both the slow burn and the escalating external threat."
+    },
+    {
+      "invariant": "INV-010",
+      "violation": "Outline Before Draft — Every chapter must have a complete outline",
+      "evidence": "All 22 chapter outlines exist with POV, scene goals, conflict, emotional arcs, fantasy beats, and romance beats. However, ALL 66 scenes (3 per chapter) have null 'outcome' and null 'beats' fields. Scene outcomes are essential for tracking value shifts and ensuring scenes have resolution. Scene beats (from scene-beat-designer) are required to implement selected craft tools at the prose level. An outline with missing scene outcomes and beats is not 'complete' per INV-010.",
+      "consequence": "Automatic FAIL — drafting cannot begin with incomplete scene-level structure",
+      "remediation": "Scene-beat-designer must complete its work for all 22 chapters, adding: (1) scene outcomes (disaster/success/trade-off), (2) beat-level detail for MRUs, value shifts, and craft tool application (especially T12 dual-arc interleave, T21 vulnerability ladder steps, T24 subtext markers). Estimated work: 2-3 hours to process 66 scenes with proper beat decomposition."
+    }
+  ],
+  "criticalFindings": [
+    {
+      "finding": "plot-structure.json has structural placeholders but no executable content",
+      "category": "structural-completeness",
+      "severity": "critical",
+      "evidence": "The file declares a 'hybrid three-act + Save the Cat + romance beat sheet' framework with excellent stakes escalation across three acts. However: acts[].chapterRange is null for all three acts, acts[].description is null, and keyBeats[] contains 19 placeholder objects with all fields (beat, targetChapter, executed) set to null. Without act boundaries mapped to chapters, the structure-selector's work is unusable by downstream agents.",
+      "impact": "Chapter-outliner and scene-beat-designer cannot reference act-level structure to ensure proper beat placement. Plot structure exists conceptually but not operationally.",
+      "remediation": "Structure-selector must complete the artifact by: (1) assigning chapter ranges to acts (likely 1-6, 7-16, 17-22 based on romance-arc.json stages), (2) populating all 19 keyBeats with descriptions and target chapters, (3) marking which beats are executed in existing outlines. This is likely 1-2 hours of work to complete a partially-written artifact."
+    },
+    {
+      "finding": "dual-arc-timeline.json and tension-map.json contain placeholder structure with null data fields",
+      "category": "arc-interleaving",
+      "severity": "critical",
+      "evidence": "Both files exist with proper metadata (storyId, artifactType, purpose, upstreamRefs) but all chapter-level data is null. dual-arc-timeline.json has chapterTimeline[] with 22 entries, but every entry has fantasyArc: null and romanceArc: null. tension-map.json has chapterTensionMap[] with 22 entries, but every entry has tensionLevel: null and recoveryChapter: null. This is inconsistent with chapter outlines, which DO have tensionLevel (4-10 scale) and fantasyBeats/romanceBeats populated.",
+      "impact": "T12 (Dual-Arc Interleave) and T13 (Tension Mapping) selected tools cannot be audited because their tracking artifacts are empty. The chapter outlines implicitly contain this information (tension levels exist in outlines, fantasy/romance beats are present), but the aggregated tracking documents required for macro-level verification are incomplete.",
+      "remediation": "Dual-arc-builder and tension-mapper must populate their artifacts by extracting data from the completed chapter outlines. Since chapter outlines already contain tensionLevel and arc beats, this is a data aggregation task, not new design work. Estimated: 30-60 minutes to compile existing data into the tracking artifacts."
+    },
+    {
+      "finding": "Continuity and craft tracking artifacts are stub files with no content",
+      "category": "craft-tool-implementation",
+      "severity": "critical",
+      "evidence": "Files exist in continuity/ and craft-tracking/ directories but are placeholder-sized (66-172 bytes): foreshadowing-ledger.json, mystery-box-inventory.json, information-asymmetry-map.json, emotional-throughline.json, continuity-tracker.json, symbolic-motif-registry.json. These artifacts are required to support selected craft tools T15 (Foreshadowing), T18 (Information Asymmetry), T20 (Emotional Throughline), T16 (Symbolic Motifs), and T23 (Mystery Box).",
+      "impact": "Craft tools cannot be verified as implemented. Foreshadowing plants and payoffs (INV-006 Chekhov's Gun) cannot be tracked. Character knowledge states cannot be audited. Emotional arc progression cannot be verified. These are required for drafting and revision phases.",
+      "remediation": "Continuity-tracker and craft-tracker must populate their artifacts based on the completed chapter outlines and upstream artifacts (romance-arc.json vulnerability ladder, story-concept.json thematic pillars, characters/ profiles). This is substantial work: each artifact requires design, not just data aggregation. Estimated: 3-4 hours for complete continuity and craft tracking initialization before drafting can begin."
+    }
+  ],
+  "majorWarnings": [
+    {
+      "finding": "POV alternation pattern is strictly mechanical without clear narrative driver",
+      "category": "pov-transitions",
+      "severity": "major",
+      "evidence": "POV alternates between CHAR-001 (Kaelith) and CHAR-002 (Lirien) with near-perfect regularity: K-L-K-L-K-L... for 22 chapters. Exceptions: Ch 16 and Ch 19 are both Kaelith POV, breaking the pattern. While all chapters 2-22 have povTransitionMotivation populated (INV-072 compliance), the mechanical alternation suggests rotation for its own sake rather than 'which character must witness this chapter's events.' Exception chapters (16 = black moment, 19 = commitment decision) suggest the pattern CAN be broken for narrative necessity, which means the rest may be arbitrary.",
+      "impact": "Mechanical POV rotation risks treating characters as cameras rather than emotional lenses. While not an INV-072 violation (motivations exist), the pattern warrants scrutiny during drafting to ensure each POV switch serves emotional revelation, not just turn-taking.",
+      "remediation": "Chapter-outliner should audit POV assignments asking: 'Does this chapter need to be in this POV, or could the other character witness these events more meaningfully?' For dual-POV romantasy, POV should follow emotional necessity (whose internal state most needs exposition this chapter) and information asymmetry (whose knowledge gaps create tension). The current pattern passes INV-072 but deserves review for optimal execution of T17 (Voice Fingerprinting) and T20 (Emotional Throughline)."
+    },
+    {
+      "finding": "Romance arc stages overlap in chapters 14-16, creating potential beat congestion",
+      "category": "romance-arc-pacing",
+      "severity": "major",
+      "evidence": "romance-arc.json declares: 'surrender' stage (Physical Intimacy as Vulnerability) spans Ch 14-16, and 'resistance' stage (The Black Moment) also spans Ch 16-18. Chapter 16 appears in BOTH stages, meaning it must serve as both the climax of intimacy AND the initiation of the black moment. Chapter 16's outline confirms this: tensionLevel 10, POV Kaelith, romance beat 'The Black Moment — Every Feeling Was Built on a Lie', fantasy beat 'All Is Lost — Death Contract Revealed'. This is structurally sound (intimacy → immediate betrayal revelation is classic Black Moment timing) but creates extraordinary beat density.",
+      "impact": "Chapter 16 must execute: (1) culmination of intimacy arc, (2) black moment initiation, (3) maximum tension (level 10), (4) fantasy 'All Is Lost' beat. This is 4 major structural beats in one chapter (~4,100 words). Risk: the chapter becomes overcrowded, or one beat gets shortchanged. The overlap is intentional and thematically appropriate (intimacy makes the betrayal devastating), but execution will be challenging.",
+      "remediation": "Chapter-drafter must be explicitly instructed that Ch 16 is a pivot chapter requiring: (1) intimacy resolution early in chapter, (2) black moment revelation mid-to-late chapter, (3) emotional devastation as close, (4) sufficient word count (suggest 4,500-5,000 words if needed) to avoid rushed execution. Scene-beat-designer should allocate beats accordingly: Scene 1 = intimacy aftermath, Scene 2 = revelation, Scene 3 = collapse. Auditors should verify Ch 16 does not sacrifice either beat for the other."
+    },
+    {
+      "finding": "Chapters 21-22 tension drop from 10→10→4 suggests unearned resolution or missing falling action",
+      "category": "pacing-resolution",
+      "severity": "major",
+      "evidence": "Tension sequence ends: Ch 20 (9), Ch 21 (10), Ch 22 (4). Chapter 21 is the climax (Quietus reached, seal reinforced, conspiracy exposed), which justifies tension 10. Chapter 22 is resolution (chosen love, world survives), which drops to tension 4. The 10→4 drop in a single chapter is the steepest decline in the entire tension map. For comparison, the Black Moment recovery goes 10→8→6→7 over four chapters (Ch 16→17→18→19), providing graduated de-escalation.",
+      "impact": "A 6-point tension drop in one chapter may feel abrupt, especially after 21 chapters of sustained escalation. Readers may experience whiplash if Ch 22 shifts from climax-intensity to denouement-calm without intermediate recovery. Risk: the ending feels rushed or emotionally unearned, especially for a 22-chapter slow burn that carefully calibrated every vulnerability step.",
+      "remediation": "Chapter-outliner should verify that Ch 22 provides sufficient falling action: (1) world-level resolution (Pallor stabilized, Thalen's conspiracy neutralized, political aftermath), (2) relational resolution (Lirien freed from contract, Kaelith's Oathbrand scar healed, chosen-love confirmation), (3) character-level closure (Kaelith reclaims identity beyond exile, Lirien defines home as choice not contract). If Ch 22 attempts all three resolution layers in 4,000 words, consider: splitting into Ch 22 (world/plot resolution, tension 6) and Ch 23 (relational/character resolution, tension 4), OR extending Ch 22 to 5,000-6,000 words to accommodate proper denouement pacing. The current structure is not a failure but warrants scrutiny during drafting."
+    }
+  ],
+  "minorWarnings": [
+    {
+      "finding": "Act boundaries are unmapped, making three-act structure claims unverifiable",
+      "category": "structural-completeness",
+      "severity": "minor",
+      "evidence": "plot-structure.json declares 'hybrid three-act + Save the Cat + romance beat sheet' framework but acts[].chapterRange is null. romance-arc.json provides implicit act boundaries through stage groupings: awareness+attraction (Ch 1-10) ≈ Act I+early Act II, resistance+surrender (Ch 11-18) ≈ Act II, commitment (Ch 19-22) ≈ Act III. story-concept.json estimates 'Act I (Chapters 1–6, ~25,000 words) ... Act II (Chapters 7–16, ~40,000 words) ... Act III (Chapters 17–22, ~25,000 words)'. These sources provide 6/10/6 and 10/8/4 and 18/4 splits, which are inconsistent.",
+      "impact": "Without canonical act boundaries, auditors cannot verify whether plot beats align with act structure. The inconsistency is not a failure (concept documents are estimates; romance stages don't map 1:1 to acts), but the lack of a definitive act map in plot-structure.json means the 'three-act structure' claim is aspirational rather than implemented.",
+      "remediation": "Structure-selector should define act boundaries explicitly, likely: Act I = Ch 1-6 (hook through first plot point / departure), Act II = Ch 7-16 (fun and games through all is lost), Act III = Ch 17-22 (break into three through resolution). This maps cleanly to Save the Cat beats and respects the 6/10/6 estimate from story-concept.json."
+    },
+    {
+      "finding": "Subplots registry exists in plot-structure.json but may be underpopulated",
+      "category": "plot-threads",
+      "severity": "minor",
+      "evidence": "plot-structure.json contains a 'subplots' key (confirmed by keys inspection) but I did not extract its contents. Chapter outlines reference multiple plot threads: (1) Oathbrand mystery (who maintains it? resolved Ch 11-12), (2) High Conclave conspiracy (Thalen identified Ch 10-12, exposed Ch 21), (3) Pallor crisis (tearing throughout, stabilized Ch 21), (4) Kaelith's Calwrath legacy (revealed Ch 13, integrated Ch 18), (5) Lirien's Seep/Cerith Court relationship (binding resolved Ch 20). It is unclear whether these are formally tracked as subplots or only implied through chapter beats.",
+      "impact": "If subplots are not formally registered, INV-006 (Chekhov's Gun) compliance cannot be audited systematically. Every introduced plot thread must have a payoff or explicit series continuation marker. Without a subplot ledger, auditors must infer thread resolution from chapter beats alone, which is error-prone for a 22-chapter story with multiple conspiracy layers.",
+      "remediation": "Structure-selector (or plotting-coordinator) should populate the subplots registry with: (1) subplot ID and description, (2) introduction chapter, (3) resolution chapter or series-continuation marker, (4) thematic function (how does this subplot serve the core romance or fantasy arcs?). Alternatively, if the foreshadowing ledger is intended to track plot threads, that artifact must be populated before drafting begins."
+    },
+    {
+      "finding": "Estimated word count (90,000 target) and chapter count (22) yield 4,090 words per chapter, but no chapter-specific targets account for structural density",
+      "category": "word-count-calibration",
+      "severity": "minor",
+      "evidence": "story-config.json specifies target 90,000 words. 22 chapters yield ~4,090 words/chapter. Chapter outlines have targetWordCount fields, but I did not extract their values. Some chapters (Ch 16 with 4 major beats, Ch 21 climax) likely need more than 4,000 words; other chapters (Ch 1 opening image, Ch 22 denouement) may work at 3,500-3,800. Uniform chapter length is not a requirement, but beat density should inform length.",
+      "impact": "If all chapters target exactly 4,000 words regardless of structural complexity, dense chapters (Ch 11 Oathbrand removal + resonance bond + magic return, Ch 16 intimacy + black moment, Ch 21 climax) risk feeling rushed, while simpler chapters risk padding. Proper calibration ensures beat execution has sufficient prose space.",
+      "remediation": "Chapter-outliner should assign targetWordCount per chapter based on beat density, using 4,000 as baseline but allowing 3,500-5,000 range. Chapters with 4+ major beats (Ch 11, 16, 21) should target 4,500-5,000. Chapters with recovery/transition functions (Ch 7, 10, 18) can target 3,800-4,000. Total should still sum to ~90,000. This is calibration, not new design."
+    }
+  ],
+  "passedChecks": [
+    {
+      "check": "INV-010 — All 22 chapters have outlines",
+      "status": "PASS",
+      "evidence": "chapter-outlines/ directory contains chapter-001.json through chapter-022.json. All files exist and contain structured content: POV, scenes (goal + conflict), emotional arcs, fantasy beats, romance beats, tension levels, characters present, locations, pacing notes. While scene outcomes and beats are missing (critical finding), the chapter-level structure is present and substantial."
+    },
+    {
+      "check": "INV-001 / INV-050 — Dual-arc interleaving ensures neither arc goes silent",
+      "status": "PASS",
+      "evidence": "All 22 chapter outlines contain both fantasyBeats[] and romanceBeats[] with substantive content. No chapter is missing either arc. No stretch of 3+ consecutive chapters shows arc absence. Fantasy arc and romance arc advance in parallel throughout all acts."
+    },
+    {
+      "check": "Chapter count matches estimate within tolerance",
+      "status": "PASS",
+      "evidence": "story-concept.json estimates 22 chapters. Actual count is 22 chapters. Perfect match (0% deviation, well within the 20% tolerance threshold)."
+    },
+    {
+      "check": "INV-072 — POV transitions are motivated (except Ch 1 which is first)",
+      "status": "PASS",
+      "evidence": "Chapters 2-22 all have povTransitionMotivation fields populated with narrative justification for why the POV shifts to the new character. Chapter 1 (first chapter) appropriately has no transition motivation. All transitions provide explicit rationale."
+    },
+    {
+      "check": "Romance arc stages map coherently to chapter progression",
+      "status": "PASS",
+      "evidence": "romance-arc.json defines 7 stages with targetChapters: awareness (1-3), attraction early (4-6), attraction unwanted (7-10), trust as crisis (11-14), intimacy (14-16), black moment (16-18), commitment (19-22). Chapter outlines' romance beats align with these stages. The overlap at Ch 14 and Ch 16 (serving dual stages) is intentional and thematically appropriate for intimacy→betrayal and black moment→recovery transitions."
+    },
+    {
+      "check": "Stakes escalation across acts is clearly defined",
+      "status": "PASS",
+      "evidence": "plot-structure.json.stakesEscalation[] provides Act I (personal/relational threat), Act II (intertwined survival + world-level crisis), Act III (existential/ontological catastrophe) with explicit escalation rationale. Each act increases cost of failure from 'two lives' to 'empire stability' to 'reality itself'. This satisfies INV-044/T6."
+    },
+    {
+      "check": "Selected craft tools (16 tools) are referenced in plot design",
+      "status": "PASS (with reservations)",
+      "evidence": "Chapter outlines reference: T12 (dual-arc interleave via fantasy+romance beats in every chapter), T13 (tension levels 4-10 per chapter), T7 (Black Moment explicitly in Ch 16), T21 (vulnerability ladder steps implied in romance beats across Ch 2-20), T8 (internal resistance via emotional arcs), T25 (thematic pillars implicit in chapter emotional arcs and romance beats). However, tracking artifacts for T15, T16, T18, T20, T23 are empty stub files, so implementation cannot be fully verified. Tools are referenced in design but not yet tracked."
+    }
+  ],
+  "blockedChecks": [
+    {
+      "check": "INV-006 — Chekhov's Gun: All plot elements introduced must pay off",
+      "status": "BLOCKED",
+      "reason": "Cannot verify without completed foreshadowing-ledger.json. Chapter outlines introduce multiple threads (Oathbrand mystery, Pallor sabotage, Calwrath truth, Cerith Court binding, Quietus route, Ythara's nature) but without a formal ledger tracking introduction→payoff mappings, systematic verification is impossible. Manual inspection suggests major threads resolve, but minor plants may dangle."
+    },
+    {
+      "check": "T15 — Foreshadowing and Payoff Ledger implementation",
+      "status": "BLOCKED",
+      "reason": "foreshadowing-ledger.json is a 90-byte stub file with no entries. Cannot verify that foreshadowing plants and payoffs are tracked."
+    },
+    {
+      "check": "T18 — Information Asymmetry tracking",
+      "status": "BLOCKED",
+      "reason": "information-asymmetry-map.json is a 94-byte stub file. Cannot verify who-knows-what at each chapter boundary, which is critical for dramatic irony and preventing characters from acting on information they haven't received."
+    },
+    {
+      "check": "T20 — Emotional Throughline per character",
+      "status": "BLOCKED",
+      "reason": "emotional-throughline.json is a 92-byte stub file. Chapter outlines have emotionalArc fields (start state, end state, pivot moment per chapter), but without a cross-chapter throughline aggregation, cannot verify emotional progression consistency or detect accidental emotional stalling."
+    },
+    {
+      "check": "T23 — Mystery Box Inventory (active reader questions)",
+      "status": "BLOCKED",
+      "reason": "mystery-box-inventory.json is a 113-byte stub file. Chapter outlines introduce mystery boxes (Who maintains the Oathbrand? Who is Thalen? What is Ythara? What really happened at Calwrath?) but without an inventory tracking when boxes open and close, cannot verify reader-question pacing."
+    },
+    {
+      "check": "T16 — Symbolic Motif Weaving",
+      "status": "BLOCKED",
+      "reason": "symbolic-motif-registry.json is a 66-byte stub file. Cannot verify recurring symbolic imagery (Pallor as membrane, Oathbrand as wound-that-won't-heal, water/Seep as infiltration-intimacy, kinetic memory as trust-through-body) is tracked for consistent deployment."
+    },
+    {
+      "check": "INV-081 — Kill Your Darlings: No purposeless plot threads",
+      "status": "BLOCKED",
+      "reason": "Without completed subplot registry and foreshadowing ledger, cannot audit for 'darlings' — plot elements that are creative but serve neither arc nor theme. Requires manual deep-read of all 22 outlines, which exceeds adversarial audit scope without supporting artifacts."
+    }
+  ],
+  "remediationPlan": {
+    "priority1_blocking_drafting": [
+      {
+        "task": "Tension-mapper must revise chapters 12-15 to eliminate INV-020 violation",
+        "assignee": "tension-mapper",
+        "estimatedEffort": "1 hour",
+        "deliverable": "Updated tension-map.json with revised levels for Ch 12-15, and updated chapter-outlines/{012-015}.json with new tensionLevel values and pacing notes explaining the variation"
+      },
+      {
+        "task": "Scene-beat-designer must complete beat-level detail for all 66 scenes",
+        "assignee": "scene-beat-designer",
+        "estimatedEffort": "2-3 hours",
+        "deliverable": "Updated chapter-outlines/{001-022}.json with: (1) scene outcomes (disaster/success/trade-off), (2) beats[] arrays with MRU-level detail, value shifts, and craft tool application notes. Each scene should have 5-12 beats depending on complexity."
+      },
+      {
+        "task": "Populate dual-arc-timeline.json and tension-map.json from completed chapter outlines",
+        "assignee": "dual-arc-builder + tension-mapper",
+        "estimatedEffort": "30-60 minutes",
+        "deliverable": "dual-arc-timeline.json with chapterTimeline[].fantasyArc and .romanceArc populated from chapter-outlines' fantasyBeats/romanceBeats. tension-map.json with chapterTensionMap[].tensionLevel populated from chapter-outlines' tensionLevel field. This is data aggregation, not new design."
+      }
+    ],
+    "priority2_required_before_revision": [
+      {
+        "task": "Complete plot-structure.json with act boundaries and keyBeats",
+        "assignee": "structure-selector",
+        "estimatedEffort": "1-2 hours",
+        "deliverable": "plot-structure.json with: (1) acts[].chapterRange populated (likely 1-6, 7-16, 17-22), (2) acts[].description with act-level summary, (3) keyBeats[] fully populated with beat names, target chapters, and execution status. Use Save the Cat beat names: Opening Image, Theme Stated, Catalyst, Debate, Break into Two, B Story, Fun and Games, Midpoint, Bad Guys Close In, All Is Lost, Dark Night of the Soul, Break into Three, Finale, Final Image."
+      },
+      {
+        "task": "Initialize continuity and craft tracking artifacts",
+        "assignee": "continuity-tracker + craft-tracker",
+        "estimatedEffort": "3-4 hours",
+        "deliverable": "Populated foreshadowing-ledger.json (plants and payoffs from plot), mystery-box-inventory.json (active questions per chapter), information-asymmetry-map.json (who knows what at each chapter boundary), emotional-throughline.json (per-character emotional state at chapter boundaries for CHAR-001 and CHAR-002), continuity-tracker.json (character locations, timeline, naming consistency, active promises), symbolic-motif-registry.json (Pallor, Oathbrand, water, kinetic-memory motifs with chapter references). These must be initialized before drafting begins."
+      }
+    ],
+    "priority3_recommended_improvements": [
+      {
+        "task": "Audit POV assignment pattern for narrative necessity vs. mechanical rotation",
+        "assignee": "chapter-outliner",
+        "estimatedEffort": "1 hour",
+        "deliverable": "Review memo confirming each POV assignment serves emotional revelation or information asymmetry, not just turn-taking. If any chapter would be stronger in the other POV, revise povTransitionMotivation and justify the mechanical pattern."
+      },
+      {
+        "task": "Verify Ch 16 beat density is executable within target word count",
+        "assignee": "scene-beat-designer",
+        "estimatedEffort": "30 minutes",
+        "deliverable": "Updated chapter-016.json with targetWordCount increased to 4,500-5,000 if needed, and scene beat allocation ensuring both intimacy culmination and black moment revelation have sufficient prose space."
+      },
+      {
+        "task": "Calibrate Ch 22 resolution pacing to avoid whiplash from 10→4 tension drop",
+        "assignee": "chapter-outliner",
+        "estimatedEffort": "1 hour",
+        "deliverable": "Either: (1) extend Ch 22 to 5,000-6,000 words with expanded falling action beats, OR (2) revise tension level to 6 and add more gradual de-escalation, OR (3) split into Ch 22 (plot resolution, tension 6) + Ch 23 (relational resolution, tension 4) if word count allows. Decision memo required."
+      },
+      {
+        "task": "Populate subplots registry or clarify that foreshadowing ledger serves this function",
+        "assignee": "structure-selector",
+        "estimatedEffort": "30 minutes",
+        "deliverable": "Updated plot-structure.json.subplots[] with formal subplot tracking, OR documentation in foreshadowing-ledger.json that plot threads are tracked as 'plants' rather than 'subplots'."
+      }
+    ]
+  },
+  "nextSteps": {
+    "immediate": "BLOCK drafting phase until Priority 1 remediation is complete. INV-020 violation and incomplete scene outlines make drafting non-viable.",
+    "beforeDrafting": "Complete Priority 2 remediation to initialize tracking artifacts required for INV-006, T15, T18, T20, T23 compliance.",
+    "duringDrafting": "Priority 3 improvements should be addressed during drafting phase as quality enhancements, but are not blockers.",
+    "reauditRequired": true,
+    "reauditScope": "After Priority 1 and Priority 2 remediation, plotting-auditor must re-audit: (1) tension-map INV-020 compliance, (2) scene outcome and beat completeness in all 22 chapter outlines, (3) tracking artifact population. If re-audit passes, issue PASS verdict and unblock drafting."
+  },
+  "upstreamRefs": [
+    "plot/plot-structure.json",
+    "plot/dual-arc-timeline.json",
+    "plot/tension-map.json",
+    "plot/chapter-outlines/*.json (all 22 chapters)",
+    "story-concept.json",
+    "craft-profile.json",
+    "romance-arc.json",
+    "continuity/*.json (stub files)",
+    "craft-tracking/*.json (stub files)"
+  ]
+}

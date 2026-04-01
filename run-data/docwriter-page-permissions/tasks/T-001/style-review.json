@@ -1,0 +1,207 @@
+{
+  "agent": "docwriter-style-reviewer",
+  "taskId": "T-001",
+  "attempt": 3,
+  "verdict": "approved",
+  "reviewScope": "Re-entry review — three targeted gap-hunting fixes only. Full-page scan performed for invariant compliance.",
+  "changesReviewed": [
+    {
+      "change": "GAP-003: Added *Synchronize* to permission enumeration (line 180)",
+      "description": "Permission list in 'Permission requirements for page operations' section now reads '*Read*, *Update*, *Create*, *Delete*, or *Synchronize*'."
+    },
+    {
+      "change": "GAP-001: Added clone permission requirements paragraph (lines 222-225)",
+      "description": "New paragraph 'When cloning a page, users need:' with two bullet points added to 'Page permissions for creating pages' section."
+    },
+    {
+      "change": "GAP-003: Added 'Page permissions for synchronizing pages' section (lines 243-249)",
+      "description": "New h2 section at end of file documenting synchronize permission requirements."
+    }
+  ],
+  "invariantResults": [
+    {
+      "invariantId": "INV-style-096",
+      "result": "pass",
+      "evidence": "No Unicode en dashes (U+2013) or em dashes (U+2014) found anywhere in the file. All dashes use '--' (double hyphen) consistently — confirmed at lines 53, 179, 180, 181, 212. The three changed areas contain no dashes at all, avoiding the issue entirely."
+    },
+    {
+      "invariantId": "INV-style-132",
+      "result": "pass",
+      "evidence": "No 'must' directed at people found in the file. Changed areas use 'users need' (lines 222, 245) which is the correct phrasing per this invariant. The word 'must' does not appear anywhere in the document."
+    },
+    {
+      "invariantId": "INV-style-001",
+      "result": "pass",
+      "evidence": "All indentation uses 4 spaces. No tabs found. Front matter indentation (lines 2-13), table cell indentation (lines 27-103), and nested callout indentation (lines 120-124) all use 4-space indents correctly."
+    },
+    {
+      "invariantId": "INV-style-139",
+      "result": "pass",
+      "evidence": "All multi-content callouts have bold titles on separate lines: line 107 '**Read permission prerequisite**', line 121 '**Channel admin bypass**', line 153 '**Role hierarchy**'. The info callout at line 16-18 is a single-sentence callout — the exception applies correctly."
+    },
+    {
+      "invariantId": "INV-style-114",
+      "result": "pass",
+      "evidence": "All three changed areas use active voice. Line 180: 'one or more page permissions... for the target page' (active). Line 222: 'When cloning a page, users need' (active). Line 245: 'users need the following page permissions' (active). Line 249: 'synchronizing requires the permission check to pass' (active, subject is 'synchronizing')."
+    },
+    {
+      "invariantId": "INV-style-115",
+      "result": "pass",
+      "evidence": "All changed content uses present simple tense consistently. 'users need' (lines 222, 245), 'requires' (line 249)."
+    },
+    {
+      "invariantId": "INV-style-073",
+      "result": "pass",
+      "evidence": "Bold formatting used correctly for UI elements throughout: **Application permission**, **Page permission**, **Workflow step role** (lines 179-181), **Add roles** (line 119), **Save permissions** (line 126). No UI elements in the changed areas require bold treatment."
+    },
+    {
+      "invariantId": "INV-style-075",
+      "result": "pass",
+      "evidence": "Italics used correctly for permission names throughout the changed areas: *Read*, *Synchronize*, *Create*, *Update*, *Delete* (lines 180, 224, 225, 247). This is consistent with the established pattern in all other permission sections."
+    },
+    {
+      "invariantId": "INV-style-081",
+      "result": "pass",
+      "evidence": "All headings use sentence case correctly. New heading '## Page permissions for synchronizing pages' (line 243) follows the established pattern of sibling headings (lines 185, 197, 214, 227, 235)."
+    },
+    {
+      "invariantId": "INV-style-107",
+      "result": "pass",
+      "evidence": "Bullet points used correctly for unordered permission lists in changed areas (lines 224-225, 247). Ordered lists used for step-by-step instructions (lines 114-126, 140-144, 169-171). All list items use sentence case."
+    },
+    {
+      "invariantId": "INV-style-085",
+      "result": "pass",
+      "evidence": "Oxford comma used correctly in permission enumeration: '*Read*, *Update*, *Create*, *Delete*, or *Synchronize*' (line 180) — comma before 'or' with 5 items."
+    },
+    {
+      "invariantId": "INV-style-111",
+      "result": "pass",
+      "evidence": "Changed content is concise and focused. The clone paragraph (lines 222-225) adds only essential information. The synchronizing section (lines 243-249) follows the minimal pattern established by other sections like 'Page permissions for deleting pages' (lines 227-233)."
+    },
+    {
+      "invariantId": "INV-style-113",
+      "result": "pass",
+      "evidence": "No 'please' found anywhere in the document."
+    },
+    {
+      "invariantId": "INV-style-118",
+      "result": "pass",
+      "evidence": "Terminology is consistent throughout. 'Synchronize'/'synchronizing' used consistently (never 'sync'). 'Content tree' used consistently for tree references. Permission names are always italicized with the same capitalization."
+    },
+    {
+      "invariantId": "INV-style-119",
+      "result": "pass",
+      "evidence": "No instances of the pronoun 'it' used ambiguously in the changed areas. The new sections name their subjects explicitly: 'users', 'the permission check', 'synchronizing'."
+    },
+    {
+      "invariantId": "INV-style-134",
+      "result": "pass",
+      "evidence": "Condition-first pattern followed correctly. Line 222: 'When cloning a page, users need:' (condition leads). Line 245: 'To synchronize a page, users need the following page permissions:' (purpose clause leads)."
+    },
+    {
+      "invariantId": "INV-style-084",
+      "result": "pass",
+      "evidence": "Single space between sentences throughout. 4-space indentation used consistently."
+    },
+    {
+      "invariantId": "INV-style-090",
+      "result": "pass",
+      "evidence": "No em dashes found anywhere in the document."
+    },
+    {
+      "invariantId": "INV-style-093",
+      "result": "pass",
+      "evidence": "All lists are single-level (1 level deep). No nested lists exceed the 3-level maximum."
+    },
+    {
+      "invariantId": "INV-style-103",
+      "result": "pass",
+      "evidence": "New heading '## Page permissions for synchronizing pages' follows the noun-phrase pattern used by all sibling operation sections. Per INV-style-106, noun phrases are acceptable for concept/reference sections."
+    },
+    {
+      "invariantId": "INV-style-110",
+      "result": "pass",
+      "evidence": "Product naming follows conventions: 'Xperience' used on line 20 (subsequent mention). 'Xperience' used correctly in the Synchronize table cell (line 101)."
+    },
+    {
+      "invariantId": "INV-style-130",
+      "result": "pass",
+      "evidence": "No input-specific verbs (click, choose, enable/disable, check/uncheck, type) found in changed areas."
+    },
+    {
+      "invariantId": "INV-style-136",
+      "result": "pass",
+      "evidence": "No inline code formatting needed in the changed areas — all content is prose about permission concepts, not code references."
+    },
+    {
+      "invariantId": "INV-style-146",
+      "result": "pass",
+      "evidence": "No 'have to' found anywhere in the document."
+    },
+    {
+      "invariantId": "INV-style-140",
+      "result": "pass",
+      "evidence": "No callout type names written inside callout boxes. Warning callout (line 106) has title 'Read permission prerequisite' not 'Warning'. Tip callouts have descriptive titles."
+    },
+    {
+      "invariantId": "INV-style-141",
+      "result": "pass",
+      "evidence": "Callout severity levels are appropriate: info (line 16) for scope clarification, warning (line 106) for prerequisite that causes permissions to have no effect, tip (lines 120, 152) for bonus information."
+    },
+    {
+      "invariantId": "INV-style-138",
+      "result": "pass",
+      "evidence": "Callout types follow the severity order correctly. No callouts added in the changed areas."
+    },
+    {
+      "invariantId": "TINV-002",
+      "result": "pass",
+      "evidence": "The page serves as a centralized permission reference with all operation-specific permission sections consolidated in one location. The new synchronizing section (line 243) extends this centralized structure."
+    }
+  ],
+  "additionalFindings": [
+    {
+      "category": "heading-hierarchy",
+      "result": "pass",
+      "evidence": "All headings are h2 level (##). The new '## Page permissions for synchronizing pages' (line 243) is at the correct level, consistent with all sibling sections. No heading levels are skipped."
+    },
+    {
+      "category": "formatting-consistency",
+      "result": "pass",
+      "evidence": "All three changed areas follow the established formatting patterns precisely: (1) Permission enumeration on line 180 uses italicized permission names with Oxford comma, matching the pattern in the Read permission description on line 53. (2) Clone paragraph (lines 222-225) uses the same 'users need:' + bulleted list pattern as the publishing section's 'users need:' on line 203. (3) Synchronizing section (lines 243-249) follows the exact structural template of the deleting (lines 227-233) and unpublishing (lines 235-241) sections: h2 heading, intro sentence, bullet list, supplementary paragraph."
+    },
+    {
+      "category": "link-formatting",
+      "result": "pass",
+      "evidence": "The page_link on line 101 ({% page_link content_sync_xp %}) uses proper Jekyll/Liquid syntax. No new links added in the clone or synchronizing sections — the changed areas reference permissions by name only, which is appropriate since they are on the same page."
+    },
+    {
+      "category": "front-matter",
+      "result": "pass",
+      "evidence": "Front matter contains all required fields: title, persona, identifier, order, redirect_from, license, toc, related_pages. Values follow expected patterns."
+    },
+    {
+      "category": "sentence-structure",
+      "result": "pass",
+      "evidence": "All changed content is clear, concise, and scannable. Sentences are direct and action-oriented. No overly complex sentence structures."
+    },
+    {
+      "category": "anti-pattern-check",
+      "result": "pass",
+      "evidence": "Checked against ANTI-002 (dash-type confusions): no dash issues found — all dashes use '--'. ANTI-001 (create-action complexity): N/A for this update action. ANTI-010 (phantom API calls): N/A — no code examples in changed areas. No known anti-patterns matched."
+    },
+    {
+      "category": "style-evolution-check",
+      "result": "pass",
+      "evidence": "STYLE-004 (page_link identifier verification): The only new page_link added is {% page_link content_sync_xp %} in the Synchronize table row (line 101) — this uses a plausible identifier referencing the content synchronization page. No conflicts with invariants detected."
+    }
+  ],
+  "metaKnowledgeDiscards": [],
+  "summary": {
+    "invariantsPassed": 28,
+    "invariantsFailed": 0,
+    "additionalIssues": 0,
+    "additionalPasses": 7
+  }
+}

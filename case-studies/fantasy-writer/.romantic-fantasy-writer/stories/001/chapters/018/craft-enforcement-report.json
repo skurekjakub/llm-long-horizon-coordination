@@ -1,0 +1,358 @@
+{
+  "chapter": 18,
+  "title": "The Taxonomy of Choice",
+  "pov": "CHAR-002",
+  "povName": "Lirien Dael",
+  "overallAssessment": "pass",
+  "toolsVerified": 16,
+  "toolsPassed": 16,
+  "toolsConditionalPass": 0,
+  "toolsFailed": 0,
+  "scenesExpected": 3,
+  "scenesPresent": 3,
+  "wordCountActual": 4915,
+  "sceneBreakdown": {
+    "SCN-50": {
+      "lines": "15-104",
+      "words": 1756,
+      "type": "sequel",
+      "title": "Dark Night \u2014 Self-Interrogation"
+    },
+    "SCN-51": {
+      "lines": "107-195",
+      "words": 1657,
+      "type": "scene",
+      "title": "Ashborne Intelligence Exchange"
+    },
+    "SCN-52": {
+      "lines": "199-267",
+      "words": 1473,
+      "type": "scene",
+      "title": "Cipher Destruction / Walk North"
+    }
+  },
+  "sceneVerification": "Verified via grep -n '^---$' chapters/018/draft.md: 4 occurrences at lines 1 (YAML open), 13 (YAML close), 105 (SCN-50/51 break), 197 (SCN-51/52 break). All 3 scenes are present and contain substantial prose. SCN-51 contains 20 dialogue lines including the Ashborne contact encounter, recognition protocols, and intelligence exchange.",
+  "toolResults": {
+    "T5": {
+      "status": "pass",
+      "evidence": {
+        "SCN-50": "Classification system as emotional vehicle \u2014 devastation through analytical precision, not melodrama. L33: 'The analytical precision that had made her the Court's most effective Hand was now the instrument of her dissolution.' Bond grief rendered as signal quality: 'Not content \u2014 the bond never carried content. Quality.' (L49). No forbidden registers (whimsical, grimdark, sentimental, campy, epic-triumphant, expository).",
+        "SCN-51": "Spy-thriller register under morally complex surface. L157: 'Either he was telling the truth or he was a more skilled operative than anyone the Court had fielded against her.' Contact's loyalty rendered as 'loyalty under sustained discipline' (L185) \u2014 military restraint, not sentimentalised devotion.",
+        "SCN-52": "Quiet surgical liberation. L227: 'Lirien felt nothing the Court had designed her to feel.' When most emotional, plainest language: 'She was choosing the love.' (L265). L253: 'Proof of agency was not proof of innocence' \u2014 morally complex even at peak hope."
+      },
+      "notes": "Tone contract maintained across all three scenes and emotional registers. The morally complex tone is sustained even in the chapter's most hopeful moments. One near-boundary moment: L169-177 packs substantial magical exposition into internal monologue (three-channel processing of dissolution intelligence). Saved from 'expository/pedagogical' forbidden register by being framed through Lirien's voice-consistent analytical processing and the emotional channel ('she classified this as hope, provisional, requiring verification before integration')."
+    },
+    "T6": {
+      "status": "pass",
+      "evidence": {
+        "SCN-50": "Agency/identity stakes. L35: 'Lirien did not know if she had ever chosen anything.' Existence as a person vs. existence as a mechanism \u2014 the most fundamental stake available.",
+        "SCN-51": "Operational stakes elevated: dissolution possible at god-seal where substrate thins (L167). Both operatives required (L179). Court escalation threatened \u2014 secondary operative may be deployed (L155). L181: 'The mission and the freedom were the same destination.'",
+        "SCN-52": "Relational stakes crystallized: L253: 'Proof of agency was not proof of innocence.' L255: 'She was walking toward a conversation she could not control.' Freedom requires reunion with someone who may reject her."
+      },
+      "notes": "Clean three-stage escalation: personal (can I choose?) \u2192 operational (dissolution architecturally possible, but needs both of us) \u2192 relational (will she accept me?). Each scene raises stakes while respecting recovery-valley pacing. Secondary-operative threat in SCN-51 adds lethality without overriding the emotional register."
+    },
+    "T7": {
+      "status": "pass",
+      "evidence": {
+        "SCN-50": "Black-moment recovery through self-interrogation. 11-hour analytical audit yields single verified act of free choice. L103: 'She could build from that. She had built from less.' The mechanism is character-specific: only this operative would recover through a formal classification audit.",
+        "SCN-51": "Recovery broadened: L189: 'She was not the only one who had chosen against an institution that claimed ownership. There were others. A network.' Isolation cracks \u2014 external validation supplements internal proof.",
+        "SCN-52": "Recovery complete: cipher destroyed, operative identity killed by choice (L235), direction chosen freely. L265: 'She was choosing the love.' Full arc from paralysis to agency."
+      },
+      "notes": "Three-scene recovery structure (internal proof \u2192 external confirmation \u2192 decisive action) gives the black-moment resolution proper weight. The Oathbrand-removal proof is among the manuscript's most intellectually rigorous emotional mechanisms."
+    },
+    "T8": {
+      "status": "pass",
+      "evidence": {
+        "SCN-50": "Internal resistance dominant. Analytical precision as self-destruction instrument: L33: 'every choice she had made could be explained by the binding.' Four pages of 'ambiguous.' The better the analysis, the deeper the uncertainty. L47: 'A current she had thought was desire might be a channel the Court had carved. She could not tell the difference from inside the flow.'",
+        "SCN-51": "External resistance primary. Blade drawn on contact's arrival (L111). L135: 'There is no version of this in which I lower this blade on the strength of a name and a recognition protocol.' Three-channel verification (L169-177). L157: micro-tension reading of contact's body. L191: 'I do not trust you.' Alliance accepted provisionally \u2014 'verified utility, not trust.'",
+        "SCN-52": "Dual resistance: internal (cipher destruction is identity death \u2014 L235: 'Not Lessened \u2014 dead by choice') and external (L253: uncertain reception; L255: conversation she cannot control)."
+      },
+      "notes": "Internal (SCN-50) and external (SCN-51) resistance are well-balanced by scene. SCN-50's analytical death-spiral is genuinely devastating \u2014 the operative's greatest tool becomes a weapon against herself. SCN-51 shifts register cleanly to operational threat assessment. SCN-52's lighter dual resistance suits the resolution beat."
+    },
+    "T10": {
+      "status": "pass",
+      "evidence": {
+        "SCN-50": "Binding enforcement mechanics \u2014 most detailed exposition in manuscript. Prior contracts: 'pressure behind the eyes, the tremor in the hands, the way compassion curdled into operational detachment when the binding recognised the emotion as counter-productive' (L71). Oathbrand removal: 'the binding had done nothing. No pressure. No tremor. No interference.' (L75). Resonance bond: quality not content (L49), wall reducing signal to 'thin, aching pulse' (L49). All consistent with MAG-007.",
+        "SCN-51": "New dissolution mechanics through intelligence channels. L167: substrate thinning exposes binding anchor structure. L169: Lirien's internal verification \u2014 'the binding anchored in ordered reality, and where reality thinned, the anchor points surfaced like stones at low tide.' Three independent sources with different epistemic foundations: defected Architect (technical), Pallor scholar (environmental), field operative (empirical) \u2014 L173. Satisfies Sanderson's First Law: dissolution rules established Ch18 before Ch20-21 use.",
+        "SCN-52": "Cipher destruction correctly treated as symbolic, not magical: L223: 'the faint iridescence died as the magical component discharged into the air.' Binding persists. No deus ex machina."
+      },
+      "notes": "Magic system compliance excellent. Binding enforcement rules in SCN-50 drive the plot engine (absence of resistance = proof of agency). Dissolution mechanics in SCN-51 introduced through credible channels, verified by domain expertise. Sanderson's First Law satisfied for Ch20-21 payoffs."
+    },
+    "T12": {
+      "status": "pass",
+      "evidence": {
+        "SCN-50": "Both arcs fused in Oathbrand proof. Fantasy (binding mechanics analysis) and romance (agency recovery) are inseparable \u2014 the same data point serves both arcs simultaneously.",
+        "SCN-51": "Fantasy arc dominant: Ashborne network, god-seal dissolution intelligence, contract vulnerability, secondary operative threat. Romance linkage: L179: 'The dissolution requires both of you.' L181: 'The mission and the freedom were the same destination.' Reunion required by both arcs.",
+        "SCN-52": "Full convergence: L213: 'Toward the seal, toward the dissolution, toward the woman.' Fantasy destination (Quietus) and romantic destination (Kaelith) identical. Cipher destruction serves both: identity severance (romance) and operational pivot (fantasy)."
+      },
+      "notes": "Structurally elegant dual-arc interleave. SCN-50 is romance-heavy with fantasy infrastructure. SCN-51 is fantasy-heavy with romance implications. SCN-52 converges both into one direction. Neither arc goes silent. Balance across chapter is approximately 55/45 fantasy/romance \u2014 on target per genre balance weights."
+    },
+    "T13": {
+      "status": "pass",
+      "evidence": {
+        "SCN-50": "Internal tension via analytical death-spiral. Rising through compounding ambiguity, peaking at L91 ('But this.'), resolving with breakthrough. Register: existential/internal.",
+        "SCN-51": "External/operational tension. Threat assessment from first footstep (L107). Blade drawn. Trap hypothesis sustained throughout. Register: spy-thriller.",
+        "SCN-52": "Resolution energy. Tension settles into determined clarity. Forward pull via L253: 'Lirien did not know if she would be welcome.' Uncertainty about reception sustains micro-tension."
+      },
+      "notes": "Tension level 6 (recovery valley) correctly targeted and maintained. Three-scene tension shape provides excellent variation: internal-spiral \u2192 external-threat \u2192 resolution-action. Each register distinct, preventing monotony within the valley. No dead spots detected. Even the densest analytical passages maintain underlying tension through unresolved questions. Proper falloff from Ch17 (level 8) without flattening."
+    },
+    "T15": {
+      "status": "pass",
+      "evidence": {
+        "payoffs": [
+          {
+            "id": "FS-008",
+            "desc": "Oathbrand removal (planted Ch8/paid Ch11) \u2014 secondary payoff as agency proof",
+            "location": "L53-97",
+            "quote": "Binding directive: prevent. Actual action: performed... Free choice. Confidence: high.",
+            "quality": "Chapter centrepiece. Exceptionally strong."
+          }
+        ],
+        "plants": [
+          {
+            "id": "FS-021",
+            "desc": "God-seal dissolution \u2014 binding destabilises where Pallor substrate thins",
+            "location": "L161-167",
+            "payoffTarget": "Ch21"
+          },
+          {
+            "id": "FS-022",
+            "desc": "Defected Court Architect \u2014 survived 12 years without Lessening",
+            "location": "L173-175",
+            "payoffTarget": "Ch20-21"
+          },
+          {
+            "id": "FS-013-prog",
+            "desc": "Ashborne network makes direct contact \u2014 former soldiers watching exile",
+            "location": "L131-185",
+            "payoffTarget": "Ch22"
+          },
+          {
+            "id": "FS-023",
+            "desc": "Bond carries intention north \u2014 first positive transmission since separation",
+            "location": "L243-247",
+            "payoffTarget": "Ch19"
+          },
+          {
+            "id": "FS-024",
+            "desc": "Cipher destruction as identity death \u2014 Court assumptions invalidated",
+            "location": "L221-235",
+            "payoffTarget": "Ch20-21"
+          }
+        ]
+      },
+      "notes": "All 6 foreshadowing elements (1 secondary payoff, 5 plants) present and correctly placed in prose. FS-008 secondary payoff is the chapter centrepiece. FS-021/FS-022 establish dissolution mechanics well before Ch20-21 payoffs (Sanderson's First Law via foreshadowing). No unregistered payoffs or orphan plants detected."
+    },
+    "T16": {
+      "status": "pass",
+      "evidence": {
+        "MOT-003_water": {
+          "count": 11,
+          "instances": [
+            "L37: 'water with nowhere to drain' \u2014 stagnation/grief trapped",
+            "L47: 'A current she had thought was desire might be a channel the Court had carved' \u2014 danger",
+            "L47: 'She could not tell the difference from inside the flow' \u2014 immersion",
+            "L67: 'ink from black to a colour closer to deep water' \u2014 visual",
+            "L99: 'like groundwater finding its level after a flood' \u2014 clarity after crisis",
+            "L169: 'anchor points surfaced like stones at low tide' \u2014 exposure",
+            "L173: 'the way a current erodes a riverbank' \u2014 dissolution",
+            "L181: 'smooth inevitability of water filling a container' \u2014 tactical reality settling",
+            "L195: 'settling through her like sediment through still water' \u2014 intelligence integrating",
+            "L243: 'a river's sound changes when the water beneath the surface finds a new channel' \u2014 direction change",
+            "L263: 'The two currents ran together' \u2014 convergence"
+          ],
+          "evolution": "Stagnation \u2192 danger \u2192 depth \u2192 clarity \u2192 exposure \u2192 erosion \u2192 settling \u2192 direction \u2192 convergence. Genuine evolution tracking the emotional arc."
+        },
+        "MOT-001_pallor": {
+          "count": 5,
+          "instances": [
+            "L21: 'thinning silver'",
+            "L167: substrate thinning exposition",
+            "L207: 'Pallor's silver-grey illumination'",
+            "L249: 'worn places showing patches of the true sky'",
+            "L259: 'light had a quality that was almost honest'"
+          ]
+        },
+        "MOT-002_oathbrand": "Entire proof sequence (L53-97) \u2014 inverted from wound-that-will-not-heal to wound-that-was-chosen-to-be-healed as proof of agency.",
+        "MOT-004_quietus": {
+          "count": 2,
+          "instances": [
+            "L201: body-knowledge parallel (hands comparison)",
+            "L249: destination as possibility"
+          ]
+        },
+        "MOT-005_ythara": "Absent \u2014 acceptable for personal-agency chapter without cosmic threat.",
+        "structural_motif": "Classification framework: established SCN-50 (10 formal entries), destroyed SCN-52 (L229: 'Classification: unnecessary. Status: destroyed. New classification: Lirien Dael. Unaffiliated.'). Motif arc mirrors character arc."
+      },
+      "notes": "Water motif standout: 11 instances with genuine evolution. Oathbrand inverted powerfully. Pallor and Quietus at appropriate density. Classification framework as chapter-specific structural motif is sophisticated. ADMINISTRATIVE NOTE: symbolic-motif-registry.json has no Ch18 entries \u2014 craft-tracker should update."
+    },
+    "T17": {
+      "status": "pass",
+      "evidence": {
+        "classificationFramework": "10 formal Decision/Probability/Classification entries in SCN-50 plus final destruction L229. No other character structures thought through this architecture.",
+        "waterMetaphors": "11 water/current/flood/sediment instances. Zero stone/architecture/fortification metaphors (Kaelith's domain). Metaphor domains cleanly separated.",
+        "classifiedBeforeFelt": "L139: 'interest, controlled, with underlying caution at a ratio of approximately three to one.' L169: 'she classified this as hope, provisional, requiring verification before integration.' Emotions become data before feelings.",
+        "operativeVocabulary": "'target,' 'contract architecture,' 'compliance window,' 'field assessment,' 'dead-drop network,' 'threat profiles,' 'intelligence-briefing cadence,' 'three-channel verification' \u2014 intelligence vocabulary permeates.",
+        "bodyLanguageReading": "L115: military bearing under civilian posture. L139: pulse adjusted, classified. L157: micro-tensions around eyes, jaw set, breathing. L185: loyalty under sustained discipline. Lirien reads people the way Kaelith reads fortifications.",
+        "emotionalPlainness": "Maximum emotion, minimum complexity: 'She was choosing the love.' (L265). 'She had it.' (L97). 'But this.' (L91).",
+        "sentenceRhythm": "Mixed analytical: medium sentences with field-note fragments ('Not hope. Clarity.' L99; 'Operative protocols. Muscle memory.' L113; 'Triangulation.' L177). Distinct from Ch17 Kaelith (70%+ short percussive under 10 words)."
+      },
+      "notes": "Voice fingerprinting exceptional. Lirien identifiable within the opening line. Consistent across all three emotional registers: devastation (SCN-50), operational alertness (SCN-51), quiet liberation (SCN-52). The classification framework evolving from instrument of destruction to instrument of liberation is a masterful voice-as-character-arc device."
+    },
+    "T18": {
+      "status": "pass",
+      "evidence": {
+        "SCN-50": "Bond information correctly handled. Quality not content (L49). Kaelith's direction change perceived through wall with appropriate uncertainty: L51: 'An edge in the signal. Alertness, or purpose, or the particular quality of someone who had made a decision they were not yet willing to name.' Consistent with Ch17 parallel events.",
+        "SCN-51": "Major asymmetry created. Lirien gains 6 items Kaelith does not have: (1) Ashborne network exists (L185), (2) dissolution possible at Quietus (L167), (3) both required at seal (L179), (4) defected Architect survived (L173-175), (5) Court authorised escalation (L155), (6) Kaelith has hidden allies \u2014 'She believes she's alone' (L185). Aligned with FACT-016, FACT-017, FACT-018.",
+        "SCN-52": "Bond carries intention (L243-247) \u2014 new asymmetry. Kaelith feels quality shift but cannot interpret cause. Knowledge from SCN-51 correctly sourced in decisions (L213, L249)."
+      },
+      "notes": "Six-item information asymmetry creation in SCN-51 is strongly executed with clean knowledge-source chain. All items verified against information-asymmetry-map.json facts. Bond mechanics respect MAG-007 throughout."
+    },
+    "T20": {
+      "status": "pass",
+      "evidence": {
+        "startState": "Paralytic self-doubt. L35: 'Lirien did not know if she had ever chosen anything.' Intensity: high.",
+        "progression": [
+          "Methodical despair \u2192 analytical death-spiral (L17-47): each 'ambiguous' erodes ground",
+          "Bond pulse registered, filed without classification (L49-51)",
+          "Oathbrand entry \u2014 fierce hope: 'Free choice. Confidence: high.' (L83)",
+          "Clarity: 'Not hope. Clarity.' (L99) \u2014 analysis complete, one variable verified",
+          "Operative snap-to: 'The paralysis that had held her dissolved' (L111)",
+          "Controlled assessment: 'interest, controlled, with underlying caution at a ratio of approximately three to one' (L139)",
+          "Isolation cracks: 'A hairline fracture in the sealed surface of the aloneness' (L187)",
+          "Tactical clarity: 'The mission and the freedom were the same destination.' (L181)",
+          "Intelligence settling: 'like sediment through still water' (L195)",
+          "Deliberate clarity: 'She knew what she wanted.' (L211)",
+          "Surgical liberation: 'Lirien felt nothing the Court had designed her to feel.' (L227)",
+          "Determined choice: 'She was choosing the love.' (L265)"
+        ],
+        "endState": "Determined clarity. Intensity: 7. First clean emotion since the black moment.",
+        "chapterBoundaryTransition": "Ch17 'uncontrolled grief' (intensity 9) \u2192 Ch18 'determined clarity' (intensity 7) \u2192 Ch19 'determined honesty' (intensity 7). Meaningful, earned progression.",
+        "emotionalVariety": "12 distinct emotional beats across 3 scenes. No state repeated. Each earned through the preceding one."
+      },
+      "notes": "The 12-beat emotional progression from paralysis through death-spiral through breakthrough through operative alertness through isolation-cracking through tactical clarity through determined choice is the chapter's masterwork. Matches planned throughline exactly. Emotional variety high."
+    },
+    "T21": {
+      "status": "pass",
+      "evidence": {
+        "SCN-50": "Oathbrand removal retroactively identified as foundational VL step: L93: 'she had chosen to place her hands on the wound and heal it.' Predates bond, kiss, intimacy. Foundational vulnerability proved through analytical rigour.",
+        "SCN-51": "Accepting alliance from stranger. L191: 'I do not trust you.' Not trust \u2014 provisional utility. But isolation cracked (L187). Small VL step: choosing to receive intelligence after being shaped by an institution that weaponised trust.",
+        "SCN-52": "Cipher destruction as identity death: L235: 'That operative was dead. Not Lessened \u2014 dead by choice.' Walking toward Kaelith without safety net of operational framing (L253-255). Without guarantee of welcome."
+      },
+      "notes": "Three ascending VL steps: retroactive proof of foundational vulnerability (past) \u2192 provisional trust of strangers (present) \u2192 voluntary identity death and walking toward uncertain reception (future). Each higher-stakes than the last."
+    },
+    "T23": {
+      "status": "pass",
+      "evidence": {
+        "answered": {
+          "MB-012": "Can Lirien distinguish binding from feeling? Partially answered: one verified free choice, most decisions remain ambiguous. L89: 'Not proof that everything was free. But proof that free choice is possible within the cage.' Honest partial answer."
+        },
+        "advanced": {
+          "MB-008": "God-seal dissolution as new pathway (L167). Three independent sources confirm. Advances from theoretical to architecturally confirmed.",
+          "MB-011": "Trust rebuilding: Lirien walks north with proof of agency; bond carries intention. L255: walking toward a conversation she cannot control. Materials assembled, reception uncertain."
+        },
+        "seeded": "Defected Architect identity (L173) \u2014 new minor question for Ch20.",
+        "activeCountAfterCh18": 11,
+        "targetRange": "3-7",
+        "rangeNote": "Above target. Systemic for conspiracy-heavy dual-arc structure, acknowledged in inventory. Not a Ch18-specific issue. Chapter correctly reduces count by 1 (closing MB-012)."
+      },
+      "notes": "MB-012 answered with sophisticated honesty \u2014 partial resolution more credible than clean answer. MB-008 advanced with second dissolution pathway. Active count of 11 exceeds target but is inherited from Ch16 density."
+    },
+    "T24": {
+      "status": "pass",
+      "evidence": {
+        "dialogueCount": 20,
+        "dialogueScene": "SCN-51 (L127-193)",
+        "keySubtextGaps": [
+          {
+            "line": 131,
+            "surface": "'Someone who remembers what the Ashborne Fourth was before the empire decided it was a disgrace.'",
+            "subtext": "Identification through loyalty. Uses 'was before' \u2014 the official narrative is a lie and we both know it."
+          },
+          {
+            "line": 149,
+            "surface": "'The commander planned crossings at that table.'",
+            "subtext": "Still uses 'commander' \u2014 not 'disgraced officer,' not 'exile.' Loyalty outlasted institutional narrative. Room holds Kaelith's history."
+          },
+          {
+            "line": 157,
+            "surface": "'What do you know that I do not?'",
+            "subtext": "Surface: tactical demand. Subtext: 'I know exactly what I am.' The 'I' not 'we' \u2014 isolation audible."
+          },
+          {
+            "line": 167,
+            "surface": "'At the god-seal. The Quietus.'",
+            "subtext": "He lets silence carry the implication. Freedom and mission converge at same location."
+          },
+          {
+            "line": 185,
+            "surface": "'She believes she's alone.'",
+            "subtext": "Four layers: (1) we've watched with disciplined restraint, (2) you're not alone either, (3) the isolation could be broken, (4) the belief is wrong. Highest subtext density in chapter."
+          },
+          {
+            "line": 191,
+            "surface": "'I do not trust you.' / 'I wouldn't either.'",
+            "subtext": "Two people shaped by trust-weaponising institutions, recognising the architecture in each other. Precision of statement IS the vulnerability."
+          },
+          {
+            "line": 193,
+            "surface": "'Your direction is north. Same as hers.'",
+            "subtext": "Acknowledging the love without naming it. 'Same as hers' \u2014 he knows why she'd walk north, and it isn't just the mission."
+          }
+        ]
+      },
+      "notes": "Every substantive exchange in SCN-51 operates on at least two levels. 'She believes she's alone' is the chapter's highest-density subtext line. 'I do not trust you' / 'I wouldn't either' is mirrored recognition of institutional damage. SCN-50 and SCN-52 have no present-tense dialogue (internal monologue and action) \u2014 T24 applies to SCN-51 only, where it is strongly executed."
+    },
+    "T25": {
+      "status": "pass",
+      "evidence": {
+        "TP3_chosenVsOnly": {
+          "SCN-50": "Individual proof: L83: 'Free choice. Confidence: high.' If one free choice verified, capacity exists. The argument: freedom isn't absence of the cage but ability to choose within it.",
+          "SCN-51": "Collective broadening: L189: 'She was not the only one who had chosen against an institution that claimed ownership. There were others. A network. People who had found doors in the cage and used them.' Defiance as pattern, not anomaly.",
+          "SCN-52": "Exercise of choice: L263: 'She was choosing this. The same direction the binding demanded. The same direction love demanded.' Proving she can choose against, then choosing toward. Cage open \u2014 walks through freely."
+        },
+        "TP1_trust": "Rebuilt from single verified data point. Ashborne tests trust with stranger \u2014 result: verified utility, not trust. L191: 'I do not trust you.' Self-trust as prerequisite for offering trust to others.",
+        "TP2_rightChoice": "Court's 'right choices' (efficient, obedient) vs. Lirien's right choice now: defiance (L221: cipher destroyed), following love over orders (L265), walking toward uncontrollable conversation (L255). Cost: identity, institutional belonging, certainty.",
+        "embodiment": "All three pillars dramatised through action, never stated as theme. Lirien PROVES choice through analysis, DEMONSTRATES defiance through cipher destruction, EXERCISES free will by walking north."
+      },
+      "notes": "TP3 (Chosen vs. Only) drives the entire three-scene arc: prove (SCN-50) \u2192 discover others have proved it too (SCN-51) \u2192 exercise (SCN-52). Individual-to-collective broadening in SCN-51 is elegant. All three pillars advanced through action. The chapter embodies its argument rather than arguing it."
+    }
+  },
+  "violations": [],
+  "minorObservations": [
+    {
+      "id": "OBS-001",
+      "tool": "T16",
+      "severity": "administrative",
+      "description": "symbolic-motif-registry.json has no Ch18 entries recorded. Water motif (11 instances with evolution), Oathbrand inversion, Pallor (5), Quietus (2), threshold, and classification-framework appearances need registration by craft-tracker.",
+      "impact": "Downstream agents referencing registry for Ch18 motif data will find nothing. Does not affect prose quality.",
+      "action": "Craft-tracker should update registry."
+    },
+    {
+      "id": "OBS-002",
+      "tool": "T5",
+      "severity": "minor",
+      "description": "Three-channel processing passage (L169-177) packs substantial magical exposition into internal monologue. Approaches boundary of 'expository/pedagogical' forbidden register. Saved by Lirien's voice-consistent analytical framing and the emotional channel ('she classified this as hope, provisional, requiring verification before integration').",
+      "impact": "None \u2014 passage is within bounds. Watchpoint for similar passages in Ch20-21 where dissolution mechanics require further exposition.",
+      "location": "L169-177"
+    },
+    {
+      "id": "OBS-003",
+      "tool": "T23",
+      "severity": "systemic",
+      "description": "Active mystery box count at 11 after Ch18 exceeds 3-7 target range. This is a plot-level density issue inherited from Ch16's peak of 15 active boxes, not a Ch18 failure. Ch18 correctly closes MB-012 (net reduction by 1). Inventory acknowledges this as acceptable for conspiracy-heavy dual-arc structure.",
+      "impact": "Reader may track more threads than optimal. Mitigated by structured convergence in Ch20-22 where 9 boxes close."
+    }
+  ],
+  "strongestApplications": [
+    "T20 \u2014 Emotional Throughline: 12-beat progression from paralytic self-doubt through analytical death-spiral through operative alertness through isolation-cracking to determined choice. Every beat earned. No state repeated.",
+    "T17 \u2014 Voice Fingerprinting: Classification framework IS the narrative structure. Voice identity inseparable from story mechanism. Identifiable from the opening line. Consistent across devastation, operational alertness, and quiet liberation.",
+    "T24 \u2014 Subtext in Dialogue: SCN-51 intelligence exchange operates on multiple levels throughout. 'She believes she's alone' carries four subtext layers in five words."
+  ],
+  "correctionNote": "Replaces incorrect previous report that falsely claimed SCN-51 was missing. All 3 scenes independently verified present: SCN-50 (L15-104, self-interrogation), SCN-51 (L107-195, Ashborne intelligence with 20 dialogue lines), SCN-52 (L199-267, cipher destruction and walk north). The prior error was caused by a sed command stripping content between --- markers, which removed SCN-51 along with YAML frontmatter because the scene-break delimiter is identical to the YAML delimiter. This report is based on a complete line-by-line reading of all 267 lines.",
+  "summary": "PASS \u2014 all 16 active craft tools independently verified and compliant across 3 scenes (48 tool-scene checks performed). Zero violations. 3 minor observations: (1) motif registry needs administrative update for Ch18; (2) L169-177 magical exposition approaches but does not breach T5 forbidden register; (3) active mystery box count at 11 exceeds 3-7 target (systemic, not Ch18-specific). Chapter is among the manuscript's best work: SCN-50's self-interrogation mechanism is intellectually rigorous and emotionally devastating, SCN-51's intelligence exchange balances operational tension with thematic subtext, and SCN-52 earns its liberation through proof rather than declaration.",
+  "timestamp": "2026-03-18T14:11:43Z",
+  "agent": "craft-enforcer",
+  "iteration": 2,
+  "verificationMethod": "Independent re-verification. Draft read in full via view tool (5 segments covering all 267 lines). Scene breaks confirmed via grep -n '^---$'. All 16 tools checked against all 3 scenes with specific line-number evidence."
+}

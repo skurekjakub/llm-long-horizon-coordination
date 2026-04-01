@@ -1,0 +1,213 @@
+{
+  "chapter": 21,
+  "title": "What the Stone Remembers",
+  "overallAssessment": "needs-correction",
+  "continuityScore": 8,
+  "findings": [
+    {
+      "id": "CI-021-001",
+      "type": "issue",
+      "severity": "major",
+      "category": "physical-details",
+      "description": "Tessen Vael is referred to with female pronouns ('She met Kaelith's eyes') in ch21 line 158. However, Tessen is consistently male throughout ch11 (he/him/his used ~15 times: 'He sat on a stool,' 'He sat in the far corner with his back angled toward them,' 'a man who understood,' etc.) and CHAR-006.json uses masculine pronouns throughout ('his own terms,' 'a man who knew terrain,' 'his old oath').",
+      "reference": "chapters/011/draft.md (lines 24, 42, 58, 60, 102, 110, 114, 156, 160, 184, 218, 250, 252), characters/CHAR-006.json (psychologicalProfile, arc, voiceFingerprint — all use he/him/his)",
+      "location": "ch21 line 158: 'She met Kaelith's eyes and nodded once.'",
+      "recommendation": "Change 'She met Kaelith's eyes' to 'He met Kaelith's eyes' on line 158. Ensure all Tessen references in ch21 use he/him/his pronouns consistent with ch11 and CHAR-006.json.",
+      "invariantViolated": "INV-002 (Internal Consistency), INV-011 (Continuity Tracking)"
+    },
+    {
+      "id": "CI-021-002",
+      "type": "issue",
+      "severity": "major",
+      "category": "physical-details",
+      "description": "Pallor silver on Kaelith's arm is described as 'tracking the line of the ulna from wrist to elbow' in ch21 line 34 (BEFORE seal work). However, ch20 establishes the silver has ALREADY climbed past the elbow: 'The Pallor had climbed past her elbow and was tracking bone' (ch20 line 18) and the continuity tracker confirms 'silver past elbow' as of ch20. The ch21 pre-seal description implies the silver only reaches the elbow, which is a regression from the established progression. Post-seal, the silver 'thinned' (ch21 line 136), which is narratively consistent with seal stabilization — but the initial description should show the silver PAST the elbow.",
+      "reference": "chapters/020/draft.md line 18, continuity-tracker.json characterPositions.CHAR-001 ('silver past elbow, three fingers frozen left hand, cold tracking bone along ulna')",
+      "location": "ch21 line 34: 'The silver thread on her left forearm — the Pallor's permanent claim on her body, tracking the line of the ulna from wrist to elbow'",
+      "recommendation": "Revise to acknowledge the silver has spread past the elbow. Suggestion: 'The silver thread on her left arm — the Pallor's permanent claim, having climbed past her elbow and still tracking bone — pulsed in response to the proximity of the thing behind the seal.' This maintains the established progression while preserving the prose rhythm.",
+      "invariantViolated": "INV-002 (Internal Consistency), INV-016 (Continuity Verification)"
+    },
+    {
+      "id": "CI-021-003",
+      "type": "issue",
+      "severity": "major",
+      "category": "timeline",
+      "description": "The draft states Thenndal walked Kaelith through the path 'twelve years ago' (ch21 line 28). However, world-bible/magic-system.json (kineticMemoryAndTheQuietusPath) and world-bible/history.json both establish the walk occurred in ~YK 734. The current story year is YK 742, making the walk ~8 years ago, not 12.",
+      "reference": "world-bible/magic-system.json (kineticMemoryAndTheQuietusPath: 'walked through the path in YK 734'), world-bible/history.json ('~YK 734: Ossya Thenndal walks Kaelith to the Quietus')",
+      "location": "ch21 line 28: 'The knowledge Ossya Thenndal had planted in her twelve years ago'",
+      "recommendation": "Change 'twelve years ago' to 'eight years ago' to match the established timeline (YK 734 to YK 742).",
+      "invariantViolated": "INV-002 (Internal Consistency), INV-016 (Continuity Verification)"
+    },
+    {
+      "id": "CI-021-004",
+      "type": "concern",
+      "severity": "moderate",
+      "category": "location",
+      "description": "The chapter opens at 'Serath Dún' and places the god-seal / Quietus chamber inside it. However, geography.json defines Serath Dún (LOC-010) and The Quietus (LOC-013) as separate locations with Rivenmarch (LOC-011) and the Unwalked Reach (LOC-012) between them — approximately 70-100+ miles of intervening terrain. Furthermore, as of ch20 the characters were at a 'forward shelter between Rivenmarch and Quietus,' already PAST Rivenmarch. Entering Serath Dún would mean traveling backwards (east) rather than forward (west) to the Quietus. The Quietus is described in geography.json as 'not a building but an absence' with 'no weather, no temperature, no atmospheric condition' — features that differ significantly from the ch21 chamber (which has carvings, temperature changes, luminescence, and sound). The draft's Serath Dún entrance description does match the geography's LOC-010 ('gate cut into raw stone, flanked by figures eroded beyond identification, threshold worn smooth'), but the subsequent 'Quietus chamber' doesn't match LOC-013.",
+      "reference": "world-bible/geography.json LOC-010 (Serath Dún), LOC-013 (The Quietus), connectivity chain LOC-010→LOC-011→LOC-012→LOC-013, continuity-tracker.json ch20 position ('forward shelter between Rivenmarch and Quietus')",
+      "location": "ch21 lines 8-14 (Serath Dún entrance), lines 44-46 (Quietus chamber description)",
+      "recommendation": "Two options: (1) Replace 'Serath Dún' with the Quietus approach from the Unwalked Reach, updating the entrance description to match the geography's LOC-013 qualities (stillness, absence, sourceless light). (2) Establish in the world-bible that Serath Dún's deepest chambers connect underground to the Quietus (update LOC-010 connectedTo to include LOC-013, and add a route LOC-010_to_LOC-013 describing the deep underground connection). Option 2 preserves the draft's excellent Serath Dún entrance prose. Either way, the geography needs to be reconciled with the narrative.",
+      "invariantViolated": "INV-002 (Internal Consistency)"
+    },
+    {
+      "id": "CI-021-005",
+      "type": "concern",
+      "severity": "minor",
+      "category": "timeline",
+      "description": "Iryse's testimony states 'beginning in Year of the Keel 726' and 'Eighteen years of my stewardship, corrupted.' If the current year is YK 742, then YK 742 - YK 726 = 16 years, not 18. The two-year discrepancy could be intentional (Iryse may be accounting for pre-modification work, or the story's events may extend into YK 744), but the arithmetic doesn't match the established current year.",
+      "reference": "world-bible/magic-system.json (current year YK 742), world-bible/history.json (YK 742 as present)",
+      "location": "ch21 line 190: 'beginning in Year of the Keel 726' and 'Eighteen years of my stewardship, corrupted'",
+      "recommendation": "Either change 'Eighteen years' to 'Sixteen years' (matching YK 742 - YK 726), or change 'Year of the Keel 726' to 'Year of the Keel 724' (matching 742 - 18). Alternatively, if Iryse is rounding or accounting for different starting conditions, add a brief qualifier.",
+      "invariantViolated": "INV-002 (Internal Consistency)"
+    },
+    {
+      "id": "CI-021-006",
+      "type": "concern",
+      "severity": "minor",
+      "category": "naming",
+      "description": "Thalen Reyvas is identified as 'Seventh Seat' in ch21, which is consistent with all previous chapter references (ch10, ch12, ch13, ch15, ch19) but inconsistent with world-bible/politics.json, which designates Thalen as 'Sixth Seat — Fae Relations and Border Diplomacy.' The Seventh Seat in politics.json is held by Vairen Ethis (Archives and Knowledge Stewardship). This is a pre-existing cross-document discrepancy already noted in the continuity-tracker.json naming registry. Ch21 correctly follows the chapter-established convention.",
+      "reference": "world-bible/politics.json (lines 38-40: Sixth Seat, lines 43/146: Seventh Seat = Vairen Ethis), continuity-tracker.json namingConsistency",
+      "location": "ch21 line 50: 'The Seventh Seat of the High Conclave', ch21 line 166: 'Seventh Seat of the High Conclave'",
+      "recommendation": "No change needed in ch21 (internally consistent with all chapters). However, world-bible/politics.json should be updated globally to resolve this cross-document discrepancy — either Thalen should be Seventh Seat in politics.json, or all chapters should use Sixth Seat.",
+      "invariantViolated": "INV-002 (pre-existing, not introduced by ch21)"
+    },
+    {
+      "id": "CI-021-007",
+      "type": "concern",
+      "severity": "minor",
+      "category": "naming",
+      "description": "Thalen Reyvas is referred to with he/him/his pronouns throughout ch21 ('a man completing work,' 'He was not hiding,' 'his magic'). This is consistent with all previous chapters (ch12, ch15, ch19) but inconsistent with world-bible/politics.json, which uses they/them for Thalen. This is a pre-existing cross-document discrepancy.",
+      "reference": "world-bible/politics.json (uses 'they/them' for Thalen Reyvas), chapters/012/draft.md, chapters/015/draft.md (use he/him)",
+      "location": "Multiple lines in ch21 (50, 102, 170, etc.)",
+      "recommendation": "No change needed in ch21 (internally consistent with all chapters). politics.json should be updated to align with the established chapter convention.",
+      "invariantViolated": "INV-002 (pre-existing, not introduced by ch21)"
+    },
+    {
+      "id": "CI-021-008",
+      "type": "verified",
+      "severity": "n/a",
+      "category": "physical-details",
+      "description": "Three frozen fingers on Kaelith's left hand correctly maintained. Referenced in ch21 line 118 ('The three frozen fingers on her left hand — the Pallor's permanent mark — burned with a cold that reached into the bone') and line 136 ('all ten of them, including the three the Pallor had claimed'). Consistent with ch19 ('three fingers refusing to close') and ch20 ('Three fingers on that hand had not moved since they arrived').",
+      "reference": "chapters/019/draft.md line 33, chapters/020/draft.md lines 18, 70, continuity-tracker.json"
+    },
+    {
+      "id": "CI-021-009",
+      "type": "verified",
+      "severity": "n/a",
+      "category": "knowledge-state",
+      "description": "Bond description as 'clean, sharp, the signal-without-static quality' correctly reflects the post-dissolution state established in ch20 ('a signal without static,' 'no static, no interference'). The bond is correctly depicted as a resonance bond (emotional/presence transmission) without binding compulsion. No contract enforcement references.",
+      "reference": "chapters/020/draft.md lines 184, 200, emotional-throughline.json ch20 bondState"
+    },
+    {
+      "id": "CI-021-010",
+      "type": "verified",
+      "severity": "n/a",
+      "category": "knowledge-state",
+      "description": "Thalen Reyvas correctly identified by name. Kaelith has known Thalen's identity since ch12 (Lirien briefed her on Seep intelligence identifying the authorization chain converging on the Seventh Seat, lines 136-144) and ch15 (named explicitly: 'Thalen Reyvas,' line 33). Ch19 further discusses Thalen by name as the saboteur. The information-asymmetry-map FACT-007 entry ('unknownBy: CHAR-001, CHAR-002') appears outdated and should be updated to reflect knowledge gained in ch12-15.",
+      "reference": "chapters/012/draft.md lines 118-144, chapters/015/draft.md lines 33-49, chapters/019/draft.md, information-asymmetry-map.json FACT-007"
+    },
+    {
+      "id": "CI-021-011",
+      "type": "verified",
+      "severity": "n/a",
+      "category": "knowledge-state",
+      "description": "Kaelith's Warden capacity knowledge correctly handled. She has known about Warden-lineage capacity since ch4 (Lirien's briefing: 'I think you possess Warden-lineage capacity,' line 210), about kinetic memory since ch4-5, and about Thenndal's role since ch4. The ch21 line 28 reference to 'The last Warden passing the key to the last keeper' is a reasonable real-time deduction as kinetic memory activates, consistent with established knowledge. FACT-006 in info-asymmetry-map is outdated.",
+      "reference": "chapters/004/draft.md line 210, chapters/005/draft.md lines 178-192, chapters/019/draft.md line 325, information-asymmetry-map.json FACT-006"
+    },
+    {
+      "id": "CI-021-012",
+      "type": "verified",
+      "severity": "n/a",
+      "category": "knowledge-state",
+      "description": "Defected Court Architect reference is consistent. Kaelith learned about the defected Architect in ch19 (line 221: Lirien shares intelligence, line 313: Kaelith asks 'Twelve years without Lessening. How?'). The ch21 reference to 'Testimony from the defected Architect who had survived inside the conspiracy' is consistent with Kaelith's knowledge state.",
+      "reference": "chapters/019/draft.md lines 221, 313, 325, 337, information-asymmetry-map.json FACT-018"
+    },
+    {
+      "id": "CI-021-013",
+      "type": "verified",
+      "severity": "n/a",
+      "category": "location",
+      "description": "Eight Ashborne veterans correctly maintained. Ch19 explicitly states 'Eight veterans. Here. Organised.' (line 83). Ch21 references 'Eight of them — the same eight who had organized the Rivenmarch relay' (line 154). Count is consistent.",
+      "reference": "chapters/019/draft.md line 83, continuity-tracker.json ch19 events"
+    },
+    {
+      "id": "CI-021-014",
+      "type": "verified",
+      "severity": "n/a",
+      "category": "timeline",
+      "description": "Three-day travel time from ch20 to ch21 is consistent. Ch20 ends with 'Three days. The saboteur is still operating. The god-seal still needs reinforcement.' Ch21 references 'the woman who had stopped her heart and restarted it three days ago' (line 78). Ch20 was Day ~31-32, making ch21 Day ~34-35 — consistent timeline.",
+      "reference": "chapters/020/draft.md final paragraphs, continuity-tracker.json ch20 timeline"
+    },
+    {
+      "id": "CI-021-015",
+      "type": "verified",
+      "severity": "n/a",
+      "category": "magic-rules",
+      "description": "Warden seal reinforcement mechanics follow established world rules. The seal is described as 'architecture at the boundary between what existed and what might — a wall built from certainty itself' (line 90), and Kaelith reinforces it through conviction/certainty rather than raw magical power. This is consistent with: MAG-001 (requires will/intent), MAG-002 (working WITH natural processes — the seal wants to hold), MAG-006 (kinetic memory bypasses Pallor), and the kineticMemoryAndTheQuietusPath description. The Warden's function is described as 'not to fight the god but to affirm the wall' (line 94) — consistent with established lore. No deus ex machina: all abilities (kinetic memory, Warden capacity, combat magic restored post-Oathbrand removal) were established in earlier chapters.",
+      "reference": "world-bible/magic-system.json (MAG-001, MAG-002, MAG-006, kineticMemoryAndTheQuietusPath, protagonistPowerLevels)",
+      "invariantViolated": "None — INV-009 (No Deus Ex Machina) satisfied"
+    },
+    {
+      "id": "CI-021-016",
+      "type": "verified",
+      "severity": "n/a",
+      "category": "magic-rules",
+      "description": "Ythara's nature correctly described as 'not malice but potential, not hatred but becoming, the raw force of everything that might exist if the world unraveled' (line 90). Consistent with MAG-009 ('Ythara's influence unravels permanence') and the ytharasInfluence description ('not destruction but incompletion'). Ythara is contained, not destroyed — consistent with the sealed nature.",
+      "reference": "world-bible/magic-system.json (MAG-009, ytharasInfluence)"
+    },
+    {
+      "id": "CI-021-017",
+      "type": "verified",
+      "severity": "n/a",
+      "category": "physical-details",
+      "description": "Oathbrand correctly referenced as removed. Ch21 line 86 mentions 'the Oathbrand's years of suppression' and 'the brand's removal in that quiet room where Lirien's hands had freed her' — correctly placing the removal in ch11 at Tessen Vael's location. Line 162 references 'maintenance orders that had kept Kaelith's Oathbrand burning fresh five years past its dissolution date' — arithmetic is correct (applied YK 736, should dissolve YK 737, current year YK 742 = 5 years past).",
+      "reference": "chapters/011/draft.md, world-bible/magic-system.json (brand applied YK 736)"
+    },
+    {
+      "id": "CI-021-018",
+      "type": "verified",
+      "severity": "n/a",
+      "category": "emotional-continuity",
+      "description": "Emotional continuity from ch20 to ch21 is maintained. Ch20 ends with Kaelith in 'fierce tenderness' redirecting to mission. Ch21 opens with focused determination ('mission is clear, partnership restored, walking into purpose'), matching the emotional-throughline.json ch21 entry: 'fierce resolve' as dominant emotion. The transition is natural — the tenderness of ch20's ending channels into purposeful resolve at ch21's opening. Lirien's emotional state also follows correctly: ch20's 'focused devotion' transitions to ch21's 'fierce loyalty.'",
+      "reference": "emotional-throughline.json (CHAR-001 ch20: 'absolute trust' → ch21: 'fierce resolve'; CHAR-002 ch20: 'focused devotion' → ch21: 'fierce loyalty')"
+    },
+    {
+      "id": "CI-021-019",
+      "type": "verified",
+      "severity": "n/a",
+      "category": "naming",
+      "description": "All character names, place names, and magical terms are spelled consistently with established conventions: Kaelith Maren, Lirien (unnamed in POV per convention), Thalen Reyvas, Ossya Thenndal, Iryse, Tessen Vael, Sedara, Oathbrand, Pallor, Quietus, Serath Dún, Rivenmarch, Ythara the Unfinished, Ashborne, kinetic memory, resonance bond.",
+      "reference": "continuity-tracker.json namingConsistency"
+    },
+    {
+      "id": "CI-021-020",
+      "type": "verified",
+      "severity": "n/a",
+      "category": "knowledge-state",
+      "description": "Iryse's revelation handled consistently. FACT-011 (Iryse unknowingly served as sabotage vector through corrupted Dimming rites) had resolvedChapter: 21 in the dramatic irony points. The draft shows Iryse arriving with the devastation of someone who has 'just understood how completely she was used' — the information-asymmetry resolution is implicit (she was informed as part of assembling the evidence chain) and her on-screen testimony provides the public resolution.",
+      "reference": "information-asymmetry-map.json FACT-011, dramaticIronyPoints entry for FACT-011"
+    }
+  ],
+  "timelineVerification": "PASS with one correction needed. The three-day travel from ch20 to ch21 is consistent (Day ~34-35). The 'three days ago' reference to heart-stopping matches ch20 timeline. However, the Thenndal walk is dated incorrectly as 'twelve years ago' when it should be ~8 years ago per established YK 734 timeline. Additionally, Iryse's stewardship duration (18 years from YK 726) doesn't match the current year YK 742 (should be 16 years).",
+  "knowledgeStateVerification": "PASS. All character knowledge states are consistent with what has been revealed in prior chapters. Kaelith correctly identifies Thalen (known since ch12/15), references the defected Architect (learned ch19), understands her Warden capacity (learned ch4), and uses kinetic memory (established ch4-5). The bond is correctly described as post-dissolution (clean/sharp/signal-without-static). One note: FACT-006 and FACT-007 in the information-asymmetry-map appear outdated and should be updated to reflect knowledge gained in ch4-15, but this is a tracker maintenance issue, not a draft issue.",
+  "bondMechanicsVerification": "PASS. All bond references correctly reflect the post-dissolution state: 'clean, sharp, the signal-without-static quality that had persisted since the binding's dissolution' (line 22). The bond transmits emotional presence (Lirien's attention, cold fury, exhaustion, satisfaction) but NOT thoughts or factual content — consistent with MAG-007. No references to compulsion, enforcement, or binding obligation. The bond is explicitly described as 'freely chosen' multiple times. Lirien's fighting is described as 'not the binding's compulsion, not the Court's directive, but the freely chosen decision.'",
+  "physicalDetailsVerification": "NEEDS CORRECTION. Three frozen fingers on left hand: correctly maintained (lines 118, 136). Pallor silver on forearm: inconsistent — described as 'wrist to elbow' but should be 'past elbow' per ch20. Post-seal thinning of silver is narratively appropriate but the initial description needs updating. Tessen Vael pronouns: incorrectly uses 'She' instead of 'He' (line 158). Lirien's shoulder burn is a new wound from Thalen's magic in this chapter — no pre-existing wound conflict.",
+  "namingConsistencyVerification": "PASS with pre-existing notes. All names spelled consistently within ch21 and across chapters. Two pre-existing cross-document discrepancies (Thalen: Seventh vs Sixth Seat, he/him vs they/them in politics.json) are noted but are not introduced by ch21 — ch21 follows the established chapter convention.",
+  "magicSystemCompliance": "PASS. Warden seal reinforcement operates through certainty/conviction, consistent with established rules (MAG-001 will-based magic, MAG-002 working with natural processes, MAG-006 kinetic memory). Ythara described as incompatible potential, not evil (MAG-009). No new abilities introduced without establishment. Kaelith's Tier 4 restored capacity (per protagonistPowerLevels progression) used appropriately for seal-scale work. Lirien's Tier 4 combat magic used to intercept Thalen's attacks — consistent with her specialization. No deus ex machina (INV-009 satisfied).",
+  "foreshadowingPayoffVerification": "PASS. All 9 claimed foreshadowing payoffs verified against foreshadowing-ledger.json: FS-001 (Oathbrand maintenance — planted ch1, exposed ch21 ✓), FS-002 (Pallor failure — planted ch1, revealed as forty-year poisoning ✓), FS-005 (Quietus paradox — planted ch2, kinetic memory guides them ✓), FS-006 (Warden inheritance — planted ch5, confirmed through Thenndal connection ✓), FS-009 (Ythara — planted ch2, seal reinforced, waking prevented ✓), FS-010 (Conclave saboteur — planted ch12, Thalen exposed with witnesses ✓), FS-016 (Iryse testimony — planted ch12, Iryse testifies as witness ✓), FS-018 (Thenndal connection — planted ch5, revealed as last Warden who planted kinetic memory ✓), FS-021 (god-seal confrontation — planted ch18, mechanism proves real ✓). All payoffs reference established plants.",
+  "mysteryBoxClosureVerification": "PASS. All 6 claimed mystery box closures verified against mystery-box-inventory.json: MB-001 (Oathbrand maintenance by Thalen ✓), MB-002 (Thalen as Pallor poisoner via corrupted Dimming rites ✓), MB-003 (Thenndal walked Kaelith as routine patrol exercise = Warden transmission ✓), MB-004 (Ythara as incompatible raw potential, not evil ✓), MB-009 (Quietus as seal built from certainty, requiring Warden affirmation ✓), MB-010 (Thenndal as last official Warden who died within a month of transmitting the path ✓). All closures are consistent with how the boxes were opened and progressively revealed.",
+  "emotionalContinuityVerification": "PASS. Kaelith's emotional arc flows naturally from ch20's absolute trust / fierce tenderness to ch21's fierce resolve. The emotional-throughline.json specifies ch21 dominant emotion as 'fierce resolve' at intensity 9, triggered by 'Quietus approach, confronting Thalen, preventing Ythara's full waking.' The draft matches this precisely. Kaelith enters with focused determination, moves through awe/urgency at the seal, transcendent effort during seal work, and exits with exhausted earned satisfaction. Lirien's emotional arc parallels correctly: fierce loyalty → protective combat → proud exhaustion. No emotional discontinuity at chapter boundaries.",
+  "correctionsNeeded": [
+    "CI-021-001: Change Tessen Vael pronoun from 'She' to 'He' on line 158",
+    "CI-021-002: Update Pallor silver description on line 34 to reflect silver past elbow (not merely wrist-to-elbow)",
+    "CI-021-003: Change 'twelve years ago' to 'eight years ago' on line 28 (Thenndal walk: YK 734 to YK 742)",
+    "CI-021-004: Reconcile Serath Dún / Quietus geographic naming — either update draft location or update geography.json connectivity",
+    "CI-021-005: Fix Iryse stewardship duration arithmetic — either '16 years' or change starting year to YK 724"
+  ],
+  "trackerUpdatesNeeded": [
+    "information-asymmetry-map.json FACT-006: Update unknownBy to remove CHAR-001 (Kaelith learned about Warden capacity from ch4)",
+    "information-asymmetry-map.json FACT-007: Update unknownBy to remove CHAR-001 and CHAR-002 (both learned Thalen's identity by ch12/15)",
+    "world-bible/politics.json: Resolve Sixth Seat vs Seventh Seat discrepancy for Thalen Reyvas (align with chapter convention)",
+    "world-bible/politics.json: Resolve they/them vs he/him pronouns for Thalen Reyvas (align with chapter convention)"
+  ],
+  "timestamp": "2025-07-18T02:15:00Z"
+}

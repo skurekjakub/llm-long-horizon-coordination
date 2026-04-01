@@ -1,0 +1,274 @@
+{
+  "version": 1,
+  "timestamp": "2026-03-18T13:50:22Z",
+  "queriesExecuted": [
+    "API reference prerequisite/dependency documentation best practices",
+    "permission matrix and requirement table presentation patterns",
+    "cross-referencing strategies for scattered security information",
+    "writing how-to documentation for multi-layer authorization models",
+    "callout and warning patterns for security gotchas and pit-of-failure scenarios",
+    "step-by-step instruction formatting for dual-audience administrative tasks",
+    "notice/admonition type selection and overuse prevention",
+    "global audience writing tips for complex technical permission documentation"
+  ],
+  "sourcesConsulted": [
+    {
+      "url": "https://developers.google.com/style/api-reference-comments",
+      "title": "API reference code comments — Google Developer Documentation Style Guide",
+      "sourceId": "SRC-001",
+      "retrievedAt": "2026-03-18T13:50:22Z",
+      "useful": true,
+      "contentSummary": "Comprehensive guidance on documenting API methods including prerequisites/dependencies, what happens when dependencies are missing, and parameter documentation patterns. Key insight: 'Document any dependencies that are needed to call the method, and how the method behaves if such a dependency is missing.'"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/style-guide/procedures-instructions/writing-step-by-step-instructions",
+      "title": "Writing step-by-step instructions — Microsoft Writing Style Guide",
+      "sourceId": "SRC-003",
+      "retrievedAt": "2026-03-18T13:50:22Z",
+      "useful": true,
+      "contentSummary": "Formatting procedures for scanability, using headings to indicate purpose, location-first phrasing ('On the Design tab, select Header Row'), limiting to 7 steps, and using imperative verb forms."
+    },
+    {
+      "url": "https://diataxis.fr/how-to-guides/",
+      "title": "How-to guides — Diátaxis documentation framework",
+      "sourceId": "SRC-002",
+      "retrievedAt": "2026-03-18T13:50:22Z",
+      "useful": true,
+      "contentSummary": "How-to guides are goal-oriented, address real-world complexity, and must be written from user perspective not machinery perspective. Key guidance on conditional imperatives ('If you want x, do y'), omitting unnecessary detail, and maintaining focus on the user's goal."
+    },
+    {
+      "url": "https://developers.google.com/style/tables",
+      "title": "Tables — Google Developer Documentation Style Guide",
+      "sourceId": "SRC-001",
+      "retrievedAt": "2026-03-18T13:50:22Z",
+      "useful": true,
+      "contentSummary": "Use tables when each item has 3+ related data dimensions. Introduce tables with complete sentences describing purpose. Sort rows in logical order. Don't merge cells. Use description lists for term/definition pairs."
+    },
+    {
+      "url": "https://developers.google.com/style/notices",
+      "title": "Notes, cautions, warnings, and other notices — Google Developer Documentation Style Guide",
+      "sourceId": "SRC-001",
+      "retrievedAt": "2026-03-18T13:50:22Z",
+      "useful": true,
+      "contentSummary": "Notice type selection: Note for non-critical aside; Caution for 'proceed carefully'; Warning for irreversible consequences or security risks. Don't overuse notices. Don't use notes for prerequisites. Don't group multiple notices together."
+    },
+    {
+      "url": "https://developers.google.com/style/cross-references",
+      "title": "Cross-references and linking — Google Developer Documentation Style Guide",
+      "sourceId": "SRC-001",
+      "retrievedAt": "2026-03-18T13:50:22Z",
+      "useful": true,
+      "contentSummary": "Choose links selectively — each adds cognitive load. Provide context on the page before linking elsewhere. Avoid duplicate links to same destination. Write descriptive link text. Use 'For more information, see...' pattern."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/style-guide/accessibility/accessibility-guidelines-requirements",
+      "title": "Accessibility guidelines and requirements — Microsoft Writing Style Guide",
+      "sourceId": "SRC-003",
+      "retrievedAt": "2026-03-18T13:50:22Z",
+      "useful": false,
+      "contentSummary": "Overview page with only links to sub-pages (writing for all abilities, colors/patterns, graphics/media). Insufficient actionable content for this task."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/style-guide/global-communications/writing-tips",
+      "title": "Writing tips for a global audience — Microsoft Writing Style Guide",
+      "sourceId": "SRC-003",
+      "retrievedAt": "2026-03-18T13:50:22Z",
+      "useful": true,
+      "contentSummary": "Short simple sentences. Replace complex sentences with lists and tables. Include articles and 'that'/'who' for clarity. Use one word for a concept consistently. Avoid modifier stacks and culture-specific references."
+    }
+  ],
+  "recommendations": [
+    {
+      "id": "REC-001",
+      "topic": "Prerequisite-Read rule warning callout",
+      "recommendation": "Document the prerequisite-Read rule (granting Update/Create/Delete without Read has no effect) using a Warning callout, not a Note or Info. This matches the 'Warning' severity level because it describes a scenario where the user's action produces no visible error but silently fails — a classic 'pit of failure' pattern. Google's notice guidance specifies Warning for scenarios where 'the reader can lose work' or encounter security-relevant failures. The callout should state the consequence explicitly: 'Granting [permission] without Read has no effect — the user cannot access page tabs without Read permission.'",
+      "source": "https://developers.google.com/style/notices",
+      "sourceId": "SRC-001",
+      "status": "approved",
+      "applicableTo": ["page-permission-management"],
+      "invariantCheck": {
+        "compatible": ["INV-style-138", "INV-style-141", "INV-style-072", "INV-style-139"],
+        "noConflict": true,
+        "notes": "INV-style-138 defines callout severity order (tip → info → note → warning); a pit-of-failure scenario with silent permission failure correctly aligns with 'warning' severity. INV-style-072 explicitly encourages WARN callouts for customer pitfalls. INV-style-139 requires a bold title on callouts — the warning should include a title such as '**Read permission is a prerequisite**'. INV-style-140 prohibits writing the callout type name inside the box, so do not write 'Warning:' inside a warning callout."
+      }
+    },
+    {
+      "id": "REC-002",
+      "topic": "Permission requirement table for operation-to-permission mapping",
+      "recommendation": "Present the mapping of page operations (Create, Update/Save/Publish, Delete, Unpublish) to their required ACL permissions using a structured table with columns: Operation, Required ACL permission(s), Read prerequisite (Yes/No), and Notes. Tables are the appropriate format because each operation maps to 3+ related data dimensions. Introduce the table with a complete sentence describing its purpose (e.g., 'The following table lists the ACL permissions required for each page operation.'). Sort rows in operational lifecycle order (Read → Create → Update → Delete), not alphabetically.",
+      "source": "https://developers.google.com/style/tables",
+      "sourceId": "SRC-001",
+      "status": "adapted",
+      "applicableTo": ["page-permission-management"],
+      "invariantCheck": {
+        "compatible": ["INV-style-107", "INV-style-111"],
+        "noConflict": false,
+        "adaptation": "INV-jekyll-001 requires all tables to use existing Liquid table syntax (not HTML or Markdown table syntax). The Google guidance is format-agnostic and transfers directly to Liquid syntax. INV-jekyll-026 supports colspan/rowspan in table cells, so the Google recommendation to 'don't merge cells' is relaxed — use colspan/rowspan only if it genuinely improves readability (e.g., grouping operations that share identical permission requirements).",
+        "adaptedFrom": "Google's recommendation to avoid merged cells (colspan/rowspan) conflicts with INV-jekyll-026 which explicitly supports them. Adapted: prefer flat rows but permit merge where it prevents repetition."
+      }
+    },
+    {
+      "id": "REC-003",
+      "topic": "Explicit consequence documentation for missing prerequisites",
+      "recommendation": "For each operation's permission documentation, explicitly state what happens when the prerequisite is not met. Google's API reference guidance says: 'Document any dependencies that are needed and how the method behaves if such a dependency is missing.' Applied to permissions: state that without Read permission, the user cannot access page editing tabs at all (WebPageBase.ConfigurePage enforces Read). For Create, state that the permission is checked against the parent page, not the page being created. These are behavioral facts that prevent user confusion.",
+      "source": "https://developers.google.com/style/api-reference-comments",
+      "sourceId": "SRC-001",
+      "status": "approved",
+      "applicableTo": ["page-permission-management", "edit-and-publish-pages"],
+      "invariantCheck": {
+        "compatible": ["INV-structure-037", "INV-structure-038", "INV-structure-011"],
+        "noConflict": true,
+        "notes": "INV-structure-037 says to 'mention prerequisites at the beginning of an article or section' and 'assume a happy path but mention prerequisites'. This recommendation operationalizes that invariant for the specific permission prerequisite. INV-structure-038 says to 'describe end results' at the end of each section. INV-structure-011 says pages should work for both new and returning users — explicitly stating consequences serves new users who don't know the system."
+      }
+    },
+    {
+      "id": "REC-004",
+      "topic": "Conditional imperatives for dual-audience permission guidance",
+      "recommendation": "When the same permission concept applies differently to developers and business users, use conditional imperatives from the Diátaxis framework: 'If you configure page permissions through the admin UI, see [page-permission-management]. If you need to check permissions programmatically, see [ui-page-permission-checks].' This addresses the dual-audience requirement without duplicating content or mixing persona vocabularies on a single page.",
+      "source": "https://diataxis.fr/how-to-guides/",
+      "sourceId": "SRC-002",
+      "status": "approved",
+      "applicableTo": ["page-permission-management", "edit-and-publish-pages", "workflows"],
+      "invariantCheck": {
+        "compatible": ["TINV-001", "INV-persona-016", "INV-persona-012", "INV-persona-002"],
+        "noConflict": true,
+        "notes": "TINV-001 requires covering both developer and business user scenarios. INV-persona-016 says not to mix terminology between personas — conditional routing avoids this by directing each audience to their relevant section/page. INV-persona-012 requires understanding the persona before writing. INV-persona-002 specifies persona assignment strategy."
+      }
+    },
+    {
+      "id": "REC-005",
+      "topic": "Descriptive cross-reference link text for permission pages",
+      "recommendation": "When cross-referencing from 'Edit and publish pages' or 'Workflows' to the permission management page, use descriptive link text that tells the reader what they'll find (e.g., 'page permission requirements' or 'permission prerequisites for page operations') rather than vague text. Google's guidance: 'Write link text that makes sense without the surrounding text.' Avoid duplicate links to the same destination within a page — place the cross-reference once at the most relevant location.",
+      "source": "https://developers.google.com/style/cross-references",
+      "sourceId": "SRC-001",
+      "status": "approved",
+      "applicableTo": ["edit-and-publish-pages", "workflows"],
+      "invariantCheck": {
+        "compatible": ["INV-crossref-009", "INV-crossref-002", "INV-crossref-003", "INV-crossref-005"],
+        "noConflict": true,
+        "notes": "INV-crossref-009 already requires clear, descriptive link text and forbids 'click here'. INV-crossref-002 specifies the page_link syntax that must be used. INV-crossref-003 requires verifying the identifier against actual frontmatter. INV-crossref-005 requires verifying anchors exist on target pages. All compatible — Google's guidance reinforces these existing invariants."
+      }
+    },
+    {
+      "id": "REC-006",
+      "topic": "Contextual introduction before permission detail sections",
+      "recommendation": "Before presenting the permission requirement table or per-operation sections, provide a brief contextual introduction explaining the multi-layer permission model: (1) application-level permission (SystemPermissions.VIEW), (2) page-level ACL permissions (Read, Create, Update, Delete), and (3) workflow step restrictions. This follows both Google's cross-reference guidance ('provide context on the page rather than linking elsewhere') and Microsoft's tip to 'replace complex sentences with lists'. A 2-3 sentence introduction with a bullet list of the three layers gives readers the conceptual framework before diving into specifics.",
+      "source": "https://developers.google.com/style/cross-references",
+      "sourceId": "SRC-001",
+      "status": "approved",
+      "applicableTo": ["page-permission-management"],
+      "invariantCheck": {
+        "compatible": ["INV-structure-034", "INV-structure-035", "INV-structure-009", "TINV-002"],
+        "noConflict": true,
+        "notes": "INV-structure-034 specifies article structure as 'Title, Introduction, Body'. INV-structure-035 requires writing an introduction for context. INV-structure-009 says articles should be independent — this introduction makes the page self-contained. TINV-002 says the information is currently scattered and needs a unified access point — a contextual introduction on the permission management page serves this purpose."
+      }
+    },
+    {
+      "id": "REC-007",
+      "topic": "Location-first phrasing for permission-related UI instructions",
+      "recommendation": "When describing how to configure permissions in the admin UI, lead with the location/context before the action: 'In the **Page permissions** tab, select the role to configure' rather than 'Select the role to configure in the Page permissions tab.' Microsoft's step-by-step guidance explicitly recommends this pattern. This is especially important for permission documentation where users navigate through multiple UI layers.",
+      "source": "https://learn.microsoft.com/en-us/style-guide/procedures-instructions/writing-step-by-step-instructions",
+      "sourceId": "SRC-003",
+      "status": "approved",
+      "applicableTo": ["page-permission-management", "edit-and-publish-pages"],
+      "invariantCheck": {
+        "compatible": ["INV-style-134", "INV-style-073", "INV-style-129"],
+        "noConflict": true,
+        "notes": "INV-style-134 already requires leading with conditions/circumstances before instructions — this recommendation directly operationalizes that invariant for the permission UI context. INV-style-073 requires bold for UI element names. INV-style-129 requires input-agnostic interaction verbs (Select, Open, etc.)."
+      }
+    },
+    {
+      "id": "REC-008",
+      "topic": "Limit callouts to prevent notice fatigue in permission sections",
+      "recommendation": "Limit callouts (warnings, notes, info boxes) to a maximum of 2-3 per page section in the permission documentation. Google's notice guidance warns: 'When you use multiple notices on a page, they begin to lose their visual distinctiveness.' The permission documentation could easily accumulate callouts for each edge case (Read prerequisite, workflow restrictions, channel admin bypass, etc.). Prioritize the single most critical warning (the Read prerequisite pit-of-failure) and integrate other caveats into flowing prose or the permission table's Notes column.",
+      "source": "https://developers.google.com/style/notices",
+      "sourceId": "SRC-001",
+      "status": "approved",
+      "applicableTo": ["page-permission-management"],
+      "invariantCheck": {
+        "compatible": ["INV-style-138", "INV-style-141", "INV-style-111"],
+        "noConflict": true,
+        "notes": "INV-style-138 and INV-style-141 govern callout type selection and prohibit misuse. INV-style-111 says 'be as concise as possible and focus on what is necessary' — limiting callouts supports conciseness. No invariant mandates a minimum number of callouts, so limiting them is compatible."
+      }
+    },
+    {
+      "id": "REC-009",
+      "topic": "Prerequisites as introductory text, not callout content",
+      "recommendation": "State permission prerequisites (especially the Read requirement for other permissions) as introductory text before procedural content, not inside callout boxes. Google's notice guidance explicitly says: 'Don't use notes to tell the reader about prerequisites or about steps they should have taken earlier. Information like this should precede the step.' The Read prerequisite should appear as the first paragraph or a key-points callout at the section opening, not buried mid-section in a Note.",
+      "source": "https://developers.google.com/style/notices",
+      "sourceId": "SRC-001",
+      "status": "adapted",
+      "applicableTo": ["page-permission-management"],
+      "invariantCheck": {
+        "compatible": ["INV-structure-037", "INV-structure-036"],
+        "noConflict": false,
+        "adaptation": "INV-structure-036 recommends using a 'Key points' callout (tip box with bold title) for longer articles. The Read prerequisite could qualify as a key point. Adaptation: the prerequisite should appear BOTH as introductory text and optionally in a 'Key points' tip callout at the top of the section — this satisfies both Google's 'don't bury prerequisites in notes' and the invariant's 'Key points' pattern. The crucial distinction: use a tip-type 'Key points' callout at the top (per INV-structure-036), not a mid-section Note.",
+        "adaptedFrom": "Google says never put prerequisites in callouts. INV-structure-036 recommends 'Key points' tip callout for important concepts. Adapted: prerequisites go in introductory text AND in a top-of-section Key points tip, but never in mid-section Note callouts."
+      }
+    },
+    {
+      "id": "REC-010",
+      "topic": "Use consistent terminology for permission concepts across pages",
+      "recommendation": "Use one term per concept consistently across all permission documentation pages: 'page permission' (not 'ACL permission' or 'access control' interchangeably), 'permission prerequisite' (not 'dependency' or 'requirement' interchangeably), 'channel administrator' (not 'channel admin' mixed with 'website admin'). Microsoft's global writing tips state: 'Use one word for a concept, and use it consistently. Avoid using synonyms to refer to the same concept.' This is critical when permission concepts span multiple pages (page-permission-management, edit-and-publish-pages, workflows).",
+      "source": "https://learn.microsoft.com/en-us/style-guide/global-communications/writing-tips",
+      "sourceId": "SRC-003",
+      "status": "approved",
+      "applicableTo": ["page-permission-management", "edit-and-publish-pages", "workflows"],
+      "invariantCheck": {
+        "compatible": ["INV-style-118", "INV-persona-007", "INV-taxonomy-005"],
+        "noConflict": true,
+        "notes": "INV-style-118 already requires consistency: 'use the same term every time, avoid unnecessary synonyms.' INV-persona-007 says to 'expect non-native English speakers — use simple, ordinary words.' INV-taxonomy-005 defines admin interface terminology ('Xperience administration' full form, 'admin UI' for developer docs). This recommendation reinforces existing invariants and extends them to the permission-specific vocabulary."
+      }
+    }
+  ],
+  "blockedRecommendations": [
+    {
+      "id": "REC-B01",
+      "topic": "Use 'How to' prefixes in permission section titles",
+      "recommendation": "Diátaxis recommends titles like 'How to configure page permissions for publishing.' The project invariants explicitly prohibit this pattern.",
+      "source": "https://diataxis.fr/how-to-guides/",
+      "sourceId": "SRC-002",
+      "status": "blocked",
+      "blockedBy": "INV-style-100",
+      "conflict": "INV-style-100 says 'Do not use How to prefixes in page titles.' Diátaxis recommends 'How to...' titles for how-to guides. The invariant prevails — use imperative verb phrases instead (e.g., 'Configure page permissions for publishing')."
+    },
+    {
+      "id": "REC-B02",
+      "topic": "Use em dashes for parenthetical asides in permission explanations",
+      "recommendation": "Google style guide uses em dashes in example text. The project prohibits em dashes entirely.",
+      "source": "https://developers.google.com/style/api-reference-comments",
+      "sourceId": "SRC-001",
+      "status": "blocked",
+      "blockedBy": "INV-style-090",
+      "conflict": "INV-style-090 states 'Em dash is not used at all in Kentico documentation.' INV-style-096 requires all dashes use '--' representation. Use parentheses, en dashes, or sentence restructuring instead."
+    },
+    {
+      "id": "REC-B03",
+      "topic": "Add a 'Next steps' section linking to related permission topics",
+      "recommendation": "Several style guides recommend linking forward to next steps at the end of procedural documentation.",
+      "source": "https://diataxis.fr/how-to-guides/",
+      "sourceId": "SRC-002",
+      "status": "blocked",
+      "blockedBy": "INV-structure-002",
+      "conflict": "INV-structure-002 says 'Never add a Next steps section to existing documentation pages or new pages in the documentation collection unless specifically requested.' Use in-context cross-references instead."
+    },
+    {
+      "id": "REC-B04",
+      "topic": "Use HTML table formatting with semantic th elements and scope attributes",
+      "recommendation": "Google's table guidance recommends HTML table best practices including th elements, scope attributes, and CSS-based styling.",
+      "source": "https://developers.google.com/style/tables",
+      "sourceId": "SRC-001",
+      "status": "blocked",
+      "blockedBy": "INV-jekyll-001",
+      "conflict": "INV-jekyll-001 requires 'Tables must always use the existing Liquid table syntax' and INV-jekyll-002 requires using 'the Liquid tag alternative whenever one exists for native Markdown syntax.' HTML tables are not permitted — the project uses its own Liquid table component."
+    }
+  ],
+  "summary": {
+    "approved": 8,
+    "blocked": 4,
+    "adapted": 2,
+    "totalRecommendations": 14,
+    "sourcesConsulted": 8,
+    "queriesExecuted": 8
+  }
+}

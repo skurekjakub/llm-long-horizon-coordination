@@ -1,0 +1,211 @@
+{
+  "storyId": "001",
+  "chapterNum": 16,
+  "reportType": "copy-edit",
+  "generatedAt": "2025-07-30T10:00:00Z",
+  "sourceArtifact": "chapters/016/draft.md",
+  "referenceArtifacts": [
+    "continuity/continuity-tracker.json",
+    "world-bible/geography.json",
+    "world-bible/magic-system.json",
+    "world-bible/culture.json",
+    "characters/index.json",
+    "characters/CHAR-001.json",
+    "characters/CHAR-002.json",
+    "plot/chapter-outlines/chapter-016.json",
+    "style/style-guide.json",
+    "chapters/014/draft.md",
+    "chapters/015/draft.md"
+  ],
+  "summary": "Chapter 16 is exceptionally clean for copy-edit purposes. All 25+ proper nouns verified correct against continuity tracker and world-bible: character names (Lirien Dael, Kaelith Maren, Hand of the Third Reach, Ashborne Fourth), place names (the Narrowing, the Pallor, Aranthem, Calwrath, the Quietus), and magical terms (Seep, Lessened/Lessening, Oathbrand, resonance bond) all match established spellings. The kill contract document (lines 28-34) introduces new formal designations (Hand of the Third Reach, Ashborne Fourth, Series VII Entry 44) that are internally consistent and already registered in the continuity tracker. Bond mechanics strictly compliant with MAG-007: the bond transmits emotional quality (terror, guilt, devastation, pain) but NOT specific thoughts — line 56 explicitly reinforces this rule. Information asymmetry correctly managed: Kaelith learns about the active contract through reading the document, not through the bond. Timeline (early morning, day after ch15) aligns with the continuity tracker and ch15's ending. Magic system fully compliant — no new abilities, contract mechanics consistent with MAG-005 and fae binding rules. Dialogue formatting correct throughout (em dashes for self-interruptions, proper speech tag punctuation). Past tense maintained consistently. British spelling convention maintained with one exception (line 104). Pronoun clarity maintained well despite both characters being female — names and context disambiguate throughout. 8 findings total: 0 critical, 0 major, 1 moderate (spelling inconsistency), 7 minor (1 anachronism, 2 formatting, 2 factual notes, 1 bond-mechanics presentation concern, 1 cross-manuscript discrepancy note).",
+  "findingCounts": {
+    "total": 8,
+    "bySeverity": {
+      "critical": 0,
+      "major": 0,
+      "moderate": 1,
+      "minor": 7
+    },
+    "byCategory": {
+      "naming": 0,
+      "timeline": 0,
+      "factual": 3,
+      "grammar": 0,
+      "formatting": 3,
+      "anachronism": 1,
+      "note": 1
+    }
+  },
+  "findings": [
+    {
+      "id": "COPY-016-001",
+      "severity": "moderate",
+      "category": "formatting",
+      "description": "Inconsistent British/American spelling of the same word within four lines. Line 100 uses 'recontextualised' (British, with 's') while line 104 uses 'recontextualized' (American, with 'z'). All other instances of British spelling convention in the chapter are correct: 'labelled' (L16), 'recognised' (L102, L126), 'categorised' (L178), 'defences' (L180), 'practised' (L188), 'colour' (L202). Line 104 is the sole deviation and is conspicuous given the correct British form appears four lines earlier.",
+      "lineRef": "Line 104",
+      "quotedText": "Now she felt it recontextualized.",
+      "correction": "Change 'recontextualized' to 'recontextualised' to match the British spelling convention used throughout the manuscript and the identical word on line 100.",
+      "sourceRef": "Line 100 ('recontextualised'), style/style-guide.json — implicit British convention confirmed by consistent usage across all chapters"
+    },
+    {
+      "id": "COPY-016-002",
+      "severity": "minor",
+      "category": "anachronism",
+      "description": "The phrase 'supply chains' (line 178) is 20th-century supply management terminology, formalized in modern logistics theory. The full phrase is 'the same administrative precision they used for supply chains and kill orders and the procurement of a woman's blood.' While deployed within a passage describing Court administrative systems — which ARE explicitly bureaucratic — the term carries a modern professional register that briefly breaks the fantasy voice. The ch15 copy edit flagged an analogous issue ('cost-benefit analysis').",
+      "lineRef": "Line 178",
+      "quotedText": "supply chains and kill orders",
+      "correction": "Consider replacing with vocabulary native to the world's administrative framework: 'supply requisitions and kill orders,' 'supply logistics and kill orders,' or 'provisioning lines and kill orders.' Any of these preserves the bureaucratic cadence while avoiding a distinctly modern compound noun.",
+      "sourceRef": "INV-018 (No Anachronisms), style/style-guide.json — vocabularyStandards.avoid ('modern slang or contemporary internet phrasing')"
+    },
+    {
+      "id": "COPY-016-003",
+      "severity": "minor",
+      "category": "formatting",
+      "description": "Paragraph at line 36 contains approximately 7 sentence-units: 'The message continued. (1) Details of the binding ceremony — the specific ritual, the preparations consumed, the words spoken in the Court's administrative cadence that turned the consumption of another person's blood into a procedural matter indistinguishable from a property transfer. (2) The physiological enforcement mechanism — how the binding would begin to unmake Lirien if she failed to complete the contract, dissolving her piece by piece into something called *Lessened*: a state, not a creature. (3) An absence wearing the shape of what had been removed. (4) A timeline. (5) A risk assessment. (6) Clinical language applied to the systematic machinery of death, formatted in the same structure the Court used for boundary adjustments and supply requisitions. (7)' The style guide specifies a maximum of 6 sentences per paragraph 'unless the prose is carrying sustained interior logic or ceremonial cadence.' The passage IS summarizing the bureaucratic content of a Court document, and the stacking of short fragments ('A timeline. A risk assessment.') creates a deliberate clinical rhythm, so the exception arguably applies. Flagging for awareness.",
+      "lineRef": "Line 36",
+      "quotedText": "The message continued. Details of the binding ceremony [...] boundary adjustments and supply requisitions.",
+      "correction": "Consider inserting a paragraph break after 'An absence wearing the shape of what had been removed.' — separating the description of the binding's mechanism from the summary of the document's tone. Alternatively, accept as-is under the sustained-interior-logic exception given the passage's deliberate clinical cadence.",
+      "sourceRef": "style/style-guide.json — paragraphLengthGuidelines.maximumWithoutBreak"
+    },
+    {
+      "id": "COPY-016-004",
+      "severity": "minor",
+      "category": "formatting",
+      "description": "Paragraph at line 134 contains approximately 7 sentence-units describing Kaelith's packing: 'Lirien stood in the doorway and watched, because the alternative was to speak, and every word she had constructed in the last four minutes had arrived dead. (1) Kaelith moved through the shelter with military efficiency — each item assessed, stowed with the economy of a soldier who had lost everything before and learned to carry only what she could afford to abandon. (2) Bedroll. Knife. The evidence folio. (3, fragments) Her movements were precise and unhurried, the discipline of retreat applied to personal devastation: no energy wasted, no gesture that served an emotional purpose rather than a logistical one. (4) Lirien had watched Kaelith work enough mornings to know the difference between her efficient and her defended. (5) This was defended. (6) Every action controlled because the alternative was to feel what the actions meant. (7)' The style guide specifies a maximum of 6 sentences without break. The passage's content is powerful but dense.",
+      "lineRef": "Line 134",
+      "quotedText": "Lirien stood in the doorway and watched [...] what the actions meant.",
+      "correction": "Consider inserting a paragraph break after 'The evidence folio.' — the inventory ('Bedroll. Knife. The evidence folio.') naturally concludes a visual beat, and separating the observed action from Lirien's interpretive assessment ('Lirien had watched Kaelith work enough mornings...') creates two focused paragraphs: one showing Kaelith packing, one showing Lirien reading the packing.",
+      "sourceRef": "style/style-guide.json — paragraphLengthGuidelines.maximumWithoutBreak"
+    },
+    {
+      "id": "COPY-016-005",
+      "severity": "minor",
+      "category": "factual",
+      "description": "The italicized passage on line 96 — '*Her blood. Used without her knowledge. Built into the binding that held the woman she had trusted against her.*' — presents specific propositional content as if received through the bond. This follows 'Through the bond: a flare — white, sharp, something that lived between violation and disbelief' (correctly emotional). The emotional quality is properly bond-delivered, but the italicized specifics ('Her blood. Used without her knowledge.') could be misread as the bond transmitting Kaelith's specific thoughts, contradicting the rule restated on line 56: 'the bond did not carry specifics. The quality.' Context makes clear Lirien is INFERRING the specifics from watching Kaelith's eyes reach the blood-ceremony section of the document (she knows the document's contents), but the presentation risks ambiguity.",
+      "lineRef": "Line 96",
+      "quotedText": "*Her blood. Used without her knowledge. Built into the binding that held the woman she had trusted against her.*",
+      "correction": "Consider adding a brief attribution that frames the italicized text as Lirien's inference rather than bond-transmission. E.g., preceding the italics with 'Lirien could read what the flare meant—' or appending 'Lirien supplied the words the bond had not:' before the italicized passage. Alternatively, accept as-is, noting that the immediately preceding emotional descriptor ('a flare — white, sharp, something that lived between violation and disbelief') correctly establishes the bond-delivered quality, and readers familiar with the rule will parse the italics as Lirien's projection.",
+      "sourceRef": "Line 56 ('the bond did not carry specifics. The quality.'), world-bible/magic-system.json MAG-007 (bond transmits emotional states, not thoughts)"
+    },
+    {
+      "id": "COPY-016-006",
+      "severity": "minor",
+      "category": "factual",
+      "description": "Two details in ch16 are not established in prior chapters: (1) 'The healing salve Lirien had mixed for her bruised ribs' (line 140) — ch14 shows Lirien examining Kaelith's ribs (ch14 L114: 'Fingers mapping the ribs through skin. Third and fourth on the left') and ch15 references ongoing rib pain (ch15 L23, L77), but neither chapter mentions Lirien preparing a healing salve. (2) 'The scarf she had used as a pillow against Lirien's shoulder two hours ago' (line 140) — ch15 describes Kaelith settling 'against Lirien's shoulder' (ch15 L187) but no scarf appears in ch15. Both details are plausible off-page events (the salve could have been mixed between chapters, the scarf an ordinary possession), but their first appearance in ch16 at the moment they are being symbolically abandoned makes them read as newly invented props for the separation scene rather than details continuous from prior chapters.",
+      "lineRef": "Line 140",
+      "quotedText": "The healing salve Lirien had mixed for her bruised ribs, placed beside the cold fire. The scarf she had used as a pillow against Lirien's shoulder two hours ago",
+      "correction": "Two options: (A) Accept both details as plausible off-page events and note them in the continuity tracker for future reference. (B) Establish one or both in ch15's revision — a brief mention of Lirien mixing a salve for the ribs (a natural extension of ch14's examination scene) and/or Kaelith's scarf (as part of the sleeping-together scene) would make their ch16 appearance feel like continuity rather than invention. Option B is recommended for the salve, which has a natural insertion point in ch15's post-evidence-consolidation downtime.",
+      "sourceRef": "chapters/014/draft.md (L114 — rib examination, no salve), chapters/015/draft.md (L187 — shoulder scene, no scarf)"
+    },
+    {
+      "id": "COPY-016-007",
+      "severity": "minor",
+      "category": "note",
+      "description": "The existing manuscript-wide discrepancy DISC-001 (Thalen Reyvas seat number: world-bible/politics.json assigns Sixth Seat, all chapter drafts use Seventh Seat consistently) does not appear in chapter 16 and requires no action here. The discrepancy remains unresolved at the world-bible level. Additionally, the ch15 copy edit flagged 'Ytharan revivalists' as a new term for continuity tracking — this term does not appear in ch16.",
+      "lineRef": "N/A",
+      "quotedText": "N/A",
+      "correction": "No action needed for ch16. DISC-001 resolution remains a world-bible-level task.",
+      "sourceRef": "continuity/continuity-tracker.json — openDiscrepancies.DISC-001"
+    },
+    {
+      "id": "COPY-016-008",
+      "severity": "minor",
+      "category": "factual",
+      "description": "The contract document specifies 'Target blood obtained through auxiliary procurement (ref: Seep Field Operations, Aranthem extraction, YK 741)' (line 30). The magic system's FU-007 states that using another person's blood in binding magic without consent causes bindings to 'fail or become corrupted.' However, the kill contract IS functional and enforcing, which could appear to contradict FU-007. This is actually thematically deliberate — the Court is violating its own highest law, and the binding functions because the operative (Lirien) DID consent while the target's blood was used as a connection anchor rather than a full binding party. No correction needed, but the chapter reviser should be aware that a careful reader familiar with the FU-007 rule may question this. Consider whether the discrepancy is acknowledged or exploited later (the ch18-20 arc addresses contract dissolution at the Quietus, which may be enabled partly because the binding was built on a FU-007 violation).",
+      "lineRef": "Line 30",
+      "quotedText": "Target blood obtained through auxiliary procurement",
+      "correction": "No immediate correction needed. This is a deliberate thematic element, not an error. The FU-007 violation (using Kaelith's blood without consent) is part of the chapter's horror — the Court's bureaucratic atrocity. However, downstream agents should note that the binding's functionality despite the FU-007 violation creates a subtle tension with the magic system that could be exploited in revision (perhaps the violation is why the loophole exists — a corrupted binding is exploitable in ways a clean binding would not be).",
+      "sourceRef": "world-bible/magic-system.json — FU-007 (Using another person's blood without consent), MAG-005 (Binding contracts require consent)"
+    }
+  ],
+  "verificationSummary": {
+    "namingConsistency": {
+      "characterNames": {
+        "verified": ["Lirien Dael", "Lirien", "Kaelith Maren", "Kaelith"],
+        "newDesignations": ["Hand of the Third Reach (Lirien's Court title)", "Ashborne Fourth (Kaelith's unit)"],
+        "issues": "None. All character names match continuity tracker spellings exactly."
+      },
+      "placeNames": {
+        "verified": ["the Narrowing", "the Pallor", "Aranthem", "Calwrath", "the Quietus", "Vael Seren (metadata only, not in prose)"],
+        "issues": "None. All place names match geography.json and continuity tracker."
+      },
+      "magicalTerms": {
+        "verified": ["Seep", "Lessened", "Lessening", "Oathbrand", "the bond/resonance bond", "Cerith Court", "kinetic memory (referenced indirectly)"],
+        "issues": "None. All terms consistent with magic-system.json and continuity tracker."
+      },
+      "titlesAndHonorifics": {
+        "verified": ["Commander of the Ashborne Fourth (Kaelith, formerly)", "Hand of the Third Reach (Lirien)", "Operative (generic Court designation)"],
+        "issues": "None. Court document uses administrative designations consistent with CUL-002 fae naming conventions."
+      }
+    },
+    "timelineVerification": {
+      "chapterTimeline": "Early morning, day after ch15. Consistent with ch15's ending (both falling asleep at the safe house near the Narrowing) and the continuity tracker's ch16 entry.",
+      "internalClaims": [
+        {
+          "claim": "'Two hours ago, Lirien had lain against Kaelith's shoulder in the dark' (L16)",
+          "verified": true,
+          "note": "Consistent with ch15 ending where they sleep together at the safe house."
+        },
+        {
+          "claim": "'Enforcement period exceeded by 47 days' (L32)",
+          "verified": true,
+          "note": "Consistent with story timeline (~25-30 days of travel plus the initial enforcement period). The specific enforcement period duration is not previously defined, making this a new detail that fits within established parameters."
+        },
+        {
+          "claim": "'30 days before physiological deterioration, 90 before terminal Lessening' (L32)",
+          "verified": true,
+          "note": "New timeline established by the contract document. Consistent with MAG-005 binding violation consequences. Creates FS-020 (noted in metadata)."
+        },
+        {
+          "claim": "'Aranthem extraction, YK 741' (L30)",
+          "verified": true,
+          "note": "Blood obtained in YK 741, one year before the contract's YK 742 issuance. Seep procurement predating the mission is consistent with the fae's methodical operational planning."
+        }
+      ],
+      "issues": "None."
+    },
+    "worldRuleCompliance": {
+      "bondMechanics": {
+        "compliant": true,
+        "notes": "Bond transmits emotional quality throughout — terror (L44), sharpening/alertness (L56), fracture/trust-collapse (L86), violation/disbelief (L96), reinterpretation pain (L100-104), cold/wall (L124-128), matched grief (L194, L210). Line 56 EXPLICITLY reinforces the rule: 'the bond did not carry specifics. The quality.' One borderline presentation flagged (COPY-016-005) but not a violation."
+      },
+      "contractMechanics": {
+        "compliant": true,
+        "notes": "Contract document content consistent with MAG-005 (binding requires consent — Lirien's was given), fae binding ceremony customs (blood preparation consumption per CUL-002), and established loophole (cessation of heartbeat per FACT-008 from ch14). FU-007 tension noted (COPY-016-008) but thematically deliberate."
+      },
+      "magicSystem": {
+        "compliant": true,
+        "notes": "No new magical abilities appear. No deus ex machina. Bond walling consistent with MAG-007 (bonds can be walled through 'sustained emotional withdrawal'). Lessening mechanism consistent with MAG-005 binding violation consequences."
+      },
+      "anachronisms": {
+        "found": 1,
+        "notes": "'supply chains' (L178) flagged as COPY-016-002. No other anachronistic language detected. The Court administrative language ('auxiliary procurement,' 'compliance window,' 'enforcement parameters,' 'risk assessment') is appropriately bureaucratic — the fae culture is explicitly described as administrative in CUL-002, so these terms are thematically justified as Court-specific vocabulary rather than anachronisms."
+      }
+    },
+    "grammarAndFormatting": {
+      "dialogueFormatting": "Correct throughout. Em dashes used for self-interruptions ('I—', 'There is—', 'the bond lets me monitor—'). Speech tags properly punctuated. No uninterrupted monologue exceeds the 6-line guideline.",
+      "tenseConsistency": "Past tense maintained consistently. Past perfect used appropriately for temporal backsteps ('had been sleeping,' 'had lain,' 'had trained').",
+      "pronounClarity": "Well maintained despite both characters being female. Names and context disambiguate all pronoun references. The most complex passage (L96, italicized bond-reading) uses possessive pronouns for Kaelith ('Her blood. her knowledge.') within a clearly Kaelith-focused context.",
+      "spellingConvention": "British throughout with one exception (COPY-016-001: 'recontextualized' L104 should be 'recontextualised').",
+      "sceneBreaks": "Three scene breaks (L52, L78, L130) correctly placed between the three scenes (SCN-43, SCN-44, SCN-45).",
+      "paragraphLength": "Two paragraphs at 7 sentence-units flagged (COPY-016-003 at L36, COPY-016-004 at L134). Both are borderline — one arguably falls under the sustained-logic exception, one could benefit from a break."
+    },
+    "informationAsymmetry": {
+      "compliant": true,
+      "notes": "Chapter correctly resolves the dramatic irony of the kill contract. Kaelith learns the truth through reading the intercepted document — not through the bond (which cannot transmit factual content) and not through Lirien's confession (Lirien tries but fails). The new asymmetry (neither woman knows if Lirien's feelings are genuine or binding-induced) is correctly established and is the chapter's central unresolved question."
+    },
+    "crossChapterContinuity": {
+      "ch15Connection": "Consistent. Ch16 opens at the same safe house near the Narrowing where ch15 ended. Kaelith sleeping, Lirien checking perimeter — consistent with their positions at ch15's close. 'I want this. I want you.' correctly quoted from ch15's declaration scene.",
+      "priorChapterReferences": [
+        "Oathbrand removal (ch11) — correctly attributed to the ch11 procedure",
+        "Calwrath confession (ch13) — correctly referenced as the 'granite shelf' scene",
+        "First kiss (ch13) — correctly referenced",
+        "Ch14 combat and bruised ribs — correctly referenced (third and fourth left ribs)",
+        "Ch15 declaration ('I want this. I want you.') — correctly quoted",
+        "Contract loophole (ch14, cessation of heartbeat) — correctly referenced",
+        "Series VII, Entry 44 — consistent with 43 prior completed contracts"
+      ],
+      "issues": "Two minor unestablished details (healing salve, scarf) noted in COPY-016-006."
+    }
+  }
+}

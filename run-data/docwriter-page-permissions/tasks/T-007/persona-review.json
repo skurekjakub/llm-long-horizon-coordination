@@ -1,0 +1,117 @@
+{
+  "agent": "docwriter-persona-reviewer",
+  "taskId": "T-007",
+  "attempt": 1,
+  "verdict": "approved",
+  "personaChecks": [
+    {
+      "check": "front-matter-personas",
+      "result": "pass",
+      "declaredPersonas": ["admin", "developer"],
+      "evidence": "Front matter declares `persona: admin, developer`. The page serves both personas: 'Set up content versioning' is a step-by-step admin procedure using the Settings UI; 'Permissions' describes operational permission requirements relevant to both admins configuring roles and developers understanding ACL constraints; 'Suspend versioning in custom code' is a developer-focused C# code example. The page lives under `developers-and-admins/configuration/`, and INV-persona-002 explicitly maps 'config/user roles → admin, developer'. Both personas are present and correctly declared."
+    },
+    {
+      "check": "tone-admin",
+      "result": "pass",
+      "evidence": "Admin-relevant sections use operational, UI-oriented language throughout. The 'Set up content versioning' section provides numbered steps referencing UI elements ('Open the **Settings** application', 'Select **Content** -> **Content versioning**'). The Permissions table uses plain operational language ('Users with permission to *Read* a page can view its version history'). The new cross-reference sentence added by the writer — 'For details about configuring *Read* and *Update* permissions for specific roles, see page permission management' — uses admin-appropriate language: 'configuring permissions for specific roles' is exactly how an admin thinks about the task. No developer jargon leaks into admin-targeted sections."
+    },
+    {
+      "check": "tone-developer",
+      "result": "pass",
+      "evidence": "The 'Suspend versioning in custom code' section uses exact API class names (`ContentItemVersionActionContext`, `EnableStoreVersion`), includes a full C# code example with proper `using` statements and namespace imports (`CMS.ContentEngine`, `CMS.Websites`), and assumes SDK familiarity. The Permissions section is also useful to developers who need to understand permission requirements when building integrations. The new cross-reference to 'page permission management' is equally useful for developers who need to configure ACL for their page types."
+    },
+    {
+      "check": "depth-calibration-admin",
+      "result": "pass",
+      "evidence": "Admin content is appropriately scoped: step-by-step Settings UI procedure, practical recommendation about version count ('we recommend considering whether you need all versions'), and performance advisory. The Permissions table gives the operational 'what you need' without diving into code internals. The new cross-reference sentence sends admins to the right place for detailed role configuration without adding unnecessary depth here."
+    },
+    {
+      "check": "depth-calibration-developer",
+      "result": "pass",
+      "evidence": "Developer content provides sufficient depth: full C# code example with actual API surface. The code block shows the `using` pattern with `ContentItemVersionActionContext`, the property assignment, and the publish call — enough for a developer to implement immediately. The Permissions section provides the conceptual foundation without being too shallow."
+    },
+    {
+      "check": "cross-reference-persona-fit",
+      "result": "pass",
+      "evidence": "The added cross-reference sentence (line 57) fits both target personas. For admins: 'configuring *Read* and *Update* permissions for specific roles' uses operational permission-management vocabulary. For developers: the link to 'page permission management' provides the configuration context needed when building permission-aware features. The sentence does not introduce terminology exclusive to one persona."
+    }
+  ],
+  "classificationCheck": {
+    "declared": "howto",
+    "actual": "howto",
+    "result": "pass",
+    "evidence": "The page is goal-oriented and procedural: 'Set up content versioning' is a numbered procedure for enabling and configuring the feature; 'Permissions' documents what permissions are needed to perform versioning operations (supporting the howto); 'Suspend versioning in custom code' provides a code procedure for a specific task. This is a howto — it assumes existing knowledge of Xperience and provides task-focused instructions."
+  },
+  "taxonomyChecks": [
+    {
+      "field": "identifier",
+      "result": "pass",
+      "value": "versioning_configuration_xp"
+    },
+    {
+      "field": "persona",
+      "result": "pass",
+      "value": "admin, developer",
+      "notes": "Valid values per INV-persona-001. Comma-separated format matches convention."
+    },
+    {
+      "field": "related_pages",
+      "result": "pass",
+      "value": "['page_versioning_xp']"
+    },
+    {
+      "field": "toc",
+      "result": "pass",
+      "value": "minHeadingLevel: 1, maxHeadingLevel: 3"
+    }
+  ],
+  "consistencyCheck": {
+    "result": "pass",
+    "notes": "Other configuration cluster pages use matching persona patterns: content-hub-configuration.md (admin, developer), content-sync-configuration.md (admin, developer), aira-configuration.md (developer, admin). This page's 'admin, developer' persona targeting is fully consistent with its cluster neighbors. No dramatic audience divergence."
+  },
+  "invariantResults": [
+    {
+      "invariantId": "TINV-001",
+      "result": "pass",
+      "evidence": "TINV-001 requires covering 'both developer and business user scenarios'. This page is a configuration howto under developers-and-admins/ — business users are not the target audience for system configuration. The admin persona serves the administrative/operational user role referenced by the invariant's intent. The page covers developer scenarios (code-based versioning suspension) and admin scenarios (Settings UI procedure, permissions). The cross-reference update does not change audience scope."
+    },
+    {
+      "invariantId": "INV-persona-001",
+      "result": "pass",
+      "evidence": "Front matter `persona: admin, developer` uses only valid values from the allowed set (developer, admin, business, architect, all). Comma-separated format is correct."
+    },
+    {
+      "invariantId": "INV-persona-002",
+      "result": "pass",
+      "evidence": "This is a config/user roles page. INV-persona-002 specifies 'config/user roles → admin, developer'. The page correctly uses both personas."
+    },
+    {
+      "invariantId": "INV-persona-007",
+      "result": "pass",
+      "evidence": "The added sentence uses simple, everyday words: 'For details about configuring permissions for specific roles, see page permission management.' No complex jargon; accessible to non-native English speakers."
+    },
+    {
+      "invariantId": "INV-persona-012",
+      "result": "pass",
+      "evidence": "The content demonstrates clear understanding of both target personas: admin sections use UI-oriented procedural language, developer sections use code examples with API terminology. The cross-reference update maintains this persona awareness."
+    },
+    {
+      "invariantId": "INV-persona-015",
+      "result": "pass",
+      "evidence": "Not directly triggered by the cross-reference change (no new procedural steps added), but existing steps in 'Set up content versioning' appropriately combine related actions (e.g., step 3-4 are distinct because they involve different settings). No violation."
+    },
+    {
+      "invariantId": "INV-persona-016",
+      "result": "pass",
+      "evidence": "No cross-persona terminology confusion in the added sentence. Permission names (*Read*, *Update*) are UI label terms used consistently for both personas. No developer-specific terms appear in admin-targeted content and vice versa."
+    }
+  ],
+  "summary": {
+    "personaChecksPassed": 6,
+    "personaChecksFailed": 0,
+    "classificationCorrect": true,
+    "taxonomyComplete": true,
+    "invariantsPassed": 7,
+    "invariantsFailed": 0
+  }
+}

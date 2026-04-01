@@ -1,0 +1,634 @@
+{
+  "storyId": "001",
+  "characters": [
+    {
+      "id": "CHAR-001",
+      "name": "Kaelith Maren",
+      "role": "lead-romantic",
+      "isPOV": true,
+      "arcType": "positive",
+      "characterFile": "characters/CHAR-001.json"
+    },
+    {
+      "id": "CHAR-002",
+      "name": "Lirien Dael",
+      "role": "lead-romantic",
+      "isPOV": true,
+      "arcType": "positive",
+      "characterFile": "characters/CHAR-002.json"
+    },
+    {
+      "id": "CHAR-003",
+      "name": "Thalen Reyvas",
+      "role": "antagonist",
+      "isPOV": false,
+      "arcType": "negative",
+      "characterFile": "characters/CHAR-003.json"
+    },
+    {
+      "id": "CHAR-004",
+      "name": "Vairen Ethis",
+      "role": "mentor",
+      "isPOV": false,
+      "arcType": "positive",
+      "characterFile": "characters/CHAR-004.json"
+    },
+    {
+      "id": "CHAR-005",
+      "name": "Sendra Corith",
+      "role": "supporting",
+      "isPOV": false,
+      "arcType": "positive",
+      "characterFile": "characters/CHAR-005.json"
+    },
+    {
+      "id": "CHAR-006",
+      "name": "Tessen Vael",
+      "role": "mentor",
+      "isPOV": false,
+      "arcType": "positive",
+      "characterFile": "characters/CHAR-006.json"
+    },
+    {
+      "id": "CHAR-007",
+      "name": "Marin Savel",
+      "role": "mentor",
+      "isPOV": false,
+      "arcType": "flat",
+      "characterFile": "characters/CHAR-007.json"
+    },
+    {
+      "id": "CHAR-008",
+      "name": "Tavik Soren",
+      "role": "supporting",
+      "isPOV": false,
+      "arcType": "flat",
+      "characterFile": "characters/CHAR-008.json"
+    },
+    {
+      "id": "CHAR-009",
+      "name": "Sethis Varn",
+      "role": "supporting",
+      "isPOV": false,
+      "arcType": "positive",
+      "characterFile": "characters/CHAR-009.json"
+    },
+    {
+      "id": "CHAR-010",
+      "name": "Erys Kael",
+      "role": "supporting",
+      "isPOV": false,
+      "arcType": "positive",
+      "characterFile": "characters/CHAR-010.json"
+    },
+    {
+      "id": "CHAR-011",
+      "name": "Kethran Var",
+      "role": "antagonist",
+      "isPOV": false,
+      "arcType": "negative",
+      "characterFile": "characters/CHAR-011.json"
+    },
+    {
+      "id": "CHAR-012",
+      "name": "Serath Vyn",
+      "role": "antagonist",
+      "isPOV": false,
+      "arcType": "negative",
+      "characterFile": "characters/CHAR-012.json"
+    },
+    {
+      "id": "CHAR-013",
+      "name": "Iryse Caleth",
+      "role": "supporting",
+      "isPOV": false,
+      "arcType": "positive",
+      "characterFile": "characters/CHAR-013.json"
+    },
+    {
+      "id": "CHAR-014",
+      "name": "Daerin Morweth",
+      "role": "supporting",
+      "isPOV": false,
+      "arcType": "positive",
+      "characterFile": "characters/CHAR-014.json"
+    }
+  ],
+  "relationshipWeb": [
+    {
+      "between": [
+        "CHAR-001",
+        "CHAR-002"
+      ],
+      "type": "romantic — F/F enemies-to-lovers",
+      "dynamicArc": "The central romance moves through five structurally distinct phases, each escalating vulnerability per T21 (Vulnerability Ladder): Phase 1 — Antagonistic Assessment (Ch 1-4): Kaelith identifies Lirien as a threat; Lirien studies Kaelith as a target. Both women recognize the other's competence before recognizing anything softer. The professional respect is the first vulnerability — neither expected the other to be excellent. Phase 2 — Forced Partnership (Ch 5-8): The paradox (killing Kaelith destroys the Quietus path) and external threats force tactical cooperation. Trust is strategic, not emotional, but proximity reveals personhood beneath the professional assessment. Lirien sees Kaelith's suppressed pain; Kaelith sees Lirien's preternatural stillness crack under emotional pressure. Competence as attraction: they are drawn to each other's skill before they are drawn to each other. Phase 3 — Intimacy Threshold (Ch 9-12): The Oathbrand removal is the structural pivot. Lirien's hands on Kaelith's collarbone, the dissolution of the brand, the flood of returning magic — this is the first touch with intent, and the resonance bond that forms afterward makes their internal states partially visible to each other. The power imbalance shifts as Kaelith's magic returns. Physical proximity escalates from necessary to desired. The slow burn intensifies through charged restraint — what is not acted upon is more present than what is. Phase 4 — The Black Moment (Ch 15-17): Kaelith discovers the kill contract. The trust that was built inside a cage of obligation — Lirien was sent to kill her, carried her blood from the binding ceremony, never mentioned the contract — shatters. Kaelith walks away. Lirien faces the consequences of radical omission. This is the moment the romance appears permanently destroyed, per T7. The recovery requires both women to choose: Kaelith must decide whether the cage invalidates what grew inside it; Lirien must decide whether to name her attachment in language the Court considers structural failure. Phase 5 — Chosen Love (Ch 18-22): The cage opens. The contract loophole (Lirien stops Kaelith's heart for seconds, fulfilling the binding's letter) dissolves the obligation. For the first time, both women can walk away. Neither does. The final intimate scene functions as a thematic turning point per story-concept — not reward but resolution, the physical expression of trust that has survived the kill contract's revelation and the Black Moment's devastation. The romance earns its resolution not by removing the constraints that forced them together but by reaching the point where the constraints become irrelevant.",
+      "romanceSubgenre": "enemies-to-lovers with forced proximity and mutual dependence",
+      "heatLevel": "steamy",
+      "heatProgression": "Charged restraint (Acts I-II) → first intentional touch at Oathbrand removal (midpoint) → escalating physical intimacy as emotional barriers fall (late Act II) → first full intimate scene as thematic turning point, not reward (late Act II/early Act III) → continued physical intimacy integrated with emotional resolution (Act III)",
+      "keyRomanticMoments": [
+        {
+          "moment": "First recognition of competence",
+          "approximate_chapter": 2,
+          "description": "Kaelith catches Lirien watching. Lirien registers that being caught by a suppressed, exiled officer whose magic is throttled means Kaelith's tactical instincts are sharper than the intelligence file suggested. Kaelith registers that the stranger in Duskhaven moves like someone trained to not be noticed, which is itself noticeable to someone trained to notice everything. Mutual professional respect — the seed of attraction in enemies-to-lovers."
+        },
+        {
+          "moment": "First voluntary vulnerability (Kaelith)",
+          "approximate_chapter": 8,
+          "description": "Kaelith allows Lirien to see the Oathbrand — not just its existence (which is public knowledge) but the damage around it, the inflammation, the pain she hides. She does not ask for help. She simply stops hiding it. For Kaelith, who never asks for help, ceasing to hide is the equivalent of a request."
+        },
+        {
+          "moment": "The Oathbrand removal — intimacy threshold",
+          "approximate_chapter": 11,
+          "description": "Lirien's hands on Kaelith's collarbone, dismantling the ward. The act requires absolute trust (Kaelith must remain still while Lirien works magic on her most vulnerable point) and absolute precision (Lirien must not damage what she is freeing). The physical intimacy is inextricable from the magical and emotional: Kaelith's magic floods back through the point of Lirien's touch, and the resonance bond forms in the aftermath. This is the first time they touch with intent, and the intent is not desire — it is care. Desire follows."
+        },
+        {
+          "moment": "First kiss",
+          "approximate_chapter": 13,
+          "description": "After days of the resonance bond making their emotional states partially visible to each other. Initiated by whichever woman breaks first — the breaking is the point, not the initiator. The kiss is preceded by a charged exchange of subtext-laden dialogue where neither says what they mean and both know exactly what is not being said."
+        },
+        {
+          "moment": "Black Moment — the kill contract revealed",
+          "approximate_chapter": 16,
+          "description": "Kaelith discovers the full truth: Lirien was sent to kill her, carries her blood, has a live contract the entire time they have been trusting each other. The devastation is complete. Kaelith walks away. This is the romance's lowest point — designed per T7 to appear unrecoverable."
+        },
+        {
+          "moment": "Reunion and choice",
+          "approximate_chapter": 18,
+          "description": "Lirien follows Kaelith. Not because the world needs them together — because she needs Kaelith. She says it in the precision language of the Court, because that is how she speaks, and the Court's language has never sounded less like obligation and more like a love confession."
+        },
+        {
+          "moment": "The heart-stopping — contract fulfilled, love chosen",
+          "approximate_chapter": 20,
+          "description": "Lirien stops Kaelith's heart. Seconds only. The binding registers fulfillment. Lirien restarts the heart. The cage opens. Both women can walk away. Neither does."
+        }
+      ],
+      "powerDynamic": "Deliberately asymmetric and shifting. Act I: Lirien holds all the power — she knows the kill contract, she has full magic, she has information Kaelith lacks. Kaelith is suppressed, isolated, unknowing. The imbalance creates guilt in Lirien and vulnerability in Kaelith. Midpoint: Power equalizes as Kaelith's magic returns and the resonance bond creates mutual visibility. Post-Black Moment: Kaelith holds the power — she has the knowledge (the contract), the moral position (she was betrayed), and the choice (to forgive or not). Resolution: Power is equalized through mutual vulnerability — Kaelith trusts Lirien with her heart (literally), Lirien trusts Kaelith with her future (she cannot undo the loophole if it fails).",
+      "thematicResonance": "The romance embodies all three thematic pillars: TP-1 (trust between enemies — they trust each other while the kill contract is still live), TP-2 (the price of the right choice — both women have made impossible choices and continue making them), TP-3 (chosen versus only — the romance earns its resolution when the cage opens and both choose to stay)."
+    },
+    {
+      "between": [
+        "CHAR-001",
+        "CHAR-003"
+      ],
+      "type": "institutional-antagonist",
+      "dynamicArc": "Kaelith grows from controlled residue to the one survivor who can end Thalen's project."
+    },
+    {
+      "between": [
+        "CHAR-002",
+        "CHAR-011"
+      ],
+      "type": "handler-operative",
+      "dynamicArc": "Lirien shifts from obedient asset to active rebellion against Kethran."
+    },
+    {
+      "between": [
+        "CHAR-002",
+        "CHAR-012"
+      ],
+      "type": "contractual-antagonist",
+      "dynamicArc": "Serath's binding cages Lirien until the exact wording becomes its weakness."
+    },
+    {
+      "between": [
+        "CHAR-003",
+        "CHAR-004"
+      ],
+      "type": "colleague-adversary",
+      "dynamicArc": "Vairen lacks proof until becoming the most dangerous mind in Aranthem to Thalen."
+    },
+    {
+      "between": [
+        "CHAR-004",
+        "CHAR-005"
+      ],
+      "type": "archive-alliance",
+      "dynamicArc": "Authority and connective insight turn buried record into actionable proof."
+    },
+    {
+      "between": [
+        "CHAR-001",
+        "CHAR-004"
+      ],
+      "type": "evidence-based-alliance",
+      "dynamicArc": "Vairen's trust grows only as Kaelith aligns with the record."
+    },
+    {
+      "between": [
+        "CHAR-001",
+        "CHAR-005"
+      ],
+      "type": "historical-corroboration",
+      "dynamicArc": "Sendra gives Kaelith language for what her body knows."
+    },
+    {
+      "between": [
+        "CHAR-001",
+        "CHAR-006"
+      ],
+      "type": "guide-and-former-comrade",
+      "dynamicArc": "Tessen's recognition becomes chosen aid once Kaelith tells the truth."
+    },
+    {
+      "between": [
+        "CHAR-001",
+        "CHAR-007"
+      ],
+      "type": "healer-patient",
+      "dynamicArc": "Marin turns endurance into medical urgency."
+    },
+    {
+      "between": [
+        "CHAR-001",
+        "CHAR-008"
+      ],
+      "type": "procedural-erasure",
+      "dynamicArc": "Tavik's report turns detached courtesy into danger."
+    },
+    {
+      "between": [
+        "CHAR-001",
+        "CHAR-009"
+      ],
+      "type": "institutional-successor",
+      "dynamicArc": "Sethis must choose whether preserving the Legion means rules or purpose."
+    },
+    {
+      "between": [
+        "CHAR-001",
+        "CHAR-010"
+      ],
+      "type": "commander-survivor",
+      "dynamicArc": "Erys reframes Kaelith's legacy from scandal to lived loyalty."
+    },
+    {
+      "between": [
+        "CHAR-003",
+        "CHAR-013"
+      ],
+      "type": "weaponized-trust",
+      "dynamicArc": "Iryse's sincere stewardship becomes Thalen's hidden delivery system."
+    },
+    {
+      "between": [
+        "CHAR-003",
+        "CHAR-014"
+      ],
+      "type": "ideology-versus-pragmatism",
+      "dynamicArc": "Fervor and exhaustion prove equally dangerous in power."
+    },
+    {
+      "between": [
+        "CHAR-004",
+        "CHAR-013"
+      ],
+      "type": "evidence-versus-ritual",
+      "dynamicArc": "Different explanatory systems are forced into alignment by proof."
+    },
+    {
+      "between": [
+        "CHAR-009",
+        "CHAR-010"
+      ],
+      "type": "commander-subordinate",
+      "dynamicArc": "Sethis's caution meets Erys's unresolved loyalty."
+    },
+    {
+      "between": [
+        "CHAR-006",
+        "CHAR-007"
+      ],
+      "type": "frontier-peer-alliance",
+      "dynamicArc": "Tessen and Marin form a non-imperial support web for the protagonists."
+    },
+    {
+      "between": [
+        "CHAR-011",
+        "CHAR-012"
+      ],
+      "type": "systemic-antagonists",
+      "dynamicArc": "Mission logic and binding architecture create the cage around Lirien and Kaelith."
+    },
+    {
+      "between": [
+        "CHAR-013",
+        "CHAR-014"
+      ],
+      "type": "conclave-conscience",
+      "dynamicArc": "Faith and tired pragmatism become late witnesses against their own institution."
+    }
+  ],
+  "povCount": 2,
+  "voiceDistinctionGuide": {
+    "purpose": "Quick-reference for chapter drafters and voice maintainers to ensure INV-003 and INV-034 compliance — each POV identifiable within 3-4 sentences.",
+    "kaelith": {
+      "notices": "Architecture, exits, load-bearing walls, structural weaknesses, defensive positions, sight lines, weather as tactical variable. She reads SPACES before she reads PEOPLE.",
+      "sentenceDefault": "Short declarative. 3-8 words. Subject-verb-object. The wall held. 70% short, 30% medium. Never exceeds 25 words.",
+      "metaphorDomain": "Fortification, engineering, materials under stress. Things crack, bear weight, erode, settle, shore up. NO water metaphors. NO organic metaphors.",
+      "emotionalTell": "Physical: tension in jaw, heat in palms, pressure behind sternum. She does not name feelings — her body names them for her.",
+      "underStress": "Fragments into inventory mode. Clipped noun-phrases without verbs. Command voice. At extremes: silence, stillness, then a single decisive action.",
+      "humor": "Dry, garrison-coast, expects nothing. Irony so flat it could be sincerity. Never laughs at own jokes. Does not realize she is funny.",
+      "deflection": "Physical tasks. Repairs a wall instead of answering. Uses imperatives: 'Eat.' 'Sleep.' 'Watch the door.'",
+      "silence": "Architectural. A wall. Comfortable, weighty, present. She does not fill silence. Others find it intimidating.",
+      "dialogue": "Statements, not questions. Tactical questions only. Does not elaborate. Says what she means or says nothing.",
+      "signatureWords": "'Fine.' 'Sound.' 'Compromised.' 'The position.' 'Noted.' 'Held.'"
+    },
+    "lirien": {
+      "notices": "Faces, body language, power dynamics, social hierarchies, what people hide, the gap between surface and depth. She reads PEOPLE before she reads SPACES.",
+      "sentenceDefault": "Medium-length (10-18 words) with observation→assessment structure. Interspersed with sharp cataloguing fragments (3-6 words). Flowing, varied rhythm.",
+      "metaphorDomain": "Water, infiltration, surfaces vs. depths, concealment and revelation, contracts and binding. Things flow, seep, reflect, permeate. NO architecture-as-strength metaphors.",
+      "emotionalTell": "Classification as containment: 'I am experiencing interference.' Silence when classification fails — panicked silence, not comfortable silence.",
+      "underStress": "Sentences shorten and lose observational scaffolding. Retreats to fae-formal Court language as verbal armor. At extremes: system-failure silence, then a small precise admission.",
+      "humor": "Absent initially (fae have no equivalent). Misinterprets Kaelith's irony literally. Acquires dry humor late — more precise and surgical than Kaelith's blunt version. Evolution is a marker of intimacy.",
+      "deflection": "Intellectual. Analyzes the question instead of answering it. 'What would you do with that information?' Offers clinically correct answers that reveal nothing.",
+      "silence": "Operative. A net. Alert, watching, gathering. People talk more around it. NOT comfortable — professional. When genuine silence replaces operative silence, she is at her most vulnerable.",
+      "dialogue": "Questions — layered, probing, designed to extract information. Listens more than speaks. Pauses to find precise words. Does not interrupt.",
+      "signatureWords": "'Noted.' 'Interesting.' 'The calculus has changed.' 'I have insufficient data.' 'That is not relevant.' 'I require a moment.'"
+    },
+    "voiceContrastMatrix": {
+      "description": "Point-by-point comparison across all voice dimensions. If ANY dimension reads the same for both characters, the distinction has failed.",
+      "dimensions": [
+        {
+          "dimension": "First thing noticed in a new room",
+          "kaelith": "Architecture: exits, walls, ceiling, structural integrity",
+          "lirien": "People: faces, body language, who holds power, who is hiding something",
+          "contrastLevel": "MAXIMUM — opposite endpoints"
+        },
+        {
+          "dimension": "Default sentence length",
+          "kaelith": "Short (3-8 words, 70% of sentences). Percussive. A drum.",
+          "lirien": "Medium (10-18 words) with 3-6 word cataloguing bursts. Flowing. A current.",
+          "contrastLevel": "HIGH — measurably different rhythms"
+        },
+        {
+          "dimension": "Metaphor source domain",
+          "kaelith": "Architecture, fortification, materials science. Weight, load, endurance.",
+          "lirien": "Water, infiltration, surfaces/depths. Flow, permeability, concealment.",
+          "contrastLevel": "MAXIMUM — non-overlapping conceptual domains"
+        },
+        {
+          "dimension": "How emotion is processed",
+          "kaelith": "As physical sensation in specific body locations (jaw, palms, sternum)",
+          "lirien": "As classification categories that increasingly fail ('target interference')",
+          "contrastLevel": "MAXIMUM — body vs. mind, sensation vs. taxonomy"
+        },
+        {
+          "dimension": "Internal monologue cadence",
+          "kaelith": "Linear: threat→assess→decide. Field assessment. Loops only when defenses are breached.",
+          "lirien": "Branching: observe→cross-reference→compare→conclude. Annotated surveillance notes.",
+          "contrastLevel": "HIGH — sequential vs. associative thinking"
+        },
+        {
+          "dimension": "Deflection strategy",
+          "kaelith": "Physical: does something instead of answering. Repairs a wall. Puts on a coat.",
+          "lirien": "Intellectual: analyzes the question instead of answering. Turns it back on the asker.",
+          "contrastLevel": "MAXIMUM — body vs. mind"
+        },
+        {
+          "dimension": "Quality of silence",
+          "kaelith": "Structural. A wall. Comfortable. She lives in silence naturally.",
+          "lirien": "Operative. A net. Professional, active, gathering. NOT comfortable.",
+          "contrastLevel": "HIGH — passive solidity vs. active collection"
+        },
+        {
+          "dimension": "Humor",
+          "kaelith": "Instinctive, blunt, garrison-coast dry. Has always been this way.",
+          "lirien": "Absent → acquired → precise and surgical. Learns humor from Kaelith.",
+          "contrastLevel": "MAXIMUM — native vs. learned skill"
+        },
+        {
+          "dimension": "Sensory channel",
+          "kaelith": "Tactile: texture, weight, temperature, pressure. She touches the world.",
+          "lirien": "Visual: light, faces, micro-expressions, spatial relationships. She watches the world.",
+          "contrastLevel": "MAXIMUM — opposite sensory modalities"
+        },
+        {
+          "dimension": "Dialogue style",
+          "kaelith": "Statements. Rarely questions. Staccato. Does not elaborate. Each sentence a dropped stone.",
+          "lirien": "Questions. Probing, layered. Legato. Flowing clauses that narrow to a point.",
+          "contrastLevel": "HIGH — declarative vs. interrogative default"
+        },
+        {
+          "dimension": "Relationship to language itself",
+          "kaelith": "Functional. Language is a tool for conveying necessary information. She mistrusts eloquence.",
+          "lirien": "Contractual. Language is a binding mechanism. Every word carries weight and obligation.",
+          "contrastLevel": "HIGH — language as utility vs. language as power"
+        },
+        {
+          "dimension": "How they enter a conversation",
+          "kaelith": "Observation, not greeting: 'The door doesn't latch.'",
+          "lirien": "Probing observation disguised as casual remark: 'You have been here some time.'",
+          "contrastLevel": "MODERATE — both observe, but Kaelith observes things, Lirien observes people"
+        }
+      ]
+    },
+    "distinctionTest": "If you read 3-4 sentences and cannot tell whether Kaelith or Lirien is speaking/thinking, the voice has failed. THE FASTEST TESTS: (1) Does the first paragraph describe architecture or people? Architecture = Kaelith. People = Lirien. (2) Are sentences mostly under 8 words? Kaelith. Mixed with 10-18 word analytical passages? Lirien. (3) Are metaphors about weight, walls, or structural integrity? Kaelith. About water, surfaces, or concealment? Lirien. (4) Is emotion described as a physical sensation in a specific body location? Kaelith. As a classification category? Lirien. ANY TWO of these tests should identify the POV character with certainty.",
+    "crossContaminationRules": "Voice contamination across POVs is DELIBERATE and TRACKED — it marks intimacy. Specific permitted contamination: (1) Lirien begins using 'sound' and architectural metaphors late in the story = she has been influenced by Kaelith. (2) Kaelith begins using one or two water-adjacent metaphors = she has been influenced by Lirien. (3) Lirien begins using contractions = human influence. (4) Kaelith begins asking non-tactical questions = emotional opening. (5) Lirien deploys dry humor = learned from Kaelith. Each contamination is a vulnerability ladder rung and must be INTENTIONAL, not accidental."
+  },
+  "upstreamRefs": [
+    "story-concept.json",
+    "story-config.json",
+    "craft-profile.json",
+    "world-bible/geography.json",
+    "world-bible/culture.json",
+    "world-bible/history.json",
+    "world-bible/magic-system.json",
+    "world-bible/politics.json"
+  ],
+  "supportingVoiceDistinctionGuide": {
+    "purpose": "Quick-reference for chapter drafters and the POV-voice-maintainer. Each entry defines the single fastest way to identify this character's dialogue without attribution tags.",
+    "leads": {
+      "CHAR-001_Kaelith": "SHORT declarative (70% < 8 words). ARCHITECTURE metaphors. Emotion = body sensation. Deflects with physical action. Sensory: TACTILE.",
+      "CHAR-002_Lirien": "MEDIUM cataloguing (10-18 words). WATER/infiltration metaphors. Emotion = classification. Deflects with analysis. Sensory: VISUAL."
+    },
+    "supporting": {
+      "CHAR-003_Thalen": {
+        "voiceTag": "The Patient Gardener",
+        "quickId": "Long, unhurried sentences. GARDEN/cultivation metaphors ('pruning,' 'grafting,' 'soil'). Warmth that conceals ideology. Opens with generous questions. Says 'In time.'",
+        "metaphorDomain": "agriculture/cultivation/seasons",
+        "sentenceProfile": "Long (18-30 words), measured, diplomatic",
+        "distinctFrom": "Unlike Kaelith (no architecture). Unlike Vairen (no qualifications). Unlike Daerin (not impatient — infinitely patient).",
+        "sensoryChannel": "olfactory (cedar ash, ritual smoke)"
+      },
+      "CHAR-004_Vairen": {
+        "voiceTag": "The Living Footnote",
+        "quickId": "Long nested sentences with parenthetical corrections. TEXTUAL/archival metaphors ('provenance,' 'lacuna,' 'errata'). Says 'more precisely' compulsively. Cites sources in casual speech.",
+        "metaphorDomain": "text/archives/documents/marginalia",
+        "sentenceProfile": "Long (20-35 words) with nested qualifications",
+        "distinctFrom": "Unlike Sendra (no excitement — measured precision). Unlike Thalen (no warmth — dry rigor). Unlike Serath (human scholarly, not fae juridical).",
+        "sensoryChannel": "tactile (page texture, binding pressure)"
+      },
+      "CHAR-005_Sendra": {
+        "voiceTag": "The Excited Weaver",
+        "quickId": "Mixed bursts — excited short fragments then explanatory cascades. TEXTILE metaphors ('threads,' 'weave,' 'palimpsest'). Says 'which is to say.' Opens mid-thought. Finishes others' citations.",
+        "metaphorDomain": "textiles/weaving/layers/patterns",
+        "sentenceProfile": "Mixed (4-8 word bursts → 20-30 word cascades)",
+        "distinctFrom": "Unlike Vairen (enthusiastic, not measured). Unlike Thalen (transparent, not calculated). Unlike Lirien (joy, not assessment).",
+        "sensoryChannel": "visual (annotations, ink patterns, document correspondence)"
+      },
+      "CHAR-006_Tessen": {
+        "voiceTag": "The Talking Terrain",
+        "quickId": "Clipped, instruction-shaped (3-8 words). TERRAIN/weather metaphors ('false ground,' 'wind-shift'). Drops sentence subjects. Gives landmark directions. Says 'Not that way.'",
+        "metaphorDomain": "terrain/weather/animal sign/seasons",
+        "sentenceProfile": "Short to clipped (3-8 words), instruction-shaped",
+        "distinctFrom": "Unlike Kaelith (terrain, not architecture — reads land, not structures). Unlike Erys (environment-focused, not memory-led). Unlike Daerin (economy of words from preference, not exhaustion).",
+        "sensoryChannel": "auditory (wind, silence, shale clicks)"
+      },
+      "CHAR-007_Marin": {
+        "voiceTag": "The Blunt Diagnostician",
+        "quickId": "Mixed sentences — brisk in diagnosis, slower in prognosis. MEDICAL/kitchen metaphors ('abscess,' 'dosage,' 'spoiled meat'). Gives clinical term then translates. Opens with physical assessment. Says 'Sit down.'",
+        "metaphorDomain": "anatomy/medicine/cooking/rot",
+        "sentenceProfile": "Mixed (5-10 word diagnosis → 15-25 word prognosis)",
+        "distinctFrom": "Unlike Kaelith (diagnoses bodies, not buildings). Unlike Tessen (clinical precision, not terrain instinct). Unlike Vairen (medical evidence, not textual evidence).",
+        "sensoryChannel": "olfactory (bitterroot, spirits, blood)"
+      },
+      "CHAR-008_Tavik": {
+        "voiceTag": "The Walking Report",
+        "quickId": "Medium report-shaped sentences. NO metaphors (literalism = defensibility). PASSIVE VOICE everywhere. Says 'regrettable' for everything from inconvenience to atrocity. Cites 'standing orders.'",
+        "metaphorDomain": "near-absent (bureaucratic literalism)",
+        "sentenceProfile": "Medium (12-20 words), report-formatted",
+        "distinctFrom": "Unlike Sethis (procedure without command authority). Unlike Daerin (passive where Daerin is blunt). Unlike Kaelith (hides behind system, not behind walls).",
+        "sensoryChannel": "auditory (courier horns, sealed orders, silence after his name)"
+      },
+      "CHAR-009_Sethis": {
+        "voiceTag": "The Institutional Soldier",
+        "quickId": "Short-medium regulated sentences. LOGISTICS/supply metaphors ('deployment,' 'operational tempo,' 'attrition rate'). Says 'the Legion' not 'we.' Uses exact ranks. Never first names on duty.",
+        "metaphorDomain": "logistics/supply/institutional management",
+        "sentenceProfile": "Short-medium (6-15 words), order-calibrated",
+        "distinctFrom": "Unlike Kaelith (institutional, not personal — commands an organization, not a position). Unlike Tavik (has authority, uses it reluctantly). Unlike Daerin (preserving the unit, not the empire).",
+        "sensoryChannel": "visual (formations, map pins, roster spaces)"
+      },
+      "CHAR-010_Erys": {
+        "voiceTag": "The Counting Witness",
+        "quickId": "Short when guarded, medium when memory surfaces. AFTERMATH metaphors ('char under the surface,' 'what grew back wrong'). Uses definite articles for specific memories ('the breach,' 'the order'). Corrects numbers. Says 'Commander' as a complete sentence.",
+        "metaphorDomain": "fire/aftermath/scars/soldier memory",
+        "sentenceProfile": "Short guarded (3-8 words) → medium testimonial (12-20 words)",
+        "distinctFrom": "Unlike Kaelith (memory-haunted, not tactically present — looks back, not around). Unlike Tessen (memory drives speech, not environment). Unlike Sethis (personal loyalty, not institutional obligation).",
+        "sensoryChannel": "olfactory (smoke in wool, hot iron, rain on ash)"
+      },
+      "CHAR-011_Kethran": {
+        "voiceTag": "The Cold Instrument",
+        "quickId": "Short ruthless sentences (4-10 words). MECHANICAL/systems metaphors ('asset,' 'tolerance,' 'deviation,' 'containment'). Never uses contractions. Refers to people as 'the asset.' Says 'I trust you will comply.'",
+        "metaphorDomain": "tools/machines/systems/operational parameters",
+        "sentenceProfile": "Short and ruthless (4-10 words)",
+        "distinctFrom": "Unlike Kaelith (short sentences from efficiency, not garrison habit). Unlike Serath (operational, not juridical — does, not defines). Unlike Lirien (fae precision without Lirien's evolving humanity).",
+        "sensoryChannel": "visual (stress fractures, tool misalignment, compliance gaps)"
+      },
+      "CHAR-012_Serath": {
+        "voiceTag": "The Living Contract",
+        "quickId": "Very long conditional sentences (25-45 words). JURIDICAL vocabulary ('pursuant to,' 'notwithstanding,' 'the binding condition obtains'). Says 'one notes' not 'I see.' Recursive clarifications. Speaks in paragraphs.",
+        "metaphorDomain": "law/contracts/architectural blueprints (not lived architecture)",
+        "sentenceProfile": "Very long (25-45 words), conditionally nested",
+        "distinctFrom": "Unlike Vairen (legal precision, not scholarly precision — binds rather than investigates). Unlike Kethran (theoretical, not operational — designs rather than deploys). Unlike Thalen (defines obligations, not cultivates outcomes).",
+        "sensoryChannel": "auditory (measured recitation, clauses closing, silence after incomplete oaths)"
+      },
+      "CHAR-013_Iryse": {
+        "voiceTag": "The Faithful Watcher",
+        "quickId": "Medium-long with liturgical rhythm. CELESTIAL/flame metaphors ('the sky's promise,' 'flame tended through dark hours'). Triadic structures (groups of three). Opens with 'By the Pallor's light.' Says 'we are entrusted.'",
+        "metaphorDomain": "celestial/flame/shelter/sky/sacred watching",
+        "sentenceProfile": "Medium-long (15-25 words), ceremonially cadenced",
+        "distinctFrom": "Unlike Thalen (sincere faith, not cultivated manipulation — Iryse means it). Unlike Serath (spiritual, not legalistic). Unlike Vairen (interprets, not cites).",
+        "sensoryChannel": "visual (Pallor-light quality, flame color, sky-shift)"
+      },
+      "CHAR-014_Daerin": {
+        "voiceTag": "The Tired General",
+        "quickId": "Medium deliberate sentences. CAMPAIGN/attrition metaphors ('hold,' 'spend,' 'cost,' 'afford'). Cuts through rhetoric. Drops titles, uses surnames. Says 'Enough.' Says 'What can we afford?'",
+        "metaphorDomain": "campaigns/attrition/supply/expenditure",
+        "sentenceProfile": "Medium (10-18 words), deliberately weary",
+        "distinctFrom": "Unlike Kaelith (strategic not tactical — counts the empire's cost, not the wall's integrity). Unlike Sethis (commands an empire, not a unit). Unlike Thalen (impatient with abstraction, not patient with cultivation).",
+        "sensoryChannel": "tactile (signet weight, scar-tight knuckles, wet wool)"
+      }
+    },
+    "voiceContrastMatrix": {
+      "description": "Key dimensions where characters differ. Use for drafting scenes with multiple speakers.",
+      "dimensions": {
+        "sentenceLength": {
+          "shortest": [
+            "CHAR-006 Tessen (3-8)",
+            "CHAR-011 Kethran (4-10)",
+            "CHAR-010 Erys guarded (3-8)"
+          ],
+          "short": [
+            "CHAR-001 Kaelith (70%<8)",
+            "CHAR-009 Sethis (6-15)"
+          ],
+          "medium": [
+            "CHAR-002 Lirien (10-18)",
+            "CHAR-008 Tavik (12-20)",
+            "CHAR-014 Daerin (10-18)"
+          ],
+          "long": [
+            "CHAR-003 Thalen (18-30)",
+            "CHAR-004 Vairen (20-35)",
+            "CHAR-013 Iryse (15-25)"
+          ],
+          "veryLong": [
+            "CHAR-012 Serath (25-45)"
+          ]
+        },
+        "metaphorDomain": {
+          "architecture_fortification": "CHAR-001 Kaelith ONLY",
+          "water_infiltration": "CHAR-002 Lirien ONLY",
+          "garden_cultivation": "CHAR-003 Thalen",
+          "text_archives": "CHAR-004 Vairen",
+          "textiles_weaving": "CHAR-005 Sendra",
+          "terrain_weather": "CHAR-006 Tessen",
+          "medicine_kitchen": "CHAR-007 Marin",
+          "absent_bureaucratic": "CHAR-008 Tavik",
+          "logistics_supply": "CHAR-009 Sethis",
+          "fire_aftermath": "CHAR-010 Erys",
+          "tools_machines": "CHAR-011 Kethran",
+          "law_contracts": "CHAR-012 Serath",
+          "celestial_flame": "CHAR-013 Iryse",
+          "campaign_attrition": "CHAR-014 Daerin"
+        },
+        "sensoryChannel": {
+          "tactile": [
+            "CHAR-001 Kaelith",
+            "CHAR-004 Vairen",
+            "CHAR-014 Daerin"
+          ],
+          "visual": [
+            "CHAR-002 Lirien",
+            "CHAR-005 Sendra",
+            "CHAR-009 Sethis",
+            "CHAR-011 Kethran",
+            "CHAR-013 Iryse"
+          ],
+          "auditory": [
+            "CHAR-006 Tessen",
+            "CHAR-008 Tavik",
+            "CHAR-012 Serath"
+          ],
+          "olfactory": [
+            "CHAR-003 Thalen",
+            "CHAR-007 Marin",
+            "CHAR-010 Erys"
+          ]
+        },
+        "emotionalRegister": {
+          "suppressed_physical": "CHAR-001 Kaelith",
+          "calculated_analytical": "CHAR-002 Lirien",
+          "urbane_chilling": "CHAR-003 Thalen",
+          "dry_exacting": "CHAR-004 Vairen",
+          "curious_bright": "CHAR-005 Sendra",
+          "dry_suspicious": "CHAR-006 Tessen",
+          "steady_unsentimental": "CHAR-007 Marin",
+          "courteous_detached": "CHAR-008 Tavik",
+          "contained_pragmatic": "CHAR-009 Sethis",
+          "tight_earnest": "CHAR-010 Erys",
+          "cold_professional": "CHAR-011 Kethran",
+          "formal_austere": "CHAR-012 Serath",
+          "earnest_reverent": "CHAR-013 Iryse",
+          "tired_blunt": "CHAR-014 Daerin"
+        }
+      }
+    },
+    "sceneGuidance": {
+      "conclaveScene": "Thalen (warm, long, garden) vs Daerin (blunt, medium, attrition) vs Iryse (cadenced, medium-long, celestial) vs Vairen (qualified, long, archival). Four completely distinct registers in the same room.",
+      "cerithCourtScene": "Kethran (clipped, mechanical) vs Serath (interminable, juridical). Operational brevity vs theoretical verbosity. Both fae, entirely different rhythms.",
+      "fieldScene": "Tessen (terrain, 3-8 words) vs Marin (clinical, mixed) vs Erys (guarded, memory-led). Three frontier voices, three domains, three relationship-to-silence patterns.",
+      "militaryScene": "Sethis (institutional, 'the Legion') vs Tavik (bureaucratic, passive voice) vs Kaelith (personal, tactical). Three military registers that never sound alike."
+    }
+  }
+}

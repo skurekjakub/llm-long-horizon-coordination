@@ -1,0 +1,30 @@
+{
+  "result": "completed",
+  "summary": "Extracted abstract style patterns from reference sample",
+  "startTime": "2026-03-18T03:09:22Z",
+  "endTime": "2026-03-18T03:09:22Z",
+  "artifactsProduced": [
+    "style/style-analysis.json"
+  ],
+  "metadata": {
+    "referenceLineCount": 445,
+    "invariantsEnforced": [
+      "INV-023",
+      "INV-024"
+    ],
+    "patternCategories": 3,
+    "inputsRead": [
+      "external-resources/writing-style.txt",
+      "story-concept.json",
+      "craft-profile.json",
+      "characters/index.json",
+      "characters/CHAR-001.json",
+      "characters/CHAR-002.json"
+    ],
+    "toneAlignment": "Retained intimacy, selective description, and dry wit from the sample while calibrating toward the story concept's morally complex, atmospherically taut, anti-melodramatic tone.",
+    "characterVoiceRequirements": {
+      "POV1": "Support a clipped, tactile, structurally minded voice with shorter default cadence.",
+      "POV2": "Support a more observational, analytically layered voice with greater sentence-length variation and subtext sensitivity."
+    }
+  }
+}

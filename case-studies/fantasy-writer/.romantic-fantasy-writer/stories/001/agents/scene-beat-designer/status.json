@@ -1,0 +1,95 @@
+{
+  "agentId": "scene-beat-designer",
+  "storyId": "001",
+  "phase": "plotting",
+  "result": "completed",
+  "summary": "Enriched chapters 12-22 with granular scene beats following craft profile requirements. Each scene now includes detailed beats array with type, content, emotional register, word allocation, micro-tension points, voice notes, and subtext layers. Chapters 1-11 already had detailed breakdowns and were not modified. All 11 enriched chapters (12-22) integrate dual-arc interleave (T12), voice fingerprinting (T17), information asymmetry (T18), emotional throughline (T20), vulnerability ladder (T21), and thematic argument scaffolding (T25) as required by active craft tools.",
+  "artifactsProduced": [
+    "plot/chapter-outlines/chapter-012.json",
+    "plot/chapter-outlines/chapter-013.json",
+    "plot/chapter-outlines/chapter-014.json",
+    "plot/chapter-outlines/chapter-015.json",
+    "plot/chapter-outlines/chapter-016.json",
+    "plot/chapter-outlines/chapter-017.json",
+    "plot/chapter-outlines/chapter-018.json",
+    "plot/chapter-outlines/chapter-019.json",
+    "plot/chapter-outlines/chapter-020.json",
+    "plot/chapter-outlines/chapter-021.json",
+    "plot/chapter-outlines/chapter-022.json"
+  ],
+  "artifactsRead": [
+    "craft-profile.json",
+    "romance-arc.json",
+    "characters/CHAR-001.json",
+    "characters/CHAR-002.json",
+    "plot/plot-structure.json",
+    "plot/dual-arc-timeline.json",
+    "plot/tension-map.json",
+    "plot/chapter-outlines/chapter-001.json through chapter-011.json (reference)",
+    "plot/chapter-outlines/chapter-012.json through chapter-022.json (original placeholders)"
+  ],
+  "keyDecisions": [
+    {
+      "decision": "Focused enrichment on chapters 12-22 only",
+      "rationale": "Chapters 1-11 already contain detailed scene breakdowns (5.5-6.4KB files with specific goals, conflicts, disasters, and value shifts). Chapters 12-22 were placeholder scaffolding (2.8-2.9KB files) requiring granular beat-level detail."
+    },
+    {
+      "decision": "Excluded formal Scene-Sequel structure enforcement",
+      "rationale": "Craft profile explicitly excludes T1 (Scene Value Shift), T2 (Five Commandments), T3 (Sequel/Reaction Beats), and T14 (MRU) due to emotionally restrained prose style that reveals through omission rather than declaration. Beat design respects this by focusing on micro-tension, subtext, and voice-specific observation patterns."
+    },
+    {
+      "decision": "Chapter 16 designed as maximum black moment",
+      "rationale": "Kill contract revelation positioned at highest false security (after Ch15 intimacy and 'I want you' confession) to create maximum betrayal impact. Every beat in Ch12-15 builds trust that Ch16 obliterates, following dual-arc-timeline requirement for devastation."
+    },
+    {
+      "decision": "Contract fulfillment (Ch20) as dual-arc convergence",
+      "rationale": "Temporary death/resurrection dramatizes TP1 (trust as vulnerability to destruction) and TP3 (chosen love after necessity removed). Fantasy solution (loophole) requires romance proof (ultimate trust), achieving structural convergence required by T12."
+    },
+    {
+      "decision": "Beat-level thematic weight annotations",
+      "rationale": "T25 (Thematic Argument Scaffolding) is active in craft profile. Each enriched chapter includes thematicWeight field mapping how specific beats advance TP1 (trust as structural failure), TP2 (price of right choice), and TP3 (chosen vs only)."
+    }
+  ],
+  "craftToolCompliance": {
+    "T12_dualArcInterleave": "Every enriched chapter includes dualArcInterleave notes showing how fantasy and romance arcs reinforce, complicate, or converge. Ch14 (combat enables intimacy), Ch16 (contract revelation IS romance devastation), Ch20 (magic loophole requires emotional surrender), Ch21 (seal stabilization requires partnership).",
+    "T17_voiceFingerprinting": "Each beat includes voiceNote specifying POV-specific observation patterns. Kaelith: tactical assessment, defensive positions, cost-benefit analysis, command decisions. Lirien: threat assessment, exits, information value, precision, operative protocols.",
+    "T18_informationAsymmetry": "Beats tracking who-knows-what explicitly annotated. Ch12-15: Lirien knows contract, Kaelith doesn't. Ch16: information parity achieved through revelation. Ch19-22: both working from shared knowledge.",
+    "T20_emotionalThroughline": "Each enriched chapter includes emotionalArc (startState, endState, pivotMoment) tracking character emotional progression. Ch12 (Lirien: analytical discomfort to partnership acceptance). Ch16 (Kaelith: trust to betrayal). Ch22 (Lirien: uncertainty to chosen contentment).",
+    "T21_vulnerabilityLadder": "Romance beats explicitly reference vulnerability ladder steps. Ch13 (Step 4: sharing unforgivable parts). Ch14 (Step 6: naming desire as choice). Ch19 (Step 7: admitting cannot prove feelings). Ch20 (Step 9: consenting to literal death). Ch22 (Step 10: choosing partnership without necessity).",
+    "T25_thematicArgumentScaffolding": "Each enriched chapter includes thematicWeight section showing how beats advance three thematic pillars. TP1 trust: Ch16 (structural failure), Ch20 (vulnerability to destruction), Ch21 (trust functional). TP2 right choice: Ch15 (hiding contract), Ch16 (wrong), Ch21 (world saved but changed). TP3 chosen vs only: Ch15 (appears chosen inside cage), Ch16 (cage revealed), Ch17-22 (choosing after cage visible)."
+  },
+  "qualityMetrics": {
+    "chaptersEnriched": 11,
+    "scenesDetailed": 33,
+    "beatsDesigned": 132,
+    "averageBeatsPerScene": 4.0,
+    "microTensionPointsIdentified": 132,
+    "subtextLayersAdded": 45,
+    "voiceNotesProvided": 132,
+    "dualArcInterleavePoints": 28,
+    "thematicWeightAnnotations": 33
+  },
+  "invariantCompliance": {
+    "INV-030": "No silent failures. All enrichment completed to quality standard. Where placeholders existed, they were replaced with granular beat-by-beat instructions.",
+    "INV-035": "Micro-tension continuity maintained. Every beat includes microTension field specifying tension source (unanswered question, character withholding, ticking clock, physical danger, emotional vulnerability, dramatic irony).",
+    "INV-039": "Scene-sequel structure NOT formally enforced per craft profile exclusion of T1/T2/T3. Beat design respects restrained prose style.",
+    "INV-040": "Value shifts documented for every scene. Each scene includes explicit valueShift field showing what changes from start to end.",
+    "INV-052": "MRU structure NOT formally enforced per craft profile exclusion of T14. Restrained style often deliberately breaks stimulus-response sequence for characterization."
+  },
+  "upstreamRefs": [
+    "craft-profile.json",
+    "plot/dual-arc-timeline.json",
+    "plot/tension-map.json",
+    "romance-arc.json"
+  ],
+  "downstreamDependents": [
+    "chapter-drafter (will use beat-level instructions to produce prose)",
+    "pov-voice-maintainer (will verify voice consistency using voiceNotes)",
+    "continuity-integrator (will use informationAsymmetry annotations)",
+    "craft-enforcer (will verify T12/T17/T18/T20/T21/T25 compliance using beat annotations)"
+  ],
+  "timestamp": {
+    "started": "2025-03-18T10:00:00Z",
+    "completed": "2025-03-18T10:45:00Z"
+  }
+}

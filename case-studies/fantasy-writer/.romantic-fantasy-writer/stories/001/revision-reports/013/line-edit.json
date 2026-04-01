@@ -1,0 +1,285 @@
+{
+  "chapter": 13,
+  "pov": "CHAR-001",
+  "povName": "Kaelith Maren",
+  "agentRole": "line-editor",
+  "timestamp": "2025-07-29T05:00:00Z",
+  "draftWordCount": 5099,
+  "summary": "Chapter 13 contains the manuscript's strongest sustained dramatic sequence — the Calwrath confession (lines 82-148) is extraordinary prose: raw, controlled, and devastating in its accumulation of tactical specificity laid over moral agony. The closing distance and first kiss (lines 202-226) earn their moment through the moral gauntlet that precedes them. The dialogue is excellent throughout, with genuine subtext, distinct voices, and natural speech rhythms. However, the chapter suffers from three critical prose-level problems that undercut the emotional power: (1) architectural/structural metaphors saturate the prose at 44 instances in 276 lines — 'weight,' 'load-bearing,' 'structure,' 'architecture,' 'foundation,' 'wall' appear so densely that the chapter reads as Kaelith's voice-fingerprint checklist rather than lived experience; (2) bond-mechanism references appear 24 times, mirroring the exact problem flagged as critical in the ch12 line edit (23 times); (3) sentence-level construction patterns — 'the way X' (26 instances), 'the specific X' (13 instances), 'Not X' negative definitions (17+ instances) — create a mannered, repetitive rhythm beneath the emotional surface. The underlying prose is publication-quality once thinned. The confession sequence especially needs its structural metaphors reduced so the raw human content carries itself.",
+  "findingSummary": {
+    "total": 17,
+    "bySeverity": {
+      "critical": 3,
+      "major": 7,
+      "minor": 5,
+      "note": 2
+    },
+    "byCategory": {
+      "repetition": 6,
+      "voice": 3,
+      "prose": 2,
+      "show-tell": 3,
+      "cliché": 0,
+      "dialogue": 1,
+      "tension": 0,
+      "mru": 2
+    }
+  },
+  "findings": [
+    {
+      "id": "LINE-013-001",
+      "severity": "critical",
+      "category": "voice",
+      "description": "Architectural/structural metaphor saturation. The word 'weight' appears 13 times, 'structural' 6 times, 'architecture' 6 times, 'foundation' 5 times, 'load'/'load-bearing' 8 times, 'wall' 8 times. Total structural vocabulary: 44 instances in 276 lines — roughly one every 6 lines. The voice fingerprint explicitly states: 'Architectural metaphors should be sparse enough to land when they arrive rather than becoming a predictable tic' and 'If the voice markers are identifiable on every page, the voice is likely over-applied. Seasoning, not the main ingredient.' At current density, the structural metaphor system has become the chapter's default figurative mode — every emotional shift, every moment of connection, every bond-transmitted feeling is filtered through architectural language. The effect is that the metaphors stop landing: by line 206 ('the air between them felt pressurized, load-bearing, as though the space itself had structural properties and the structure was being tested'), the reader is numb to the pattern. The confession sequence (lines 82-148) is particularly affected — passages that should hit with raw human force are instead processing the devastation through engineering metaphors ('keystone carries the arch,' 'the way sound mortar fissured,' 'the flatness was the only architecture she had left'), muffling the emotional impact behind voice-marker discipline.",
+      "lineRef": { "start": 14, "end": 272 },
+      "instances": [
+        "L14: 'like a buttress bracing against its own weight'",
+        "L16: 'load-bearing looked sound' / 'load paths'",
+        "L68: 'the architecture was about to shift'",
+        "L72: 'still as a well-set wall'",
+        "L96-97: 'load-bearing specifications for a structure they might have to trust their life to'",
+        "L100: 'the way she noticed foundation cracks'",
+        "L116: 'the kind the body measured in the muscles of the jaw'",
+        "L122: 'The flatness was the only architecture she had left'",
+        "L124: 'bracing for a wall to give'",
+        "L142: 'like a keystone carries the arch' / 'the entire structure of her self-punishment was built to contain'",
+        "L144: 'the way sound mortar fissured when the foundation shifted underneath'",
+        "L154: 'calculated the load she could bear' / 'reassemble the parts'",
+        "L174: 'holding its position the way a properly built wall held position under lateral load'",
+        "L196: 'the way a shared wall carried vibration'",
+        "L200: 'the operative's careful architecture'",
+        "L202: 'compressing until it bore weight'",
+        "L206: 'pressurized, load-bearing' / 'structural properties' / 'the structure was being tested' (5 structural terms in 1 sentence)",
+        "L228: 'the way sustained pressure released'",
+        "L246: 'structural changes' / 'load shift'",
+        "L248: 'Weight she had been bearing alone for six years had found a second point of support'",
+        "L254: 'structural rather than decorative. They bore weight.'",
+        "L264: 'like a ceiling losing structural integrity'",
+        "L272: 'settled into its foundations'"
+      ],
+      "suggestedFix": "Reduce structural metaphors to 15-18 total (from 44) — roughly one every 15-18 lines. Keep the strongest: L14 (opening orientation), L72 ('well-set wall'), L142 (keystone — powerful enough to earn its place), L248 (second point of support — the chapter's emotional thesis). Cut aggressively from: (a) the confession sequence (L82-148), where raw human content should carry itself without architectural framing — 'the flatness was the only architecture she had left' can become simply 'the flatness was all she had left'; (b) the approach-to-kiss sequence (L196-228), especially L206 which packs five structural terms into one sentence; (c) bond-observation paragraphs where 'quality' and 'structure' combine redundantly. For remaining metaphors, vary the source domains slightly — Kaelith's profile also permits heat, stone (literal), and tactical geometry without requiring every metaphor to be an engineering term. Most paragraphs should contain zero figurative language; let the plain prose breathe."
+    },
+    {
+      "id": "LINE-013-002",
+      "severity": "critical",
+      "category": "repetition",
+      "description": "'Through the bond' and bond-mechanism references appear 24 times in 276 lines — once every 11.5 lines, nearly identical to the ch12 problem (23 in 286 lines) that was flagged as critical and subsequently reduced to 3 during revision. The chapter's three scenes contain: Scene 1 (lines 12-80): 7 bond references; Scene 2 (lines 82-148): 3 bond references (appropriate restraint during confession); Scene 3 (lines 152-276): 14 bond references. The construction 'Through the bond:' followed by a colon and observation appears 8 times as a sentence opener, creating a predictable narrative rhythm. The bond is established by line 30; after that, the reader does not need the mechanism cited for every emotional transmission.",
+      "lineRef": { "start": 28, "end": 268 },
+      "instances": [
+        "L28: 'The bond carried everything.'",
+        "L30: 'but through the resonance that had been humming in her chest'",
+        "L32: 'The problem with the bond was the same as its tactical utility'",
+        "L44: 'Through the bond: the particular quality of Lirien's attention'",
+        "L56: 'The name arrived through the bond before it arrived through the air'",
+        "L64: 'mask the emotional signature through the bond'",
+        "L66: 'the bond would carry the lie the way it carried everything else'",
+        "L96: 'Through the bond: Lirien's attention'",
+        "L124: 'Through the bond she felt Lirien's presence'",
+        "L136: 'the bond was carrying the memory's residue'",
+        "L160: 'through the air and through the bond simultaneously'",
+        "L174: 'Through the bond: the truth of it'",
+        "L182: 'Through the bond, Kaelith felt the fracture'",
+        "L184: 'Kaelith felt the pause through the bond'",
+        "L192: 'Through the bond: the crack widened'",
+        "L196: 'the bond carried the shift'",
+        "L202: 'Through the bond, the approach registered as convergence'",
+        "L206: 'The bond between them was doing something'",
+        "L214: 'Through the bond: both of them'",
+        "L222: 'The bond cracked open between them'",
+        "L226: 'the bond would not let her pretend'",
+        "L244: 'Through the bond: Lirien'",
+        "L254: 'the bond hummed between them'",
+        "L268: 'transmitted through the resonance'"
+      ],
+      "suggestedFix": "Cut to 7-9 total, following the ch12 revision precedent (23→3 was arguably too aggressive; 24→7-9 preserves the bond as a narrative presence without mechanical repetition). Keep: L28 (establishing statement), L56 (name arriving through bond — emotionally significant), L160 ('through the air and through the bond simultaneously' — the dual-channel moment when Lirien speaks), L222 (bond cracking open during the kiss — the chapter's peak physical-emotional moment), L254 (closing — 'the bond hummed between them'). Cut all 'Through the bond:' colon-openers except one (keep L174 for Lirien's 'I don't flinch' confirmation). For remaining emotional transmissions, render what Kaelith perceives without citing the mechanism: instead of 'Through the bond: Lirien's attention,' try 'Lirien's attention arrived as pressure, not sound — the sense of being watched from inside.' The reader knows the bond exists; trust them to understand how information travels."
+    },
+    {
+      "id": "LINE-013-003",
+      "severity": "critical",
+      "category": "repetition",
+      "description": "Three sentence-level constructions dominate the prose to the point of mannered repetition: (1) 'The way X' appears 26 times in 276 lines — once every 10.6 lines. This construction ('the way she tracked,' 'the way you set something down,' 'the way she noticed,' 'the way sustained pressure released') has become the chapter's default simile/comparison structure. (2) 'The specific X' or 'the particular X' as an intensifier appears 13 times. 'Specific' alone occurs 10 times — 'the specific gravity,' 'the specific warmth,' 'the specific noise,' 'the specific quality,' 'the specific resonance,' etc. The precision-intensifier has become mechanical. (3) 'Not X. Not Y. [But] Z.' definition-by-negation appears 17+ times. Combined, these three patterns appear roughly 56 times in 276 lines — once every 5 lines. The cumulative effect is a prose rhythm that is predictable beneath its surface variation.",
+      "lineRef": { "start": 22, "end": 272 },
+      "instances": [
+        "'The way' (26x): L20, L50, L58, L62, L66, L76, L86, L100, L106, L112, L122, L128, L136, L144, L164, L174, L184, L190, L196, L198, L204, L214, L228, L244, L246, L272",
+        "'The specific/particular' (13x): L32, L36, L44, L56, L116, L124, L138, L166, L196, L202, L222, L224, L242",
+        "'Not X' negative definition (17+x): L22, L40, L66, L72, L82, L96, L136, L164, L174, L196, L198, L216, L222, L224, L244, L248 (plus many more embedded in longer sentences)"
+      ],
+      "suggestedFix": "Target: reduce 'the way' from 26 to 10-12, 'specific/particular' from 13 to 4-5, 'Not X' from 17+ to 8-10. Strategies: (a) For 'the way': in most cases, cut the comparison entirely and let the direct statement stand. 'She noticed it the way she noticed foundation cracks — clinically' → 'She noticed it clinically.' 'Kaelith made the decision the way she made all decisions' → 'She assessed the risk. Calculated the cost. Chose.' (the actions already convey the pattern without the meta-comparison). (b) For 'specific/particular': these intensifiers add nothing when overused. 'The specific gravity of three hundred deaths' → 'The gravity of three hundred deaths.' 'The specific warmth of a person's mouth' → 'The warmth of Lirien's mouth.' Precision is achieved through concrete detail, not through the word 'specific.' (c) For 'Not X': the most powerful instances (L174 'Not bravado. Not performance.', L222 'not gentle. Not desperate.') should stay. Cut where the negation adds length without clarity, especially when 3+ negatives stack before the actual statement."
+    },
+    {
+      "id": "LINE-013-004",
+      "severity": "major",
+      "category": "voice",
+      "description": "'Quality' used as an abstract emotional descriptor appears 8 times (L30, L44, L66, L96, L124, L166, L202, L244). The word functions as a placeholder for emotional states the prose does not render concretely: 'the particular quality of Lirien's attention,' 'the specific, deliberate quality of a person holding their position,' 'the quality of someone listening to load-bearing specifications.' Each instance tells the reader that Lirien's attention/presence has a 'quality' without specifying what that quality feels like in Kaelith's body or senses. This is an abstraction habit that distances the reader from embodied experience.",
+      "lineRef": { "start": 30, "end": 244 },
+      "instances": [
+        "L30: 'A change in quality'",
+        "L44: 'the particular quality of Lirien's attention'",
+        "L66: 'the unmistakable quality of a person saying one thing and feeling another'",
+        "L96: 'the quality of someone listening to load-bearing specifications'",
+        "L124: 'The specific, deliberate quality of a person holding their position'",
+        "L166: 'it carried the specific quality of someone who had spent eighteen years'",
+        "L202: 'The particular quality of attention that had nothing to do with tactical assessment'",
+        "L244: 'The quality of a person who had just crossed a threshold'"
+      ],
+      "suggestedFix": "Cut 5 of 8 uses. Replace with concrete rendering: L44 could become 'Lirien's attention narrowed — focused, like water finding the place in a wall where the mortar had thinned' (keep the simile, cut the abstraction layer). L96 could become 'attention — steady, deep, waiting for the numbers to finish' (remove the comparison-to-a-person construction). L124 could become simply 'Just presence. Deliberate. Holding position.' The word 'quality' is most forgivable at L30 and L66 where it describes something genuinely hard to name."
+    },
+    {
+      "id": "LINE-013-005",
+      "severity": "major",
+      "category": "repetition",
+      "description": "'The X of a person who Y' abstract-definition construction appears 8+ times in Scenes 1 and 3. This pattern describes emotional states by abstracting them into universal human categories rather than grounding them in the specific people present: 'the focused precision of a person who needed her hands occupied' (L22), 'the specific, unbearable precision of a person saying your name' (L56), 'the unmistakable quality of a person saying one thing' (L66), 'the specific, deliberate quality of a person holding their position' (L124), 'the register of a person choosing to be seen' (L180), 'the steadiness of a person using control as the last available wall' (L190), 'the steadiness of a person who had decided not to look away' (L204), 'the quality of a person who had just crossed a threshold' (L244). The construction universalizes what should be specific — these are not generic persons but Kaelith and Lirien.",
+      "lineRef": { "start": 22, "end": 244 },
+      "suggestedFix": "Cut 5 of 8. Keep the strongest 2-3 (L56 and L190 are the most effective). Replace the others with direct attribution: L22: 'she spent seven minutes arranging it because her hands needed occupation or they would shake.' L124: 'Lirien held her position. Deliberate. Waiting.' L204: 'Lirien held Kaelith's gaze without looking away.' L244: 'Lirien — shaken and warm and certain.' Removing the abstracting layer makes the prose more immediate and specific."
+    },
+    {
+      "id": "LINE-013-006",
+      "severity": "major",
+      "category": "repetition",
+      "description": "Body-sensation catalog repetition. Kaelith's emotional register is physical (per voice profile), but the same physical beats recur with near-identical phrasing: (a) 'heat climbing her neck' at L26 and 'heat that climbed the back of the neck' at L116 — almost identical phrase for the same sensation; (b) 'pressure behind her sternum' at L26 and 'pressure behind the sternum' at L116 — identical phrase; (c) jaw tension at L68 ('Her jaw ached'), L116 ('muscles of the jaw'), L246 ('Her jaw had unlocked') — 3 references; (d) hand tremor at L23, L58, L68, L100, L246, L254 — 6 references to hands shaking or steadying. The hands-shaking-to-steady arc is the chapter's intentional emotional throughline, but the jaw/neck-heat/sternum-pressure repetition creates a body-catalog effect the voice profile warns against: 'A single clenched jaw in a scene is powerful; describing her jaw, neck, sternum, and palms in the same paragraph is a catalogue, not characterization.'",
+      "lineRef": { "start": 26, "end": 254 },
+      "instances": [
+        "L26 + L116: 'heat climbing her neck' / 'heat that climbed the back of the neck' — near-identical",
+        "L26 + L116: 'pressure behind her sternum' / 'pressure behind the sternum' — identical",
+        "L68, L116, L246: jaw tension — 3 references",
+        "L23, L58, L68, L100, L246, L254: hands shaking/steady — 6 references (arc: intentional)"
+      ],
+      "suggestedFix": "The hand-tremor arc is intentional and effective — keep the bookend (L23 shaking → L246 steady) but consider cutting 1-2 middle instances (L58 or L68). For the L26/L116 repetition: L26 establishes the body-sensation pattern early; L116 should use different physical beats. Replace L116's 'the muscles of the jaw and the pressure behind the sternum and the heat that climbed the back of the neck' with two new sensations — perhaps the weight of the words in her mouth, or the sound of her own breathing, or the particular stillness in her hands. Vary the body geography so each emotional peak reveals something new rather than confirming the same catalog."
+    },
+    {
+      "id": "LINE-013-007",
+      "severity": "major",
+      "category": "voice",
+      "description": "'Six years' time-marker appears 10 times (L26, L36, L56, L64, L84, L120, L128, L136, L142, L248). While some instances are in dialogue (L84: 'Six years ago at Calwrath,' L120: 'The three words that had defined her for six years') and are appropriate for the confession scene, the narration also repeats the time reference excessively. The ch11 revision reduced 'six years' from 15 to 7; at 10 instances in a shorter chapter, the density is comparable to the pre-revision state. The effect is a rhythmic drumbeat that tells the reader the same fact — she has been carrying this for six years — rather than trusting the reader to hold it.",
+      "lineRef": { "start": 26, "end": 248 },
+      "suggestedFix": "Cut to 5-6 total. Keep: L84 (dialogue — the confession's opening), L120 (the three words that defined her), L248 (the chapter's emotional resolution — weight carried alone for six years finding a second support point). Cut: L36 (unnecessary — the reader knows the Oathbrand timeline), L64 ('She had managed this for six years' — 'She had managed this' is sufficient), L128 ('what it had carried six years ago' — 'what it had carried then' works), L142 ('not for a single day in six years' — 'not for a single day' is stronger)."
+    },
+    {
+      "id": "LINE-013-008",
+      "severity": "major",
+      "category": "prose",
+      "description": "Water metaphor domain violation at L148: 'The words fell into the silence like stones into deep water.' The style guide explicitly restricts Kaelith's metaphor domain: 'Her metaphors must stay structural. Do not give her water, garden, or dreamlike metaphors except in late-story moments where Lirien's influence is intentionally audible.' Chapter 13 is mid-book (of 22 chapters). While Lirien is present and the intimacy is deepening, the voice evolution guide suggests water metaphors should begin appearing 'late-story.' This is also a borderline worn simile — 'words falling like stones into water' is a recognizable literary construction that approaches cliché territory.",
+      "lineRef": { "start": 148, "end": 148 },
+      "suggestedFix": "Replace with a structural metaphor or a plain statement. Options: 'The words settled into the silence and the silence held their weight.' Or: 'The words landed. The silence did not break beneath them.' Or simply cut the sentence — the silence after line 147 speaks for itself; the reader does not need the metaphor to feel the weight."
+    },
+    {
+      "id": "LINE-013-009",
+      "severity": "major",
+      "category": "show-tell",
+      "description": "Bond-transmitted emotion telling. The bond mechanism creates a shortcut for naming emotions directly: L72 ('concern'), L160 ('Lirien's emotional state — clear, without the classification architecture'), L214 ('The wanting that had been accumulating' and 'The attraction Kaelith had classified as threat'), L244 ('shaken and warm and certain'). While the bond justifies the mechanism of reception, the result is still told emotion — the reader learns what Lirien or Kaelith feels through labels rather than through action, gesture, or sensory experience. The most egregious instance is L214, which names both 'wanting' and 'attraction' directly.",
+      "lineRef": { "start": 72, "end": 244 },
+      "instances": [
+        "L72: 'concern. Not the kind that demanded a response.' — names the emotion through bond perception",
+        "L160: 'Lirien's emotional state — clear' — abstract summary",
+        "L214: 'The wanting' / 'The attraction Kaelith had classified as threat and risk and tactical complication and had never once called what it was' — names both emotions directly (wanting, attraction)",
+        "L244: 'shaken and warm and certain' — three adjective labels for Lirien's state"
+      ],
+      "suggestedFix": "L72: replace 'concern' with its physical correlate — what does concern feel like arriving through the bond? Warmth? Pressure? A particular quality of attention? L160: keep the observation that the emotion is 'without the classification architecture' (that detail reveals character) but replace 'clear' with sensory rendering. L214: this is the chapter's most significant show-tell violation. The first sentence names 'wanting' directly — let the reader feel it through the specific memories and sensations that follow instead. The second sentence ('The attraction Kaelith had classified...') works because the self-aware re-naming IS the emotional beat — she is finally admitting what she has been deflecting. Consider keeping the second while cutting the label from the first. L244: 'shaken and warm and certain' — replace with what these states look like through the bond: physical tremor, warmth against skin, the unmoving quality of Lirien's breathing."
+    },
+    {
+      "id": "LINE-013-010",
+      "severity": "major",
+      "category": "show-tell",
+      "description": "Character-summary telling at L166-168 and L200. Two passages describe Lirien by summarizing her biography or capabilities rather than showing an in-the-moment observation. L166-167: 'the specific quality of someone who had spent eighteen years reading the gap between what people said and what they meant and was now, deliberately, closing that gap' — this tells Lirien's professional history rather than showing what Kaelith sees or feels. L200: 'the fae precision set aside, the operative's careful architecture abandoned, and what remained was a woman in the dark who had answered Kaelith's worst with her own and had not flinched from either' — the second half summarizes what just happened rather than rendering the moment. The reader was present for the exchange; they do not need the summary.",
+      "lineRef": { "start": 166, "end": 200 },
+      "suggestedFix": "L166-167: Replace the eighteen-year biography with what Kaelith perceives in the moment — Lirien's expression, her posture, the quality of her voice, the sensation arriving through the bond. The reader already knows Lirien reads gaps; show what Lirien's face does when she stops reading and starts revealing. L200: Cut 'and what remained was a woman in the dark who had answered Kaelith's worst with her own and had not flinched from either.' The image of 'a woman in the dark' is strong — let it stand alone. The summary of the preceding action ('answered Kaelith's worst with her own and had not flinched') is redundant."
+    },
+    {
+      "id": "LINE-013-011",
+      "severity": "minor",
+      "category": "prose",
+      "description": "'Not metaphorical/Not metaphorically' self-conscious disclaimer appears at L116 ('not metaphorical weight, actual weight') and L164 ('Not metaphorically. The muscles contracted'). Both instances break immersion by meta-commenting on the prose's own figurative conventions. The disclaimers say: 'I know I usually use metaphors, but this time I mean it literally.' This is a prose tic that draws attention to technique rather than experience. It's also patronizing — the reader can tell from context whether a physical sensation is literal.",
+      "lineRef": { "start": 116, "end": 164 },
+      "suggestedFix": "Cut both disclaimers. L116: 'Each one carried weight — in the muscles of the jaw, in the pressure behind the sternum' (the body locations make the literalness self-evident). L164: 'Kaelith's throat closed. The muscles contracted the way they contracted before...' (removing 'Not metaphorically' lets the physical description prove its own literalness)."
+    },
+    {
+      "id": "LINE-013-012",
+      "severity": "minor",
+      "category": "prose",
+      "description": "Adjective stacking at L168: 'The surgical, devastating accuracy.' Two heavy, polysyllabic adjectives preceding a noun creates momentary purple prose. 'Surgical' and 'devastating' are both strong words; together they compete rather than compound. The sentence already communicates the impact through its content — Lirien saw what Kaelith was doing and named it first.",
+      "lineRef": { "start": 168, "end": 168 },
+      "suggestedFix": "Keep one adjective: 'The surgical accuracy of a person who saw exactly what Kaelith was doing' (keeping 'surgical' aligns with Lirien's precision). Or cut both and let the sentence carry itself: 'The accuracy of it opened something in Kaelith's chest.'"
+    },
+    {
+      "id": "LINE-013-013",
+      "severity": "minor",
+      "category": "dialogue",
+      "description": "Contraction inconsistency in Lirien's speech at L166. In back-to-back clauses of the same speech, Lirien shifts from formal ('You are not asking for forgiveness') to contracted ('You're asking if I flinch'). The voice profile says contractions represent 'human warmth breaching fae formality' and should 'increase gradually.' This rapid shift within a single speech could be intentional — the contraction marking the moment she pivots from clinical observation to personal declaration — but the lack of narrative beat between the two clauses makes the shift feel accidental rather than earned. Compare with L158/L162 where contractions ('don't,' 'you're,' 'can't') are consistent throughout.",
+      "lineRef": { "start": 166, "end": 166 },
+      "suggestedFix": "Either make both clauses consistent (both formal: 'You are not asking for forgiveness. You are asking if I flinch.' — which strengthens the deliberate tone) or insert a brief beat between them to mark the shift: 'You are not asking for forgiveness.' A pause. Then, quieter: 'You're asking if I flinch.' The beat makes the contraction feel chosen rather than inconsistent."
+    },
+    {
+      "id": "LINE-013-014",
+      "severity": "minor",
+      "category": "mru",
+      "description": "MRU compression at L216-220. Lirien touches Kaelith's jaw (external stimulus, L216-217). The next Kaelith-focused beat is 'Kaelith did not pull away' (L218 — negative reflex). Then immediately: 'She closed the distance' (L220 — action). There is no emotional reaction beat between the stimulus (touch) and the response (closing distance). For the chapter's most pivotal physical moment — the first time Lirien deliberately touches Kaelith's face, leading to the first kiss — the absence of Kaelith's internal experience of the touch is notable. What does the contact feel like against her jaw? What does the bond transmit? The moment skips from input to output without processing.",
+      "lineRef": { "start": 216, "end": 220 },
+      "suggestedFix": "Insert one sentence of tactile/bond sensation between L218 and L220: after 'Kaelith did not pull away,' add a beat like: 'The touch was warm. Not the Oathbrand's warmth — not punishment. The warmth of a person's hand, deliberate on her skin, and through the bond the echo of it: Lirien feeling Kaelith's jaw under her fingers, Kaelith feeling Lirien feeling it.' Then: 'She closed the distance.' Keep it brief — the moment should not be over-narrated — but the single beat of sensation grounds the transition."
+    },
+    {
+      "id": "LINE-013-015",
+      "severity": "minor",
+      "category": "show-tell",
+      "description": "L206 combines telling with metaphor overload in a single 53-word sentence: 'The bond between them was doing something she had no tactical framework for — transmitting not information but intensity, the raw weight of proximity amplified by mutual awareness until the air between them felt pressurized, load-bearing, as though the space itself had structural properties and the structure was being tested.' The sentence names 'intensity' (abstract) and 'mutual awareness' (abstract), then processes them through five structural metaphors. It explains the moment rather than rendering it sensorily.",
+      "lineRef": { "start": 206, "end": 206 },
+      "suggestedFix": "Replace the abstract explanation with physical rendering. What does 'intensity' feel like in Kaelith's body at this distance? The bond is transmitting sensation — show the sensation: 'The bond between them was doing something she had no tactical framework for. Her skin burned where Lirien was not touching it. Her breathing matched Lirien's and she had not decided to match it.' Let the reader infer intensity from the physical effects rather than being told 'intensity.'"
+    },
+    {
+      "id": "LINE-013-016",
+      "severity": "note",
+      "category": "mru",
+      "description": "At L232, Kaelith speaks ('I cannot undo that') immediately after the kiss breaks, before showing an emotional reaction to the kiss ending. The MRU pattern prescribes: stimulus (kiss breaking) → emotional reaction → reflex → rational action → speech. Here, speech arrives first. However, the speech itself IS the emotional reaction — the words are not processed analysis but raw emotional expression. The inversion is defensible given the moment's intensity. Flagged for reviser awareness, not as a required fix.",
+      "lineRef": { "start": 228, "end": 232 },
+      "suggestedFix": "Optional: insert one beat of physical sensation before L232 — 'Her lips were numb. Her hands were on Lirien's neck and she could feel the pulse there, still fast.' Then: 'I cannot undo that.' This grounds the speech in the body without significantly slowing the moment."
+    },
+    {
+      "id": "LINE-013-017",
+      "severity": "note",
+      "category": "repetition",
+      "description": "The word 'tactical' appears 9 times (L32, L64, L76, L96, L198, L202, L206, L214, L268). While military vocabulary is part of Kaelith's voice, 'tactical' specifically becomes repetitive — especially in Scene 3 where it appears 5 times in 70 lines (L198, L202, L206, L214, L268). Consider varying to 'military,' 'operational,' 'strategic,' or simply dropping the modifier where context makes the tactical frame implicit.",
+      "lineRef": { "start": 32, "end": 268 },
+      "suggestedFix": "Reduce to 5-6 total. Keep where the word does specific work (L32: 'tactical utility,' L76: 'tactical clarity'). Cut where 'tactical' is functioning as generic intensifier: L198 ('Not the tactical assessment' → 'Not assessing'), L202 ('nothing to do with tactical assessment' → 'nothing to do with assessment'), L268 ('transmitted through the resonance at a frequency' → the sentence works without citing 'tactical' at all)."
+    }
+  ],
+  "proseStrengths": [
+    {
+      "description": "The Calwrath confession (L84-148) is the manuscript's strongest sustained dramatic sequence. The tactical-briefing register fracturing under moral weight is masterfully executed — Kaelith's voice breaks at exactly the right moments (L134: 'She heard the crack in her own voice and could not prevent it') without the prose breaking its discipline.",
+      "lineRef": { "start": 84, "end": 148 }
+    },
+    {
+      "description": "Dialogue is excellent throughout. The opening exchange (L38-50) carries genuine subtext — Lirien's 'You're building a windbreak that will not break wind' and Kaelith's 'It does not need to be functional' communicate volumes about emotional avoidance without either character acknowledging it. The dialogue sounds like speech, not thesis statements.",
+      "lineRef": { "start": 38, "end": 50 }
+    },
+    {
+      "description": "Lirien's counter-confession (L182-194) is the chapter's most effective voice-contrast moment. Her shift from operative language ('completions,' 'contract fulfillment') to the devastating plainness of 'I still know her name. Elisi.' demonstrates voice evolution through content, not through mechanical marker adjustment.",
+      "lineRef": { "start": 182, "end": 194 }
+    },
+    {
+      "description": "The closing distance sequence (L202-220) earns the kiss through accumulation — each pace reduction tightens the scene's tension without melodrama. The countdown (four paces, three, two, one) is structural in the best sense: the spatial precision IS Kaelith's way of processing desire.",
+      "lineRef": { "start": 202, "end": 220 }
+    },
+    {
+      "description": "L226 ('She was falling apart. She was being put together. She could not tell the difference') is the chapter's finest single line. Clean, unpretentious, emotionally true. It earns its power through contrast with the dense prose surrounding it.",
+      "lineRef": { "start": 226, "end": 226 }
+    },
+    {
+      "description": "The chapter maintains perfect micro-tension. No passage of half a page or longer lacks an active tension source. Even during the intimate aftermath, the pursuit and Pallor erosion provide background pressure. The story never stops moving even while two people are standing still.",
+      "lineRef": { "start": 12, "end": 276 }
+    },
+    {
+      "description": "Zero banned phrases. Zero stock fantasy or romance clichés. The chapter's prose problems are all in the direction of over-voicing and structural repetition, not lazy writing — the mistakes are those of an author trying too hard to maintain Kaelith's voice rather than falling into generic diction.",
+      "lineRef": { "start": 12, "end": 276 }
+    }
+  ],
+  "invariantResults": {
+    "INV-017": "FAIL — zero clichés (pass), but repetition thresholds exceeded: structural metaphors 44x (~every 6 lines), 'the way' construction 26x, 'specific/particular' 13x, 'Not X' negation 17+x. Voice marker saturation is a repetition violation.",
+    "INV-005": "CONDITIONAL PASS — overall show:tell ratio is strong (~90:10), with the majority of emotion rendered physically. Four instances of direct emotion labeling (L72, L160, L214, L244), primarily through the bond mechanism. L214 is the most significant violation (naming 'wanting' and 'attraction' directly).",
+    "INV-019": "PASS — dialogue sounds like speech, characters sound distinct, no overly formal phrasing except where intentional (Kaelith's contraction-dropping under stress). One minor consistency note (L166 contraction shift).",
+    "INV-035": "PASS — no dead spots. Tension maintained throughout all three scenes from multiple sources (pursuit, bond exposure, confession, judgment anticipation, physical proximity, Pallor erosion).",
+    "INV-047": "PASS — dialogue subtext is strong throughout. The opening exchange (L38-50) and Lirien's 'I don't flinch' (L172) are exemplary. 'This is not survival' (L210) explicitly names what the moment is not, leaving what it IS for the reader to hold.",
+    "INV-003": "CONDITIONAL PASS — voice is unmistakable but saturated. Kaelith's voice is recognizable from the first paragraph and consistent throughout. The problem is over-application, not inconsistency. Distinction is excessive rather than insufficient.",
+    "INV-064": "PASS — tactile/proprioceptive sensory signature consistent. Kaelith experiences the world through surfaces, pressure, weight, heat, and grip. The repetition of specific body locations (finding #006) is a repetition problem, not a sensory-signature problem.",
+    "INV-073": "CONDITIONAL PASS — the underlying prose is publication-ready and emotionally authentic. Thinning the three critical repetition patterns will elevate the chapter significantly without requiring structural revision. The prose is too lush in the direction of voice-marker density, not in the direction of purple language."
+  },
+  "revisionPriority": "The three critical findings (LINE-013-001, LINE-013-002, LINE-013-003) share a single root cause: over-narration. The chapter explains, re-explains, and meta-comments on emotional states that the reader can infer from context, dialogue, and physical behavior. Addressing the root cause will resolve most major findings simultaneously. Recommended revision approach: (1) thin structural metaphors by 60%, keeping only those that genuinely advance understanding; (2) cut bond references by 65%, trusting the reader to understand the mechanism; (3) vary sentence constructions, breaking the 'the way' / 'the specific' / 'Not X' patterns; (4) remove 'not metaphorical' disclaimers. The confession sequence (L82-148) needs the lightest touch — it is the chapter's best writing and only needs its metaphor density reduced. The kiss sequence (L202-228) needs the heaviest revision — it is where all three critical patterns converge most densely."
+}

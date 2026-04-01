@@ -1,0 +1,356 @@
+{
+  "gateId": "REVISION-GATE-008",
+  "phase": "revision",
+  "chapter": 8,
+  "auditor": "revision-auditor",
+  "generatedAt": "2025-07-27T19:15:00Z",
+  "verdict": "passed",
+  "verdictRationale": "All 10 major findings from the three edit reports have been verified as substantively addressed in the revised chapter. No critical findings existed. No regressions detected. No darlings flagged by editors survive unchanged. Traceability is intact — all changes in the revision log cite finding IDs. The revised chapter is a significant quality improvement over the draft: physical care beats are dramatized, water metaphor domain is restored, operational vocabulary monotone is broken, Veldrane matches canonical geography, timeline is corrected, POV is consistently close-third, and the chapter close matches the outline's quiet-devotion specification. Word count delta is -2.6%, well within the 10% threshold, and the additions (care scenes, Pallor references, Veldrane rewrite, vulnerability beats, humor exchange) more than compensate for compressed material.",
+  "findingVerificationMatrix": {
+    "majorFindings": [
+      {
+        "id": "DEV-008-001",
+        "severity": "major",
+        "title": "Missing physical care beats from romance arc specification",
+        "verification": "passed",
+        "evidence": {
+          "draftState": "No physical care actions dramatized. Scene 3 consists entirely of interior monologue about intending to provide care: 'tomorrow, we would adjust our pace' (future tense, planned not enacted).",
+          "revisedState": "Three specific care actions dramatized: (1) Lines 226-247: Lirien retrieves field dressings and wraps Kaelith's collarbone — detailed physical scene with finger contact, precise wrapping, field-note fragments. (2) Lines 256-258: Lirien prepares food/tea at the stove, positions the cup and bread so Kaelith won't need to turn her left shoulder. (3) Lines 289-293: Lirien adjusts Kaelith's cloak over her shoulders while sleeping, careful around the branded side.",
+          "adequacy": "Fully addressed. All three outline-specified care actions (dressings, food, cloak) are present and dramatized through specific physical detail rather than narrated intention."
+        }
+      },
+      {
+        "id": "DEV-008-002",
+        "severity": "major",
+        "title": "Scene 3 introspective density exceeds style guide limits",
+        "verification": "passed",
+        "evidence": {
+          "draftState": "Lines 192-252: approximately 800 words of unbroken interior monologue with no external action, dialogue, or gesture.",
+          "revisedState": "Scene 3 now interleaves reflection with external action: dressing application (226-247), humor exchange dialogue (261-268), food preparation (256-258), cloak adjustment (289-293). Field-note fragments ('Close work. Precise.', 'Clean. Private enough.') break analytical passages. No passage exceeds two consecutive reflective paragraphs without an action or dialogue beat.",
+          "adequacy": "Fully addressed. The introspective content is preserved but distributed between physical action beats, complying with the style guide's two-paragraph limit."
+        }
+      },
+      {
+        "id": "DEV-008-003",
+        "severity": "major",
+        "title": "Chapter close does not match outline specification",
+        "verification": "passed",
+        "evidence": {
+          "draftState": "Final lines: 'I continued watching Kaelith sleep, noting the way the brand's glow faded... Tonight, I would ensure her rest remained undisturbed. Such care served no tactical purpose. I provided it anyway.' — Lirien declares care rather than performing it.",
+          "revisedState": "Lines 289-295: 'She pulled the cloak up. Adjusted it over Kaelith's shoulders, careful around the left side where the dressings covered the brand. Settled the fabric so it covered without pressing. Her fingers lingered at the edge of the cloak for half a breath longer than the task required. A small act. Wordless. The kind of care that could not survive the framework she would try to rebuild around it in the morning. Tonight, she did not try. She returned to her pallet and did not sleep for a long time.'",
+          "adequacy": "Fully addressed. The close is now a physical gesture (cloak adjustment) matching the outline's quiet-devotion specification. The chapter ends on the aftermath of the action, not on commentary about care."
+        }
+      },
+      {
+        "id": "LINE-008-001",
+        "severity": "major",
+        "title": "Lirien's water/current metaphor domain is absent",
+        "verification": "passed",
+        "evidence": {
+          "draftState": "Zero water-domain metaphors in 4,089 words of Lirien POV. Only operational/mechanical metaphor domain present.",
+          "revisedState": "5 water-domain instances verified: (1) Line 57: 'what ran beneath that surface' (surface/depth). (2) Line 133: 'surface symptoms of a deeper current.' (3) Line 187: 'like something falling into deep water — a single impact, then silence spreading outward.' (4) Line 207: 'An undertow pulling beneath the surface of careful analysis.' (5) Line 283: 'A current beneath the surface that she could no longer pretend was something else.' Additional surface language at line 131: 'read it through its surface.'",
+          "adequacy": "Fully addressed. The metaphors are distributed across all three scenes (1 in Scene 1 transition, 2 in Scene 2, 2 in Scene 3) and feel organic to their context — the undertow accompanies fear, the deep-water image accompanies the diagnosis impact, the current accompanies the admission. No forced placement detected."
+        }
+      },
+      {
+        "id": "LINE-008-002",
+        "severity": "major",
+        "title": "Operational/tactical vocabulary creates monotone",
+        "verification": "passed",
+        "evidence": {
+          "draftState": "Verified counts — 'operational': 13, 'tactical': 13, 'mission': 12, 'parameters': 3, 'classification/classify': 5. Total operational-domain terms: 46+.",
+          "revisedState": "Verified counts — 'operational': 0, 'tactical': 1 (in dialogue: 'That was not a tactical assessment'), 'mission': 0 (only substring in 'admission'), 'parameters': 0, 'classification/classify': 2. Total: 3. Reduction exceeds the recommended 40%.",
+          "adequacy": "Fully addressed. The vocabulary monotone is eliminated. Replacement register elements include water metaphors, contractual language ('binding maintenance,' 'fae contract architecture'), sensory description chains, and field-note fragments. Lirien's analytical quality is maintained through observation patterns rather than repeated clinical terminology."
+        }
+      },
+      {
+        "id": "LINE-008-003",
+        "severity": "major",
+        "title": "Scene 3 tells Lirien's emotional shift rather than showing it",
+        "verification": "passed",
+        "evidence": {
+          "draftState": "Key telling passages: 'Personal. I had offered personal advice based on concern that had no strategic justification' (210); 'I was experiencing mission drift' (213); 'I was caring for her. Not as a mission asset, but as someone whose survival had become personally essential' (244).",
+          "revisedState": "The emotional shift is now demonstrated through dramatized behavior: Lirien purchasing dressings 'without justification' (227), wrapping the collarbone (237-243), positioning food so Kaelith won't turn her shoulder (257-258), adjusting the cloak (291-293). The climactic admission is the plainest sentence: 'She did not want Kaelith to die' (282) — no analytical scaffolding, as recommended. The single remaining analytical statement ('These were not strategic adjustments. They were care, stripped of every framework she might have used to justify them' at 275-276) follows extensive shown behavior and reads as earned commentary.",
+          "adequacy": "Fully addressed. Show-to-tell ratio in Scene 3 has been substantially improved. The emotional shift is enacted through specific physical actions, with the most important admission delivered in the simplest language."
+        }
+      },
+      {
+        "id": "COPY-008-001",
+        "severity": "major",
+        "title": "Veldrane description contradicts geography.json",
+        "verification": "passed",
+        "evidence": {
+          "draftState": "'typical frontier development: functional architecture designed for harsh weather and limited resources, minimal decoration, everything built to last. Stone foundations, timber frames, slate roofs.'",
+          "revisedState": "Lines 129-131: Complete rewrite. Now includes: River Carith with three bridges (one functional, one crumbling, one barricaded), marketplace 'where permanent stall structures outnumbered buyers three to one,' Hound and Hammer inn, temple to six gods with 'four of the altars carried dust,' architecture of former importance now 'occupied by half the population they were built for.' The framing shifts from 'frontier development' to declining trade hub, matching LOC-005.",
+          "adequacy": "Fully addressed. All canonical Veldrane details from geography.json are present. Lirien's operative perspective adds thematic depth: 'a town whose infrastructure remembered importance its population had forgotten.'"
+        }
+      },
+      {
+        "id": "COPY-008-002",
+        "severity": "major",
+        "title": "Travel duration inconsistency",
+        "verification": "passed",
+        "evidence": {
+          "draftState": "'Four days of increasing frequency. Four days of her concealing escalation...'",
+          "revisedState": "Line 71: 'Two days of increasing frequency. Two days of concealing escalation that should have been reported.'",
+          "adequacy": "Fully addressed. Changed from 4 to 2 days, consistent with continuity tracker (Day 3 departure from Duskhaven, Day 5 arrival at Veldrane)."
+        }
+      },
+      {
+        "id": "COPY-008-003",
+        "severity": "major",
+        "title": "Oathbrand duration internal inconsistency",
+        "verification": "passed",
+        "evidence": {
+          "draftState": "The chapter correctly uses 'six years' per YK 736-742 timeline. The copy editor flagged that other artifacts may use 'five years' inconsistently.",
+          "revisedState": "Reviewed-no-change. The chapter's three instances of 'six years' (lines 63, 159, 183) are correct per canonical timeline. Cross-manuscript consistency flagged separately.",
+          "adequacy": "Correctly handled. No change required in this chapter; the finding was about cross-artifact consistency."
+        }
+      },
+      {
+        "id": "COPY-008-004",
+        "severity": "major",
+        "title": "Incorrect ward-breaking destination in route calculation",
+        "verification": "passed",
+        "evidence": {
+          "draftState": "'The journey to the Quietus would require three weeks under optimal conditions... reaching the Quietus and accessing whoever maintained the ancient ward-breaking protocols there' — conflates Quietus with brand removal.",
+          "revisedState": "Line 273: 'The mortality timeline required finding a ward-breaker with the expertise Marin had described — Imperial suppression systems, military-grade containment... They needed to reach someone capable, and quickly — not at the end of the journey but as soon as one could be found. The broader objective remained, but the immediate priority had shifted: the brand first, then the Quietus.'",
+          "adequacy": "Fully addressed. Brand removal and Quietus journey are correctly identified as sequential goals, not the same destination. This aligns with the Ch11 outline (brand removed at sanctuary by Tessen Vael, not at the Quietus)."
+        }
+      }
+    ],
+    "moderateFindings": [
+      {
+        "id": "DEV-008-004",
+        "verification": "passed",
+        "summary": "Fantasy arc presence strengthened with 5 Pallor references distributed across chapter plus Marin connecting Pallor thinning to brand worsening (line 171). Route calculation includes Pallor gradient zones (line 273)."
+      },
+      {
+        "id": "DEV-008-005",
+        "verification": "passed",
+        "summary": "Kaelith vulnerability expanded: stillness and drawn-in shoulders during exposure (143-144, 152-153), eyes fixing on wall (153), holding gesture at laces after diagnosis (200-203), postural shift (204-205), permitting the dressing (244-245)."
+      },
+      {
+        "id": "DEV-008-006",
+        "verification": "passed",
+        "summary": "Scene transition reworked: entry via Carith bridge (129), Veldrane description is now purposeful rather than generic, loaded image 'dying for the duration of her exile' (135) carries closer to healer scene."
+      },
+      {
+        "id": "LINE-008-004",
+        "verification": "passed",
+        "summary": "Classification-failure reduced from 5 to 3 instances with escalating manifestation: framework failure (207), behavioral data-classification (241), stripped-back admission (282). Matches recommended progression."
+      },
+      {
+        "id": "LINE-008-005",
+        "verification": "passed",
+        "summary": "Visual: green of Kaelith's eyes flattening (51), micro-expressions (51-52), firelight on face (271, 279). Auditory: spaces between words, micro-hesitation before 'sometimes' (81), River Carith through walls (287)."
+      },
+      {
+        "id": "LINE-008-006",
+        "verification": "passed",
+        "summary": "'Ground shifting' replaced with water-domain 'undertow pulling beneath the surface' (207). 'Attention divided' eliminated; replaced with observation-without-assessment pattern (279)."
+      },
+      {
+        "id": "LINE-008-007",
+        "verification": "passed",
+        "summary": "Uncertainty qualifiers added: 'appeared to be managing' (57), 'could not be certain' (57), 'appeared to be calculating' (103), 'protecting the site, or protecting herself' (153)."
+      },
+      {
+        "id": "LINE-008-008",
+        "verification": "passed",
+        "summary": "Field-note fragments introduced: 'Close work. Precise.' (243), 'Clean. Private enough.' (217), 'Not assessing. Observing.' (271), 'Small adaptations.' (223). Rhythm variation restored."
+      },
+      {
+        "id": "COPY-008-005",
+        "verification": "passed",
+        "summary": "Marin's dialogue (171) now connects Pallor thinning to brand worsening: 'the Pallor's thinning out here is making it worse. Ambient magical pressure is higher in this region.' Followed by Lirien's analysis (173)."
+      },
+      {
+        "id": "COPY-008-006",
+        "verification": "passed",
+        "summary": "Technical terminology softened: 'Remote refresh' and 'brand matrix' replaced with fae-framed inference: 'The mechanism was unfamiliar — not binding maintenance as Lirien understood it from fae contract architecture, but the principle was clear' (92-93)."
+      },
+      {
+        "id": "COPY-008-007",
+        "verification": "passed",
+        "summary": "Non-canonical 'crossed keys beneath the imperial circle' replaced with canonical 'interlocking geometric patterns' (line 61) and 'interlocking geometric patterns derived from god-sealing wards' (line 151). Zero instances of non-canonical detail remain."
+      },
+      {
+        "id": "COPY-008-008",
+        "verification": "passed",
+        "summary": "Reviewed-no-change. Marin consistently named CHAR-008. Building description ('near Veldrane's center') is more accurate than outline's 'hut.' Reasonable justification provided."
+      }
+    ],
+    "minorFindings": [
+      {
+        "id": "DEV-008-007",
+        "verification": "passed",
+        "summary": "Marin grounded in frontier culture: copper buttons, well-maintained building, copper nameplate, blunt delivery style."
+      },
+      {
+        "id": "DEV-008-008",
+        "verification": "passed",
+        "summary": "False hope beat added (183-185): 'Surely the timeline was years... The brand had held for six years. It could hold for more.' Immediately before the four-month reveal."
+      },
+      {
+        "id": "DEV-008-009",
+        "verification": "passed",
+        "summary": "Supply scene compressed to 3 sentences (217). Field dressings purchase integrated with care-arc content."
+      },
+      {
+        "id": "DEV-008-010",
+        "verification": "passed",
+        "summary": "Quietus references corrected. See COPY-008-004."
+      },
+      {
+        "id": "LINE-008-009",
+        "verification": "passed",
+        "summary": "Entire chapter converted from first-person to close-third. Verified: no first-person narration slippage. All 'I' occurrences are in character dialogue only."
+      },
+      {
+        "id": "LINE-008-010",
+        "verification": "passed",
+        "summary": "Tremor-then-explanation replaced with holding gesture (200-203). Interpretive 'body's honest reaction' line removed. Gesture carries its own meaning."
+      },
+      {
+        "id": "LINE-008-011",
+        "verification": "passed",
+        "summary": "Humor beat added (261-268): Kaelith's 'I am not dying tonight' → Lirien's literal response 'The timeline is significantly longer than tonight.' Demonstrates misreading-deadpan-literally pattern."
+      },
+      {
+        "id": "LINE-008-012",
+        "verification": "passed",
+        "summary": "'Six years' reduced from 6 to 3 instances (lines 63, 159, 183). Replaced elsewhere with 'since Calwrath' (225), 'the duration of her exile' (135), 'half a decade' (225)."
+      },
+      {
+        "id": "LINE-008-013",
+        "verification": "passed",
+        "summary": "Marin's dialogue revised: 'Shirt off' (141), 'That is not a guess' (191), 'Neither grows on trees out here' (195). Frontier-military cadence established."
+      },
+      {
+        "id": "COPY-008-009",
+        "verification": "passed",
+        "summary": "'Imperial' consistently capitalized throughout."
+      },
+      {
+        "id": "COPY-008-010",
+        "verification": "passed",
+        "summary": "Original awkward construction eliminated. Equivalent passage: 'Details that had no intelligence value. Details Lirien could not stop cataloguing.' Clear and rhythmically effective."
+      },
+      {
+        "id": "COPY-008-011",
+        "verification": "passed",
+        "summary": "Kaelith's knowledge grounded: 'I heard the name along the Thornway garrison circuit — frontier healers are known quantities on military supply routes' (119)."
+      },
+      {
+        "id": "COPY-008-012",
+        "verification": "passed",
+        "summary": "Reviewed-no-change. Three-night payment is intentional cover maintenance. Tracked for Ch9 consistency."
+      }
+    ]
+  },
+  "regressionFindings": {
+    "voiceMarkerSaturation": {
+      "detected": false,
+      "notes": "Water metaphors: 5 instances across 3 scenes — approximately 1 per 800 words. Not saturated. Field-note fragments: 4 instances. Classification-failure: 3 instances. Uncertainty qualifiers: 4 instances. All well-distributed. The revised chapter does not have noticeably MORE voice markers per page than the draft; it has the RIGHT markers (water domain) replacing the WRONG markers (operational vocabulary). No scene reads as a voice checklist."
+    },
+    "dialogueNaturalism": {
+      "detected": false,
+      "notes": "The humor exchange (261-268) reads as natural speech — Kaelith's garrison-coast understatement and Lirien's literal response are character-appropriate and not over-characterized. Marin's revised dialogue ('Shirt off,' 'That is not a guess') carries frontier-military character without dominating her speech. Diagnostic dialogue remains natural throughout."
+    },
+    "voiceConsistency": {
+      "detected": false,
+      "notes": "The close-third conversion preserves Lirien's analytical distance. Water metaphors integrate without disrupting the established analytical voice. The 'calculated-to-overwhelmed' progression remains intact and is enhanced by the physical care beats demonstrating the shift."
+    },
+    "continuityErrors": {
+      "detected": false,
+      "notes": "Timeline (2 days), Veldrane geography (River Carith, bridges, landmarks), brand description (interlocking geometric patterns), route calculation (ward-breaker first, Quietus second), character knowledge states — all consistent with canonical sources. No new facts introduced that contradict established continuity."
+    },
+    "pacingDisruption": {
+      "detected": false,
+      "notes": "The added care beats and compressed supply scene maintain Scene 3's emotional trajectory. The dressing scene, humor exchange, food preparation, and cloak adjustment form a natural progression from practical care to emotional admission. No choppy transitions detected at edit boundaries."
+    },
+    "showTellRegression": {
+      "detected": false,
+      "notes": "No new tell-not-show violations introduced. The single remaining analytical passage (lines 275-276: 'These were not strategic adjustments. They were care...') follows extensive demonstrated behavior and reads as earned commentary rather than a substitute for action."
+    },
+    "newIssues": []
+  },
+  "darlingsSurvived": {
+    "count": 0,
+    "details": [
+      {
+        "passage": "'Such care served no tactical purpose. I provided it anyway.'",
+        "status": "removed",
+        "notes": "The draft's declarative close was identified by the developmental editor as telling-not-showing. Replaced with the physical cloak-adjustment gesture. The line does not survive in any form."
+      },
+      {
+        "passage": "'Fear. I was experiencing fear.'",
+        "status": "retained-justified",
+        "notes": "Adapted to close-third: 'Fear. She was experiencing fear.' (209). This was identified as a STRENGTH by both the developmental editor ('perfectly calibrated') and line editor ('exactly the right sentence at exactly the right moment'). Not flagged as a darling by any editor. Retention is appropriate."
+      },
+      {
+        "passage": "'I did not want her to die... I required it.'",
+        "status": "retained-adapted",
+        "notes": "Adapted to close-third and simplified: 'She did not want Kaelith to die... Because Lirien required it.' (282-285). Identified as a strength. The revision stripped analytical scaffolding per LINE-008-003, making the admission plainer and more effective."
+      }
+    ]
+  },
+  "traceabilityAssessment": {
+    "status": "intact",
+    "findingsAddressedInFrontmatter": 35,
+    "findingsVerifiedInRevisionLog": 35,
+    "findingsVerifiedByAuditor": 35,
+    "unclaimedChanges": 0,
+    "notes": "All changes in the revised chapter can be traced to specific finding IDs in the revision log. No changes were made without citation. The frontmatter's findingsAddressed list matches the revision log's findings list exactly."
+  },
+  "wordCountAssessment": {
+    "draftWordCount": 4089,
+    "revisedWordCount": 3981,
+    "delta": -108,
+    "deltaPercentage": -2.6,
+    "threshold": 20,
+    "status": "within-limits",
+    "notes": "The revised chapter is 108 words shorter despite adding significant new content (care beats, Veldrane rewrite, Pallor references, humor exchange, vulnerability expansion). Reduction comes from compressed supply scene, eliminated operational vocabulary redundancy, and condensed introspective passages. No content was cut without replacement."
+  },
+  "overallQualityAssessment": {
+    "comparedToDraft": "significantly-improved",
+    "publicationReadiness": "approaching",
+    "strengths": [
+      "The three dramatized care beats (dressings, food, cloak) transform Scene 3 from declared intention to enacted devotion — the romance arc's central beat is now earned",
+      "Water metaphor domain restores Lirien's voice identity without oversaturation — each metaphor is contextually appropriate",
+      "The close-third conversion is seamless; Lirien's analytical distance is preserved through observation patterns rather than first-person declaration",
+      "The humor exchange (261-268) provides essential tonal relief in a heavy chapter without undercutting emotional stakes",
+      "Marin's frontier-military dialogue gives her a distinctive voice that grounds the diagnosis scene in Veldrane's specific culture",
+      "The false hope beat before the four-month diagnosis amplifies the emotional pivot significantly",
+      "Kaelith's expanded vulnerability beats (drawn shoulders, holding gesture, postural shift, permitting the dressing) make step 4 of the ladder fully visible through Lirien's POV",
+      "The Veldrane rewrite serves triple duty: correcting geography, establishing dual-arc presence (Pallor), and characterizing Lirien's observational priorities"
+    ],
+    "minorObservations": [
+      "The Veldrane bridge passage (lines 129-131) is approximately 12 lines long — DEV-008-006 recommended compression, but the rewrite makes every detail serve theme, worldbuilding, or dual-arc presence. This is a judgment call; the current version is purposeful rather than flat, but a slightly tighter version would maintain the pacing recommendation more strictly.",
+      "Line 275-276 ('These were not strategic adjustments. They were care, stripped of every framework she might have used to justify them') is a mild tell-after-show, but follows extensive demonstrated behavior and reads as Lirien's analytical voice processing what she has just done. Acceptable in context."
+    ]
+  },
+  "passFailChecklist": {
+    "automaticFailConditions": {
+      "criticalFindingUnaddressed": false,
+      "claimedButUnchanged": false,
+      "criticalRegression": false,
+      "wordCountReductionOver20Percent": false,
+      "darlingsSurvivedUnchanged": false,
+      "traceabilityBroken": false,
+      "voiceMarkerSaturation": false,
+      "dialogueNaturalismRegression": false
+    },
+    "warningConditions": {
+      "majorFindingPartiallyAddressed": 0,
+      "minorVoiceRegression": false,
+      "pacingDisrupted": false,
+      "newTellNotShowViolations": false,
+      "betaSynthesisNotAddressed": "N/A — no beta synthesis for this chapter yet",
+      "wordCountDeviationOver10Percent": false,
+      "totalWarnings": 0
+    },
+    "warningThresholdExceeded": false
+  }
+}

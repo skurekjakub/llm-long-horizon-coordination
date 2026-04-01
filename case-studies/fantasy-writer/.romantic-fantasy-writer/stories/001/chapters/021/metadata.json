@@ -1,0 +1,73 @@
+{
+  "chapterNumber": 21,
+  "title": "What the Stone Remembers",
+  "pov": "Kaelith Maren",
+  "povId": "CHAR-001",
+  "scenes": ["SCN-59", "SCN-60", "SCN-61"],
+  "wordCount": 4025,
+  "tensionLevel": 10,
+  "arcBeats": {
+    "fantasy": "Fantasy Climax — Quietus reached via kinetic memory, god-seal stabilized through Warden inheritance, Thalen's forty-year sabotage exposed with witnesses, Ythara contained but Pallor permanently thinned",
+    "romance": "Partnership Under Maximum Pressure — freely chosen bond enables seal stabilization (Kaelith trusts Lirien to fight Thalen while she works the seal), proving the relationship survives without contractual compulsion"
+  },
+  "craftToolsApplied": [
+    "T5 — Tone Contract: morally complex, atmospherically taut throughout; Thalen's zealotry handled without melodrama or grimdark nihilism; no triumphalism in victory",
+    "T6 — Stakes Escalation: maximum stakes (world-ending) reached; personal/relational/existential stakes all active simultaneously",
+    "T7 — Black Moment: payoff — trust proven under ultimate pressure after Ch16 Black Moment; partnership functions without binding",
+    "T8 — Internal and External Resistance: Kaelith's resistance to trusting overcome in seal scene; external resistance (Thalen) defeated through partnership",
+    "T10 — Sanderson's Laws: Warden magic follows established rules (kinetic memory, certainty-as-reinforcement); seal mechanics consistent with world-bible; no deus ex machina",
+    "T12 — Dual-Arc Interleave: fantasy goal (seal stabilization) requires romance achievement (restored trust); arcs fused in SCN-60",
+    "T13 — Tension Mapping: tension at 10/10 throughout; relentless pacing across three action-heavy scenes; minimal reflection",
+    "T15 — Foreshadowing Payoff: FS-001 (Oathbrand maintenance), FS-002 (Pallor failure), FS-005 (Quietus paradox), FS-006 (Warden inheritance), FS-009 (Ythara), FS-010 (Conclave saboteur), FS-016 (Iryse testimony), FS-018 (Thenndal connection), FS-021 (god-seal confrontation)",
+    "T16 — Symbolic Motif Weaving: MOT-001 (Pallor as membrane — thinner, true sky showing), MOT-003 (water — Lirien as current finding every crack, dam containing), MOT-004 (Quietus as body-knowledge — kinetic memory activation), MOT-005 (Ythara as raw potential — becoming, possibility, incompatible)",
+    "T17 — Voice Fingerprinting: Kaelith's percussive rhythm, architectural metaphors (load-bearing, foundation, buttress, keystone), tactical assessment priority, physical-not-emotional register, command voice under pressure",
+    "T18 — Information Asymmetry: Thalen's knowledge of Kaelith's Warden status revealed; Iryse's manipulation exposed; public testimony ensures information enters shared record",
+    "T20 — Emotional Throughline: Kaelith enters with fierce resolve (post-Ch20 absolute trust), moves through awe/urgency at Serath Dún, transcendent effort during seal work, exits with exhausted earned satisfaction",
+    "T21 — Vulnerability Ladder: ultimate rung — Kaelith renders herself defenseless during seal work, trusting Lirien with her life; the highest vulnerability after Ch20 heart-stopping",
+    "T23 — Mystery Box: MB-001 (Oathbrand maintenance by Thalen), MB-002 (Pallor saboteur identified), MB-003 (blindfolded path via Thenndal), MB-004 (Ythara nature — incompatible, not evil), MB-009 (Quietus mechanism), MB-010 (Thenndal identity)",
+    "T24 — Subtext in Dialogue: Thalen's 'I gave this world a chance to become' carries genuine conviction beneath the horror; Kaelith's 'Because you did not let them choose' addresses both Thalen and her own Calwrath history; Lirien's 'Go' carries complete trust in one word",
+    "T25 — Thematic Argument Scaffolding: TP-1 (trust as load-bearing architecture — proven under maximum pressure), TP-2 (right choice compounds — every ally built, every evidence gathered, converges here), TP-3 (chosen vs only — partnership succeeds because freely chosen post-binding)"
+  ],
+  "foreshadowingPayoffs": [
+    "FS-001: Oathbrand maintenance exposed as Thalen's suppression of Warden lineage",
+    "FS-002: Pallor failure revealed as forty years of deliberate poisoning",
+    "FS-005: Kaelith's kinetic memory guides them to the Quietus — paradox resolved",
+    "FS-006: Warden inheritance confirmed through Thenndal connection",
+    "FS-009: Ythara contained — seal reinforced, waking prevented",
+    "FS-010: Thalen exposed as Conclave saboteur with witness testimony",
+    "FS-016: Iryse testifies as witness, recognizes her manipulation",
+    "FS-018: Thenndal revealed as last Warden who planted the kinetic memory",
+    "FS-021: God-seal confrontation at Quietus — mechanism proves real"
+  ],
+  "mysteryBoxesClosed": [
+    "MB-001: Oathbrand kept burning by Thalen's maintenance orders to suppress last Warden",
+    "MB-002: Thalen Reyvas (Seventh Seat) poisoned the Pallor for forty years via corrupted Dimming rites",
+    "MB-003: Thenndal walked Kaelith through the path blindfolded as routine patrol exercise — Warden transmission",
+    "MB-004: Ythara is not evil but incompatible — raw potential, becoming without framework, contained not destroyed",
+    "MB-009: The Quietus is a seal built from certainty, requiring a Warden to affirm reality against Ythara's potential",
+    "MB-010: Ossya Thenndal was the last official Warden, Kaelith's mentor, who died within a month of transmitting the path"
+  ],
+  "motifsUsed": [
+    "MOT-001: Pallor as membrane — thinner now, true sky showing through in patches, silver on Kaelith's forearm responding to seal proximity, permanent thinning as cost of victory",
+    "MOT-003: Water/Seep — Lirien's precision described as current finding every crack (Kaelith notices this in her own metaphor space), dam containing emotion, water infiltration metaphor turned to protection",
+    "MOT-004: Quietus as body-knowledge — kinetic memory activating like a key, body choosing the path, embodied trust as mechanism of salvation",
+    "MOT-005: Ythara as raw potential — described as becoming, possibility, incompatible with finished world, not evil but annihilating"
+  ],
+  "sceneValueShifts": {
+    "SCN-59": "From 'approaching the objective with purpose' to 'the enemy is already here and the clock is running'",
+    "SCN-60": "From 'the world is failing, the seal is cracking' to 'the world holds because they held — together, freely chosen'",
+    "SCN-61": "From 'sabotage exposed' to 'institutional complicity made visible — the reckoning has begun but the world is permanently changed'"
+  },
+  "emotionalBoundaries": {
+    "chapterStart": {
+      "CHAR-001": "Fierce resolve — focused determination, the mission is clear, partnership restored, walking into purpose",
+      "CHAR-002": "Fierce loyalty — liberated precision directed at protection, freely chosen presence"
+    },
+    "chapterEnd": {
+      "CHAR-001": "Exhausted earned satisfaction — seal holds, truth told, partnership proven under maximum pressure, world changed but surviving",
+      "CHAR-002": "Proud exhaustion — wounded but functional, skills used for life not death, standing beside Kaelith by choice"
+    }
+  },
+  "continuityNotes": "Pallor silver on Kaelith's forearm referenced (continuity from ch17/20) — recedes slightly after seal stabilization but remains as permanent mark. Three frozen fingers on left hand maintained. Bond described as clean/sharp/signal-without-static (continuity from ch20 dissolution). Lirien's operational silence referenced. Tessen Vael present as witness (continuity from ch11 Oathbrand removal). Eight Ashborne veterans (continuity from ch19 Rivenmarch). Iryse present as Dimming rites keeper (continuity from ch12). Thalen identified as Seventh Seat (using chapter-consistent designation per naming consistency notes). Kinetic memory activation consistent with world-bible magic system.",
+  "draftTimestamp": "2025-07-17T14:30:00Z"
+}

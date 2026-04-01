@@ -1,0 +1,26 @@
+{
+  "agent": "romantic-fantasy-writer-plotting-coordinator",
+  "result": "blocked",
+  "summary": "Plotting phase blocked: romantic-fantasy-writer-dual-arc-builder failed 3 consecutive times due to API infrastructure errors (HTTP/2 GOAWAY 503 connection_error). Successfully completed: structure-selector. Blocked at: dual-arc-builder. Remaining specialists not dispatched: tension-mapper, chapter-outliner, scene-beat-designer, plotting-auditor.",
+  "startTime": "2026-03-18T02:04:00Z",
+  "endTime": "2026-03-18T03:30:00Z",
+  "artifactsProduced": [],
+  "metadata": {
+    "completedSpecialists": [
+      "romantic-fantasy-writer-structure-selector"
+    ],
+    "failedSpecialist": "romantic-fantasy-writer-dual-arc-builder",
+    "failureReason": "API infrastructure error: HTTP/2 GOAWAY 503 connection_error (repeated 3 times)",
+    "failureType": "network",
+    "retryAttempts": 3,
+    "pendingSpecialists": [
+      "romantic-fantasy-writer-tension-mapper",
+      "romantic-fantasy-writer-chapter-outliner",
+      "romantic-fantasy-writer-scene-beat-designer",
+      "romantic-fantasy-writer-plotting-auditor"
+    ],
+    "invariantsEnforced": [
+      "INV-030: No Silent Failures - explicitly surfaced blocking issue with descriptive summary"
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "agent": "docwriter-content-writer",
+  "taskId": "T-003",
+  "attempt": 2,
+  "action": "update",
+  "targetFile": "src/_documentation/_documentation/developers-and-admins/configuration/workflows.md",
+  "sectionsModified": [],
+  "sectionsAdded": [],
+  "sectionsRemoved": [],
+  "docFactsUsed": [],
+  "invariantsApplied": ["INV-style-096"],
+  "patternsUsed": [],
+  "researchRecommendationsCited": [],
+  "recommendationsSkipped": [],
+  "notes": "Gap-hunting re-entry fix (attempt 2). Converted exactly 3 Unicode en dash characters (U+2013) to double-hyphen ('--') per INV-style-096. Line 59: 'Identifiers -- specify', Line 62: 'work with this step -- designates', Line 71: 'Send email notifications -- clear'. No other content modified. Verified zero en dashes remain on the page.",
+  "timestamp": "2026-03-18T20:53:37Z"
+}

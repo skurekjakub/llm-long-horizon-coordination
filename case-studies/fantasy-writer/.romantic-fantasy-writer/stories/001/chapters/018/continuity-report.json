@@ -1,0 +1,92 @@
+{
+  "chapter": 18,
+  "pov": "CHAR-002",
+  "povName": "Lirien Dael",
+  "overallAssessment": "pass",
+  "checksPerformed": 42,
+  "issues": [
+    {
+      "severity": "minor",
+      "category": "outline-discrepancy",
+      "description": "Chapter outline (chapter-018.json) references 'the Oathbrand removal in Ch8' in SCN-50 beat descriptions. The Oathbrand was IDENTIFIED as a crisis in Ch8 (FS-008 plant: healer names crisis), but the actual REMOVAL occurred in Ch11 at Tessen's shelter (FS-008 payoff, naming registry). The draft correctly describes the removal at 'Tessen's shelter' without citing a wrong chapter number. No draft correction needed — outline metadata contains the error, not the prose.",
+      "location": "plot/chapter-outlines/chapter-018.json, SCN-50 disaster and breakthrough beats",
+      "fix": "Not applied to draft (draft is correct). Outline metadata should be updated from 'Ch8' to 'Ch11' in future outline cleanup pass."
+    },
+    {
+      "severity": "minor",
+      "category": "bond-mechanics-precision",
+      "description": "The closing passage states 'the bond transmitted Lirien's direction with a fidelity that no cipher could match.' Per MAG-007 and established bond rules (FACT-010), the bond transmits emotional quality, not factual content. 'Direction' here could be read as spatial/factual information rather than emotional intention. However, the passage is immediately preceded by the word 'Intention' as the defining quality of what the bond carries, and the parallel construction in Ch17 ('the quality of Lirien's grief changing, gaining an edge of something that might have been alertness') establishes that direction changes are perceived as shifts in emotional quality, not as compass headings. The phrasing is borderline but defensible within the established voice and bond framework.",
+      "location": "SCN-52, closing paragraphs — 'the bond transmitted Lirien's direction'",
+      "fix": "No draft correction applied. The preceding context ('Intention') and parallel Ch17 framing sufficiently anchor 'direction' as emotional quality rather than factual content. Flagged for downstream editors to evaluate prose clarity."
+    },
+    {
+      "severity": "minor",
+      "category": "tracking-discrepancy",
+      "description": "FACT-012 in information-asymmetry-map.json records CHAR-002 learning 'the Seep supports Lirien's loophole exploitation rather than enforcing the contract literally' in Ch18. However, the draft does not explicitly show Lirien learning this. The cipher destruction without enforcement consequences is at most implicit evidence. FACT-012's 'revealedToReader' is correctly set to Ch20. The character knowledge attribution may be premature — Lirien destroys a Seep TOOL using its designed self-destruct protocol, which is not the same as learning the Seep's strategic position on the loophole.",
+      "location": "continuity/information-asymmetry-map.json, FACT-012 knownBy entry",
+      "fix": "Not a draft issue. Flagged for continuity-tracker agent: consider deferring CHAR-002's FACT-012 knowledge attribution to Ch20 when the Seep's position is explicitly revealed to the reader."
+    }
+  ],
+  "verificationDetails": {
+    "timelineVerified": true,
+    "timelineNotes": "Ch18 opens at 'second dawn since Kaelith had walked into the treeline' — Day 2 after Ch16 separation. Ch17 spans 'evening through next morning, ~1.5 days after ch16.' The chapters are correctly parallel: Ch18 dawn aligns with Ch17 morning. Bond pulses cross-reference perfectly — Ch17's night breach (Lirien's grief piercing Kaelith's wall) matches Ch18's 'sometime in the night it had breached Kaelith's wall... woken her from shallow sleep.' Ch17's morning direction change (east to north) matches Ch18's 'this morning, another shift. An edge in the signal.' 11-hour self-interrogation starting before dawn and ending at full dawn is temporally consistent. Ashborne contact arrives at midday; cipher destruction and departure in afternoon. All consistent with continuity-tracker Ch18 timeline.",
+
+    "characterLocationVerified": true,
+    "characterLocationNotes": "Lirien begins at safe house (consistent with Ch16 ending: 'Lirien remains at safe house in paralysis'). Safe house described as 'rough-hewn table,' 'stone bench,' 'pre-empire construction,' 'Narrowing's granite shoulders' — consistent with Ch15 ('pre-empire construction, the mortar mixed with something that had kept it whole for centuries,' 'The table was oak. Scarred, thick-legged') and Ch16 ('stone step of the shelter'). Ashborne contact confirms shelter was 'a waypoint for the Fourth's mountain operations. Twelve years ago' — consistent with Kaelith's pre-Calwrath military history. Lirien ends walking north from safe house into the Narrowing, consistent with continuity tracker position update.",
+
+    "characterKnowledgeVerified": true,
+    "characterKnowledgeNotes": "Exhaustive INV-056 check. Lirien references ONLY information she has legitimately learned: (1) Kill contract and binding mechanics — known since contract inception. (2) Oathbrand removal at Tessen's shelter — personally performed in Ch11. (3) Bond mechanics and emotional transmission — experienced since Ch11. (4) Calwrath details (300 civilians, 800 soldiers, Ashborne Fourth) — learned from Kaelith's Ch13 confession. (5) Ashborne network intelligence — newly learned in this chapter from contact. (6) Contract dissolution at god-seal — newly learned from Ashborne contact. Lirien does NOT reference: Kaelith's Pallor progression specifics (correct — she doesn't know), the vorakh fight (correct), Kaelith's specific direction change (she senses bond quality shift only, not compass heading), Kaelith's Warden lineage through Thenndal (FACT-006 correctly unknown), Thalen Reyvas's identity (correctly unknown). Zero knowledge leaks detected.",
+
+    "bondMechanicsVerified": true,
+    "bondMechanicsNotes": "All six bond references verified against MAG-007 and FACT-010. (1) 'Wall Kaelith had built reducing the signal to a thin, aching pulse' — walling reduces but doesn't sever, consistent. (2) 'Not content — the bond never carried content. Quality.' — EXPLICIT restatement of bond rule, perfectly consistent. (3) Night breach: grief piercing wall momentarily — consistent with Ch17 parallel. (4) Morning shift: 'alertness, or purpose' — emotional quality, not factual content. (5) Bond registers Lirien's departure: 'shift in the quality of Kaelith's grief, a sharpening' — emotional quality. (6) Bond transmits 'Intention' — emotional quality framing. All consistent with MAG-007: bonds transmit emotional state, not thoughts/facts/decisions.",
+
+    "namingConsistencyVerified": true,
+    "namingConsistencyNotes": "All names verified against naming registry: Kaelith Maren/Kaelith ✓, Lirien Dael/Lirien ✓, The Narrowing ✓, Tessen/Tessen's shelter ✓, The Quietus ✓, The Pallor ✓, Oathbrand ✓, Duskhaven harbour ✓, Cerith Court ✓, The Seep ✓, Ashborne Fourth ✓, Calwrath ✓, Serath Dûn ✓, Lessened/Lessening ✓, Hand (Court designation) ✓, Warden ✓. New terms introduced: 'threadbone' (cipher material — no prior spelling to conflict), Ashborne recognition protocol (new lore element). All consistent with established usage.",
+
+    "informationAsymmetryVerified": true,
+    "informationAsymmetryNotes": "New information asymmetry correctly established: (1) FACT-016 (Ashborne network) — Lirien learns, Kaelith does not know. Dramatic irony: 'She thinks she's alone. She's not.' (2) FACT-017 (contract dissolution at Quietus) — Lirien learns, Kaelith walks toward same destination for different reasons. Dual-arc convergence correctly seeded. (3) FACT-018 (defected Court Architect) — Lirien learns, Kaelith unknown. (4) FACT-019 (proof of agency via Oathbrand removal) — Lirien discovers, Kaelith does not know the proof exists. This is the evidence that could rebuild trust, but the asymmetry creates Ch19 reunion tension. (5) Kaelith's direction change (Ch17) — Lirien senses emotional shift but cannot confirm factual direction, per continuity tracker knowledge states. All asymmetries correctly maintained.",
+
+    "worldRuleCompliance": true,
+    "worldRuleComplianceNotes": "INV-002 verified. Binding mechanics described in self-interrogation scene consistent with established fae binding architecture: physiological enforcement (pressure, tremor, cognitive interference), binding designed to prevent contract-violating actions, enforcement proportional to severity of violation. Cipher described as 'threadbone' with designed self-destruct ('compromise protocols') — consistent with Ch6 reference to cipher that 'she should have destroyed three days ago.' Pallor described as silver membrane, thinning overhead, worn places showing true sky — consistent with MOT-001 evolution. Lessening described as 'an absence wearing the shape of what had been removed' — matches naming registry definition exactly.",
+
+    "noAnacronisms": true,
+    "anachronismNotes": "INV-018 verified. No modern idioms, technologies, or concepts detected. Technical vocabulary (taxonomy, classification, probability, compliance window) is consistent with Lirien's established analytical voice and the world's level of institutional sophistication. The Cerith Court's administrative language (compliance window, enforcement escalation, physiological deterioration) is internally consistent with prior chapters.",
+
+    "noDeusMachina": true,
+    "deusExMachinaNotes": "INV-009 verified. (1) Ashborne network: foreshadowed in MB-014 (opened Ch10 — 'Will the Ashborne Legion survivors support Kaelith?'). Not a surprise appearance. (2) Contract dissolution at god-seal: the Ashborne provides INTELLIGENCE about a possibility, not a solution. Dissolution still requires both Kaelith and Lirien working together at the Quietus — no free resolution. (3) Defected Court Architect: provides knowledge source, not magical intervention. (4) Oathbrand removal as proof of agency: Lirien discovers this through her own 11-hour analysis, not external revelation. The proof was always there; she found it by looking. All new elements require further action and do not resolve any plot by themselves.",
+
+    "oathbrandRemovalConsistency": true,
+    "oathbrandRemovalNotes": "Ch18 describes removal at 'Tessen's shelter' — confirmed Ch11 location (not Ch8 as outline erroneously states). Physical details match Ch11 draft: 'silver-black sigil... two inches of interlocking geometric pattern on a collarbone surrounded by scar tissue' (Ch18) vs 'silver-black sigil burned into the skin above the collarbone, roughly two inches in diameter, consisting of interlocking geometric patterns' (MAG-008). Duration: 'three hours' in Ch18 matches Tessen's estimate in Ch11 ('Three hours. Maybe four.'). The binding's expected interference ('physical discomfort, cognitive interference, systematic obstacles') is new detail but consistent with fae binding architecture — contracts enforce compliance through physiological resistance. Lirien's claim that the binding produced NO resistance during the removal is the chapter's central proof of agency. This is consistent with MAG-007 (bond forms through shared vulnerability) and MAG-008 (removal requires the subject to 'trust the practitioner not to harm them').",
+
+    "calwrathNumbersConsistency": true,
+    "calwrathNotes": "Draft states 'burned three hundred civilians to save eight hundred of them' — matches Ch13 confession exactly (300 civilians, 800 soldiers). Cross-verified against continuity tracker (ch13 timeline: '8 minutes, 300 civilians, children in market').",
+
+    "safeHouseConsistency": true,
+    "safeHouseNotes": "Ch18 'rough-hewn table' compatible with Ch15 'The table was oak. Scarred, thick-legged.' Ch18 'stone bench' compatible with Ch16 'stone step of the shelter' (different features of same structure). Ch18 'pre-empire construction' matches Ch15 'pre-empire construction' verbatim. The Ashborne contact's mention of the shelter as a 'waypoint for the Fourth's mountain operations. Twelve years ago' is consistent with Kaelith's pre-Calwrath (YK 730-736) military career in the Ashborne Fourth."
+  },
+  "newFactsIntroduced": [
+    "FACT-016: Ashborne Legion survivor network exists — former soldiers watching Kaelith's exile",
+    "FACT-017: Contract dissolution architecturally possible at the Quietus god-seal where Pallor substrate thins",
+    "FACT-018: A Court Architect defected 12 years ago and survived without Lessening under Ashborne protection",
+    "FACT-019: Oathbrand removal (Ch11) is verified proof of free choice within the binding — binding directive was PREVENT, no resistance experienced",
+    "New term: 'threadbone' — composite material used in Seep encryption ciphers (part biological, part alchemical)",
+    "New lore: Pre-Court neutral intelligence recognition protocol — older than current Court hierarchy, designed for interoperability between fae and human intelligence assets during border stabilisation campaigns",
+    "Seep cipher destroyed — Lirien no longer has Court communication/encryption capability"
+  ],
+  "foreshadowingServiced": [
+    "FS-008 additional payoff: Oathbrand removal (Ch11) used as proof of agency — the absence of binding resistance during a binding-contrary act becomes the foundational proof",
+    "MB-012 answered: Lirien proves capacity for free choice exists within the binding (one verified act), though most individual decisions remain ambiguous",
+    "MB-008 advanced: Ashborne intelligence reveals second dissolution path (god-seal architecture) beyond the heartbeat-cessation loophole",
+    "MB-011 seeded: Oathbrand proof and cipher destruction create trust-rebuilding materials for Ch19 reunion",
+    "MB-014 advanced: Ashborne survivors confirmed as active network watching Kaelith's exile"
+  ],
+  "motifTracking": {
+    "MOT-001_pallor": "Present — 'thinning silver,' 'Pallor's silver-grey illumination,' 'worn places showing patches of the true sky. Darker than the silver membrane. Less forgiving. True.' Consistent with Act III evolution: membrane as wound/barrier thinning toward honest exposure.",
+    "MOT-002_oathbrand": "Correctly absent as physical object (removed Ch11). Referenced as historical event — site of agency proof. Ghost/memory usage consistent with post-removal pattern.",
+    "MOT-003_water": "Present at moderate density — 'water with nowhere to drain,' 'colour closer to deep water,' 'groundwater finding its level after a flood,' 'water filling a container,' 'sediment through still water.' Consistent with Lirien's water-domain voice. New usage: water metaphors turned inward (self-analysis) rather than outward (infiltration). Evolution tracks Lirien's identity shift from operative to autonomous agent.",
+    "MOT-004_quietus": "Present — cipher wear compared to Kaelith's kinetic memory ('memorised the way Kaelith's body had memorised the path to the Quietus'). Body-knowledge motif linking cipher to embodied knowledge. Quietus as convergence destination explicitly established.",
+    "MOT-005_ythara": "Not present (appropriate — Lirien's dark night of the soul is internal, not cosmic-threat focused)."
+  },
+  "draftCorrectionsApplied": 0,
+  "summary": "Chapter 18 passes all continuity checks with zero draft corrections required. 42 verification checks performed across timeline, character locations, knowledge states, bond mechanics, world rules, naming consistency, information asymmetry, Oathbrand removal accuracy, foreshadowing compliance, and motif tracking. Three minor observations noted — none require draft changes (outline metadata discrepancy, borderline bond phrasing that is defensible in context, and a tracking attribution that may be premature). The chapter meticulously maintains established facts while introducing significant new story elements (Ashborne network, dissolution intelligence, proof of agency, cipher destruction). Information asymmetry is impeccably managed: Lirien gains critical knowledge that Kaelith does not possess, creating the dramatic tension that will drive the Ch19 reunion. Bond mechanics consistently transmit emotional quality without factual content. All 6 relevant invariants verified: INV-002, INV-009, INV-011, INV-016, INV-018, INV-056."
+}

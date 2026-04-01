@@ -1,0 +1,221 @@
+{
+  "agent": "docwriter-style-reviewer",
+  "taskId": "T-004",
+  "attempt": 2,
+  "verdict": "approved",
+  "reviewScope": "Re-entry review. Only change: GAP-001 fix added info callout (lines 37-41) documenting clone-specific permission requirements. All pre-existing content unchanged.",
+  "invariantResults": [
+    {
+      "invariantId": "INV-style-096",
+      "result": "pass",
+      "evidence": "No Unicode en dashes (U+2013) or em dashes (U+2014) found anywhere in the file. No double-hyphen dashes used in the new callout content. File is clean."
+    },
+    {
+      "invariantId": "INV-style-132",
+      "result": "pass",
+      "evidence": "New callout line 39 uses 'you need' phrasing: 'To clone a page, you need *Read*...' - matches the existing callout pattern on line 19. No instances of 'must' directed at people anywhere in the file."
+    },
+    {
+      "invariantId": "INV-style-001",
+      "result": "pass",
+      "evidence": "New callout content is not indented (correct for top-level Liquid block content). All existing indented lines (e.g., list sub-items on line 29) use 4-space indentation consistently."
+    },
+    {
+      "invariantId": "INV-style-114",
+      "result": "pass",
+      "evidence": "New callout uses active voice throughout: 'you need *Read*... on the source page, and *Read* and *Create* page permissions on the parent page where you want to place the clone.' Subject (you) performs the action."
+    },
+    {
+      "invariantId": "INV-style-090",
+      "result": "pass",
+      "evidence": "No em dashes found in the file."
+    },
+    {
+      "invariantId": "INV-style-073",
+      "result": "pass",
+      "evidence": "No UI element names appear in the new callout. Permission names (*Read*, *Create*) correctly use italics per INV-style-075."
+    },
+    {
+      "invariantId": "INV-style-075",
+      "result": "pass",
+      "evidence": "Permission values *Read* and *Create* correctly italicized on line 39, matching the pattern on line 19."
+    },
+    {
+      "invariantId": "INV-style-111",
+      "result": "pass",
+      "evidence": "New callout is a single concise sentence covering both source and target permission requirements."
+    },
+    {
+      "invariantId": "INV-style-113",
+      "result": "pass",
+      "evidence": "No 'please' found in the file."
+    },
+    {
+      "invariantId": "INV-style-118",
+      "result": "pass",
+      "evidence": "New callout uses identical terminology and structure as the existing callout: 'To [verb] a page, you need [permissions] on the [target].' Consistent use of 'page permissions' terminology throughout."
+    },
+    {
+      "invariantId": "INV-style-119",
+      "result": "pass",
+      "evidence": "No pronoun 'it' in the new callout content."
+    },
+    {
+      "invariantId": "INV-style-125",
+      "result": "pass",
+      "evidence": "No formal forms requiring contraction in the new callout content."
+    },
+    {
+      "invariantId": "INV-style-134",
+      "result": "pass",
+      "evidence": "New callout leads with the condition: 'To clone a page, you need...' - condition-first pattern."
+    },
+    {
+      "invariantId": "INV-style-138",
+      "result": "pass",
+      "evidence": "Info callout correctly used for additional context about permission requirements. Severity appropriate - not a warning or tip."
+    },
+    {
+      "invariantId": "INV-style-139",
+      "result": "pass",
+      "evidence": "Single-sentence callout - title exception applies. Matches existing callout on lines 17-21 which also omits a title."
+    },
+    {
+      "invariantId": "INV-style-140",
+      "result": "pass",
+      "evidence": "No callout type name ('Info') written inside the callout box."
+    },
+    {
+      "invariantId": "INV-style-141",
+      "result": "pass",
+      "evidence": "Info callout used correctly for supplementary context about permissions."
+    },
+    {
+      "invariantId": "INV-style-081",
+      "result": "pass",
+      "evidence": "No new headings added. Existing headings ('Create a new page', 'Clone a page') use sentence case correctly."
+    },
+    {
+      "invariantId": "INV-style-146",
+      "result": "pass",
+      "evidence": "No 'have to' or 'has to' found in the file."
+    },
+    {
+      "invariantId": "INV-style-056",
+      "result": "pass",
+      "evidence": "New callout is self-contained - no pronouns that escape the callout scope."
+    },
+    {
+      "invariantId": "INV-jekyll-003",
+      "result": "pass",
+      "evidence": "File starts with YAML front matter between --- delimiters."
+    },
+    {
+      "invariantId": "INV-jekyll-004",
+      "result": "pass",
+      "evidence": "All required front matter fields present: title, identifier (LwKQC), order (100), redirect_from (x/LwKQC), persona (business), license (1)."
+    },
+    {
+      "invariantId": "INV-jekyll-010",
+      "result": "pass",
+      "evidence": "New callout uses correctly matched {% info %} / {% endinfo %} tags (lines 37, 41). Blank line after opening tag (line 38) and before closing tag (line 40). Identical structure to existing callout on lines 17-21."
+    },
+    {
+      "invariantId": "INV-jekyll-014",
+      "result": "pass",
+      "evidence": "Pre-existing images on lines 26 and 50 use border=true. No new images added."
+    },
+    {
+      "invariantId": "INV-jekyll-018",
+      "result": "pass",
+      "evidence": "Front matter includes related_pages: ['JwKQC', 'MAKQC']."
+    },
+    {
+      "invariantId": "INV-crossref-001",
+      "result": "pass",
+      "evidence": "In-page link on line 13 correctly uses inpage_link. Cross-page links correctly use page_link."
+    },
+    {
+      "invariantId": "INV-crossref-002",
+      "result": "pass",
+      "evidence": "New callout's page_link on line 39 uses correct format with identifier, anchor, and linkText attributes. Matches the existing cross-reference pattern on line 19."
+    },
+    {
+      "invariantId": "INV-crossref-003",
+      "result": "pass",
+      "evidence": "Identifier 'permissions_pagelevel_xp' reused from existing callout on line 19 - not fabricated. Same anchor and linkText used."
+    },
+    {
+      "invariantId": "INV-crossref-009",
+      "result": "pass",
+      "evidence": "Link text 'page permissions' is descriptive and matches the existing pattern. All link texts in the file are descriptive."
+    },
+    {
+      "invariantId": "TINV-002",
+      "result": "pass",
+      "evidence": "The new callout adds a centralized permission reference for the clone operation, cross-referencing the permissions page. This addresses the scattered-information concern."
+    },
+    {
+      "invariantId": "INV-structure-001",
+      "result": "pass",
+      "evidence": "Content documents current product state. No migration or version-specific language."
+    },
+    {
+      "invariantId": "INV-structure-002",
+      "result": "pass",
+      "evidence": "No 'Next steps' section added."
+    },
+    {
+      "invariantId": "INV-structure-034",
+      "result": "pass",
+      "evidence": "Page has title ('Create pages'), introduction (line 13), and body (two how-to sections with procedures)."
+    },
+    {
+      "invariantId": "INV-structure-035",
+      "result": "pass",
+      "evidence": "Introduction on line 13 provides context about pages and links to content overview."
+    },
+    {
+      "invariantId": "INV-structure-037",
+      "result": "pass",
+      "evidence": "Permission callouts mention requirements upfront without blocking the happy path."
+    }
+  ],
+  "additionalFindings": [
+    {
+      "category": "heading-hierarchy",
+      "result": "pass",
+      "evidence": "Two h2 headings: 'Create a new page' (line 15) and 'Clone a page' (line 35). No skipped levels."
+    },
+    {
+      "category": "callout-consistency",
+      "result": "pass",
+      "evidence": "New callout (lines 37-41) structurally identical to existing callout (lines 17-21): same tag format, same blank-line pattern, same sentence structure ('To [verb] a page, you need [permissions] on the [location]'). Permission values consistently italicized."
+    },
+    {
+      "category": "liquid-syntax",
+      "result": "pass",
+      "evidence": "All Liquid tags well-formed: info/endinfo pairs matched, page_link tags have required identifier and valid attributes, image and icon tags syntactically correct, inpage_link correctly used for in-page reference."
+    },
+    {
+      "category": "trailing-whitespace",
+      "result": "pass",
+      "evidence": "No trailing whitespace on lines 37-41 (new content)."
+    },
+    {
+      "category": "anti-pattern-check",
+      "result": "pass",
+      "evidence": "ANTI-002 (dash-type confusions): No dashes of any kind in new content. No other anti-patterns triggered."
+    },
+    {
+      "category": "style-evolution-check",
+      "result": "pass",
+      "evidence": "STYLE-004 (page_link identifier verification): New callout reuses 'permissions_pagelevel_xp' identifier from the existing callout on line 19 - same identifier, same anchor, same linkText. No fabrication risk."
+    }
+  ],
+  "summary": {
+    "invariantsPassed": 35,
+    "invariantsFailed": 0,
+    "additionalIssues": 0
+  }
+}

@@ -1,0 +1,231 @@
+{
+  "chapterNumber": 11,
+  "revisionTimestamp": "2025-07-28T20:30:00Z",
+  "findingsAddressed": [
+    {
+      "findingId": "LINE-001",
+      "action": "applied",
+      "description": "Reduced architectural/structural voice-marker density from 30+ metaphorical instances to ~11. Stripped structural metaphors from transitional passages, routine observations, and the procedure's middle layers. Concentrated remaining metaphors at key emotional pivots: trust declaration (keystone), procedure (wall worth saving, stress points), bond horror (walls transparent, seal the breach), post-bond assessment (building under repair). Removed: 'load distribution' (×4), 'structural integrity,' 'architecture' as abstract noun (×2), 'compromised fortifications,' 'structure under repair' duplicate, 'shared wall transmitted vibration,' 'structural rather than decorative,' 'held walls.' Critically, voice markers now thin progressively through the procedure scene — as Kaelith's tactical assessment breaks down (declared at the compressed middle-layers paragraph), architectural metaphors disappear from the prose, leaving rawer, plainer language at emotional peaks. Final layers use direct physical sensation rather than structural analogy.",
+      "linesAffected": "Throughout — concentrated reductions in Scene 2 (procedure) and Scene 3 (bond/aftermath)"
+    },
+    {
+      "findingId": "LINE-002",
+      "action": "applied",
+      "description": "Reduced 'the way' comparative constructions from 21+ to 3. Retained: (1) 'the way he might say *solid ground*' (Tessen characterization — essential for his pragmatic voice), (2) 'mapping the brand the way Kaelith mapped buildings' (the chapter's central metaphorical comparison — structural-perception-as-intimacy), (3) 'the way you only understood how dark a room had been' (magic-return epiphany — second-person construction distinct from other uses). Eliminated 18+ instances by restructuring sentences: direct statement, 'as' constructions, elimination of unnecessary comparisons. The triple anaphora at the magic-return passage (original L176) restructured to direct statement: 'Her muscles remembered... Her skin remembered... Her mind remembered...' This reads as earned accumulation rather than another repetition of the default syntactic pattern.",
+      "linesAffected": "Throughout"
+    },
+    {
+      "findingId": "LINE-003",
+      "action": "applied",
+      "description": "Reduced 'felt/feel/could feel' from 22+ to 9. Varied constructions: 'registered' ('Kaelith registered it in her jaw'), 'arrived' ('Lirien's presence arrived'), 'perceived' ('Kaelith perceived the world outside'), direct perception ('their crystalline structure registered'), body-as-subject ('heat surged through pathways'). Reserved 'felt' for the most important physical-emotional moments: the trust rearrangement, Lirien's witnessing attention, the bond discovery, the Quietus pull.",
+      "linesAffected": "Throughout — concentrated in Scene 2 (procedure) and Scene 3 (bond/magic return)"
+    },
+    {
+      "findingId": "LINE-004",
+      "action": "applied",
+      "description": "Reduced negation-pattern density ('Not X. Y.' / 'Not X but Y') from 18-20 to 8. Preserved strongest uses: 'Not the brand-burn. Not the chronic ache' (pre-trust shift), 'Not because of pain. Because of the touch' (first contact — negation is the point), 'Not an apology. A preparation' (Lirien dialogue beat), 'Not her hands... Not her proximity' (bond discovery), 'Not breached. Not destroyed. Removed' (chosen openness climax). Cut negation framing from magic-return passage: opened directly with furnace-door simile rather than 'Not gently. Not gradually. Not as a careful restoration.' Scene 3 presence-discovery opens with 'In *her*' rather than 'Not in the room. Not in the air.'",
+      "linesAffected": "Throughout — concentrated in Scene 3"
+    },
+    {
+      "findingId": "LINE-005",
+      "action": "applied",
+      "description": "Reduced 'six years' from 15 to 7. Preserved at major structural beats: initial internal reckoning (L86), brand description (L144), deepest-layer Calwrath memory (L194), magic-return epiphany (L220 — 'Six years without this'), first-time stone perception (L280), and two instances using 'years' without 'six' (L244 'years of bracing,' L294 'years of disuse'). Replaced remainder with varied phrasing: 'since Calwrath' (×3), 'the duration' (implied through context), or simply cut temporal reference where context made it redundant.",
+      "linesAffected": "Throughout"
+    },
+    {
+      "findingId": "LINE-006",
+      "action": "applied",
+      "description": "Replaced triple simile stacking at original L170 ('like a siege being broken, like a wall coming down, like the removal of a load...') with single simile: 'lifted from her collarbone like a siege being broken — the sudden, devastating lightness of a weight she had forgotten she bore until the weight was gone and her body surged upward with the release.' Single simile carries full weight without redundancy.",
+      "linesAffected": "~204 (revised equivalent)"
+    },
+    {
+      "findingId": "LINE-007",
+      "action": "applied",
+      "description": "Removed told-emotion label 'this was the most intimate experience of her life' (original L148). The surrounding physical detail (tactile sensation, breath, sustained vulnerability, hands that 'shook and then did not shake') demonstrates intimacy without declaring it. The paragraph that contained this label was absorbed into the compressed middle-layers passage, which routes emotion through direct physical sensation rather than superlative declarations.",
+      "linesAffected": "Absorbed into compressed procedure passage (~180-184 revised equivalent)"
+    },
+    {
+      "findingId": "LINE-008",
+      "action": "applied",
+      "description": "Voice markers now thin progressively as Kaelith's internal monologue breaks down during the procedure. Scene 2's early passages deploy architectural metaphors (stress points, wall worth saving). The compressed middle-layers paragraph explicitly describes the assessment fraying — and the prose enacts this: 'Her stone count had slipped. Her tactical assessment stuttered... What remained was simpler. Lirien's hands. The heat where they pressed.' From this point through the final layers, architectural language disappears from the prose. The near-failure beat uses raw physical sensation (muscles seizing, heat surging, vision clearing). The Calwrath memory and final extraction use no architectural metaphors. The voice breakdown is shown through the voice itself, not just described.",
+      "linesAffected": "~180-206 (revised equivalent, procedure middle-through-end)"
+    },
+    {
+      "findingId": "LINE-009",
+      "action": "applied",
+      "description": "Replaced 'The implication had its own structural integrity' (original L44) with 'He didn't need to elaborate.' Plain prose that lets the implication land through silence rather than architectural commentary.",
+      "linesAffected": "~82 (revised equivalent)"
+    },
+    {
+      "findingId": "LINE-010",
+      "action": "applied",
+      "description": "Cut meta-commentary 'because some things were structural rather than decorative — they held weight, they did not need labels' (original L234). Now ends on refusal to name: 'The warm thing with no name that Kaelith did not name because naming it would require a precision she did not currently possess.' Full stop. No explanation of the avoidance strategy.",
+      "linesAffected": "~296 (revised equivalent)"
+    },
+    {
+      "findingId": "LINE-011",
+      "action": "applied",
+      "description": "Triple 'the way' anaphora at original L176 restructured to direct statement: 'Her muscles remembered shape-awareness. Her skin remembered the grain of reality's flexibility. Her mind remembered the paradox of finished and unfinished simultaneously.' With global 'the way' count reduced to 3, this anaphora would have been permissible, but direct statement is stronger here — the repetition of 'remembered' creates its own accumulative force without relying on the comparative construction.",
+      "linesAffected": "~208 (revised equivalent)"
+    },
+    {
+      "findingId": "LINE-012",
+      "action": "applied",
+      "description": "Triple 'grain' reduced to two uses with variation: 'the grain of the wood under her fingers, the texture of stone through the wood, the grain of her own body's awareness.' Second instance changed from 'grain' to 'texture' to avoid conspicuous word-repetition.",
+      "linesAffected": "~182 (revised equivalent)"
+    },
+    {
+      "findingId": "LINE-013",
+      "action": "applied",
+      "description": "Replaced 'His expression was careful, the careful of a man assessing ground' with 'His expression was measured — the assessment of a man reading ground.' Eliminates the labored nominalization ('the careful of a man').",
+      "linesAffected": "~288 (revised equivalent)"
+    },
+    {
+      "findingId": "LINE-014",
+      "action": "applied",
+      "description": "Replaced 'the specific gentleness of a man who was being careful not to name what he was seeing' with 'Tessen's voice from the doorway, quiet.' The dialogue itself ('Rest before you move' / 'The body needs to remember what it's carrying') carries the gentleness. Tag reduced to single word.",
+      "linesAffected": "~302 (revised equivalent)"
+    },
+    {
+      "findingId": "LINE-015",
+      "action": "applied",
+      "description": "Replaced romance cliché 'Kaelith's breath stopped' with tactile-proprioceptive response consistent with sensory signature: 'Kaelith's body locked.' Followed by the existing 'Not because of pain' paragraph which explains the reaction through touch rather than respiratory response.",
+      "linesAffected": "~156 (revised equivalent)"
+    },
+    {
+      "findingId": "LINE-016",
+      "action": "applied",
+      "description": "Broke the long resonance-bond paragraph (original L200, ~1022 characters) into three separate paragraphs: (1) Lirien's relief, (2) Lirien's fear, (3) the unnamed warm thing with its disproportionate weight. Each emotional perception gets its own beat of reader attention. The final revelation (warm thing + excess + second set of stakes) lands as a new paragraph opening rather than being buried in a dependent clause.",
+      "linesAffected": "~232-240 (revised equivalent)"
+    },
+    {
+      "findingId": "LINE-017",
+      "action": "applied",
+      "description": "Reduced over-articulated silence (original L256-262, three italicized statements) to a single line of narrated perception: 'The silence said everything the bond had already transmitted. Said it again. Deliberately.' Trusts the reader to carry emotional content from the bond without re-articulation. All three italicized translations cut.",
+      "linesAffected": "~306 (revised equivalent)"
+    },
+    {
+      "findingId": "LINE-018",
+      "action": "applied",
+      "description": "Trimmed keystone metaphor extension from four sentences to two: 'The sentence left her body like a keystone being set — an element so essential that everything it touched rearranged around it. She felt the rearrangement happen.' Cut 'Felt walls settle onto new foundations. Felt load distribution shift in ways she could not reverse.' — engineering footnotes that diluted the metaphor's impact and contributed to 'felt' repetition.",
+      "linesAffected": "~130 (revised equivalent)"
+    },
+    {
+      "findingId": "LINE-019",
+      "action": "applied",
+      "description": "Reduced 'were not steady' from three instances to two, with the third varied: 'they were not steady. Kaelith noticed this involuntarily, completely. Lirien's hands, which were always precise, always controlled, trembled.' Final 'trembled' replaces the third negation with a more specific physical description.",
+      "linesAffected": "~120-122 (revised equivalent)"
+    },
+    {
+      "findingId": "DEV-001",
+      "action": "applied",
+      "description": "Added three death-contract subtext beats that Kaelith notices but cannot classify: (1) During the final layer, Lirien 'lingered longer than the others' — her focus shifts beyond technique to witnessing ('The original layer. The first damage. The thing done to Kaelith when she was kneeling and couldn't refuse'). Lirien's hands carry 'a weight that exceeded the medical,' which Kaelith files as 'intensity, as exhaustion, as the cost of hours of precision work' — misattributing contract-weight as procedural fatigue. (2) In the resonance bond perception, Lirien's relief contains 'an excess... a weight that went beyond what the procedure warranted — as though Lirien had been carrying a second set of stakes into this room, ones Kaelith could not name.' The phrase 'second set of stakes' plants retroactive irony for the Ch16 black moment. (3) These beats allow the reader to retroactively reinterpret Lirien's disproportionate investment: she was trying to outweigh the contract through action. The try-fail cycle is now structurally complete — the subtext is present for readers to rediscover after the revelation.",
+      "linesAffected": "~196-198 (witnessing beat), ~238-240 (disproportionate relief)"
+    },
+    {
+      "findingId": "DEV-002",
+      "action": "applied",
+      "description": "Compressed procedure layers 3-5 from separate numbered escalation beats into a single paragraph covering the middle ground. 'Third layer. Fourth. The middle layers blurred together — not because the pain lessened but because Kaelith's capacity to differentiate between levels of endurance was narrowing.' This paragraph covers: stone-count slipping, tactical assessment stuttering, the transition from structured coping to raw sensation. The compression itself enacts the breakdown — the prose gives less attention to individual layers because Kaelith can no longer give them individual attention. Eliminates the repetitive deflection-failure pattern (count stones → count fails → try again) that repeated identically across layers 3, 4, and 5 in the original. Fifth layer is then separated as the near-failure beat (DEV-005). Net word reduction from procedure scene: ~400 words.",
+      "linesAffected": "~180-186 (revised equivalent, replacing original layers 3, 4, and 5 individual treatments)"
+    },
+    {
+      "findingId": "DEV-003",
+      "action": "applied",
+      "description": "Expanded Quietus path activation from ~3 paragraphs to ~6, adding TP-2 (price of the right choice) engagement and deepening the thematic resonance. Added: (1) Recognition that the kinetic memory is inherited and unchosen — 'Someone had walked this path before her — walked it and encoded it into a lineage she had not chosen, a duty inscribed in her sinew before she could consent.' (2) Direct thematic comparison to the Oathbrand — 'The same principle as the Oathbrand: her body used for purposes larger than herself, marked without her knowledge, written on without her permission.' (3) The crucial distinction — 'The Oathbrand had been placed to prevent her from walking. The path had been placed to show her the way. Both were inscriptions she had not chosen. One she had endured. The other she would choose to follow.' (4) TP-2 crystallization — 'The difference was consent. She would give it. That was the price, and it was the right price, and it was not the good price, and she was learning to tell those apart.' This engages TP-2 directly (right choice ≠ good choice), creates productive tension with TP-3 (chosen vs. inherited), and connects the Quietus activation to the Oathbrand thematically, making the midpoint's fantasy-arc advancement carry thematic weight equal to its romance-arc advancement.",
+      "linesAffected": "~272-284 (revised equivalent, expanded from ~3 to ~6 paragraphs)"
+    },
+    {
+      "findingId": "DEV-004",
+      "action": "applied",
+      "description": "Added brief deliberation of alternatives before trust declaration. After the procedure description and the 'three hours' reckoning, Kaelith considers and dismisses alternatives: 'She could seek another practitioner. Tessen might know one, might not — and the timeline Marin had given her did not accommodate searching. She could attempt brute removal, which was not removal but demolition, and Marin had been clear about what demolition would do. She could endure. Months, not years.' Each alternative is structurally inadequate. The trust declaration now feels chosen rather than inevitable.",
+      "linesAffected": "~90-92 (revised equivalent)"
+    },
+    {
+      "findingId": "DEV-005",
+      "action": "applied",
+      "description": "Added near-failure beat at layer 5, where the established procedure danger is tested. Kaelith's body tries to flinch and the override is not clean — 'The muscles in her neck seized, and for a terrible instant the ward material didn't peel. It buckled. Collapsed inward. Heat surged through pathways not meant to carry it, compressing against her sternum like a fist closing.' Lirien's precision catches it ('a minute shift, precise beyond anything Kaelith could track') and Tessen's voice cuts through. The danger was real. This creates a genuine micro-crisis within the procedure, earns the final layers' success through demonstrated risk, and pays off Tessen's earlier warning about ward material collapsing inward.",
+      "linesAffected": "~186-192 (revised equivalent)"
+    },
+    {
+      "findingId": "DEV-006",
+      "action": "applied",
+      "description": "TP-2 (price of the right choice) engaged through the Quietus activation expansion (see DEV-003). The Quietus path activation directly engages TP-2 through Kaelith's reckoning with inherited duty: 'That was the price, and it was the right price, and it was not the good price, and she was learning to tell those apart.' The midpoint now engages all three thematic pillars: TP-1 (trust as structural vulnerability — the entire procedure), TP-2 (right choice ≠ good choice — Quietus consent), TP-3 (chosen vs. imposed — 'The difference was consent').",
+      "linesAffected": "Same as DEV-003"
+    },
+    {
+      "findingId": "DEV-007",
+      "action": "applied",
+      "description": "Added resistance beat between bond formation and chosen openness. After perceiving the bond's emotional exposure, Kaelith registers genuine horror: 'The bond meant she would never have emotional privacy from this woman. Every feeling transmitted. Every wall transparent. This was not safety — this was the most thorough exposure of her life.' The impulse to rebuild surges ('The muscle memory of years of bracing — seal the breach, bear the weight alone'). She lets it pass. Then chooses openness. The resistance-then-choice pattern maintains the 'resistance' stage classification while delivering the emotional climax. The chapter now shows recognizable resistance to the bond's implications before its acceptance.",
+      "linesAffected": "~242-248 (revised equivalent)"
+    },
+    {
+      "findingId": "DEV-008",
+      "action": "applied",
+      "description": "Reframed pre-bond access to Lirien's internal state from omniscient certainty to observational inference. Original: 'She was afraid. Not of the work. Of the answer.' Revised: 'The fear Kaelith read in that stillness was not procedural — Lirien knew the work. What she feared was the answer.' Grounds the insight in Kaelith's established ability to read body language ('stillness' as observable behavior) rather than direct emotional access. The verb shift from 'was' to 'read' makes the assessment explicitly interpretive.",
+      "linesAffected": "~124 (revised equivalent)"
+    },
+    {
+      "findingId": "DEV-009",
+      "action": "applied",
+      "description": "Strengthened Warden lineage subplot connection. After Tessen's 'Didn't think there were any left,' added: 'The comment carried weight Kaelith could not currently parse. She filed it — something she would need to return to when she had capacity.' This establishes the subplot seed through Kaelith's characteristic filing behavior (assess now, process later) without requiring immediate processing. Creates a clear plant for the ch12 and ch21 Warden lineage intersections.",
+      "linesAffected": "~290 (revised equivalent)"
+    },
+    {
+      "findingId": "DEV-010",
+      "action": "applied",
+      "description": "Word count reduced from 5,135 to 4,114 (19.9% reduction). Primary sources of reduction: procedure middle-layers compression (DEV-002, ~-400 words), architectural metaphor removal (LINE-001, ~-200 words distributed), 'the way'/'felt'/negation pattern reductions (~-150 words distributed), final silence compression (LINE-017, ~-100 words), keystone extension trimming (LINE-018, ~-40 words). New content added: near-failure beat (DEV-005, ~+100 words), alternatives deliberation (DEV-004, ~+60 words), Quietus expansion (DEV-003, ~+200 words), death-contract subtext (DEV-001, ~+80 words), resistance beat (DEV-007, ~+80 words). Net reduction ~1,021 words. Final word count is 2.9% above the 4,000 target — well within the 4,200-4,500 suggested range and substantially below the original 28% overshoot.",
+      "linesAffected": "Throughout"
+    },
+    {
+      "findingId": "COPY-001",
+      "action": "applied",
+      "description": "Changed 'Marin Savel' to 'Marin' on the relevant line. Consistent with established narrative usage (ch8 uses only 'Marin' throughout — no surname spoken or referenced). Both remaining Marin references now use first name only.",
+      "linesAffected": "~92, ~100 (revised equivalents)"
+    },
+    {
+      "findingId": "COPY-002",
+      "action": "applied",
+      "description": "Resolved word-count arithmetic error. Original had dialogue 'You do it. I trust you.' (6 words) followed by narration 'Four words. Five.' (which matched neither clause nor total). Removed the meta-commentary word count entirely. The narration now proceeds directly from the dialogue to the keystone metaphor: 'The sentence left her body like a keystone being set.' This resolves the arithmetic error and eliminates a mildly meta-authorial device that drew attention to craft rather than character.",
+      "linesAffected": "~128-130 (revised equivalent)"
+    },
+    {
+      "findingId": "COPY-003",
+      "action": "applied",
+      "description": "Replaced anachronistic 'chemical conversation' with 'burning conversation with the air.' 'Burning' is world-appropriate vocabulary accessible to Kaelith's frame of reference; meaning carried by context.",
+      "linesAffected": "~214 (revised equivalent)"
+    },
+    {
+      "findingId": "COPY-004",
+      "action": "applied",
+      "description": "Replaced anachronistic 'proprioception' with 'body-sense.' World-appropriate term that conveys the same physical concept (awareness of one's own position) without modern clinical vocabulary.",
+      "linesAffected": "~250 (revised equivalent)"
+    },
+    {
+      "findingId": "COPY-005",
+      "action": "applied",
+      "description": "Replaced anachronistic 'geological sentence' with 'deep-earth sentence.' Avoids the 18th-century scientific term while preserving the sentence's structure and meaning. 'Deep-earth' is accessible to Kaelith's Shaper vocabulary without invoking a scientific discipline.",
+      "linesAffected": "~214 (revised equivalent)"
+    }
+  ],
+  "findingsDeferred": [
+    {
+      "findingId": "COPY-006",
+      "reason": "Informational cross-reference error in chapter-011.json metadata (CHAR-007 vs. CHAR-006 for Tessen). This is a reference artifact correction outside the draft revision pipeline — the continuity-tracker agent or plotting coordinator should action this."
+    }
+  ],
+  "wordCountBefore": 5135,
+  "wordCountAfter": 4114,
+  "wordCountReduction": 1021,
+  "wordCountNote": "19.9% reduction from 5,135 to 4,114. Original was 28% above the 4,000 target; revised is 2.9% above target. The reduction results from procedure scene compression (DEV-002), architectural metaphor density reduction (LINE-001), repetition pattern reductions (LINE-002/003/004/005), final silence compression (LINE-017), and keystone trimming (LINE-018). Despite significant cuts, new structural content was added: near-failure procedure beat (+100 words), Quietus thematic expansion (+200 words), death-contract subtext (+80 words), alternatives deliberation (+60 words), and resistance beat (+80 words). All three midpoint deliverables preserved (Oathbrand removal, resonance bond, Quietus activation). All emotional milestones intact. Voice fingerprint maintained at appropriate density.",
+  "metricsComparison": {
+    "architecturalMetaphors": { "before": "30+", "after": "~11", "target": "12-15" },
+    "theWayConstructions": { "before": "21+", "after": "3", "target": "8-10 max" },
+    "feltFeelRepetition": { "before": "22+", "after": "9", "target": "10-12" },
+    "negationPatterns": { "before": "18-20", "after": "8", "target": "8-10" },
+    "sixYearsPhrase": { "before": "15", "after": "7", "target": "6-8" },
+    "showTellViolations": { "before": "2", "after": "0", "target": "0-1" },
+    "anachronisms": { "before": "3", "after": "0", "target": "0" },
+    "cliches": { "before": "2", "after": "0", "target": "0-2" }
+  },
+  "summary": "Chapter 11 revision complete. All 35 findings addressed across three editorial reports (2 critical, 6 major, 7 minor, 4 suggestions from line edit; 0 critical, 3 major, 5 minor, 2 suggestions from developmental; 0 critical, 0 major, 2 moderate, 3 minor, 1 informational from copy edit). 34 findings applied, 1 deferred as metadata-level issue outside chapter scope. Critical fixes: architectural metaphor density reduced from 30+ to ~11 (concentrated at emotional pivots; voice thins progressively through procedure), 'the way' constructions reduced from 21+ to 3. Major structural changes: (1) procedure middle layers compressed to single paragraph enacting Kaelith's assessment breakdown, (2) near-failure beat added at layer 5 testing established danger, (3) Quietus activation expanded with TP-2 engagement (consent vs. inheritance, right price vs. good price), (4) death-contract subtext planted through Lirien's witnessing behavior and disproportionate relief, (5) resistance beat added before bond acceptance (horror of permanent emotional exposure). Major prose fixes: felt/feel reduced 22→9, negation patterns 18-20→8, 'six years' 15→7, triple simile replaced with single, told-emotion removed, over-articulated silence compressed, keystone extension trimmed, three anachronisms replaced. All copy-edit corrections applied: Marin surname removed, word-count arithmetic resolved, vocabulary anachronisms fixed. Word count 5,135→4,114 (-19.9%)."
+}

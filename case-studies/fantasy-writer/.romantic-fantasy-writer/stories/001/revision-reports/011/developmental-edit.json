@@ -1,0 +1,203 @@
+{
+  "artifactType": "developmental-edit-report",
+  "storyId": "001",
+  "chapter": 11,
+  "agent": "developmental-editor",
+  "timestamp": "2025-07-28T17:00:00Z",
+  "overallAssessment": {
+    "verdict": "PASS",
+    "summary": "Chapter 11 delivers the midpoint beat (BEAT-008) with exceptional dual-arc convergence. The Oathbrand removal scene is the structural hinge of the story — fantasy necessity (magic restoration) and romance advancement (intimacy threshold) are genuinely inseparable, satisfying INV-050 at the highest level. The chapter achieves all three midpoint deliverables (brand removal, resonance bond, Quietus activation) and the emotional arc from determined pragmatism to overwhelming vulnerability is earned through sustained physical and psychological specificity. Three major findings require revision attention: the death-contract subplot's try-fail cycle needs subtext threading, the procedure scene's middle layers risk repetitive escalation, and the Quietus path activation is structurally underweighted relative to its importance for the second half of Act 2.",
+    "findingCounts": {
+      "critical": 0,
+      "major": 3,
+      "minor": 5,
+      "suggestion": 2
+    }
+  },
+  "positionInArc": {
+    "act": 2,
+    "beatDelivered": "BEAT-008 — Midpoint: Oathbrand Removal and Magic Return",
+    "romanceStage": "resistance (trust as crisis — Ch 11-14)",
+    "tensionExpected": 9,
+    "tensionDelivered": 9,
+    "vulnerabilityLadderStep": 7,
+    "subplotsIntersected": ["SUB-004 (Warden Lineage — Tessen recognizes kinetic memory as Warden-work)"]
+  },
+  "pacingAssessment": {
+    "inv020Compliance": "PASS",
+    "precedingChapters": {
+      "chapter9": { "tension": 8, "type": "high — Ythara exposure" },
+      "chapter10": { "tension": 5, "type": "recovery — investigation and fireside" },
+      "chapter11": { "tension": 9, "type": "peak — midpoint" }
+    },
+    "pattern": "High → Recovery → Peak — correct pacing rhythm. No INV-020 violation.",
+    "internalPacing": "Scene 1 builds deliberately, Scene 2 sustains rising tension through the procedure, Scene 3 delivers explosive transformation settling into charged aftermath. Internal pacing structure is sound but Scene 2 risks repetitive escalation (see DEV-002)."
+  },
+  "dualArcInterleave": {
+    "inv050Compliance": "PASS — exemplary",
+    "assessment": "The chapter is the story's best example of dual-arc convergence. Fantasy action (Oathbrand removal, magic return, Quietus activation) and romance action (trust declaration, sustained intimate touch, resonance bond formation) are structurally inseparable — one literally cannot happen without the other. The resonance bond literalizes the metaphor of connection. The genre balance (55% fantasy / 45% romance) is maintained: fantasy drives the scene structure and world-level consequences, romance drives the emotional weight and character transformation."
+  },
+  "thematicResonance": {
+    "inv036Compliance": "PASS with note",
+    "pillarEngagement": {
+      "TP1_TrustAsStructuralFailure": "STRONG — The entire chapter is a sustained exploration of trust as both structural necessity and structural vulnerability. Kaelith's architectural metaphors (keystone, load-bearing, walls, foundations) literalize the thematic argument. Her declaration 'I trust you' is described as 'a keystone being set — a structural element so essential that everything it touched rearranged around it.' The resonance bond then tests whether trust survives becoming involuntary.",
+      "TP2_PriceOfTheRightChoice": "MINIMAL — Present only through the general cost of vulnerability. The chapter's strongest missed opportunity: the Quietus path activation (discovering inherited responsibilities she never chose) could directly engage TP-2 but currently does not. See DEV-003 and DEV-006.",
+      "TP3_ChosenVersusOnly": "STRONG — Kaelith's trust declaration is explicitly a choice, not a necessity. She chose Lirien over alternatives. The resonance bond then complicates this: the connection is involuntary, but Kaelith's response — 'she chose to hold herself open. The walls were down. Not breached. Not destroyed. Removed. Deliberately' — reaffirms choice within involuntary connection."
+    }
+  },
+  "emotionalVariety": {
+    "inv037Compliance": "PASS",
+    "assessment": "Chapter 9 ends Kaelith at 'acknowledged dependence as survival.' Chapter 11 starts Kaelith at 'determined pragmatism — tactical assessment mode, deflecting through structural analysis.' The shift represents Kaelith re-armoring between chapters, which is psychologically consistent and demonstrates emotional variety. The chapter's end state ('overwhelming vulnerability and chosen openness') is distinct from both its start state and the chapter 9 end state."
+  },
+  "sceneValueShifts": {
+    "inv040Compliance": "PASS",
+    "scenes": [
+      {
+        "scene": "SCN-031",
+        "shift": "pragmatic cooperation → chosen trust",
+        "magnitude": "major",
+        "assessment": "Clear shift delivered through Kaelith's trust declaration. The value change is irreversible."
+      },
+      {
+        "scene": "SCN-032",
+        "shift": "physical contact as medical procedure → intimacy that cannot be denied",
+        "magnitude": "major",
+        "assessment": "Sustained escalation through the layer-by-layer removal. The shift is physically grounded and emotionally devastating."
+      },
+      {
+        "scene": "SCN-033",
+        "shift": "passive information carrier → active Warden inheritor with resonance bond",
+        "magnitude": "transformative",
+        "assessment": "Multiple value shifts converge: magic returns, bond forms, Quietus activates, emotional privacy dissolves. The density is warranted by the midpoint structural position."
+      }
+    ]
+  },
+  "tryFailCycles": {
+    "inv042Assessment": "PARTIAL — see DEV-001",
+    "note": "The plot structure designates this chapter as a 'fail' in the try-fail cycle for escaping the death contract: 'Lirien hopes saving Kaelith through Oathbrand removal might morally supersede the binding.' This beat is absent from the draft. While the information asymmetry design (Kaelith's POV cannot explicitly know about the contract) explains the absence, there should be subtext in Lirien's behavior that signals her additional investment in this procedure."
+  },
+  "findings": [
+    {
+      "id": "DEV-001",
+      "severity": "major",
+      "category": "arc",
+      "title": "Death-contract try-fail cycle lacks subtext",
+      "description": "The plot structure designates Chapter 11 as a 'fail' in the try-fail cycle for escaping the death contract — Lirien hopes that saving Kaelith through the Oathbrand removal might morally supersede the binding. While Kaelith's POV cannot explicitly know about the contract, the draft provides no subtext indicating Lirien carries additional weight into this scene. Her hands shake, but only from the procedure's difficulty. Her relief at the end reads as relief at saving Kaelith's life, but never hints at the deeper, contract-related stakes. The reader should sense that Lirien's investment in this procedure goes beyond medical or personal care — that she is trying, perhaps unconsciously, to outweigh the contract through action. Without this subtext, the try-fail cycle is structurally incomplete and the Chapter 16 black moment loses a layer of retroactive irony.",
+      "location": "Entire chapter, primarily Scenes 2-3 (Lirien's behavior during and after the procedure)",
+      "invariantsAffected": ["INV-042 (Try-Fail Cycles)"],
+      "suggestedFix": "Add 2-3 beats of Lirien behavior that Kaelith reads without fully understanding: a moment where Lirien's focus on the brand seems to carry weight beyond the medical — perhaps she lingers on the original layer (the one applied at Calwrath) with an attention that feels like witness rather than procedure. After the removal, a beat where Lirien's relief is disproportionate to the medical outcome — Kaelith notices but files it as exhaustion or emotional intensity. In the resonance bond section, a flash of something in Lirien's emotional signature that Kaelith can feel but cannot classify — something that reads as guilt or hope rather than simple relief. These beats plant subtext the reader will retroactively reinterpret after Chapter 16."
+    },
+    {
+      "id": "DEV-002",
+      "severity": "major",
+      "category": "pacing",
+      "title": "Procedure scene risks repetitive escalation across seven layers",
+      "description": "Scene 2 tracks the Oathbrand removal through seven numbered layers, each following a similar structural pattern: Lirien works → Kaelith endures → closeness intensifies → Kaelith deflects through tactical assessment → assessment fails under emotional weight. While the emotional escalation across layers is genuine, the middle layers (3-5) follow the same beat sequence without sufficient variation. By layer 4, the reader has internalized the pattern and may begin anticipating rather than experiencing the emotional progression. The chapter word count (5,135 vs. 4,000 target, 28% over) suggests this is also a source of structural bloat.",
+      "location": "Scene 2 (SCN-032), approximately the middle third of the procedure — layers 3 through 5",
+      "invariantsAffected": ["INV-020 (Pacing Variation — internal chapter rhythm)"],
+      "suggestedFix": "Compress layers 3-5 into 1-2 beats that cover the middle ground between 'manageable' and 'overwhelming' without repeating the deflection-failure pattern each time. Options: (1) summarize the middle layers in a single paragraph that conveys accelerating collapse of Kaelith's coping mechanisms, then jump to the critical final layers where the emotional and physical intensity peaks; (2) vary the deflection mechanism — instead of counting stones for every layer, have the coping shift (assessment → memory → pure sensation) to create internal progression. Target net reduction of 400-600 words from the procedure scene."
+    },
+    {
+      "id": "DEV-003",
+      "severity": "major",
+      "category": "structure",
+      "title": "Quietus path activation underweighted relative to structural importance",
+      "description": "The Quietus kinetic memory activation is one of the midpoint's three major deliverables and the primary fantasy-arc advancement that drives the entire second half of Act 2 (from 'we need to find the Quietus' to 'my body knows the way'). Currently it receives approximately 3 paragraphs within Scene 3, sandwiched between the resonance bond revelation and the final emotional beat. The activation is described effectively (compass needle, kinetic memory, northeast pull), but Kaelith does not reckon with what it means: her body carries a path she never chose, she is inheriting a role (Warden) she did not know existed, and the body-knowledge implies someone walked this path before her and encoded it in a lineage she cannot refuse. This is a natural intersection with TP-2 (the price of the right choice) and SUB-004 (Warden Lineage), neither of which are adequately engaged.",
+      "location": "Scene 3 (SCN-033), the Quietus activation passage (approximately 3 paragraphs)",
+      "invariantsAffected": ["INV-036 (Thematic Coherence — TP-2 underengaged)", "INV-044 (Stakes Escalation — fantasy stakes should register clearly at midpoint)"],
+      "suggestedFix": "Expand the Quietus activation by 2-3 paragraphs. Add a beat where Kaelith's body-knowledge is unsettling rather than merely functional — the muscles know a route her mind never chose, and this is the structure of inheritance: a duty written in her body before she could consent. This directly engages TP-2 and creates productive tension with the chapter's TP-3 engagement (chosen versus inherited). Let Kaelith recognize, even briefly, that the Quietus path activation means she has been drafted into a role she did not choose, the same way the Oathbrand was placed on her without consent — and that she is choosing to walk it anyway, which is the difference. Connect to Tessen's 'Didn't think there were any left' comment more deliberately."
+    },
+    {
+      "id": "DEV-004",
+      "severity": "minor",
+      "category": "structure",
+      "title": "Trust declaration crisis lacks genuine deliberation weight",
+      "description": "Scene 1's central crisis — trust Lirien to perform the procedure or search for another solution — is structurally present but emotionally pre-decided. Kaelith's internal narration acknowledges 'there was only one option and she'd known it before the question was asked.' While this is character-consistent (Kaelith makes decisive assessments), it deflates the dramatic tension of the crisis. The reader never genuinely believes Kaelith might say no. The Lirien-restraint detail (not pushing, not offering) that ultimately decides Kaelith is excellent, but the moment would land harder if Kaelith genuinely weighed and dismissed an alternative first.",
+      "location": "Scene 1 (SCN-031), Kaelith's deliberation at the wall",
+      "invariantsAffected": [],
+      "suggestedFix": "Add a brief beat where Kaelith considers the alternative — seeking another practitioner, attempting to remove the brand through brute force, or simply enduring until a safer option appears — and recognizes each as structurally inadequate. This doesn't need to be long. Two sentences acknowledging and dismissing the alternatives would make the trust declaration feel chosen rather than inevitable."
+    },
+    {
+      "id": "DEV-005",
+      "severity": "minor",
+      "category": "structure",
+      "title": "Established procedure danger never approaches genuine crisis",
+      "description": "Tessen establishes clear stakes for the procedure: 'If the subject resists — flinches, panics, fights the working — the ward material doesn't dissipate. Collapses inward. Energy has nowhere to go except through you.' This is excellent setup. However, the threat is never tested during the actual procedure. Kaelith's body tries to flinch once (layer 4), and she overrides it smoothly. The reader never feels the genuine danger of procedure failure. This is a missed try-fail opportunity within the scene: a moment where the procedure nearly fails would raise the stakes and earn the eventual success more fully.",
+      "location": "Scene 2 (SCN-032), particularly layers 4-6 of the procedure",
+      "invariantsAffected": ["INV-042 (Try-Fail Cycles — micro-level within scene)"],
+      "suggestedFix": "Add a near-failure beat around layer 5 or 6, where Kaelith's body reacts despite her control — perhaps the pain of an older, deeper layer triggers a muscle memory from Calwrath (the application), and for a terrible moment the ward material begins to collapse inward. Lirien's precision catches it. Tessen's voice cuts through. The moment passes, but the danger was real. This creates a genuine micro-crisis within the procedure and earns the final layer's success through demonstrated risk."
+    },
+    {
+      "id": "DEV-006",
+      "severity": "minor",
+      "category": "theme",
+      "title": "Thematic pillar TP-2 (price of the right choice) minimally engaged",
+      "description": "The chapter engages powerfully with TP-1 (trust as structural failure) and TP-3 (chosen versus only), but TP-2 (when the right decision and the good decision diverge) is present only through the general cost of vulnerability. For the midpoint chapter — the structural hinge of the story — having one of three thematic pillars minimally engaged is a missed opportunity. The Quietus activation provides a natural entry point for TP-2: Kaelith's body carries inherited duties she did not choose, reprising the Calwrath question (duty versus desire) in a new key.",
+      "location": "Scene 3 (SCN-033), Quietus activation passage",
+      "invariantsAffected": ["INV-036 (Thematic Coherence)"],
+      "suggestedFix": "Addressed by the same revision as DEV-003. Expanding the Quietus activation to include Kaelith's reckoning with inherited duty naturally engages TP-2. The key question: the Quietus path was encoded in her body without her consent — walking it is the right thing to do (the world needs the seal), but it is also another instance of her body being used for purposes larger than herself, which is exactly what the Oathbrand was. The difference is consent. She is choosing to walk the path the brand tried to prevent her from walking. That choice is the TP-2 engagement."
+    },
+    {
+      "id": "DEV-007",
+      "severity": "minor",
+      "category": "romance",
+      "title": "Post-bond acceptance lacks resistance beat for romance stage compliance",
+      "description": "The romance arc design places chapters 11-14 in the 'resistance' stage: 'Trust stops being optional and becomes the price of survival.' The chapter's emotional arc — from determined pragmatism to overwhelming vulnerability to chosen openness — tracks the dissolution of Kaelith's defenses beautifully. However, after the resonance bond forms, Kaelith moves to chosen openness without a visible beat of resistance to the bond's implications. She chooses to hold herself open, but the narration presents this as the natural culmination of the procedure rather than a decision that costs her something. A brief moment of genuine horror at permanent emotional exposure — before choosing to keep the bond anyway — would strengthen the 'resistance' framing and set up the tension that chapters 12-14 require.",
+      "location": "Scene 3 (SCN-033), post-bond formation, before the final gaze",
+      "invariantsAffected": ["INV-021 (Romance Arc Pacing — resistance stage should show recognizable resistance)"],
+      "suggestedFix": "Insert a beat between bond formation and chosen openness where Kaelith registers the horror of what the bond means: she will never have emotional privacy from this woman again. Every feeling will be shared. Every wall she builds will be transparent. This is not safety — this is the most exposed she has ever been or will ever be. Let her feel the impulse to close the bond, to rebuild the walls. Then let her choose not to. The resistance-then-choice pattern maintains the 'resistance' stage classification while still delivering the chapter's emotional climax."
+    },
+    {
+      "id": "DEV-008",
+      "severity": "minor",
+      "category": "structure",
+      "title": "Pre-bond POV access to Lirien's internal state",
+      "description": "Before the resonance bond forms, the narration presents Lirien's internal emotional state as known fact rather than inference: 'She was afraid. Not of the work. Of the answer.' While Kaelith is established as someone who reads body language instinctively, this line presents certainty about Lirien's emotional specifics (afraid of the answer, not the work) that exceeds what observation could provide. This is a minor POV leak that the resonance bond would later justify — but here it precedes the bond.",
+      "location": "Scene 1 (SCN-031), after Kaelith turns around and observes Lirien standing by the door",
+      "invariantsAffected": [],
+      "suggestedFix": "Reframe as inference from observed behavior: 'The fear Kaelith read in her stillness was not procedural — Lirien's hands knew the work. What she feared was the answer.' This preserves the insight while grounding it in Kaelith's observational competence rather than omniscient access."
+    },
+    {
+      "id": "DEV-009",
+      "severity": "suggestion",
+      "category": "structure",
+      "title": "Strengthen Warden lineage subplot connection",
+      "description": "Tessen's comment 'Didn't think there were any left' about Warden kinetic memory is an effective foreshadowing plant for SUB-004 (Warden Lineage and Ossya Thenndal Mystery) but sits somewhat orphaned at the end of the Quietus activation passage. Kaelith does not engage with or file it. Given that this subplot intersects chapters 11, 12, and 21, the seed planted here would benefit from minimal acknowledgment.",
+      "location": "Scene 3 (SCN-033), after Tessen's 'Didn't think there were any left' line",
+      "invariantsAffected": [],
+      "suggestedFix": "Add a single sentence where Kaelith hears the comment, recognizes it carries weight she cannot currently parse, and files it the way she files structural observations — as something she will need to return to when she has capacity. This establishes the subplot seed without requiring immediate processing."
+    },
+    {
+      "id": "DEV-010",
+      "severity": "suggestion",
+      "category": "pacing",
+      "title": "Word count exceeds target by 28%",
+      "description": "The chapter is 5,135 words against a target of 4,000. While midpoint chapters warrant additional space given their structural density, a 28% overshoot suggests structural fat. The primary candidate for compression is the procedure scene's middle layers (see DEV-002). Secondary candidate: the final silence passage, which is emotionally powerful but verges on over-articulation of what the silence means.",
+      "location": "Whole chapter, primarily Scene 2 middle layers and Scene 3 final silence passage",
+      "invariantsAffected": [],
+      "suggestedFix": "Target 4,200-4,500 words for the revised chapter. Compress procedure middle layers per DEV-002 recommendation (-400-600 words). The Quietus expansion per DEV-003 will add ~200 words. Net target reduction: 200-400 words. The final silence passage can be tightened by trusting the reader to feel what the silence means rather than articulating each implication."
+    }
+  ],
+  "strengths": [
+    "Dual-arc convergence is exceptional — the Oathbrand removal is simultaneously the story's most important fantasy beat and its most important romance beat, and they are genuinely inseparable. This is the standard INV-050 aspires to.",
+    "Kaelith's architectural voice fingerprint is maintained flawlessly and serves double duty as both character voice and thematic infrastructure. The metaphors are never ornamental — they are how she actually processes experience.",
+    "The progression from tactical assessment mode to broken-open vulnerability is psychologically specific and earned. The breakdown of Kaelith's coping mechanism (counting stones → counting failing → not counting) is masterful internal character work.",
+    "The 'one door, no windows' structural motif unifies setting, character psychology, and thematic argument within a single recurring image.",
+    "Tessen is efficiently characterized and serves multiple functions: expert, witness, and the particular kindness of a man who knows when to leave the room.",
+    "The resonance bond formation is framed as exposing and unsettling rather than romantic or comforting, which correctly sets up the 'resistance' processing in chapters 12-14.",
+    "The chapter successfully delivers all three midpoint transformations: Oathbrand removal (medical/magical), resonance bond (relational/magical), and Quietus activation (identity/quest). This is dense, demanding work."
+  ],
+  "upstreamRefs": [
+    "chapters/011/draft.md",
+    "chapters/011/metadata.json",
+    "plot/chapter-outlines/chapter-011.json",
+    "plot/plot-structure.json",
+    "plot/dual-arc-timeline.json",
+    "plot/tension-map.json",
+    "romance-arc.json",
+    "story-concept.json",
+    "craft-profile.json",
+    "chapters/009/metadata.json",
+    "chapters/010/metadata.json"
+  ]
+}

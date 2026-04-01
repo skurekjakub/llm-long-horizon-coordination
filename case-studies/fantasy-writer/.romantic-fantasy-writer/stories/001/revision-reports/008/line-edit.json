@@ -1,0 +1,202 @@
+{
+  "reportType": "line-edit",
+  "chapter": 8,
+  "pov": "CHAR-002",
+  "reviewer": "line-editor",
+  "generatedAt": "2025-07-24T00:00:00Z",
+  "overallAssessment": {
+    "verdict": "pass-with-revisions",
+    "summary": "Lirien's voice is largely on-target: the analytical framing, the clinical containment of emotion, the observational precision, and the moment when classification fails are all present and working. The chapter's best prose is in the healer scene, where Lirien's operational vocabulary collides with an emotion she cannot file. However, the voice leans too heavily on operational/clinical terminology ('mission parameters,' 'operational capacity,' 'systematic complications') to the point where it becomes a monotone rather than a fingerprint. The water/current metaphor domain that defines Lirien is almost entirely absent. Several passages tell emotions that should be shown, and the repetition of the classification-failure pattern across 800+ words of Scene 3 dilutes what should be the chapter's sharpest moment. POV discipline is strong throughout — no slippage into Kaelith's interiority or omniscient distance.",
+    "strengths": [
+      "The clinical-to-overwhelmed progression in the healer scene is precisely calibrated — 'Fear. I was experiencing fear.' is exactly the right sentence at exactly the right moment",
+      "Lirien's attention priority is correct: she reads people before architecture (opening with Kaelith's body language, not the road)",
+      "Dialogue is well-differentiated — Kaelith speaks in short tactical statements, Lirien in probing directives, Marin in clinical observations",
+      "The visual sensory channel dominates appropriately — Lirien reads micro-expressions, posture shifts, the brand's glow through fabric",
+      "The chapter correctly avoids contractions in Lirien's narration (fae-default formality at this stage of the arc)"
+    ],
+    "primaryConcerns": [
+      "Water/current/surface-depth metaphor domain is missing — Lirien's metaphor signature is absent from the chapter",
+      "Operational terminology repetition creates vocabulary monotone ('operational,' 'tactical,' 'mission,' 'parameters,' 'assessment,' 'protocol' appear 20+ times)",
+      "Show-don't-tell violations in Scene 3 where emotions are named and analyzed rather than enacted",
+      "The classification-failure pattern (emotion → attempt to classify → classification fails → repeat) is used five times in Scene 3 — diminishing returns after the second instance"
+    ]
+  },
+  "findings": [
+    {
+      "id": "LINE-008-001",
+      "severity": "major",
+      "category": "voice-fingerprint",
+      "title": "Lirien's water/current metaphor domain is absent",
+      "location": "Entire chapter",
+      "description": "The style guide and CHAR-002.json specify Lirien's metaphor domain as 'water, currents, seals, thresholds, light, reflection, hidden rooms, and contractual binding.' The Seep's identity ('the water that finds every crack') is her conceptual framework. People have surfaces and depths. Conversations have currents and undertows. Trust is described in terms of permeability. In 4,089 words of Lirien POV, there is not a single water metaphor, no current imagery, no surface/depth language. The only metaphor domain present is operational/mechanical ('classification system,' 'mission drift,' 'variables'). This is a significant voice fingerprint gap — the reader should feel Lirien's water-influenced worldview even in a chapter dominated by medical content.",
+      "recommendation": "Add 3-5 water-domain metaphors distributed across the chapter. Examples: the fear could feel like 'undertow' rather than just 'fear'; Kaelith's concealment could be described as a surface holding against something deeper; the medical diagnosis could land like a crack in a seal; Lirien's concern could be described as current rather than calculation. These should feel organic, not forced — one per scene is the minimum.",
+      "lineReferences": ["Lines 20-21 (could use surface/depth)", "Lines 154-157 (fear moment — prime water metaphor territory)", "Lines 232-234 (care as current rather than calculation)"]
+    },
+    {
+      "id": "LINE-008-002",
+      "severity": "major",
+      "category": "repetition",
+      "title": "Operational/tactical vocabulary creates monotone",
+      "location": "Throughout, concentrated in Scene 3",
+      "description": "The following terms appear with excessive frequency: 'operational' (8 times), 'tactical' (7 times), 'mission' (6 times), 'assessment/assess' (5 times), 'parameters' (3 times), 'protocol' (2 times), 'standard' (4 times), 'classification/classify' (6 times). While Lirien's voice uses operational language to contain emotion, the style guide specifies this should create 'adaptive rather than percussive' rhythm. The current density creates a clinical monotone that flattens the prose rather than characterizing it. The voice fingerprint notes: 'Clinical or contractual language early in the arc for emotional containment' — but this should be a tendency within varied prose, not the dominant register for an entire chapter.",
+      "recommendation": "Reduce operational vocabulary by approximately 40%. Replace some instances with Lirien's other register elements: observation-to-interpretation chains, comparative thinking, field-note fragments. Vary the containment language — use contractual metaphors (binding, terms, obligations) alongside operational ones, and allow her fae precision to manifest as exact sensory description rather than always defaulting to classification terminology.",
+      "lineReferences": ["Line 21 ('Standard operational behavior')", "Line 64 ('operational capacity unknown')", "Line 176 ('mission-relevant observation')", "Line 213 ('operational parameters')", "Line 236 ('personal investment...beyond operational requirements')"]
+    },
+    {
+      "id": "LINE-008-003",
+      "severity": "major",
+      "category": "show-dont-tell",
+      "title": "Scene 3 tells Lirien's emotional shift rather than showing it",
+      "location": "Lines 206-252",
+      "description": "The chapter's climactic emotional moment — Lirien acknowledging personal care for Kaelith — is delivered through extended internal analysis rather than dramatized behavior. Key telling passages: 'Personal. I had offered personal advice based on concern that had no strategic justification' (line 210); 'I was experiencing mission drift' (line 213); 'I was caring for her. Not as a mission asset, but as someone whose survival had become personally essential' (line 244). The style guide's show-don't-tell rules mandate showing for 'relationship shifts between Kaelith and Lirien' and 'moments of trust offered.' The prohibited shortcuts include 'naming an emotion first and adding body language afterward' and 'explaining subtext immediately after dialogue.' Lirien's voice should demonstrate the shift through what she notices, what she cannot stop noticing, and the gap between her operational framework and her behavior.",
+      "recommendation": "Replace approximately half of the explicit emotional analysis with dramatized behavior and observed detail. Instead of 'I was caring for her,' show Lirien performing a care action she cannot explain. Instead of 'The recognition created systematic complications,' show her hands doing something — checking the brand dressings, adjusting Kaelith's blanket — while her mind tries to construct the tactical justification and fails. The voice fingerprint specifies: 'When destabilized, simplify rather than intensify. The most emotional line in her POV is usually the plainest one.'",
+      "lineReferences": ["Lines 208-215", "Lines 232-246"]
+    },
+    {
+      "id": "LINE-008-004",
+      "severity": "moderate",
+      "category": "repetition",
+      "title": "Classification-failure pattern overused in Scene 3",
+      "location": "Lines 154-252",
+      "description": "The pattern 'Lirien encounters emotion → attempts to classify it → classification fails → recognizes significance' appears five times in Scene 3: (1) Lines 154-157 ('something that my classification system could not immediately process'); (2) Lines 176-178 ('something I could not classify as mission-relevant observation'); (3) Lines 208-215 ('I had made a classification error... I could not immediately identify what it was'); (4) Lines 232-237 ('I was no longer optimizing for contract completion... the calculation had changed'); (5) Lines 238-241 ('Necessary in a way I could not reduce to tactical assessment'). The first two instances are effective — the pattern establishes Lirien's voice. By the third, it is familiar. By the fifth, it has become the chapter's structural crutch rather than its distinctive feature.",
+      "recommendation": "Keep instances 1 and 2 (the fear response and the post-diagnosis walk). Rework instances 3-5 so that the classification failure manifests differently each time. Instance 3 could be a silence — her framework simply going blank rather than actively failing. Instance 4 could be behavioral — she adjusts the route without constructing the justification first. Instance 5 could be the simplest, plainest admission: 'I did not want her to die.' The escalation should move from analytical failure to behavioral change to stripped-back honesty.",
+      "lineReferences": ["Lines 154-157", "Lines 176-178", "Lines 208-215", "Lines 232-237", "Lines 238-241"]
+    },
+    {
+      "id": "LINE-008-005",
+      "severity": "moderate",
+      "category": "voice-fingerprint",
+      "title": "Lirien's visual/auditory sensory signature underutilized",
+      "location": "Scenes 1 and 3",
+      "description": "CHAR-002.json specifies Lirien's dominant sensory channel as visual ('she reads the world through sight — active visual interrogation') with secondary auditory ('she listens for the gap between what words say and how voices say them — pitch shifts, micro-hesitations'). Scene 2 (healer) uses visual observation well (the mirror, the brand's appearance, Kaelith's body language). But Scene 1 relies more on proprioceptive description ('stiffening of her shoulders, a half-step that did not complete its rhythm') and Scene 3 is almost entirely abstract analysis with minimal sensory grounding. Lirien should be reading Kaelith's face in firelight, noting the exact quality of light in the common house, processing Kaelith's sleeping posture through visual interrogation.",
+      "recommendation": "In Scene 1, add Lirien reading Kaelith's face — the specific expression, what the eyes reveal. In Scene 3, anchor the introspection to visual details: the quality of evening light on Kaelith's features, the way the brand's glow changes in darkness, the visual evidence of exhaustion that Lirien cannot stop cataloguing. Per the voice fingerprint: 'When her thoughts about Kaelith stop including professional annotations and become pure observation — the exact shade of green in her eyes, the way her hands move — she has fallen in love without knowing it.'",
+      "lineReferences": ["Lines 12-14 (Scene 1 opening)", "Lines 224-250 (Scene 3 watching Kaelith sleep)"]
+    },
+    {
+      "id": "LINE-008-006",
+      "severity": "moderate",
+      "category": "cliche-count",
+      "title": "Cliché count at limit — two borderline instances",
+      "location": "Lines 154 and 177",
+      "description": "Style guide allows maximum 2 clichés per chapter. Two borderline instances detected: (1) 'A sensation of the ground shifting beneath carefully constructed plans' (line 154) — 'ground shifting' is a common metaphor, though the addition of 'carefully constructed plans' provides some specificity. (2) 'I found my attention divided between tactical awareness and something I could not classify' (line 177) — 'attention divided' is stock phrasing. Neither is a gross cliché, but both rely on familiar constructions that could be more precisely rendered through Lirien's specific metaphor domains.",
+      "recommendation": "Replace 'ground shifting' with a water or structural metaphor specific to Lirien's domain — perhaps the undertow metaphor suggested in LINE-008-001. Replace 'attention divided' with something more precise to her operative experience — perhaps her observation alternating between two targets, or her assessment splitting like a current around an obstacle.",
+      "lineReferences": ["Line 154", "Line 177"]
+    },
+    {
+      "id": "LINE-008-007",
+      "severity": "moderate",
+      "category": "pov-discipline",
+      "title": "Lirien interprets Kaelith's internal states with excessive certainty",
+      "location": "Multiple passages",
+      "description": "While Lirien's fae sensory enhancement allows her to detect physical states (elevated heart rate, pupil dilation), several passages attribute internal motivations to Kaelith with certainty that exceeds what visual/auditory observation would provide: 'She was managing the pain, not acknowledging it' (line 21); 'Professional acknowledgment. No emotional response to the diagnosis of approaching death. Standard Kaelith behavior when faced with tactical reality beyond her immediate control' (lines 167-169). The first is reasonable inference. The second reads as if Lirien has access to Kaelith's internal framework for processing information — which she does not yet have (the resonance bond forms in Ch11). At this stage, Lirien should be reading behavior and inferring, with occasional uncertainty markers.",
+      "recommendation": "Add uncertainty qualifiers to 2-3 of the most certain attributions. 'Standard Kaelith behavior' could become 'What I assessed as standard behavior for someone processing tactical reality' — keeping the analytical voice while acknowledging the inference. Lirien's voice fingerprint specifies: 'She observes a detail, connects it to three other details, evaluates the pattern, and draws a conclusion that may or may not be correct.' The 'may or may not be correct' element is missing.",
+      "lineReferences": ["Line 21", "Lines 167-169", "Lines 200-201"]
+    },
+    {
+      "id": "LINE-008-008",
+      "severity": "moderate",
+      "category": "sentence-rhythm",
+      "title": "Scene 3 sentence rhythm becomes uniform",
+      "location": "Lines 206-246",
+      "description": "The voice fingerprint specifies Lirien's rhythm as 'Mixed and fluid: medium analytical sentences punctuated by short field-note fragments.' Scene 3's sentences settle into a uniform medium-length analytical pattern without the field-note fragments or the varied pacing that characterizes her voice. Compare with Scene 1, where the rhythm works well: 'I observed the progression: stiffening of her shoulders, a half-step that did not complete its rhythm, fingers pressing against her collarbone...' (cataloguing fragment) followed by 'She continued walking' (blunt impact). Scene 3 lacks this variation — nearly every sentence runs 15-25 words with analytical structure.",
+      "recommendation": "Introduce 4-5 field-note fragments into Scene 3 to break the analytical monotone. Examples: 'The brand. Barely visible now.' 'Her breathing: steady. Practiced.' 'Three exits. I had stopped counting.' The fragments serve double duty — they restore Lirien's rhythmic signature and demonstrate her trained operative habits persisting even as her emotional framework fails.",
+      "lineReferences": ["Lines 206-246"]
+    },
+    {
+      "id": "LINE-008-009",
+      "severity": "minor",
+      "category": "voice-fingerprint",
+      "title": "First-person narration inconsistent with style guide specification",
+      "location": "Entire chapter",
+      "description": "The style guide specifies 'close-third' narrative distance for all POV chapters. Chapter 8 is written in first person ('I observed,' 'I moved,' 'I felt'). This is a significant departure from the established narrative convention. While first person can work well for Lirien's analytical voice, it must be consistent with the other chapters' narrative distance. If chapters 1-7 use close-third and chapter 8 switches to first person, the shift is jarring and unmotivated.",
+      "recommendation": "Verify whether the preceding chapters use close-third or first person. If close-third is the established convention, convert this chapter to close-third ('She observed,' 'Lirien moved'). If first person has been established for Lirien's POV chapters specifically, document this as an intentional choice. The voice quality can remain identical — the analytical distance of Lirien's voice works in either person.",
+      "lineReferences": ["Lines 12, 14, 22, 43, 58, etc."]
+    },
+    {
+      "id": "LINE-008-010",
+      "severity": "minor",
+      "category": "show-dont-tell",
+      "title": "Kaelith's tremor is told then immediately shown — reverse the order",
+      "location": "Lines 170-171",
+      "description": "'But I observed the tremor in her hands as she worked the laces. Barely visible, quickly suppressed, but present. The body's honest reaction to news the mind was processing as operational data.' The observation of the tremor is good showing. But the final sentence ('The body's honest reaction...') explains what the tremor means, immediately converting the shown detail into told interpretation. The style guide prohibits 'explaining subtext immediately after dialogue' and the same principle applies to observed behavior.",
+      "recommendation": "Cut or relocate the final sentence. The tremor in the laces is sufficient — Lirien would note it, file it, and the reader can draw the conclusion. If the interpretive line must stay, move it later in the scene where it can build meaning rather than immediately capping the observation.",
+      "lineReferences": ["Lines 170-171"]
+    },
+    {
+      "id": "LINE-008-011",
+      "severity": "minor",
+      "category": "voice-fingerprint",
+      "title": "Lirien's humor signature is missing",
+      "location": "Entire chapter",
+      "description": "At this stage of the arc, Lirien's humor is specified as initially absent or manifesting as 'misreading human deadpan literally.' The chapter has no moments where Lirien engages with Kaelith's dry humor or misreads her tone. Chapter 8's medical crisis content makes humor difficult, but even a single moment where Lirien takes one of Kaelith's flat statements too literally would provide voice texture and a beat of relief in an otherwise heavy chapter.",
+      "recommendation": "Consider adding one brief moment where Kaelith says something dry (garrison-coast survival humor about her own condition) and Lirien takes it at face value, creating a beat of unintended comedy. This is consistent with the voice fingerprint's specification that 'her early humor comes from misreading human deadpan literally.'",
+      "lineReferences": []
+    },
+    {
+      "id": "LINE-008-012",
+      "severity": "minor",
+      "category": "repetition",
+      "title": "Phrase 'six years' repeated excessively",
+      "location": "Lines 26, 119, 181, 200, 224, 227",
+      "description": "'Six years' appears six times in the chapter. While the duration is thematically important (emphasizing the cruelty of prolonged suppression), the repetition becomes noticeable and dulls the impact of each instance. The first and last uses should carry the most weight; the middle instances can vary the phrasing.",
+      "recommendation": "Reduce to 3-4 instances. Replace some with varied phrasing: 'since Calwrath,' 'half a decade,' 'the years since her branding,' or 'the duration of her exile.' Preserve the naked 'six years' for moments of maximum impact (the healer's reaction, Lirien's final reflection).",
+      "lineReferences": ["Lines 26, 119, 181, 200, 224, 227"]
+    },
+    {
+      "id": "LINE-008-013",
+      "severity": "minor",
+      "category": "dialogue",
+      "title": "Marin's dialogue is functional but lacks frontier voice",
+      "location": "Lines 102, 116-122, 130-131, 140, 144-151, 164-165",
+      "description": "Marin speaks in clean, clinical prose that is appropriate for a medical professional but does not distinguish her from any other healer in any other fantasy novel. As a former military medic turned frontier practitioner, her speech should carry traces of both military precision and frontier pragmatism — the garrison-coast directness that the culture notes specify for this region. Her diagnosis delivery could be blunter, more soldier-to-soldier, less generic-healer.",
+      "recommendation": "Revise 2-3 of Marin's lines to carry frontier-military character. The death-by-winter line ('If the brand is not removed, you will be dead before winter') could be more blunt and specific. The recommendation to find a ward-breaker could include a former-soldier's frustration with the system that created this situation. Small dialect or register shifts would distinguish her voice from the general narrative.",
+      "lineReferences": ["Lines 144-151", "Lines 164-165"]
+    }
+  ],
+  "findingsSummary": {
+    "critical": 0,
+    "major": 3,
+    "moderate": 5,
+    "minor": 5,
+    "total": 13
+  },
+  "voiceComplianceAssessment": {
+    "vocabularyLevel": {
+      "compliance": "partial",
+      "notes": "Operational/intelligence vocabulary is present and correct. Fae precision markers (categorical statements, absence of contractions) are well-maintained. However, the vocabulary is too narrow — it cycles through the same operational terms rather than drawing from Lirien's full register (contractual language, comparative assessment, water-domain terminology)."
+    },
+    "sentenceRhythm": {
+      "compliance": "good-in-scenes-1-2-weak-in-scene-3",
+      "notes": "Scenes 1 and 2 demonstrate the specified 'mixed and fluid' rhythm with cataloguing fragments. Scene 3 loses this variation and settles into uniform analytical medium-length sentences."
+    },
+    "metaphorDensity": {
+      "compliance": "non-compliant",
+      "notes": "The water/current/surface-depth metaphor domain that defines Lirien's voice is absent from the entire chapter. This is the most significant voice fingerprint gap."
+    },
+    "emotionalRegister": {
+      "compliance": "good",
+      "notes": "The 'calculated-to-overwhelmed' progression is clear and well-paced. The classification-failure mechanism works but is overused in Scene 3."
+    },
+    "thoughtPatterns": {
+      "compliance": "good",
+      "notes": "Associative and comparative thinking is present. Cross-referencing against prior intelligence is well-demonstrated. The parenthetical assessment style ('Standard Kaelith behavior') is effective."
+    },
+    "sensorySignature": {
+      "compliance": "partial",
+      "notes": "Visual observation is present in Scene 2 but underutilized in Scenes 1 and 3. Auditory channel (listening for gaps between words and intent) is weak throughout."
+    },
+    "contrastWithKaelith": {
+      "compliance": "good",
+      "notes": "Lirien's POV correctly prioritizes people over architecture. When she describes Veldrane, she focuses on its social function rather than its structural qualities. Kaelith's dialogue is correctly short and tactical within Lirien's narration."
+    }
+  },
+  "proseQualityMetrics": {
+    "estimatedClicheCount": 2,
+    "maxClicheAllowance": 2,
+    "showTellRatioEstimate": "65:35 (below 80:20 target, primarily due to Scene 3)",
+    "passiveVoiceEstimate": "~6% (within 8% limit)",
+    "modernSlangInstances": 0,
+    "bannedPhrasesDetected": [],
+    "adverbDensity": "low (within limits)"
+  }
+}

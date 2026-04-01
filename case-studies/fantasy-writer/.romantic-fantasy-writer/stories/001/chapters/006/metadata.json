@@ -1,0 +1,88 @@
+{
+  "chapterNum": 6,
+  "povCharacter": "CHAR-002",
+  "wordCount": 4247,
+  "sceneCount": 3,
+  "craftToolCompliance": {
+    "T5_ToneContract": "Maintained morally complex and atmospherically taut tone. Avoided prohibited tones (melodrama, grimdark nihilism). Darkly romantic tension through restraint and forced proximity. Dry wit present in dialogue ('I recommend accepting it').",
+    "T6_StakesEscalation": "Escalated from personal stakes (departure logistics) to relational stakes (shared combat, hyperawareness of each other) to institutional stakes (Lirien's deviation from Seep loyalty). Stakes now include: pursuit from Conclave, binding contract countdown, and Lirien's choice of mission over institution.",
+    "T7_BlackMoment": "Foreshadowed through Lirien's awareness that contract completion remains binding. The intimacy developing now will make the eventual revelation devastating. Plant: Lirien's report is 'technically accurate and deliberately incomplete' — a lie that will compound the betrayal.",
+    "T8_InternalExternalResistance": "Lirien internal: fae conditioning against deviation, classification system failing, attraction as 'target interference' that threatens operative identity. External: binding contract countdown (46 hours before pain), Seep institutional expectations, Tavik's pursuit triggering Conclave response. Both forms of resistance escalating.",
+    "T10_SandersonsLaws": "No magic resolution in this chapter. Oathbrand not mentioned (will return in later chapters). Binding contract rules reinforced: 48hr pain threshold, 120hr termination. Establishes clear costs and limitations.",
+    "T12_DualArcInterleave": "Fantasy arc: departure from Duskhaven, pursuit confirmed, Conclave mobilizing (First Plot Point confirmed). Romance arc: forced proximity activated through shared watch, hyperawareness acknowledged, professional distance collapsing. Both arcs reinforce — fleeing together requires intimacy, intimacy complicates contract.",
+    "T13_TensionMapping": "High tension chapter (7/10 per outline). Sustained through: Tavik confrontation (physical threat), first night travel (exhaustion + pursuit pressure), shared watch (intimate awareness), report filing (institutional betrayal). No relief beats — appropriate for Act I climax transition to Act II.",
+    "T15_ForeshadowingLedger": "Plant: Lirien's misleading report will buy 'days, perhaps a week' before consequences arrive. Plant: 'You have crossed a line you cannot uncross' — establishes irreversibility of choice. Plant: Shared watch intimacy will become structural foundation for later vulnerability.",
+    "T16_SymbolicMotifWeaving": "MOT-003 (Water/Seep as infiltration): Lirien's awareness 'seeping' through her classifications, 'the crack in her operational framework through which something incompatible was seeping.' MOT-002 (Oathbrand): Deliberately absent — will return when contrast between Kaelith's wound and Lirien's binding becomes thematic parallel.",
+    "T17_VoiceFingerprinting": "Lirien POV maintained throughout. Precise vocabulary ('operational parameters,' 'cognitive interference,' 'tactically necessary'). Observational priority: people first, then power dynamics, then exits. Classification language ('target interference,' 'structural necessity') attempting to contain emotional response. Sentence rhythm mixed (10-18 words default, cataloguing fragments during surveillance, simplification during emotional moments: 'She had chosen.'). Fae precision markers present ('I observe,' categorical statements, avoided contractions until emotional breakthrough). Voice evolution: first use of simple 'I want' structure implied through 'the awareness persisted' — the thing she cannot classify. Distinct from Kaelith's architectural/tactical voice.",
+    "T18_InformationAsymmetry": "Kaelith knows: Lirien filed a report, the report is misleading, Lirien has crossed institutional line. Kaelith does NOT know: specific binding timeline (46 hours before pain), full Seep capabilities, that Lirien is experiencing attraction. Lirien knows: binding countdown, pursuit timeline, her own compromised detachment. Lirien does NOT know: whether Kaelith experiences reciprocal awareness. Reader knows: both women are hyperaware of each other and pretending not to be (dramatic irony).",
+    "T20_EmotionalThroughline": "Lirien starts: tactical execution mode, professional detachment intact, classification system functional. Lirien ends: acknowledged loss of control, classification system failing ('the awareness persisted,' 'heat in palms'), terrified that caring has made her incompetent ('target interference'). Emotional pivot: shared watch scene where she realizes her attention exceeds operational necessity. Final state: 'She did not look at Kaelith as they walked. She was aware of her with every step.' — hyperawareness acknowledged, cannot be classified away.",
+    "T21_VulnerabilityLadder": "Rung advanced: Lirien admits (to herself) that her attention is not professional. Acknowledges attraction as 'the thing humans called want.' First deviation from Seep loyalty through misleading report. Shared space overnight — intimate proximity without physical contact. Each is higher-stakes surrender than previous chapters where Lirien maintained full operational detachment. Earned through: combat coordination (trust through competence), tactical consultation (partnership language), shared risk (pursuit).",
+    "T23_MysteryBox": "Box maintained: Who commissioned the Court contract? Why now after 5 years? Box opened partially: Tavik's compromise confirmed, Conclave will hunt them. Box opened: Lirien has deviated from Seep loyalty. New box opened: Will the Seep detect the deception? What are consequences of deviation? Box maintained: What really happened at Calwrath (referenced but not revealed).",
+    "T24_SubtextInDialogue": "Surface/subterranean gaps maintained. 'Tactical necessity' (Kaelith) means 'I need you alive' but deflects through operational language. 'The calculus has changed' (Lirien) means 'I cannot kill you' but hides behind analysis. 'You are analyzing something' / 'Self-assessment' — Kaelith asking what Lirien feels, Lirien admitting cognitive interference without naming attraction. 'Why?' / 'The calculus has changed' — Kaelith asking for emotional truth, Lirien offering tactical evasion. Both performing same deflection through professional language.",
+    "T25_ThematicArgumentScaffolding": "TP-1 (Trust as structural failure): Shared watch scene dramatizes trust requiring vulnerability to someone who can destroy you. Lirien acknowledges Kaelith 'knew' her attention had shifted — transparency as weakness. Lirien's report deception is structural failure of institutional trust (Seep) in service of interpersonal trust (Kaelith). Act 1 testing easy answer: 'operational justification' can contain emotional response. It cannot. TP-2 (Price of right choice): Lirien's choice to file misleading report is 'right' for mission but carries cost — institutional betrayal, binding countdown continues, identity dissolution ('deviation was identity dissolution'). TP-3 (Chosen vs only): Not yet primary but planted — departure was necessity ('Acceptable risk. The alternative was unacceptable'), but Lirien's report choice was active decision ('She had chosen.')."
+  },
+  "sceneValueShifts": [
+    {
+      "scene": "SCN-016",
+      "startValue": "We control the departure",
+      "endValue": "We are being actively hunted and must leave immediately",
+      "mechanism": "Tavik confrontation with guards transforms planned departure into flight. Combat coordination reveals competence and creates first true partnership moment ('can we' not 'can you'). Pursuit confirmed — Conclave mobilization guaranteed within 12 hours."
+    },
+    {
+      "scene": "SCN-017",
+      "startValue": "Target management / professional distance intact",
+      "endValue": "I am physically attracted to her and cannot classify it away",
+      "mechanism": "Shared watch forces sustained proximity and mutual hyperawareness. Lirien's classification system fails — cannot categorize attention as operational. Acknowledges 'target interference,' 'the thing humans called want.' Both women pretend not to notice what the other noticed. Forced proximity engine activated. Professional distance collapsed."
+    },
+    {
+      "scene": "SCN-018",
+      "startValue": "I serve the contract / institutional loyalty intact",
+      "endValue": "I serve the mission as I understand it, not as it was written / I have betrayed my institution",
+      "mechanism": "Drafting report requires choosing between truth (confession of deviation) and lie (maintaining cover). Lirien constructs 'technically accurate and deliberately incomplete' report. Recognizes she has 'crossed a line you cannot uncross.' Admits (to herself and Kaelith): 'I have chosen.' Institutional identity dissolved. Operating in defiance of Seep."
+    }
+  ],
+  "emotionalStatesAtBoundaries": {
+    "chapterStart_CHAR002": "Tactical execution mode. Professional detachment intact. Classification system functional. Preparing for departure with operational focus.",
+    "chapterEnd_CHAR002": "Acknowledged loss of control. Classification system failing. Hyperaware of Kaelith in ways that exceed operational necessity. Terrified that caring has made her incompetent. Has committed institutional betrayal through report deception. Cannot rationalize choices through operational logic anymore.",
+    "chapterStart_CHAR001": "Prepared to depart. Packed and ready. Resigned to leaving Duskhaven with Lirien. Arithmetic complete: go west or let world end.",
+    "chapterEnd_CHAR001": "Traveling with operative who has deviated from institutional loyalty for her. Recognizes that Lirien 'crossed a line.' Aware that they are both performing same evasion ('the calculus changes'). Grants Lirien privacy during report filing — respect or trust, unclear which."
+  },
+  "foreshadowingElements": {
+    "planted": [
+      "Lirien's misleading report will buy 'days, perhaps a week' — timer established for Seep response",
+      "Binding countdown: 46 hours before pain starts, 96 hours before termination",
+      "'You have crossed a line you cannot uncross' — establishes irreversibility of Lirien's choice",
+      "Shared watch intimacy as structural foundation for later vulnerability escalation",
+      "Tavik will report to Conclave within 6 hours — pursuit mobilization confirmed",
+      "Both women hyperaware of each other and pretending not to be — setup for eventual acknowledgment",
+      "Lirien's report is 'technically accurate and deliberately incomplete' — a lie that will compound betrayal when revealed"
+    ],
+    "paid": [
+      "Tavik's compromise (planted Ch3) paid through confrontation and pursuit trigger",
+      "Departure timeline (established Ch4-5) executed",
+      "Combat coordination foreshadowed through mutual assessment (Ch1-2) paid through efficient non-lethal takedown"
+    ]
+  },
+  "continuityNotes": {
+    "timeline": "Chapter 6 occurs Day 3 (dawn departure from Duskhaven, first full day of travel, night camp, second day begins). 74 hours since Lirien accepted contract. 46 hours before binding pain starts.",
+    "characterPositions": {
+      "CHAR-001": "Departed Duskhaven dawn Day 3, traveled east on Thornway, camped in oak-lined section, continuing toward Veldrane.",
+      "CHAR-002": "Same position as CHAR-001. Filed misleading report to Seep via dead-drop during Day 4 watch."
+    },
+    "knowledgeStateChanges": {
+      "CHAR-001_learned": "Lirien has 46 hours before binding pain starts. Lirien filed report to Seep (content unknown to Kaelith). Lirien has chosen deviation from institutional loyalty. They function well as tactical unit (combat coordination successful).",
+      "CHAR-002_learned": "Tavik will report within 6 hours, Conclave pursuit mobilizing. She and Kaelith have complementary assessment disciplines. Shared watch creates intimacy whether intended or not. Her classification system is failing — cannot categorize attraction as operational. She has crossed institutional line irreversibly."
+    },
+    "namingConsistency": "Tavik named. Enforcer Seldric mentioned. The Thornway, Duskhaven, Veldrane consistent. 'The Seep' used for Lirien's institution. 'The Conclave' for High Conclave.",
+    "geographyConsistency": "Thornway described per world-bible: crushed stone, drainage channels, way-markers, garrison checkpoints. Oak-lined section noted. Twenty-Three Mile checkpoint mentioned. Veldrane referenced as 40 miles south."
+  },
+  "craftNotes": "Chapter successfully executes Act I climax / Act II transition. Departure from Duskhaven (First Plot Point per outline) achieved through Tavik confrontation. Forced proximity engine activated through shared watch — both women hyperaware, neither acknowledging. Lirien's POV voice maintained with precision vocabulary and classification language that begins to fail under emotional pressure. Key voice evolution: first acknowledgment that she 'wants' rather than 'assesses.' Emotional arc: starts controlled, ends terrified of loss of control. Romance beat (shared watch, mutual hyperawareness) interleaves with fantasy beat (pursuit confirmed, institutional betrayal committed). Tone contract maintained — morally complex, atmospherically taut, darkly romantic without melodrama. All three scenes execute value shifts. Word count: 4247 (exceeds 3800 minimum, hits target ~4000 range).",
+  "upstreamRefs": [
+    "../../plot/chapter-outlines/chapter-006.json",
+    "../../characters/CHAR-002.json",
+    "../../characters/CHAR-001.json",
+    "../../style/style-guide.json",
+    "../../craft-profile.json",
+    "../../continuity/continuity-tracker.json"
+  ]
+}

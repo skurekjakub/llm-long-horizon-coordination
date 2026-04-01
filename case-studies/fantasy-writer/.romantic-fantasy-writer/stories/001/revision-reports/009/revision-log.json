@@ -1,0 +1,272 @@
+{
+  "chapter": 9,
+  "revisionVersion": 1,
+  "reviser": "chapter-reviser",
+  "generatedAt": "2025-07-28T12:00:00Z",
+  "wordCountBefore": 4984,
+  "wordCountAfter": 4889,
+  "wordCountDelta": -95,
+  "summaryOfMajorChanges": [
+    "Reduced architectural/structural metaphor count from ~16 to 7 instances across the chapter, cutting the word 'architecture' from 12 uses to 0 and thinning the processing scene (lines 155-204) from 7 to 1 metaphorical construction (LINE-009-001)",
+    "Reduced 'Not X. Not Y.' negation pattern from 7 to 3 instances, retaining only the strongest uses at the chapter opener, Pallor tears, and identity dissolution (LINE-009-002)",
+    "Eliminated triple-negation bookend echo by rewriting closing Pallor description from 'not starlight and not sunlight and not anything' to 'light from a place where stars had never existed' (LINE-009-003)",
+    "Broke 'silence of two...' parallel between scene boundaries by restructuring Scene 3 close to open with action rather than silence construction (LINE-009-004)",
+    "Corrected 'High Council' to 'High Conclave' in document intelligence dialogue (COPY-009-001)",
+    "Removed false implication of Oathbrand ambient magical suppression; rewrote caster assessment to describe practitioner capability without reference to brand interference (COPY-009-002)",
+    "Added mutual anchoring beat: Kaelith observes Lirien's grounding gesture and effortful composure after exposure, converting one-directional rescue to mutual holding (DEV-009-001)",
+    "Added practical care beat: Lirien sets canteen beside Kaelith without comment; added wound-tending exchange ('You're bleeding' / 'I noticed') with cloth provision (DEV-009-002)",
+    "Added combat weakness beat: Kaelith's leg stutters during caster approach from Ythara residual, making Lirien's intervention more essential (DEV-009-005)",
+    "Added TP-2 engagement: 'She had never learned how to need someone without calculating the cost. The right choice and the painless one had never been the same' (DEV-009-006)",
+    "Expanded document omission to active internal debate with construction-domain metaphor for trust-building (DEV-009-007)",
+    "Varied 8 'She [verb]' paragraph openings with sensory-first, object-first, and fragment constructions (LINE-009-008)"
+  ],
+  "findings": [
+    {
+      "id": "LINE-009-001",
+      "severity": "critical",
+      "source": "line-edit",
+      "title": "Architectural metaphor saturation",
+      "action": "applied",
+      "description": "Reduced from ~16 architectural/structural metaphorical instances to 7. Kept the strongest: bearing wall (line 102), mortar setting (108), buttress (126), load-bearing wall (168), structures settling (202), keystone (300), same design (52). Cut or varied all others: 'architecturally wrong' → 'fundamentally wrong', 'architecture of suppression' → 'containment', 'architecture of the ordinary' → cut entirely, 'structural techniques in unfamiliar architecture' → cut preamble, 'deep architecture' → 'deep grain', 'structural assessment' (186) → 'field conclusion', 'load-bearing walls of her interior architecture' → 'shifted weight she did not have time to redistribute', 'suppression architecture' → 'containment ward', 'architectural drawings' → 'tactical report', 'structural requirement' → 'necessity', 'structural weakness' → 'weakness in a compromised wall'. Word 'architecture' reduced from 12 to 0 occurrences; structural metaphors now sparse enough to land when they arrive."
+    },
+    {
+      "id": "LINE-009-002",
+      "severity": "major",
+      "source": "line-edit",
+      "title": "'Not X. Not Y.' negation pattern overuse",
+      "action": "applied",
+      "description": "Reduced from 7 to 3 instances. Retained: opener 'Not a collapse. Not erosion.' (establishes convention), 'Not black. Not empty.' (Pallor tears, viscerally effective), 'Not dead. Not injured. Not present.' (identity dissolution). Replaced: 'Not overcast. Not clear.' → 'neither overcast nor clear'; 'Not speaking. Not moving.' → 'Lirien sat quietly.'; 'No. Not alone.' → 'Alone — except that'; 'Not empty. Not comfortable.' → eliminated via Scene 3 close restructure."
+    },
+    {
+      "id": "LINE-009-003",
+      "severity": "major",
+      "source": "line-edit",
+      "title": "Triple-negation bookend echo at opening and closing",
+      "action": "applied",
+      "description": "Kept opening: 'not moss and not stone and not quite anything Kaelith had a word for.' Rewrote closing: 'light that was not starlight and not sunlight and not anything that belonged to the finished world' → 'light from a place where stars had never existed.' Eliminates the syntactic echo; closing now lands as fresh imagery rather than recalling paragraph one's mortar description."
+    },
+    {
+      "id": "LINE-009-004",
+      "severity": "major",
+      "source": "line-edit",
+      "title": "'Silence of two...' parallel at consecutive scene boundaries",
+      "action": "applied",
+      "description": "Kept Scene 2 close: 'The silence of two structures settling against each other under load...' (stronger metaphorical construction). Restructured Scene 3 close to open with 'They walked. The Wending darkened around them...' rather than 'The silence of two people who had...' — eliminates the parallel while preserving the content of the walk into darkness."
+    },
+    {
+      "id": "COPY-009-001",
+      "severity": "major",
+      "source": "copy-edit",
+      "title": "'High Council' naming inconsistency",
+      "action": "applied",
+      "description": "Changed 'the High Council's stated authority' to 'the High Conclave's stated authority' in Lirien's intelligence dialogue. Consistent with world-bible, continuity tracker, and all other chapter references."
+    },
+    {
+      "id": "COPY-009-002",
+      "severity": "major",
+      "source": "copy-edit",
+      "title": "Magic system violation — Oathbrand ambient suppression",
+      "action": "applied",
+      "description": "Rewrote caster assessment from 'Someone who could work magic through the Oathbrand's interference because they were using their own focus, not relying on the ambient capacity that the brand suppressed' to 'The kind of practitioner who shaped magic through concentrated will, not relying on brute capacity.' Removes false implication that Oathbrand suppresses ambient magical capacity; per MAG-008, brand only blocks the subject's (Kaelith's) access to magic."
+    },
+    {
+      "id": "DEV-009-001",
+      "severity": "minor",
+      "source": "developmental-edit",
+      "title": "One-directional anchoring vs. planned mutual anchoring",
+      "action": "applied",
+      "description": "Added paragraph after 'Forty-three seconds' where Kaelith observes Lirien's grounding gesture (hand pressed to own thigh) and recognizes that Lirien's anchoring voice carried effortful steadiness rather than natural calm. 'Lirien had not been calm. Lirien had been holding.' Converts the beat from 'Lirien saves Kaelith' to 'they hold each other' — Kaelith through physical need, Lirien through costly composure."
+    },
+    {
+      "id": "DEV-009-002",
+      "severity": "minor",
+      "source": "developmental-edit",
+      "title": "Vulnerability ladder practical care dimension",
+      "action": "applied",
+      "description": "Added two practical care beats: (1) Lirien sets a canteen of water beside Kaelith without comment in the waystation, filled from a stream Kaelith hadn't noticed her stopping at. (2) Post-combat, Lirien notices Kaelith's bleeding temple ('You're bleeding'), hovers near the bruise, and produces a cloth from her belt kit. Both continue the practical-care pattern established in ch8 (field dressings, food, cloak). Vulnerability ladder step 5 now has both existential and practical dimensions."
+    },
+    {
+      "id": "DEV-009-003",
+      "severity": "minor",
+      "source": "developmental-edit",
+      "title": "Word count overshoot",
+      "action": "applied",
+      "description": "Reduced from 4,984 to 4,889 words (-95, 1.9% reduction). Compression achieved by: trimming theological exposition, compressing post-exposure walking assessment, tightening formation description, removing redundant flagstone example, compressing combat approach rationale, tightening document-omission internal debate, and various small cuts across all scenes. Net reduction is modest because higher-priority findings (DEV-009-001, DEV-009-002, DEV-009-005, DEV-009-006, DEV-009-007) required adding ~180 words of new content. Chapter remains above the 4,000-word target but is closer to target range and justified by structural complexity (Ythara exposure + waystation processing + combat)."
+    },
+    {
+      "id": "DEV-009-004",
+      "severity": "minor",
+      "source": "developmental-edit",
+      "title": "Emotional state overlap between ch7 and ch9",
+      "action": "reviewed-no-change",
+      "description": "Reviewed per recommendation. Ch7 ends in 'acknowledged attraction and fear'; ch9 ends in 'acknowledged dependence as survival.' These are distinct emotional states with genuine progression. Ch8 (Lirien POV) intervenes between them, providing variety. No structural change needed per dev editor's recommendation. Will monitor ch10-ch11 for distinct emotional registers in future Kaelith POV chapters."
+    },
+    {
+      "id": "LINE-009-005",
+      "severity": "minor",
+      "source": "line-edit",
+      "title": "'Tasted copper' cliché",
+      "action": "applied",
+      "description": "Replaced 'She tasted copper.' with 'Blood filled her mouth, warm and immediate.' — grounded in Kaelith's tactile sensorium (warmth, immediacy) rather than the generic fantasy-combat phrase."
+    },
+    {
+      "id": "LINE-009-006",
+      "severity": "minor",
+      "source": "line-edit",
+      "title": "Show-don't-tell: 'relief' named before shown",
+      "action": "applied",
+      "description": "Rewrote 'the relief of that normalcy settled into her joints like warmth after cold' to 'the normalcy settled through her — shoulders first, then hands, then the locked muscles along her spine.' Removes the emotion label ('relief') and replaces generic simile ('warmth after cold') with body-first progression through specific locations. Consistent with Kaelith's physical-emotional processing pattern."
+    },
+    {
+      "id": "LINE-009-007",
+      "severity": "minor",
+      "source": "line-edit",
+      "title": "Show-don't-tell: 'She needed Lirien' direct tell",
+      "action": "applied",
+      "description": "Removed 'She needed Lirien.' as a standalone declaration. Restructured so the field conclusion leads directly to the two-person requirement: 'A field conclusion, cold and clear: the journey through the Wending required two. One to fragment. One to hold. And Kaelith was the one who fragmented.' The reader arrives at 'she needs Lirien' through tactical reasoning without the bare emotion-label. The TP-2 line that follows ('She had never learned how to need someone without calculating the cost') provides the emotional dimension without direct statement."
+    },
+    {
+      "id": "LINE-009-008",
+      "severity": "minor",
+      "source": "line-edit",
+      "title": "20 'She [verb]' paragraph openings",
+      "action": "applied",
+      "description": "Varied 8 paragraph openings: 'She studied the treeline' → 'The treeline demanded study'; 'She walked forward' → 'Forward. Each step tested...'; 'She filed this assessment' → 'Into the same compartment went...'; 'She dropped her pack' → 'Pack down. Sight lines checked.'; 'She built the fire' → 'The fire came next.'; 'She tried to process' → 'Processing the exposure through her standard framework should have worked.'; 'She stared at the fire' → 'Firelight on stone.'; 'She drew her knife' → 'The knife came out before she had consciously decided to draw it.' Retained 'She heard them before she saw them' and other 'She' openings that earn their blunt declarative emphasis."
+    },
+    {
+      "id": "LINE-009-009",
+      "severity": "minor",
+      "source": "line-edit",
+      "title": "Generic phrasing: 'dark and uncertain'",
+      "action": "applied",
+      "description": "Replaced 'dark and uncertain and full of a god's leaking influence' with 'wounded territory, the ground already softening toward possibilities it should not contain.' The revision uses Kaelith-specific tactile language (ground softening) and ties to the chapter's established imagery of reality becoming malleable."
+    },
+    {
+      "id": "LINE-009-010",
+      "severity": "minor",
+      "source": "line-edit",
+      "title": "Voice domain drift: fire's philosophical indifference",
+      "action": "applied",
+      "description": "Replaced 'because fire did not care about human violence and its indifference was, in this moment, the most stabilizing thing in the room' with 'which burned on by the same rules it always had — the steadiest thing in the room.' Reframes through function (rules, steadiness) rather than philosophical attribution (caring, indifference), consistent with Kaelith's functional observation mode."
+    },
+    {
+      "id": "COPY-009-003",
+      "severity": "minor",
+      "source": "copy-edit",
+      "title": "Anachronism: 'supply chain management'",
+      "action": "applied",
+      "description": "Replaced 'supply chain management' with 'provisioning doctrine' — period-appropriate military terminology consistent with Kaelith's Conclave education vocabulary."
+    },
+    {
+      "id": "COPY-009-004",
+      "severity": "minor",
+      "source": "copy-edit",
+      "title": "Metric 'three meters' among imperial units",
+      "action": "applied",
+      "description": "Changed 'three meters' to 'ten feet' — maintains consistent imperial-style measurement system used throughout the chapter (miles, yards, feet, inches)."
+    },
+    {
+      "id": "COPY-009-005",
+      "severity": "minor",
+      "source": "copy-edit",
+      "title": "'Thornway Extension' unestablished name",
+      "action": "applied",
+      "description": "Changed 'the Thornway Extension' to 'the Thornway' in Lirien's anchoring dialogue. Consistent with LOC-004 in geography.json which names the road as 'The Thornway' without subsections."
+    },
+    {
+      "id": "COPY-009-006",
+      "severity": "minor",
+      "source": "copy-edit",
+      "title": "Em dash formatting for trailing-off speech",
+      "action": "applied",
+      "description": "Changed '\"The — \"' to '\"The...\"' with ellipsis. Per INV-019 and style guide, ellipses indicate trailing off while em dashes indicate interruption. Kaelith trails off as she looks at the clearing — she is not interrupted by another speaker."
+    },
+    {
+      "id": "DEV-009-005",
+      "severity": "suggestion",
+      "source": "developmental-edit",
+      "title": "Combat weakness more visible post-Ythara",
+      "action": "applied",
+      "description": "Added combat weakness beat during caster approach: 'She closed distance in two strides — or tried to. Her left leg stuttered on the second step, a half-beat of delay that did not belong to her body. Residual. The Ythara exposure had left fault lines in her coordination, and the adrenaline was not enough to plaster over all of them.' Also changed 'reflexes a half-beat slower' to 'reflexes frayed at the edges.' Creates a pattern of physical failure before Lirien's intervention, making the window entry feel more essential."
+    },
+    {
+      "id": "DEV-009-006",
+      "severity": "suggestion",
+      "source": "developmental-edit",
+      "title": "TP-2 (price of the right choice) underengaged",
+      "action": "applied",
+      "description": "Added after the field conclusion: 'She had never learned how to need someone without calculating the cost. The right choice and the painless one had never been the same — why should this be different.' Activates TP-2 by connecting Kaelith's current dependence on Lirien to the broader pattern of her life — choices that are correct but costly. Links the chapter's romance vulnerability to her defining thematic question without heavy-handedness."
+    },
+    {
+      "id": "DEV-009-007",
+      "severity": "suggestion",
+      "source": "developmental-edit",
+      "title": "Document omission subplot too compressed",
+      "action": "applied",
+      "description": "Expanded Kaelith's internal response to Lirien's omission from passive filing to active deliberation: 'The options were clean: press now and risk the trust... or file it for later. Pressing would mean acknowledging that the woman who had held her wrist... might also be withholding something that could change the shape of everything.' Added construction-domain metaphor: 'Trust was still under construction. She would not tear down the scaffolding to test whether the foundation held.' Converts passive 'too tired to ask' into active 'choosing not to ask because the answer might cost more.' Reinforces TP-1 (trust as structural failure) and TP-2 (price of the right choice)."
+    },
+    {
+      "id": "LINE-009-011",
+      "severity": "suggestion",
+      "source": "line-edit",
+      "title": "90-word sentence split",
+      "action": "applied",
+      "description": "Split the dissolution-experience sentence at the pivot: '...with equal validity.' New sentence: 'The only thing that had collapsed the probability back into a person was five fingers and a voice saying *stay*.' Gives the emotional payload its own sentence — a blunt, short declaration after the long dissolution, creating the short-after-long rhythm identified in the style guide as Kaelith's pattern under emotional breach."
+    },
+    {
+      "id": "LINE-009-012",
+      "severity": "suggestion",
+      "source": "line-edit",
+      "title": "Metaphor cluster in processing scene (lines 155-168)",
+      "action": "applied",
+      "description": "Thinned from 3 architectural constructions to 1 in this passage. Cut 'architecture of the ordinary' — replaced with plain 'Simple. Reliable.' Cut 'she recognized structural techniques in unfamiliar architecture' preamble — Lirien's choice is now presented directly: 'This was a deliberate choice.' Retained 'load-bearing wall that does not advertise its function' as the single, strongest image in the passage. Overlaps with LINE-009-001 implementation."
+    },
+    {
+      "id": "LINE-009-013",
+      "severity": "suggestion",
+      "source": "line-edit",
+      "title": "'Things she could not name' vague abstraction",
+      "action": "applied",
+      "description": "Replaced 'things she could not name had been accumulating since Duskhaven' with 'a pressure she had no tactical use for had been building since Duskhaven.' Physically specific (pressure, building) and voice-consistent — Kaelith notices the sensation even when she refuses to interpret its cause. The tactical-frame qualifier ('no tactical use for') is characteristically Kaelith."
+    },
+    {
+      "id": "LINE-009-014",
+      "severity": "suggestion",
+      "source": "line-edit",
+      "title": "'Move between moments' poetic domain drift",
+      "action": "applied",
+      "description": "Replaced 'the silence of someone who had learned to move between moments' with 'quieter than someone her height had any right to be.' Stays in Kaelith's functional-observation mode — she notes the physical improbability of Lirien's silence relative to her height, which echoes the earlier observation about the window exit. Observable attribute rather than poetic temporal metaphor."
+    },
+    {
+      "id": "LINE-009-015",
+      "severity": "suggestion",
+      "source": "line-edit",
+      "title": "Lirien's dialogue uniformly clinical",
+      "action": "applied",
+      "description": "Added one contraction in a moment of personal warmth: 'You're bleeding.' (wound-tending exchange post-combat). This is Lirien's single contraction in ch9 — a micro-variation signaling that fae formality is beginning to crack in moments of genuine concern. Consistent with style guide: 'Allow contractions to increase gradually across the book. Each contraction should feel like human warmth breaching fae formality.' All operational dialogue retains formal register."
+    },
+    {
+      "id": "COPY-009-007",
+      "severity": "suggestion",
+      "source": "copy-edit",
+      "title": "Modern scientific term 'combustion required oxygen'",
+      "action": "applied",
+      "description": "Changed 'combustion required oxygen' to 'fire required air' and 'the physics of this room' to 'the natural order of this room.' Replaces modern scientific terminology with plain-language equivalents within Kaelith's military/practical vocabulary domain. 'Air' is universally understood; 'natural order' replaces the named academic discipline 'physics.'"
+    },
+    {
+      "id": "COPY-009-008",
+      "severity": "suggestion",
+      "source": "copy-edit",
+      "title": "Deity pronoun convention — Sheltering One",
+      "action": "reviewed-no-change",
+      "description": "Kept 'its' for the Sheltering One. Per world-bible/culture.json, Imperial theology 'holds that gods are natural phenomena, like weather or geology, to be managed rather than worshipped.' The depersonalizing pronoun 'its' is consistent with Kaelith's Conclave-educated, military-pragmatic worldview. Convention documented for cross-chapter consistency verification."
+    }
+  ],
+  "coherencePassNotes": [
+    "Voice marker density verified: 7 architectural metaphors across ~4,889 words (1 per ~700 words). Processing scene reduced from 7 to 1. Markers are no longer identifiable on every page.",
+    "Dialogue naturalism verified: Lirien's 'You're bleeding' contraction sounds like speech, not a checklist item. All other Lirien dialogue maintains formal register for operational content.",
+    "Scene flow verified end-to-end: compressions and additions integrate smoothly. No jarring transitions or orphaned references. The mutual anchoring beat flows naturally from the 'Forty-three seconds' revelation. The combat weakness beat integrates seamlessly into the action rhythm.",
+    "No new continuity errors introduced: all names, geography, magic system, timeline, and character knowledge states consistent with canonical sources.",
+    "Cumulative voice marker check: after adding combat weakness ('fault lines in her coordination'), TP-2 line, and document-omission expansion (scaffolding/foundation), verified that total voice marker density remains within natural levels. The scaffolding/foundation metaphor uses varied construction vocabulary rather than the saturated 'architecture/structural/load-bearing' cluster."
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "chapter": 13,
+  "engagementScore": 10,
+  "emotionalImpact": "high",
+  "pacingAssessment": "well-paced",
+  "clarityScore": 9,
+  "findings": [
+    {
+      "id": "BETA-013-001",
+      "type": "pacing",
+      "severity": "observation",
+      "description": "The Calwrath confession is long — roughly 100 lines of near-unbroken monologue. This is NOT a weakness; the length is earned by the content and by the careful briefing-register voice that makes each detail land. However, the section is essentially a flashback-by-narration, and readers who prefer shown-not-told may notice that the chapter's most important backstory is delivered through speech rather than scene. The choice is defensible (Kaelith's telling IS the scene — the vulnerability of speaking it is the point), but it's worth noting that the monologue's power depends entirely on the reader's investment in Kaelith, which by ch13 should be solid.",
+      "location": "Scene 2, from 'Six years ago at Calwrath' through 'And I hate that about myself'",
+      "readerImpact": "For invested readers: devastating, no skimming, full emotional immersion. For impatient readers: the monologue might test patience around the tactical details (defensive lines, Canal District geography). The sensory details — plaster dust, rendered fat, hissing — pull them back."
+    },
+    {
+      "id": "BETA-013-002",
+      "type": "romance-gap",
+      "severity": "minor",
+      "description": "The transition from Calwrath confession to first kiss covers roughly 40 lines. Given the emotional magnitude of what Kaelith just revealed, some readers may feel the progression from 'I just told you I burned 300 civilians' to 'we're kissing' happens too quickly. The counter-confession from Lirien (operative thirty-one, the merchant in Vael'thrin) is essential bridging material — it establishes reciprocal vulnerability — but it's compressed relative to Kaelith's confession. Lirien's confession is ~25 lines vs Kaelith's ~100. This asymmetry is actually effective (Lirien is more contained), but the physical escalation that follows could use one more beat of emotional transition.",
+      "location": "Scene 3, from Lirien's counter-confession through the approach and kiss",
+      "readerImpact": "The kiss still lands as earned — the emotional groundwork is there. But one additional paragraph of physical awareness (heartbeat, breathing, the space between them) before Kaelith starts closing distance would let the reader's body catch up with the characters' bodies."
+    },
+    {
+      "id": "BETA-013-003",
+      "type": "character-inconsistency",
+      "severity": "observation",
+      "description": "Lirien's counter-confession includes 'Number thirty-one was a merchant in Vael'thrin' and 'I still know her name. Elisi.' This is a powerful beat, but it's also the first time Lirien has voluntarily disclosed operational details of this specificity to anyone. The chapter doesn't acknowledge the magnitude of this disclosure from Lirien's perspective (we're in Kaelith's POV). A reader familiar with Lirien's compartmentalization might wonder: is Lirien sharing this because the bond is breaking down her walls, or because she's strategically building reciprocal intimacy? The ambiguity is thematically appropriate but a reader can't resolve it from Kaelith's POV, which is slightly frustrating.",
+      "location": "Scene 3, Lirien's counter-confession",
+      "readerImpact": "Minor frustration for readers deeply tracking Lirien's motives. The Kaelith POV limitation means we can't know if Lirien's disclosure is genuine vulnerability or sophisticated bonding technique. This ambiguity pays off in ch16 when everything is questioned, but in the moment it may cause a slight trust wobble in the reader."
+    },
+    {
+      "id": "BETA-013-004",
+      "type": "pacing",
+      "severity": "observation",
+      "description": "The post-kiss section ('The terror of it was indistinguishable from the hope') is beautiful but extends the chapter's emotional plateau. After the kiss, we get ~30 lines of reflection on the pursuit, Reyvas, and the remaining danger. This is structurally necessary (grounding the moment in the plot's reality) but emotionally it reads as the chapter renegotiating with the reader: 'yes that happened, now remember the world is ending.' Some readers may want to sit in the kiss's aftermath longer before being reminded of the conspiracy.",
+      "location": "Final section, from 'The pursuit was still active' through end",
+      "readerImpact": "The grounding works thematically but risks pulling readers out of the emotional high. The final lines ('the silence held what the silence held / It held.') recover beautifully."
+    }
+  ],
+  "strengths": [
+    "The Calwrath confession is the best scene in the manuscript so far. The sensory specificity — 'plaster dust and pine resin,' 'something sweet' that turns out to be rendered fat, the hissing of accelerant fire — transforms a military atrocity from abstraction into visceral, unforgettable experience. The delayed reveal of 'rendered fat' is sickening in exactly the right way.",
+    "The structural choice to deliver Calwrath as a briefing is genius. Kaelith telling it like a situation report IS the character — she survives things by turning them into data. The moment the briefing register cracks ('I have run the arithmetic every day since Calwrath') is the moment the character becomes fully real.",
+    "'If I had those eight minutes again, I would make the same call. And I hate that about myself.' This is the best line in these five chapters. It refuses the easy moral out. Kaelith is not asking for absolution. She is presenting herself as someone who would do the terrible thing again and asking if Lirien can stay in the room with that knowledge. The moral complexity is uncompromising.",
+    "The first kiss is EARNED. The emotional architecture leading to it — confession → counter-confession → mutual recognition of shared moral weight → physical closing of distance — follows the logic of two people who could only become intimate by first proving they could survive each other's worst truth. The kiss is not a reward; it's a consequence of radical honesty.",
+    "The bond mechanics during the kiss ('sensation doubled and returned and doubled again') avoid purple prose by grounding the feedback loop in the established magic system. The recursion is the romance and the worldbuilding simultaneously. This is the kind of genre integration that makes romantasy work at its best.",
+    "Lirien's 'I don't flinch' is devastating in its simplicity. Three words that give Kaelith exactly what she needs — not forgiveness (which would be condescending) but presence. The distinction is sophisticated and emotionally precise."
+  ],
+  "verdict": "strong"
+}

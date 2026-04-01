@@ -1,0 +1,2204 @@
+{
+  "entries": [
+    {
+      "timestamp": "2026-03-21T05:38:15.215490+00:00",
+      "agent": "romantic-fantasy-writer-series-kb-manager",
+      "action": "Series KB initialization from Book 1. Promoted all world facts, character end-states, resolved/unresolved threads, continuity constraints, and name registry. Compiled sequel briefing. Zero contradictions (first book). 14 unresolved threads catalogued for sequel concept phase.",
+      "result": "completed",
+      "artifactsWritten": [
+        "series-kb/series-knowledge-base.json",
+        "series-kb/book-001-summary.json",
+        "agents/romantic-fantasy-writer-series-kb-manager/status.json"
+      ]
+    },
+    {
+      "timestamp": "2026-03-21T08:30:00Z",
+      "agent": "romantic-fantasy-writer-revision-auditor",
+      "action": "Re-audit of Chapter 22 revision v2 — PASSED. All four previous fail triggers resolved: LINE-201 negation-contrast reduced to 10-11 (target 10-12), LINE-205 grip passages differentiated, INV-014 traceability restored, INV-081 all darlings cut. Copy-edit fixes applied. Chapter proceeds to beta reading.",
+      "chapter": 22,
+      "verdict": "passed",
+      "iteration": 2,
+      "artifactsWritten": [
+        "audit-reports/revision/chapter-022-gate.json",
+        "agents/revision-auditor/status.json"
+      ]
+    },
+    {
+      "timestamp": "2026-03-21T06:15:00Z",
+      "agent": "chapter-reviser",
+      "action": "re-revision",
+      "chapter": 22,
+      "version": 2,
+      "result": "completed",
+      "artifacts": [
+        "chapters/022/revised.md",
+        "revision-reports/022/revision-log.json",
+        "agents/chapter-reviser/status.json"
+      ],
+      "summary": "Re-revised Chapter 22 after audit gate failure. All critical/major findings addressed. Negation-contrast reduced from 26+ to 10-11. Grip passages differentiated. Darlings cut. Copy-edit corrections applied. Traceability restored."
+    },
+    {
+      "agent": "romantic-fantasy-writer-revision-auditor",
+      "action": "Adversarial audit of chapter 22 revision — FAILED. Critical finding (LINE-201 negation-contrast) unaddressed. Major finding (LINE-205 near-verbatim image) unaddressed. 10+ finding-ID mismatches in revision log. 4 darlings survived. Chapter must return to revision.",
+      "chapter": 22,
+      "verdict": "failed",
+      "artifactsWritten": [
+        "audit-reports/revision/chapter-022-gate.json",
+        "agents/revision-auditor/status.json"
+      ],
+      "timestamp": "2026-03-21T03:45:00Z"
+    },
+    {
+      "timestamp": "2026-03-21T05:00:00Z",
+      "agent": "polish-coordinator",
+      "action": "Polish pass completed for all 22 chapters. 183 edits applied, 48 beta findings addressed. Word count 95,750 -> 91,850 (-4.1%). Critical fix: Ch4 duplicated passage removed. Major fixes: Ch17-18 back-to-back internality addressed, Ch21 climax padding trimmed, Ch10 archive procedural compressed.",
+      "artifacts": [
+        "chapters/001/final.md",
+        "chapters/002/final.md",
+        "chapters/003/final.md",
+        "chapters/004/final.md",
+        "chapters/005/final.md",
+        "chapters/006/final.md",
+        "chapters/007/final.md",
+        "chapters/008/final.md",
+        "chapters/009/final.md",
+        "chapters/010/final.md",
+        "chapters/011/final.md",
+        "chapters/012/final.md",
+        "chapters/013/final.md",
+        "chapters/014/final.md",
+        "chapters/015/final.md",
+        "chapters/016/final.md",
+        "chapters/017/final.md",
+        "chapters/018/final.md",
+        "chapters/019/final.md",
+        "chapters/020/final.md",
+        "chapters/021/final.md",
+        "chapters/022/final.md",
+        "audit-reports/polish/polish-summary.json",
+        "agents/polish-coordinator/status.json"
+      ],
+      "result": "completed",
+      "totalFindings": {
+        "betaFindingsAddressed": 48,
+        "totalEdits": 183,
+        "criticalFixed": 1,
+        "majorFixed": 8
+      }
+    },
+    {
+      "artifact": "revision-reports/022/copy-edit.json",
+      "agent": "romantic-fantasy-writer-copy-editor",
+      "chapter": 22,
+      "phase": "revision",
+      "action": "copy-edit",
+      "result": "completed",
+      "passType": "comprehensive-re-edit",
+      "findingSummary": {
+        "critical": 0,
+        "major": 3,
+        "moderate": 1,
+        "minor": 6,
+        "total": 10
+      },
+      "timestamp": "2025-08-01T14:30:00Z"
+    },
+    {
+      "artifact": "revision-reports/022/line-edit.json",
+      "agent": "romantic-fantasy-writer-line-editor",
+      "chapter": 22,
+      "phase": "revision",
+      "action": "line-edit",
+      "result": "completed",
+      "findingSummary": {
+        "critical": 1,
+        "major": 4,
+        "moderate": 4,
+        "minor": 8,
+        "total": 17
+      },
+      "timestamp": "2025-08-01T10:00:00Z"
+    },
+    {
+      "artifact": "revision-reports/022/developmental-edit.json",
+      "agent": "romantic-fantasy-writer-developmental-editor",
+      "chapter": 22,
+      "phase": "revision",
+      "action": "developmental-edit",
+      "result": "completed",
+      "findingSummary": {
+        "critical": 0,
+        "major": 1,
+        "minor": 4,
+        "suggestion": 1,
+        "total": 6
+      },
+      "timestamp": "2025-07-31T22:00:00Z"
+    },
+    {
+      "artifact": "audit-reports/revision/chapter-021-gate.json",
+      "agent": "romantic-fantasy-writer-revision-auditor",
+      "chapter": 21,
+      "phase": "revision",
+      "action": "revision-audit",
+      "result": "passed",
+      "timestamp": "2025-07-31T20:00:00Z"
+    },
+    {
+      "timestamp": "2026-03-21T03:30:00Z",
+      "agent": "beta-reading-coordinator",
+      "action": "Beta reading pass completed for all 22 chapters. Overall verdict: approved. Manuscript score: 8.6/10. Found 1 critical, 12 major, 47 minor, 40 observation findings across the full manuscript.",
+      "artifacts": [
+        "audit-reports/beta-reading/chapter-001-beta.json",
+        "audit-reports/beta-reading/chapter-002-beta.json",
+        "audit-reports/beta-reading/chapter-003-beta.json",
+        "audit-reports/beta-reading/chapter-004-beta.json",
+        "audit-reports/beta-reading/chapter-005-beta.json",
+        "audit-reports/beta-reading/chapter-006-beta.json",
+        "audit-reports/beta-reading/chapter-007-beta.json",
+        "audit-reports/beta-reading/chapter-008-beta.json",
+        "audit-reports/beta-reading/chapter-009-beta.json",
+        "audit-reports/beta-reading/chapter-010-beta.json",
+        "audit-reports/beta-reading/chapter-011-beta.json",
+        "audit-reports/beta-reading/chapter-012-beta.json",
+        "audit-reports/beta-reading/chapter-013-beta.json",
+        "audit-reports/beta-reading/chapter-014-beta.json",
+        "audit-reports/beta-reading/chapter-015-beta.json",
+        "audit-reports/beta-reading/chapter-016-beta.json",
+        "audit-reports/beta-reading/chapter-017-beta.json",
+        "audit-reports/beta-reading/chapter-018-beta.json",
+        "audit-reports/beta-reading/chapter-019-beta.json",
+        "audit-reports/beta-reading/chapter-020-beta.json",
+        "audit-reports/beta-reading/chapter-021-beta.json",
+        "audit-reports/beta-reading/chapter-022-beta.json",
+        "audit-reports/beta-reading/beta-synthesis.json",
+        "agents/beta-reading-coordinator/status.json"
+      ],
+      "result": "completed",
+      "synthesisVerdict": "approved",
+      "manuscriptScore": 8.6,
+      "totalFindings": {
+        "critical": 1,
+        "major": 12,
+        "minor": 47,
+        "observation": 40
+      }
+    },
+    {
+      "timestamp": "2025-07-31T18:00:00Z",
+      "agent": "chapter-reviser",
+      "action": "Revised Chapter 21 (v2) — addressed 38/40 findings from developmental, line, and copy edit reports",
+      "artifacts": [
+        "chapters/021/revised.md",
+        "revision-reports/021/revision-log.json",
+        "agents/chapter-reviser/status.json"
+      ],
+      "result": "completed",
+      "chapter": 21,
+      "findingsAddressed": {
+        "critical": 4,
+        "major": 12,
+        "moderate": 6,
+        "minor": 16,
+        "deferred": 2
+      }
+    },
+    {
+      "agent": "copy-editor",
+      "chapter": 21,
+      "action": "copy-edit",
+      "timestamp": "2025-07-31T16:00:00Z",
+      "result": "completed",
+      "summary": "Ch21 copy-edit complete. 10 findings (0 critical, 3 major, 1 moderate, 6 minor). Major: Tessen Vael gender reversal (male→female between ch11 and ch21), Thenndal kinetic memory date (12 vs 8 years), Iryse stewardship duration (18 vs 16 years). Moderate: Thalen seat DISC-001 (no chapter action). Minor: frozen finger mechanics (2), anachronism cluster (clock, signal-static, frequency ×3), naming accent. Magic system fully compliant. Grammar and formatting clean.",
+      "artifactsWritten": [
+        "revision-reports/021/copy-edit.json",
+        "agents/copy-editor/status.json"
+      ]
+    },
+    {
+      "agent": "line-editor",
+      "chapter": 21,
+      "action": "line-edit",
+      "timestamp": "2025-07-31T15:00:00Z",
+      "result": "completed",
+      "summary": "Ch21 line edit complete. 24 findings (4 critical, 7 major, 6 moderate, 7 minor). Four critical: voice marker saturation (~30+ architectural markers), through-the-bond 8x repetition as tell-bypass, certainty/conviction 19x lexical saturation, bond-mediated emotion telling (6 INV-005 violations). Seven major: foundation 7x, hold/held 23x, forty-years 10x, 4 cliches exceeding cap, Not-X-Not-Y pattern 5x, abstract thematic telling, precision 9x. INV-017 FAIL, INV-005 FAIL, INV-003 FAIL.",
+      "artifactsWritten": [
+        "revision-reports/021/line-edit.json",
+        "agents/line-editor/status.json"
+      ]
+    },
+    {
+      "agent": "revision-coordinator",
+      "chapter": null,
+      "action": "revision-phase-completion",
+      "timestamp": "2026-03-21T03:00:00Z",
+      "result": "completed",
+      "summary": "Revision phase complete. All 22 chapters revised and passed audit gates. Chapters 21-22 completed in final batch: ch21 (27 findings, all addressed, PASS) and ch22 (20 findings, all addressed, PASS). Revision phase status updated to completed.",
+      "artifactsWritten": [
+        "agents/revision-coordinator/status.json",
+        "progress.json"
+      ]
+    },
+    {
+      "agent": "revision-auditor",
+      "chapter": 22,
+      "action": "revision-gate-audit",
+      "timestamp": "2026-03-21T02:40:00Z",
+      "result": "passed",
+      "summary": "Ch22 revision gate PASSED. 20 actionable findings verified as addressed. 1 copy-edit (COPY-223) confirmed consistent, no change needed. Classification vocabulary reduced 12→9. Named emotions converted to sensory. River metaphor capstone preserved. Word count -1.2% within tolerance.",
+      "artifactsWritten": [
+        "audit-reports/revision/chapter-022-gate.json"
+      ]
+    },
+    {
+      "agent": "chapter-reviser",
+      "chapter": 22,
+      "action": "revision",
+      "timestamp": "2026-03-21T02:30:00Z",
+      "result": "completed",
+      "summary": "Ch22 revised. All 20 actionable findings addressed. Tightened Conclave analysis (-100w), compressed departure inventory, converted named emotions to sensory, varied classification vocabulary density across scenes, expanded sentence rhythm in HFN. Word count 4052 (-46 from draft).",
+      "artifactsWritten": [
+        "chapters/022/revised.md",
+        "revision-reports/022/revision-log.json"
+      ]
+    },
+    {
+      "agent": "copy-editor",
+      "chapter": 22,
+      "action": "copy-edit",
+      "timestamp": "2026-03-21T02:20:00Z",
+      "result": "completed",
+      "summary": "Ch22 copy-edit complete. 6 findings (0 critical, 1 major, 5 minor). Major: frozen fingers missing 'left hand' specifier. Minor: British spelling, Marin identifier, ambiguous pronoun, em-dash standardization.",
+      "artifactsWritten": [
+        "revision-reports/022/copy-edit.json"
+      ]
+    },
+    {
+      "agent": "line-editor",
+      "chapter": 22,
+      "action": "line-edit",
+      "timestamp": "2026-03-21T02:10:00Z",
+      "result": "completed",
+      "summary": "Ch22 line-edit complete. 10 findings (0 critical, 3 major, 7 minor). Major: classification vocabulary saturation (12×), named emotions in bond passages, sentence rhythm uniformity in SCN-64. Minor: cliché construction, 'through the bond' repetition, star over-annotation, 'world held' repetition, told-emotion, body inventory parallelism, metaphor domain violation.",
+      "artifactsWritten": [
+        "revision-reports/022/line-edit.json"
+      ]
+    },
+    {
+      "agent": "developmental-editor",
+      "chapter": 22,
+      "action": "developmental-edit",
+      "timestamp": "2026-03-21T02:00:00Z",
+      "result": "completed",
+      "summary": "Ch22 developmental edit complete. 5 findings (0 critical, 1 major, 3 minor, 1 suggestion). Major: Conclave analysis over-detailed for resolution pacing. Minor: 'Commander Maren' over-explanation, departure inventory mechanical, 'I don't know what to do' over-interpreted. Suggestion: split thematic synthesis for rhythmic emphasis. Chapter delivers earned HFN with full thematic closure.",
+      "artifactsWritten": [
+        "revision-reports/022/developmental-edit.json"
+      ]
+    },
+    {
+      "agent": "revision-auditor",
+      "chapter": 21,
+      "action": "revision-gate-audit",
+      "timestamp": "2026-03-21T01:40:00Z",
+      "result": "passed",
+      "summary": "Ch21 revision gate PASSED. All 27 findings verified as addressed. Bond-phrase 7→3, clichés 2→0, frozen fingers acknowledged, seal anthropomorphism→tactile, Calwrath parallel→dialogue, recovery beat added. Word count +2.7% within tolerance.",
+      "artifactsWritten": [
+        "audit-reports/revision/chapter-021-gate.json"
+      ]
+    },
+    {
+      "agent": "chapter-reviser",
+      "chapter": 21,
+      "action": "revision",
+      "timestamp": "2026-03-21T01:30:00Z",
+      "result": "completed",
+      "summary": "Ch21 revised. All 27 findings addressed (0 deferred, 0 rejected). Added recovery beat, replaced seal anthropomorphism with tactile sensation, shifted Calwrath parallel to dialogue, varied bond expressions, replaced clichés with domain-specific metaphor, fixed continuity details. Word count 4312 (+125 from draft).",
+      "artifactsWritten": [
+        "chapters/021/revised.md",
+        "revision-reports/021/revision-log.json"
+      ]
+    },
+    {
+      "agent": "copy-editor",
+      "chapter": 21,
+      "action": "copy-edit",
+      "timestamp": "2026-03-21T01:20:00Z",
+      "result": "completed",
+      "summary": "Ch21 copy-edit complete. 8 findings (0 critical, 2 major, 6 minor). Major: Iryse title inconsistency, frozen fingers not acknowledged during seal contact. Minor: Thalen first-reference title, temporal anchor needed, comma splice, Ashborne count, Sedara identifier, em-dash spacing.",
+      "artifactsWritten": [
+        "revision-reports/021/copy-edit.json"
+      ]
+    },
+    {
+      "agent": "line-editor",
+      "chapter": 21,
+      "action": "line-edit",
+      "timestamp": "2026-03-21T01:10:00Z",
+      "result": "completed",
+      "summary": "Ch21 line-edit complete. 13 findings (1 critical, 4 major, 8 minor). Critical: 'through the bond' 7× repetition. Major: told emotion at bond relays, 2 clichés breach prose floor, water domain in Kaelith POV, seal-scene rhythm break. Minor: certainty 8×, told pride, purple prose triple-escalation, formulaic emphasis, 'she felt' 9×, sentence-opening parallelism, held/hold 7×, passive bond arrival.",
+      "artifactsWritten": [
+        "revision-reports/021/line-edit.json"
+      ]
+    },
+    {
+      "agent": "developmental-editor",
+      "chapter": 21,
+      "action": "developmental-edit",
+      "timestamp": "2025-07-31T14:00:00Z",
+      "result": "completed",
+      "summary": "Ch21 developmental edit complete. 6 findings (0 critical, 2 major, 4 minor). Two major findings: Lirien's passivity in SCN-61 breaks dual-arc interleave at landing; seal stabilization lacks try-fail setback beat. Four minor: pacing micro-recovery, Thalen confrontation compression, bond-only romance landing, Iryse telling-over-showing. Chapter earns climax position with strong structural bones and exceptional thematic architecture.",
+      "artifactsWritten": [
+        "revision-reports/021/developmental-edit.json",
+        "agents/developmental-editor/status.json"
+      ]
+    },
+    {
+      "agent": "revision-auditor",
+      "chapter": 20,
+      "action": "revision-gate-audit",
+      "timestamp": "2025-07-31T12:00:00Z",
+      "result": "passed",
+      "summary": "Ch20 revision gate PASSED with 2 warnings. 2 critical verified (water markers 25→12 ~52%, classification markers reduced ~30% by lines with stacking eliminated). 6 major verified (aftermath expanded +165w, 'through the bond' 8→0, clichés 5→0, emotion-labels→sensation, anaphoric 6→4 WARN, purple prose trimmed). 1 moderate (god-seal corrected). 17 minor verified. 1 deferred (COPY-005). 2 warnings: 'In the bond' repetition 4× in aftermath, anaphoric pattern 4 not claimed 2. Zero regressions. Zero darlings. Traceability complete. Word count +9.3%. Chapter proceeds to beta reading.",
+      "artifactsWritten": [
+        "audit-reports/revision/chapter-020-gate.json",
+        "agents/revision-auditor/status.json"
+      ]
+    },
+    {
+      "agent": "chapter-reviser",
+      "chapter": 20,
+      "action": "revision",
+      "timestamp": "2026-03-21T06:30:00Z",
+      "artifactsWritten": [
+        "chapters/020/revised.md",
+        "revision-reports/020/revision-log.json",
+        "agents/chapter-reviser/status.json"
+      ],
+      "result": "completed",
+      "findingSummary": {
+        "critical": 2,
+        "major": 6,
+        "moderate": 1,
+        "minor": 19,
+        "total": 28,
+        "addressed": 27,
+        "deferred": 1
+      }
+    },
+    {
+      "agent": "copy-editor",
+      "chapter": 20,
+      "action": "copy-edit",
+      "timestamp": "2026-03-21T05:00:00Z",
+      "artifactsWritten": [
+        "revision-reports/020/copy-edit.json",
+        "agents/copy-editor/status.json"
+      ],
+      "result": "completed",
+      "findingSummary": {
+        "critical": 0,
+        "major": 0,
+        "moderate": 1,
+        "minor": 5,
+        "total": 6
+      }
+    },
+    {
+      "agent": "line-editor",
+      "chapter": 20,
+      "action": "line-edit",
+      "timestamp": "2026-03-21T04:00:00Z",
+      "artifactsWritten": [
+        "revision-reports/020/line-edit.json",
+        "agents/line-editor/status.json"
+      ],
+      "result": "completed",
+      "findingSummary": {
+        "critical": 2,
+        "major": 5,
+        "minor": 10,
+        "total": 17
+      }
+    },
+    {
+      "agent": "developmental-editor",
+      "chapter": 20,
+      "action": "developmental-edit",
+      "timestamp": "2026-03-21T03:00:00Z",
+      "artifactsWritten": [
+        "revision-reports/020/developmental-edit.json",
+        "agents/developmental-editor/status.json"
+      ],
+      "result": "completed",
+      "findingSummary": {
+        "critical": 0,
+        "major": 1,
+        "minor": 4,
+        "total": 5
+      }
+    },
+    {
+      "agent": "chapter-reviser",
+      "chapter": 19,
+      "action": "revised",
+      "timestamp": "2026-03-21T02:00:00Z",
+      "artifactsWritten": [
+        "chapters/019/revised.md",
+        "revision-reports/019/revision-log.json",
+        "agents/chapter-reviser/status.json"
+      ],
+      "result": "completed",
+      "findingSummary": {
+        "criticalAddressed": 1,
+        "majorAddressed": 4,
+        "minorAddressed": 14,
+        "totalAddressed": 19,
+        "totalDeferred": 4
+      }
+    },
+    {
+      "agent": "line-editor",
+      "chapter": 19,
+      "action": "line-edit",
+      "timestamp": "2026-03-20T01:00:00Z",
+      "artifactsWritten": [
+        "revision-reports/019/line-edit.json",
+        "agents/line-editor/status.json"
+      ],
+      "result": "completed",
+      "findingSummary": {
+        "critical": 1,
+        "major": 2,
+        "minor": 8,
+        "total": 11
+      }
+    },
+    {
+      "agent": "developmental-editor",
+      "chapter": 19,
+      "action": "developmental-edit",
+      "timestamp": "2026-03-19T14:30:00Z",
+      "artifactsWritten": [
+        "revision-reports/019/developmental-edit.json",
+        "agents/developmental-editor/status.json"
+      ],
+      "result": "completed",
+      "findingSummary": {
+        "critical": 0,
+        "major": 0,
+        "minor": 4,
+        "total": 4
+      }
+    },
+    {
+      "agent": "chapter-reviser",
+      "chapter": 18,
+      "action": "revised",
+      "timestamp": "2025-07-31T06:00:00Z",
+      "artifactsWritten": [
+        "chapters/018/revised.md",
+        "revision-reports/018/revision-log.json"
+      ],
+      "result": "completed"
+    },
+    {
+      "agent": "copy-editor",
+      "action": "copy-edit",
+      "chapter": 18,
+      "artifactsWritten": [
+        "revision-reports/018/copy-edit.json",
+        "agents/copy-editor/status.json"
+      ],
+      "artifactsRead": [
+        "chapters/018/draft.md",
+        "chapters/018/metadata.json",
+        "continuity/continuity-tracker.json",
+        "world-bible/geography.json",
+        "world-bible/magic-system.json",
+        "world-bible/culture.json",
+        "world-bible/politics.json",
+        "characters/index.json",
+        "plot/chapter-outlines/chapter-018.json",
+        "style/style-guide.json"
+      ],
+      "findingSummary": {
+        "total": 5,
+        "critical": 0,
+        "major": 0,
+        "moderate": 1,
+        "minor": 4
+      },
+      "timestamp": "2025-07-30T14:00:00Z"
+    },
+    {
+      "agent": "line-editor",
+      "action": "line-edit",
+      "chapter": 18,
+      "artifact": "revision-reports/018/line-edit.json",
+      "status": "completed",
+      "result": "completed",
+      "findings": {
+        "critical": 0,
+        "major": 2,
+        "minor": 8,
+        "observation": 4
+      },
+      "timestamp": "2025-07-24T01:00:00Z"
+    },
+    {
+      "agent": "developmental-editor",
+      "action": "developmental-edit",
+      "chapter": 18,
+      "artifact": "revision-reports/018/developmental-edit.json",
+      "status": "completed",
+      "result": "completed",
+      "findings": {
+        "critical": 0,
+        "major": 0,
+        "minor": 5,
+        "observation": 2
+      },
+      "timestamp": "2025-07-24T00:15:00Z"
+    },
+    {
+      "timestamp": "2025-07-31T05:00:00Z",
+      "agent": "revision-auditor",
+      "action": "revision-gate-audit",
+      "chapter": 17,
+      "result": "passed",
+      "summary": "Ch17 revision gate PASSED. 3 critical verified (architectural metaphors 45+→4, word repetition: grief 32→5/bond 36→0/wall 17→3/cage 10→1, metaphor pileup compressed). 5 major verified (theme→deflection, epiphany→physical, closing trimmed 42%, duplicate phrasing resolved, Calwrath location corrected). 15 minor/moderate verified. 1 deferred (DEV-017-003). Zero regressions. Zero darlings survived. Word count -8.3%. Chapter proceeds to beta reading.",
+      "artifactsWritten": [
+        "audit-reports/revision/chapter-017-gate.json",
+        "agents/revision-auditor/status.json"
+      ]
+    },
+    {
+      "timestamp": "2025-07-31T04:00:00Z",
+      "agent": "chapter-reviser",
+      "action": "revision",
+      "chapter": 17,
+      "result": "completed",
+      "summary": "Ch17 revised. 3 critical addressed (architectural metaphors 45+→4, word repetition: grief 28→6/bond 27→0/wall 14→3/cage 9→1, metaphor pileup compressed). 5 major addressed (theme-as-statement→deflection, epiphany→physical dramatisation, closing trimmed 35%, duplicate phrasing resolved, Calwrath location corrected). 1 moderate addressed (false attribution corrected). 14/15 minor addressed; 1 deferred (DEV-017-003 pacing note). Word count 4956→4544.",
+      "artifactsWritten": [
+        "chapters/017/revised.md",
+        "revision-reports/017/revision-log.json"
+      ]
+    },
+    {
+      "timestamp": "2025-07-30T16:00:00Z",
+      "agent": "copy-editor",
+      "action": "copy-edit",
+      "chapter": 17,
+      "result": "completed",
+      "summary": "Ch17 copy edit: 0 critical, 1 major, 1 moderate, 4 minor (6 total). Major: Calwrath shelter location conflated (temple vs market square per ch13). Moderate: false attribution '*I want this too*' to Lirien (ch15 shows Kaelith's words). Minor: timeline phrasing ambiguity, nonstandard 'compensatable', bond direction-sensing overreach, accelerant timing conflation. Zero naming errors, zero formatting issues, zero anachronisms. All proper nouns verified. Pallor progression, vorakh, ribs, contract details all factually consistent.",
+      "artifactsWritten": [
+        "revision-reports/017/copy-edit.json"
+      ]
+    },
+    {
+      "timestamp": "2025-07-30T15:30:00Z",
+      "agent": "line-editor",
+      "action": "line-edit",
+      "chapter": 17,
+      "result": "completed",
+      "summary": "Ch17 line edit: 3 critical, 4 major, 8 minor (15 total). Critical: architectural metaphor saturation (~45+ instances), word-level repetition (grief 28×, bond 27×, wall 14×, cage 9×), L141 5-image structural pileup. Major: thematic statements at L309/L339-340, closing section restates rather than advances, duplicate 'precise emotional management' phrasing. Strengths: zero clichés/banned phrases, excellent combat scene, correct MRU, strong opening hook.",
+      "artifactsWritten": [
+        "revision-reports/017/line-edit.json"
+      ]
+    },
+    {
+      "timestamp": "2025-07-30T15:05:00Z",
+      "agent": "developmental-editor",
+      "action": "developmental-edit",
+      "chapter": 17,
+      "result": "completed",
+      "summary": "Ch17 developmental edit: 0 critical, 0 major, 3 minor. Strong verdict. Act III pivot from anger to direction change toward Lirien executed with precision. Dual-arc coupling exemplary.",
+      "artifactsWritten": [
+        "revision-reports/017/developmental-edit.json"
+      ]
+    },
+    {
+      "timestamp": "2025-07-30T14:00:00Z",
+      "agent": "revision-auditor",
+      "action": "revision-audit",
+      "chapter": 16,
+      "result": "passed",
+      "summary": "Ch16 revision PASSED adversarial gate. 3 critical verified: bond refs 29→10, forty-three 6→2, operative markers ~67%→~40%. 4 major verified: reinterpretation rhythm varied, paragraph split L36, cage 7→3, L178 form-models-content. 1 moderate + 14 minor verified. 4 minor deferred. Zero regressions. Zero darlings. Traceability complete. Chapter proceeds to beta reading.",
+      "artifactsWritten": [
+        "audit-reports/revision/chapter-016-gate.json",
+        "agents/revision-auditor/status.json"
+      ]
+    },
+    {
+      "timestamp": "2025-07-30T12:00:00Z",
+      "agent": "chapter-reviser",
+      "action": "revision",
+      "chapter": 16,
+      "result": "completed",
+      "summary": "Ch16 revised. 3 critical (bond refs 28→14 named, forty-three 6→2, operative markers ~67%→~40%), 4 major (reinterpretation rhythm varied, paragraph break L36, cage 7→3, L178 form-models-content), 1 moderate (British spelling), 13 minor addressed. 4 minor deferred (pacing note, off-page events, DISC-001 note, FU-007 deliberate). Word count 4093→3814 (-279). Post-departure section compressed. Coherence verified.",
+      "artifactsWritten": [
+        "chapters/016/revised.md",
+        "revision-reports/016/revision-log.json",
+        "agents/chapter-reviser/status.json"
+      ]
+    },
+    {
+      "timestamp": "2025-07-30T10:00:00Z",
+      "agent": "copy-editor",
+      "action": "copy-edit",
+      "chapter": 16,
+      "result": "completed",
+      "summary": "Ch16 copy edit complete. 8 findings (0 critical, 0 major, 1 moderate, 7 minor). Moderate: British/American spelling inconsistency ('recontextualized' L104 should be 'recontextualised'). Minor: 1 anachronism ('supply chains' L178), 2 paragraph-length exceedances (L36, L134), 1 bond-mechanics presentation ambiguity (L96 italicized specifics could be misread as thought-transmission), 2 unestablished continuity details (healing salve and scarf not set up in prior chapters, L140), 1 cross-manuscript note (DISC-001 carried forward). All 25+ proper nouns verified correct. Bond mechanics, contract mechanics, magic system, timeline, geography, dialogue formatting, tense, and naming all verified consistent.",
+      "artifactsWritten": [
+        "revision-reports/016/copy-edit.json",
+        "agents/copy-editor/status.json"
+      ]
+    },
+    {
+      "timestamp": "2025-07-30T09:00:00Z",
+      "agent": "line-editor",
+      "action": "line-edit",
+      "chapter": 16,
+      "result": "completed",
+      "summary": "Ch16 line edit complete. 15 findings (3 critical, 4 major, 8 minor). Critical: bond reference saturation (~30 refs/200 lines, 'Through the bond' opener 6×), 'forty-three' repetition (6×), operative voice marker saturation (~67% of paragraphs). Major: reinterpretation sequence density, paragraph overlength, 'cage' repetition (6×), L178 peak operative vocabulary. Strengths: dialogue at manuscript's best, zero clichés, zero purple prose, ~95:5 show:tell, zero dead spots. Verdict: PASS with mandatory thinning.",
+      "artifactsWritten": [
+        "revision-reports/016/line-edit.json",
+        "agents/line-editor/status.json"
+      ]
+    },
+    {
+      "timestamp": "2025-07-29T19:00:00Z",
+      "agent": "revision-auditor",
+      "action": "revision-audit",
+      "chapter": 15,
+      "result": "passed",
+      "summary": "Ch15 revision PASSED adversarial gate. 3 critical findings verified addressed: Oathbrand removal Tessen→Lirien, structural metaphors 29→14 hits (~52%), bond references 23→7 (~70%). 7 major findings verified: word count Four→Three, warm register ensured, negation 18+→~9, clichés cut/replaced, meta-commentary cut, emotion-labeling restructured. 10 minor verified. 3 deferred. 1 warning (between-them density 5→11). 0 regressions. 0 darlings survived. Traceability complete. Chapter proceeds to beta reading.",
+      "artifactsWritten": [
+        "audit-reports/revision/chapter-015-gate.json",
+        "agents/revision-auditor/status.json"
+      ]
+    },
+    {
+      "timestamp": "2025-07-29T18:00:00Z",
+      "agent": "chapter-reviser",
+      "action": "revision",
+      "chapter": 15,
+      "result": "completed",
+      "summary": "Ch15 revised. All 3 critical findings addressed (Oathbrand removal misattribution Tessen→Lirien, structural metaphor saturation 33+→~18, bond reference repetition 22→7). All 7 major findings addressed (word count Four→Three, warm register ensured, negation pattern 18+→~9, romance cliche cut, sunlight cliche+voice violation replaced with forge heat, meta-commentary cut, emotion-labeling restructured to show-first). 1 moderate finding addressed (paragraph break). 13 of 16 minor findings addressed; 3 deferred as no-change-needed (DISC-001 seat discrepancy, Ytharan spelling note, Vael Seren echo monitoring). Word count 4001→3826 (-175 words net from thinning). New fantasy-arc integration added to Scene 3 (31 words). Cliches reduced from 2→0. Direct emotion labels from 4→0.",
+      "artifactsWritten": [
+        "chapters/015/revised.md",
+        "revision-reports/015/revision-log.json"
+      ]
+    },
+    {
+      "timestamp": "2025-07-29T17:00:00Z",
+      "agent": "copy-editor",
+      "action": "copy-edit",
+      "chapter": 15,
+      "result": "completed",
+      "summary": "Ch15 copy edit complete. 7 findings (1 critical, 1 major, 1 moderate, 4 minor). Critical: Oathbrand removal misattributed to Tessen instead of Lirien (line 219). Major: word count 'Four words' for 3-word phrase 'I want you.' (line 161). Moderate: paragraph length exceeds 6-sentence guideline (line 171). Minor: 2 anachronisms ('cost-benefit analysis', 'detonation/shrapnel'), 1 seat-number discrepancy (DISC-001), 1 new term 'Ytharan' noted. All naming, bond mechanics, information asymmetry, magic system, timeline, geography, dialogue formatting, tense, and spelling verified consistent.",
+      "artifactsWritten": [
+        "revision-reports/015/copy-edit.json",
+        "agents/copy-editor/status.json"
+      ]
+    },
+    {
+      "timestamp": "2025-07-29T16:30:00Z",
+      "agent": "line-editor",
+      "action": "line-edit",
+      "chapter": 15,
+      "result": "completed",
+      "summary": "Ch15 line edit complete. 16 findings (2 critical, 5 major, 9 minor). Critical: structural metaphor saturation (33+ instances), bond-reference repetition (22 instances). Major: Not-X negation pattern (18+), romance cliché L109, cliché+voice violation L215-216, meta-commentary L155-156, emotion-labeling L171. Strengths: dialogue at manuscript highest quality, declaration scene devastating, dramatic irony surgical, zero banned phrases. Verdict: PASS with mandatory thinning.",
+      "artifactsWritten": [
+        "revision-reports/015/line-edit.json",
+        "agents/line-editor/status.json"
+      ]
+    },
+    {
+      "timestamp": "2025-07-29T16:00:00Z",
+      "agent": "developmental-editor",
+      "action": "developmental-edit",
+      "chapter": 15,
+      "result": "completed",
+      "summary": "Ch15 developmental edit complete. 4 findings (0 critical, 1 major, 3 minor). Major: sustained high-tension cluster (ch11-15, INV-020 continuing concern). Minor: emotional state proximity to ch14, fantasy arc front-loading, Vael Seren structural echo. Strengths: dramatic irony surgically precise, declaration scene prose mastery, false victory structure exemplary, all thematic pillars at peak engagement, DEV-014-002 overlap concern successfully resolved.",
+      "artifactsWritten": [
+        "revision-reports/015/developmental-edit.json",
+        "agents/developmental-editor/status.json"
+      ]
+    },
+    {
+      "timestamp": "2025-07-29T15:30:00Z",
+      "agent": "revision-auditor",
+      "action": "revision-audit",
+      "chapter": 14,
+      "result": "passed",
+      "summary": "Ch14 revision PASSED adversarial gate. 3 critical findings verified addressed: water metaphors 12→7, Through the bond openers 11→3-4 (colon-openers 7→2), Not X patterns 22→~8-9. 10 actionable major findings verified: subtext explanations cut, clichés replaced, tell-labels eliminated, timeline errors fixed, sentence structure improved, recovery beat added. 1 major correctly deferred (DEV-014-002, forward-facing). 12 minor findings verified. 0 regressions. 0 darlings survived. Traceability complete. 2 warnings issued (new Not X in LINE-014-007 fix, word count unchanged). Chapter proceeds to beta reading.",
+      "artifactsWritten": [
+        "audit-reports/revision/chapter-014-gate.json",
+        "agents/revision-auditor/status.json"
+      ]
+    },
+    {
+      "timestamp": "2025-07-29T14:00:00Z",
+      "agent": "chapter-reviser",
+      "action": "revision",
+      "chapter": 14,
+      "result": "completed",
+      "summary": "Ch14 revised: 24 of 28 findings addressed (3/3 critical, 8/9 major, 9/11 minor, 4/5 notes). Voice markers thinned ~50-70% across categories. Three new beats added (recovery opening, guilt-transmission, loophole scaffolding). Timeline errors corrected. All preserved passages intact.",
+      "artifacts": [
+        "chapters/014/revised.md",
+        "revision-reports/014/revision-log.json"
+      ]
+    },
+    {
+      "timestamp": "2025-07-21T14:30:00Z",
+      "agent": "copy-editor",
+      "action": "copy-edit",
+      "chapter": 14,
+      "result": "completed",
+      "summary": "Ch14 copy edit: 9 findings (0 critical, 2 major, 1 moderate, 6 minor). Major: two timeline errors — bond duration stated as \"weeks\" but only 2-3 days elapsed since ch11 formation (lines 112, 138). Moderate: continuity tracker records Vael Seren story in ch12 but ch12 draft has no such reference. Minor: 2 potential anachronisms (\"feedback loop\", \"probability tree\"), 1 grammar (\"the way the way\"), 2 spelling convention (British/American), 1 age comparison. All naming verified correct (15+ nouns). Magic system, bond mechanics, contract loophole, information asymmetry, dialogue formatting, tense all verified consistent.",
+      "artifactsWritten": [
+        "revision-reports/014/copy-edit.json",
+        "agents/copy-editor/status.json"
+      ]
+    },
+    {
+      "timestamp": "2025-07-29T09:30:00Z",
+      "agent": "line-editor",
+      "action": "line-edit",
+      "chapter": 14,
+      "result": "completed",
+      "summary": "Ch14 line edit: 20 findings (3 critical, 7 major, 5 minor, 5 notes). Critical: voice marker saturation (12 water + 14 operative vocabulary = markers in most paragraphs), 'Through the bond' repetition (11x), 'Not X' rhetorical tic (22x — exceeding ch13's 17+). Major: subtext over-explanation (L150, L224), cliché (L306 'irony drew blood'), stock simile (L38 'compass needle'), 'terrifying' tell-label ×2, tell-label (L262 'generosity'), 80-word sentence (L200). Prose strengths: combat is manuscript's tightest action writing, dialogue flawless, Vael Seren passage outstanding, contract loophole devastating, zero banned phrases, perfect micro-tension. Verdict: PASS with mandatory thinning.",
+      "artifactsWritten": [
+        "revision-reports/014/line-edit.json",
+        "agents/line-editor/status.json"
+      ]
+    },
+    {
+      "timestamp": "2025-07-29T08:30:00Z",
+      "agent": "developmental-editor",
+      "action": "developmental-edit",
+      "chapter": 14,
+      "result": "completed",
+      "summary": "Ch14 developmental edit complete. 5 findings (0 critical, 2 major, 3 minor). Major: sustained high-tension cluster (ch11-14 at 7+), potential structural overlap with ch15 romance beat. Minor: bond guilt-transmission gap during intimacy, word count 25% over target, loophole discovery scaffolding. Strengths: devastating layered dramatic irony, Vael Seren harbour story, combat bond mechanics shown through action, closing image crystallizes chapter tension.",
+      "artifactsWritten": [
+        "revision-reports/014/developmental-edit.json",
+        "agents/developmental-editor/status.json"
+      ]
+    },
+    {
+      "timestamp": "2025-07-29T07:00:00Z",
+      "agent": "revision-auditor",
+      "action": "revision-audit",
+      "chapter": 13,
+      "result": "passed",
+      "summary": "Ch13 revision PASSED adversarial gate. 3 critical findings verified addressed: structural metaphors 44→~14-18, bond references 29→11 lines (formulaic openers 6→0), sentence constructions reduced 85%+ ('the way' 26→4, 'specific/particular' 14→1). 9 major findings verified: 8 fully addressed, 1 partially (LINE-013-009 'wanting' label retained — 1 warning issued, below failure threshold). Fantasy threading added (3 insertions break bookend pattern), breathing passage added for pacing, all abstract qualifiers eliminated. 0 regressions. 0 darlings survived. Traceability complete. Word count 5113→4845. Chapter proceeds to beta reading.",
+      "artifactsWritten": [
+        "audit-reports/revision/chapter-013-gate.json",
+        "agents/revision-auditor/status.json"
+      ]
+    },
+    {
+      "timestamp": "2025-07-29T06:00:00Z",
+      "agent": "chapter-reviser",
+      "action": "chapter-revision",
+      "chapter": 13,
+      "result": "completed",
+      "summary": "Ch13 revision complete. 23 findings addressed (3 critical, 9 major, 9 minor/moderate/note; 2 deferred). Critical: structural metaphors 44->14, bond references 24->11, repetitive constructions reduced 85%+ ('the way' 26->4, 'quality' 8->0, 'person who' 8->0). Structural additions: breathing passage, 3 fantasy-threading insertions, bond trigger for Op 31, MRU fix, ending changed to 'It held.' Word count 5099->4781 (-6.2%).",
+      "artifactsWritten": [
+        "chapters/013/revised.md",
+        "revision-reports/013/revision-log.json",
+        "agents/chapter-reviser/status.json"
+      ]
+    },
+    {
+      "agent": "romantic-fantasy-writer-copy-editor",
+      "action": "Copy edited chapter 13 — verified factual accuracy, naming consistency (18 nouns), timeline (7 references), geography, magic system compliance, information asymmetry, grammar, and formatting. 3 findings: 1 moderate (DISC-001 seat number, pre-existing), 2 minor (timekeeping phrasing, Ashborne continuity note). Chapter is exceptionally clean.",
+      "artifactsWritten": [
+        "revision-reports/013/copy-edit.json",
+        "agents/copy-editor/status.json"
+      ],
+      "timestamp": "2025-07-18T12:00:00Z"
+    },
+    {
+      "timestamp": "2025-07-29T05:00:00Z",
+      "agent": "line-editor",
+      "action": "line-edit",
+      "chapter": 13,
+      "result": "completed",
+      "summary": "Ch13 line edit: 17 findings (3 critical, 7 major, 5 minor, 2 notes). Critical: architectural metaphor saturation (44x/276 lines), bond-mechanism repetition (24x — matching ch12 pre-revision), sentence construction repetition ('the way' 26x, 'specific/particular' 13x, 'Not X' 17+x). Major: 'quality' abstraction (8x), 'person who' construction (8x), body-catalog repetition, 'six years' (10x), water metaphor domain violation, bond-transmitted telling, character-summary telling. Prose strengths: Calwrath confession is manuscript's strongest sequence, dialogue excellent, zero clichés, perfect micro-tension. Root cause: over-narration. Verdict: PASS with mandatory thinning.",
+      "artifactsWritten": [
+        "revision-reports/013/line-edit.json",
+        "agents/line-editor/status.json"
+      ]
+    },
+    {
+      "timestamp": "2025-07-29T04:00:00Z",
+      "agent": "developmental-editor",
+      "action": "developmental-edit",
+      "chapter": 13,
+      "result": "completed",
+      "summary": "Ch13 developmental edit complete. 5 findings (0 critical, 2 major, 3 minor). Major: fantasy arc relegated to bookends, four-chapter sustained-high tension cluster continues. Minor: closing echo too close to ch11, Lirien Op 31 timing convenience, word count 27% over target. Verdict: PASS — Calwrath confession is the manuscript strongest sustained sequence, all three thematic pillars centrally engaged, first kiss earned through moral gauntlet.",
+      "artifactsWritten": [
+        "revision-reports/013/developmental-edit.json",
+        "agents/developmental-editor/status.json"
+      ]
+    },
+    {
+      "timestamp": "2025-07-29T03:00:00Z",
+      "agent": "revision-auditor",
+      "action": "revision-audit",
+      "chapter": 12,
+      "result": "passed",
+      "summary": "Ch12 revision PASSED adversarial gate. 3 critical + 10 major findings verified addressed. 'Through the bond' 23→3, voice saturation halved, chase scaled to evasion (preserving Ch14), bond misfire introduced (INV-042), direction corrected NE→NW, binding mechanism reframed. 0 regressions. 0 darlings survived. Traceability complete. Word count 5347→4344 (-18.7%). Chapter proceeds to beta reading.",
+      "artifactsWritten": [
+        "audit-reports/revision/chapter-012-gate.json",
+        "agents/revision-auditor/status.json"
+      ]
+    },
+    {
+      "timestamp": "2025-07-29T02:00:00Z",
+      "agent": "chapter-reviser",
+      "action": "chapter-revision",
+      "chapter": 12,
+      "result": "completed",
+      "summary": "Ch12 revision complete. 31 findings addressed (3 critical, 12 major, 9 minor, 3 moderate, 2 notes, 2 informational). 24 applied, 7 deferred (tracker/outline fixes, informational). Critical: 'through the bond' 23→3, voice saturation halved, 'Lirien felt' 15→2. Major structural: chase scaled to evasion (reserving Ch14 Pinch Point Two), bond misfire introduced (INV-042 try-fail), Scene 1 expanded for pacing recovery, direction corrected NE→NW per geography.json, binding enforcement reframed. Word count 5347→4344 (-18.7%).",
+      "artifactsWritten": [
+        "chapters/012/revised.md",
+        "revision-reports/012/revision-log.json",
+        "agents/chapter-reviser/status.json"
+      ]
+    },
+    {
+      "timestamp": "2025-07-28T22:00:00Z",
+      "agent": "copy-editor",
+      "action": "copy-edit",
+      "chapter": 12,
+      "result": "completed",
+      "summary": "Ch12 copy edit: 12 findings (0 critical, 2 major, 3 moderate, 5 minor, 2 informational). Major: continuity tracker conflates ch12/ch14 events, 'northeast' direction conflicts with geography. Moderate: binding-pain timeline gap, 'zero latency' anachronism, tracker hunter-team count error. All proper nouns, magic system rules, information asymmetry, dialogue formatting, and tense verified clean.",
+      "artifactsWritten": [
+        "revision-reports/012/copy-edit.json",
+        "agents/copy-editor/status.json"
+      ]
+    },
+    {
+      "timestamp": "2025-07-21T16:30:00Z",
+      "agent": "line-editor",
+      "action": "line-edit",
+      "chapter": 12,
+      "result": "completed",
+      "summary": "Ch12 line edit: 19 findings (3 critical, 7 major, 7 minor, 2 notes). Critical: through-the-bond repetition (23x), voice marker saturation (operational 21x, water 25+x, parenthetical 8x), Lirien-felt repetition (15x). Major: bond-transmitted emotion telling, purple prose, compass-needle triple, exposition block, bare emotion labels. Strengths: omission trio, closing line, recursive transparency, dialogue subtext. Root cause: over-narration of bond mechanism.",
+      "artifactsWritten": [
+        "revision-reports/012/line-edit.json",
+        "agents/line-editor/status.json"
+      ]
+    },
+    {
+      "timestamp": "2025-07-21T16:00:00Z",
+      "agent": "developmental-editor",
+      "action": "developmental-edit",
+      "chapter": 12,
+      "result": "completed",
+      "summary": "Ch12 developmental edit: 6 findings (0 critical, 3 major, 3 minor). Major: chase sequence anticipates Ch14 Pinch Point Two, bond performs flawlessly without try-fail cycle, four-chapter high-tension cluster. Minor: word count 30% over, narrow emotional register, upstream name desync. Strengths: masterful information asymmetry, recursive transparency concept, strong thematic engagement.",
+      "artifactsWritten": [
+        "revision-reports/012/developmental-edit.json",
+        "agents/developmental-editor/status.json"
+      ]
+    },
+    {
+      "agent": "revision-auditor",
+      "chapter": 11,
+      "action": "revision-audit-gate",
+      "result": "passed",
+      "timestamp": "2025-07-28T21:00:00Z",
+      "artifacts": [
+        "audit-reports/revision/chapter-011-gate.json",
+        "agents/revision-auditor/status.json"
+      ],
+      "summary": "Ch11 revision PASSED gate. 2 critical + 9 major verified addressed. Architectural metaphors 30+→~11, the-way 21+→3, felt/feel 22+→~9, negations 18-20→~8, six-years 15→7. Voice thinning enacted (60-line gap). Death-contract subtext planted. Procedure compressed with near-failure. Quietus expanded with TP-2. 0 regressions. 0 darlings survived. Traceability complete. Word count -19.9%. Proceeds to beta reading."
+    },
+    {
+      "agent": "chapter-reviser",
+      "chapter": 11,
+      "action": "chapter-revision",
+      "result": "completed",
+      "timestamp": "2025-07-28T20:30:00Z",
+      "artifacts": [
+        "chapters/011/revised.md",
+        "revision-reports/011/revision-log.json"
+      ],
+      "summary": "Ch11 revision: 35 findings addressed (2 critical, 9 major, 18 minor, 5 suggestion, 1 informational). 34 applied, 1 deferred. Critical: architectural metaphor saturation reduced 30+→~11, 'the way' constructions 21+→3. Major structural: procedure compressed, near-failure beat added, Quietus expanded with TP-2, death-contract subtext planted, resistance beat added. Prose: felt/feel 22→9, negations 18-20→8, 'six years' 15→7, triple simile→single, show-tell fixed, anachronisms fixed. Word count 5135→4114 (-19.9%)."
+    },
+    {
+      "agent": "copy-editor",
+      "chapter": 11,
+      "action": "copy-edit",
+      "result": "completed",
+      "timestamp": "2025-07-28T19:00:00Z",
+      "artifacts": [
+        "revision-reports/011/copy-edit.json"
+      ],
+      "summary": "Ch11 copy edit: 6 findings (0 critical, 0 major, 2 moderate, 3 minor, 1 informational). Moderate: 'Marin Savel' surname unestablished in narrative, word-count arithmetic error. Minor: 3 anachronistic vocabulary terms ('chemical,' 'proprioception,' 'geological'). Informational: chapter outline CHAR-ID error. All proper nouns, magic rules, timeline, geography, information asymmetry verified correct."
+    },
+    {
+      "agent": "line-editor",
+      "chapter": 11,
+      "action": "line-edit",
+      "result": "completed",
+      "timestamp": "2025-07-28T18:00:00Z",
+      "artifacts": [
+        "revision-reports/011/line-edit.json"
+      ],
+      "summary": "Ch11 line edit: 19 findings (2 critical, 6 major, 7 minor, 4 suggestions). Critical: architectural metaphor saturation (30+ instances — voice fingerprint says 'sparse'), 'the way' construction saturation (21+ instances, 50% worse than ch10). Major: felt/feel repetition (22+), negation-pattern density (18-20), 'six years' repetition (15), triple simile purple prose, told emotion, voice markers don't thin during declared breakdown. Prose strengths: Tessen dialogue, trust-decision subtext, stone-counting motif, MRU structure, magic-return perception shift. Primary revision: reduce architectural metaphors ~50%, 'the way' ~60%, felt/feel ~50%, thin voice markers progressively through procedure scene."
+    },
+    {
+      "agent": "developmental-editor",
+      "chapter": 11,
+      "action": "developmental-edit",
+      "result": "completed",
+      "timestamp": "2025-07-28T17:00:00Z",
+      "artifacts": [
+        "revision-reports/011/developmental-edit.json"
+      ],
+      "summary": "Ch11 developmental edit: PASS. 3 major (death-contract try-fail subtext missing, procedure scene repetitive escalation, Quietus activation underweighted), 5 minor, 2 suggestions. Dual-arc convergence exemplary. Pacing correct. All midpoint deliverables achieved."
+    },
+    {
+      "agent": "revision-auditor",
+      "chapter": 10,
+      "task": "revision-gate-audit",
+      "result": "passed",
+      "timestamp": "2025-07-28T16:00:00Z",
+      "artifactsProduced": [
+        "audit-reports/revision/chapter-010-gate.json",
+        "agents/revision-auditor/status.json"
+      ],
+      "summary": "Chapter 10 revision PASSED adversarial gate. 2 critical + 10 major findings verified addressed. 0 regressions, 0 warnings. Chapter proceeds to beta reading."
+    },
+    {
+      "agent": "chapter-reviser",
+      "chapter": 10,
+      "action": "chapter-revision",
+      "result": "completed",
+      "timestamp": "2025-07-28T14:30:00Z",
+      "artifacts": [
+        "chapters/010/revised.md",
+        "revision-reports/010/revision-log.json"
+      ],
+      "summary": "Ch10 revision: 35 findings addressed (2 critical, 10 major, 15 minor, 8 suggestions). 31 applied, 2 reviewed-no-change, 2 deferred. Critical: negation pattern ~40 to ~12, operative vocab in Scene 3 reduced ~75%. Major structural: Reyvas naming scaled back to Seventh Seat (preserving BEAT-009 for ch12), Ashborne/Thenndal subplot added, strategic debate extended, Kaelith withholding reaction deepened. Major prose: water metaphors 10 to 3, 'the way' 14 to 3, closings consolidated, Scene 3 meta-commentary simplified. All copy-edit fixes applied. Word count 4576 to 3875 (-15.3%)."
+    },
+    {
+      "agent": "copy-editor",
+      "chapter": 10,
+      "action": "copy-edit",
+      "result": "completed",
+      "timestamp": "2025-07-18T15:00:00Z",
+      "artifacts": [
+        "revision-reports/010/copy-edit.json"
+      ],
+      "summary": "Ch10 copy edit: 10 findings (0 critical, 4 major, 4 minor, 2 suggestions). Major: pre-existing Thalen Reyvas Sixth/Seventh Seat discrepancy (DISC-001), unestablished Dawnward Range location, Oathbrand silver-blue vs canonical silver-black, Oathbrand glow through sleeve vs collarbone placement. Minor: timber→timbre homophone, missing question mark, unestablished Chancellor title, What-else question formatting. Continuity tracker has 2 entries not matching draft (tier-two magic practice + withheld third page). Timeline, geography, knowledge states, magic system all verified. No anachronisms."
+    },
+    {
+      "agent": "line-editor",
+      "chapter": 10,
+      "action": "line-edit",
+      "result": "completed",
+      "timestamp": "2025-07-18T14:30:00Z",
+      "artifacts": [
+        "revision-reports/010/line-edit.json"
+      ],
+      "summary": "Ch10 line edit: 17 findings (2 critical, 4 major, 7 minor, 4 suggestions). Critical: negation-pattern saturation (~40 'not X but Y'), voice marker saturation in Scene 3 (~35 operative terms in intimate scene). Major: water metaphor density (10 instances, 4x water-against-stone), 'the way' construction (14x), purple prose closing, narrated emotion. Prose strengths: archive infiltration, coast question pivot, watch-rotation subtext, dialogue naturalism. Primary revision: thin negation to ~15-18, reduce Scene 3 operative vocab 50-60%, reduce water metaphors to 5-6."
+    },
+    {
+      "agent": "developmental-editor",
+      "chapter": 10,
+      "action": "developmental-edit",
+      "result": "completed",
+      "timestamp": "2025-07-18T14:00:00Z",
+      "artifacts": [
+        "revision-reports/010/developmental-edit.json"
+      ],
+      "summary": "Ch10 developmental edit: PASS. 2 major (front-loaded Reyvas revelation, missing Ashborne subplot intersection), 4 minor, 2 suggestions. Recovery chapter pacing correct. Romance arc advancement strong. Fireside scene emotionally resonant."
+    },
+    {
+      "agent": "revision-auditor",
+      "chapter": 9,
+      "task": "revision-gate-audit",
+      "result": "passed",
+      "timestamp": "2025-07-28T13:30:00Z",
+      "artifactsProduced": [
+        "audit-reports/revision/chapter-009-gate.json",
+        "agents/revision-auditor/status.json"
+      ],
+      "summary": "Chapter 9 revision PASSED adversarial gate. 1 critical + 5 major findings verified addressed. 0 regressions, 1 warning (word count). Chapter proceeds to beta reading."
+    },
+    {
+      "agent": "chapter-reviser",
+      "chapter": 9,
+      "task": "chapter-revision",
+      "result": "completed",
+      "timestamp": "2025-07-28T12:00:00Z",
+      "artifactsProduced": [
+        "chapters/009/revised.md",
+        "revision-reports/009/revision-log.json"
+      ],
+      "summary": "Chapter 9 revised. All 30 findings addressed (1 critical, 5 major, 14 minor, 10 suggestions; 28 applied, 2 reviewed-no-change). Architectural metaphor saturation reduced from ~16 to 7. Negation pattern reduced 7→3. Triple-negation bookend and scene-close parallel eliminated. Magic system violation corrected. Added mutual anchoring, practical care, combat weakness, TP-2 engagement, expanded document-omission deliberation. Word count 4984→4889."
+    },
+    {
+      "timestamp": "2025-07-17T22:00:00Z",
+      "agent": "copy-editor",
+      "action": "copy-edit-chapter-009",
+      "result": "completed",
+      "artifacts": [
+        "revision-reports/009/copy-edit.json"
+      ],
+      "summary": "Copy edit of Chapter 9 completed. 8 findings: 0 critical, 2 major (naming 'High Council' should be 'High Conclave'; magic system violation — Oathbrand incorrectly implied to suppress ambient magic), 4 minor (anachronistic 'supply chain management,' metric/imperial measurement mix, unestablished 'Thornway Extension' name, em dash formatting), 2 suggestions (modern scientific terms, deity pronoun convention). Timeline, geography, character knowledge states, and information asymmetry all verified consistent."
+    },
+    {
+      "timestamp": "2025-07-17T21:30:00Z",
+      "agent": "line-editor",
+      "action": "line-edit-chapter-009",
+      "result": "completed",
+      "artifacts": [
+        "revision-reports/009/line-edit.json"
+      ],
+      "summary": "Line edit of Chapter 9 completed. 15 findings: 1 critical (architectural metaphor saturation — ~16 metaphorical instances, word 'architecture' appears 12 times, per-page repetition threshold violated in processing scene), 3 major (negation pattern 7x, identical triple-negation bookend at lines 14/318, 'silence of two' parallel at consecutive scene boundaries), 6 minor (tasted-copper cliché, 2 show-tell instances, pronoun-opening monotony, generic phrasing, voice domain drift), 5 suggestions. Prose is strong overall — Ythara exposure sequence is genuinely inventive, Thank You scene is beautifully understated, combat is lucid and costly. Revision needed primarily to thin voice marker density."
+    },
+    {
+      "timestamp": "2025-07-17T21:00:00Z",
+      "agent": "developmental-editor",
+      "action": "developmental-edit-chapter-009",
+      "result": "completed",
+      "artifacts": [
+        "revision-reports/009/developmental-edit.json"
+      ],
+      "summary": "Developmental edit of Chapter 9 completed. Structural verdict: PASS. 0 critical, 0 major, 4 minor, 3 suggestions."
+    },
+    {
+      "agent": "revision-auditor",
+      "chapter": 8,
+      "task": "revision-gate-audit",
+      "result": "passed",
+      "timestamp": "2025-07-27T19:15:00Z",
+      "artifactsProduced": [
+        "audit-reports/revision/chapter-008-gate.json",
+        "agents/revision-auditor/status.json"
+      ],
+      "summary": "Chapter 8 revision PASSED adversarial gate. All 10 major findings verified addressed. 0 regressions, 0 warnings. Chapter proceeds to beta reading."
+    },
+    {
+      "agent": "chapter-reviser",
+      "chapter": 8,
+      "task": "chapter-revision",
+      "result": "completed",
+      "timestamp": "2025-07-27T18:30:00Z",
+      "artifactsProduced": [
+        "chapters/008/revised.md",
+        "revision-reports/008/revision-log.json"
+      ],
+      "summary": "Chapter 8 revision. Converted first-person to close-third POV. Added 3 care beats (dressings, food, cloak). Fixed Veldrane description, timeline, Oathbrand sigil, ward-breaking destination. Added water metaphors, Pallor visibility, humor beat. All 35 findings addressed (32 applied, 3 reviewed-no-change). Word count 4089 to 3981."
+    },
+    {
+      "agent": "chapter-reviser",
+      "chapter": 6,
+      "task": "chapter-revision-v2",
+      "result": "completed",
+      "timestamp": "2025-07-27T16:45:00Z",
+      "artifactsProduced": [
+        "chapters/006/revised.md",
+        "revision-reports/006/revision-log.json"
+      ],
+      "summary": "Chapter 6 revision v2. Corrected cross-chapter binding timeline inconsistency (22h remaining, not 46h). Added binding enforcement progression thread (4 beats across 3 scenes). All 22 findings addressed (6 DEV, 8 LINE, 8 COPY). Word count 4396 to 4696."
+    },
+    {
+      "agent": "revision-pipeline",
+      "chapter": 7,
+      "task": "full-editorial-pipeline",
+      "result": "completed",
+      "timestamp": "2026-03-20T11:58:00Z",
+      "artifactsProduced": [
+        "revision-reports/007/developmental-edit.json",
+        "revision-reports/007/line-edit.json",
+        "revision-reports/007/copy-edit.json",
+        "chapters/007/revised.md",
+        "revision-reports/007/revision-log.json"
+      ],
+      "summary": "Full editorial pipeline for Ch7 complete."
+    },
+    {
+      "agent": "chapter-reviser",
+      "chapter": 7,
+      "task": "chapter-revision",
+      "result": "completed",
+      "timestamp": "2025-07-27T14:30:00Z",
+      "artifactsProduced": [
+        "chapters/007/revised.md",
+        "revision-reports/007/revision-log.json"
+      ],
+      "summary": "Chapter 7 revised. All 21 findings addressed across 3 editorial reports (2 critical, 6 major, 6 minor, 5 suggestions, 2 no-change-needed). Water metaphor voice violations corrected. Foreshadowing softened. Architectural metaphor density strengthened. Show-dont-tell improved. Repetition patterns reduced. Climbing stakes sharpened. Fantasy arc presence added to Scene 3. Word count 4255 to 4448."
+    },
+    {
+      "agent": "copy-editor",
+      "chapter": 7,
+      "task": "copy-edit",
+      "result": "completed",
+      "timestamp": "2026-03-20T10:15:00Z",
+      "artifactsProduced": [
+        "revision-reports/007/copy-edit.json"
+      ],
+      "summary": "Copy edit completed for Chapter 7 with 5 findings (2 minor, 3 suggestions). Verified naming consistency, world-rule compliance, and factual accuracy. Minor information asymmetry issue and rope purchase clarification noted."
+    },
+    {
+      "agent": "line-editor",
+      "chapter": 7,
+      "timestamp": "2024-12-28T12:18:45Z",
+      "status": "completed",
+      "artifacts": [
+        "revision-reports/007/line-edit.json"
+      ],
+      "summary": "Line edit report for Chapter 7: 10 findings including 2 critical voice violations (water metaphors in Kaelith's POV), 4 major prose issues, 3 minor items, 1 suggestion."
+    },
+    {
+      "agent": "revision-pipeline",
+      "chapter": 6,
+      "task": "full-editorial-pipeline",
+      "result": "completed",
+      "timestamp": "2026-03-20T11:12:00Z",
+      "artifactsProduced": [
+        "revision-reports/006/developmental-edit.json",
+        "revision-reports/006/line-edit.json",
+        "revision-reports/006/copy-edit.json",
+        "chapters/006/revised.md",
+        "revision-reports/006/revision-log.json"
+      ],
+      "summary": "Full editorial pipeline for Ch6 complete."
+    },
+    {
+      "agent": "revision-pipeline",
+      "chapter": 5,
+      "task": "full-editorial-pipeline",
+      "result": "completed",
+      "timestamp": "2026-03-20T10:43:00Z",
+      "artifactsProduced": [
+        "revision-reports/005/developmental-edit.json",
+        "revision-reports/005/line-edit.json",
+        "revision-reports/005/copy-edit.json",
+        "chapters/005/revised.md",
+        "revision-reports/005/revision-log.json"
+      ],
+      "summary": "Full editorial pipeline for Ch5 complete."
+    },
+    {
+      "agent": "revision-pipeline",
+      "chapter": 4,
+      "task": "full-editorial-pipeline",
+      "result": "completed",
+      "timestamp": "2026-03-20T10:25:00Z",
+      "artifactsProduced": [
+        "revision-reports/004/developmental-edit.json",
+        "revision-reports/004/line-edit.json",
+        "revision-reports/004/copy-edit.json",
+        "chapters/004/revised.md",
+        "revision-reports/004/revision-log.json"
+      ],
+      "summary": "Full editorial pipeline for Ch4 complete."
+    },
+    {
+      "agent": "revision-pipeline",
+      "chapter": 3,
+      "task": "full-editorial-pipeline",
+      "result": "completed",
+      "timestamp": "2026-03-20T10:10:00Z",
+      "artifactsProduced": [
+        "revision-reports/003/developmental-edit.json",
+        "revision-reports/003/line-edit.json",
+        "revision-reports/003/copy-edit.json",
+        "chapters/003/revised.md",
+        "revision-reports/003/revision-log.json"
+      ],
+      "summary": "Full editorial pipeline for Ch3. 6 dev, 13 line, 8 copy findings. 2 critical + 3 major resolved. Word count 4523→4681."
+    },
+    {
+      "agent": "chapter-reviser",
+      "chapter": 2,
+      "task": "chapter-revision",
+      "result": "completed",
+      "timestamp": "2026-03-20T09:52:00Z",
+      "artifactsProduced": [
+        "chapters/002/revised.md",
+        "revision-reports/002/revision-log.json"
+      ],
+      "summary": "Revised Ch2 with 26 findings addressed. Major: word count reduction, voice fingerprint compliance for Lirien."
+    },
+    {
+      "agent": "copy-editor",
+      "chapter": 2,
+      "task": "copy-edit",
+      "result": "completed",
+      "timestamp": "2026-03-20T09:48:00Z",
+      "artifactsProduced": [
+        "revision-reports/002/copy-edit.json"
+      ],
+      "summary": "Copy edit of Ch2 complete. 6 findings."
+    },
+    {
+      "agent": "line-editor",
+      "chapter": 2,
+      "task": "line-edit",
+      "result": "completed",
+      "timestamp": "2026-03-20T09:46:00Z",
+      "artifactsProduced": [
+        "revision-reports/002/line-edit.json"
+      ],
+      "summary": "Line edit of Ch2 complete. 12 findings."
+    },
+    {
+      "agent": "developmental-editor",
+      "chapter": 2,
+      "task": "developmental-edit",
+      "result": "completed",
+      "timestamp": "2026-03-20T09:43:00Z",
+      "artifactsProduced": [
+        "revision-reports/002/developmental-edit.json"
+      ],
+      "summary": "Developmental edit of Ch2 complete. 8 findings."
+    },
+    {
+      "agent": "chapter-reviser",
+      "chapter": 1,
+      "task": "chapter-revision",
+      "result": "completed",
+      "timestamp": "2026-03-20T09:30:00Z",
+      "artifactsProduced": [
+        "chapters/001/revised.md",
+        "revision-reports/001/revision-log.json",
+        "agents/chapter-reviser/status.json"
+      ],
+      "summary": "Revised Ch1 with all 30 findings addressed (6 major, 10 minor, 14 suggestions). Key fixes: timeline 5→6 years, date arithmetic, metaphor domain violations, tricolon reduction, generic 'you' reduction. Word count 2382→2281."
+    },
+    {
+      "agent": "chapter-reviser",
+      "chapter": 1,
+      "task": "chapter-revision",
+      "result": "completed",
+      "timestamp": "2026-03-20T09:30:00Z",
+      "artifactsProduced": [
+        "chapters/001/revised.md",
+        "revision-reports/001/revision-log.json",
+        "agents/chapter-reviser/status.json"
+      ],
+      "summary": "Revised Ch1 complete. All 30 findings addressed (0 critical, 6 major, 10 minor, 14 suggestions). Timeline corrected (5→6 years, date arithmetic fixed). Metaphor domain violations resolved. Tricolon count reduced 9+→2-3. Generic 'you' reduced 8+→1. Five show-don't-tell fixes. Three clichés replaced. New micro-beats planted (suppressed magic, palms warming, Calwrath echo). Voice fingerprint maintained. Word count: 2281 (net -101 from 2382)."
+    },
+    {
+      "agent": "copy-editor",
+      "chapter": 1,
+      "task": "copy-edit",
+      "iteration": 2,
+      "result": "completed",
+      "timestamp": "2025-07-22T18:30:00Z",
+      "artifactsProduced": [
+        "revision-reports/001/copy-edit.json",
+        "agents/copy-editor/status.json"
+      ],
+      "summary": "Copy edit of Ch1 complete (iteration 2). 8 findings (0 critical, 2 major, 3 minor, 3 suggestions). Major: exile duration 'five years' contradicts authoritative 6-year timeline (YK 736-742); carved-initials date arithmetic (YK 718 = 24 years ago, not 12). 3 findings refined from iteration 1 (Pallor age downgraded, formatting downgraded, collarbone/sternum re-categorized). 1 new finding: knowledge-state boundary observation. All 27 proper nouns verified. Magic system, cultural norms, geography, information asymmetry all compliant. No anachronisms. No grammar errors. Two upstream artifact issues persist."
+    },
+    {
+      "agent": "copy-editor",
+      "chapter": 1,
+      "task": "copy-edit",
+      "iteration": 1,
+      "result": "completed",
+      "timestamp": "2025-07-13T12:00:00Z",
+      "artifactsProduced": [
+        "revision-reports/001/copy-edit.json",
+        "agents/copy-editor/status.json"
+      ],
+      "summary": "Copy edit of Ch1 complete. 7 findings (0 critical, 2 major, 5 minor). Major: exile duration '5 years' contradicts authoritative 6-year timeline (YK 736-742); carved-initials date arithmetic error (YK 718 is 24 years ago, not 12). All naming verified correct. Magic system compliant. No anachronisms. No grammar errors. Two upstream artifact issues flagged."
+    },
+    {
+      "agent": "line-editor",
+      "chapter": 1,
+      "task": "line-edit",
+      "result": "completed",
+      "timestamp": "2026-03-20T08:00:00Z",
+      "artifactsProduced": [
+        "revision-reports/001/line-edit.json",
+        "agents/line-editor/status.json"
+      ],
+      "summary": "Line edit of Ch1 complete. 20 findings (0 critical, 3 major, 10 minor, 7 suggestions). Major: water metaphor domain violation, tricolon overuse (9+), generic second-person POV breaks (8+). 3 borderline clichés (1 over limit). 5 minor show-dont-tell. Voice fingerprint excellent. Prose quality strong with targeted revisions needed."
+    },
+    {
+      "agent": "romantic-fantasy-writer-continuity-tracker",
+      "task": "cross-manuscript-continuity-verification",
+      "result": "completed",
+      "timestamp": "2026-03-19T23:07:49.971834+00:00",
+      "artifactsProduced": [
+        "continuity/continuity-tracker.json",
+        "continuity/information-asymmetry-map.json",
+        "agents/romantic-fantasy-writer-continuity-tracker/status.json"
+      ],
+      "summary": "Full 22-chapter cross-manuscript continuity verification. 8 timeline gaps filled, 9 asymmetry map corrections, 8 discrepancies catalogued (0 critical, 2 major, 1 moderate, 5 minor). All chapters verified for timeline, positions, knowledge states, magic compliance, naming, foreshadowing, mystery boxes."
+    },
+    {
+      "agent": "continuity-integrator",
+      "chapter": 22,
+      "task": "continuity-verification",
+      "result": "completed",
+      "timestamp": "2025-01-22T00:00:00Z",
+      "artifactsProduced": [
+        "chapters/022/continuity-report.json"
+      ],
+      "summary": "Ch22 continuity verified: zero critical/major issues, all promises resolved, series coherence confirmed"
+    },
+    {
+      "agent": "chapter-drafter",
+      "chapter": 22,
+      "action": "draft",
+      "result": "completed",
+      "timestamp": "2026-03-18T20:01:19.000781+00:00",
+      "artifacts": [
+        "chapters/022/draft.md",
+        "chapters/022/metadata.json",
+        "continuity/continuity-tracker.json",
+        "continuity/foreshadowing-ledger.json",
+        "continuity/mystery-box-inventory.json",
+        "continuity/emotional-throughline.json",
+        "continuity/information-asymmetry-map.json",
+        "agents/chapter-drafter/status.json"
+      ],
+      "summary": "Chapter 22 'What the Water Chose' drafted — final chapter, Lirien POV, 4,322 words, HFN resolution. All tracker artifacts updated."
+    },
+    {
+      "agent": "romantic-fantasy-writer-quality-integration-coordinator",
+      "action": "quality-integration-coordination",
+      "chapter": 21,
+      "result": "complete",
+      "childResults": {
+        "craft-enforcer": {
+          "result": "completed",
+          "complianceScore": 8.7,
+          "findings": {
+            "critical": 0,
+            "moderate": 2,
+            "minor": 5
+          }
+        },
+        "drafting-auditor": {
+          "result": "passed",
+          "verdict": "PASSED",
+          "score": 8.5,
+          "findings": {
+            "critical": 0,
+            "major": 0,
+            "minor": 3,
+            "warnings": 2
+          }
+        }
+      },
+      "artifacts": [
+        "chapters/021/craft-enforcement-report.json",
+        "audit-reports/drafting/chapter-021-gate.json",
+        "agents/quality-integration-coordinator/status.json"
+      ],
+      "summary": "Quality integration for Chapter 21 complete. Craft enforcement passed (8.7/10, 0 critical). Drafting gate PASSED (8.5/10, 0 critical, 0 major). Chapter cleared for revision pipeline with 6 remediation notes.",
+      "timestamp": "2025-07-18T04:20:00Z"
+    },
+    {
+      "agent": "romantic-fantasy-writer-drafting-auditor",
+      "action": "Adversarial drafting gate audit for Chapter 21",
+      "chapter": 21,
+      "artifactsWritten": [
+        "audit-reports/drafting/chapter-021-gate.json",
+        "agents/drafting-auditor/status.json"
+      ],
+      "artifactsRead": [
+        "chapters/021/draft.md",
+        "chapters/021/metadata.json",
+        "chapters/021/voice-report.json",
+        "chapters/021/continuity-report.json",
+        "chapters/021/craft-enforcement-report.json",
+        "craft-profile.json",
+        "style/style-guide.json",
+        "story-concept.json",
+        "plot/chapter-outlines/chapter-021.json",
+        "plot/dual-arc-timeline.json",
+        "plot/plot-structure.json",
+        "romance-arc.json",
+        "characters/CHAR-001.json",
+        "continuity/continuity-tracker.json",
+        "continuity/information-asymmetry-map.json",
+        "continuity/foreshadowing-ledger.json",
+        "continuity/mystery-box-inventory.json",
+        "continuity/emotional-throughline.json",
+        "world-bible/magic-system.json",
+        "chapters/020/draft.md",
+        "audit-reports/drafting/chapter-020-gate.json"
+      ],
+      "verdict": "PASSED",
+      "score": 8.5,
+      "findings": "0 critical, 0 major, 3 minor, 2 warnings",
+      "timestamp": "2025-07-18T04:15:00Z"
+    },
+    {
+      "agent": "romantic-fantasy-writer-craft-enforcer",
+      "action": "craft-enforcement",
+      "chapter": 21,
+      "result": "completed",
+      "overallComplianceScore": 8.7,
+      "toolsVerified": 16,
+      "findingsCount": 7,
+      "criticalViolations": 0,
+      "draftModified": false,
+      "artifacts": [
+        "chapters/021/craft-enforcement-report.json",
+        "agents/craft-enforcer/status.json"
+      ],
+      "summary": "Craft enforcement audit of Chapter 21 complete. 16/16 active tools verified against 3 scenes. Score: 8.7/10. No critical violations. 2 moderate findings (T24 word-count error, T10 late mechanism articulation), 5 minor observations. All foreshadowing payoffs (9/9) and mystery box closures (6/6) delivered. Exceptional T12 dual-arc fusion in SCN-60. Draft not modified — findings deferred to revision.",
+      "timestamp": "2025-07-18T03:30:00Z"
+    },
+    {
+      "agent": "romantic-fantasy-writer-continuity-integrator",
+      "action": "continuity-integration",
+      "chapter": 21,
+      "result": "completed",
+      "overallAssessment": "needs-correction",
+      "continuityScore": 8,
+      "issuesFound": 5,
+      "preExistingDiscrepancies": 2,
+      "verificationsPass": 13,
+      "artifacts": [
+        "chapters/021/continuity-report.json",
+        "agents/continuity-integrator/status.json"
+      ],
+      "summary": "Chapter 21 continuity integration complete. 5 issues found (3 major, 1 moderate, 1 minor): Tessen Vael gender pronoun, Pallor silver regression, Thenndal timeline arithmetic, Serath Dún/Quietus geography, Iryse stewardship duration. 13 verification categories passed including knowledge states, bond mechanics, magic rules, all 9 foreshadowing payoffs, and all 6 mystery box closures. 2 pre-existing cross-document discrepancies noted (Thalen seat number and pronouns in politics.json). Score: 8/10.",
+      "timestamp": "2025-07-18T02:15:00Z"
+    },
+    {
+      "agent": "romantic-fantasy-writer-pov-voice-maintainer",
+      "action": "voice-maintenance",
+      "chapter": 21,
+      "result": "completed",
+      "overallAssessment": "pass",
+      "voiceConsistencyScore": 9,
+      "draftModified": false,
+      "artifactsWritten": [
+        "chapters/021/voice-report.json"
+      ],
+      "timestamp": "2025-07-18T02:47:30Z"
+    },
+    {
+      "timestamp": "2026-03-20T14:30:00Z",
+      "agent": "drafting-auditor",
+      "action": "Adversarial drafting gate audit for Chapter 20",
+      "chapter": 20,
+      "result": "passed",
+      "artifacts": [
+        "audit-reports/drafting/chapter-020-gate.json",
+        "agents/drafting-auditor/status.json"
+      ],
+      "summary": "Chapter 20 PASSED drafting gate (8.7/10). 0 critical, 0 major, 3 minor, 2 warnings, 15 observations. Voice distinctness exceptional, dual-arc fusion at peak, all 16 craft tools compliant. Cleared for revision pipeline with 5 remediation notes."
+    },
+    {
+      "timestamp": "2026-03-20T11:15:00Z",
+      "agent": "craft-enforcer",
+      "action": "Craft tool compliance audit for Chapter 20",
+      "chapter": 20,
+      "result": "completed",
+      "artifacts": [
+        "chapters/020/craft-enforcement-report.json",
+        "agents/craft-enforcer/status.json"
+      ],
+      "summary": "Chapter 20 PASSED craft enforcement (95/100). 16 tools evaluated, 0 major violations, 0 minor violations. Peak dual-arc fusion, 6 foreshadowing payoffs, 5 mystery boxes resolved, all 3 thematic pillars at climax. Voice evolution exemplary."
+    },
+    {
+      "timestamp": "2026-03-20T09:15:00Z",
+      "agent": "pov-voice-maintainer",
+      "action": "Voice consistency audit and correction for Chapter 20",
+      "chapter": 20,
+      "result": "completed",
+      "artifacts": [
+        "chapters/020/draft.md",
+        "chapters/020/voice-report.json",
+        "agents/pov-voice-maintainer/status.json"
+      ],
+      "summary": "Chapter 20 PASSED voice audit (9/10 consistency, 10/10 distinctness). 7 minor corrections: metaphor domain violations (structural/military vocabulary in Lirien narration) replaced with water/intelligence-domain alternatives. 0 major deviations. Voice evolution earned for Ch20 of 22."
+    },
+    {
+      "agent": "chapter-drafter",
+      "task": "Draft Chapter 20",
+      "result": "completed",
+      "chapter": 20,
+      "artifacts": [
+        "chapters/020/draft.md",
+        "chapters/020/metadata.json"
+      ],
+      "timestamp": "2026-03-18T16:22:04.676802+00:00"
+    },
+    {
+      "timestamp": "2026-03-19T14:00:00Z",
+      "agent": "drafting-auditor",
+      "action": "Adversarial drafting gate audit for Chapter 19",
+      "result": "passed",
+      "artifacts": [
+        "audit-reports/drafting/chapter-019-gate.json",
+        "agents/drafting-auditor/status.json"
+      ],
+      "summary": "Chapter 19 PASSED gate audit (8.5/10). 0 critical, 0 major, 3 minor, 2 warnings. Cleared for revision pipeline."
+    },
+    {
+      "timestamp": "2025-01-20T00:00:00Z",
+      "agent": "craft-enforcer",
+      "action": "craft-enforcement-chapter-019",
+      "chapter": 19,
+      "result": "completed",
+      "verdict": "passed",
+      "summary": "All 16 active craft tools verified across 3 scenes (48 checks). Zero violations. 4 minor observations. No corrections applied. Chapter cleared for next pipeline stage.",
+      "artifactsWritten": [
+        "chapters/019/craft-enforcement-report.json",
+        "agents/craft-enforcer/status.json"
+      ],
+      "artifactsRead": [
+        "chapters/019/draft.md",
+        "chapters/019/metadata.json",
+        "craft-profile.json",
+        "plot/chapter-outlines/chapter-019.json",
+        "style/style-guide.json",
+        "craft-tracking/symbolic-motif-registry.json",
+        "continuity/foreshadowing-ledger.json",
+        "continuity/mystery-box-inventory.json",
+        "continuity/emotional-throughline.json"
+      ]
+    },
+    {
+      "agent": "continuity-integrator",
+      "action": "continuity-integration-chapter-019",
+      "chapter": 19,
+      "result": "completed",
+      "artifacts": [
+        "chapters/019/draft.md",
+        "chapters/019/continuity-report.json",
+        "agents/continuity-integrator/status.json"
+      ],
+      "timestamp": "2026-03-19T12:15:00Z",
+      "note": "Chapter 19 continuity integration PASSED. 48 checks performed, 2 minor corrections applied: (1) 'months ago' → 'weeks ago' for Oathbrand removal timing (INV-002), (2) 'Two field operatives' → 'A field operative' to match Ch18 source count (INV-002). Zero knowledge leaks (INV-056). 21 bond references all MAG-007 compliant. 1 tracking observation: FACT-007/FACT-011 revealedToReader values may need deferred."
+    },
+    {
+      "agent": "pov-voice-maintainer",
+      "action": "voice-audit-chapter-019",
+      "chapter": 19,
+      "result": "completed",
+      "score": 9,
+      "artifacts": [
+        "chapters/019/draft.md",
+        "chapters/019/voice-report.json",
+        "agents/pov-voice-maintainer/status.json"
+      ],
+      "timestamp": "2026-03-19T11:30:00Z",
+      "note": "Chapter 19 voice audit PASSED. 5 corrections applied (1 major INV-005 violation, 4 minor Lirien-register vocabulary incursions). Voice consistency 9/10, distinctness 9/10. 3-4 sentence test PASS. POV transition PASS."
+    },
+    {
+      "agent": "chapter-drafter",
+      "action": "chapter-019-draft",
+      "chapter": 19,
+      "result": "completed",
+      "artifacts": [
+        "chapters/019/draft.md",
+        "chapters/019/metadata.json",
+        "agents/chapter-drafter/status.json"
+      ],
+      "timestamp": "2026-03-19T10:45:00Z",
+      "note": "Chapter 19 Sound Enough. Kaelith POV, 5735w, 3 scenes. Reunion/reconciliation chapter. All 16 craft tools applied. Trackers updated."
+    },
+    {
+      "agent": "drafting-auditor",
+      "action": "chapter-018-drafting-gate",
+      "result": "passed",
+      "score": 9.2,
+      "artifacts": [
+        "audit-reports/drafting/chapter-018-gate.json",
+        "agents/drafting-auditor/status.json"
+      ],
+      "timestamp": "2026-03-18T14:25:42Z"
+    },
+    {
+      "agent": "craft-enforcer",
+      "action": "craft-enforcement-ch18-reverify",
+      "chapter": 18,
+      "result": "completed",
+      "artifacts": [
+        "chapters/018/craft-enforcement-report.json"
+      ],
+      "timestamp": "2026-03-18T14:12:12Z",
+      "note": "Independent re-verification of all 16 craft tools. Replaces prior incorrect report. All 3 scenes confirmed present."
+    },
+    {
+      "timestamp": "2025-07-22T16:30:00Z",
+      "agent": "craft-enforcer",
+      "phase": "drafting",
+      "action": "craft-enforcement-chapter-018",
+      "artifacts": [
+        "chapters/018/craft-enforcement-report.json",
+        "agents/craft-enforcer/status.json"
+      ],
+      "summary": "Chapter 18 craft enforcement PASSED. All 16 active craft tools verified across 3 scenes (48 checks). 0 violations, 3 minor observations (motif registry admin gap, T5 boundary approach at L169, systemic MB count). Strongest: T20 (emotional throughline), T17 (voice fingerprinting), T24 (subtext). Corrects prior erroneous FAIL report caused by flawed file-extraction method.",
+      "chapter": 18,
+      "result": "completed"
+    },
+    {
+      "timestamp": "2025-07-22T15:30:00Z",
+      "agent": "continuity-integrator",
+      "phase": "drafting",
+      "action": "continuity-integration-chapter-018",
+      "artifacts": [
+        "chapters/018/continuity-report.json",
+        "agents/continuity-integrator/status.json"
+      ],
+      "summary": "Chapter 18 continuity integration completed. Verdict: PASSED — zero draft corrections required. 42 verification checks performed. 3 minor observations (outline metadata discrepancy, borderline bond phrasing, premature tracking attribution) — none requiring draft changes. 4 new canonical facts correctly introduced with impeccable information asymmetry. Bond mechanics (MAG-007), knowledge states (INV-056), naming consistency, timeline parallelism with Ch17, Oathbrand removal accuracy, and all world rules verified.",
+      "chapter": 18,
+      "result": "completed"
+    },
+    {
+      "timestamp": "2025-07-22T15:00:00Z",
+      "agent": "pov-voice-maintainer",
+      "phase": "drafting",
+      "action": "voice-consistency-chapter-018",
+      "artifacts": [
+        "chapters/018/voice-report.json",
+        "agents/pov-voice-maintainer/status.json"
+      ],
+      "summary": "Chapter 18 (Lirien POV) voice consistency verified — zero corrections required. Classification framework (21 instances), water metaphors (10 instances), classified-before-felt emotional register, fluid/analytical rhythm, visual-dominant sensory signature all verified. 3-4 sentence test: PASS within sentence 1. Voice distinction from Ch17 Kaelith: maximal. No draft edits needed.",
+      "chapter": 18,
+      "result": "completed"
+    },
+    {
+      "timestamp": "2025-07-22T14:30:00Z",
+      "agent": "chapter-drafter",
+      "phase": "drafting",
+      "action": "draft-chapter-018",
+      "artifacts": [
+        "chapters/018/draft.md",
+        "chapters/018/metadata.json",
+        "continuity/continuity-tracker.json",
+        "continuity/foreshadowing-ledger.json",
+        "continuity/information-asymmetry-map.json",
+        "continuity/mystery-box-inventory.json",
+        "continuity/emotional-throughline.json",
+        "agents/chapter-drafter/status.json"
+      ],
+      "summary": "Chapter 18 draft complete — 'The Taxonomy of Choice' (Lirien POV). 4888 words, 3 scenes (SCN-50, SCN-51, SCN-52). Dark night of the soul resolved through systematic self-interrogation, Ashborne intelligence exchange, cipher destruction, and free choice to walk north. All 16 craft tools applied. Major information asymmetry created. MB-012 answered.",
+      "chapter": 18,
+      "result": "completed"
+    },
+    {
+      "timestamp": "2026-03-18T14:22:00Z",
+      "agent": "craft-enforcer",
+      "phase": "drafting",
+      "action": "craft-enforcement-chapter-017",
+      "artifacts": [
+        "chapters/017/draft.md",
+        "chapters/017/craft-enforcement-report.json",
+        "craft-tracking/symbolic-motif-registry.json",
+        "continuity/mystery-box-inventory.json",
+        "continuity/foreshadowing-ledger.json",
+        "agents/craft-enforcer/status.json"
+      ],
+      "summary": "Chapter 17 craft enforcement completed. Verdict: PASSED with 1 correction (FS-019 foreshadowing gap fixed). 15/16 tools fully compliant, 1 partially compliant (T15 corrected). Zero critical issues. All 16 active craft tools verified scene-by-scene across 48 checks.",
+      "chapter": 17,
+      "result": "completed"
+    },
+    {
+      "timestamp": "2026-03-18T12:32:26Z",
+      "agent": "continuity-integrator",
+      "phase": "drafting",
+      "action": "continuity-integration-chapter-017",
+      "artifacts": [
+        "chapters/017/draft.md",
+        "chapters/017/continuity-report.json",
+        "continuity/continuity-tracker.json",
+        "continuity/information-asymmetry-map.json",
+        "continuity/emotional-throughline.json",
+        "agents/continuity-integrator/status.json"
+      ],
+      "summary": "Chapter 17 continuity integration completed. Verdict: PASSED with 1 minor correction (bruised ribs from ch14 added to vorakh combat fall). Bond mechanics (MAG-007), knowledge state integrity (INV-056), Pallor rules, naming consistency, timeline, emotional throughline all verified. Zero critical/major issues.",
+      "chapter": 17,
+      "result": "completed"
+    },
+    {
+      "timestamp": "2025-07-17T17:15:00Z",
+      "agent": "pov-voice-maintainer",
+      "phase": "drafting",
+      "action": "voice-consistency-chapter-017",
+      "artifacts": [
+        "chapters/017/draft.md",
+        "chapters/017/voice-report.json",
+        "agents/pov-voice-maintainer/status.json"
+      ],
+      "summary": "Chapter 17 (Kaelith POV) voice consistency verified and 13 corrections applied. Removed 3 unauthorized water metaphors, 2 intelligence-vocabulary instances, compressed 5 non-breach passages, fixed 3 vocabulary/register issues. Overall verdict: PASSED. Voice distinctness from Lirien: 10/10.",
+      "chapter": 17,
+      "result": "completed"
+    },
+    {
+      "timestamp": "2025-07-17T16:30:00Z",
+      "agent": "drafting-auditor",
+      "phase": "drafting",
+      "action": "drafting-gate-audit-chapter-016",
+      "artifacts": [
+        "audit-reports/drafting/gate-ch016.json",
+        "agents/romantic-fantasy-writer-drafting-auditor/status.json"
+      ],
+      "summary": "Chapter 16 drafting gate audit completed. Verdict: PASSED (9/10). Zero critical, zero major, 8 minor findings, 2 warnings. Black Moment chapter clears all automatic-fail checks. Proceeds to revision pipeline.",
+      "chapter": 16,
+      "result": "passed"
+    },
+    {
+      "timestamp": "2026-03-18T11:31:51Z",
+      "agent": "craft-enforcer",
+      "phase": "drafting",
+      "action": "craft-enforcement-chapter-016",
+      "artifacts": [
+        "chapters/016/craft-enforcement-report.json",
+        "agents/craft-enforcer/status.json"
+      ],
+      "summary": "Chapter 16 craft enforcement audit completed. Verdict: PASSED. 14/16 tools compliant, 2 partially compliant (T16 minor motif gaps, T23 box count above target). 3 minor issues, 0 critical. Black Moment chapter meets craft standard."
+    },
+    {
+      "timestamp": "2025-07-17T14:00:00Z",
+      "agent": "continuity-integrator",
+      "phase": "drafting",
+      "action": "continuity-verified-chapter-016",
+      "artifacts": [
+        "chapters/016/continuity-report.json",
+        "continuity/continuity-tracker.json",
+        "continuity/information-asymmetry-map.json",
+        "agents/continuity-integrator/status.json"
+      ],
+      "summary": "Chapter 16 continuity verification completed. Zero corrections required. Draft is meticulously consistent with all established facts, bond mechanics (MAG-007), contract mechanics (MAG-005), knowledge states (INV-056), and emotional throughlines. Knowledge state transition (Kaelith learns full contract scope) handled with exceptional precision. Continuity tracker and information asymmetry map updated to ch16. Three new naming entries registered. Two pre-existing flags noted for global resolution.",
+      "status": "completed"
+    },
+    {
+      "agent": "pov-voice-maintainer",
+      "chapter": 16,
+      "action": "voice-consistency-check",
+      "result": "completed",
+      "summary": "Ch16 Lirien voice verified. 10 refinements: reduced Kaelith architectural bleed (9→2 'architecture' uses), replaced with water/operative metaphors. Scores: consistency 9/10, distinctness 10/10, degradation 8/10, sensory 9/10, POV transition 10/10.",
+      "artifactsWritten": [
+        "chapters/016/draft.md",
+        "chapters/016/voice-report.json",
+        "agents/pov-voice-maintainer/status.json"
+      ],
+      "timestamp": "2025-01-20T14:30:00Z"
+    },
+    {
+      "timestamp": "2026-03-18T10:48:04.255742+00:00",
+      "agent": "chapter-drafter",
+      "action": "Draft Chapter 16",
+      "result": "completed",
+      "artifacts": [
+        "chapters/016/draft.md",
+        "chapters/016/metadata.json",
+        "continuity/continuity-tracker.json",
+        "continuity/foreshadowing-ledger.json",
+        "continuity/information-asymmetry-map.json",
+        "continuity/mystery-box-inventory.json",
+        "continuity/emotional-throughline.json",
+        "agents/chapter-drafter/status.json"
+      ],
+      "summary": "Ch16 Black Moment drafted (Lirien POV, 4056 words, 3 scenes). Contract revealed, trust collapsed, protagonists separated. All 16 craft tools applied. Trackers updated."
+    },
+    {
+      "timestamp": "2026-03-18T12:30:00.000000+00:00",
+      "agent": "romantic-fantasy-writer-drafting-auditor",
+      "phase": "drafting",
+      "action": "drafting-gate-audit-ch15",
+      "chapter": 15,
+      "iteration": 1,
+      "artifacts": [
+        "audit-reports/drafting/gate-ch015.json",
+        "agents/romantic-fantasy-writer-drafting-auditor/status.json"
+      ],
+      "result": "passed",
+      "summary": "Ch15 drafting gate PASSED (iteration 1). Score 9.5/10. 0 critical, 0 major, 3 minor observations. All 16 craft tools verified. Complete outline compliance. Voice consistency excellent. Information asymmetry correct. Dramatic irony well-executed. Three minor findings (borderline metaphor domain, generic comparison, modern compound term) are non-blocking. Chapter proceeds to revision pipeline."
+    },
+    {
+      "timestamp": "2025-07-18T00:00:00Z",
+      "agent": "craft-enforcer",
+      "phase": "drafting",
+      "action": "craft-enforcement-ch15",
+      "chapter": 15,
+      "artifacts": [
+        "chapters/015/craft-enforcement-report.json",
+        "agents/craft-enforcer/status.json"
+      ],
+      "result": "completed",
+      "summary": "Ch15 craft enforcement: 15 PASS, 1 MINOR, 0 FAIL. All 16 active tools verified across 3 scenes. Zero corrections required. False victory structure executes with exceptional craft discipline. Minor: mystery box count (12) exceeds 3-7 target (acceptable for story complexity). Score 9.8/10."
+    },
+    {
+      "timestamp": "2026-03-18T09:45:00.000000+00:00",
+      "agent": "continuity-integrator",
+      "phase": "drafting",
+      "action": "continuity-integration-ch15",
+      "chapter": 15,
+      "artifacts": [
+        "chapters/015/draft.md",
+        "continuity/information-asymmetry-map.json",
+        "agents/continuity-integrator/status.json"
+      ],
+      "result": "completed",
+      "summary": "Ch15 continuity check: score 9.5/10. 0 critical, 0 major, 2 minor (both fixed). Oathbrand duration corrected (five->six years). Assignment count precision reduced to prevent knowledge leak. All knowledge states verified (INV-056). Bond mechanics consistent (MAG-007). Dramatic irony outstanding. DISC-001 triggered consistent (Seventh Seat). Info-asymmetry map updated to ch15."
+    },
+    {
+      "timestamp": "2026-03-18T09:15:31.983743Z",
+      "agent": "pov-voice-maintainer",
+      "phase": "drafting",
+      "action": "voice-consistency-ch15",
+      "chapter": 15,
+      "artifacts": [
+        "chapters/015/draft.md",
+        "agents/pov-voice-maintainer/status.json"
+      ],
+      "result": "completed",
+      "voiceConsistencyScore": 93,
+      "changesApplied": 2,
+      "povCharacter": "CHAR-001"
+    },
+    {
+      "timestamp": "2026-03-18T09:06:44.064974Z",
+      "agent": "chapter-drafter",
+      "action": "Chapter 15 draft completed",
+      "chapter": 15,
+      "artifacts": [
+        "chapters/015/draft.md",
+        "chapters/015/metadata.json"
+      ],
+      "trackerUpdates": [
+        "continuity/continuity-tracker.json",
+        "continuity/foreshadowing-ledger.json",
+        "continuity/information-asymmetry-map.json",
+        "continuity/mystery-box-inventory.json",
+        "continuity/emotional-throughline.json"
+      ],
+      "result": "completed",
+      "wordCount": 4001
+    },
+    {
+      "timestamp": "2026-03-18T08:37:01.309841+00:00",
+      "agent": "craft-enforcer",
+      "phase": "drafting",
+      "action": "craft-tool-enforcement-ch14",
+      "artifacts": [
+        "chapters/014/draft.md",
+        "craft-tracking/symbolic-motif-registry.json",
+        "agents/craft-enforcer/status.json"
+      ],
+      "summary": "Chapter 14 craft enforcement completed. All 16 active craft tools verified PASS against 3 scenes. 4 prose corrections applied (banned word removal, 3 reflective paragraph breaks). Motif registry updated with ch14 appearances. Overall score: 9.7/10."
+    },
+    {
+      "timestamp": "2026-03-18T09:30:00.000000+00:00",
+      "agent": "continuity-integrator",
+      "action": "Continuity integration Chapter 14",
+      "artifacts": [
+        "continuity/information-asymmetry-map.json",
+        "agents/continuity-integrator/status.json"
+      ],
+      "result": "completed",
+      "summary": "Ch14 continuity check: score 10/10. 0 critical, 0 major, 0 minor. Zero draft corrections needed. All knowledge states verified (INV-056). Bond mechanics consistent with MAG-007. Contract loophole (FACT-008) properly planted as organic discovery. No knowledge leaks. DISC-001 not triggered (no seat number referenced). Info-asymmetry map updated to ch14."
+    },
+    {
+      "agent": "pov-voice-maintainer",
+      "chapter": 14,
+      "result": "completed",
+      "timestamp": "2026-03-18T08:16:35Z",
+      "summary": "Ch14 Lirien voice verified. Score: 95/100. 1 fix: meta-reference ('thirteen chapters') → in-world time. All voice parameters pass: operational vocabulary, water metaphors, classification-first emotional register, people-first attention, sentence rhythm, contraction usage. Kaelith architectural bleed-through present and thematically correct.",
+      "artifactsModified": [
+        "chapters/014/draft.md"
+      ]
+    },
+    {
+      "timestamp": "2026-03-18T09:15:00.000000+00:00",
+      "agent": "chapter-drafter",
+      "action": "Draft Chapter 14 — Ambush, Intimacy, and Contract Loophole Discovery",
+      "artifacts": [
+        "chapters/014/draft.md",
+        "chapters/014/metadata.json",
+        "agents/chapter-drafter/status.json"
+      ],
+      "result": "completed",
+      "summary": "Ch14 drafted: 5,125 words, 3 scenes (SCN-37/38/39), Lirien POV. Coordinated ambush defeated through bond-enabled combat synchronization. First full intimate scene earned through survival and accumulated vulnerability (ladder step 5). FACT-008 planted: contract loophole discovered (cessation of heartbeat as state not duration). Lirien commits to saving Kaelith without confession. All craft tools applied. Four motifs woven. Zero banned phrases."
+    },
+    {
+      "timestamp": "2026-03-18T08:55:00.000000+00:00",
+      "agent": "romantic-fantasy-writer-drafting-auditor",
+      "action": "Adversarial drafting audit Chapter 13",
+      "artifacts": [
+        "audit-reports/drafting/gate-ch013.json",
+        "agents/romantic-fantasy-writer-drafting-auditor/status.json"
+      ],
+      "result": "passed",
+      "summary": "Ch13 drafting gate PASSED (8.5/10). 0 critical, 2 major (water metaphors in Kaelith narration, repetitive syntactic patterns), 6 minor. All outline scenes present with correct value shifts. POV voice strong. Show-don't-tell excellent. Continuity verified. Dual arc present. 16/16 craft tools verified. Kiss earned through vulnerability ladder step 4. Chapter proceeds to revision."
+    },
+    {
+      "timestamp": "2026-03-18T07:45:00.000000+00:00",
+      "agent": "craft-enforcer",
+      "action": "Craft tool enforcement audit Chapter 13",
+      "artifacts": [
+        "agents/craft-enforcer/status.json"
+      ],
+      "result": "completed",
+      "summary": "Ch13 craft enforcement: score 9/10. 15/16 tools PASS, 1/16 PARTIAL (T23 mystery box count 12 exceeds 3-7 range — plotting-level concern). 0 FAIL. 0 corrections to draft.md. All active craft tools verified scene-by-scene. Calwrath confession and first kiss executed with exceptional craft discipline across subtext, voice, thematic argument, foreshadowing, motif weaving, vulnerability ladder, and emotional throughline."
+    },
+    {
+      "timestamp": "2026-03-18T07:35:00.000000+00:00",
+      "agent": "continuity-integrator",
+      "action": "Continuity integration Chapter 13",
+      "artifacts": [
+        "continuity/continuity-tracker.json",
+        "continuity/information-asymmetry-map.json",
+        "agents/continuity-integrator/status.json"
+      ],
+      "result": "completed",
+      "summary": "Ch13 continuity check: score 9/10. 0 critical, 1 major (Reyvas seat number cross-chapter discrepancy flagged, not fixed in ch13), 0 minor. Zero draft corrections needed. All knowledge states verified. Bond mechanics consistent. Calwrath details verified. Trackers updated to ch13."
+    },
+    {
+      "timestamp": "2026-03-18T07:25:12.000000+00:00",
+      "agent": "pov-voice-maintainer",
+      "action": "Voice audit Chapter 13 (Kaelith POV)",
+      "artifacts": [
+        "chapters/013/draft.md",
+        "agents/pov-voice-maintainer/status.json"
+      ],
+      "result": "completed",
+      "summary": "Ch13 voice audit: score 9/10. 2 passages corrected (abstract/literary drift → structural/proprioceptive). 0 POV violations. Recognition test pass. Kaelith voice exceptionally consistent throughout confession and first kiss."
+    },
+    {
+      "timestamp": "2026-03-18T07:10:35.451955+00:00",
+      "agent": "chapter-drafter",
+      "action": "Draft Chapter 13",
+      "artifacts": [
+        "chapters/013/draft.md",
+        "chapters/013/metadata.json"
+      ],
+      "result": "completed",
+      "summary": "Ch13 drafted: Calwrath confession, first kiss. 5,099 words, 3 scenes. FS-007 resolved."
+    },
+    {
+      "timestamp": "2025-01-18T21:12:00Z",
+      "agent": "chapter-drafter-005",
+      "action": "Chapter 5 drafted",
+      "result": "completed",
+      "artifactsProduced": [
+        "chapters/005/draft.md",
+        "chapters/005/metadata.json"
+      ],
+      "artifactsUpdated": [
+        "continuity/foreshadowing-ledger.json",
+        "continuity/information-asymmetry-map.json",
+        "continuity/mystery-box-inventory.json",
+        "continuity/emotional-throughline.json",
+        "craft-tracking/symbolic-motif-registry.json"
+      ],
+      "wordCount": 4173
+    },
+    {
+      "timestamp": "2025-01-23T10:15:00Z",
+      "agent": "chapter-drafter-003",
+      "phase": "drafting",
+      "chapter": 3,
+      "result": "completed",
+      "summary": "Chapter 3 drafted (4,315 words, Kaelith POV). Conspiracy discovery, enforcer escape, first tactical cooperation.",
+      "artifacts": [
+        "chapters/003/draft.md",
+        "chapters/003/metadata.json",
+        "agents/chapter-drafter-003/status.json",
+        "continuity/continuity-tracker.json (updated)",
+        "continuity/foreshadowing-ledger.json (updated)",
+        "craft-tracking/symbolic-motif-registry.json (updated)",
+        "continuity/mystery-box-inventory.json (updated)",
+        "continuity/information-asymmetry-map.json (updated)",
+        "continuity/emotional-throughline.json (updated)"
+      ]
+    },
+    {
+      "timestamp": "2026-03-18T03:43:02.003495+00:00",
+      "agent": "chapter-drafter-002",
+      "phase": "drafting",
+      "chapter": 2,
+      "result": "completed",
+      "summary": "Chapter 2 drafted (4,782 words, Lirien POV). Surveillance, direct confrontation, operational paradox revealed.",
+      "artifacts": [
+        "chapters/002/draft.md",
+        "chapters/002/metadata.json",
+        "agents/chapter-drafter-002/status.json"
+      ]
+    },
+    {
+      "timestamp": "2025-01-24T09:45:00Z",
+      "agent": "chapter-drafter-001",
+      "phase": "drafting",
+      "chapter": 1,
+      "action": "Chapter 1 drafted",
+      "artifacts": [
+        "chapters/001/draft.md",
+        "chapters/001/metadata.json"
+      ],
+      "result": "completed"
+    },
+    {
+      "agent": "romantic-fantasy-writer-craft-tracker",
+      "phase": "initialization",
+      "timestamp": "2025-03-18T10:00:00Z",
+      "result": "completed",
+      "summary": "Initialized all four craft tracking artifacts from plotting phase documents. Foreshadowing ledger: 18 entries planted spanning conspiracy threads, romance obstacles, and world-mythology reveals. Mystery box inventory: 15 boxes with chapter-by-chapter snapshot tracking, peak of 12 active during Act II complexity. Emotional throughline: 22-chapter progression for both leads (CHAR-001 Kaelith, CHAR-002 Lirien) with no INV-037 violations, peak intensity at chapters 11, 16, 20, 21. Symbolic motif registry: 5 motifs linked to thematic pillars with target density and evolution patterns. Information asymmetry map: 12 tracked facts with 5 dramatic irony points, central irony (kill contract known to reader ch1, revealed to Kaelith ch16) sustained for 15 chapters.",
+      "artifactsProduced": [
+        "continuity/foreshadowing-ledger.json",
+        "continuity/mystery-box-inventory.json",
+        "continuity/emotional-throughline.json",
+        "craft-tracking/symbolic-motif-registry.json",
+        "continuity/information-asymmetry-map.json"
+      ]
+    },
+    {
+      "timestamp": "2026-03-18T03:19:36Z",
+      "agent": "style-coordinator",
+      "phase": "style",
+      "action": "coordinated-style-phase",
+      "artifacts": [
+        "style/style-analysis.json",
+        "style/style-guide.json",
+        "audit-reports/style-audit.json",
+        "agents/style-coordinator/status.json"
+      ],
+      "summary": "Coordinated style calibration phase for story 001. Dispatched style-analyzer to extract abstract patterns from reference sample (INV-023/024), style-guide-writer to produce comprehensive prose guide, and style-auditor to verify completeness and voice distinctiveness. Audit passed with strong POV differentiation. Zero retries required.",
+      "status": "complete",
+      "metadata": {
+        "specialistsDispatched": 3,
+        "auditorRetries": 0,
+        "phaseGateResult": "pass"
+      }
+    },
+    {
+      "timestamp": "2026-03-18T03:19:13Z",
+      "agent": "style-auditor",
+      "phase": "style",
+      "action": "audited-style-guide",
+      "artifacts": [
+        "audit-reports/style-audit.json",
+        "agents/style-auditor/status.json"
+      ],
+      "summary": "Audited style/style-guide.json for story 001. Gate passed with one major tone-alignment finding and one minor quality-floor enforceability finding; voice distinctiveness judged strong.",
+      "status": "passed"
+    },
+    {
+      "timestamp": "2026-03-18T03:14:54Z",
+      "agent": "style-guide-writer",
+      "phase": "style",
+      "action": "created-style-guide",
+      "artifacts": [
+        "style/style-guide.json",
+        "agents/style-guide-writer/status.json"
+      ],
+      "summary": "Created the prose style guide for story 001 with global prose standards, dual-POV voice calibration, dialogue rules, scene palettes, and enforceable quality-floor metrics.",
+      "status": "completed"
+    },
+    {
+      "timestamp": "2026-03-18T03:09:22Z",
+      "agent": "style-analyzer",
+      "phase": "style",
+      "action": "created-style-analysis",
+      "artifacts": [
+        "style/style-analysis.json",
+        "agents/style-analyzer/status.json"
+      ],
+      "summary": "Extracted abstract prose patterns from the style reference and calibrated them to story 001's tone contract and lead POV voice needs.",
+      "status": "completed"
+    },
+    {
+      "timestamp": "2026-03-18T04:00:00Z",
+      "agent": "plotting-auditor",
+      "phase": "plotting",
+      "action": "gate-audit-passed",
+      "iteration": 2,
+      "artifacts": [
+        "audit-reports/plotting/GATE-plotting-002.json",
+        "agents/plotting-auditor/status.json"
+      ],
+      "summary": "Plotting phase PASSED adversarial audit iteration 2. All automatic-fail conditions cleared: 22/22 chapters with complete outlines, no INV-020 violations, dual-arc interleaving verified, POV transitions motivated, act structure defined, stakes escalate. 2 non-blocking warnings: foreshadowing ledger missing (craft-tracker hasn't run), chapters 1-11 lack beat-level detail (optional). Iteration 1 audit had factual errors — iteration 2 verified actual data. Phase gate APPROVED for drafting.",
+      "status": "passed"
+    },
+    {
+      "timestamp": "2026-03-18T03:35:00Z",
+      "agent": "plotting-auditor",
+      "phase": "plotting",
+      "action": "gate-audit-failed",
+      "artifacts": [
+        "audit-reports/plotting/GATE-plotting-001.json",
+        "agents/plotting-auditor/status.json"
+      ],
+      "summary": "Plotting phase FAILED adversarial audit with 2 automatic failures: INV-020 violation (4 consecutive chapters at tension level 7) and INV-010 violation (all 66 scenes lack outcomes and beats). Critical findings: plot-structure has null act boundaries and keyBeats, dual-arc-timeline and tension-map have null data fields, tracking artifacts are empty stubs. Passed checks: all 22 chapters have outlines, dual-arc interleaving verified, POV transitions motivated. Remediation required: 8-11 hours work across tension-mapper, scene-beat-designer, structure-selector, continuity-tracker, craft-tracker. Re-audit required before drafting.",
+      "status": "failed"
+    },
+    {
+      "timestamp": "2026-03-18T02:04:00Z",
+      "agent": "romantic-fantasy-writer-plotting-coordinator",
+      "phase": "plotting",
+      "action": "coordinator-blocked",
+      "artifacts": [
+        "agents/romantic-fantasy-writer-plotting-coordinator/status.json"
+      ],
+      "summary": "Plotting coordination blocked after successfully dispatching structure-selector. Dual-arc-builder failed 3 times with API infrastructure errors (HTTP/2 GOAWAY 503). Remaining specialists (tension-mapper, chapter-outliner, scene-beat-designer, plotting-auditor) not dispatched.",
+      "status": "blocked"
+    },
+    {
+      "timestamp": "2025-03-18T10:45:00Z",
+      "agent": "scene-beat-designer",
+      "phase": "plotting",
+      "action": "enriched-chapter-outlines",
+      "artifacts": [
+        "plot/chapter-outlines/chapter-012.json",
+        "plot/chapter-outlines/chapter-013.json",
+        "plot/chapter-outlines/chapter-014.json",
+        "plot/chapter-outlines/chapter-015.json",
+        "plot/chapter-outlines/chapter-016.json",
+        "plot/chapter-outlines/chapter-017.json",
+        "plot/chapter-outlines/chapter-018.json",
+        "plot/chapter-outlines/chapter-019.json",
+        "plot/chapter-outlines/chapter-020.json",
+        "plot/chapter-outlines/chapter-021.json",
+        "plot/chapter-outlines/chapter-022.json"
+      ],
+      "summary": "Added granular scene beats to chapters 12-22 with beat-by-beat instructions including type, content, emotional register, word allocation, micro-tension points, voice notes, and subtext layers. Integrated active craft tools T12/T17/T18/T20/T21/T25. Chapters 1-11 already had detailed breakdowns.",
+      "status": "completed"
+    },
+    {
+      "timestamp": "2025-03-18T04:30:00Z",
+      "agent": "romantic-fantasy-writer-chapter-outliner",
+      "phase": "plotting",
+      "action": "created-chapter-outlines",
+      "artifacts": [
+        "plot/chapter-outlines/chapter-001.json",
+        "plot/chapter-outlines/chapter-002.json",
+        "plot/chapter-outlines/chapter-003.json",
+        "plot/chapter-outlines/chapter-004.json",
+        "plot/chapter-outlines/chapter-005.json",
+        "plot/chapter-outlines/chapter-006.json",
+        "plot/chapter-outlines/chapter-007.json",
+        "plot/chapter-outlines/chapter-008.json",
+        "plot/chapter-outlines/chapter-009.json",
+        "plot/chapter-outlines/chapter-010.json",
+        "plot/chapter-outlines/chapter-011.json",
+        "plot/chapter-outlines/chapter-012.json",
+        "plot/chapter-outlines/chapter-013.json",
+        "plot/chapter-outlines/chapter-014.json",
+        "plot/chapter-outlines/chapter-015.json",
+        "plot/chapter-outlines/chapter-016.json",
+        "plot/chapter-outlines/chapter-017.json",
+        "plot/chapter-outlines/chapter-018.json",
+        "plot/chapter-outlines/chapter-019.json",
+        "plot/chapter-outlines/chapter-020.json",
+        "plot/chapter-outlines/chapter-021.json",
+        "plot/chapter-outlines/chapter-022.json",
+        "agents/chapter-outliner/status.json"
+      ],
+      "summary": "Created 22 chapter-level outlines with POV assignments, scene goals, emotional arcs, and beat mappings. Chapters 1-11 fully detailed; chapters 12-22 provide structural scaffolding for scene-beat-designer.",
+      "status": "completed"
+    }
+  ]
+}

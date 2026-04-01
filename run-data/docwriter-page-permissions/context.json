@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "task": {
+    "id": "DOC-3167",
+    "description": "The task desciprion is at .docwriter/resources/task-descr.md",
+    "instructions": [
+      "Task must cover both developer and business user scenarios",
+      "As described in the task, the information is currently scattered throughout various documentation pages. Some unified/centralized access point, likely on one of the existing pages is necessary.",
+      "release notes or any extraneous artifacts are not requried"
+    ]
+  },
+  "source": {
+    "repoPath": "resources/repositories/xperience",
+    "diffRef": "Already merged to main a long time ago, this is a docuemntation gap fill, search and correlated the API facts directly on master. Workers must fetch latest first to ensure synchronization with origin and latest data.",
+    "baseBranch": "master"
+  },
+  "docs": {
+    "workspacePath": "./src/_documentation",
+    "contentCollections": ["./_documentation (primary Xperience by Kentico documentation jekyll collection path, ignore _guides and all the other collections, they are not part of this task)"]
+  },
+  "invariants": {
+    "guidelinesPath": "./.github/resources/guidelines/"
+  },
+  "output": {
+    "branch": "docs/page-publish-perms"
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "id": "CHAR-008",
+  "name": "Tavik Soren",
+  "role": "supporting",
+  "isPOV": false,
+  "psychologicalProfile": {
+    "wound": "Tavik learned that initiative is punished faster than mediocrity, so he built a career out of being useful and forgettable.",
+    "desire": "Finish service without scandal, inquiry, or blood directly on his name.",
+    "fear": "Being forced into visible courage and then abandoned by the institution that demanded it.",
+    "lie": "Procedure is neutrality.",
+    "ghost": "He once exceeded orders, saved a post, and nearly paid for it because his superiors disliked the paperwork.",
+    "need": "To understand that passive obedience still spends other people."
+  },
+  "arc": {
+    "type": "flat",
+    "startState": "A competent officer shaped more by caution than conviction.",
+    "endState": "Still procedural, but faced with the fact that reporting can become betrayal.",
+    "turningPoints": [
+      {
+        "chapter": 3,
+        "event": "Marks Kaelith's departure as a reportable irregularity."
+      },
+      {
+        "chapter": 4,
+        "event": "Files the report that tightens pressure behind her."
+      },
+      {
+        "chapter": 20,
+        "event": "Realizes too late whose agenda his neutrality served."
+      }
+    ]
+  },
+  "voiceFingerprint": {
+    "vocabularyLevel": "Bureaucratic-military moderate — the vocabulary of forms, reports, and institutional cover. Tavik speaks in the language of compliance: 'noted,' 'regrettable,' 'per standing orders,' 'within parameters,' 'reportable irregularity,' 'the matter has been referred.' His vocabulary is designed to create distance between himself and consequence. He says 'it was determined' (passive) rather than 'I decided' (active). He says 'a situation developed' rather than 'I failed to act.'",
+    "sentenceLength": "Medium and report-shaped, the sentence length of someone who has written too many incident reports. His sentences have the pre-formatted quality of official correspondence: subject, circumstance, procedural response, reference to authority. Even in conversation, he speaks as though composing a document that might be read back to him.",
+    "metaphorDensity": "Nearly absent. Tavik avoids metaphor because metaphor implies interpretation, and interpretation implies responsibility. The rare exception: bureaucratic metaphors that have become invisible — 'channels,' 'jurisdiction,' 'within the scope of.' His language is aggressively literal because literalism is defensible.",
+    "emotionalRegister": "Courteous, detached, and carefully neutral — the register of someone who has built a career on never being the one who made the decision. His courtesy is genuine but institutional — he is polite because discourtesy generates complaints, and complaints generate paperwork, and paperwork generates scrutiny. Beneath the courtesy: a man who is not without conscience but has learned to file conscience under 'not within operational scope.'",
+    "thoughtPatterns": "Hierarchical and procedural. Tavik thinks in chains of command: who authorizes this? What is the precedent? Where does the liability settle? He tends not to think about whether something is right — he thinks about whether it is sanctioned. His moral framework is almost entirely institutional, which makes him both reliable and dangerous.",
+    "dialectMarkers": "Passive constructions everywhere: 'It was noted that,' 'the irregularity was observed,' 'the matter has been addressed.' Heavy use of 'regrettable' as an emotional proxy — 'regrettable' means 'I noticed this was wrong but procedurally I am covered.' Official phrasing in casual settings creates unintentional comedy and unintentional cruelty.",
+    "humorStyle": "Absent by design. Tavik does not make jokes because humor implies a personal perspective, and personal perspective is precisely what he has spent his career eliminating. The humor around him is dramatic irony — the reader sees the moral cost of his neutrality even when he does not.",
+    "attentionPriority": "What Tavik notices first: (1) Irregularity — anything outside normal procedure. (2) Authority — who sanctioned this, and is the paper trail clean? (3) Exposure — could this situation produce a complaint, inquiry, or audit? (4) Precedent — has this happened before, and how was it handled?",
+    "deflectionPattern": "Cites procedure. 'The standing orders are clear on this matter.' 'That falls outside my operational scope.' He deflects by pointing at the system — the system decided, not him. His deflection is technically accurate, which is what makes it morally devastating.",
+    "stressResponse": "Formal register intensifies — sentences become more passive, more hedged, more carefully worded. Under moderate stress: increased use of 'regrettable' and 'per standing directive.' Under extreme stress: a single moment of plain speech breaks through the bureaucratic shell — 'I knew. I filed the report anyway.' — before the shell reconstitutes."
+  },
+  "sensorySig": {
+    "dominantChannel": "auditory",
+    "signature": "boots on damp boards and late-night reports",
+    "emotionalTriggers": [
+      "courier horn at bad hours",
+      "sealed orders rustling",
+      "silence after his name"
+    ]
+  },
+  "relationships": [
+    {
+      "withCharId": "CHAR-001",
+      "type": "institutional-jailer",
+      "dynamicArc": "His courtesy is another mechanism of Kaelith's erasure."
+    },
+    {
+      "withCharId": "CHAR-014",
+      "type": "bureaucratic-subordinate",
+      "dynamicArc": "Daerin's office defines Tavik's survival logic."
+    },
+    {
+      "withCharId": "CHAR-010",
+      "type": "officer-peer",
+      "dynamicArc": "Erys's personal loyalty highlights Tavik's refusal to risk principle."
+    }
+  ],
+  "physicalDescription": {
+    "apparentAge": "mid-fifties",
+    "build": "solid, slightly softened",
+    "distinguishingFeatures": "trimmed beard and tired eyes",
+    "usualPresentation": "regulation-clean garrison uniform",
+    "movement": "methodical and unremarkable"
+  },
+  "agency": "Tavik shows how harm travels through ordinary compliance. By reporting instead of aiding or obstructing, he turns passive procedure into active plot pressure.",
+  "agencyDecisions": [
+    {
+      "decision": "Chooses to mark Kaelith's departure with Lirien as a reportable irregularity rather than a routine absence.",
+      "chapterRange": "3",
+      "alternativesConsidered": [
+        "Log it as authorized leave — Kaelith has accumulated service, could justify a clerical interpretation",
+        "Delay notation for 48-72 hours to see if she returns, making it administratively invisible",
+        "Confront Kaelith directly before filing anything, giving her opportunity to explain or return",
+        "Ignore it entirely as beneath command notice — officers leave posts temporarily all the time"
+      ],
+      "choiceMade": "Mark it immediately as irregular departure requiring command attention",
+      "consequences": "Creates the first official record that triggers institutional scrutiny. Tavik's notation enters the command chain, giving Daerin (CHAR-014) and eventually the Conclave the administrative foundation to classify Kaelith as AWOL or under suspicion. This is the document that transforms Kaelith's departure from personal decision into institutional problem.",
+      "psychologicalJustification": "Procedure protects him. If he logs it and something goes wrong, he followed protocol. If he doesn't log it and someone notices, he becomes complicit. His ghost (the time he exceeded orders and nearly paid for it) drives the decision — better to be forgettable and correct than visible and questioned."
+    },
+    {
+      "decision": "Chooses to file a formal report to garrison command escalating Kaelith's absence, despite having no evidence of wrongdoing beyond her departure.",
+      "chapterRange": "4",
+      "alternativesConsidered": [
+        "File a minimal notation without escalation — satisfy procedure without adding urgency",
+        "Wait for command to request a report rather than volunteering one — reactive rather than proactive compliance",
+        "Frame the report neutrally or even favorably — note her service record, suggest personal leave rather than irregularity",
+        "Speak to peers (Erys, CHAR-010) first to gauge whether this is worth escalating or if everyone informally knows something he doesn't"
+      ],
+      "choiceMade": "File a complete, by-the-book escalation report that frames Kaelith's departure as requiring command investigation",
+      "consequences": "The formal report moves Kaelith's situation from local garrison matter to command-level concern. It feeds directly into Daerin's agenda (CHAR-014 uses institutional mechanisms to maintain control) and indirectly serves Thalen's conspiracy (CHAR-003 benefits from Kaelith being tracked and constrained). Tavik's procedural correctness becomes the mechanism that tightens the net around her. This report is what makes her a fugitive rather than an absent officer.",
+      "psychologicalJustification": "Filing the full report feels like neutrality — he is simply doing his job, not taking sides. His lie ('procedure is neutrality') operates here: he believes that by following the regulations precisely, he avoids moral responsibility for the outcome. His fear (being forced into visible courage and then abandoned) makes escalation safer than protection — protecting Kaelith would require courage and would make him visible."
+    },
+    {
+      "decision": "Chooses to remain procedurally neutral when late-stage evidence suggests his reports served a conspiracy, rather than testifying or obstructing further orders.",
+      "chapterRange": "20",
+      "alternativesConsidered": [
+        "Provide testimony that his reports were filed in good faith without knowledge of Thalen's agenda — become a witness",
+        "Actively obstruct further reporting or surveillance orders by claiming administrative confusion or lost documentation",
+        "Warn Kaelith or her allies (Erys, Sendra) about what information passed through his hands and where it went",
+        "Resign or request transfer to physically remove himself from the mechanism"
+      ],
+      "choiceMade": "Maintain procedural neutrality — neither testify against the conspiracy nor obstruct ongoing orders, continuing to file what is required",
+      "consequences": "Tavik's neutrality at this decision point is itself a choice that allows the institutional machinery to continue operating. He does not become an active ally to either side, but his refusal to act means the surveillance and pressure apparatus he helped build remains intact. His realization ('too late whose agenda his neutrality served') is cognitive but not behavioral — he understands but does not change. This is the moment his 'flat' arc is confirmed: he gains awareness but not transformation.",
+      "psychologicalJustification": "By this point, visible courage would require admitting his earlier complicity and accepting that his procedural correctness caused harm. His wound (initiative is punished faster than mediocrity) and his desire (finish service without scandal) both drive him toward continued passivity. Testifying would make him visible and vulnerable. Neutrality still feels like the safest option, even as he realizes it isn't neutral at all. His need ('understand that passive obedience still spends other people') is intellectually achieved but not acted upon."
+    }
+  ],
+  "upstreamRefs": [
+    "story-concept.json",
+    "world-bible/politics.json",
+    "world-bible/culture.json",
+    "characters/CHAR-001.json"
+  ],
+  "dialoguePatterns": {
+    "initiationStyle": "Opens with official framing. 'Commander Maren, a matter requires your attention — or, more precisely, a matter has been referred to this office regarding your status.' He announces the institutional context before the human one.",
+    "responseStyle": "Answers as though dictating a report. 'The situation, as I understand it from the available documentation, is as follows.' He provides procedurally defensible summaries rather than opinions. When pressed for a personal view: 'My personal assessment is not part of the operational record.'",
+    "underPressure": "Retreats deeper into passive voice and institutional language. The more frightened he is, the more his speech sounds like a form being filled out. The human being disappears behind the officer. Recovery is marked by a single, devastating moment of first-person active voice.",
+    "verbalTics": [
+      "Uses passive voice reflexively: 'It was determined' not 'I decided'",
+      "Says 'regrettable' for anything from minor inconvenience to moral catastrophe",
+      "Opens with 'Per standing orders' or 'Per operational directive'",
+      "Refers to people by rank and surname even in private conversation",
+      "Says 'the matter has been referred' to avoid naming who referred it"
+    ],
+    "favoriteExpressions": [
+      "Regrettable.",
+      "Per standing orders.",
+      "The matter has been referred.",
+      "That falls outside my operational scope.",
+      "The report was filed in accordance with procedure."
+    ]
+  }
+}

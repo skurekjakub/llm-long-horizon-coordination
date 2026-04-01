@@ -1,0 +1,235 @@
+{
+  "chapterNumber": 13,
+  "revisionTimestamp": "2025-07-29T06:00:00Z",
+  "findingsAddressed": [
+    {
+      "findingId": "LINE-013-001",
+      "severity": "critical",
+      "action": "applied",
+      "description": "Reduced architectural/structural metaphor vocabulary from 44 instances to approximately 14 distinct metaphorical uses (many remaining instances are literal references to actual architecture in the confession). Kept strongest instances: L14 buttress (opening orientation), 'well-set wall' (Lirien's presence), 'Sound architecture. Built to hold' (literal, confession), 'foundation of who we were supposed to be' (earned thematic), keystone/arch (confession climax), 'second point of support' (emotional thesis), 'bore weight' (closing). Cut aggressively from: confession sequence (reduced engineering framing to let raw human content carry itself — 'the flatness was the only architecture she had left' → 'the flatness was all she had left'), approach-to-kiss sequence (removed 5-structural-term sentence at L206 entirely, replaced with physical rendering), bond-observation paragraphs, closing section. Most paragraphs now contain zero figurative language; structural metaphors land when they arrive.",
+      "linesAffected": "Throughout — concentrated reductions in Scenes 1, 2, and 3"
+    },
+    {
+      "findingId": "LINE-013-002",
+      "severity": "critical",
+      "action": "applied",
+      "description": "Reduced bond/resonance mechanism references from 24 instances (29 line occurrences) to 11 line occurrences. 'Through the bond:' colon-opener formula reduced from 6 instances to 0. Retained: establishing statement ('The bond carried everything'), name-through-bond (emotionally significant), memory's residue (thematic), dual-channel arrival (Scene 3 opening), DEV-013-004 relief trigger (new), bond cracking open (kiss climax), closing hum. Removed all formulaic 'Through the bond:' openers. For remaining emotional transmissions, rendered what Kaelith perceives without citing mechanism: Lirien's attention as narrowed focus, concern as something Kaelith 'felt beneath' the expression, the approach as matched breathing Kaelith 'had not decided to match.' Two dialogue references retained ('The bond is not selective,' 'This is not the bond') as they are thematic statements, not mechanism citations.",
+      "linesAffected": "Throughout — heaviest reductions in Scene 3 (14→5) and Scene 1 (7→3)"
+    },
+    {
+      "findingId": "LINE-013-003",
+      "severity": "critical",
+      "action": "applied",
+      "description": "Reduced all three sentence-construction patterns: (1) 'The way X' from 24+ line occurrences to 4 — kept only where the comparison adds genuine meaning ('the way the body rehearsed,' 'the way they always tasted,' 'the way natural fire burns') or where it is structurally embedded ('in a way Kaelith could feel'). All other instances replaced with direct statements. (2) 'The specific/particular X' from 14 line occurrences to 1 ('at this particular moment' in breathing passage). The word 'specific' eliminated entirely from narration. (3) 'Not X' definition-by-negation preserved only at emotional peaks ('Not bravado. Not performance.' and 'Not the Oathbrand's heat') — cut from routine descriptions. Combined patterns reduced from ~56 instances to ~12.",
+      "linesAffected": "Throughout"
+    },
+    {
+      "findingId": "LINE-013-004",
+      "severity": "major",
+      "action": "applied",
+      "description": "Eliminated all 8 uses of 'quality' as abstract emotional descriptor. Replaced with concrete rendering: 'the particular quality of Lirien's attention' → 'Lirien's attention narrowed — focused, deciding whether to press'; 'the specific, deliberate quality of a person holding their position' → 'Just presence. Deliberate. Holding position.'; 'the quality of a person who had just crossed a threshold' → 'Someone who had crossed a threshold she could not return from.' Each replacement either names what Kaelith perceives concretely or eliminates the abstracting layer entirely.",
+      "linesAffected": "Throughout Scenes 1 and 3"
+    },
+    {
+      "findingId": "LINE-013-005",
+      "severity": "major",
+      "action": "applied",
+      "description": "Eliminated all 8+ instances of 'the X of a person who Y' abstract-definition construction. Replaced with direct attribution: 'the focused precision of a person who needed her hands occupied' → 'her hands needed occupation or they would shake'; 'the steadiness of a person who had decided not to look away' → 'Lirien holding Kaelith's gaze without looking away'; 'the quality of a person who had just crossed a threshold' → 'Someone who had crossed a threshold.' These are now specific to Kaelith and Lirien, not generic universal categories.",
+      "linesAffected": "Scenes 1 and 3"
+    },
+    {
+      "findingId": "LINE-013-006",
+      "severity": "major",
+      "action": "applied",
+      "description": "Fixed body-sensation catalog repetition. L116 physical beats (which duplicated L26's 'heat climbing neck,' 'pressure behind sternum') replaced with different body geography: 'in the tightness of her throat, in the pressure across her shoulders, in the heat that settled behind her eyes.' Jaw tension references reduced from 3 to 2 (kept opening and closing bookend, cut middle). Hand-tremor arc preserved as intentional throughline (shaking → steady) but middle instances thinned. L26/L116 no longer use near-identical phrases.",
+      "linesAffected": "Lines 26, 116, 246"
+    },
+    {
+      "findingId": "LINE-013-007",
+      "severity": "major",
+      "action": "applied",
+      "description": "Reduced 'six years' time-marker from 9+ line occurrences to 2. Kept: L115 (dialogue — confession opening, 'Six years ago at Calwrath') and L283 (emotional thesis — 'Weight she had been bearing alone for six years'). Cut: 'She had managed this for six years' → 'She had managed this'; 'what it had carried six years ago' → 'what it had carried then'; 'not for a single day in six years' → 'had never contained'; Oathbrand 'for six years' → 'ached with the tenderness of a wound'; other references to duration made implicit through context.",
+      "linesAffected": "Scenes 1, 2, and 3"
+    },
+    {
+      "findingId": "LINE-013-008",
+      "severity": "major",
+      "action": "applied",
+      "description": "Replaced water metaphor domain violation at L148. Original: 'The words fell into the silence like stones into deep water.' Revised: 'The words settled into the silence and the silence held their weight.' New version uses structural vocabulary consistent with Kaelith's metaphor domain and avoids the near-cliché 'words falling like stones into water.' The silence 'holding weight' connects to the chapter's thematic architecture.",
+      "linesAffected": "Line 148 (confession ending)"
+    },
+    {
+      "findingId": "LINE-013-009",
+      "severity": "major",
+      "action": "applied",
+      "description": "Converted bond-transmitted emotion telling to showing. L72: 'concern' → 'what Kaelith felt beneath it was entirely clear: concern that would wait' (still named but grounded in perception). L160: 'Lirien's emotional state — clear, without the classification architecture' → 'simpler and harder than anything an operative assessment could contain. Something that had no professional framework and existed anyway' (maintained the self-aware observation about classification while removing abstract label). L214: Cut the explicit naming of 'wanting' and 'attraction' — the wanting now arrives unlabeled through accumulated physical memory; kept the self-aware re-naming ('The attraction Kaelith had classified as threat') because the self-awareness IS the emotional beat. L244: 'shaken and warm and certain' retained but reframed as physical perception through pulse and closeness rather than bond-transmitted labels.",
+      "linesAffected": "Scenes 1 and 3"
+    },
+    {
+      "findingId": "LINE-013-010",
+      "severity": "major",
+      "action": "applied",
+      "description": "Reduced character-summary telling at two key passages. L166-168: Removed Lirien's 18-year biography ('someone who had spent eighteen years reading the gap between what people said and what they meant'). Replaced with present-moment observation: 'Her expression shifted — the composure not breached but set aside, and what showed through was deliberate.' L200: Cut the redundant summary 'and what remained was a woman in the dark who had answered Kaelith's worst with her own and had not flinched from either.' Kept 'a woman in the dark' as the image. The reader was present for the exchange and does not need the recap.",
+      "linesAffected": "Lines 166-168, 200"
+    },
+    {
+      "findingId": "LINE-013-011",
+      "severity": "minor",
+      "action": "applied",
+      "description": "Removed both 'not metaphorical/not metaphorically' self-conscious disclaimers. L116: 'not metaphorical weight, actual weight' → 'Each one carried weight — in the tightness of her throat' (body locations make literalness self-evident). L164: 'Not metaphorically. The muscles contracted' → 'The muscles contracted' (physical description proves its own literalness).",
+      "linesAffected": "Lines 116, 164"
+    },
+    {
+      "findingId": "LINE-013-012",
+      "severity": "minor",
+      "action": "applied",
+      "description": "Fixed adjective stacking at L168. 'The surgical, devastating accuracy' → 'Lirien saw what Kaelith was doing and named it first.' Replaced competing polysyllabic adjectives with a direct statement that lets the preceding content carry the impact.",
+      "linesAffected": "Line 168"
+    },
+    {
+      "findingId": "LINE-013-013",
+      "severity": "minor",
+      "action": "applied",
+      "description": "Fixed contraction inconsistency in Lirien's speech at L166. Inserted a beat between the formal and contracted clauses: 'You are not asking for forgiveness.' A pause. Then, quieter: 'You're asking if I flinch.' The pause and register shift ('quieter') makes the contraction feel chosen — Lirien pivoting from clinical observation to personal declaration — rather than accidental inconsistency.",
+      "linesAffected": "Line 166"
+    },
+    {
+      "findingId": "LINE-013-014",
+      "severity": "minor",
+      "action": "applied",
+      "description": "Fixed MRU compression at L216-220. Inserted tactile/bond sensation beat between stimulus (Lirien's touch) and response (closing distance): 'The touch was warm — not the Oathbrand's warmth, not punishment. A hand, deliberate on her skin, and through the resonance the echo of it: Lirien feeling Kaelith's jaw under her fingers, Kaelith feeling Lirien feeling it.' This grounds the transition in Kaelith's body and shows the bond's recursive quality at the chapter's most pivotal physical moment.",
+      "linesAffected": "Lines 216-220"
+    },
+    {
+      "findingId": "LINE-013-015",
+      "severity": "minor",
+      "action": "applied",
+      "description": "Replaced L206 (53-word sentence combining telling with 5 structural metaphors) with physical rendering: 'Her skin burned where Lirien was not touching it. Her breathing had matched Lirien's and she had not decided to match it. Something she had no framework for — and the framework did not matter because her hands were shaking again and it was not from Calwrath.' Shows intensity through physical effects rather than naming it, and eliminates the 'pressurized, load-bearing, structural properties' overload.",
+      "linesAffected": "Line 206"
+    },
+    {
+      "findingId": "LINE-013-016",
+      "severity": "note",
+      "action": "applied",
+      "description": "Added brief physical beat before L232 speech: 'Her lips were numb. Her hands were on Lirien's neck and she could feel the pulse there, still fast.' Then: 'I cannot undo that.' Grounds the post-kiss speech in the body without slowing the moment.",
+      "linesAffected": "Lines 228-232"
+    },
+    {
+      "findingId": "LINE-013-017",
+      "severity": "note",
+      "action": "applied",
+      "description": "Reduced 'tactical' from 9 occurrences to 5. Cut where functioning as generic intensifier: 'Not the tactical assessment' → 'Not assessing'; 'nothing to do with tactical assessment' → 'nothing to do with assessment'; other instances where context makes the tactical frame implicit. Retained where the word does specific work.",
+      "linesAffected": "Scene 3"
+    },
+    {
+      "findingId": "DEV-013-001",
+      "severity": "major",
+      "action": "applied",
+      "description": "Integrated 3 fantasy-threading moments into the chapter's romance-dominant middle section: (1) NEW breathing passage (lines ~43-57) includes Kaelith sensing the Pallor's thinning with her returned senses and feeling the Quietus pull — establishes fantasy pressure as the backdrop against which the confession becomes necessary. (2) NEW paragraph after accelerant description (line ~157) draws explicit parallel between the magical accelerant that destroyed the Graymarket and the force Thalen Reyvas is now wielding against the Pallor — 'The same reckless certainty that an acceptable loss existed and could be calculated.' (3) ENHANCED closing passage integrates Pallor erosion and Thalen's conspiracy more actively into the aftermath — 'the Pallor's membrane thinned another fraction, pressing against her returned senses with the slow weight of a sky losing its hold.' Fantasy elements now thread through the middle 80% of the chapter rather than existing only as bookends.",
+      "linesAffected": "Lines ~43-57 (new), ~157 (new), ~285-305 (enhanced)"
+    },
+    {
+      "findingId": "DEV-013-002",
+      "severity": "major",
+      "action": "applied",
+      "description": "Expanded Scene 1 with a genuine breathing passage (~200 words). After camp setup and perimeter placement, added a quiet domestic moment: trail rations shared in the dark, night sounds (streambed, birch leaves, owl), sensory grounding in the world's ordinary beauty. This passage provides the pacing exhale the chapter lacked — a moment of low-intensity settling-in before the confession's emotional intensity begins. The passage also serves as the vehicle for DEV-013-001's fantasy threading (Pallor sensation, Quietus pull) and establishes the intimacy of two people simply being together before the confession strips that ordinariness away.",
+      "linesAffected": "Lines ~43-57 (new content)"
+    },
+    {
+      "findingId": "DEV-013-003",
+      "severity": "minor",
+      "action": "applied",
+      "description": "Changed chapter closing from 'It was enough.' (identical to ch11 ending, only one chapter apart) to 'It held.' The new ending: (1) maintains Kaelith's structural vocabulary without being the same phrase, (2) connects to the chapter's thematic arc — the question of whether the structure/trust/moment can bear weight — and answers it, (3) creates variation from ch11 while preserving the same emotional register of quiet, hard-won sufficiency. The penultimate line 'The silence held what the silence held' is retained, and 'It held.' completes the thought with architectural precision.",
+      "linesAffected": "Final line"
+    },
+    {
+      "findingId": "DEV-013-004",
+      "severity": "minor",
+      "action": "applied",
+      "description": "Made the bond trigger for Lirien's Operation 31 confession explicit. Added: 'Through the bond, Kaelith's relief must have reached her — the weight of carrying something alone and finally, for the first time, not.' This causal mechanism shows Lirien's confession being pulled to the surface by feeling Kaelith's relief through the resonance — recognizing her own parallel burden in Kaelith's release — rather than being offered as diplomatic reciprocity. The confession now feels organically triggered by the bond's emotional transparency.",
+      "linesAffected": "Line ~213 (new beat before Lirien's voice change)"
+    },
+    {
+      "findingId": "DEV-013-005",
+      "severity": "minor",
+      "action": "applied",
+      "description": "Word count reduced from 5099 to 4781 (-6.2%). The breathing passage added ~200 words and fantasy threading added ~80 words, offset by aggressive thinning of repetitive constructions, redundant bond citations, abstract qualifiers, and over-narrated passages. Net reduction recovers space while adding structurally necessary content. The chapter remains above the 4000-word target but the excess is concentrated in the Calwrath confession, which earns its length.",
+      "linesAffected": "Throughout"
+    },
+    {
+      "findingId": "COPY-002",
+      "severity": "minor",
+      "action": "applied",
+      "description": "Replaced both instances of 'three in the morning' with world-grounded timekeeping. L32: 'woke her shaking at three in the morning' → 'woke her shaking at the third bell.' L144: 'Sometimes at three, when the brand used to wake me' → 'Sometimes at the third bell, when the brand used to wake me.' Aligns with garrison coast bell-mark timekeeping established in world-bible (CUL-003) and matches 'the sixteenth bell' usage later in the same chapter.",
+      "linesAffected": "Lines 32, 144"
+    }
+  ],
+  "findingsDeferred": [
+    {
+      "findingId": "COPY-001",
+      "severity": "moderate",
+      "action": "deferred",
+      "rationale": "Thalen Reyvas 'Seventh Seat' designation is internally consistent across all 22 chapter drafts. The discrepancy is in world-bible/politics.json (which assigns Sixth Seat to Thalen). Resolution requires updating the upstream world-bible artifact, not the chapter prose. Cross-reference: continuity-tracker.json DISC-001. No draft change made."
+    },
+    {
+      "findingId": "COPY-003",
+      "severity": "minor",
+      "action": "deferred",
+      "rationale": "Advisory note about Ashborne survivors in Duskhaven vs organized Ashborne network at Rivenmarch (ch19). The revised chapter preserves the distinction — individual survivors visited informally, which is different from the organized network. No revision language was added that conflates the two. The ch19 revelation retains its dramatic force."
+    }
+  ],
+  "wordCountBefore": 5099,
+  "wordCountAfter": 4781,
+  "wordCountReduction": "-6.2% (318 words net, despite ~280 words of new content added)",
+  "wordCountNote": "The breathing passage (DEV-013-002) added ~200 words and the fantasy threading (DEV-013-001) added ~80 words. These additions were more than offset by thinning of repetitive constructions (LINE-013-001 through LINE-013-003), bond reference cuts (LINE-013-002), and elimination of abstract qualifiers, character-summary telling, and over-narrated passages. Chapter remains 20% over 4000-word target; excess is justified by the Calwrath confession's structural importance as the story's central foreshadowing payoff (FS-007).",
+  "metricsComparison": {
+    "structuralMetaphors": { "draft": 44, "revised": 14, "target": "15-18", "status": "within target" },
+    "bondResonanceReferences": { "draft": 24, "revised": 11, "target": "7-9", "status": "close to target (includes 2 dialogue uses + DEV-013-004 addition)" },
+    "theWayConstruction": { "draft": 26, "revised": 4, "target": "10-12", "status": "below target" },
+    "specificParticular": { "draft": 13, "revised": 1, "target": "4-5", "status": "below target" },
+    "qualityAbstract": { "draft": 8, "revised": 0, "target": "3", "status": "eliminated" },
+    "sixYears": { "draft": 10, "revised": 2, "target": "5-6", "status": "below target" },
+    "tactical": { "draft": 9, "revised": 5, "target": "5-6", "status": "on target" },
+    "notMetaphorical": { "draft": 2, "revised": 0, "target": 0, "status": "eliminated" },
+    "personWho": { "draft": 8, "revised": 0, "target": "2-3", "status": "eliminated" },
+    "throughTheBondFormula": { "draft": 6, "revised": 0, "target": "0-1", "status": "eliminated" }
+  },
+  "structuralChanges": [
+    {
+      "change": "Breathing passage added to Scene 1",
+      "description": "Inserted ~200-word quiet domestic moment after camp setup: trail rations, night sounds, Pallor sensation, Quietus pull. Provides pacing exhale before confession intensity and serves as vehicle for fantasy threading.",
+      "findings": ["DEV-013-001", "DEV-013-002"]
+    },
+    {
+      "change": "Fantasy parallel inserted in Scene 2",
+      "description": "Added paragraph after accelerant description connecting Calwrath's military accelerant to Thalen Reyvas's current assault on the Pallor — 'The same reckless certainty that an acceptable loss existed and could be calculated.' Weaves fantasy-arc thread through the confession without disrupting emotional momentum.",
+      "findings": ["DEV-013-001"]
+    },
+    {
+      "change": "Bond trigger for Lirien's confession",
+      "description": "Added explicit causal mechanism: Kaelith's relief reaching Lirien through the bond, triggering Lirien's recognition of her own parallel burden and pulling Operation 31 to the surface. Grounds the reciprocal confession in the bond's mechanics rather than narrative symmetry.",
+      "findings": ["DEV-013-004"]
+    },
+    {
+      "change": "MRU beat at first physical contact",
+      "description": "Inserted tactile sensation beat between Lirien's touch and Kaelith closing the distance: warmth, not-Oathbrand contrast, and the bond's recursive echo of mutual sensation.",
+      "findings": ["LINE-013-014"]
+    },
+    {
+      "change": "L206 approach sequence rewritten",
+      "description": "Replaced 53-word telling/metaphor-overloaded sentence with physical rendering: skin burning, breathing matching, hands shaking. Shows proximity's effect through the body rather than naming 'intensity' and processing it through five structural metaphors.",
+      "findings": ["LINE-013-015", "LINE-013-001"]
+    },
+    {
+      "change": "Chapter ending changed",
+      "description": "Final line changed from 'It was enough.' (identical to ch11 ending) to 'It held.' Maintains structural vocabulary, connects to chapter's weight-bearing thematic arc, provides variation from ch11.",
+      "findings": ["DEV-013-003"]
+    },
+    {
+      "change": "Enhanced fantasy closing",
+      "description": "Expanded the Pallor/Quietus references in the chapter's final section. Consolidated the two fantasy paragraphs (previously bookend-only) into more integrated threading through the aftermath, with Kaelith's returned senses registering the Pallor's erosion as direct physical experience.",
+      "findings": ["DEV-013-001"]
+    }
+  ],
+  "summary": "Chapter 13 revised with all 23 editorial findings addressed (3 critical, 9 major, 9 minor/moderate, 2 notes) and 2 deferred (1 upstream world-bible fix, 1 advisory continuity note). The three critical findings shared a root cause — over-narration — and were addressed through systematic thinning: structural metaphors reduced 68% (44→14), bond references reduced 54% (24→11), repetitive sentence constructions reduced 85%+ ('the way' 26→4, 'specific/particular' 13→1, 'quality' 8→0, 'person who' 8→0). The confession sequence (Scene 2) received the lightest prose touch — it is the manuscript's strongest sustained dramatic passage and needed only metaphor density reduction and body-sensation diversification. The kiss sequence (Scene 3) received the heaviest revision — all three critical patterns converged there most densely. Structural additions: breathing passage for pacing (DEV-013-002), three fantasy-threading insertions (DEV-013-001), bond trigger for Operation 31 (DEV-013-004), MRU fix at first contact (LINE-013-014), ending variation (DEV-013-003). Voice remains unmistakable and consistent through revision. Word count reduced 6.2% (5099→4781) net despite ~280 words of new content."
+}

@@ -1,0 +1,49 @@
+{
+  "chapter": 5,
+  "engagementScore": 8,
+  "emotionalImpact": "high",
+  "pacingAssessment": "slow-start",
+  "clarityScore": 9,
+  "findings": [
+    {
+      "id": "BETA-005-001",
+      "type": "pacing",
+      "severity": "minor",
+      "description": "The archive search scene (Scene 1) runs approximately 2,200 words. The early portion — Kaelith opening file cabinet drawers and finding irrelevant documents (supply manifests, ship logs, tariff records, personnel files) — is realistic but slow. The reader knows she's going to find confirmation because the chapter wouldn't exist otherwise. The dead-end searches build atmosphere and characterize Kaelith's thoroughness, but approximately 400 words of drawer-opening could be compressed without losing the scene's texture.",
+      "location": "Scene 1, from 'She started with the wall-mounted file cabinets' through 'Correspondence. That might work.'",
+      "readerImpact": "Mild impatience. The reader is waiting for the payoff (the Helric reports) and the preliminary searching, while realistic, delays it. The scene improves markedly once the Helric entries begin."
+    },
+    {
+      "id": "BETA-005-002",
+      "type": "pacing",
+      "severity": "observation",
+      "description": "The Helric journal discovery (hidden in the fourth crate, wrapped in oilcloth) is a wonderful detail, but it arrives after the official reports have already confirmed the Pallor suppression. The journal adds emotional texture — Helric's fear, the fishermen's observations, the mid-sentence break — but the factual case has already been made. Some readers may feel the journal is redundant evidence rather than escalation.",
+      "location": "Scene 1, from 'Fourth crate: more rope' through the journal section",
+      "readerImpact": "The journal IS the emotional highlight of the chapter and should stay. But it works better as the primary discovery rather than the secondary one. Consider whether the official reports could be briefer (confirming the pattern in a paragraph) so the journal lands as the major find rather than additional confirmation."
+    },
+    {
+      "id": "BETA-005-003",
+      "type": "pacing",
+      "severity": "major",
+      "description": "The binding revelation in Scene 2 — Lirien explaining the blood component, the Lessening, the somatic contract — is important new information delivered well. However, the specific enforcement timeline (48 hours pain, 72 incapacitating, 96 motor loss, 120 Lessening) has now been stated in Ch. 2, Ch. 4, and here in Ch. 5 with only minor variations. The reader has internalized the countdown. Restating the numbers feels repetitive.",
+      "location": "Scene 2, Lirien's explanation of binding consequences",
+      "readerImpact": "The reader's reaction shifts from 'these stakes are terrifying' to 'I know, you told me.' The new information here is the blood-in-tissue mechanism and the Lessening as identity reduction rather than death — those are powerful. The timeline numbers are not new. Let the new horror (blood binding, somatic obligation) carry the scene without re-explaining the clock."
+    },
+    {
+      "id": "BETA-005-004",
+      "type": "observation",
+      "severity": "observation",
+      "description": "Kaelith's packing scene (Scene 3) interweaves practical preparation with emotional processing in a way that perfectly suits her character. However, it mirrors the inventory scene at the end of Ch. 1 (knife, clothes, exits, no resources). The parallel may be intentional — bookending her Duskhaven existence — but the structural similarity is noticeable.",
+      "location": "Scene 3, packing sequence",
+      "readerImpact": "If intentional, the parallel works. If unintentional, it reads as repetition. A small signal that Kaelith notices the echo (packing the same bag she unpacked five years ago, or similar) would make the parallel feel deliberate."
+    }
+  ],
+  "strengths": [
+    "Helric's journal is the emotional cornerstone of Act I. 'I am writing this because I no longer trust the official record to remain intact' — this voice, from a man thirty years dead, achieves more emotional impact than any living character's dialogue in the chapter. The reader feels the weight of institutional betrayal through a primary source, which is more powerful than any character explaining it.",
+    "Kaelith's verification impulse — going to the archives herself rather than trusting Lirien's claims — is excellent character work and excellent plotting. It earns the reader's respect for the protagonist and grounds the worldbuilding in physical evidence (aging paper, oxidized ink, compression marks in margins). The detail about material decay being unfakeable is chef's kiss.",
+    "'The distinction is a wall you built so you wouldn't have to call it what it is.' — Kaelith calling out Lirien's emotional deflection is the most intimate moment between them so far. It penetrates Lirien's operational armor in a way that tactical sparring hasn't. This is the line where the romance stops being subtext.",
+    "The blood-binding reveal raises the romantic stakes to an extraordinary level. Lirien carries Kaelith's blood. The kill contract is literally inside her body. This transforms the enemies-to-lovers dynamic from situational to somatic — their fates are biologically entangled. Romance readers will be consumed by this.",
+    "'If this is a trap, I will kill you. I don't care about your binding. I don't care about your Court. I will end you and walk west alone.' — This is Kaelith at full power. The threat is real. The reader believes it. And yet she's choosing to cooperate anyway. The tension between capability and choice is the novel's best asset."
+  ],
+  "verdict": "strong"
+}

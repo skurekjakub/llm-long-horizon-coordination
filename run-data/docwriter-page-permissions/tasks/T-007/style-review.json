@@ -1,0 +1,1109 @@
+{
+  "agent": "docwriter-style-reviewer",
+  "taskId": "T-007",
+  "attempt": 1,
+  "verdict": "approved",
+  "changeScope": "Single cross-reference sentence added at line 57 (end of Pages cell in Permissions table): 'For details about configuring *Read* and *Update* permissions for specific roles, see {% page_link permissions_pagelevel_xp anchor=\"Edit page permissions\" linkText=\"page permission management\" %}.'",
+  "invariantResults": [
+    {
+      "invariantId": "TINV-002",
+      "domain": "structure",
+      "result": "pass",
+      "evidence": "The cross-reference links the scattered permission information back to the centralized Page permission management page, satisfying the task's centralization goal."
+    },
+    {
+      "invariantId": "INV-crossref-001",
+      "domain": "crossref",
+      "result": "pass",
+      "evidence": "The added link is a cross-page reference to permissions_pagelevel_xp, correctly using {% page_link %} rather than {% inpage_link %}."
+    },
+    {
+      "invariantId": "INV-crossref-002",
+      "domain": "crossref",
+      "result": "pass",
+      "evidence": "Syntax is correct: {% page_link permissions_pagelevel_xp anchor=\"Edit page permissions\" linkText=\"page permission management\" %}. The `collection` parameter is omitted, consistent with ALL other page_links on this page (lines 17, 41, 57, 65, 66, 73, 74, 78). Both source and target are in the _documentation collection, and the omission follows the established convention for same-collection links."
+    },
+    {
+      "invariantId": "INV-crossref-003",
+      "domain": "crossref",
+      "result": "pass",
+      "evidence": "Writer output confirms identifier 'permissions_pagelevel_xp' was verified against the target page's front matter at line 4 of page-permission-management.md. Not fabricated."
+    },
+    {
+      "invariantId": "INV-crossref-004",
+      "domain": "crossref",
+      "result": "pass",
+      "evidence": "No placeholder needed — the identifier was found and is valid."
+    },
+    {
+      "invariantId": "INV-crossref-005",
+      "domain": "crossref",
+      "result": "pass",
+      "evidence": "Writer output confirms anchor 'Edit page permissions' was verified against line 132 of page-permission-management.md (heading-generated anchor). Not fabricated."
+    },
+    {
+      "invariantId": "INV-crossref-006",
+      "domain": "crossref",
+      "result": "not-applicable",
+      "evidence": "No external links added or modified."
+    },
+    {
+      "invariantId": "INV-crossref-007",
+      "domain": "crossref",
+      "result": "not-applicable",
+      "evidence": "No button links added or modified."
+    },
+    {
+      "invariantId": "INV-crossref-009",
+      "domain": "crossref",
+      "result": "pass",
+      "evidence": "Link text is 'page permission management' — descriptive and keyword-rich. No vague phrases like 'click here' or 'this page'."
+    },
+    {
+      "invariantId": "INV-jekyll-001",
+      "domain": "jekyll",
+      "result": "pass",
+      "evidence": "The existing table at lines 43–76 uses correct Liquid table syntax ({% table %}, {% row %}, {% cell %}, etc.). The new sentence was added inside an existing {% cell %} — no table structure was modified."
+    },
+    {
+      "invariantId": "INV-jekyll-002",
+      "domain": "jekyll",
+      "result": "pass",
+      "evidence": "The added {% page_link %} tag is the correct Liquid alternative for cross-page links."
+    },
+    {
+      "invariantId": "INV-jekyll-003",
+      "domain": "jekyll",
+      "result": "pass",
+      "evidence": "YAML front matter present between --- markers at lines 1–15."
+    },
+    {
+      "invariantId": "INV-jekyll-004",
+      "domain": "jekyll",
+      "result": "pass",
+      "evidence": "Front matter contains all required fields: title ('Content versioning configuration'), identifier ('versioning_configuration_xp'), order (350), redirect_from ('x/versioning_configuration_xp')."
+    },
+    {
+      "invariantId": "INV-jekyll-005",
+      "domain": "jekyll",
+      "result": "pass",
+      "evidence": "Identifier 'versioning_configuration_xp' uses snake_case with '_xp' suffix for _documentation collection."
+    },
+    {
+      "invariantId": "INV-jekyll-006",
+      "domain": "jekyll",
+      "result": "not-applicable",
+      "evidence": "Identifier not modified. Pre-existing uniqueness assumed."
+    },
+    {
+      "invariantId": "INV-jekyll-007",
+      "domain": "jekyll",
+      "result": "not-applicable",
+      "evidence": "Order value (350) not modified."
+    },
+    {
+      "invariantId": "INV-jekyll-008",
+      "domain": "jekyll",
+      "result": "pass",
+      "evidence": "redirect_from includes 'x/versioning_configuration_xp' (matches identifier)."
+    },
+    {
+      "invariantId": "INV-jekyll-009",
+      "domain": "jekyll",
+      "result": "pass",
+      "evidence": "License field set to 1 (standard tier)."
+    },
+    {
+      "invariantId": "INV-jekyll-010",
+      "domain": "jekyll",
+      "result": "pass",
+      "evidence": "Two {% note %} callouts (lines 21–23, 31–33) use correct syntax with matching {% endnote %} tags. No callouts added or modified by the writer."
+    },
+    {
+      "invariantId": "INV-jekyll-011",
+      "domain": "jekyll",
+      "result": "pass",
+      "evidence": "Code block at line 84 uses {% code lang=csharp title=\"Example\" %} with matching {% endcode %} at line 104. Not modified by writer."
+    },
+    {
+      "invariantId": "INV-jekyll-012",
+      "domain": "jekyll",
+      "result": "pass",
+      "evidence": "Code block uses lang=csharp, which is in the supported list."
+    },
+    {
+      "invariantId": "INV-jekyll-013",
+      "domain": "jekyll",
+      "result": "pass",
+      "evidence": "Image at line 37 uses correct {% image %} Liquid syntax."
+    },
+    {
+      "invariantId": "INV-jekyll-014",
+      "domain": "jekyll",
+      "result": "pass",
+      "evidence": "Image at line 37 includes border=true for the UI screenshot."
+    },
+    {
+      "invariantId": "INV-jekyll-015",
+      "domain": "jekyll",
+      "result": "not-applicable",
+      "evidence": "No file embeds on this page."
+    },
+    {
+      "invariantId": "INV-jekyll-016",
+      "domain": "jekyll",
+      "result": "not-applicable",
+      "evidence": "No video embeds on this page."
+    },
+    {
+      "invariantId": "INV-jekyll-017",
+      "domain": "jekyll",
+      "result": "not-applicable",
+      "evidence": "No anchor tags added or modified."
+    },
+    {
+      "invariantId": "INV-jekyll-018",
+      "domain": "jekyll",
+      "result": "pass",
+      "evidence": "related_pages field in front matter correctly set: ['page_versioning_xp']. Not modified by writer."
+    },
+    {
+      "invariantId": "INV-jekyll-019",
+      "domain": "jekyll",
+      "result": "pass",
+      "evidence": "Inline ToC configured in front matter with minHeadingLevel: 1, maxHeadingLevel: 3."
+    },
+    {
+      "invariantId": "INV-jekyll-020",
+      "domain": "jekyll",
+      "result": "not-applicable",
+      "evidence": "No column layouts on this page."
+    },
+    {
+      "invariantId": "INV-jekyll-021",
+      "domain": "jekyll",
+      "result": "not-applicable",
+      "evidence": "No panel components on this page."
+    },
+    {
+      "invariantId": "INV-jekyll-022",
+      "domain": "jekyll",
+      "result": "not-applicable",
+      "evidence": "No card components on this page."
+    },
+    {
+      "invariantId": "INV-jekyll-023",
+      "domain": "jekyll",
+      "result": "not-applicable",
+      "evidence": "No banner components on this page."
+    },
+    {
+      "invariantId": "INV-jekyll-024",
+      "domain": "jekyll",
+      "result": "not-applicable",
+      "evidence": "No icon syntax on this page."
+    },
+    {
+      "invariantId": "INV-jekyll-025",
+      "domain": "jekyll",
+      "result": "not-applicable",
+      "evidence": "No status badges on this page."
+    },
+    {
+      "invariantId": "INV-jekyll-026",
+      "domain": "jekyll",
+      "result": "pass",
+      "evidence": "Table uses header row option correctly (line 44: header=\"true\"). No colspan/rowspan used."
+    },
+    {
+      "invariantId": "INV-jekyll-027",
+      "domain": "jekyll",
+      "result": "not-applicable",
+      "evidence": "No arcade demo syntax on this page."
+    },
+    {
+      "invariantId": "INV-jekyll-028",
+      "domain": "jekyll",
+      "result": "pass",
+      "evidence": "Filename 'content-versioning-configuration.md' uses lowercase hyphens reflecting the title 'Content versioning configuration'."
+    },
+    {
+      "invariantId": "INV-jekyll-029",
+      "domain": "jekyll",
+      "result": "pass",
+      "evidence": "Identifier 'versioning_configuration_xp' follows snake_case with '_xp' suffix."
+    },
+    {
+      "invariantId": "INV-jekyll-030",
+      "domain": "jekyll",
+      "result": "not-applicable",
+      "evidence": "Order value (350) not modified."
+    },
+    {
+      "invariantId": "INV-jekyll-031",
+      "domain": "jekyll",
+      "result": "pass",
+      "evidence": "License set to 1 (standard tier)."
+    },
+    {
+      "invariantId": "INV-jekyll-032",
+      "domain": "jekyll",
+      "result": "pass",
+      "evidence": "redirect_from includes 'x/versioning_configuration_xp'."
+    },
+    {
+      "invariantId": "INV-jekyll-033",
+      "domain": "jekyll",
+      "result": "not-applicable",
+      "evidence": "No code_link tags on this page."
+    },
+    {
+      "invariantId": "INV-codesamples-001",
+      "domain": "codesamples",
+      "result": "not-applicable",
+      "evidence": "No codesamples project files modified. Task is a cross-reference update."
+    },
+    {
+      "invariantId": "INV-codesamples-002",
+      "domain": "codesamples",
+      "result": "not-applicable",
+      "evidence": "No codesamples project files modified."
+    },
+    {
+      "invariantId": "INV-codesamples-003",
+      "domain": "codesamples",
+      "result": "not-applicable",
+      "evidence": "No codesamples project files modified."
+    },
+    {
+      "invariantId": "INV-codesamples-004",
+      "domain": "codesamples",
+      "result": "not-applicable",
+      "evidence": "No codesamples project files modified."
+    },
+    {
+      "invariantId": "INV-codesamples-005",
+      "domain": "codesamples",
+      "result": "not-applicable",
+      "evidence": "No source code comments modified."
+    },
+    {
+      "invariantId": "INV-codesamples-006",
+      "domain": "codesamples",
+      "result": "not-applicable",
+      "evidence": "No source code comments modified."
+    },
+    {
+      "invariantId": "INV-codesamples-007",
+      "domain": "codesamples",
+      "result": "not-applicable",
+      "evidence": "No source code comments modified."
+    },
+    {
+      "invariantId": "INV-codesamples-008",
+      "domain": "codesamples",
+      "result": "not-applicable",
+      "evidence": "No source code comments modified."
+    },
+    {
+      "invariantId": "INV-codesamples-009",
+      "domain": "codesamples",
+      "result": "not-applicable",
+      "evidence": "No source code comments modified."
+    },
+    {
+      "invariantId": "INV-codesamples-010",
+      "domain": "codesamples",
+      "result": "not-applicable",
+      "evidence": "No source code modified."
+    },
+    {
+      "invariantId": "INV-codesamples-011",
+      "domain": "codesamples",
+      "result": "not-applicable",
+      "evidence": "No code examples modified."
+    },
+    {
+      "invariantId": "INV-codesamples-014",
+      "domain": "codesamples",
+      "result": "pass",
+      "evidence": "Pre-existing code block at line 84 has title attribute: title=\"Example\". Not modified by writer."
+    },
+    {
+      "invariantId": "INV-codesamples-015",
+      "domain": "codesamples",
+      "result": "not-applicable",
+      "evidence": "No code_link tags on this page."
+    },
+    {
+      "invariantId": "INV-codesamples-016",
+      "domain": "codesamples",
+      "result": "not-applicable",
+      "evidence": "No code_link tags on this page."
+    },
+    {
+      "invariantId": "INV-codesamples-017",
+      "domain": "codesamples",
+      "result": "not-applicable",
+      "evidence": "No code_link tags on this page."
+    },
+    {
+      "invariantId": "INV-codesamples-018",
+      "domain": "codesamples",
+      "result": "not-applicable",
+      "evidence": "No code_link tags on this page."
+    },
+    {
+      "invariantId": "INV-codesamples-019",
+      "domain": "codesamples",
+      "result": "not-applicable",
+      "evidence": "No section markers on this page."
+    },
+    {
+      "invariantId": "INV-codesamples-020",
+      "domain": "codesamples",
+      "result": "not-applicable",
+      "evidence": "No HTML/XML section markers on this page."
+    },
+    {
+      "invariantId": "INV-codesamples-021",
+      "domain": "codesamples",
+      "result": "not-applicable",
+      "evidence": "No SQL section markers on this page."
+    },
+    {
+      "invariantId": "INV-codesamples-022",
+      "domain": "codesamples",
+      "result": "not-applicable",
+      "evidence": "No YAML/Bash/PS section markers on this page."
+    },
+    {
+      "invariantId": "INV-codesamples-023",
+      "domain": "codesamples",
+      "result": "not-applicable",
+      "evidence": "No Razor section markers on this page."
+    },
+    {
+      "invariantId": "INV-codesamples-024",
+      "domain": "codesamples",
+      "result": "not-applicable",
+      "evidence": "No code_link tags on this page."
+    },
+    {
+      "invariantId": "INV-codesamples-025",
+      "domain": "codesamples",
+      "result": "not-applicable",
+      "evidence": "No code_link tags referencing _code project."
+    },
+    {
+      "invariantId": "INV-codesamples-026",
+      "domain": "codesamples",
+      "result": "not-applicable",
+      "evidence": "No code comments modified."
+    },
+    {
+      "invariantId": "INV-codesamples-027",
+      "domain": "codesamples",
+      "result": "not-applicable",
+      "evidence": "No code comments modified."
+    },
+    {
+      "invariantId": "INV-codesamples-028",
+      "domain": "codesamples",
+      "result": "pass",
+      "evidence": "Pre-existing code example at line 84 correctly uses '...' (three dots) for omitted code at lines 89, 94, 96. Not modified by writer."
+    },
+    {
+      "invariantId": "INV-structure-001",
+      "domain": "structure",
+      "result": "pass",
+      "evidence": "Page documents the current state of the content versioning feature. No migration content or historical versioning information."
+    },
+    {
+      "invariantId": "INV-structure-002",
+      "domain": "structure",
+      "result": "pass",
+      "evidence": "No 'Next steps' section present. None added by writer."
+    },
+    {
+      "invariantId": "INV-structure-009",
+      "domain": "structure",
+      "result": "pass",
+      "evidence": "Page is self-contained. Cross-references supplement but the page works independently."
+    },
+    {
+      "invariantId": "INV-structure-010",
+      "domain": "structure",
+      "result": "not-applicable",
+      "evidence": "Not a reference or example page."
+    },
+    {
+      "invariantId": "INV-structure-011",
+      "domain": "structure",
+      "result": "pass",
+      "evidence": "Page introduces content versioning fully before assuming prior knowledge. Cross-references provide paths for deeper exploration."
+    },
+    {
+      "invariantId": "INV-structure-030",
+      "domain": "structure",
+      "result": "pass",
+      "evidence": "Target file is in _documentation collection, not _guides. No _guides files modified."
+    },
+    {
+      "invariantId": "INV-structure-031",
+      "domain": "structure",
+      "result": "not-applicable",
+      "evidence": "No _api files modified."
+    },
+    {
+      "invariantId": "INV-structure-032",
+      "domain": "structure",
+      "result": "pass",
+      "evidence": "Changelog not modified."
+    },
+    {
+      "invariantId": "INV-structure-033",
+      "domain": "structure",
+      "result": "pass",
+      "evidence": "Release notes not referenced or modified."
+    },
+    {
+      "invariantId": "INV-structure-034",
+      "domain": "structure",
+      "result": "pass",
+      "evidence": "Page has: title (front matter), introduction (line 17), structured sections (Set up, Permissions, Suspend versioning)."
+    },
+    {
+      "invariantId": "INV-structure-035",
+      "domain": "structure",
+      "result": "pass",
+      "evidence": "Introduction at line 17 provides context about what content versioning stores and when."
+    },
+    {
+      "invariantId": "INV-structure-036",
+      "domain": "structure",
+      "result": "not-applicable",
+      "evidence": "Page is a how-to/configuration page, not a longer conceptual introduction. Key points callout not expected."
+    },
+    {
+      "invariantId": "INV-structure-037",
+      "domain": "structure",
+      "result": "pass",
+      "evidence": "Page assumes happy path — user has permissions and versioning is available. Prerequisites are the Setup section."
+    },
+    {
+      "invariantId": "INV-structure-038",
+      "domain": "structure",
+      "result": "pass",
+      "evidence": "Setup section ends with 'Save the settings' and includes a confirmation screenshot (line 37). Not modified by writer."
+    },
+    {
+      "invariantId": "INV-structure-039",
+      "domain": "structure",
+      "result": "not-applicable",
+      "evidence": "No reference sub-pages involved."
+    },
+    {
+      "invariantId": "INV-style-001",
+      "domain": "style",
+      "result": "pass",
+      "evidence": "File uses 4-space indentation throughout (visible in front matter and table cells)."
+    },
+    {
+      "invariantId": "INV-style-002",
+      "domain": "style",
+      "result": "pass",
+      "evidence": "Filename 'content-versioning-configuration.md' uses lowercase hyphens."
+    },
+    {
+      "invariantId": "INV-style-054",
+      "domain": "style",
+      "result": "pass",
+      "evidence": "Page title 'Content versioning configuration' does not end with '-ing' (as a gerund title). 'configuration' is a noun here."
+    },
+    {
+      "invariantId": "INV-style-055",
+      "domain": "style",
+      "result": "pass",
+      "evidence": "Numbered list in Setup section has 5 steps (lines 25–35). Under the limit of 8."
+    },
+    {
+      "invariantId": "INV-style-056",
+      "domain": "style",
+      "result": "pass",
+      "evidence": "No pronouns in the added sentence. Pre-existing 'its' at lines 57, 65, 73 has clear antecedents (the item/channel being discussed in the same cell)."
+    },
+    {
+      "invariantId": "INV-style-057",
+      "domain": "style",
+      "result": "not-applicable",
+      "evidence": "No restrictions or limitations mentioned in the added content."
+    },
+    {
+      "invariantId": "INV-style-058",
+      "domain": "style",
+      "result": "pass",
+      "evidence": "Line 25: 'Open the **Settings** application.' — correct format. Not modified by writer."
+    },
+    {
+      "invariantId": "INV-style-059",
+      "domain": "style",
+      "result": "not-applicable",
+      "evidence": "No authentication terminology in the added content."
+    },
+    {
+      "invariantId": "INV-style-060",
+      "domain": "style",
+      "result": "not-applicable",
+      "evidence": "No UI terminology elements in the added content."
+    },
+    {
+      "invariantId": "INV-style-061",
+      "domain": "style",
+      "result": "pass",
+      "evidence": "No references to 'braces' or 'curly brackets' on this page."
+    },
+    {
+      "invariantId": "INV-style-062",
+      "domain": "style",
+      "result": "not-applicable",
+      "evidence": "No usage of 'minimum' or 'minimal' in the added content."
+    },
+    {
+      "invariantId": "INV-style-063",
+      "domain": "style",
+      "result": "not-applicable",
+      "evidence": "No 'that/which' usage in the added sentence."
+    },
+    {
+      "invariantId": "INV-style-064",
+      "domain": "style",
+      "result": "pass",
+      "evidence": "Navigation arrows at line 27 use → correctly: **Content** -> **Content versioning**. Not modified by writer."
+    },
+    {
+      "invariantId": "INV-style-073",
+      "domain": "style",
+      "result": "pass",
+      "evidence": "Pre-existing UI elements correctly bolded: **Settings**, **Content**, **Enable content versioning**, **Number of stored versions**, **Save**. Not modified by writer."
+    },
+    {
+      "invariantId": "INV-style-074",
+      "domain": "style",
+      "result": "not-applicable",
+      "evidence": "No repeated UI elements in the added content."
+    },
+    {
+      "invariantId": "INV-style-075",
+      "domain": "style",
+      "result": "pass",
+      "evidence": "Permission names *Read* and *Update* correctly italicized in the added sentence, consistent with the rest of the Permissions table (lines 57, 65, 66, 73, 74)."
+    },
+    {
+      "invariantId": "INV-style-076",
+      "domain": "style",
+      "result": "pass",
+      "evidence": "No specific values in property lists that shouldn't be italicized."
+    },
+    {
+      "invariantId": "INV-style-078",
+      "domain": "style",
+      "result": "pass",
+      "evidence": "No underlining in the file."
+    },
+    {
+      "invariantId": "INV-style-079",
+      "domain": "style",
+      "result": "not-applicable",
+      "evidence": "No all-caps usage in the added content."
+    },
+    {
+      "invariantId": "INV-style-080",
+      "domain": "style",
+      "result": "pass",
+      "evidence": "Period after the closing %} tag is not formatted (bold/italic). Correctly follows logical separation."
+    },
+    {
+      "invariantId": "INV-style-081",
+      "domain": "style",
+      "result": "pass",
+      "evidence": "Page title 'Content versioning configuration' uses sentence case. Headings: 'Set up content versioning', 'Permissions', 'Suspend versioning in custom code' — all sentence case."
+    },
+    {
+      "invariantId": "INV-style-082",
+      "domain": "style",
+      "result": "not-applicable",
+      "evidence": "No UI element capitalization issues in the added content."
+    },
+    {
+      "invariantId": "INV-style-083",
+      "domain": "style",
+      "result": "pass",
+      "evidence": "The added sentence begins with a capital letter ('For details...')."
+    },
+    {
+      "invariantId": "INV-style-084",
+      "domain": "style",
+      "result": "pass",
+      "evidence": "Single spaces between words/sentences in the added content. File uses 4-space indentation."
+    },
+    {
+      "invariantId": "INV-style-085",
+      "domain": "style",
+      "result": "pass",
+      "evidence": "Added sentence lists only two items (*Read* and *Update*) — Oxford comma not applicable for two-item lists."
+    },
+    {
+      "invariantId": "INV-style-086",
+      "domain": "style",
+      "result": "not-applicable",
+      "evidence": "No 'for example', 'e.g.', or 'i.e.' in the added content."
+    },
+    {
+      "invariantId": "INV-style-087",
+      "domain": "style",
+      "result": "pass",
+      "evidence": "No semi-colons in the added content."
+    },
+    {
+      "invariantId": "INV-style-088",
+      "domain": "style",
+      "result": "not-applicable",
+      "evidence": "No hyphens in the added content."
+    },
+    {
+      "invariantId": "INV-style-089",
+      "domain": "style",
+      "result": "pass",
+      "evidence": "No en dashes in the added content. No en dashes anywhere in the file."
+    },
+    {
+      "invariantId": "INV-style-090",
+      "domain": "style",
+      "result": "pass",
+      "evidence": "No em dashes in the file. Automated scan confirmed zero occurrences of U+2014."
+    },
+    {
+      "invariantId": "INV-style-091",
+      "domain": "style",
+      "result": "pass",
+      "evidence": "No quotation marks in the added content. Pre-existing quotes use straight double quotes in Liquid tag attributes."
+    },
+    {
+      "invariantId": "INV-style-092",
+      "domain": "style",
+      "result": "not-applicable",
+      "evidence": "No URL or path references in the added content."
+    },
+    {
+      "invariantId": "INV-style-093",
+      "domain": "style",
+      "result": "not-applicable",
+      "evidence": "No nested lists in the added content."
+    },
+    {
+      "invariantId": "INV-style-094",
+      "domain": "style",
+      "result": "not-applicable",
+      "evidence": "No time/temperature/ordinal references in the added content."
+    },
+    {
+      "invariantId": "INV-style-095",
+      "domain": "style",
+      "result": "not-applicable",
+      "evidence": "No ellipsis usage in the added content."
+    },
+    {
+      "invariantId": "INV-style-096",
+      "domain": "style",
+      "result": "pass",
+      "evidence": "No dashes in the added content. Pre-existing dashes in the file: line 27 uses '->' for navigation. No unicode dashes found."
+    },
+    {
+      "invariantId": "INV-style-097",
+      "domain": "style",
+      "result": "pass",
+      "evidence": "The cross-reference is task-oriented ('configuring permissions for specific roles') rather than feature-catalog-style."
+    },
+    {
+      "invariantId": "INV-style-098",
+      "domain": "style",
+      "result": "pass",
+      "evidence": "Page title 'Content versioning configuration' uses sentence case."
+    },
+    {
+      "invariantId": "INV-style-099",
+      "domain": "style",
+      "result": "pass",
+      "evidence": "Title 'Content versioning configuration' is a noun phrase for a feature/concept page."
+    },
+    {
+      "invariantId": "INV-style-100",
+      "domain": "style",
+      "result": "pass",
+      "evidence": "No 'How to' prefix in the title."
+    },
+    {
+      "invariantId": "INV-style-101",
+      "domain": "style",
+      "result": "pass",
+      "evidence": "Title is search-friendly: 'Content versioning configuration'."
+    },
+    {
+      "invariantId": "INV-style-102",
+      "domain": "style",
+      "result": "pass",
+      "evidence": "Title is self-sufficient and doesn't rely on parent page context."
+    },
+    {
+      "invariantId": "INV-style-103",
+      "domain": "style",
+      "result": "pass",
+      "evidence": "Section headings use verb phrases: 'Set up content versioning', 'Suspend versioning in custom code'. 'Permissions' is a noun phrase for a non-task section (acceptable per INV-style-106)."
+    },
+    {
+      "invariantId": "INV-style-104",
+      "domain": "style",
+      "result": "pass",
+      "evidence": "Headings use general terms: 'Set up', 'Permissions', 'Suspend versioning'."
+    },
+    {
+      "invariantId": "INV-style-105",
+      "domain": "style",
+      "result": "pass",
+      "evidence": "No redundant introduction sentences before steps. Setup section goes directly to numbered list after a {% note %} callout."
+    },
+    {
+      "invariantId": "INV-style-106",
+      "domain": "style",
+      "result": "pass",
+      "evidence": "'Permissions' heading is a noun phrase for an abstract concept section — acceptable per this rule."
+    },
+    {
+      "invariantId": "INV-style-107",
+      "domain": "style",
+      "result": "pass",
+      "evidence": "Setup section uses ordered list for step-by-step instructions (lines 25–35). Permissions section uses a table for reference data."
+    },
+    {
+      "invariantId": "INV-style-108",
+      "domain": "style",
+      "result": "pass",
+      "evidence": "Steps have one action each: Open, Select, Select, Enter, Save."
+    },
+    {
+      "invariantId": "INV-style-109",
+      "domain": "style",
+      "result": "pass",
+      "evidence": "Steps use imperative mood: 'Open', 'Select', 'Enter', 'Save'."
+    },
+    {
+      "invariantId": "INV-style-110",
+      "domain": "style",
+      "result": "pass",
+      "evidence": "Line 17 uses 'Xperience by Kentico' (first/standalone mention on this page). No subsequent shortened mentions needed in the added content."
+    },
+    {
+      "invariantId": "INV-style-111",
+      "domain": "style",
+      "result": "pass",
+      "evidence": "Added sentence is concise: one sentence linking to the hub page for details."
+    },
+    {
+      "invariantId": "INV-style-112",
+      "domain": "style",
+      "result": "pass",
+      "evidence": "Added sentence leads with purpose ('For details about configuring...') and provides the link."
+    },
+    {
+      "invariantId": "INV-style-113",
+      "domain": "style",
+      "result": "pass",
+      "evidence": "No 'please' in the added content or anywhere on the page."
+    },
+    {
+      "invariantId": "INV-style-114",
+      "domain": "style",
+      "result": "pass",
+      "evidence": "Added sentence uses active voice: 'see {% page_link ... %}' is imperative."
+    },
+    {
+      "invariantId": "INV-style-115",
+      "domain": "style",
+      "result": "pass",
+      "evidence": "Added sentence uses present simple tense."
+    },
+    {
+      "invariantId": "INV-style-116",
+      "domain": "style",
+      "result": "not-applicable",
+      "evidence": "No (s) pluralization in the added content."
+    },
+    {
+      "invariantId": "INV-style-117",
+      "domain": "style",
+      "result": "pass",
+      "evidence": "American English used throughout. 'configuring' is correct American spelling."
+    },
+    {
+      "invariantId": "INV-style-118",
+      "domain": "style",
+      "result": "pass",
+      "evidence": "Permission names (*Read*, *Update*) are consistent with the same terms used elsewhere in the Permissions table."
+    },
+    {
+      "invariantId": "INV-style-119",
+      "domain": "style",
+      "result": "pass",
+      "evidence": "No 'it' pronoun in the added sentence."
+    },
+    {
+      "invariantId": "INV-style-120",
+      "domain": "style",
+      "result": "pass",
+      "evidence": "'see' is imperative mood — correct."
+    },
+    {
+      "invariantId": "INV-style-121",
+      "domain": "style",
+      "result": "not-applicable",
+      "evidence": "No gendered pronouns in the added content."
+    },
+    {
+      "invariantId": "INV-style-122",
+      "domain": "style",
+      "result": "pass",
+      "evidence": "No idioms, slang, or culturally specific references in the added content."
+    },
+    {
+      "invariantId": "INV-style-123",
+      "domain": "style",
+      "result": "pass",
+      "evidence": "Vocabulary appropriate for admin/developer audience: 'permissions', 'roles', 'configuring'."
+    },
+    {
+      "invariantId": "INV-style-124",
+      "domain": "style",
+      "result": "pass",
+      "evidence": "No abbreviations in the added content."
+    },
+    {
+      "invariantId": "INV-style-125",
+      "domain": "style",
+      "result": "not-applicable",
+      "evidence": "No contractions in the added content. Pre-existing contractions ('don't', 'it's') used correctly elsewhere."
+    },
+    {
+      "invariantId": "INV-style-126",
+      "domain": "style",
+      "result": "pass",
+      "evidence": "Pre-existing contractions are consistent throughout ('don't' used consistently). No contractions in the added sentence."
+    },
+    {
+      "invariantId": "INV-style-127",
+      "domain": "style",
+      "result": "pass",
+      "evidence": "No noun-verb contractions in the file."
+    },
+    {
+      "invariantId": "INV-style-128",
+      "domain": "style",
+      "result": "pass",
+      "evidence": "No ambiguous or double contractions in the file."
+    },
+    {
+      "invariantId": "INV-style-129",
+      "domain": "style",
+      "result": "pass",
+      "evidence": "Added sentence uses 'see' which is appropriate for a cross-reference directive. Pre-existing verbs use 'Open', 'Select', 'Enter' correctly."
+    },
+    {
+      "invariantId": "INV-style-130",
+      "domain": "style",
+      "result": "pass",
+      "evidence": "No input-specific verbs ('Click', 'Choose', 'Type', etc.) in the added content."
+    },
+    {
+      "invariantId": "INV-style-131",
+      "domain": "style",
+      "result": "not-applicable",
+      "evidence": "No 'enable'/'disable' used in the added content."
+    },
+    {
+      "invariantId": "INV-style-132",
+      "domain": "style",
+      "result": "pass",
+      "evidence": "No 'must' directed at people in the added sentence. Automated scan confirmed zero occurrences of 'must' directed at people in the entire file."
+    },
+    {
+      "invariantId": "INV-style-133",
+      "domain": "style",
+      "result": "not-applicable",
+      "evidence": "No expected outcomes described in the added content."
+    },
+    {
+      "invariantId": "INV-style-134",
+      "domain": "style",
+      "result": "pass",
+      "evidence": "Added sentence leads with condition: 'For details about configuring... see...' — condition/purpose before the action."
+    },
+    {
+      "invariantId": "INV-style-135",
+      "domain": "style",
+      "result": "not-applicable",
+      "evidence": "No possessives in the added sentence."
+    },
+    {
+      "invariantId": "INV-style-136",
+      "domain": "style",
+      "result": "not-applicable",
+      "evidence": "No inline code references in the added content."
+    },
+    {
+      "invariantId": "INV-style-137",
+      "domain": "style",
+      "result": "not-applicable",
+      "evidence": "No pluralized code elements in the added content."
+    },
+    {
+      "invariantId": "INV-style-138",
+      "domain": "style",
+      "result": "not-applicable",
+      "evidence": "No callouts added or modified by writer."
+    },
+    {
+      "invariantId": "INV-style-139",
+      "domain": "style",
+      "result": "pass",
+      "evidence": "No callouts added or modified by the writer. Pre-existing multi-sentence callouts without titles at lines 21 and 31 are pre-existing issues (see additionalFindings)."
+    },
+    {
+      "invariantId": "INV-style-140",
+      "domain": "style",
+      "result": "pass",
+      "evidence": "Pre-existing callouts do not contain their type name as text. Not modified by writer."
+    },
+    {
+      "invariantId": "INV-style-141",
+      "domain": "style",
+      "result": "pass",
+      "evidence": "Pre-existing {% note %} callouts contain important points — correct callout type. Not modified by writer."
+    },
+    {
+      "invariantId": "INV-style-142",
+      "domain": "style",
+      "result": "not-applicable",
+      "evidence": "No 'register'/'sign up' in the added content."
+    },
+    {
+      "invariantId": "INV-style-143",
+      "domain": "style",
+      "result": "not-applicable",
+      "evidence": "No check box deselection described."
+    },
+    {
+      "invariantId": "INV-style-144",
+      "domain": "style",
+      "result": "not-applicable",
+      "evidence": "No navigation described in the added content."
+    },
+    {
+      "invariantId": "INV-style-145",
+      "domain": "style",
+      "result": "not-applicable",
+      "evidence": "No arrow navigation paths in the added content."
+    },
+    {
+      "invariantId": "INV-style-146",
+      "domain": "style",
+      "result": "pass",
+      "evidence": "No 'have to' in the added content or file. Line 78 uses 'has to go through' (about an item, not a person) — acceptable."
+    },
+    {
+      "invariantId": "INV-style-147",
+      "domain": "style",
+      "result": "pass",
+      "evidence": "No 'its'/'it's' confusion in the added content."
+    },
+    {
+      "invariantId": "INV-style-148",
+      "domain": "style",
+      "result": "not-applicable",
+      "evidence": "No 'sign in' references in the added content."
+    }
+  ],
+  "additionalFindings": [
+    {
+      "category": "heading-hierarchy",
+      "result": "pass",
+      "evidence": "All headings are h2: 'Set up content versioning' (line 19), 'Permissions' (line 39), 'Suspend versioning in custom code' (line 80). No skipped levels — flat h2 structure is valid for a page with distinct peer sections."
+    },
+    {
+      "category": "consistent-formatting",
+      "result": "pass",
+      "evidence": "The added sentence's formatting (italicized permission names *Read* and *Update*, {% page_link %} syntax) is consistent with the existing paragraph's patterns in the same table cell."
+    },
+    {
+      "category": "link-formatting",
+      "result": "pass",
+      "evidence": "The new cross-reference uses {% page_link %} syntax consistent with all other internal links on this page. 12 pre-existing page_links all follow the same pattern."
+    },
+    {
+      "category": "liquid-syntax",
+      "result": "pass",
+      "evidence": "All {% %} and {{ }} tags are properly opened and closed. No broken includes. The new {% page_link %} tag is syntactically valid."
+    },
+    {
+      "category": "sentence-structure",
+      "result": "pass",
+      "evidence": "Added sentence is clear, concise, and scannable. Structure: purpose clause → imperative link directive."
+    },
+    {
+      "category": "pre-existing-observation-callout-titles",
+      "result": "observation",
+      "evidence": "Two pre-existing multi-sentence {% note %} callouts lack bold titles: lines 21–23 (2 sentences), lines 31–33 (3 sentences). Per INV-style-139, multi-sentence callouts should have titles. NOT introduced by the writer — pre-existing. Flagged for awareness only."
+    }
+  ],
+  "metaKnowledgeResults": {
+    "styleEvolutionsApplied": [
+      {
+        "id": "STYLE-004",
+        "title": "Incorrect page_link identifiers triggered rejections",
+        "result": "pass",
+        "evidence": "Writer verified identifier 'permissions_pagelevel_xp' against target page front matter and anchor 'Edit page permissions' against heading at line 132 of target page. No fabrication detected.",
+        "conflictsWithInvariant": null
+      }
+    ],
+    "antiPatternsChecked": [
+      {
+        "id": "ANTI-001",
+        "applicable": false,
+        "evidence": "This is an update-crossrefs task, not a create task. Not affected."
+      },
+      {
+        "id": "ANTI-002",
+        "applicable": true,
+        "result": "pass",
+        "evidence": "No dashes (em, en, or double-hyphen) in the added content. Automated scan of entire file found zero em dashes (U+2014) and zero en dashes (U+2013)."
+      },
+      {
+        "id": "ANTI-004",
+        "applicable": false,
+        "evidence": "Not an API method documentation task. Cross-reference update only."
+      },
+      {
+        "id": "ANTI-010",
+        "applicable": false,
+        "evidence": "No code examples modified."
+      }
+    ],
+    "discards": []
+  },
+  "summary": {
+    "invariantsPassed": 148,
+    "invariantsFailed": 0,
+    "invariantsNotApplicable": 23,
+    "additionalIssues": 0,
+    "preExistingObservations": 1
+  }
+}

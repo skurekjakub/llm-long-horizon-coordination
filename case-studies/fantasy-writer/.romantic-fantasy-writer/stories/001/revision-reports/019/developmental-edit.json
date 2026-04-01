@@ -1,0 +1,200 @@
+{
+  "agent": "developmental-editor",
+  "chapter": 19,
+  "storyId": "001",
+  "title": "Sound Enough",
+  "pov": "CHAR-001",
+  "povName": "Kaelith Maren",
+  "act": "Act III — Break into Three",
+  "romanceStage": "commitment (first steps)",
+  "fantasyBeat": "Break into Three — Shared Plan to Exploit Contract Loophole and Reach Quietus",
+  "romanceBeat": "Reunion Through Truth — 'I Choose This. I Choose You.'",
+  "tensionLevel": 7,
+  "wordCount": 5735,
+  "targetWordCount": 4000,
+  "timestamp": "2026-03-19T14:30:00Z",
+  "overallVerdict": "PASS — structurally excellent chapter with no critical or major issues. The reunion is earned, the dual-arc interleave is the strongest in the Act III sequence, and all three thematic pillars are dramatized through action. Four minor findings identified, all addressable in revision without restructuring.",
+  "structuralAssessment": {
+    "plotProgression": {
+      "verdict": "strong",
+      "assessment": "The fantasy arc advances meaningfully on multiple fronts: Ashborne alliance formalized (eight veterans, relay network), god-seal intelligence exchanged (Pallor thinning exposes binding anchors, defected Architect precedent), contract loophole mechanism detailed (heartbeat cessation + bond precision), and three-day Quietus timeline established. The 'Break into Three' beat is fully satisfied — the protagonists have a concrete plan with named components, identified obstacles, and a compressed timeline. The chapter correctly converts Act III's opening fallout into operational forward momentum."
+    },
+    "romanceArcProgression": {
+      "verdict": "excellent",
+      "assessment": "The romance moves from post-black-moment separation to deliberate reconciliation through a carefully staged sequence: (1) Ashborne loyalty reframes Kaelith's isolation as institutional lie rather than earned penance, creating the cognitive bridge to reconsidering Lirien's choice; (2) Lirien arrives carrying proof of agency — destroyed cipher, intelligence, Ashborne network — not excuses; (3) Kaelith names her deepest fear aloud (Vulnerability Ladder Step 10) — 'I am afraid that choosing love will put me back in Calwrath'; (4) Lirien responds with shared risk rather than reassurance — 'Then we burn together'; (5) the decision crystallizes as structural choice, not emotional surrender. The 'not forgiveness — decision' framing avoids sentimentality while maintaining emotional impact. The bond opening fully for the first time since Ch16 provides the physical-magical correlate to the emotional shift. Romance stage 'commitment (first steps)' is correctly calibrated — trust is rebuilt but explicitly conditional and fragile.",
+      "romanceStageAlignment": "Correct. The dual-arc timeline marks Ch19 as commitment stage, and the draft delivers: trust rebuilt through decision rather than erasure, tested immediately through planning that requires Kaelith to trust Lirien with her life."
+    },
+    "dualArcInterleave": {
+      "verdict": "excellent — strongest interleave in the Act III sequence",
+      "assessment": "SCN-54 fuses intelligence exchange with trust rebuilding so completely that separating 'tactical briefing' from 'relationship repair' is impossible — Lirien presenting the destroyed cipher IS both operational proof (identity severance from Court) and romantic proof (choice over obligation). SCN-55's strategy session IS a trust exercise — every tactical decision tests whether the reconciliation holds under operational pressure. The contract loophole discussion is simultaneously the most important tactical mechanism AND the most extreme trust demand in the story. The chapter achieves what T12 exists to enforce: fantasy and romance arcs that are mutually constitutive rather than merely parallel. Genre balance is appropriate for a romance-dominant chapter (per dual-arc-timeline designation) with substantial fantasy advancement.",
+      "interleaveType": "reinforcing",
+      "genreBalance": "Romance-dominant with strong fantasy presence — consistent with dual-arc-timeline.json Ch19 designation"
+    },
+    "pacingAssessment": {
+      "verdict": "pass — no INV-020 violations",
+      "assessment": "The chapter sits in a well-calibrated pacing sequence: Ch17 (tension 8, sustained crisis) → Ch18 (tension 6, partial recovery/pivot) → Ch19 (tension 7, rising) → Ch20 (tension 9, peak). No three consecutive chapters at similar tension levels. Ch18's partial recovery provides the necessary breathing room. Internal pacing follows a proper rise-and-redirect pattern: quiet arrival/recognition (SCN-53, building) → intense confrontation/reunion (SCN-54, peak) → purposeful planning (SCN-55, redirected energy). However, SCN-53's extended internal processing may slightly front-load the chapter's slower material.",
+      "adjacentChapterTension": {
+        "ch17": 8,
+        "ch18": 6,
+        "ch19": 7,
+        "ch20": 9
+      }
+    },
+    "thematicResonance": {
+      "verdict": "excellent — all three pillars dramatized through action",
+      "assessment": "TP-1 (Trust as structural failure): dramatized through the 'cracked foundations could bear weight' extended metaphor — trust rebuilt with full knowledge of fractures, not by pretending damage doesn't exist. TP-2 (Price of the right choice): both women choose each other knowing the cost — Kaelith names the fear, Lirien names the risk, both proceed. The price is visible: choosing love means risking Calwrath-scale devastation again. TP-3 (Chosen versus only): the chapter's central argument — 'She could be in the tree cover in forty seconds. She could disappear.' She stays. The reconciliation is defined by the fact that walking away was available and was not taken. The Ashborne loyalty subplot extends TP-3 by providing the template: if people can choose to follow her doctrine despite Calwrath, then Lirien's choice can be real despite the contract."
+    },
+    "emotionalVariety": {
+      "verdict": "pass — INV-037 satisfied",
+      "assessment": "Ch17 CHAR-001 dominant emotion: 'grief-tinged resolve.' Ch18 CHAR-001 (non-POV): 'bleak determination.' Ch19 CHAR-001 dominant emotion: 'wary reconnection.' These are distinct emotional states with clear progression: grief → determination → reconnection. The shift from grief-tinged resolve to wary reconnection is earned through the Ashborne loyalty revelation and Lirien's proof of agency. The 'wary' qualifier prevents the reconnection from feeling unearned or emotionally identical to pre-black-moment states.",
+      "ch17DominantEmotion": "grief-tinged resolve",
+      "ch18DominantEmotion": "bleak determination (non-POV)",
+      "ch19DominantEmotion": "wary reconnection",
+      "emotionRepeated": false
+    },
+    "sceneValueShifts": {
+      "verdict": "pass — all three scenes shift at least one value",
+      "assessment": "SCN-53: 'Mission discipline / isolation as identity' → 'Isolation revealed as lie / choosing to face Lirien.' Clear value shift from self-imposed isolation to acknowledged connection. SCN-54: 'Can I trust her again?' → 'I choose to trust her again, knowing the risk.' Core value shift of the chapter — distrust to deliberate trust. SCN-55: 'Together again' → 'Together with a plan that might kill them both.' Reconciliation tested and held under operational pressure. All shifts are directional and irreversible within the chapter."
+    },
+    "tryFailCycles": {
+      "verdict": "pass — correctly positioned as partial success",
+      "assessment": "Per plot-structure.json, Ch19 is a 'partial' success in the trust-building try-fail cycle. The draft delivers this correctly: trust is rebuilt, but on damaged ground, and the plan requires ultimate trust that has not yet been tested. The 'partial' designation is appropriate — full success comes in Ch20 when the heart-stop actually occurs. No INV-042 violation: protagonists do not succeed too easily. The reconciliation is hard-won through Ashborne evidence, Lirien's proof, and Kaelith's vulnerability."
+    },
+    "stakesEscalation": {
+      "verdict": "pass — Act III stakes present at all three levels",
+      "assessment": "Personal: Pallor claiming Kaelith's body (silver past elbow, three fingers frozen, timeline compressing from weeks to hours). Relational: trust rebuilt on explicitly damaged foundation. Existential: Quietus timeline, god-seal approach, Ythara visible through Pallor gaps. All three stake levels present and escalating appropriately for Act III. The personal stakes create time pressure that prevents the reunion from stalling in emotional processing."
+    }
+  },
+  "findings": [
+    {
+      "id": "DEV-019-001",
+      "severity": "minor",
+      "category": "pacing",
+      "description": "SCN-53's internal processing of the 'isolation was a lie' revelation runs approximately 28 lines (76–103) of thematically similar content. While each paragraph adds a specific nuance — the empire's deliberate scattering of veterans (line 87–89), the distinction between real isolation and the empire's story about isolation (line 91–93), the logical bridge to reconsidering Lirien's choice (lines 96–101) — the cumulative effect slightly slows the chapter's momentum before the emotionally crucial reunion in SCN-54. The core insight (if loyalty can survive institutional destruction, maybe choice can survive institutional betrayal) could be delivered in 15–20% fewer lines without losing the emotional architecture.",
+      "location": "chapters/019/draft.md, lines 76–103, SCN-53",
+      "invariantsAffected": ["INV-035 (micro-tension continuity)"],
+      "suggestedFix": "Compress the processing sequence by combining the 'empire's story vs. truth' paragraphs (lines 91–93 and lines 96–98). The progression from 'isolation was a lie' to 'maybe Lirien's choice could be real' should feel like a logical cascade, not a series of separate revelations. Consider cutting or combining lines 78–80 (the 'empire's story' statement) with lines 91–93 (the 'isolation was a lie' restatement) to eliminate the redundancy. The section from 'She had believed she was alone' through 'Maybe Lirien's choice could be real despite the contract' could be tightened by ~5 lines while preserving the full emotional logic.",
+      "revisionPriority": 3
+    },
+    {
+      "id": "DEV-019-002",
+      "severity": "minor",
+      "category": "pacing",
+      "description": "The chapter runs 5,735 words against a 4,000-word outline target — approximately 43% over. While the reunion chapter's structural importance justifies extra length, the excess is concentrated in SCN-53 (the Ashborne arrival and processing sequence), which could be tightened. SCN-54 (reunion/confrontation) and SCN-55 (planning) earn their word counts. The issue is not that the chapter is too long in absolute terms — 5,735 words is well within genre norms for a pivotal reunion chapter — but that SCN-53's pacing may not sustain sufficient tension during its extended processing sequence.",
+      "location": "chapters/019/draft.md, SCN-53 (lines 15–138)",
+      "invariantsAffected": [],
+      "suggestedFix": "The word count overage is primarily a downstream pacing concern, not a structural defect. If the chapter reviser addresses DEV-019-001 (compressing SCN-53's processing), the word count will naturally reduce to approximately 5,400–5,500 words, which is appropriate for this chapter's structural significance. Do not sacrifice SCN-54 or SCN-55 content to hit the original target — the outline underestimated the reunion's required weight.",
+      "revisionPriority": 4
+    },
+    {
+      "id": "DEV-019-003",
+      "severity": "minor",
+      "category": "stakes",
+      "description": "The Quietus approach plan in SCN-55 is clearly established in its mechanical components (contract loophole mechanism, defected Architect precedent, Ashborne relay points, three-day timeline) but underdeveloped in its enumeration of specific obstacles. The assertion 'The plan was impossible' (line 363) is followed by a list of difficulties ('reaching a god-seal through Pallor-thinned territory with a deteriorating body and a damaged partnership and an incomplete understanding of the mechanism'), but the obstacles are described in general terms rather than named tactical challenges. Specifically: What does Thalen's network look like between here and the Quietus? What are the Court's enforcement capabilities in the Rivenmarch? What happens if the Pallor thinning is too extreme for human physiology? One concrete tactical obstacle would make the 'impossible plan' feel more impossible and more earned when they attempt it.",
+      "location": "chapters/019/draft.md, lines 362–367, SCN-55",
+      "invariantsAffected": ["INV-044/T6 (stakes escalation)"],
+      "suggestedFix": "Add 2–3 sentences during the strategy session (SCN-55, around lines 305–310 or within the 'plan is impossible' section) that enumerate at least one specific tactical obstacle: e.g., Sedara briefly mentioning Conclave patrol patterns between Rivenmarch and the Quietus, or Lirien noting that the defected Architect's mechanism was tested at a smaller seal-site and may not scale. This would sharpen the stakes without disrupting the chapter's emotional momentum. The obstacle should be concrete enough to seed Ch20–21 tactical challenges.",
+      "revisionPriority": 3
+    },
+    {
+      "id": "DEV-019-004",
+      "severity": "minor",
+      "category": "structure",
+      "description": "Sedara, the garrison-coast veteran who serves as Kaelith's primary Ashborne contact in this chapter, is effectively drawn in her initial appearance (lines 45–63) — the physical description, the military bearing, the accent, the rank recall. However, she appears only twice more in the chapter: asking 'What do you need?' (line 117) and mentioning the relay points (line 359). Given that the Ashborne network is a key plot mechanism for Act III (relay points, logistics, Ch22 payoff), Sedara could bear slightly more characterization during the strategy session to establish her as a functional supporting character rather than a mechanism. Even one moment where Sedara offers tactical insight that demonstrates independent judgment — not just logistics relay — would strengthen her utility for later chapters.",
+      "location": "chapters/019/draft.md, SCN-55 (lines 284–384)",
+      "invariantsAffected": [],
+      "suggestedFix": "During the strategy session, give Sedara one beat that demonstrates tactical judgment rather than simple logistics: e.g., she identifies a route risk Kaelith hadn't considered, or she pushes back on a planning assumption based on her years in the Rivenmarch. This would serve dual purposes: (1) establishing Sedara as a character with agency who can carry weight in Ch22, and (2) demonstrating that the Ashborne network is not just loyal bodies but competent minds. Keep it to 2–3 sentences — the chapter correctly focuses on Kaelith and Lirien.",
+      "revisionPriority": 4
+    }
+  ],
+  "findingCounts": {
+    "critical": 0,
+    "major": 0,
+    "minor": 4,
+    "total": 4
+  },
+  "strengths": [
+    {
+      "id": "STR-019-001",
+      "category": "romance",
+      "description": "The 'not forgiveness — decision' framing of the reconciliation is structurally and emotionally brilliant. It avoids the common genre pitfall of resolving betrayal through tearful absolution, instead grounding the reunion in Kaelith's character-consistent approach: assess the damage, map the fractures, distribute the load accordingly. The architectural metaphor system ('cracked foundations could bear weight, if you understood where the fractures ran') is both voice-authentic and thematically resonant."
+    },
+    {
+      "id": "STR-019-002",
+      "category": "arc",
+      "description": "Vulnerability Ladder Step 10 is the chapter's emotional centerpiece and earns its position completely. Kaelith naming her deepest fear — 'I am afraid that choosing love will put me back in Calwrath. That loving you will mean I become the blast radius of my own decisions again' — is the most undefended moment in Kaelith's arc. It is properly preceded by the Ashborne loyalty revelation (showing that isolation was a lie, creating the cognitive space for vulnerability) and followed by Lirien's response of shared risk rather than reassurance. The escalation from Step 9 (Ch15, physical/emotional intimacy) to Step 10 (naming the fear aloud) is correctly calibrated — naming is harder than showing."
+    },
+    {
+      "id": "STR-019-003",
+      "category": "structure",
+      "description": "The dual-arc interleave in this chapter is the strongest in the Act III sequence. SCN-54 and SCN-55 achieve genuine fusion — the intelligence exchange IS the trust rebuilding, the strategy session IS the reconciliation test. The contract loophole discussion (Lirien asking Kaelith to let her stop her heart) is simultaneously the most important tactical mechanism and the most extreme trust demand. This is precisely what T12 exists to enforce, and the chapter delivers it without any sense of two arcs being awkwardly stitched together."
+    },
+    {
+      "id": "STR-019-004",
+      "category": "theme",
+      "description": "All three thematic pillars receive substantive dramatization through action rather than statement. TP-3 (Chosen versus only) receives the most weight and is delivered through the chapter's best structural device: Kaelith's explicit awareness that she could disappear (line 119: 'She could be in the tree cover in forty seconds') followed by her deliberate choice to stay. The availability of exit makes the choice to remain meaningful — and the chapter never lets the reader forget that walking away was always an option."
+    },
+    {
+      "id": "STR-019-005",
+      "category": "pacing",
+      "description": "The chapter's internal pacing architecture — quiet arrival/recognition (SCN-53) → intense confrontation/reunion (SCN-54) → purposeful planning (SCN-55) — follows a proper rise-and-redirect pattern that serves both emotional and structural needs. The transition from emotional peak (the vulnerability naming and decision) to operational planning (the strategy session) is handled through the simple, character-authentic line 'We have work' — redirecting the emotional energy into action rather than letting it dissipate into sentiment."
+    }
+  ],
+  "complianceChecklist": {
+    "INV-004_earnedEmotionalBeats": {
+      "status": "pass",
+      "notes": "The reunion is earned through three chapters of buildup: Ch17 (bond evidence of genuine grief), Ch18 (Lirien's self-interrogation and choice), Ch19 (Ashborne loyalty reframing + Lirien's proof of agency). Vulnerability Step 10 is earned through Steps 1–9 across 18 prior chapters."
+    },
+    "INV-020_pacingVariation": {
+      "status": "pass",
+      "notes": "Tension sequence 8→6→7 (Ch17→Ch18→Ch19). No three consecutive chapters at similar levels. Ch18 provides recovery."
+    },
+    "INV-021_romanceArcPacing": {
+      "status": "pass",
+      "notes": "Romance progresses through correct stages: awareness → attraction → resistance → surrender → resistance (black moment) → commitment (Ch19). The chapter is correctly positioned as the first commitment beat."
+    },
+    "INV-036_thematicCoherence": {
+      "status": "pass",
+      "notes": "All three thematic pillars present and dramatized through action."
+    },
+    "INV-037_emotionalVariety": {
+      "status": "pass",
+      "notes": "Ch17: grief-tinged resolve → Ch19: wary reconnection. Distinct emotional states."
+    },
+    "INV-040_sceneValueShifts": {
+      "status": "pass",
+      "notes": "All three scenes demonstrate clear, directional value shifts."
+    },
+    "INV-042_tryFailCycles": {
+      "status": "pass",
+      "notes": "Ch19 correctly delivers a 'partial' success in the trust-building cycle — trust rebuilt but not yet tested under maximum pressure."
+    },
+    "INV-044_stakesEscalation": {
+      "status": "pass",
+      "notes": "Personal, relational, and existential stakes all present and escalating for Act III."
+    },
+    "INV-045_blackMoment": {
+      "status": "pass",
+      "notes": "Recovery from Ch16 black moment is properly staged: Ch17 (fallout) → Ch18 (choice) → Ch19 (reunion). Wounds from black moment named explicitly and not erased."
+    },
+    "INV-050_dualArcInterleave": {
+      "status": "pass — excellent",
+      "notes": "Fantasy and romance arcs achieve genuine fusion in SCN-54 and SCN-55. Strongest interleave in Act III."
+    }
+  },
+  "upstreamRefs": [
+    "chapters/019/draft.md",
+    "chapters/019/metadata.json",
+    "plot/chapter-outlines/chapter-019.json",
+    "plot/plot-structure.json",
+    "plot/dual-arc-timeline.json",
+    "plot/tension-map.json",
+    "romance-arc.json",
+    "story-concept.json",
+    "craft-profile.json",
+    "continuity/emotional-throughline.json",
+    "chapters/017/metadata.json",
+    "chapters/018/metadata.json",
+    "chapters/019/continuity-report.json"
+  ]
+}

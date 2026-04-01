@@ -1,0 +1,53 @@
+{
+  "agent": "docwriter-impact-mapper",
+  "context": "global",
+  "cycle": 1,
+  "timestamp": "2026-03-18T14:00:41Z",
+  "discoveries": [
+    {
+      "id": "DISC-IM-001",
+      "type": "missing-coverage",
+      "summary": "Content sync page mentions 'sufficient permissions to synchronize forms' but does not document the Synchronize ACL permission requirement for page synchronization (Read + Synchronize on the page AND all ancestor pages)",
+      "evidence": "code-analysis permissionSummary.synchronize shows: 'READ + SYNCHRONIZE on the page AND all ancestor pages up the tree'. content-sync.md line 66 only mentions 'if you have sufficient permissions to synchronize forms' without specifics.",
+      "suggestedAction": "Add a brief permission note to the Content sync 'Pages' section referencing the Synchronize page permission, or cross-reference to Page permission management.",
+      "affectedArea": "content-sync",
+      "severity": "low"
+    },
+    {
+      "id": "DISC-IM-002",
+      "type": "missing-coverage",
+      "summary": "UI page permission checks documentation (developer customization page) describes the application-level permission framework but does not reference or explain the page-level ACL permission layer or how it interacts with the [PageCommand] attribute",
+      "evidence": "doc-index shows ui-page-permission-checks.md with headings about application permissions, workspace permissions, but no section on page ACL permissions. AREA-004 code analysis shows the two-layer model where PageInvokerBase checks [PageCommand] permission first, then page-specific code checks ACLs.",
+      "suggestedAction": "Consider adding a note or cross-reference to the UI page permission checks page explaining that website channel pages have an additional ACL-based permission layer beyond application permissions.",
+      "affectedArea": "developer-customization",
+      "severity": "low"
+    },
+    {
+      "id": "DISC-IM-003",
+      "type": "cross-cutting-concern",
+      "summary": "Headless content page has Publish/Unpublish/Delete sections with no permission mentions — same gap pattern as website page operations, but headless items use workspace permissions (not ACL page permissions)",
+      "evidence": "doc-index shows headless-content.md with headings: 'Publish headless items', 'Unpublish headless items', 'Delete headless items'. Code analysis focused on web page ACL permissions (AREA-001) which don't apply to headless items. Headless items use workspace-scoped application permissions instead.",
+      "suggestedAction": "Out of scope for DOC-3167 (which focuses on page permissions/ACLs). Consider a separate task to add permission cross-references to headless content operations.",
+      "affectedArea": "headless-content",
+      "severity": "low"
+    },
+    {
+      "id": "DISC-IM-004",
+      "type": "missing-coverage",
+      "summary": "Content items (Content Hub) page has Publish/Create/Delete/Synchronize sections with no permission mentions — reusable content items use workspace permissions, not page ACLs",
+      "evidence": "doc-index shows content-items.md with headings including 'Publish content items', 'Create content items', 'Delete content items', 'Synchronize content items'. These operations use workspace-scoped application permissions (not page ACLs).",
+      "suggestedAction": "Out of scope for DOC-3167. Consider a separate task to add permission cross-references to Content Hub operations.",
+      "affectedArea": "content-hub",
+      "severity": "low"
+    },
+    {
+      "id": "DISC-IM-005",
+      "type": "cross-cutting-concern",
+      "summary": "Clone page operation (Create pages → Clone a page) mentions that 'page permissions are not cloned' but does not mention what permissions are needed TO clone — code analysis shows Read on source + Read + Create on target parent",
+      "evidence": "create-pages.md line 31 mentions 'page permissions are not cloned' but the Clone procedure steps have no permission prerequisite. permissionSummary.clonePage: 'READ on the source page AND READ + CREATE on the target parent page'.",
+      "suggestedAction": "Add a brief permission note to the Clone section, or ensure the new 'Page permissions for creating pages' section on Page permission management mentions cloning as a related operation.",
+      "affectedArea": "page-operations",
+      "severity": "medium"
+    }
+  ]
+}

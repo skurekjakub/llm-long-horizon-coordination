@@ -1,0 +1,104 @@
+{
+  "id": "CHAR-009",
+  "name": "Sethis Varn",
+  "role": "supporting",
+  "isPOV": false,
+  "psychologicalProfile": {
+    "wound": "Sethis inherited a diminished Legion under the shadow of Kaelith's fall.",
+    "desire": "Preserve the Legion as a functioning body rather than let politics hollow it out completely.",
+    "fear": "That open defiance will destroy the unit he is trying to keep alive.",
+    "lie": "Honorable compromise is always more useful than direct resistance.",
+    "ghost": "Calwrath taught Sethis that being correct offers no protection when the Conclave needs a scapegoat.",
+    "need": "To remember that institutions survive for purposes, not merely for themselves."
+  },
+  "arc": {
+    "type": "positive",
+    "startState": "A careful commander protecting the Legion by narrowing his courage.",
+    "endState": "A cautious man who still chooses a concrete act of aid.",
+    "turningPoints": [
+      {
+        "chapter": 12,
+        "event": "Learns Kaelith has crossed Legion-adjacent territory and does not pursue hard."
+      },
+      {
+        "chapter": 17,
+        "event": "Quietly redirects attention away from her route."
+      },
+      {
+        "chapter": 21,
+        "event": "Lets the Legion's older purpose matter more than optics."
+      }
+    ]
+  },
+  "voiceFingerprint": {
+    "vocabularyLevel": "Formal military-institutional — distinct from Kaelith's personal-tactical register. Where Kaelith thinks in fortification and material (walls, mortar, load-bearing), Sethis thinks in logistics and personnel management: 'deployment,' 'readiness,' 'force projection,' 'operational tempo,' 'attrition rate,' 'standing complement.' His vocabulary is the language of someone who commands an organization, not a position. He says 'the Legion requires' where Kaelith would say 'hold the line.' His military register is institutional where hers is visceral.",
+    "sentenceLength": "Short-to-medium and regulated, the sentence length of someone who writes orders that must be unambiguous. His sentences have the calibrated quality of military correspondence: precise, complete, and exactly as long as they need to be. He seldom elaborates for emphasis. He states once and assumes comprehension.",
+    "metaphorDensity": "Low, drawn from logistics, supply chains, and organizational management. Morale is 'operational readiness.' A political problem is 'a supply disruption at the source.' Trust is 'a line of communication.' A hard choice is 'a deployment decision with no reserve.' He gravitates away from architectural (Kaelith's domain), water (Lirien's domain), garden (Thalen's domain), and terrain (Tessen's domain) metaphors, though occasional natural crossover is expected — rigid domain walls create artificiality. His world is the institution — things that can be deployed, supplied, or expended.",
+    "emotionalRegister": "Contained, pragmatic, and burdened by calculation. Sethis feels deeply but filters everything through institutional consequence — 'If I act on this feeling, what happens to the eight hundred people who depend on my restraint?' His restraint is not coldness; it is a commander counting the cost of courage against the survival of his unit. When the restraint breaks, it breaks quietly — a decision made rather than an emotion expressed.",
+    "thoughtPatterns": "Risk-balancing with institutional horizon. Sethis thinks in cost-benefit matrices where the currency is his people's lives and the variable is political tolerance. Every decision runs through the filter: 'Does this protect or endanger the Legion?' He inherited Kaelith's consequences and learned that being right about tactics means nothing if the institution that backed you decides to rewrite the record.",
+    "dialectMarkers": "Exact ranks used as a strong default — almost never first names in professional context. Regulation terminology: 'standing complement,' 'operational theater,' 'force disposition.' Minute-book caution: he speaks as though his words are being recorded, because in his experience they often are. He says 'the Legion' rather than 'we' — distancing himself from the institution to preserve plausible deniability.",
+    "humorStyle": "Virtually absent in professional mode. In rare private moments, a grim institutional humor: 'The paperwork for doing the right thing is longer than the paperwork for doing nothing. Someone designed it that way.' His humor is systemic observation, not personal wit.",
+    "attentionPriority": "What Sethis notices first: (1) Chain of command — who is watching, who reports to whom? (2) Personnel readiness — are these soldiers fit, fed, equipped? (3) Political exposure — will this action generate Conclave attention? (4) Precedent — what happened last time someone in this position acted on principle?",
+    "deflectionPattern": "Retreats to operational necessity. 'The Legion's operational requirements take precedence over personal assessments.' He uses the institution as a shield — not dishonestly, but with full awareness that the shield protects him from having to choose. The moment the shield fails is his turning point.",
+    "stressResponse": "Register tightens — sentences shorten, vocabulary becomes more precisely military, all personal inflection drains away. Under extreme stress: a long pause, followed by an order that contradicts standing procedure. The pause is the human being overriding the officer, and the order is how Sethis discovers what he actually believes."
+  },
+  "sensorySig": {
+    "dominantChannel": "visual",
+    "signature": "aligned formations and map pins moved one at a time",
+    "emotionalTriggers": [
+      "empty roster spaces",
+      "a visible brand",
+      "troops standing too still"
+    ]
+  },
+  "relationships": [
+    {
+      "withCharId": "CHAR-001",
+      "type": "institutional-successor",
+      "dynamicArc": "Kaelith's fall defines the boundaries of Sethis's command choices."
+    },
+    {
+      "withCharId": "CHAR-010",
+      "type": "commander-subordinate",
+      "dynamicArc": "Erys's loyalty forces Sethis to decide what the Legion is for."
+    },
+    {
+      "withCharId": "CHAR-014",
+      "type": "chain-of-command",
+      "dynamicArc": "Daerin taught survival; the story tests whether survival is enough."
+    }
+  ],
+  "physicalDescription": {
+    "apparentAge": "early fifties",
+    "build": "broad-shouldered and well-kept",
+    "distinguishingFeatures": "iron-gray hair and an old wrist injury",
+    "usualPresentation": "immaculate Legion uniform with subtle repairs",
+    "movement": "controlled and economical"
+  },
+  "agency": "Sethis decides whether the Legion becomes obstacle or covert cover. His quiet choices alter pursuit pressure and the meaning of institutional loyalty.",
+  "upstreamRefs": [
+    "story-concept.json",
+    "world-bible/politics.json",
+    "world-bible/history.json",
+    "characters/CHAR-001.json"
+  ],
+  "dialoguePatterns": {
+    "initiationStyle": "Opens with situational assessment. 'The patrol schedule puts the Third Company at the ford by evening. That leaves a window.' He communicates through operational facts, trusting the listener to read the implied offer or warning.",
+    "responseStyle": "Answers with institutional framing. 'The Legion's position, as stated in the operational directive, is clear.' But the gaps in his answers — what he does not say, what he omits from the report — are where his real decisions live.",
+    "underPressure": "Vocabulary narrows to pure command register. Orders become clipped and absolute: 'Hold position. Report nothing. That is an order.' Under the most extreme pressure: he drops 'the Legion' and says 'I' — 'I am ordering you to stand down' — and the first-person pronoun costs him visibly.",
+    "verbalTics": [
+      "Says 'the Legion' rather than 'we' or 'I'",
+      "Uses exact ranks: never first names in duty context",
+      "Says 'operational necessity' to justify difficult choices",
+      "Opens orders with 'Standing directive is clear on this'",
+      "Uses 'force disposition' instead of simpler alternatives"
+    ],
+    "favoriteExpressions": [
+      "The Legion's position is clear.",
+      "Operational necessity takes precedence.",
+      "The standing complement cannot sustain that.",
+      "That decision is above my authorization.",
+      "I inherited this command. I did not design it."
+    ]
+  }
+}

@@ -1,0 +1,395 @@
+{
+  "gateId": "REVISION-GATE-009",
+  "phase": "revision",
+  "chapter": 9,
+  "auditor": "revision-auditor",
+  "auditedAt": "2025-07-28T13:00:00Z",
+  "verdict": "passed",
+  "verdictRationale": "All 1 critical and 5 major findings from the three edit reports (developmental, line edit, copy edit) are verified as substantively addressed with specific textual evidence. All 14 minor findings addressed (12 applied, 2 reviewed-no-change with adequate justification). All 10 suggestion findings addressed. No regression detected: voice marker density significantly reduced (0 occurrences of 'architecture,' construction metaphors reduced from ~16 to 7-9), no dialogue naturalism degradation, no new continuity errors, no pacing disruption, no darlings surviving editor flags. Traceability fully intact — all 30 finding IDs appear in the frontmatter and revision log with action documentation. New content (mutual anchoring, practical care, combat weakness, TP-2 engagement, document-omission expansion) integrates seamlessly without introducing voice breaks or continuity errors. Chapter proceeds to beta reading.",
+  "inputArtifacts": [
+    "chapters/009/draft.md",
+    "chapters/009/revised.md",
+    "revision-reports/009/developmental-edit.json",
+    "revision-reports/009/line-edit.json",
+    "revision-reports/009/copy-edit.json",
+    "revision-reports/009/revision-log.json",
+    "craft-profile.json"
+  ],
+  "findingVerificationMatrix": {
+    "critical": [
+      {
+        "id": "LINE-009-001",
+        "severity": "critical",
+        "source": "line-edit",
+        "title": "Architectural metaphor saturation (~16 instances, word 'architecture' 12 times)",
+        "verdict": "PASS",
+        "evidence": {
+          "draftState": "~16 architectural/structural metaphorical instances; word 'architecture' appears 12 times; processing scene (draft lines 155-204) contains 7 instances. Examples: 'architecturally wrong' (26), 'architecture of suppression' (68), 'architecture of the ordinary' (156), 'load-bearing walls of her interior architecture' (198), 'architectural drawings' (282), 'suppression architecture' (220).",
+          "revisedState": "Word 'architecture' appears 0 times (verified via grep). Word 'structural' appears 0 times. Construction-domain metaphors reduced to 7 core metaphorical instances: bearing wall (132), mortar setting (138), buttress (158), load-bearing wall (200), structures settling/combined design (234), keystone (332), scaffolding/foundation (348). Processing scene contains 1 metaphorical instance (load-bearing wall at line 200), down from 7.",
+          "adequacy": "Substantive fix. The critical issue was per-page repetition threshold violation (INV-017) in the processing scene and the word 'architecture' appearing 12 times. Both are eliminated. The remaining 7 construction metaphors are distributed across 357 lines (~1 per 51 lines / ~1 per 700 words), which is well within 'sparse' guidance. The specific instances retained are the strongest as the line editor recommended."
+        }
+      }
+    ],
+    "major": [
+      {
+        "id": "LINE-009-002",
+        "severity": "major",
+        "source": "line-edit",
+        "title": "'Not X. Not Y.' negation pattern (7 instances)",
+        "verdict": "PASS",
+        "evidence": {
+          "draftState": "7 instances: 'Not a collapse. Not erosion.' (14), 'Not overcast. Not clear.' (42), 'Not black. Not empty.' (46), 'Not speaking. Not moving.' (166), 'Not dead. Not injured. Not present.' (182), 'No. Not alone.' (218), 'Not empty. Not comfortable.' (316).",
+          "revisedState": "Retained 3: opener (46), Pallor tears (76), identity dissolution (213). Replaced 4: 'Not overcast. Not clear.' → 'neither overcast nor clear' (72); 'Not speaking. Not moving.' → 'Lirien sat quietly. Present without demand.' (198); 'No. Not alone.' → 'Alone — except that' (250); 'Not empty. Not comfortable.' → eliminated via Scene 3 close restructure (353-356).",
+          "adequacy": "Fully addressed. The 3 retained uses are the strongest as recommended. Replacements are natural and voice-consistent."
+        }
+      },
+      {
+        "id": "LINE-009-003",
+        "severity": "major",
+        "source": "line-edit",
+        "title": "Triple-negation bookend echo (opening and closing)",
+        "verdict": "PASS",
+        "evidence": {
+          "draftState": "Opening (14): 'a substance that was not moss and not stone and not quite anything Kaelith had a word for.' Closing (318): 'light that was not starlight and not sunlight and not anything that belonged to the finished world.' Near-identical 'not X and not Y and not Z' skeleton creating unintentional echo.",
+          "revisedState": "Opening retained (46): same text. Closing rewritten (354): 'its wounded membrane admitting light from a place where stars had never existed.' Completely different syntactic structure — positive construction rather than triple negation.",
+          "adequacy": "Fully addressed. The bookend echo is eliminated. The new closing image is fresh and specific."
+        }
+      },
+      {
+        "id": "LINE-009-004",
+        "severity": "major",
+        "source": "line-edit",
+        "title": "'Silence of two...' parallel at consecutive scene boundaries",
+        "verdict": "PASS",
+        "evidence": {
+          "draftState": "Scene 2 close (202): 'the silence of two structures settling against each other under load...' Scene 3 close (316): 'The silence of two people who had fought together and survived together...' Identical 'silence of two [noun]' frame weakens both landings.",
+          "revisedState": "Scene 2 close retained (234): 'the silence of two structures settling against each other under load...' Scene 3 close restructured (353): 'They walked. The Wending darkened around them...' Opens with action rather than 'The silence of two...'",
+          "adequacy": "Fully addressed. The parallel is broken. Scene 3 now has its own distinct rhetorical shape."
+        }
+      },
+      {
+        "id": "COPY-009-001",
+        "severity": "major",
+        "source": "copy-edit",
+        "title": "'High Council' naming inconsistency",
+        "verdict": "PASS",
+        "evidence": {
+          "draftState": "Line 306: 'the High Council's stated authority' — incorrect per world-bible.",
+          "revisedState": "Line 342: 'the High Conclave's stated authority' — matches all canonical sources. Grep confirms 0 occurrences of 'High Council' in revised text.",
+          "adequacy": "Fully addressed. Naming now consistent with world-bible/culture.json and all other chapters."
+        }
+      },
+      {
+        "id": "COPY-009-002",
+        "severity": "major",
+        "source": "copy-edit",
+        "title": "Magic system violation — Oathbrand ambient suppression",
+        "verdict": "PASS",
+        "evidence": {
+          "draftState": "Line 232: 'Someone who could work magic through the Oathbrand's interference because they were using their own focus, not relying on the ambient capacity that the brand suppressed.' Falsely implies brand creates ambient suppression field affecting other practitioners. Violates MAG-008.",
+          "revisedState": "Line 264: 'The kind of practitioner who shaped magic through concentrated will, not relying on brute capacity.' No reference to Oathbrand interference or ambient suppression. Grep confirms 0 matches for 'ambient.*brand', 'suppress.*ambient', 'Oathbrand.*interfer'.",
+          "adequacy": "Fully addressed. The revised description preserves the tactical assessment (caster is a focused practitioner) without any false magic-system claim."
+        }
+      }
+    ],
+    "minor": [
+      {
+        "id": "DEV-009-001",
+        "severity": "minor",
+        "source": "developmental-edit",
+        "title": "One-directional anchoring vs. planned mutual anchoring",
+        "verdict": "PASS",
+        "evidence": {
+          "draftState": "No indication Lirien was also affected by the exposure. Anchoring presented as one-directional rescue.",
+          "revisedState": "Lines 150-151: 'Lirien's voice held its usual precision, but the hand that had released Kaelith's wrist pressed flat against her own thigh — a grounding gesture Kaelith recognized because she used it herself. And the voice during the anchoring had carried an effortful steadiness, the kind of control that cost something to maintain. Lirien had not been calm. Lirien had been holding.'",
+          "adequacy": "Fully addressed. The beat converts rescue to mutual holding. Kaelith observes through her characteristic pattern-recognition mode."
+        }
+      },
+      {
+        "id": "DEV-009-002",
+        "severity": "minor",
+        "source": "developmental-edit",
+        "title": "Vulnerability ladder practical care dimension",
+        "verdict": "PASS",
+        "evidence": {
+          "draftState": "No practical care behaviors (food, wound-tending, supplies) shown.",
+          "revisedState": "Line 184: canteen placed beside Kaelith without comment. Lines 334-338: wound-tending exchange ('You're bleeding' / 'I noticed') with cloth provision.",
+          "adequacy": "Fully addressed. Two distinct practical-care beats added, anchoring vulnerability ladder step 5 in both existential and practical dimensions."
+        }
+      },
+      {
+        "id": "DEV-009-003",
+        "severity": "minor",
+        "source": "developmental-edit",
+        "title": "Word count overshoot (4,984 vs 4,000 target)",
+        "verdict": "PASS-WITH-NOTE",
+        "evidence": {
+          "draftState": "4,984 words (24.7% over 4,000 target).",
+          "revisedState": "4,889 words (22.2% over 4,000 target). Net reduction of 95 words. Still 389 words above the recommended 4,500 target.",
+          "adequacy": "Partially addressed. The modest reduction is justified by the reviser: ~180 words of new structural content (mutual anchoring, practical care, combat weakness, TP-2, doc-omission expansion) were added for higher-priority findings, requiring cuts elsewhere to achieve even a net reduction. The chapter's three-scene structure and Ythara exposure complexity justify extended length. Acceptable trade-off."
+        }
+      },
+      {
+        "id": "DEV-009-004",
+        "severity": "minor",
+        "source": "developmental-edit",
+        "title": "Emotional state overlap ch7/ch9",
+        "verdict": "PASS",
+        "evidence": {
+          "action": "reviewed-no-change",
+          "justification": "Dev editor's own recommendation was 'No structural change needed.' The emotional states (acknowledged attraction ≠ acknowledged dependence) are genuinely distinct. Ch8 intervenes between them with a different POV. The reviser correctly identified this as monitoring-only."
+        }
+      },
+      {
+        "id": "LINE-009-005",
+        "severity": "minor",
+        "source": "line-edit",
+        "title": "'Tasted copper' cliché",
+        "verdict": "PASS",
+        "evidence": {
+          "draftState": "Line 254: 'She tasted copper.'",
+          "revisedState": "Line 286: 'Blood filled her mouth, warm and immediate.'",
+          "adequacy": "Fully addressed. Generic fantasy-combat phrasebook entry replaced with tactile specificity consistent with Kaelith's sensorium."
+        }
+      },
+      {
+        "id": "LINE-009-006",
+        "severity": "minor",
+        "source": "line-edit",
+        "title": "Show-don't-tell: 'relief' named before shown",
+        "verdict": "PASS",
+        "evidence": {
+          "draftState": "Line 148: 'the relief of that normalcy settled into her joints like warmth after cold.'",
+          "revisedState": "Line 180: 'the normalcy settled through her — shoulders first, then hands, then the locked muscles along her spine.'",
+          "adequacy": "Fully addressed. Emotion label removed. Body-first progression through specific locations replaces generic simile."
+        }
+      },
+      {
+        "id": "LINE-009-007",
+        "severity": "minor",
+        "source": "line-edit",
+        "title": "Show-don't-tell: 'She needed Lirien' direct tell",
+        "verdict": "PASS",
+        "evidence": {
+          "draftState": "Line 184: 'She needed Lirien.' — standalone emotional declaration.",
+          "revisedState": "Lines 216-218: 'The recognition arrived without ceremony. A field conclusion, cold and clear: the journey through the Wending required two. One to fragment. One to hold. And Kaelith was the one who fragmented.' Standalone tell removed; need arrives through tactical reasoning.",
+          "adequacy": "Fully addressed. The reader arrives at 'she needs Lirien' without being told directly."
+        }
+      },
+      {
+        "id": "LINE-009-008",
+        "severity": "minor",
+        "source": "line-edit",
+        "title": "20 'She [verb]' paragraph openings",
+        "verdict": "PASS",
+        "evidence": {
+          "draftState": "25 'She [verb]' paragraph openings (grep count).",
+          "revisedState": "17 'She [verb]' paragraph openings. 8 varied: 'She studied' → 'The treeline demanded study'; 'She walked forward' → 'Forward. Each step tested...'; 'She filed' → 'Into the same compartment went...'; 'She dropped' → 'Pack down. Sight lines checked.'; 'She built' → 'The fire came next.'; 'She tried' → 'Processing...should have worked.'; 'She stared' → 'Firelight on stone.'; 'She drew' → 'The knife came out before...'",
+          "adequacy": "Substantive improvement. Reduction from 25 to 17 with varied constructions (sensory-first, object-first, fragments). Retained openings are at moments of emphasis where blunt declarative serves the prose."
+        }
+      },
+      {
+        "id": "LINE-009-009",
+        "severity": "minor",
+        "source": "line-edit",
+        "title": "Generic phrasing: 'dark and uncertain'",
+        "verdict": "PASS",
+        "evidence": {
+          "draftState": "Line 312: 'dark and uncertain and full of a god's leaking influence.'",
+          "revisedState": "Line 350: 'wounded territory, the ground already softening toward possibilities it should not contain.'",
+          "adequacy": "Fully addressed. Generic atmosphere replaced with Kaelith-specific tactile observation."
+        }
+      },
+      {
+        "id": "LINE-009-010",
+        "severity": "minor",
+        "source": "line-edit",
+        "title": "Voice domain drift: fire's philosophical indifference",
+        "verdict": "PASS",
+        "evidence": {
+          "draftState": "Line 274: 'because fire did not care about human violence and its indifference was, in this moment, the most stabilizing thing in the room.'",
+          "revisedState": "Line 306: 'which burned on by the same rules it always had — the steadiest thing in the room.'",
+          "adequacy": "Fully addressed. Reframed through function (rules, steadiness) rather than philosophical attribution. Consistent with Kaelith's functional-observation voice."
+        }
+      },
+      {
+        "id": "COPY-009-003",
+        "severity": "minor",
+        "source": "copy-edit",
+        "title": "Anachronism: 'supply chain management'",
+        "verdict": "PASS",
+        "evidence": {
+          "draftState": "Line 48: 'supply chain management.'",
+          "revisedState": "Line 78: 'provisioning doctrine.' Grep confirms 0 occurrences of 'supply chain' in revised.",
+          "adequacy": "Fully addressed. Period-appropriate military terminology."
+        }
+      },
+      {
+        "id": "COPY-009-004",
+        "severity": "minor",
+        "source": "copy-edit",
+        "title": "Metric 'three meters' among imperial units",
+        "verdict": "PASS",
+        "evidence": {
+          "draftState": "Line 58: 'three meters.'",
+          "revisedState": "Line 88: 'ten feet.' Grep confirms 0 occurrences of 'three meters' in revised.",
+          "adequacy": "Fully addressed. Consistent imperial-style measurement system throughout."
+        }
+      },
+      {
+        "id": "COPY-009-005",
+        "severity": "minor",
+        "source": "copy-edit",
+        "title": "'Thornway Extension' unestablished name",
+        "verdict": "PASS",
+        "evidence": {
+          "draftState": "Line 104: 'the Thornway Extension, one point four miles past the Veldrane boundary.'",
+          "revisedState": "Line 134: 'the Thornway, one point four miles past the Veldrane boundary.' Grep confirms 0 occurrences of 'Thornway Extension' in revised.",
+          "adequacy": "Fully addressed. Name now matches LOC-004 in geography.json."
+        }
+      },
+      {
+        "id": "COPY-009-006",
+        "severity": "minor",
+        "source": "copy-edit",
+        "title": "Em dash formatting for trailing-off speech",
+        "verdict": "PASS",
+        "evidence": {
+          "draftState": "Line 116: '\"The — \"' — spaced em dash for trailing off.",
+          "revisedState": "Line 146: '\"The...\"' — ellipsis for trailing off, per INV-019.",
+          "adequacy": "Fully addressed. Formatting now correct per style guide conventions."
+        }
+      }
+    ],
+    "suggestions": [
+      {
+        "id": "DEV-009-005",
+        "verdict": "PASS",
+        "note": "Combat weakness beat added at line 276 (leg stutter from Ythara residual). Makes Lirien's intervention more essential."
+      },
+      {
+        "id": "DEV-009-006",
+        "verdict": "PASS",
+        "note": "TP-2 engagement added at line 220: 'She had never learned how to need someone without calculating the cost.' Activates TP-2 naturally."
+      },
+      {
+        "id": "DEV-009-007",
+        "verdict": "PASS",
+        "note": "Document omission expanded at lines 346-348 with active deliberation and construction-domain metaphor (scaffolding/foundation)."
+      },
+      {
+        "id": "LINE-009-011",
+        "verdict": "PASS",
+        "note": "90-word sentence split at line 194. Payload ('five fingers and a voice saying stay') now has its own sentence."
+      },
+      {
+        "id": "LINE-009-012",
+        "verdict": "PASS",
+        "note": "Metaphor cluster thinned in processing scene. Overlaps with LINE-009-001. Processing scene reduced from 7 to 1 instance."
+      },
+      {
+        "id": "LINE-009-013",
+        "verdict": "PASS",
+        "note": "'Things she could not name' replaced with 'a pressure she had no tactical use for' at line 222. Physically specific and voice-consistent."
+      },
+      {
+        "id": "LINE-009-014",
+        "verdict": "PASS",
+        "note": "'Move between moments' replaced with 'quieter than someone her height had any right to be' at line 292. Functional observation."
+      },
+      {
+        "id": "LINE-009-015",
+        "verdict": "PASS",
+        "note": "Lirien contraction added: 'You're bleeding' at line 334. Single contraction in personal concern context. Natural, not forced."
+      },
+      {
+        "id": "COPY-009-007",
+        "verdict": "PASS",
+        "note": "'combustion required oxygen' → 'fire required air'; 'the physics of this room' → 'the natural order of this room' at line 188."
+      },
+      {
+        "id": "COPY-009-008",
+        "verdict": "PASS",
+        "note": "Reviewed-no-change. 'Its' for Sheltering One justified by Imperial Keeping theology (gods as natural phenomena). Convention documented."
+      }
+    ]
+  },
+  "regressionFindings": [],
+  "regressionAssessment": {
+    "voiceMarkerSaturation": {
+      "status": "no-regression",
+      "detail": "Voice marker density significantly improved. Word 'architecture' reduced from 12 to 0. Word 'structural' reduced from multiple to 0. Construction-domain metaphors reduced from ~16 to 7-9 (depending on literal vs. metaphorical counting). Processing scene reduced from 7 to 1-2 instances. Density is now approximately 1 metaphorical instance per 700 words — well within 'sparse' guidance. Markers are no longer identifiable on every page. New additions (fault lines, scaffolding/foundation) use varied construction vocabulary rather than the saturated 'architecture/structural/load-bearing' cluster. No saturation regression."
+    },
+    "dialogueNaturalism": {
+      "status": "no-regression",
+      "detail": "Lirien's single contraction ('You're bleeding') sounds like natural speech in a moment of personal concern, not a checklist item. All operational dialogue retains formal register. Kaelith's 'I noticed' in the wound-tending exchange is perfectly in character — terse and understated. No dialogue was rewritten to add voice markers. No naturalism regression."
+    },
+    "continuityErrors": {
+      "status": "none-introduced",
+      "detail": "All names, geography, magic system, timeline, and character knowledge states remain consistent with canonical sources. New content (mutual anchoring, practical care, combat weakness, TP-2, doc-omission expansion) introduces no contradictions. Lirien's canteen-filling from an unnoticed stream is plausible given her established fieldcraft."
+    },
+    "pacingDisruption": {
+      "status": "none-detected",
+      "detail": "Scene flow reads smoothly end-to-end. New content integrates without creating orphaned references or jarring transitions. The mutual anchoring beat flows naturally from 'Forty-three seconds.' The combat weakness beat integrates seamlessly into the action rhythm. The TP-2 line lands without disrupting the emotional progression. Scene-sequel-scene structure preserved."
+    },
+    "voiceConsistency": {
+      "status": "maintained",
+      "detail": "All replacements preserve Kaelith's voice: tactical vocabulary, functional observation, body-first emotional processing, short declaratives under stress. No voice breaks at edit boundaries. New additions (mutual anchoring, TP-2 line, doc-omission expansion) are written in Kaelith's established register."
+    },
+    "newTellNotShow": {
+      "status": "none-introduced",
+      "detail": "New content avoids emotion labels. The TP-2 line ('calculating the cost') processes emotion through Kaelith's characteristic economic/tactical framing rather than naming the feeling. The mutual anchoring beat shows Lirien's state through observable behavior (grounding gesture, effortful steadiness) rather than telling."
+    }
+  },
+  "darlingsSurvived": {
+    "status": "none",
+    "detail": "All passages explicitly flagged for cutting or reworking by the editors were addressed: 'architecture of the ordinary' (cut), 'structural techniques in unfamiliar architecture' (cut), 'load-bearing walls of her interior architecture' (replaced), 'She needed Lirien' standalone (removed and restructured), 'tasted copper' (replaced). No darlings survived unchanged."
+  },
+  "traceabilityAssessment": {
+    "status": "complete",
+    "detail": "All 30 finding IDs from the three edit reports appear in the revised.md frontmatter findingsAddressed list. All 30 findings appear in the revision log with action documentation (28 'applied', 2 'reviewed-no-change' with justification). Every change in the revised text can be traced to a specific finding ID. No undocumented changes detected."
+  },
+  "wordCountAssessment": {
+    "draftWordCount": 4984,
+    "revisedWordCount": 4889,
+    "delta": -95,
+    "deltaPercent": -1.9,
+    "targetWordCount": 4000,
+    "recommendedTarget": 4500,
+    "status": "acceptable — still 22% over base target but justified by structural complexity and offset by higher-priority content additions",
+    "note": "~180 words of new content added for DEV-009-001, DEV-009-002, DEV-009-005, DEV-009-006, DEV-009-007. Net reduction achieved despite additions. The chapter's three-scene structure (Ythara exposure + processing + combat) justifies extended length."
+  },
+  "warningCount": 1,
+  "warnings": [
+    {
+      "category": "word-count",
+      "detail": "Chapter remains at 4,889 words — 389 words above the dev editor's recommended 4,500 target and 889 above the 4,000 chapter target. While justified by structural complexity and content additions for higher-priority findings, future chapters should aim closer to target. This does not trigger failure as it is a single warning, not a pattern."
+    }
+  ],
+  "qualityAssessment": {
+    "overallQuality": "The revised chapter meets or exceeds the quality of the original draft. The critical architectural metaphor saturation is eliminated without weakening Kaelith's distinctive voice — the remaining metaphors land with more impact because they are no longer competing with 15 others. Structural improvements (mutual anchoring, practical care, combat weakness, TP-2, doc-omission expansion) deepen both romance and fantasy arcs. The 90-word sentence split creates a powerful short-after-long rhythm at a pivotal moment. All replacements are natural, voice-consistent, and improve upon the originals.",
+    "strongestImprovements": [
+      "Processing scene transformation: 7 architectural metaphors thinned to 1, allowing the load-bearing wall metaphor to land with full impact",
+      "Mutual anchoring beat: 'Lirien had not been calm. Lirien had been holding.' converts rescue to mutual dependence in 2 sentences",
+      "Combat weakness beat: leg stutter creates earned physical failure that makes Lirien's intervention essential rather than convenient",
+      "'She needed Lirien' restructured into indirect delivery through tactical reasoning — more powerful and voice-consistent",
+      "Sentence split at 'equal validity' gives the five-fingers-and-a-voice payload its own blunt declaration"
+    ],
+    "minorConcerns": [
+      "The scaffolding/foundation metaphor (line 348) adds a construction-domain metaphor while simultaneously reducing construction-domain metaphors — slightly contradictory, though the varied vocabulary prevents saturation regression",
+      "17 'She [verb]' paragraph openings remain, though down from 25. Further reduction may be warranted in polish"
+    ]
+  },
+  "passFailChecklist": {
+    "criticalFindingUnaddressed": false,
+    "findingClaimedButPassageUnchanged": false,
+    "newCriticalRegression": false,
+    "contentCutExceeds20Percent": false,
+    "darlingsPreservedUnchanged": false,
+    "traceabilityBroken": false,
+    "voiceMarkerSaturationRegression": false,
+    "dialogueNaturalismRegression": false,
+    "automaticFailTriggered": false,
+    "warningThresholdExceeded": false
+  }
+}

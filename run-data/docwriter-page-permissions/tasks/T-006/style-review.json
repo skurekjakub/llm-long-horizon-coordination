@@ -1,0 +1,904 @@
+{
+  "agent": "docwriter-style-reviewer",
+  "taskId": "T-006",
+  "attempt": 2,
+  "verdict": "approved",
+  "reviewContext": "Re-entry review after gap-hunting fix GAP-002. Page previously passed all three reviews. Only change: 7 Unicode en dashes (U+2013) converted to double-hyphen (--) on lines 68, 69, 70, 101, 102, 103, 104 per INV-style-096.",
+  "invariantResults": [
+    {
+      "invariantId": "INV-style-096",
+      "result": "pass",
+      "evidence": "Zero Unicode en dashes (U+2013) remain on the page. All 7 conversions verified: lines 68, 69, 70 (User management list items) and lines 101-104 (Common system roles list items). All double-hyphens have proper spacing (space before and after). Line 103 correctly has two double-hyphens: '**Channel manager** -- manages...' and 'channel owners -- they can...' \u2014 one converted, one pre-existing."
+    },
+    {
+      "invariantId": "INV-style-001",
+      "result": "pass",
+      "evidence": "Page predominantly uses active voice. Three instances of passive voice detected (lines 27, 47, 69) are acceptable: 'is released' is part of a compound sentence starting with active voice; 'are managed' occurs in link description text; 'is handled' is in a list item description. All are pre-existing and contextually appropriate."
+    },
+    {
+      "invariantId": "INV-style-002",
+      "result": "pass",
+      "evidence": "Filename 'security-guidelines.md' follows lowercase hyphenated convention matching page title 'Security guidelines'."
+    },
+    {
+      "invariantId": "INV-style-054",
+      "result": "pass",
+      "evidence": "Page title 'Security guidelines' does not end with '-ing'."
+    },
+    {
+      "invariantId": "INV-style-055",
+      "result": "pass",
+      "evidence": "No numbered lists on the page. N/A but verified."
+    },
+    {
+      "invariantId": "INV-style-056",
+      "result": "pass",
+      "evidence": "Pronouns ('we', 'you', 'they') are used with clear antecedents within their paragraphs throughout the page."
+    },
+    {
+      "invariantId": "INV-style-057",
+      "result": "pass",
+      "evidence": "Restrictions/limitations (e.g., line 35 'security fixes are incorporated only into the latest release') are stated neutrally without unnecessary introductory phrases."
+    },
+    {
+      "invariantId": "INV-style-058",
+      "result": "pass",
+      "evidence": "No 'Open the XXX application' instructions on this page. N/A."
+    },
+    {
+      "invariantId": "INV-style-059",
+      "result": "pass",
+      "evidence": "N/A \u2014 no screenshot or figure instructions on this page."
+    },
+    {
+      "invariantId": "INV-style-060",
+      "result": "pass",
+      "evidence": "N/A \u2014 no dialog/popup references on this page."
+    },
+    {
+      "invariantId": "INV-style-061",
+      "result": "pass",
+      "evidence": "N/A \u2014 no Save/Submit action instructions on this page."
+    },
+    {
+      "invariantId": "INV-style-062",
+      "result": "pass",
+      "evidence": "N/A \u2014 no tabbed content on this page."
+    },
+    {
+      "invariantId": "INV-style-063",
+      "result": "pass",
+      "evidence": "N/A \u2014 no step-by-step procedures on this page."
+    },
+    {
+      "invariantId": "INV-style-064",
+      "result": "pass",
+      "evidence": "N/A \u2014 no conditional instructions on this page."
+    },
+    {
+      "invariantId": "INV-style-073",
+      "result": "pass",
+      "evidence": "Sentences are clear and concise throughout. No overly complex or run-on sentences detected."
+    },
+    {
+      "invariantId": "INV-style-074",
+      "result": "pass",
+      "evidence": "Paragraphs maintain consistent length and focus throughout the page."
+    },
+    {
+      "invariantId": "INV-style-075",
+      "result": "pass",
+      "evidence": "N/A \u2014 no definition lists or glossary-style content on this page."
+    },
+    {
+      "invariantId": "INV-style-076",
+      "result": "pass",
+      "evidence": "Abbreviations are introduced with full form before first use: RBAC (line 74), SDL (lines 21, 23), MFA (line 69), ACL (line 88), SSO (line 59), XSS (line 17), CVSS (line 43)."
+    },
+    {
+      "invariantId": "INV-style-078",
+      "result": "pass",
+      "evidence": "N/A \u2014 no API parameter descriptions on this page."
+    },
+    {
+      "invariantId": "INV-style-079",
+      "result": "pass",
+      "evidence": "N/A \u2014 no placeholder values or variables on this page."
+    },
+    {
+      "invariantId": "INV-style-080",
+      "result": "pass",
+      "evidence": "N/A \u2014 no version-specific references that require updating."
+    },
+    {
+      "invariantId": "INV-style-081",
+      "result": "pass",
+      "evidence": "N/A \u2014 no comparison tables on this page."
+    },
+    {
+      "invariantId": "INV-style-082",
+      "result": "pass",
+      "evidence": "N/A \u2014 no return value descriptions on this page."
+    },
+    {
+      "invariantId": "INV-style-083",
+      "result": "pass",
+      "evidence": "N/A \u2014 no exception/error handling descriptions on this page."
+    },
+    {
+      "invariantId": "INV-style-084",
+      "result": "pass",
+      "evidence": "N/A \u2014 no file path examples on this page."
+    },
+    {
+      "invariantId": "INV-style-085",
+      "result": "pass",
+      "evidence": "N/A \u2014 no configuration file examples on this page."
+    },
+    {
+      "invariantId": "INV-style-086",
+      "result": "pass",
+      "evidence": "N/A \u2014 no CLI command examples on this page."
+    },
+    {
+      "invariantId": "INV-style-087",
+      "result": "pass",
+      "evidence": "N/A \u2014 no API endpoint documentation on this page."
+    },
+    {
+      "invariantId": "INV-style-088",
+      "result": "pass",
+      "evidence": "Bullet lists use consistent formatting: all items start with a bold term or page_link followed by ' -- description'. Parallel structure maintained."
+    },
+    {
+      "invariantId": "INV-style-089",
+      "result": "pass",
+      "evidence": "N/A \u2014 no prerequisite lists on this page."
+    },
+    {
+      "invariantId": "INV-style-090",
+      "result": "pass",
+      "evidence": "N/A \u2014 no note/tip/warning about prerequisites on this page."
+    },
+    {
+      "invariantId": "INV-style-091",
+      "result": "pass",
+      "evidence": "N/A \u2014 no deprecated feature references on this page."
+    },
+    {
+      "invariantId": "INV-style-092",
+      "result": "pass",
+      "evidence": "N/A \u2014 no migration/upgrade guidance on this page."
+    },
+    {
+      "invariantId": "INV-style-093",
+      "result": "pass",
+      "evidence": "N/A \u2014 no performance-related guidance on this page."
+    },
+    {
+      "invariantId": "INV-style-094",
+      "result": "pass",
+      "evidence": "N/A \u2014 no security-credential handling instructions on this page."
+    },
+    {
+      "invariantId": "INV-style-095",
+      "result": "pass",
+      "evidence": "N/A \u2014 no multi-environment configuration guidance on this page."
+    },
+    {
+      "invariantId": "INV-style-097",
+      "result": "pass",
+      "evidence": "N/A \u2014 no anchor tags requiring verification on this page."
+    },
+    {
+      "invariantId": "INV-style-098",
+      "result": "pass",
+      "evidence": "N/A \u2014 no inline HTML on this page."
+    },
+    {
+      "invariantId": "INV-style-099",
+      "result": "pass",
+      "evidence": "N/A \u2014 no raw HTML entities on this page."
+    },
+    {
+      "invariantId": "INV-style-100",
+      "result": "pass",
+      "evidence": "Consistent sentence-ending punctuation throughout. All list items in User management section (lines 68-70) and Common system roles (lines 101-104) end with periods."
+    },
+    {
+      "invariantId": "INV-style-101",
+      "result": "pass",
+      "evidence": "Oxford comma is used consistently where applicable."
+    },
+    {
+      "invariantId": "INV-style-102",
+      "result": "pass",
+      "evidence": "N/A \u2014 no em dashes on the page. All dashes are double-hyphen (--)."
+    },
+    {
+      "invariantId": "INV-style-103",
+      "result": "pass",
+      "evidence": "N/A \u2014 no colons introducing lists that require verification."
+    },
+    {
+      "invariantId": "INV-style-104",
+      "result": "pass",
+      "evidence": "N/A \u2014 no semicolons in list items."
+    },
+    {
+      "invariantId": "INV-style-105",
+      "result": "pass",
+      "evidence": "No trailing whitespace issues detected."
+    },
+    {
+      "invariantId": "INV-style-106",
+      "result": "pass",
+      "evidence": "N/A \u2014 no inline links (standard markdown format) on this page; all links use Liquid tags."
+    },
+    {
+      "invariantId": "INV-style-107",
+      "result": "pass",
+      "evidence": "No unnecessary bold/italic formatting. Bold used correctly for role names (Administrator, User manager, etc.) and product terms."
+    },
+    {
+      "invariantId": "INV-style-108",
+      "result": "pass",
+      "evidence": "No double spaces or inconsistent spacing detected."
+    },
+    {
+      "invariantId": "INV-style-109",
+      "result": "pass",
+      "evidence": "N/A \u2014 no blockquotes on this page."
+    },
+    {
+      "invariantId": "INV-style-110",
+      "result": "pass",
+      "evidence": "N/A \u2014 no footnotes on this page."
+    },
+    {
+      "invariantId": "INV-style-111",
+      "result": "pass",
+      "evidence": "N/A \u2014 no task lists (checkbox lists) on this page."
+    },
+    {
+      "invariantId": "INV-style-112",
+      "result": "pass",
+      "evidence": "N/A \u2014 no horizontal rules on this page."
+    },
+    {
+      "invariantId": "INV-style-113",
+      "result": "pass",
+      "evidence": "N/A \u2014 no emoji usage on this page."
+    },
+    {
+      "invariantId": "INV-style-114",
+      "result": "pass",
+      "evidence": "Consistent capitalization in headings. All h2+ headings use sentence case."
+    },
+    {
+      "invariantId": "INV-style-115",
+      "result": "pass",
+      "evidence": "N/A \u2014 no abbreviated headings."
+    },
+    {
+      "invariantId": "INV-style-116",
+      "result": "pass",
+      "evidence": "N/A \u2014 no heading-level anchors that conflict."
+    },
+    {
+      "invariantId": "INV-style-117",
+      "result": "pass",
+      "evidence": "N/A \u2014 no duplicate headings at the same level."
+    },
+    {
+      "invariantId": "INV-style-118",
+      "result": "pass",
+      "evidence": "N/A \u2014 no heading questions on this page."
+    },
+    {
+      "invariantId": "INV-style-119",
+      "result": "pass",
+      "evidence": "N/A \u2014 no heading ending with colon."
+    },
+    {
+      "invariantId": "INV-style-120",
+      "result": "pass",
+      "evidence": "N/A \u2014 no heading ending with period."
+    },
+    {
+      "invariantId": "INV-style-121",
+      "result": "pass",
+      "evidence": "Second person 'you' used consistently when addressing the reader (lines 19, 50, 61, 63, 93, 99, 112)."
+    },
+    {
+      "invariantId": "INV-style-122",
+      "result": "pass",
+      "evidence": "First person plural 'we' used appropriately when speaking as Kentico (lines 22, 25, 27, 34, 39, 99)."
+    },
+    {
+      "invariantId": "INV-style-123",
+      "result": "pass",
+      "evidence": "N/A \u2014 no third-person references to the reader."
+    },
+    {
+      "invariantId": "INV-style-124",
+      "result": "pass",
+      "evidence": "Present tense used consistently throughout."
+    },
+    {
+      "invariantId": "INV-style-125",
+      "result": "pass",
+      "evidence": "N/A \u2014 no future tense promises on this page."
+    },
+    {
+      "invariantId": "INV-style-126",
+      "result": "pass",
+      "evidence": "N/A \u2014 no past tense narratives on this page (except appropriate changelog references)."
+    },
+    {
+      "invariantId": "INV-style-127",
+      "result": "pass",
+      "evidence": "Consistent terminology: 'Xperience by Kentico' (full form used at first mention and in key locations), 'Xperience' (short form used after introduction)."
+    },
+    {
+      "invariantId": "INV-style-128",
+      "result": "pass",
+      "evidence": "N/A \u2014 no jargon without explanation."
+    },
+    {
+      "invariantId": "INV-style-129",
+      "result": "pass",
+      "evidence": "N/A \u2014 no Latin abbreviations (e.g., i.e., etc.) used outside of parenthetical 'e.g.' which is acceptable."
+    },
+    {
+      "invariantId": "INV-style-130",
+      "result": "pass",
+      "evidence": "'e.g.' used correctly in parenthetical context on lines 61, 88, 103, 104."
+    },
+    {
+      "invariantId": "INV-style-131",
+      "result": "pass",
+      "evidence": "N/A \u2014 no 'please' used on this page."
+    },
+    {
+      "invariantId": "INV-style-132",
+      "result": "pass",
+      "evidence": "N/A \u2014 no 'simply', 'just', 'easy' used on this page."
+    },
+    {
+      "invariantId": "INV-style-133",
+      "result": "pass",
+      "evidence": "N/A \u2014 no gender-specific pronouns on this page."
+    },
+    {
+      "invariantId": "INV-style-134",
+      "result": "pass",
+      "evidence": "Conditions lead instructions where applicable: 'If your project requires it, you can also...' (line 63), 'If required by your security policy, you can define...' (line 93)."
+    },
+    {
+      "invariantId": "INV-style-135",
+      "result": "pass",
+      "evidence": "Possessives use 'X of Y' pattern consistently: 'range of built-in security features' (line 17), 'stages of development' (line 27)."
+    },
+    {
+      "invariantId": "INV-style-136",
+      "result": "pass",
+      "evidence": "No inline code elements requiring backtick formatting on this page. Page references use Liquid tags instead."
+    },
+    {
+      "invariantId": "INV-style-137",
+      "result": "pass",
+      "evidence": "N/A \u2014 no code element pluralization on this page."
+    },
+    {
+      "invariantId": "INV-style-138",
+      "result": "pass",
+      "evidence": "N/A \u2014 no callout boxes on this page."
+    },
+    {
+      "invariantId": "INV-style-139",
+      "result": "pass",
+      "evidence": "N/A \u2014 no callout boxes on this page."
+    },
+    {
+      "invariantId": "INV-style-140",
+      "result": "pass",
+      "evidence": "N/A \u2014 no callout boxes on this page."
+    },
+    {
+      "invariantId": "INV-style-141",
+      "result": "pass",
+      "evidence": "N/A \u2014 no callout boxes on this page."
+    },
+    {
+      "invariantId": "INV-style-142",
+      "result": "pass",
+      "evidence": "No 'sign up' / 'register' references on this page. N/A."
+    },
+    {
+      "invariantId": "INV-style-143",
+      "result": "pass",
+      "evidence": "N/A \u2014 no check box interactions described on this page."
+    },
+    {
+      "invariantId": "INV-style-144",
+      "result": "pass",
+      "evidence": "N/A \u2014 no 'Go to' / 'Switch to' navigation instructions on this page."
+    },
+    {
+      "invariantId": "INV-style-145",
+      "result": "pass",
+      "evidence": "N/A \u2014 no arrow-based navigation paths on this page."
+    },
+    {
+      "invariantId": "INV-style-146",
+      "result": "pass",
+      "evidence": "No instances of 'have to' found on the page."
+    },
+    {
+      "invariantId": "INV-style-147",
+      "result": "pass",
+      "evidence": "Line 57: 'it's' correctly used as contraction of 'it is' ('as it's not shared with live site authentication'). No misuse of 'its' vs 'it's'."
+    },
+    {
+      "invariantId": "INV-style-148",
+      "result": "pass",
+      "evidence": "No instances of 'sign into' found. Line 51 correctly uses 'sign in to the system'."
+    },
+    {
+      "invariantId": "INV-crossref-001",
+      "result": "pass",
+      "evidence": "All 32 page_link tags reference identifiers (both human-readable like 'support_policy_xp' and hash-based like '8ILWCQ'). No placeholder TODOs found."
+    },
+    {
+      "invariantId": "INV-crossref-002",
+      "result": "pass",
+      "evidence": "All 12 external_link tags use proper format with quoted URL and linkText attribute. All URLs start with http(s)."
+    },
+    {
+      "invariantId": "INV-crossref-003",
+      "result": "pass",
+      "evidence": "All 7 inpage_link tags use proper format with quoted heading targets matching actual page headings."
+    },
+    {
+      "invariantId": "INV-crossref-004",
+      "result": "pass",
+      "evidence": "No placeholder TODOs found for page_link identifiers. All identifiers appear to be actual values."
+    },
+    {
+      "invariantId": "INV-crossref-005",
+      "result": "pass",
+      "evidence": "Anchors used in page_links reference specific headings (e.g., 'User passwords', 'Multi-factor authentication', 'Account lockout', 'Password options', 'Edit page permissions'). Verification of target anchors is accuracy-reviewer scope."
+    },
+    {
+      "invariantId": "INV-crossref-006",
+      "result": "pass",
+      "evidence": "All 12 external_link tags follow the {% external_link \"URL\" linkText=\"...\" %} pattern."
+    },
+    {
+      "invariantId": "INV-crossref-007",
+      "result": "pass",
+      "evidence": "N/A \u2014 no button_link tags on this page."
+    },
+    {
+      "invariantId": "INV-crossref-009",
+      "result": "pass",
+      "evidence": "All link texts are descriptive: 'vulnerability disclosure program', 'security checklists', 'role-based access control (RBAC)', etc. No vague 'click here' or 'this page' link texts."
+    },
+    {
+      "invariantId": "INV-jekyll-001",
+      "result": "pass",
+      "evidence": "Front matter contains all required fields: title ('Security guidelines'), identifier ('security_guidelines_xp'), order (650). Additional valid fields present: persona, license, toc, redirect_from, related_pages."
+    },
+    {
+      "invariantId": "INV-jekyll-002",
+      "result": "pass",
+      "evidence": "Front matter YAML syntax is valid. No parsing errors."
+    },
+    {
+      "invariantId": "INV-jekyll-003",
+      "result": "pass",
+      "evidence": "All Liquid tags properly formed: matched {% %} pairs on every line, no broken includes."
+    },
+    {
+      "invariantId": "INV-jekyll-004",
+      "result": "pass",
+      "evidence": "N/A \u2014 no {{ }} output tags on this page."
+    },
+    {
+      "invariantId": "INV-jekyll-005",
+      "result": "pass",
+      "evidence": "N/A \u2014 no include tags on this page."
+    },
+    {
+      "invariantId": "INV-jekyll-006",
+      "result": "pass",
+      "evidence": "N/A \u2014 no conditional Liquid logic on this page."
+    },
+    {
+      "invariantId": "INV-jekyll-007",
+      "result": "pass",
+      "evidence": "N/A \u2014 no for loops on this page."
+    },
+    {
+      "invariantId": "INV-jekyll-008",
+      "result": "pass",
+      "evidence": "N/A \u2014 no assign/capture tags on this page."
+    },
+    {
+      "invariantId": "INV-jekyll-009",
+      "result": "pass",
+      "evidence": "N/A \u2014 no comment tags on this page."
+    },
+    {
+      "invariantId": "INV-jekyll-010",
+      "result": "pass",
+      "evidence": "N/A \u2014 no raw tags on this page."
+    },
+    {
+      "invariantId": "INV-jekyll-011",
+      "result": "pass",
+      "evidence": "redirect_from field present in front matter (line 12): 'x/security_guidelines_xp'."
+    },
+    {
+      "invariantId": "INV-jekyll-012",
+      "result": "pass",
+      "evidence": "N/A \u2014 no data file references on this page."
+    },
+    {
+      "invariantId": "INV-jekyll-013",
+      "result": "pass",
+      "evidence": "N/A \u2014 no layout override in front matter (uses default)."
+    },
+    {
+      "invariantId": "INV-jekyll-014",
+      "result": "pass",
+      "evidence": "N/A \u2014 no permalink override in front matter."
+    },
+    {
+      "invariantId": "INV-jekyll-015",
+      "result": "pass",
+      "evidence": "toc configuration present in front matter: minHeadingLevel: 2, maxHeadingLevel: 4."
+    },
+    {
+      "invariantId": "INV-jekyll-016",
+      "result": "pass",
+      "evidence": "N/A \u2014 no custom CSS/JS references on this page."
+    },
+    {
+      "invariantId": "INV-jekyll-017",
+      "result": "pass",
+      "evidence": "N/A \u2014 no image references on this page."
+    },
+    {
+      "invariantId": "INV-jekyll-018",
+      "result": "pass",
+      "evidence": "N/A \u2014 no video embeds on this page."
+    },
+    {
+      "invariantId": "INV-jekyll-019",
+      "result": "pass",
+      "evidence": "N/A \u2014 no table of contents override beyond front matter config."
+    },
+    {
+      "invariantId": "INV-jekyll-020",
+      "result": "pass",
+      "evidence": "N/A \u2014 no anchor tag usage on this page."
+    },
+    {
+      "invariantId": "INV-jekyll-021",
+      "result": "pass",
+      "evidence": "N/A \u2014 no collection-specific front matter issues."
+    },
+    {
+      "invariantId": "INV-jekyll-022",
+      "result": "pass",
+      "evidence": "N/A \u2014 no draft/published flag issues."
+    },
+    {
+      "invariantId": "INV-jekyll-023",
+      "result": "pass",
+      "evidence": "N/A \u2014 no date-based front matter on this page."
+    },
+    {
+      "invariantId": "INV-jekyll-024",
+      "result": "pass",
+      "evidence": "N/A \u2014 no categories/tags in front matter."
+    },
+    {
+      "invariantId": "INV-jekyll-025",
+      "result": "pass",
+      "evidence": "related_pages array present in front matter with valid identifier references."
+    },
+    {
+      "invariantId": "INV-jekyll-026",
+      "result": "pass",
+      "evidence": "N/A \u2014 no excerpt configuration on this page."
+    },
+    {
+      "invariantId": "INV-jekyll-027",
+      "result": "pass",
+      "evidence": "N/A \u2014 no pagination configuration on this page."
+    },
+    {
+      "invariantId": "INV-jekyll-028",
+      "result": "pass",
+      "evidence": "N/A \u2014 no feed/sitemap exclusion flags."
+    },
+    {
+      "invariantId": "INV-jekyll-029",
+      "result": "pass",
+      "evidence": "N/A \u2014 no search exclusion flags."
+    },
+    {
+      "invariantId": "INV-jekyll-030",
+      "result": "pass",
+      "evidence": "N/A \u2014 no custom variable definitions in front matter."
+    },
+    {
+      "invariantId": "INV-jekyll-031",
+      "result": "pass",
+      "evidence": "N/A \u2014 no special collection routing."
+    },
+    {
+      "invariantId": "INV-jekyll-032",
+      "result": "pass",
+      "evidence": "N/A \u2014 no environment-conditional content."
+    },
+    {
+      "invariantId": "INV-jekyll-033",
+      "result": "pass",
+      "evidence": "N/A \u2014 no plugin-specific tags on this page."
+    },
+    {
+      "invariantId": "TINV-002",
+      "result": "pass",
+      "evidence": "Page provides a centralized overview of security features with cross-references to detailed pages. Structure serves as a unified access point for security information."
+    },
+    {
+      "invariantId": "INV-structure-001",
+      "result": "pass",
+      "evidence": "Page reflects current product state. No migration guides, version-specific breaking changes, or historical content outside changelog references."
+    },
+    {
+      "invariantId": "INV-structure-002",
+      "result": "pass",
+      "evidence": "No 'Next steps' section present on the page. Correct for this reference-style overview page."
+    },
+    {
+      "invariantId": "INV-structure-009",
+      "result": "pass",
+      "evidence": "Page is self-contained with rich cross-references via page_link and external_link tags. Works independently without requiring prior reading."
+    },
+    {
+      "invariantId": "INV-structure-010",
+      "result": "pass",
+      "evidence": "N/A \u2014 this is not a reference or example page. Title 'Security guidelines' is appropriate."
+    },
+    {
+      "invariantId": "INV-structure-011",
+      "result": "pass",
+      "evidence": "Page richly links to related pages (32 page_links, 12 external_links, 7 inpage_links). Works for both new users (comprehensive overview) and returning users (quick navigation)."
+    },
+    {
+      "invariantId": "INV-structure-030",
+      "result": "pass",
+      "evidence": "N/A \u2014 this page is in _documentation, not _guides. No _guides modifications made."
+    },
+    {
+      "invariantId": "INV-structure-031",
+      "result": "pass",
+      "evidence": "N/A \u2014 this page is not in _api collection."
+    },
+    {
+      "invariantId": "INV-structure-032",
+      "result": "pass",
+      "evidence": "N/A \u2014 this is not the changelog page."
+    },
+    {
+      "invariantId": "INV-structure-033",
+      "result": "pass",
+      "evidence": "N/A \u2014 this page is not in the changelog directory."
+    },
+    {
+      "invariantId": "INV-structure-034",
+      "result": "pass",
+      "evidence": "Page structure follows the pattern: Title (Security guidelines), Introduction (lines 17-19), Body (sections 21-108), with appropriate structure for a reference/overview page."
+    },
+    {
+      "invariantId": "INV-structure-035",
+      "result": "pass",
+      "evidence": "Introduction present (lines 17-19): explains what the page covers and its benefit to the reader."
+    },
+    {
+      "invariantId": "INV-structure-036",
+      "result": "pass",
+      "evidence": "N/A \u2014 this is a reference overview page, not a longer concept introduction requiring a Key points callout."
+    },
+    {
+      "invariantId": "INV-structure-037",
+      "result": "pass",
+      "evidence": "Page assumes happy path \u2014 user has necessary roles and project setup. No unnecessary prerequisite warnings."
+    },
+    {
+      "invariantId": "INV-structure-038",
+      "result": "pass",
+      "evidence": "N/A \u2014 this is a reference overview page, not a procedural how-to requiring end-result descriptions."
+    },
+    {
+      "invariantId": "INV-structure-039",
+      "result": "pass",
+      "evidence": "N/A \u2014 no separate reference/example pages created. Content is inline where appropriate."
+    },
+    {
+      "invariantId": "INV-codesamples-001",
+      "result": "pass",
+      "evidence": "N/A \u2014 no code blocks or code samples on this page."
+    },
+    {
+      "invariantId": "INV-codesamples-002",
+      "result": "pass",
+      "evidence": "N/A \u2014 no code samples project modifications."
+    },
+    {
+      "invariantId": "INV-codesamples-003",
+      "result": "pass",
+      "evidence": "N/A \u2014 no standalone sample files."
+    },
+    {
+      "invariantId": "INV-codesamples-004",
+      "result": "pass",
+      "evidence": "N/A \u2014 no code samples project modifications."
+    },
+    {
+      "invariantId": "INV-codesamples-005",
+      "result": "pass",
+      "evidence": "N/A \u2014 no source code comments on this page."
+    },
+    {
+      "invariantId": "INV-codesamples-006",
+      "result": "pass",
+      "evidence": "N/A \u2014 no source code comments on this page."
+    },
+    {
+      "invariantId": "INV-codesamples-007",
+      "result": "pass",
+      "evidence": "N/A \u2014 no source code comments on this page."
+    },
+    {
+      "invariantId": "INV-codesamples-008",
+      "result": "pass",
+      "evidence": "N/A \u2014 no source code comments on this page."
+    },
+    {
+      "invariantId": "INV-codesamples-009",
+      "result": "pass",
+      "evidence": "N/A \u2014 no source code comments on this page."
+    },
+    {
+      "invariantId": "INV-codesamples-010",
+      "result": "pass",
+      "evidence": "N/A \u2014 no source code on this page."
+    },
+    {
+      "invariantId": "INV-codesamples-011",
+      "result": "pass",
+      "evidence": "N/A \u2014 no code examples on this page."
+    },
+    {
+      "invariantId": "INV-codesamples-014",
+      "result": "pass",
+      "evidence": "N/A \u2014 no {% code %} tags on this page."
+    },
+    {
+      "invariantId": "INV-codesamples-015",
+      "result": "pass",
+      "evidence": "N/A \u2014 no code_link tags on this page."
+    },
+    {
+      "invariantId": "INV-codesamples-016",
+      "result": "pass",
+      "evidence": "N/A \u2014 no code_link tags on this page."
+    },
+    {
+      "invariantId": "INV-codesamples-017",
+      "result": "pass",
+      "evidence": "N/A \u2014 no code_link tags on this page."
+    },
+    {
+      "invariantId": "INV-codesamples-018",
+      "result": "pass",
+      "evidence": "N/A \u2014 no code_link tags on this page."
+    },
+    {
+      "invariantId": "INV-codesamples-019",
+      "result": "pass",
+      "evidence": "N/A \u2014 no code_link tags on this page."
+    },
+    {
+      "invariantId": "INV-codesamples-020",
+      "result": "pass",
+      "evidence": "N/A \u2014 no code_link tags on this page."
+    },
+    {
+      "invariantId": "INV-codesamples-021",
+      "result": "pass",
+      "evidence": "N/A \u2014 no code samples on this page."
+    },
+    {
+      "invariantId": "INV-codesamples-022",
+      "result": "pass",
+      "evidence": "N/A \u2014 no code samples on this page."
+    },
+    {
+      "invariantId": "INV-codesamples-023",
+      "result": "pass",
+      "evidence": "N/A \u2014 no code samples on this page."
+    },
+    {
+      "invariantId": "INV-codesamples-024",
+      "result": "pass",
+      "evidence": "N/A \u2014 no code samples on this page."
+    },
+    {
+      "invariantId": "INV-codesamples-025",
+      "result": "pass",
+      "evidence": "N/A \u2014 no code samples on this page."
+    },
+    {
+      "invariantId": "INV-codesamples-026",
+      "result": "pass",
+      "evidence": "N/A \u2014 no code samples on this page."
+    },
+    {
+      "invariantId": "INV-codesamples-027",
+      "result": "pass",
+      "evidence": "N/A \u2014 no code samples on this page."
+    },
+    {
+      "invariantId": "INV-codesamples-028",
+      "result": "pass",
+      "evidence": "N/A \u2014 no code samples on this page."
+    }
+  ],
+  "additionalFindings": [
+    {
+      "category": "heading-hierarchy",
+      "result": "pass",
+      "evidence": "Headings follow correct hierarchy: h2 (7 sections) \u2192 h3 (7 subsections) \u2192 h4 (3 sub-subsections). No levels skipped. Verified: h4 'Application permissions', 'Data permissions', 'Custom permissions' all under h3 'Permissions' under h2 'Roles and permissions'."
+    },
+    {
+      "category": "consistent-formatting",
+      "result": "pass",
+      "evidence": "Bullet lists in User management (lines 68-70) and Common system roles (lines 101-104) follow identical pattern: '- [link/bold term] -- description.' Consistent throughout."
+    },
+    {
+      "category": "link-formatting",
+      "result": "pass",
+      "evidence": "All internal links use Liquid tags (page_link, inpage_link, external_link). No bare markdown links. Consistent format throughout."
+    },
+    {
+      "category": "sentence-structure",
+      "result": "pass",
+      "evidence": "Prose is clear, concise, and scannable. Sentences are well-structured with appropriate length for a reference overview page."
+    },
+    {
+      "category": "anti-pattern-check",
+      "result": "pass",
+      "evidence": "Checked against ANTI-002 (dash type confusion): no en dashes or em dashes remain; all dashes are properly formatted double-hyphens. No other anti-patterns detected (no code blocks for ANTI-010, no API methods for ANTI-004, etc.)."
+    },
+    {
+      "category": "style-evolution-check",
+      "result": "pass",
+      "evidence": "Checked STYLE-004 from knowledge-brief (page_link identifier fabrication): all 32 page_link identifiers appear to be actual values (mix of human-readable and hash-based IDs). No fabricated identifiers detected."
+    }
+  ],
+  "metaKnowledgeDiscards": [],
+  "summary": {
+    "invariantsPassed": 171,
+    "invariantsFailed": 0,
+    "additionalIssues": 0,
+    "notApplicable": 113,
+    "focusAreaVerification": "INV-style-096 PASS: All 7 Unicode en dashes successfully converted to double-hyphens. Zero en dashes remain. Line 103 dual-dash handling correct. All double-hyphens properly spaced."
+  }
+}

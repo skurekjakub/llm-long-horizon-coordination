@@ -1,0 +1,58 @@
+{
+  "chapter": 14,
+  "engagementScore": 9,
+  "emotionalImpact": "high",
+  "pacingAssessment": "well-paced",
+  "clarityScore": 8,
+  "findings": [
+    {
+      "id": "BETA-014-001",
+      "type": "pacing",
+      "severity": "major",
+      "description": "This chapter covers an extraordinary amount of emotional and plot ground: a four-person ambush → combat sequence → wound tending → first full intimate scene → afterglow conversation (Vael Seren) → contract loophole discovery. That's six distinct beats in ~5100 words. Each individual beat is well-executed, but the accumulated transitions create a chapter that feels slightly overstuffed. The transition from 'four incapacitated attackers within a hundred-pace radius' to intimacy is the most jarring — the combat resolution doesn't breathe before the emotional shift begins. A reader might feel whiplash between 'we just fought for our lives' and 'her mouth followed her hands.'",
+      "location": "Transition between Scene 1 (combat) and Scene 2 (wound tending → intimacy), approximately at 'Lirien found Kaelith by the field anchor's position'",
+      "readerImpact": "The violence-to-intimacy pipeline is a genre staple and mostly works here because the bond provides emotional logic (the aliveness demands acknowledgment). But the four unconscious bodies nearby create a credibility strain. The reader's tactical awareness asks: shouldn't they secure the site first? The narrative acknowledges this ('This was the worst possible time and the worst possible place') but acknowledging a problem isn't the same as resolving it."
+    },
+    {
+      "id": "BETA-014-002",
+      "type": "romance-gap",
+      "severity": "minor",
+      "description": "The intimate scene is beautifully written and emotionally grounded, but it relies heavily on the bond mechanics to carry the physical sensation. The recursion ('feeling herself being kissed through Kaelith's body') is the chapter's signature effect, and it's powerful — but by the scene's midpoint, the bond-echo descriptions begin to feel like a pattern rather than a discovery. The reader has processed the 'sensation doubled and returned' concept from ch13's kiss; here it's extended but not fundamentally deepened.",
+      "location": "Scene 2, intimate scene from second kiss through 'After, they breathed'",
+      "readerImpact": "The scene is steamy and emotionally resonant. The observation is that the bond-as-sensation-amplifier is carrying the physical description at the expense of non-magical physical specificity. What does Kaelith's skin actually feel like? What sounds does Lirien make? The fae-marked places (opalescent shimmer, translucent wrists) are a beautiful exception — specific, surprising, character-revealing. More of that physical specificity, less of the recursive echo, would elevate the scene."
+    },
+    {
+      "id": "BETA-014-003",
+      "type": "plot-hole",
+      "severity": "minor",
+      "description": "The contract loophole ('cessation of heartbeat' as a state, not a duration) is a brilliant piece of plotting, but its discovery in this chapter feels slightly convenient. Lirien has been living with this contract for months. She has memorized its exact phrasing. The loophole depends on standard Seep training ('The binding reads what it reads. Precision of language is precision of obligation'). Why is she discovering this NOW rather than during any of the preceding weeks? The narrative gestures at the answer — the bond makes monitoring possible — but the monitoring advantage doesn't explain why she hadn't identified the linguistic loophole earlier.",
+      "location": "Scene 2, from 'A Seep principle surfaced' through 'the binding would already have released'",
+      "readerImpact": "Most readers will accept this because they WANT a solution. But attentive readers may notice the timing is narratively convenient. A single line acknowledging that she had considered this before but dismissed it as too risky without the bond's monitoring capability would seal the gap."
+    },
+    {
+      "id": "BETA-014-004",
+      "type": "emotional-flat",
+      "severity": "observation",
+      "description": "The repeated refrain 'I'm not a home. I'm a weapon. I'm the contract that was designed to end you' appears twice in the chapter. The first occurrence (during the intimate scene) is powerful — intrusive guilt disrupting the most vulnerable moment. The second occurrence (in the loophole section) is a near-repetition that slightly dilutes the first. The second instance adds the detail about the contract, but the impact is reduced because the reader has already processed the core conflict in the same chapter.",
+      "location": "First: during intimate scene. Second: loophole discovery section",
+      "readerImpact": "The refrain works as a structural echo but the proximity makes it feel like the chapter is restating its thesis rather than developing it. One occurrence would be stronger."
+    },
+    {
+      "id": "BETA-014-005",
+      "type": "confusion",
+      "severity": "minor",
+      "description": "The Vael Seren conversation (afterglow section) introduces a location and emotional shorthand that will become important in ch15, but its placement here — sandwiched between the intimate scene and the loophole discovery — means it competes for attention with two much larger narrative events. A reader tracking the chapter's major revelations (sex, loophole) may not fully register Vael Seren's significance.",
+      "location": "Scene 2, afterglow conversation from 'What happens after?' through 'That's enough'",
+      "readerImpact": "Vael Seren pays off beautifully in ch15 and devastatingly in ch16, so it needs to register here. It does — 'a harbor I stayed an extra day in, once' is memorable. But the chapter's density means some readers may underweight it."
+    }
+  ],
+  "strengths": [
+    "The combat sequence is the best action writing in the manuscript. The bond-as-tactical-advantage is shown, not explained: Lirien creates openings because she knows where Kaelith will be, Kaelith finishes strikes because Lirien has disrupted defenses. The suppression field designed specifically for Lirien's abilities adds tactical texture and proves Thalen's network is studying them.",
+    "The phantom pain transmission during combat — Kaelith's rib impact hitting Lirien as a body-wide flare — is a brilliant use of the bond mechanics. It makes the resonance costly, not just useful. The bond is a weapon AND a vulnerability simultaneously, which mirrors the central romantic tension perfectly.",
+    "The intimate scene's best moment is Kaelith touching Lirien's fae-marked places 'as if they were the most important parts of her.' The specificity — opalescent shimmer at the nape, translucent wrists — grounds the encounter in these particular bodies rather than generic desire. The word 'recognition' (not curiosity about the otherness) is doing enormous character work.",
+    "The loophole discovery is excellent plotting. 'Cessation of heartbeat' as a state, not a duration, is exactly the kind of precise, lawyerly reading that a Seep operative would find. It gives Lirien an actionable plan while keeping the stakes lethal (stop a heart wrong and it stays stopped). The solution is as dangerous as the problem.",
+    "The final image — 'the kiss on her shoulder had been a declaration of war — not against her, but against the terms of her death' — reframes the intimacy as an act of resistance. Lirien's love becomes a strategic commitment to Kaelith's survival. This is thematically rich and emotionally earned.",
+    "The thematic integration of Seep-as-water imagery ('She was the water, and Kaelith was the structure') with the intimate scene is sophisticated. Lirien recognizes that she has done to Kaelith's defenses exactly what she was trained to do — found every crack, entered through them — and the horror of that recognition coexists with the genuine desire. The scene refuses to resolve the ambiguity."
+  ],
+  "verdict": "strong"
+}

@@ -1,0 +1,75 @@
+{
+  "chapterNum": 1,
+  "pov": "CHAR-001",
+  "povTransitionMotivation": null,
+  "scenes": [
+    {
+      "id": "SCN-001",
+      "goal": "Kaelith completes her morning patrol of Duskhaven's seawall, maintaining the garrison routine that has become her punishment and survival",
+      "conflict": "The Oathbrand on her collarbone flares unexpectedly during the patrol, causing pain that should not exist five years after its imposition",
+      "disaster": "The flare coincides with a visible Pallor irregularity overhead — the silver membrane flickers, revealing true starlight for seconds before sealing again. Kaelith realizes something fundamental is failing",
+      "valueShift": "From 'contained exile' to 'the world itself is breaking'",
+      "fiveCommandments": {
+        "incitingIncident": "Oathbrand flares during routine patrol",
+        "complication": "Pallor tear appears overhead simultaneously",
+        "crisis": "Report the anomaly to authorities who disappeared her, or keep silent?",
+        "climax": "Kaelith chooses silence — she owes the empire nothing",
+        "resolution": "She returns to quarters, noting the pattern but speaking to no one"
+      }
+    },
+    {
+      "id": "SCN-002",
+      "goal": "Kaelith repairs a section of garrison wall, maintaining the physical work that keeps her from thinking",
+      "conflict": "She senses surveillance — someone is watching her with operative-level discipline",
+      "disaster": "When she turns to identify the watcher, she sees a fae woman (Lirien) who does not flinch or pretend to be doing anything else. Their eyes meet. Professional recognition passes between them",
+      "valueShift": "From 'forgotten in exile' to 'someone has been sent for me'",
+      "fiveCommandments": {
+        "incitingIncident": "Kaelith senses she is being watched",
+        "complication": "The watcher is openly observing, not hiding",
+        "crisis": "Confront the threat now, or assess first?",
+        "climax": "Kaelith assesses — cataloguing exits, weapons, sight lines",
+        "resolution": "Both women hold position. Neither attacks. The surveillance is acknowledged but not acted upon"
+      }
+    },
+    {
+      "id": "SCN-003",
+      "goal": "Kaelith seeks information about the stranger from Tavik, the garrison administrator",
+      "conflict": "Tavik is evasive, claiming the stranger is a merchant liaison, but his body language suggests fear",
+      "disaster": "Kaelith realizes Tavik has been compromised — someone with institutional power is monitoring her, and Tavik is their local instrument",
+      "valueShift": "From 'exile is punishment' to 'exile is active containment by forces still invested in my silence'",
+      "fiveCommandments": {
+        "incitingIncident": "Kaelith asks Tavik about the fae woman",
+        "complication": "Tavik's lie is transparent and frightened",
+        "crisis": "Push for truth and reveal that she knows, or retreat and gather information independently?",
+        "climax": "Kaelith retreats without pushing — showing her hand gains nothing",
+        "resolution": "She leaves Tavik's office knowing she is more alone than she believed"
+      }
+    }
+  ],
+  "emotionalArc": {
+    "startState": "Kaelith begins in numb endurance — exile as penance she has accepted. She expects nothing and survives day-to-day through physical discipline and emotional shutdown",
+    "endState": "She ends in hyperalert threat assessment — someone has been sent, the world is failing, and the institutions that buried her are still watching. She shifts from passive penance to defensive calculation",
+    "pivotMoment": "The moment Lirien does not look away when caught watching. That level of predator confidence means Kaelith is not paranoid — she is a target"
+  },
+  "fantasyBeats": [
+    "Opening Image — Exile Under a Failing Sky: Establishes Kaelith's degraded state, the Oathbrand anomaly, and the first visible Pallor irregularity. The world is subtly wrong but institutions are not responding"
+  ],
+  "romanceBeats": [
+    "Adversarial Assessment — Target and Hunter Meet: Lirien arrives under a kill contract and begins surveillance. Kaelith senses the threat within hours. Their first recognition is professional — predator and target identifying each other through competence rather than attraction"
+  ],
+  "hookType": "atmospheric-immersion",
+  "hookTypeDescription": "Opens with the sensory reality of Kaelith's exile — cold garrison stone, salt air, the chronic pain of the Oathbrand. The hook is the wrongness: the brand should not burn, the sky should not flicker, and someone is watching",
+  "closeType": "unresolved-threat",
+  "closeTypeDescription": "Closes with Kaelith alone in her quarters, aware that she is being watched by someone dangerous, that the empire is still monitoring her, and that the Pallor failure is not a single event. The threat is named but not acted upon",
+  "targetWordCount": 4000,
+  "tensionLevel": 4,
+  "pacingNotes": "Sustained-low tension. Establishes baseline atmosphere without overwhelming. The tension is ambient — chronic pain, surveillance awareness, world-threat foreshadowing",
+  "locationsPrimary": ["Duskhaven — garrison town, seawall, Kaelith's quarters, Tavik's administrative office"],
+  "charactersPresent": ["CHAR-001 (Kaelith)", "CHAR-002 (Lirien, observed but not interacted with)", "CHAR-009 (Tavik)"],
+  "upstreamRefs": [
+    "../../plot/plot-structure.json",
+    "../../characters/CHAR-001.json",
+    "../../plot/dual-arc-timeline.json",
+    "../../plot/tension-map.json"
+  ]
+}

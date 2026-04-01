@@ -1,0 +1,42 @@
+{
+  "chapter": 20,
+  "engagementScore": 10,
+  "emotionalImpact": "high",
+  "pacingAssessment": "well-paced",
+  "clarityScore": 9,
+  "findings": [
+    {
+      "id": "BETA-020-001",
+      "type": "worldbuilding-gap",
+      "severity": "minor",
+      "description": "The Seep's 'tacit support' paragraph — Lirien realizing the Seep had embedded the loophole language in the contract — introduces a significant institutional implication in the immediate aftermath of the most emotionally intense scene in the book. The reader is still processing the resuscitation and the bond flooding back, and the narration pivots to intelligence-community politics. This feels like sequel setup intruding on the emotional resolution.",
+      "location": "Post-dissolution assessment, 'Something registered distantly: the Seep had known about the wording'",
+      "readerImpact": "Pulls the reader out of the emotional moment. The Seep angle is interesting for series continuity but its placement here competes with the emotional landing. Could be moved to Ch 22's institutional assessment without losing anything."
+    },
+    {
+      "id": "BETA-020-002",
+      "type": "pacing",
+      "severity": "observation",
+      "description": "The chapter front-loads Lirien's preparation (ward-stones, parameters, timing calculations, Oathbrand parallel) before the cessation. This is character-appropriate — Lirien prepares — but the buildup is extensive. The reader knows what's coming and wants to get there. The preparation sequence could be tighter without losing the dread.",
+      "location": "Section 1, ward-stone placement through consent exchange",
+      "readerImpact": "Mild impatience in some readers. The preparation serves suspense but also tests patience — it's walking the line between 'earned dread' and 'get on with it.' Leans toward earned dread, but just barely."
+    },
+    {
+      "id": "BETA-020-003",
+      "type": "observation",
+      "severity": "observation",
+      "description": "The consent exchange ('Verbal. Explicit. Before I begin.') reads as slightly clinical in a way that is both perfectly in character and potentially jarring for romance readers expecting emotional intensity at this moment. However, it also functions as the most intimate act in the book — asking for explicit consent to stop someone's heart is asking for the ultimate trust, and framing it as a clinical protocol paradoxically intensifies the emotional charge.",
+      "location": "Section 1, consent dialogue",
+      "readerImpact": "This will divide readers. Some will find it the most romantic moment in the book precisely because of its clinical framing. Others will want more overt emotional expression. Both readings are supported by the text."
+    }
+  ],
+  "strengths": [
+    "The eight seconds of silence in the bond is the emotional climax of the entire book — not the cessation itself but the ABSENCE. The distinction between 'a room gone dark' and 'a room that had never contained light' is devastating and precisely captures the difference between every previous form of separation and actual death.",
+    "The binding fighting back during the cessation adds genuine tension to what could have been a mechanical loophole execution. The scalpel-vs-hammer conflict makes the scene feel dangerous rather than procedural.",
+    "The loophole feels CLEVER rather than convenient because the emotional weight around it is so enormous. The reader has been told about 'cessation of heartbeat' since earlier chapters, so the mechanic isn't a surprise — the execution (literal and figurative) is where the impact lives.",
+    "Lirien's post-dissolution test — checking whether her feelings survive the binding's removal — is the perfect structural mirror to Ch 18's ledger audit. Before: 'can I prove choice exists within the cage?' After: 'do the feelings persist outside the cage?' Both answered affirmatively. Rigorous, earned, devastating.",
+    "The quiet ending (foreheads touching, hand-holding, silence) is exactly right. After the most intense scene in the book, restraint is the correct tonal choice. 'The cage was open. What remained was only real.' is a perfect closing register.",
+    "The consent exchange works because it IS clinical — Lirien framing this as protocol is the operative's last defense against the enormity of what she's about to do, and Kaelith responding with 'I am saying I love you by lying still' (conveyed through the bond, not spoken) inverts the clinical framing into something profoundly intimate."
+  ],
+  "verdict": "strong"
+}

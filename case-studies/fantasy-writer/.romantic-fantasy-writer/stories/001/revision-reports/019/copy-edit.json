@@ -1,0 +1,187 @@
+{
+  "storyId": "001",
+  "chapterNum": 19,
+  "chapterTitle": "Sound Enough",
+  "pov": "CHAR-001",
+  "povName": "Kaelith Maren",
+  "editPass": "copy-edit",
+  "timestamp": "2025-07-30T15:30:00Z",
+  "summary": "Copy edit of Chapter 19 ('Sound Enough'). 8 findings total: 0 critical, 0 major, 2 moderate, 6 minor. Chapter demonstrates strong factual integrity overall. All character names, magic terminology, and major world-bible references verified correct. Bond mechanics consistent with established rules. Knowledge states respected — Kaelith does not learn Thalen's identity, Iryse's role, or Seep support details. British English used consistently throughout. Past tense maintained. Dialogue formatting correct. No anachronisms detected. The moderate findings involve a timeline discrepancy in Lirien's dialogue ('three days ago' for the cipher destruction is likely 1-2 days per continuity tracker) and a recurring pattern of bond directional/spatial transmission that exceeds the established emotional-states-only specification. Minor findings are formatting inconsistencies ('treeline' vs 'tree-line'), capitalization variance ('garrison-coast' vs 'Garrison-coast'), a location descriptor imprecision ('market square' for the Graymarket district), a borderline temporal reference ('weeks ago' for ~14 days), a new worldbuilding term requiring continuity canonisation, and a cultural-rule tension (stone palisade in Rivenmarch) worth acknowledging.",
+  "findings": [
+    {
+      "id": "COPY-001",
+      "severity": "minor",
+      "category": "formatting",
+      "description": "Inconsistent hyphenation of 'treeline' within the chapter. Line 19 uses 'treeline' (one word, no hyphen), which matches the dominant manuscript-wide convention (15+ uses across chapters 6, 7, 9, 12, 14, 16, 17, 18). Line 33 uses 'tree-line' (hyphenated), the only occurrence of this form in the entire manuscript.",
+      "lineRef": "Line 33",
+      "currentText": "She stood at the tree-line with her pack",
+      "correction": "Change 'tree-line' to 'treeline' to match line 19 and all other chapters.",
+      "sourceReference": "Cross-manuscript search: 'treeline' used 15+ times, 'tree-line' used once (this instance only)"
+    },
+    {
+      "id": "COPY-002",
+      "severity": "moderate",
+      "category": "timeline",
+      "description": "Lirien states 'I destroyed it three days ago' referring to the Seep cipher. Per the continuity tracker, cipher destruction occurs in Ch18 (~day 27, afternoon). Ch19 is estimated at day ~28-29. This places the destruction 1-2 days prior, not 3. If Lirien's journey from the safe house to the Rivenmarch settlement required 2+ days of travel, 'three days' could be accurate, but the continuity tracker's day estimates do not support this — both Ch18 and Ch19 events are compressed into a ~2 day window. Recommend either adjusting to 'two days ago' or verifying that the timeline accommodates the three-day gap.",
+      "lineRef": "Line 175",
+      "currentText": "\"My cipher,\" Lirien said. \"Court communication. I destroyed it three days ago.\"",
+      "correction": "Change 'three days ago' to 'two days ago' to align with continuity tracker day estimates (~day 27 destruction, ~day 28-29 current), OR update the continuity tracker to extend the travel gap between Ch18 and Ch19.",
+      "sourceReference": "continuity-tracker.json: Ch18 dayEstimate 'second day after Ch16 separation' (~day 27), Ch19 dayEstimate 'Day ~28-29'"
+    },
+    {
+      "id": "COPY-003",
+      "severity": "minor",
+      "category": "timeline",
+      "description": "The Oathbrand is described as having been 'removed weeks ago.' The removal occurred in Ch11 (~day 14), and Ch19 is at ~day 28-29. This is approximately 14-15 days — exactly two weeks. 'Weeks ago' (plural) is technically accurate but marginal; the phrasing implies a longer elapsed period to most readers. Given the compressed timeline of the entire story (~29 days), this description slightly inflates the perceived duration. Acceptable in close-third narration where subjective experience colours temporal language, but worth noting for timeline precision.",
+      "lineRef": "Line 39",
+      "currentText": "The brand had been removed weeks ago — Lirien's hands on her collarbone, the ward threads pulled one by one from the scar tissue",
+      "correction": "No change strictly required — 'weeks ago' is borderline accurate for 14 days. Optional tightening: 'removed a fortnight ago' or 'removed two weeks ago' for sharper precision.",
+      "sourceReference": "continuity-tracker.json: Ch11 Oathbrand removal at midpoint (~day 14), Ch19 at day ~28-29"
+    },
+    {
+      "id": "COPY-004",
+      "severity": "minor",
+      "category": "naming",
+      "description": "Inconsistent capitalisation of 'garrison-coast' across the chapter. Four occurrences use lowercase 'garrison-coast' (lines 27, 33, 87, 239) as a compound adjective/location reference. One occurrence at line 53 capitalises the first element: 'Garrison-coast accent.' The culture file (CUL-003) titles the region 'The Garrison Coast' (proper noun, no hyphen), suggesting that when used as a proper-noun modifier it should be 'Garrison-Coast' or 'Garrison Coast.' Internally, the chapter should choose one convention.",
+      "lineRef": "Lines 27, 33, 53, 87, 239",
+      "currentText": "Line 27: 'at garrison-coast' / Line 53: 'Garrison-coast accent'",
+      "correction": "Standardise to lowercase 'garrison-coast' (as a descriptive compound adjective) or uppercase 'Garrison-Coast' (as a proper-noun modifier) throughout. If treating as a place name, all instances should capitalise: 'at Garrison-Coast', 'Garrison-Coast accent', 'the Garrison-Coast woman', 'Garrison-Coast irony.' Current dominant convention in chapter is lowercase — change line 53 'Garrison-coast' to 'garrison-coast' to match.",
+      "sourceReference": "CUL-003 title: 'The Garrison Coast'; Ch11: 'garrison coast' (no hyphen, lowercase)"
+    },
+    {
+      "id": "COPY-005",
+      "severity": "minor",
+      "category": "factual",
+      "description": "Line 33 refers to the site of the Calwrath civilian casualties as 'a market square.' The established term is 'the Graymarket,' described in the continuity tracker as a 'Civilian district in Calwrath' — a district, not a square. The chapter itself correctly uses 'the Graymarket' at line 241 ('the dead of the Graymarket'). The earlier 'market square' reference on line 33 is imprecise relative to established terminology. In context, this is Kaelith's compressed internal summary during an emotional moment, so the imprecision is defensible as character voice, but it creates a minor inconsistency with the correct term used later in the same chapter.",
+      "lineRef": "Line 33",
+      "currentText": "the woman who commanded it had ordered fire on a market square and killed three hundred civilians",
+      "correction": "Optional: change 'a market square' to 'a civilian district' or 'the Graymarket' to match established terminology. The imprecision is defensible as Kaelith's compressed recollection under stress, but consistency with line 241's usage would be cleaner.",
+      "sourceReference": "continuity-tracker.json namingConsistency: 'Graymarket: Civilian district in Calwrath, site of the burn. Spelling: Graymarket (one word, capital G)'"
+    },
+    {
+      "id": "COPY-006",
+      "severity": "moderate",
+      "category": "factual",
+      "description": "The resonance bond transmits directional and spatial information in this chapter: 'a pull, directional, the resonance tightening like a string being drawn taut between two points that were getting closer' (line 109) and 'The bond's resolution increased with proximity; at distance it carried only the broadest emotional qualities, but as the source approached, it refined' (line 111). The bond's canonical specification (MAG-007 and continuity-tracker namingConsistency) states it 'Transmits emotions and physical sensations. Does NOT transmit thoughts, words, or factual information.' Directional pull and proximity-based resolution refinement extend the bond's capabilities beyond emotional states into spatial/navigational territory. This pattern was also flagged in the Ch17 and Ch18 copy edits as a recurring expansion. The behaviour is narratively effective and internally consistent across chapters 17-19, but it is not sanctioned by the world-bible specification. Recommend either: (a) canonising this capability in the magic-system or continuity tracker, or (b) reframing the directional pull as an emotional intensification rather than spatial data.",
+      "lineRef": "Lines 109-113",
+      "currentText": "the resonance tightening like a string being drawn taut between two points that were getting closer... The bond's resolution increased with proximity",
+      "correction": "If retaining the spatial capability: update magic-system.json MAG-007 and continuity-tracker resonance bond entry to include proximity-based resolution and directional awareness as established mechanics. If removing: reframe as 'the bond's emotional quality sharpening, grief resolving into something more specific' without spatial directional claims.",
+      "sourceReference": "magic-system.json MAG-007; continuity-tracker.json namingConsistency: 'resonance bond... Transmits emotions and physical sensations. Does NOT transmit thoughts, words, or factual information'; Ch17 copy-edit COPY-005; Ch18 copy-edit finding on same pattern"
+    },
+    {
+      "id": "COPY-007",
+      "severity": "minor",
+      "category": "factual",
+      "description": "New worldbuilding term 'Third Frontier Manual, chapter nine' introduced as Ashborne military doctrine. This specific text title has not appeared in any previous chapter or world-bible file. It is fully consistent with the Ashborne Legion's established military traditions and does not contradict existing lore, but it should be canonised in the continuity tracker's naming consistency section to ensure future chapters reference it accurately if used again.",
+      "lineRef": "Line 27",
+      "currentText": "Ashborne doctrine. Third Frontier Manual, chapter nine.",
+      "correction": "No change to the draft required. Add 'Third Frontier Manual: Ashborne military doctrine text. Chapter nine covers settlement defensive architecture (interlocking fields of fire, weighted ring construction, killing ground approach)' to continuity-tracker.json namingConsistency under magicTerms or a new 'documents' subsection.",
+      "sourceReference": "Cross-manuscript search: no prior occurrences of 'Third Frontier Manual' or 'Frontier Manual'"
+    },
+    {
+      "id": "COPY-008",
+      "severity": "minor",
+      "category": "factual",
+      "description": "The Ashborne veterans have constructed a 'Stone-and-timber palisade' at the Rivenmarch settlement. CUL-005 (Rivenmarch Freeholders) lists 'Building in stone' as a cultural taboo: 'permanence is not just impractical but culturally offensive. Stone buildings imply a belief that the world will stay still for you.' The palisade's stone component is a military addition by non-freeholder veterans, and the narrative explicitly notes they 'folded the military architecture into the civilian settlement the way a good engineer reinforced a wall without dismantling it.' This is defensible — the taboo belongs to freeholders, and the Ashborne veterans are military exiles with their own construction traditions. However, the cultural tension goes unacknowledged in the narrative. Worth noting for consistency but does not require a draft change unless the writer wants to add a brief acknowledgment of the cultural friction.",
+      "lineRef": "Lines 19-21",
+      "currentText": "Stone-and-timber palisade, chest height, angled outward",
+      "correction": "No change required. The veterans are not freeholders and are not bound by freeholder taboos. Optional enrichment: a single sentence noting that the stone palisade is an Ashborne addition the freeholders tolerate because it works, creating a subtle cultural-compromise detail.",
+      "sourceReference": "CUL-005 taboos: 'Building in stone — permanence is not just impractical but culturally offensive'; geography.json LOC-011: 'wood and thatch, easily rebuilt'"
+    }
+  ],
+  "verifiedCorrect": {
+    "naming": [
+      "Kaelith Maren — consistent, matches CHAR-001",
+      "Lirien Dael — referred to as 'Lirien' in Kaelith POV, correct",
+      "Sedara — matches continuity tracker (Ashborne Third Platoon veteran, first appears Ch19)",
+      "Ossya Thenndal — correct spelling, matches continuity tracker (Last Warden, deceased)",
+      "Ashborne Fourth — correct unit designation",
+      "Third Platoon — correct sub-unit for Sedara",
+      "Calwrath — consistent",
+      "Graymarket — correct spelling at line 241 (one word, capital G)",
+      "Rivenmarch — consistent, matches LOC-011",
+      "Pallor — consistent throughout",
+      "Vireth Range — consistent, matches geography.json",
+      "Quietus — consistent, matches LOC-013",
+      "Ythara — consistent, correct name",
+      "Oathbrand — consistent throughout",
+      "Seep — consistent (Seep encryption cipher)",
+      "threadbone — consistent with Ch18 usage",
+      "Lessened/Lessening — correct usage ('not Lessened')",
+      "kinetic memory — correct term",
+      "Warden — correct usage ('Warden-adjacent', 'Warden capacity')",
+      "Dimming rites — not directly mentioned, no errors",
+      "Court Architect — correct term for fae binding designer"
+    ],
+    "timeline": [
+      "Six years of exile — consistent (Calwrath YK 736, current YK 742)",
+      "300 civilians, 800 soldiers — matches continuity tracker and geography.json",
+      "Oathbrand refreshed for 6 years — matches MAG-008",
+      "Defected Court Architect, 12 years under Ashborne protection — matches Ch18 intelligence",
+      "Three independent sources for dissolution mechanism — matches Ch18",
+      "40-year Pallor sabotage — consistent throughout",
+      "Contract '47-day overdue' referenced indirectly — consistent"
+    ],
+    "magicSystem": [
+      "Bond transmits emotional states, not thoughts/words — dialogue correctly has Lirien speak all factual information verbally rather than through bond",
+      "Bond can be walled but not severed — consistent (Kaelith walled bond in Ch16, stopped reinforcing in Ch17)",
+      "Contract loophole: cessation of heartbeat satisfies execution clause — matches MAG-005 and FU-001",
+      "Binding substrate thinning at Pallor-weak zones — consistent with established Pallor gradient mechanics",
+      "Kinetic memory as body-encoded knowledge — consistent with MAG-006",
+      "Pallor progression: silver in veins, three frozen fingers, cold past elbow — correct acceleration from Ch17 (two fingers, cold at elbow)"
+    ],
+    "knowledgeStates": [
+      "Kaelith does NOT learn Thalen's specific identity — Lirien says 'High Conclave member' without naming (FACT-007 preserved)",
+      "Kaelith does NOT learn about Iryse — not mentioned (FACT-011 preserved)",
+      "Kaelith does NOT learn about Seep supporting loophole — not mentioned (FACT-012 preserved)",
+      "Kaelith does NOT learn details of 11-hour self-interrogation — Lirien shares only scope ('four pages, eleven hours') and conclusion, not process",
+      "Kaelith correctly learns: Ashborne network, cipher destroyed, free choice proof, dissolution at Quietus, defected Architect — all delivered through Lirien's dialogue"
+    ],
+    "culturalConsistency": [
+      "Rivenmarch description matches LOC-011 and CUL-005 (freeholders, Pallor instability, wood/thatch architecture for civilian structures)",
+      "Garrison-coast cultural markers correct (wall maintenance, dark humour, military timekeeping)",
+      "Sedara's greeting as 'Commander' correctly transgresses Oathbrand protocol (title stripped) — narrative acknowledges this as loyalty, not error",
+      "Fae cipher destruction as identity severance — consistent with CUL-002 (contractual identity)",
+      "Rivenmarch Pallor state matches far_western zone (more gap than membrane, true sky visible)"
+    ],
+    "grammar": [
+      "Past tense maintained consistently throughout",
+      "Dialogue formatting correct: commas with speech tags, periods with action beats",
+      "Em dashes used correctly for parenthetical insertions and explanatory breaks",
+      "Italics used correctly for internal emphasis/echo (*Commander*, *current, dam, water*)",
+      "British English consistent throughout (characterised, organised, reorganise, colour — 7 instances, 0 American variants)",
+      "Scene breaks (---) properly placed between three scenes",
+      "Fragment sentences are deliberate Kaelith voice markers (inventory mode), not grammatical errors",
+      "Pronoun clarity maintained in three-female scenes (Kaelith, Lirien, Sedara) through consistent naming"
+    ],
+    "anachronismCheck": [
+      "No modern slang or contemporary phrasing detected",
+      "No technology-level violations (no clocks, no explosives, no industrial machinery)",
+      "'Compass' simile defensible — navigational instruments consistent with established military-cartographic traditions",
+      "Sand tables (table-sand) historically appropriate for military training",
+      "All metaphor domains within Kaelith's established architectural/military vocabulary"
+    ],
+    "voiceCompliance": [
+      "Kaelith voice maintained: 70%+ short declarative sentences, military/architectural vocabulary, physical emotional tells",
+      "Approved Lirien-influence water image: ONE occurrence ('current breaking through a dam') — tracked and annotated in metadata",
+      "Kaelith's deepest vulnerability ('I am afraid') delivered in shortest, most undefended sentences — consistent with voice guide",
+      "No unapproved cross-contamination from Lirien's vocabulary domains"
+    ]
+  },
+  "findingSummary": {
+    "total": 8,
+    "critical": 0,
+    "major": 0,
+    "moderate": 2,
+    "minor": 6,
+    "categories": {
+      "naming": 1,
+      "timeline": 2,
+      "factual": 3,
+      "grammar": 0,
+      "formatting": 1,
+      "anachronism": 0
+    }
+  },
+  "overallAssessment": "Chapter 19 demonstrates very high factual integrity. All proper nouns verified correct. Magic system mechanics respected with one recurring expansion pattern (bond directionality, flagged in Ch17/Ch18/Ch19 — recommend canonisation). Knowledge states meticulously maintained — the chapter delivers new information to Kaelith through Lirien's dialogue while preserving key unknowns (Thalen's identity, Iryse's role, Seep support). Cultural details accurate. Timeline generally consistent with one moderate discrepancy (cipher destruction timing). Voice compliance excellent — Kaelith's POV is immediately identifiable and maintains architectural/military vocabulary throughout, with the single approved water-image exception. No grammar issues, no anachronisms, no dialogue formatting errors."
+}

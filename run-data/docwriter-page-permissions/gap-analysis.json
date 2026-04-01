@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "generatedBy": "docwriter-gap-hunter",
+  "cycle": 2,
+  "previousCycleResolution": {
+    "GAP-001": {
+      "status": "resolved",
+      "verification": "page-permission-management.md lines 222-226 now document clone-specific permissions: 'Read on the source page (the page being cloned)' and 'Read and Create on the target parent page (where the clone is placed).' create-pages.md lines 37-41 now have an info box with clone permission requirements linking to anchor 'Page permissions for creating pages'. Both match code-analysis clonePage: 'READ on source AND READ + CREATE on target parent.'"
+    },
+    "GAP-002": {
+      "status": "resolved",
+      "verification": "Hex-level grep (\\xe2\\x80\\x93) confirmed zero Unicode en-dash (U+2013) characters remain in any of the 8 modified files. workflows.md lines 59, 62, 71 now use double-hyphen (--). security-guidelines.md lines 68-70 and 101-104 now use double-hyphen (--). All 10 previously identified en-dash instances converted. INV-style-096 fully satisfied."
+    },
+    "GAP-003": {
+      "status": "resolved",
+      "verification": "page-permission-management.md line 180 now lists '*Read*, *Update*, *Create*, *Delete*, or *Synchronize*' — Synchronize included in the enumeration. New section 'Page permissions for synchronizing pages' (lines 243-249) documents ancestor chain requirement: 'Read and Synchronize for the page they want to synchronize, and for all ancestor pages in the content tree.' content-sync.md line 158 now reads 'you need *Read* and *Synchronize* page permissions on the page and all its ancestor pages in the content tree' with correct anchor link to 'Page permissions for synchronizing pages'. Matches code-analysis synchronize: 'READ + SYNCHRONIZE on the page AND all ancestor pages up the tree.'"
+    }
+  },
+  "gaps": [],
+  "discoveryConsumption": {
+    "filesProcessed": [
+      "code-analyzer--AREA-003--c1.json",
+      "impact-mapper--global--c1.json"
+    ],
+    "totalDiscoveries": 10,
+    "dispositions": {
+      "note": "All 10 discoveries were fully dispositioned in cycle 1. No new discovery files found in cycle 2."
+    }
+  },
+  "convergenceAssessment": {
+    "totalGaps": 0,
+    "reEntryNeeded": false,
+    "reEntryTargets": [],
+    "converged": true,
+    "discoveriesProcessed": 0,
+    "discoveriesConvertedToGaps": 0,
+    "discoveriesDeduplicated": 0,
+    "discoveriesOutOfScope": 0,
+    "discoveriesAddedEvidence": 0
+  }
+}

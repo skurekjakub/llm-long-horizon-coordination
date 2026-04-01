@@ -1,0 +1,132 @@
+{
+  "agent": "docwriter-persona-reviewer",
+  "taskId": "T-006",
+  "attempt": 1,
+  "verdict": "approved",
+  "personaChecks": [
+    {
+      "check": "front-matter-personas",
+      "result": "pass",
+      "declaredPersonas": ["developer", "architect", "admin"],
+      "evidence": "Front matter declares `persona: developer, architect, admin`. All three are valid per INV-persona-001. The page is a security reference covering RBAC, permissions, authentication, and security best practices — content relevant to developers (API/SDK usage, permission enforcement), architects (system-level security model, RBAC layers), and admins (role configuration, permission management). All three personas are correctly represented."
+    },
+    {
+      "check": "tone-developer",
+      "result": "pass",
+      "evidence": "Data permissions section uses precise technical terminology: 'ACL' (explained inline as 'access-control list'), names four specific page operations ('reading, creating, updating, and deleting pages'), and references the permission model's scope hierarchy (website channels → content tree sections → individual pages). The Channel manager description uses 'configuring page permissions' — standard developer vocabulary. The writer intentionally chose common operation verbs rather than internal API constant names (Read, Update, Create, Delete, Synchronize, Display) to keep the overview accessible while remaining technically precise."
+    },
+    {
+      "check": "tone-architect",
+      "result": "pass",
+      "evidence": "The Data permissions section frames the permission model at a system level — roles controlling operations across scoped layers (channels, tree sections, pages/folders) via an ACL mechanism. This is the architectural perspective an architect needs: understanding the permission granularity model and its scope hierarchy without implementation details. The multi-layer structure (application permissions + data permissions + custom permissions) is visible from the section headings."
+    },
+    {
+      "check": "tone-admin",
+      "result": "pass",
+      "evidence": "Both modified cross-references use operational language accessible to admins. 'Control which roles can perform specific operations' is action-oriented admin vocabulary. The Data permissions link anchors to 'Permission requirements for page operations' — an operational section title. The Channel manager link anchors to 'Edit page permissions' — a direct procedural entry point. Neither cross-reference introduces developer-internal concepts (no class names, no API methods, no code patterns). The '(such as reading, creating, updating, and deleting pages)' parenthetical uses everyday verbs that admins encounter in the UI."
+    },
+    {
+      "check": "depth-calibration",
+      "result": "pass",
+      "evidence": "The changes are cross-reference updates on a reference overview page. Depth is correctly calibrated: provides enough context about what page permissions control (four named operations, three scope levels, ACL mechanism) without diving into implementation details. The writer's decision to list four of six ACL operations using common verbs — omitting the more specialized Synchronize and Display operations — keeps the overview accessible for all three personas while remaining accurate (the 'such as' qualifier correctly signals a non-exhaustive list). This is appropriate depth for a security overview that links to detailed pages."
+    },
+    {
+      "check": "multi-persona-layering",
+      "result": "pass",
+      "evidence": "The modified content works for all three personas simultaneously without needing progressive layering, because the changes are cross-reference updates (not new conceptual content). Each persona extracts what they need: developers see the ACL operation model, architects see the scope hierarchy, admins see the operational entry points. The link anchors ('Permission requirements for page operations' and 'Edit page permissions') route each persona to the correct landing point on the hub page for their needs."
+    }
+  ],
+  "classificationCheck": {
+    "declared": "reference",
+    "actual": "reference",
+    "result": "pass",
+    "evidence": "The page is structured as a security overview reference — organized by topic (SDL, vulnerability management, authentication, RBAC, SaaS, checklists) with descriptive content and cross-references to detailed pages. No step-by-step procedures, no tutorial flow. The modified sections maintain this reference character: they describe what page permissions control and link to the detailed management pages."
+  },
+  "taxonomyChecks": [
+    {
+      "field": "title",
+      "result": "pass",
+      "value": "Security guidelines"
+    },
+    {
+      "field": "identifier",
+      "result": "pass",
+      "value": "security_guidelines_xp"
+    },
+    {
+      "field": "persona",
+      "result": "pass",
+      "value": "developer, architect, admin"
+    },
+    {
+      "field": "order",
+      "result": "pass",
+      "value": "650"
+    },
+    {
+      "field": "license",
+      "result": "pass",
+      "value": "1"
+    },
+    {
+      "field": "redirect_from",
+      "result": "pass",
+      "value": "x/security_guidelines_xp"
+    }
+  ],
+  "consistencyCheck": {
+    "result": "pass",
+    "notes": "The Security Guidelines topic cluster contains three pages: security-guidelines.md (developer, architect, admin), vulnerabilities-in-transitive-dependencies.md (developer, architect, admin), and rate-limiting.md (developer only). This page's tri-persona targeting is consistent with the cluster's parent-page pattern. The sibling 'vulnerabilities in transitive dependencies' page shares the same three personas. The 'rate limiting' page is developer-only, which is appropriate for its implementation-focused content. No inconsistency."
+  },
+  "invariantResults": [
+    {
+      "invariantId": "INV-persona-001",
+      "result": "pass",
+      "evidence": "Front matter `persona` field contains 'developer, architect, admin' — all valid values from the defined set (developer, admin, business, architect, all)."
+    },
+    {
+      "invariantId": "INV-persona-002",
+      "result": "pass",
+      "evidence": "Persona assignment strategy: config/user roles content → admin + developer; architecture-relevant security overview → architect. All three are assigned. The page is in the 'developers-and-admins' collection, correctly not targeting 'business'."
+    },
+    {
+      "invariantId": "INV-persona-007",
+      "result": "pass",
+      "evidence": "Modified text uses simple, everyday words: 'control,' 'roles,' 'perform,' 'operations,' 'reading,' 'creating,' 'updating,' 'deleting,' 'configuring.' The technical term 'ACL' is immediately explained inline as 'access-control list'. No jargon left unexplained."
+    },
+    {
+      "invariantId": "INV-persona-012",
+      "result": "pass",
+      "evidence": "The writer demonstrated clear persona awareness: the writer-output notes explicitly state the choice to use 'common verbs rather than all six technical names' to 'keep the security overview accessible to all three target personas'. This shows deliberate persona-conscious writing."
+    },
+    {
+      "invariantId": "INV-persona-015",
+      "result": "not-applicable",
+      "evidence": "This invariant applies to procedural steps in developer/admin docs. The modified content contains no procedural steps — it is descriptive reference text with cross-references."
+    },
+    {
+      "invariantId": "INV-persona-016",
+      "result": "pass",
+      "evidence": "No terminology bleed between persona domains. 'ACL' (developer/architect term) is explained inline for admin readers. Operations are named with common verbs ('reading, creating, updating, deleting') rather than internal API constants, avoiding developer-only terminology. 'Configuring page permissions' is shared admin/developer vocabulary."
+    },
+    {
+      "invariantId": "TINV-001",
+      "result": "pass",
+      "evidence": "Ephemeral task invariant about covering developer and business user scenarios. This page is in the 'developers-and-admins' collection and correctly targets developer, architect, admin — not business users. The cross-reference updates serve all three declared personas with role-neutral descriptive language. The broader pipeline covers business-user pages in other tasks (e.g., T-004, T-005)."
+    },
+    {
+      "invariantId": "INV-crossref-009",
+      "result": "pass",
+      "evidence": "Both cross-references use descriptive link text: 'Page permissions' (Data permissions section) and 'page permissions' (Channel manager context). Both describe the linked content — no vague 'click here' or 'this page' patterns."
+    }
+  ],
+  "summary": {
+    "personaChecksPassed": 6,
+    "personaChecksFailed": 0,
+    "classificationCorrect": true,
+    "taxonomyComplete": true,
+    "invariantsPassed": 7,
+    "invariantsNotApplicable": 1,
+    "invariantsFailed": 0
+  }
+}

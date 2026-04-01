@@ -1,0 +1,198 @@
+{
+  "storyId": "001",
+  "motifs": [
+    {
+      "id": "MOT-001",
+      "symbol": "The Pallor as flayed divine skin / membrane between order and chaos",
+      "linkedTheme": "TP-1: Trust as structural failure \u2014 The Pallor is protection born from violence, a boundary that holds only through sustained damage. Like trust between enemies, it functions not through absence of threat but through containing it.",
+      "appearances": [
+        {
+          "chapter": 1,
+          "scene": "SCN-001",
+          "imagery": "Silver membrane tears, reveals true starlight, knits closed like water finding level",
+          "function": "Establishes Pallor as protective barrier beginning to fail"
+        },
+        {
+          "chapter": 13,
+          "scene": "SCN-36",
+          "imagery": "Stars filtered silver through the Pallor's membrane \u2014 never quite real, never fully visible. Kaelith senses the membrane's erosion with returned magic: 'a ceiling losing structural integrity.' Someone is killing the sky.",
+          "function": "World-threat background during intimate moment. The sky fails even as personal connection forms. Structural metaphor (ceiling losing integrity) keeps the motif in Kaelith's voice domain."
+        },
+        {
+          "chapter": 14,
+          "scene": "SCN-37, SCN-39",
+          "imagery": "Opening: 'the Pallor's thinning membrane' with 'grey and silvered' dawn light. Scene 3 conversation: 'thin grey light filtering through the Pallor's membrane, giving the wilderness the quality of a scene viewed through water.' Closing: 'the Pallor's membrane caught the light and bent it silver, and through the thin places, if you looked carefully, you could almost see the real sky \u2014 the one that existed before a god had flayed themselves to fix the world in place. The real sky was darker than the false one. Less kind. But it was true.'",
+          "function": "Frames chapter between false silver kindness and dark truth \u2014 mirrors Lirien's choice between kind lies (hiding the contract) and hard truth. Pallor-as-membrane parallels Lirien's maintained operative surface. The real sky = the real truth beneath the protective lie. Evolution: from 'thinning' (passive failure) to 'false' (active deception metaphor)."
+        },
+        {
+          "chapter": 17,
+          "scene": "SCN-47, SCN-48, SCN-49",
+          "imagery": "Silver tracing veins from wrist to knuckles (SCN-47). Body becoming the failure made visible \u2014 'the distinction between her skin and the divine corpse overhead becoming less clear' (SCN-47). Cold spreading through joints, elbow locking mid-combat (SCN-49). Silver spreading in real time 'like watching a crack spread through glass' (SCN-49). Chapter close: 'The morning light was silver through the thinning membrane overhead. The true sky showed through in patches \u2014 darker, older, the colour of a wound that had never been permitted to close' (SCN-49).",
+          "function": "Pallor-as-personal-decay: the cosmic membrane failure mapped onto Kaelith's body. Silver spreading = separation made physical. The chapter-close image evolves the motif from protective membrane to wound \u2014 the Pallor is not just failing, it is a wound that was never permitted to heal. Parallels Kaelith's own inability to heal while maintaining anger as defense."
+        },
+        {
+          "chapter": 22,
+          "description": "Pallor referenced as permanently thinned \u2014 new sky visible through it. What was suppression becomes possibility. Scout reports on Pallor-margin effects. Final meaning: the membrane that constrained is now the membrane that reveals.",
+          "scene": "SCN-62, SCN-64"
+        }
+      ],
+      "targetDensity": "3-4 appearances per act, evolving from protective barrier (Act I) to failing membrane (Act II) to wound reopened (Act III). Imagery should emphasize: silver thinning, tears revealing raw starlight, the skin metaphor becoming more explicit as crisis escalates."
+    },
+    {
+      "id": "MOT-002",
+      "symbol": "The Oathbrand as wound that will not heal / externalized guilt",
+      "linkedTheme": "TP-2: The price of the right choice \u2014 The brand should have dissolved but keeps burning fresh because someone profits from the bleeding. Kaelith's self-punishment made literal and maintained by institutional violence.",
+      "appearances": [
+        {
+          "chapter": 1,
+          "scene": "SCN-001",
+          "imagery": "Brand flares unexpectedly, heat spreading in waves, chronic burn that should have dissolved",
+          "function": "Establishes Oathbrand as wound maintained by external force"
+        },
+        {
+          "chapter": 2,
+          "scene": "SCN-006",
+          "imagery": "Oathbrand responding to Pallor tear \u2014 wound that shouldn't react to environmental disturbance but does, inflammation visible at collarbone",
+          "function": "Deepens Oathbrand mystery \u2014 brand is not just suppression but connection to ontological layer"
+        },
+        {
+          "chapter": 3,
+          "scene": "SCN-007",
+          "imagery": "Brand flares during message discovery, described as persistent burn that should have dissolved years ago. Heat spreading from collarbone in waves. Maintenance schedule revealed \u2014 the wound kept fresh deliberately.",
+          "function": "Oathbrand as externalized guilt weaponized by institutions \u2014 not her self-punishment but their control mechanism"
+        },
+        {
+          "chapter": 4,
+          "scene": "SCN-012",
+          "imagery": "Kaelith hand hovering near collarbone without touching, heat implied without contact, externalized guilt maintained by institutions",
+          "function": "Oathbrand as wound kept deliberately fresh, Kaelith awareness of pain without needing to touch"
+        },
+        {
+          "chapter": 5,
+          "scene": "SCN-013, SCN-014, SCN-015",
+          "imagery": "Brand burns during archive research and Lirien confrontation, described as wound maintained deliberately, tactical suppression weaponized",
+          "function": "Oathbrand reframed from punishment to control mechanism \u2014 not her self-punishment but institutional containment"
+        },
+        {
+          "chapter": 13,
+          "scene": "SCN-34, SCN-36",
+          "imagery": "Phantom collarbone ache where Oathbrand lived \u2014 'particular tenderness of a wound that no longer existed but whose absence the body had not yet registered.' Lirien's hand finds throat-hollow specifically NOT the collarbone \u2014 choosing the pulse, not the scar.",
+          "function": "The brand's ghost as persistent guilt-marker even after physical removal. Lirien's choice to touch the living pulse rather than the site of punishment signals her response to the confession: she sees the person, not the verdict."
+        },
+        {
+          "chapter": 14,
+          "scene": "SCN-38",
+          "imagery": "Lirien feels the phantom brand's residual hum through the bond during post-intimacy closeness: 'the collarbone where the Oathbrand's ghost still ached... that phantom itch, the absence of the brand that was its own form of presence.' Later: 'her cheek against the collarbone where the Oathbrand's ghost lived... like touching a wall that remembered bearing weight it no longer carried.' Beneath it: Kaelith's heartbeat.",
+          "function": "The ghost of institutional punishment persists even after removal \u2014 absence as its own form of presence. Lirien's attention to the heartbeat beneath the ghost foreshadows the loophole: the heartbeat is both proof of life and mechanism of contract fulfillment. Evolution: from physical wound (Act I) to phantom memory (Act II), the brand becoming metaphor for institutional damage that outlasts the institution."
+        },
+        {
+          "chapter": 22,
+          "description": "Oathbrand rests against wall while Kaelith sleeps \u2014 still present, still anchoring, but at rest. No longer weapon of duty; now mark of a vow freely chosen.",
+          "scene": "SCN-62"
+        }
+      ],
+      "targetDensity": "Present in every chapter 1-10, absent 11-22 after removal. Imagery should emphasize: fresh pain from old verdict, heat that serves no purpose, the brand as both punishment and proof of survival, the collarbone as site of enforced shame."
+    },
+    {
+      "id": "MOT-003",
+      "symbol": "Water / the Seep as infiltration-as-intimacy",
+      "linkedTheme": "TP-1: Trust as structural failure \u2014 Water finds every crack, patient and relentless. The Seep's name ('water that finds every crack') becomes metaphor for how Lirien infiltrates Kaelith's defenses and how intimacy requires letting someone into your structural weaknesses.",
+      "appearances": [
+        {
+          "chapter": 2,
+          "scene": "SCN-004",
+          "imagery": "Lirien's thought patterns described as 'current' metaphors, water finding cracks, seepage of human language into fae precision",
+          "function": "Establishes Lirien's operative mindset through water metaphors"
+        },
+        {
+          "chapter": 4,
+          "scene": "SCN-010",
+          "imagery": "Lirien classification language, patient waiting, operative precision seeking entry points in conversation",
+          "function": "Establishes Lirien thought patterns through water-like adaptation and seepage metaphors"
+        },
+        {
+          "chapter": 6,
+          "scene": "SCN-017",
+          "imagery": "Awareness seeping through classifications: \"the crack in her operational framework through which something incompatible was seeping.\" Water finding weakness as inevitability. Lirien as Seep water infiltrating target, but also being infiltrated by feeling.",
+          "function": "Establishes central irony \u2014 Lirien IS the Seep (water that finds every crack), but Kaelith has found Lirien crack (emotional vulnerability). The infiltrator is being infiltrated. Seepage as intimacy, not just espionage."
+        },
+        {
+          "chapter": 6,
+          "scene": "SCN-018",
+          "imagery": "Report as seepage \u2014 technically accurate information seeping around full truth. Lies of omission as water flowing around obstacles rather than through them.",
+          "function": "Water metaphor applied to deception \u2014 the report finds path of least resistance, revealing some information while concealing critical facts. Seepage as evasion."
+        },
+        {
+          "chapter": 13,
+          "scene": "SCN-34, SCN-36",
+          "imagery": "Lirien's attention 'like water finding the place in a wall where the mortar had thinned.' Lirien's confession detail: 'hands in a fountain, and the water was very cold' \u2014 attempted cleansing that does not cleanse.",
+          "function": "Water-as-infiltration in Kaelith's structural metaphor language. The fountain detail makes water both Lirien's operative domain and the medium of her own failed absolution."
+        },
+        {
+          "chapter": 14,
+          "scene": "SCN-37, SCN-38, SCN-39",
+          "imagery": "Maximum deployment chapter. Combat: 'surfacing from deep water' (suppression field collapse). Intimacy: 'like sugar in warm water' (boundary dissolution), 'water through packed earth' (warmth spreading from kiss), 'current beneath still water' (desire). Guilt: 'tidewater \u2014 not crashing, not dramatic. Seeping.' (guilt rising through cracks). Identity: Seep naming metaphor made explicit \u2014 'She was the water, and Kaelith was the structure, and the structure was opening to her.' Post-intimacy: scene viewed 'through water.' Quietus path: 'the way water knew downhill.'",
+          "function": "Water-as-Lirien reaches peak density in the chapter where infiltration becomes mutual. Seven distinct water images spanning combat, intimacy, guilt, and identity. Tidewater guilt is the key evolution: water as both connection and corrosion. The Seep metaphor made explicit connects Lirien's organizational identity to her personal method of love \u2014 both find every crack. Evolution: from operative precision (Act I) to intimacy-as-infiltration (Act II), now encompassing guilt, desire, and identity crisis simultaneously."
+        },
+        {
+          "chapter": 17,
+          "scene": "SCN-48",
+          "imagery": "Lirien's grief came through 'like floodwater through a crack in a dam' \u2014 single deliberate exception in Kaelith POV, approved by voice maintainer.",
+          "function": "Water infiltrating Kaelith's structural metaphor space \u2014 Lirien's influence leaking through even in separation. The image operates within Kaelith's domain (dam = fortification structure) while using Lirien's water domain. Infiltration-as-intimacy: the grief finds the crack in the wall, just as the Seep finds every crack."
+        },
+        {
+          "chapter": 22,
+          "description": "Full arc completion: water-as-infiltration (Seep function) \u2192 water-as-perception (Lirien's sensory mode) \u2192 water-as-free-choice (closing river metaphor). 'A river dammed for years, finally released... That was not flowing. That was deciding.' Water motif transforms from tool of espionage to metaphor for authentic self-determination.",
+          "scene": "SCN-62, SCN-63, SCN-64"
+        }
+      ],
+      "targetDensity": "4-5 appearances across story, concentrated in Lirien's POV chapters. Imagery should emphasize: water's patience, adaptation to containers, finding weakness as inevitability not malice, the distinction between flood (violence) and seep (intimacy)."
+    },
+    {
+      "id": "MOT-004",
+      "symbol": "The Quietus as seal accessed through embodied trust / body-as-knowledge",
+      "linkedTheme": "TP-1: Trust as structural failure \u2014 The seal can only be reached through kinetic memory, knowledge held in the body rather than mind. Trust requires the body, not just intention. Surrender must be physical.",
+      "appearances": [
+        {
+          "chapter": 13,
+          "scene": "SCN-36",
+          "imagery": "Quietus pulls at Kaelith's bones \u2014 northeast, patient, certain. 'The path did not care what she felt or wanted or feared. The path only knew where it went.'",
+          "function": "Body-knowledge as anchor and imperative. The path persists independent of emotional state \u2014 destination is fixed even when identity is in flux. Contrasts with the emotional upheaval of the confession and kiss."
+        },
+        {
+          "chapter": 14,
+          "scene": "SCN-39",
+          "imagery": "'Northeast. The pull is stronger today.' Path calling through bone and kinetic memory. 'Kaelith's body knew the way the way water knew downhill \u2014 not through decision but through nature, through the deep grammar of what she was.'",
+          "function": "Quietus pull intensifying as they approach. Notably described through Lirien's water-domain metaphor ('the way water knew downhill'), showing intimacy bleeding into perception \u2014 Lirien understands Kaelith's body-knowledge through her own metaphorical framework. The cross-domain metaphor fusion (body-knowledge + water) reflects how the two women's ways of understanding the world are converging."
+        },
+        {
+          "chapter": 17,
+          "scene": "SCN-49",
+          "imagery": "Her body knew the way \u2014 kinetic memory planted by Ossya Thenndal. She did not choose the direction; her feet chose it. Also: 'Somewhere ahead, the Quietus waited \u2014 with all its questions about trust, about surrender, about whether the cage could be opened from the inside.'",
+          "function": "Body-knowledge as direction in crisis \u2014 when Kaelith's conscious mind cannot decide, her body leads. The Quietus linked explicitly to the trust thematic argument: the seal that requires embodied surrender. Kaelith walking toward it is walking toward the question of whether trust (body-knowledge, physical surrender) can survive structural compromise."
+        },
+        {
+          "chapter": 22,
+          "description": "Referenced in aftermath \u2014 Kaelith's silver forearm and frozen fingers as physical reminder of Quietus contact. The seal held but left its mark. Lirien observes the cost without flinching.",
+          "scene": "SCN-62, SCN-64"
+        }
+      ],
+      "targetDensity": "2-3 appearances in Act I (foreshadowing), 3-4 in Act II (awakening in Kaelith's body), 2-3 in Act III (approach and activation). Imagery should emphasize: the body knowing what the mind cannot access, movement as memory, the path that can only be walked not described."
+    },
+    {
+      "id": "MOT-005",
+      "symbol": "Ythara as raw potential / the unfinished dissolving the finished",
+      "linkedTheme": "TP-3: Chosen versus only \u2014 Ythara represents pure possibility, which is another word for annihilation of what already exists. The god is not evil but incompatible. Like necessity-born love, potential without choice is terrifying.",
+      "appearances": [
+        {
+          "chapter": 22,
+          "description": "Ythara referenced obliquely through seal-stabilization aftermath. The divine threat is contained but not eliminated \u2014 part of the ongoing reality both women accept as the context for their future.",
+          "scene": "SCN-62"
+        }
+      ],
+      "targetDensity": "1-2 appearances per act, increasing in intensity. Imagery should emphasize: things becoming what they could have been instead of what they are, coherence dissolving into screaming possibility, the terror of infinite choice with no framework."
+    }
+  ],
+  "lastUpdatedChapter": 17,
+  "notes": "Updated through chapter 17. MOT-001 (Pallor/silver) reaches personal-decay peak \u2014 Kaelith's body becoming the membrane's failure. MOT-003 (water) single deliberate exception in Kaelith POV showing Lirien's influence. MOT-004 (Quietus) linked to trust theme explicitly. MOT-005 (Ythara) minimally present through Calwrath dream imagery and direct reference. MOT-002 (Oathbrand) correctly absent post-removal."
+}

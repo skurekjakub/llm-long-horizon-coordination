@@ -1,0 +1,254 @@
+{
+  "artifactType": "revision-log",
+  "storyId": "001",
+  "chapter": 21,
+  "chapterTitle": "What the Stone Remembers",
+  "pov": "Kaelith Maren (CHAR-001)",
+  "timestamp": "2025-07-31T18:00:00Z",
+  "sourceVersion": "draft",
+  "revisedVersion": 2,
+  "wordCountDelta": {
+    "draft": 4046,
+    "revised": 4381,
+    "delta": 335,
+    "note": "Net increase from added failure/recovery beat (DEV-002, ~200w), expanded Thalen dialogue (DEV-004, ~100w), Lirien agency passage (DEV-001, ~80w), micro-recovery beat (DEV-003, ~50w), MRU insertions (LINE-016/021, ~30w). Partially offset by editorial passage cuts (LINE-010, ~80w), repetition thinning (LINE-001/002/003/005/006/007/009/011/020/023, ~100w), and purple prose trims (LINE-012/013/018, ~30w)."
+  },
+  "findingDispositions": {
+    "LINE-001": {
+      "status": "addressed",
+      "severity": "critical",
+      "description": "Voice marker saturation — architectural/structural metaphors reduced from ~30-35 instances to ~12-15. Removed: 'enforcement architecture' → cut, 'layered architecture' → 'layered defenses,' 'the architecture of his certainty' → 'the structure of his belief,' 'paper architecture' → 'paper record,' 'architecture at the boundary' → 'a wall built at the boundary,' 'The architecture is pre-empire' → 'The construction is pre-empire,' all 'mechanism' references → 'construct.' Preserved strongest instances: 'keystone in an arch,' 'load-bearing,' 'foundation crack.' SCN-60 now alternates structural imagery with plain description."
+    },
+    "LINE-002": {
+      "status": "addressed",
+      "severity": "critical",
+      "description": "'Through the bond' reduced from 8 to 3 uses. Varied constructions: 'The bond carried Lirien's attention' (SCN-59), 'The bond tightened into something keen' (SCN-60 opening), 'She felt Lirien engage' (without 'through the bond' prefix). Final instance preserved for the climax exit ('Through the bond, Kaelith felt what the gesture carried'). Other access paths used: 'Kaelith felt,' direct bond-as-subject constructions, and showing Lirien's state through external behavior."
+    },
+    "LINE-003": {
+      "status": "addressed",
+      "severity": "critical",
+      "description": "'Certainty/certain' reduced from 11 to 1 use — the critical Warden revelation: 'Because Kaelith was *certain*.' All other instances replaced: 'resolve' (3x in varied contexts), 'sureness' (2x for the seal's magical mechanics), 'conviction' (reserved for Thalen's characterization). The seal-as-certainty metaphor now operates through synonyms and shown action rather than the literal word."
+    },
+    "LINE-004": {
+      "status": "addressed",
+      "severity": "critical",
+      "description": "Bond-mediated emotion telling converted in 5 of 6 instances. (1) 'surge of focused, lethal precision' → 'tightened into something keen and ready — Lirien's magic igniting against Kaelith's awareness like cold water hitting hot stone.' (2) 'cold fury' → shown through deflection quality: 'each deflection arriving with a clarity that left no waste, no hesitation.' (3) 'fierce relief... pride' → 'the quiet weight of someone exhaling after holding their breath too long.' (4) 'satisfaction' → 'the particular warmth of someone who intended to still be there tomorrow.' (5) Overloaded sentence (line 124) broken and converted: 'the same refusal that had outlasted the binding's dissolution.' Preserved one instance of bond-as-sensation in the final gesture passage."
+    },
+    "LINE-005": {
+      "status": "addressed",
+      "severity": "major",
+      "description": "'Foundation' reduced from 7 to 2 uses. Kept: 'compromised the foundation' (stakes-setting) and 'let a foundation crack' (character embodiment). Removed doubles: 'the foundation would bear what the foundation was required to bear' → 'what bore weight would continue bearing it.' 'Found the foundation beneath the foundation' → 'Found bedrock beneath the bedrock.' Other instances replaced with 'bedrock,' 'base,' or restructured."
+    },
+    "LINE-006": {
+      "status": "addressed",
+      "severity": "major",
+      "description": "'Hold/held/holding/holds' reduced from 23 to ~15 uses (~35% reduction). Preserved for thematic climax ('The world holds,' 'We held'), seal stabilization ('the seal would hold,' 'Stable. Holding'), and Thalen's dialogue ('hold a door shut'). Replaced elsewhere: 'holding the line when the line needed holding' → 'standing the line when the line needed standing,' 'hold the line while she held the world' → 'guard the line while she steadied the world.' Remaining instances are thematically essential — the chapter is literally about holding."
+    },
+    "LINE-007": {
+      "status": "addressed",
+      "severity": "major",
+      "description": "'Forty years' reduced from 10 to 2 uses. Kept: Thalen's dialogue ('forty years, from the Seventh Seat') and the formal accusation ('four decades'). All other instances replaced: 'decades of corruption,' 'a lifetime,' 'decades of patient corruption,' 'decades-long conspiracy,' 'Thalen's decades of damage.' Triple anaphora entirely eliminated."
+    },
+    "LINE-008": {
+      "status": "addressed",
+      "severity": "major",
+      "description": "All 4 clichés replaced. (1) 'fire finding fuel' → 'pressure released from a valve she hadn't known was closed.' (2) 'parched stone drinking rain' → 'the way cracked mortar drew new cement — hungry, structural, filling gaps that had weakened under decades of neglect.' (3) 'wound in the earth' → 'fracture in the earth — not damage but exposure, the mountain's interior laid bare.' (4) 'I was waiting for you' → 'the vibration of a wall recognizing the function it had been built to receive.' Chapter now at 0 clichés, well under the 2-cliché cap (INV-017)."
+    },
+    "LINE-009": {
+      "status": "addressed",
+      "severity": "major",
+      "description": "'Not X. Not Y. Z.' pattern reduced from 5 to 1 use. Preserved the strongest: 'not surprise. Not fear. Recognition' (Thalen reveal). Restructured: 'Not magic... Not power... Certainty' → dissolved into prose ('The wall needed someone to believe it was a wall'). 'Not the crumbling... Not the desperate calculation... conviction' → 'His expression held conviction — clear and unbroken.' 'Not fear. Not regret. Grief, perhaps' → 'Something that might have been grief crossed his face.' 'Not anger. Not triumph' → preserved for the verdict sentence, which serves as the chapter's moral close."
+    },
+    "LINE-010": {
+      "status": "addressed",
+      "severity": "major",
+      "description": "Both editorial partnership-telling passages cut. (1) 'The partnership operating at the frequency it had been built for — not the frequency imposed by binding...' (5 sentences) → replaced with 'The bond hummed without interference. Her feet found the path. Lirien confirmed each step.' (2) 'the steady, uncompelled pulse of two people who had chosen each other when the world was ending...' → replaced with concrete: 'steady, uncompelled, built from nothing except twenty-one days of choosing the same direction.' Reader trusts the shown partnership from 21 chapters."
+    },
+    "LINE-011": {
+      "status": "addressed",
+      "severity": "major",
+      "description": "'Precision/precise' reduced from 9 to 1 use, reserved for Lirien (initial bond description). Thalen's 'surgical precision' → 'surgical skill.' 'Precise and layered' → 'methodical and layered.' 'Military precision' → 'military discipline.' 'Particular frequency of determined focus' → cut entirely. Lirien now owns 'precise' as her distinctive word."
+    },
+    "LINE-012": {
+      "status": "addressed",
+      "severity": "moderate",
+      "description": "Purple prose 'older than' tricolon trimmed. 'older than stone, older than the mountain, older than the idea of mountains' → 'older than stone, older than the mountain itself.' Third element cut; the following clause ('raw, electric, the flavor of potential') does the heavy lifting."
+    },
+    "LINE-013": {
+      "status": "addressed",
+      "severity": "moderate",
+      "description": "Command voice purple narration cut. 'Commander's voice. The register that expected compliance and received it, that carried across battlefields and through chaos and into the silence of an ancient chamber where the world had nearly ended.' → 'Commander's voice.' Single sentence. The dialogue carries its own authority."
+    },
+    "LINE-014": {
+      "status": "addressed",
+      "severity": "moderate",
+      "description": "Adjective stacking fixed. 'conviction. Clear, devastating, unbroken.' → 'conviction — clear and unbroken.' Two adjectives, consistent register. 'Devastating' removed as it occupied a different register."
+    },
+    "LINE-015": {
+      "status": "addressed",
+      "severity": "moderate",
+      "description": "Seal personification / chosen-one trope removed. 'said *I was waiting for you*' → 'the vibration of a wall recognizing the function it had been built to receive.' Seal responds to Warden function impersonally, not personally. Combined with LINE-008 cliché fix."
+    },
+    "LINE-016": {
+      "status": "addressed",
+      "severity": "moderate",
+      "description": "MRU gap at Thalen discovery filled. Added physical-emotional beat before tactical assessment: 'Something locked behind Kaelith's sternum — the particular stillness of a threat confirmed. The silver on her forearm burned cold.' Body responds before tactical mind engages."
+    },
+    "LINE-017": {
+      "status": "addressed",
+      "severity": "moderate",
+      "description": "Dense metaphysical exposition in seal scene broken with physical action. After the seal-as-wall description, inserted: 'Her palms burned against its surface as Ythara pressed from the other side.' Then resumed understanding through physical sensation: 'The wall needed someone to believe it was a wall.' Exposition now interleaves with physical experience."
+    },
+    "LINE-018": {
+      "status": "addressed",
+      "severity": "minor",
+      "description": "'Two words. Everything.' cut entirely. 'Go' now stands alone, followed directly by the crisis decision paragraph. White space does the work."
+    },
+    "LINE-019": {
+      "status": "addressed",
+      "severity": "minor",
+      "description": "Final thematic statement moved from spoken dialogue to internal italicized thought. 'The world holds. Not because it's perfect. Because people chose to hold it.' is now *The world holds. Not because it's perfect. Because people chose to hold it.* — Kaelith thinks it as she turns away. 'You were wrong' remains the last spoken word to Thalen, ending in flat verdict: 'The verdict of a woman who understood what conviction cost and how little it guaranteed.'"
+    },
+    "LINE-020": {
+      "status": "addressed",
+      "severity": "minor",
+      "description": "'Chosen/chose/choose/choice' reduced from 10 to 7 uses. Removed 'freely chosen' (2 instances). Kept thematically essential uses: 'did not choose / her body chose' (kinetic memory), 'did not let them choose' (moral pivot), 'the right choice' (Calwrath mirror), 'people chose to hold it' (thematic close), 'The choice was ours' (chapter close). Reduction from 10 to 7 preserves thematic pillar TP-3 while eliminating editorial insistence."
+    },
+    "LINE-021": {
+      "status": "addressed",
+      "severity": "minor",
+      "description": "MRU gap at post-seal collapse bridged. Added transitional physical beat: 'The movement cost her — vision still swimming, the chamber refusing to settle fully for one long breath before it did.' Bridges near-death exhaustion to tactical inventory."
+    },
+    "LINE-022": {
+      "status": "addressed",
+      "severity": "minor",
+      "description": "Overloaded 74-word sentence broken into shorter sentences. Original stacked bond access, emotion labels, wound description, thematic editorial, and internal italics. Revised separates physical (wound, exhaustion) from thematic (refusal, exits not taken): 'Lirien's effort registered at the edge of capacity. The burn across her shoulder was spreading — hot, widening — each of Thalen's strikes arriving faster. Underneath the strain, something endured: the same refusal that had outlasted the binding's dissolution and the contract's fulfillment and every exit she had not taken. *I stay.*'"
+    },
+    "LINE-023": {
+      "status": "addressed",
+      "severity": "minor",
+      "description": "'Bone/bones/bone-deep' reduced from 7 to 2 uses. Kept: 'settled in her bones' (opening resonance) and 'Kaelith's bones recognized it' (seal reveal). Replaced: 'from the bones rather than the mind' → 'from the body rather than the mind,' 'bone-deep knowledge' → 'deep knowledge,' 'bone-deep, load-bearing kind' → 'the same weight of resolve,' 'burned... into the bone' → 'burned... into the marrow,' 'feel in her bones' → 'feel in her sternum.'"
+    },
+    "LINE-024": {
+      "status": "addressed",
+      "severity": "minor",
+      "description": "Iryse testimony compressed. Removed bureaucratic detail ('efficiency improvements — refinements to strengthen the seal's maintenance cycle'). Shortened to: 'He presented them as improvements.' The emotional cost foregrounded through physical behavior (jaw set before speaking, voice cracking on 'faith'). Combined with DEV-006 showing fix."
+    },
+    "DEV-001": {
+      "status": "addressed",
+      "severity": "major",
+      "description": "Lirien given active agency in SCN-61 exposure scene. Added a full passage where Lirien steps forward and presents the Seep intelligence directly: 'Three independent sources corroborate the pattern... The Cerith Court's archives confirm the timeline — Thalen's ritual modifications align with every recorded acceleration in Pallor deterioration.' Lirien now speaks, acts, and contributes to the exposure with operative authority. Partnership dynamic restored in the chapter's final third."
+    },
+    "DEV-002": {
+      "status": "addressed",
+      "severity": "major",
+      "description": "Genuine failure/setback beat inserted into seal stabilization. After Thalen's initial strikes are deflected, he adapts with a layered three-strike assault. One penetrates Lirien's defense, hits the seal-connection, and physically throws Kaelith from the seal. Cracks re-open in cascade. Kaelith experiences genuine doubt ('the damage was too deep... one woman's hands were not enough'). The bond steadies her — Lirien's continued fighting registers as the lifeline that pulls Kaelith back. She re-engages the seal, goes deeper. Recovery earned through resilience and partnership, not endurance alone. Approximately 200 words added."
+    },
+    "DEV-003": {
+      "status": "addressed",
+      "severity": "minor",
+      "description": "Micro-recovery beat added between SCN-60 and SCN-61. Four sentences: 'She stayed there for three breaths. Four. Let the chamber geometry reassert itself — walls vertical, floor level, the distortion receding as the seal found its stability. Lirien's boots settled on the stone beside her, close enough that Kaelith could feel the warmth of another body without turning. The seal hummed. The world was still the world. They had not been too late.' Provides breathing space before political confrontation."
+    },
+    "DEV-004": {
+      "status": "addressed",
+      "severity": "minor",
+      "description": "Thalen's confrontation expanded by ~3 additional dialogue exchanges (~100 words). Added specifics to his justification: 'The practitioners who withered under suppression, the magic-sensitive children who never developed.' Added direct challenge to Kaelith's Warden identity: 'You are the lock, Maren. Your entire lineage — built to hold a door shut. Have you considered that the door was wrong?' This surfaces the Calwrath parallel through dialogue confrontation rather than internal reflection alone."
+    },
+    "DEV-005": {
+      "status": "addressed",
+      "severity": "minor",
+      "description": "Physical romance gesture restored from chapter outline. 'Their hands did not touch. They did not need to.' replaced with: 'Her hand settled on Kaelith's forearm — not supporting her, just present. The touch landed on the silver thread, on the Pallor's mark, and the contact was warm where the thread was cold.' Physical anchor for the romance at the climax, consistent with the outline's specification. Bond still carries emotional weight, but the tangible contact grounds it."
+    },
+    "DEV-006": {
+      "status": "addressed",
+      "severity": "minor",
+      "description": "Iryse's devastation shown through physical detail instead of told. Replaced 'her face carrying the particular devastation of someone who has just understood how completely she was used' with: 'her hands white-knuckled around a ritual staff she carried like a woman who no longer trusted the weight of it — as though the instrument itself had betrayed her.' Added physical beats during testimony: jaw setting before speaking (effort of starting), voice cracking on 'faith' and rebuilding mid-syllable, not looking at Thalen but at the seal."
+    },
+    "COPY-221": {
+      "status": "addressed",
+      "severity": "major",
+      "description": "Tessen Vael gender pronouns corrected. 'She met Kaelith's eyes' → 'He met Kaelith's eyes.' 'The nod of someone who had done her part' → 'The nod of someone who had done his part.' Consistent with ch11 (draft and revised) and world-bible/politics.json male characterization."
+    },
+    "COPY-222": {
+      "status": "addressed",
+      "severity": "major",
+      "description": "Thenndal kinetic memory date corrected. 'twelve years ago' → 'eight years ago.' Matches world-bible/magic-system.json: kinetic memory encoding in YK 734, present year YK 742, difference = 8 years."
+    },
+    "COPY-223": {
+      "status": "addressed",
+      "severity": "major",
+      "description": "Iryse stewardship timeline arithmetic corrected. 'Year of the Keel 726' → 'Year of the Keel 724.' Now: YK 742 minus YK 724 = 18 years, matching Iryse's stated 'Eighteen years of my stewardship.' Internal arithmetic verified."
+    },
+    "COPY-224": {
+      "status": "deferred",
+      "severity": "moderate",
+      "description": "Thalen Reyvas seat designation left as 'Seventh Seat' per copy editor's recommendation. All chapters consistently use 'Seventh Seat.' DISC-001 recommends politics.json update rather than chapter revisions."
+    },
+    "COPY-225": {
+      "status": "addressed",
+      "severity": "minor",
+      "description": "Frozen fingers acknowledged during seal contact. 'Her palms pressed flat against the seal's surface' → 'Her palms pressed against the seal's surface — the right flat, the left incomplete where the three frozen fingers kept their permanent angle against the stone.' Kaelith's proprioceptive awareness registers the compromised contact."
+    },
+    "COPY-226": {
+      "status": "addressed",
+      "severity": "minor",
+      "description": "Frozen fingers trembling made explicitly significant. 'Her fingers — all ten of them, including the three the Pallor had claimed — trembled against the floor' → 'Her fingers trembled against the floor — seven functioning, and then the three the Pallor had claimed trembled too, stiffly, incompletely, as though the seal-work had loosened something the cold had locked. A permanent mark. But less permanent than it had been minutes ago.' The seal-work partially restoring function is now explicit and narratively significant."
+    },
+    "COPY-227": {
+      "status": "addressed",
+      "severity": "minor",
+      "description": "Clock anachronism removed. 'The clock was running' → 'The count was running.' World-appropriate; no clockwork mechanisms in the setting."
+    },
+    "COPY-228": {
+      "status": "addressed",
+      "severity": "minor",
+      "description": "Radio-domain anachronism removed. 'the signal-without-static quality that had persisted since the binding's dissolution' → 'the clarity that had persisted since the binding's dissolution.' Construction also restructured to vary the bond-access pattern (combined with LINE-002). Note: ch20 source phrasing should be updated for consistency in ch20's next revision cycle."
+    },
+    "COPY-229": {
+      "status": "addressed",
+      "severity": "minor",
+      "description": "Technical vocabulary 'frequency' removed entirely (was 3 uses). Replaced: 'a frequency she had been tuned to carry' → 'a resonance she had been built to carry.' 'at the frequency it had been built for — not the frequency imposed' → cut entirely (part of LINE-010 editorial passage removal). 'Lirien's particular frequency of determined focus' → cut (part of LINE-004 bond-telling conversion). Zero remaining instances."
+    },
+    "COPY-230": {
+      "status": "deferred",
+      "severity": "minor",
+      "description": "No change needed in chapter. 'Serath Dún' with diacritical already matches authoritative geography.json. Continuity tracker naming section requires separate update."
+    }
+  },
+  "conflictResolution": [
+    {
+      "conflict": "DEV-002 (add failure beat, expanding word count) vs. LINE-001/003/006/007 (reduce repetition, contracting word count)",
+      "resolution": "Both addressed. Failure beat written with thinned vocabulary from the start — uses 'doubt,' 'resolve,' 'steadiness' rather than adding more 'certainty,' 'hold,' or 'foundation' instances. Net result: longer chapter (+335 words) but cleaner prose per word."
+    },
+    {
+      "conflict": "DEV-005 (restore physical gesture) vs. LINE-010 (cut editorial partnership telling)",
+      "resolution": "Physical gesture restored but the editorial interpretation of what it means is replaced with concrete sensation: 'the particular warmth of someone who intended to still be there tomorrow' rather than 'two people who had chosen each other when the world was ending.' The gesture shows; the reader interprets."
+    },
+    {
+      "conflict": "LINE-006 (reduce 'hold/held' by 40-50%) vs. thematic necessity (the chapter is literally about holding a seal)",
+      "resolution": "Reduced from 23 to ~15 uses (~35% reduction). Remaining uses are thematically essential: the climax statement ('The world holds'), the chapter close ('We held'), the seal stabilization ('Stable. Holding'), and Thalen's dialogue ('hold a door shut'). Further reduction would undermine the thematic core. Trade-off accepted: slightly below 40% target but each remaining use earns its place."
+    }
+  ],
+  "coherencePassNotes": [
+    "Full end-to-end read completed. No new inconsistencies introduced by edits.",
+    "Voice marker density now averages roughly 1 structural/architectural term per 20-25 lines (down from 1 per 6-7 lines). Prose reads as Kaelith-voiced rather than voice-marker-showcased.",
+    "Bond access varied across 5 different constructions — no single pattern dominates.",
+    "Dialogue in Thalen expansion reads naturalistically; Thalen's 'You are the lock, Maren' is confrontational without being expository.",
+    "Failure beat integrates organically into the seal scene's progression — the recovery earns the subsequent success.",
+    "Lirien's SCN-61 contribution reads as operative field reporting, consistent with her established voice (flat, authoritative, evidence-based).",
+    "Micro-recovery beat provides breathing space without slowing momentum; the reader absorbs the seal's success before pivoting to political confrontation.",
+    "Iryse's physical details (white-knuckled staff, voice cracking on 'faith') show devastation without naming it.",
+    "Romance physical gesture (hand on forearm) is restrained and consistent with the story's tone contract. The touch on the silver thread carries symbolic weight without editorial explanation.",
+    "Frozen fingers trembling — made explicitly significant as seal-work partial restoration. Creates a subtle hope beat without undermining the permanent-cost theme.",
+    "Voice marker density checked post-revision: markers are distributed across the chapter rather than clustered. No section has more than 2 structural metaphors per paragraph."
+  ],
+  "metrics": {
+    "findingsTotal": 40,
+    "criticalAddressed": 4,
+    "majorAddressed": 12,
+    "moderateAddressed": 6,
+    "minorAddressed": 16,
+    "deferred": 2,
+    "deferredReasons": "Both deferred findings (COPY-224, COPY-230) require no change in chapter per copy editor — they flag external artifact updates (politics.json and continuity-tracker naming section respectively)."
+  }
+}

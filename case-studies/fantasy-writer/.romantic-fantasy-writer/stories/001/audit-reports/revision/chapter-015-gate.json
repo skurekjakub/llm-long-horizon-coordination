@@ -1,0 +1,367 @@
+{
+  "gateId": "REVISION-GATE-015",
+  "phase": "revision",
+  "chapter": 15,
+  "agent": "romantic-fantasy-writer-revision-auditor",
+  "timestamp": "2025-07-29T19:00:00Z",
+  "verdict": "passed",
+  "verdictSummary": "Chapter 15 revision PASSED adversarial gate. All 3 critical findings verified as addressed with substantial, evidence-backed reductions: Oathbrand removal correctly reattributed to Lirien (COPY-015-001), structural metaphor saturation reduced from 29 key-term hits to 14 (~52% reduction, revision log claims 33+ metaphorical \u2192 ~18), bond references reduced from 23 to 7 (~70% reduction, exceeding 50% target). All 7 major findings verified: word count 'Four words' \u2192 'Three words' (COPY-015-002), warm register ensured via cumulative thinning (DEV-015-001), negation pattern reduced from 18+ to ~9 (LINE-015-003), romance clich\u00e9 cut (LINE-015-004), sunlight clich\u00e9 + voice violation replaced with forge-heat Kaelith-domain metaphor (LINE-015-005), meta-commentary 'Three words. Short sentences. No subordinate clauses.' cut and replaced with 'The words sat in the air between them, undefended.' (LINE-015-006), emotion-labeling restructured from label-then-describe to show-then-infer (LINE-015-007). 10 minor findings verified addressed. 3 findings appropriately deferred with valid justifications (COPY-015-006 DISC-001, COPY-015-007 note-only, DEV-015-004 monitor-only). 1 warning issued: 'between them' phrase density doubled (5 \u2192 11 instances) as a secondary effect of bond-reference conversion \u2014 a minor repetition regression that does not reach failure threshold. Zero darlings survived editorial flags. Traceability complete \u2014 all 24 finding IDs in frontmatter map to verified changes. Chapter proceeds to beta reading.",
+  "inputArtifacts": {
+    "draft": "chapters/015/draft.md",
+    "revised": "chapters/015/revised.md",
+    "developmentalEdit": "revision-reports/015/developmental-edit.json",
+    "lineEdit": "revision-reports/015/line-edit.json",
+    "copyEdit": "revision-reports/015/copy-edit.json",
+    "revisionLog": "revision-reports/015/revision-log.json"
+  },
+  "wordCountAnalysis": {
+    "draftWordCount": 4001,
+    "revisedWordCount": 3949,
+    "revisedWordCountProseOnly": 3826,
+    "change": -175,
+    "changePercent": -4.4,
+    "withinThreshold": true,
+    "note": "Reduction from thinning (structural metaphors, bond references, repetitive patterns) offset by 31-word DEV-015-003 addition. Well within 20% threshold."
+  },
+  "findingVerificationMatrix": {
+    "critical": [
+      {
+        "findingId": "COPY-015-001",
+        "source": "copy-edit",
+        "severity": "critical",
+        "title": "Oathbrand removal misattributed to Tessen instead of Lirien",
+        "verification": "passed",
+        "draftPassage": "the phantom ache at her collarbone where the brand had lived for six years before Tessen cut it free",
+        "revisedPassage": "the phantom ache at her collarbone where the brand had lived for six years before Lirien cut it free",
+        "evidence": "Direct word substitution verified: 'Tessen' \u2192 'Lirien'. Correctly attributes the Oathbrand removal to the person who performed it in ch11 (Lirien, with Tessen providing verbal guidance from the side). The fix is precise, minimal, and factually correct."
+      },
+      {
+        "findingId": "LINE-015-001",
+        "source": "line-edit",
+        "severity": "critical",
+        "title": "Voice marker saturation \u2014 architectural/structural metaphors (33+ instances)",
+        "verification": "passed",
+        "evidence": "Grep for key structural terms (structur*, keystone, load-bearing, lintel, mortar, settlement, fortif*, masonry, buttress, architec*) shows 29 hits in draft \u2192 14 hits in revised (~52% reduction). Specific cuts verified: 'operative architecture' \u2192 'operative precision' (L139); 'like a structure that had decided to stop bracing' \u2192 'like a held breath finally released' (L145); 'like mortar that had not fully set' \u2192 'loosened at the edges' (L173); 'architecture of human hearing' \u2192 cut entirely (L183); 'structural. Load-bearing.' \u2192 'something that would hold' (L185); 'A structure reduced to its essential element, stripped of every decorative buttress' \u2192 'stripped to nothing, as small as it could go' (L217); 'the way good construction held weight' \u2192 cut (L225); 'The feeling was structural' \u2192 cut, replaced with 'She did not want to move. Nothing needed to be moved.' (L227); 'load-bearing walls'/'new doors' \u2192 'where the warmth lived'/'which parts were new' (L231); 'structural, like a crack' \u2192 'like a crack' (L237); 'mortar between her sentences loosening, the careful structure' \u2192 'the careful precision developing gaps' (L255); 'different architecture' \u2192 'different methods' (L127). All cuts from the line editor's specific suggestion list verified. Remaining structural metaphors are the strongest instances: opening inventory (voice establishment), 'building a wall' (evidence work), both keystones, 'wall becoming a door', 'fortification with no one inside it' (thematic climax), closing callback. The prose now breathes between markers \u2014 structural metaphors land with impact rather than forming a continuous register.",
+        "metricsComparison": {
+          "draftKeyTermHits": 29,
+          "revisedKeyTermHits": 14,
+          "reductionPercent": 52
+        }
+      },
+      {
+        "findingId": "LINE-015-002",
+        "source": "line-edit",
+        "severity": "critical",
+        "title": "'Through the bond' and bond-reference repetition (22 instances)",
+        "verification": "passed",
+        "evidence": "Grep for 'bond' shows 23 hits in draft \u2192 7 hits in revised (~70% reduction, exceeding the 50% target). The 7 remaining instances: (1) L57 'through the bond: a ward' (establishing/worldbuilding), (2) L85 'The bond pulsed cold' (strong, on keep list), (3) L143 'through the bond' in fae ward clause (natural), (4) L187 'Through the bond, Kaelith felt everything Lirien was not saying' (declaration response \u2014 most important transmission), (5) L205 'Through the bond, the response came' (barrier dissolving), (6) L283 'The bond carried the gradual... descent toward sleep' (quiet moment), (7) L291 'the bond carried nothing but peace' (closing). Conversions verified: 'The bond carried the shared weight' \u2192 'The weight of that knowledge settled between them'; 'Through the bond, Kaelith felt something she could not name' \u2192 'Something passed between them'; 'Through the bond, Kaelith felt the matched conviction' \u2192 'Kaelith felt the matched conviction'; 'The bond carried the conviction' \u2192 'The conviction settled like shared weight'; 'Through the bond, she felt the quality of Lirien's stillness' \u2192 'She felt the quality of Lirien's stillness'; 'The bond carried a shift' \u2192 'Something shifted between them'; 'bond contracting' \u2192 'the space between them thickening'; 'The bond did not transmit' \u2192 'What passed between them did not include'; 'The bond hummed between them' \u2192 'A low, matched frequency hummed between them'; 'Through the bond, Kaelith felt Lirien's reaction' \u2192 'She felt Lirien's reaction'. All conversions render the bond's transmissions as direct perception without naming the mechanism. Reader understands the bond is the conduit without being told every time.",
+        "metricsComparison": {
+          "draftBondHits": 23,
+          "revisedBondHits": 7,
+          "reductionPercent": 70
+        }
+      }
+    ],
+    "major": [
+      {
+        "findingId": "COPY-015-002",
+        "source": "copy-edit",
+        "severity": "major",
+        "title": "Word count 'Four words' for three-word phrase 'I want you.'",
+        "verification": "passed",
+        "draftPassage": "Four words. The most terrifying she had spoken since *fire the accelerant*.",
+        "revisedPassage": "Three words. The most terrifying she had spoken since *fire the accelerant*.",
+        "evidence": "'Four' \u2192 'Three'. Arithmetically correct \u2014 'I want you.' contains exactly three words. Creates structural echo with the preceding declaration, reinforcing the stripped-bare parallel."
+      },
+      {
+        "findingId": "DEV-015-001",
+        "source": "developmental-edit",
+        "severity": "major",
+        "title": "Five-chapter sustained-high-tension cluster \u2014 ensure warm/relief register",
+        "verification": "passed",
+        "evidence": "The cumulative thinning of structural metaphors (~52%), bond references (~70%), and negation patterns (~50%) creates substantially more spacious prose in Scenes 2 and 3. Scene 3 replacements specifically inject warmth: 'where the warmth lived' (replacing 'load-bearing walls'), 'like a held breath finally released' (replacing architectural simile), 'She did not want to move. Nothing needed to be moved.' (showing contentment through stillness rather than engineering analysis). Scene 1's evidence work retains its methodical satisfaction without urgency. The revised chapter reads as the quietest, most spacious prose in the manuscript's ch11-15 block."
+      },
+      {
+        "findingId": "LINE-015-003",
+        "source": "line-edit",
+        "severity": "major",
+        "title": "'Not X. Not Y. [Something else.]' negation-correction pattern (18+ instances)",
+        "verification": "passed",
+        "evidence": "Manual count identifies approximately 8-9 retained 'Not X' patterns, down from 18+ (~50% reduction). Preserved: 'Not fragments. Not suspicion.' (evidence climax), 'Not pushing. Testing.' (sharp), 'No military framing. No tactical justification.' (declaration), 'Not grief. Not guilt, precisely.' (dramatic irony), 'Not because it was safe...' (thematic climax), 'Not a threat. Permission.' (sleep), 'Not thought. Not decision.' (Quietus pull), 'Not because a contract required it.' (devastating irony). Verified conversions: 'Not Kaelith's feeling \u2014 Lirien's' \u2192 'Lirien's feeling.' (L85); 'not operative silence but something warmer' \u2192 'something warmer and looser than operative silence' (L145); 'Not a tactical question' \u2192 'A question with no tactical purpose' (L151); 'not a smile, precisely' \u2192 'the expression that preceded a smile' (L165); 'Not identical. Harmonised.' \u2192 'Close. Harmonised.' (L175); 'Not from suppression' \u2192 'from the effort of keeping the question small enough to speak' (L177); 'not a collapse but a release' \u2192 'a release, deliberate' (L219); 'not the encoded gestures' \u2192 'idle, unhurried, carrying no cipher' (L139). Pattern now varies between negation-corrections (strongest instances) and direct positive statements."
+      },
+      {
+        "findingId": "LINE-015-004",
+        "source": "line-edit",
+        "severity": "major",
+        "title": "Romance clich\u00e9: 'The heat had nothing to do with the fire.'",
+        "verification": "passed",
+        "draftPassage": "Kaelith's hands were warm. The heat had nothing to do with the fire.",
+        "revisedPassage": "Kaelith's hands were warm.",
+        "evidence": "Clich\u00e9 cut entirely. The single-sentence paragraph stands alone, letting the physical sensation carry emotional weight without explaining it. Consistent with Kaelith's voice (experiences emotion physically, does not explain)."
+      },
+      {
+        "findingId": "LINE-015-005",
+        "source": "line-edit",
+        "severity": "major",
+        "title": "Clich\u00e9 + voice violation: 'emotional equivalent of sunlight through a gap in cloud cover'",
+        "verification": "passed",
+        "draftPassage": "a flare of warmth, tender and fierce, the emotional equivalent of sunlight through a gap in cloud cover. The kind of warmth that made you aware of how cold you had been before it arrived.",
+        "revisedPassage": "a flare of warmth so immediate it registered like heat from a forge door opening. Something she had not braced for.",
+        "evidence": "Weather/nature clich\u00e9 replaced with Kaelith-domain metaphor (forge, heat, bracing). Universalizing 'you' construction eliminated \u2014 stays in close-third perspective. Stock romance pattern removed entirely. The forge image is concrete, tactile, and consistent with Kaelith's established sensory world."
+      },
+      {
+        "findingId": "LINE-015-006",
+        "source": "line-edit",
+        "severity": "major",
+        "title": "Meta-commentary breaks immersion: 'Three words. Short sentences. No subordinate clauses.'",
+        "verification": "passed",
+        "draftPassage": "Three words. Short sentences. No subordinate clauses. No military framing, no tactical justification, no cost-benefit analysis.",
+        "revisedPassage": "The words sat in the air between them, undefended. No military framing. No tactical justification. No calculus of acceptable losses.",
+        "evidence": "Writerly grammar meta-commentary ('Three words. Short sentences. No subordinate clauses.') replaced with physical metaphor ('words sat in the air between them, undefended'). Character-appropriate observations preserved ('No military framing. No tactical justification.'). Also addresses COPY-015-004 anachronism: 'cost-benefit analysis' \u2192 'calculus of acceptable losses' (military-register vocabulary consistent with Kaelith's idiom, thematically resonant with Calwrath weight)."
+      },
+      {
+        "findingId": "LINE-015-007",
+        "source": "line-edit",
+        "severity": "major",
+        "title": "Emotion-labeling density in declaration scene",
+        "verification": "passed",
+        "draftPassage": "Desire. Not the calculated version Lirien usually permitted through the bond \u2014 the measured, operative-approved quantity that acknowledged attraction without surrendering to it. The uncontained thing underneath \u2014 vast, specific, directed at Kaelith with a precision that had nothing to do with intelligence training and everything to do with choice. Fear \u2014 raw and architectural, the fear of someone who had built her entire identity on assessment...",
+        "revisedPassage": "Heat first \u2014 vast, specific, directed at Kaelith with a precision that had nothing to do with intelligence training and everything to do with choice. Larger than what Lirien usually permitted. Stripped of its operative-approved measurements. Underneath it, trembling \u2014 the trembling of someone standing in a space they had built no defences for.",
+        "evidence": "Restructured from label-then-describe to show-then-infer. 'Desire.' one-word label \u2192 'Heat first' (physical sensation \u2014 reader names desire). 'Fear \u2014 raw and architectural' \u2192 'trembling' (physical manifestation \u2014 reader names fear). 'Architectural' cut from fear description (contributes to LINE-015-001 reduction). Explanatory clause ('the measured, operative-approved quantity that acknowledged attraction without surrendering to it') cut \u2014 telling, not showing. Paragraph break added per COPY-015-003, separating identifiable sensations from the unnamed weight. Passage trimmed from ~129 to ~90 words."
+      }
+    ],
+    "minor": [
+      {
+        "findingId": "COPY-015-003",
+        "source": "copy-edit",
+        "severity": "moderate",
+        "title": "Paragraph length exceeds guideline in emotion cascade",
+        "verification": "passed",
+        "evidence": "Paragraph break verified between heat/trembling section and weight section in revised text. Addressed together with LINE-015-007."
+      },
+      {
+        "findingId": "COPY-015-004",
+        "source": "copy-edit",
+        "severity": "minor",
+        "title": "Anachronism: 'cost-benefit analysis'",
+        "verification": "passed",
+        "draftPassage": "no cost-benefit analysis",
+        "revisedPassage": "No calculus of acceptable losses",
+        "evidence": "20th-century economics terminology replaced with military-register vocabulary. 'Calculus of acceptable losses' is thematically resonant with Kaelith's Calwrath weight. Addressed together with LINE-015-006."
+      },
+      {
+        "findingId": "COPY-015-005",
+        "source": "copy-edit",
+        "severity": "minor",
+        "title": "Anachronism: 'shrapnel from a detonation'",
+        "verification": "passed",
+        "draftPassage": "scattered across the empire like shrapnel from a detonation no one had heard",
+        "revisedPassage": "scattered across the empire like debris from a collapse no one had witnessed",
+        "evidence": "Modern military terminology ('shrapnel', 'detonation') replaced with structural vocabulary ('debris', 'collapse') consistent with both the world's technology level and Kaelith's domain."
+      },
+      {
+        "findingId": "LINE-015-008",
+        "source": "line-edit",
+        "severity": "minor",
+        "title": "'Placement' x3 repetition",
+        "verification": "passed",
+        "draftPassage": "Not a grasp. A placement. Deliberate, the way she placed a stone when the placement would be permanent.",
+        "revisedPassage": "A decision made with her hands. Deliberate, precise.",
+        "evidence": "Triple placement/placed/placement eliminated. Also reduces stacked structural metaphors (stone-placement image cut, stronger keystone-arch that follows preserved)."
+      },
+      {
+        "findingId": "LINE-015-009",
+        "source": "line-edit",
+        "severity": "minor",
+        "title": "Double simile: 'Like a wall becoming a door. Like a sealed room finding a window.'",
+        "verification": "passed",
+        "draftPassage": "Like a wall becoming a door. Like a sealed room finding a window.",
+        "revisedPassage": "Like a wall becoming a door she had not known was there.",
+        "evidence": "Fused into single stronger image. Eliminates redundancy while adding element of surprise/discovery."
+      },
+      {
+        "findingId": "LINE-015-010",
+        "source": "line-edit",
+        "severity": "minor",
+        "title": "Direct emotion label: 'Contentment' at L107",
+        "verification": "passed",
+        "draftPassage": "Contentment. Or something near enough that the distinction carried no tactical value.",
+        "revisedPassage": "something warmer and looser than operative silence, like a held breath finally released. Near enough to peace that the distinction carried no tactical value.",
+        "evidence": "Label replaced with physical rendering (warmth, looseness, release). 'Peace' is a less direct label than 'contentment'. The 'held breath' image is in Kaelith's physical/body domain."
+      },
+      {
+        "findingId": "LINE-015-011",
+        "source": "line-edit",
+        "severity": "minor",
+        "title": "Repeated emotion label: 'Contentment' at L187",
+        "verification": "passed",
+        "draftPassage": "Contentment. The word was insufficient. The feeling was structural.",
+        "revisedPassage": "She did not want to move. Nothing needed to be moved.",
+        "evidence": "Second 'Contentment' label eliminated. Replaced with showing through behavior \u2014 stillness chosen, nothing requiring action. Also eliminates structural metaphor ('The feeling was structural'). One of the revision's strongest replacements."
+      },
+      {
+        "findingId": "LINE-015-012",
+        "source": "line-edit",
+        "severity": "minor",
+        "title": "POV summary: 'Two women who had both faced enemies beyond reason.'",
+        "verification": "passed",
+        "draftPassage": "Two women who had both faced enemies beyond reason.",
+        "revisedPassage": "She had faced enemies beyond reason before. Lirien had too.",
+        "evidence": "Narrator-voice summary reframed into Kaelith's close-third perspective. She thinks about her own experience and recognizes the parallel, rather than observing 'two women' from outside."
+      },
+      {
+        "findingId": "LINE-015-013",
+        "source": "line-edit",
+        "severity": "minor",
+        "title": "'Structural' applied to smile",
+        "verification": "passed",
+        "draftPassage": "a rare thing, structural, like a crack that was somehow an improvement",
+        "revisedPassage": "a rare thing, like a crack that was somehow an improvement",
+        "evidence": "'Structural' cut. The 'crack' image does the structural work without the explicit label."
+      },
+      {
+        "findingId": "LINE-015-014",
+        "source": "line-edit",
+        "severity": "minor",
+        "title": "Triple laugh description",
+        "verification": "passed",
+        "draftPassage": "a sound that was almost laughter. Not quite. The fae precision in her voice did not accommodate laughter easily, but it had learned to bend around something close. Kaelith felt it through the bond \u2014 bright, brief, startling in its warmth, the sound of a person who was discovering that words could be play instead of contract.",
+        "revisedPassage": "Lirien's breath carried something close to laughter \u2014 bright, brief, startling. The sound of a person discovering that words could be play instead of contract.",
+        "evidence": "Three formulations compressed to one. Strongest line preserved ('words could be play instead of contract'). Explanatory middle about fae precision cut. Also removes a 'through the bond' reference (contributes to LINE-015-002)."
+      },
+      {
+        "findingId": "LINE-015-015",
+        "source": "line-edit",
+        "severity": "minor",
+        "title": "Extended thermal mass simile",
+        "verification": "passed",
+        "draftPassage": "the granite held warmth the way good construction held weight: slowly, completely, releasing it in measured increments long after the source was gone.",
+        "revisedPassage": "the granite held warmth slowly, completely, releasing it in measured increments long after the source was gone.",
+        "evidence": "Extended engineering comparison ('the way good construction held weight:') cut. Physical observation preserved without the lecturing comparison."
+      },
+      {
+        "findingId": "LINE-015-016",
+        "source": "line-edit",
+        "severity": "minor",
+        "title": "Double figurative for 'Wherever you are' \u2014 strained 'architecture of human hearing'",
+        "verification": "passed",
+        "draftPassage": "Kaelith felt them in her chest \u2014 not through the bond, but through the older, less reliable architecture of human hearing. Words spoken in a voice that had been trained for precision and was now being used for something that precision could not contain.",
+        "revisedPassage": "Kaelith felt them in her chest \u2014 through the older, less reliable sense of hearing a voice speak and meaning every word. A voice trained for precision, now being used for something precision could not contain.",
+        "evidence": "'Architecture of human hearing' (strained metaphor) cut. Negation pattern ('not through the bond, but') converted to direct statement. Contrast between bond-perception and ordinary hearing preserved without the strained architectural application."
+      },
+      {
+        "findingId": "DEV-015-002",
+        "source": "developmental-edit",
+        "severity": "minor",
+        "title": "Ch14\u2192ch15 emotional state proximity",
+        "verification": "passed",
+        "evidence": "Opening paragraphs preserved unchanged \u2014 tactical inventory (exits, sight lines, structural assessment) establishes a distinctly different emotional register from ch14's closing state before progressing into the chapter's own arc."
+      },
+      {
+        "findingId": "DEV-015-003",
+        "source": "developmental-edit",
+        "severity": "minor",
+        "title": "Fantasy arc front-loaded \u2014 Scenes 2-3 romance-dominant",
+        "verification": "passed",
+        "draftPassage": "(No equivalent \u2014 draft transitions directly from 'After,' Lirien agreed.' to Kaelith's planning dialogue.)",
+        "revisedPassage": "The evidence still lay on the table behind them. Four sources, a plan that held together, a conspiracy that could be stopped. For the first time, *after* was not a word Kaelith applied to someone else's future.",
+        "evidence": "31-word insertion weaves fantasy arc false victory (mission winnability) into romantic hope. The evidence case's strength explicitly fuels the emotional permission to imagine a future. Brief enough to avoid disrupting romance-dominant register. Voice consistent (direct statement, italicized thought, no structural metaphor). Reads naturally in context."
+      }
+    ],
+    "deferred": [
+      {
+        "findingId": "COPY-015-006",
+        "source": "copy-edit",
+        "severity": "minor",
+        "title": "Seventh Seat vs Sixth Seat discrepancy",
+        "verification": "appropriately_deferred",
+        "evidence": "All chapter drafts consistently use 'Seventh Seat' for Thalen. Resolution tracked as DISC-001 in continuity tracker \u2014 world-bible/politics.json to be updated to match cross-manuscript consensus, not chapters. No chapter-level change needed."
+      },
+      {
+        "findingId": "COPY-015-007",
+        "source": "copy-edit",
+        "severity": "minor",
+        "title": "'Ytharan' spelling note",
+        "verification": "appropriately_deferred",
+        "evidence": "Note only \u2014 first adjectival form of 'Ythara' in manuscript. Linguistically sound. Registered for downstream consistency. No change required."
+      },
+      {
+        "findingId": "DEV-015-004",
+        "source": "developmental-edit",
+        "severity": "minor",
+        "title": "Vael Seren structural echo between ch14 and ch15",
+        "verification": "appropriately_deferred",
+        "evidence": "Differentiation between ch14 (storytelling/indirect preference) and ch15 (direct planning/architectural inspection metaphor) is effective. The transformation from 'a place that matters to Lirien' to 'a place that matters to both of them' is audible. Monitor only."
+      }
+    ]
+  },
+  "regressionFindings": [
+    {
+      "id": "REGRESSION-015-001",
+      "severity": "warning",
+      "category": "repetition",
+      "title": "'Between them' phrase density doubled as secondary effect of bond-reference conversion",
+      "description": "The phrase 'between them' increased from 5 instances in the draft to 11 instances in the revised chapter. This is a direct consequence of converting 22 bond references to direct-perception language \u2014 many conversions replaced 'through the bond' or 'the bond carried' with 'between them' variants: 'The weight of that knowledge settled between them' (replacing 'The bond carried the shared weight'), 'Something passed between them' (replacing 'Through the bond, Kaelith felt something'), 'Something shifted between them' (replacing 'The bond carried a shift'), 'the space between them thickening' (replacing 'the bond contracting'), 'The words sat in the air between them' (replacing meta-commentary), 'What passed between them' (replacing 'The bond did not transmit'). While 'between them' is a more ordinary phrase than 'through the bond' and less noticeable as a repetition pattern, the doubling creates a secondary repetition that a careful reader might notice, particularly in passages where two instances appear within 2-3 lines (e.g., L101: 'The word hung between them' followed by 'The weight of that knowledge settled between them').",
+      "assessment": "WARNING \u2014 below failure threshold. 'Between them' is a functional phrase rather than a distinctive voice marker, making it less conspicuous than 'through the bond' was. The tradeoff (11 ordinary phrases vs 23 distinctive mechanism-naming phrases) is strongly net positive. This could be addressed in a future polish pass by varying 2-3 instances to use alternative constructions."
+    }
+  ],
+  "voiceMarkerSaturationCheck": {
+    "status": "passed",
+    "assessment": "The revised chapter has significantly FEWER structural metaphor markers per page than the draft (14 key-term hits vs 29, ~52% reduction). Voice markers are now concentrated at the opening (establishment), the evidence-work metaphor (domain-appropriate), the declaration (keystone \u2014 most important structural image), and the thematic climax (fortification with no one inside it). The surrounding prose breathes between markers. This is the 'seasoning not main ingredient' density specified in the voice fingerprint's density guidance. No voice marker saturation regression."
+  },
+  "dialogueNaturalismCheck": {
+    "status": "passed",
+    "assessment": "All dialogue unchanged from draft. Verified: evidence discussion crisp and tactically voiced, 'Cannot \u2014 not can't' observation properly preserved, declaration drops contractions (formality as last armor), Vael Seren banter maintains subtext on three levels. No dialogue was rewritten to add voice markers. No dialogue naturalism regression."
+  },
+  "darlingsSurvived": [],
+  "darlingsAudit": {
+    "status": "passed",
+    "assessment": "All passages flagged by editors for cutting or reworking were addressed: 'The heat had nothing to do with the fire' (clich\u00e9 \u2014 CUT), 'emotional equivalent of sunlight through a gap in cloud cover' (clich\u00e9 + voice violation \u2014 REPLACED), 'Three words. Short sentences. No subordinate clauses.' (meta-commentary \u2014 CUT), 'Desire.' and 'Fear \u2014 raw and architectural' (emotion labels \u2014 RESTRUCTURED), 'A structure reduced to its essential element, stripped of every decorative buttress' (overloaded structural metaphor \u2014 SIMPLIFIED), 'Contentment. The word was insufficient. The feeling was structural.' (label + structural gloss \u2014 REPLACED with behavioral showing). All specific instances from LINE-015-001's cut list were verified as cut or replaced. Zero darlings survived editorial flags without modification."
+  },
+  "traceabilityCheck": {
+    "status": "passed",
+    "findingsInFrontmatter": 24,
+    "findingsDeferred": 3,
+    "totalAccountedFor": 27,
+    "totalInEditReports": 27,
+    "assessment": "Every finding ID from all three edit reports is either addressed in the frontmatter's findingsAddressed list (24 findings) or explicitly deferred with justification in findingsDeferred (3 findings: COPY-015-006, COPY-015-007, DEV-015-004). Every change in the revised chapter traces to a finding ID. No orphan changes detected. Traceability chain intact."
+  },
+  "continuityCheck": {
+    "status": "passed",
+    "verified": [
+      "Ribs (3rd and 4th left) still referenced from ambush two days ago",
+      "Oathbrand correctly attributed to Lirien's removal",
+      "Evidence details preserved (Veldrane, Wending, Rivenmarch, Serath D\u00fbn)",
+      "Thalen Reyvas: Seventh Seat, 40-year conspiracy, Ytharan revivalist",
+      "Narrowing crossing: three days, begins tomorrow",
+      "Quietus pull: northeast, kinetic insistence in joints and marrow",
+      "Seep insurance copy preserved",
+      "Split lip on Lirien preserved",
+      "New addition (DEV-015-003) introduces no new factual claims"
+    ]
+  },
+  "pacingCheck": {
+    "status": "passed",
+    "assessment": "Scene transitions preserved intact. Scene 1\u21922 (evidence to firelight) reads as natural temporal progression. Scene 2\u21923 (declaration to aftermath) preserved with scene break. DEV-015-003 addition flows naturally between Lirien's 'After' agreement and Kaelith's planning dialogue. No jarring transitions introduced. The thinning of overloaded passages makes Scene 3 feel more spacious and peaceful, which is the intended effect for the false-peak chapter preceding ch16's devastation."
+  },
+  "warnings": [
+    {
+      "id": "WARN-015-001",
+      "description": "'Between them' phrase density doubled (5 \u2192 11 instances) as secondary effect of bond-reference conversion. See REGRESSION-015-001. Below failure threshold.",
+      "findingRef": "REGRESSION-015-001"
+    }
+  ],
+  "warningCount": 1,
+  "failureThreshold": "3+ warnings = failure",
+  "automaticFailChecks": {
+    "unaddressedCriticalFindings": false,
+    "claimedButUnchangedPassages": false,
+    "newCriticalIssues": false,
+    "contentCutWithoutReplacement": false,
+    "darlingsPreservedUnchanged": false,
+    "traceabilityBroken": false,
+    "voiceMarkerSaturationRegression": false,
+    "dialogueNaturalismRegression": false
+  },
+  "remediationNotes": "One optional improvement for polish pass: vary 2-3 'between them' instances to alternative constructions to reduce the secondary repetition introduced by bond-reference conversion."
+}

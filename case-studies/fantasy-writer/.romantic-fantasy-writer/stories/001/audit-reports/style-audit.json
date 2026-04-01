@@ -1,0 +1,30 @@
+{
+  "storyId": "001",
+  "auditPhase": "style",
+  "result": "passed",
+  "findings": [
+    {
+      "category": "tone-alignment",
+      "severity": "major",
+      "issue": "The guide captures the story's darkness and restraint, but it never turns the concept's explicit nonjudgment rule into an enforceable prose instruction. The upstream tone contract says the narrative voice must not judge its characters and must trust readers to hold contradictions without resolution; the style guide summarizes tone but does not prohibit authorial moral verdicts or explanatory adjudication of ambiguous choices.",
+      "location": "story-concept.json:toneContract.primary; style/style-guide.json:globalStyle, toneContract",
+      "remediation": "Add a narration rule that forbids authorial moral labeling or summary verdicts in ambiguous scenes, and require contradictions to remain character-filtered unless plot events truly resolve them. Include 2-3 pass/fail examples (e.g. acceptable: cost rendered through behavior; unacceptable: narration declaring who was right)."
+    },
+    {
+      "category": "quality-floor",
+      "severity": "minor",
+      "issue": "Most floor metrics are concrete, but two checks remain partially subjective: `maxBlandGenericSentencesPerChapter` has no definition for what counts as bland/generic, and `minimumMetaphorOriginality` lacks concrete fail examples. That leaves part of the quality floor harder to audit consistently across downstream agents.",
+      "location": "style/style-guide.json:proseQualityFloor.maxBlandGenericSentencesPerChapter; style/style-guide.json:proseQualityFloor.minimumMetaphorOriginality",
+      "remediation": "Define a bland/generic sentence test and add a short pass/fail table for metaphor originality so line editors and auditors can score these items consistently."
+    }
+  ],
+  "summary": "The style guide is strong on dual-POV differentiation, scene palettes, dialogue discipline, show-dont-tell rules, exposition control, and overall tone restraint. It clears the gate because voice distinctiveness is strong and the quality floor is mostly enforceable, but it should tighten one tone-contract rule and clarify two subjective quality-floor checks before drafting scales up.",
+  "gateDecision": "pass",
+  "gateRationale": "Pass. No critical failures were found, the two POV calibrations are specific enough to produce recognizably different prose within 3-4 sentences, and the guide provides actionable scene, dialogue, show-dont-tell, and exposition constraints. The remaining issues are important but remediable without a full rewrite: one major omission in how the nonjudgment aspect of the tone contract is operationalized, and one minor enforceability gap inside the quality floor.",
+  "upstreamRefs": [
+    "style/style-guide.json",
+    "style/style-analysis.json",
+    "story-concept.json",
+    "craft-profile.json"
+  ]
+}

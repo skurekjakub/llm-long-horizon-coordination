@@ -1,0 +1,1072 @@
+{
+  "version": 1,
+  "generatedBy": "docwriter-codebase-surveyor",
+  "surveyMode": "warm-start",
+  "timestamp": "2026-03-18T13:16:16Z",
+  "repository": {
+    "rootPath": "resources/repositories/xperience",
+    "solutionPath": "CMSSolution/CMSSolution.sln",
+    "techStack": {
+      "languages": [
+        "C#"
+      ],
+      "frameworks": [
+        "ASP.NET Core",
+        ".NET 8.0"
+      ],
+      "buildSystem": "dotnet (MSBuild, Directory.Build.props)",
+      "testFramework": "NUnit/xUnit (CMSSolution/Tests/)",
+      "targetFramework": "net8.0"
+    }
+  },
+  "modules": [
+    {
+      "path": "CMSSolution/Websites/",
+      "name": "CMS.Websites",
+      "assemblyName": "CMS.Websites",
+      "purpose": "Website channel management \u2014 web page CRUD, ACL permissions, URL routing, page publishing, scheduled publishing, recycle bin, visual builder, page templates, web page scopes, and domain management. Central module for page permission enforcement via WebPageAclPermissions (Display, Read, Create, Update, Delete, Synchronize).",
+      "keyFiles": [
+        "ACLs/WebPageAclPermissions.cs",
+        "ACLs/WebPageAclPermissionConstants.cs",
+        "ACLs/WebPageAclRolePermissionEvaluator.cs",
+        "ACLs/IWebPageAclRolePermissionEvaluator.cs",
+        "ACLs/IObjectQueryAclPermissionExtender.cs",
+        "ACLs/WebPageAclManager/IWebPageAclManager.cs",
+        "ACLs/WebPageAcl/IWebPageAclRetriever.cs",
+        "Website/WebsiteChannelUIPermissions.cs",
+        "Website/WebsiteConstants.cs",
+        "WebPageManager/IWebPageManager.cs",
+        "WebPagePublisher/IWebPageItemsPublisher.cs",
+        "RecycleBin/Restore/IWebPageAclRestorer.cs"
+      ],
+      "publicInterfaces": [
+        "WebPageAclPermissions \u2014 static constants: DISPLAY, READ, CREATE, UPDATE, DELETE, SYNCHRONIZE",
+        "WebPageAclPermissionConstants \u2014 SystemPermissions list, ImplicitPermissions (Display only)",
+        "WebsiteChannelUIPermissions \u2014 MANAGE_PERMISSIONS constant for ACL management UI permission",
+        "WebsiteConstants \u2014 WEBSITE_CHANNEL_APPLICATION_PREFIX, IndividuallyCheckedPermissions (READ, DISPLAY)",
+        "IWebPageAclRolePermissionEvaluator \u2014 evaluates ACL permissions per role",
+        "IObjectQueryAclPermissionExtender \u2014 extends object queries with ACL permission filtering",
+        "IWebPageAclManager \u2014 manages web page ACL entries",
+        "IWebPageAclRetriever \u2014 retrieves ACL data for web pages",
+        "IWebPageManager \u2014 core web page management operations",
+        "IWebPageItemsPublisher \u2014 publishes web page items"
+      ],
+      "dependencies": [
+        "CMSSolution/ContentEngine/",
+        "CMSSolution/ContinuousIntegration/",
+        "CMSSolution/Core/",
+        "CMSSolution/DataEngine/",
+        "CMSSolution/Membership/",
+        "CMSSolution/Notifications/"
+      ],
+      "surveyDepth": "full",
+      "permissionRelevance": "primary \u2014 defines all web page ACL permission constants and core ACL evaluation infrastructure"
+    },
+    {
+      "path": "CMSSolution/Admin/",
+      "name": "Kentico.Xperience.Admin",
+      "assemblyName": "Kentico.Xperience.Admin (umbrella)",
+      "purpose": "Back-office administration UI \u2014 contains multiple sub-assemblies (Admin.Base, Admin.Websites, Admin.DigitalMarketing, Admin.DigitalCommerce, Admin.Headless) plus Client/ for front-end and Tests/.",
+      "subModules": [
+        {
+          "path": "CMSSolution/Admin/Kentico.Xperience.Admin.Base/",
+          "assemblyName": "Kentico.Xperience.Admin.Base",
+          "purpose": "Core admin framework \u2014 UI page framework, authorization, permission evaluation, form components, AIRA integration, content hub UI, role permissions UI, workspace authorization, and web page ACL permission interface.",
+          "keyFiles": [
+            "Authorization/Interfaces/IUIPermissionEvaluator.cs",
+            "Authorization/UIPermissionEvaluator.cs",
+            "Permissions/PermissionType.cs",
+            "WebPages/IWebPageAclPermissionEvaluator.cs",
+            "Workspaces/Authorization/IWorkspacePermissionEvaluator.cs",
+            "UIPages/ContentHub/State/Actions/ContentItemActionPermissionEvaluator.cs"
+          ],
+          "publicInterfaces": [
+            "IUIPermissionEvaluator \u2014 Evaluate(string permission) returns UIPermissionEvaluationResult",
+            "IWebPageAclPermissionEvaluator (internal) \u2014 Evaluate(webPageItemId, websiteChannelId, permission, evaluateChildPages) returns PermissionEvaluationResult",
+            "PermissionType enum \u2014 UI, Acl, Workspace",
+            "IWorkspacePermissionEvaluator \u2014 workspace-level permission checks"
+          ],
+          "dependencies": [
+            "CMSSolution/AIRA/",
+            "CMSSolution/ContentEngine/",
+            "CMSSolution/ContentSynchronization/",
+            "CMSSolution/ContentWorkflowEngine/",
+            "CMSSolution/FormEngine/",
+            "CMSSolution/Headless/",
+            "CMSSolution/MacroEngine/",
+            "CMSSolution/MediaLibrary/",
+            "CMSSolution/Membership/",
+            "CMSSolution/Mvc/Kentico.Content.Web.Mvc/",
+            "CMSSolution/Mvc/Kentico.Membership/",
+            "CMSSolution/Mvc/Kentico.Web.Mvc/",
+            "CMSSolution/Mvc/Kentico.Xperience.Admin.Base.Shared/",
+            "CMSSolution/Websites/",
+            "CMSSolution/Workspaces/"
+          ]
+        },
+        {
+          "path": "CMSSolution/Admin/Kentico.Xperience.Admin.Websites/",
+          "assemblyName": "Kentico.Xperience.Admin.Websites",
+          "purpose": "Website-specific admin UI \u2014 web page editing, content tab, URL management, ACL permission evaluator implementation, web page state management, page builder, permission management UI, and web page action permission evaluation.",
+          "keyFiles": [
+            "WebPages/Acls/WebPageAclPermissionEvaluator.cs",
+            "WebPages/Manager/WebPageCommandManagerBase.cs",
+            "WebPages/WebPageState/WebPageItemActionPermissionEvaluator/WebPageItemActionPermissionEvaluator.cs",
+            "UIPages/WebPages/WebPage/Content/ContentTab.cs",
+            "UIPages/WebPages/WebPage/WebPageBase.cs",
+            "UIPages/WebPages/WebPage/Properties/Permissions/WebPagePermissions.cs",
+            "UIPages/WebPages/WebPage/Properties/Permissions/WebPagePermissionConstants.cs",
+            "UIPages/WebPages/WebPage/Properties/Permissions/Commands/WebPagePermissionsCommandManager.cs"
+          ],
+          "publicInterfaces": [
+            "WebPageAclPermissionEvaluator (internal) \u2014 implements IWebPageAclPermissionEvaluator; checks channel admin status, evaluates page+subtree permissions via ACL role lookups",
+            "WebPageCommandManagerBase (internal) \u2014 abstract base for web page commands (CreateNewVersion, Save, Publish, etc.)",
+            "ContentTab \u2014 page for editing web page structured content; checks WebPageAclPermissions.UPDATE",
+            "WebPageBase<T> \u2014 base class checking WebPageAclPermissions.READ; holds IWebPageAclPermissionEvaluator",
+            "WebPageItemActionPermissionEvaluator \u2014 evaluates per-action permissions on web pages using ACL evaluator",
+            "WebPagePermissions \u2014 permission management UI page"
+          ],
+          "dependencies": [
+            "CMSSolution/Mvc/Kentico.Content.Web.Mvc/",
+            "CMSSolution/Mvc/Kentico.Xperience.Admin.Websites.Shared/",
+            "CMSSolution/Websites/",
+            "CMSSolution/Admin/Kentico.Xperience.Admin.Base/"
+          ]
+        },
+        {
+          "path": "CMSSolution/Admin/Kentico.Xperience.Admin.DigitalMarketing/",
+          "assemblyName": "Kentico.Xperience.Admin.DigitalMarketing",
+          "purpose": "Digital marketing admin UI \u2014 email marketing, contact management admin pages."
+        },
+        {
+          "path": "CMSSolution/Admin/Kentico.Xperience.Admin.DigitalCommerce/",
+          "assemblyName": "Kentico.Xperience.Admin.DigitalCommerce",
+          "purpose": "Digital commerce admin UI \u2014 commerce-related admin pages."
+        },
+        {
+          "path": "CMSSolution/Admin/Kentico.Xperience.Admin.Headless/",
+          "assemblyName": "Kentico.Xperience.Admin.Headless",
+          "purpose": "Headless channel admin UI \u2014 headless channel management pages."
+        },
+        {
+          "path": "CMSSolution/Admin/Client/",
+          "assemblyName": null,
+          "purpose": "Front-end client code for admin UI (TypeScript/React packages)."
+        },
+        {
+          "path": "CMSSolution/Admin/Tests/",
+          "assemblyName": null,
+          "purpose": "Admin module test projects."
+        }
+      ],
+      "keyFiles": [],
+      "publicInterfaces": [],
+      "dependencies": [],
+      "surveyDepth": "full",
+      "permissionRelevance": "primary \u2014 implements permission evaluation and enforcement in admin UI"
+    },
+    {
+      "path": "CMSSolution/Membership/",
+      "name": "CMS.Membership",
+      "assemblyName": "CMS.Membership",
+      "purpose": "User authentication, role management, and application-level permission system. Defines SystemPermissions (View, Update, Create, Delete), ApplicationPermissionEvaluator, and the role-based permission infrastructure. Administrators bypass permission checks.",
+      "keyFiles": [
+        "ApplicationPermission/SystemPermissions.cs",
+        "ApplicationPermission/IApplicationPermissionEvaluator.cs",
+        "ApplicationPermission/ApplicationPermissionEvaluator.cs",
+        "ApplicationPermission/ApplicationPermissionInfo.cs",
+        "ApplicationPermission/IApplicationPermissionProvider.cs",
+        "Roles/RoleInfo.cs",
+        "Users/UserInfo.cs"
+      ],
+      "publicInterfaces": [
+        "SystemPermissions \u2014 static constants: VIEW, UPDATE, CREATE, DELETE",
+        "IApplicationPermissionEvaluator \u2014 Evaluate(ApplicationPermissionEvaluationContext) returns bool; administrators auto-pass",
+        "ApplicationPermissionEvaluationContext \u2014 holds ApplicationName, PermissionName, User",
+        "IApplicationPermissionProvider \u2014 CRUD for application permission entries"
+      ],
+      "dependencies": [
+        "CMSSolution/Base/",
+        "CMSSolution/Core/",
+        "CMSSolution/DataEngine/",
+        "CMSSolution/EmailEngine/",
+        "CMSSolution/EventLog/",
+        "CMSSolution/Globalization/",
+        "CMSSolution/Helpers/",
+        "CMSSolution/IO/",
+        "CMSSolution/MacroEngine/",
+        "CMSSolution/Modules/",
+        "CMSSolution/Scheduler/"
+      ],
+      "surveyDepth": "full",
+      "permissionRelevance": "primary \u2014 defines SystemPermissions and the application-level permission evaluator"
+    },
+    {
+      "path": "CMSSolution/Workspaces/",
+      "name": "CMS.Workspaces",
+      "assemblyName": "CMS.Workspaces",
+      "purpose": "Workspace management \u2014 workspace-scoped data permissions (View, Create, Update, Delete, Synchronize), workspace permission configuration, and workspace data permission evaluation.",
+      "keyFiles": [
+        "Workspace/WorkspaceDataPermissions.cs",
+        "Authorization/IWorkspaceDataPermissionEvaluator.cs",
+        "Authorization/WorkspaceDataPermissionEvaluator.cs",
+        "WorkspacePermissionManager/IWorkspacePermissionManager.cs",
+        "WorkspacePermissionManager/WorkspacePermissionManager.cs"
+      ],
+      "publicInterfaces": [
+        "WorkspaceDataPermissions \u2014 static constants: VIEW, CREATE, UPDATE, DELETE, SYNCHRONIZE",
+        "IWorkspaceDataPermissionEvaluator \u2014 EvaluateApplicationPermission(permission, appIdentifier, user) for any workspace; EvaluateApplicationPermission(permission, appIdentifier, workspaceId, user) for specific workspace; EvaluateApplicationPermissionForRoles() for batch role checks"
+      ],
+      "dependencies": [
+        "CMSSolution/Core/",
+        "CMSSolution/DataEngine/",
+        "CMSSolution/Membership/"
+      ],
+      "surveyDepth": "full",
+      "permissionRelevance": "primary \u2014 defines workspace-level permission constants and evaluation"
+    },
+    {
+      "path": "CMSSolution/ContentEngine/",
+      "name": "CMS.ContentEngine",
+      "assemblyName": "CMS.ContentEngine",
+      "purpose": "Content item management \u2014 content types, content folders, content item CRUD, content language management, content item assets, content queries, and channel permission evaluation.",
+      "keyFiles": [
+        "Channel/DynamicChannelPermissionEvaluator.cs",
+        "Channel/IDynamicChannelPermissionEvaluator.cs",
+        "ContentItem/IContentItemManager.cs",
+        "ContentTypes/ContentTypeInfo.cs"
+      ],
+      "publicInterfaces": [
+        "IDynamicChannelPermissionEvaluator \u2014 evaluates permissions dynamically based on channel context",
+        "IContentItemManager \u2014 CRUD operations for content items"
+      ],
+      "dependencies": [
+        "CMSSolution/ContinuousIntegration/",
+        "CMSSolution/Core/",
+        "CMSSolution/DataEngine/",
+        "CMSSolution/FormEngine/",
+        "CMSSolution/LicenseProvider/",
+        "CMSSolution/Membership/",
+        "CMSSolution/Scheduler/",
+        "CMSSolution/Workspaces/"
+      ],
+      "surveyDepth": "refreshed",
+      "permissionRelevance": "secondary \u2014 contains DynamicChannelPermissionEvaluator"
+    },
+    {
+      "path": "CMSSolution/ContentWorkflowEngine/",
+      "name": "CMS.ContentWorkflowEngine",
+      "assemblyName": "CMS.ContentWorkflowEngine",
+      "purpose": "Content workflow management \u2014 workflow steps, roles, notifications, and permission evaluation per content type (Website, Headless, Email, Reusable).",
+      "keyFiles": [
+        "Notifications/Permissions/IContentTypePermissionEvaluator.cs",
+        "Notifications/Permissions/WebsiteContentTypePermissionEvaluator.cs",
+        "Notifications/Permissions/WorkflowStepChangeRecipientsPermissionEvaluator.cs",
+        "WorkflowManager/IContentWorkflowManager.cs"
+      ],
+      "publicInterfaces": [
+        "IContentTypePermissionEvaluator \u2014 evaluates permissions for workflow notification recipients by content type",
+        "IWorkflowStepChangeRecipientsPermissionEvaluator \u2014 determines valid recipients based on permission checks"
+      ],
+      "dependencies": [
+        "CMSSolution/ContentEngine/",
+        "CMSSolution/DataEngine/",
+        "CMSSolution/EmailMarketing/",
+        "CMSSolution/Headless/",
+        "CMSSolution/Websites/"
+      ],
+      "surveyDepth": "refreshed",
+      "permissionRelevance": "secondary \u2014 workflow notification permission filtering"
+    },
+    {
+      "path": "CMSSolution/ContentSynchronization/",
+      "name": "CMS.ContentSynchronization",
+      "assemblyName": "CMS.ContentSynchronization",
+      "purpose": "Content synchronization between environments \u2014 sync operations, dependency discovery, permission checks for sync operations.",
+      "keyFiles": [
+        "Permissions/ISynchronizationPermissionEvaluator.cs",
+        "Permissions/SynchronizationPermissionEvaluator.cs",
+        "Permissions/WebPageItemNodePermissionEvaluator.cs",
+        "Permissions/INodePermissionEvaluator.cs"
+      ],
+      "publicInterfaces": [
+        "ISynchronizationPermissionEvaluator \u2014 evaluates sync permissions",
+        "INodePermissionEvaluator \u2014 evaluates node-level permissions for sync operations",
+        "WebPageItemNodePermissionEvaluator \u2014 web-page-specific sync permission checks"
+      ],
+      "dependencies": [
+        "CMSSolution/ContentEngine/",
+        "CMSSolution/Core/",
+        "CMSSolution/DataEngine/",
+        "CMSSolution/OnlineForms/",
+        "CMSSolution/Websites/"
+      ],
+      "surveyDepth": "refreshed",
+      "permissionRelevance": "secondary \u2014 sync-specific permission evaluation"
+    },
+    {
+      "path": "CMSSolution/Core/",
+      "name": "CMS.Core",
+      "assemblyName": "CMS.Core",
+      "purpose": "Foundation module \u2014 IoC container, service registration, module discovery, attribute-based registration. No external project references (root dependency).",
+      "keyFiles": [],
+      "publicInterfaces": [
+        "RegisterImplementation attribute \u2014 IoC registration",
+        "Service \u2014 static service locator"
+      ],
+      "dependencies": [],
+      "surveyDepth": "refreshed",
+      "permissionRelevance": "none"
+    },
+    {
+      "path": "CMSSolution/Base/",
+      "name": "CMS.Base",
+      "assemblyName": "CMS.Base",
+      "purpose": "Base infrastructure \u2014 application lifecycle, contexts, events, handlers, collections, configuration, read-only mode, metadata.",
+      "keyFiles": [],
+      "publicInterfaces": [],
+      "dependencies": [
+        "CMSSolution/Core/"
+      ],
+      "surveyDepth": "refreshed",
+      "permissionRelevance": "none"
+    },
+    {
+      "path": "CMSSolution/DataEngine/",
+      "name": "CMS.DataEngine",
+      "assemblyName": "CMS.DataEngine",
+      "purpose": "Data access layer \u2014 object/info providers, SQL generation, queries, data classes, caching, and database operations.",
+      "keyFiles": [],
+      "publicInterfaces": [],
+      "dependencies": [],
+      "surveyDepth": "carried-forward",
+      "permissionRelevance": "none"
+    },
+    {
+      "path": "CMSSolution/Modules/",
+      "name": "CMS.Modules",
+      "assemblyName": "CMS.Modules",
+      "purpose": "Module registration and management \u2014 ResourceInfo, ModuleInfo providers.",
+      "keyFiles": [],
+      "publicInterfaces": [],
+      "dependencies": [
+        "CMSSolution/DataEngine/"
+      ],
+      "surveyDepth": "refreshed",
+      "permissionRelevance": "none"
+    },
+    {
+      "path": "CMSSolution/Headless/",
+      "name": "CMS.Headless",
+      "assemblyName": "CMS.Headless",
+      "purpose": "Headless channel management \u2014 headless items, tokens, queries, and events.",
+      "keyFiles": [],
+      "publicInterfaces": [],
+      "dependencies": [
+        "CMSSolution/Base/",
+        "CMSSolution/ContentEngine/",
+        "CMSSolution/Core/",
+        "CMSSolution/DataEngine/",
+        "CMSSolution/Websites/"
+      ],
+      "surveyDepth": "refreshed",
+      "permissionRelevance": "none"
+    },
+    {
+      "path": "CMSSolution/Mvc/",
+      "name": "Kentico.*.Web.Mvc",
+      "assemblyName": "Kentico.*.Web.Mvc (multi-project)",
+      "purpose": "MVC web layer \u2014 14+ projects for ASP.NET Core MVC integration including content delivery, membership, online marketing, page builder, visual builder, headless (GraphQL), and shared admin modules. Includes PagePermissionsChecker and FormPermissionsChecker for live-site permission enforcement.",
+      "subModules": [
+        {
+          "path": "CMSSolution/Mvc/Kentico.Content.Web.Mvc/",
+          "assemblyName": "Kentico.Content.Web.Mvc",
+          "purpose": "Main MVC content delivery \u2014 page builder, form builder, email builder, preview, security (page/form permission checking), content retrieval."
+        },
+        {
+          "path": "CMSSolution/Mvc/Kentico.Web.Mvc/",
+          "assemblyName": "Kentico.Web.Mvc",
+          "purpose": "Core MVC infrastructure \u2014 routing, application startup, authorization filters, content sync authorization."
+        },
+        {
+          "path": "CMSSolution/Mvc/Kentico.Membership/",
+          "assemblyName": "Kentico.Membership",
+          "purpose": "ASP.NET Core Identity integration with Xperience membership system."
+        },
+        {
+          "path": "CMSSolution/Mvc/Kentico.OnlineMarketing.Web.Mvc/",
+          "assemblyName": "Kentico.OnlineMarketing.Web.Mvc",
+          "purpose": "Online marketing MVC integration \u2014 A/B testing, personalization."
+        },
+        {
+          "path": "CMSSolution/Mvc/Kentico.Xperience.Headless/",
+          "assemblyName": "Kentico.Xperience.Headless",
+          "purpose": "Headless delivery API \u2014 GraphQL via HotChocolate."
+        },
+        {
+          "path": "CMSSolution/Mvc/AspNetCore.Platform/",
+          "assemblyName": "Kentico.AspNetCore.Platform",
+          "purpose": "Platform-level ASP.NET Core integrations \u2014 routing, middleware."
+        }
+      ],
+      "keyFiles": [
+        "Kentico.Content.Web.Mvc/Security/IPagePermissionsChecker.cs",
+        "Kentico.Content.Web.Mvc/Security/PagePermissionsChecker.cs",
+        "Kentico.Content.Web.Mvc/Forms/Security/IFormPermissionsChecker.cs",
+        "Kentico.Content.Web.Mvc/Security/SecurityAttributes/Mvc/CheckPagePermissionsAttribute.cs"
+      ],
+      "publicInterfaces": [
+        "IPagePermissionsChecker \u2014 live-site page permission checking",
+        "IFormPermissionsChecker \u2014 form permission checking",
+        "CheckPagePermissionsAttribute \u2014 MVC filter attribute for page permission enforcement"
+      ],
+      "dependencies": [],
+      "surveyDepth": "refreshed",
+      "permissionRelevance": "secondary \u2014 live-site permission checking via MVC attributes"
+    },
+    {
+      "path": "CMSSolution/AIRA/",
+      "name": "CMS.Aira",
+      "assemblyName": "CMS.Aira",
+      "purpose": "AI/ML features \u2014 AIRA AI functionality.",
+      "keyFiles": [],
+      "publicInterfaces": [],
+      "dependencies": [],
+      "surveyDepth": "carried-forward",
+      "permissionRelevance": "none"
+    },
+    {
+      "path": "CMSSolution/Activities/",
+      "name": "CMS.Activities",
+      "assemblyName": "CMS.Activities",
+      "purpose": "Activity logging infrastructure \u2014 activity models, logging service, modifiers, validators, filters.",
+      "keyFiles": [],
+      "publicInterfaces": [],
+      "dependencies": [],
+      "surveyDepth": "carried-forward",
+      "permissionRelevance": "none"
+    },
+    {
+      "path": "CMSSolution/Analyzers/",
+      "name": "Kentico.Xperience.Analyzers",
+      "assemblyName": "Kentico.Xperience.Analyzers",
+      "purpose": "Roslyn code analyzers for Xperience development best practices.",
+      "keyFiles": [],
+      "publicInterfaces": [],
+      "dependencies": [],
+      "surveyDepth": "carried-forward",
+      "permissionRelevance": "none"
+    },
+    {
+      "path": "CMSSolution/Automation/",
+      "name": "CMS.Automation",
+      "assemblyName": "CMS.Automation",
+      "purpose": "Marketing automation \u2014 automation processes and triggers.",
+      "keyFiles": [],
+      "publicInterfaces": [],
+      "dependencies": [],
+      "surveyDepth": "carried-forward",
+      "permissionRelevance": "none"
+    },
+    {
+      "path": "CMSSolution/CMS/",
+      "name": "CMS (Legacy Config)",
+      "assemblyName": "CMS",
+      "purpose": "Legacy CMS configuration and root module setup.",
+      "keyFiles": [],
+      "publicInterfaces": [],
+      "dependencies": [],
+      "surveyDepth": "carried-forward",
+      "permissionRelevance": "none"
+    },
+    {
+      "path": "CMSSolution/Commerce/",
+      "name": "CMS.Commerce",
+      "assemblyName": "CMS.Commerce",
+      "purpose": "Digital commerce \u2014 e-commerce functionality.",
+      "keyFiles": [],
+      "publicInterfaces": [],
+      "dependencies": [],
+      "surveyDepth": "carried-forward",
+      "permissionRelevance": "none"
+    },
+    {
+      "path": "CMSSolution/ContactManagement/",
+      "name": "CMS.ContactManagement",
+      "assemblyName": "CMS.ContactManagement",
+      "purpose": "Contact management \u2014 contact profiles, scoring, segmentation.",
+      "keyFiles": [],
+      "publicInterfaces": [],
+      "dependencies": [],
+      "surveyDepth": "carried-forward",
+      "permissionRelevance": "none"
+    },
+    {
+      "path": "CMSSolution/ContinuousIntegration/",
+      "name": "CMS.ContinuousIntegration",
+      "assemblyName": "CMS.ContinuousIntegration",
+      "purpose": "CI/CD integration \u2014 file-system serialization for continuous integration workflows.",
+      "keyFiles": [],
+      "publicInterfaces": [],
+      "dependencies": [],
+      "surveyDepth": "carried-forward",
+      "permissionRelevance": "none"
+    },
+    {
+      "path": "CMSSolution/CustomerJourneys/",
+      "name": "CMS.CustomerJourneys",
+      "assemblyName": "CMS.CustomerJourneys",
+      "purpose": "Customer journey tracking and analysis.",
+      "keyFiles": [],
+      "publicInterfaces": [],
+      "dependencies": [],
+      "surveyDepth": "carried-forward",
+      "permissionRelevance": "none"
+    },
+    {
+      "path": "CMSSolution/DataProtection/",
+      "name": "CMS.DataProtection",
+      "assemblyName": "CMS.DataProtection",
+      "purpose": "GDPR/data protection \u2014 consent management, data erasure, data portability.",
+      "keyFiles": [],
+      "publicInterfaces": [],
+      "dependencies": [],
+      "surveyDepth": "carried-forward",
+      "permissionRelevance": "none"
+    },
+    {
+      "path": "CMSSolution/DbDataManager/",
+      "name": "CMS.DbDataManager",
+      "assemblyName": "CMS.DbDataManager",
+      "purpose": "Database data management \u2014 schema migrations, SQL execution utilities.",
+      "keyFiles": [],
+      "publicInterfaces": [],
+      "dependencies": [],
+      "surveyDepth": "carried-forward",
+      "permissionRelevance": "none"
+    },
+    {
+      "path": "CMSSolution/Development/",
+      "name": "Development (Internal DevTools)",
+      "assemblyName": "Development",
+      "purpose": "Internal development tools and utilities.",
+      "keyFiles": [],
+      "publicInterfaces": [],
+      "dependencies": [],
+      "surveyDepth": "carried-forward",
+      "permissionRelevance": "none"
+    },
+    {
+      "path": "CMSSolution/EmailEngine/",
+      "name": "CMS.EmailEngine",
+      "assemblyName": "CMS.EmailEngine",
+      "purpose": "Email sending infrastructure \u2014 SMTP configuration, email queue, templates.",
+      "keyFiles": [],
+      "publicInterfaces": [],
+      "dependencies": [],
+      "surveyDepth": "carried-forward",
+      "permissionRelevance": "none"
+    },
+    {
+      "path": "CMSSolution/EmailMarketing/",
+      "name": "CMS.EmailMarketing",
+      "assemblyName": "CMS.EmailMarketing",
+      "purpose": "Email marketing \u2014 email campaigns, email channels, email content.",
+      "keyFiles": [],
+      "publicInterfaces": [],
+      "dependencies": [],
+      "surveyDepth": "carried-forward",
+      "permissionRelevance": "none"
+    },
+    {
+      "path": "CMSSolution/EventLog/",
+      "name": "CMS.EventLog",
+      "assemblyName": "CMS.EventLog",
+      "purpose": "Application event logging \u2014 EventLogInfo, structured logging to database.",
+      "keyFiles": [],
+      "publicInterfaces": [],
+      "dependencies": [],
+      "surveyDepth": "carried-forward",
+      "permissionRelevance": "none"
+    },
+    {
+      "path": "CMSSolution/FormEngine/",
+      "name": "CMS.FormEngine",
+      "assemblyName": "CMS.FormEngine",
+      "purpose": "Form engine \u2014 form definitions, field management, code generation.",
+      "keyFiles": [],
+      "publicInterfaces": [],
+      "dependencies": [],
+      "surveyDepth": "carried-forward",
+      "permissionRelevance": "none"
+    },
+    {
+      "path": "CMSSolution/Globalization/",
+      "name": "CMS.Globalization",
+      "assemblyName": "CMS.Globalization",
+      "purpose": "Globalization \u2014 cultures, time zones, country/state data.",
+      "keyFiles": [],
+      "publicInterfaces": [],
+      "dependencies": [],
+      "surveyDepth": "carried-forward",
+      "permissionRelevance": "none"
+    },
+    {
+      "path": "CMSSolution/Helpers/",
+      "name": "CMS.Helpers",
+      "assemblyName": "CMS.Helpers",
+      "purpose": "Utility helpers \u2014 caching, validation, text processing, URL utilities. Contains PermissionException.",
+      "keyFiles": [
+        "Context/PermissionException.cs"
+      ],
+      "publicInterfaces": [
+        "PermissionException \u2014 thrown when permission check fails"
+      ],
+      "dependencies": [],
+      "surveyDepth": "carried-forward",
+      "permissionRelevance": "minor \u2014 defines PermissionException"
+    },
+    {
+      "path": "CMSSolution/Integrations/",
+      "name": "Kentico.Xperience.Integrations",
+      "assemblyName": "Kentico.Xperience.Integrations",
+      "purpose": "Third-party integrations.",
+      "keyFiles": [],
+      "publicInterfaces": [],
+      "dependencies": [],
+      "surveyDepth": "carried-forward",
+      "permissionRelevance": "none"
+    },
+    {
+      "path": "CMSSolution/IO/",
+      "name": "CMS.IO",
+      "assemblyName": "CMS.IO",
+      "purpose": "File system abstraction \u2014 virtual file system, directory operations.",
+      "keyFiles": [
+        "Directories/CheckPermissionsSettings.cs"
+      ],
+      "publicInterfaces": [],
+      "dependencies": [],
+      "surveyDepth": "carried-forward",
+      "permissionRelevance": "minor \u2014 file-system permission checking (not page permissions)"
+    },
+    {
+      "path": "CMSSolution/LicenseProvider/",
+      "name": "CMS.LicenseProvider",
+      "assemblyName": "CMS.LicenseProvider",
+      "purpose": "License key validation and management.",
+      "keyFiles": [],
+      "publicInterfaces": [],
+      "dependencies": [],
+      "surveyDepth": "carried-forward",
+      "permissionRelevance": "none"
+    },
+    {
+      "path": "CMSSolution/MacroEngine/",
+      "name": "CMS.MacroEngine",
+      "assemblyName": "CMS.MacroEngine",
+      "purpose": "Macro expression engine \u2014 macro evaluation, security, resolvers.",
+      "keyFiles": [],
+      "publicInterfaces": [],
+      "dependencies": [],
+      "surveyDepth": "carried-forward",
+      "permissionRelevance": "none"
+    },
+    {
+      "path": "CMSSolution/MediaLibrary/",
+      "name": "CMS.MediaLibrary",
+      "assemblyName": "CMS.MediaLibrary",
+      "purpose": "Media library management \u2014 media files, folders. Contains permission migration service.",
+      "keyFiles": [
+        "Migration/IMediaLibraryPermissionMigrationService.cs"
+      ],
+      "publicInterfaces": [],
+      "dependencies": [],
+      "surveyDepth": "carried-forward",
+      "permissionRelevance": "minor \u2014 media library permission migration"
+    },
+    {
+      "path": "CMSSolution/MigrationUtility/",
+      "name": "CMS.MigrationUtility",
+      "assemblyName": "CMS.MigrationUtility",
+      "purpose": "Data migration from older Kentico versions.",
+      "keyFiles": [],
+      "publicInterfaces": [],
+      "dependencies": [],
+      "surveyDepth": "carried-forward",
+      "permissionRelevance": "none"
+    },
+    {
+      "path": "CMSSolution/Notifications/",
+      "name": "CMS.Notifications",
+      "assemblyName": "CMS.Notifications",
+      "purpose": "Notification infrastructure \u2014 in-app notifications, email notifications.",
+      "keyFiles": [],
+      "publicInterfaces": [],
+      "dependencies": [],
+      "surveyDepth": "carried-forward",
+      "permissionRelevance": "none"
+    },
+    {
+      "path": "CMSSolution/OnlineForms/",
+      "name": "CMS.OnlineForms",
+      "assemblyName": "CMS.OnlineForms",
+      "purpose": "Online forms (BizForms) \u2014 form definitions, submissions, data storage.",
+      "keyFiles": [],
+      "publicInterfaces": [],
+      "dependencies": [],
+      "surveyDepth": "carried-forward",
+      "permissionRelevance": "none"
+    },
+    {
+      "path": "CMSSolution/OnlineMarketing/",
+      "name": "CMS.OnlineMarketing",
+      "assemblyName": "CMS.OnlineMarketing",
+      "purpose": "Online marketing \u2014 A/B testing, personalization, web analytics.",
+      "keyFiles": [],
+      "publicInterfaces": [],
+      "dependencies": [],
+      "surveyDepth": "carried-forward",
+      "permissionRelevance": "none"
+    },
+    {
+      "path": "CMSSolution/Resources/",
+      "name": "Resources",
+      "assemblyName": null,
+      "purpose": "Shared resources \u2014 localization strings, embedded assets.",
+      "keyFiles": [],
+      "publicInterfaces": [],
+      "dependencies": [],
+      "surveyDepth": "carried-forward",
+      "permissionRelevance": "none"
+    },
+    {
+      "path": "CMSSolution/Routing.Web/",
+      "name": "CMS.Routing.Web",
+      "assemblyName": "CMS.Routing.Web",
+      "purpose": "Web routing infrastructure \u2014 URL pattern matching, route registration.",
+      "keyFiles": [],
+      "publicInterfaces": [],
+      "dependencies": [],
+      "surveyDepth": "carried-forward",
+      "permissionRelevance": "none"
+    },
+    {
+      "path": "CMSSolution/Samples/",
+      "name": "Samples",
+      "assemblyName": null,
+      "purpose": "Sample projects including APIExamples with PagePermissions sample code.",
+      "keyFiles": [
+        "APIExamples/Content management_HQqiCQ/PagePermissions.cs"
+      ],
+      "publicInterfaces": [],
+      "dependencies": [],
+      "surveyDepth": "carried-forward",
+      "permissionRelevance": "minor \u2014 contains PagePermissions API example code"
+    },
+    {
+      "path": "CMSSolution/Scheduler/",
+      "name": "CMS.Scheduler",
+      "assemblyName": "CMS.Scheduler",
+      "purpose": "Task scheduling \u2014 scheduled tasks, recurring jobs.",
+      "keyFiles": [],
+      "publicInterfaces": [],
+      "dependencies": [],
+      "surveyDepth": "carried-forward",
+      "permissionRelevance": "none"
+    },
+    {
+      "path": "CMSSolution/Tests/",
+      "name": "Tests",
+      "assemblyName": null,
+      "purpose": "Solution-level test projects.",
+      "keyFiles": [],
+      "publicInterfaces": [],
+      "dependencies": [],
+      "surveyDepth": "carried-forward",
+      "permissionRelevance": "none"
+    },
+    {
+      "path": "CMSSolution/Tools/",
+      "name": "Tools",
+      "assemblyName": null,
+      "purpose": "Development and build tools.",
+      "keyFiles": [],
+      "publicInterfaces": [],
+      "dependencies": [],
+      "surveyDepth": "carried-forward",
+      "permissionRelevance": "none"
+    },
+    {
+      "path": "CMSSolution/Utils/",
+      "name": "Utils",
+      "assemblyName": null,
+      "purpose": "Shared utilities.",
+      "keyFiles": [],
+      "publicInterfaces": [],
+      "dependencies": [],
+      "surveyDepth": "carried-forward",
+      "permissionRelevance": "none"
+    },
+    {
+      "path": "CMSSolution/WebFarmSync/",
+      "name": "CMS.WebFarmSync",
+      "assemblyName": "CMS.WebFarmSync",
+      "purpose": "Web farm synchronization \u2014 multi-server cache invalidation and task distribution.",
+      "keyFiles": [],
+      "publicInterfaces": [],
+      "dependencies": [],
+      "surveyDepth": "carried-forward",
+      "permissionRelevance": "none"
+    },
+    {
+      "path": "Build/",
+      "name": "Build",
+      "assemblyName": null,
+      "purpose": "Build infrastructure \u2014 API change tracking, API documentation generation, license verification, NuGet packaging, SQL data, and build utilities.",
+      "keyFiles": [],
+      "publicInterfaces": [],
+      "dependencies": [],
+      "surveyDepth": "carried-forward",
+      "permissionRelevance": "none"
+    },
+    {
+      "path": "KeyGen/",
+      "name": "CMS.KeyGen",
+      "assemblyName": "CMS.KeyGen",
+      "purpose": "License key generation tools \u2014 targets .NET Framework 4.8 (legacy).",
+      "keyFiles": [],
+      "publicInterfaces": [],
+      "dependencies": [],
+      "surveyDepth": "carried-forward",
+      "permissionRelevance": "none"
+    },
+    {
+      "path": "docs/",
+      "name": "Internal Documentation",
+      "assemblyName": null,
+      "purpose": "Internal technical documentation \u2014 best practices, feature docs, implementation guides, and UI testing framework guides.",
+      "keyFiles": [],
+      "publicInterfaces": [],
+      "dependencies": [],
+      "surveyDepth": "carried-forward",
+      "permissionRelevance": "none"
+    },
+    {
+      "path": "Pipelines/",
+      "name": "Pipelines",
+      "assemblyName": null,
+      "purpose": "Azure DevOps CI/CD pipeline definitions \u2014 23+ YAML files covering build, test, deploy, code coverage, security scanning, and release workflows.",
+      "keyFiles": [],
+      "publicInterfaces": [],
+      "dependencies": [],
+      "surveyDepth": "carried-forward",
+      "permissionRelevance": "none"
+    },
+    {
+      "path": "Preview/",
+      "name": "Preview",
+      "assemblyName": null,
+      "purpose": "Preview environment management \u2014 infrastructure-as-code for deploying preview/demo environments.",
+      "keyFiles": [],
+      "publicInterfaces": [],
+      "dependencies": [],
+      "surveyDepth": "carried-forward",
+      "permissionRelevance": "none"
+    },
+    {
+      "path": "Scripts/",
+      "name": "Scripts",
+      "assemblyName": null,
+      "purpose": "PowerShell scripts \u2014 content synchronization setup and execution.",
+      "keyFiles": [],
+      "publicInterfaces": [],
+      "dependencies": [],
+      "surveyDepth": "carried-forward",
+      "permissionRelevance": "none"
+    },
+    {
+      "path": "docker/",
+      "name": "Docker",
+      "assemblyName": null,
+      "purpose": "Docker configurations \u2014 containers for SQL Server, .NET builds, UI tests.",
+      "keyFiles": [],
+      "publicInterfaces": [],
+      "dependencies": [],
+      "surveyDepth": "carried-forward",
+      "permissionRelevance": "none"
+    },
+    {
+      "path": "infrastructure/",
+      "name": "Infrastructure",
+      "assemblyName": null,
+      "purpose": "Supporting infrastructure \u2014 API documentation hosting, performance test harness, source browser deployment.",
+      "keyFiles": [],
+      "publicInterfaces": [],
+      "dependencies": [],
+      "surveyDepth": "carried-forward",
+      "permissionRelevance": "none"
+    }
+  ],
+  "entryPoints": [
+    {
+      "path": "CMSSolution/Mvc/Projects/Kentico.Xperience.DancingGoat/Program.cs",
+      "type": "sample-application-entry"
+    },
+    {
+      "path": "CMSSolution/Mvc/Projects/Kentico.Xperience.Boilerplate/Program.cs",
+      "type": "boilerplate-application-entry"
+    },
+    {
+      "path": "CMSSolution/Mvc/Projects/Kentico.Xperience.Performance/Program.cs",
+      "type": "performance-test-entry"
+    }
+  ],
+  "componentRelationships": [
+    {
+      "from": "CMSSolution/Admin/Kentico.Xperience.Admin.Websites/",
+      "to": "CMSSolution/Websites/",
+      "type": "imports",
+      "detail": "Uses CMS.Websites ACL types and permission constants"
+    },
+    {
+      "from": "CMSSolution/Admin/Kentico.Xperience.Admin.Websites/",
+      "to": "CMSSolution/Admin/Kentico.Xperience.Admin.Base/",
+      "type": "imports",
+      "detail": "Uses admin framework, IWebPageAclPermissionEvaluator interface"
+    },
+    {
+      "from": "CMSSolution/Admin/Kentico.Xperience.Admin.Base/",
+      "to": "CMSSolution/Websites/",
+      "type": "imports",
+      "detail": "References WebPageAclPermissions constants"
+    },
+    {
+      "from": "CMSSolution/Admin/Kentico.Xperience.Admin.Base/",
+      "to": "CMSSolution/Membership/",
+      "type": "imports",
+      "detail": "Uses ApplicationPermissionEvaluator for UI permission checks"
+    },
+    {
+      "from": "CMSSolution/Admin/Kentico.Xperience.Admin.Base/",
+      "to": "CMSSolution/Workspaces/",
+      "type": "imports",
+      "detail": "Uses WorkspaceDataPermissionEvaluator for workspace permission checks"
+    },
+    {
+      "from": "CMSSolution/Websites/",
+      "to": "CMSSolution/Membership/",
+      "type": "imports",
+      "detail": "Uses membership for role-based ACL evaluation"
+    },
+    {
+      "from": "CMSSolution/Websites/",
+      "to": "CMSSolution/ContentEngine/",
+      "type": "imports",
+      "detail": "Uses content engine for content item management"
+    },
+    {
+      "from": "CMSSolution/ContentWorkflowEngine/",
+      "to": "CMSSolution/Websites/",
+      "type": "imports",
+      "detail": "WebsiteContentTypePermissionEvaluator checks page permissions for workflow notifications"
+    },
+    {
+      "from": "CMSSolution/ContentSynchronization/",
+      "to": "CMSSolution/Websites/",
+      "type": "imports",
+      "detail": "WebPageItemNodePermissionEvaluator checks sync permissions for web pages"
+    },
+    {
+      "from": "CMSSolution/ContentEngine/",
+      "to": "CMSSolution/Workspaces/",
+      "type": "imports",
+      "detail": "Uses workspace permissions for content access"
+    },
+    {
+      "from": "CMSSolution/ContentEngine/",
+      "to": "CMSSolution/Membership/",
+      "type": "imports",
+      "detail": "Uses membership for permission evaluation"
+    },
+    {
+      "from": "CMSSolution/Workspaces/",
+      "to": "CMSSolution/Membership/",
+      "type": "imports",
+      "detail": "Uses membership system for role-based workspace permission checks"
+    },
+    {
+      "from": "CMSSolution/Mvc/Kentico.Content.Web.Mvc/",
+      "to": "CMSSolution/Websites/",
+      "type": "imports",
+      "detail": "PagePermissionsChecker uses website permission infrastructure"
+    }
+  ],
+  "permissionArchitecture": {
+    "summary": "Three-layer permission model: (1) Application-level permissions via SystemPermissions + ApplicationPermissionEvaluator (View, Update, Create, Delete), (2) Workspace-level permissions via WorkspaceDataPermissions + WorkspaceDataPermissionEvaluator (View, Create, Update, Delete, Synchronize), (3) Page-level ACL permissions via WebPageAclPermissions + WebPageAclPermissionEvaluator (Display, Read, Create, Update, Delete, Synchronize). Administrators bypass all checks. Channel admins bypass ACL checks for their channel.",
+    "permissionConstants": {
+      "SystemPermissions": [
+        "View",
+        "Update",
+        "Create",
+        "Delete"
+      ],
+      "WebPageAclPermissions": [
+        "Display",
+        "Read",
+        "Create",
+        "Update",
+        "Delete",
+        "Synchronize"
+      ],
+      "WorkspaceDataPermissions": [
+        "View",
+        "Create",
+        "Update",
+        "Delete",
+        "Synchronize"
+      ],
+      "WebsiteChannelUIPermissions": [
+        "ManagePermissions"
+      ]
+    },
+    "evaluatorChain": [
+      "IApplicationPermissionEvaluator \u2014 application/module-level (CMS.Membership)",
+      "IWorkspaceDataPermissionEvaluator \u2014 workspace-scoped (CMS.Workspaces)",
+      "IWebPageAclPermissionEvaluator \u2014 page-level ACL (Admin.Base interface, Admin.Websites implementation)",
+      "IWebPageAclRolePermissionEvaluator \u2014 role-specific ACL evaluation (CMS.Websites)",
+      "IUIPermissionEvaluator \u2014 admin UI page permissions (Admin.Base)",
+      "IPagePermissionsChecker \u2014 live-site page permissions (Kentico.Content.Web.Mvc)"
+    ],
+    "keyBehaviors": [
+      "Administrators (RoleName.ADMINISTRATOR) bypass all permission checks",
+      "Channel admins bypass ACL checks for their channel",
+      "WebPageAclPermissions.DISPLAY is implicitly assigned to all roles",
+      "READ and DISPLAY are individually checked (IndividuallyCheckedPermissions)",
+      "Non-READ/DISPLAY permissions also require READ permission check",
+      "ACL permissions can be evaluated recursively on child pages (evaluateChildPages flag)",
+      "Permission results are cached per-request in WebPageAclPermissionEvaluator",
+      "ContentTab checks WebPageAclPermissions.UPDATE and sets FormEditMode.ReadOnly if denied",
+      "WebPageBase checks WebPageAclPermissions.READ as base page requirement"
+    ]
+  },
+  "changes": {
+    "modulesAdded": [],
+    "modulesRemoved": [],
+    "modulesUpdated": [
+      "CMSSolution/Websites/",
+      "CMSSolution/Admin/",
+      "CMSSolution/Membership/",
+      "CMSSolution/Workspaces/",
+      "CMSSolution/ContentEngine/",
+      "CMSSolution/ContentWorkflowEngine/",
+      "CMSSolution/ContentSynchronization/",
+      "CMSSolution/Core/",
+      "CMSSolution/Base/",
+      "CMSSolution/Modules/",
+      "CMSSolution/Headless/",
+      "CMSSolution/Mvc/"
+    ],
+    "unchanged": 43
+  }
+}

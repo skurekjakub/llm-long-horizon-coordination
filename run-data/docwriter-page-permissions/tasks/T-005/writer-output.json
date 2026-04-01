@@ -1,0 +1,30 @@
+{
+  "agent": "docwriter-content-writer",
+  "taskId": "T-005",
+  "attempt": 2,
+  "action": "update-crossrefs",
+  "targetFile": "src/_documentation/_documentation/business-users/website-content/delete-pages.md",
+  "sectionsModified": [
+    "Deleting a page with child pages"
+  ],
+  "sectionsAdded": [],
+  "sectionsRemoved": [],
+  "docFactsUsed": [
+    "permissionSummary.deletePage"
+  ],
+  "invariantsApplied": [
+    "INV-style-001",
+    "INV-style-132",
+    "INV-jekyll-001",
+    "INV-persona-013"
+  ],
+  "patternsUsed": [
+    "PAT-009"
+  ],
+  "researchRecommendationsCited": [
+    "REC-005"
+  ],
+  "recommendationsSkipped": [],
+  "changesSummary": "Attempt 2 — fixed INV-style-132 rejection from attempt 1. Changed 'you must have' to 'you need to have' on line 71 in the 'Deleting a page with child pages' section. Also incorporated persona-reviewer suggestion: replaced technical 'does not inherit permissions from its parent' with business-user-friendly 'uses its own permission settings instead of the parent page's'. No other changes — accuracy and persona reviewers approved all other content in attempt 1.",
+  "timestamp": "2026-03-18T18:39:23Z"
+}

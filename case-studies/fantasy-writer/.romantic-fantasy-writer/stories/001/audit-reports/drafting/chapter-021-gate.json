@@ -1,0 +1,480 @@
+{
+  "gateId": "GATE-drafting-ch021",
+  "agent": "drafting-auditor",
+  "phase": "drafting",
+  "chapter": 21,
+  "title": "What the Stone Remembers",
+  "pov": "CHAR-001 (Kaelith Maren)",
+  "storyId": "001",
+  "timestamp": "2025-07-18T04:15:00Z",
+  "verdict": "PASSED",
+  "score": 8.5,
+  "attempt": 1,
+  "gateDecision": "Chapter 21 is CLEARED for the revision pipeline. Three minor findings and two warnings — well below the failure threshold of 3+ warnings or any critical finding. The chapter delivers the fantasy climax with exceptional voice consistency, complete dual-arc fusion, and morally complex antagonist handling. Continuity errors documented by the continuity-integrator are tracked for revision but do not indicate structural problems. One cross-manuscript concern (T10 Sanderson seeding) requires revision-pipeline attention in earlier chapters, not in ch21 itself.",
+  "summaryAssessment": "Chapter 21 ('What the Stone Remembers') is the fantasy climax — the penultimate chapter — and it delivers on every major story promise. The dual-arc fusion is the strongest in the manuscript: the fantasy resolution (seal stabilization) physically requires the romance achievement (freely chosen partnership). Kaelith's voice is impeccable at 113 architectural metaphors, zero named emotions, and 61% short sentences. All 16 craft tools are applied. Nine foreshadowing payoffs land and six mystery boxes close. Thalen is rendered as a morally complex antagonist whose zealotry is handled without melodrama, and the Calwrath parallel enriches rather than simplifies the confrontation. The prose is publication-quality with specific polish needed: 'Through the bond' repetition (8 instances), perceptive verb 'felt' overuse (14 instances), and a negation-definition pattern ('Not [X]') used 13 times. These are revision-phase refinements, not structural failures. The chapter proceeds with remediation notes.",
+
+  "automaticFailChecklist": {
+    "outlinePOVMatch": {
+      "result": "PASS",
+      "evidence": "Outline specifies CHAR-001 (Kaelith Maren). Draft header and all narration confirm Kaelith POV. Voice identifiable by sentence 2 (tactile/proprioceptive channel + architectural assessment)."
+    },
+    "sceneGoalsPresent": {
+      "result": "PASS",
+      "evidence": "SCN-59 goal (arrive at Serath Dún, navigate to Quietus via kinetic memory): delivered in lines 12-61. SCN-60 goal (stabilize god-seal under Thalen's attack): delivered in lines 63-142. SCN-61 goal (Thalen exposed with witnesses): delivered in lines 144-218. All three scene goals fully realized."
+    },
+    "clicheCount": {
+      "result": "PASS",
+      "count": 1,
+      "threshold": 2,
+      "evidence": "One borderline cliché detected: 'like a key turning in a lock' (L28). 'Settled in her bones' (L14) is a common phrase but context-specific (kinetic memory activation, bones literally involved). No stock fantasy phrases ('eyes like pools,' 'power coursing,' 'darkness consumed'). Zero hits on 18 scanned cliché patterns (orbs, lithe form, molten gold, porcelain skin, etc.)."
+    },
+    "halfPageDeadSpots": {
+      "result": "PASS",
+      "evidence": "Micro-tension continuous across all 218 lines. The decompression passage (L204-218, ~350 words) maintains tension through permanent consequences (thinner Pallor, new age beginning), the bond's emotional signal, and thematic imagery (true sky, real stars). This is appropriate landing for a 10/10 tension chapter, not a dead spot."
+    },
+    "povIdentification": {
+      "result": "PASS",
+      "evidence": "Sentence 1: 'The stone knew her.' (percussive, stone imagery). Sentence 2: tactile/proprioceptive chain (boots → feet → bones) with architectural vocabulary (threshold). Sentence 3: granite, construction technique assessment. Sentence 4: 'She read the entrance the way she read any fortification' — definitive Kaelith identifier. POV identifiable by sentence 2, confirmed with certainty by sentence 4."
+    },
+    "unestablishedMagic": {
+      "result": "PASS — with cross-manuscript note",
+      "evidence": "All magic used in the resolution was previously established: kinetic memory (ch4-5, MAG-006), Warden lineage capacity (ch4), Pallor as reality-fixing membrane (ch1-2), Ythara as unmade potential (ch2), seal as barrier between fixed/unfixed reality (ch5+). The specific synthesis — certainty as the reinforcement mechanism — is first fully articulated in SCN-60 (L88-96). The craft-enforcer flags this as a T10 moderate concern. However, the mechanism is logically derivable from established components: if the Pallor fixes reality through permanence, and the seal separates fixed reality from Ythara's mutability, then the Warden's function is to affirm that permanence. Kaelith's character trait (bone-deep certainty about structural integrity) becoming the magical mechanism is thematically elegant and narratively consistent. Per Sanderson's First Law, this is a gray area — the reader CAN infer it, but explicit seeding in earlier chapters would strengthen the payoff. Tracked as cross-manuscript revision note, NOT a deus ex machina."
+    },
+    "unknownInformationAccess": {
+      "result": "PASS",
+      "evidence": "All character knowledge states verified against information-asymmetry-map.json: Kaelith knows Thalen by name (learned ch12-15), knows Warden capacity (ch4-5), knows kinetic memory (ch4-5), knows Thenndal connection (ch4-5). Iryse's manipulation revelation is implicit (informed as part of evidence assembly). Ashborne coordination established in ch19. Defected Architect reference consistent with ch19 intelligence sharing. No character acts on information they have not received."
+    },
+    "bothArcsPresent": {
+      "result": "PASS",
+      "evidence": "Fantasy arc: dominant — Quietus reached, seal stabilized, Thalen exposed, Ythara contained, Pallor permanently thinned. Romance arc: strong — freely chosen partnership enables the seal stabilization (L78: trust decision), Lirien's defense proves the relationship survives without contractual compulsion (L106: 'freely chosen decision'), bond functions under maximum pressure (L208: 'two people who had chosen each other when the world was ending')."
+    },
+    "majorEmotionalTelling": {
+      "result": "PASS",
+      "evidence": "Zero named emotions across 4,025 words (confirmed by voice report and independent scan). All emotional beats conveyed through: physical sensation (hands shaking L118, knees hitting stone L134, sternum resonance L114), tactical framing (trust as split-attention decision L78), architectural metaphor (tremor absorbed by engineered wall L186, buttress bracing L140), and compressed dialogue ('Go' L74 → 'Two words. Everything.' L76). The chapter's most emotionally charged moment — Kaelith's decision to trust Lirien — is framed as an operational assessment, not a feeling."
+    }
+  },
+
+  "criticalFindings": [],
+
+  "majorFindings": [],
+
+  "minorFindings": [
+    {
+      "id": "MF-021-001",
+      "severity": "minor",
+      "category": "phrase-repetition",
+      "invariant": "INV-017 (prose quality floor)",
+      "description": "'Through the bond' appears 8 times across 4,025 words — roughly once every 500 words. Seven of these 8 instances follow the identical syntactic pattern: 'Through the bond, [subject] felt/registered [content].' While each instance conveys different content (Lirien's precision, exhaustion, relief, combat), the repeated transition phrase becomes a verbal tic that risks desensitizing the reader to the bond's significance.",
+      "evidence": [
+        "L24: 'Through the bond — clean, sharp, the signal-without-static quality...'",
+        "L38: 'Through the bond, Kaelith felt the fae's response'",
+        "L72: 'Through the bond, she felt Lirien's answer'",
+        "L104: 'Through the bond, she felt Lirien engage.'",
+        "L112: 'Through the bond, Kaelith felt each interception'",
+        "L124: 'Through the bond, Lirien's effort registered'",
+        "L140: 'Through the bond, Lirien's presence settled over her'",
+        "L206: 'Through the bond, Kaelith felt everything she needed'"
+      ],
+      "recommendation": "During revision, vary the transition mechanism. Options: (1) drop the phrase entirely where context makes the bond implicit (L104 could simply be 'She felt Lirien engage' since the bond is already established), (2) replace with physical indicators (heat in the sternum, pulse-shift, a frequency change), (3) vary the syntax ('The bond carried,' 'In the shared signal,' or no tag at all — just render the felt content). Target: reduce to 3-4 instances maximum, reserving the full phrase for the most significant beats (L24 establishing the post-dissolution quality, L140 buttress metaphor, L206 chapter close)."
+    },
+    {
+      "id": "MF-021-002",
+      "severity": "minor",
+      "category": "perceptive-verb-overuse",
+      "invariant": "INV-017 (prose quality floor)",
+      "description": "The perceptive verb 'felt' appears 14 times across the chapter (9 as 'Kaelith felt,' 5 as 'she felt'), roughly once every 287 words. In a chapter centered on tactile/proprioceptive experience, some 'felt' usage is structurally appropriate — Kaelith's sensory signature IS feeling/touching. However, at this density, 'felt' becomes a filter word that distances the reader from the sensation rather than immersing them in it. The pattern is most concentrated in SCN-60 (lines 86-142), where 8 instances appear in ~1,600 words — one every 200 words.",
+      "evidence": [
+        "L14: 'Kaelith felt it the moment her boots met the threshold'",
+        "L38: 'Kaelith felt the fae's response'",
+        "L66: 'Kaelith felt it through her feet'",
+        "L72: 'she felt Lirien's answer before the words came'",
+        "L86: context — 'she felt the entirety of it'",
+        "L102: 'She felt it as distortion in the seal-work'",
+        "L104: 'she felt Lirien engage'",
+        "L106: 'Kaelith felt her fighting'",
+        "L112: 'Kaelith felt each interception'",
+        "L118: 'Kaelith felt herself emptying'",
+        "L124: 'Kaelith felt the cost'",
+        "L140: overlap with 'Through the bond' — already counted",
+        "L206: overlap with 'Through the bond' — already counted"
+      ],
+      "recommendation": "During revision, replace 'felt' with direct rendering of the sensation in at least 5-6 instances. Instead of 'Kaelith felt it through her feet' (L66), try 'The vibration climbed through her boots — stone under stress, the structural tremor that preceded collapse.' Instead of 'she felt Lirien engage' (L104), try 'Lirien engaged.' or 'The bond flared — Lirien, engaging.' Trust the reader to understand Kaelith's perceptive channel without the mediating verb."
+    },
+    {
+      "id": "MF-021-003",
+      "severity": "minor",
+      "category": "expository-lean",
+      "invariant": "T5 (Tone Contract — forbidden 'expository/pedagogical'), INV-073",
+      "description": "Lines 88-96 contain a 5-sentence passage explaining the Warden seal-reinforcement mechanism ('The Warden's function was not to fight the god but to affirm the wall — to be the living declaration that reality held'). While anchored in Kaelith's experiential understanding ('a clarity that came from the bones rather than the mind'), the passage's density of conceptual explanation briefly interrupts the climactic action rhythm and approaches the T5 forbidden 'expository/pedagogical' tone.",
+      "evidence": [
+        "L88-89: 'The seal was not stone. Not truly. It was architecture at the boundary between what existed and what might — a wall built from certainty itself, each element a declaration that the world was *this* and not *that*.'",
+        "L90: 'Ythara pressed against the other side — not malice but potential, not hatred but becoming'",
+        "L92-93: 'Not magic in the conventional sense. Not power against power. Certainty. The Warden's function was not to fight the god but to affirm the wall — to be the living declaration that reality held'",
+        "L94-95: 'Her military discipline — twenty years of holding the line... Her architectural instinct — the bone-deep knowledge of what was load-bearing'"
+      ],
+      "recommendation": "During revision, compress by 1-2 sentences. Lines 92-93 (the explicit mechanism statement) could be collapsed into the action of line 94 ('She poured herself into the seal'). Trust the reader to infer 'certainty as reinforcement' from Kaelith channeling her architectural conviction into the seal. The concept is more powerful when dramatized (L94-95) than when articulated (L92-93)."
+    }
+  ],
+
+  "warnings": [
+    {
+      "id": "WARN-021-001",
+      "severity": "warning",
+      "category": "thematic-summary",
+      "invariant": "INV-081 (Kill Your Darlings), INV-005 (Show Don't Tell)",
+      "description": "The italicized internal thought '*We held. The world held. The choice was ours.*' (L210) approaches thematic summary. The chapter has already demonstrated all three claims through action: (1) 'We held' — the seal work + partnership in SCN-60, (2) 'The world held' — the seal stabilization in L130-132, (3) 'The choice was ours' — the freely chosen partnership theme throughout. The thought risks redundancy — articulating what the prose has already shown.",
+      "analysis": "Borderline. The thought is compressed (9 words), delivered in Kaelith's percussive register, and functions as an internal summary that mirrors a soldier's after-action assessment ('mission accomplished'). It also serves as an emotional beat — Kaelith permitting herself a moment of earned satisfaction. The risk is that it NAMES the theme rather than embodying it. Compare to the preceding line (L208-209: 'the steady, uncompelled pulse of two people who had chosen each other when the world was ending'), which ALSO summarizes the theme but through the bond's physical metaphor.",
+      "recommendation": "Consider cutting. The chapter's final paragraph (L212-218: 'The stone beneath her feet hummed... the stars were real') is a stronger, more Kaelith-appropriate close — sensory, architectural, imagistic. The italicized thought sits between two excellent passages and may be the weakest of the three. If retained, ensure revision doesn't add ANY more thematic summary in the closing section."
+    },
+    {
+      "id": "WARN-021-002",
+      "severity": "warning",
+      "category": "craft-seeding",
+      "invariant": "T10 (Sanderson's First Law), cross-manuscript",
+      "description": "The certainty-as-reinforcement mechanism — the core magical resolution of the fantasy climax — is first fully articulated at the point of resolution (L88-96). Per Sanderson's First Law, magic used to resolve the main conflict should be understood by the reader beforehand. The mechanism is logically derivable from prior establishment (Pallor fixes reality, seal contains god of potential, Wardens maintain the seal), but no prior chapter explicitly connects Kaelith's character trait (certainty about structural integrity) to the seal's operational mechanism (reality-affirmation through conviction).",
+      "analysis": "This is a cross-manuscript concern, not a ch21-specific failure. Ch21's articulation of the mechanism is well-executed and thematically elegant — Kaelith's character trait becoming the magical solution is peak craft. The issue is insufficient upstream seeding. The craft-enforcer recommends seeding in ch17-18 (seal pull as certainty-test) or ch13-14 (restored magic responding to conviction). Even a single sentence would bring this into full Sanderson compliance.",
+      "recommendation": "Track for revision pipeline. Do NOT modify ch21 — the articulation here is strong. Instead, seed in 1-2 earlier chapters: a moment where Kaelith's conviction physically interacts with the seal's pull, or where someone describes the Warden function as 'declaring reality holds.' This converts the ch21 moment from 'revelation at the point of use' to 'payoff of established mechanic.'"
+    }
+  ],
+
+  "observations": [
+    {
+      "id": "OBS-021-001",
+      "category": "voice-excellence",
+      "location": "L12-14 (opening)",
+      "description": "Opening voice test passed decisively. 'The stone knew her.' → tactile/proprioceptive chain (boots, feet, bones) → architectural assessment (raw granite, fortification, defensive positions, sight lines). Kaelith identifiable by sentence 2, confirmed with absolute certainty by sentence 4. This is the strongest chapter opening in the manuscript for POV identification.",
+      "invariant": "INV-003, INV-034 (T17)"
+    },
+    {
+      "id": "OBS-021-002",
+      "category": "voice-excellence",
+      "location": "L58-60 (tactical inventory)",
+      "description": "Quintessential Kaelith tactical inventory: 'Three exits. The corridor behind them, a passage in the far wall, a fissure in the ceiling that might lead to the surface. The seal was twelve meters from her current position. Thalen was between them and it.' Clipped noun phrases, specific distances, threat-resource assessment. Peak voice fingerprint compliance.",
+      "invariant": "INV-003 (T17)"
+    },
+    {
+      "id": "OBS-021-003",
+      "category": "voice-excellence",
+      "location": "L150",
+      "description": "'Kaelith catalogued: one enemy, neutralized. One partner, wounded but functional. One seal, holding.' Three-item tactical inventory in staccato rhythm. Military briefing cadence rendered as internal narration. This passage could serve as an exemplar for the voice fingerprint.",
+      "invariant": "INV-003 (T17)"
+    },
+    {
+      "id": "OBS-021-004",
+      "category": "show-dont-tell",
+      "location": "Entire chapter",
+      "description": "Zero named emotions across 4,025 words — independently confirmed via text scan (no hits for 'she felt sad/happy/angry/afraid/scared/terrified/grateful/proud/relieved/anxious' or similar formulations). Every emotional beat is conveyed through physical sensation, tactical framing, or architectural metaphor. The chapter's most emotionally charged moment (Kaelith's decision to trust Lirien, L78) is framed as a split-attention tactical problem. Exemplary INV-005 compliance.",
+      "invariant": "INV-005"
+    },
+    {
+      "id": "OBS-021-005",
+      "category": "dual-arc-fusion",
+      "location": "SCN-60 (L63-142)",
+      "description": "The dual-arc interleave reaches its zenith: the fantasy resolution (seal stabilization) physically requires the romance achievement (freely chosen trust). Kaelith cannot stabilize the seal while defending against Thalen — she must trust Lirien completely. The crisis at L78 is simultaneously a fantasy decision (commit to seal vs. split attention) and a romance proof (trust the partner without contractual guarantee). This is the finest dual-arc fusion in the manuscript.",
+      "invariant": "INV-001 (T12)"
+    },
+    {
+      "id": "OBS-021-006",
+      "category": "tone-contract",
+      "location": "L130-132",
+      "description": "'The process was not dramatic. No explosion of light, no thunderclap of divine resolution. Stone closed against stone, quietly, with the patience of mortar setting.' This passage explicitly rejects the T5 forbidden 'epic-triumphant' tone at the moment of maximum temptation — the fantasy climax resolution. Victory is rendered as engineering patience, not magical spectacle. Exemplary tone contract compliance.",
+      "invariant": "T5"
+    },
+    {
+      "id": "OBS-021-007",
+      "category": "antagonist-complexity",
+      "location": "L170-182",
+      "description": "Thalen Reyvas is rendered with full moral complexity. His expression at exposure is 'conviction. Clear, devastating, unbroken.' (L170). His justification ('I gave this world a chance to *become*') carries genuine belief. Kaelith recognizes 'the architecture of his certainty because she had carried its mirror at Calwrath' (L180-182) — the protagonist-antagonist parallel enriches rather than simplifies. Thalen is neither sympathized with nor demonized. This is the T5 tone contract at its finest.",
+      "invariant": "T5, T25 (TP-2)"
+    },
+    {
+      "id": "OBS-021-008",
+      "category": "scene-value-shifts",
+      "location": "All three scenes",
+      "description": "All scene value shifts are clear, significant, and properly escalated. SCN-59: purposeful approach → enemy present, clock running. SCN-60: world failing → world holds because they held. SCN-61: sabotage exposed → institutional complicity visible, reckoning begun. Each shift is earned through action, not announced through narration.",
+      "invariant": "Baseline craft"
+    },
+    {
+      "id": "OBS-021-009",
+      "category": "foreshadowing-payoff",
+      "location": "Multiple",
+      "description": "Nine foreshadowing entries pay off in this chapter: FS-001 (Oathbrand maintenance → suppression of Warden lineage, L162), FS-002 (Pallor failure → forty years of poisoning, L162), FS-005 (kinetic memory → guides to Quietus, L28), FS-006 (Warden inheritance → confirmed through Thenndal, L28-31), FS-009 (Ythara → contained but not destroyed, L130), FS-010 (Conclave saboteur → Thalen exposed, L166), FS-016 (Iryse → recognizes manipulation, L190), FS-018 (Thenndal → last Warden who planted kinetic memory, L30-31), FS-021 (god-seal confrontation → mechanism proven, L84-98). All payoffs feel earned rather than convenient.",
+      "invariant": "T15"
+    },
+    {
+      "id": "OBS-021-010",
+      "category": "mystery-box-closure",
+      "location": "Multiple",
+      "description": "Six mystery boxes close: MB-001 (Oathbrand kept burning to suppress last Warden), MB-002 (Thalen poisoned Pallor via corrupted Dimming rites), MB-003 (Thenndal walked Kaelith blindfolded as Warden transmission), MB-004 (Ythara is incompatible not evil — 'not malice but potential'), MB-009 (Quietus is a seal built from certainty), MB-010 (Thenndal was last official Warden). Each closure is woven into the action rather than delivered as exposition.",
+      "invariant": "T23"
+    },
+    {
+      "id": "OBS-021-011",
+      "category": "motif-compliance",
+      "location": "Multiple",
+      "description": "Four symbolic motifs deployed: MOT-001 (Pallor as membrane — L34 pulsing, L136 thinning, L216 true sky showing through), MOT-003 (water — L112 'water that finds every crack' properly attributed as cross-domain observation), MOT-004 (Quietus as body-knowledge — L28 kinetic memory, L84 palms on stone), MOT-005 (Ythara as raw potential — L88 'becoming without framework'). Motif density is appropriate for a climax chapter.",
+      "invariant": "T16"
+    },
+    {
+      "id": "OBS-021-012",
+      "category": "cross-domain-metaphor",
+      "location": "L112-113",
+      "description": "The one deliberate water-domain metaphor ('water that finds every crack') is handled with textbook precision: Kaelith notices the thought arriving 'without permission,' attributes it to the Seep's nomenclature, and immediately translates back to her own domain ('The infiltrator choosing to be a wall'). This is voice awareness, not voice bleed. The voice report correctly identifies this as a strength rather than a concern.",
+      "invariant": "T17"
+    },
+    {
+      "id": "OBS-021-013",
+      "category": "emotional-throughline",
+      "location": "Chapter boundaries",
+      "description": "Emotional progression is clear and consistent with emotional-throughline.json. Start: fierce resolve (L12-14, purposeful approach). SCN-59 end: cold urgency (L58-61, clock running). SCN-60 middle: transcendent effort (L94-98, pouring conviction). SCN-60 end: exhausted relief (L134-138, knees on stone). Chapter end: earned satisfaction (L206-218, seal humming, stars real). Progression from ch20 (absolute trust) to ch21 (fierce resolve → earned satisfaction) is natural and earned.",
+      "invariant": "T20"
+    },
+    {
+      "id": "OBS-021-014",
+      "category": "vulnerability-ladder",
+      "location": "L78-84",
+      "description": "Ultimate vulnerability rung achieved: Kaelith renders herself completely defenseless during seal work, trusting Lirien with her life. The decision is framed as a tactical choice (L78: 'split her attention... or trust Lirien completely'), making the vulnerability simultaneously a military decision and a romantic proof. This is the highest rung possible — trusting someone with your life while the world is ending. Earned through ch20 heart-stopping.",
+      "invariant": "T21"
+    },
+    {
+      "id": "OBS-021-015",
+      "category": "thematic-argument",
+      "location": "L178-182, L200",
+      "description": "All three thematic pillars resolved: TP-1 (trust as load-bearing architecture — L78-84, trust proven under maximum structural pressure), TP-2 (right choice compounds — L160, every ally built and evidence gathered converges), TP-3 (chosen vs. only — L106 'freely chosen decision,' L208 'two people who had chosen each other when the world was ending and the cage was open'). Thematic resolution achieved through action and dialogue, not narration.",
+      "invariant": "T25"
+    },
+    {
+      "id": "OBS-021-016",
+      "category": "information-asymmetry",
+      "location": "L166-196",
+      "description": "Information enters shared record in SCN-61. Thalen's sabotage moves from intelligence-known (Kaelith, Lirien, Ashborne) to publicly witnessed (veterans, Iryse, Tessen, unnamed administrator). Iryse's dramatic irony (unknowing sabotage vector per FACT-011) resolves on-screen through testimony (L190). Information asymmetry between characters and institutions closes. T18 compliance confirmed.",
+      "invariant": "T18"
+    },
+    {
+      "id": "OBS-021-017",
+      "category": "negation-pattern",
+      "location": "Multiple (13 instances)",
+      "description": "Definition-by-negation ('Not [X]. Not [Y]. [Z].') appears 13 times across the chapter: L18 'Not mechanically,' L52 'Not surprise. Not fear,' L70 'Not a request,' L88-89 'not stone. Not truly,' L92 'Not magic... Not power,' L96 'Not because,' L136 (implicit), L152 'Not hostile,' L170 'Not the crumbling... Not the desperate,' L194 'Not fear. Not regret,' L196 'Not Conclave internal review,' L200 'Not because it's perfect.' This is a deliberate rhetorical strategy — Kaelith defines by elimination, consistent with tactical assessment (ruling out what something ISN'T). However, at 13 instances, the pattern risks becoming mechanical. Note: this is an observation, not a finding, because the pattern is voice-consistent and each instance serves narrative function. Revision should evaluate whether 2-3 could be replaced with direct assertion.",
+      "invariant": "INV-017"
+    },
+    {
+      "id": "OBS-021-018",
+      "category": "stakes-escalation",
+      "location": "Entire chapter",
+      "description": "All three stake levels active simultaneously throughout: personal (Kaelith's Warden purpose, physical cost), relational (Lirien wounded defending Kaelith, partnership proven), existential (seal failure = reality dissolution). Stakes properly peak in SCN-60 (10-minute window, complete vulnerability, world's fate in Kaelith's hands) and then shift to institutional-lasting in SCN-61 (system accountability). T6 fully compliant.",
+      "invariant": "T6"
+    },
+    {
+      "id": "OBS-021-019",
+      "category": "black-moment-payoff",
+      "location": "L78, L106",
+      "description": "Chapter 21 is the payoff for the ch16 Black Moment. The trust destroyed ('Every feeling was built on a lie') is proven rebuilt under maximum pressure. L78 explicitly links to ch20: 'the woman who had stopped her heart and restarted it three days ago would keep it beating now.' L106 answers the Black Moment's core question with 'not the binding's compulsion... but the freely chosen decision.' T7 fully resolved.",
+      "invariant": "T7"
+    },
+    {
+      "id": "OBS-021-020",
+      "category": "subtext-in-dialogue",
+      "location": "L172-178",
+      "description": "Thalen-Kaelith exchange operates on multiple levels. Surface: conspiracy exposure. Subtext: both characters made terrible choices from conviction — the difference is accountability. 'Because you did not let them choose' (L178) addresses Thalen's specific crime while also commenting on Kaelith's own Calwrath history and the binding that constrained Lirien. T24 compliant — the dialogue says less than it means.",
+      "invariant": "T24"
+    }
+  ],
+
+  "sceneBySceneBreakdown": {
+    "SCN-59": {
+      "title": "Arrival at Serath Dún — Navigate to Quietus",
+      "lineRange": "12-61",
+      "wordCount": "~1,350",
+      "outlineCompliance": {
+        "goal": "DELIVERED — arrival, kinetic path activation, navigation through warped architecture, discovery of Thalen at seal",
+        "conflict": "DELIVERED — Ythara's influence warps architecture (environmental), time pressure (seal failing), Thalen's presence (antagonist)",
+        "valueShift": "DELIVERED — 'approaching with purpose' → 'enemy is here, clock is running'",
+        "fiveCommandments": "All five present: inciting (Serath Dún awakens), complication (warped geometry), crisis (implied push-through-quickly), climax (bond-enabled navigation), resolution (Thalen discovered)",
+        "missingElements": "None"
+      },
+      "proseQuality": "Excellent. Opening architectural assessment is peak Kaelith. Warped geometry description (L32-34) is lyrical but justified by Ythara's literal influence on reality. Tactical inventory at L58-60 is masterful. One borderline cliché: 'like a key turning in a lock' (L28).",
+      "tension": "Continuous. Tension escalates from reverent recognition (stone knows her) through environmental danger (warped corridors) to direct threat (Thalen at the seal). No dead spots. The single-word paragraph 'Recognition.' (L54) is a tension spike executed with precision.",
+      "voiceCompliance": "Exceptional. 61% short sentences per voice report. Architectural metaphors dominate (gate, fortification, sight lines, defensive positions, threshold). Tactical assessment priority maintained even in the presence of the supernatural. Command voice appropriately deployed ('Stay close' L37)."
+    },
+    "SCN-60": {
+      "title": "Seal Stabilization Under Thalen's Attack",
+      "lineRange": "63-142",
+      "wordCount": "~1,700",
+      "outlineCompliance": {
+        "goal": "DELIVERED — seal stabilized through Warden inheritance + Lirien's defense, Thalen defeated",
+        "conflict": "DELIVERED — Thalen's direct magical assault, seal's deep corruption, Kaelith's physical cost (emptying reserves, frozen fingers), Lirien's wound",
+        "valueShift": "DELIVERED — 'world failing, seal cracking' → 'world holds because they held — together, freely chosen'",
+        "fiveCommandments": "All five present: inciting (seal engagement L84), complication (Thalen strikes L100-108), crisis (split attention or trust completely L78), climax (total commitment L82-84), resolution (seal stabilizes L126-132, Kaelith collapses L134)",
+        "missingElements": "None"
+      },
+      "proseQuality": "Strong with one noted concern. The seal-work passage (L86-98) is the chapter's high point — Kaelith's character traits becoming the magical mechanism. The anti-climax statement (L130: 'The process was not dramatic') is excellent tone control. Minor concern: lines 88-96 lean expository (see MF-021-003). The 'felt' verb clusters most heavily here (8 instances in ~1,600 words).",
+      "tension": "Relentless. The 10-minute estimate (L68) establishes a ticking clock that never releases. Thalen's strikes during seal-work create split-screen intensity. Kaelith's physical deterioration (hands shaking, vision dimming, frozen fingers burning) maintains urgency through the resolution. The quiet patience of the seal closing (L130-132) provides earned decompression.",
+      "voiceCompliance": "Strong. Architectural metaphor density at maximum (load-bearing, foundation, keystone, buttress). Command voice absent — appropriately, as Kaelith is not commanding but serving. The shift to sustained interior narration during seal-work is justified by the style guide ('longer sentences when emotion breaches control')."
+    },
+    "SCN-61": {
+      "title": "Thalen Exposed with Witnesses",
+      "lineRange": "144-218",
+      "wordCount": "~975",
+      "outlineCompliance": {
+        "goal": "DELIVERED — Thalen exposed, evidence presented with witnesses, institutional accountability chosen",
+        "conflict": "DELIVERED — Thalen's moral conviction (not denial but justification), institutional resistance ('The Conclave will resist' L198)",
+        "valueShift": "DELIVERED — 'sabotage exposed' → 'institutional complicity visible, reckoning begun, world permanently changed'",
+        "fiveCommandments": "All five present: inciting (witnesses arrive L152), complication (Thalen justifies L172), crisis (execute or institution L184), climax (institutional path chosen L188-196), resolution (evidence entered, exit L204-218)",
+        "missingElements": "None"
+      },
+      "proseQuality": "Excellent. Commander's formal charge (L166) is Kaelith's voice at maximum institutional authority. Calwrath parallel (L180-182) is the chapter's most philosophically rich passage without crossing into pedagogical territory. Emotional regulation metaphor (L186: 'tremor through a wall built to absorb it') is peak Kaelith. Chapter close (L216-218: 'The true sky was harder than the false one. Less kind. But through the gaps, the stars were real.') is elegant and earned.",
+      "tension": "Appropriately decelerating. SCN-61 shifts from action-tension (SCN-60) to moral/institutional tension. Thalen's conviction (L170-172) creates discomfort-tension. The Calwrath parallel (L180-182) creates internal tension. The denouement (L204-218) provides necessary decompression while maintaining consequence-awareness (thinner Pallor, changed world). The deceleration is appropriate for a chapter exiting climax toward resolution.",
+      "voiceCompliance": "Strong. Command voice returns for the formal charge — long, authoritative, procedurally precise. The tactical assessment of execution option (L184: 'She could demand his death. The authority existed.') is pure Kaelith. The chapter close returns to sensory/architectural: stone humming, seal stability as resonance in bones."
+    }
+  },
+
+  "darlings": [
+    {
+      "id": "DAR-021-001",
+      "location": "L208-210",
+      "passage": "'Their hands did not touch. They did not need to. The bond carried what contact would have said — the steady, uncompelled pulse of two people who had chosen each other when the world was ending and the cage was open and every reason to stay was a reason they had built themselves.'",
+      "assessment": "BORDERLINE — NOT BLOCKED. The passage serves romance resolution (proving partnership without physical contact) and TP-3 (chosen vs. only). However, the final clause ('every reason to stay was a reason they had built themselves') approaches thematic statement — it tells the reader what to conclude rather than letting the preceding action speak. The passage is slightly self-congratulatory about its own theme. Retain in draft; revision should evaluate whether the final clause could be cut, ending on 'and the cage was open.' The preceding 200+ lines have already demonstrated the theme."
+    },
+    {
+      "id": "DAR-021-002",
+      "location": "L210",
+      "passage": "'*We held. The world held. The choice was ours.*'",
+      "assessment": "FLAGGED — see WARN-021-001. This italicized thought summarizes the chapter's thematic content in 9 words. It is efficient and voice-consistent (Kaelith's staccato internal register). But it is thematic summary, not dramatization. The chapter has demonstrated all three claims through 200 lines of action. The thought may be redundant. Recommend evaluating in revision — if DAR-021-001's final clause is also retained, the chapter ends with TWO consecutive thematic summaries, which is too many."
+    }
+  ],
+
+  "continuityIssuesFromUpstream": {
+    "note": "The continuity-integrator documented 5 issues (3 major, 1 moderate, 1 minor) and 12 verified elements. Per audit instructions, documented continuity issues are tracked for revision but do not trigger FAIL unless they indicate structural problems. All 5 issues are correctable in revision without structural changes to the chapter.",
+    "issues": [
+      {
+        "ref": "CI-021-001",
+        "severity": "major",
+        "summary": "Tessen Vael pronoun error — 'She met Kaelith's eyes' should be 'He met Kaelith's eyes' (L158). Simple correction.",
+        "structural": false
+      },
+      {
+        "ref": "CI-021-002",
+        "severity": "major",
+        "summary": "Pallor silver described as 'wrist to elbow' (L34) but should be 'past the elbow' per ch20. Simple correction.",
+        "structural": false
+      },
+      {
+        "ref": "CI-021-003",
+        "severity": "major",
+        "summary": "Thenndal walk 'twelve years ago' (L28) should be 'eight years ago' per YK 734 → YK 742 timeline. Simple correction.",
+        "structural": false
+      },
+      {
+        "ref": "CI-021-004",
+        "severity": "moderate",
+        "summary": "Geography discrepancy — Serath Dún and Quietus are separate locations in geography.json with intervening terrain. Draft treats them as co-located. Resolution: either update geography.json to include underground connection (preserving excellent entrance prose) or update draft. Continuity-integrator recommends Option 2 (underground connection) which I concur with.",
+        "structural": false
+      },
+      {
+        "ref": "CI-021-005",
+        "severity": "minor",
+        "summary": "Iryse's '18 years' doesn't match YK 726 → YK 742 = 16 years. Simple arithmetic correction.",
+        "structural": false
+      }
+    ]
+  },
+
+  "upstreamReportVerification": {
+    "voiceReport": {
+      "score": "9/10",
+      "independentAssessment": "CONCUR. Voice consistency is exceptional. Zero named emotions confirmed via independent text scan. 113 architectural metaphors at 97% domain consistency confirmed. The 3 off-domain instances (wound, rain, water-cross-domain) are all properly contextualized. The voice report's opening-test analysis is accurate. I independently verified the 3-4 sentence POV identification and confirm Kaelith is identifiable by sentence 2."
+    },
+    "continuityReport": {
+      "score": "8/10",
+      "independentAssessment": "CONCUR. The 5 documented issues are legitimate. I independently verified the pronoun error (CI-021-001), silver extent regression (CI-021-002), and timeline discrepancy (CI-021-003) against ch20 draft and continuity-tracker.json. The 12 verified elements are correctly assessed. I note that the continuity report's thoroughness is exceptional — it caught issues the voice-maintainer and drafter missed."
+    },
+    "craftEnforcementReport": {
+      "score": "8.7/10",
+      "independentAssessment": "PARTIALLY CONCUR. I agree with the T10 moderate finding (certainty mechanism late articulation) and the T5 minor finding (expository lean). I note the craft-enforcer gave T6 (Stakes) a 9.5/10, which I agree with — stakes escalation is the chapter's strongest structural element. However, I weigh the 'Through the bond' repetition (8 instances) and 'felt' overuse (14 instances) as more significant than the craft-enforcer appears to have. The craft-enforcer focused on tool-by-tool compliance; I am assessing prose quality holistically. My overall score of 8.5 (vs. their 8.7) reflects this additional prose-level scrutiny."
+    }
+  },
+
+  "secondPassResults": {
+    "performed": true,
+    "rationale": "First pass found 3 minor findings and 2 warnings but zero critical or major issues. Per anti-laziness Rule 3, a first pass with zero critical issues is suspicious. Second pass performed specifically hunting for: cliché phrases, tell-not-show violations, static scenes, voice breaks, and darlings.",
+    "findings": [
+      {
+        "category": "cliché-hunt",
+        "result": "One additional borderline instance found: 'settled in her bones' (L14) is a common phrase in fantasy writing. However, in context (kinetic memory literally residing in bones, Kaelith's proprioceptive sensory channel), the phrase is appropriate and specific rather than stock. Not flagged as finding."
+      },
+      {
+        "category": "tell-not-show-hunt",
+        "result": "Re-scanned all instances of emotion terminology. Found one observation: 'Grief, perhaps' (L194) names an emotion — but this is Kaelith observing THALEN's expression, not her own internal state. Kaelith's own emotional processing remains entirely physical/tactical throughout. Not a violation."
+      },
+      {
+        "category": "static-scene-hunt",
+        "result": "All three scenes have clear value shifts verified in scene-by-scene breakdown. No static scenes. SCN-61 has the least dynamic shift (from 'exposed' to 'reckoning begun'), but the moral complexity of Thalen's justification and the Calwrath parallel provide sufficient movement."
+      },
+      {
+        "category": "voice-break-hunt",
+        "result": "Re-read L32-34 (Ythara influence passage) specifically for voice break. The anaphoric 'older than' construction is more lyrical than typical Kaelith. Voice report assessed this as acceptable ('emotion breaches control' exception). I concur — the passage describes literal reality-warping by a god, and the sensory content (tasting, temperature) remains tactile. Not a voice break."
+      },
+      {
+        "category": "darling-hunt",
+        "result": "Two potential darlings identified (DAR-021-001, DAR-021-002). Both are borderline thematic summary rather than pure 'beautiful but functionless' darlings. Neither blocks passage to revision. One additional passage inspected: 'The Ashborne Fourth's ghost becoming real' (L155) — evocative callback. Serves TP-2 (right choices compound). Not a darling."
+      },
+      {
+        "category": "modern-idiom-hunt",
+        "result": "Scanned for 10 modern idiom patterns (okay, alright, sort of, kind of, literally, basically, at the end of the day, game-changer, level up, hit different). Zero hits. 'The clock was running' (L61) is idiomatic but consistent with military timing language and established usage in earlier chapters."
+      }
+    ]
+  },
+
+  "remediationNotes": [
+    {
+      "priority": 1,
+      "target": "revision-phase",
+      "description": "Reduce 'Through the bond' instances from 8 to 3-4. Retain for: L24 (establishing post-dissolution quality), L140 (buttress metaphor — chapter's best romance image), L206 (chapter close). Replace others with direct rendering, physical indicators, or no tag. See MF-021-001 for specific guidance.",
+      "scope": "ch21"
+    },
+    {
+      "priority": 2,
+      "target": "revision-phase",
+      "description": "Reduce 'felt' as perceptive verb from 14 instances to 7-8. Replace with direct sensory rendering in at least 5-6 instances, particularly in SCN-60 where the clustering is densest (8 instances in 1,600 words). See MF-021-002 for specific examples.",
+      "scope": "ch21"
+    },
+    {
+      "priority": 3,
+      "target": "revision-phase",
+      "description": "Compress Warden mechanism explanation (L88-96) by 1-2 sentences. Collapse the philosophical articulation (L92-93) into the experiential action (L94-95). Trust the reader to infer 'certainty as reinforcement' from Kaelith channeling conviction into the seal.",
+      "scope": "ch21"
+    },
+    {
+      "priority": 4,
+      "target": "revision-phase",
+      "description": "Fix continuity errors documented in CI-021-001 through CI-021-005: Tessen pronoun (he/him), Pallor silver extent (past elbow), Thenndal timeline (8 years not 12), geography reconciliation (underground connection), Iryse arithmetic (16 years or adjust YK date).",
+      "scope": "ch21"
+    },
+    {
+      "priority": 5,
+      "target": "revision-phase",
+      "description": "Evaluate italicized thought '*We held. The world held. The choice was ours.*' (L210) for potential cut. The chapter's final paragraph (L212-218) is a stronger, more Kaelith-appropriate close. If retained, ensure only ONE thematic summary passage remains in the final 15 lines — currently there are two (L208-209 and L210).",
+      "scope": "ch21"
+    },
+    {
+      "priority": 6,
+      "target": "cross-manuscript-revision",
+      "description": "Seed certainty-as-reinforcement mechanism in 1-2 earlier chapters. Candidates: ch17-18 (seal pull as certainty-test when approaching Quietus) or ch13-14 (restored magic responding to conviction). Even one sentence establishing that Warden work operates through certainty rather than power would bring ch21's resolution into full Sanderson First Law compliance. Do NOT modify ch21 — the articulation here is correct.",
+      "scope": "earlier-chapters"
+    }
+  ],
+
+  "findingsCounts": {
+    "critical": 0,
+    "major": 0,
+    "minor": 3,
+    "warnings": 2,
+    "observations": 20,
+    "darlings": 2,
+    "darlingsCleared": 0,
+    "darlingsFlagged": 2,
+    "darlingsBlocked": 0,
+    "continuityIssuesFromUpstream": 5,
+    "secondPassAdditionalFindings": 0
+  }
+}

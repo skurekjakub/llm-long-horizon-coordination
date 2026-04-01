@@ -1,0 +1,151 @@
+{
+  "storyId": "001",
+  "chapter": 12,
+  "agent": "romantic-fantasy-writer-copy-editor",
+  "timestamp": "2025-07-28T22:00:00Z",
+  "summary": "Ch12 copy edit: 12 findings (0 critical, 2 major, 3 moderate, 5 minor, 2 informational). Major: continuity tracker ch12 entry lists events not in draft (suppression field, rib injury, Vael Seren story — these belong to ch14-15), and persistent 'northeast' direction for Quietus approach conflicts with geography.json which places Quietus to the west. Moderate: binding-pain timeline not reconciled with ch4's 48-hour deadline, 'zero latency' phrasing borders on anachronism, and tracker's 'four hunter teams' contradicts draft's four individual hunters (one team). All proper nouns verified correct against character index and world-bible. Magic system rules (MAG-003/004/006/007, AM-002) correctly applied. Information asymmetry maintained — Lirien correctly withholds Court advisory from Kaelith, no premature knowledge leaks. Dialogue formatting, tense consistency, and scene break markers all clean.",
+  "findings": [
+    {
+      "id": "COPY-001",
+      "severity": "major",
+      "category": "timeline",
+      "description": "Continuity tracker ch12 entry contains events that do not appear in the draft and instead match ch14-15 events. Tracker ch12 lists: 'Four hunter teams attack. Suppression field deployed', 'Kaelith hit to left ribs. Pain echoes through bond', and 'Night: Lirien shares Vael Seren story. First genuine personal disclosure.' None of these occur in the draft. The suppression field and rib injury appear in the ch14 tracker entry, and the Vael Seren story appears in ch14-15. The draft instead depicts four individual hunters (one team of four), no suppression field, no rib injury, and no Vael Seren disclosure — all of which are internally consistent and align with the chapter outline (chapter-012.json SCN-31/32/33). The continuity tracker appears to have conflated ch12 and ch14 events.",
+      "lineRef": "Draft lines 188-230 (hunter attack); Continuity tracker ch12 events list",
+      "correction": "The continuity tracker ch12 entry should be updated to match the draft: replace 'Four hunter teams attack. Suppression field deployed' with 'One hunter team (four individuals) attacks at dusk', remove 'Kaelith hit to left ribs' and 'Vael Seren story' from ch12 events. These events belong in ch14 and ch14-15 respectively. NOTE: This is a tracker correction, not a draft correction — the draft is internally consistent.",
+      "sourceRef": "continuity/continuity-tracker.json ch12 vs ch14 entries; plot/chapter-outlines/chapter-012.json SCN-33"
+    },
+    {
+      "id": "COPY-002",
+      "severity": "major",
+      "category": "factual",
+      "description": "The draft consistently uses 'northeast' as the direction of the Quietus approach (lines 14, 32, 92, 130, 268, 280-282). The continuity tracker also specifies 'northeast' for ch12-14. However, geography.json establishes the Quietus (LOC-013) as being in the far west, reachable through the Unwalked Reach (LOC-012) → Rivenmarch (LOC-011) → Serath Dûn (LOC-010) → Velenwash (LOC-009) → The Narrowing (LOC-008). The route from Aranthem (LOC-007) to the Narrowing (LOC-008) is described as 'The western road from Aranthem.' The Pallor gradient also runs east (strong) to west (weak), with the Quietus at the western extreme. 'Northeast' would point back toward the eastern empire, not toward the Quietus. This directional inconsistency is present in both the draft and the tracker, suggesting it was established early and propagated.",
+      "lineRef": "Lines 14, 32, 92, 130, 268, 280-282",
+      "correction": "Verify the intended direction against geography.json. If the characters are approaching the Narrowing from a position south of the pass entrance, a northward component is plausible, but 'northeast' is difficult to reconcile with a destination that is ultimately to the west. Consider changing 'northeast' to 'northwest' or 'north-northwest' if the route requires a northward leg before turning west through the Narrowing. Alternatively, update geography.json to clarify the approach corridor if 'northeast' is intentional for this specific leg of the journey.",
+      "sourceRef": "world-bible/geography.json LOC-008 through LOC-013; travelRules.specificRoutes.LOC-007_to_LOC-008"
+    },
+    {
+      "id": "COPY-003",
+      "severity": "moderate",
+      "category": "timeline",
+      "description": "The draft states the binding 'had not been pain for weeks, not since the Seep's last report had constructed sufficient operational justification for delay' (line 44). However, the ch4 continuity tracker entry establishes that Lirien 'has 48 hours before binding pain starts, 5 days before termination.' By ch12, well over 5 days have elapsed since ch4. The mechanism by which Seep reports mitigate binding enforcement is plausible within the magic system (bindings assess progress toward fulfillment — active pursuit with operational justification could satisfy the binding's enforcement mechanism) but this mitigation mechanism should have been explicitly established in intervening chapters (ch5-11). If it was not, this creates an unexplained gap in the binding's enforcement timeline.",
+      "lineRef": "Line 44",
+      "correction": "Verify that chapters 5-11 establish or reference the Seep-report mitigation mechanism for binding enforcement. If no prior chapter addresses how Lirien survived past the 5-day termination deadline, consider adding a brief internal reference in this chapter explaining the mechanism more explicitly, or flag for revision in earlier chapters.",
+      "sourceRef": "continuity/continuity-tracker.json ch4 events; world-bible/magic-system.json MAG-005 (binding contracts)"
+    },
+    {
+      "id": "COPY-004",
+      "severity": "moderate",
+      "category": "anachronism",
+      "description": "The phrase 'a tactical network with zero latency' (line 238) uses terminology strongly associated with modern computing and telecommunications. While 'network' has pre-industrial origins (from net-work) and Lirien's analytical voice profile supports clinical/technical language, the specific compound phrase 'zero latency' reads as distinctly modern jargon that may break immersion. The style guide prohibits 'modern slang or contemporary internet phrasing.' This is borderline — Lirien's voice permits analytical language, but this particular phrase may cross into anachronism.",
+      "lineRef": "Line 238",
+      "correction": "Consider replacing 'zero latency' with a phrase that conveys the same meaning within the world's register. Alternatives: 'without delay,' 'with no interval between signal and response,' 'instantaneous,' or 'faster than thought.' The concept (bond transmits information without delay) is excellent — only the specific phrasing is in question.",
+      "sourceRef": "style/style-guide.json vocabularyStandards.requiredQualities[0]; characters/CHAR-002.json voiceFingerprint"
+    },
+    {
+      "id": "COPY-005",
+      "severity": "moderate",
+      "category": "factual",
+      "description": "The continuity tracker ch12 entry says 'Four hunter teams attack' but the draft depicts four individual hunters from one team: 'three figures crossed the perimeter from the south while a fourth approached from the northeast' (lines 190-191). The draft's Seep intelligence confirms 'three confirmed hunter teams' in the region (line 162), and after the escape, Lirien notes 'This was one. Two remain' (line 263). The draft is internally consistent — one team of four attacked, two teams remain. The tracker incorrectly says 'four hunter teams' instead of 'four hunters (one team).'",
+      "lineRef": "Lines 162, 190-191, 262-263",
+      "correction": "Update the continuity tracker ch12 entry from 'Four hunter teams attack' to 'One hunter team attacks (four individual hunters)' to match the draft and the Seep intelligence.",
+      "sourceRef": "continuity/continuity-tracker.json ch12 events"
+    },
+    {
+      "id": "COPY-006",
+      "severity": "minor",
+      "category": "naming",
+      "description": "The chapter outline (chapter-012.json) uses the name 'Thalen Veyris' in the SCN-32 beat description ('Seep intelligence packet arrives via dead drop with Thalen's name and role' and 'coded message naming Thalen Veyris'). The correct name per the character index is 'Thalen Reyvas' (CHAR-003). The draft correctly uses 'Thalen Reyvas' (line 114). This is an outline error, not a draft error.",
+      "lineRef": "N/A (draft is correct; outline has error)",
+      "correction": "Update plot/chapter-outlines/chapter-012.json to use 'Thalen Reyvas' instead of 'Thalen Veyris.'",
+      "sourceRef": "characters/index.json CHAR-003; plot/chapter-outlines/chapter-012.json SCN-32"
+    },
+    {
+      "id": "COPY-007",
+      "severity": "minor",
+      "category": "timeline",
+      "description": "The continuity tracker labels ch12's day as '2 days after Aranthem.' Ch10 was set in Aranthem; ch11 was at Sanctuary (Tessen Vael's location) for the Oathbrand removal, which is a separate location from Aranthem. The day marker should reference the most recent event (ch11 Sanctuary/brand removal), not the earlier Aranthem visit. '2 days after Aranthem' is ambiguous — it could mean 2 days after leaving Aranthem (plausible) or 2 days after the ch10 events (also plausible). A more precise marker like 'Day after Sanctuary/brand removal' or 'Day 2 post-Oathbrand removal' would be clearer.",
+      "lineRef": "N/A (tracker issue, not draft issue)",
+      "correction": "Consider updating the ch12 day marker in the continuity tracker to reference the brand removal (ch11) rather than Aranthem (ch10) for clarity.",
+      "sourceRef": "continuity/continuity-tracker.json ch11-12 timeline entries"
+    },
+    {
+      "id": "COPY-008",
+      "severity": "minor",
+      "category": "formatting",
+      "description": "The chapter frontmatter YAML lists 'wordCount: 5347' but the chapter outline specifies a 'targetWordCount: 4100.' The draft is approximately 30% over the outlined target. This was already noted by the developmental editor (DEV-006). Not a factual error but a metadata note — the wordCount in the frontmatter should be verified against actual word count.",
+      "lineRef": "Lines 1-8 (frontmatter)",
+      "correction": "Verify the frontmatter wordCount against actual word count. The developmental editor has already flagged the overshoot for structural revision.",
+      "sourceRef": "plot/chapter-outlines/chapter-012.json targetWordCount"
+    },
+    {
+      "id": "COPY-009",
+      "severity": "minor",
+      "category": "grammar",
+      "description": "Line 58 contains: 'I felt you *counting trees*, Lirien.' The italicized emphasis on 'counting trees' uses asterisks for markdown italic. This is consistent with the chapter's formatting convention (also used at line 16 '*pull*', line 38 '*Framework*', etc.). All italic markers are consistently applied using single asterisks. No grammar error — noting for completeness that the formatting convention is uniform.",
+      "lineRef": "Lines 16, 38, 58, 92, 198, 212, 224, 234",
+      "correction": "No correction needed. Italic emphasis is consistently formatted throughout the chapter.",
+      "sourceRef": "N/A"
+    },
+    {
+      "id": "COPY-010",
+      "severity": "minor",
+      "category": "factual",
+      "description": "Line 152-153: 'And now the Conclave's institutional authority had been the instrument through which one man had been dismantling the world's structural integrity for longer than either of them had been alive.' The conspiracy spans 40 years (~YK 702 to YK 742). Kaelith is approximately 33 (CHAR-001 profile: 'approximately 33'). Lirien appears 'late twenties to early thirties' but is fae and may be older in human years. The claim 'longer than either of them had been alive' is accurate for Kaelith (33 < 40). For Lirien, who may be older than she appears due to fae aging, this is likely but not certain. The phrasing works as Lirien's assessment of the situation and is not definitively wrong.",
+      "lineRef": "Lines 152-153",
+      "correction": "No correction strictly required. If Lirien's actual age (in human years) is established as over 40 in any reference, this line would need revision. As written, it functions as a rough assessment consistent with available information.",
+      "sourceRef": "characters/CHAR-001.json physicalDescription.age; characters/CHAR-002.json physicalDescription.age"
+    },
+    {
+      "id": "COPY-011",
+      "severity": "informational",
+      "category": "factual",
+      "description": "The chapter correctly maintains information asymmetry throughout. Lirien withholds the third page of Seep intelligence (Court advisory flagging her as deviation risk) from Kaelith, as explicitly noted in lines 138-142. This is consistent with the knowledge states in the continuity tracker (Kaelith does not learn about the Court advisory until ch16). The kill contract is referenced but its loophole is not mentioned (consistent — Lirien discovers the loophole in ch14). All knowledge-state boundaries are correctly observed.",
+      "lineRef": "Lines 38, 44, 124-127, 138-142",
+      "correction": "No correction needed. Information asymmetry is properly maintained.",
+      "sourceRef": "continuity/information-asymmetry-map.json; continuity/continuity-tracker.json knowledgeStates"
+    },
+    {
+      "id": "COPY-012",
+      "severity": "informational",
+      "category": "factual",
+      "description": "All magic system applications in the chapter are consistent with established rules: (1) Kaelith's tier-two exercises (pulling moisture from air) match her post-brand-removal power level per magic system protagonist levels. (2) The resonance bond's bilateral emotional transmission matches MAG-007 (bonds form through shared vulnerability). (3) fae-spun silk perimeter markers are consistent with Lirien's Tier 4 abilities. (4) Kinetic memory guiding Kaelith's body matches AM-002/MAG-006. (5) The kill contract's binding mechanism (lives in her blood, directional pull) matches faeBindingContracts description. (6) Lirien's fae sight and endurance are consistent with her fae physiology. No magic system violations detected.",
+      "lineRef": "Lines 16, 24, 32, 44, 92, 100, 206, 214, 226, 244",
+      "correction": "No correction needed. Magic system compliance is clean.",
+      "sourceRef": "world-bible/magic-system.json (MAG-003, MAG-004, MAG-006, MAG-007, AM-002, protagonistPowerLevels)"
+    }
+  ],
+  "verifiedCorrect": {
+    "characterNames": {
+      "status": "all verified",
+      "checked": ["Kaelith (first name only — consistent with Lirien's POV)", "Lirien Dael (surname in Seep notation)", "Thalen Reyvas (correct per CHAR-003)", "Subject Maren (surname in Seep intelligence)", "Operative Dael (surname in Seep intelligence)"]
+    },
+    "placeNames": {
+      "status": "all verified",
+      "checked": ["Aranthem (line 116)", "Quietus (lines 32, 158, 226, 264, 268, 284)"]
+    },
+    "organizationNames": {
+      "status": "all verified",
+      "checked": ["The Seep (lines 28, 44, 98, 104, 118, 126, 136, 154, 158, 262)", "High Conclave (lines 109, 114, 272)", "Cerith Court / Court (lines 124-127)", "Seventh Seat (line 114)"]
+    },
+    "magicalTerms": {
+      "status": "all verified",
+      "checked": ["Pallor (line 108)", "Dimming rites (line 108)", "Oathbrand (referenced as 'brand' and 'brand removal')", "resonance bond (lines 24, 72, etc.)", "kinetic memory (lines 32, 214, 226)", "Shaper (line 100)", "Ythara (line 108)", "fae-spun silk (line 32)"]
+    },
+    "dialogueFormatting": {
+      "status": "all verified clean",
+      "notes": "All speech tags use correct comma/period placement. Action beats properly separated with periods. No dialogue formatting errors detected across 30+ dialogue lines."
+    },
+    "tenseConsistency": {
+      "status": "verified — past tense maintained throughout",
+      "notes": "No tense shifts detected."
+    },
+    "sceneBreaks": {
+      "status": "verified",
+      "notes": "Two scene break markers (--- at lines 96 and 186) properly separate the three scenes."
+    },
+    "pronounClarity": {
+      "status": "verified — no ambiguous pronoun references",
+      "notes": "Despite two female characters throughout, the draft consistently uses character names to anchor pronoun references. No ambiguous 'she' references detected."
+    }
+  }
+}

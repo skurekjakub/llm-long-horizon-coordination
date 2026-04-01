@@ -1,0 +1,210 @@
+{
+  "agent": "docwriter-accuracy-reviewer",
+  "taskId": "T-001",
+  "verdict": "approved",
+  "claims": [
+    {
+      "claim": "Read is a prerequisite for all other page permissions except Display — granting other permissions without Read has no effect.",
+      "location": "Permission descriptions table — Read row (modified)",
+      "result": "verified",
+      "evidence": "WebPageAclPermissionEvaluator.cs lines 118-123: `if (WebsiteConstants.IndividuallyCheckedPermissions.Contains(permission)) { return grantedPermissions[webPageItemId].Contains(permission); } return grantedPermissions[webPageItemId].Contains(WebPageAclPermissions.READ) && grantedPermissions[webPageItemId].Contains(permission);` — IndividuallyCheckedPermissions is {Read, Display} per WebsiteConstants.cs lines 20-24. All other permissions require BOTH Read AND the specific permission.",
+      "docFact": "WebPageAclPermissionEvaluator.cs: All permissions except Read and Display require BOTH Read AND the specific permission"
+    },
+    {
+      "claim": "Six page-level ACL permissions: Display, Read, Create, Update, Delete, Synchronize",
+      "location": "Permission descriptions table (pre-existing, verified for context)",
+      "result": "verified",
+      "evidence": "WebPageAclPermissions.cs lines 11-42: DISPLAY, READ, CREATE, UPDATE, DELETE, SYNCHRONIZE — exactly six constants defined.",
+      "docFact": "WebPageAclPermissions.cs: Six page-level ACL permissions (Read, Update, Create, Delete, Synchronize, Display)"
+    },
+    {
+      "claim": "When deleting a page that has child pages, the system also checks the Delete permission on child pages that have broken the permission inheritance.",
+      "location": "Permission descriptions table — Delete row (modified), also repeated in 'Page permissions for deleting pages' section",
+      "result": "verified",
+      "evidence": "WebPagesApplication.cs lines 528 and 551: `await CheckAclPermission(args.WebPageItemId, WebPageAclPermissions.DELETE, true, ...)` — the `true` parameter is `evaluateChildPermissions`. WebPageAclPermissionEvaluator.cs line 91-93: when evaluateChildPages=true, calls CheckAclSubtreePermission. Line 130 remark: 'For performance purposes, only web pages with broken inheritance are checked.' — InnerJoin with WebPageAclInfo (broken inheritance marker) at line 146.",
+      "docFact": "permissionSummary.deletePage: VIEW + Read + Delete ACL. evaluateChildPages=true"
+    },
+    {
+      "claim": "The Read permission is a prerequisite for all page permissions except Display. If you grant Update, Create, Delete, or Synchronize without also granting Read, the granted permission has no effect.",
+      "location": "Warning callout (added after permission descriptions table)",
+      "result": "verified",
+      "evidence": "Same as claim 1 — WebPageAclPermissionEvaluator.cs lines 118-123. IndividuallyCheckedPermissions = {Read, Display} per WebsiteConstants.cs. For any permission not in that set, the evaluator requires BOTH Read AND the specific permission in grantedPermissions.",
+      "docFact": "WebPageAclPermissionEvaluator.cs: All permissions except Read and Display require BOTH Read AND the specific permission"
+    },
+    {
+      "claim": "Without Read, users cannot access page content in the administration.",
+      "location": "Warning callout (added after permission descriptions table)",
+      "result": "verified",
+      "evidence": "WebPageBase.cs lines 132-134: `ConfigurePage()` calls `await CheckAclPermission(WebPageIdentifier.WebPageItemID, WebPageAclPermissions.READ);` — this runs on every web page tab load. Without Read, ForbiddenAccessException is thrown at lines 194-200.",
+      "docFact": "WebPageBase.cs: ConfigurePage() enforces Read ACL on every web page tab"
+    },
+    {
+      "claim": "The Administrator role and roles with the Manage permissions permission bypass all page permission checks and always have full access to all pages in a channel.",
+      "location": "Channel admin tip (modified in 'Allow users to work with website channel content' section)",
+      "result": "verified",
+      "evidence": "WebsiteChannelAdminProvider.cs lines 43-52: `IsChannelAdmin()` checks (1) `user.IsAdministrator()` → returns true, and (2) `GetManagingWebsiteChannels()` which queries for MANAGE_PERMISSIONS permission (line 77). WebPageAclPermissionEvaluator.cs lines 83-87: if `userIsChannelAdmin` is true, returns `WebPageAclPermissionEvaluationResult.Success` immediately — bypassing ALL ACL checks.",
+      "docFact": "WebsiteChannelAdminProvider.cs: Channel admins bypass all ACL checks. Two paths: (1) user.IsAdministrator() — global Administrator role, (2) user has ManagePermissions for the website channel application. Cache TTL is 60 minutes."
+    },
+    {
+      "claim": "The system caches this status for up to 60 minutes, so changes to these role assignments may not take effect immediately.",
+      "location": "Channel admin tip (modified in 'Allow users to work with website channel content' section)",
+      "result": "verified",
+      "evidence": "WebsiteChannelAdminProvider.cs line 26: `private const int HOUR_CACHE_DURATION = 60;` — used at line 65 in `CacheSettings(HOUR_CACHE_DURATION, true, ...)`. The CacheSettings constructor first parameter is cache duration in minutes. 60 minutes = up to 1 hour cache.",
+      "docFact": "WebsiteChannelAdminProvider.cs: Channel admins bypass all ACL checks. Two paths: (1) user.IsAdministrator() — global Administrator role, (2) user has ManagePermissions for the website channel application. Cache TTL is 60 minutes."
+    },
+    {
+      "claim": "To perform an operation on a page, a user typically needs: Application permission — the Access channel permission for the website channel application.",
+      "location": "Permission requirements for page operations section (added)",
+      "result": "verified",
+      "evidence": "All page commands across ContentTab.cs and CreateWebPage.cs use `[PageCommand(Permission = SystemPermissions.VIEW)]` or equivalent, and the WebPagesApplication class at line 38 has `[UIEvaluatePermission(SystemPermissions.VIEW)]`. SystemPermissions.VIEW corresponds to the 'Access channel' application-level permission.",
+      "docFact": "ContentTab.cs: All mutating operations require [PageCommand(Permission=VIEW)] + CheckAclPermission(UPDATE)"
+    },
+    {
+      "claim": "Page permission — one or more page permissions (Read, Update, Create, or Delete) for the target page or its parent.",
+      "location": "Permission requirements for page operations section (added)",
+      "result": "verified",
+      "evidence": "Confirmed across all operation source files: publish checks UPDATE (ContentTab.cs:200), create checks CREATE on parent (CreateWebPage.cs:133), delete checks DELETE (WebPagesApplication.cs:528), unpublish checks UPDATE (ContentTab.cs:313). All implicitly require Read via WebPageAclPermissionEvaluator double-check.",
+      "docFact": null
+    },
+    {
+      "claim": "Workflow step role (if applicable) — if the page is under a workflow, the user must have a role assigned to the current workflow step or a Full Control role on the workflow.",
+      "location": "Permission requirements for page operations section (added)",
+      "result": "verified",
+      "evidence": "WorkflowStepRoleArbiter.cs lines 81-113: `CanWorkWithContentItemInStepInternal()` checks (1) IsDraft → always true (line 89-92), (2) HasFullControl → checks Full Control roles (line 94-98), (3) checks step role assignments (line 111-113). WebPageCommandManagerBase.cs line 554,601,648: calls `CanWorkWithContentItemInCurrentStep` for workflow-gated operations.",
+      "docFact": "WorkflowStepRoleArbiter.cs: Draft step always allowed, Full Control bypass, step role assignment"
+    },
+    {
+      "claim": "To publish a page, users need Read and Update for the page they want to publish.",
+      "location": "Page permissions for publishing pages section (added)",
+      "result": "verified",
+      "evidence": "ContentTab.cs line 200: `await CheckAclPermission(WebPageIdentifier.WebPageItemID, WebPageAclPermissions.UPDATE, ...)` — checks UPDATE. WebPageAclPermissionEvaluator.cs line 123 implicitly requires Read because UPDATE is not in IndividuallyCheckedPermissions. This matches permissionSummary.publish: 'READ + UPDATE on the page'.",
+      "docFact": "permissionSummary.publish: VIEW + Read + Update ACL. Under workflow, direct publish blocked"
+    },
+    {
+      "claim": "When publishing a newly created page (selecting the publish option during page creation), users need Read and Create on the parent page where the new page is being created.",
+      "location": "Page permissions for publishing pages section (added)",
+      "result": "verified",
+      "evidence": "CreateWebPage.cs lines 193-198: `[PageCommand(CommandName = WebPageActionConstants.PUBLISH, Permission = SystemPermissions.VIEW)]` followed by `await CheckAclPermission(ParentWebPageIdentifier.WebPageItemID, WebPageAclPermissions.CREATE, ...)` — checks CREATE on the parent. Read is implicitly required via the evaluator. This matches permissionSummary.publishOnCreate: 'READ + CREATE on the PARENT page'.",
+      "docFact": "permissionSummary.publishOnCreate: VIEW + Read + Create ACL on PARENT page. No workflow check"
+    },
+    {
+      "claim": "If the page is under a workflow, users cannot publish the page directly. Instead, they must advance the page through the workflow steps.",
+      "location": "Page permissions for publishing pages section (added)",
+      "result": "verified",
+      "evidence": "WebPageCommandManagerBase.cs lines 576-579: `if (await IsUnderWorkflow(webPage)) { return ... .AddErrorMessage(localizationService.GetString('workflows.cascadepublish.pagevalidation.contentitemunderworkflow')); }` — direct publish is blocked when under workflow. Must use ChangeWorkflowStep instead.",
+      "docFact": "permissionSummary.publish: VIEW + Read + Update ACL. Under workflow, direct publish blocked"
+    },
+    {
+      "claim": "To work with a page in a workflow step, users need one of the following: A role assigned to the current workflow step, or a Full Control role on the workflow.",
+      "location": "Page permissions for publishing pages section (added)",
+      "result": "verified",
+      "evidence": "WorkflowStepRoleArbiter.cs lines 81-113: After Draft check (line 89-92) and Full Control check (line 94-98), falls through to step role check (line 111-113): `assignedStepRoles.Any(stepRole => user.IsInRole(stepRole?.RoleName))`.",
+      "docFact": "WorkflowStepRoleArbiter.cs: Draft step always allowed, Full Control bypass, step role assignment"
+    },
+    {
+      "claim": "Pages in the Draft step are an exception — all users with the required page permissions can work with pages in the Draft step without a specific step role assignment.",
+      "location": "Page permissions for publishing pages section (added)",
+      "result": "verified",
+      "evidence": "WorkflowStepRoleArbiter.cs lines 89-92: `if (IsDraft(step)) { return true; }` — Draft step always returns true regardless of role assignment. IsDraft checks `step.ContentWorkflowStepType == ContentWorkflowStepType.SystemDraft` (line 125-128).",
+      "docFact": "WorkflowStepRoleArbiter.cs: Draft step always allowed, Full Control bypass, step role assignment"
+    },
+    {
+      "claim": "To create a new page or folder, users need Read and Create on the parent page under which they want to create the new item.",
+      "location": "Page permissions for creating pages section (added)",
+      "result": "verified",
+      "evidence": "CreateWebPage.cs line 133: `await CheckAclPermission(ParentWebPageIdentifier.WebPageItemID, WebPageAclPermissions.CREATE);` — checks CREATE on the parent. Line 186: repeated for the Create command. Read is implicitly required via WebPageAclPermissionEvaluator double-check. This matches permissionSummary.createPage: 'READ + CREATE on the PARENT page'.",
+      "docFact": "permissionSummary.createPage: VIEW + Read + Create ACL on PARENT page. Inherits from parent"
+    },
+    {
+      "claim": "Newly created pages inherit the page permissions of their parent.",
+      "location": "Page permissions for creating pages section (added)",
+      "result": "verified",
+      "evidence": "CreateWebPage.cs lines 271-278: When ParentWebPageItemID > 0, retrieves parent web page, gets `accessSettings` via `contentItemMemberRoleRetriever.GetAccessSettings(parentWebPage.ContentItemID, ...)`, and sets `arguments.AccessSettings = accessSettings` — new page inherits parent's access settings.",
+      "docFact": "permissionSummary.createPage: VIEW + Read + Create ACL on PARENT page. Inherits from parent"
+    },
+    {
+      "claim": "To delete a page, users need Read and Delete for the page they want to delete.",
+      "location": "Page permissions for deleting pages section (added)",
+      "result": "verified",
+      "evidence": "WebPagesApplication.cs line 528: `await CheckAclPermission(args.WebPageItemId, WebPageAclPermissions.DELETE, true, ...)` — checks DELETE. Read is implicitly required via WebPageAclPermissionEvaluator double-check. This matches permissionSummary.deletePage: 'READ + DELETE on the page'.",
+      "docFact": "permissionSummary.deletePage: VIEW + Read + Delete ACL. evaluateChildPages=true"
+    },
+    {
+      "claim": "When deleting a page that has child pages, the system also checks the Delete permission on all child pages that have broken the permission inheritance.",
+      "location": "Page permissions for deleting pages section (added)",
+      "result": "verified",
+      "evidence": "WebPagesApplication.cs line 528: `evaluateChildPages` parameter is `true`. WebPageAclPermissionEvaluator.cs lines 91-93: `if (hasPermission && evaluateChildPages) { hasPermission &= await CheckAclSubtreePermission(...); }`. Line 130 remark: 'For performance purposes, only web pages with broken inheritance are checked.' Line 146: InnerJoin with WebPageAclInfo filters to only pages with broken inheritance.",
+      "docFact": "permissionSummary.deletePage: VIEW + Read + Delete ACL. evaluateChildPages=true"
+    },
+    {
+      "claim": "To unpublish a page, users need Read and Update for the page they want to unpublish.",
+      "location": "Page permissions for unpublishing pages section (added)",
+      "result": "verified",
+      "evidence": "ContentTab.cs lines 310-313: `[PageCommand(CommandName = WebPageActionConstants.UNPUBLISH, Permission = SystemPermissions.VIEW)]` followed by `await CheckAclPermission(WebPageIdentifier.WebPageItemID, WebPageAclPermissions.UPDATE, ...)`. Read is implicitly required via WebPageAclPermissionEvaluator. This matches permissionSummary.unpublish: 'READ + UPDATE on the page'.",
+      "docFact": "permissionSummary.unpublish: VIEW + Read + Update ACL. NO workflow step role check"
+    },
+    {
+      "claim": "Unlike publishing, unpublishing does not check workflow step roles. Users with the required page permissions can unpublish a Published page regardless of its workflow configuration.",
+      "location": "Page permissions for unpublishing pages section (added)",
+      "result": "verified",
+      "evidence": "WebPageCommandManagerBase.cs lines 734-756 (`UnpublishInternal`): Only checks version status (InitialDraft/Draft at line 737, Unpublished at line 743, IsUnpublishScheduled at line 749). There is NO call to `CanWorkWithContentItemInCurrentStep` — unlike Save (line 554), ChangeWorkflowStep (line 601), and Discard (line 648) which all call it. This confirms no workflow step role check for unpublish.",
+      "docFact": "permissionSummary.unpublish: VIEW + Read + Update ACL. NO workflow step role check"
+    }
+  ],
+  "codeExamples": [],
+  "researchRecommendationVerification": [
+    {
+      "recommendationId": "REC-001",
+      "topic": "Prerequisite-Read rule warning callout",
+      "cited": true,
+      "followedCorrectly": true,
+      "notes": "Content uses a {% warning %} callout for the Read prerequisite rule, matching the recommendation to use Warning severity for pit-of-failure scenarios."
+    },
+    {
+      "recommendationId": "REC-003",
+      "topic": "Explicit consequence documentation for missing prerequisites",
+      "cited": true,
+      "followedCorrectly": true,
+      "notes": "Warning callout states 'the granted permission has no effect' and 'users cannot access page content in the administration' — explicitly documenting the consequences."
+    },
+    {
+      "recommendationId": "REC-006",
+      "topic": "Contextual introduction before permission detail sections",
+      "cited": true,
+      "followedCorrectly": true,
+      "notes": "The 'Permission requirements for page operations' section provides a multi-layer model introduction (application permission, page permission, workflow step role) before the per-operation sections."
+    },
+    {
+      "recommendationId": "REC-008",
+      "topic": "Limit callouts to prevent notice fatigue",
+      "cited": true,
+      "followedCorrectly": true,
+      "notes": "Only 1 new warning callout added (Read prerequisite). The existing tip in the channel admin section was updated in-place rather than adding a new callout. No callout proliferation."
+    },
+    {
+      "recommendationId": "REC-010",
+      "topic": "Use consistent terminology for permission concepts",
+      "cited": true,
+      "followedCorrectly": true,
+      "notes": "Content consistently uses 'page permission' (not 'ACL permission'), 'permission inheritance' (not 'access control inheritance'). Terminology is consistent throughout."
+    }
+  ],
+  "domainInsightVerification": [
+    {
+      "insightId": "DOM-017",
+      "title": "Multi-layer parameter architectures require per-layer disambiguation",
+      "contentAligns": true,
+      "notes": "The 'Permission requirements for page operations' section explicitly disambiguates the three layers: application permission, page permission, and workflow step role. Each is described separately with its mechanism."
+    }
+  ],
+  "invariantSupremacyDiscards": [],
+  "summary": {
+    "totalClaims": 21,
+    "verified": 21,
+    "incorrect": 0,
+    "unverifiable": 0,
+    "unsupported": 0,
+    "codeExamplesChecked": 0,
+    "codeExamplesCorrect": 0
+  }
+}

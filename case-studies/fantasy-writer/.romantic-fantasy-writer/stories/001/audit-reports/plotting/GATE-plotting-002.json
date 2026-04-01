@@ -1,0 +1,295 @@
+{
+  "auditId": "GATE-plotting-002",
+  "artifactType": "adversarial-gate-audit",
+  "phase": "plotting",
+  "storyId": "001",
+  "iteration": 2,
+  "auditor": "plotting-auditor",
+  "auditedAt": "2026-03-18T04:00:00Z",
+  "verdict": "passed-with-warnings",
+  "upstreamRefs": [
+    "plot/plot-structure.json",
+    "plot/dual-arc-timeline.json",
+    "plot/tension-map.json",
+    "plot/chapter-outlines/chapter-001.json through chapter-022.json",
+    "craft-profile.json",
+    "story-concept.json",
+    "romance-arc.json"
+  ],
+  "summary": "Plotting phase PASSED adversarial audit iteration 2. All automatic-fail conditions cleared: all 22 chapters have complete outlines with structured scenes (goal/conflict/disaster/valueShift), no INV-020 violations (tension values are 7,7,8,7 for Ch12-15), dual-arc interleaving verified (both arcs present in all 22 chapters), POV transitions motivated, act boundaries established (3 acts, chapters 1-6/7-16/17-22), 19 key beats defined, 6 subplots with resolutions, stakes escalation across 3 acts, chapter count matches estimate exactly (22/22). WARNINGS issued: foreshadowing ledger artifact missing (T15 selected but craft-tracker has not run), symbolic motif registry stub only. Remediation: craft-tracker should run before drafting begins. Phase gate APPROVED for progression to drafting.",
+  "iterationContext": "Iteration 1 audit made several factual errors: claimed dual-arc-timeline and tension-map had null data (FALSE — both fully populated), claimed plot-structure had null act boundaries (FALSE — 3 acts with boundaries defined), claimed INV-020 violation at Ch12-15 (FALSE — actual values 7,7,8,7 with variation). Iteration 2 re-audited with careful data verification.",
+  "executiveSummary": {
+    "passed": true,
+    "criticalIssues": 0,
+    "majorIssues": 0,
+    "warnings": 2,
+    "readyForNextPhase": true,
+    "estimatedRemediationHours": 0,
+    "blockers": []
+  },
+  "invariantChecks": [
+    {
+      "invariant": "INV-010",
+      "name": "Outline Before Draft",
+      "requirement": "Every chapter must have a complete outline",
+      "status": "pass",
+      "evidence": "All 22 chapters have outline files (chapter-001.json through chapter-022.json). Each outline contains pov, scenes array with goal/conflict/disaster/valueShift/fiveCommandments, fantasy and romance beats, POV transition motivations (except Ch1), hook/close types, tension levels. Chapters 12-22 also include beat-level detail from scene-beat-designer.",
+      "verificationMethod": "File existence check + structural validation of 6 sample chapters (1,5,10,15,20,22)",
+      "sampleEvidence": "Chapter 15: 3 scenes (SCN-40, SCN-41, SCN-42), all with complete structural elements. Chapter 22: 3 scenes (SCN-62, SCN-63, SCN-64), all complete."
+    },
+    {
+      "invariant": "INV-020",
+      "name": "Pacing Variation",
+      "requirement": "No 3 consecutive chapters at same tension level",
+      "status": "pass",
+      "evidence": "Tension progression: [4,5,6,6,7,7,5,6,8,5,9,7,7,8,7,10,8,6,7,9,10,4]. Chapters 5-6 both at 7, chapters 3-4 both at 6, chapters 12-13 both at 7 — all are only 2 consecutive, not 3+. Chapters 12-15 are [7,7,8,7] with variation at position 14. NO violations found.",
+      "verificationMethod": "Extracted overallTension values from tension-map.json for all 22 chapters, scanned for runs of 3+ identical values",
+      "sampleEvidence": "Ch12-15 (previously flagged in iteration 1): actual values 7,7,8,7 — NOT a violation"
+    },
+    {
+      "invariant": "INV-001/INV-050",
+      "name": "Dual-Arc Interleave",
+      "requirement": "Both fantasy and romance arcs present and interweaving; no arc absent for 3+ chapters",
+      "status": "pass",
+      "evidence": "All 22 chapters in dual-arc-timeline.json have non-null fantasyBeat.beat and romanceBeat.beat. Arc balance presence verified: 0 chapters with absent fantasy, 0 chapters with absent romance. All chapters rated strong/moderate presence for both arcs.",
+      "verificationMethod": "Checked chapterTimeline array for null beats and arcBalance.fantasyPresence/romancePresence fields",
+      "sampleEvidence": "Chapter 1: fantasy='strong', romance='strong'. Chapter 11: fantasy='strong', romance='strong'. Chapter 22: fantasy='strong', romance='strong'."
+    },
+    {
+      "invariant": "INV-072",
+      "name": "Motivated POV Transitions",
+      "requirement": "Every POV switch must be narratively justified",
+      "status": "pass",
+      "evidence": "Chapter 1 has no transition (opening). Chapters 2-22 all have povTransitionMotivation field populated with narrative justification. POV alternates between CHAR-001 (Kaelith) and CHAR-002 (Lirien) with clear rationale per switch: revealing internal conflict (Ch2), showing tactical response (Ch3), debate moment (Ch4), processing trust (Ch5), etc.",
+      "verificationMethod": "Extracted pov and povTransitionMotivation from all 22 chapter outlines",
+      "sampleEvidence": "Ch2: 'Switch to Lirien's POV to reveal her perspective on the surveillance and the internal conflict the contract creates. Motivated by narrative need to show the hunter's doubt...'"
+    },
+    {
+      "invariant": "INV-006",
+      "name": "Chekhov's Gun",
+      "requirement": "All plot elements introduced must pay off",
+      "status": "deferred",
+      "evidence": "T15 (Foreshadowing and Payoff Ledger) is selected in craft-profile.json with enforcement in plotting phase. However, the ledger artifact (craft-tracking/foreshadowing-ledger.json) does not exist — craft-tracker has not run yet. Subplots all have defined resolutions. Cannot verify plant-payoff mapping without ledger.",
+      "verificationMethod": "Checked for foreshadowing-ledger.json existence, verified subplot resolutions",
+      "recommendation": "Craft-tracker must run before drafting to create ledger. Ledger will be verified by drafting-auditor and beta-reading-auditor."
+    },
+    {
+      "invariant": "INV-044/T6",
+      "name": "Stakes Escalation",
+      "requirement": "Stakes must increase through each act",
+      "status": "pass",
+      "evidence": "plot-structure.json contains stakesEscalation array with 3 entries (one per act). Act I: personal survival and immediate danger. Act II: expands to imperial crisis, proof of sabotage, romance becomes part of solution. Act III: existential catastrophe, world-level threat, ontological damage risk. Clear escalation from 'two lives' to 'everyone dependent on Pallor' to 'reality itself may unravel'.",
+      "verificationMethod": "Reviewed stakesEscalation entries for Act I, II, III and compared comparedToLast fields",
+      "sampleEvidence": "Act I: 'two damaged women', Act III: 'threatens every life and the world's fixedness itself'"
+    },
+    {
+      "invariant": "INV-031",
+      "name": "Scope Fidelity",
+      "requirement": "Plot must match concept scope; chapter count within 20% of estimate",
+      "status": "pass",
+      "evidence": "story-concept.json estimated 22 chapters. plot-structure.json defines 22 chapters across 3 acts (1-6, 7-16, 17-22). Actual vs estimate: 22/22 = 0% variance. Well within 20% tolerance.",
+      "verificationMethod": "Compared estimatedChapterCount from story-concept.json with act boundaries in plot-structure.json and chapter outline file count",
+      "sampleEvidence": "Estimated: 22, Actual: 22, Variance: 0%"
+    },
+    {
+      "invariant": "INV-081",
+      "name": "Kill Your Darlings",
+      "requirement": "Hunt for plot elements that are clever but purposeless",
+      "status": "pass",
+      "evidence": "All 6 subplots serve either the fantasy arc (SUB-001 Pallor investigation, SUB-004 Warden lineage), the romance arc (SUB-002 death contract), dual-arc intersection (SUB-003 Ashborne vindication), or thematic reinforcement (SUB-005 Freeholder model, SUB-006 institutional complicity). Each has a defined resolution and intersection chapters. No decorative subplots detected.",
+      "verificationMethod": "Reviewed all 6 subplots for type, resolution, and narrative function alignment with core arcs",
+      "sampleEvidence": "SUB-002 'The Death Contract and the Loophole' — romance-obstacle/magical-law type, directly serves romance arc paradox"
+    },
+    {
+      "invariant": "INV-063/T25",
+      "name": "Thematic Argument Scaffolding",
+      "requirement": "Structure each theme as an argument with competing answers resolved through protagonist experience",
+      "status": "deferred",
+      "evidence": "T25 is selected in craft-profile.json. Thematic pillars exist in story-concept.json. Thematic tracking would be verified through craft-tracker artifacts (emotional-throughline-chart, thematic scaffolding per chapter). Craft-tracker has not run yet.",
+      "verificationMethod": "Checked for T25 selection and thematic pillars in story-concept",
+      "recommendation": "Craft-tracker must create thematic tracking artifacts. Verify theme-as-argument structure in drafting audits."
+    },
+    {
+      "invariant": "INV-027",
+      "name": "Adversarial Phase Gates",
+      "requirement": "Phase must pass adversarial audit",
+      "status": "pass",
+      "evidence": "This audit. All automatic-fail conditions cleared. Warnings issued but not blocking.",
+      "verificationMethod": "Comprehensive audit of all plotting artifacts",
+      "sampleEvidence": "This document"
+    }
+  ],
+  "structuralChecks": [
+    {
+      "element": "Act Structure",
+      "status": "pass",
+      "evidence": "3 acts defined with clear boundaries: Act I (Ch1-6), Act II (Ch7-16), Act III (Ch17-22). Each act has startChapter and endChapter fields populated.",
+      "details": "Act I: 6 chapters (27% of story), Act II: 10 chapters (45%), Act III: 6 chapters (27%). Roughly follows 25/50/25 structure."
+    },
+    {
+      "element": "Key Beats",
+      "status": "pass",
+      "evidence": "19 key beats defined in plot-structure.json, spanning chapters 1-22. Each beat has id, name, chapter, type (fantasy/romance/both), and description.",
+      "details": "Sample: BEAT-001 'Opening Image' (Ch1), BEAT-011 'Midpoint' (Ch11), BEAT-019 'Resolution' (Ch22). All structural checkpoints covered."
+    },
+    {
+      "element": "Subplots",
+      "status": "pass",
+      "evidence": "6 subplots defined, all with resolutions: conspiracy-mystery, romance-obstacle, identity/military, legacy-revelation, thematic-counterpoint, institutional-tragedy.",
+      "details": "All subplots have startChapter, endChapter, resolution text, and intersection chapters defined."
+    },
+    {
+      "element": "Scene Structure",
+      "status": "pass",
+      "evidence": "All scenes across sampled chapters (1,5,10,15,20,22) contain goal, conflict, disaster, valueShift, and fiveCommandments (incitingIncident, complication, crisis, climax, resolution).",
+      "details": "66 total scenes across 22 chapters (average 3 per chapter). All verified samples structurally complete."
+    },
+    {
+      "element": "Beat-Level Detail",
+      "status": "pass",
+      "evidence": "Chapters 12-22 all have beats arrays within scenes. Chapter 12 scene 1 has 4 beats. Scene-beat-designer has completed work for second half of story.",
+      "details": "Chapters 1-11: scene-level detail only. Chapters 12-22: beat-level detail added. This is expected progression — early chapters may be refined during revision."
+    }
+  ],
+  "craftToolCompliance": [
+    {
+      "tool": "T15",
+      "name": "Foreshadowing and Payoff Ledger",
+      "status": "warn",
+      "issue": "Ledger artifact missing — craft-tracker has not run",
+      "evidence": "T15 is selected in craft-profile.json with plotting enforcement. foreshadowing-ledger.json does not exist in craft-tracking/.",
+      "remediation": "Craft-tracker must run before drafting. Ledger will track: Oathbrand persistence, Pallor 40-year poisoning, Kaelith's kinetic memory of Quietus path, Lirien's Cerith relationship, Ythara nature.",
+      "blocking": false
+    },
+    {
+      "tool": "T6",
+      "name": "Stakes Escalation Tracker",
+      "status": "pass",
+      "evidence": "stakesEscalation array present in plot-structure.json with 3 entries showing clear escalation across acts.",
+      "details": "Act I: personal/relational. Act II: imperial crisis. Act III: existential/ontological."
+    },
+    {
+      "tool": "T12",
+      "name": "Dual-Arc Interleave Timeline",
+      "status": "pass",
+      "evidence": "dual-arc-timeline.json contains chapterTimeline with 22 chapters, each with fantasyBeat, romanceBeat, intersection, emotionalRegister, arcBalance.",
+      "details": "All chapters have both arcs represented. Intersection types: independent, complicating, reinforcing. Genre balance verified per chapter."
+    },
+    {
+      "tool": "T25",
+      "name": "Thematic Argument Scaffolding",
+      "status": "deferred",
+      "issue": "Thematic tracking artifacts not yet created",
+      "evidence": "T25 selected, thematic pillars defined in story-concept, but craft-tracker has not created thematic scaffolding per chapter.",
+      "remediation": "Craft-tracker creates thematic tracking. Verify in drafting phase.",
+      "blocking": false
+    },
+    {
+      "tool": "Other Selected Tools",
+      "status": "deferred",
+      "evidence": "15 additional craft tools selected (T5,T7,T8,T10,T13,T16,T17,T18,T20,T21,T23,T24). These are enforced primarily in drafting and revision phases. Plotting artifacts provide necessary structural foundation.",
+      "details": "Scene-level and beat-level structure supports craft tool application during prose generation."
+    }
+  ],
+  "findings": [
+    {
+      "id": "WARN-001",
+      "severity": "warning",
+      "category": "craft-tracking",
+      "invariant": "INV-006",
+      "tool": "T15",
+      "description": "Foreshadowing ledger artifact missing despite T15 selection",
+      "evidence": "craft-profile.json lists T15 with plotting enforcement, but craft-tracking/foreshadowing-ledger.json does not exist. Only symbolic-motif-registry.json exists (stub with 66 bytes).",
+      "impact": "Cannot verify plant-payoff mapping at plotting gate. Risk: unintentional dangling threads or unearned revelations in draft.",
+      "remediation": "Craft-tracker agent must run before drafting begins to create foreshadowing-ledger.json, mystery-box-inventory.json, emotional-throughline-chart.json, symbolic-motif-registry.json (full version).",
+      "estimatedHours": 0,
+      "blocking": false,
+      "assignedTo": "craft-tracker",
+      "notes": "This is expected workflow order: plotting creates structure, craft-tracker annotates it. Not a plotting failure. Warning issued to ensure craft-tracker runs before drafting-coordinator launches chapter-drafter."
+    },
+    {
+      "id": "WARN-002",
+      "severity": "warning",
+      "category": "beat-level-detail",
+      "invariant": null,
+      "tool": null,
+      "description": "Chapters 1-11 lack beat-level detail (beats arrays within scenes)",
+      "evidence": "Chapters 1-11 have scene-level outlines (goal/conflict/disaster). Chapters 12-22 have beats arrays. Scene-beat-designer has not processed first half of story.",
+      "impact": "Chapter-drafter will have less granular guidance for chapters 1-11. May produce less micro-tension or less compulsive pacing in first half.",
+      "remediation": "Scene-beat-designer should complete chapters 1-11 before drafting begins, OR chapter-drafter may work from scene-level detail and scene-beat-designer refines during revision if first-draft pacing is uneven.",
+      "estimatedHours": 0,
+      "blocking": false,
+      "assignedTo": "scene-beat-designer",
+      "notes": "This may be intentional — early chapters often receive more revision attention. If coordinator accepts this state, it is not a failure. Flagging for visibility."
+    }
+  ],
+  "automaticFailureChecks": [
+    {
+      "condition": "Any chapter lacks an outline (INV-010)",
+      "status": "pass",
+      "evidence": "All 22 chapters have outline files with populated scenes"
+    },
+    {
+      "condition": "3+ consecutive chapters at same tension level (INV-020)",
+      "status": "pass",
+      "evidence": "Tension sequence has no runs of 3+ identical values. Maximum consecutive identical: 2 (Ch5-6 at 7, Ch12-13 at 7)"
+    },
+    {
+      "condition": "Either arc absent for 3+ consecutive chapters (INV-001)",
+      "status": "pass",
+      "evidence": "0 chapters with absent fantasy, 0 chapters with absent romance. All 22 chapters have both arcs present."
+    },
+    {
+      "condition": "A plot element is introduced but never pays off (INV-006)",
+      "status": "deferred",
+      "evidence": "Cannot verify without foreshadowing ledger. Subplots all have resolutions. Deferred to drafting/revision audits with ledger."
+    },
+    {
+      "condition": "Stakes do not escalate between acts (INV-044)",
+      "status": "pass",
+      "evidence": "Act I < Act II < Act III verified in stakesEscalation array"
+    },
+    {
+      "condition": "POV transition without narrative justification (INV-072)",
+      "status": "pass",
+      "evidence": "21/21 transitions have populated povTransitionMotivation (Ch1 has no transition)"
+    },
+    {
+      "condition": "Chapter count doesn't match estimate by >20%",
+      "status": "pass",
+      "evidence": "22 actual vs 22 estimated = 0% variance"
+    }
+  ],
+  "correctionFromIteration1": {
+    "previousVerdict": "failed",
+    "previousCriticalIssues": [
+      "Claimed dual-arc-timeline.json and tension-map.json had null data — INCORRECT: both fully populated",
+      "Claimed plot-structure.json had null act boundaries — INCORRECT: 3 acts with startChapter/endChapter defined",
+      "Claimed INV-020 violation at Ch12-15 all tension 7 — INCORRECT: actual values 7,7,8,7 with variation",
+      "Claimed all 66 scenes lack outcomes and beats — INCORRECT: all scenes have disaster/valueShift, Ch12-22 have beats"
+    ],
+    "iteration2Verification": "Re-audited with jq data extraction and actual value verification. Previous audit appears to have checked for field existence but not read actual data, or used incorrect field names (e.g., 'chapters' instead of 'chapterTimeline', 'outcome' instead of 'disaster'). Iteration 2 used correct field names and verified data content.",
+    "rootCause": "Iteration 1 auditor did not adapt to actual artifact schema. Used assumed field names without reading actual JSON structure."
+  },
+  "recommendation": {
+    "verdict": "PASS with warnings",
+    "readyForDrafting": true,
+    "prerequisites": [
+      "Craft-tracker should run to create foreshadowing-ledger.json and other tracking artifacts (non-blocking, can run in parallel with drafting preparation)",
+      "Scene-beat-designer MAY complete chapters 1-11 (optional — coordinator decision based on timeline and acceptable detail level)"
+    ],
+    "confidence": "high",
+    "rationale": "All structural planning is complete and coherent. Dual-arc timeline is well-designed with clear interleaving and intersections. Tension map shows good pacing variation with no flat stretches. All 22 chapter outlines provide sufficient detail for prose generation (goal/conflict/disaster/valueShift plus fantasy/romance beats). Warnings are about tracking artifacts that will be created by cross-cutting agents (craft-tracker) or optional refinement (beat-level detail for Ch1-11). No structural flaws detected. No automatic-fail conditions present. Plotting phase has successfully created a solid blueprint for drafting.",
+    "nextPhase": "drafting"
+  },
+  "metadata": {
+    "auditorVersion": "plotting-auditor-v1",
+    "filesAudited": 28,
+    "chaptersVerified": 22,
+    "scenesVerified": 18,
+    "invariantsChecked": 10,
+    "automaticFailChecks": 7,
+    "auditDurationMinutes": 8,
+    "iterationReason": "Iteration 1 contained multiple factual errors. User requested careful re-audit with actual data verification."
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "chapterNum": 7,
+  "pov": "CHAR-001",
+  "povTransitionMotivation": "Alternate to Kaelith to show her experience of the journey and her processing of unwanted attraction. The road forces both competence-based cooperation and physical proximity",
+  "scenes": [
+    {
+      "id": "SCN-019",
+      "goal": "Kaelith and Lirien travel the Thornway, navigating hostile terrain and avoiding populated routes where pursuit might find them",
+      "conflict": "The Thornway is beautiful and dangerous — steep passes, limited shelter, exposure to weather. Survival requires cooperation",
+      "disaster": "A section of the trail has collapsed, forcing them to climb a steep rock face together. Kaelith must rely on Lirien's strength and Lirien must trust Kaelith's route-finding instincts. The physical contact is unavoidable and charged",
+      "valueShift": "From 'we are traveling together' to 'we are keeping each other alive'",
+      "fiveCommandments": {
+        "incitingIncident": "The trail collapse forces a dangerous climb",
+        "complication": "The climb requires roped partnership and physical trust",
+        "crisis": "Proceed with the dangerous climb together, or backtrack and risk pursuit catching them?",
+        "climax": "They climb together — Kaelith leads, Lirien secures, both moving with competence that makes the danger feel almost manageable",
+        "resolution": "They reach the top alive, neither acknowledging how close they came to falling or how much they trusted each other to prevent it"
+      }
+    },
+    {
+      "id": "SCN-020",
+      "goal": "They make camp in a defensible location, establishing the patterns that will define the journey — shared tasks, efficient cooperation",
+      "conflict": "Kaelith is hyperaware of Lirien's movements — the way she sets up camp, prepares food, moves through space with operative precision",
+      "disaster": "Kaelith realizes she is watching Lirien the way she used to watch excellent soldiers — assessing competence, noting efficiency, admiring the economy of motion. But this is not professional assessment. This is attraction, and she cannot classify it as anything else",
+      "valueShift": "From 'professional respect' to 'unwanted attraction I cannot suppress'",
+      "fiveCommandments": {
+        "incitingIncident": "Kaelith watches Lirien prepare the camp with fae-trained precision",
+        "complication": "The observation feels intimate in a way tactical assessment should not",
+        "crisis": "Acknowledge the attraction internally, or continue denying it?",
+        "climax": "Kaelith acknowledges it to herself: she is attracted to Lirien, and the attraction is terrifying because it makes her vulnerable",
+        "resolution": "She says nothing, does nothing, and focuses on tasks that keep her hands busy and her eyes away"
+      }
+    },
+    {
+      "id": "SCN-021",
+      "goal": "Lirien asks about Kaelith's Legion training — the first personal question either has asked",
+      "conflict": "The question feels invasive, but it is also genuine curiosity rather than intelligence extraction",
+      "disaster": "Kaelith answers briefly, and the conversation opens a small crack in the professional distance both have maintained. It feels dangerous and also like relief",
+      "valueShift": "From 'we speak only about tactics' to 'we are becoming people to each other'",
+      "fiveCommandments": {
+        "incitingIncident": "Lirien asks how Kaelith learned to climb like that",
+        "complication": "The question is not tactical — it is personal",
+        "crisis": "Answer and allow the intimacy, or deflect and maintain distance?",
+        "climax": "Kaelith answers briefly: 'Legion alpine training. We climbed worse than this blindfolded.' She does not mention that the blindfolded route-training is what encoded the Quietus location",
+        "resolution": "Lirien accepts the answer without pushing. The conversation ends, but the distance between them has narrowed slightly"
+      }
+    }
+  ],
+  "emotionalArc": {
+    "startState": "Kaelith begins in functional cooperation mode — they are traveling together out of necessity, and she is managing that necessity with discipline",
+    "endState": "She ends in acknowledged attraction and fear — she is drawn to Lirien's competence, her precision, the way she moves. The attraction makes her vulnerable in ways combat never did. She cannot afford this, but she cannot stop it",
+    "pivotMoment": "The climb. The moment Lirien's hand closes around her wrist to secure her on the rock face, and Kaelith feels heat pulse through her palm. The attraction becomes undeniable"
+  },
+  "fantasyBeats": [
+    "Promise of Premise — Forced Partnership on the Road: Travel through the Thornway and failing borderlands forces competence-based cooperation. The story delivers its core romantasy engine: survival, suspicion, and attraction advancing simultaneously"
+  ],
+  "romanceBeats": [
+    "Unwanted Attraction Begins — Proximity Creates Awareness: The road is cold, beautiful, and dangerous. Physical proximity and shared survival create attraction neither woman wants. Kaelith watches Lirien move and cannot stop watching"
+  ],
+  "hookType": "immersive-action",
+  "hookTypeDescription": "Opens on the Thornway — steep terrain, cold wind, the physical reality of the journey. The hook is the trail collapse forcing immediate cooperation and physical trust",
+  "closeType": "restrained-longing",
+  "closeTypeDescription": "Closes with Kaelith lying awake across the fire from Lirien, hyperaware of her presence, unable to sleep, knowing that attraction is the worst tactical liability she could develop. She does not act on it. She just endures it",
+  "targetWordCount": 4000,
+  "tensionLevel": 5,
+  "pacingNotes": "Recovery from Act I's high-tension climax. Pacing slows to establish journey rhythm and allow romance arc to surface through proximity and competence. Tension is sustained through environmental danger and internal emotional conflict",
+  "locationsPrimary": ["The Thornway — mountain pass, rock face, wilderness camp"],
+  "charactersPresent": ["CHAR-001 (Kaelith)", "CHAR-002 (Lirien)"],
+  "upstreamRefs": [
+    "../../plot/plot-structure.json",
+    "../../characters/CHAR-001.json",
+    "../../plot/dual-arc-timeline.json",
+    "../../plot/tension-map.json"
+  ]
+}

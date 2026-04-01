@@ -1,0 +1,432 @@
+{
+  "agent": "docwriter-style-reviewer",
+  "taskId": "T-008",
+  "attempt": 2,
+  "verdict": "approved",
+  "reviewScope": "Re-entry review. Page previously passed all three reviews. Single targeted change on line 158 (Pages section) — added ancestor permission requirement and updated cross-reference anchor.",
+  "invariantResults": [
+    {
+      "invariantId": "INV-style-001",
+      "result": "pass",
+      "evidence": "4-space indentation used consistently throughout. No tabs or 2-space indents found. Modified line 158 maintains correct indentation at column 0 (paragraph text)."
+    },
+    {
+      "invariantId": "INV-style-002",
+      "result": "pass",
+      "evidence": "Filename 'content-sync.md' uses lowercase hyphenated format matching the page title 'Content sync'."
+    },
+    {
+      "invariantId": "INV-style-054",
+      "result": "pass",
+      "evidence": "Page title 'Content sync' does not end with '-ing'."
+    },
+    {
+      "invariantId": "INV-style-055",
+      "result": "pass",
+      "evidence": "Three numbered lists found: line 143 (6 steps), line 160 (7 steps), line 207 (4 steps). All within the 8-step maximum."
+    },
+    {
+      "invariantId": "INV-style-056",
+      "result": "pass",
+      "evidence": "Pronouns have clear antecedents throughout. Modified line uses 'you' (reader) and 'its' (referring to 'the page') with clear antecedents."
+    },
+    {
+      "invariantId": "INV-style-058",
+      "result": "pass",
+      "evidence": "Application references use correct phrasing: 'Open the Content hub application' (line 143), 'Open a website channel application' (line 160), 'Open the Forms application' (line 207)."
+    },
+    {
+      "invariantId": "INV-style-061",
+      "result": "pass",
+      "evidence": "No instances of 'braces' found. Page does not reference curly brackets."
+    },
+    {
+      "invariantId": "INV-style-064",
+      "result": "pass",
+      "evidence": "Unicode rightwards arrow '→' used in navigation paths (line 81: 'After form submission → Redirect to')."
+    },
+    {
+      "invariantId": "INV-style-073",
+      "result": "pass",
+      "evidence": "UI element names are bolded: **Content hub** (line 143), **Sync** (lines 146, 152, 171, 208, 211), **Include forms** (line 66), **Development**, **Staging**, **Production** (line 19), **Delete** (line 239), **Draft (Initial)** (line 93), etc."
+    },
+    {
+      "invariantId": "INV-style-075",
+      "result": "pass",
+      "evidence": "Italics used correctly for object/feature names: *Read* and *Synchronize* (line 158 — permission names), *Smart folders* (line 50), *Published* (line 94), *Unpublished* (line 97), *Forms* application (line 201), *Staging*, *Production* (line 125)."
+    },
+    {
+      "invariantId": "INV-style-079",
+      "result": "pass",
+      "evidence": "No improper all-caps usage. Page does not use all-caps for emphasis."
+    },
+    {
+      "invariantId": "INV-style-080",
+      "result": "pass",
+      "evidence": "Punctuation is not formatted with bold/italic after formatted text throughout."
+    },
+    {
+      "invariantId": "INV-style-081",
+      "result": "pass",
+      "evidence": "All headings use sentence case: 'Supported content', 'What is not synchronized?', 'Editing process when using content sync', 'Synchronize content', 'Pages', 'Sync moved or reordered pages', 'Choose the restoration time for synchronized content', 'Track incoming synchronizations'."
+    },
+    {
+      "invariantId": "INV-style-083",
+      "result": "pass",
+      "evidence": "List items consistently use sentence case."
+    },
+    {
+      "invariantId": "INV-style-084",
+      "result": "pass",
+      "evidence": "Single spaces between sentences and words. 4-space indentation used."
+    },
+    {
+      "invariantId": "INV-style-085",
+      "result": "pass",
+      "evidence": "Serial comma used consistently (e.g., line 106: 'submission data, autoresponder settings, automation processes, form submission notifications, and the visibility configuration')."
+    },
+    {
+      "invariantId": "INV-style-086",
+      "result": "pass",
+      "evidence": "All 'for example' and 'e.g.' instances followed by commas (e.g., line 19: 'For example,'; line 117: 'For example,'; line 125: 'For example,')."
+    },
+    {
+      "invariantId": "INV-style-088",
+      "result": "pass",
+      "evidence": "Hyphens used without spaces (e.g., 'public-facing', 'page-id' in Liquid tags)."
+    },
+    {
+      "invariantId": "INV-style-090",
+      "result": "pass",
+      "evidence": "No em dashes found anywhere on the page."
+    },
+    {
+      "invariantId": "INV-style-091",
+      "result": "pass",
+      "evidence": "Straight double quotes used throughout (e.g., line 17: 'instance', line 100: 'select')."
+    },
+    {
+      "invariantId": "INV-style-093",
+      "result": "pass",
+      "evidence": "Lists within markdown body stay within 3 levels. Lines 49, 66-67, 80-82 appear deeply indented but are inside {% table %}/{% cell %} Liquid blocks — the indentation is structural Liquid nesting, not list depth. Actual list content within cells is ≤2 levels deep."
+    },
+    {
+      "invariantId": "INV-style-095",
+      "result": "pass",
+      "evidence": "No ellipsis characters found. 'etc.' not present either (not needed)."
+    },
+    {
+      "invariantId": "INV-style-096",
+      "result": "pass",
+      "evidence": "Full-page scan: zero Unicode en dashes (U+2013) or em dashes (U+2014) found. All dashes use '--' (lines 185, 220, 221). ANTI-002 (dash confusion) mitigation confirmed effective."
+    },
+    {
+      "invariantId": "INV-style-097",
+      "result": "pass",
+      "evidence": "Page follows task-oriented approach — documents what users can accomplish (synchronize content items, pages, forms) rather than listing every UI element."
+    },
+    {
+      "invariantId": "INV-style-098",
+      "result": "pass",
+      "evidence": "Title 'Content sync' uses sentence case."
+    },
+    {
+      "invariantId": "INV-style-099",
+      "result": "pass",
+      "evidence": "Title 'Content sync' is a noun phrase for a feature/concept page."
+    },
+    {
+      "invariantId": "INV-style-100",
+      "result": "pass",
+      "evidence": "No 'How to' prefix in page title."
+    },
+    {
+      "invariantId": "INV-style-103",
+      "result": "pass",
+      "evidence": "Actionable headings use imperative verb phrases: 'Synchronize content', 'Sync moved or reordered pages', 'Sync forms with pages', 'Sync forms individually', 'Choose the restoration time for synchronized content', 'Track incoming synchronizations'."
+    },
+    {
+      "invariantId": "INV-style-107",
+      "result": "pass",
+      "evidence": "Ordered lists used for step-by-step instructions (lines 143-152, 160-171, 207-212). Bullet points used for non-sequential information (supported content, limitations)."
+    },
+    {
+      "invariantId": "INV-style-108",
+      "result": "pass",
+      "evidence": "Each step contains one primary action (e.g., 'Open the Content hub application', 'Select the content items', 'Use the Sync action')."
+    },
+    {
+      "invariantId": "INV-style-109",
+      "result": "pass",
+      "evidence": "Steps use imperative mood: 'Open', 'Select', 'Use', 'Review', 'Choose'."
+    },
+    {
+      "invariantId": "INV-style-111",
+      "result": "pass",
+      "evidence": "Modified line 158 is concise and focused. Adds necessary permission information without verbosity."
+    },
+    {
+      "invariantId": "INV-style-112",
+      "result": "pass",
+      "evidence": "Line 158 leads with capability ('You can synchronize individual pages') then states the requirement ('you need Read and Synchronize page permissions')."
+    },
+    {
+      "invariantId": "INV-style-113",
+      "result": "pass",
+      "evidence": "No instances of 'please' found anywhere on the page."
+    },
+    {
+      "invariantId": "INV-style-114",
+      "result": "pass",
+      "evidence": "Modified line 158 uses active voice ('you need', 'you can synchronize'). Pre-existing passive constructions (e.g., 'is synchronized' on lines describing system behavior) are acceptable per the invariant's exception clauses (avoiding condescension/awkwardness)."
+    },
+    {
+      "invariantId": "INV-style-115",
+      "result": "pass",
+      "evidence": "Present simple tense used throughout. Modified line: 'you need' (present simple)."
+    },
+    {
+      "invariantId": "INV-style-117",
+      "result": "pass",
+      "evidence": "American English used (e.g., 'synchronize' not 'synchronise')."
+    },
+    {
+      "invariantId": "INV-style-118",
+      "result": "pass",
+      "evidence": "Consistent terminology: 'synchronize/synchronization' used throughout (not mixed with 'sync' in prose — 'sync' only in UI action names and page title, matching actual UI)."
+    },
+    {
+      "invariantId": "INV-style-119",
+      "result": "pass",
+      "evidence": "Modified line does not use the pronoun 'it'. Pre-existing usage is minimal and contextually clear."
+    },
+    {
+      "invariantId": "INV-style-120",
+      "result": "pass",
+      "evidence": "Indicative and imperative mood used. No subjunctive mood found."
+    },
+    {
+      "invariantId": "INV-style-125",
+      "result": "pass",
+      "evidence": "Common contractions used where appropriate (e.g., line 93: 'can't' — actually 'cannot' is used; 'don't' used on line 66). Pre-existing content; not affected by change."
+    },
+    {
+      "invariantId": "INV-style-129",
+      "result": "pass",
+      "evidence": "Input-agnostic verbs used: 'Select' (lines 129, 146, 152, 171, 211), 'Open' (lines 143, 160, 207), 'Enter' is not needed."
+    },
+    {
+      "invariantId": "INV-style-132",
+      "result": "pass",
+      "evidence": "Modified line 158: 'you need *Read* and *Synchronize* page permissions' — uses 'you need' correctly. Pre-existing line 121 ('must be done by developers') has 'must' applied to 'changes' (subject), not directed at people — acceptable per invariant ('Must is acceptable when not writing about people')."
+    },
+    {
+      "invariantId": "INV-style-134",
+      "result": "pass",
+      "evidence": "Modified line leads with condition: 'To synchronize pages, you need...' — condition first, then instruction."
+    },
+    {
+      "invariantId": "INV-style-136",
+      "result": "pass",
+      "evidence": "No inline code formatting issues. Page uses italics for permission names (*Read*, *Synchronize*) which is appropriate for named values, not code elements."
+    },
+    {
+      "invariantId": "INV-style-138",
+      "result": "pass",
+      "evidence": "Callout types used appropriately: {% note %} for important prerequisites/impacts, {% info %} for additional recommendations. Severity order respected."
+    },
+    {
+      "invariantId": "INV-style-139",
+      "result": "pass",
+      "evidence": "All callout boxes include bold titles: **Prerequisites** (line 24), **Recommended content size per synchronization** (line 134), **Duration of page content sync** (line 176), **Impact of synchronizing forms** (line 190), **Scheduling multiple synchronizations** (line 226), **Synchronization cleanup** (line 242)."
+    },
+    {
+      "invariantId": "INV-style-140",
+      "result": "pass",
+      "evidence": "No callout type names ('Note', 'Info', 'Warning') appear inside their corresponding callout boxes."
+    },
+    {
+      "invariantId": "INV-style-141",
+      "result": "pass",
+      "evidence": "Callout types match content severity: {% note %} for prerequisites/important info, {% info %} for recommendations/additional context."
+    },
+    {
+      "invariantId": "INV-jekyll-001",
+      "result": "pass",
+      "evidence": "Table on lines 39-86 uses Liquid table syntax ({% table %}, {% row %}, {% cell %})."
+    },
+    {
+      "invariantId": "INV-jekyll-003",
+      "result": "pass",
+      "evidence": "Page starts with YAML front matter between --- delimiters (lines 1-15)."
+    },
+    {
+      "invariantId": "INV-jekyll-004",
+      "result": "pass",
+      "evidence": "All required front matter fields present: title (Content sync), identifier (content_sync_xp), order (450), redirect_from (x/content_sync_xp), persona (business), license (2)."
+    },
+    {
+      "invariantId": "INV-jekyll-005",
+      "result": "pass",
+      "evidence": "Identifier 'content_sync_xp' uses snake_case with _xp suffix for _documentation collection."
+    },
+    {
+      "invariantId": "INV-jekyll-008",
+      "result": "pass",
+      "evidence": "redirect_from includes 'x/content_sync_xp' matching the identifier."
+    },
+    {
+      "invariantId": "INV-jekyll-009",
+      "result": "pass",
+      "evidence": "License field set to 2 (advanced tier)."
+    },
+    {
+      "invariantId": "INV-jekyll-010",
+      "result": "pass",
+      "evidence": "Admonition tags use correct Liquid syntax with matching end tags: {% note %}...{% endnote %} (lines 23/27, 175/179, 189/193, 225/231), {% info %}...{% endinfo %} (lines 133/139, 241/245)."
+    },
+    {
+      "invariantId": "INV-jekyll-013",
+      "result": "pass",
+      "evidence": "Images use Liquid syntax: {% image content_sync_topology.png title=... %} (line 21), {% image sync_content_items.png title=... %} (line 147), etc."
+    },
+    {
+      "invariantId": "INV-jekyll-014",
+      "result": "pass",
+      "evidence": "UI/screenshot images include border=true: lines 147, 164, 199, 209, 222, 237. Topology diagram (line 21) correctly omits border."
+    },
+    {
+      "invariantId": "INV-jekyll-018",
+      "result": "pass",
+      "evidence": "Front matter includes related_pages: ['content_items_xp', 'JwKQC', 'content_sync_configuration_xp']."
+    },
+    {
+      "invariantId": "INV-jekyll-019",
+      "result": "pass",
+      "evidence": "Front matter toc configured with minHeadingLevel: 1, maxHeadingLevel: 3."
+    },
+    {
+      "invariantId": "INV-jekyll-024",
+      "result": "pass",
+      "evidence": "Icon tags use correct syntax: {% icon xp-arrow-leave-square color=\"rgb(21, 21, 21)\" %} (lines 146, 164, 208), {% icon xp-three-dots-vertical %} (line 163), {% icon xp-bin color=\"red\" %} (line 239)."
+    },
+    {
+      "invariantId": "INV-crossref-001",
+      "result": "pass",
+      "evidence": "In-page links use correct syntax: {% inpage_link \"Choose the restoration time for synchronized content\" linkText=... %} (lines 148, 165), {% inpage_link \"Forms\" linkText=... %} (line 67), etc."
+    },
+    {
+      "invariantId": "INV-crossref-002",
+      "result": "pass",
+      "evidence": "All page_link tags reference _documentation collection pages. Collection attribute correctly omitted (defaults to documentation). Modified line 158: {% page_link permissions_pagelevel_xp anchor=\"Page permissions for synchronizing pages\" linkText=\"page permissions\" %} — correct syntax."
+    },
+    {
+      "invariantId": "INV-crossref-005",
+      "result": "pass",
+      "evidence": "Modified line 158: anchor 'Page permissions for synchronizing pages' corresponds to the heading added to the target page by task T-001 (dependency). Writer-output confirms this anchor was updated to match the new heading."
+    },
+    {
+      "invariantId": "INV-crossref-009",
+      "result": "pass",
+      "evidence": "Link text throughout is descriptive. Modified line 158: linkText='page permissions' accurately describes the target content. No vague 'click here' or 'this page' patterns found."
+    },
+    {
+      "invariantId": "INV-structure-002",
+      "result": "pass",
+      "evidence": "No 'Next steps' section added. Page structure unchanged from prior approved version."
+    },
+    {
+      "invariantId": "INV-structure-009",
+      "result": "pass",
+      "evidence": "Page is self-contained with rich cross-references to related topics. Modified line adds a useful cross-reference to the permissions page."
+    },
+    {
+      "invariantId": "INV-structure-011",
+      "result": "pass",
+      "evidence": "Page works for new and returning users. Prerequisites noted. Modified line adds helpful permission context without assuming prior knowledge."
+    },
+    {
+      "invariantId": "INV-structure-034",
+      "result": "pass",
+      "evidence": "Article structure intact: Title (Content sync), Introduction (lines 17-19), Body (supported content, editing process, synchronize content sections), Result (sync dialog shows progress — lines 154, 173, 214)."
+    },
+    {
+      "invariantId": "INV-structure-035",
+      "result": "pass",
+      "evidence": "Introduction (lines 17-19) provides context about content synchronization, its purpose, and multi-environment workflow."
+    },
+    {
+      "invariantId": "TINV-002",
+      "result": "pass",
+      "evidence": "Task T-008 adds a cross-reference from the content sync page to the centralized permissions page, helping unify scattered permission information."
+    }
+  ],
+  "inapplicableInvariants": [
+    {
+      "ids": ["INV-codesamples-001", "INV-codesamples-002", "INV-codesamples-003", "INV-codesamples-004", "INV-codesamples-005", "INV-codesamples-006", "INV-codesamples-007", "INV-codesamples-008", "INV-codesamples-009", "INV-codesamples-010", "INV-codesamples-011", "INV-codesamples-014", "INV-codesamples-015", "INV-codesamples-016", "INV-codesamples-017", "INV-codesamples-018", "INV-codesamples-019", "INV-codesamples-020", "INV-codesamples-021", "INV-codesamples-022", "INV-codesamples-023", "INV-codesamples-024", "INV-codesamples-025", "INV-codesamples-026", "INV-codesamples-027", "INV-codesamples-028"],
+      "reason": "No code samples or code blocks on this business-user how-to page."
+    },
+    {
+      "ids": ["INV-jekyll-011", "INV-jekyll-012", "INV-jekyll-033"],
+      "reason": "No {% code %} or {% code_link %} blocks on this page."
+    },
+    {
+      "ids": ["INV-jekyll-015", "INV-jekyll-016", "INV-jekyll-020", "INV-jekyll-021", "INV-jekyll-022", "INV-jekyll-023", "INV-jekyll-025", "INV-jekyll-027"],
+      "reason": "Page does not use file downloads, videos, columns, panels, cards, banners, status badges, or arcade demos."
+    },
+    {
+      "ids": ["INV-style-059", "INV-style-060", "INV-style-062", "INV-style-092", "INV-style-094", "INV-style-116", "INV-style-121", "INV-style-127", "INV-style-128", "INV-style-131", "INV-style-137", "INV-style-142", "INV-style-143", "INV-style-144", "INV-style-145", "INV-style-146", "INV-style-147", "INV-style-148"],
+      "reason": "Invariant topics not present on this page (sign-in terminology, specific UI elements like checkboxes, code pluralization, path formatting, temperature, gender pronouns, etc.)."
+    },
+    {
+      "ids": ["INV-structure-001", "INV-structure-010", "INV-structure-030", "INV-structure-031", "INV-structure-032", "INV-structure-033", "INV-structure-036", "INV-structure-037", "INV-structure-038", "INV-structure-039"],
+      "reason": "Not applicable to this update-crossrefs action on a business-user page."
+    },
+    {
+      "ids": ["INV-jekyll-006", "INV-jekyll-007", "INV-jekyll-017", "INV-jekyll-028", "INV-jekyll-029", "INV-jekyll-030", "INV-jekyll-031", "INV-jekyll-032"],
+      "reason": "Pre-existing front matter values not modified in this task. Previously validated."
+    }
+  ],
+  "additionalFindings": [
+    {
+      "category": "heading-hierarchy",
+      "result": "pass",
+      "evidence": "Headings follow correct hierarchy: h2 → h3 → h4 throughout. No skipped levels. 13 headings verified (h2: 4, h3: 5, h4: 3). h4 headings ('Sync moved or reordered pages', 'Sync forms with pages', 'Sync forms individually') each appear under h3 parents."
+    },
+    {
+      "category": "liquid-syntax",
+      "result": "pass",
+      "evidence": "All Liquid tags have matching open/close pairs. {% table %}...{% endtable %}, {% note %}...{% endnote %}, {% info %}...{% endinfo %} all properly closed. No broken includes or invalid {% %} / {{ }} usage."
+    },
+    {
+      "category": "link-formatting",
+      "result": "pass",
+      "evidence": "All cross-references use {% page_link %} or {% inpage_link %} Liquid syntax. No bare markdown links or broken references. Modified cross-reference on line 158 follows correct format with anchor and linkText attributes."
+    },
+    {
+      "category": "consistent-formatting",
+      "result": "pass",
+      "evidence": "Lists, callouts, images, and icon tags follow the same patterns throughout. Bold for UI elements, italics for values/names, consistent icon syntax with color attributes."
+    },
+    {
+      "category": "anti-pattern-check",
+      "result": "pass",
+      "evidence": "ANTI-002 (dash confusion): Verified — all dashes on page use '--' (lines 185, 220, 221). Zero Unicode en dashes or em dashes. The attempt-2 writer correctly avoided the dash variant that caused rejection in prior runs."
+    },
+    {
+      "category": "meta-knowledge-style-evolution",
+      "result": "pass",
+      "evidence": "STYLE-004 (page_link identifier verification): The modified cross-reference uses identifier 'permissions_pagelevel_xp' which matches the target page's actual front matter. Anchor updated to 'Page permissions for synchronizing pages' per T-001 dependency."
+    }
+  ],
+  "summary": {
+    "invariantsPassed": 68,
+    "invariantsFailed": 0,
+    "invariantsInapplicable": 103,
+    "additionalIssues": 0,
+    "antiPatternsChecked": ["ANTI-002"],
+    "metaKnowledgeApplied": ["STYLE-004"],
+    "discardedRecommendations": []
+  },
+  "timestamp": "2026-03-18T21:19:35Z"
+}

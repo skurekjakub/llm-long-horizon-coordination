@@ -1,0 +1,339 @@
+{
+  "gateId": "GATE-DRAFT-CH015",
+  "phase": "drafting",
+  "chapter": 15,
+  "auditor": "romantic-fantasy-writer-drafting-auditor",
+  "timestamp": "2026-03-18T12:30:00.000000+00:00",
+  "iteration": 1,
+  "verdict": "passed",
+  "overallScore": 9.5,
+  "executiveSummary": "Chapter 15 is an exceptionally well-constructed false victory chapter that delivers both the evidence consolidation (fantasy arc) and the emotional declaration (romance arc) with craft discipline and emotional authenticity. The draft achieves rock-solid voice consistency for Kaelith throughout all three scenes, maintains dramatic irony around the contract without over-signalling, and earns the vulnerability ladder step 9 declaration ('I want this. I want you.') through precisely calibrated emotional escalation. All 16 active craft tools are correctly applied. All outline elements are present and fully realized. Zero banned phrases, zero cliche fantasy phrases, and zero critical or major findings. Three minor observations — one borderline metaphor domain crossing, one mildly generic comparison, and one potentially modern compound term — are at the observation level and do not constitute warnings. This is one of the strongest chapter drafts in the manuscript.",
+  "criticalFindings": [],
+  "majorFindings": [],
+  "minorFindings": [
+    {
+      "id": "MIN-001",
+      "severity": "minor",
+      "category": "voice-compliance",
+      "invariant": "INV-003",
+      "title": "One atmospheric metaphor slightly outside Kaelith's architectural domain",
+      "description": "Line 215: 'a flare of warmth, tender and fierce, the emotional equivalent of sunlight through a gap in cloud cover. The kind of warmth that made you aware of how cold you had been before it arrived.' The 'sunlight through gap in cloud cover' image is atmospheric/weather rather than architectural/structural. Kaelith's voice fingerprint specifies: 'Her metaphors are drawn exclusively from architecture, fortification, and material science.' However, the voice evolution specification allows 'one or two water-adjacent metaphors unconsciously' by mid-to-late story as Lirien's influence. At chapter 15 of 22, some domain broadening is defensible. Additionally, this occurs while Kaelith perceives Lirien's emotions through the bond, where cross-domain imagery could be argued as emotional contamination. Not flagged as a warning because the evolution spec permits it at this stage, but revision could tighten the image to Kaelith's domain.",
+      "evidence": [
+        "Line 215: 'the emotional equivalent of sunlight through a gap in cloud cover'"
+      ],
+      "recommendation": "Consider revision to architectural equivalent: 'the emotional equivalent of finding a sound wall behind a facade she had expected to be hollow' or 'like heat stored in stone — only apparent when you stopped and let your hands rest against it.' Alternatively, retain as intentional voice evolution marker and document in voice-evolution tracking."
+    },
+    {
+      "id": "MIN-002",
+      "severity": "minor",
+      "category": "prose-originality",
+      "invariant": "INV-017",
+      "title": "One slightly generic comparison in closing passage",
+      "description": "Line 245: 'a body-knowledge that oriented her northeast the way a compass needle oriented north.' The compass needle comparison is functional and accurate but lacks the specificity the style guide demands: 'Every metaphor must be traceable to the POV's established domains and phrased specifically enough that it could not be transplanted unchanged into a different fantasy novel.' A compass needle comparison could appear in any fantasy. However, the overall metaphor ('body-knowledge in joints and marrow') is highly original and character-specific; the compass element is a brief clarifying comparison within a larger original image. Barely crosses the threshold for flagging.",
+      "evidence": [
+        "Line 245: 'a body-knowledge that oriented her northeast the way a compass needle oriented north'"
+      ],
+      "recommendation": "Consider replacing with a domain-specific comparison: 'the way a load-bearing wall oriented toward its foundation' or 'the way a plumb line found true.' Alternatively, the compass reference could be justified as a commander's tool (military vocabulary) and retained."
+    },
+    {
+      "id": "MIN-003",
+      "severity": "minor",
+      "category": "vocabulary",
+      "invariant": "INV-017",
+      "title": "Borderline modern compound term in narration",
+      "description": "Line 209: 'It was the closest thing she had to a love language, and Lirien knew how to translate.' The compound 'love language' has strong modern/therapy-speak associations (Gary Chapman, 1992). The style guide prohibits 'therapy-speak in narration.' However, Kaelith is using the phrase literally — 'a language for expressing love' — not referencing the modern self-help concept. The wry, self-aware tone is characteristic of Kaelith's garrison-coast humor. The surrounding sentence ('She let the military language stand') provides context that defuses the modern reading. Borderline call; flagged for awareness rather than mandatory revision.",
+      "evidence": [
+        "Line 209: 'It was the closest thing she had to a love language, and Lirien knew how to translate.'"
+      ],
+      "recommendation": "If revising, consider: 'It was the closest thing she had to tenderness in dialect' or 'the closest she could come to saying what she meant without actually saying it.' If retaining, the literal reading is defensible."
+    }
+  ],
+  "observations": [
+    {
+      "id": "OBS-001",
+      "category": "outline-compliance",
+      "status": "PASS",
+      "detail": "All three scenes (SCN-40, SCN-41, SCN-42) present with correct scene types (scene, scene, sequel). All scene goals delivered. All five commandments satisfied for each scene. All value shifts realized: investigating fragments → corroborated proof, unnamed wanting → spoken commitment, named desire → chosen hope."
+    },
+    {
+      "id": "OBS-002",
+      "category": "pov-identification",
+      "status": "PASS",
+      "detail": "Kaelith immediately identifiable within first 2 sentences. Opening: 'Two exits. The door they had entered through — heavy timber, iron-banded, hinged to open inward — and a shuttered window on the north wall, narrow enough to slow a person climbing through. Stone floor. Stone walls. Ceiling beams of heartwood, old and dark, seated properly in their cradles. Load-bearing. Sound.' Inventory mode, exits first, structural assessment — unmistakably Kaelith per attention priority spec."
+    },
+    {
+      "id": "OBS-003",
+      "category": "voice-consistency",
+      "status": "PASS",
+      "detail": "Voice fingerprint maintained throughout all 4001 words. Military/structural vocabulary dominant: 'load-bearing,' 'sight lines,' 'defensible,' 'reconnaissance,' 'engagement,' 'position,' 'assess,' 'perimeter.' Metaphors exclusively architectural: keystone, mortar, masonry, load-bearing walls, buttresses, foundations, curtain walls. Emotion as physical event: ribs complaining, jaw set, heat in palms, pulse-awareness, pressure behind sternum. Short declarative rhythm: ~70% sentences 3-8 words. Longer sentences only during emotional breach (declaration scene). Humor: dry, flat, unannounced ('I am an excellent liar. I simply choose not to apply the skill recreationally.')."
+    },
+    {
+      "id": "OBS-004",
+      "category": "voice-evolution",
+      "status": "NOTED",
+      "detail": "One water-adjacent metaphor detected in Kaelith's narration: 'running like a deep current through stone' (line 171), describing Lirien's contract-guilt weight as perceived through the bond. This falls within the voice evolution spec ('one or two water-adjacent metaphors unconsciously — a sign of Lirien's influence') and occurs during bond-transmission of Lirien's emotions, making the cross-domain bleed defensible. Additionally, the 'through stone' anchoring keeps the image partially in Kaelith's material-science domain. Tracked as intentional evolution rather than violation."
+    },
+    {
+      "id": "OBS-005",
+      "category": "banned-phrases",
+      "status": "PASS",
+      "detail": "Zero banned phrases detected. Full scan against all 15 style guide banned phrases returned no matches. Zero cliche fantasy patterns matched against 24 common cliche patterns."
+    },
+    {
+      "id": "OBS-006",
+      "category": "prose-quality-floor",
+      "status": "PASS",
+      "detail": "Adverb count: approximately 15 true adverbs in ~16 pages (~1 per page; limit is 3). Paragraph opener variety: highest frequency is 'The' at 17.6% (limit is 25%). Show-tell ratio: estimated 94:6 based on audit (target 80:20 overall, 90:10 for key scenes). No pure exposition paragraphs — all worldbuilding embedded in dialogue or tactical assessment. No unbroken dialogue exceeding 6 lines. Zero modern slang."
+    },
+    {
+      "id": "OBS-007",
+      "category": "show-dont-tell",
+      "status": "PASS",
+      "detail": "All major emotional beats shown through physical action and specific detail. Declaration ('I want this. I want you.') earned through escalating physical and emotional specificity: hand placement described as stone-setting, keystone-arch comparison, tactical precision of noticing pulse points. Named emotions appear only in bond-transmission passages (magical mechanism for transmitting emotional quality) and are always preceded by physical showing. The closing line ('the silence did not mean danger. It meant someone had chosen to stay') is earned summary after extensive showing."
+    },
+    {
+      "id": "OBS-008",
+      "category": "micro-tension",
+      "status": "PASS",
+      "detail": "No half-page passage without active tension. Scene 1: evidence validity question, Thalen's zealotry, Calwrath pattern recognition. Scene 2: who breaks first, terror of naming desire, bond exposure. Scene 3: contentment as suspicious state, Calwrath parallel, hope as tactical vulnerability, dramatic irony (reader's knowledge of contract). Even the quietest passages (post-declaration opening of Scene 3) maintain tension through the reader's dramatic irony and Kaelith's explicit suspicion of contentment."
+    },
+    {
+      "id": "OBS-009",
+      "category": "information-asymmetry",
+      "status": "PASS",
+      "detail": "Dramatic irony correctly maintained throughout. (1) Kaelith knows about the kill contract (FACT-003, learned ch4-5) but believes it abandoned; she does not know about the loophole (FACT-008, Lirien only, ch14). (2) Line 247: 'Not because a contract required it' — ironic because the contract IS still active via loophole. (3) Line 171: Kaelith senses 'weight' through bond but cannot identify it as contract-guilt — consistent with bond transmitting emotional quality, not factual content (FACT-010). (4) Kaelith does not reference Oathbrand deliberate maintenance (FACT-001, unknown to her) or Warden lineage (FACT-006, unknown to her). (5) Thalen evidence is presented as strong but not definitive — consistent with FACT-007 (full reveal ch19). Zero information asymmetry violations."
+    },
+    {
+      "id": "OBS-010",
+      "category": "continuity",
+      "status": "PASS",
+      "detail": "Full continuity with ch14 verified: (1) Kaelith's bruised ribs (3rd and 4th left, from ch14 ambush) referenced three times (lines 23, 77, 147). (2) Lirien's healing split lip referenced (line 149). (3) Vael Seren harbour callback accurate — ch14 featured this conversation, ch15 references it correctly (lines 131-132). (4) Bond status consistent — fully active, transmitting emotional states since ch11. (5) Travel from ch14 location to safe house near the Narrowing plausible (1-2 days elided). (6) Oathbrand status correct — phantom ache since removal, brand no longer physically present."
+    },
+    {
+      "id": "OBS-011",
+      "category": "dual-arc-interleave",
+      "status": "PASS",
+      "detail": "Both fantasy and romance arcs present and deeply interleaved. Scene 1 builds the evidence case (fantasy) while simultaneously building trust through shared intellectual work (romance). The evidence consolidation IS the trust exercise. Scene 2 pivots from mission to declaration — the transition is organic, arising from the shared purpose of Scene 1. Scene 3 weaves future-talk (romance: Vael Seren) with mission planning (fantasy: Quietus approach). Neither arc floats free for more than a page."
+    },
+    {
+      "id": "OBS-012",
+      "category": "craft-tool-compliance",
+      "status": "PASS",
+      "detail": "All 16 active craft tools verified as correctly applied: T5 (tone contract — morally complex, restrained), T6 (stakes escalation — false victory), T7 (black moment setup — every warm element is a knife for ch16), T8 (internal/external resistance — Calwrath wound, zealot network), T10 (Sanderson's Laws — bond mechanics consistent, no new magic), T12 (dual-arc interleave — verified above), T13 (tension mapping — level 7 maintained), T15 (foreshadowing — FS-012/015 advanced, FS-017/018 planted), T16 (symbolic motifs — all four present with appropriate density), T17 (voice fingerprinting — verified above), T18 (information asymmetry — verified above), T20 (emotional throughline — clear arc from cautious productivity to fragile chosen hope), T21 (vulnerability ladder — step 9 correctly achieved), T23 (mystery box — MB-002 partially addressed, MB-015 opened), T24 (subtext in dialogue — multiple layers throughout), T25 (thematic argument — all three pillars advanced)."
+    },
+    {
+      "id": "OBS-013",
+      "category": "symbolic-motifs",
+      "status": "PASS",
+      "detail": "All four registered motifs present: MOT-001 (Pallor as failing membrane) — 'membrane losing structural integrity,' 'ceiling coming apart,' 'tarnished grey,' 'stars shifted in wrong configurations,' 'sky was coming apart.' MOT-002 (Oathbrand ghost) — 'pulsed once... faint, distant, barely registering,' 'quieter than it had been in weeks,' unusual quiet as foreshadowing. MOT-003 (Water/infiltration through Lirien) — Lirien's fluidity described in Kaelith's architectural terms: 'structure that had decided to stop bracing,' 'mortar that had not fully set.' MOT-004 (Quietus body-knowledge) — 'deep kinetic insistence in joints and marrow,' 'body-knowledge that oriented her northeast.'"
+    },
+    {
+      "id": "OBS-014",
+      "category": "vulnerability-ladder",
+      "status": "PASS",
+      "detail": "Step 9 correctly achieved. 'I want this. I want you.' — named desire without tactical justification. The declaration is earned through: (1) six years of refusal to want anything since Calwrath, (2) the preceding chapters' escalation through physical intimacy (step 8, ch14), (3) the scene's emotional architecture narrowing from mission-talk to personal questions to physical proximity to bare statement. Prose mirrors vulnerability: shortest sentences of the chapter, no subordinate clauses, no military metaphor. Formality (no contractions: 'I want' not 'I'd like') as last armor."
+    },
+    {
+      "id": "OBS-015",
+      "category": "foreshadowing",
+      "status": "PASS",
+      "detail": "FS-012 (contract loophole) — dramatic irony maintained, not over-signalled. FS-015 (resonance bond) — advanced through shared conviction, desire/fear transmission, and matched contentment. FS-017 (happiness-before-fall) — newly planted, Calwrath pattern explicitly compared. FS-018 (Oathbrand unusual quiet) — newly planted, phantom ache subdued when emotionally settled."
+    },
+    {
+      "id": "OBS-016",
+      "category": "dialogue-function",
+      "status": "PASS",
+      "detail": "All dialogue serves narrative function. Evidence discussion: advances plot and trust. 'What happens when this is over?': tests relationship future. 'Wherever you are': commitment declaration. 'I want this. I want you.': peak vulnerability. Vael Seren dialogue: future-building and thematic (testing foundations). 'You plan futures like campaigns': characterization and warmth. No purposeless exchanges. Subtext active throughout: surface logistics, subtext relationship testing."
+    },
+    {
+      "id": "OBS-017",
+      "category": "contraction-pattern",
+      "status": "PASS",
+      "detail": "Contraction usage matches voice spec. Kaelith's narration uses very few contractions. Declaration scene: zero contractions ('I want this. I want you.' — not 'I'd like'). Relaxed Vael Seren dialogue maintains formality appropriate to emotional intensity: 'I am an excellent liar. I simply choose not to apply the skill recreationally.' Lirien's dialogue contractions tracked correctly: 'Cannot' vs 'can't' distinction noted by Kaelith (line 21) as significance marker."
+    },
+    {
+      "id": "OBS-018",
+      "category": "scene-transitions",
+      "status": "PASS",
+      "detail": "Both transitions execute clean hard cuts per style guide: Scene 1→2 uses '---' break with temporal/spatial reorientation (late afternoon, hearth instead of table). Scene 2→3 uses '---' break with 'Later.' one-word temporal jump. Both follow style guide's 'brief place-and-pressure orientation in first 1-3 lines.'"
+    },
+    {
+      "id": "OBS-019",
+      "category": "exposition-limits",
+      "status": "PASS",
+      "detail": "Zero pure exposition paragraphs. All worldbuilding embedded in dialogue (evidence discussion, Thalen's zealotry), tactical assessment (safe house evaluation), or bond perception (Pallor deterioration). The conspiracy background is delivered through the evidence review — characters discussing documents, not narration explaining politics."
+    },
+    {
+      "id": "OBS-020",
+      "category": "chapter-hook-and-close",
+      "status": "PASS",
+      "detail": "Hook: Opens with tactical spatial assessment (exits, structural integrity) that grounds the reader immediately in Kaelith's POV and the safe house setting. Builds intellectual momentum through evidence consolidation. Close: 'And for the first time since Calwrath, the silence did not mean danger. It meant someone had chosen to stay.' — emotionally devastating given dramatic irony. The peace is the knife. Reader knows the contract waits. This is the false victory's cruelest moment."
+    }
+  ],
+  "sceneBySceneBreakdown": {
+    "SCN-40": {
+      "wordCount": 1650,
+      "outlineCompliance": "FULL",
+      "valueShift": "investigating fragments → corroborated proof (false victory) — realized",
+      "fiveCommandments": "All five present and clear: II (Seep intelligence presentation), PC (Thalen's zealotry makes him more dangerous), CR (trust evidence enough to commit?), CL (four corroborating sources, the plan crystallises), RS (shared sense of purpose through bond)",
+      "microTension": "PASS — evidence validity question throughout, Thalen's zealotry revelation (zealots don't retreat), Calwrath pattern recognition (dangerous pre-engagement clarity), false confidence carefully earned",
+      "voiceCompliance": "PASS — opens with perfect Kaelith inventory mode (exits, structure, table as command post), evidence laid out as battle plans, cross-referencing as wall-building, keystone metaphor for crystallized conviction",
+      "sceneType": "Scene (correct per outline): Goal→Conflict→Disaster (false victory variant)",
+      "issues": "None"
+    },
+    "SCN-41": {
+      "wordCount": 1450,
+      "outlineCompliance": "FULL",
+      "valueShift": "unnamed wanting → spoken commitment — realized",
+      "fiveCommandments": "All five present and clear: II (Lirien's unguarded posture), PC (bond transmits everything without filters), CR (name the relationship or keep unnamed safety?), CL ('I want this. I want you.'), RS (bond opens completely — Lirien's filters dissolve)",
+      "microTension": "PASS — tension of observation/wanting (watching unguarded Lirien), Oathbrand's ominous quiet, circling dialogue (who breaks first?), declaration as risk (wanting = Calwrath), bond exposure (overwhelming, terrifying)",
+      "voiceCompliance": "PASS — Kaelith observes Lirien in military terms repurposed (breach in perimeter, operative architecture coming down), declaration in shortest sentences (no subordinate clauses, no military framing), physical touch described as permanent stone placement and keystone architecture",
+      "sceneType": "Scene (correct per outline): Goal→Conflict→Disaster (maximum vulnerability)",
+      "issues": "MIN-001 (sunlight/cloud metaphor in bond perception at line 215)"
+    },
+    "SCN-42": {
+      "wordCount": 900,
+      "outlineCompliance": "FULL",
+      "valueShift": "named desire → chosen hope (false victory complete) — realized",
+      "fiveCommandments": "All five present and clear: II (post-declaration quiet, everything aligned), PC (catches herself planning beyond Quietus — Calwrath pattern), CR (trust the hope or defend against it?), CL (chooses hope — 'a fortification with no one inside it'), RS (falls asleep feeling safe, reader knows contract looms)",
+      "microTension": "PASS — contentment as suspicious state (Kaelith trusts it least), Calwrath parallel (hope preceded catastrophe), Pallor deteriorating above them, Quietus pull intensifying, dramatic irony saturating every moment of peace",
+      "voiceCompliance": "PASS — future-talk in military language (defensible position, sight lines, assess the property market), humor as deflection ('I am an excellent liar'), hope processed as tactical inventory ('most dangerous item'), closing reframes silence from threat to shelter",
+      "sceneType": "Sequel (correct per outline): Reaction→Dilemma→Decision (chooses hope)",
+      "issues": "MIN-002 (compass needle comparison), MIN-003 ('love language' compound)"
+    }
+  },
+  "darlingAssessment": [
+    {
+      "passage": "'Whatever people had built this place had understood that a shelter's first obligation was to stand.' (line 5)",
+      "verdict": "NOT A DARLING",
+      "reasoning": "Beautiful sentence but serves triple function: characterizes Kaelith (engineering assessment as first instinct), establishes the safe house as thematic (shelter, reliability), and sets up the chapter's trust-as-architecture theme. Cannot be cut without losing characterization and thematic grounding."
+    },
+    {
+      "passage": "'She let the military language stand. It was the closest thing she had to a love language, and Lirien knew how to translate.' (line 209)",
+      "verdict": "NOT A DARLING (but flagged for vocabulary in MIN-003)",
+      "reasoning": "Advances character understanding (Kaelith's self-awareness about emotional expression), deepens the romance (shared language as intimacy), and establishes the dynamic where tactical vocabulary IS emotional communication. Essential to the scene."
+    },
+    {
+      "passage": "'And for the first time since Calwrath, the silence did not mean danger. It meant someone had chosen to stay.' (lines 253-255)",
+      "verdict": "NOT A DARLING",
+      "reasoning": "Chapter-closing statement that encapsulates the entire emotional arc. Earned by 4001 words of showing. Reframes Kaelith's fundamental relationship to silence — the defining characteristic of her post-Calwrath existence. The simplicity of 'chosen to stay' is the payoff to the chapter's thematic argument about chosen vs. obligated love. Removing it would gut the chapter's resolution."
+    }
+  ],
+  "invariantsChecked": [
+    {
+      "id": "INV-001",
+      "name": "Genre Promise (dual arc)",
+      "status": "PASS",
+      "evidence": "Fantasy arc: evidence consolidation, Pallor deterioration, Thalen zealotry, Quietus pull. Romance arc: emotional declaration, vulnerability step 9, future-talk. Both arcs interleaved throughout."
+    },
+    {
+      "id": "INV-002",
+      "name": "Consistency",
+      "status": "PASS",
+      "evidence": "Continuity with ch14 verified: bruised ribs, split lip, bond status, Vael Seren callback, positions, timeline. All character knowledge states accurate per information asymmetry map."
+    },
+    {
+      "id": "INV-003",
+      "name": "Distinct Voice",
+      "status": "PASS",
+      "evidence": "Kaelith identifiable within 2 sentences. Voice fingerprint maintained throughout: military vocabulary, architectural metaphors, physical emotion, short declarative rhythm."
+    },
+    {
+      "id": "INV-005",
+      "name": "Show Don't Tell",
+      "status": "PASS",
+      "evidence": "All major emotional beats shown through physical action and specific detail. Named emotions only in bond-transmission (magical mechanism) and always preceded by physical showing."
+    },
+    {
+      "id": "INV-009",
+      "name": "No Deus Ex Machina",
+      "status": "PASS",
+      "evidence": "No new magic introduced. Bond mechanics, Oathbrand, Quietus pull, and fae ward all established in prior chapters."
+    },
+    {
+      "id": "INV-010",
+      "name": "Outline Compliance",
+      "status": "PASS",
+      "evidence": "All three scenes fully delivered. All beats present. All value shifts realized. POV character correct."
+    },
+    {
+      "id": "INV-012",
+      "name": "Sequential Drafting",
+      "status": "PASS",
+      "evidence": "Chapter 14 exists and is complete. Chapter 15 follows from it with correct continuity."
+    },
+    {
+      "id": "INV-017",
+      "name": "Prose Quality Floor",
+      "status": "PASS",
+      "evidence": "Zero banned phrases. Zero cliche fantasy phrases. Adverbs within limit. Paragraph variety within limit. Show-tell ratio strong."
+    },
+    {
+      "id": "INV-027",
+      "name": "Adversarial Phase Gate",
+      "status": "EXECUTING",
+      "evidence": "This audit constitutes the adversarial gate. Full scene-by-scene breakdown with specific evidence for every finding."
+    },
+    {
+      "id": "INV-030",
+      "name": "No Silent Failures",
+      "status": "PASS",
+      "evidence": "All upstream artifacts accessible and verified. No blocked conditions."
+    },
+    {
+      "id": "INV-034",
+      "name": "POV Identification",
+      "status": "PASS",
+      "evidence": "Kaelith identifiable within first 2 sentences (inventory mode: exits, structural assessment)."
+    },
+    {
+      "id": "INV-035",
+      "name": "Micro-Tension",
+      "status": "PASS",
+      "evidence": "No half-page without active tension. All three scenes verified. Even the quietest passage (Scene 3 opening) maintains tension through dramatic irony and Kaelith's suspicion of contentment."
+    },
+    {
+      "id": "INV-038",
+      "name": "Dialogue Function",
+      "status": "PASS",
+      "evidence": "All dialogue serves narrative function. Evidence discussion, relationship testing, declarations, future-building — no purposeless exchanges."
+    },
+    {
+      "id": "INV-040",
+      "name": "Scene Value Shift",
+      "status": "PASS",
+      "evidence": "All three scenes shift value: fragmented → corroborated, unnamed → spoken, desire → hope."
+    },
+    {
+      "id": "INV-056",
+      "name": "Character Knowledge Bounds",
+      "status": "PASS",
+      "evidence": "Kaelith does not reference: loophole (FACT-008), Oathbrand deliberate maintenance (FACT-001), Warden lineage (FACT-006). Thalen evidence presented as strong but not definitive (FACT-007 reveal ch19)."
+    },
+    {
+      "id": "INV-073",
+      "name": "Publication-Ready Prose",
+      "status": "PASS",
+      "evidence": "Prose is lush but not purple, emotionally authentic, tightly constructed. Every paragraph serves plot, character, or theme. Metaphors are specific and domain-appropriate."
+    },
+    {
+      "id": "INV-079",
+      "name": "Craft Tool Compliance",
+      "status": "PASS",
+      "evidence": "All 16 active craft tools verified as correctly applied. Full verification documented in OBS-012."
+    },
+    {
+      "id": "INV-081",
+      "name": "Kill Your Darlings",
+      "status": "PASS",
+      "evidence": "Three potential darling candidates assessed. All serve multiple narrative functions (plot, character, theme). No expendable beautiful passages identified."
+    }
+  ],
+  "warningCount": 0,
+  "warningThreshold": 3,
+  "warningsTriggered": [],
+  "failTriggered": false,
+  "failReason": null,
+  "remediationNotes": "Three minor findings should be considered during revision but are not blocking: (1) The sunlight/cloud cover metaphor at line 215 could be tightened to Kaelith's architectural domain — or documented as intentional voice evolution. (2) The compass needle comparison at line 245 could be replaced with a more domain-specific alternative — or justified as military navigational vocabulary. (3) The 'love language' compound at line 209 could be rephrased if the modern association is considered too strong — or retained with its literal reading. All three are judgment calls rather than clear violations.",
+  "recommendation": "PASS to revision pipeline. This is an exceptionally strong draft with excellent voice consistency, complete outline compliance, all 16 craft tools properly applied, devastating dramatic irony, and a correctly earned vulnerability ladder step 9. The three minor findings are at the observation level — edge cases that revision can address but that do not compromise the chapter's quality. The false victory structure works because the happiness is genuine, specific, and deeply characterised — making the reader's knowledge of the contract all the more painful. This chapter achieves exactly what the outline intended: maximum emotional investment before the ch16 devastation."
+}

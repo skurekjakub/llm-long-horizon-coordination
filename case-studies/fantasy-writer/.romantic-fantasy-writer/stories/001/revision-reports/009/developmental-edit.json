@@ -1,0 +1,176 @@
+{
+  "reportType": "developmental-edit",
+  "chapter": 9,
+  "pov": "CHAR-001",
+  "generatedAt": "2025-07-17T21:00:00Z",
+  "structuralVerdict": "pass",
+  "overallAssessment": "Chapter 9 is a structurally sound and emotionally effective pinch point that delivers on its primary mandates: making Ythara's threat tangible, forcing acknowledged dependence between the leads, and advancing both fantasy and romance arcs in lockstep. The Ythara exposure sequence is the chapter's centerpiece and it succeeds viscerally — the ontological fragmentation is rendered through Kaelith's precise, inventory-driven POV in a way that makes the dissolution of selfhood feel genuinely terrifying without breaking voice. The 'Thank you. For keeping me here.' moment lands with appropriate restraint and earns its emotional weight through the extremity of what preceded it. The combat scene in SCN-027 pulls double duty — advancing the Conclave pursuit subplot while revealing instinctive coordination that proves trust has formed below conscious awareness. The chapter fuses its arcs at every level: the fantasy threat is the mechanism that forces romantic vulnerability, and the romance beat (Lirien's grounding touch) is simultaneously the countermeasure to the fantasy threat. This is dual-arc interleave at its most effective. No critical structural issues. Minor findings relate to a slight deviation from the dual-arc timeline's description of mutual anchoring, a vulnerability ladder step that delivers differently than designed, and word count overshoot. All findings are addressable without restructuring.",
+  "arcProgressionAssessment": {
+    "fantasyArc": {
+      "assessment": "Strong advancement. The fantasy arc escalates meaningfully from abstract threat to experienced horror. Three key deliverables: (1) Ythara's influence is made tangible through direct ontological exposure — the god is no longer theoretical; (2) Pallor degradation is shown to exceed Seep projections by 8-12 months, compressing the timeline and raising urgency; (3) Conclave pursuit continues with three magically armed agents, and captured documents hint at coordination beyond High Council authority. The Oathbrand's resonance with Pallor tears (shared architecture) plants important foreshadowing for the midpoint removal in ch11. The chapter correctly positions as Pinch Point One per BEAT-007.",
+      "beatDelivered": "BEAT-007: Pinch Point One — Ythara Presses on the Bond",
+      "beatFidelity": "high"
+    },
+    "romanceArc": {
+      "assessment": "Strong advancement. The romance progresses from 'determination through discipline' to 'acknowledged dependence as survival,' which is a significant and appropriate value shift for the attraction stage (ch7-10 range). The physical touch (hand on wrist over pulse) is the chapter's defining romance beat — it collapses Kaelith back into singular selfhood and creates an indelible emotional anchor. The verbal admission ('Thank you. For keeping me here.') is earned by the extremity of the exposure and delivered with characteristic Kaelith restraint. The combat coordination in SCN-027 adds a second romance dimension: trust formed below conscious awareness, manifesting as body-knowledge. Vulnerability ladder step 5 is delivered, though the specific form differs from the romance-arc.json description (see findings).",
+      "currentStage": "attraction (unwanted attraction substage, chapters 7-10)",
+      "vulnerabilityLadderStep": 5,
+      "vulnerabilityLadderFidelity": "partial — existential care delivered instead of practical care"
+    },
+    "dualArcInterleave": {
+      "assessment": "Excellent. The chapter achieves the highest form of dual-arc reinforcement: the fantasy mechanism IS the romance mechanism. Ythara's destabilizing influence forces physical proximity and emotional dependence; the grounding touch that saves Kaelith's identity is simultaneously the romantic beat that advances acknowledged need. The combat scene extends this by showing that partnership under threat reveals a structural bond that neither woman consciously built. Per the dual-arc timeline, this chapter's intersection type is 'reinforcing,' and the draft delivers that classification precisely.",
+      "intersectionType": "reinforcing",
+      "genreBalance": "fantasy-dominant with strong romance presence — matches target balance of 0.55/0.45"
+    }
+  },
+  "craftToolCompliance": {
+    "T5_ToneContract": {
+      "status": "compliant",
+      "notes": "Morally complex and atmospherically taut throughout. The Ythara exposure avoids melodrama despite its extremity. The 'Thank you' scene is delivered with deliberate understatement. No forbidden tones (whimsical, grimdark, sentimental, campy) detected."
+    },
+    "T6_StakesEscalation": {
+      "status": "compliant",
+      "notes": "Stakes escalate from theoretical god-threat to tangible ontological danger within a single scene. Kaelith directly experiences what happens when reality unravels. The Pallor timeline compression adds urgency."
+    },
+    "T7_BlackMoment": {
+      "status": "compliant",
+      "notes": "Foreshadowing deepening dependency — the trust being built here is precisely what will make the ch16 contract revelation devastating. The reader can feel the trap tightening."
+    },
+    "T8_InternalExternalResistance": {
+      "status": "compliant",
+      "notes": "Internal: Kaelith cannot process dependence through tactical frameworks, must acknowledge need she cannot classify. External: Conclave agents pursuing, Oathbrand limiting combat capacity."
+    },
+    "T12_DualArcInterleave": {
+      "status": "compliant",
+      "notes": "Fantasy threat creates romantic vulnerability. The arcs are fused at the scene level, not merely alternating."
+    },
+    "T16_SymbolicMotifWeaving": {
+      "status": "compliant",
+      "notes": "MOT-001 (Pallor as flayed skin, tears as wounds, flesh swelling through bandage imagery), MOT-002 (Oathbrand screaming near tears, shared architecture), MOT-004 (body-knowledge in combat coordination, Quietus path parallel). All motifs appear naturally integrated."
+    },
+    "T17_VoiceFingerprinting": {
+      "status": "compliant",
+      "notes": "Kaelith's voice is distinctive and consistent: tactical assessments, architectural/fortification metaphors, short declarative sentences, emotions as body events (jaw tension, heat in palms, tremor, copper taste), inventory mode under stress, no water metaphors."
+    },
+    "T20_EmotionalThroughline": {
+      "status": "compliant",
+      "notes": "Clear progression: determination → disorientation → acknowledged need → tactical partnership. No repetition of ch8's emotional register (different POV helps, but Kaelith's emotional territory is also distinct from her ch7 state)."
+    },
+    "T21_VulnerabilityLadder": {
+      "status": "compliant-with-note",
+      "notes": "Step 5 delivered through existential rather than practical care. The spirit is maintained — Lirien provides aid beyond contract necessity — but the specific manifestation differs from the romance-arc.json description. See DEV-009-002."
+    }
+  },
+  "findings": [
+    {
+      "id": "DEV-009-001",
+      "severity": "minor",
+      "category": "arc-progression",
+      "location": "SCN-025, throughout the Ythara exposure sequence",
+      "description": "One-directional anchoring vs. planned mutual anchoring. The dual-arc-timeline.json describes the ch9 Ythara exposure as requiring MUTUAL anchoring: 'Lirien's precision anchoring Kaelith's instinct, Kaelith's embodied certainty grounding Lirien's fracturing control.' The draft delivers only one direction — Lirien anchors Kaelith, but there is no indication that Lirien also needed Kaelith's presence to stay coherent. The anchoring is presented as Lirien rescuing Kaelith, not two people holding each other together. The chapter outline supports the one-directional version, so the draft follows its direct instructions, but the dual-arc timeline's richer mutual-dependence concept is partially lost. This matters because the romance arc's trajectory depends on BOTH women needing each other, not one being rescuer and the other rescued.",
+      "recommendation": "Add 1-2 sentences from Kaelith's observation during or after the exposure suggesting that Lirien was also affected. Possibilities: (a) Kaelith notices Lirien's hand was not entirely steady on her wrist; (b) Lirien's voice during the anchoring had a precision that felt effortful rather than natural; (c) After the exposure, a brief moment where Lirien's composure shows hairline cracks that suggest she was holding herself together while holding Kaelith. This would convert the beat from 'Lirien saves Kaelith' to 'they save each other,' which is the chapter's declared thematic goal and strengthens the mutual dependence foundation for later chapters."
+    },
+    {
+      "id": "DEV-009-002",
+      "severity": "minor",
+      "category": "romance",
+      "location": "Vulnerability ladder step 5 delivery (spans SCN-025 and SCN-026)",
+      "description": "Vulnerability ladder step 5 in romance-arc.json describes Lirien providing aid beyond contract necessity through specific practical care behaviors: 'wrapping Kaelith's damaged collarbone with field dressings, adjusting their pace to accommodate Kaelith's pain, preparing food without being asked.' The draft delivers step 5 through existential care instead: physical grounding during Ythara exposure, presence without demand in the waystation, operational language when Kaelith needs structure. Both are valid expressions of 'aid beyond contract necessity,' and the existential version is arguably more emotionally impactful. However, the mismatch means the practical-care dimension of Lirien's growing attachment is not explicitly demonstrated in this chapter. Since ch8 (Lirien's POV) presumably showed some of these practical care behaviors from Lirien's perspective, the gap may already be covered.",
+      "recommendation": "Verify during revision that practical care behaviors (pace adjustment, food preparation, wound tending) appeared in ch8 or will appear in early ch10. If not, consider adding one brief practical-care beat to SCN-026 — e.g., Kaelith noticing that Lirien prepared the fire or food without being asked, or adjusted their departure timing to allow Kaelith more recovery time. This would anchor the vulnerability ladder step in both its existential and practical dimensions."
+    },
+    {
+      "id": "DEV-009-003",
+      "severity": "minor",
+      "category": "pacing",
+      "location": "Overall chapter",
+      "description": "Word count overshoot: 4,986 words against a target of 4,000 (24.7% over). The chapter justifies its length through the complexity of the Ythara exposure (which requires immersive, extended rendering) and the three-scene structure. However, at nearly 5,000 words, it is the longest chapter in the recent sequence (ch7: 4,186; ch8: 4,089). Some passages — particularly the extended Pallor description in SCN-025 (the theological aside about the Sheltering One giving its skin) and the post-combat reflection in SCN-027 — could potentially be tightened without losing structural beats.",
+      "recommendation": "Review for compression opportunities during line editing. Priority areas: (a) The theological exposition about the Pallor's origin (~100 words in the 'flayed skin of the Sheltering One' passage) could be trimmed since this information has likely been established in earlier chapters; (b) The post-combat tactical analysis of Lirien's exit strategy could be slightly compressed without losing the partnership revelation. Target: bring the chapter closer to 4,500 words. Do not cut the Ythara exposure core or the 'Thank you' scene — these are structurally essential."
+    },
+    {
+      "id": "DEV-009-004",
+      "severity": "minor",
+      "category": "arc-progression",
+      "location": "Emotional state comparison: ch7 vs ch9 (both Kaelith POV)",
+      "description": "INV-037 requires no major character to occupy the same dominant emotional state in two consecutive chapters. Ch7 (Kaelith POV) ends in 'acknowledged attraction and fear' — she is drawn to Lirien and unsettled by the vulnerability. Ch9 (Kaelith POV, with ch8 as Lirien POV between) ends in 'acknowledged dependence as survival' — she needs Lirien and cannot deny it. These are distinct emotional states (attraction ≠ dependence; fear ≠ acceptance), and the progression is genuine. However, both chapters end with Kaelith acknowledging an unwanted emotional response to Lirien that challenges her self-sufficiency. The emotional territory overlaps, even though the specific emotions differ. Since ch8 (Lirien POV) intervenes between them, this is not a strict INV-037 violation, but the pattern should be tracked.",
+      "recommendation": "No structural change needed. The emotional progression is real and the POV alternation provides variety. However, ensure that ch10 (Lirien POV) and ch11 (likely Kaelith POV at midpoint) each introduce clearly distinct emotional registers to prevent the pattern of 'Kaelith acknowledges unwanted feelings about Lirien' from becoming repetitive across her POV chapters."
+    },
+    {
+      "id": "DEV-009-005",
+      "severity": "suggestion",
+      "category": "structure",
+      "location": "SCN-027, combat sequence",
+      "description": "Kaelith's post-Ythara physical depletion could be more visually pronounced during the combat. The text acknowledges depletion ('her reserves depleted,' 'reflexes a half-beat slower'), and the pommel strike to her temple creates a moment of vulnerability. But she still fights effectively enough to take down the caster twice and go toe-to-toe with a sword-bearer. For a character who nearly ceased to exist forty-three seconds before the fight, the combat performance is notably strong. Increasing the visible physical cost would reinforce the chapter's dependence theme — Kaelith survives because Lirien intervenes at the exact right moment, not because Kaelith can still fight at near-full capacity alone.",
+      "recommendation": "Consider adding 1-2 moments where Kaelith's body fails her during the fight — a missed step, a delayed reaction that costs her an opening, a moment where her inventory-brain stutters from residual Ythara interference. The pommel strike already creates one such moment; a second, earlier failure would establish the pattern. This would make Lirien's perfectly-timed window entry feel even more essential and deepen the 'we fight as a unit' value shift by making clear that Kaelith could NOT have won this alone."
+    },
+    {
+      "id": "DEV-009-006",
+      "severity": "suggestion",
+      "category": "thematic-resonance",
+      "location": "Overall chapter, particularly SCN-026 and SCN-027",
+      "description": "Of the three thematic pillars, TP-1 (Trust as structural failure) and TP-3 (Chosen versus only) are well-engaged. TP-2 (The price of the right choice) receives only glancing attention. The chapter's events offer natural entry points for TP-2: Kaelith's decision to trust Lirien during the exposure is itself a choice with costs (she acknowledges dependence she would prefer to deny); the combat requires choosing to fight together rather than individually, which succeeds but deepens the partnership's load-bearing requirements. A brief internal moment where Kaelith recognizes that trusting Lirien is a choice — and that, like all her choices, it will cost something — would deepen the thematic texture.",
+      "recommendation": "In SCN-026, during Kaelith's internal processing, consider adding a line that connects her current dependence on Lirien to the broader pattern of her life: choices that are correct but costly. Something in the register of 'She had always understood that the right decision and the painless one were rarely the same structure.' This would activate TP-2 without heavy-handedness, linking the chapter's romance vulnerability to Kaelith's defining thematic question."
+    },
+    {
+      "id": "DEV-009-007",
+      "severity": "suggestion",
+      "category": "structure",
+      "location": "SCN-027, Conclave document subplot",
+      "description": "The captured documents subplot is well-planted — Kaelith notices Lirien going still for 1.3 seconds longer than operational reading requires, and Lirien shares incomplete information. This correctly advances FS-011 (Seep agenda plant) and maintains information asymmetry. However, the beat is somewhat compressed. Kaelith's decision to 'file it' and not press feels slightly fast given her established character trait of reading structural weakness. A moment of more active internal debate — press now and risk the fragile trust, or file and revisit — would give the omission more narrative weight and set up future tension more sharply.",
+      "recommendation": "Expand Kaelith's internal response to the document omission by 2-3 sentences. Show her registering the options (press, file, confront later) and consciously choosing not to press — not because she lacks energy (though she does), but because pressing would require acknowledging that the trust she just built might have limits. This converts a passive 'too tired to ask' into an active 'choosing not to ask because the answer might cost more than the question.' This also reinforces TP-2 (price of the right choice) and TP-1 (trust as structural failure)."
+    }
+  ],
+  "pacingAssessment": {
+    "chapterTensionLevel": 8,
+    "precedingChapter": {
+      "chapter": 8,
+      "tensionLevel": 6,
+      "pov": "CHAR-002"
+    },
+    "followingChapter": {
+      "chapter": 10,
+      "tensionLevel": 5,
+      "pov": "CHAR-002"
+    },
+    "inv020Status": "pass — no three consecutive same-tension chapters. Pattern is 5 (ch7) → 6 (ch8) → 8 (ch9) → 5 (ch10). Proper escalation to pinch point with recovery chapter following.",
+    "internalPacing": "Good variation. SCN-025 (intense, Ythara exposure) → SCN-026 (low, waystation processing/sequel) → SCN-027 (intense, combat). Scene-sequel-scene structure provides internal breathing room.",
+    "sceneValueShifts": {
+      "SCN-025": "theoretical god-threat → present and trying to unmake me",
+      "SCN-026": "I survive alone → I need her to stay whole",
+      "SCN-027": "we travel together → we fight as a unit"
+    },
+    "allScenesShiftValues": true
+  },
+  "invariantChecklist": {
+    "INV-020_PacingVariation": "PASS — tension 8 after ch8's 6, followed by ch10's 5. No three consecutive high-tension chapters.",
+    "INV-021_RomanceArcPacing": "PASS — romance in 'attraction' stage (unwanted attraction substage, ch7-10). Appropriate for this chapter position. Vulnerability escalates from ch7's 'acknowledged attraction' to ch9's 'acknowledged dependence.'",
+    "INV-004_EarnedEmotionalBeats": "PASS — the 'Thank you' moment is preceded by the entire Ythara exposure sequence (40+ seconds of near-dissolution) and is delivered with characteristic Kaelith restraint. The beat is earned.",
+    "INV-044_StakesEscalation": "PASS — chapter correctly escalates from Act I's personal/relational stakes to Act II's world-level demonstration. The god-threat is no longer abstract.",
+    "INV-050_DualArcInterleave": "PASS — fantasy and romance arcs are fused at the scene level. The fantasy mechanism (Ythara exposure) IS the romance mechanism (forced dependence/touch).",
+    "INV-040_SceneValueShifts": "PASS — all three scenes shift clear values from beginning to end.",
+    "INV-042_TryFailCycles": "PASS — Kaelith's attempt to process the exposure through tactical frameworks fails (SCN-026). The combat succeeds but is appropriate for demonstrating partnership, not a try-fail on the main challenge.",
+    "INV-036_ThematicCoherence": "PASS — TP-1 (trust as structural failure) and TP-3 (chosen versus only) are well-engaged. TP-2 (price of the right choice) is lightly touched. See DEV-009-006.",
+    "INV-037_EmotionalStateVariety": "PASS (with note) — ch9's dominant emotional state ('acknowledged dependence') is distinct from ch7's ('acknowledged attraction and fear'). The POV alternation with ch8 provides additional variety. See DEV-009-004."
+  },
+  "findingSummary": {
+    "critical": 0,
+    "major": 0,
+    "minor": 4,
+    "suggestion": 3,
+    "total": 7
+  },
+  "upstreamRefs": [
+    "chapters/009/draft.md",
+    "chapters/009/metadata.json",
+    "plot/chapter-outlines/chapter-009.json",
+    "plot/plot-structure.json",
+    "plot/dual-arc-timeline.json",
+    "plot/tension-map.json",
+    "romance-arc.json",
+    "story-concept.json",
+    "craft-profile.json",
+    "characters/CHAR-001.json",
+    "plot/chapter-outlines/chapter-007.json",
+    "plot/chapter-outlines/chapter-008.json",
+    "plot/chapter-outlines/chapter-010.json"
+  ]
+}

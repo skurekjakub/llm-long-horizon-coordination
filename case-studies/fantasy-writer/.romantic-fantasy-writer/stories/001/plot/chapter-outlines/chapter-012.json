@@ -1,0 +1,198 @@
+{
+  "chapterNum": 12,
+  "pov": "CHAR-002",
+  "povTransitionMotivation": "Switch to Lirien to reveal the resonance bond from her perspective and show the conspiracy gaining a human antagonist. Fantasy and romance arcs both escalate",
+  "scenes": [
+    {
+      "id": "SCN-31",
+      "goal": "Lirien experiences the resonance bond's full implications — she can sense Kaelith's emotional state, magical signature, and physical location",
+      "conflict": "The bond exposes more than Lirien's operative training prepared her for — she feels Kaelith's pain, determination, and the exact moment Kaelith senses her back",
+      "disaster": "Lirien realizes she cannot hide her emotions from Kaelith anymore. The operative mask is compromised by a magical connection neither chose",
+      "valueShift": "From 'operational distance maintained' to 'intimacy forced through magical exposure'",
+      "fiveCommandments": {
+        "incitingIncident": "Lirien wakes feeling Kaelith's presence like a compass needle in her chest",
+        "complication": "Every emotional shift Kaelith experiences registers in Lirien's awareness — grief, wariness, curiosity, attraction",
+        "crisis": "Acknowledge the bond to Kaelith, or pretend she doesn't feel it?",
+        "climax": "Kaelith meets her eyes across the camp and Lirien knows Kaelith feels her too. No words needed",
+        "resolution": "They begin traveling in uncomfortable awareness of each other's inner states"
+      },
+      "beats": [
+        {
+          "type": "internal",
+          "content": "Lirien's morning awareness — the bond manifests as pressure behind her sternum, directional pull toward Kaelith",
+          "emotionalRegister": "unsettled, analytical",
+          "wordAllocation": 400,
+          "microTension": "What does this connection mean for her mission and her autonomy?",
+          "voiceNote": "Lirien notices in operator terms: threat assessment, information security compromise"
+        },
+        {
+          "type": "action",
+          "content": "Lirien tests the bond's parameters — distance limits, emotional granularity, whether it reveals thoughts or just feelings",
+          "emotionalRegister": "scientific detachment masking unease",
+          "wordAllocation": 500,
+          "microTension": "Can Kaelith feel her testing the bond? Is this invasive?",
+          "voiceNote": "Lirien treats the bond as intelligence to be catalogued and exploited"
+        },
+        {
+          "type": "dialogue",
+          "content": "Brief exchange with Kaelith — neither names the bond directly, but subtext acknowledges mutual awareness",
+          "emotionalRegister": "tense, careful",
+          "wordAllocation": 600,
+          "microTension": "What do you say to someone who can feel your emotional state?",
+          "voiceNote": "Dialogue heavy with what is NOT said. Lirien's precision; Kaelith's tactical evasion",
+          "subtextLayer": "Surface: logistical discussion about route. Subtext: 'I know you feel this too'"
+        },
+        {
+          "type": "reaction",
+          "content": "Lirien processes the vulnerability this creates — she has never been this exposed to a target",
+          "emotionalRegister": "disturbed, defensive",
+          "wordAllocation": 300,
+          "microTension": "If Kaelith discovers the kill contract, the bond will broadcast Lirien's guilt",
+          "voiceNote": "Lirien's internal monologue focuses on exit strategies, damage control"
+        }
+      ],
+      "sceneType": "sequel",
+      "sceneSequelNotes": "Reaction to chapter 11's intimacy. Lirien processing the bond's aftermath."
+    },
+    {
+      "id": "SCN-32",
+      "goal": "Through Seep intelligence and cross-referencing archive evidence, Lirien identifies the conspiracy's human agent: Thalen Veyris",
+      "conflict": "The revelation triggers immediate danger — someone is watching their camp, and the pursuit is about to intensify",
+      "disaster": "Identifying Thalen makes them targets. The hunters are now active, and separation means death",
+      "valueShift": "From 'investigating conspiracy abstractly' to 'conspiracy knows we know and is coming for us'",
+      "fiveCommandments": {
+        "incitingIncident": "Seep intelligence packet arrives via dead drop with Thalen's name and role",
+        "complication": "Cross-referencing shows Thalen oversaw Dimming rites for 40 years — perfect access to poison the Pallor",
+        "crisis": "Report findings to Kaelith and make them both targets, or keep the intelligence private?",
+        "climax": "Lirien shows Kaelith the evidence. They now have a name, and that name will have consequences",
+        "resolution": "Surveillance confirms they are being watched. The conspiracy is responding."
+      },
+      "beats": [
+        {
+          "type": "action",
+          "content": "Lirien retrieves Seep intelligence from concealed dead drop — coded message naming Thalen Veyris",
+          "emotionalRegister": "focused, professional",
+          "wordAllocation": 400,
+          "microTension": "Was the drop compromised? Is someone watching the retrieval?",
+          "voiceNote": "Operative procedural precision. Lirien's sensory awareness: exits, sight lines, anomalies"
+        },
+        {
+          "type": "internal",
+          "content": "Lirien cross-references Thalen against archive records, Conclave rosters, Dimming rite protocols",
+          "emotionalRegister": "investigative clarity building to grim recognition",
+          "wordAllocation": 600,
+          "microTension": "Every data point confirms the worst: Thalen had perfect access and forty years to act",
+          "voiceNote": "Intelligence analyst mode — Lirien assembles the case like building a weapon",
+          "informationAsymmetry": "Lirien now knows the conspiracy's architect. Kaelith does not yet"
+        },
+        {
+          "type": "dialogue",
+          "content": "Lirien presents findings to Kaelith — 'The saboteur has a name: Thalen Veyris, High Conclave'",
+          "emotionalRegister": "controlled delivery, watching for Kaelith's reaction",
+          "wordAllocation": 700,
+          "microTension": "Naming the enemy makes the mission real and inescapable",
+          "voiceNote": "Lirien delivers intelligence as formal briefing. Kaelith responds with military assessment",
+          "subtextLayer": "Surface: strategic discussion. Subtext: 'We are now in active war with the High Conclave'"
+        },
+        {
+          "type": "action",
+          "content": "Lirien detects surveillance — movement in treeline, magical trace that shouldn't be there",
+          "emotionalRegister": "alert, escalating threat response",
+          "wordAllocation": 400,
+          "microTension": "They found us. How long have they been watching?",
+          "voiceNote": "Combat-ready awareness. Lirien shifts from analyst to operator in three heartbeats"
+        }
+      ],
+      "sceneType": "scene",
+      "sceneSequelNotes": "Goal: identify saboteur. Disaster: identification triggers retaliation."
+    },
+    {
+      "id": "SCN-33",
+      "goal": "Evade or neutralize immediate surveillance threat while maintaining operational security",
+      "conflict": "The watchers are skilled — likely Conclave assets or hired hunters. Direct confrontation risks exposure",
+      "disaster": "They escape the immediate threat but lose time and safety. Thalen's network is extensive and motivated",
+      "valueShift": "From 'they might be hunting us' to 'they are actively closing in and we are running'",
+      "fiveCommandments": {
+        "incitingIncident": "Surveillance becomes active pursuit — figures moving to encircle camp",
+        "complication": "Kaelith's magic is still unstable post-Oathbrand removal; Lirien must cover tactical gaps",
+        "crisis": "Fight here and risk capture, or flee and cede ground?",
+        "climax": "They choose tactical retreat — using resonance bond to coordinate without speaking",
+        "resolution": "They escape but Thalen's reach is now undeniable. The journey west becomes a chase"
+      },
+      "beats": [
+        {
+          "type": "action",
+          "content": "Lirien and Kaelith coordinate withdrawal without verbal communication — bond allows silent coordination",
+          "emotionalRegister": "hyper-alert, synchronized",
+          "wordAllocation": 600,
+          "microTension": "Can they trust the bond under combat stress? What if it fails?",
+          "voiceNote": "From Lirien's POV: the bond as tactical advantage, terrifyingly intimate",
+          "dualArcInterleave": "Fantasy threat (pursuit) enables romance proof (bond's combat effectiveness)"
+        },
+        {
+          "type": "action",
+          "content": "Evasion sequence — stealth, misdirection, Lirien's fae magic buying time for Kaelith's instinct to find escape route",
+          "emotionalRegister": "focused intensity",
+          "wordAllocation": 800,
+          "microTension": "Hunters are closing. Every second matters",
+          "voiceNote": "Action beats from Lirien's perspective: precision, control, measuring Kaelith's limits through the bond"
+        },
+        {
+          "type": "reaction",
+          "content": "After escape, both women process what the bond allowed them to do — perfect synchronization without trust words",
+          "emotionalRegister": "shaken, awed, frightened",
+          "wordAllocation": 500,
+          "microTension": "The bond made them unstoppable. That's terrifying because it binds them",
+          "voiceNote": "Lirien recognizes she is no longer operating alone. Partnership is now survival necessity"
+        },
+        {
+          "type": "dialogue",
+          "content": "Brief exchange establishing new reality: Thalen knows they are coming, and the journey is now hostile",
+          "emotionalRegister": "grim acknowledgment",
+          "wordAllocation": 300,
+          "microTension": "The conspiracy has eyes everywhere. Trust no one outside this bond",
+          "voiceNote": "Clipped, efficient dialogue. Two professionals assessing a deteriorating tactical situation",
+          "chapterClose": "Named enemy, active pursuit, and magical bond that saved them — fantasy and romance stakes aligned"
+        }
+      ],
+      "sceneType": "scene",
+      "sceneSequelNotes": "Goal: escape surveillance. Disaster: temporary victory but long-term escalation."
+    }
+  ],
+  "emotionalArc": {
+    "startState": "Lirien begins in analytical discomfort — the bond is a complication she must assess and control",
+    "endState": "Lirien ends recognizing the bond is both tactical asset and emotional exposure. She cannot separate mission from partnership anymore",
+    "pivotMoment": "The moment they coordinate silent withdrawal using the bond — intimacy becomes survival mechanism"
+  },
+  "fantasyBeats": [
+    "Revelation — Conspiracy identified with Thalen Veyris as primary saboteur"
+  ],
+  "romanceBeats": [
+    "Resonance Bond — They Can Feel Each Other"
+  ],
+  "hookType": "resonance-awareness",
+  "hookTypeDescription": "Chapter opens with Lirien experiencing magical intimacy she didn't consent to — immediate tension",
+  "closeType": "named-enemy",
+  "closeTypeDescription": "Chapter closes with pursuit active and bond proving essential — dual-arc escalation",
+  "targetWordCount": 4100,
+  "tensionLevel": 7,
+  "pacingNotes": "Chapter 12 — Revelation — The Conspiracy Has a Human Hand. Balances romance vulnerability (bond exposure) with fantasy escalation (Thalen identified, pursuit begins). Tension 7: high investigative and emotional pressure without combat climax.",
+  "locationsPrimary": [
+    "Travel toward the Narrowing"
+  ],
+  "charactersPresent": [
+    "CHAR-002",
+    "CHAR-001"
+  ],
+  "upstreamRefs": [
+    "../../plot/plot-structure.json",
+    "../../characters/CHAR-002.json",
+    "../../plot/dual-arc-timeline.json",
+    "../../plot/tension-map.json"
+  ],
+  "thematicWeight": {
+    "TP1_trust": "The bond forces vulnerability neither chose — trust as structural bypass rather than earned choice",
+    "TP2_rightChoice": "Naming Thalen makes them targets but is tactically necessary — right vs safe",
+    "TP3_chosenVsOnly": "Bond challenges this: they feel each other whether they want to or not. Choice vs imposition"
+  }
+}

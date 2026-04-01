@@ -1,0 +1,149 @@
+{
+  "storyId": "001",
+  "lastUpdatedChapter": 3,
+  "timeline": [
+    {
+      "chapter": 1,
+      "day": 1,
+      "events": [
+        "Dawn: Kaelith patrols seawall, Oathbrand flares unexpectedly",
+        "Dawn: Pallor tears overhead, reveals true starlight for ~3 breaths, seals",
+        "Mid-morning: Kaelith repairs garrison back wall",
+        "Mid-morning: Lirien watches from market square, makes herself visible",
+        "Afternoon: Kaelith confronts Tavik about surveillance, he lies transparently",
+        "Afternoon: Kaelith retreats to rented room, recognizes active containment"
+      ]
+    },
+    {
+      "chapter": 2,
+      "day": 1,
+      "events": [
+        "Dawn: Lirien observes Kaelith morning patrol from rooftop surveillance position",
+        "Morning: Kaelith works garrison wall, catches Lirien watching, both hold visual contact",
+        "Mid-morning: Kaelith confronts Tavik (observed by Lirien from distance)",
+        "Afternoon: Direct confrontation in market square, mutual assessment, Kaelith asks if Lirien is here to kill her",
+        "Afternoon: Lirien intercepts Seep intelligence packet revealing Pallor tear/Oathbrand correlation and Warden-lineage assessment",
+        "Evening: Lirien decides to delay execution to investigate paradox, has 48 hours before binding pain starts"
+      ]
+    },
+    {
+      "chapter": 3,
+      "day": 2,
+      "events": [
+        "Midnight: Kaelith breaks into Tavik office, reads encrypted Conclave messages",
+        "Midnight: Discovers Oathbrand deliberately maintained, Warden-lineage designation, prevention protocol",
+        "Dawn: Enforcer Seldric arrives with two subordinates, demands Kaelith transfer to Aranthem",
+        "Dawn: Lirien disrupts capture via scaffolding collapse, creates escape window",
+        "Morning: Kaelith and Lirien escape together, first tactical cooperation",
+        "Late morning: Abandoned warehouse discussion, Lirien reveals operative status",
+        "Late morning: Agreement to leave Duskhaven via smuggler boat (departs in 2 hours)"
+      ]
+    }
+  ],
+  "characterPositions": {
+    "CHAR-001": {
+      "chapter": 3,
+      "location": "Duskhaven — fled garrison, heading to port smuggler boat with CHAR-002",
+      "status": "Discovered Conclave conspiracy, escaped enforcer custody with Lirien help, fleeing Duskhaven"
+    },
+    "CHAR-002": {
+      "chapter": 3,
+      "location": "Duskhaven — abandoned warehouse, then moving toward port with CHAR-001",
+      "status": "Revealed operative status to Kaelith, actively protecting her, guiding escape"
+    }
+  },
+  "knowledgeStates": {
+    "CHAR-002": {
+      "chapter": 3,
+      "knows": [
+        "Kaelith is more competent than intelligence file indicated",
+        "Kaelith caught surveillance and assessed Lirien as trained predator",
+        "Pallor tear occurred during Kaelith morning patrol",
+        "Oathbrand flared simultaneously with Pallor tear",
+        "Kaelith may have Warden-lineage capacity",
+        "Executing Kaelith may destroy access to god-seal maintenance capability",
+        "Court contract origin unclear",
+        "Has 48 hours before binding registers delay as failure",
+        "Tavik is compromised",
+        "Kaelith asked directly if Lirien is here to kill her",
+        "Kaelith discovered Conclave conspiracy through Tavik messages",
+        "Warden capacity confirmed by Conclave own documentation",
+        "Prevention protocol active — Conclave fears her restoration",
+        "Enforcer sent to disappear her before anyone realizes her value",
+        "Kaelith now knows Lirien is operative but not full contract details",
+        "Has revealed enough to create provisional alliance",
+        "Escaping Duskhaven together commits both to shared trajectory"
+      ],
+      "doesNotKnow": [
+        "Whether Kaelith actually has active Warden capacity",
+        "Who commissioned the Court contract",
+        "Why Kaelith was targeted after 5 years",
+        "What Kaelith did at Calwrath details",
+        "That Oathbrand is slowly killing Kaelith",
+        "Whether Kaelith carries kinetic memory of Quietus path"
+      ]
+    },
+    "CHAR-001": {
+      "chapter": 3,
+      "knows": [
+        "Oathbrand should have dissolved but persists abnormally",
+        "Pallor tore and sealed",
+        "Fae woman Lirien is watching with predator discipline",
+        "Lirien is trained operative-grade",
+        "Lirien refused to confirm or deny kill intent",
+        "Lirien works for someone with authority",
+        "Being watched means someone has decided Kaelith is relevant again",
+        "Tavik is compromised",
+        "She is under active containment",
+        "Magic is suppressed but not removed",
+        "Oathbrand deliberately maintained by High Conclave conspiracy",
+        "Prevention protocol exists — she must not regain ontological capacity",
+        "Designated as Warden-lineage capacity holder",
+        "Quietus location access must remain inaccessible per Conclave orders",
+        "Execution deemed undesirable due to Ashborne Legion political complications",
+        "Tavik receives encrypted Conclave dispatches, reports her status",
+        "Lirien is Cerith Court operative sent to assess her",
+        "Lirien chose to help her escape enforcer custody",
+        "Staying in Duskhaven means disappearance or death"
+      ],
+      "doesNotKnow": [
+        "Lirien has binding kill contract (still hidden)",
+        "Full details of Warden abilities and what she can actually do",
+        "Who specifically on Conclave ordered prevention protocol",
+        "That Oathbrand is actively killing her (suspects deterioration but not lethality)",
+        "How she acquired Warden inheritance",
+        "What Quietus path in her kinetic memory means",
+        "Lirien under time pressure from binding contract"
+      ]
+    }
+  },
+  "activeStoryPromises": [
+    "Oathbrand anomaly will be explained",
+    "Pallor failure will escalate",
+    "Lirien's purpose will be revealed",
+    "Tavik's compromise will have consequences",
+    "Kaelith will have to choose: stay contained or act",
+    "Enforcer Seldric will pursue them beyond Duskhaven",
+    "Kaelith will discover what Warden capacity means",
+    "Alliance will be tested as they flee together"
+  ],
+  "namingConsistency": {
+    "characters": {
+      "CHAR-001": "Kaelith Maren, Kaelith",
+      "CHAR-002": "Lirien (not yet named in Kaelith's POV — 'the fae woman', 'the woman')",
+      "Tavik": "Garrison commander, consistent"
+    },
+    "locations": {
+      "Duskhaven": "Consistent",
+      "Listing Mast": "Tavern where Kaelith rents room",
+      "Aranthem": "Imperial capital (mentioned, not visited)",
+      "Calwrath": "Site of Kaelith's disgrace (historical reference)"
+    },
+    "magicTerms": {
+      "Oathbrand": "Consistent — disciplinary brand that suppresses magic",
+      "Pallor": "Consistent — divine membrane, tarnished silver",
+      "Shapers": "Magic practitioners (mentioned in context of brand maintenance)"
+    }
+  },
+  "notes": "Chapter 3 added. Kaelith discovers Conclave conspiracy, escapes enforcer with Lirien help, first unstable alliance formed."
+}

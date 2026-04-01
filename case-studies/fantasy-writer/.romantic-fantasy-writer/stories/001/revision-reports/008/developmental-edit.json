@@ -1,0 +1,158 @@
+{
+  "reportType": "developmental-edit",
+  "chapter": 8,
+  "pov": "CHAR-002",
+  "reviewer": "developmental-editor",
+  "generatedAt": "2025-07-24T00:00:00Z",
+  "overallAssessment": {
+    "verdict": "pass-with-revisions",
+    "summary": "Chapter 8 successfully delivers the B Story Turn (Oathbrand medical crisis) and Lirien's emotional shift from tactical concern to personal care. The three-scene structure matches the outline, the medical diagnosis lands with appropriate clinical devastation, and Lirien's internal breakthrough — acknowledging she requires Kaelith's survival, not just the mission's — is the chapter's strongest beat. However, the pacing is front-loaded with diagnostic content, the outline's physical care beats (wrapping collarbone, adjusting pace, preparing food) are largely told rather than shown, and the closing scene's introspective density risks stalling the emotional momentum the diagnosis creates. The romance arc advances clearly; the fantasy arc is present but thin.",
+    "strengths": [
+      "Marin's diagnosis scene (SCN-023) is the chapter's structural peak — clinical delivery, precise magical mechanics, and the mirror-diagnostic device is excellent worldbuilding-through-action",
+      "Lirien's fear response ('I was experiencing fear') is perfectly calibrated: clinical language failing to contain a non-clinical emotion, exactly on-voice",
+      "The opening Oathbrand flare sequence economically establishes urgency and gives Kaelith's concealment behavior four days of documented escalation",
+      "Value shifts across all three scenes track cleanly: asset→dying person→someone I require",
+      "The final admission ('I required it') lands as a genuine emotional climax without violating Lirien's voice"
+    ],
+    "primaryConcerns": [
+      "Outline specifies physical care acts (wrapping collarbone, adjusting pace, preparing food) that are absent from the draft — these are the romance beat's substance",
+      "Scene 3 (SCN-024) is almost entirely interior monologue with minimal dramatized action, violating the style guide's 'never stack more than two dense reflective paragraphs without dialogue, gesture, or external movement'",
+      "The chapter close departs from the outline's 'quiet-devotion' close (adjusting her cloak to keep her warm, wordless) — instead it ends with Lirien telling the reader she is providing care rather than showing the care",
+      "Fantasy arc presence is minimal; the dual-arc interleave (T12) requires at least implied fantasy pressure even in romance-dominant chapters"
+    ]
+  },
+  "findings": [
+    {
+      "id": "DEV-008-001",
+      "severity": "major",
+      "category": "outline-compliance",
+      "title": "Missing physical care beats from romance arc specification",
+      "location": "Scene 3 (SCN-024), lines 186-252",
+      "description": "The chapter outline specifies that Lirien 'begins providing aid beyond contract necessity — wrapping Kaelith's collarbone with field dressings, adjusting their pace to accommodate Kaelith's pain, preparing food without being asked.' The dual-arc timeline (Ch8 romance beat) reinforces this: 'wrapping Kaelith's collarbone, preparing food without being asked, adjusting their pace and watch rotations.' The draft contains none of these specific physical care actions. Instead, the care is summarized in the final paragraphs as intention ('tomorrow, we would adjust our pace') rather than dramatized behavior. This is the chapter's central romance beat — vulnerability ladder step 4 requires Kaelith to stop hiding the damage and Lirien to provide care she cannot justify tactically. The draft delivers the internal realization but not the external action that earns it.",
+      "recommendation": "Add 200-300 words of dramatized care: Lirien wrapping Kaelith's collarbone with field dressings (purchased during the supply run), preparing food or adjusting Kaelith's sleeping position — small, specific, wordless actions that demonstrate the shift the chapter claims has occurred. Show the care happening, not Lirien planning to provide it tomorrow.",
+      "affectedBeats": ["romance-beat-ch8", "vulnerability-ladder-step-4"]
+    },
+    {
+      "id": "DEV-008-002",
+      "severity": "major",
+      "category": "pacing",
+      "title": "Scene 3 introspective density exceeds style guide limits",
+      "location": "Lines 192-252 (approximately 800 words of unbroken interior monologue)",
+      "description": "Scene 3 runs approximately 800 words with almost no external action, dialogue, or gesture to break the reflective density. The style guide's paragraph-length guidelines state: 'Never stack more than two dense reflective paragraphs without dialogue, gesture, or external movement resetting the scene.' The introspective scene-type palette specifies the tone should feel like 'someone trying not to think about a thing and failing with precision' — which the content achieves, but the unbroken delivery undercuts. The reader receives Lirien's entire emotional breakthrough as continuous internal analysis rather than through the interplay of thought and action that characterizes her voice at its best.",
+      "recommendation": "Break the interior monologue with 3-4 external beats: Lirien adjusting Kaelith's cloak, checking the brand's glow, touching the collarbone dressings, or stepping outside to regulate her breathing. Each break allows the introspection to deepen rather than merely accumulate. The physical beats also deliver the outline's 'care without strategy' through action.",
+      "affectedBeats": ["pacing-ch8-close", "show-dont-tell"]
+    },
+    {
+      "id": "DEV-008-003",
+      "severity": "major",
+      "category": "outline-compliance",
+      "title": "Chapter close does not match outline specification",
+      "location": "Lines 248-252",
+      "description": "The outline specifies a 'quiet-devotion' close: 'Closes with Lirien watching Kaelith sleep, adjusting her cloak to keep her warm, knowing that this small act of care reveals everything she has been trying not to feel. No words are spoken. The care is silent and absolute.' The draft's closing lines are: 'I continued watching Kaelith sleep... Tonight, I would ensure her rest remained undisturbed. Such care served no tactical purpose. I provided it anyway.' This is Lirien telling the reader about care rather than performing it. The outline's cloak-adjustment is a concrete, physical, visible act of devotion — exactly the kind of wordless gesture the style guide prizes. The draft substitutes declaration for demonstration.",
+      "recommendation": "Replace the final three sentences with the outlined beat: Lirien adjusting Kaelith's cloak or blanket, the gesture itself saying what the narration currently states. End on the action, not the commentary. 'Such care served no tactical purpose. I provided it anyway' can remain as an internal beat earlier in the scene, but the chapter's final image should be the physical act.",
+      "affectedBeats": ["chapter-close-ch8", "quiet-devotion"]
+    },
+    {
+      "id": "DEV-008-004",
+      "severity": "moderate",
+      "category": "arc-progression",
+      "title": "Fantasy arc presence falls below dual-arc interleave minimum",
+      "location": "Entire chapter",
+      "description": "The dual-arc timeline designates Chapter 8 as romance-dominant (fantasy: moderate, romance: dominant), which is appropriate. However, T12 (Dual-Arc Interleave) requires that even romance-dominant chapters carry implied fantasy pressure — 'even quiet scenes should carry both relational and fantasy pressure, either directly or by implication.' The chapter's fantasy content is limited to the Oathbrand diagnosis (which is correctly framed as fantasy-medical). Missing: any reference to the Pallor's condition above Veldrane, the thinning membrane that should be visible here (geography.json notes Veldrane shows 'first visible irregularities — occasional shimmers, moments where the silver brightens to near-white'), or the broader ticking-clock stakes of reaching the Quietus. Marin's diagnosis creates a personal deadline but does not connect it to the cosmic deadline.",
+      "recommendation": "Add 2-3 sentences in Scene 1 or Scene 2 noting the Pallor's visible irregularity above Veldrane — the shimmering membrane, perhaps a brief flicker that Lirien notices. This grounds the personal medical crisis within the larger world crisis and maintains dual-arc presence. Marin could also note that the Oathbrand's increased activity may correlate with environmental magical instability.",
+      "affectedBeats": ["dual-arc-interleave-ch8", "fantasy-presence"]
+    },
+    {
+      "id": "DEV-008-005",
+      "severity": "moderate",
+      "category": "arc-progression",
+      "title": "Kaelith's vulnerability ladder step 4 is under-dramatized",
+      "location": "Lines 100-170 (healer scene)",
+      "description": "Vulnerability ladder step 4 specifies: 'Kaelith stops hiding the true damage around the Oathbrand and lets Lirien see how badly the long-refreshed suppression is destroying her body — the closest Kaelith can come to asking for help.' The draft shows Kaelith removing her shirt for examination (a vulnerability beat), but the emotional weight of this exposure is filtered entirely through Lirien's analytical observation. Kaelith's interiority — the cost of revealing the brand to a stranger, the admission that her body is failing — is absent because this is a Lirien POV chapter. However, the draft could show more of Kaelith's visible struggle through Lirien's perception: the specific hesitation, the way she holds herself differently once exposed, behavioral shifts that indicate this is not routine disclosure.",
+      "recommendation": "Expand Kaelith's visible reluctance and the behavioral shift after diagnosis. Show her touching the brand differently after Marin's examination — more gently, or more deliberately. Show the moment she stops performing composure and simply sits with the information. Lirien's POV gives us the external view; make that view rich enough to carry the emotional weight of step 4.",
+      "affectedBeats": ["vulnerability-ladder-step-4", "kaelith-arc-ch8"]
+    },
+    {
+      "id": "DEV-008-006",
+      "severity": "moderate",
+      "category": "pacing",
+      "title": "Scene 1 and Scene 2 transition lacks tension ramp",
+      "location": "Lines 88-98 (transition between approach and healer)",
+      "description": "The transition from Scene 1 (Oathbrand flare on approach) to Scene 2 (healer examination) covers the walk into Veldrane and the healer's practice in summary prose: 'We walked into Veldrane proper... Marin's healing practice occupied the ground floor...' This bridge is efficient but flat. The style guide's scene transition conventions specify 'hard cuts on a loaded image, line, or decision' and 'emotional carryover rather than connective summary.' The tension from the Oathbrand flare dissipates across the walking-description bridge rather than carrying through into the examination scene.",
+      "recommendation": "Cut or compress the Veldrane-description paragraph (lines 90-95) and open Scene 2 closer to the examination itself. The loaded image from Scene 1's end ('She had been dying for six years. The process was accelerating.') should carry directly into the healer scene's opening rather than being buffered by settlement description.",
+      "affectedBeats": ["scene-transition-1-2", "pacing"]
+    },
+    {
+      "id": "DEV-008-007",
+      "severity": "minor",
+      "category": "structure",
+      "title": "Marin character introduction lacks cultural specificity",
+      "location": "Lines 98-100",
+      "description": "Marin is described generically: 'perhaps fifty years, with the weathered competence of someone who had spent decades managing other people's crises.' Veldrane's culture should register through Marin — the culture.json notes Veldrane is an information nexus with declining trade and practical frontier character. Marin should feel like she belongs to this specific place rather than being a generic 'frontier healer' who could exist anywhere.",
+      "recommendation": "Add 1-2 specific details grounding Marin in Veldrane's frontier culture: her dress (practical, perhaps copper buttons indicating her social tier), her workspace (the failing enchantment mentioned in geography.json for Veldrane's bathhouse suggests magical decay is visible everywhere), or her manner of speaking (direct, frontier-practical).",
+      "affectedBeats": ["worldbuilding-specificity"]
+    },
+    {
+      "id": "DEV-008-008",
+      "severity": "minor",
+      "category": "tension-mapping",
+      "title": "Tension level consistent but missing the specified emotional pivot",
+      "location": "Lines 152-158",
+      "description": "The outline identifies Marin's diagnosis as the 'pivot moment' — the scene's crisis where Lirien feels fear with 'no operational justification.' The draft delivers this: 'Fear. I was experiencing fear.' However, this is the chapter's only moment of sharp emotional disruption. The tension map designates chapter 8 at level 6 (moderate-high), which the medical crisis supports. But the pivot could land harder if it were preceded by a brief moment of false hope — Lirien thinking the brand might be manageable — before Marin delivers the terminal timeline.",
+      "recommendation": "Consider adding a moment where Lirien expects a manageable diagnosis (the brand is stable, removal will be difficult but not urgent) before Marin reveals the mortality timeline. The gap between expectation and reality amplifies the emotional pivot and earns the fear response more completely.",
+      "affectedBeats": ["tension-pivot-ch8"]
+    },
+    {
+      "id": "DEV-008-009",
+      "severity": "minor",
+      "category": "structure",
+      "title": "Supply acquisition scene is functional but narratively inert",
+      "location": "Lines 186-198",
+      "description": "The supplies-and-lodging passage (approximately 200 words) covers logistics without advancing either arc. It reads as connective tissue that the style guide recommends compressing: 'compressing travel or routine logistics between dramatic beats' is listed as acceptable telling. The information (frontier town, three nights paid, minimal Imperial presence) could be delivered in 2-3 sentences rather than two full paragraphs.",
+      "recommendation": "Compress to 50-75 words or integrate the logistical details into the care beats that should follow the diagnosis. Lirien purchasing medical supplies (dressings for Kaelith's collarbone) would serve both logistical and romance-arc purposes simultaneously.",
+      "affectedBeats": ["pacing-scene-3-opening"]
+    },
+    {
+      "id": "DEV-008-010",
+      "severity": "minor",
+      "category": "arc-progression",
+      "title": "Ward-breaking journey destination is misdirected",
+      "location": "Lines 228-231",
+      "description": "Lirien's internal calculation references 'reaching the Quietus and accessing whoever maintained the ancient ward-breaking protocols there' as the solution for brand removal. Per the continuity tracker and chapter 11 outline, the Oathbrand is removed at a sanctuary by Tessen Vael (a ward-breaker) with Lirien's fae precision magic, not at the Quietus. The Quietus is the destination for the god-seal mission, not brand removal. This conflation risks setting up a false expectation that could confuse the reader when brand removal occurs earlier (Ch11) than the Quietus arrival (Ch20-21).",
+      "recommendation": "Revise Lirien's route calculation to reference finding a ward-breaker with sufficient expertise, without specifying the Quietus as the brand-removal destination. This maintains urgency without creating a false setup. Lirien's internal logic should be: 'we need to find someone capable, and quickly' rather than assuming the Quietus is the only option.",
+      "affectedBeats": ["continuity-ch8-to-ch11"]
+    }
+  ],
+  "findingsSummary": {
+    "critical": 0,
+    "major": 3,
+    "moderate": 3,
+    "minor": 4,
+    "total": 10
+  },
+  "arcProgressionAssessment": {
+    "romanceArc": {
+      "currentStage": "attraction (unwanted attraction substage)",
+      "progressionFromCh7": "Clear advancement. Chapter 7 ended with mutual attraction becoming explicit; chapter 8 moves from attraction-awareness to care-beyond-strategy. The shift is genuine and earned through the medical crisis.",
+      "progressionToCh9": "Sets up vulnerability ladder step 5 (Lirien providing aid beyond contract necessity). The care behaviors need to be dramatized in this chapter so Ch9's deeper reliance feels like escalation rather than parallel.",
+      "concerns": "The care is acknowledged internally but not demonstrated through action. Without visible care behaviors, the reader must take Lirien's word for a shift that the story's style mandates showing."
+    },
+    "fantasyArc": {
+      "currentBeat": "B Story Turn — The Body Cannot Be Hidden",
+      "progressionFromCh7": "The Oathbrand's lethality is now diagnosed and timed. The medical deadline adds urgency to the journey. This is effective.",
+      "progressionToCh9": "Ch9's Ythara exposure needs Ch8 to establish that Kaelith is physically fragile. The draft achieves this.",
+      "concerns": "The broader Pallor crisis is not visible in this chapter. Veldrane should show atmospheric signs of the thinning."
+    },
+    "dualArcInterleave": "Functional but one-sided. The medical crisis serves both arcs (fantasy: ticking clock; romance: vulnerability catalyst), but the chapter does not carry independent fantasy pressure. T12 compliance is borderline."
+  },
+  "craftToolCompliance": {
+    "T5-ToneContract": "Compliant. The tone is morally complex, taut, and unsentimental. No forbidden tones detected.",
+    "T8-Resistance": "Partially compliant. Lirien's internal resistance (IR-L-01, operative conditioning) is active and challenged. Kaelith's resistance (IR-K-02, never asks for help) is present but under-dramatized.",
+    "T12-DualArcInterleave": "Borderline. Romance dominant as specified, but fantasy presence needs strengthening.",
+    "T16-SymbolicMotifWeaving": "Partially compliant. Brand-burning motif is present. Water imagery is absent from Lirien's POV — she should have at least one water-domain metaphor. Threshold motif (Veldrane as a crossing point) is not utilized.",
+    "T17-VoiceFingerprinting": "See line-edit report for detailed assessment.",
+    "T20-EmotionalThroughline": "Compliant. Clear emotional progression from tactical concern → fear → acknowledged personal investment.",
+    "T21-VulnerabilityLadder": "Partially compliant. Step 4 is structurally present but under-dramatized on Kaelith's side and missing physical care action on Lirien's side.",
+    "T24-SubtextInDialogue": "Compliant. The Kaelith/Lirien diagnostic exchanges carry subtext — Lirien's 'This is not a request' says more than its surface meaning."
+  }
+}

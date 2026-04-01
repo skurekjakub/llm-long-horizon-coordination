@@ -1,0 +1,368 @@
+{
+  "gateId": "GATE-drafting-ch020",
+  "agent": "drafting-auditor",
+  "phase": "drafting",
+  "chapter": 20,
+  "title": "Contract Fulfilled in Letter, Broken in Spirit",
+  "pov": "CHAR-002 (Lirien Dael)",
+  "storyId": "001",
+  "timestamp": "2026-03-20T14:30:00Z",
+  "verdict": "PASSED",
+  "score": 8.7,
+  "attempt": 1,
+  "gateDecision": "Chapter 20 is CLEARED for the revision pipeline.",
+  "summaryAssessment": "Chapter 20 ('Contract Fulfilled in Letter, Broken in Spirit') is the climactic binding dissolution chapter and the strongest chapter audited to date. The dual-arc fusion is complete: stopping Kaelith's heart fulfills the contract (fantasy resolution) AND proves the love is real (romance resolution). All 16 craft tools are correctly applied. Voice distinctness is exceptional — Lirien's POV is identifiable within the first sentence and the deliberate voice evolution in SCN-58 (classification system yielding to direct feeling) is the most significant character moment in the story. Continuity is clean post-corrections. The upstream agents caught and corrected all blocking issues (the Thalen knowledge leak was critical). Three minor findings and two warnings issued — well below the failure threshold. The chapter proceeds to revision with specific remediation notes for 'She [verb]' sentence-start repetition, one borderline stock construction, and two bond-mechanics phrasing refinements.",
+
+  "automaticFailChecklist": {
+    "outlinePOVMatch": {
+      "result": "PASS",
+      "evidence": "Draft is Lirien Dael (CHAR-002) POV throughout all three scenes (SCN-56, SCN-57, SCN-58). Close third person, past tense. Matches outline specification exactly. No POV breaks or contamination."
+    },
+    "sceneGoalsPresent": {
+      "result": "PASS",
+      "evidence": "All three scene goals delivered: SCN-56 (ritual preparation, magical parameters, emotional reality of the plan), SCN-57 (execute loophole — stop heart, satisfy binding, restart heart), SCN-58 (process aftermath — binding gone, bond remains, love proven free). Every outline beat verified scene by scene (see sceneBySceneBreakdown)."
+    },
+    "clicheFantasyPhrases": {
+      "result": "PASS",
+      "count": 0,
+      "evidence": "Exhaustive scan for 24+ cliche fantasy phrase patterns returned zero definitive matches. No 'eyes like pools,' 'power coursing through,' 'darkness threatening to consume,' 'ancient power,' or similar. One borderline construction flagged ('the most beautiful thing Lirien had ever heard,' L158) but immediately subverted: 'Not because it was musical — it was ragged, ugly, the desperate inhalation of lungs restarting after oxygen deprivation — but because it was present.' The subversion converts stock into specificity. Below the >2 threshold for automatic failure."
+    },
+    "halfPageZeroTension": {
+      "result": "PASS",
+      "evidence": "Tension scan of 200-word blocks across all three scenes found zero low-tension passages. SCN-56 maintains tension through kill-space irony and worst-case scenarios. SCN-57 is at continuous maximum tension. SCN-58's quietest passage (the body-check at L168-188) sustains tension through diagnostic suspense — each verification answers the existential question 'Did the feelings survive?' and 'Is the binding truly gone?' Every 200-word block contains 3+ tension markers."
+    },
+    "povIdentifiable34Sentences": {
+      "result": "PASS",
+      "evidence": "Opening: 'The light in the room was wrong. Not dangerous-wrong. Not the thin, grey wrong of a Pallor tear or the too-bright wrong of a hostile approach. This was the quality of light that fell through stone when the stone was old and the windows were narrow and the day outside was overcast — diffuse, muted, without shadows sharp enough to read. A room that gave nothing away.' Textbook Lirien: light-quality assessment as room-reading (visual dominance), sub-categorization of types of 'wrong' (classification system), intelligence-operative framing ('shadows sharp enough to read,' 'A room that gave nothing away'). Identifiable within the first sentence. Sharply distinct from Ch19's opening: 'Two exits. One road south. One goat track northwest through the tree cover.' — Kaelith's percussive tactical inventory vs. Lirien's flowing analytical observation."
+    },
+    "unestablishedMagic": {
+      "result": "PASS",
+      "evidence": "All magical mechanisms used in the resolution were established before this chapter: (1) ward-stone placement — fae operative skill, established throughout; (2) resonance bond monitoring — formed Ch11, used throughout; (3) fae precision magic through contact — established in Oathbrand removal Ch11 (3 hours sustained contact); (4) cardiac intervention through bond — extension of established precedent (same mechanism, different target); (5) cessation-of-heartbeat-as-state loophole — FACT-008, established Ch14; (6) binding dissolution cascade — logical consequence of contract fulfillment per magic system. Additionally, the magic system's loopholeExploitation section explicitly describes this mechanism. No new abilities introduced. Zero deus ex machina (INV-009 maintained)."
+    },
+    "characterKnowledgeLeak": {
+      "result": "PASS (post-correction)",
+      "evidence": "The continuity integrator caught and corrected a CRITICAL knowledge leak: Kaelith originally said 'Thalen is still operating' (L210), but FACT-007 (Thalen as Pallor saboteur) is unknown to both leads. Corrected to 'The saboteur is still operating.' Post-correction verification clean: both leads share full knowledge of loophole parameters (Ch14/Ch16/Ch19), bond mechanics (Ch11+), Ashborne relay network (Ch19), and defected Architect intelligence (Ch18/Ch19). The Seep wording realization (L180) is Lirien's internal thought, correctly not shared with Kaelith (FACT-012: Kaelith in unknownBy list). The Warden lineage (FACT-006) is correctly absent — kinetic memory referenced without invoking lineage."
+    },
+    "fantasyRomanceArcPresent": {
+      "result": "PASS",
+      "evidence": "Both arcs present in every scene and fused at peak integration. Fantasy arc: contract loophole exploited, binding dissolved through cessation-of-heartbeat technicality, dissolution cascade released, binding architecture collapsed. Romance arc: ultimate trust test — Kaelith consents to death, Lirien performs the act, bond-silence proves devastating, feelings survive dissolution and are empirically proven real. The dual arcs are literally the same physical action — stopping the heart fulfills the contract AND proves the love. Maximum dual-arc interleave."
+    },
+    "tellingNotShowingMajorBeats": {
+      "result": "PASS",
+      "evidence": "All major emotional beats conveyed through sensation, action, or the classification system's failure. Terror: 'Noted: the sensation in her chest was not a clinical variable. The sensation in her chest was terror, and it had Kaelith's name in it' — named through classification framework, not bare telling. Bond-silence: 'Where there had been rhythm, there was nothing' — absence as sensation, not named grief. Love: 'the desperate focused love of a woman who was now demanding of her own hands' — named in action context, not declaration. Feelings proven: 'This was: evidence. This was also: proof' — analytical verification, not emotional telling. Tears: 'Noted the tears. Did not classify them' — shown through the act of NOT classifying. No INV-005 violations."
+    }
+  },
+
+  "criticalFindings": [],
+
+  "majorFindings": [],
+
+  "minorFindings": [
+    {
+      "id": "MF-020-001",
+      "severity": "minor",
+      "category": "sentence-repetition",
+      "invariant": "INV-017 (prose quality floor)",
+      "description": "'She [verb]' sentence-start repetition in SCN-58 body-check section. Lines 168-188 (~450 words) contain 8 instances of sentences beginning with 'She': 'She noticed,' 'She ran,' 'She could feel,' 'She flexed,' 'She thought,' 'She catalogued,' 'She could feel,' 'She tested.' This creates a monotonous rhythm despite the varied content.",
+      "location": "Lines 168-188 (SCN-58 opening)",
+      "analysis": "The repetition is partially character-consistent — Lirien is running a systematic operative body-check, and the 'She [verbed]' rhythm mimics a diagnostic checklist. However, 8 instances in ~450 words (one every ~56 words) exceeds the style guide's implied variation standard. This mirrors the same issue flagged in Ch19 (WARN-019-001: She-starter density in SCN-53/SCN-54 transition). A revision pass should restructure 3-4 of these to eliminate the pattern without losing the diagnostic quality.",
+      "impact": "Localized rhythm monotony. Does not affect story comprehension or emotional delivery.",
+      "recommendation": "Line editor should restructure 3-4 sentence openings in the L168-188 block. Options: lead with the discovery ('The binding was gone — she could feel its absence'), lead with sensation ('Cold floor under her knees, and a lightness she had not expected'), lead with negation ('No spine pressure. No directional pull.'). The body-check sequence should still read as systematic but with more varied entry points."
+    },
+    {
+      "id": "MF-020-002",
+      "severity": "minor",
+      "category": "stock-construction",
+      "invariant": "INV-017 (prose quality floor)",
+      "description": "'The most beautiful thing Lirien had ever heard' (L158) is a stock romantasy/fiction construction. The 'most [adjective] thing [character] had ever [verbed]' formulation is extremely common across genre fiction.",
+      "location": "Line 158",
+      "analysis": "The construction is immediately subverted by the explanation that the sound was 'ragged, ugly, the desperate inhalation of lungs restarting after oxygen deprivation — but because it was present.' The subversion is excellent and transforms the stock opening into something specific and earned. The combination works, but the initial three-word trigger ('most beautiful thing') will register as stock to attentive readers before the subversion lands. A more original construction would avoid the momentary cliche recognition.",
+      "impact": "Fleeting. The subversion saves it within the same sentence. Does not undermine the emotional beat.",
+      "recommendation": "Line editor should consider reformulating to avoid the stock construction entirely. Example: 'Kaelith gasped. The sound was ugly — ragged, desperate, the inhalation of lungs restarting after oxygen deprivation — and Lirien would have traded every beautiful thing she had ever heard for that one ugly gasp.' This preserves the subversion while eliminating the cliche trigger."
+    },
+    {
+      "id": "MF-020-003",
+      "severity": "minor",
+      "category": "bond-mechanics-phrasing",
+      "invariant": "INV-002 (internal consistency), bond rules",
+      "description": "Two passages push the boundary of established bond mechanics. (1) L78: 'Through the bond, she let the answer pass without words' — implies deliberate content transmission; the bond transmits emotional quality, not informational content. (2) L218: 'Through the bond, Lirien felt the question before it was spoken: *Are you staying?*' — the bond should not transmit questions. In both cases, the emotional quality IS the content being interpreted, but the phrasing suggests information transfer rather than emotional resonance.",
+      "location": "Lines 78, 218",
+      "analysis": "Both instances are borderline rather than violations. At L78, the italicized content is Lirien's emotional state translated for the reader, not literal words transmitted through the bond. At L218, Kaelith's emotional state (hope, uncertainty, vulnerability) would naturally be interpreted as the question. The continuity report flagged these as informational with suggested rephrasing. The bond has been open and full since Ch19, so heightened mutual perception is consistent. However, the phrasing could be tighter.",
+      "impact": "Minor clarity issue. Does not break bond mechanics but could confuse careful readers about what the bond can and cannot transmit.",
+      "recommendation": "Line editor should rephrase: L78 → 'Through the bond, the answer was in everything she felt' (emotional quality, not deliberate transfer). L218 → 'Through the bond, she felt the question behind Kaelith's emotion before it was spoken' (interpretation, not reception)."
+    }
+  ],
+
+  "warnings": [
+    {
+      "id": "WARN-020-001",
+      "severity": "warning",
+      "category": "tone-boundary",
+      "invariant": "T5 (Tone Contract), INV-073",
+      "description": "The resuscitation tricolon (L132) is the closest approach to the T5 Tone Contract's 'sentimental/melodramatic' forbidden zone in the entire chapter.",
+      "analysis": "The passage reads: 'Not Cerith Court precision. Not Seep methodology. Everything. Her magic, her will, the desperate focused love of a woman who had spent her entire life being a weapon and was now demanding of her own hands that they do the opposite — not end but begin, not silence but sound, not death but the ragged, impossible, defiant continuation of a heartbeat that she refused to let remain stopped.' The tricolon structure ('not end but begin, not silence but sound, not death but...') risks approaching sentimentality through accumulation. It is SAVED by: (a) the preceding silence/absence passage which earned the release, (b) the immediate grounding in physical failure ('Nothing' at L139), (c) the embeddedness in desperate action rather than reflection. The save is effective but narrow. The craft enforcement report correctly identifies this as the most emotionally exposed passage.",
+      "impact": "Localized tonal risk. The save mechanism works but relies on surrounding context.",
+      "recommendation": "Revision should evaluate whether the tricolon can be tightened by one clause without losing emotional force. Consider: 'not silence but sound, not death but the continuation of a heartbeat she refused to let remain stopped.' Removing 'not end but begin' (the weakest clause, being the most abstract) would tighten without losing impact."
+    },
+    {
+      "id": "WARN-020-002",
+      "severity": "warning",
+      "category": "motif-gap",
+      "invariant": "T16 (Symbolic Motif Weaving)",
+      "description": "MOT-005 (Ythara/raw potential) has zero direct appearances in this chapter.",
+      "analysis": "The craft enforcement report notes this as an observation. With 2 chapters remaining in Act III, the per-act target of 1-2 Ythara appearances can be met in Ch21 (the Quietus chapter), which will naturally feature Ythara imagery. However, this chapter includes the binding dissolution cascade (L116: 'something older, something that belonged to the fae substrate') — this moment, where binding architecture collapses and raw magical energy is released, was a natural opportunity for a brief Ythara-adjacent image (reality flickering toward raw potential as structured magic unravels). The omission is understandable given the chapter's intense focus on the contract/bond resolution, but it is a minor gap in motif weaving.",
+      "impact": "Minor. The Ythara motif thread is not broken (it can be fully served in Ch21-22), but this chapter missed a natural integration point.",
+      "recommendation": "If revision touches the dissolution cascade passage (L116), consider adding a brief flicker of Ythara-adjacent imagery: the dissolution energy carrying a taste of 'something unfinished' or reality trembling 'at the edge of what it was made from.' One phrase would suffice."
+    }
+  ],
+
+  "observations": [
+    {
+      "id": "OBS-020-001",
+      "category": "voice-evolution",
+      "description": "Lirien's clinical register breaks deliberately in SCN-58: 'The words came without the clinical register. Without the clinical membrane. Without the careful weighing that had preceded every sentence she had spoken for as long as she could remember.' This is the most significant voice evolution event in the story — 19 chapters of classification-before-feeling yield to direct expression. The breaking IS the character development.",
+      "invariant": "T17 (Voice Fingerprinting), character arc"
+    },
+    {
+      "id": "OBS-020-002",
+      "category": "voice-evolution",
+      "description": "'Noted the tears. Did not classify them.' (L204) — The choice NOT to classify is Lirien's emotional apex. The analytical framework persists (she still 'notes'), but she deliberately withholds the classification that has been her defense mechanism for the entire story. This is vulnerability through restraint-of-restraint.",
+      "invariant": "T17, T20 (Emotional Throughline)"
+    },
+    {
+      "id": "OBS-020-003",
+      "category": "dual-arc-fusion",
+      "description": "This chapter achieves the highest possible dual-arc integration: the fantasy resolution and the romance resolution are literally the same physical action. Stopping the heart fulfills the contract AND proves trust. Restarting it dissolves the binding AND proves love. The 'dual' in dual-arc is no longer present — the arcs have fused into a single event.",
+      "invariant": "T12 (Dual-Arc Interleave)"
+    },
+    {
+      "id": "OBS-020-004",
+      "category": "foreshadowing-payoff",
+      "description": "Six foreshadowing threads converge in this chapter: FS-008 (Oathbrand removal as precedent), FS-011 (Seep tacit support), FS-012 (contract loophole executed), FS-015 (bond as monitoring tool), FS-022 (defected Architect intelligence), FS-024 (cipher destruction echoed). The density of payoffs is appropriate for the climactic resolution chapter.",
+      "invariant": "T15 (Foreshadowing Ledger)"
+    },
+    {
+      "id": "OBS-020-005",
+      "category": "thematic-climax",
+      "description": "All three thematic pillars reach climactic expression through action, not narration. TP-1 (trust as structural failure): Kaelith consents to death at the hands of the woman who held the kill contract. TP-2 (price of the right choice): eight seconds of devastating bond-silence. TP-3 (chosen vs. only): binding dissolves, feelings persist unchanged — empirical proof that what they have is real.",
+      "invariant": "T25 (Thematic Argument)"
+    },
+    {
+      "id": "OBS-020-006",
+      "category": "scene-transition",
+      "description": "The transition from SCN-57 (peak tension) to SCN-58 (decompression) is handled through physical grounding: 'The floor was cold under Lirien's knees' (L168). The mundane sensory detail signals the reader that the crisis has passed, enabling emotional decompression without abrupt tonal shift. Effective technique.",
+      "invariant": "T23 (Pacing)"
+    },
+    {
+      "id": "OBS-020-007",
+      "category": "micro-tension",
+      "description": "The failed resuscitation beat ('Nothing' at L139) is a masterful micro-tension spike. The reader expects immediate success after 'Beat.' and receives silence. The repetition of 'Beat.' three times (L136, L140, L146) with escalating context creates agonizing suspense that the one-word attempts are perfectly calibrated for.",
+      "invariant": "INV-035 (Micro-Tension)"
+    },
+    {
+      "id": "OBS-020-008",
+      "category": "bond-mechanics",
+      "description": "The bond-silence passage (L120-126) is the emotional centrepiece of the chapter and is technically impeccable. The distinction between presence-modes (walled, muted, guarded) and absence (empty) is precisely correct and consistent with all established bond behavior. The passage: 'Not walled. Not muted. Not the guarded quiet of someone choosing not to share. Empty.' — This is the definitive bond-silence experience, and it works because every previous bond state has been established.",
+      "invariant": "T18 (Information Asymmetry), bond mechanics"
+    },
+    {
+      "id": "OBS-020-009",
+      "category": "vulnerability-ladder",
+      "description": "The vulnerability ladder reaches its apex (Step 11). Kaelith's vulnerability: consenting to literal death at the hands of someone who held a kill contract. Lirien's vulnerability: accepting the possibility of becoming a murderer. Both exceed all previous ladder steps and are earned by 19 chapters of escalation (Oathbrand removal Ch11, confession Ch13, intimacy Ch14, Black Moment Ch16, rebuild Ch18-19).",
+      "invariant": "T21 (Vulnerability Ladder)"
+    },
+    {
+      "id": "OBS-020-010",
+      "category": "subtext-management",
+      "description": "The subtext progression across the three scenes is structurally sophisticated: SCN-56 has rich clinical-surface/emotional-depth subtext; SCN-57 has minimal dialogue (action sequence); SCN-58 achieves deliberately transparent speech ('Surface and depth, for the first time since she had learned the difference, were the same thing'). The disappearance of subtext IS the thematic climax — after 19 chapters of characters who cannot speak plainly, plainness becomes the achievement. Kaelith's penultimate line ('The contract is gone. The partnership isn't obligatory anymore') retains vestigial subtext (asking 'Are you staying?' without asking), providing the necessary contrast.",
+      "invariant": "T24 (Subtext in Dialogue)"
+    },
+    {
+      "id": "OBS-020-011",
+      "category": "continuity-verification",
+      "description": "Ch19→Ch20 continuity verified: three-day travel plan matches ('Three days since the plan,' L26), Pallor progression matches post-correction (past elbow, three frozen fingers, silver tracking ulna), Ashborne relay network referenced consistently, consent from Rivenmarch correctly referenced, fallback/primary plan priority shift justified by binding tightening. Timeline progression Day ~28-29 → Day ~31-32 is consistent.",
+      "invariant": "INV-002 (internal consistency)"
+    },
+    {
+      "id": "OBS-020-012",
+      "category": "water-metaphor-density",
+      "description": "Lirien's water metaphor domain reaches peak density in this chapter: 19+ instances verified, including the thematic fusion moment where Lirien's magic works 'like water finding every crack, every channel, every route back to rhythm' (L150) during resuscitation — the Seep identity phrase embedded in the act of love. The density is high but appropriate for the climactic chapter of a water-domain POV character.",
+      "invariant": "T17 (Voice Fingerprinting), T16 (Motifs)"
+    },
+    {
+      "id": "OBS-020-013",
+      "category": "borderline-darling",
+      "description": "The cipher-symmetry observation (L178: 'She thought of the cipher she had destroyed at the safe house — the threadbone cracking at its designed stress point — and recognised the symmetry. Two bindings broken.') is the chapter's closest approach to a darling. The symmetry recognition is character-consistent (Lirien thinks in patterns and parallels) and serves the Seep-realization that follows (L180). However, the symmetry observation itself is mildly self-congratulatory and does not strictly advance plot or emotion beyond what the Seep realization alone achieves. Cleared as NOT a blocking darling because it feeds directly into the next narrative beat.",
+      "invariant": "INV-081 (Kill Your Darlings)"
+    },
+    {
+      "id": "OBS-020-014",
+      "category": "upstream-corrections-acknowledged",
+      "description": "The continuity integrator corrected a CRITICAL knowledge leak (Thalen name → 'The saboteur') and a MAJOR Pallor progression error (wrist → past elbow). The voice maintainer corrected 7 metaphor domain violations (military/structural vocabulary replaced with Lirien-domain alternatives). All corrections were appropriate and necessary. The draft is clean post-correction.",
+      "invariant": "INV-027 (adversarial gates)"
+    },
+    {
+      "id": "OBS-020-015",
+      "category": "stakes-calibration",
+      "description": "The chapter correctly positions as the personal/relational stakes climax (literal death and resurrection as ultimate trust test) while deferring the existential stakes climax to Ch21 (Quietus). The closing re-introduction of mission stakes ('Three days. The saboteur is still operating. The god-seal still needs reinforcement.') provides forward momentum without undermining the emotional decompression. Structurally sound two-chapter split.",
+      "invariant": "T6 (Stakes Escalation)"
+    }
+  ],
+
+  "sceneBySceneBreakdown": {
+    "SCN-56": {
+      "title": "Preparation",
+      "outlineCompliance": {
+        "verdict": "FULL",
+        "beatsDelivered": {
+          "ACTION_ritualPrep": "PRESENT — Lines 10-24: ward-stones placed, resonance thresholds calibrated, room sealed. Operative precision established through cataloguing, variable isolation, and kill-space irony.",
+          "DIALOGUE_finalExchange": "PRESENT — Lines 30-82: clinical parameter discussion, consent dialogue, verbal confirmation. Every exchange carries subtext (clinical surface / emotional depth).",
+          "INTERNAL_worstCase": "PRESENT — Lines 54-64: failure scenario fully explored ('the loophole became the murder'), Oathbrand removal invoked as counter-evidence.",
+          "REACTION_stillness": "PRESENT — Lines 66-82: eyes meeting, bond carrying matched determination and terror, consent given through wordless bond-transmission and physical gesture."
+        },
+        "fiveCommandments": {
+          "incitingIncident": "PRESENT — ritual preparation begins (L10-24)",
+          "complication": "PRESENT — bond means Lirien will feel Kaelith die (L30-32, L56)",
+          "crisis": "PRESENT (implicit) — proceed knowing she will feel the death. The crisis is pre-acknowledged rather than dramatized as a decision point, but the worst-case scenario section (L54-64) embodies the crisis through Lirien's confrontation with potential failure.",
+          "climax": "PRESENT — Lirien confirms readiness, Kaelith gives verbal consent (L44-50)",
+          "resolution": "PRESENT — ready, loophole depends on precision/trust/bond (L66-82)"
+        },
+        "valueShift": "VERIFIED — from 'we have a plan' (confident preparation) to 'the plan requires me to kill the person I love' (crushing emotional reality)."
+      },
+      "proseQuality": "High. Kill-space irony is excellently deployed ('She had prepared kill spaces before. Forty-three contracts'). Consent dialogue carries maximum weight. The clinical register is Lirien at her most character-consistent. Water metaphors deployed naturally ('trust like a current she could not redirect').",
+      "tension": "Level 7-8 (rising). No dead spots. Even the environmental cataloguing carries tension because Lirien is preparing a kill space.",
+      "voiceCompliance": "Excellent. Operative vocabulary (parameters, resonance thresholds, calibrated), classification language ('She heard herself and noted the register'), field-note fragments ('One chair. One table. Two bedrolls in the corner, neither unrolled')."
+    },
+    "SCN-57": {
+      "title": "Execution",
+      "outlineCompliance": {
+        "verdict": "FULL",
+        "beatsDelivered": {
+          "ACTION_initiation": "PRESENT — Lines 86-100: fae magic reaching through bond, precision targeting cardiac conduction. The scalpel metaphor and heartbeat-in-awareness imagery are excellent.",
+          "ACTION_heartStops": "PRESENT — Lines 100-126: heart stops, binding resists (3 seconds), binding collapses (4 seconds), bond goes silent. The silence passage is the emotional centrepiece of the chapter.",
+          "ACTION_resuscitation": "PRESENT — Lines 130-154: everything channeled through bond, failed first attempt ('Nothing'), heart restarts on third try. Agonizing precision maintained.",
+          "REACTION_gasp": "PRESENT — Lines 152-164: Kaelith gasps, bond floods back, mutual sensation, 'the cage was open.'"
+        },
+        "fiveCommandments": {
+          "incitingIncident": "PRESENT — magic initiated (L86-98)",
+          "complication": "PRESENT — binding actively resists ('designed for death, not technical compliance,' L104-110)",
+          "crisis": "PRESENT — explicit: 'Push through or abort' (L106)",
+          "climax": "PRESENT — heart stops, bond silent, binding dissolves (L114-126)",
+          "resolution": "PRESENT — heart restarts, bond floods back (L130-154)"
+        },
+        "valueShift": "VERIFIED — from 'trust tested' (initiation) to 'trust proven through the most literal surrender' (resurrection)."
+      },
+      "proseQuality": "Exceptional. The bond-silence passage (L120-126) is the finest writing in the chapter: 'The difference between a room gone dark and a room that had never contained light.' The failed beat ('Nothing' at L139) is perfectly deployed. The resuscitation tricolon pushes toward sentimentality but is saved by context and grounding (see WARN-020-001).",
+      "tension": "Level 9-10 (peak). Continuous escalation from focused precision through crisis (binding resists) through devastating silence through desperate action through failed attempt through release. The most tightly wound scene in the manuscript.",
+      "voiceCompliance": "Maintained under extreme pressure. Analytical narrowing ('She narrowed her focus'), water domain ('current finding a channel,' 'water finding every crack'), counting seconds (character-consistent). Emotion surfaces as observation ('a void so complete'), not as named states."
+    },
+    "SCN-58": {
+      "title": "Aftermath",
+      "outlineCompliance": {
+        "verdict": "FULL",
+        "beatsDelivered": {
+          "INTERNAL_bodyCheck": "PRESENT — Lines 168-188: binding absence catalogued (spine pressure gone, directional pull gone, emotional interference gone), bond verified (present, sharper), feelings tested (undiminished, cleaner).",
+          "DIALOGUE_keyExchange": "PRESENT — Lines 192-196: 'The binding is gone. You're still here.' / 'I was always going to be here. Now we both know it's real.' Deliberately transparent — surface and depth the same.",
+          "ACTION_reconnection": "PRESENT — Lines 200-204: fingers interlace, foreheads meet, physical contact noted as different ('no static, no interference, no undertow of compulsion'). Tears noted but not classified.",
+          "REACTION_missionReturn": "PRESENT — Lines 206-222: Quietus and saboteur re-introduced, hand doesn't leave, close: 'The cage was open. The binding was gone. What remained was only real.'"
+        },
+        "fiveCommandments": {
+          "incitingIncident": "PRESENT — quiet after resurrection, physical grounding (L168-170)",
+          "complication": "PRESENT — Lirien checks: binding gone, body different, feelings unchanged (L172-188)",
+          "crisis": "PRESENT — accept the proof or continue doubting (L186-188: 'This was: evidence. This was also: proof.')",
+          "climax": "PRESENT — Kaelith speaks: 'The binding is gone. You're still here.' (L192)",
+          "resolution": "PRESENT — together because they choose to be, mission ahead (L210-222)"
+        },
+        "valueShift": "VERIFIED — from 'contract dissolved' (diagnostic) to 'what remains is only real — and we choose to keep it' (chosen love)."
+      },
+      "proseQuality": "High, with one rhythm issue (MF-020-001: She-starter repetition). The voice evolution moments are the chapter's emotional apex: 'Surface and depth, for the first time since she had learned the difference, were the same thing' and 'Noted the tears. Did not classify them.' The mission re-entry provides grounding without undermining decompression.",
+      "tension": "Level 5-6 (decompression). Tension maintained through diagnostic suspense and existential questions. Appropriate for post-climax recovery. The mission re-introduction (Quietus, saboteur) adds gentle forward tension.",
+      "voiceCompliance": "Excellent, with earned evolution. Classification language persists ('She ran the assessment,' 'This was: evidence') but yields to direct expression ('I was always going to be here'). The deliberate breaking of the clinical register IS the chapter's emotional payoff."
+    }
+  },
+
+  "darlings": [
+    {
+      "id": "DAR-020-001",
+      "location": "Line 178",
+      "passage": "She thought of the cipher she had destroyed at the safe house — the threadbone cracking at its designed stress point — and recognised the symmetry. Two bindings broken.",
+      "assessment": "BORDERLINE — NOT BLOCKING",
+      "analysis": "The symmetry recognition is character-consistent (Lirien's associative, pattern-finding thought patterns). The cipher callback serves the narrative by connecting to the Seep-realization that follows immediately (L180). However, 'recognised the symmetry' is mildly self-aware — Lirien admiring the structural parallel is slightly indulgent. Cleared because: (1) it is character-voice-consistent, (2) it directly feeds the next narrative beat, and (3) it provides continuity callback that enriches the passage."
+    }
+  ],
+
+  "remediationNotes": [
+    {
+      "id": "REM-020-001",
+      "target": "Line editor / revision",
+      "priority": "medium",
+      "description": "Restructure 3-4 'She [verb]' sentence openings in the SCN-58 body-check section (L168-188) to eliminate rhythmic monotony while preserving the diagnostic quality. See MF-020-001 for specific alternatives."
+    },
+    {
+      "id": "REM-020-002",
+      "target": "Line editor / revision",
+      "priority": "low",
+      "description": "Reformulate 'the most beautiful thing Lirien had ever heard' (L158) to avoid stock construction while preserving the subversion. See MF-020-002 for suggested alternative."
+    },
+    {
+      "id": "REM-020-003",
+      "target": "Line editor / revision",
+      "priority": "low",
+      "description": "Tighten bond-transmission phrasing at L78 and L218 to clarify that the bond transmits emotional quality, not informational content. See MF-020-003 for suggested rephrasing."
+    },
+    {
+      "id": "REM-020-004",
+      "target": "Revision / craft enforcement",
+      "priority": "low",
+      "description": "Evaluate whether the resuscitation tricolon (L132) can be tightened by one clause without losing emotional force. See WARN-020-001 for suggested revision."
+    },
+    {
+      "id": "REM-020-005",
+      "target": "Revision / motif check",
+      "priority": "low",
+      "description": "If revision touches the dissolution cascade passage (L116), consider adding a brief Ythara-adjacent image. See WARN-020-002 for suggestion."
+    }
+  ],
+
+  "secondPassResults": {
+    "description": "Per anti-laziness rules, a second adversarial pass was conducted specifically hunting for: cliche phrases, tell-not-show violations, static scenes (no value shift), voice breaks, and darlings.",
+    "clicheSecondPass": "One additional borderline construction identified: 'the most beautiful thing Lirien had ever heard' (L158). The 'most [adjective] thing ever [verbed]' template is stock genre fiction. Immediate subversion saves it. Elevated to MF-020-002. Total cliche/stock count: 1 (below >2 automatic-fail threshold).",
+    "tellNotShowSecondPass": "Searched aggressively for direct emotion naming. All instances found are earned through the classification framework, bond-reception, or action context. L52 (terror named through classification failure), L132 (love named in action context), L186 (want tested diagnostically). No pure tell-not-show violations. INV-005 clean.",
+    "staticSceneSecondPass": "All three scenes have clear, verified value shifts. No static scenes. SCN-56: confident → crushing reality. SCN-57: trust tested → trust proven. SCN-58: contract dissolved → love proven real.",
+    "voiceBreakSecondPass": "One acceptable intimacy bleed-through identified: 'the woman who built walls to survive and opened doors to love' (L186) — Lirien using Kaelith's structural language to describe Kaelith. Per voice report: earned late-arc evolution, consistent with style guide allowance for 'late intimacy bleed-through.' No unearned voice breaks.",
+    "darlingsSecondPass": "One borderline darling identified: cipher-symmetry observation (L178). Cleared as non-blocking because it's character-consistent and feeds directly into the next narrative beat. No clear darlings found — all beautiful passages are demonstrably load-bearing."
+  },
+
+  "upstreamReportVerification": {
+    "voiceMaintainer": {
+      "claimedScore": "9/10 consistency, 10/10 distinctness",
+      "auditorAssessment": "Substantially agree. Voice is sharply distinct and maintained throughout. The 10/10 distinctness is fully justified — Ch19/Ch20 contrast is total and immediate. The 9/10 consistency is accurate; the She-starter repetition (MF-020-001) is the only notable voice-rhythm issue.",
+      "corrections": "7 corrections applied. All appropriate — military/structural vocabulary replaced with Lirien-domain alternatives (clinical membrane, depth, network, current, tore). The acceptable exceptions are correctly identified (binding architecture as terminology, not metaphor; late-arc intimacy bleed-through).",
+      "claimsVerified": "Water metaphor count (19+ verified by sample), classification language instances (14, verified), 3-4 sentence test (independently verified), sensory signature (visual dominant, confirmed). All claims substantiated.",
+      "disagreements": "None."
+    },
+    "continuityIntegrator": {
+      "claimedResult": "PASS with corrections applied (1 critical, 1 major, 3 minor)",
+      "auditorAssessment": "Fully agree. The critical Thalen correction (INV-056 knowledge leak) was absolutely essential. The major Pallor progression correction was necessary for continuity. All minor corrections (naming capitalization) were appropriate.",
+      "claimsVerified": "Bond mechanics checks (8 checks, all verified independently — bond silence, persistence, walling behavior). Physical state checks (Pallor progression, frozen fingers, cipher reference). Knowledge state checks (loophole awareness, Ashborne network, Seep realization correctly internal). Timeline/location checks (Day ~31-32, forward shelter, three days from Rivenmarch). All claims substantiated.",
+      "disagreements": "Agree with informational notes on L78 and L218 bond-phrasing. Elevated to MF-020-003 as a minor finding rather than leaving as informational."
+    },
+    "craftEnforcer": {
+      "claimedScore": "95/100, zero violations",
+      "auditorAssessment": "Substantially agree. All 16 craft tool assessments are thorough and evidence-based. The 95/100 score is justified. I concur with the 5-point deduction for MOT-005 gap and elevated mystery box count. The resuscitation tricolon (L132) is the one passage I flag as closer to the tone boundary than the report suggests — elevated to WARN-020-001.",
+      "claimsVerified": "T10 Sanderson's Laws (no new magic — independently verified all 6 mechanisms), T12 Dual-Arc (fusion verified — same action serves both arcs), T17 Voice (independently verified fingerprint compliance), T18 Information Asymmetry (independently verified knowledge states against asymmetry map), T24 Subtext (independently verified clinical-surface/emotional-depth pattern), T25 Thematic Argument (all three pillars dramatized through action). All claims substantiated.",
+      "disagreements": "Minor: the craft report does not flag the resuscitation tricolon as a tonal risk. I flag it as WARN-020-001 — the passage works but is the narrowest save in the chapter."
+    }
+  },
+
+  "findingsCounts": {
+    "critical": 0,
+    "major": 0,
+    "minor": 3,
+    "warnings": 2,
+    "observations": 15,
+    "darlings": 1,
+    "darlingsCleared": 1,
+    "darlingsFlagged": 0
+  }
+}

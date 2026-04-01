@@ -1,0 +1,75 @@
+{
+  "chapterNum": 2,
+  "pov": "CHAR-002",
+  "povTransitionMotivation": "Switch to Lirien's POV to reveal her perspective on the surveillance and the internal conflict the contract creates. Motivated by narrative need to show the hunter's doubt and the complications arising from target observation",
+  "scenes": [
+    {
+      "id": "SCN-004",
+      "goal": "Lirien observes Kaelith's morning routine, looking for vulnerability windows to fulfill the Cerith Court's binding kill contract",
+      "conflict": "The target behaves nothing like the intelligence file suggested — Kaelith moves with commander-grade threat awareness despite five years of exile. No vulnerability windows present themselves",
+      "disaster": "Lirien realizes the file is either outdated or deliberately misleading. The target is not broken; she is compressed and waiting",
+      "valueShift": "From 'routine contract execution' to 'target is more dangerous than briefed'",
+      "fiveCommandments": {
+        "incitingIncident": "Lirien begins surveillance from the market square",
+        "complication": "Kaelith's movements reveal no exploitable pattern",
+        "crisis": "Strike now with imperfect information, or continue observing?",
+        "climax": "Lirien chooses observation — the Seep trained her to value precision over speed",
+        "resolution": "She commits to a second day of surveillance, her first meaningful delay in forty-three contracts"
+      }
+    },
+    {
+      "id": "SCN-005",
+      "goal": "Lirien positions herself in the market to observe Kaelith's interaction with the garrison administrator",
+      "conflict": "Kaelith catches her watching — direct eye contact, mutual recognition of threat. Lirien has been identified",
+      "disaster": "Lirien does not take the clean kill opportunity. She holds position, acknowledging the surveillance openly. This is a deviation from doctrine and she knows it",
+      "valueShift": "From 'professional distance' to 'target has become interesting beyond mission parameters'",
+      "fiveCommandments": {
+        "incitingIncident": "Kaelith turns and makes direct eye contact",
+        "complication": "Lirien's training dictates immediate withdrawal or immediate strike",
+        "crisis": "Strike now, withdraw, or hold position and admit the surveillance?",
+        "climax": "Lirien holds position — the first time she has allowed a target to see her fully",
+        "resolution": "Both women assess each other openly. Neither attacks. The surveillance shifts from covert to acknowledged"
+      }
+    },
+    {
+      "id": "SCN-006",
+      "goal": "Lirien intercepts a Seep intelligence packet about the Pallor failures, expecting routine environmental data",
+      "conflict": "The packet includes a visible Pallor tear recorded above Duskhaven — the same tear she witnessed during her surveillance of Kaelith",
+      "disaster": "The tear coincided with an Oathbrand flare in Kaelith's suppression brand. The report notes that suppression brands should not react to Pallor disturbances unless the suppressed individual is connected to ontological magic. Kaelith is not supposed to have that capacity",
+      "valueShift": "From 'assassination mission' to 'target is anomalous and possibly key to larger crisis'",
+      "fiveCommandments": {
+        "incitingIncident": "Lirien reads the Seep intelligence packet",
+        "complication": "The Pallor tear and Oathbrand flare are temporally linked",
+        "crisis": "Execute contract as ordered, or investigate anomaly before acting?",
+        "climax": "Lirien decides to delay execution until she understands what Kaelith's suppression is concealing",
+        "resolution": "She commits to extended observation, justifying it internally as operational prudence but knowing it is curiosity and respect"
+      }
+    }
+  ],
+  "emotionalArc": {
+    "startState": "Lirien begins in clinical assessment mode — the target is a problem to be solved efficiently. She experiences no moral conflict; contracts are absolute",
+    "endState": "She ends in operational uncertainty — the target has become a person, the mission parameters are insufficient, and curiosity has compromised professional distance. She does not yet call this 'caring,' but the classification system is failing",
+    "pivotMoment": "The moment Kaelith catches her watching and Lirien does not withdraw. That choice — to be seen rather than to remain covert — is her first act of emotional honesty in decades"
+  },
+  "fantasyBeats": [
+    "Inciting Incident — Surveillance Meets the First Tear: The Pallor tear appears during Lirien's observation of Kaelith. The Oathbrand reacts impossibly. Lirien realizes the assassination may destroy something she does not yet understand"
+  ],
+  "romanceBeats": [
+    "Delayed Strike — Choosing to Observe Instead of Execute: Lirien does not take the clean kill when Kaelith identifies her. She admits through action that the target is more dangerous, more interesting, and more human than the file allowed"
+  ],
+  "hookType": "internal-conflict",
+  "hookTypeDescription": "Opens inside Lirien's clinical assessment process — how she evaluates a target, maps a kill window, classifies threat level. The hook is the gap between what the file promised and what she observes",
+  "closeType": "decision-with-consequences",
+  "closeTypeDescription": "Closes with Lirien committing to investigation over execution, knowing this delay will require justification to the Seep and the Court. The choice is made, but the cost is not yet visible",
+  "targetWordCount": 4100,
+  "tensionLevel": 5,
+  "pacingNotes": "Rising tension. The surveillance becomes mutual awareness. The Pallor tear introduces cosmic threat. Lirien's internal conflict between contract obedience and operational judgment creates mounting pressure",
+  "locationsPrimary": ["Duskhaven — market square, Lirien's temporary quarters, rooftop observation point"],
+  "charactersPresent": ["CHAR-002 (Lirien)", "CHAR-001 (Kaelith, observed and briefly acknowledged)", "CHAR-009 (Tavik, observed from distance)"],
+  "upstreamRefs": [
+    "../../plot/plot-structure.json",
+    "../../characters/CHAR-002.json",
+    "../../plot/dual-arc-timeline.json",
+    "../../plot/tension-map.json"
+  ]
+}

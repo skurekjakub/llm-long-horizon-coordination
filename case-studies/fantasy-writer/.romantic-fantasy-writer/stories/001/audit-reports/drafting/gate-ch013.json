@@ -1,0 +1,312 @@
+{
+  "gateId": "GATE-DRAFT-CH013",
+  "phase": "drafting",
+  "chapter": 13,
+  "auditor": "romantic-fantasy-writer-drafting-auditor",
+  "timestamp": "2026-03-18T08:50:00.000000+00:00",
+  "iteration": 1,
+  "verdict": "passed",
+  "overallScore": 8.5,
+
+  "executiveSummary": "Chapter 13 is a strong, emotionally earned chapter that delivers the Calwrath confession and first kiss with craft discipline and voice integrity. All three outline scenes are present with correct value shifts and five commandments. No critical findings. No automatic-fail triggers. Two warnings identified (water metaphors in Kaelith's narration, repetitive syntactic patterns). The chapter meets the quality bar for progression to revision, where the warnings should be addressed.",
+
+  "criticalFindings": [],
+
+  "majorFindings": [
+    {
+      "id": "MAJ-001",
+      "severity": "major",
+      "category": "voice-compliance",
+      "invariant": "INV-003",
+      "title": "Water metaphors in Kaelith's narration violate voice fingerprint",
+      "description": "CHAR-001's profile explicitly states: 'She does NOT use water metaphors (Lirien's domain).' Two water metaphors appear in Kaelith's internal narration: (1) 'like water finding the place in a wall where the mortar had thinned' (line 44, describing Lirien's attention) and (2) 'The words fell into the silence like stones into deep water' (line 148, the Calwrath climax). A third instance at line 128 ('The air on the granite shelf was cold and clean') is not metaphorical. The first instance could be defensible as Lirien-influence bleed per the voice evolution spec ('she begins using one or two water-adjacent metaphors unconsciously — a sign of Lirien's influence'), but the character profile places this shift in 'late-story moments' and chapter 13 of 22 is mid-story. The second instance is a classical water metaphor in Kaelith's most emotionally raw moment. Together these constitute a voice violation that should be revised.",
+      "evidence": [
+        "Line 44: 'It had a shape — narrow, focused, like water finding the place in a wall where the mortar had thinned.'",
+        "Line 148: 'The words fell into the silence like stones into deep water.'"
+      ],
+      "recommendation": "Replace both water metaphors with structural/architectural equivalents. Suggestion for line 148: 'The words fell into the silence like stones into a foundation trench' or 'The words fell into the silence and the silence took their weight.' Reserve water metaphors for chapters 17+ per evolution spec."
+    },
+    {
+      "id": "MAJ-002",
+      "severity": "major",
+      "category": "prose-quality",
+      "invariant": "INV-017",
+      "title": "Repetitive syntactic pattern: 'the specific/particular quality/precision of' construction overused",
+      "description": "The construction 'the specific/particular [quality/precision/weight/gravity] of [noun phrase]' appears with excessive frequency, creating a recognizable tic rather than deliberate style. Counted: 'specific' 10x, 'quality' 8x, 'precision' 7x. The 'the specific X of Y' pattern appears at least 9 times. While individually these are well-crafted phrases, their density creates a monotonous rhythm that undercuts the prose's variety. Examples: 'the specific, unbearable precision of a person saying your name' (line 56), 'the specific gravity of three hundred deaths' (line 138), 'the specific, deliberate pressure of two people' (line 222). This needs thinning — keep the 3-4 strongest instances, rephrase the rest.",
+      "evidence": [
+        "'the specific' appears 9 times in 5,100 words",
+        "'the particular quality of' appears 3 times",
+        "'the precise/precision' appears 11 times total",
+        "Combined, these similar constructions create a visible pattern across multiple pages"
+      ],
+      "recommendation": "Reduce 'the specific X of Y' to 4-5 instances max. Vary the construction: use direct description, tactile sensation, or Kaelith's characteristic declarative flatness instead of the recurring specifier pattern."
+    }
+  ],
+
+  "minorFindings": [
+    {
+      "id": "MIN-001",
+      "severity": "minor",
+      "category": "prose-quality",
+      "invariant": "INV-017",
+      "title": "'the way X' comparative construction overused (23 instances)",
+      "description": "The pattern 'the way [subject] [verb]' appears 23 times in 5,100 words (roughly once per 220 words). Examples include 'the way she tracked structural proximity,' 'the way you set something down,' 'the way natural fire burns,' 'the way sound mortar fissured.' While this is a legitimate Kaelith-voice construction (she processes by comparison to structural knowledge), 23 instances creates audible repetition. Revision should vary the comparative structure.",
+      "evidence": [
+        "23 instances of 'the way X Y' in 5,100 words",
+        "Multiple instances occur within the same page-equivalent"
+      ],
+      "recommendation": "Reduce to 12-15 instances. Convert some to direct statements: instead of 'the way she noticed foundation cracks,' try 'as she would notice foundation cracks' or rephrase entirely."
+    },
+    {
+      "id": "MIN-002",
+      "severity": "minor",
+      "category": "prose-quality",
+      "invariant": "INV-017",
+      "title": "'Not X but Y' / 'Not X — Y' negation-definition pattern overused (26 instances)",
+      "description": "The pattern of defining something by what it is NOT, then correcting to what it IS, appears 26 times. This is a legitimate voice technique for Kaelith (she thinks in assessment and correction), but at this density it becomes a structural crutch. Examples: 'Not a fire — smoke would betray the position,' 'Not the operative quiet she used in assessment — a different register,' 'Not bravado. Not performance. The actual foundation.' Individually strong, collectively monotonous.",
+      "evidence": [
+        "26 instances of 'Not X but/— Y' or 'Not X. Y' pattern",
+        "Highest density in Scene 3 (kiss and aftermath)"
+      ],
+      "recommendation": "Reduce to 15-18 instances. The strongest instances are in the kiss scene and Lirien's response — keep those. Thin the pattern elsewhere, especially in Scene 1 where it's less emotionally justified."
+    },
+    {
+      "id": "MIN-003",
+      "severity": "minor",
+      "category": "prose-quality",
+      "title": "'Through the bond:' construction used 9 times as paragraph/clause opener",
+      "description": "The phrase 'Through the bond' appears 9 times, often as a colon-introduced clause opener. While the bond is central to this chapter's mechanics (it enables the emotional transparency that makes the confession and kiss work), the repetitive opener creates a rhythmic monotony. Varying the construction would improve flow without losing the bond's presence.",
+      "evidence": [
+        "9 occurrences of 'Through the bond' as clause/paragraph opener",
+        "Appears in all three scenes with roughly equal distribution"
+      ],
+      "recommendation": "Reduce to 5-6 direct 'Through the bond:' constructions. Vary the remaining with indirect references: 'The resonance carried...' or 'She felt through the resonance...' or simply describe the sensation without naming the mechanism."
+    },
+    {
+      "id": "MIN-004",
+      "severity": "minor",
+      "category": "prose-quality",
+      "title": "Paragraph-opening monotony: 'She' and 'The' each start 20 paragraphs",
+      "description": "'She' and 'The' each begin 20 paragraphs (40 of ~130 total paragraphs, or 31%). While Kaelith-POV naturally gravitates toward 'She [verb]' constructions, the density creates visible repetition. Mixing in more varied openings (sentence fragments, dialogue, sensory details, temporal markers) would improve rhythm.",
+      "evidence": [
+        "'She' opens 20 paragraphs",
+        "'The' opens 20 paragraphs",
+        "Together: 31% of all paragraphs"
+      ],
+      "recommendation": "Vary 5-8 'She' openings to start with the object, sensation, or action instead. Example: instead of 'She pressed her back against the granite,' try 'The granite held when she pressed her back against it.'"
+    },
+    {
+      "id": "MIN-005",
+      "severity": "minor",
+      "category": "darlings",
+      "invariant": "INV-081",
+      "title": "Potential darling: extended bond-loop description in kiss scene (line 222)",
+      "description": "The sentence beginning 'Kaelith's hand found the back of Lirien's neck...' runs 124 words and includes a recursive bond-description loop ('feeling each other feel this, sensation doubled and returned and doubled again'). While emotionally effective, the recursive description risks becoming self-indulgent. The concept is established in the first clause; the recursive elaboration may be the prose admiring its own cleverness rather than serving the emotional beat. Borderline darling.",
+      "evidence": [
+        "Line 222: 124-word sentence describing the kiss through the bond's recursive loop",
+        "The recursive concept ('feel each other feel') is restated 3 times within the same sentence"
+      ],
+      "recommendation": "Consider trimming the recursive elaboration to one statement. The bond's amplifying effect is already well-established; trust the reader to extrapolate. Keep 'her mouth and Lirien's mouth and the knowledge that Lirien felt what Kaelith felt' — cut the additional loop."
+    },
+    {
+      "id": "MIN-006",
+      "severity": "minor",
+      "category": "darlings",
+      "invariant": "INV-081",
+      "title": "Potential darling: meta-narrative line about sentence weight (line 116)",
+      "description": "The passage 'Five words. Each one carried specific weight — not metaphorical weight, actual weight, the kind the body measured in the muscles of the jaw...' is self-aware prose commentary. It interrupts the confession's momentum to instruct the reader on how to experience the preceding five words. Kaelith's voice profile does not include meta-narrative self-awareness; she would not pause to count her own words and comment on them. The body-sensation detail (jaw, sternum, neck) is excellent and in-voice; the 'Five words' commentary frame is the darling.",
+      "evidence": [
+        "Line 116: 'Five words. Each one carried specific weight — not metaphorical weight, actual weight'",
+        "This is the narrator commenting on her own sentence construction, breaking POV immersion"
+      ],
+      "recommendation": "Cut 'Five words.' and rephrase to deliver the body sensations directly: 'The words carried weight — in her jaw, in the pressure behind her sternum, in the heat climbing the back of her neck.'"
+    }
+  ],
+
+  "observations": [
+    {
+      "id": "OBS-001",
+      "category": "outline-compliance",
+      "status": "PASS",
+      "detail": "All three scenes (SCN-34, SCN-35, SCN-36) present with correct scene types (sequel, scene, scene). All scene goals delivered. All five commandments satisfied for each scene. All value shifts realized: concealment→exposure, control→surrender, anticipated rejection→irreversible intimacy."
+    },
+    {
+      "id": "OBS-002",
+      "category": "pov-identification",
+      "status": "PASS",
+      "detail": "POV identifiable within first 3 sentences. Opening: 'They stopped when the terrain let them. A granite shelf jutted from the hillside fifty yards above the streambed...' The spatial/architectural orientation (exits, sight lines, structural assessment) is unmistakably Kaelith per CHAR-001 attention-priority spec. By sentence 4 ('Kaelith assessed the position in six seconds'), identification is explicit."
+    },
+    {
+      "id": "OBS-003",
+      "category": "voice-fingerprint",
+      "status": "PASS (with caveat)",
+      "detail": "Kaelith's voice is strongly maintained: short declarative sentences dominate (~70%), structural metaphors pervasive (load-bearing 3x, foundation 4x, architecture 6x, wall 8x, buttress, keystone, mortar), emotions rendered as physical events (jaw ache, sternum pressure, hand tremor, heat in neck, throat tightening). Military vocabulary present (defensive perimeter, sight lines, position, briefing register, command decisions). Contraction pattern correct: zero contractions in Kaelith's confession dialogue (formal under stress), present only in Lirien's dialogue. Caveat: two water metaphors flagged in MAJ-001."
+    },
+    {
+      "id": "OBS-004",
+      "category": "show-dont-tell",
+      "status": "PASS",
+      "detail": "Zero instances of direct emotion naming detected by automated scan. All major emotional beats shown through body language and physical sensation: fear as 'hyper-awareness of every exit' and hand tremor; grief as 'pressure behind the sternum'; relief as 'hands no longer shaking.' The confession scene is entirely shown through Kaelith's body (pressing stone, driving branches, jaw ache, throat tightening) rather than told. Estimated show:tell ratio matches the 92:8 claimed in metadata."
+    },
+    {
+      "id": "OBS-005",
+      "category": "banned-phrases",
+      "status": "PASS",
+      "detail": "Zero banned phrases from the style guide's prohibited list found in the chapter. No 'breath she didn't realize she was holding,' no 'predator smile,' no 'air crackled,' no 'mask slipped,' etc. 'Cool' appears once (line 92) as temperature description, not modern slang — false positive."
+    },
+    {
+      "id": "OBS-006",
+      "category": "cliche-check",
+      "status": "PASS",
+      "detail": "Zero cliche fantasy phrases detected from the standard checklist. No 'eyes like pools,' no 'power coursing,' no 'darkness consuming,' no 'heart skipped a beat.' Metaphors are consistently original and domain-specific to Kaelith's architectural register."
+    },
+    {
+      "id": "OBS-007",
+      "category": "micro-tension",
+      "status": "PASS",
+      "detail": "No half-page (125-word) window lacks active tension. The automated scan flagged some windows as 'low tension' but all contained at least one tension source (confession content, bond exposure, emotional vulnerability, pursuit context). The chapter maintains tension through multiple concurrent sources: background pursuit, bond transparency, confession stakes, judgment anticipation, and eventually the kiss's irreversibility."
+    },
+    {
+      "id": "OBS-008",
+      "category": "continuity",
+      "status": "PASS",
+      "detail": "Chapter 12→13 transition is consistent: ch12 ends with pursuit escape heading northeast, ch13 opens at a defensible granite shelf stop. Character positions correct. Timeline consistent (night following ch12 pursuit, pre-dawn by chapter end). Bond status matches (fully active since Oathbrand removal). Information asymmetry respected: Kaelith does not reference Warden lineage (FACT-006, unknown), kill contract loophole (FACT-008, unknown), or Thalen as Pallor saboteur (FACT-007, unknown). Thalen referenced only as pursuit director from Seventh Seat, which is known information."
+    },
+    {
+      "id": "OBS-009",
+      "category": "information-asymmetry",
+      "status": "PASS",
+      "detail": "No character references information they should not know. Kaelith's knowledge state is correct per continuity tracker. Lirien learns new information (full Calwrath truth) that she did not previously know. Reader receives full Calwrath details for the first time. Operation 31 (Elisi) is new information for both Kaelith and reader."
+    },
+    {
+      "id": "OBS-010",
+      "category": "dual-arc",
+      "status": "PASS",
+      "detail": "Both arcs present. Romance: confession, reciprocation, first kiss — central. Fantasy: two hunter teams, Thalen Reyvas directing from Seventh Seat, observation posts on northeastern approach, Pallor erosion sensed by Kaelith, Quietus path pulling northeast. Fantasy arc integrated into closing paragraphs to prevent the romance from floating free of plot pressure."
+    },
+    {
+      "id": "OBS-011",
+      "category": "romance-beat",
+      "status": "PASS",
+      "detail": "First Kiss beat delivered correctly per romance-arc.json. Kiss earned through vulnerability ladder step 4 (sharing unforgivable parts). Kiss explicitly framed as 'not survival, not the bond, not necessity' (TP-3 chosen vs only). Kiss is mutual and deliberate, not desperate. Preceded by reciprocal vulnerability (Lirien's operation 31). Post-kiss dialogue avoids sentimentality: 'I cannot undo that' / 'I do not want to undo it.'"
+    },
+    {
+      "id": "OBS-012",
+      "category": "vulnerability-ladder",
+      "status": "PASS",
+      "detail": "Step 4 executed: sharing the unforgivable parts. Kaelith shares Calwrath (the thing she believes makes her monstrous). Lirien reciprocates with operation 31 (her version of the unforgivable). The exchange is symmetrical in weight but asymmetrical in specifics, creating genuine mutual exposure rather than performative matching."
+    },
+    {
+      "id": "OBS-013",
+      "category": "foreshadowing",
+      "status": "PASS",
+      "detail": "FS-007 (Calwrath battlefield decision) payoff delivered. FS-015 (resonance bond) advanced. Motifs present: MOT-001 (Pallor erosion, closing), MOT-002 (Oathbrand ghost + Lirien touching pulse not scar), MOT-003 (water/infiltration — Lirien's attention, fountain detail), MOT-004 (Quietus as body-knowledge, pulling northeast). New plants: operation 31/Elisi, kiss as irreversible threshold."
+    },
+    {
+      "id": "OBS-014",
+      "category": "craft-tools",
+      "status": "PASS",
+      "detail": "All active craft tools verified as applied. T1 (scene-sequel): correct scene types. T14 (MRU): consistent stimulus→emotion→reflex→rational→speech pattern. T22/T24 (subtext): multiple subtext layers in key exchanges. T25 (thematic): all three thematic pillars dramatized. T16/T17 (voice): fingerprints maintained. T18 (info asymmetry): bond vs factual gap correctly handled. T19/T20 (emotional throughline): arc from defensive fear to terrified hope. T15 (foreshadowing): payoff and plants verified. T23 (hook/close): strong hook and close."
+    },
+    {
+      "id": "OBS-015",
+      "category": "dialogue-standards",
+      "status": "PASS",
+      "detail": "Dialogue operates on two layers throughout (surface and subtext). No uninterrupted monologue exceeds 6 spoken lines without beat/interruption. Kaelith's confession is broken by physical beats (pressing stone, closing eyes, breathing). Tag usage appropriate — primarily 'said' with action beats. Lirien's contraction usage (don't, you're, can't) is consistent with her character evolving toward human register. Kaelith's dialog in confession is contraction-free (formality as armor)."
+    },
+    {
+      "id": "OBS-016",
+      "category": "adverb-density",
+      "status": "PASS",
+      "detail": "Approximately 1.8 adverbs per page (250-word page), within the style guide's max of 3 per page. Several 'adverbs' in the count are actually non-adverbs (supply, resupply, assembly). True adverb density is likely ~1.3/page."
+    },
+    {
+      "id": "OBS-017",
+      "category": "emotional-arc-progression",
+      "status": "PASS",
+      "detail": "Emotional arc escalates appropriately from ch12. Ch12 ended with tactical intimacy (bond as survival tool during pursuit). Ch13 escalates to emotional intimacy (confession of worst self). The vulnerability ladder step from ch12 (step 3: exposing capability/bond survival) to ch13 (step 4: sharing unforgivable parts) is correctly sequenced. The kiss emerges from mutual vulnerability, not from adrenaline of pursuit. This is earned, not rushed."
+    }
+  ],
+
+  "sceneBySceneBreakdown": {
+    "SCN-34": {
+      "wordCount": 1101,
+      "outlineCompliance": "FULL",
+      "valueShift": "concealment → exposure — realized",
+      "fiveCommandments": "All five present and clear",
+      "microTension": "PASS — hunter threat background, bond exposure, Kaelith's internal agitation",
+      "voiceCompliance": "PASS — opens with tactical spatial assessment, structural metaphors, body-forward emotion",
+      "sceneType": "Sequel (correct per outline): Reaction→Dilemma→Decision",
+      "issues": "One water metaphor in Kaelith narration (MAJ-001)"
+    },
+    "SCN-35": {
+      "wordCount": 1665,
+      "outlineCompliance": "FULL",
+      "valueShift": "control → surrender — realized",
+      "fiveCommandments": "All five present and clear",
+      "microTension": "PASS — confession stakes, waiting for judgment, body betraying control",
+      "voiceCompliance": "PASS — briefing register, formal diction, zero contractions, structural metaphors for mortar/foundation/keystone",
+      "sceneType": "Scene (correct per outline): Goal→Conflict→Disaster",
+      "issues": "One water metaphor (MAJ-001), 'Five words' meta-narrative (MIN-006), 'the specific' repetition"
+    },
+    "SCN-36": {
+      "wordCount": 2330,
+      "outlineCompliance": "FULL",
+      "valueShift": "anticipated rejection → irreversible intimacy — realized",
+      "fiveCommandments": "All five present and clear",
+      "microTension": "PASS — judgment anticipation, approach tension, kiss irreversibility, pursuit context",
+      "voiceCompliance": "PASS — structural metaphors throughout (walls, foundations, load redistribution), emotions as physical events (jaw unlocking, hands steadying)",
+      "sceneType": "Scene (correct per outline): Goal→Conflict→Disaster",
+      "issues": "Kiss sentence potentially overlong (MIN-005), 'Not X but Y' pattern density"
+    }
+  },
+
+  "darlingAssessment": [
+    {
+      "id": "DARL-001",
+      "location": "Line 222",
+      "passage": "...sensation doubled and returned and doubled again, her mouth and Lirien's mouth and the knowledge that Lirien felt what Kaelith felt and Kaelith felt Lirien feeling it, the loop tightening...",
+      "severity": "minor",
+      "verdict": "Borderline. The recursive bond description is thematically on-point (the bond IS recursive), but the prose may be admiring the concept rather than serving the emotion. Trim the recursion, keep the sensation."
+    },
+    {
+      "id": "DARL-002",
+      "location": "Line 116",
+      "passage": "Five words. Each one carried specific weight — not metaphorical weight, actual weight...",
+      "severity": "minor",
+      "verdict": "Meta-narrative awareness breaks POV immersion. Kaelith would not count her own words. The body-sensation detail is in-voice; the counting frame is authorial intrusion."
+    }
+  ],
+
+  "invariantsChecked": [
+    {"id": "INV-001", "name": "Genre Promise (dual arc)", "status": "PASS", "evidence": "Romance and fantasy arcs both present and interleaved"},
+    {"id": "INV-002", "name": "Consistency", "status": "PASS", "evidence": "No continuity errors, timeline consistent, positions correct"},
+    {"id": "INV-003", "name": "Voice Distinctness", "status": "WARN", "evidence": "Voice strong overall; two water metaphors violate domain restriction"},
+    {"id": "INV-005", "name": "Show Don't Tell", "status": "PASS", "evidence": "Zero direct emotion naming; all emotional beats shown through body/action"},
+    {"id": "INV-009", "name": "No Deus Ex Machina", "status": "PASS", "evidence": "No unestablished magic used; bond and Oathbrand ghost are established systems"},
+    {"id": "INV-010", "name": "Outline Compliance", "status": "PASS", "evidence": "All scenes, beats, goals, and value shifts from outline present in draft"},
+    {"id": "INV-012", "name": "Sequential Chapters", "status": "PASS", "evidence": "Ch13 follows ch12 consistently in timeline, position, and emotional state"},
+    {"id": "INV-017", "name": "Prose Quality Floor", "status": "WARN", "evidence": "Zero cliches, zero banned phrases, but repetitive syntactic patterns (MAJ-002, MIN-001, MIN-002)"},
+    {"id": "INV-023", "name": "No Plagiarism", "status": "PASS", "evidence": "No derivative content detected; prose is original with story-specific metaphors"},
+    {"id": "INV-027", "name": "Adversarial Phase Gate", "status": "EXECUTING", "evidence": "This audit"},
+    {"id": "INV-034", "name": "POV Identifiable", "status": "PASS", "evidence": "POV character identifiable within first 2 sentences via spatial/architectural orientation"},
+    {"id": "INV-035", "name": "Micro-Tension", "status": "PASS", "evidence": "No half-page without active tension source"},
+    {"id": "INV-038", "name": "Dialogue Function", "status": "PASS", "evidence": "All dialogue exchanges serve narrative function; no empty banter"},
+    {"id": "INV-040", "name": "Value Shift per Scene", "status": "PASS", "evidence": "Three scenes, three distinct value shifts realized"},
+    {"id": "INV-041", "name": "Five Commandments", "status": "PASS", "evidence": "All five commandments present in each scene"},
+    {"id": "INV-056", "name": "No Knowledge Leakage", "status": "PASS", "evidence": "Kaelith does not reference unknown facts (Warden lineage, contract loophole, Thalen as saboteur)"},
+    {"id": "INV-073", "name": "Publication-Ready Prose", "status": "PASS", "evidence": "Prose is lush but controlled, emotionally authentic, not purple"},
+    {"id": "INV-079", "name": "Craft Tool Compliance", "status": "PASS", "evidence": "All 16 active craft tools verified as applied"},
+    {"id": "INV-081", "name": "Kill Your Darlings", "status": "WARN", "evidence": "Two borderline darlings identified (DARL-001, DARL-002) — neither is egregious enough to constitute a critical finding"}
+  ],
+
+  "warningCount": 2,
+  "warningThreshold": 3,
+  "warningsTriggered": ["MAJ-001 (voice/water metaphors)", "MAJ-002 (repetitive syntactic patterns)"],
+  "failTriggered": false,
+  "failReason": null,
+
+  "remediationNotes": "Two major findings should be addressed in revision: (1) Replace the two water metaphors in Kaelith's narration with structural equivalents per CHAR-001's voice domain restrictions. (2) Thin the repetitive syntactic patterns — 'the specific X of Y' (reduce from 9 to 4-5), 'the way X' (reduce from 23 to 12-15), 'Not X but Y' (reduce from 26 to 15-18), 'Through the bond:' (reduce from 9 to 5-6). Six minor findings provide additional polish targets but do not block progression. The darlings at lines 116 and 222 should be evaluated during line editing.",
+
+  "recommendation": "PASS to revision pipeline. This is a strong draft with excellent emotional architecture, craft discipline, and voice integrity. The findings are polish-level issues that belong in revision, not rewrites. The Calwrath confession is the chapter's centerpiece and it lands powerfully — the tactical briefing register, the body-forward emotion, the devastating final admission. The kiss is earned through mutual vulnerability, not adrenaline. The closing paragraphs successfully re-anchor the fantasy arc without deflating the romantic momentum. This chapter can proceed."
+}

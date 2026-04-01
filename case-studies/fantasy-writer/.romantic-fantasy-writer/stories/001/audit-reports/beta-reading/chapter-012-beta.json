@@ -1,0 +1,57 @@
+{
+  "chapter": 12,
+  "engagementScore": 8,
+  "emotionalImpact": "high",
+  "pacingAssessment": "well-paced",
+  "clarityScore": 8,
+  "findings": [
+    {
+      "id": "BETA-012-001",
+      "type": "pacing",
+      "severity": "minor",
+      "description": "The opening bond-mechanics exposition runs approximately 80 lines before the first dialogue exchange. The internal monologue is beautifully written and establishes the resonance bond's stakes, but a reader coming off the high-energy Oathbrand removal of ch11 may feel the momentum stall slightly before the chapter finds its footing. The parenthetical assessment style (Lirien's signature) is doing a lot of heavy lifting to keep the interiority engaging.",
+      "location": "Scene 1, opening through first dialogue at 'You have been awake for eleven minutes'",
+      "readerImpact": "Slight patience required before the chapter's engine engages. Not a problem for invested readers, but casual readers may skim."
+    },
+    {
+      "id": "BETA-012-002",
+      "type": "engagement-drop",
+      "severity": "minor",
+      "description": "The intelligence briefing scene (Seep dead drop) is necessary plot infrastructure but reads more like a briefing than a scene. Lirien summarizes the Dimming rites, authorization chain, and Reyvas's role in expository blocks. The emotional hook — Lirien's omission of the Court advisory — is powerful, but it arrives at the end of a dense information dump. A reader could lose the emotional thread in the policy details.",
+      "location": "Scene 2, from 'The Seep's dead drop was concealed' through Lirien's briefing to Kaelith",
+      "readerImpact": "Moderate. The conspiracy details are important but the delivery is frontloaded with worldbuilding. The omission beat at the end redeems the scene."
+    },
+    {
+      "id": "BETA-012-003",
+      "type": "romance-gap",
+      "severity": "observation",
+      "description": "The bond's emotional transparency is established as a massive threat to Lirien's secret, but Kaelith never pushes on the 'something dark' she feels during the bond misfire in the chase. She asks once ('You sent something... that wasn't direction'), accepts 'The bond is imprecise under stress,' and lets it go. For a woman described as someone who 'does not leave structural mysteries unexamined,' this feels slightly too easy. The 'for now' qualifier helps, but a reader might wonder why Kaelith doesn't press harder.",
+      "location": "Scene 3, post-chase conversation",
+      "readerImpact": "Minor. Sets up tension for later chapters, but Kaelith's restraint here needs to feel earned by her own vulnerability state (post-adrenaline, pre-Calwrath confession) rather than narratively convenient."
+    },
+    {
+      "id": "BETA-012-004",
+      "type": "worldbuilding-gap",
+      "severity": "minor",
+      "description": "The 'current' metaphor is used for three different things in this chapter: the blood binding's pull toward Kaelith, the resonance bond's pull toward Kaelith, and Reyvas's institutional erosion ('a bureaucratic current'). All three are water/river imagery. The metaphor overload slightly dilutes the power of each individual use and may confuse a reader trying to distinguish between the binding and the bond.",
+      "location": "Throughout — see paragraphs on contract ('the current had not changed'), bond ('a second current'), and Reyvas ('built a bureaucratic current')",
+      "readerImpact": "The thematic unity is intentional but the triple-use makes each instance slightly less precise. A reader may conflate the binding and bond currents."
+    },
+    {
+      "id": "BETA-012-005",
+      "type": "pacing",
+      "severity": "observation",
+      "description": "The chase sequence is excellent — taut, coordinated through the bond, with the misfire adding real danger. However, the four hunters arrive and are evaded within roughly 30 lines. Given that these are 'well-resourced contract hunters,' the ease of escape might undercut the threat level established by the Seep intelligence ('three teams, minimum'). The gap-in-the-ridge solution via bond is clever but comes slightly too readily.",
+      "location": "Scene 3, from 'The hunters came at dusk' through the high meadow",
+      "readerImpact": "The fight feels appropriately tense in the moment, but in retrospect the threat resolves quickly. This is fine if later encounters escalate significantly (which ch14 delivers)."
+    }
+  ],
+  "strengths": [
+    "The opening image — waking to the *direction* of someone's breathing — is one of the best first lines in the manuscript so far. It immediately establishes the bond as involuntary, intimate, and disorienting.",
+    "Lirien's parenthetical assessments ('Threat assessment: severe') are doing brilliant double work: they are her voice AND they are dramatic irony. The reader understands these are coping mechanisms. The character thinks they are analysis. The gap between is where the emotion lives.",
+    "The omission of the third page (Court advisory flagging Lirien as 'deviation risk') is a masterful plot beat. The reader knows Lirien is hiding the most dangerous intelligence — about herself. The parenthetical acknowledgment that the omission is 'also cowardice' is honest in exactly the way that makes Lirien sympathetic rather than villainous.",
+    "The bond's tactical utility in the chase scene organically demonstrates its value while simultaneously showing its danger (the misfire). This is efficient storytelling — the same device serves plot, romance, and thematic tension simultaneously.",
+    "The final paragraph is extraordinary. 'She walked beside the woman she had been sent to kill and felt everything the woman felt' — the entire novel's central tension in one sentence. The dual-current metaphor, while overused elsewhere, lands perfectly here as a closing image."
+  ],
+  "verdict": "strong"
+}

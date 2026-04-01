@@ -1,0 +1,325 @@
+{
+  "storyId": "001",
+  "boxes": [
+    {
+      "id": "MB-001",
+      "question": "Why hasn't the Oathbrand dissolved? It should have faded five years ago, but it keeps burning fresh \u2014 who is maintaining it and why?",
+      "openedChapter": 1,
+      "closedChapter": 21,
+      "importance": "major",
+      "status": "partially answered",
+      "note": "Ch3 reveals Oathbrand deliberately maintained by High Conclave prevention protocol. Ch4 reveals ontological suppression not just standard discipline. Full answer (who specifically, why Warden capacity matters) deferred to ch21."
+    },
+    {
+      "id": "MB-002",
+      "question": "Who on the High Conclave has been poisoning the Pallor for forty years, and what do they gain from releasing Ythara?",
+      "openedChapter": 2,
+      "closedChapter": 21,
+      "importance": "major",
+      "status": "partially answered",
+      "note": " Ch15 \u2014 Four independent sources corroborate evidence pointing at Thalen Reyvas, zealotry motivation confirmed. Identity not yet fully confirmed to leads."
+    },
+    {
+      "id": "MB-003",
+      "question": "How did Kaelith walk the path to the Quietus blindfolded? Who trained her, and when did this happen?",
+      "openedChapter": 5,
+      "closedChapter": 21,
+      "importance": "major",
+      "status": "closed",
+      "resolution": "Resolved in ch21 \u2014 Quietus reached, Ythara contained, Warden inheritance activated, seal reinforced"
+    },
+    {
+      "id": "MB-004",
+      "question": "What exactly is Ythara the Unfinished, and what happens if it fully wakes? Is it evil, or simply incompatible with reality?",
+      "openedChapter": 2,
+      "closedChapter": 21,
+      "importance": "major",
+      "status": "closed",
+      "resolution": "Resolved in ch21 \u2014 Quietus reached, Ythara contained, Warden inheritance activated, seal reinforced"
+    },
+    {
+      "id": "MB-005",
+      "question": "What is the Seep's true agenda beyond executing the Cerith Court's kill contract? Why does it keep feeding Lirien intelligence that complicates the mission?",
+      "openedChapter": 5,
+      "closedChapter": 20,
+      "importance": "major",
+      "status": "resolved",
+      "note": "Ch20 -- Seep tacit support for loophole confirmed. Contract language always contained exploitable phrasing. Strategic flexibility over rigid compliance. Mystery resolved: the Seep valued outcomes over obedience."
+    },
+    {
+      "id": "MB-006",
+      "question": "What really happened at the Siege of Calwrath? Was Kaelith's decision as simple as the official disgrace suggests, or is there more to the story?",
+      "openedChapter": 4,
+      "closedChapter": 13,
+      "importance": "major",
+      "status": "closed",
+      "note": "Ch4 \u2014 Lirien mentions Calwrath as what you did, but does not explain details",
+      "resolution": "Calwrath truth established through Kaelith's memories and external corroboration"
+    },
+    {
+      "id": "MB-007",
+      "question": "Why was Lirien sent to kill Kaelith specifically? What makes Kaelith dangerous enough to warrant a Cerith Court kill contract?",
+      "openedChapter": 1,
+      "closedChapter": 5,
+      "importance": "major",
+      "status": "partially answered",
+      "note": "Ch4 \u2014 Partially answered: Warden-lineage capacity makes Kaelith dangerous to Conclave suppression agenda and valuable for Quietus access"
+    },
+    {
+      "id": "MB-008",
+      "question": "Can Lirien find a loophole in the kill contract that lets Kaelith survive? The fae binding is absolute \u2014 or is it?",
+      "openedChapter": 5,
+      "closedChapter": 20,
+      "importance": "major",
+      "status": "resolved",
+      "note": "Ch16 \u2014 COMPLICATED. Lirien reveals the loophole to Kaelith during the revelation scene. The mechanism exists (cessation of heartbeat = state not duration) but requires Kaelith's informed consent and trust in Lirien's precision through the bond. Both are now absent. The question shifts from 'is there a loophole?' to 'can trust be rebuilt enough to use it?' Ch18 \u2014 ADVANCED. Ashborne intelligence reveals contract dissolution is architecturally possible at the Quietus where Pallor substrate thins. Requires both Kaelith and Lirien. The loophole may not need the dangerous heartbeat-cessation mechanism \u2014 an entirely different dissolution path exists through the god-seal itself. Three independent sources confirm. Ch19 \u2014 ADVANCED. Two-path plan established. Primary: dissolution at Quietus through cooperative Warden/Hand work where Pallor substrate exposes binding anchors. Fallback: heartbeat cessation (cessation-as-state mechanism). Kaelith consents to both. Three-day timeline to Quietus. Ch20 -- RESOLVED. Loophole executed successfully. Heartbeat ceased for 8 seconds, binding dissolved, heart restarted. The mechanism works. Trust rebuilt enough to use it. Both paths confirmed: loophole executed as preparation for Quietus approach."
+    },
+    {
+      "id": "MB-009",
+      "question": "What is the Quietus, and how does it seal Ythara? What role do Wardens play in maintaining it?",
+      "openedChapter": 5,
+      "closedChapter": 21,
+      "importance": "major",
+      "status": "closed",
+      "resolution": "Resolved in ch21 \u2014 Quietus reached, Ythara contained, Warden inheritance activated, seal reinforced"
+    },
+    {
+      "id": "MB-010",
+      "question": "Who was Ossya Thenndal, and why does their name keep appearing in connection with Warden lineage and the conspiracy?",
+      "openedChapter": 5,
+      "closedChapter": 21,
+      "importance": "major",
+      "status": "closed",
+      "resolution": "Resolved in ch21 \u2014 Quietus reached, Ythara contained, Warden inheritance activated, seal reinforced"
+    },
+    {
+      "id": "MB-011",
+      "question": "Will Kaelith ever trust Lirien once she discovers the kill contract? Can trust survive that level of betrayal?",
+      "openedChapter": 8,
+      "closedChapter": 20,
+      "importance": "major",
+      "status": "resolved",
+      "note": "Ch16 \u2014 ACTIVATED. Contract revealed. Kaelith's response: 'Every feeling was built on a lie.' Bond walled. Trust appears permanently destroyed. The answer appears to be no \u2014 but the bond persists, and persistence is not the same as trust. Ch17 \u2014 Bond pulse proves Lirien's grief genuine. Simple 'no' begins fragmenting into 'maybe.' Kaelith cannot maintain wholesale rejection against resonance evidence. Direction change toward Lirien is first physical step toward potential trust rebuilding. Ch18 \u2014 SEEDED. Lirien's free choice to walk north transmits 'intention' through bond \u2014 first positive signal since separation. The Oathbrand proof exists but Kaelith doesn't know about it yet. Trust rebuilding materials being assembled: proof of agency + Ashborne intelligence + cipher destruction (identity severance from Court). Ch19 \u2014 SUBSTANTIALLY ADVANCED. Kaelith names deepest fear ('choosing love will put me back in Calwrath'), receives Lirien's proof (cipher, Ashborne, one verified free choice), and decides: 'cracked foundations could bear weight.' Not forgiveness \u2014 decision. Bond opens fully. Trust rebuilt as engineering, not sentiment. Agreement to contract loophole ('If I'm trusting you with the world, I can trust you with this') is the most literal trust possible. Ch20 -- RESOLVED. Trust survived. Kaelith consented to heart-stopping, Lirien executed and resuscitated. Binding dissolved, love remains. The answer is yes -- trust can survive betrayal when rebuilt through deliberate choice and proven through ultimate vulnerability."
+    },
+    {
+      "id": "MB-012",
+      "question": "Can Lirien distinguish between contractual obligation and genuine feeling? Is her attachment to Kaelith real, or is it the binding?",
+      "openedChapter": 11,
+      "closedChapter": 18,
+      "importance": "major",
+      "status": "resolved",
+      "note": "Ch16 \u2014 ACTIVATED. Lirien explicitly confronts this question: she cannot follow Kaelith because following might be binding compliance, not love. The Court may have designed obedience to feel like desire. Identity-level crisis \u2014 the question may not be answerable from inside the binding. Ch17 \u2014 Advanced from Kaelith's perspective: if bond cannot fabricate, then Lirien's grief is real regardless of contract. 'Maybe the contract was real and the feelings were also real.' Both truths coexisting makes the real-vs-binding question more complex, not less. Ch18 \u2014 ANSWERED. Lirien conducts 11-hour systematic self-interrogation. Most decisions remain 'ambiguous,' but the Oathbrand removal (Ch11) provides ONE verified act of free choice: the binding should have prevented it, experienced no resistance, and it predates the bond/kiss/intimacy. Lirien proves the CAPACITY for free choice exists, even if individual decisions remain ambiguous. 'Not proof that everything was free. But proof that free choice is possible within the cage.' She then destroys the Seep cipher and walks north by free choice. Ch20 -- RESOLVED. Binding dissolved. Feelings unchanged. Empirical proof: Lirien tested her own emotions post-dissolution and found them identical. The attachment is real, not contract-manufactured."
+    },
+    {
+      "id": "MB-013",
+      "question": "What will happen to the resonance bond if the kill contract is fulfilled? Will it sever, persist, or transform?",
+      "openedChapter": 11,
+      "closedChapter": 20,
+      "importance": "minor",
+      "status": "closed",
+      "note": "Ch16 \u2014 Newly relevant. The bond is walled but not severed. If the kill contract is fulfilled, what happens to the resonance bond? The bond persists through emotional withdrawal \u2014 would it persist through the contract's completion? Would Kaelith feel her own heart stopping through the bond? Ch19 \u2014 ADVANCED. Bond opens fully for first time since Ch16 black moment. Carries unfiltered emotional truth: fear, anger, residual betrayal, and love. Bond functions as trust verification mechanism. Kaelith's one water metaphor shows bond-mediated Lirien influence.",
+      "resolution": "Bond persists and is cleaner without binding \u2014 purely resonance, no contract architecture"
+    },
+    {
+      "id": "MB-014",
+      "question": "Will the Ashborne Legion survivors support Kaelith when it matters, or has her disgrace permanently severed that bond?",
+      "openedChapter": 10,
+      "closedChapter": 22,
+      "importance": "minor",
+      "status": "closed",
+      "note": " Ch19 \u2014 SUBSTANTIALLY ADVANCED. Eight Ashborne veterans at Rivenmarch, organized using Kaelith's doctrine. Sedara (Third Platoon) named as coordinator. Relay network to Quietus established. Military support is real, organized, and functional.",
+      "resolution": "Ashborne veterans fully support Kaelith \u2014 escorting Thalen to tribunal, maintaining relay network, using title 'Commander Maren'. Vindication through the people who remember, not the institution that forgot."
+    },
+    {
+      "id": "MB-015",
+      "question": "Can Kaelith and Lirien build a life together after everything, or is their love only possible inside the crisis that created it?",
+      "openedChapter": 15,
+      "closedChapter": 22,
+      "importance": "major",
+      "status": "closed",
+      "note": "Ch16 \u2014 ENDANGERED. Vael Seren, the harbour, the future \u2014 all apparently destroyed by the contract revelation. Both women may have lost the thing they were just learning to want.",
+      "resolution": "Yes \u2014 by choice, not necessity. 'I stay because I want to.' They plan a future at Rivenmarch: Kaelith fixing fortifications, Lirien building an intelligence network. Love that lives in the everyday, not just the crisis."
+    }
+  ],
+  "activeCount": 15,
+  "perChapterSnapshot": [
+    {
+      "chapter": 1,
+      "activeCount": 2,
+      "opened": [
+        "MB-001",
+        "MB-007"
+      ],
+      "closed": []
+    },
+    {
+      "chapter": 2,
+      "activeCount": 4,
+      "opened": [
+        "MB-002",
+        "MB-004"
+      ],
+      "closed": []
+    },
+    {
+      "chapter": 4,
+      "activeCount": 5,
+      "opened": [
+        "MB-006"
+      ],
+      "closed": []
+    },
+    {
+      "chapter": 5,
+      "activeCount": 9,
+      "opened": [
+        "MB-003",
+        "MB-005",
+        "MB-008",
+        "MB-009",
+        "MB-010"
+      ],
+      "closed": [
+        "MB-007"
+      ]
+    },
+    {
+      "chapter": 8,
+      "activeCount": 9,
+      "opened": [
+        "MB-011"
+      ],
+      "closed": []
+    },
+    {
+      "chapter": 10,
+      "activeCount": 10,
+      "opened": [
+        "MB-014"
+      ],
+      "closed": []
+    },
+    {
+      "chapter": 11,
+      "activeCount": 12,
+      "opened": [
+        "MB-012",
+        "MB-013"
+      ],
+      "closed": []
+    },
+    {
+      "chapter": 13,
+      "activeCount": 11,
+      "opened": [],
+      "closed": [
+        "MB-006"
+      ]
+    },
+    {
+      "chapter": 15,
+      "activeCount": 12,
+      "opened": [
+        "MB-015"
+      ],
+      "closed": []
+    },
+    {
+      "chapter": 18,
+      "activeCount": 11,
+      "opened": [],
+      "closed": [
+        "MB-012"
+      ]
+    },
+    {
+      "chapter": 20,
+      "activeCount": 8,
+      "opened": [],
+      "closed": [
+        "MB-005",
+        "MB-008",
+        "MB-013"
+      ]
+    },
+    {
+      "chapter": 21,
+      "activeCount": 2,
+      "opened": [],
+      "closed": [
+        "MB-001",
+        "MB-002",
+        "MB-003",
+        "MB-004",
+        "MB-009",
+        "MB-010"
+      ]
+    },
+    {
+      "chapter": 22,
+      "activeCount": 0,
+      "opened": [],
+      "closed": [
+        "MB-014",
+        "MB-015"
+      ]
+    },
+    {
+      "chapter": 3,
+      "activeCount": 4,
+      "opened": [],
+      "closed": [
+        "MB-001 partially resolved \u2014 maintenance conspiracy confirmed, but who specifically ordered it remains mystery"
+      ]
+    },
+    {
+      "chapter": 4,
+      "activeCount": 5,
+      "opened": [],
+      "closed": [],
+      "note": "MB-001 further clarified (ontological not just discipline), MB-006 referenced, MB-007 partially answered (Warden capacity threat)"
+    },
+    {
+      "chapter": 5,
+      "activeCount": 9,
+      "opened": [
+        "MB-003",
+        "MB-005",
+        "MB-008",
+        "MB-009",
+        "MB-010"
+      ],
+      "closed": [
+        "MB-007"
+      ]
+    },
+    {
+      "chapter": 16,
+      "activeCount": 15,
+      "opened": [],
+      "closed": [],
+      "notes": "No boxes opened or closed. Multiple boxes ACTIVATED: MB-011 (trust survival), MB-012 (real vs binding), MB-008 (loophole complicated by trust loss), MB-015 (future endangered). The chapter intensifies existing questions rather than creating new ones."
+    },
+    {
+      "chapter": 17,
+      "activeCount": 15,
+      "opened": [],
+      "closed": [],
+      "notes": "No boxes opened or closed. MB-011 (trust survive?) advanced \u2014 bond evidence creates first crack in wholesale rejection, simple 'no' becomes complex 'maybe.' MB-012 (real or binding?) advanced from Kaelith's side \u2014 bond proves grief genuine, binding-vs-love question gains complexity. MB-008 (loophole) implicitly advanced \u2014 direction change makes loophole execution theoretically possible again. MB-015 (future together) kept alive through forward motion toward reunion. Chapter correctly advances existing questions through internal processing and direction change."
+    },
+    {
+      "chapter": 19,
+      "activeCount": 10,
+      "opened": [],
+      "closed": [],
+      "advanced": [
+        "MB-008",
+        "MB-011",
+        "MB-013",
+        "MB-014"
+      ]
+    }
+  ],
+  "lastUpdatedChapter": 20,
+  "notes": "Initial mystery box inventory populated from plot beats, romance arc, and subplots. Story opens with 2 active boxes (Oathbrand anomaly + surveillance threat), peaks at 12 active during Acts II-III escalation, and closes all boxes by chapter 22. Target range (3-7 active) is exceeded during peak complexity (chapters 10-18) which is acceptable for a conspiracy-heavy romantic fantasy with dual-arc structure. The higher count reflects the story's intentional density: six major conspiracy threads, four relationship questions, and two world-mythology mysteries all converging."
+}

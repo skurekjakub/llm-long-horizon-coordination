@@ -1,0 +1,105 @@
+{
+  "chapterNumber": 6,
+  "editorType": "line",
+  "generatedAt": "2025-07-26T09:05:00Z",
+  "overallProseAssessment": "Lirien's POV voice is well-established and largely consistent — the analytical intelligence-operative register, the clinical emotional processing, the observational precision, and the field-note fragments all create a distinctive narrative texture. The chapter's best prose appears in the coordinated takedown scene (tight, kinetic, observation-focused) and in the shared watch's slow accumulation of awareness. Key areas for revision: two instances of meta-narrative vocabulary that break the character's voice register ('forced proximity engine'), one direct emotional labeling that violates INV-005 ('This created intimacy'), one over-explicit thematic statement in the chapter close, repetitive use of 'operational' (~14 instances), and a classification-failure pattern used four times where variation is needed. The water/current metaphor domain is present but underutilized in the emotional scenes where it would be most effective.",
+  "findings": [
+    {
+      "id": "LINE-006-001",
+      "severity": "critical",
+      "category": "voice-register",
+      "location": "Lines 334 and 438",
+      "finding": "'The forced proximity engine' is metanarrative craft vocabulary, not character voice. Lirien's established lexicon draws from intelligence operations: 'target interference,' 'operational parameters,' 'assessment protocols,' 'classification,' 'the calculus.' She does not think in writing-workshop terminology. The phrase appears in the chapter outline as a structural mechanism label — it has leaked from the plotting layer into the prose layer.",
+      "currentText": "The forced proximity engine — Lirien recognized it from observational psychology training — had activated.",
+      "recommendation": "Replace with Lirien's operative vocabulary: 'The proximity effect — Lirien recognized it from asset-management protocols, the warning about sustained exposure to targets in shared-risk environments — had activated.' Or drop the naming entirely and show the mechanism: 'Shared risk. Shared space. Sustained attention to another person's presence in contexts where survival demanded coordination. Her training manuals had a clinical term for the resulting attachment response. She did not want to recall it.' The second option is stronger because it shows Lirien actively avoiding classification — which IS her emotional arc in this chapter. At line 438, replace similarly: 'The proximity effect had activated' or 'The sustained-exposure response her training had warned against was now operational.'"
+    },
+    {
+      "id": "LINE-006-002",
+      "severity": "major",
+      "category": "INV-005",
+      "location": "Line 336",
+      "finding": "Direct emotional labeling disguised as clinical observation. 'This created intimacy whether the participants intended it or not' tells the reader the scene's meaning rather than showing it through Lirien's somatic experience. Per Lirien's voice fingerprint, emotions must be 'classified before felt' — she registers physical effects (disrupted focus, heat, hyperawareness) and ATTEMPTS classification, with the classification failing as emotions overwhelm the framework. This sentence skips the physical registration and names the outcome directly.",
+      "currentText": "This created intimacy whether the participants intended it or not.",
+      "recommendation": "Replace with somatic registration followed by failed classification: 'The effect registered as disrupted focus. Elevated awareness of spatial proximity. A persistent attention to another person's breathing pattern that exceeded any surveillance protocol she had been trained in. She attempted to classify it as operational vigilance. The classification held for approximately four minutes before failing.' This shows Lirien's analytical mind trying and failing to contain the emotional response — which is the chapter's central tension."
+    },
+    {
+      "id": "LINE-006-003",
+      "severity": "major",
+      "category": "show-vs-tell",
+      "location": "Lines 438-440",
+      "finding": "The closing paragraph restates the chapter's thematic conclusion explicitly: 'Lirien no longer knew whether she was an operative executing a contract or a person traveling with someone who had become structurally necessary in ways that exceeded tactical assessment.' The shared watch scene (lines 296-368) has already demonstrated this through behavior. The explicit statement reduces the reader's interpretive participation and undercuts the restraint of the earlier prose.",
+      "currentText": "And Lirien no longer knew whether she was an operative executing a contract or a person traveling with someone who had become structurally necessary in ways that exceeded tactical assessment.",
+      "recommendation": "Cut lines 438-440 entirely. Let the chapter close on the sensory contradiction: 'She did not look at Kaelith as they walked. / She was aware of her with every step.' This two-line close is more powerful than any analytical summary. If some transitional content is needed between line 436 ('And the choice was irreversible.') and the final sensory beat, use a single line of physical description: 'The road stretched south. The Pallor pressed down. The binding counted hours she had chosen not to count.' — grounding the close in the body rather than the mind."
+    },
+    {
+      "id": "LINE-006-004",
+      "severity": "minor",
+      "category": "metaphor-domain",
+      "location": "Shared watch scene (lines 266-368)",
+      "finding": "Lirien's established metaphor domain is water/currents/infiltration/surfaces-vs-depths. The chapter uses this domain effectively in Scene 2 ('She had been Seep's water — patient, adaptive, finding every crack,' line 244) and in the structural crack image ('The crack in her operational framework through which something incompatible with training was seeping,' line 324). However, the shared watch scene — the chapter's key emotional sequence — contains no water metaphors. This is a missed opportunity: the scene describes awareness 'seeping' through professional barriers, attention flowing between two people, emotional currents that cannot be dammed. The water domain would serve this scene precisely.",
+      "currentText": "N/A — absence of domain-appropriate metaphor rather than incorrect metaphor.",
+      "recommendation": "Add one or two water metaphors to the shared watch scene. Suggestions: 'The awareness moved like current — not visible on the surface, but present in every shift of weight, every adjusted angle of attention.' Or: 'Something had breached. Not dramatically — no flood, no break. A seep. The kind of slow infiltration that changed the structure of stone without ever being visible.' The second option connects to Lirien's identity as Seep operative: she IS the infiltration she has been trained to perform, now experiencing it from inside."
+    },
+    {
+      "id": "LINE-006-005",
+      "severity": "minor",
+      "category": "sentence-rhythm",
+      "location": "Tavik confrontation, lines 62-74",
+      "finding": "The pre-combat tactical exchange between Lirien and Kaelith (lines 62-74) uses consistently medium-length analytical sentences. Lirien's voice fingerprint specifies 'mixed, fluid — medium analytical + short field-note fragments. Like a current, not a drum.' Under stress, her thought patterns should compress into shorter, sharper fragments. The confrontation is a high-stress tactical moment, but the prose rhythm remains at conversational pace rather than accelerating.",
+      "currentText": "'Options,' Kaelith said. Not a question. A request for tactical consultation.\n\nLirien evaluated. 'Negotiation unlikely to succeed. He has committed to interception by bringing subordinates. Retreat to Duskhaven restores the containment problem. Forward movement guarantees confrontation.'",
+      "recommendation": "Compress Lirien's internal processing into shorter fragments while keeping her dialogue clinical: 'Options,' Kaelith said. Not a question.\n\nThree targets. One known hostile. Two unknowns. Fog reducing visibility.\n\nLirien evaluated. 'Negotiation unlikely to succeed. He brought subordinates. Retreat restores containment. Forward guarantees confrontation.'' The field-note fragments before the dialogue show Lirien's mind accelerating into operational mode — compressed assessment, no excess words."
+    },
+    {
+      "id": "LINE-006-006",
+      "severity": "minor",
+      "category": "word-repetition",
+      "location": "Throughout chapter",
+      "finding": "The word 'operational' or 'operationally' appears approximately fourteen times: lines 20, 60, 66, 160, 178, 213, 215, 240, 252, 256, 282, 284, 288, 438. While consistent with Lirien's intelligence-operative voice, the density exceeds the guideline: 'if a beta reader can highlight the pattern on every page, the voice is over-applied.' At fourteen instances across ~4200 words, the word appears roughly once per 300 words — approximately once per page.",
+      "currentText": "Multiple instances of 'operational,' 'operationally,' 'operational parameters,' 'operational necessity,' etc.",
+      "recommendation": "Reduce to eight to ten instances. Retain the most character-defining uses (e.g., 'operational parameters,' 'operational justification,' 'operationally sound'). Replace others with variation: 'professionally' (for context involving training/skill), 'within parameters' (for compliance language), 'tactically' (for combat/field contexts), or simply cut the qualifier where the sentence works without it. 'Her training said: maintain distance' reads cleaner than 'Lirien's training said: maintain operational distance.'"
+    },
+    {
+      "id": "LINE-006-007",
+      "severity": "minor",
+      "category": "pattern-repetition",
+      "location": "Lines 212, 262, 311, 368",
+      "finding": "The 'could not classify / could not immediately classify' pattern appears four times: 'something Lirien could not immediately classify' (212), 'each recognized something they could not yet afford to name' (262), 'The classifications failed' (311), 'The thing neither of them could classify away' (368). The pattern is in-character — Lirien's analytical mind encountering experiences that resist categorization — but four instances in one chapter create diminishing returns. By the fourth occurrence, the reader anticipates the pattern rather than experiencing it.",
+      "currentText": "Variant formulations of 'could not classify' at four locations.",
+      "recommendation": "Retain two instances: line 212 (first occurrence, establishes the pattern) and line 311 ('The classifications failed' — the strongest formulation because it shows active failure rather than passive inability). Replace the other two with fresh expressions. Line 262: 'The silence of two people who had each arrived at a conclusion they were not yet prepared to articulate.' Line 368: 'The awareness that had outlasted every label she had tried to apply.' Both maintain the concept while varying the expression."
+    },
+    {
+      "id": "LINE-006-008",
+      "severity": "suggestion",
+      "category": "sensory-balance",
+      "location": "Scene 2, shared watch (lines 266-368)",
+      "finding": "Lirien's sensory signature specifies visual-dominant with auditory-secondary. The shared watch scene delivers the auditory channel well ('Wind through oak leaves. Small animals moving through undergrowth.' line 294). The visual channel is present but underutilized — the Pallor's light quality, which is established as significant for Lirien ('Light quality matters'), is not referenced during the watch. The night-to-dawn transition (lines 360-361) touches it briefly ('The Pallor filtered sunlight into diffuse silver') but the extended night watch could benefit from one visual observation of how the Pallor affects starlight or moonlight.",
+      "currentText": "N/A — absence of visual-sensory detail rather than incorrect detail.",
+      "recommendation": "Add one Pallor-specific visual observation during the watch: 'The Pallor turned starlight uncertain. Stars should have been sharp at this altitude, this far from artificial light, but each one wore a faint corona — as though the sky itself had developed cataracts. The effect was beautiful in a way that made Lirien uncomfortable. Beauty was not an operational category.' This uses Lirien's visual dominance, the Pallor's atmospheric effect, and her classification impulse in a single beat."
+    }
+  ],
+  "voiceAssessment": {
+    "overallConsistency": "Strong. Lirien's analytical intelligence-operative voice is recognizable from the opening paragraph and sustained through the chapter. The clinical emotional register ('target interference,' 'self-assessment,' 'cognitive interference') correctly conveys a character who processes feelings through professional frameworks. The voice softens appropriately in the closing scenes as the frameworks begin to fail.",
+    "vocabularyCompliance": "Good. Intelligence-operative lexicon present throughout: 'leverage,' 'variables,' 'assessment,' 'parameters,' 'the calculus has changed,' 'classification,' 'interference.' Two violations: 'forced proximity engine' (lines 334, 438) — metanarrative, not operative vocabulary.",
+    "sentenceRhythm": "Mostly compliant. Medium analytical sentences interspersed with short field-note fragments ('Professional.' 'Both had passed.' 'Confirmed.' 'Accurate assessment.'). The fragments appear at appropriate frequency in action scenes but could be denser during the Tavik confrontation.",
+    "metaphorDomain": "Compliant with gaps. Water/infiltration/surfaces-vs-depths domain present in Scene 2 ('Seep's water,' 'seeping through cracks'). Absent from the shared watch scene where it would be most thematically resonant. No out-of-domain violations detected — Lirien does not use Kaelith's architectural metaphors.",
+    "emotionalRegister": "Largely compliant. Emotions are classified before felt throughout: 'target interference,' 'cognitive interference,' 'something she could not immediately classify.' Two violations: 'This created intimacy' (line 336, direct labeling) and the closing thematic statement (lines 438-440, direct analytical summary). Both tell rather than show through somatic registration.",
+    "dialogueConsistency": "Strong. Lirien's dialogue is precise, minimal, uses operative language ('Confirmed,' 'Agreed,' 'Noted'). She asks probing questions, pauses for exact words, and uses 'the calculus has changed' at the chapter's key moment (line 414). No contractions — appropriate for early arc (fae precision). No idioms. No humor.",
+    "contrastWithKaelith": "Excellent. Lirien's water/current metaphors and analytical processing contrast cleanly with Kaelith's structural/architectural voice as rendered through Lirien's POV. The complementary assessment disciplines passage (lines 156-161) explicitly codes this contrast without breaking voice."
+  },
+  "clicheAudit": {
+    "count": 1,
+    "threshold": 2,
+    "verdict": "Within budget",
+    "instances": [
+      {
+        "location": "Line 146",
+        "text": "The fog swallowed Duskhaven behind them.",
+        "assessment": "Borderline. 'Fog swallowed' is a mild atmospheric cliché but not among the banned phrases. Acceptable given the chapter's otherwise precise prose register."
+      }
+    ]
+  },
+  "bannedPhraseCheck": "No banned phrases detected. Checked against all 15 banned phrases in style-guide.json.",
+  "adverbDensityEstimate": "Low. Approximately 4-5 adverbs identified across ~4200 words (~12 pages at 350 words/page). Well within the max-3-per-page threshold.",
+  "passiveVoiceEstimate": "Approximately 5-7% passive constructions. Within the 8% maximum threshold.",
+  "showTellRatio": "Approximately 75:25 — slightly below the 80:20 target, primarily due to Scene 3's narrated summary and the closing paragraph's explicit thematic statement. Addressing DEV-006-004 and LINE-006-003 should bring this closer to target."
+}

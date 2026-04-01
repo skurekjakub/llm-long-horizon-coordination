@@ -1,0 +1,95 @@
+{
+  "chapterNumber": 6,
+  "editorType": "copy",
+  "generatedAt": "2025-07-26T09:10:00Z",
+  "overallAssessment": "The chapter contains one critical binding-timeline arithmetic error that produces internally contradictory stakes information, one major geographical direction error affecting multiple lines, and one instance of non-canonical in-world terminology. Naming consistency is otherwise sound. World-rule compliance for the Oathbrand, Pallor atmospheric effects, and fae operative mechanics is maintained. The chapter's factual claims about Duskhaven geography, Tavik's role, and the binding's mechanics need reconciliation with established continuity from Chapters 4-5.",
+  "findings": [
+    {
+      "id": "COPY-006-001",
+      "severity": "critical",
+      "category": "arithmetic-error",
+      "description": "The binding escalation timeline is internally contradictory. Lirien states the escalation stages as: 48 hours (pain), 72 hours (incapacitating), 96 hours (motor loss), 120 hours (termination). She then reports 74 hours since contract acceptance. Kaelith derives 'forty-six hours before the pain starts' — but 74+46=120, which is the TERMINATION threshold, not the pain threshold. If these hours are measured from the same reference point, Lirien should be 26 hours past the 48-hour pain onset. Cross-chapter inconsistency: Chapter 4 (revised) establishes 'Pre-dawn Day 2: Lirien has 48 hours before binding pain starts, 5 days before termination.' Chapter 6 opens approximately 24 hours later (dawn Day 3), suggesting approximately 24 hours remain before pain — not 46.",
+      "lineRef": "Lines 198-210",
+      "correction": "Recommended fix: Establish that the binding escalation does not begin at contract acceptance but at a later trigger point (first missed reporting deadline or first act of non-compliance). Rewrite the exchange: Kaelith should ask when Lirien's reporting deadline passed, and Lirien should state the time since that trigger event. Then derive the correct remaining time before pain. If the escalation triggered approximately 2 hours ago (consistent with Ch4's 48-hour figure minus 24 hours of Ch5-6 elapsed time), Lirien has approximately 46 hours of total escalation time remaining — but pain starts at 48 hours from the trigger, meaning ~46 hours remain. This works if the trigger event was very recent. Alternatively, simplify: 'The escalation has begun. I have approximately twenty-four hours before pain.' This aligns with Ch4's established timeline without requiring complex recalculation."
+    },
+    {
+      "id": "COPY-006-002",
+      "severity": "major",
+      "category": "geographical-error",
+      "description": "Multiple lines establish eastward travel, contradicting geography.json (Thornway runs 'from the coast at Duskhaven south and west'), dual-arc-timeline ('heading west along the Thornway'), and the chapter's own line 428 ('The road stretched south'). Specific violations: line 30 ('East gate' — acceptable as a gate name), line 40 ('They walked east' — incorrect direction), line 120 ('the road east' — incorrect), line 150 ('The Thornway stretched east-southeast, following the coast' — incorrect). Veldrane is established as 'Forty miles south' (line 162), confirming southward travel as correct.",
+      "lineRef": "Lines 30, 40, 120, 150, 428",
+      "correction": "Line 30: 'East gate' may remain if established as a specific gate name in Duskhaven. Line 40: Change 'They walked east' to 'They walked south.' Line 120: Change 'the road east' to 'the road south' or 'the road ahead.' Line 150: Change 'The Thornway stretched east-southeast, following the coast' to 'The Thornway stretched south-southwest, following the coast before turning inland near the old Legion checkpoint at Twenty-Three Mile.' Line 428 is already correct ('The road stretched south')."
+    },
+    {
+      "id": "COPY-006-003",
+      "severity": "major",
+      "category": "world-terminology",
+      "description": "'Forced proximity engine' (lines 334, 438) is not established in any world-bible, character, or training-system artifact as in-world terminology. The term originates in the chapter outline's plotting notes as a narrative-craft mechanism label. The attempt to justify it as 'observational psychology training' (line 334) has no supporting reference in fae culture, Court operative training protocols, or any other established framework. Per the style guide, all specialized terminology in POV narration must be traceable to in-world sources.",
+      "lineRef": "Lines 334, 438",
+      "correction": "Replace with terminology consistent with Lirien's established vocabulary. Options: 'proximity-induced target interference' (aligns with 'target interference' used at line 312), 'sustained-exposure attachment response' (clinical/training-manual register), or simply describe the mechanism without naming it."
+    },
+    {
+      "id": "COPY-006-004",
+      "severity": "minor",
+      "category": "cross-chapter-continuity",
+      "description": "Line 100: Kaelith says 'I asked nothing and caused no trouble for five years.' Line 132: 'They have been hunting me for five years.' Chapters 1, 2, and 3 (revised) consistently establish Kaelith's time in Duskhaven as approximately six years ('six years of exile,' 'six years of disgrace'). The discrepancy could be intentional (Kaelith distinguishing between years of compliance vs. total exile) but is more likely an arithmetic error given no prior text establishes a distinction between these periods.",
+      "lineRef": "Lines 100, 132",
+      "correction": "Change 'five years' to 'six years' at both lines, consistent with established timeline. If the discrepancy is intentional (e.g., the first year in Duskhaven was different), add a brief internal Lirien observation noting the inconsistency: 'Five years, not six. Lirien noted the discrepancy. The first year, apparently, had been different.' This turns the error into characterization."
+    },
+    {
+      "id": "COPY-006-005",
+      "severity": "minor",
+      "category": "naming-consistency",
+      "description": "Tavik is referred to as 'the garrison commander' (line 50) and 'garrison commander' implicitly throughout. Cross-referencing with Chapter 3 (revised) and Chapter 5 (revised): Ch3 refers to 'Tavik's office' in the 'garrison's administrative corridor,' suggesting an administrative role. Ch5 references Tavik as someone who received Conclave dispatches. The chapter outline lists him as CHAR-009 without specifying rank. If his rank has been established differently in earlier chapters (administrator vs. commander), this needs reconciliation.",
+      "lineRef": "Line 50",
+      "correction": "Verify Tavik's established rank across Ch3 and Ch5 revised text. If 'garrison commander' is consistent, no change needed. If earlier chapters use 'garrison administrator,' update line 50 to match. Recommend checking the character index for CHAR-009's canonical role."
+    },
+    {
+      "id": "COPY-006-006",
+      "severity": "minor",
+      "category": "timeline-consistency",
+      "description": "Scene 3 opens with 'Four hours into the second day's travel' (line 374). The chapter spans Day 3 (departure dawn) through early Day 4. If Scene 3 occurs on Day 4, this is the 'second day' of travel (Day 3 = first day, Day 4 = second day), which is consistent. However, the Seep report is filed while they are still on the Thornway, and the dead-drop is described as 'a hollow oak thirty paces off the Thornway' (line 392). The existence of Seep infrastructure this far from Duskhaven should be noted for continuity tracking — it implies the Seep maintains dead-drop networks along major imperial roads in the eastern provinces.",
+      "lineRef": "Lines 374, 392",
+      "correction": "No textual change required. Continuity note: the Seep dead-drop network extending along the Thornway should be registered in the continuity tracker for future chapter reference."
+    },
+    {
+      "id": "COPY-006-007",
+      "severity": "minor",
+      "category": "word-count",
+      "description": "YAML frontmatter claims wordCount: 4247. This should be verified against the actual word count of the revised chapter and updated accordingly.",
+      "lineRef": "Line 5",
+      "correction": "Update wordCount in YAML frontmatter to match the revised chapter's actual word count."
+    },
+    {
+      "id": "COPY-006-008",
+      "severity": "suggestion",
+      "category": "continuity-note",
+      "description": "The dead-drop Seep report (line 380) reads: 'Contract delayed. Target possesses intelligence critical to Pallor crisis. Proceeding with information extraction. Requesting operational flexibility pending crisis assessment.' This text will likely be referenced by the Cerith Court in future chapters. The exact wording should be logged in the continuity tracker for cross-reference when the Court's response arrives.",
+      "lineRef": "Line 380",
+      "correction": "No textual change required. Continuity registration note for future chapters."
+    }
+  ],
+  "namingVerification": {
+    "Kaelith / Kaelith Maren": "consistent — surname not used in this chapter, appropriate for relationship stage",
+    "Lirien": "consistent — surname (Dael) not used, appropriate for Lirien's POV",
+    "Duskhaven": "consistent",
+    "The Pallor": "consistent",
+    "The Thornway": "consistent",
+    "Veldrane": "consistent — referenced as destination, 40 miles south",
+    "Tavik": "consistent within chapter — rank designation needs cross-chapter verification",
+    "Seldric": "referenced as 'the enforcer Seldric' (line 164) — consistent with Ch3 establishment",
+    "The Seep": "consistent — Lirien's intelligence network within the Cerith Court",
+    "Oathbrand": "not referenced in this chapter — consistent (no magic-proximity triggers in chapter)",
+    "The Quietus": "referenced once (line 220) — consistent with established usage",
+    "High Conclave / Conclave": "consistent — 'Conclave' used as shorthand throughout",
+    "Aranthem": "consistent — referenced as Conclave detention destination (line 90)",
+    "Calwrath": "new reference (line 122) — Tavik mentions Kaelith's military service at Calwrath; should be noted for continuity as a location in Kaelith's history"
+  },
+  "worldRuleCompliance": {
+    "bindingMechanics": "Partially compliant. The escalation stages (pain → incapacitation → motor loss → termination) are consistent with magic-system.json's binding construct description. The arithmetic connecting these stages to the timeline is flawed (see COPY-006-001).",
+    "pallorAtmosphere": "Compliant. 'The Pallor's tarnished silver membrane' (line 146) and 'The Pallor filtered sunlight into diffuse silver' (line 360) match established atmospheric effects.",
+    "faePhysiology": "Compliant. 'Fae physiology granted marginal advantages in stamina and joint resilience' (line 152) — consistent with established fae characteristics. 'Fae operatives learned three principles: speed, precision, exploitation of divided attention' (line 110) — consistent with Court operative training.",
+    "combatMechanics": "Compliant. Non-lethal takedowns use realistic joint manipulation and nerve disruption. No magic employed in combat — consistent with Lirien operating covertly."
+  },
+  "grammarAndMechanics": "Clean. No significant grammar errors, spelling errors, or punctuation issues detected. Em dashes used consistently for interjection. Scene breaks use '---' consistently with previous chapters. YAML frontmatter properly formatted."
+}

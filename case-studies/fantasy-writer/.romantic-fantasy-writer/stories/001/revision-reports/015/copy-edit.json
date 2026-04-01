@@ -1,0 +1,151 @@
+{
+  "storyId": "001",
+  "chapterNum": 15,
+  "reportType": "copy-edit",
+  "generatedAt": "2025-07-29T17:00:00Z",
+  "sourceArtifact": "chapters/015/draft.md",
+  "referenceArtifacts": [
+    "continuity/continuity-tracker.json",
+    "world-bible/geography.json",
+    "world-bible/magic-system.json",
+    "world-bible/culture.json",
+    "world-bible/history.json",
+    "characters/index.json",
+    "plot/chapter-outlines/chapter-015.json",
+    "style/style-guide.json",
+    "chapters/011/draft.md",
+    "chapters/012/draft.md",
+    "chapters/014/draft.md"
+  ],
+  "summary": "Chapter 15 is largely consistent with established world rules, naming conventions, and continuity. Two significant factual errors require correction: (1) the Oathbrand removal is attributed to Tessen Vael when ch11 clearly establishes that Lirien performed the removal with Tessen providing verbal guidance from the side — this misattributes a pivotal intimacy moment; (2) the word count claim 'Four words' for the dialogue 'I want you.' is arithmetically wrong — the phrase contains three words, not four, and the preceding 'I want this.' is correctly called 'Three words.' All 20+ proper nouns (character names, place names, magical terms) verified correct. Bond mechanics, information asymmetry, magic system compliance, and Pallor description all consistent. Timeline claims align with continuity tracker. Two minor potential anachronisms flagged. Dialogue formatting, tense, and pronoun clarity all verified clean. British spelling convention maintained consistently throughout.",
+  "findingCounts": {
+    "total": 7,
+    "bySeverity": {
+      "critical": 1,
+      "major": 1,
+      "moderate": 1,
+      "minor": 4
+    },
+    "byCategory": {
+      "naming": 0,
+      "timeline": 0,
+      "factual": 3,
+      "grammar": 0,
+      "formatting": 1,
+      "anachronism": 2,
+      "note": 1
+    }
+  },
+  "findings": [
+    {
+      "id": "COPY-015-001",
+      "severity": "critical",
+      "category": "factual",
+      "description": "The Oathbrand removal is attributed to Tessen Vael. In ch11, the removal was performed by Lirien Dael using her fae precision magic, with Tessen providing verbal guidance from a separate position in the room. Tessen explicitly watched from the corner with 'careful inattention' (ch11 line 156) while Lirien did hands-on work. The magic-system.json states 'Lirien has the skill to remove it; the act becomes a pivotal intimacy moment mid-story.' The romanticIntersections section confirms 'Lirien's hands on Kaelith's collarbone, dismantling the ward.' Attributing this to Tessen misidentifies the performer of a defining relationship event and undermines the intimacy significance of the removal scene.",
+      "lineRef": "Line 219",
+      "quotedText": "the phantom ache at her collarbone where the brand had lived for six years before Tessen cut it free",
+      "correction": "Replace 'Tessen' with 'Lirien.' Suggested: 'where the brand had lived for six years before Lirien cut it free.' This preserves the sentence structure and correctly attributes the removal to the person who performed it.",
+      "sourceRef": "chapters/011/draft.md (lines 42, 102, 110, 156), world-bible/magic-system.json (theOathbrand.removalMethod, romanticIntersections), continuity/continuity-tracker.json (ch11 timeline)"
+    },
+    {
+      "id": "COPY-015-002",
+      "severity": "major",
+      "category": "factual",
+      "description": "The word count claim 'Four words' does not match the preceding dialogue line 'I want you.' which contains exactly three words: 'I' (1), 'want' (2), 'you' (3). The earlier parallel — 'I want this.' correctly called 'Three words' on line 155 — makes the error conspicuous. Both phrases are three-word declarations. The 'Four words' claim will distract attentive readers and undermine the deliberate arithmetic of the passage.",
+      "lineRef": "Line 161",
+      "quotedText": "Four words. The most terrifying she had spoken since *fire the accelerant*.",
+      "correction": "Option A (preferred): Change 'Four words' to 'Three words' — this creates a deliberate structural echo with the 'Three words' on line 155, reinforcing the parallel between the two declarations. Option B: Change the dialogue on line 159 to a four-word phrase if the 'Four words' framing is considered essential (e.g., 'I want you here' or 'I want only you'), though this would alter the raw simplicity of the declaration. Option A is strongly recommended.",
+      "sourceRef": "Internal arithmetic verification"
+    },
+    {
+      "id": "COPY-015-003",
+      "severity": "moderate",
+      "category": "formatting",
+      "description": "Line 171 contains a single paragraph spanning approximately 8 sentence-units (mixing full sentences and fragments): 'Desire. Not the calculated version... The uncontained thing underneath... Fear — raw and architectural... And underneath both... Not grief. Not guilt, precisely. Something heavy and unresolved...' The style guide specifies a maximum of 6 sentences without break 'unless the prose is carrying sustained interior logic or ceremonial cadence.' This passage arguably qualifies under the exception since it conveys a sustained flood of emotion through the bond. However, breaking it after 'choice.' (the third sentence-unit) would improve readability without losing the cascade effect.",
+      "lineRef": "Line 171",
+      "quotedText": "Desire. Not the calculated version Lirien usually permitted through the bond [...] shaping the posture even when invisible.",
+      "correction": "Consider inserting a paragraph break after '...everything to do with choice.' to create two paragraphs: one for desire and fear, one for the unnamed weight. This preserves the emotional cascade while complying with paragraph length guidelines. The break also structurally mirrors the distinction the passage draws between identifiable emotions (desire, fear) and the unnameable weight beneath them.",
+      "sourceRef": "style/style-guide.json — paragraphLengthGuidelines.maximumWithoutBreak"
+    },
+    {
+      "id": "COPY-015-004",
+      "severity": "minor",
+      "category": "anachronism",
+      "description": "The phrase 'cost-benefit analysis' is 20th-century economics terminology (formalized by Jules Dupuit in 1848, institutionalized in mid-20th century policy language). While Kaelith's military training would include weighing costs against benefits, the specific compound noun 'cost-benefit analysis' carries a modern professional register that briefly breaks the fantasy voice. The phrase is used negatively ('no cost-benefit analysis'), which softens the anachronism somewhat — Kaelith is naming the absence of the process rather than claiming to use it.",
+      "lineRef": "Line 155",
+      "quotedText": "No military framing, no tactical justification, no cost-benefit analysis.",
+      "correction": "Consider replacing with vocabulary more natural to a military commander's idiom: 'no tactical calculus,' 'no operational assessment,' or 'no weighing of costs.' Any of these preserves the meaning while staying within the established voice domain.",
+      "sourceRef": "INV-018 (No Anachronisms), style/style-guide.json — vocabularyStandards.avoid"
+    },
+    {
+      "id": "COPY-015-005",
+      "severity": "minor",
+      "category": "anachronism",
+      "description": "The word 'detonation' in the simile 'scattered across the empire like shrapnel from a detonation no one had heard' implies explosive technology. The world has magical accelerant (Calwrath backstory) and fire-based magic, so the concept of violent explosion is not wholly absent. However, 'detonation' specifically connotes controlled chemical or mechanical explosive technology, which does not appear in the established world-bible. 'Shrapnel' compounds the issue — it derives from the Shrapnel shell (1784). Together, the two terms create a brief modern-military register that sits slightly outside the world's technology level.",
+      "lineRef": "Line 73",
+      "quotedText": "scattered across the empire like shrapnel from a detonation no one had heard",
+      "correction": "Consider rephrasing to use vocabulary consistent with the world's established destruction mechanisms: 'scattered across the empire like fragments from a blast no one had heard' or 'like debris from a collapse no one had witnessed.' If 'shrapnel' is retained for its visceral impact, 'detonation' could become 'explosion' or 'concussion' — less technically specific terms that could describe magical or natural events.",
+      "sourceRef": "INV-018 (No Anachronisms), world-bible/magic-system.json — no references to explosive technology"
+    },
+    {
+      "id": "COPY-015-006",
+      "severity": "minor",
+      "category": "factual",
+      "description": "The chapter refers to Thalen Reyvas as having 'Seventh Seat' clearance (line 31: 'A Seventh Seat would have the clearance'). This is consistent with ALL other chapter drafts (ch9, ch10, ch12, ch13, ch21) but conflicts with world-bible/politics.json, which assigns Thalen the Sixth Seat and assigns the Seventh Seat to Vairen Ethis. This is already tracked as DISC-001 in the continuity tracker with a recommendation to update politics.json. No chapter-level change needed — flagged here for completeness.",
+      "lineRef": "Line 31",
+      "quotedText": "A Seventh Seat would have the clearance.",
+      "correction": "No chapter change required. The cross-manuscript consensus uses 'Seventh Seat' for Thalen. The open discrepancy DISC-001 should be resolved by updating world-bible/politics.json to match the chapters, not vice versa.",
+      "sourceRef": "continuity/continuity-tracker.json — openDiscrepancies DISC-001, world-bible/politics.json"
+    },
+    {
+      "id": "COPY-015-007",
+      "severity": "minor",
+      "category": "note",
+      "description": "The term 'Ytharan revivalists' (line 35) is introduced for the first time in the manuscript. It is the only adjectival use of 'Ythara' in any chapter — all other references use the possessive form 'Ythara's.' The term is linguistically consistent (following the standard pattern of forming adjectives from proper nouns by adding '-n'), but it should be noted for future consistency: if other chapters or revisions need to reference this faction, 'Ytharan' is the established spelling.",
+      "lineRef": "Line 35",
+      "quotedText": "a theological faction in the western provinces. Ytharan revivalists.",
+      "correction": "No change required. The term is linguistically sound and serves a narrative purpose (naming a faction). Register this spelling in the continuity tracker under magicTerms or a factions section for downstream consistency.",
+      "sourceRef": "continuity/continuity-tracker.json — namingConsistency, world-bible/culture.json — religion section"
+    }
+  ],
+  "verifiedConsistent": {
+    "characterNames": [
+      "Kaelith / Kaelith Maren (POV — consistent)",
+      "Lirien / Lirien Dael (consistent — first name usage in intimate context)",
+      "Thalen Reyvas (consistent)",
+      "Iryse (consistent with CHAR-013 — first name appropriate for intelligence briefing context)"
+    ],
+    "placeNames": [
+      "The Narrowing (LOC-008 — consistent)",
+      "The Pallor (consistent — described as 'membrane,' 'silver,' 'tarnished grey')",
+      "Veldrane (LOC-005 — consistent)",
+      "The Wending (LOC-006 — consistent)",
+      "Rivenmarch (LOC-011 — consistent)",
+      "Serath Dûn (LOC-010 — consistent with geography.json circumflex)",
+      "Calwrath (LOC-003 — consistent)",
+      "Canal District (consistent — Calwrath defensive line)",
+      "Vael Seren (consistent — harbour in southern Cerith territories)",
+      "The Quietus (LOC-013 — consistent)",
+      "Aranthem (LOC-007 — mentioned contextually, consistent)"
+    ],
+    "magicalTerms": [
+      "Oathbrand / Oathbrand's ghost (consistent — phantom ache post-removal)",
+      "Pallor (consistent — 'membrane,' 'divine,' 'silver')",
+      "Dimming rite (consistent with culture.json — quarterly ceremonial)",
+      "resonance bond (consistent — transmits emotion/sensation, not thoughts)",
+      "ward (consistent — fae-made protective magic)",
+      "Seep (consistent — fae intelligence network)",
+      "Conclave / High Conclave (consistent)",
+      "Quietus pull / kinetic memory (consistent — body-knowledge, joints and marrow)"
+    ],
+    "bondMechanics": "Fully compliant with MAG-007. Bond transmits emotional quality (cold conviction, warmth, desire, fear, unidentifiable weight) and physical sensation (pulse, heat). Does NOT transmit thoughts, factual content, or the specific identity of Lirien's 'weight' (the contract guilt). Information asymmetry correctly maintained throughout — Kaelith senses emotional mass but cannot classify its source.",
+    "informationAsymmetry": "Correctly maintained. Kaelith does not know about the active kill contract (learns in ch16). Line 247 ('Not because a contract required it') carries devastating dramatic irony without over-signaling. Kaelith senses Lirien's 'unresolved weight' through the bond (line 171) but cannot identify it as contract-related guilt. The bond's inability to transmit factual content is consistently observed.",
+    "magicSystemCompliance": "All magic usage consistent with established rules. Ward on door: fae-made, felt through bond (AM-003, MAG-005 compliance). Bond mechanics: per MAG-007, formed through shared vulnerability, transmits emotional/physical states. Oathbrand phantom: post-removal residual sensation, consistent with MAG-004 (accumulated pressure). Quietus pull: kinetic memory, per MAG-006, bypasses conscious recall. Pallor: described as 'membrane losing structural integrity,' consistent with LOC-008 western_mountain gradient.",
+    "timeline": "Consistent. Ch15 is set 'afternoon/evening, 1-2 days after ch14,' which aligns with the continuity tracker. The ambush referenced as 'two days ago' (line 77) correctly places the ch14 dawn ambush. The Dimming rite alterations 'seventeen years ago' (line 25) is a specific testimony from the Veldrane keeper, consistent with the overall forty-year conspiracy timeline. Tomorrow's three-day Narrowing crossing (line 245) is consistent with geography.json LOC-008 travel rules.",
+    "geography": "Safe house location 'near the Narrowing' consistent with LOC-008 description of 'stone shelters built by an unknown people — not the empire, something older' at intervals along the pass approach. Pre-empire construction consistent. Pallor tears visible above the Narrowing consistent with western_mountain Pallor gradient. Northeast pull toward the Quietus consistent with LOC-013 being northeast of current position.",
+    "dialogueFormatting": "Clean throughout. Em dashes used correctly for parentheticals (lines 3, 9, 19, 23, etc.). Ellipsis absent (appropriate — no trailing-off dialogue in this chapter). Comma placement with speech tags correct. Single quotes within double quotes correctly nested (line 117). Italics used consistently for unspoken thoughts/recalled speech (lines 47, 91, 161).",
+    "tenseConsistency": "Past tense maintained throughout all 255 lines. No inadvertent present-tense shifts detected.",
+    "spellingConvention": "British spellings used consistently: 'centre' (line 9), 'recognised' (line 83), 'crystallised' (line 83), 'harbour' (lines 131, 195, 197), 'analyse' (line 221), 'cataloguing' (line 77), 'neighbouring' (not present but pattern established). No American/British inconsistencies within this chapter.",
+    "pronounClarity": "Both characters are female; pronoun referents verified clear throughout. In every case where 'she/her' appears, the antecedent is identifiable from sentence structure, paragraph context, or the POV default (Kaelith as POV character). No ambiguous pronoun references found."
+  }
+}

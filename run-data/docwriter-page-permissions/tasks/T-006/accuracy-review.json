@@ -1,0 +1,99 @@
+{
+  "agent": "docwriter-accuracy-reviewer",
+  "taskId": "T-006",
+  "attempt": 1,
+  "verdict": "approved",
+  "claims": [
+    {
+      "claim": "Cross-reference identifier 'permissions_pagelevel_xp' is a valid page identifier",
+      "location": "Section: Data permissions, line 88 (page_link tag)",
+      "result": "verified",
+      "evidence": "page-permission-management.md front matter line 4: identifier: permissions_pagelevel_xp",
+      "docFact": null
+    },
+    {
+      "claim": "Anchor 'Permission requirements for page operations' exists on the hub page",
+      "location": "Section: Data permissions, line 88 (anchor parameter)",
+      "result": "verified",
+      "evidence": "page-permission-management.md line 175: '## Permission requirements for page operations'",
+      "docFact": null
+    },
+    {
+      "claim": "Page permissions control which roles can perform specific operations",
+      "location": "Section: Data permissions, line 88",
+      "result": "verified",
+      "evidence": "page-permission-management.md line 22: 'Page permissions allow you to grant permissions to roles for website channels, specific content tree sections, and individual pages and folders in the form of an access-control list (ACL).' Six ACL operations confirmed in WebPageAclPermissions.cs (Display, Read, Create, Update, Delete, Synchronize).",
+      "docFact": "WebPageAclPermissionEvaluator.cs"
+    },
+    {
+      "claim": "'reading, creating, updating, and deleting pages' are valid page permission operations",
+      "location": "Section: Data permissions, line 88 (parenthetical 'such as')",
+      "result": "verified",
+      "evidence": "WebPageAclPermissions.cs defines six constants: READ='Read' (line 17), CREATE='Create' (line 23), UPDATE='Update' (line 29), DELETE='Delete' (line 35), DISPLAY='Display' (line 11), SYNCHRONIZE='Synchronize' (line 41). The four operations named in the text (reading→Read, creating→Create, updating→Update, deleting→Delete) are confirmed valid. The use of 'such as' correctly indicates a non-exhaustive list, omitting the more specialized Display and Synchronize operations.",
+      "docFact": "WebPageAclPermissionEvaluator.cs"
+    },
+    {
+      "claim": "Page permissions apply to 'website channels, specific content tree sections, and individual pages and folders'",
+      "location": "Section: Data permissions, line 88",
+      "result": "verified",
+      "evidence": "page-permission-management.md line 22: 'Page permissions allow you to grant permissions to roles for website channels, specific content tree sections, and individual pages and folders in the form of an access-control list (ACL).' Exact wording match with hub page.",
+      "docFact": null
+    },
+    {
+      "claim": "Page permissions use an 'access-control list' (ACL)",
+      "location": "Section: Data permissions, line 88",
+      "result": "verified",
+      "evidence": "page-permission-management.md line 22: '...in the form of an access-control list (ACL).' Also confirmed by source code: WebPageAclPermissionEvaluator.cs (entire class is the ACL evaluator), WebPageAclInfo, WebPageAclMappingInfo, WebPageAclRoleInfo — all ACL-prefixed entities.",
+      "docFact": "WebPageAclPermissionEvaluator.cs"
+    },
+    {
+      "claim": "Cross-reference identifier 'permissions_pagelevel_xp' is valid (Channel manager section)",
+      "location": "Section: Common system roles, line 103 (page_link tag)",
+      "result": "verified",
+      "evidence": "Same as claim 1. page-permission-management.md front matter line 4: identifier: permissions_pagelevel_xp",
+      "docFact": null
+    },
+    {
+      "claim": "Anchor 'Edit page permissions' exists on the hub page",
+      "location": "Section: Common system roles, line 103 (anchor parameter)",
+      "result": "verified",
+      "evidence": "page-permission-management.md line 132: '## Edit page permissions'",
+      "docFact": null
+    },
+    {
+      "claim": "Channel managers can configure page permissions in a website channel",
+      "location": "Section: Common system roles, line 103",
+      "result": "verified",
+      "evidence": "page-permission-management.md lines 132-148 describe the 'Edit page permissions' workflow. The channel admin bypass (WebPageAclPermissionEvaluator.cs lines 83-87) confirms that channel admins have full access. The hub page line 121-124 documents the 'Channel admin bypass' tip confirming Administrator role and ManagePermissions permission holders bypass ACL checks.",
+      "docFact": "WebPageAclPermissionEvaluator.cs"
+    }
+  ],
+  "codeExamples": [],
+  "researchRecommendationChecks": [
+    {
+      "recommendationId": "REC-005",
+      "topic": "Descriptive cross-reference link text",
+      "cited": true,
+      "followed": true,
+      "notes": "Link text 'Page permissions' (Data permissions section) and 'page permissions' (Channel manager section) are descriptive — readers know they'll land on page permission documentation. REC-005 specifies writing link text that makes sense without surrounding text. Both link texts pass this test. No conflict with invariants."
+    }
+  ],
+  "domainInsightChecks": [
+    {
+      "insightId": "DOM-017",
+      "title": "Multi-layer parameter architectures require per-layer disambiguation",
+      "relevant": true,
+      "contentCompliant": true,
+      "notes": "The Data permissions section properly disambiguates application permissions (preceding paragraph) from data permissions (page permissions and workspaces). The cross-reference anchors ensure readers land on the correct layer-specific section."
+    }
+  ],
+  "summary": {
+    "totalClaims": 9,
+    "verified": 9,
+    "incorrect": 0,
+    "unverifiable": 0,
+    "unsupported": 0,
+    "codeExamplesChecked": 0,
+    "codeExamplesCorrect": 0
+  }
+}

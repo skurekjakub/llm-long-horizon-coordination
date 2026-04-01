@@ -1,0 +1,237 @@
+{
+  "storyId": "001",
+  "currentPhase": "polish",
+  "phaseStatuses": {
+    "concept": {
+      "status": "completed",
+      "startedAt": "2026-03-17T20:03:30Z",
+      "completedAt": "2026-03-17T20:26:00Z",
+      "gateResult": "pass"
+    },
+    "worldbuilding": {
+      "status": "completed",
+      "startedAt": "2026-03-17T20:26:00Z",
+      "completedAt": "2026-03-17T20:50:00Z",
+      "gateResult": "pass"
+    },
+    "character": {
+      "status": "completed",
+      "startedAt": "2026-03-17T20:50:00Z",
+      "completedAt": "2026-03-17T21:15:00Z",
+      "gateResult": "pass"
+    },
+    "plotting": {
+      "status": "completed",
+      "startedAt": "2026-03-17T21:15:00Z",
+      "completedAt": "2026-03-17T22:00:00Z",
+      "gateResult": "pass"
+    },
+    "style": {
+      "status": "completed",
+      "startedAt": "2026-03-17T22:00:00Z",
+      "completedAt": "2026-03-17T22:15:00Z",
+      "gateResult": "pass"
+    },
+    "drafting": {
+      "status": "completed",
+      "startedAt": "2026-03-18T06:08:00Z",
+      "completedAt": "2026-03-19T22:50:00Z",
+      "gateResult": "pass"
+    },
+    "revision": "completed",
+    "beta-reading": {
+      "status": "completed",
+      "startedAt": "2026-03-21T01:40:00Z",
+      "completedAt": "2026-03-21T02:10:00Z",
+      "gateResult": "pass"
+    },
+    "polish": {
+      "status": "completed",
+      "startedAt": "2026-03-21T02:10:00Z",
+      "completedAt": "2026-03-21T05:00:00Z",
+      "gateResult": "pass"
+    }
+  },
+  "chapterProgress": [
+    {
+      "chapter": 1,
+      "drafted": true,
+      "revised": true,
+      "betaRead": true,
+      "polished": true,
+      "retries": 0
+    },
+    {
+      "chapter": 2,
+      "drafted": true,
+      "revised": true,
+      "betaRead": true,
+      "polished": true,
+      "retries": 0
+    },
+    {
+      "chapter": 3,
+      "drafted": true,
+      "revised": true,
+      "betaRead": true,
+      "polished": true,
+      "retries": 0
+    },
+    {
+      "chapter": 4,
+      "drafted": true,
+      "revised": true,
+      "betaRead": true,
+      "polished": true,
+      "retries": 0
+    },
+    {
+      "chapter": 5,
+      "drafted": true,
+      "revised": true,
+      "betaRead": true,
+      "polished": true,
+      "retries": 0
+    },
+    {
+      "chapter": 6,
+      "drafted": true,
+      "revised": true,
+      "betaRead": true,
+      "polished": true,
+      "retries": 0
+    },
+    {
+      "chapter": 7,
+      "drafted": true,
+      "revised": true,
+      "betaRead": true,
+      "polished": true,
+      "retries": 0
+    },
+    {
+      "chapter": 8,
+      "drafted": true,
+      "revised": true,
+      "betaRead": true,
+      "polished": true,
+      "retries": 0
+    },
+    {
+      "chapter": 9,
+      "drafted": true,
+      "revised": true,
+      "betaRead": true,
+      "polished": true,
+      "retries": 0
+    },
+    {
+      "chapter": 10,
+      "drafted": true,
+      "revised": true,
+      "betaRead": true,
+      "polished": true,
+      "retries": 0
+    },
+    {
+      "chapter": 11,
+      "drafted": true,
+      "revised": true,
+      "betaRead": true,
+      "polished": true,
+      "retries": 0
+    },
+    {
+      "chapter": 12,
+      "drafted": true,
+      "revised": true,
+      "betaRead": true,
+      "polished": true,
+      "retries": 0
+    },
+    {
+      "chapter": 13,
+      "drafted": true,
+      "revised": true,
+      "betaRead": true,
+      "polished": true,
+      "retries": 0
+    },
+    {
+      "chapter": 14,
+      "drafted": true,
+      "revised": true,
+      "betaRead": true,
+      "polished": true,
+      "retries": 0
+    },
+    {
+      "chapter": 15,
+      "drafted": true,
+      "revised": true,
+      "betaRead": true,
+      "polished": true,
+      "retries": 0
+    },
+    {
+      "chapter": 16,
+      "drafted": true,
+      "revised": true,
+      "betaRead": true,
+      "polished": true,
+      "retries": 0
+    },
+    {
+      "chapter": 17,
+      "drafted": true,
+      "revised": true,
+      "betaRead": true,
+      "polished": true,
+      "retries": 0
+    },
+    {
+      "chapter": 18,
+      "drafted": true,
+      "revised": true,
+      "betaRead": true,
+      "polished": true,
+      "retries": 0
+    },
+    {
+      "chapter": 19,
+      "drafted": true,
+      "revised": true,
+      "betaRead": true,
+      "polished": true,
+      "retries": 0
+    },
+    {
+      "chapter": 20,
+      "drafted": true,
+      "revised": true,
+      "betaRead": true,
+      "polished": true,
+      "retries": 0
+    },
+    {
+      "chapter": 21,
+      "drafted": true,
+      "revised": true,
+      "betaRead": true,
+      "polished": true,
+      "retries": 0
+    },
+    {
+      "chapter": 22,
+      "drafted": true,
+      "revised": true,
+      "betaRead": true,
+      "polished": true,
+      "retries": 1
+    }
+  ],
+  "currentChapter": 22,
+  "gapCycles": 0,
+  "revisionBetaCycles": 0,
+  "lastUpdated": "2026-03-21T05:00:00Z"
+}

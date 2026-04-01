@@ -1,0 +1,431 @@
+{
+  "agent": "docwriter-style-reviewer",
+  "taskId": "T-005",
+  "attempt": 2,
+  "verdict": "approved",
+  "invariantResults": [
+    {
+      "invariantId": "INV-style-001",
+      "result": "pass",
+      "evidence": "New content uses 4-space indentation consistent with rest of page."
+    },
+    {
+      "invariantId": "INV-style-002",
+      "result": "pass",
+      "evidence": "Filename 'delete-pages.md' is lowercase, hyphenated, and reflects the page title."
+    },
+    {
+      "invariantId": "INV-style-054",
+      "result": "pass",
+      "evidence": "Page title 'Delete pages' does not end with '-ing'."
+    },
+    {
+      "invariantId": "INV-style-055",
+      "result": "pass",
+      "evidence": "Numbered list has 5 steps (within the 8-step limit)."
+    },
+    {
+      "invariantId": "INV-style-056",
+      "result": "pass",
+      "evidence": "Pronouns in updated content have clear antecedents within the same sentence. Line 71: 'its own' refers to 'child page'; 'the parent page's' refers to the parent page's permission settings (elliptical possessive); 'that page' refers to 'child page'."
+    },
+    {
+      "invariantId": "INV-style-057",
+      "result": "pass",
+      "evidence": "Permission requirement (a restriction) is presented in an {% info %} callout, which is appropriate."
+    },
+    {
+      "invariantId": "INV-style-063",
+      "result": "pass",
+      "evidence": "Line 71: 'child pages that have their own permission settings' correctly uses 'that' for a restrictive clause."
+    },
+    {
+      "invariantId": "INV-style-073",
+      "result": "pass",
+      "evidence": "Permission names 'Read', 'Delete' are bolded consistently: **Read**, **Delete**."
+    },
+    {
+      "invariantId": "INV-style-078",
+      "result": "pass",
+      "evidence": "No underlines in new content."
+    },
+    {
+      "invariantId": "INV-style-079",
+      "result": "pass",
+      "evidence": "No inappropriate all-caps usage in new content."
+    },
+    {
+      "invariantId": "INV-style-080",
+      "result": "pass",
+      "evidence": "Punctuation after bold text is not bolded (e.g., period after '**page permissions**' on line 19)."
+    },
+    {
+      "invariantId": "INV-style-081",
+      "result": "pass",
+      "evidence": "No headings were modified. Existing headings use sentence case."
+    },
+    {
+      "invariantId": "INV-style-084",
+      "result": "pass",
+      "evidence": "Single spaces between sentences. Line 71: '...permission settings. If a child page...' uses one space."
+    },
+    {
+      "invariantId": "INV-style-085",
+      "result": "pass",
+      "evidence": "Line 19: '**Read** and **Delete**' has only two items; no serial comma needed."
+    },
+    {
+      "invariantId": "INV-style-087",
+      "result": "pass",
+      "evidence": "No semi-colons in new content."
+    },
+    {
+      "invariantId": "INV-style-090",
+      "result": "pass",
+      "evidence": "No em dashes in new content."
+    },
+    {
+      "invariantId": "INV-style-096",
+      "result": "pass",
+      "evidence": "No dashes requiring '--' conversion in new content."
+    },
+    {
+      "invariantId": "INV-style-097",
+      "result": "pass",
+      "evidence": "New content is task-oriented: tells users what permissions they need to accomplish the delete task."
+    },
+    {
+      "invariantId": "INV-style-098",
+      "result": "pass",
+      "evidence": "Page title 'Delete pages' uses sentence case."
+    },
+    {
+      "invariantId": "INV-style-099",
+      "result": "pass",
+      "evidence": "Page title 'Delete pages' uses imperative mood verb phrase for a scenario/how-to page."
+    },
+    {
+      "invariantId": "INV-style-100",
+      "result": "pass",
+      "evidence": "No 'How to' prefix in page title."
+    },
+    {
+      "invariantId": "INV-style-107",
+      "result": "pass",
+      "evidence": "No new lists added. Existing ordered list for step-by-step instructions is appropriate."
+    },
+    {
+      "invariantId": "INV-style-111",
+      "result": "pass",
+      "evidence": "New content is concise. Info callout is a single sentence. Paragraph in 'Deleting a page with child pages' is two focused sentences."
+    },
+    {
+      "invariantId": "INV-style-112",
+      "result": "pass",
+      "evidence": "Both additions lead with the key information (what permissions are required)."
+    },
+    {
+      "invariantId": "INV-style-113",
+      "result": "pass",
+      "evidence": "No 'please' in new content."
+    },
+    {
+      "invariantId": "INV-style-114",
+      "result": "pass",
+      "evidence": "All new sentences use active voice. Line 19: 'You need...' Line 71: 'You also need...' and 'you need to have...'"
+    },
+    {
+      "invariantId": "INV-style-115",
+      "result": "pass",
+      "evidence": "All new content uses present simple tense ('need', 'uses', 'need to have')."
+    },
+    {
+      "invariantId": "INV-style-117",
+      "result": "pass",
+      "evidence": "American English used throughout. No British spellings detected."
+    },
+    {
+      "invariantId": "INV-style-118",
+      "result": "pass",
+      "evidence": "Terminology is consistent: 'page permissions' (plural for multiple) on line 19, 'page permission' (singular for one) on line 71. Both correctly match quantity context."
+    },
+    {
+      "invariantId": "INV-style-119",
+      "result": "pass",
+      "evidence": "Possessive 'its' used on line 71 ('its own permission settings') with clear antecedent 'child page' in the same sentence. Not the standalone pronoun 'it'."
+    },
+    {
+      "invariantId": "INV-style-120",
+      "result": "pass",
+      "evidence": "New content uses indicative mood ('You need', 'uses')."
+    },
+    {
+      "invariantId": "INV-style-123",
+      "result": "pass",
+      "evidence": "Language is appropriate for business-user persona. Attempt 2 replaced technical 'inherit permissions' with 'uses its own permission settings', which is clearer for business users."
+    },
+    {
+      "invariantId": "INV-style-125",
+      "result": "pass",
+      "evidence": "Line 71 uses non-contracted forms ('does not' removed in rephrasing; 'need to' used throughout). Note: pre-existing contraction 'there's' on line 38 creates a page-level inconsistency, but this is not introduced by the writer."
+    },
+    {
+      "invariantId": "INV-style-129",
+      "result": "pass",
+      "evidence": "No interaction verbs in new content (content is informational, not instructional steps)."
+    },
+    {
+      "invariantId": "INV-style-132",
+      "result": "pass",
+      "evidence": "PREVIOUSLY FAILED (attempt 1). Line 71 now reads 'you need to have the **Delete** permission set directly on that page' — 'must' has been replaced with 'need to'. No instances of 'must' directed at people remain anywhere in the file (confirmed via full-file search). Consistent with line 19 ('You need the **Read** and **Delete**...') and line 55 ('you need to delete its variants')."
+    },
+    {
+      "invariantId": "INV-style-134",
+      "result": "pass",
+      "evidence": "Line 71: 'If a child page uses its own permission settings instead of the parent page's, you need to have...' correctly leads with the condition before the instruction."
+    },
+    {
+      "invariantId": "INV-style-138",
+      "result": "pass",
+      "evidence": "{% info %} callout used for additional context (permission requirements). Info is the correct severity level — not a warning (no destructive action) or tip (not optional)."
+    },
+    {
+      "invariantId": "INV-style-139",
+      "result": "pass",
+      "evidence": "Info callout (lines 17-21) is a single sentence; the exception for 'single-sentence callouts where the title would be redundant' applies."
+    },
+    {
+      "invariantId": "INV-style-140",
+      "result": "pass",
+      "evidence": "No callout type name ('Info') written inside the info callout."
+    },
+    {
+      "invariantId": "INV-style-141",
+      "result": "pass",
+      "evidence": "Callout type 'info' is used correctly for supplementary context about permissions."
+    },
+    {
+      "invariantId": "INV-style-146",
+      "result": "pass",
+      "evidence": "No 'have to' used in new content."
+    },
+    {
+      "invariantId": "INV-style-147",
+      "result": "pass",
+      "evidence": "Line 71: 'its own' correctly uses possessive 'its' (not contraction 'it's'). 'parent page's' correctly uses possessive apostrophe-s."
+    },
+    {
+      "invariantId": "TINV-002",
+      "result": "pass",
+      "evidence": "Cross-references link to permissions_pagelevel_xp, providing centralized access to permission information."
+    },
+    {
+      "invariantId": "INV-structure-001",
+      "result": "pass",
+      "evidence": "New content documents current product state (permission model). No migration guides or breaking changes mentioned."
+    },
+    {
+      "invariantId": "INV-structure-002",
+      "result": "pass",
+      "evidence": "No 'Next steps' section added."
+    },
+    {
+      "invariantId": "INV-structure-009",
+      "result": "pass",
+      "evidence": "Page remains independent. Permission details are cross-referenced via page_link rather than duplicated."
+    },
+    {
+      "invariantId": "INV-structure-011",
+      "result": "pass",
+      "evidence": "Permission note works for both new and returning users. Links to permission management page for fuller context."
+    },
+    {
+      "invariantId": "INV-structure-030",
+      "result": "pass",
+      "evidence": "No modifications to _guides collection."
+    },
+    {
+      "invariantId": "INV-structure-031",
+      "result": "pass",
+      "evidence": "No modifications to _api files."
+    },
+    {
+      "invariantId": "INV-structure-034",
+      "result": "pass",
+      "evidence": "Article structure intact: Title ('Delete pages'), Introduction ('To delete a page:'), Body (steps 1-5), Result (line 51: 'You have successfully deleted the page.')."
+    },
+    {
+      "invariantId": "INV-structure-035",
+      "result": "pass",
+      "evidence": "Introduction 'To delete a page:' provides brief context before the steps."
+    },
+    {
+      "invariantId": "INV-structure-037",
+      "result": "pass",
+      "evidence": "New content mentions permissions as prerequisites, which is appropriate per this invariant's guidance to 'mention prerequisites if necessary.'"
+    },
+    {
+      "invariantId": "INV-structure-038",
+      "result": "pass",
+      "evidence": "Result paragraph (line 51) remains intact: 'You have successfully deleted the page.'"
+    },
+    {
+      "invariantId": "INV-jekyll-002",
+      "result": "pass",
+      "evidence": "New cross-references use {% page_link %} Liquid tag (not raw Markdown links)."
+    },
+    {
+      "invariantId": "INV-jekyll-003",
+      "result": "pass",
+      "evidence": "YAML front matter present between --- delimiters (lines 1-13)."
+    },
+    {
+      "invariantId": "INV-jekyll-004",
+      "result": "pass",
+      "evidence": "All required front matter fields present: title ('Delete pages'), identifier ('XofWCQ'), order (800), redirect_from ('x/XofWCQ'), persona ('business'), license (1)."
+    },
+    {
+      "invariantId": "INV-jekyll-008",
+      "result": "pass",
+      "evidence": "redirect_from includes 'x/XofWCQ' matching the identifier."
+    },
+    {
+      "invariantId": "INV-jekyll-009",
+      "result": "pass",
+      "evidence": "license: 1 (standard tier)."
+    },
+    {
+      "invariantId": "INV-jekyll-010",
+      "result": "pass",
+      "evidence": "Info callout uses valid Liquid syntax: {% info %} with matching {% endinfo %} (lines 17, 21). Blank lines around content inside callout."
+    },
+    {
+      "invariantId": "INV-jekyll-028",
+      "result": "pass",
+      "evidence": "Filename 'delete-pages.md' uses kebab-case and reflects page title 'Delete pages'."
+    },
+    {
+      "invariantId": "INV-jekyll-031",
+      "result": "pass",
+      "evidence": "license: 1 (standard tier) set correctly."
+    },
+    {
+      "invariantId": "INV-jekyll-032",
+      "result": "pass",
+      "evidence": "redirect_from is present and includes 'x/XofWCQ'."
+    },
+    {
+      "invariantId": "INV-crossref-002",
+      "result": "pass",
+      "evidence": "Both page_links use valid syntax: {% page_link permissions_pagelevel_xp linkText=\"page permissions\" %} and {% page_link permissions_pagelevel_xp linkText=\"page permission\" %}. Collection attribute omitted, consistent with all other page_links on this page."
+    },
+    {
+      "invariantId": "INV-crossref-003",
+      "result": "pass",
+      "evidence": "Identifier 'permissions_pagelevel_xp' follows the expected naming convention (snake_case + _xp suffix). Actual existence verification deferred to accuracy-reviewer."
+    },
+    {
+      "invariantId": "INV-crossref-009",
+      "result": "pass",
+      "evidence": "Link text is descriptive: 'page permissions' and 'page permission' clearly describe the linked content. No vague phrases like 'click here'."
+    }
+  ],
+  "notApplicableInvariants": {
+    "codesamples": {
+      "ids": ["INV-codesamples-001", "INV-codesamples-002", "INV-codesamples-003", "INV-codesamples-004", "INV-codesamples-005", "INV-codesamples-006", "INV-codesamples-007", "INV-codesamples-008", "INV-codesamples-009", "INV-codesamples-010", "INV-codesamples-011", "INV-codesamples-014", "INV-codesamples-015", "INV-codesamples-016", "INV-codesamples-017", "INV-codesamples-018", "INV-codesamples-019", "INV-codesamples-020", "INV-codesamples-021", "INV-codesamples-022", "INV-codesamples-023", "INV-codesamples-024", "INV-codesamples-025", "INV-codesamples-026", "INV-codesamples-027", "INV-codesamples-028"],
+      "reason": "No code samples in the changes. Task adds prose permission notes only."
+    },
+    "style_subset": {
+      "ids": ["INV-style-058", "INV-style-059", "INV-style-060", "INV-style-061", "INV-style-062", "INV-style-064", "INV-style-074", "INV-style-075", "INV-style-076", "INV-style-082", "INV-style-083", "INV-style-088", "INV-style-089", "INV-style-091", "INV-style-092", "INV-style-093", "INV-style-094", "INV-style-095", "INV-style-101", "INV-style-102", "INV-style-103", "INV-style-104", "INV-style-105", "INV-style-106", "INV-style-108", "INV-style-109", "INV-style-110", "INV-style-116", "INV-style-121", "INV-style-122", "INV-style-124", "INV-style-126", "INV-style-127", "INV-style-128", "INV-style-130", "INV-style-131", "INV-style-133", "INV-style-135", "INV-style-136", "INV-style-137", "INV-style-142", "INV-style-143", "INV-style-144", "INV-style-145", "INV-style-148"],
+      "reason": "These style invariants cover topics not present in the changes (UI navigation, code formatting, auth terminology, heading changes, navigation paths, numbered-step details, etc.)."
+    },
+    "jekyll_subset": {
+      "ids": ["INV-jekyll-001", "INV-jekyll-005", "INV-jekyll-006", "INV-jekyll-007", "INV-jekyll-011", "INV-jekyll-012", "INV-jekyll-013", "INV-jekyll-014", "INV-jekyll-015", "INV-jekyll-016", "INV-jekyll-017", "INV-jekyll-018", "INV-jekyll-019", "INV-jekyll-020", "INV-jekyll-021", "INV-jekyll-022", "INV-jekyll-023", "INV-jekyll-024", "INV-jekyll-025", "INV-jekyll-026", "INV-jekyll-027", "INV-jekyll-029", "INV-jekyll-030", "INV-jekyll-033"],
+      "reason": "These Jekyll invariants cover components not used in the changes (tables, code blocks, images, videos, anchors, columns, panels, cards, banners, icons, status badges, arcade demos)."
+    },
+    "structure_subset": {
+      "ids": ["INV-structure-010", "INV-structure-032", "INV-structure-033", "INV-structure-036", "INV-structure-039"],
+      "reason": "These structure invariants cover reference/example pages, changelog pages, key-points callouts for concept articles, and separate reference pages — none applicable to this how-to update."
+    },
+    "crossref_subset": {
+      "ids": ["INV-crossref-001", "INV-crossref-004", "INV-crossref-005", "INV-crossref-006", "INV-crossref-007"],
+      "reason": "No in-page links, placeholders, anchored page_links, external links, or button links in new content."
+    }
+  },
+  "metaKnowledgeResults": [
+    {
+      "id": "STYLE-004",
+      "result": "pass",
+      "evidence": "page_link identifier 'permissions_pagelevel_xp' follows the expected naming convention (snake_case + _xp suffix). Identifier verification against frontmatter is the accuracy-reviewer's scope."
+    }
+  ],
+  "antiPatternResults": [
+    {
+      "id": "ANTI-002",
+      "result": "pass",
+      "evidence": "No dashes in new content. No em dash, en dash, or double-hyphen issues."
+    },
+    {
+      "id": "ANTI-001",
+      "result": "not-applicable",
+      "evidence": "This is an update-crossrefs task, not a create task."
+    },
+    {
+      "id": "ANTI-004",
+      "result": "not-applicable",
+      "evidence": "Style-review scope; acceptance criteria enumeration is task-planner's domain."
+    },
+    {
+      "id": "ANTI-010",
+      "result": "not-applicable",
+      "evidence": "No code examples in changes."
+    }
+  ],
+  "additionalFindings": [
+    {
+      "category": "heading-hierarchy",
+      "result": "pass",
+      "evidence": "All headings are h2 (##). No skipped levels. Hierarchy: 'Redirects from deleted pages' (h2, line 59), 'Deleting a page with child pages' (h2, line 67), 'Restore deleted pages' (h2, line 79)."
+    },
+    {
+      "category": "consistent-formatting",
+      "result": "pass",
+      "evidence": "New {% info %} callout (lines 17-21) follows the same pattern as the existing {% info %} callout (lines 53-57) — single-sentence content with blank lines inside the tag."
+    },
+    {
+      "category": "link-formatting",
+      "result": "pass",
+      "evidence": "New cross-references use {% page_link %} Liquid syntax, consistent with all other internal links on the page."
+    },
+    {
+      "category": "liquid-syntax",
+      "result": "pass",
+      "evidence": "All Liquid tags in new content are syntactically valid: {% info %}/{% endinfo %} pair and {% page_link %} tags with correct attribute format."
+    },
+    {
+      "category": "sentence-structure",
+      "result": "pass",
+      "evidence": "New prose is clear, concise, and scannable. Info callout is one sentence. Paragraph in 'Deleting a page with child pages' is two focused sentences with a conditional structure."
+    },
+    {
+      "category": "rephrasing-quality",
+      "result": "pass",
+      "evidence": "Attempt 2 rephrasing of line 71 is well-constructed. 'uses its own permission settings instead of the parent page's' is an elliptical possessive (short for 'the parent page's [permission settings]') — grammatically correct and idiomatic. The possessive apostrophe in 'page's' is properly placed. Sentence parallelism is maintained: both clauses on line 71 now use 'need' consistently ('You also need...' and 'you need to have...')."
+    }
+  ],
+  "regressionCheck": {
+    "previouslyPassedInvariants": 63,
+    "stillPassing": 64,
+    "newFailures": 0,
+    "note": "All 63 invariants that passed in attempt 1 continue to pass. INV-style-132 now also passes, bringing total to 64/64."
+  },
+  "summary": {
+    "invariantsPassed": 64,
+    "invariantsFailed": 0,
+    "invariantsNotApplicable": 107,
+    "additionalIssues": 0,
+    "previouslyFailedNowPassed": ["INV-style-132"],
+    "newIssuesFromRephrasing": []
+  },
+  "timestamp": "2026-03-18T18:45:32Z"
+}

@@ -1,0 +1,302 @@
+{
+  "version": 1,
+  "generatedBy": "docwriter-diff-analyzer",
+  "diffRef": "master (gap-fill analysis — no diff, files analyzed directly on master)",
+  "baseBranch": "master",
+  "totalFilesChanged": 14,
+  "areas": [
+    {
+      "id": "AREA-001",
+      "name": "Page ACL Permission Evaluation and Constants",
+      "description": "Core ACL permission evaluation engine, permission constant definitions, and the prerequisite-Read gating logic that governs which permissions require Read as a prerequisite",
+      "files": [
+        {
+          "path": "CMSSolution/Admin/Kentico.Xperience.Admin.Websites/WebPages/Acls/WebPageAclPermissionEvaluator.cs",
+          "changeType": "modified",
+          "summary": "Central ACL permission evaluator. Checks if the current user is a channel admin (bypasses all ACL checks). For non-admin users, evaluates page-level permissions via ACL role mappings. Implements the prerequisite-Read rule: permissions in WebsiteConstants.IndividuallyCheckedPermissions (Read, Display) are checked individually; all other permissions (Create, Update, Delete, Synchronize) require Read AND the specific permission to be granted. Caches evaluated permissions per web page item per request. Also supports subtree permission evaluation for child pages with broken ACL inheritance.",
+          "symbols": [
+            "WebPageAclPermissionEvaluator",
+            "IWebPageAclPermissionEvaluator",
+            "Evaluate()",
+            "EvaluatePermission()",
+            "CheckAclSubtreePermission()",
+            "WebsiteConstants.IndividuallyCheckedPermissions",
+            "WebPageAclPermissions.READ"
+          ],
+          "userFacing": true
+        },
+        {
+          "path": "CMSSolution/Websites/Website/WebsiteConstants.cs",
+          "changeType": "modified",
+          "summary": "Defines IndividuallyCheckedPermissions as a HashSet containing Read and Display. These are the only two ACL permissions that do NOT require Read as a prerequisite — they are checked individually. All other permissions (Create, Update, Delete, Synchronize) implicitly require Read to be granted as well.",
+          "symbols": [
+            "WebsiteConstants",
+            "IndividuallyCheckedPermissions",
+            "WEBSITE_CHANNEL_APPLICATION_PREFIX"
+          ],
+          "userFacing": true
+        },
+        {
+          "path": "CMSSolution/Websites/ACLs/WebPageAclPermissions.cs",
+          "changeType": "modified",
+          "summary": "Defines all six web page ACL permission constants: Display, Read, Create, Update, Delete, and Synchronize. These are the permission names used throughout the ACL system for page-level access control.",
+          "symbols": [
+            "WebPageAclPermissions",
+            "DISPLAY",
+            "READ",
+            "CREATE",
+            "UPDATE",
+            "DELETE",
+            "SYNCHRONIZE"
+          ],
+          "userFacing": true
+        },
+        {
+          "path": "CMSSolution/Admin/Kentico.Xperience.Admin.Websites/WebPages/Acls/WebsiteChannelAdminProvider.cs",
+          "changeType": "modified",
+          "summary": "Determines whether a user is a channel administrator. Users with the global Administrator role automatically qualify. Other users qualify if they have the MANAGE_PERMISSIONS application permission for the specific website channel application. Channel admins bypass all ACL permission checks entirely (checked first in WebPageAclPermissionEvaluator).",
+          "symbols": [
+            "WebsiteChannelAdminProvider",
+            "IWebsiteChannelAdminProvider",
+            "IsChannelAdmin()",
+            "GetManagingWebsiteChannels()",
+            "IsAdministrator()",
+            "WebsiteChannelUIPermissions.MANAGE_PERMISSIONS"
+          ],
+          "userFacing": true
+        }
+      ]
+    },
+    {
+      "id": "AREA-002",
+      "name": "Page Commands — Content, Page Builder, and URLs Tabs",
+      "description": "UI page command handlers for publish, save, unpublish, discard, workflow step changes, and other page operations. All commands use the two-layer permission model: [PageCommand(Permission=SystemPermissions.VIEW)] for application-level access, plus CheckAclPermission() for page-level ACL enforcement.",
+      "files": [
+        {
+          "path": "CMSSolution/Admin/Kentico.Xperience.Admin.Websites/UIPages/WebPages/WebPage/Content/ContentTab.cs",
+          "changeType": "modified",
+          "summary": "Content tab UI page for editing web page content fields. All page commands use [PageCommand(Permission = SystemPermissions.VIEW)] for application-level permission, then call CheckAclPermission() with WebPageAclPermissions.UPDATE for mutating operations (Save, Publish, ChangeWorkflowStep, CancelScheduledPublish, CancelScheduledPublishAndEdit, CancelScheduledUnpublish, Unpublish, Discard, CreateNewVersion, Rename, Change). Read-only operations (Versions, ShareablePreview) use WebPageAclPermissions.READ. Delegates to WebPageCommandManagerBase for workflow and publish logic.",
+          "symbols": [
+            "ContentTab",
+            "Save()",
+            "Publish()",
+            "ChangeWorkflowStep()",
+            "CancelScheduledPublish()",
+            "CancelScheduledPublishAndEdit()",
+            "CancelScheduledUnpublish()",
+            "Unpublish()",
+            "Discard()",
+            "CreateNewVersion()",
+            "Versions()",
+            "ShareablePreview()",
+            "Rename()",
+            "Change()",
+            "CheckAclPermission()",
+            "WebPageAclPermissions.UPDATE",
+            "WebPageAclPermissions.READ",
+            "SystemPermissions.VIEW"
+          ],
+          "userFacing": true
+        },
+        {
+          "path": "CMSSolution/Admin/Kentico.Xperience.Admin.Websites/UIPages/WebPages/WebPage/PageBuilder/PageBuilderTab.cs",
+          "changeType": "modified",
+          "summary": "Page Builder tab UI page for editing page widgets and layout. Follows the same two-layer permission pattern as ContentTab: [PageCommand(Permission = SystemPermissions.VIEW)] + CheckAclPermission(UPDATE) for mutating operations (Save, Publish, ChangeWorkflowStep, Discard, Unpublish, CreateNewVersion, CancelScheduledPublish, CancelScheduledPublishAndEdit, CancelScheduledUnpublish). Read-only operations (Versions, ShareablePreview) check READ. Delegates to WebPageCommandManagerBase.",
+          "symbols": [
+            "PageBuilderTab",
+            "Save()",
+            "Publish()",
+            "ChangeWorkflowStep()",
+            "Discard()",
+            "Unpublish()",
+            "CreateNewVersion()",
+            "CancelScheduledPublish()",
+            "CancelScheduledPublishAndEdit()",
+            "CancelScheduledUnpublish()",
+            "Versions()",
+            "ShareablePreview()",
+            "CheckAclPermission()",
+            "WebPageAclPermissions.UPDATE",
+            "WebPageAclPermissions.READ",
+            "SystemPermissions.VIEW"
+          ],
+          "userFacing": true
+        },
+        {
+          "path": "CMSSolution/Admin/Kentico.Xperience.Admin.Websites/UIPages/WebPages/WebPage/Urls/UrlsTab.cs",
+          "changeType": "modified",
+          "summary": "URLs tab UI page for managing web page URL slugs and redirects. Same two-layer permission pattern: [PageCommand(Permission = SystemPermissions.VIEW)] + CheckAclPermission(UPDATE) for mutating operations (Save, Publish, ChangeWorkflowStep, CancelScheduledPublish, CancelScheduledPublishAndEdit, CancelScheduledUnpublish, Unpublish, Discard, CreateNewVersion). Read-only operations (Versions, ShareablePreview) check READ. Also has CheckAclPermissions() (plural) for redirect configuration visibility. Delegates to WebPageCommandManagerBase.",
+          "symbols": [
+            "UrlsTab",
+            "Save()",
+            "Publish()",
+            "ChangeWorkflowStep()",
+            "CancelScheduledPublish()",
+            "CancelScheduledPublishAndEdit()",
+            "CancelScheduledUnpublish()",
+            "Unpublish()",
+            "Discard()",
+            "CreateNewVersion()",
+            "Versions()",
+            "ShareablePreview()",
+            "CheckAclPermission()",
+            "CheckAclPermissions()",
+            "WebPageAclPermissions.UPDATE",
+            "WebPageAclPermissions.READ",
+            "SystemPermissions.VIEW"
+          ],
+          "userFacing": true
+        },
+        {
+          "path": "CMSSolution/Admin/Kentico.Xperience.Admin.Websites/UIPages/WebPages/WebPage/Create/WebPage/CreateWebPage.cs",
+          "changeType": "modified",
+          "summary": "Page for creating new web pages. Uses CREATE ACL permission on the parent page (not the page being created). ConfigurePage() checks WebPageAclPermissions.CREATE on ParentWebPageIdentifier. All commands (Create, Publish, ChangeWorkflowStep, Change, SubmitFirstStep, SubmitSecondStep) re-check CREATE ACL on the parent page. The Publish command during creation uses CREATE permission (not UPDATE), since the page does not yet exist. Uses [UIEvaluatePermission(SystemPermissions.VIEW)] at page level and [PageCommand(Permission = SystemPermissions.VIEW)] on each command.",
+          "symbols": [
+            "CreateWebPage",
+            "ConfigurePage()",
+            "Create()",
+            "Publish()",
+            "ChangeWorkflowStep()",
+            "Change()",
+            "SubmitFirstStep()",
+            "SubmitSecondStep()",
+            "Discard()",
+            "ValidateDisplayName()",
+            "CreateInternal()",
+            "CheckAclPermission()",
+            "WebPageAclPermissions.CREATE",
+            "SystemPermissions.VIEW",
+            "UIEvaluatePermission",
+            "ParentWebPageIdentifier"
+          ],
+          "userFacing": true
+        }
+      ]
+    },
+    {
+      "id": "AREA-003",
+      "name": "Workflow Permission Checks",
+      "description": "Workflow step role enforcement and covering workflow detection. Controls which users can perform operations when content items are under a workflow, including the Draft step always-allowed rule, Full Control role bypass, and step-specific role assignments.",
+      "files": [
+        {
+          "path": "CMSSolution/ContentWorkflowEngine/WorkflowStepRoleArbiter/WorkflowStepRoleArbiter.cs",
+          "changeType": "modified",
+          "summary": "Arbiter that determines whether a user can perform operations in a specific workflow step. Implements key rules: (1) Draft step — always returns true (all users can work with draft content). (2) Full Control roles bypass — users in a workflow's Full Control roles can work with any step. (3) Final (Published) step — delegates to the last custom step's role assignments. (4) Custom steps — user must be in at least one of the step's assigned roles. Called by WebPageCommandManagerBase.CanWorkWithContentItemInCurrentStep().",
+          "symbols": [
+            "WorkflowStepRoleArbiter",
+            "IWorkflowStepRoleArbiter",
+            "CanWorkWithContentItemInStep()",
+            "CanWorkWithContentItemInCurrentStep()",
+            "HasFullControl()",
+            "CanWorkWithContentItemInStepInternal()",
+            "HasFullControlInternal()",
+            "IsDraft()",
+            "IsFinal()",
+            "ContentWorkflowStepType.SystemDraft",
+            "ContentWorkflowStepType.SystemFinal"
+          ],
+          "userFacing": true
+        },
+        {
+          "path": "CMSSolution/ContentWorkflowEngine/CoveringWorkflowRetriever/CoveringWorkflowRetriever.cs",
+          "changeType": "modified",
+          "summary": "Retrieves the workflow covering a content item. GetForEdit() returns the workflow based on the content item's current workflow step — returns null when no workflow step is assigned (meaning the content is not under any workflow). GetForNewCycle() retrieves the workflow based on the content type binding. Used by WebPageCommandManagerBase.IsUnderWorkflow() to determine if publish should be blocked (items under workflow cannot be directly published — they must go through workflow steps).",
+          "symbols": [
+            "CoveringWorkflowRetriever",
+            "ICoveringWorkflowRetriever",
+            "GetForEdit()",
+            "GetForNewCycle()",
+            "GetCoveringWorkflowBasedOnCurrentStep()",
+            "GetCoveringWorkflowBasedOnContentType()"
+          ],
+          "userFacing": true
+        },
+        {
+          "path": "CMSSolution/Admin/Kentico.Xperience.Admin.Websites/WebPages/Manager/WebPageCommandManagerBase.cs",
+          "changeType": "modified",
+          "summary": "Base command manager that orchestrates all web page operations. Implements the workflow permission layer: PublishInternal() blocks publish if the item is under a workflow (must use workflow steps instead). ChangeWorkflowStepInternal() requires the item to be under a workflow and checks CanWorkWithContentItemInCurrentStep(). SaveInternal(), DiscardInternal(), CancelScheduledPublishInternal(), CancelScheduledPublishAndEditInternal() all check CanWorkWithContentItemInCurrentStep(). UnpublishInternal() checks step roles. The ExecuteCommand() method dispatches to the appropriate internal method. Also handles content synchronization with SYNCHRONIZE ACL permission validation.",
+          "symbols": [
+            "WebPageCommandManagerBase",
+            "IWebPageCommandManager",
+            "PublishInternal()",
+            "ChangeWorkflowStepInternal()",
+            "SaveInternal()",
+            "DiscardInternal()",
+            "UnpublishInternal()",
+            "CancelScheduledPublishInternal()",
+            "CancelScheduledPublishAndEditInternal()",
+            "CancelScheduledUnpublishInternal()",
+            "CreateNewVersionInternal()",
+            "CanWorkWithContentItemInCurrentStep()",
+            "IsUnderWorkflow()",
+            "ExecuteCommand()",
+            "CreateContentSynchronization()",
+            "ValidatePermissionAndLanguageOnWebPages()",
+            "ValidatePermissionsOfWebPageTree()",
+            "WebPageAclPermissions.SYNCHRONIZE"
+          ],
+          "userFacing": true
+        }
+      ]
+    },
+    {
+      "id": "AREA-004",
+      "name": "Application-Level Permission Framework",
+      "description": "Framework-level permission enforcement via [PageCommand] and [UIEvaluatePermission] attributes. Defines application-level permission constants and the invoker infrastructure that checks permissions before page commands execute.",
+      "files": [
+        {
+          "path": "CMSSolution/Membership/ApplicationPermission/SystemPermissions.cs",
+          "changeType": "modified",
+          "summary": "Defines application-level (non-ACL) permission constants: View, Create, Update, Delete. These are used with [PageCommand(Permission = ...)] and [UIEvaluatePermission(...)] attributes to control application-level access. In the web pages context, SystemPermissions.VIEW is used as the application-level gate on all page commands (the actual operation-level authorization is done via ACL permissions).",
+          "symbols": [
+            "SystemPermissions",
+            "VIEW",
+            "UPDATE",
+            "CREATE",
+            "DELETE"
+          ],
+          "userFacing": true
+        },
+        {
+          "path": "CMSSolution/Admin/Kentico.Xperience.Admin.Base/UIFramework/PageHandling/PageInvokerBase.cs",
+          "changeType": "modified",
+          "summary": "Framework base class for page invokers. CheckPermission() enforces the permission specified in [PageCommand(Permission = ...)] before any command handler executes. Supports both standard UI permission evaluation (via IUIPermissionEvaluator) and workspace-scoped permission evaluation. CheckNodeAccessPermission() enforces the page's default access permission (falls back to SystemPermissions.VIEW). This is the outer layer of the two-layer permission model — it runs before any page-specific code, including ACL checks.",
+          "symbols": [
+            "PageInvokerBase",
+            "CheckPermission()",
+            "CheckNodeAccessPermission()",
+            "IUIPermissionEvaluator",
+            "IUITreeNodeWorkspacePermissionEvaluator",
+            "ForbiddenAccessException",
+            "SystemPermissions.VIEW"
+          ],
+          "userFacing": false
+        },
+        {
+          "path": "CMSSolution/Admin/Kentico.Xperience.Admin.Websites/UIPages/WebPages/WebPage/WebPageBase.cs",
+          "changeType": "modified",
+          "summary": "Abstract base class for all web page UI pages (ContentTab, PageBuilderTab, UrlsTab inherit from this). ConfigurePage() enforces WebPageAclPermissions.READ on the current page — this means every web page tab requires Read ACL permission just to view it. Provides the CheckAclPermission() helper method that delegates to IWebPageAclPermissionEvaluator.Evaluate() and throws ForbiddenAccessException on failure. Resolves workflow-related services (IWorkflowStepRoleArbiter, ICoveringWorkflowRetriever) for use by subclasses.",
+          "symbols": [
+            "WebPageBase<TClientProperties>",
+            "ConfigurePage()",
+            "CheckAclPermission()",
+            "IWebPageAclPermissionEvaluator",
+            "WebPageAclPermissions.READ",
+            "ForbiddenAccessException",
+            "IWorkflowStepRoleArbiter",
+            "ICoveringWorkflowRetriever"
+          ],
+          "userFacing": true
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "areasAffected": 4,
+    "userFacingChanges": 13,
+    "internalChanges": 1,
+    "addedFiles": 0,
+    "modifiedFiles": 14,
+    "deletedFiles": 0
+  }
+}

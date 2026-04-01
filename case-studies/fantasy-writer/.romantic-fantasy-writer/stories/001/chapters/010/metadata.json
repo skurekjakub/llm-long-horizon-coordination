@@ -1,0 +1,80 @@
+{
+  "chapterNum": 10,
+  "pov": "CHAR-002",
+  "wordCount": 4576,
+  "status": "draft",
+  "scenesCompleted": ["SCN-028", "SCN-029", "SCN-030"],
+  "emotionalArcAchieved": {
+    "startState": "investigative focus — operative discipline, cataloguing, suppressing personal responses",
+    "endState": "curiosity and intimacy — first personal question asked without tactical justification",
+    "pivotDelivered": true,
+    "pivotDescription": "The coast question — Lirien asks what the stars looked like from Kaelith's childhood coast, recognizes mid-sentence that the question has no operational value, and cannot stop herself from wanting the answer"
+  },
+  "craftToolsApplied": [
+    "T1 — Scene-Sequel structure: SCN-028 follows Goal→Conflict→Disaster; SCN-029 follows Reaction→Dilemma→Decision sequel; SCN-030 is intimate sequel",
+    "T5 — Subtext in dialogue: Lirien and Kaelith's strategic debate carries emotional subtext about trust and shared purpose",
+    "T12 — Information management: archive documents reveal conspiracy through pattern recognition, not exposition dumps",
+    "T14 — MRU structure: external stimulus → emotion → reflex → rational action → speech pattern maintained in archive scene",
+    "T15 — Foreshadowing: Thalen Reyvas named, Dimming rites schedule established, next rite location near Quietus approach",
+    "T16 — Mystery box: who within the High Conclave supports Reyvas? Why does someone want Ythara to wake?",
+    "T17 — Emotional throughline: Lirien's parenthetical assessments present in scenes 1-2, absent in scene 3",
+    "T18 — Symbolic motif deployment: MOT-001 Pallor as documented institutional damage, MOT-003 water metaphors throughout Lirien's POV",
+    "T20 — Pacing variation: high-tension archive infiltration → medium-tension strategic debate → low-tension intimate conversation",
+    "T21 — Micro-tension: every passage maintains at least one active tension source (detection risk, conspiracy scope, emotional vulnerability)",
+    "T22 — Hook and close: chapter opens with population observation (Lirien's operative eye), closes with intimate-quiet sleep",
+    "T24 — Voice differentiation: Lirien's operative vocabulary, parenthetical assessments, water metaphors distinct from Kaelith's architectural framework"
+  ],
+  "continuityNotes": {
+    "characterPositions": "Lirien and Kaelith camped 2 miles NE of Aranthem, continuing toward the Quietus",
+    "newInformation": [
+      "Thalen Reyvas (High Conclave, Seventh Seat) identified as 40-year Dimming rites orchestrator",
+      "Dimming rites follow astronomical schedule aligned with membrane permeability peaks",
+      "Next rite approximately 3 weeks away, near Dawnward Range / Quietus approach",
+      "Monitoring stations systematically decommissioned to hide Pallor thinning",
+      "Conspiracy is ideological — someone wants Ythara to wake"
+    ],
+    "foreshadowingPlanted": [
+      "Thalen Reyvas name — payoff in Act III confrontation",
+      "Dimming rites schedule — payoff when next rite occurs near Quietus",
+      "Ideological motivation — question of WHY someone wants Ythara awake remains open"
+    ],
+    "foreshadowingResolved": [],
+    "motifAppearances": [
+      "MOT-001: Pallor described through archived documents as degrading membrane, institutional measurements of its decay",
+      "MOT-003: Water/infiltration/surface-depth throughout — investigation as infiltration, truth as undercurrent, intimacy as permeability, the coast conversation as literal water memory"
+    ],
+    "informationAsymmetry": {
+      "LirienKnows_KaelithDoesNot": "Full contents of waystation sealed documents (partially resolved — Kaelith now knows Reyvas name but Lirien revealed she had it earlier than disclosed)",
+      "SharedKnowledge": "Thalen Reyvas identity, Dimming rites conspiracy scope, strategic decision to prioritize Quietus",
+      "ReaderKnows": "Lirien's internal emotional state — the parenthetical system failing, the unclassifiable feelings around Kaelith"
+    },
+    "keyCharacterDevelopment": {
+      "CHAR-002": "First personal question without tactical value. Parenthetical assessment system goes silent around Kaelith for the first time. Acknowledges wanting to know Kaelith as a person. Falls asleep without establishing watch rotation — surrender of vigilance.",
+      "CHAR-001": "Shares childhood memories of the coast — vulnerability through personal history. Observes Lirien's briefing-protocol-recitation habit with patience. Uses humor to invite deeper conversation."
+    }
+  },
+  "sceneValueShifts": {
+    "SCN-028": {
+      "from": "sabotage is theoretical",
+      "to": "conspiracy has documented history and institutional protection"
+    },
+    "SCN-029": {
+      "from": "we must reach the Quietus",
+      "to": "we must expose the saboteur or reaching the seal is meaningless — but Quietus first"
+    },
+    "SCN-030": {
+      "from": "we speak only of tactics",
+      "to": "we are people having a conversation because we want to"
+    }
+  },
+  "emotionalStatesAtBoundaries": {
+    "chapterStart": {
+      "CHAR-002": "investigative focus, operative discipline, carrying the weight of withheld intelligence",
+      "CHAR-001": "steady, mission-oriented, carrying suspicion about Reyvas"
+    },
+    "chapterEnd": {
+      "CHAR-002": "guarded openness — operative armor breached by personal curiosity, classification system failing, choosing proximity",
+      "CHAR-001": "vulnerable through shared memory — offered childhood without being asked for it, accepted intimacy"
+    }
+  }
+}

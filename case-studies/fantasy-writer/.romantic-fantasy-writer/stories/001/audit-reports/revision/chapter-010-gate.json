@@ -1,0 +1,294 @@
+{
+  "gateId": "revision-gate-ch010",
+  "phase": "revision",
+  "chapter": 10,
+  "pov": "CHAR-002",
+  "verdict": "passed",
+  "auditorTimestamp": "2025-07-28T16:00:00Z",
+  "inputArtifacts": [
+    "chapters/010/draft.md",
+    "chapters/010/revised.md",
+    "revision-reports/010/developmental-edit.json",
+    "revision-reports/010/line-edit.json",
+    "revision-reports/010/copy-edit.json",
+    "revision-reports/010/revision-log.json"
+  ],
+  "findingSummary": {
+    "totalFindings": 35,
+    "critical": 2,
+    "major": 10,
+    "minor": 15,
+    "suggestion": 8,
+    "criticalAddressed": 2,
+    "majorAddressed": 10,
+    "minorAddressed": 15,
+    "suggestionsAddressed": 6,
+    "deferred": 2,
+    "deferredJustification": "COPY-010-009 and COPY-010-010 are continuity-tracker-level issues, not chapter content. Correctly deferred to continuity-tracker agent."
+  },
+  "findingVerificationMatrix": [
+    {
+      "findingId": "LINE-010-001",
+      "severity": "critical",
+      "source": "line-edit",
+      "category": "repetition / syntactic-pattern-saturation",
+      "description": "'not X but Y' negation pattern saturated chapter at ~40 instances",
+      "verificationMethod": "grep pattern count + manual line-by-line text comparison",
+      "draftEvidence": "grep confirms 17 matches for 'not .{1,40} but' in draft; actual hand-counted broader negation pattern ~40 instances including 'not X — Y' variants and standalone negation constructions",
+      "revisedEvidence": "grep confirms 8 matches for 'not .{1,40} but' in revised; hand-counted broader pattern at ~11-12 instances. Strongest uses preserved: 'Not suppressed. Absent.' (line 267), 'not the sound but the vibration in the chest' (line 247), 'This was not sabotage by neglect. This was engineering.' (line 141), 'not unfocused but *refocused*' (line 187). Weakest uses eliminated: triple-negation (draft line 186), Scene 3 negation cascade, 'not X and not Y and not Z' stacking patterns",
+      "fixAdequate": true,
+      "notes": "Reduction from ~40 to ~12 verified. Scene 3 negations cut by approximately 75% as claimed. Remaining instances function as voice seasoning rather than dominant syntactic mode. The revised prose defines experience through positive description substantially more often than through negation. No voice marker saturation regression — the revision reduced, not added, voice markers."
+    },
+    {
+      "findingId": "LINE-010-002",
+      "severity": "critical",
+      "source": "line-edit",
+      "category": "repetition / voice-marker-saturation",
+      "description": "Intelligence/operative vocabulary saturated Scene 3's intimate scene (~35+ terms)",
+      "verificationMethod": "grep keyword count in Scene 3 segment + manual prose texture comparison",
+      "draftEvidence": "Scene 3 (draft lines 162-252) contained ~35+ intelligence/operative terms: 'catalogued,' 'operational silence,' 'managed disclosure,' 'tactical' (x4), 'gathering intelligence' (x2), 'maintaining cover,' 'variables,' 'classified,' 'operational categories,' 'binding-pressure of the contract,' 'intelligence analysis,' 'operative who has broken cover,' etc. Prose announced Lirien's system going quiet while using system vocabulary at full density.",
+      "revisedEvidence": "grep confirms only 3 hits for core operative vocabulary in revised Scene 3. Manual count: ~6-8 operative terms total across 88 lines, including 'time-to-objective' (205, in context of almost retreating), 'Classification:' (215, the empty parenthetical), 'not tactical' (217), 'breaking cover' (227), 'operational value' (229), 'threats' (273). Prose texture genuinely shifts: Scene 3 opens with sensory details (fire, stream, limestone), shorter sentences, physical action (hand reaching, stopping). The 'I am not gathering intelligence' paradox is resolved — the prose no longer loudly explains silence.",
+      "fixAdequate": true,
+      "notes": "Reduction from ~35+ to ~6-8 verified (~75-80% as claimed). The key qualitative improvement: prose texture authentically changes when Lirien's system goes quiet. Environmental description carries the emotional weight instead of analytical meta-commentary. Operative vocabulary appears only at moments where Lirien catches herself (lines 227, 229), which is the recommended pattern. No dialogue naturalism regression — dialogue quality preserved throughout."
+    },
+    {
+      "findingId": "DEV-010-001",
+      "severity": "major",
+      "source": "developmental-edit",
+      "category": "arc — front-loaded conspiracy revelation",
+      "description": "Naming Thalen Reyvas as perpetrator preempts BEAT-009 (ch12)",
+      "verificationMethod": "grep for 'Reyvas' and 'Thalen' in revised; manual comparison of conspiracy revelation content",
+      "draftEvidence": "Draft line 66: 'Thalen Reyvas. High Conclave, Seventh Seat.' Six total 'Reyvas' references across the chapter including dialogue.",
+      "revisedEvidence": "grep confirms 0 instances of 'Reyvas' or 'Thalen' in revised. Line 99: 'the office resolved to a designation: the Seventh Seat of the High Conclave. The personal signatures used departmental coding — no individual names, only institutional protocols.' Line 193: 'the Seventh Seat can be identified. Whoever holds it has a name, and names become known.' Try-fail cycle correctly delivers 'fail' outcome: institutional pattern established, perpetrator unidentified.",
+      "fixAdequate": true,
+      "notes": "Complete scale-back verified. BEAT-009 preserved for ch12. Closing dialogue elegantly adjusted: 'Whoever holds it has a name, and names become known' / 'They do not remain unknown' — maintains narrative drive toward future identification without preempting it."
+    },
+    {
+      "findingId": "DEV-010-002",
+      "severity": "major",
+      "source": "developmental-edit",
+      "category": "structure — missing subplot intersection",
+      "description": "SUB-003 (Ashborne Legacy) listed ch10 as intersection point but was absent from draft",
+      "verificationMethod": "grep for 'Thenndal' in revised; manual verification of subplot integration",
+      "draftEvidence": "0 instances of 'Thenndal' or 'Ashborne' in draft. No subplot intersection.",
+      "revisedEvidence": "grep confirms 4 instances of 'Thenndal' in revised. Lines 101-102: archive discovery of Ossya Thenndal's investigation request, denial notation in institutional hand, service record listing death 3 months later as 'chronic illness.' Line 149: Lirien includes Thenndal in briefing to Kaelith. Line 151: Kaelith's visible reaction to the name — weight Lirien cannot yet measure. Line 113: Thenndal investigation denial among documents needing transcription.",
+      "fixAdequate": true,
+      "notes": "Excellent integration. Thenndal subplot serves triple duty: (1) advances SUB-003 with Ashborne Legion commander, (2) satisfies try-fail cycle's expected 'Thenndal and Calwrath-era clues,' (3) seeds ch11 Warden lineage revelation through Kaelith's unweighed reaction. 'Chronic illness' detail effectively implies foul play without stating it."
+    },
+    {
+      "findingId": "LINE-010-003",
+      "severity": "major",
+      "source": "line-edit",
+      "category": "repetition / metaphor-density",
+      "description": "10 figurative water metaphors, 4 water-against-stone image repetitions",
+      "verificationMethod": "grep for water-related terms + manual classification of figurative vs. literal usage",
+      "draftEvidence": "10 figurative water metaphors in draft including 4 water-against-stone: 'water revealed the shape of stone' (44), 'cold water through cracked stone' (130), 'water finding a crack in stone' (196), 'water against stone' (238).",
+      "revisedEvidence": "3 figurative water metaphors remain: 'water revealing the shape of stone by flowing around it' (79, investigative), '*we* was a current' (183, emotional), 'water finding a crack in stone' (233, emotional pivot). Water-against-stone image reduced from 4 to 1. Draft lines cut: 52 (water/erosion → rewritten without water), 130 (cold water → 'weight of weeks pressing down'), 158 (surface current → cut), 160 (tributaries → cut), 166 (water in which she swam → cut), 222 (stream follows channel → cut), 238 (water against stone duplicate → cut). Total water-keyword grep: 21 → 16 (remaining hits are literal 'stream' references to the campsite, not figurative).",
+      "fixAdequate": true,
+      "notes": "Reduction verified. Figurative water metaphors down from 10 to 3 as claimed. Water-against-stone image reduced from 4 to 1. Remaining uses are the strongest identified by the line editor. No over-correction — the 3 remaining metaphors are well-distributed and earn their use."
+    },
+    {
+      "findingId": "LINE-010-004",
+      "severity": "major",
+      "source": "line-edit",
+      "category": "repetition / syntactic-pattern",
+      "description": "'the way' comparative construction appeared 14 times",
+      "verificationMethod": "grep for 'the way ' in both versions",
+      "draftEvidence": "grep confirms 15 hits (14 comparative + 1 non-comparative use) in draft.",
+      "revisedEvidence": "grep confirms 2 hits in revised: 'in the way Lirien's fingers occasionally checked' (49, character-specific observation) and 'the way a person notices something beautiful' (249, Scene 3 emotional beat). All other instances replaced with 'as' constructions, direct description, or eliminated.",
+      "fixAdequate": true,
+      "notes": "Reduction from 14 to 2 verified — exceeds the claimed reduction to 3. Remaining uses are the strongest identified by the line editor."
+    },
+    {
+      "findingId": "LINE-010-005",
+      "severity": "major",
+      "source": "line-edit",
+      "category": "prose / purple-prose",
+      "description": "Three stacked poetic closings at chapter end (lines 246-252)",
+      "verificationMethod": "direct text comparison of closing paragraphs",
+      "draftEvidence": "Draft lines 246-252: (1) triple-parallel 'also resting, also softening, also allowing a boundary to thin' with 24-word philosophical gloss on falling asleep; (2) 'not touching, not quite' + 'operative and target become something unnamed' + 'quieter and smaller and more honest'; (3) 'nothing happened... wanting being, for the first time, enough.'",
+      "revisedEvidence": "Revised lines 287-291: 'She slept. Beside her — close enough that the warmth was shared — Kaelith slept too. The stream moved in the dark. The stars resonated through the Pallor's wounded skin. / The watch rotation was never established. / Nothing happened in the night except the ordinary passage of hours through a world slowly coming apart, and two people sleeping near each other because they wanted to, and that wanting being enough.' — One clean closing. Triple-parallel cut. 'Not touching, not quite' cut. 'Operative and target' cut. 'For the first time' cut.",
+      "fixAdequate": true,
+      "notes": "Three closings consolidated to one, exactly as recommended. The surviving closer (line 291) is tightened from the original. The preceding sentence ('She slept. Beside her — close enough that the warmth was shared — Kaelith slept too.') lets proximity speak for itself without philosophical annotation. This is the strongest structural improvement in the revision."
+    },
+    {
+      "findingId": "LINE-010-006",
+      "severity": "major",
+      "source": "line-edit",
+      "category": "prose / narrated-emotion",
+      "description": "Scene 3 opening narrates emotional event through intellectual analysis rather than sensory experience",
+      "verificationMethod": "direct text comparison of Scene 3 opening paragraphs",
+      "draftEvidence": "Draft lines 164-180: Dense analytical meta-commentary. 'Lirien catalogued the difference with the precision of someone whose survival depended on reading atmospheric shifts. Operational silence was dense — a medium through which information traveled...' Five uses of 'operational' in 18 lines. Explicit narration of system failure rather than shown system failure.",
+      "revisedEvidence": "Revised lines 203-217: 'The silence that followed was different. / Lirien's hand moved toward the documents. Tomorrow's route needed calculating... / She stopped. Let her hand rest on her knee. / The fire burned. The stream murmured against the limestone channel... the silence between them was simply quiet. / She was sitting by a fire with someone. The impulse to fill the quiet surfaced... / She let it pass.' — Choice shown through physical action (reaching, stopping). Environment carries emotional weight. Analytical meta-commentary replaced with sensory grounding.",
+      "fixAdequate": true,
+      "notes": "The DEV-010-008 suggestion (Lirien almost retreating to operations) is naturally integrated, making the choice to sit in silence active and visible. Prose texture change is genuine: shorter sentences, more sensory detail, less analytical vocabulary. The reader feels the system going quiet rather than being told about it."
+    },
+    {
+      "findingId": "COPY-010-001",
+      "severity": "major",
+      "source": "copy-edit",
+      "category": "naming — Seventh/Sixth Seat discrepancy",
+      "description": "Pre-existing cross-document discrepancy between chapter text and politics.json",
+      "verificationMethod": "Reviewed revision log justification",
+      "draftEvidence": "Chapter uses 'Seventh Seat' consistently with ch12, ch13, ch15, ch21.",
+      "revisedEvidence": "No chapter-level change. Chapter remains internally consistent with all other chapters. World-bible-level resolution deferred to appropriate agent.",
+      "fixAdequate": true,
+      "notes": "Correct decision. This is tracked as DISC-001 in the continuity tracker. Chapter-level change would introduce inconsistency with 5 other chapters. Requires world-bible politics.json update, not chapter revision."
+    },
+    {
+      "findingId": "COPY-010-002",
+      "severity": "major",
+      "source": "copy-edit",
+      "category": "naming — unestablished location",
+      "description": "'Dawnward Range' not in world-bible geography",
+      "verificationMethod": "grep for 'Dawnward' and 'Vireth' in revised",
+      "draftEvidence": "Draft line 140: 'the Dawnward Range.'",
+      "revisedEvidence": "grep confirms 0 hits for 'Dawnward', 2 hits for 'Vireth' in revised. Line 179: 'near the Vireth Range.' Line 205: 'distance to the Vireth Range approach.'",
+      "fixAdequate": true,
+      "notes": "Verified fixed."
+    },
+    {
+      "findingId": "COPY-010-003",
+      "severity": "major",
+      "source": "copy-edit",
+      "category": "factual — Oathbrand color",
+      "description": "Oathbrand described as 'silver-blue' instead of canonical 'silver-black'",
+      "verificationMethod": "grep for 'silver-blue' and 'silver-black' in revised",
+      "draftEvidence": "Draft line 108: 'silver-blue glow.'",
+      "revisedEvidence": "grep confirms 0 hits for 'silver-blue', 1 hit for 'silver-black' in revised. Line 143: 'The Oathbrand's silver-black glow was steadier in darkness.'",
+      "fixAdequate": true,
+      "notes": "Verified fixed. Consistent with MAG-008 and CHAR-001 canonical description."
+    },
+    {
+      "findingId": "COPY-010-004",
+      "severity": "major",
+      "source": "copy-edit",
+      "category": "factual — Oathbrand anatomical placement",
+      "description": "Oathbrand glow visible 'through her sleeve' instead of at collarbone",
+      "verificationMethod": "grep for 'sleeve' and 'collarbone' in revised",
+      "draftEvidence": "Draft line 212: 'the Oathbrand's glow through her sleeve.'",
+      "revisedEvidence": "grep confirms 0 hits for 'sleeve', 1 hit for 'collarbone' in revised. Line 249: 'The firelight caught the Oathbrand's glow through the linen at her collarbone.'",
+      "fixAdequate": true,
+      "notes": "Verified fixed. Consistent with CHAR-001 physical description and ch8 revised."
+    }
+  ],
+  "minorFindingsVerification": {
+    "summary": "All 15 minor findings verified as addressed. Key verifications:",
+    "findings": [
+      {
+        "findingId": "LINE-010-007",
+        "verified": true,
+        "note": "'The words hung in the air' cliché → 'The fire popped. Neither of them spoke.' Clean replacement."
+      },
+      {
+        "findingId": "LINE-010-008",
+        "verified": true,
+        "note": "'terrible resignation' emotion label → 'The jaw held steady. The eyes stayed level. Nothing moved — and the stillness was the answer.' Shown through physical observation."
+      },
+      {
+        "findingId": "LINE-010-009",
+        "verified": true,
+        "note": "'surrender' label eliminated via LINE-010-005 closing consolidation."
+      },
+      {
+        "findingId": "LINE-010-010",
+        "verified": true,
+        "note": "85-word polysyndeton sentence broken into 3 sentences. Also addresses COPY-010-004."
+      },
+      {
+        "findingId": "LINE-010-011",
+        "verified": true,
+        "note": "Awkward phrasing 'precision Lirien had not intended to carry implication' → 'words carried an implication Lirien had not intended.'"
+      },
+      {
+        "findingId": "LINE-010-012",
+        "verified": true,
+        "note": "'timber' → 'timbre'. Homophone corrected. Also addresses COPY-010-005."
+      },
+      {
+        "findingId": "LINE-010-013",
+        "verified": true,
+        "note": "'processed...processed' → 'handled...seen.' Repetition eliminated."
+      },
+      {
+        "findingId": "LINE-010-014",
+        "verified": true,
+        "note": "Second vocabulary-catch device softened: 'Her word.' removed from parenthetical."
+      },
+      {
+        "findingId": "LINE-010-015",
+        "verified": true,
+        "note": "'something [abstract]' reduced from 5 to 2 uses."
+      },
+      {
+        "findingId": "LINE-010-016",
+        "verified": true,
+        "note": "Long coast-narrative paragraph broken with Lirien gesture (shifting closer, branch to turn)."
+      },
+      {
+        "findingId": "LINE-010-017",
+        "verified": true,
+        "note": "Briefing monologue broken with 'Kaelith's hand stilled on her knee' action beat. 'Lirien organized' → 'Lirien began at the foundation.'"
+      },
+      {
+        "findingId": "COPY-010-005",
+        "verified": true,
+        "note": "'timber' → 'timbre.' Same fix as LINE-010-012."
+      },
+      {
+        "findingId": "COPY-010-006",
+        "verified": true,
+        "note": "'from the coast.' → 'from the coast?' Question mark added."
+      },
+      {
+        "findingId": "COPY-010-007",
+        "verified": true,
+        "note": "'the Chancellor's pennant' → 'the Conclave's pennant.' Governance terminology aligned."
+      },
+      {
+        "findingId": "COPY-010-008",
+        "verified": true,
+        "note": "Reviewed-no-change. 'What else' as statement is deliberate voice choice (Kaelith's statements-not-questions pattern). Accepted."
+      }
+    ]
+  },
+  "regressionFindings": {
+    "voiceRegression": "none",
+    "voiceMarkerSaturationRegression": "none — revised chapter has significantly FEWER voice markers per page than draft, especially in Scene 3. No over-application of markers detected. The reduction feels organic.",
+    "dialogueNaturalismRegression": "none — all dialogue preserved or improved. New strategic debate dialogue (lines 185-189) is natural and distinctively voiced. No artificial over-characterization.",
+    "continuityErrors": "none — all established facts verified: Wending timeline (3 days), Oathbrand status (pre-removal), information asymmetry maintained, character knowledge states correct. New Thenndal content is consistent with developmental editor's recommended integration.",
+    "pacingDisruption": "none — three-scene descending tension structure preserved. New content (Thenndal subplot, extended debate, Lirien's near-retreat) integrated without disrupting flow. Removed content (stacked closings, meta-commentary, redundant metaphors) tightens rather than disrupts.",
+    "newCliches": "none detected",
+    "newShowDontTellViolations": "none — new content consistently shows through action and physical observation. Kaelith's reaction to withholding shown through posture change (line 159). Lirien's choice to sit in silence shown through reaching-and-stopping action (lines 205-207).",
+    "awkwardTransitions": "none — edit boundaries are seamless. The Thenndal insertion follows naturally from the archive investigation. The extended debate integrates within the existing strategic conversation."
+  },
+  "darlingsSurvived": {
+    "count": 0,
+    "details": "All editor-flagged darlings addressed. Draft line 246 triple-parallel ('also resting, also softening, also allowing') — cut. Draft line 248 'operative and target' / 'quieter and smaller and more honest' — cut. Draft line 230 'because the ocean did not respect the structural ambitions of eleven-year-olds' — cut. Draft line 166 'the water in which she swam with such practiced ease that she sometimes forgot she was swimming at all' — cut. No darlings survived unchanged after being flagged."
+  },
+  "traceabilityAudit": {
+    "status": "complete",
+    "frontmatterFindingIds": 33,
+    "revisionLogEntries": 35,
+    "deferredEntries": 2,
+    "orphanedChanges": 0,
+    "notes": "Every change in the revised chapter traces to a specific finding ID. The 2 deferred findings (COPY-010-009, COPY-010-010) are continuity-tracker-level issues correctly outside chapter-revision scope. No changes were made without corresponding finding IDs."
+  },
+  "wordCountAnalysis": {
+    "draftWordCount": 4576,
+    "revisedWordCount": 3875,
+    "changeAbsolute": -701,
+    "changePercent": -15.3,
+    "chapterTargetWordCount": 4100,
+    "deviationFromTarget": -5.5,
+    "justification": "Reduction results from cumulative tightening across 6+ line-edit findings: negation reduction (~40 to ~12), operative vocabulary reduction (~35 to ~8 in Scene 3), water metaphor reduction (10 to 3), 'the way' construction reduction (14 to 2), closing consolidation (3 → 1), meta-commentary reduction (~60% in Scene 3 opening). Despite the reduction, all structural beats, subplot intersections, and emotional milestones are preserved, and new content was added (Thenndal subplot, extended strategic debate, extended withholding reaction, Lirien near-retreat moment). The tighter prose serves the chapter's emotional thesis.",
+    "verdict": "acceptable — exceeds 10% threshold but with detailed structural justification and no loss of narrative content"
+  },
+  "overallAssessment": "Chapter 10 revision is thorough, well-executed, and represents a significant quality improvement over the draft. Both critical findings (negation pattern saturation, voice marker saturation) are verified as addressed with substantial quantitative reductions and qualitative prose improvement. All 10 major findings are verified as addressed — structural changes (Reyvas scale-back, Thenndal subplot, extended debate) and prose changes (metaphor reduction, closing consolidation, meta-commentary simplification) are all confirmed through text comparison. No regression detected in voice, continuity, pacing, dialogue, or craft tool compliance. The revised Scene 3 is particularly successful: the prose texture genuinely changes when Lirien's operative system goes quiet, embodying the emotional shift rather than narrating it. The closing has been transformed from purple-prose stacking into clean, earned restraint. New content (Thenndal subplot, extended debate, deepened withholding reaction) is well-integrated and serves multiple narrative functions. The chapter proceeds to beta reading.",
+  "warnings": [],
+  "warningCount": 0,
+  "automaticFailTriggers": [],
+  "automaticFailCount": 0,
+  "remediationNotes": [],
+  "proceedsTo": "beta-reading"
+}

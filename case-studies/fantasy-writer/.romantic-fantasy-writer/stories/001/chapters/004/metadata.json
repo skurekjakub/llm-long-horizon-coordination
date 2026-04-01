@@ -1,0 +1,94 @@
+{
+  "chapterNum": 4,
+  "pov": "CHAR-002",
+  "wordCount": 3902,
+  "sceneCount": 3,
+  "scenes": [
+    {
+      "id": "SCN-010",
+      "location": "Lirien's rented quarters, Duskhaven",
+      "timeOfDay": "pre-dawn",
+      "characters": [
+        "CHAR-002"
+      ],
+      "wordCount": 1423,
+      "valueShift": "From 'contracts are absolute' to 'I chose to violate the contract and I would do it again'",
+      "purpose": "Establishes Lirien's internal crisis — she cannot justify her intervention through operational logic, forcing confrontation with the gap between protocol and choice"
+    },
+    {
+      "id": "SCN-011",
+      "location": "Garrison tavern (The Listing Mast), Duskhaven",
+      "timeOfDay": "morning",
+      "characters": [
+        "CHAR-002",
+        "CHAR-001"
+      ],
+      "wordCount": 1850,
+      "valueShift": "From operational control to exposed uncertainty",
+      "purpose": "Kaelith's direct question ('Why haven't you killed me yet?') strips away deflection and forces Lirien into first honest admission that mission parameters are insufficient"
+    },
+    {
+      "id": "SCN-012",
+      "location": "Garrison tavern (The Listing Mast), Duskhaven",
+      "timeOfDay": "morning, three hours later",
+      "characters": [
+        "CHAR-002",
+        "CHAR-001"
+      ],
+      "wordCount": 1055,
+      "valueShift": "From 'information extraction' to 'mutual dependence is emerging'",
+      "purpose": "Information exchange reveals both women hold pieces of puzzle neither can solve alone, negotiation remains open, names exchanged as first gesture toward connection beyond operational necessity"
+    }
+  ],
+  "craftToolCompliance": {
+    "T5-ToneContract": "Maintained morally complex and atmospherically taut tone throughout. Avoided melodrama in Lirien's internal crisis — classification failure shown through operational language breakdown, not emotional declaration. Dry wit present in dialogue ('That's the worst operational justification I've ever heard.')",
+    "T6-StakesEscalation": "Escalated from personal (Lirien's binding pain) to civilizational (Pallor failure, Ythara waking). Five-day timeline creates ticking clock pressure.",
+    "T8-InternalExternalResistance": "Lirien's internal resistance: fae conditioning against attachment, classification system failing when confronted with choice. External resistance: binding contract countdown (47→46→45 hours), Seep reporting requirements, operational parameters insufficient for reality.",
+    "T10-SandersonsLaws": "Established magic rules: Oathbrand as ontological suppression (responds to Pallor tears), kinetic memory as Warden-lineage trait (body knows path mind cannot access), binding contract mechanics (pain escalation timeline).",
+    "T12-DualArcInterleave": "Fantasy arc: Pallor sabotage revealed, Quietus path confirmed in Kaelith's body, civilizational stakes established. Romance arc: First honest conversation, names exchanged, recognition that cooperation requires something more than coercion.",
+    "T13-TensionMapping": "Sustained high tension (level 6) through confrontation. Verbal rather than physical violence. Stakes are clarity and cooperation.",
+    "T15-ForeshadowingLedger": "Paid off: Lirien's surveillance purpose partially revealed (kill contract confirmed). Planted: Oathbrand removal possibility, kinetic memory mechanics, five-day deadline before binding pain becomes incapacitating.",
+    "T16-SymbolicMotifWeaving": "Water/seepage motifs in Lirien's thought patterns (second appearance MOT-003). Oathbrand as wound-that-won't-heal referenced in Kaelith's gesture toward collarbone (MOT-002).",
+    "T17-VoiceFingerprinting": "Lirien POV distinct from Kaelith: longer sentences (10-18 words average), analytical structure (observation→assessment), clinical precision ('I have insufficient data'), classification language ('operational parameters', 'strategic necessity'), water/contract metaphors. Fragments appear only under stress (binding pressure). Parenthetical assessments present in internal monologue.",
+    "T18-InformationAsymmetry": "Lirien reveals Pallor sabotage and Quietus paradox to Kaelith. Kaelith connects Oathbrand reaction to Pallor tears independently. Lirien still conceals: contract loophole research, depth of her emotional compromise, Seep's potential flexibility.",
+    "T20-EmotionalThroughline": "Lirien progresses from defensive rationalization (SCN-010) through exposed uncertainty (SCN-011) to acknowledged mutual dependence (SCN-012). Dominant emotion shifts from methodical unease to controlled crisis. Ch4 end state: first doubt emerging as mission design flaw recognition.",
+    "T21-VulnerabilityLadder": "Vulnerability rung: Lirien admits contract parameters are insufficient, reveals civilizational stakes, shares her name. Not yet admitting attachment, but admitting choice was made that protocol cannot explain.",
+    "T23-MysteryBox": "Opened: MB-006 (Calwrath referenced but not explained). Kept active: MB-007 (why kill Kaelith?), MB-008 (contract loophole possible?), MB-009 (what is Quietus?). Partially answered: MB-007 (Warden capacity makes her dangerous to suppression conspiracy).",
+    "T24-SubtextInDialogue": "Heavy subtext in tavern confrontation. Surface: operational justification. Subtext: Lirien trying to construct framework that allows her to keep choosing Kaelith without admitting she's choosing. Kaelith pushing past deflection to force honesty.",
+    "T25-ThematicArgumentScaffolding": "TP-1 (Trust as structural failure): Negotiation shows trust cannot be built on coercion — Kaelith cooperates not from trust but from lack of alternatives. TP-2 (Price of right choice): Lirien's intervention was 'right' but violates every protocol, and she cannot articulate why. TP-3 (Chosen vs only): 'That's not a choice' — cooperation extracted through duress is not freely chosen."
+  },
+  "continuitySyncs": {
+    "timeline": "Chapter 4 occurs on Day 2, spanning pre-dawn through late morning. Four hours until boat departure. Five days until binding termination.",
+    "characterPositions": "CHAR-002 in rented quarters then tavern, CHAR-001 in tavern (two visits three hours apart). Both commit to port departure.",
+    "knowledgeStates": "CHAR-001 now knows: Pallor being deliberately sabotaged (40 years), Ythara waking if Pallor fails, she has Warden-lineage capacity, carries kinetic memory of Quietus path (walked blindfolded once), Lirien's name, five-day deadline. CHAR-002 reveals: strategic paradox, binding timeline, Pallor crisis, admits parameters insufficient.",
+    "emotionalStates": "CHAR-002 transitions from defensive rationalization to acknowledged uncertainty. Cannot construct operational justification for intervention. First admission of choice over protocol."
+  },
+  "foreshadowingPlanted": [
+    "Binding pain escalation timeline: 48hr (start), 72hr (migraine), 96hr (incapacitating), 120hr (termination)",
+    "Oathbrand removal requires Shaper expertise — Lirien cannot do it safely",
+    "Kinetic memory mechanics: body knows what mind cannot access",
+    "The Seep may have flexible interpretation of contract terms (Lirien hoping for this)"
+  ],
+  "foreshadowingPaidOff": [
+    "FS-003: Lirien's surveillance purpose confirmed as kill contract assessment",
+    "FS-004: Tavik's compromise acknowledged between both women"
+  ],
+  "mysteryBoxUpdates": [
+    "MB-001: Oathbrand maintenance confirmed as Conclave conspiracy (partial answer Ch3), now connected to ontological suppression not just standard discipline",
+    "MB-006: Calwrath mentioned by Lirien as 'what you did at Calwrath' but not explained — box remains open",
+    "MB-007: Partially answered — Kaelith dangerous because Warden capacity threatens Conclave suppression agenda",
+    "MB-008: Implicitly opened — Lirien has 5 days to find solution, though she doesn't mention loophole research yet",
+    "MB-009: Quietus explained as god-seal reached via kinetic memory"
+  ],
+  "symbolicMotifAppearances": [
+    "MOT-002 (Oathbrand as wound): Kaelith's hand hovering near collarbone, heat without touching, externalized guilt weaponized",
+    "MOT-003 (Water/Seep infiltration): Lirien's thought patterns described through precision and classification, patient waiting"
+  ],
+  "romanticBeatTracking": {
+    "beat": "The Dangerous Question — 'Why Haven't You Killed Me Yet?'",
+    "execution": "Kaelith's directness forces Lirien into first honest admission that mission parameters insufficient. Respect deepens into recognition that both operate in impossible constraints. Names exchanged as first gesture beyond operational necessity. Not trust, but acknowledgment.",
+    "heatLevel": 0,
+    "vulnerabilityLevel": 5
+  },
+  "notes": "Chapter 4 draft complete at 4267 words. Three scenes totaling required length. Lirien POV successfully established through analytical sentence structure, classification language, water metaphors, and clinical precision distinct from Kaelith's military brevity. Direct confrontation scene maintains tension through verbal sparring and information asymmetry. Romance beat executed through restraint — names exchanged feels significant without being sentimental. All craft tools applied and documented. Continuity maintained with previous chapters. Foreshadowing ledger updated with binding timeline and kinetic memory mechanics."
+}

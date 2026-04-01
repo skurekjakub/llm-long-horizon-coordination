@@ -1,0 +1,131 @@
+{
+  "agent": "docwriter-persona-reviewer",
+  "taskId": "T-004",
+  "verdict": "approved",
+  "personaChecks": [
+    {
+      "check": "front-matter-personas",
+      "result": "pass",
+      "declaredPersonas": ["business"],
+      "evidence": "Front matter declares 'persona: business'. The page lives under business-users/website-content/ and contains UI-driven procedural content aimed at non-technical users. Single persona assignment is correct per INV-persona-002 (business guides → 'business')."
+    },
+    {
+      "check": "tone-business",
+      "result": "pass",
+      "evidence": "The added callout uses plain, friendly language: 'To create a page, you need *Read* and *Create* page permissions on the parent page under which you want to place the new page.' No developer jargon (no ACL, API, SDK, code references). 'Read' and 'Create' are italicized UI-facing permission names, not technical terms. The sentence is direct, uses 'you', and keeps to one clear statement. Consistent with INV-persona-013 (friendly, positive tone; no special terminology; words understandable by a general audience)."
+    },
+    {
+      "check": "depth-calibration",
+      "result": "pass",
+      "evidence": "The callout provides exactly the right depth for business users: it states what permissions are needed and links to the full permissions page for details. It does not explain the permission inheritance model, API internals, or configuration steps — those details are appropriately left to the linked developer/admin page. Business users learn what they need without being overwhelmed."
+    },
+    {
+      "check": "vocabulary-accessibility",
+      "result": "pass",
+      "evidence": "All terms used are either everyday English ('create a page', 'parent page', 'you need') or official product UI labels ('Read', 'Create', 'page permissions'). No specialized developer terminology. Meets INV-persona-007 (simple, ordinary, everyday words for non-native English speakers)."
+    },
+    {
+      "check": "cross-persona-terminology",
+      "result": "pass",
+      "evidence": "No developer or admin terminology leaks into this business-user page. The permission reference uses the same user-facing terminology as the sibling page edit-and-publish-pages.md (e.g., '*Read* and *Update* page permissions'). Meets INV-persona-016 (do not use terminology from another persona's domain)."
+    }
+  ],
+  "classificationCheck": {
+    "declared": "howto",
+    "actual": "howto",
+    "result": "pass",
+    "evidence": "Page contains numbered, goal-oriented procedural steps for creating and cloning pages. The added callout is a prerequisite note within the procedure, not a conceptual explanation. Content matches 'howto' classification."
+  },
+  "taxonomyChecks": [
+    {
+      "field": "persona",
+      "result": "pass",
+      "value": "business"
+    },
+    {
+      "field": "identifier",
+      "result": "pass",
+      "value": "LwKQC"
+    },
+    {
+      "field": "title",
+      "result": "pass",
+      "value": "Create pages"
+    },
+    {
+      "field": "order",
+      "result": "pass",
+      "value": 100
+    },
+    {
+      "field": "license",
+      "result": "pass",
+      "value": 1
+    },
+    {
+      "field": "redirect_from",
+      "result": "pass",
+      "value": "x/LwKQC"
+    }
+  ],
+  "consistencyCheck": {
+    "result": "pass",
+    "notes": "All sibling pages in the Website Content topic cluster (delete-pages, edit-and-publish-pages, secure-pages, translate-pages, etc.) target 'business' persona. The edit-and-publish-pages.md page uses the identical pattern for permission callouts ('*Read* and *Update* page permissions' with page_link to permissions_pagelevel_xp). The create-pages callout follows this established convention. The only minor difference is the use of {% info %} vs {% note %} tags for the callout — this is a style concern outside persona review scope."
+  },
+  "invariantResults": [
+    {
+      "invariantId": "INV-persona-001",
+      "result": "pass",
+      "evidence": "Front matter 'persona: business' uses a valid persona value from the allowed set (developer, admin, business, architect, all)."
+    },
+    {
+      "invariantId": "INV-persona-002",
+      "result": "pass",
+      "evidence": "Business guide correctly assigned 'business' persona. No admin or architect content present that would require additional persona tags."
+    },
+    {
+      "invariantId": "INV-persona-007",
+      "result": "pass",
+      "evidence": "Content uses simple, ordinary words accessible to non-native English speakers. Permission names ('Read', 'Create') are product-specific terms clearly marked with italics."
+    },
+    {
+      "invariantId": "INV-persona-012",
+      "result": "pass",
+      "evidence": "Content is written with clear understanding of the business persona: task-oriented, UI-driven, no implementation details."
+    },
+    {
+      "invariantId": "INV-persona-013",
+      "result": "pass",
+      "evidence": "Friendly, positive tone. Single clear statement per callout. No special terminology. Words understandable by a general audience."
+    },
+    {
+      "invariantId": "INV-persona-014",
+      "result": "pass",
+      "evidence": "Content correctly assumes business users work on a team with technical people. The callout states the permission requirement and links to the full permissions page where admins can configure permissions — it doesn't ask the business user to configure permissions themselves."
+    },
+    {
+      "invariantId": "INV-persona-016",
+      "result": "pass",
+      "evidence": "No developer or admin terminology used in this business-user page. Permission names are product UI labels, not technical jargon."
+    },
+    {
+      "invariantId": "TINV-001",
+      "result": "pass",
+      "evidence": "This invariant applies at the task-set level. T-004 covers the business user scenario (permission callout on the create-pages page). The developer scenario is covered by T-001 (the permissions reference page). Individual pages correctly target their specific persona."
+    },
+    {
+      "invariantId": "INV-jekyll-004",
+      "result": "pass",
+      "evidence": "Front matter contains all required fields: title, identifier, order, redirect_from, persona, license."
+    }
+  ],
+  "summary": {
+    "personaChecksPassed": 5,
+    "personaChecksFailed": 0,
+    "classificationCorrect": true,
+    "taxonomyComplete": true,
+    "invariantsPassed": 9,
+    "invariantsFailed": 0
+  },
+  "timestamp": "2026-03-18T18:04:09Z"
+}

@@ -1,0 +1,252 @@
+{
+  "chapterNumber": 1,
+  "editorType": "line",
+  "generatedAt": "2026-03-20T08:00:00Z",
+  "overallProseAssessment": "This is strong, voice-driven prose that establishes Kaelith's POV with remarkable clarity within the first three sentences. The chapter's best writing — the Pallor tear, the Tavik confrontation, the seawall bookend — operates at publication quality. The emotional restraint is genuine, not affected; the tactile sensory anchoring is precise; and the short declarative rhythm creates a distinctive reading experience that matches the character's psychology. However, three prose-level patterns require attention before revision: (1) a pervasive tricolon habit that creates rhythmic monotony across the chapter, (2) repeated use of generic second-person 'you' that softens the close-third POV discipline, and (3) two metaphor domain violations where water and textile imagery intrudes on Kaelith's structural register. The cliché count sits at 3 (one above the style guide's maximum of 2), and several micro-tells explain subtext that the prose has already shown. These are correctable through targeted line revision without structural changes.",
+  "findings": [
+    {
+      "id": "LINE-001-001",
+      "severity": "major",
+      "category": "metaphor",
+      "location": "Line 34: 'silver flowing back into place like water finding level'",
+      "finding": "Water metaphor in Kaelith's POV violates the established metaphor domain policy. The style guide explicitly states: 'Do not give her water, garden, or dreamlike metaphors except in late-story moments where Lirien's influence is intentionally audible.' Water is Lirien's metaphor domain (currents, surfaces, permeability). This is Chapter 1, before Lirien has had any influence on Kaelith's thinking. The simile is elegant but belongs to the wrong character.",
+      "currentText": "The Pallor knit itself closed, silver flowing back into place like water finding level.",
+      "recommendation": "Replace with a metaphor from Kaelith's structural domain. The Pallor's self-repair should register as something settling, sealing, or closing like a material she understands. Suggested direction: 'silver settling back into place like mortar finding a joint' or 'silver pressing closed the way stone resettles after a tremor.' The concept of self-repair is the key — frame it as a structural event, not a fluid one."
+    },
+    {
+      "id": "LINE-001-002",
+      "severity": "major",
+      "category": "repetition",
+      "location": "Throughout chapter — lines 16, 20, 42-43, 130-131, 141, 160-161, 166, 186-187, 198",
+      "finding": "Tricolon overuse. The chapter deploys at least nine three-beat rhetorical patterns (anaphoric tricolons, escalating tricolons, and three-item lists), creating a rhythmic tic that dulls their individual impact and makes the prose predictable at the sentence level. Examples: 'when she moved her shoulder, when she thought too hard, when she woke' (L20); 'Force of habit. Force of training. Force of the part of her...' (L130); 'She didn't know... She didn't know... She didn't know...' (L160-161); 'Someone was maintaining it. Someone with access... Someone who wanted...' (L134-136); 'they'd moved on. Or died. Or just stopped caring' (L141); 'couldn't cross, couldn't break, couldn't negotiate with' (L187). When every third beat lands on a tricolon, no tricolon lands hard. This is the chapter's most significant prose-level weakness because the pattern is invisible to the writer but audible to the reader after the third or fourth occurrence.",
+      "currentText": "[Multiple instances — see location list]",
+      "recommendation": "Preserve the 3-4 strongest tricolons (the Oathbrand 'when' series at L20 and 'If. If. If.' at L192 are the most effective) and convert the rest to either dicolons (two-beat: tighter, less rhetorical) or four-beat lists (which break the tricolon expectation). For example: 'Force of habit. Force of the training that survived Calwrath.' (dicolon — cut the third). 'She didn't know who the fae woman was, or what Tavik had been told, or why five years of decay had suddenly produced a watcher.' (single complex sentence — collapses three parallel clauses into flowing syntax). The goal is rhythmic variation: tricolon is a strong tool, but when it becomes the default rhetorical shape, it stops working."
+    },
+    {
+      "id": "LINE-001-003",
+      "severity": "major",
+      "category": "POV-discipline",
+      "location": "Lines 27, 58, 67, 139, 146, 183, 190, 194 — at least eight instances of generic second-person 'you'",
+      "finding": "Repeated use of generic 'you' in close-third narration breaks POV intimacy and universalizes Kaelith's specific experience. Close-third POV's power is its restriction to one consciousness; generic 'you' steps outside that consciousness to make general observations about human nature. Examples: 'the way you stop noticing a ceiling' (L27), 'When you had nothing left to lose, you noticed threats' (L58), 'You assessed the threat, calculated your resources' (L146), 'the way you learn to live with any chronic ache' (L194). One or two per chapter would be a style choice; eight is a habit. Each instance subtly depersonalizes what should be viscerally Kaelith's.",
+      "currentText": "[Multiple instances — see location list]",
+      "recommendation": "Reduce to a maximum of 2-3 instances, positioned where the universalizing effect is most earned (the 'you' at L139 — 'you're not safe. You've never been safe' — is arguably Kaelith's internal address to herself, which is the strongest use). Convert the rest to close-third: 'the way she'd stopped noticing a ceiling' (L27); 'Exile had stripped away pretense; she noticed threats now because she'd stopped pretending they weren't there' (L58); 'She assessed the threat, calculated resources, made a decision' (L146). Each conversion pulls the reader closer to Kaelith rather than floating above her."
+    },
+    {
+      "id": "LINE-001-004",
+      "severity": "minor",
+      "category": "cliche",
+      "location": "Line 67: 'Merchants didn't watch like predators picking targets.'",
+      "finding": "The predator/prey metaphor for a dangerous character's surveillance is stock genre imagery. While 'predator smile' is explicitly banned in the style guide's prohibited phrases, 'predators picking targets' operates in the same well-worn territory. It's a shortcut that every reader of fantasy and thriller fiction has encountered dozens of times. Kaelith, a military commander, would more likely frame this observation in tactical terms specific to her experience.",
+      "currentText": "Merchants didn't watch like predators picking targets.",
+      "recommendation": "Replace with imagery from Kaelith's military register. A commander doesn't think 'predator' — she thinks in terms of operational behavior she's trained to recognize. Suggested direction: 'Merchants didn't hold a position and sight their target from it' or 'Merchants didn't acquire a line of sight and hold it like that.' Use the language of the threat assessment she'd actually perform."
+    },
+    {
+      "id": "LINE-001-005",
+      "severity": "minor",
+      "category": "cliche",
+      "location": "Line 58: 'That skill hadn't dulled. If anything, exile had sharpened it.'",
+      "finding": "The dulled/sharpened antithesis for describing skill retention is a commonplace metaphor — the kind of phrasing that could appear unrevised in any fantasy draft. The blade-sharpening metaphor for competence is overused in the genre. This is not a severe cliché, but it sits below the style guide's minimum metaphor originality standard ('phrased specifically enough that it could not be transplanted unchanged into a different fantasy novel').",
+      "currentText": "That skill hadn't dulled. If anything, exile had sharpened it.",
+      "recommendation": "Reframe in Kaelith's structural-engineering register. Suggested direction: 'That skill hadn't eroded. If anything, five years without distractions had stripped it to load-bearing essentials.' This replaces generic blade imagery with Kaelith's architectural vocabulary while conveying the same meaning."
+    },
+    {
+      "id": "LINE-001-006",
+      "severity": "minor",
+      "category": "cliche",
+      "location": "Line 157: 'the fog pressed against the window like something trying to get in'",
+      "finding": "The weather-as-ominous-presence personification ('fog pressed like something trying to get in') is a stock atmospheric beat. It personifies weather in a way that has no specificity to this world or this character. Kaelith thinks in structural terms — how a material behaves under pressure, not whether weather has intentions.",
+      "currentText": "Outside, the fog pressed against the window like something trying to get in.",
+      "recommendation": "Ground the fog in tactile/structural terms Kaelith would register. Suggested direction: 'Outside, the fog had closed against the glass — dense enough to muffle the square, the way packed earth muffles a sound you know should carry further.' Or simply cut to the factual: 'Outside, the fog sat thick against the glass. Visibility: ten feet, maybe less.' Both keep Kaelith's register and avoid the anthropomorphized-weather cliché."
+    },
+    {
+      "id": "LINE-001-007",
+      "severity": "minor",
+      "category": "metaphor",
+      "location": "Line 33: 'ragged at the edges like fabric pulled too tight' and Line 34: 'The Pallor knit itself closed'",
+      "finding": "Two textile metaphors in consecutive sentences for the Pallor's tear and self-repair ('fabric pulled too tight,' 'knit itself closed'). While textiles are not explicitly forbidden for Kaelith in the way water is, her metaphor domain is 'architecture, weight, pressure, stone, fire, and tactical geometry.' Textile metaphors belong to neither Kaelith nor Lirien's established domains. The 'knit' in particular anthropomorphizes the Pallor's repair process in a way that doesn't match Kaelith's materialist perception.",
+      "currentText": "The tear was maybe ten feet across, ragged at the edges like fabric pulled too tight. [...] The Pallor knit itself closed, silver flowing back into place like water finding level.",
+      "recommendation": "For 'fabric pulled too tight' — this is borderline acceptable because the Pallor IS described as a membrane (like skin), and stretched material is close to structural thinking. Consider: 'ragged at the edges like stone stressed past its tolerance.' For 'knit itself closed' — replace with structural repair language: 'sealed itself shut,' 'the Pallor pressed closed,' or 'the silver settled back into place.' The double textile pairing is the primary issue; fixing even one breaks the pattern."
+    },
+    {
+      "id": "LINE-001-008",
+      "severity": "minor",
+      "category": "show-dont-tell",
+      "location": "Lines 68-69: 'The message was clear: I'm not hiding. I'm here. Notice me.'",
+      "finding": "The phrase 'The message was clear:' is a micro-tell that announces the subtext of a gesture the prose has already shown. The preceding sentences — empty hands, visible, intentional positioning — have already communicated everything. 'The message was clear' explains the implication before the reader has a chance to register it themselves. This is particularly notable because it's the second such interior-attribution sequence in five lines (the first at L64-65: 'as if to say: I see you...'). Two back-to-back interpreted-intention sequences over-narrate what should be observed and assessed.",
+      "currentText": "The woman's hands were empty. Visible. That was intentional too. No weapon drawn, no threat offered, just presence. The message was clear: I'm not hiding. I'm here. Notice me.",
+      "recommendation": "Cut 'The message was clear' and let the italicized interior reading stand on its own, or better, cut the second attribution entirely and let the gesture speak. Suggested: 'The woman's hands were empty. Visible. That was intentional too. No weapon drawn, no threat offered — just presence, and the discipline to hold it.' This gives Kaelith's assessment of the behavior without stepping in to translate it."
+    },
+    {
+      "id": "LINE-001-009",
+      "severity": "minor",
+      "category": "show-dont-tell",
+      "location": "Line 91: 'His jaw tightened — a small motion, quickly suppressed, but she saw it.'",
+      "finding": "'But she saw it' is redundant in close-third POV. We are inside Kaelith's perception; if she narrates the jaw tightening and its suppression, she obviously saw it. The phrase breaks the immersive close-third by reminding the reader that someone is observing, rather than letting the observation simply exist.",
+      "currentText": "His jaw tightened — a small motion, quickly suppressed, but she saw it.",
+      "recommendation": "Cut 'but she saw it.' The sentence becomes: 'His jaw tightened — a small motion, quickly suppressed.' The observation speaks for itself. If you want to preserve the implication that she catches details others would miss, let the smallness of the detail ('a small motion, quickly suppressed') do that work — the specificity of the observation already proves her attentiveness."
+    },
+    {
+      "id": "LINE-001-010",
+      "severity": "minor",
+      "category": "show-dont-tell",
+      "location": "Lines 94-95: 'He said it like he'd rehearsed. Like someone had told him what to say and he'd repeated it often enough to sound natural. Almost.'",
+      "finding": "Three sentences making the same observation: Tavik's response sounds rehearsed. 'Like he'd rehearsed,' 'Like someone had told him what to say and he'd repeated it often enough to sound natural,' and 'Almost' all convey the same judgment — that the answer is prepared but imperfect. The overexplanation diminishes Kaelith's sharpness; a commander who can read a battlefield would register this in one precise assessment, not three overlapping ones.",
+      "currentText": "He said it like he'd rehearsed. Like someone had told him what to say and he'd repeated it often enough to sound natural. Almost.",
+      "recommendation": "Condense to one observation and the punctuating 'Almost.' Suggested: 'He said it like a man who'd practiced. Almost naturally.' Or: 'He said it the way soldiers recite orders they didn't write. Almost naturally.' The single assessment + the qualifying 'Almost' is sharper and more Kaelith."
+    },
+    {
+      "id": "LINE-001-011",
+      "severity": "minor",
+      "category": "show-dont-tell",
+      "location": "Line 110: 'Something moved through his expression — not anger, but something closer to fear. Old fear, the kind that had settled into habit.'",
+      "finding": "Naming 'fear' directly after showing the expression shifting. The 'not anger, but something closer to fear' construction names the emotion Kaelith is reading. The style guide mandates that emotions are conveyed through 'action, dialogue, physical sensation — never through labels' (INV-005). The mitigating factor is that this is Kaelith assessing Tavik's emotion, not her own — the prohibition is most strict for the POV character's internal states. Still, 'fear' is a label where a body-language descriptor would be more consistent.",
+      "currentText": "Something moved through his expression — not anger, but something closer to fear. Old fear, the kind that had settled into habit.",
+      "recommendation": "Show the physical markers of chronic, habitual fear rather than naming it. Suggested direction: 'Something moved through his expression — not anger, but something older and quieter. The tension of a man who has learned when to stop talking.' This describes the effect of long-settled fear without the label, trusting the reader to recognize what lives underneath."
+    },
+    {
+      "id": "LINE-001-012",
+      "severity": "minor",
+      "category": "show-dont-tell",
+      "location": "Line 85: 'He looked up when she entered, and something in his face shifted. Not surprise. Resignation.'",
+      "finding": "Similar to LINE-001-011: the emotion 'Resignation' is named directly after being shown through the facial shift. In isolation this is a mild instance — Kaelith quickly categorizes what she observes, which is consistent with her tactical assessment pattern. But combined with the 'fear' label at L110, it establishes a pattern of emotion-naming in Tavik's reactions that slightly contradicts the show-don't-tell discipline maintained everywhere else in the chapter.",
+      "currentText": "He looked up when she entered, and something in his face shifted. Not surprise. Resignation.",
+      "recommendation": "This one is borderline acceptable — Kaelith's rapid categorization ('Not surprise. Resignation.') reads as her assessment shorthand, which is in-character. If keeping one and cutting the other, this is the weaker candidate for revision. If revising: 'He looked up when she entered, and his shoulders dropped a fraction. Not startled — settled, like a man who'd been waiting for a knock he'd hoped wouldn't come.' Shows the emotion through body language specific enough to be resignation without the label."
+    },
+    {
+      "id": "LINE-001-013",
+      "severity": "minor",
+      "category": "dialogue",
+      "location": "Lines 108-109: 'She said it flatly, without accusation, because accusation would let him defend himself. This way he just had to sit with it.'",
+      "finding": "The beat after 'You're lying' explains Kaelith's tactical reasoning for her delivery. While this IS consistent with her thought patterns (she frames interpersonal dynamics as tactical problems), the explanation undercuts the impact of the dialogue itself. 'You're lying.' said flatly is devastating. The narrator then stepping in to explain why flatness is a tactical choice dilutes the devastation by turning the reader into a student of Kaelith's interrogation technique rather than an experiencer of its force.",
+      "currentText": "'You're lying.' She said it flatly, without accusation, because accusation would let him defend himself. This way he just had to sit with it.",
+      "recommendation": "Trust the dialogue and the delivery. Suggested: ''You're lying.' She said it the way she'd say 'the wall needs pointing' — a statement of material fact.' This shows the flatness through comparison (in Kaelith's structural register) without explaining the tactic. Or simply: ''You're lying.' Flat. A fact of engineering, not an accusation.' The reader will understand the tactic from the effect on Tavik."
+    },
+    {
+      "id": "LINE-001-014",
+      "severity": "suggestion",
+      "category": "MRU",
+      "location": "Lines 62-72: Kaelith's first sight of Lirien",
+      "finding": "The MRU (Motivation-Reaction Unit) sequence for Kaelith's first encounter with Lirien is: external stimulus (sees woman) → rational assessment (build, posture, clothing, gaze behavior). The involuntary physical reaction step is absent — no micro-beat of body response before the tactical analysis begins. The character profile specifies that attraction at this stage 'registers only as heightened threat perception — heat in Kaelith's palms, disruptive target interference.' The developmental editor flagged this same absence (DEV-001-005). At the prose level, the missing beat creates an MRU gap: Kaelith goes from perception to rational assessment with no involuntary channel between them. Even for a suppressed character, the body responds before the mind categorizes.",
+      "currentText": "A woman stood at the corner of the market square, thirty feet away. Fae, or close enough that the difference didn't matter. [Immediately proceeds to physical inventory and assessment]",
+      "recommendation": "Insert one brief involuntary beat between seeing Lirien and assessing her — frame it as a threat response, not attraction. Suggested: after 'Grey-blue eyes that didn't look away when Kaelith met them,' add something like: 'Her palms went warm. The brand pulsed once — a single sharp beat, then nothing.' Kaelith would attribute this to the brand reacting to a fae presence (tactile sensation, her primary channel), not to the woman herself. This plants the romance seed invisibly while completing the MRU sequence."
+    },
+    {
+      "id": "LINE-001-015",
+      "severity": "suggestion",
+      "category": "word-choice",
+      "location": "Line 39: 'people remained people instead of becoming what they might have been'",
+      "finding": "This phrase, while beautiful and thematically resonant with the story's cosmology (Ythara = potential/unmade things), reads as conceptual exposition rather than Kaelith's tactical assessment. Kaelith standing on a seawall would be thinking about what breaks, not about ontological transformation. The phrase has the register of a narrator explaining the Pallor's function rather than a military exile calculating immediate consequences. The developmental editor also flagged this passage (DEV-001-004).",
+      "currentText": "Functional meant the world stayed finished — mountains kept their shapes, rivers remembered their courses, people remained people instead of becoming what they might have been.",
+      "recommendation": "Ground the Pallor's function in what Kaelith can see and assess from the seawall. The first two items (mountains, rivers) are observable. The third should be too. Suggested direction: 'Functional meant the world stayed finished — mountains kept their shapes, rivers remembered their courses, and the stone under her feet remained stone.' This replaces the abstract philosophical observation with a tactile, structural one that's truer to Kaelith's sensory signature."
+    },
+    {
+      "id": "LINE-001-016",
+      "severity": "suggestion",
+      "category": "sentence-rhythm",
+      "location": "Lines 176-179: Physical inventory list",
+      "finding": "The enumerated inventory ('two shirts, one coat, a pair of boots that needed resoling, a belt knife she'd kept sharp out of habit, and a leather satchel that held nothing worth keeping') runs to 30+ words in a single list. While the cataloging behavior is deeply Kaelith, the list's specificity doesn't earn its length — 'a pair of boots that needed resoling' and 'a leather satchel that held nothing worth keeping' contribute detail without commensurate dramatic payoff. The preceding 'She owned:' signals a tactical inventory, but the list reads more like packing than calculating. The dev editor flagged this for pacing (DEV-001-001); at the prose level, the issue is that this is Kaelith's flattest writing in the chapter — it lacks the compression and edge of her voice elsewhere.",
+      "currentText": "She owned: two shirts, one coat, a pair of boots that needed resoling, a belt knife she'd kept sharp out of habit, and a leather satchel that held nothing worth keeping. No armor. No weapons worth the name.",
+      "recommendation": "Compress to 2-3 items that carry emotional weight, then pivot to the tactical assessment. Suggested direction: 'She owned: a belt knife kept sharp from habit, two changes of clothes, and nothing else that would last a day on the road. No armor. No weapons worth the name.' The knife matters (competence-as-identity). The rest is 'nothing else' — which communicates poverty more efficiently than the list."
+    },
+    {
+      "id": "LINE-001-017",
+      "severity": "suggestion",
+      "category": "emotional-register",
+      "location": "Line 64-65: Interior attribution — 'as if to say: I see you. I want you to know I see you. What are you going to do about it?'",
+      "finding": "The three-sentence interior attribution of Lirien's implied message ('I see you. I want you to know I see you. What are you going to do about it?') is slightly long for Kaelith's assessment style. Her thought patterns are described as 'linear, tactical, and solution-oriented: observe threat, assess resources, choose action.' A three-sentence mind-reading is interpretive and rhetorical rather than tactical. Combined with the second attribution five lines later ('I'm not hiding. I'm here. Notice me.'), the effect is of Kaelith writing Lirien's internal monologue rather than reading her behavior.",
+      "currentText": "This woman held the gaze, steady and deliberate, as if to say: I see you. I want you to know I see you. What are you going to do about it?",
+      "recommendation": "Compress to the tactical read. Suggested: 'This woman held the gaze — steady, deliberate, and aimed.' Or: 'This woman held the gaze the way you hold a weapon: visibly, and on purpose.' Let the reader construct the dialogue from the behavior described. If keeping one interior attribution, make it the first and cut the second ('The message was clear: I'm not hiding...') entirely."
+    },
+    {
+      "id": "LINE-001-018",
+      "severity": "suggestion",
+      "category": "voice-consistency",
+      "location": "Line 25: 'the particular staleness of a place that functioned without purpose'",
+      "finding": "The phrase 'functioned without purpose' is an abstract conceptual observation. Kaelith's sensory signature is tactile/proprioceptive — she feels surfaces, weight, and temperature before she names abstractions. 'Staleness' is olfactory (good, specific), but 'functioned without purpose' moves from sensory to philosophical. The shift is subtle but slightly out of register for a paragraph that otherwise stays grounded in sense data (brine, wet stone, fog, boards rattling).",
+      "currentText": "Duskhaven smelled like brine and wet stone and the particular staleness of a place that functioned without purpose.",
+      "recommendation": "Replace the abstraction with a sensory equivalent. Suggested: 'Duskhaven smelled like brine and wet stone and the particular staleness of buildings maintained for no one.' This keeps the olfactory grounding while replacing the conceptual observation with an architectural one more native to Kaelith's register."
+    },
+    {
+      "id": "LINE-001-019",
+      "severity": "suggestion",
+      "category": "repetition",
+      "location": "Lines 14, 28, 60, 128, 159 — isolated one-line paragraphs",
+      "finding": "The chapter uses five isolated one-line paragraphs for emphasis: 'The Oathbrand flared.' (L14), 'The Pallor tore.' (L28), 'She turned.' (L60), 'They were shaking now.' (L128), 'She sat up.' (L159). The style guide specifies: 'Use isolated one-line paragraphs only for reversals, realizations, or emotional impacts that change the scene's value.' The first three are genuine reversals and pivots. 'They were shaking now' is an emotional reveal. But 'She sat up' (L159) is a physical action without reversal or realization — it's a transitional movement given emphasis it hasn't earned, which slightly cheapens the device for the stronger instances.",
+      "currentText": "She sat up.",
+      "recommendation": "Fold L159 into the surrounding prose rather than isolating it. The subsequent paragraph ('She didn't know who the fae woman was...') can absorb 'She sat up' as its opening: 'She sat up. She didn't know who the fae woman was.' This preserves the action while reserving the isolated-line device for its highest-impact uses."
+    },
+    {
+      "id": "LINE-001-020",
+      "severity": "suggestion",
+      "category": "micro-tension",
+      "location": "Lines 140-141: J.T. digression",
+      "finding": "The passage about the carved initials ('J.T. YK 718. Twelve years ago. Whoever J.T. was, they'd moved on. Or died. Or just stopped caring enough to carve their name into things.') is a well-crafted atmospheric beat that thematically mirrors Kaelith's own erosion. However, it arrives during the chapter's lowest-tension stretch (the post-Tavik introspection block), and the speculation about J.T. introduces a character who doesn't exist into a sequence where every sentence should be building pressure toward the stay-or-leave decision. The beat takes 2-3 sentences away from the accumulating dread and spends them on melancholy about a stranger. The micro-tension dips to its chapter nadir here.",
+      "currentText": "The wood was stained dark from years of damp, and someone had carved initials into the beam above the window: J.T. YK 718. Twelve years ago. Whoever J.T. was, they'd moved on. Or died. Or just stopped caring enough to carve their name into things.",
+      "recommendation": "Trim to the observation without the speculation. The carved initials work as environmental detail (Kaelith noticing the room's history, her tactile attention to surfaces). Suggested: 'The wood was stained dark from years of damp. Someone had carved initials into the beam above the window — J.T. YK 718 — but whoever they were, they hadn't stayed.' One sentence, same atmospheric function, faster return to the building tension."
+    }
+  ],
+  "voiceAssessment": {
+    "consistency": "Excellent. Kaelith's voice is maintained with near-perfect consistency across all three scenes and across all modes (patrol, surveillance assessment, confrontation, introspection). The short declarative default, the military register, the emotions-as-physical-sensation discipline, the structural metaphors, and the counting-as-coping behavior are all present from the first paragraph and never waver. The only moments where the voice slips are the water metaphor (L34), the textile metaphors (L33-34), and the generic 'you' constructions — which read as narrative habit rather than character voice.",
+    "distinctiveness": "Strong. A reader could identify this as Kaelith's POV within 3-4 sentences. The combination of stone-counting, wall-checking, military-tactical framing, and body-forward emotion creates a voice that is immediately recognizable and would not be confused with Lirien's analytical/observational register. The opening paragraph alone — 'checking mortar that did not need checking, doing work that was not work' — establishes a sensibility that is architectural, self-aware, and weary in a way that belongs to this specific character.",
+    "fingerPrintCompliance": "High compliance with 2-3 violations. Vocabulary level (formal-military with erosion): confirmed. Sentence rhythm (predominantly short, declarative, percussive): confirmed — approximately 65-70% of sentences fall in the 3-8 word range. Metaphor density (low and structural): confirmed with exceptions noted in LINE-001-001 and LINE-001-007. Emotional register (suppressed and body-forward): confirmed throughout — emotion appears as heat, pressure, stillness, jaw tension, shaking hands, and the brand's burn. Never as named internal states (for Kaelith herself). Thought patterns (linear, tactical, solution-oriented): confirmed. Sensory signature (tactile/proprioceptive): strongly confirmed. Humor (dry, flat, unannounced): present in the 'resources: none. Her options: fewer' beat. The profile specifies she 'does not use contractions in moments of emotional intensity' — this is not explicitly tested in Chapter 1 since she doesn't speak under extreme emotional pressure, but her internal narration maintains contractions in neutral passages and drops them in the more formal introspective passages, which is consistent."
+  },
+  "prosePatterns": {
+    "sentenceRhythm": "The default rhythm is well-calibrated: short declarative hits (3-8 words) dominate, with occasional medium sentences (10-18 words) for unfolding thought, and rare longer sentences (20-25 words) that signal emotional breach or complex assessment. The rhythm is percussive and distinctly Kaelith's. The primary rhythm issue is the tricolon overuse (see LINE-001-002), which creates a predictable three-beat cadence that becomes the chapter's unconscious metrical default. The isolated one-line paragraph device is used 5 times — 4 effectively, 1 (L159 'She sat up.') without sufficient justification. Scene transitions are clean hard cuts per the style guide. Paragraph lengths are well-controlled at 2-4 sentences typical.",
+    "repetitionIssues": "Three categories of repetition: (1) TRICOLON: 9+ three-beat patterns creating rhythmic monotony — the most significant repetition issue. (2) GENERIC 'YOU': 8+ instances of second-person universal, creating a secondary rhythmic tic. (3) WORD REPETITION: 'someone' appears 6 times in lines 134-137 alone (intentional anaphora, but dense). The word 'steady' appears 3 times (L20 'usual rhythm,' L42 'burned steady,' L72 'hands were steady') — not egregious but notable. 'Something' appears 4 times in close proximity in the Tavik scene (L85, L110 twice, L108 as 'nothing'). The echo patterns ('It never stopped' / 'It never really left' / 'The burning hadn't stopped') are deliberate and effective — these are motif echoes, not repetition failures.",
+    "clicheCount": 3,
+    "showDontTellViolations": "5 instances identified, all minor. (1) 'Not surprise. Resignation.' — names emotion after showing. (2) 'Old fear, the kind that had settled into habit' — names fear in Tavik's expression. (3) 'The message was clear' — announces subtext the prose has shown. (4) 'because accusation would let him defend himself' — explains tactical reasoning behind dialogue delivery. (5) 'He said it like he'd rehearsed' — overexplained across three sentences. None of these are show-don't-tell failures in Kaelith's OWN emotional state — they are micro-tells about observed behavior and tactical reasoning. The POV character's internal emotional discipline is maintained impeccably throughout: she never names what she feels, only what her body does. This distinction is important — the violations are in the narration of others' states, not self-narration."
+  },
+  "strengths": [
+    "The seawall bookend ('The seawall held. It always held.' → 'She just wasn't sure how long she would.') is the chapter's structural masterpiece — it transforms an environmental observation into a character revelation without a single word of interiority. The wall-as-self metaphor is the kind of motif that rewards re-reading and deepens with every chapter.",
+    "The Pallor tear sequence (L32-36) achieves genuine wonder within Kaelith's restrained register. 'Light that had traveled uninterrupted from something burning impossibly far away' is exactly how a tactile-structural mind would process beauty — through physics, distance, and the mechanics of transmission. This sentence is publication quality.",
+    "The Tavik confrontation is a masterclass in subtext-laden dialogue (T24). Every line operates on two levels: the surface exchange about a 'merchant liaison' and the subterranean exchange about institutional betrayal. 'Can't, or won't?' / 'Does it matter?' is the chapter's best two-line dialogue exchange — both questions mean more than they ask.",
+    "Kaelith's emotional discipline is shown, never stated. The shaking hands (L128) arriving after the controlled confrontation is the chapter's strongest show-don't-tell moment — the reader understands Kaelith's suppression and its cost through a single physical detail deferred until she is alone.",
+    "The counting motif (stones, joints, seconds, breaths, exits) functions simultaneously as voice marker, coping mechanism, military training residue, and structural rhythm. It is the most efficient character-building device in the chapter because it does four things at once without drawing attention to any of them.",
+    "The 'Her resources: none. Her options: fewer.' beat is perfectly calibrated deadpan humor — dry, dark, unannounced, with the joke (a comparative adjective applied to an already null quantity) arriving without any signal that it's funny. This is exactly the humor profile described in CHAR-001's character sheet.",
+    "The brand-as-physical-anchor works throughout: it burns in response to emotional states, to fae proximity, to stress — creating a constant tactile through-line that ties the chapter's disparate beats together through a single recurring sensation.",
+    "Information delivery is seamlessly integrated into action and assessment. The reader learns about the Oathbrand, the Pallor, the garrison, Duskhaven, the Ashborne Legion, and Calwrath without a single expository paragraph. Every piece of world-information arrives because Kaelith is doing something that requires it."
+  ],
+  "prioritizedRevisionOrder": [
+    "LINE-001-001",
+    "LINE-001-002",
+    "LINE-001-003",
+    "LINE-001-004",
+    "LINE-001-005",
+    "LINE-001-006",
+    "LINE-001-007",
+    "LINE-001-008",
+    "LINE-001-009",
+    "LINE-001-010",
+    "LINE-001-011",
+    "LINE-001-012",
+    "LINE-001-013",
+    "LINE-001-014",
+    "LINE-001-015",
+    "LINE-001-016",
+    "LINE-001-017",
+    "LINE-001-018",
+    "LINE-001-019",
+    "LINE-001-020"
+  ],
+  "findingCounts": {
+    "critical": 0,
+    "major": 3,
+    "minor": 10,
+    "suggestion": 7,
+    "total": 20,
+    "byCategory": {
+      "metaphor": 2,
+      "repetition": 2,
+      "POV-discipline": 1,
+      "cliche": 3,
+      "show-dont-tell": 5,
+      "dialogue": 1,
+      "MRU": 1,
+      "word-choice": 1,
+      "sentence-rhythm": 1,
+      "voice-consistency": 1,
+      "emotional-register": 1,
+      "micro-tension": 1
+    }
+  }
+}

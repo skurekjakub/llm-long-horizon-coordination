@@ -1,0 +1,51 @@
+{
+  "agent": "copy-editor",
+  "chapter": 22,
+  "action": "copy-edit",
+  "result": "completed",
+  "timestamp": "2025-08-01T14:30:00Z",
+  "passType": "comprehensive-re-edit",
+  "summary": "Ch22 comprehensive copy-edit complete. 10 findings (0 critical, 3 major, 1 moderate, 6 minor). Three major findings: (1) Systematic British English spelling throughout the chapter (11 instances: re-stabilisation, coloured, realised, fibres, humour, favouring, recognised, colour, catalogued ×3) where chs1-21 use American English; (2) 'Serath Dún' (acute ú) should be 'Serath Dûn' (circumflex û) per geography.json — 3 instances, also present in ch21; (3) Conclave response references 'The Seventh Seat' for Thalen Reyvas, continuing pre-existing DISC-001 (politics.json assigns him Sixth Seat). One moderate: 'divine corpse' contradicts magic-system.json which states the Sheltering One persists in a diminished conscious state (not dead). Six minor: missing article before 'divine corpse,' 'almost electric' anachronism, 'hedge-Shapers' vs established 'hedge-witches,' unspecified 'left' hand for frozen fingers, ambiguous pronoun 'its seal,' awkward intransitive 'released.' Magic system compliance verified — no violations. Bond mechanics consistent. All character names, place names, and timeline events verified. Dialogue formatting clean. Tense consistent (past throughout). No banned phrases. This supersedes the prior copy-edit report (2026-03-21T02:20:00Z, 6 findings) with expanded coverage.",
+  "findingSummary": {
+    "critical": 0,
+    "major": 3,
+    "moderate": 1,
+    "minor": 6,
+    "total": 10,
+    "byCategory": {
+      "spelling": 1,
+      "naming": 3,
+      "factual": 1,
+      "anachronism": 1,
+      "grammar": 3,
+      "continuity": 1,
+      "timeline": 0,
+      "formatting": 0
+    }
+  },
+  "artifactsRead": [
+    "chapters/022/draft.md",
+    "chapters/022/metadata.json",
+    "chapters/021/draft.md",
+    "continuity/continuity-tracker.json",
+    "world-bible/geography.json",
+    "world-bible/magic-system.json",
+    "world-bible/culture.json",
+    "world-bible/politics.json",
+    "characters/index.json",
+    "style/style-guide.json",
+    "plot/chapter-outlines/chapter-022.json"
+  ],
+  "artifactsWritten": [
+    "revision-reports/022/copy-edit.json",
+    "agents/copy-editor/status.json"
+  ],
+  "invariantsChecked": [
+    "INV-002 (Internal Consistency): PARTIAL PASS — naming/spelling issues, one factual concern; world rules and continuity otherwise solid",
+    "INV-011 (Continuity Tracking): PASS — all character positions, timeline, naming verified; one minor explicitness improvement",
+    "INV-017 (Prose Quality Floor): PASS — clean grammar, correct formatting, no banned phrases",
+    "INV-018 (No Anachronisms): MINOR CONCERN — one instance of 'electric'",
+    "INV-019 (Dialogue Naturalism): PASS — correct em-dash, speech tag, and dialogue formatting",
+    "INV-029 (Artifact Cross-References): PASS — all references match world-bible except known DISC-001"
+  ]
+}

@@ -1,0 +1,247 @@
+{
+  "reportType": "line-edit",
+  "chapter": 9,
+  "pov": "CHAR-001",
+  "timestamp": "2025-07-17T21:30:00Z",
+  "findings": [
+    {
+      "id": "LINE-009-001",
+      "severity": "critical",
+      "category": "repetition",
+      "subcategory": "voice-marker-saturation",
+      "location": "Chapter-wide, with highest density in lines 155-204",
+      "problematicText": "architecture of the ordinary (156), structural techniques in unfamiliar architecture / load-bearing wall (168), deep architecture of her bones (182), structural assessment (186), load-bearing walls of her interior architecture (198), wall between I-survive-alone and I-need-you-to-stay-whole (200), two structures settling against each other under load / combined architecture (202)",
+      "description": "Architectural and structural metaphors applied to emotional and relational content appear approximately 16 times across the chapter, with the root word 'architectur-' alone appearing 12 times. The processing/waystation scene (lines 155-204, roughly 1.5 manuscript pages) concentrates 7 architectural metaphorical constructions — exceeding the prose quality floor of no more than 3 repeated structures per page (INV-017). The voice fingerprint's own density guidance explicitly states: 'Architectural metaphors — sparse; most prose should be plain and direct' and 'If the voice markers are identifiable on every page, the voice is likely over-applied. Seasoning, not the main ingredient.' Currently the seasoning IS the main ingredient. The chapter reads as if architectural metaphor is Kaelith's only mode of comprehension, converting her from a person who sometimes thinks in structural terms into an architectural-metaphor generator. Key instances across the full chapter: 'architecturally wrong' (26), 'same architecture' (52), 'structural assessment' (60), 'architecture of suppression' (68), 'bearing wall / Load-bearing sound' (102), 'mortar setting' (108), 'buttress removed' (126), 'architecture of the ordinary' (156), 'load-bearing wall' (168), 'architecture of her bones' (182), 'structural assessment' (186), 'load-bearing walls of her interior architecture' (198), 'wall between…' (200), 'structures settling under load' (202), 'suppression architecture' (220), 'architectural drawings' (282), 'same architecture' (284), 'structural requirement / keystone' (300), 'structural weakness' (308), 'architecture strong enough' (316).",
+      "recommendation": "Cut or replace approximately 8-10 of the 16 metaphorical instances. Preserve the strongest 6-7 — 'bearing wall in a collapsing structure' (102), 'mortar setting' (108), 'buttress removed' (126), and 'keystone' (300) are the most vivid and earn their placement. In the processing scene (155-204), keep at most 2 architectural metaphors and let the rest of the emotional content land through plain prose, body sensation, or Kaelith's tactical vocabulary instead. Delete 'architecture of the ordinary' (156) — it's clever but the cleverness draws attention to the pattern. Replace 'load-bearing walls of her interior architecture' (198) with something less explicitly labeled — the reader has already absorbed this metaphorical system and does not need it restated at full extension. Consider whether 'structural assessment' at lines 60 and 186 can be varied — the phrase appears twice verbatim. At minimum, vary the vocabulary: 'foundation' rather than 'architecture,' 'weight' rather than 'load-bearing,' plain 'wall' rather than 'load-bearing wall' — to reduce the feeling of a controlled vocabulary list."
+    },
+    {
+      "id": "LINE-009-002",
+      "severity": "major",
+      "category": "repetition",
+      "subcategory": "syntactic-pattern",
+      "location": "Lines 14, 42, 46, 166, 182, 218, 316",
+      "problematicText": "'Not a collapse. Not erosion.' (14); 'Not overcast. Not clear.' (42); 'Not black. Not empty.' (46); 'Not speaking. Not moving.' (166); 'Not dead. Not injured. Not present.' (182); 'No. Not alone.' (218); 'Not empty. Not comfortable.' (316)",
+      "description": "The 'Not X. Not Y.' negation-then-truth syntactic pattern appears 7 times across the chapter. While individually effective — the pattern works well for the Ythara-distortion scenes where reality IS indeterminate — the repetition across 3 scenes dulls its power. By the combat scene (line 218) and closing (line 316), the construction reads as a tic rather than a choice. Lines 42-46 stack two instances within 4 lines of each other, and lines 166/182 occur within 16 lines.",
+      "recommendation": "Retain 3-4 of the strongest uses: lines 14 (chapter opener, establishes the convention), 46 (the Pallor tears — the negation here is viscerally effective), and 182 (identity dissolution). Replace or restructure the others. Line 42 can become a direct positive statement ('The sky was the problem'). Line 166 can collapse to 'Lirien sat quietly. Present without demand.' — cutting the two negations entirely. Line 316 can open differently: 'The silence held. Heavy. Earned.' or similar."
+    },
+    {
+      "id": "LINE-009-003",
+      "severity": "major",
+      "category": "repetition",
+      "subcategory": "structural-echo",
+      "location": "Lines 14 and 318",
+      "problematicText": "'a substance that was not moss and not stone and not quite anything Kaelith had a word for' (14) vs. 'light that was not starlight and not sunlight and not anything that belonged to the finished world' (318)",
+      "description": "These two constructions are syntactically near-identical: 'X that was not [natural-thing] and not [natural-thing] and not [anything/quite anything] [qualifier].' Placed at the chapter's opening paragraph and its penultimate paragraph, they create an unintentional bookend echo. A reader finishing the chapter will feel the repetition, and the closing image — which should land as fresh and final — instead echoes a description of weird mortar from paragraph one.",
+      "recommendation": "Restructure one of the two. The opening (line 14) is well-placed and sets the Wending's strangeness; keep it. Rewrite line 318 to avoid the triple-negation chain: consider a positive construction that captures the wrongness of the light — e.g., 'light that belonged to no finished sky' or 'light that came from a place where stars had never existed' — anything that avoids the 'not X and not Y and not Z' skeleton."
+    },
+    {
+      "id": "LINE-009-004",
+      "severity": "major",
+      "category": "repetition",
+      "subcategory": "structural-echo",
+      "location": "Lines 202 and 316",
+      "problematicText": "'the silence of two structures settling against each other under load' (202) vs. 'The silence of two people who had fought together and survived together' (316)",
+      "description": "Both scene boundaries (end of Scene 2 and end of Scene 3) close on a 'The silence of two [noun]...' construction. The parallel weakens both — instead of two distinct emotional landings, the reader gets the same rhetorical shape twice within 115 lines. The progression from 'two structures' to 'two people' is thematically sound (moving from metaphor to literalness), but the identical syntactic frame makes it feel like a refrain rather than an evolution.",
+      "recommendation": "Restructure one of the two closings. The Scene 2 close (line 202) is the stronger metaphorical construction; keep it. For Scene 3's close (line 316), break the parallel — open with the Wending's physical reality or Kaelith's body state rather than 'The silence.' The content of line 316 (two people who fought together, walking forward) can land just as hard without the 'silence of two' frame. Consider: 'They walked. The Wending darkened around them...' and let the silence be implied by the absence of dialogue."
+    },
+    {
+      "id": "LINE-009-005",
+      "severity": "minor",
+      "category": "cliché",
+      "location": "Line 254",
+      "problematicText": "She tasted copper.",
+      "description": "'Tasted copper' is among the most overused phrases in fantasy and action fiction for indicating a blow to the head or mouth injury. While it describes a real physical sensation, it has been used so widely that it reads as stock rather than specific. A Kaelith-POV description should ground the sensation in her particular sensorium.",
+      "recommendation": "Replace with something tactile and specific to Kaelith's sensory signature: 'Blood — the flat metallic edge of it — flooded her mouth' or 'Something hot and wrong filled her mouth' or simply 'Blood in her mouth, warm and immediate.' The goal is to make the sensation belong to THIS character in THIS moment rather than to the generic fantasy-combat phrasebook."
+    },
+    {
+      "id": "LINE-009-006",
+      "severity": "minor",
+      "category": "show-dont-tell",
+      "location": "Line 148",
+      "problematicText": "the relief of that normalcy settled into her joints like warmth after cold",
+      "description": "Two issues in one phrase: (1) 'relief' is a named emotion preceding the physical description, which the style guide identifies as a prohibited shortcut in emotional moments ('naming an emotion first and adding body language afterward'). (2) 'warmth after cold' is a generic simile that could appear in any novel. Kaelith's sensory signature is tactile and specific; this simile is neither.",
+      "recommendation": "Remove the label and let the body sensation carry the emotion: 'The normalcy of it settled into her joints the way a well-fitted stone settles into a repaired wall' (structural domain) or simply 'The normalcy settled through her — into her shoulders first, then her hands, then the locked muscles along her spine' (body-first, no label). If the warmth simile is retained, make it specific: 'like the first hour with a roof overhead' or 'the way a cleared fire-pit holds heat after the last ember.'"
+    },
+    {
+      "id": "LINE-009-007",
+      "severity": "minor",
+      "category": "show-dont-tell",
+      "location": "Line 184",
+      "problematicText": "She needed Lirien.",
+      "description": "A direct emotional tell at a pivotal chapter moment. The surrounding context — 40 lines of dissolution experience, shaking hands, the near-un-existence — provides extensive showing, and the text frames this as a 'structural assessment' (line 186) rather than emotional confession. The deliberateness partially redeems the tell, and Kaelith's character processes emotional material as tactical conclusion. However, the sentence itself is a bare emotion-label that states rather than embodies. In a chapter that otherwise excels at embodied emotion, this moment could land harder if it arrived through the body first.",
+      "recommendation": "Consider routing through Kaelith's physical/tactical processing rather than stating the conclusion directly: 'The assessment completed itself before she could stop it: the journey through the Wending required two. One to fragment. One to hold. And she knew which one she was.' This moves the current line 186 content into the revelation position and lets the reader arrive at 'she needs Lirien' without being told. Alternatively, keep 'She needed Lirien' but move it AFTER the structural-assessment framing at line 186, so the body and the tactical reasoning precede the admission rather than follow it."
+    },
+    {
+      "id": "LINE-009-008",
+      "severity": "minor",
+      "category": "repetition",
+      "subcategory": "pronoun-opening",
+      "location": "Lines 16, 24, 38, 52, 56, 74, 84, 88, 110, 130, 142, 148, 158, 164, 178, 184, 190, 208, 222, 230",
+      "problematicText": "20 paragraphs opening with 'She' as the first word",
+      "description": "Twenty paragraphs in the chapter begin with 'She' followed by a past-tense verb. While Kaelith's POV naturally gravitates toward subject-verb-object declaratives, the cumulative effect of 20 'She [verbed]' openings creates a monotonous paragraph-level rhythm. The issue is most concentrated in Scene 1 (8 instances in ~120 lines) and the processing scene (7 instances in ~50 lines).",
+      "recommendation": "Vary 6-8 of the weaker instances by opening with a different element: a sensory detail ('The stone was cool under her boots. She...'), a time marker ('Three breaths later, she...'), the object rather than the subject ('The treeline drew her eye before the road did'), or an action fragment ('Fingers on the pack strap. Grip. Count.'). Retain 'She' openings where the blunt declarative serves emphasis — 'She needed Lirien' (184), 'She heard them before she saw them' (208) — these earn their plainness."
+    },
+    {
+      "id": "LINE-009-009",
+      "severity": "minor",
+      "category": "prose",
+      "subcategory": "generic-phrasing",
+      "location": "Line 312",
+      "problematicText": "dark and uncertain and full of a god's leaking influence",
+      "description": "'Dark and uncertain' is generic fantasy atmosphere language — it could appear in any secondary-world novel without modification. The phrase that follows it ('full of a god's leaking influence') is specific and vivid, which makes the generic opening more conspicuous by contrast.",
+      "recommendation": "Replace the generic pair with something that belongs to Kaelith's specific perception of the Wending: 'The Wending stretched ahead — wounded territory, the road's coherence fraying with every mile — and behind them more agents would follow.' Or lean into the specific: 'full of a god's leaking influence, the ground already softening toward possibilities it should not contain.'"
+    },
+    {
+      "id": "LINE-009-010",
+      "severity": "minor",
+      "category": "voice-violation",
+      "subcategory": "domain-drift",
+      "location": "Line 274",
+      "problematicText": "because fire did not care about human violence and its indifference was, in this moment, the most stabilizing thing in the room",
+      "description": "Attributing philosophical indifference to fire is a reflective, essayistic observation that sits slightly outside Kaelith's established voice. Kaelith processes the world through function and material fact — she would note that the fire still burned, that the physics held, that something in this room remained reliable. The attribution of 'caring' and 'indifference' to an element is more literary-observer than tactical-commander. Compare with line 156 where the same fire observation works better: 'The flames behaved. They burned upward because heat rose and combustion required oxygen' — that IS Kaelith's voice, grounded in function.",
+      "recommendation": "Reframe through function rather than philosophy: 'because fire was fire — it burned by the same rules it always had, and the rules were the steadiest thing in the room' or 'because fire was a fixed thing in a room where fixed things had become rare.' Both preserve the emotional function (the fire as stabilizer) without the philosophical attribution."
+    },
+    {
+      "id": "LINE-009-011",
+      "severity": "suggestion",
+      "category": "prose",
+      "subcategory": "sentence-length",
+      "location": "Line 162",
+      "problematicText": "She had been the version who never went to Calwrath and the version who died there and the version who had never been born and the version who stood on a road with a fae operative's hand on her wrist, and all of those versions had existed simultaneously with equal validity, and the only thing that had collapsed the probability back into a person was five fingers and a voice saying *stay*.",
+      "description": "This sentence runs approximately 90 words. The style guide permits longer sentences when 'emotion breaches control,' and this sentence does effective work — its length mirrors the dissolution experience. However, at 90 words it pushes past 'long sentence signaling emotional breach' into territory where the reader's breath and attention are strained. The final clause ('five fingers and a voice saying stay') is the sentence's emotional payload, and it arrives after the reader has been processing for too long.",
+      "recommendation": "Consider splitting at the pivot point: '...and all of those versions had existed simultaneously with equal validity.' New sentence: 'The only thing that had collapsed the probability back into a person was five fingers and a voice saying *stay*.' The second version gives the closing image its own sentence — letting it land as a blunt, short declaration after the long dissolution. This also creates the short-after-long rhythm that the style guide identifies as Kaelith's pattern under emotional breach."
+    },
+    {
+      "id": "LINE-009-012",
+      "severity": "suggestion",
+      "category": "repetition",
+      "subcategory": "metaphor-cluster",
+      "location": "Lines 155-168",
+      "problematicText": "'The architecture of the ordinary' (156), 'she recognized structural techniques in unfamiliar architecture' (168), 'load-bearing wall that does not advertise its function' (168)",
+      "description": "The processing scene between Kaelith's fire-staring and the 'Thank you' exchange concentrates architectural metaphors most densely. Within 14 lines (155-168), three separate architectural constructions appear: 'architecture of the ordinary,' a double use in line 168 ('structural techniques in unfamiliar architecture' + 'load-bearing wall'). This sub-section of the chapter is where the saturation becomes most visible and where the metaphors start to read as a checklist rather than organic thought. This finding overlaps with LINE-009-001 but identifies the specific passage most in need of thinning.",
+      "recommendation": "In this 14-line stretch, keep ONE architectural metaphor — the 'load-bearing wall that does not advertise its function' (line 168) is the strongest image in the passage and resonates with the chapter's themes of hidden dependence. Cut 'architecture of the ordinary' (156) — replace with factual observation: 'Simple. Reliable. The flames behaved because the room was still a room.' Cut the preamble at line 168 ('she recognized structural techniques in unfamiliar architecture') — Kaelith does not need to flag that she is using architectural thinking; just let the metaphor arrive: 'This was a deliberate choice. Lirien was providing proximity without requiring engagement...'"
+    },
+    {
+      "id": "LINE-009-013",
+      "severity": "suggestion",
+      "category": "prose",
+      "subcategory": "emotional-avoidance",
+      "location": "Line 190",
+      "problematicText": "in the space where things she could not name had been accumulating since Duskhaven",
+      "description": "'Things she could not name' is a common evasion in close-third narration — gesturing toward feeling without committing to specificity. Kaelith's established pattern is to experience emotions as physical events, not as unnamed abstractions. She would feel pressure, weight, heat, a loosening or tightening — concrete sensations she can catalogue even if she refuses to interpret them. 'Things she could not name' is vague where her voice is characteristically precise.",
+      "recommendation": "Replace with something physically specific that Kaelith would notice: 'in the space where a pressure she had no tactical use for had been building since Duskhaven' or 'in the space where something heavy and unclassifiable had been settling since Duskhaven.' The key is that Kaelith notices the WEIGHT or SENSATION even when she cannot (or refuses to) name the cause."
+    },
+    {
+      "id": "LINE-009-014",
+      "severity": "suggestion",
+      "category": "voice-violation",
+      "subcategory": "domain-drift",
+      "location": "Line 261",
+      "problematicText": "a shape came through the window with the silence of someone who had learned to move between moments",
+      "description": "'Move between moments' is a poetic, temporal metaphor — it belongs to a more lyrical or observational register than Kaelith's tactile/structural vocabulary. In a combat sequence where Kaelith is in tactical mode, she would more likely describe Lirien's movement through physical attributes she can observe: speed, quietness relative to expectation, the mechanics of the entry.",
+      "recommendation": "Replace with something Kaelith can observe and assess: 'with the silence of someone whose weight never committed to the floor' or 'quieter than someone her height should have been able to manage' — this echoes the established observation from line 214 ('should not have been possible for someone of her height and should not have been as quiet as it was') and keeps the description in Kaelith's functional-observation mode."
+    },
+    {
+      "id": "LINE-009-015",
+      "severity": "suggestion",
+      "category": "dialogue",
+      "subcategory": "uniformity",
+      "location": "Lines 30-34, 270-271, 292, 306",
+      "problematicText": "Lirien's dialogue lines are uniformly clinical/intelligence-report register",
+      "description": "Lirien's dialogue across the chapter maintains an unbroken intelligence-report register — precise numerical data, formal operational vocabulary, complete sentences without contractions. While this is consistent with her established voice (formal fae operative), the chapter shows an emotional progression (the anchoring scene, the 'Thank you' exchange) that might warrant micro-variation in her speech. Her single warm moment ('You would have done the same' at line 196) is effective precisely because it breaks the pattern — but the rest of her lines offer no gradation between report and warmth. Compare with line 270 ('He will regain consciousness in approximately six minutes') delivered immediately after an emotional combat partnership moment — the perfect clinical tone is striking but also risks making Lirien sound robotic at a moment when the chapter has demonstrated their deepening connection.",
+      "recommendation": "This is a suggestion, not a requirement. Consider allowing one small variation in Lirien's operational register — a contraction, a shorter-than-expected answer, a question that serves no intelligence purpose — somewhere in the post-combat or departure dialogue. The style guide notes: 'Allow contractions to increase gradually across the book. Each contraction should feel like human warmth breaching fae formality.' By Chapter 9, one contraction in a moment of reduced guard could signal the progression."
+    }
+  ],
+  "overallAssessment": {
+    "verdict": "revision-required",
+    "summary": "Chapter 9 is a strong draft whose prose is inventive, emotionally earned, and structurally sound at the scene level. The Ythara exposure sequence (lines 62-110) is genuinely original — the dissolution of identity through probability rather than standard dark-magic-swallowing is fresh and viscerally effective. The 'Thank you. For keeping me here' moment (lines 192-193) achieves remarkable emotional impact through restraint. Combat is lucid, costly, and tactically specific. Dialogue is excellent throughout — natural, subtext-laden, and character-appropriate. The chapter successfully fuses fantasy and romance arcs at every scene boundary. However, the prose suffers from one critical problem — voice marker saturation — that must be addressed before the chapter meets the prose quality floor. Architectural/structural metaphors appear on effectively every page, with a density that violates INV-017's per-page repetition threshold in the processing scene (lines 155-204). The word 'architecture' itself appears 12 times. Three major repetition patterns compound the issue: the 'Not X. Not Y.' negation construction (7 instances), a near-identical triple-negation chain at the chapter's opening and closing, and a 'silence of two...' parallel at consecutive scene boundaries. These patterns collectively shift the prose from 'distinctive voice' to 'visible technique,' which is the line the voice fingerprint's own density guidance explicitly warns against crossing. The chapter needs a thinning pass focused primarily on the metaphor saturation and syntactic repetition, after which it will be a very strong piece of work.",
+    "strengths": [
+      "Ythara exposure sequence is genuinely inventive — identity-as-probability is a fresh horror that avoids standard fantasy tropes",
+      "The 'Thank you. For keeping me here' scene achieves major emotional impact through deliberate understatement — perfectly calibrated for Kaelith's voice",
+      "Combat scene (SCN-027) is clear, costly, and tactically credible — every beat has cause-and-effect logic",
+      "Dialogue is natural and serves narrative function at every exchange — no empty lines, strong subtext in the vulnerability scene",
+      "Dual-arc fusion is seamless — the fantasy threat creates the romantic vulnerability without either arc dominating",
+      "No banned phrases, no purple prose, no modern slang — the prose register is consistent and genre-appropriate",
+      "Opening paragraph is strong and immediately establishes both voice and strangeness",
+      "Body-based emotional processing is well-executed: tremor migrating from hands to chest (line 190) is precise and character-consistent"
+    ],
+    "primaryConcerns": [
+      "Architectural metaphor saturation overwhelms the prose in the processing scene and creates a cumulative density that converts voice from seasoning into main ingredient",
+      "Syntactic repetition ('Not X' pattern, triple-negation bookend, 'silence of two' parallel) reduces the impact of individually effective constructions",
+      "'She [verb]' paragraph openings create monotonous rhythm, especially in Scenes 1 and 2"
+    ]
+  },
+  "voiceComplianceAssessment": {
+    "povCharacter": "CHAR-001 (Kaelith Maren)",
+    "overallCompliance": "high with over-application",
+    "summary": "The chapter is unmistakably Kaelith's voice from paragraph one. Attention priority is correct (space-before-sentiment, exits, structural assessment). Emotional processing is body-forward and tactile. Sentence rhythm matches the profile — predominantly short and declarative with longer constructions surfacing under emotional pressure. The tactical thought frame activates appropriately at decision points. Dialogue is concise, statement-oriented, and drops contractions under stress. The chapter demonstrates strong command of WHO Kaelith is. The problem is not compliance but overcompliance: the voice markers are applied so densely that they become visible as markers, particularly the architectural metaphors. The voice fingerprint's density guidance warns that 'If the voice markers are identifiable on every page, the voice is likely over-applied' — and they are identifiable on every page of this chapter. The cure is not to weaken the voice but to trust it: thin the markers and let the reader feel the pattern across a chapter without needing explicit reinforcement in every passage.",
+    "specificVoiceNotes": [
+      {
+        "element": "Architectural metaphors",
+        "status": "over-applied",
+        "detail": "~16 metaphorical uses plus 12 appearances of the word 'architecture.' Guidance says 'sparse.' This is not sparse."
+      },
+      {
+        "element": "Tactical thought framing",
+        "status": "well-calibrated",
+        "detail": "Appears at decision points and under stress (combat, threat assessment, route planning) — not for routine observations. Appropriately applied."
+      },
+      {
+        "element": "Sentence rhythm",
+        "status": "strong",
+        "detail": "Short declarative default with longer constructions under emotional breach. The 90-word sentence at line 162 pushes the limit but serves the dissolution experience."
+      },
+      {
+        "element": "Physical-emotional processing",
+        "status": "strong",
+        "detail": "Jaw tension, heat in palms, tremor in fingers and chest, pressure behind sternum — all consistent with sensory signature. Two minor emotion-label instances (relief at 148, need at 184) do not undermine the overall pattern."
+      },
+      {
+        "element": "Inventory mode",
+        "status": "well-deployed",
+        "detail": "Two instances (lines 88-89, 142) — both at genuine stress points. Not overused."
+      },
+      {
+        "element": "No water metaphors",
+        "status": "compliant",
+        "detail": "Zero water-domain metaphors in Kaelith's narration. Domain boundaries respected."
+      },
+      {
+        "element": "Dialogue voice",
+        "status": "strong",
+        "detail": "Tactical questions, statement-heavy, contractions absent under stress. No artificial military-dialect forcing. Sounds like a real person with a military background."
+      }
+    ]
+  },
+  "proseQualityMetrics": {
+    "clicheCount": 1,
+    "clicheThreshold": 2,
+    "clicheStatus": "within-limit",
+    "clicheInstances": ["'tasted copper' (line 254)"],
+    "bannedPhrasesFound": 0,
+    "showTellViolations": 2,
+    "showTellViolationInstances": ["'relief' named before shown (line 148)", "'She needed Lirien' direct state-label (line 184, borderline — contextually framed as tactical conclusion)"],
+    "repetitionIssues": {
+      "architecturalMetaphorCount": 16,
+      "architectureWordCount": 12,
+      "negationPatternCount": 7,
+      "sheOpeningParagraphs": 20,
+      "perPageRepetitionViolation": true,
+      "perPageViolationLocation": "Lines 155-204 (processing scene): ~7 structural/architectural constructions in approximately 1.5 manuscript pages"
+    },
+    "purpleProse": false,
+    "dialogueQuality": "strong",
+    "dialogueSubtext": "present in key exchanges (Thank you scene, document-omission scene)",
+    "microTensionDeadSpots": 0,
+    "mruCompliance": "generally compliant — T14 excluded from active craft tools but no egregious sequence violations found; combat MRUs are clean; the identity-dissolution sequence appropriately prioritizes external stimulus before reaction",
+    "metaphorDomainViolations": 1,
+    "metaphorDomainViolationInstances": ["'move between moments' (line 261) — temporal/poetic rather than tactile/structural; minor"]
+  },
+  "findingSummary": {
+    "critical": 1,
+    "major": 3,
+    "minor": 6,
+    "suggestion": 5,
+    "total": 15
+  }
+}

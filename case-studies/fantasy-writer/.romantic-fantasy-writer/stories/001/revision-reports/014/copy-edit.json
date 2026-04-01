@@ -1,0 +1,187 @@
+{
+  "storyId": "001",
+  "chapterNum": 14,
+  "reportType": "copy-edit",
+  "generatedAt": "2025-07-21T14:30:00Z",
+  "sourceArtifact": "chapters/014/draft.md",
+  "referenceArtifacts": [
+    "continuity/continuity-tracker.json",
+    "world-bible/geography.json",
+    "world-bible/magic-system.json",
+    "world-bible/culture.json",
+    "characters/index.json",
+    "characters/CHAR-001.json",
+    "characters/CHAR-002.json",
+    "plot/chapter-outlines/chapter-014.json",
+    "style/style-guide.json",
+    "chapters/012/draft.md"
+  ],
+  "summary": "Chapter 14 is factually sound in most respects — character names, place names, magic system mechanics, bond behavior, contract loophole logic, and dialogue formatting are all consistent with established world rules and continuity. Two major timeline errors require correction: the bond formed in ch11 only 2-3 days before ch14, but the draft twice references 'weeks' of shared sensation. One moderate discrepancy exists between the continuity tracker (which records the Vael Seren story as shared in ch12) and the actual ch12 draft (which contains no mention of Vael Seren) — the ch14 telling appears to be the first prose instance, which is fine, but the continuity tracker needs updating. Six minor findings address potential anachronisms, an awkward grammatical construction, and a spelling convention inconsistency with earlier chapters.",
+  "findingCounts": {
+    "total": 9,
+    "bySeverity": {
+      "critical": 0,
+      "major": 2,
+      "moderate": 1,
+      "minor": 6
+    },
+    "byCategory": {
+      "timeline": 2,
+      "factual": 2,
+      "anachronism": 2,
+      "grammar": 1,
+      "formatting": 2,
+      "naming": 0
+    }
+  },
+  "findings": [
+    {
+      "id": "COPY-001",
+      "severity": "major",
+      "category": "timeline",
+      "description": "The draft states 'Three weeks of shared sensation had taught her the specific textures of Kaelith's body in distress.' The resonance bond formed during the Oathbrand removal in ch11. Per the continuity tracker: ch12 is '2 days after Aranthem' (placing ch11 within that 2-day window), ch13 is 'Night following ch12 pursuit,' and ch14 is 'Dawn following ch13.' Total elapsed time since bond formation is approximately 2-3 days, not three weeks. This is a significant factual error that contradicts the established timeline.",
+      "lineRef": "Line 112",
+      "quotedText": "Three weeks of shared sensation had taught her the specific textures of Kaelith's body in distress",
+      "correction": "Replace 'Three weeks' with a duration consistent with 2-3 days elapsed since the bond formed in ch11. Suggested: 'Days of shared sensation' or 'Three days of shared sensation.' If the intent is for more time to have passed between ch11 and ch14, the continuity tracker timeline entries for chapters 11-14 must be revised globally.",
+      "sourceRef": "continuity/continuity-tracker.json — timeline entries for chapters 11, 12, 13, 14"
+    },
+    {
+      "id": "COPY-002",
+      "severity": "major",
+      "category": "timeline",
+      "description": "The draft describes 'the specific warmth that Lirien had spent weeks learning to recognize.' As with COPY-001, the bond has existed for approximately 2-3 days by ch14, not weeks. While Lirien has been observing Kaelith pre-bond (since ch1), the phrase 'Through the bond:' at the start of this passage explicitly frames this warmth as something transmitted through the bond, constraining the timeframe to post-ch11.",
+      "lineRef": "Line 138",
+      "quotedText": "Through the bond: the specific warmth that Lirien had spent weeks learning to recognize and days failing to classify.",
+      "correction": "Replace 'weeks' with 'days' — e.g., 'the specific warmth that Lirien had spent days learning to recognize and hours failing to classify.' Alternatively, remove 'Through the bond:' from the opening of the paragraph and reframe the warmth as something Lirien noticed pre-bond through proximity and is now experiencing more intensely through the bond, which would allow the 'weeks' reference to span the pre-bond observation period.",
+      "sourceRef": "continuity/continuity-tracker.json — timeline entries for chapters 11-14"
+    },
+    {
+      "id": "COPY-003",
+      "severity": "moderate",
+      "category": "factual",
+      "description": "The continuity tracker lists 'Night: Lirien shares Vael Seren story. First genuine personal disclosure' as a ch12 event, but the actual ch12 draft contains zero references to 'Vael' or 'Vael Seren.' In ch14, Lirien tells the harbour story with full detail (water, current, boats, light, staying an extra day) and Kaelith reacts to the name 'as if learning the architecture of it,' suggesting this is the first telling. The ch14 prose is internally consistent — the issue is that the continuity tracker records a ch12 event that does not exist in the ch12 draft. This is not a ch14 error but a continuity tracker discrepancy that affects cross-referencing.",
+      "lineRef": "Lines 228-244 (ch14); ch12 draft (no Vael Seren reference found)",
+      "quotedText": "N/A — the error is in the continuity tracker, not in ch14",
+      "correction": "Update the continuity tracker to remove or relocate the Vael Seren reference from the ch12 timeline entry. The first prose telling occurs in ch14 Scene 3. If the ch12 event is intended, the ch12 draft needs revision to include it — but this would require ch14's telling to be reframed as a second, deepened telling rather than a first disclosure.",
+      "sourceRef": "continuity/continuity-tracker.json — ch12 timeline; chapters/012/draft.md"
+    },
+    {
+      "id": "COPY-004",
+      "severity": "minor",
+      "category": "anachronism",
+      "description": "The phrase 'feedback loop' is a modern systems theory / electronics term (coined ~1920s). While Lirien's analytical voice supports technical vocabulary, the specific term 'feedback loop' carries strong modern-scientific connotations that may break the fantasy register. The concept exists in the world's magic system (the bond creates recursive shared sensation), but the precise term is anachronistic.",
+      "lineRef": "Line 170",
+      "quotedText": "the bond turned the kiss into a feedback loop of sensation",
+      "correction": "Consider replacing with a world-appropriate metaphor: 'the bond turned the kiss into a recursive echo of sensation,' 'the bond turned the kiss into a shared circuit of sensation,' or 'the bond turned sensation back on itself — feeling herself being kissed through Kaelith's body.' INV-018 (no anachronisms) applies, though this is a borderline case given Lirien's analytical voice.",
+      "sourceRef": "INV-018"
+    },
+    {
+      "id": "COPY-005",
+      "severity": "minor",
+      "category": "anachronism",
+      "description": "The phrase 'probability tree' uses modern statistical/decision theory terminology. While Lirien's operative training would include risk assessment, 'probability tree' is a formal term from mathematical decision theory (20th century). The concept of branching choices is natural; the specific term is borderline anachronistic.",
+      "lineRef": "Line 164",
+      "quotedText": "a branching point in a probability tree",
+      "correction": "Consider: 'a branching point in a decision map,' 'a fork in the probability calculus,' or simply 'a branching point, one path leading back toward the controlled surface...' The word 'probability' alone is less jarring than the compound term. INV-018 applies as a borderline case.",
+      "sourceRef": "INV-018"
+    },
+    {
+      "id": "COPY-006",
+      "severity": "minor",
+      "category": "grammar",
+      "description": "The construction 'knew the way the way water knew downhill' contains an awkward repetition of 'the way' — the first instance means 'the path/route' and the second means 'in the manner that.' While technically grammatical, the doubled phrase creates a stumble in an otherwise strong closing passage.",
+      "lineRef": "Line 328",
+      "quotedText": "Kaelith's body knew the way the way water knew downhill",
+      "correction": "Restructure to disambiguate the two uses: 'Kaelith's body knew the way as water knew downhill,' or 'Kaelith's body knew the path the way water knew downhill,' or 'Kaelith's body knew the way — the way water knew downhill — not through decision but through nature.'",
+      "sourceRef": "INV-017 (prose quality floor)"
+    },
+    {
+      "id": "COPY-007",
+      "severity": "minor",
+      "category": "formatting",
+      "description": "The draft uses British spelling 'colour' (line 236), while the ch2 draft uses American spelling 'color' ('the color of seawater in storm light,' ch2 line 164). This is a cross-chapter spelling convention inconsistency. The style guide does not specify British vs. American, but manuscripts should be internally consistent.",
+      "lineRef": "Line 236",
+      "quotedText": "Real colour. Not the silver.",
+      "correction": "Adopt one convention globally. If American: change 'colour' to 'color.' If British: update ch2 and any other chapters using American spellings. Recommend American based on ch2 precedent, as it appears in character-voice prose (Lirien's POV describing Kaelith's eyes).",
+      "sourceRef": "chapters/002/draft.md line 164; style/style-guide.json"
+    },
+    {
+      "id": "COPY-008",
+      "severity": "minor",
+      "category": "formatting",
+      "description": "The draft uses British spellings 'offence' and 'defence' (lines 58, 60). Related to COPY-007 — if the manuscript adopts American English, these should be 'offense' and 'defense.' If British English is chosen, ch2's 'color' needs updating instead.",
+      "lineRef": "Lines 58, 60",
+      "quotedText": "'offence and defence' / 'She chose offence. Kaelith would handle defence.'",
+      "correction": "Align with the chosen spelling convention. If American: 'offense' and 'defense.' These appear in Lirien's internal tactical narration and should match the global standard.",
+      "sourceRef": "chapters/002/draft.md; style/style-guide.json"
+    },
+    {
+      "id": "COPY-009",
+      "severity": "minor",
+      "category": "factual",
+      "description": "The draft describes the second attacker as 'mid-forties, moving with the particular economy of someone who had been doing violence for longer than either of them had been alive.' Kaelith is approximately 33 (per CHAR-001.json: 'Early to mid-thirties, approximately 33'). Lirien's age is described as 'indeterminate by human standards' but she has completed '30 years of operations,' placing her human-equivalent age at approximately 48-50+. A mid-40s attacker cannot have been doing violence 'longer than either of them had been alive' if Lirien is older than mid-40s. This is a subjective combat assessment from Lirien's POV and may be read as rough estimation, but it is technically inaccurate for Lirien's own lifespan.",
+      "lineRef": "Line 58",
+      "quotedText": "Male, mid-forties, moving with the particular economy of someone who had been doing violence for longer than either of them had been alive.",
+      "correction": "Adjust to reference only Kaelith or to use a less specific comparison: 'longer than Kaelith had been alive,' or 'for most of his life,' or 'with the economy of decades of practice.' Alternatively, if Lirien's fae age is meant to be significantly longer than she appears, the comparison could be reframed: 'longer than any human she knew had been alive.'",
+      "sourceRef": "characters/CHAR-001.json (age: ~33); characters/CHAR-002.json (30 years of operations, appears late 20s-early 30s but fae aging is slower)"
+    }
+  ],
+  "verifiedConsistent": [
+    {
+      "category": "naming",
+      "details": "All character names verified correct: Kaelith Maren (CHAR-001), Lirien Dael (CHAR-002), Thalen (Thalen's people/network), Tessen Vael (referenced in ch11 context). All place names verified: Vael Seren, the Pallor, the Quietus, Calwrath, Duskhaven. All magic terms verified: Oathbrand, resonance bond, Seep, suppression field, shapers/shaped force, kinetic memory. No misspellings detected."
+    },
+    {
+      "category": "magic_system",
+      "details": "Suppression field behavior consistent with continuity tracker ('Counters fae magic ~60%') — draft shows Lirien at 'perhaps forty percent' capacity (60% suppression). Bond transmits emotions, physical sensation, intent/direction; does NOT transmit thoughts, words, or factual details — all verified correct. Contract loophole ('cessation of heartbeat' as state not duration) consistent with MAG-005 (binding contracts require precise language, ambiguity creates exploitable gaps) and the magic system's liriensKillContract section. FU-001 (no resurrection) is respected — Lirien explicitly distinguishes temporary cardiac arrest from death."
+    },
+    {
+      "category": "bond_mechanics",
+      "details": "The bond correctly transmits: Kaelith's heartbeat and concentration (sensation, not thought), pain from rib injury (physical sensation), directional intent, emotional states (warmth, satisfaction, tentative joy). Kaelith correctly senses 'weight' of Lirien's secret but NOT its content — consistent with 'Does NOT transmit thoughts, words, or factual information.' Bond wall mechanic (Kaelith choosing not to probe) consistent with ch16-17 mechanics."
+    },
+    {
+      "category": "continuity",
+      "details": "First kiss correctly referenced as 'last night' (ch13 event). Kaelith's rib injury (third and fourth left, bruised/hairline-cracked) matches continuity tracker. Four-attacker ambush configuration matches continuity tracker entry. Kaelith's Oathbrand correctly referenced as removed (ch11) with phantom 'ghost' sensation remaining. Forty-three prior completions and current contract as forty-fourth are internally consistent. 'Six years of exile' and 'six years of penance' match YK 736-742 timeline."
+    },
+    {
+      "category": "eye_color",
+      "details": "Kaelith's eyes described as 'grey-green' in ch14 — verified consistent with ch2 ('Grey-green, the color of seawater in storm light')."
+    },
+    {
+      "category": "dialogue_formatting",
+      "details": "All dialogue correctly formatted throughout. Em dashes used for self-interruption ('I want—', 'I can't promise—'). Ellipsis used for hesitation ('There are... variables'). Speech tags properly punctuated. Action beats properly separated from dialogue. No orphaned quotation marks."
+    },
+    {
+      "category": "tense",
+      "details": "Past tense maintained consistently throughout all three scenes. No tense shifts detected."
+    },
+    {
+      "category": "pov_voice",
+      "details": "Lirien's voice fingerprint maintained: observation→assessment structure, water/infiltration metaphors (sugar dissolving, tidewater, water through packed earth, surfacing from deep water), cataloguing fragments ('People first'), classification of emotion as operational states, contractions present in internal monologue per ch14 arc progression. Kaelith's dialogue voice appropriately distinct: short, direct, structural ('That's enough,' 'Agreed,' 'Northeast. The pull is stronger today')."
+    },
+    {
+      "category": "world_rules",
+      "details": "No anachronistic technology references (compass, canteen, etc. are plausible pre-industrial). No magic usage exceeding established power tiers — Lirien operates at Tier 4 (expert) with suppression field reducing capacity, Kaelith fights physically without visible magic use (consistent with Tier 2 post-removal recovery). Fae cultural norms correctly reflected: radical omission (Lirien not lying but withholding), classification of emotion, contract-as-identity. Imperial military culture reflected in Kaelith's behavior."
+    },
+    {
+      "category": "scene_breaks",
+      "details": "Three scenes separated by two '---' markers. Scene breaks properly placed at location/time transitions."
+    },
+    {
+      "category": "information_asymmetry",
+      "details": "Correctly maintained throughout. Kaelith does not know about the active kill contract. Lirien's guilt and the contract loophole discovery are internal only. Kaelith senses Lirien is 'carrying something' through the bond but does not know specifics — consistent with bond limitations. Reader dramatic irony maintained: we see both Kaelith's generous trust AND Lirien's secret."
+    }
+  ],
+  "crossManuscriptNotes": [
+    {
+      "note": "The continuity tracker lists 'Night: Lirien shares Vael Seren story' as a ch12 event, but the ch12 draft contains no reference to Vael Seren. This should be reconciled — either add the story to ch12 (requiring ch14 to acknowledge prior telling) or remove the ch12 continuity entry and establish ch14 as the first telling.",
+      "severity": "moderate",
+      "affectedArtifacts": ["continuity/continuity-tracker.json", "chapters/012/draft.md"]
+    },
+    {
+      "note": "The direction 'northeast' toward the Quietus is used consistently in ch14 and across many chapters (ch12, ch15, etc.), but the geography.json describes the Quietus (via the Narrowing, Velenwash, Serath Dûn, Unwalked Reach) as being to the west/northwest of the empire's eastern territories. This is a pre-existing cross-manuscript directional inconsistency, not introduced in ch14. See DISC-001 territory.",
+      "severity": "informational",
+      "affectedArtifacts": ["world-bible/geography.json", "continuity/continuity-tracker.json"]
+    }
+  ]
+}

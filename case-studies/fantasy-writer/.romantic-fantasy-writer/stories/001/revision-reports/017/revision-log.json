@@ -1,0 +1,229 @@
+{
+  "chapterNumber": 17,
+  "revisionTimestamp": "2025-07-31T04:00:00Z",
+  "draftWordCount": 4956,
+  "revisedWordCount": 4544,
+  "wordCountDelta": -412,
+  "findingsAddressed": [
+    {
+      "findingId": "LINE-001",
+      "severity": "critical",
+      "action": "applied",
+      "description": "Architectural/structural metaphor density reduced from ~45+ instances to ~8, with only 4 genuine metaphorical uses (the load-bearing wall title moment, story-as-load-bearing, collapsing-into-wreckage, ground shifting). Remaining instances are literal (rock wall, canal wall, ceiling settling, campfire cone collapse). Converted most wall/cage/framework/architecture/foundation/subsidence/corridor/shoring references to plain prose: 'walled'→'blocked', 'wall'→'barrier'/'distance', 'framework'→removed or replaced with 'all of it', 'shoring it up'→'actively maintaining it', 'corridor of doubt...locked door'→'circling back to the same dead end', 'collapsing into rubble'→'coming apart', 'stones falling into a foundation'→removed. Architectural imagery now arrives at three emotional peaks (load-bearing wall crack, load-bearing story, military assessment) and trusts plain language between them.",
+      "linesAffected": "Throughout — approximately 37 structural metaphors removed or converted to plain prose"
+    },
+    {
+      "findingId": "LINE-002",
+      "severity": "critical",
+      "action": "applied",
+      "description": "Word-level repetition reduced across all four flagged terms. 'grief': 28→6 uses (replaced with 'weight', 'loss', 'ache', 'what Lirien felt/carried', 'pain', or described through physical effect without naming). 'bond': 27→0 uses (replaced consistently with 'resonance' [18 uses] and 'connection' [12 uses], split across two words to prevent any single term reaching monotony). 'wall': 14→3 uses (2 literal: rock wall, canal wall; 1 thematic: load-bearing wall; emotional uses replaced with 'barrier' [2], 'distance' [2], or described through action). 'cage': 9→1 use (retained at the most resonant moment — 'inside a cage built from your blood'; other uses converted to 'binding', 'something she had been locked into', or removed).",
+      "linesAffected": "Throughout — approximately 70 word substitutions across all four flagged terms"
+    },
+    {
+      "findingId": "LINE-003",
+      "severity": "critical",
+      "action": "applied",
+      "description": "Architectural metaphor pileup at L141 ('the quality of a structure failing — walls coming down, load-bearing elements giving way, the controlled architecture of an operative collapsing into something raw and unshaped') replaced with single image: 'It had the quality of something collapsing into wreckage — the discipline that had held Lirien together simply giving way.' Reduced from five stacked structural images to one clean construction. Also removed the subordinate clause ('when she had watched Kaelith from the market square with the careful attention of a predator assessing terrain') which diluted the impact moment.",
+      "linesAffected": "L152 (revised)"
+    },
+    {
+      "findingId": "LINE-004",
+      "severity": "major",
+      "action": "applied",
+      "description": "Theme-as-statement passage ('The contract was not a lie that erased the feelings; it was a cage that had contained them. And cages could hold genuine things. Cages could hold love.') replaced with Kaelith's characteristic deflection: 'Both things could be true. She was not ready to think about what that meant.' This preserves the thematic insight in embryonic form while keeping Kaelith in character — she is not ready for this level of clarity. The explicit thematic statement is deferred to the reunion scene where it can be earned through dialogue.",
+      "linesAffected": "L356 (revised)"
+    },
+    {
+      "findingId": "LINE-005",
+      "severity": "major",
+      "action": "applied",
+      "description": "Epiphany-as-aphorism ('Need did not make you weak. Need made you vulnerable. Weakness and vulnerability were not the same thing. Kaelith had confused them for six years, and the confusion had passed for wisdom, and the wisdom had nearly killed her.') replaced with physical/tactical dramatisation: 'She looked at the two fingers that would not close. She would have called the retreat, if there had been anyone to retreat to.' The failing hand embodies weakness; the absence of someone to retreat to embodies vulnerability. The reader arrives at the distinction through scene logic and Kaelith's tactical frame rather than narrated declaration.",
+      "linesAffected": "L326 (revised)"
+    },
+    {
+      "findingId": "LINE-006",
+      "severity": "major",
+      "action": "applied",
+      "description": "Closing section (original L323-379, ~57 lines) trimmed to ~37 lines (~35% cut). Retained: direction change, bond/resonance response to shift, 'North toward the Quietus. North toward Lirien.' convergence, dual-truth framing, and 'She walked anyway' as chapter close. Removed: extended cage-and-love meditation (flagged in LINE-004), triple grief-comparison passage (L365-373, flagged in LINE-015), restated bond-carrying-grief passages, 'one step at a time' exit padding, middle 'She walked anyway' instance (LINE-009), and the 'but first she had to get there' bridge. Final close now runs: direction change → resonance response → convergence → admission of need → deflection from meaning → cold progression → Lirien waiting → pinned empathy → visual close → 'She was not ready. She walked anyway.'",
+      "linesAffected": "L340-372 (revised) — approximately 20 lines removed or compressed"
+    },
+    {
+      "findingId": "LINE-007",
+      "severity": "major",
+      "action": "applied",
+      "description": "Near-identical phrasing ('nothing like the precise emotional management Lirien had maintained for months' at L37 and 'Nothing like the precise emotional management Lirien had demonstrated since the first day in Duskhaven...' at L141) resolved by thinning the first instance to 'nothing like Lirien' (3 words) and retaining the second as the developed version: 'Nothing like the precise emotional management Lirien had demonstrated since the first day in Duskhaven.' Second instance also tightened by removing the extended subordinate clause about predator-assessing-terrain.",
+      "linesAffected": "L56 and L152 (revised)"
+    },
+    {
+      "findingId": "LINE-008",
+      "severity": "minor",
+      "action": "applied",
+      "description": "Purple prose at L75 ('The night beyond the shelter was cold and silent and full of the nothing that had been everything') replaced with grounded alternative: 'The night beyond the shelter was cold and silent and held the shape of someone missing.' Removes the philosophical/poetic abstraction ('the nothing that had been everything') and replaces with Kaelith's concrete sensory register. Also eliminates the rhythmically slack triple 'and' construction.",
+      "linesAffected": "L90 (revised)"
+    },
+    {
+      "findingId": "LINE-009",
+      "severity": "minor",
+      "action": "applied",
+      "description": "'She walked anyway' reduced from 3 instances to 1. Retained only the chapter-closing instance ('She was not ready. / She walked anyway.') where it carries maximum weight as the final statement. Removed the two earlier uses (L351, L363 in draft). The single closing use lands with full force because the phrase has not been pre-spent.",
+      "linesAffected": "L371-372 (revised) — single instance at chapter close"
+    },
+    {
+      "findingId": "LINE-010",
+      "severity": "minor",
+      "action": "applied",
+      "description": "'The simple story' reduced from 4 instances to 1. Retained the first introduction at L155 ('The simple story Kaelith had been telling herself began to crack'). The L191 variant changed to 'the story she had been telling herself.' The L307 and L369 instances removed entirely — the reader already knows the concept from the introduction. The phrase now functions as a single-use naming rather than a verbal tic.",
+      "linesAffected": "L168 (revised) — single instance"
+    },
+    {
+      "findingId": "LINE-011",
+      "severity": "minor",
+      "action": "applied",
+      "description": "Show-tell at L147 ('This was not the grief of a mission that had failed. This was the grief of a person who had lost something irreplaceable') replaced with physical/felt description: 'This was not directed at anything — not aimed at a failure, not driving toward a solution. It sat. It filled every space and stayed. The grief of someone who had stopped trying to fix what was broken and was simply inside the loss.' The reader categorises the grief type from the qualitative description (directionless, settling, permanent) rather than from named categories.",
+      "linesAffected": "L158 (revised)"
+    },
+    {
+      "findingId": "LINE-012",
+      "severity": "minor",
+      "action": "applied",
+      "description": "Cliché 'Her body reacted before her mind could catch up' replaced with Kaelith-specific phrasing: 'Kaelith's hand went to her sternum. The thought arrived after.' Maintains the physical-before-mental MRU pattern while using Kaelith's clipped voice rather than a stock action-writing phrase.",
+      "linesAffected": "L146 (revised)"
+    },
+    {
+      "findingId": "LINE-013",
+      "severity": "minor",
+      "action": "applied",
+      "description": "Two external/physical beats added to the 70-line introspective passage in SCN-48 to break sustained internalization. (1) 'The fire was dying. She fed it another branch, left-handed, and noticed the grip was weaker than it had been at evening.' — anchors in physical action, provides Pallor progression foreshadowing, and creates a natural paragraph break. (2) 'Outside, a branch cracked somewhere in the darkness. Wind, or an animal. The sound pulled her attention outward for a moment, and when it came back, the loss was still there — patient and heavy on the other side of everything she had put between them.' — external sensory break that redirects attention before returning to internal content, with the return itself advancing emotional awareness.",
+      "linesAffected": "L174, L180 (revised)"
+    },
+    {
+      "findingId": "LINE-014",
+      "severity": "minor",
+      "action": "applied",
+      "description": "Triple 'Trapped' anaphora ('Trapped by a contract that demanded death. Trapped by feelings that demanded survival. Trapped between the institution that had built the cage and the woman who had been caged inside it.') compressed to tactical register: 'Kaelith wondered if Lirien felt as pinned as she did — contract pulling one direction, the rest pulling another, no clean exit.' Preserves the empathy beat (Kaelith imagining Lirien's state) while staying in her voice register. Single sentence replaces three-line rhetorical parallelism.",
+      "linesAffected": "L366 (revised)"
+    },
+    {
+      "findingId": "LINE-015",
+      "severity": "minor",
+      "action": "applied",
+      "description": "Closing meditation (L365-373, 'the patient, permanent weight of someone who had lost something they would never stop mourning...' through 'Maybe understanding was not the same as forgiveness, but it was not nothing') removed entirely. The passage articulated the Calwrath-grief parallel with unnecessary explicitness, pre-digesting a subtextual insight the reader can feel without narration. The physical recognition (Lirien's grief sitting in Kaelith's chest the way Calwrath sits) is now conveyed through the accumulated effect of SCN-48 rather than stated analytically.",
+      "linesAffected": "Lines removed from closing section"
+    },
+    {
+      "findingId": "COPY-001",
+      "severity": "major",
+      "action": "applied",
+      "description": "Calwrath dream location corrected: 'children who had sheltered in the market square' changed to 'children who had sheltered in the district temple' to match ch13's established account (lines 134-136) where families sheltered in the district temple with stone walls rated for conventional fire, not the open market square.",
+      "linesAffected": "L138 (revised)"
+    },
+    {
+      "findingId": "COPY-002",
+      "severity": "moderate",
+      "action": "applied",
+      "description": "False attribution corrected: '*I want this too*' (attributed to Lirien) replaced with '*wherever you are*' — Lirien's actual declaration from ch15 line 247. Kaelith said 'I want this' (ch15 line 153); Lirien's corresponding words were 'wherever you are.' The 'too' created a false echo that does not exist in the established text.",
+      "linesAffected": "L128 (revised)"
+    },
+    {
+      "findingId": "COPY-003",
+      "severity": "minor",
+      "action": "applied",
+      "description": "Temporal reference corrected: 'the night before the declaration' changed to 'the night of the declaration' to align both appositional temporal references to the same event — the evening of ch15 when 'I want this' was spoken. The original implied the night preceding the declaration event, which contradicts the 'since *I want this*' clause in the same sentence.",
+      "linesAffected": "L98 (revised)"
+    },
+    {
+      "findingId": "COPY-004",
+      "severity": "minor",
+      "action": "applied",
+      "description": "'Compensatable' (nonstandard English) replaced with 'Manageable' — fits Kaelith's voice register and avoids the nonstandard formation while maintaining the clipped military assessment tone of the surrounding fragments.",
+      "linesAffected": "L240 (revised)"
+    },
+    {
+      "findingId": "COPY-005",
+      "severity": "minor",
+      "action": "applied",
+      "description": "Bond mechanic overreach corrected. 'Lirien had felt her change direction. Lirien knew.' replaced with 'Lirien had felt the shift. Not the direction — the resonance did not carry that — but the intent behind it.' Explicitly acknowledges the bond's limitation (does not transmit spatial/factual information) while preserving the emotional beat. Lirien detects the emotional shift (intent, resolve) rather than the physical direction change.",
+      "linesAffected": "L344 (revised)"
+    },
+    {
+      "findingId": "COPY-006",
+      "severity": "minor",
+      "action": "applied",
+      "description": "Calwrath dream temporal confusion resolved. 'The accelerant spreading through the Graymarket district in eight minutes, arriving everywhere at once' simplified to 'The accelerant arriving everywhere at once' — removing the 'in eight minutes' modifier that conflated the decision window (eight minutes between runner's arrival and breach force) with the fire's duration (ninety seconds per ch13 line 122). The dream context allows compression but the original phrasing incorrectly attributed the decision window timing to the fire's spread.",
+      "linesAffected": "L138 (revised)"
+    },
+    {
+      "findingId": "DEV-017-001",
+      "severity": "minor",
+      "action": "applied",
+      "description": "Memory-testing passage in SCN-47 compressed by approximately 60 words. Retained: Oathbrand removal beat (most voice-specific, directly tied to bond mechanics exploited in SCN-48) and questioning of each memory's authenticity. Compressed: Calwrath confession beat reduced from ~75 words to ~35 words — retains the key image (Lirien sitting with it as though it mattered, the operative's mirror) while removing the detailed re-examination of the three hundred dead, the eight minutes, the children, and operation thirty-one, all of which were established in ch13 and recontextualised in ch16. Removed: 'complete architectural blueprint of her guilt' (also serves LINE-001 architectural metaphor reduction).",
+      "linesAffected": "L66-70 (revised)"
+    },
+    {
+      "findingId": "DEV-017-002",
+      "severity": "minor",
+      "action": "applied",
+      "description": "Pre-dream Calwrath passage compressed from ~120 words to ~35 words. Original ('The worst part was how easily the pattern fit... She had been the weakness. Both times.') restated the institutional-parallel analysis already delivered in ch15 and ch16. Revised to: 'People you trust will use you for institutional purposes. Calwrath first. Now the Cerith Court. / The soldier who walked into the same ambush twice deserved what happened to her.' Retains the strong voice-authentic formulation ('soldier who walked into the same ambush twice') as a direct bridge into the dream while eliminating the detailed Ashborne/Court parallel that duplicates known ground.",
+      "linesAffected": "L92-94 (revised)"
+    }
+  ],
+  "findingsDeferred": [
+    {
+      "findingId": "DEV-017-003",
+      "severity": "minor",
+      "action": "deferred",
+      "rationale": "Pacing note — seven-chapter high-tension cluster (ch11-17) is structurally mandatory for Act III opening. No ch17 changes required per the developmental editor's own assessment (actionRequired: false). Chapter's introspective texture already provides tonal relief despite numerical tension-8 rating. Recovery planned at ch18 (tension 6, partial recovery with lower-intensity character work)."
+    }
+  ],
+  "coherenceVerification": {
+    "voiceConsistency": "Kaelith's voice maintained throughout. Military vocabulary ('perimeter', 'sightlines', 'garrison efficiency', 'threat vector', 'functional impairment', 'compensate left', 'military assessment') appears at natural intervals without over-concentration. Architectural metaphors dramatically reduced to selective use at emotional peaks (load-bearing wall crack, load-bearing story, military assessment 'structure is compromised'). Sentence rhythm follows the fingerprint: predominantly short and declarative with longer sentences emerging at emotional breach points. Tactical thought framing surfaces at decision points (post-combat assessment, mission logic chain) rather than routinely.",
+    "voiceMarkerDensity": "Architectural metaphors reduced from ~45+ to ~4 genuine metaphorical uses. Military vocabulary maintained at established density (~8-10 terms across the chapter, well-distributed). No passage reads as a voice marker checklist. The voice is recognisable through cumulative effect across the chapter rather than signposted in every paragraph.",
+    "dialogueNaturalism": "No dialogue present in this chapter — all internal monologue and narration. Recalled speech (italicised) preserved unchanged from draft: contract text, Lirien's 'shared vulnerability, not shared power', 'cessation of heartbeat', 'wherever you are', and Kaelith's 'I want this'. All attributions now correctly sourced.",
+    "sceneFlow": "Three scenes flow naturally through their designed movements. SCN-47: isolation → contract examination → Pallor acceleration. SCN-48: dream transition (smooth) → bond breach → emotional processing with physical beats → reluctant reassessment → transparent self-deception. SCN-49: dawn efficiency → terrain/walking → vorakh combat (untouched, praised passage) → post-combat assessment → mission logic → direction change → closing. Added physical beats (fire tending at L174, branch sound at L180) integrate seamlessly into the introspective flow.",
+    "continuityIntegrity": "All factual corrections verified: district temple (not market square), 'wherever you are' (not 'I want this too'), night of the declaration (not before), accelerant timing separated from decision window. Bond mechanics now explicitly respects emotional-only transmission limitation at L344. Vorakh description, Pallor progression, rib injury, Calwrath casualty count, contract details, and all proper nouns verified consistent with continuity tracker.",
+    "newIssuesIntroduced": "None identified. 'resonance' (18 uses) and 'connection' (12 uses) replace 'bond' (27 uses) — split across two words prevents any single term reaching the monotony threshold. Both words are semantically appropriate and established in the magic system. No new repetitions, voice inconsistencies, continuity errors, or POV violations detected."
+  },
+  "metrics": {
+    "griefUses": {
+      "draft": 28,
+      "revised": 6,
+      "reduction": "79%"
+    },
+    "bondUses": {
+      "draft": 27,
+      "revised": "0 ('bond') — replaced by 'resonance' (18) + 'connection' (12)",
+      "reduction": "100% of original term"
+    },
+    "wallUses": {
+      "draft": 14,
+      "revised": "3 (2 literal, 1 thematic)",
+      "reduction": "79%"
+    },
+    "cageUses": {
+      "draft": 9,
+      "revised": 1,
+      "reduction": "89%"
+    },
+    "architecturalMetaphors": {
+      "draft": "~45+ instances",
+      "revised": "~4 genuine metaphorical uses + 4 literal",
+      "reduction": "~91% of metaphorical uses"
+    },
+    "simpleStoryUses": {
+      "draft": 4,
+      "revised": 1,
+      "reduction": "75%"
+    },
+    "walkedAnywayUses": {
+      "draft": 3,
+      "revised": 1,
+      "reduction": "67%"
+    },
+    "wordCountReduction": {
+      "draft": 4956,
+      "revised": 4544,
+      "delta": -412,
+      "sources": "Memory-testing compression (~60 words), pre-dream passage compression (~85 words), closing section trim (~200 words), metaphor/repetition thinning (~67 words)"
+    }
+  }
+}

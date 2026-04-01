@@ -1,0 +1,105 @@
+{
+  "id": "CHAR-011",
+  "name": "Kethran Var",
+  "role": "antagonist",
+  "isPOV": false,
+  "psychologicalProfile": {
+    "wound": "Kethran was shaped by a culture that survived chaos by treating attachment as a breach vector and people as reliability problems.",
+    "desire": "Keep the Seep efficient, trusted, and free of variables that cannot be modeled.",
+    "fear": "Ambiguity spreading through the Hand network, especially through attachment.",
+    "lie": "Reducing people to tools is more merciful than trusting them to choose badly.",
+    "ghost": "An early operation failed because an operative privileged a bond over mission precision, and Kethran built a whole command philosophy against softness.",
+    "need": "To admit that incomplete information plus absolute force is arrogance, not competence."
+  },
+  "arc": {
+    "type": "negative",
+    "startState": "An efficient superior who believes containment is best served by elimination.",
+    "endState": "A rigid commander who doubles down after the premise proves wrong.",
+    "turningPoints": [
+      {
+        "chapter": 2,
+        "event": "Authorizes Lirien's assignment on incomplete intelligence."
+      },
+      {
+        "chapter": 15,
+        "event": "Reads Lirien's deviation as damage instead of warning."
+      },
+      {
+        "chapter": 19,
+        "event": "Escalates pursuit rather than admit miscalculation."
+      }
+    ]
+  },
+  "voiceFingerprint": {
+    "vocabularyLevel": "Precise technical with fae operational terminology. Kethran speaks in the language of systems and assets: 'operational integrity,' 'containment parameters,' 'acceptable variance,' 'asset deployment,' 'mission deviation.' He reduces people to functional components without cruelty — it is simply how fae operational culture conceptualizes individuals. He says 'the asset' not 'Lirien,' 'the variable' not 'Kaelith,' 'the deviation' not 'the choice she made.' The dehumanization is structural, not personal, which makes it worse.",
+    "sentenceLength": "Short and ruthless, each sentence a contained action. 'The asset has deviated.' 'Containment is no longer viable.' 'Escalate.' His sentences rarely explain — they declare. Longer sentences appear only in formal Court proceedings, where they take the shape of contractual clauses with conditional structures. In operational speech, brevity IS his authority.",
+    "metaphorDensity": "Minimal, drawn from tools, seals, and mechanical stress. A person is 'an instrument' or 'a component.' Failure is 'structural compromise.' Emotion is 'interference.' A threat is 'a stress point requiring resolution.' He gravitates away from garden (Thalen's domain), architecture-as-beauty (Kaelith's domain), water (Lirien's domain), medical (Marin's domain), and terrain (Tessen's domain) metaphors, though occasional natural crossover is expected — rigid domain walls create artificiality. His world is the machine — and every machine has tolerances.",
+    "emotionalRegister": "Cold, professional, and courteous in a way that makes courtesy feel like a blade being offered handle-first. His politeness is fae-cultural — it carries implicit threat because every fae exchange is contractual. 'I trust you will comply' is not a hope; it is a statement of expected outcome with consequences for deviation. The warmth he is capable of: none visible. The warmth he may once have had: buried under operational philosophy.",
+    "thoughtPatterns": "Instrumental and systems-oriented. Kethran evaluates everything as a system with inputs, outputs, and tolerances. When a component deviates from expected parameters, the system response is correction or replacement — almost never accommodation. He rarely asks why someone disobeyed; he asks what operational adjustment the disobedience requires. The absence of 'why' is his defining intellectual failure.",
+    "dialectMarkers": "Fae duty-language: 'Under the weight' (carrying a contract), 'I approach with terms' (opening formal negotiation), asset-language for people. He uses the Cerith Court's formal address even in operational contexts. He avoids contractions as a strong default — the sound of a language that does not permit ambiguity — though under extreme duress or when the operational mask slips, an occasional contraction may surface as a crack in the system.",
+    "humorStyle": "Absent. The concept does not register as a communicative tool. If someone makes a joke in his presence, he processes it as imprecise communication and responds to the literal content. This is not for comedy — it is characterization of a culture that treats ambiguity as existentially threatening.",
+    "attentionPriority": "What Kethran notices first: (1) Deviation — anything operating outside expected parameters. (2) Stress points — where is this system most likely to fail? (3) Leverage — what input produces the desired output? (4) Compliance — are the terms being met?",
+    "deflectionPattern": "Reframes personal questions as operational irrelevancies. 'That question pertains to a domain outside operational scope.' He tends not to acknowledge the existence of personal motivation — nearly everything is operational. The deflection is so complete that it functions as ideology rather than evasion.",
+    "stressResponse": "Operational language intensifies while sentence length drops further. Under moderate stress: rapid situational assessment in clipped commands. Under extreme stress: a single moment where the operational language fails and something raw surfaces — 'She was mine to deploy' — before the system reconstitutes. The crack reveals possession, not attachment, which is the tragedy."
+  },
+  "sensorySig": {
+    "dominantChannel": "visual",
+    "signature": "hairline cracks and visible stress points",
+    "emotionalTriggers": [
+      "tool misalignment",
+      "water seeping through a seal",
+      "hesitation before obedience"
+    ]
+  },
+  "relationships": [
+    {
+      "withCharId": "CHAR-002",
+      "type": "handler-operative",
+      "dynamicArc": "Lirien's personhood is, to Kethran, mission damage."
+    },
+    {
+      "withCharId": "CHAR-001",
+      "type": "target-variable",
+      "dynamicArc": "Kaelith is the variable Kethran thinks can be removed cleanly."
+    },
+    {
+      "withCharId": "CHAR-012",
+      "type": "institutional-peer",
+      "dynamicArc": "Serath's flawless wording complements Kethran's flawless execution."
+    }
+  ],
+  "physicalDescription": {
+    "apparentAge": "ageless to human eyes",
+    "build": "narrow and blade-straight",
+    "distinguishingFeatures": "glass-dark hair and pale irises",
+    "usualPresentation": "severe Court garments with no spare ornament",
+    "movement": "precise to the point of discomfort"
+  },
+  "agency": "Kethran sets the death-order logic in motion and keeps tightening it once Lirien diverges. The central trap exists because Kethran chooses force over understanding.",
+  "upstreamRefs": [
+    "story-concept.json",
+    "world-bible/politics.json",
+    "world-bible/culture.json",
+    "world-bible/magic-system.json",
+    "characters/CHAR-002.json"
+  ],
+  "dialoguePatterns": {
+    "initiationStyle": "Opens with operational status or contractual framing. 'I approach under the weight. The asset's deviation has exceeded acceptable parameters.' He does not typically greet — he reports. Most conversations are briefings.",
+    "responseStyle": "Responds with assessment, not engagement. Someone expresses concern and Kethran responds: 'Your concern has been noted. It does not alter the operational requirement.' He acknowledges input the way a system logs data — without letting it affect the output.",
+    "underPressure": "Commands compress to single words. 'Escalate.' 'Contain.' 'Resolve.' The politeness falls away and what remains is pure operational imperative. Recovery is marked by the deliberate restoration of formal address — a man putting his mask back on, knowing the listener saw it slip.",
+    "verbalTics": [
+      "Never uses contractions — 'do not,' 'will not,' 'cannot'",
+      "Refers to people as 'the asset,' 'the variable,' 'the subject'",
+      "Says 'I trust you will comply' as both courtesy and threat",
+      "Opens formal exchanges with 'I approach under the weight'",
+      "Uses 'deviation' for any unexpected human behavior"
+    ],
+    "favoriteExpressions": [
+      "I trust you will comply.",
+      "The asset has deviated.",
+      "That question pertains to a domain outside operational scope.",
+      "Containment is no longer viable.",
+      "I do not require your understanding. I require your compliance."
+    ]
+  }
+}

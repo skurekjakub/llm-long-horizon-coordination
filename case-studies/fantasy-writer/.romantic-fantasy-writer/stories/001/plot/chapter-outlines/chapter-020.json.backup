@@ -1,0 +1,80 @@
+{
+  "chapterNum": 20,
+  "pov": "CHAR-002",
+  "povTransitionMotivation": "Switch to Lirien for the contract fulfillment scene \u2014 temporary death and resurrection as ultimate trust test",
+  "scenes": [
+    {
+      "id": "SCN-56",
+      "goal": "[To be detailed by scene-beat-designer]",
+      "conflict": "[To be detailed by scene-beat-designer]",
+      "disaster": "[To be detailed by scene-beat-designer]",
+      "valueShift": "[To be detailed by scene-beat-designer]",
+      "fiveCommandments": {
+        "incitingIncident": "[To be detailed]",
+        "complication": "[To be detailed]",
+        "crisis": "[To be detailed]",
+        "climax": "[To be detailed]",
+        "resolution": "[To be detailed]"
+      }
+    },
+    {
+      "id": "SCN-57",
+      "goal": "[To be detailed by scene-beat-designer]",
+      "conflict": "[To be detailed by scene-beat-designer]",
+      "disaster": "[To be detailed by scene-beat-designer]",
+      "valueShift": "[To be detailed by scene-beat-designer]",
+      "fiveCommandments": {
+        "incitingIncident": "[To be detailed]",
+        "complication": "[To be detailed]",
+        "crisis": "[To be detailed]",
+        "climax": "[To be detailed]",
+        "resolution": "[To be detailed]"
+      }
+    },
+    {
+      "id": "SCN-58",
+      "goal": "[To be detailed by scene-beat-designer]",
+      "conflict": "[To be detailed by scene-beat-designer]",
+      "disaster": "[To be detailed by scene-beat-designer]",
+      "valueShift": "[To be detailed by scene-beat-designer]",
+      "fiveCommandments": {
+        "incitingIncident": "[To be detailed]",
+        "complication": "[To be detailed]",
+        "crisis": "[To be detailed]",
+        "climax": "[To be detailed]",
+        "resolution": "[To be detailed]"
+      }
+    }
+  ],
+  "emotionalArc": {
+    "startState": "[To be detailed by scene-beat-designer]",
+    "endState": "[To be detailed by scene-beat-designer]",
+    "pivotMoment": "[To be detailed by scene-beat-designer]"
+  },
+  "fantasyBeats": [
+    "Contract Fulfilled Through Temporary Heartbeat Cessation \u2014 Loophole Exploited"
+  ],
+  "romanceBeats": [
+    "Trust Proves Itself \u2014 Kaelith Consents to Death and Resurrection"
+  ],
+  "hookType": "ritual-preparation",
+  "hookTypeDescription": "[To be detailed by scene-beat-designer]",
+  "closeType": "resurrection-aftermath",
+  "closeTypeDescription": "[To be detailed by scene-beat-designer]",
+  "targetWordCount": 4100,
+  "tensionLevel": 9,
+  "pacingNotes": "Chapter 20 \u2014 Contract Fulfilled in Letter, Broken in Spirit. [To be detailed by scene-beat-designer]",
+  "locationsPrimary": [
+    "Secure location before final approach to Quietus"
+  ],
+  "charactersPresent": [
+    "CHAR-002",
+    "CHAR-001"
+  ],
+  "upstreamRefs": [
+    "../../plot/plot-structure.json",
+    "../../characters/CHAR-002.json",
+    "../../plot/dual-arc-timeline.json",
+    "../../plot/tension-map.json"
+  ]
+}

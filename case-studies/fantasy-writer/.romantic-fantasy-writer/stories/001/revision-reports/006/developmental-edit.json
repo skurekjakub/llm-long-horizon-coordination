@@ -1,0 +1,79 @@
+{
+  "chapterNumber": 6,
+  "editorType": "developmental",
+  "generatedAt": "2025-07-26T09:00:00Z",
+  "overallAssessment": "Chapter 6 delivers a strong Act I closer with genuine momentum — the pre-dawn departure, the Tavik confrontation, and the shared watch scene form an effective three-part structure that advances both arcs simultaneously. Scene 1 (departure + confrontation) is the chapter's strongest section: the coordinated takedown is tight, Kaelith and Lirien's complementary combat disciplines demonstrate the operational partnership physically rather than through dialogue, and Tavik's conflicted loyalty adds moral complexity. Scene 2 (travel + shared watch) effectively activates the forced proximity romance beat and delivers Lirien's growing awareness with appropriate restraint. However, the chapter contains a critical binding-timeline arithmetic error that undermines the stakes engine, a geographical direction error that contradicts the established world-bible, and meta-narrative terminology ('forced proximity engine') that breaks Lirien's character voice. Scene 3 (Seep report) is competent but leans too heavily on narrated summary rather than dramatized tension, weakening what should be the chapter's decisive point-of-no-return moment.",
+  "findings": [
+    {
+      "id": "DEV-006-001",
+      "severity": "critical",
+      "category": "continuity-arithmetic",
+      "location": "Scene 2, lines 194-210 (binding timeline discussion)",
+      "finding": "The binding escalation timeline is internally contradictory. Lirien states: '48 hours: pain begins. 72 hours: incapacitating. 96 hours: motor loss. 120 hours: termination.' She then says she accepted the contract 74 hours ago. Kaelith responds: 'Then you have forty-six hours before the pain starts.' The arithmetic 74+46=120 calculates time until TERMINATION, but the dialogue labels it 'before the pain starts.' If the 48-hour pain threshold is measured from contract acceptance, Lirien should already be 26 hours past the pain onset. If the escalation timeline runs from a different trigger (e.g., first missed reporting window), then Kaelith's arithmetic using 'hours since acceptance' to derive 'hours before pain' is logically invalid. Additionally, Chapter 4 (revised) establishes 'Pre-dawn Day 2: 48 hours before binding pain starts.' Chapter 6 opens at dawn Day 3 — approximately 24 hours later — suggesting ~24 hours remain before pain, not 46. The binding's stakes engine depends on correct, consistent arithmetic. This error undermines the urgency that drives the chapter's emotional logic.",
+      "recommendation": "Establish a clear, consistent binding mechanic: (1) Define explicitly whether the escalation countdown runs from contract acceptance, from first deviation, or from a missed reporting deadline. (2) Reconcile with Ch4's established 48-hour figure. Recommended approach: the escalation runs from the first missed reporting deadline, NOT from contract acceptance. Lirien's reporting deadline passed at a specific point (e.g., hour 48 of the contract — she was supposed to report completion by then). She is now X hours past that deadline, with 48 minus X hours remaining before pain begins. This separates 'hours since acceptance' from 'hours since escalation trigger.' Rewrite the dialogue so Kaelith asks the right question ('How long since your reporting deadline passed?') and derives the correct remaining time."
+    },
+    {
+      "id": "DEV-006-002",
+      "severity": "major",
+      "category": "voice-immersion",
+      "location": "Lines 334 and 438",
+      "finding": "'The forced proximity engine' is a narrative craft term drawn from writing workshop vocabulary. It appears in the chapter outline's plotting notes as a structural mechanism label ('The forced proximity engine activates'), not as in-world psychology. Line 334 attempts to justify the term ('Lirien recognized it from observational psychology training'), but the justification reads as authorial backfill rather than natural character cognition. No other story artifact establishes 'forced proximity engine' as a concept within the Cerith Court's operative training or fae psychological frameworks. The term appears twice — lines 334 and 438 — and both instances break immersion by importing metanarrative language into Lirien's otherwise disciplined analytical voice.",
+      "recommendation": "Replace with Lirien's established analytical vocabulary. She would classify this through intelligence-operative framing: 'proximity-induced target interference,' 'sustained exposure effect,' 'asset attachment risk,' or 'environmental intimacy protocol' — terms that sound like they come from operative training manuals. The concept is sound; the vocabulary must match the character. Alternatively, let Lirien describe the MECHANISM without naming it: 'Shared risk. Shared space. Sustained attention in contexts where survival demanded coordination. The combination produced effects her training had warned against — attachment responses that degraded operational detachment.' This shows the intelligence rather than naming it."
+    },
+    {
+      "id": "DEV-006-003",
+      "severity": "major",
+      "category": "geographical-continuity",
+      "location": "Lines 30, 40, 120, 150 vs. line 428 and world-bible",
+      "finding": "The chapter establishes eastward travel at multiple points: 'East gate' (line 30), 'They walked east' (line 40), 'the road east' (line 120), 'The Thornway stretched east-southeast' (line 150). However, geography.json describes the Thornway as running 'from the coast at Duskhaven south and west through the eastern provinces toward the imperial heartland.' The dual-arc-timeline specifies 'heading west along the Thornway toward the borderlands.' Line 428 contradicts the chapter's own earlier references by stating 'The road stretched south.' The destination, Veldrane, is described as 'Forty miles south' (line 162). The directional error is systematic — east appears throughout Scenes 1 and 2 — and contradicts both the authoritative geography and the plotting documents.",
+      "recommendation": "Correct all directional references. They exit via the eastern gate (this can remain — it's a specific gate in Duskhaven's fortifications, not a statement of travel direction). Once on the Thornway, direction should be south/southwest, consistent with geography.json and the Veldrane destination. 'The Thornway stretched south-southwest, following the coast before turning inland near the old Legion checkpoint at Twenty-Three Mile.' Change 'They walked east' to 'They walked south along the Thornway.' Change 'the road east' to 'the road ahead' or 'the road south.' Maintain line 428's 'south' as the correct direction."
+    },
+    {
+      "id": "DEV-006-004",
+      "severity": "minor",
+      "category": "scene-dramatization",
+      "location": "Scene 3, lines 372-445",
+      "finding": "Scene 3 functions as the chapter's point-of-no-return — Lirien files a misleading Seep report, crossing an irreversible line. The outline's crisis ('Betray the Seep and gamble on Kaelith, or file honestly and accept termination?') is resolved primarily through narrated summary (lines 380-390: what the report says, what it omits) rather than dramatized tension. The physical act of writing and filing the report happens in two paragraphs; the moral weight is conveyed through exposition. The subsequent confrontation with Kaelith (lines 394-423) partially compensates but arrives after the decisive moment has already passed in summary form.",
+      "recommendation": "Strengthen the report-writing scene by dramatizing the physical and emotional experience. Show Lirien's hand hesitating over specific words. Show her writing one version, crossing it out, writing another. Show the chemical compound's smell, the texture of the water-soluble paper, the cipher's mechanical process — ground the betrayal in sensory detail. The internal narration about what the report omits (lines 383-387) can be trimmed; instead, show Lirien choosing each word and let the reader understand the omissions through what she writes vs. what happened. The dead-drop scene (lines 392-393) is compressed to two sentences for a moment that should carry the weight of Lirien's most significant choice in eighteen years."
+    },
+    {
+      "id": "DEV-006-005",
+      "severity": "minor",
+      "category": "vulnerability-ladder",
+      "location": "Scene 2 (shared watch) and Scene 3 (report filing)",
+      "finding": "The chapter should deliver vulnerability ladder step 2 for Kaelith ('Allows combat coordination: she accepts Lirien as a co-combatant, revealing tactical capacity') and step 3 for Lirien ('Files misleading report: she defies the Seep to protect Kaelith, accepting institutional consequences'). Step 2 is delivered effectively through the coordinated takedown (lines 108-118) — the wordless coordination demonstrates trust through action. Step 3 is present but could be stronger: Lirien files the report while Kaelith sleeps, reducing the sense of witnessed vulnerability. The later confrontation (lines 394-423) where Kaelith observes that Lirien has 'crossed a line' partially compensates, but the vulnerability is acknowledged after the fact rather than experienced in real time.",
+      "recommendation": "Consider having Kaelith partially awake or aware during the report filing — not intervening, but present. This increases the vulnerability: Lirien is not just betraying her institution, she is doing so within sight of the person she is betraying it for. Even a brief beat where Lirien senses Kaelith's awareness without confirming it would raise the emotional stakes of the filing scene."
+    },
+    {
+      "id": "DEV-006-006",
+      "severity": "suggestion",
+      "category": "show-vs-tell",
+      "location": "Lines 438-440 (chapter close)",
+      "finding": "The final paragraph directly states the chapter's thematic conclusion: 'Lirien no longer knew whether she was an operative executing a contract or a person traveling with someone who had become structurally necessary in ways that exceeded tactical assessment.' The shared watch scene (lines 296-368) has already demonstrated this shift through behavior — disrupted focus, failed classifications, persistent awareness. The explicit restatement in the closing paragraph undercuts the prose's earlier restraint by telling the reader what they have already been shown.",
+      "recommendation": "Trust the shared watch scene to carry the thematic weight. Simplify the closing: end on sensory awareness rather than analytical conclusion. The final two lines (442-444) are strong: 'She did not look at Kaelith as they walked. / She was aware of her with every step.' Consider cutting or significantly compressing lines 438-440 and letting those two sentences close the chapter. The contradiction between 'did not look' and 'was aware' is more powerful than any analytical statement."
+    }
+  ],
+  "structuralVerdict": "Strong three-part architecture with effective dual-arc advancement. Scene 1 is excellent — the departure and confrontation create genuine momentum. Scene 2 achieves the romance beat (forced proximity → awareness) with appropriate restraint for a Lirien-POV chapter. Scene 3 needs dramatization to match the weight of its narrative function. The critical arithmetic error and direction error are structural problems that need correction before the chapter can function within the larger narrative.",
+  "outlineCompliance": "Largely compliant. SCN-016 (departure + confrontation) delivers all five commandments per the outline. SCN-017 (travel + shared watch) hits the specified emotional beats and correctly positions the romance arc. SCN-018 (report filing) meets the plot requirements but undersells the outline's specified crisis intensity. Hook type (action-momentum) and close type (point-of-no-return) both land. Emotional arc from 'tactical execution' to 'acknowledged loss of control' is achieved.",
+  "arcProgressionNotes": {
+    "fantasyArc": "Strong. The departure from Duskhaven constitutes the First Plot Point — the point of no return in the fantasy arc. Kaelith is now fugitive from both the Legion and the Conclave. The Tavik confrontation demonstrates the institutional forces arrayed against her. The Pallor's tarnished membrane (line 146) maintains atmospheric presence.",
+    "romanceArc": "On track. The forced proximity romance beat activates through shared watch. Lirien's awareness shifts from professional assessment to something she cannot classify — appropriate for the 'attraction' stage (vulnerability ladder step 3). The mutual evasion ('tactical necessity' / 'the calculus has changed') correctly positions both characters as performing the same deflection. Neither acknowledges what they feel; both recognize the other's evasion.",
+    "dualArcInterleave": "Effective. The binding discussion (fantasy) doubles as a vulnerability exchange (romance). Kaelith framing Lirien's survival as 'tactically necessary' (line 220) advances both arcs simultaneously — it acknowledges the stakes while performing the same emotional evasion Lirien performs. The intersection type is reinforcing, matching the dual-arc-timeline's specification."
+  },
+  "pacingAssessment": "Scene 1: Well-paced action sequence (~33% of chapter). The Tavik confrontation builds appropriately from tension to coordinated violence. Scene 2: Good sustained tension through travel and shared watch (~40% of chapter). The watch scene's slow burn is effective but could use one more physical interruption (sound, wind shift) to prevent the introspective passages from stacking. Scene 3: Compressed at ~27% — the report filing needs expansion to match its narrative weight, while the closing paragraphs could be trimmed.",
+  "chapterStrengths": [
+    "The coordinated takedown of Tavik's guards (lines 108-118) is the chapter's best action writing — precise, efficient, and it demonstrates the operational partnership physically rather than through dialogue.",
+    "Lirien's analytical voice is strongly maintained. 'Interesting. Kaelith had asked can we, not can you. Inclusive pronoun. Operational partnership assumed, not requested.' (line 70) is a perfect Lirien observation.",
+    "The shared watch scene's slow build from professional surveillance to acknowledged awareness is paced with appropriate restraint for a POV character trained to suppress emotional responses.",
+    "Kaelith's characterization through Lirien's POV is excellent — we see her competence, her structural thinking, and her careful risk assessment without losing Lirien's distinctive observational lens.",
+    "The final exchange ('The calculus has changed' / 'The calculus changes. The arithmetic does not.') is thematically precise and provides a hook that resonates forward into the binding's consequences."
+  ],
+  "prioritizedRevisionOrder": [
+    "DEV-006-001 (binding timeline arithmetic — critical, must be resolved for stakes coherence)",
+    "DEV-006-003 (geographical direction — critical for world-consistency)",
+    "DEV-006-002 ('forced proximity engine' — major, breaks character voice)",
+    "DEV-006-004 (Scene 3 dramatization)",
+    "DEV-006-005 (vulnerability ladder step 3 strengthening)",
+    "DEV-006-006 (closing paragraph compression)"
+  ]
+}

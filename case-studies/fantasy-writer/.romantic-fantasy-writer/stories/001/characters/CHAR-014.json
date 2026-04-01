@@ -1,0 +1,110 @@
+{
+  "id": "CHAR-014",
+  "name": "Daerin Morweth",
+  "role": "supporting",
+  "isPOV": false,
+  "psychologicalProfile": {
+    "wound": "Daerin has spent decades converting impossible situations into survivable paperwork, and every compromise left residue.",
+    "desire": "Keep the empire's defense apparatus functioning long enough to prevent outright collapse.",
+    "fear": "That one act of open principle will shatter the fragile capacity he has spent years preserving.",
+    "lie": "Exhaustion excuses complicity.",
+    "ghost": "Authorizing Kaelith's Oathbrand while privately believing her decision was tactically right became the compromise he can neither justify nor forget.",
+    "need": "To accept responsibility before the last possible moment instead of calling lateness realism."
+  },
+  "arc": {
+    "type": "positive",
+    "startState": "A capable First Seat surviving too long by calling retreat necessity.",
+    "endState": "A weary pragmatist who finally spends authority against the rot it enabled.",
+    "turningPoints": [
+      {
+        "chapter": 4,
+        "event": "Responds to Kaelith through ordinary channels first."
+      },
+      {
+        "chapter": 19,
+        "event": "Sees the sabotage pattern inside Conclave procedure."
+      },
+      {
+        "chapter": 21,
+        "event": "Backs exposure instead of institutional face-saving."
+      }
+    ]
+  },
+  "voiceFingerprint": {
+    "vocabularyLevel": "Formal but soldierly — the vocabulary of someone who climbed from the officer corps to the Conclave and never fully left the field behind. Daerin speaks in the language of expenditure and endurance: 'hold,' 'spend,' 'cost,' 'sustain,' 'afford,' 'absorb.' He says 'what can we afford' rather than 'what should we do' — every principle is filtered through resource calculus. He uses 'hold' the way Kaelith uses 'intact' — but where Kaelith means structural soundness, Daerin means 'prevent collapse for one more day.' His register is that of a man who has been triaging an empire's decline for decades and is running out of things to spend.",
+    "sentenceLength": "Medium and deliberate, the sentence length of someone who says only what he must and resents the need to say even that. His sentences have the weary precision of a man who has listened to too many long speeches and refuses to give one. He seldom elaborates. He seldom repeats himself. If you missed it, the fault is yours.",
+    "metaphorDensity": "Low-to-moderate, drawn from campaigns, attrition, and supply logistics. A political problem is 'a front we cannot reinforce.' A colleague is 'an asset or a liability — there is nothing in between at this stage.' Compromise is 'controlled retreat.' Hope is 'strategic reserve — what you hold back for when everything else is spent.' He gravitates away from garden (Thalen's domain), water (Lirien's domain), medical (Marin's domain), and textual (Vairen's domain) metaphors, though occasional natural crossover is expected — rigid domain walls create artificiality. His world is the campaign that has gone on too long.",
+    "emotionalRegister": "Tired, blunt, and carrying the specific exhaustion of someone who has been right about decline and wrong about his capacity to prevent it. His bluntness is not rudeness — it is the last honest currency he has. He saves his patience for the things that matter and has very little left for things that don't. When genuinely moved: a long silence, then a single sentence that sounds like it cost him the last of something.",
+    "thoughtPatterns": "Logistical and consequentialist. Daerin thinks in resource allocation: what do we have, what does it cost, how long can we sustain it? He rarely asks whether something is right — he asks whether the empire can survive the consequences of doing it. Morality is a luxury he believes he cannot afford, which is his lie and his wound.",
+    "dialectMarkers": "Old-officer plainness — he speaks the way career soldiers write field reports: clear, direct, no decoration. Heavy use of 'hold,' 'spend,' 'cost' as universal verbs. He says 'the situation' rather than naming the crisis, because naming it makes it a conversation and he wants it to be a decision. He uses rank in address but drops titles — 'Reyvas,' not 'Honored Second Seat.'",
+    "humorStyle": "Exhausted sarcasm — the humor of a man who has outlived his patience for pretense. 'We could discuss this further, but I notice the sky is thinning while we admire our procedures.' His humor is impatient and cutting, aimed at the gap between institutional rhetoric and institutional reality.",
+    "attentionPriority": "What Daerin notices first: (1) Who is wasting time. (2) What the actual situation is, stripped of phrasing and performance. (3) Who is lying and whether the lie matters enough to confront. (4) What this will cost — not in money but in capacity, trust, and the dwindling reserve of things that work.",
+    "deflectionPattern": "Cuts to the next item. Asked about guilt: 'We have three other matters requiring decision. Which one will you handle while I attend to this one?' He deflects by making himself too busy for introspection — and the busyness is real, which makes it hard to challenge. His complicity hides behind his competence.",
+    "stressResponse": "Sentences shorten and bluntness intensifies. Diplomatic register falls away entirely. Under moderate stress: 'Enough. What are the options?' Under extreme stress: a long, silent stare followed by a single sentence that carries the weight of everything he has compromised to keep functioning. 'I signed the brand authorization. I knew she was right. I signed it anyway.'"
+  },
+  "sensorySig": {
+    "dominantChannel": "tactile",
+    "signature": "signet weight, scar-tight knuckles, wet wool",
+    "emotionalTriggers": [
+      "a visible brand",
+      "cold metal maps",
+      "soaked military canvas"
+    ]
+  },
+  "relationships": [
+    {
+      "withCharId": "CHAR-001",
+      "type": "former-superior",
+      "dynamicArc": "He helped authorize the punishment that erased Kaelith."
+    },
+    {
+      "withCharId": "CHAR-003",
+      "type": "colleague-opposite",
+      "dynamicArc": "Thalen's fervor and Daerin's exhaustion are two ways institutions fail."
+    },
+    {
+      "withCharId": "CHAR-009",
+      "type": "commander-subordinate",
+      "dynamicArc": "Sethis learned caution from Daerin's survival logic."
+    },
+    {
+      "withCharId": "CHAR-013",
+      "type": "conclave-peer",
+      "dynamicArc": "He trusts Iryse's sincerity until procedure itself proves compromised."
+    }
+  ],
+  "physicalDescription": {
+    "apparentAge": "mid-sixties",
+    "build": "broad and heavy-shouldered",
+    "distinguishingFeatures": "weather-cut face and one stiff hand",
+    "usualPresentation": "first-seat uniform worn like a burden",
+    "movement": "controlled but not effortless"
+  },
+  "agency": "Daerin drives plot through both past complicity and belated correction. His earlier authorization helped build Kaelith's prison; his later choice can help dismantle the cover shielding Thalen.",
+  "upstreamRefs": [
+    "story-concept.json",
+    "world-bible/politics.json",
+    "world-bible/history.json",
+    "world-bible/culture.json",
+    "characters/CHAR-001.json"
+  ],
+  "dialoguePatterns": {
+    "initiationStyle": "Opens by cutting through what came before. 'We have been discussing this for an hour. The situation is simpler than we are making it.' He enters conversations to end them — or at least to compress them to their decision point.",
+    "responseStyle": "Strips the argument to its operational core and responds to that. Someone presents a nuanced three-part analysis; Daerin responds: 'So you are saying we cannot afford it. Fine. What can we afford?' He respects intelligence but has little patience for the performance of intelligence.",
+    "underPressure": "Most diplomacy falls away. 'Reyvas, sit down. Caleth, the rites are compromised. Ethis, what does the record say? I need answers, not interpretations.' Pure command authority — the officer underneath the politician. He becomes more effective under pressure, not less, which is why people tolerate his peacetime abrasiveness.",
+    "verbalTics": [
+      "Uses 'hold,' 'spend,' 'cost,' and 'afford' as universal verbs",
+      "Says 'the situation' rather than naming the specific crisis",
+      "Opens with 'Enough' when impatient, which is often",
+      "Drops titles: uses surnames only ('Reyvas,' 'Caleth')",
+      "Says 'What can we afford?' as his decision-making framework"
+    ],
+    "favoriteExpressions": [
+      "Enough.",
+      "What can we afford?",
+      "The situation is simpler than we are making it.",
+      "We are out of time to be careful.",
+      "I did not survive thirty years of this to admire the view while it collapses."
+    ]
+  }
+}

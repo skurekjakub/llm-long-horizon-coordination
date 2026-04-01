@@ -1,0 +1,87 @@
+{
+  "chapterNum": 3,
+  "pov": "CHAR-001",
+  "wordCount": 4523,
+  "sceneCount": 3,
+  "scenes": [
+    {
+      "id": "SCN-007",
+      "wordCount": 1547,
+      "valueShift": "From 'punishment as passive exile' to 'containment as active conspiracy'",
+      "craftNotes": "Scene follows Goal→Conflict→Disaster structure. Kaelith's goal: gather evidence. Conflict: encrypted messages reveal ongoing suppression conspiracy. Disaster: realizes she's not forgotten—she's being actively monitored and maintained. Opening hook: 'Tavik's office was unlocked. That was the first problem.' Immediate danger signal. Micro-tension maintained through discovery sequence. Show-don't-tell: Kaelith's hands shake only AFTER she leaves the office, revealing suppressed emotional response."
+    },
+    {
+      "id": "SCN-008",
+      "wordCount": 1612,
+      "valueShift": "From 'I can endure this' to 'I must leave or be disappeared'",
+      "craftNotes": "Enforcer arrival escalates external threat to immediate. Goal: assess the threat. Conflict: enforcer demands rendition disguised as 'medical evaluation'. Disaster: realizes compliance means disappearance, refusal means violence, staying means death. Kaelith's tactical assessment shows operative-grade threat mapping—counting weapons, exits, subordinate positioning. Voice maintained through body-awareness metaphors ('cold blade-sharp clarity settle in her chest like a blade finding space between ribs')."
+    },
+    {
+      "id": "SCN-009",
+      "wordCount": 1364,
+      "valueShift": "From 'I fight alone' to 'the enemy of my enemy may be my only option'",
+      "craftNotes": "First tactical cooperation—unstable alliance formed through action, not declaration. Lirien disrupts capture through 'accidental' scaffolding collapse. Neither acknowledges cooperation overtly. Dialogue subtext: when Kaelith demands 'Why did you do that,' Lirien deflects before admitting truth ('Because I need you alive'). Closing technique: unstable-alliance—they're moving together but trust is provisional. Scene ends with Kaelith following Lirien toward smuggler's boat, accepting alliance born from mutual need, not affection."
+    }
+  ],
+  "craftToolCompliance": {
+    "T5_ToneContract": "Maintained morally complex, atmospherically taut tone. No prohibited tones (melodrama, grimdark nihilism, whimsy). Dry wit present in Lirien's deflection ('Poor construction. Unsafe scaffolding.'). Emotionally restrained—Kaelith processes betrayal through tactical calculation, not emotional declaration.",
+    "T6_StakesEscalation": "Personal stakes (Kaelith's exile) escalate to institutional threat (Conclave enforcer, rendition risk) and larger strategic stakes (Warden capacity, Quietus access). Chapter moves from investigation to flight.",
+    "T8_InternalExternalResistance": "Internal: Kaelith's distrust of institutions validated, self-punishment through isolation challenged by need for alliance. External: Oathbrand suppression, Conclave conspiracy, enforcer pursuit. Both layers present.",
+    "T10_SandersonsLaws": "Magic system rules reinforced: Oathbrand suppression maintained through deliberate Conclave refreshing, not natural persistence. Warden capacity introduced as ontological-grade interface with reality structure. Cost established—suppression causes physical deterioration.",
+    "T12_DualArcInterleave": "Fantasy arc: Pallor failure, Warden capacity, conspiracy surfaces. Romance arc: First tactical cooperation—Lirien acts as ally without being asked. Shared watch beat ('First Tactical Cooperation') executed through action sequence, not romantic gesture. Both arcs advance.",
+    "T15_ForeshadowingPayoff": "Plants seeded: FS-001 (Oathbrand maintenance conspiracy confirmed), FS-004 (Tavik's compromise exposed through encrypted messages). FS-005 referenced (Quietus access through Warden capacity). No payoffs in this chapter—building toward later reveals.",
+    "T16_SymbolicMotifWeaving": "MOT-002 (Oathbrand as wound that won't heal) present throughout—burns during discovery, described as 'persistent burn that should have dissolved years ago.' Externalized guilt made literal through institutional violence. MOT-001 (Pallor) referenced as 'tarnished silver weight' maintaining atmospheric pressure.",
+    "T17_VoiceFingerprinting": "Kaelith's voice maintained: military-precise sentence structure ('She counted three breaths. Waited for her pulse to steady.'), tactical assessment dominant thought pattern ('She counted her options. They were few.'), body-awareness metaphors ('cold blade-sharp clarity settle in her chest like a blade finding space between ribs'), sensory anchoring through stone/steel/salt absent but tactical precision maintained.",
+    "T18_InformationAsymmetry": "Reader dramatic irony maintained: we know Lirien has kill contract (FACT-003), Kaelith doesn't. This chapter Kaelith learns about Warden capacity conspiracy (FACT-001, FACT-002) which reader suspected but now confirmed. Lirien learns about Warden capacity from Kaelith. Information asymmetry shifts—both now know about conspiracy, but Kaelith still doesn't know about kill contract.",
+    "T20_EmotionalThroughline": "Chapter 3 target emotion: 'bitter vindication' (intensity 6). Kaelith's controlled paranoia validated—discovers Tavik's compromise, Conclave conspiracy, institutional betrayal confirmed. Emotional state: defensive calculation transitioning to reluctant tactical engagement. Ends accepting alliance from pragmatic necessity, not trust.",
+    "T21_VulnerabilityLadder": "No romantic vulnerability escalation this chapter—focus on tactical cooperation. Shared watch beat executed as professional recognition under pressure. Kaelith admits 'I don't trust you,' Lirien accepts this ('You shouldn't'). Honesty about distrust is its own form of vulnerability—acknowledging need despite absence of trust.",
+    "T23_MysteryBoxInventory": "Mystery boxes opened: Why hasn't Oathbrand dissolved? (Answered: deliberate maintenance by Conclave conspiracy). New mystery opened: What is Warden-lineage capacity, and does Kaelith actually have it? Pallor sabotage mystery remains active. Kill contract mystery remains active (reader knows, Kaelith doesn't).",
+    "T24_SubtextInDialogue": "Dialogue maintains subtext throughout. Enforcer's 'medical evaluation' is euphemism for rendition. Lirien's 'Poor construction. Unsafe scaffolding.' deflects before admitting truth. Kaelith's 'Why did you do that' (repeated) is demand for honesty, not question. Lirien's 'I need you alive' admits operational interest without revealing full contract parameters.",
+    "T25_ThematicArgumentScaffolding": "TP-1 (Trust as structural failure) advanced: Kaelith chooses to trust Lirien not because she's trustworthy but because institutional trust failed catastrophically. Alliance born from mutual need, not safety. TP-2 (Price of right choice) present: Kaelith's right choice at Calwrath led to suppression conspiracy—being competent made her dangerous."
+  },
+  "sceneValueShifts": [
+    "SCN-007: From 'punishment as passive exile' to 'containment as active conspiracy'",
+    "SCN-008: From 'I can endure this' to 'I must leave or be disappeared'",
+    "SCN-009: From 'I fight alone' to 'the enemy of my enemy may be my only option'"
+  ],
+  "emotionalStates": {
+    "chapterStart": "Investigative focus with tactical competence reawakening—Kaelith breaking into Tavik's office shows she's no longer passive exile but active threat-mapper",
+    "chapterEnd": "Reluctant pragmatism and provisional alliance—accepts cooperation with Lirien because survival requires it, not because trust has been earned",
+    "pivotMoment": "Lirien disrupts the enforcer's capture attempt without being asked—first tactical cooperation that forces Kaelith to recalibrate who Lirien might be"
+  },
+  "foreshadowingElements": {
+    "planted": [
+      "Warden-lineage capacity introduced as ontological-grade reality interface",
+      "Quietus access requires Kaelith specifically—she carries something only she can use",
+      "High Conclave conspiracy to prevent Warden restoration—institutional fear of her capacity",
+      "Enforcer Seldric and his subordinates established as recurring threat",
+      "Smuggler's boat departure—transition mechanism out of Duskhaven"
+    ],
+    "paid": [
+      "FS-001: Oathbrand maintenance conspiracy confirmed through encrypted messages",
+      "FS-004: Tavik's compromise and Conclave monitoring confirmed"
+    ]
+  },
+  "continuityNotes": {
+    "characterPositions": {
+      "CHAR-001": "Fled Duskhaven garrison with CHAR-002, heading toward smuggler's boat at port",
+      "CHAR-002": "Left surveillance position, actively cooperating with CHAR-001, guiding escape",
+      "CHAR-009": "Compromised by Conclave, remains at garrison dealing with enforcer aftermath",
+      "Enforcer Seldric": "Lost custody of Kaelith, likely reporting to Aranthem, will pursue"
+    },
+    "timeline": "Chapter 3 events occur over ~8 hours (midnight break-in, dawn enforcer arrival, mid-morning escape). Smuggler's boat departs in 2 hours from chapter end. Next chapter will show departure from Duskhaven.",
+    "knowledgeStates": {
+      "CHAR-001": "Now knows: Oathbrand deliberately maintained, Conclave conspiracy to suppress her, Warden-lineage capacity designation, Lirien is operative sent to 'assess' her. Does NOT know: Lirien has kill contract, full nature of Warden abilities.",
+      "CHAR-002": "Now knows: Kaelith discovered Conclave conspiracy, Warden capacity confirmed, enforcer intervention means timeline accelerated. Has revealed operative status to Kaelith but not kill contract specifics."
+    },
+    "oathbrandStatus": "Flared during message discovery—responding to stress or proximity to truth about its nature. Burns steady throughout escape. Still suppressing Kaelith's magic."
+  },
+  "upstreamRefs": [
+    "../../plot/chapter-outlines/chapter-003.json",
+    "../../characters/CHAR-001.json",
+    "../../characters/CHAR-002.json",
+    "../../style/style-guide.json",
+    "../../continuity/foreshadowing-ledger.json",
+    "../../continuity/emotional-throughline.json"
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "chapter": 8,
+  "engagementScore": 9,
+  "emotionalImpact": "high",
+  "pacingAssessment": "well-paced",
+  "clarityScore": 9,
+  "findings": [
+    {
+      "id": "BETA-008-001",
+      "type": "pacing",
+      "severity": "minor",
+      "description": "The Veldrane town description in scene 2 — bridges, market stalls, temple with dusty altars — runs roughly 150 words of setting detail between the diagnosis walk and the healer's examination. While the 'infrastructure remembering importance its population has forgotten' line is thematically resonant (mirrors Kaelith carrying capacity she can't access), the passage temporarily interrupts the urgency of getting to Marin. The reader is desperate to know what's wrong with Kaelith; the town tour slows that momentum.",
+      "location": "Scene 2, opening paragraph (Veldrane description)",
+      "readerImpact": "Low-to-moderate. A reader deeply invested in the diagnosis will skim the town description. The thematic parallels are there but not urgent enough to justify the positioning between 'we need a healer' and the healer."
+    },
+    {
+      "id": "BETA-008-002",
+      "type": "romance-gap",
+      "severity": "minor",
+      "description": "The chapter's three care-gestures (dressings, tea/food, cloak-adjusting) follow a near-identical emotional pattern: Lirien performs the action, recognizes it exceeds operational justification, cannot classify the impulse, accepts it. The repetition is thematically intentional — showing Lirien's framework failing one gesture at a time — but the rhythm becomes predictable by the third instance. The cloak scene would land harder if the preceding gestures varied their emotional texture more.",
+      "location": "Scene 3, final third (dressings → tea → cloak sequence)",
+      "readerImpact": "Moderate. Each individual gesture is lovely. Together they form a diminishing-returns curve where the reader has already understood 'Lirien cares and can't classify it' before the third demonstration. The cloak-pulling — which is the most intimate and wordless — deserves to feel like an escalation, not a third verse of the same song."
+    },
+    {
+      "id": "BETA-008-003",
+      "type": "character-inconsistency",
+      "severity": "observation",
+      "description": "Lirien's POV reveals she experiences fear ('not the kind that sharpened reflexes... the other kind, the kind that simply was') after the diagnosis. This is a significant emotional milestone — the first time Lirien admits to an emotion with 'no use.' However, the chapter doesn't address whether Kaelith notices any change in Lirien's behavior. Given Kaelith's established ability to read people (chapter 7), Lirien's fear would likely be observable. The absence of Kaelith registering anything feels like a missed beat.",
+      "location": "Scene 2, post-diagnosis walk; Scene 3 interactions",
+      "readerImpact": "Low. This is a POV limitation rather than an error — we're in Lirien's head, not Kaelith's. But it creates a slight disconnect: Lirien is experiencing something enormous, and Kaelith appears to notice nothing. A single line of Lirien observing Kaelith's attention (even if misread) would bridge this."
+    },
+    {
+      "id": "BETA-008-004",
+      "type": "confusion",
+      "severity": "minor",
+      "description": "Marin states the brand was 'refreshed within the past few days' and that 'someone who held the brand's control structure was reinforcing the containment at regular intervals.' This implies real-time remote manipulation. But the mechanism is never clarified — how does someone refresh a brand from a distance? Is it magical? Automatic? Does the brand-holder need to be physically near? This matters because it determines whether Kaelith is being actively monitored (raising pursuit stakes) or passively maintained (a dead man's switch). The ambiguity may be intentional but reads as under-explained.",
+      "location": "Scene 2, Marin's examination",
+      "readerImpact": "Moderate. A reader will wonder: if someone is refreshing the brand every two weeks, do they know where Kaelith is? Are they watching? The stakes of the pursuit subplot depend on this answer. Leaving it ambiguous creates useful tension, but the chapter doesn't even acknowledge the question, which makes it feel like an oversight rather than a mystery."
+    },
+    {
+      "id": "BETA-008-005",
+      "type": "emotional-flat",
+      "severity": "observation",
+      "description": "Kaelith's reaction to the terminal diagnosis is almost entirely contained. 'Your assessment is noted' is perfect in character, but the chapter never gives us a crack — a private moment where the composure slips. We see Lirien's devastation in full ('Not because the contract required Kaelith's survival. Because Lirien required it.') but Kaelith's internal response to learning she has months to live is deferred entirely. This is realistic (she's in public, she's a soldier) but risks the reader feeling the diagnosis more through Lirien than through the person it's about.",
+      "location": "Scene 2, post-diagnosis; Scene 3, gear preparation",
+      "readerImpact": "Low-to-moderate. The restraint is in character and Lirien's POV compensates. But some readers will want to feel Kaelith's devastation directly. The hand pausing at the second lace is beautiful but may not be enough to carry the weight of a death sentence."
+    }
+  ],
+  "strengths": [
+    "The POV switch to Lirien pays off immediately. After chapter 7's deep dive into Kaelith's interiority, seeing Kaelith from the outside — 'the micro-contraction around her eyes that signaled pain she had already been managing' — reveals how much she's been hiding. The reader gains dual knowledge: what Kaelith feels (from ch7) and how invisible that feeling is (from ch8). This is excellent dual-POV architecture.",
+    "Marin is a perfect minor character. Her blunt military-medic delivery ('You will be dead before winter. That is not a guess.') respects both the reader and the characters. She doesn't soften, doesn't comfort, and her refusal to cushion the diagnosis makes it land like a physical blow. The detail of copper buttons and the polished nameplate — functional, not decorative — establishes her in three sentences.",
+    "'Not because the contract required Kaelith's survival. Because Lirien required it.' — This is the chapter's nuclear sentence. It reframes everything. The entire contractual/tactical framework Lirien has been operating under collapses in one admission. The setup (Lirien asking 'Can it be removed?' before constructing the justification) makes the revelation feel involuntary, which makes it devastating.",
+    "The chapter's structural intelligence: it withholds Kaelith's interior response to the diagnosis (we're in Lirien's POV) which forces the reader to read Kaelith the way Lirien does — through surface signals, through the hand pausing at the lace, through the shift in her shoulders. This turns the reader into a participant in Lirien's growing attentiveness. We are learning to see Kaelith through Lirien's eyes, and the seeing is an act of love.",
+    "The final image — Lirien pulling the cloak up, adjusting it around the branded shoulder, fingers lingering half a breath — is the most powerful gesture in these five chapters. It succeeds because it's wordless, because Lirien knows she'll try to re-rationalize it in the morning, and because she doesn't try tonight. The chapter ends not on a revelation but on a surrender to a single small act of tenderness."
+  ],
+  "verdict": "strong"
+}

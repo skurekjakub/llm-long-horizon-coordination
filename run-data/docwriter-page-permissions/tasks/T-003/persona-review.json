@@ -1,0 +1,117 @@
+{
+  "agent": "docwriter-persona-reviewer",
+  "taskId": "T-003",
+  "verdict": "approved",
+  "personaChecks": [
+    {
+      "check": "front-matter-personas",
+      "result": "pass",
+      "declaredPersonas": ["admin"],
+      "evidence": "Front matter declares `persona: admin`. The page content is entirely admin UI procedural — creating workflows, configuring steps, setting roles, configuring notifications — with zero code, SDK, or API content. The `admin` value is valid per INV-persona-001 and the content genuinely serves only admin users."
+    },
+    {
+      "check": "persona-assignment-strategy",
+      "result": "pass",
+      "evidence": "INV-persona-002 suggests 'config/user roles → admin, developer'. While this page lives in the configuration section and discusses user roles, the content is exclusively about admin-UI operations (Workflows application, step configuration, notification setup) with no developer-facing content. The `admin`-only assignment is defensible — adding `developer` would mislead developers seeking API-level workflow information. Neighboring configuration pages (e.g., AIRA, Content hub, Event log) use `admin, developer` because they contain developer-relevant config content; this page does not."
+    },
+    {
+      "check": "tone-admin",
+      "result": "pass",
+      "evidence": "All modified content uses admin-appropriate operational language. Specific examples from the changes: (1) 'users also need the *View* (Access channel) application-level permission for the respective website channel' — names the permission by its UI-visible label. (2) 'must hold *Read* and *Update* page permissions for the content item' — names exact permission types visible in the admin interface. (3) 'Users must satisfy all permission layers to work with workflow items' — clear summary in plain operational language. (4) 'The **Draft** step does not enforce step role restrictions and allows all users with the required permissions to edit items' — behavioral note about admin UI without implementation details. No code references, no internal class names (e.g., no WorkflowStepRoleArbiter), no SDK terminology anywhere in the changes."
+    },
+    {
+      "check": "depth-calibration",
+      "result": "pass",
+      "evidence": "The changes are calibrated correctly for admin depth: they name the specific permissions required (View/Access channel, Read, Update) and explain the relationship between permission layers ('users must satisfy both') without diving into internal implementation. The old text was too vague ('the system also checks other relevant permissions'), which would leave admins guessing which permissions matter. The new text gives admins exactly what they need to configure permissions correctly — specific permission names and the rule that all layers must be satisfied. Not too shallow (old version), not too deep (no code internals)."
+    },
+    {
+      "check": "tone-no-developer-bleed",
+      "result": "pass",
+      "evidence": "Per INV-persona-016, content should not use terminology from another persona's domain. The changes avoid all developer terminology: no class names, no API methods, no namespace references, no code snippets. Terms like 'permission layers', 'application-level permission', and 'page permissions' are admin-domain concepts visible in the Xperience administration interface."
+    },
+    {
+      "check": "non-native-speaker-clarity",
+      "result": "pass",
+      "evidence": "Per INV-persona-007, content should use simple, ordinary, everyday words for non-native English speakers. The changes use clear sentence structure and plain language: 'users also need', 'must hold', 'must satisfy', 'does not enforce'. No idiomatic expressions or unnecessarily complex phrasing. Technical terms like 'application-level permission' and 'page permissions' are product-specific vocabulary that cannot be simplified further, and the cross-reference links provide paths to learn more."
+    },
+    {
+      "check": "step-consolidation",
+      "result": "pass",
+      "evidence": "Per INV-persona-015, two easy related steps can be combined for developer/admin docs. The changes do not add new procedural steps — they modify informational callouts and field descriptions within existing steps. No step-splitting issues."
+    }
+  ],
+  "classificationCheck": {
+    "declared": "howto",
+    "actual": "howto",
+    "result": "pass",
+    "evidence": "The page structure is goal-oriented procedural: numbered steps for creating workflows, configuring scope, configuring steps, and managing notifications. The modified sections ('Create a workflow', 'Configure the workflow steps') are step-by-step procedures. The changes add clarifying information within these procedures without altering the howto classification."
+  },
+  "taxonomyChecks": [
+    {
+      "field": "persona",
+      "result": "pass",
+      "value": "admin",
+      "notes": "Valid value per INV-persona-001."
+    },
+    {
+      "field": "identifier",
+      "result": "pass",
+      "value": "workflows_xp"
+    },
+    {
+      "field": "license",
+      "result": "pass",
+      "value": 1
+    },
+    {
+      "field": "related_pages",
+      "result": "pass",
+      "value": ["notifications_xp", "custom_workflow_notifications_xp"]
+    }
+  ],
+  "consistencyCheck": {
+    "result": "pass",
+    "notes": "Most configuration cluster pages use personas ['admin', 'developer'] or ['admin', 'developer', 'architect']. This page targets only 'admin', which is an outlier but is justified by the content being entirely admin-UI procedural with no developer-facing material. The modified callouts maintain consistency with the page's established admin-only tone — they name permissions by their admin-UI labels rather than introducing developer-level concepts."
+  },
+  "invariantResults": [
+    {
+      "invariantId": "INV-persona-001",
+      "result": "pass",
+      "evidence": "Front matter `persona: admin` uses a valid value from the allowed set (developer, admin, business, architect, all)."
+    },
+    {
+      "invariantId": "INV-persona-002",
+      "result": "pass",
+      "evidence": "Persona assignment strategy says 'config/user roles → admin, developer'. Page assigns only 'admin'. This is acceptable because the page contains zero developer content — no code, no SDK references, no API calls. The 'developer' persona would be misleading. If developer-facing workflow API content is added in the future, the persona should be updated."
+    },
+    {
+      "invariantId": "INV-persona-007",
+      "result": "pass",
+      "evidence": "Changes use simple, ordinary language suitable for non-native English speakers. Sentence structures are clear and direct."
+    },
+    {
+      "invariantId": "INV-persona-012",
+      "result": "pass",
+      "evidence": "Content is clearly written for the admin persona — operational focus, UI-visible permission names, procedural context."
+    },
+    {
+      "invariantId": "INV-persona-015",
+      "result": "pass",
+      "evidence": "No procedural steps were added or split. Changes are to informational callouts within existing steps."
+    },
+    {
+      "invariantId": "INV-persona-016",
+      "result": "pass",
+      "evidence": "No cross-persona terminology bleed. All terms used (View, Access channel, Read, Update, page permissions, application-level permission) are admin-domain concepts visible in the Xperience administration interface."
+    }
+  ],
+  "summary": {
+    "personaChecksPassed": 7,
+    "personaChecksFailed": 0,
+    "classificationCorrect": true,
+    "taxonomyComplete": true,
+    "invariantsPassed": 6,
+    "invariantsFailed": 0
+  },
+  "timestamp": "2026-03-18T17:32:31Z"
+}

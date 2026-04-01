@@ -1,0 +1,179 @@
+{
+  "chapterNumber": 2,
+  "revisionDate": "2026-03-20T10:15:00Z",
+  "sourceFile": "chapters/002/draft.md",
+  "outputFile": "chapters/002/revised.md",
+  "editReportsUsed": [
+    "revision-reports/002/developmental-edit.json",
+    "revision-reports/002/line-edit.json",
+    "revision-reports/002/copy-edit.json"
+  ],
+  "findingsAddressed": [
+    {
+      "findingId": "DEV-002-001",
+      "severity": "critical",
+      "description": "Word count reduced from 5935 to approximately 4187 — a reduction of ~1748 words (29.5% cut). Scene 1 reduced from ~2600 to ~1600 words through consolidation of repetitive assessment-revision cycles, compression of file-analysis passages, and removal of redundant observations. Scene 2 trimmed from ~1200 to ~1100 words with minor tightening. Scene 3 reduced from ~2100 to ~1500 words through removal of duplicate content, restructuring of intelligence packet as narrative, and compression of environmental data. Revised word count of 4187 is within acceptable range of the 4100 target (2.1% over).",
+      "status": "addressed"
+    },
+    {
+      "findingId": "DEV-002-002",
+      "severity": "critical",
+      "description": "Duplicate content in Scene 3 removed entirely. The repeated operational assessment block (original lines 302-311 mirrored at 326-333) has been consolidated into a single occurrence. The repeated 'set papers down / stared at wall' physical beat reduced to one instance. Saved approximately 250 words.",
+      "status": "addressed"
+    },
+    {
+      "findingId": "DEV-002-003",
+      "severity": "major",
+      "description": "Assessment-revision cycles consolidated from 4+ named instances to 1. The single preserved instance is 'The working model was not wrong in kind. It was wrong in scale.' positioned after the kinetic assessment observation where its weight is maximized. Earlier instances ('revised her assessment,' 'adjusted her operational assessment,' 'revised her working file') removed. The implicit revision through shifting language about Kaelith replaces the explicit naming of each revision.",
+      "status": "addressed"
+    },
+    {
+      "findingId": "DEV-002-004",
+      "severity": "major",
+      "description": "Intelligence packet restructured from document-style formatted exposition into Lirien's active analytical processing. Bold headers (SUBJECT, CLASSIFICATION, INCIDENT REPORT, etc.) removed entirely. Environmental data compressed into summary narrative. Revelations interleaved with embodied responses: 'her hands went still on the parchment' marks the transition from routine data to anomaly; 'Lirien set the papers down carefully' marks the Warden revelation's impact. Lirien's presence maintained throughout — she processes the information rather than transcribing it.",
+      "status": "addressed"
+    },
+    {
+      "findingId": "DEV-002-005",
+      "severity": "minor",
+      "description": "Tavik confrontation retained in Scene 1 as observed by Lirien from distance. No change needed — deviation from outline is an improvement that maintains Lirien's surveillance POV discipline.",
+      "status": "acknowledged-no-change"
+    },
+    {
+      "findingId": "DEV-002-006",
+      "severity": "minor",
+      "description": "'Revised her assessment' reduced from 4 instances to 0 explicit uses (replaced by implicit revision through 'The working model was not wrong in kind'). 'The file' references reduced from ~10 to 5 through varied phrasing: 'the briefing,' 'the intelligence file's assessment,' 'what the briefing had indicated.'",
+      "status": "addressed"
+    },
+    {
+      "findingId": "DEV-002-007",
+      "severity": "minor",
+      "description": "Interest admission at former lines 219-221 replaced with classification failure. New text: 'There was a variable she had not yet categorized, something in the exchange that had acquired an undertow she could not map. The inability to categorize it was itself data she did not know how to file.' Followed by 'Not relevant to the current situation.' — one of Lirien's characteristic phrases used as self-deflection. This shows her system failing without her successfully naming the cause.",
+      "status": "addressed"
+    },
+    {
+      "findingId": "DEV-002-008",
+      "severity": "suggestion",
+      "description": "Internal scene break at former line 249-250 removed. Scene 3 now flows continuously from lodging entry through intelligence packet analysis to closing decision.",
+      "status": "addressed"
+    },
+    {
+      "findingId": "LINE-002-001",
+      "severity": "major",
+      "description": "'Revised her assessment' (and variants) reduced from 4+ named instances to zero explicit uses. Replaced by 'The working model was not wrong in kind. It was wrong in scale.' — a single implicit revision that demonstrates the assessment shift without naming the act of revising. The characteristic phrase 'Noted.' added as a field-note fragment to serve the same acknowledgment function with less verbal weight.",
+      "status": "addressed"
+    },
+    {
+      "findingId": "LINE-002-002",
+      "severity": "major",
+      "description": "'Not broken' / 'compressed' refrain reduced from 5 instances to 2: the initial formulation ('Not broken. Compressed.') and the Scene 2 closing ('Still tactical. Not broken.' — inverted for variation). Intermediate instances removed. The closing uses two beats instead of three, compressing the refrain itself.",
+      "status": "addressed"
+    },
+    {
+      "findingId": "LINE-002-003",
+      "severity": "major",
+      "description": "Intelligence packet exposition restructured as Lirien's active analysis. Bold formatting removed. Consecutive exposition paragraphs broken by embodied response beats: hands going still on parchment, setting papers down, forcing her mind through implications 'the way water finds a crack in otherwise sound stone.' The one-paragraph exposition maximum is now respected — each analytical paragraph is followed by scene-level narration.",
+      "status": "addressed"
+    },
+    {
+      "findingId": "LINE-002-004",
+      "severity": "minor",
+      "description": "Water/current metaphors added at 4 points: (1) 'No visible current beneath the surface routine' — surveillance observation. (2) 'something in the exchange that had acquired an undertow she could not map' — emotional processing. (3) 'the way water finds a crack in otherwise sound stone' — analytical processing of Warden revelation. (4) 'the faint pressure of the binding in her veins like a tide she had learned to ignore' — closing binding-pressure beat. These are drawn from Lirien's established metaphor domains (water, currents, surfaces, permeability).",
+      "status": "addressed"
+    },
+    {
+      "findingId": "LINE-002-005",
+      "severity": "minor",
+      "description": "'Command-grade' / 'operative-grade' classification jargon replaced. Former lines 52-55 now read: 'Garrison command, yes. But Kaelith had turned toward Lirien's position without searching, without triangulation — direct acquisition. That was not learned in garrison drills. That was battlefield survival conditioning.' The insight is grounded in observed behavior rather than bureaucratic taxonomy.",
+      "status": "addressed"
+    },
+    {
+      "findingId": "LINE-002-006",
+      "severity": "minor",
+      "description": "'The file' references reduced from ~10 to 5 through varied phrasing: 'the intelligence file's assessment' (first use), 'the briefing had indicated,' 'the file's assessment,' 'the intelligence file.' The concept is preserved without the drumbeat repetition.",
+      "status": "addressed"
+    },
+    {
+      "findingId": "LINE-002-007",
+      "severity": "minor",
+      "description": "Explicit interest admission replaced with classification failure — see DEV-002-007. Lirien does not name 'interest' or articulate 'first stage of compromise.' Instead, she notes an uncategorizable variable and an inability to file the data. 'Not relevant to the current situation' serves as her characteristic phrase for self-deflection, revealing more to the reader than to herself.",
+      "status": "addressed"
+    },
+    {
+      "findingId": "LINE-002-008",
+      "severity": "minor",
+      "description": "Generic second-person 'you' at former lines 28-29 converted to third person: 'until whatever had been operational inside a person eroded into mechanical repetition.' Maintains Lirien's analytical register while preserving POV discipline.",
+      "status": "addressed"
+    },
+    {
+      "findingId": "LINE-002-009",
+      "severity": "minor",
+      "description": "Field-note fragments added at 4 points: 'No variation.' (after market crossing observation), 'Noted.' (after file-gap analysis), 'Kinetic assessment. Environmental mapping through physical interface.' (after wall-reading observation), 'Four days.' (isolated paragraph in closing). These create the surveillance-notes texture called for by Lirien's voice profile.",
+      "status": "addressed"
+    },
+    {
+      "findingId": "LINE-002-010",
+      "severity": "minor",
+      "description": "'Someone' repetition varied. First instance preserved ('Someone had removed Kaelith's operational history before Calwrath' now compressed into 'The gaps in the file were not accidental. They were architectural.'). Second instance restructured: 'The erasure required classification authority high enough that the act itself would not show up in audit logs.' The implied subject carries from the first sentence.",
+      "status": "addressed"
+    },
+    {
+      "findingId": "LINE-002-011",
+      "severity": "suggestion",
+      "description": "Characteristic Lirien phrases added: 'Noted.' (field-note acknowledgment after file-gap analysis), 'Insufficient data.' (closing Scene 1, replacing the explicit 'Dangerous how?' question with Lirien's standard data-sufficiency assessment), 'Not relevant to the current situation.' (self-deflection after the unclassifiable variable in Scene 2). These strengthen the voice fingerprint without over-seasoning.",
+      "status": "addressed"
+    },
+    {
+      "findingId": "LINE-002-012",
+      "severity": "suggestion",
+      "description": "Duskhaven decay observation strengthened through operative lens. New framing: 'She read a place through its decay patterns the way she read a face through its micro-expressions — what was failing told you what had once been maintained, and what had once been maintained told you what mattered.' Followed by operative-specific assessment: 'A town where institutional indifference provided better cover than any forged document.' This filters the observation through Lirien's professional framework rather than generic description.",
+      "status": "addressed"
+    },
+    {
+      "findingId": "COPY-002-001",
+      "severity": "critical",
+      "description": "Duplicate content block removed. The repeated operational assessment (former lines 326-333) and repeated physical beat ('set papers down / stared at wall') consolidated into a single occurrence at the climactic moment of the Warden revelation.",
+      "status": "addressed"
+    },
+    {
+      "findingId": "COPY-002-002",
+      "severity": "major",
+      "description": "All 'five years' references corrected to 'six years' throughout the chapter: opening surveillance narration, Oathbrand analysis, market scene context, and intelligence packet. The consistent figure of six years aligns with Chapter 1 revised text, the continuity tracker (YK 736 to YK 742), Kaelith's character profile, and the magic system timeline. The tertiary notation about Oathbrand maintenance also uses 'six years.'",
+      "status": "addressed"
+    },
+    {
+      "findingId": "COPY-002-003",
+      "severity": "minor",
+      "description": "Chapter outline CHAR-009 reference for Tavik is a metadata error in the outline file, not in the prose. No prose change needed. Noted for potential outline correction outside chapter revision scope.",
+      "status": "acknowledged-no-change"
+    },
+    {
+      "findingId": "COPY-002-004",
+      "severity": "minor",
+      "description": "Bold formatting in intelligence packet removed entirely. Section restructured as close-third narrative prose. No formatted-document elements retained.",
+      "status": "addressed"
+    },
+    {
+      "findingId": "COPY-002-005",
+      "severity": "minor",
+      "description": "Timeline compliance verified. Three-day surveillance window maintained. Single-day arc (morning → afternoon → evening) preserved. 'Six years' exile duration now consistent throughout.",
+      "status": "verified-no-change"
+    },
+    {
+      "findingId": "COPY-002-006",
+      "severity": "minor",
+      "description": "Oathbrand behavior in revised chapter maintains compliance with MAG-004 (suppression, physical distress), MAG-005 (binding contract mechanics), and MAG-008. No new magical abilities introduced. Duration corrected to six years per COPY-002-002.",
+      "status": "verified-no-change"
+    }
+  ],
+  "findingsDeferred": [],
+  "wordCount": {
+    "original": 5935,
+    "revised": 4187,
+    "target": 4100,
+    "percentOfTarget": 102.1,
+    "wordsRemoved": 1748,
+    "percentReduction": 29.5
+  },
+  "summary": "Chapter 2 revised from 5935 to 4187 words (29.5% reduction), addressing all 26 findings across three editorial reports — 3 critical, 6 major, 15 minor, 2 suggestions. No findings deferred. Key structural changes: Scene 1 consolidated from ~2600 to ~1600 words by reducing four assessment-revision cycles to one implicit revision and compressing file-analysis repetition. Scene 3 reduced from ~2100 to ~1500 words by removing duplicate content block, restructuring intelligence packet from document-style exposition to close-third analytical narration, and compressing environmental data. Voice improvements: added 4 water/current metaphors from Lirien's domain, added 4 field-note fragments for surveillance-notes rhythm, added 3 characteristic Lirien phrases ('Noted,' 'Insufficient data,' 'Not relevant to the current situation'), replaced explicit interest admission with classification failure, removed 'operative-grade' jargon in favor of observed behavior, converted generic 'you' to close-third. Continuity fixes: all 'five years' references corrected to 'six years,' all bold formatting removed, duplicate content eliminated. Scene 2 dialogue preserved with minimal tightening — identified as chapter's strongest section."
+}

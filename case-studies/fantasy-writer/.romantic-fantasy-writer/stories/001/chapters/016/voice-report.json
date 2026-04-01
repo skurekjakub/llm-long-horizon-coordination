@@ -1,0 +1,174 @@
+{
+  "chapter": 16,
+  "povCharacter": "Lirien Dael",
+  "povCharacterId": "CHAR-002",
+  "voiceConsistencyScore": 9,
+  "distinctnessScore": 10,
+  "degradationArcScore": 8,
+  "sensorySignatureScore": 9,
+  "povTransitionScore": 10,
+  "overallVerdict": "passed",
+  "recognitionTest": {
+    "passed": true,
+    "analysis": "The opening 3 sentences — 'The dead drop had been serviced.' / 'Lirien crouched beside the rock fissure twelve paces from the shelter's northwest corner, where she had set the marker on their second hour here — a standard field protocol, habitual as breathing.' / 'Dawn was a thin grey line under the Pallor's membrane...' — immediately establish operative vocabulary ('dead drop,' 'field protocol'), precise measurement ('twelve paces,' 'second hour'), visual sensory dominance (light description), and Lirien's observation→assessment cadence. A reader familiar with both leads would identify this as Lirien within 2 sentences. Kaelith would never open with intelligence tradecraft."
+  },
+  "povTransitionMotivation": {
+    "passed": true,
+    "analysis": "Chapter 15 (Kaelith) ends with maximum vulnerability: 'the silence did not mean danger. It meant someone had chosen to stay.' Chapter 16 (Lirien) opens with 'The dead drop had been serviced.' The tonal whiplash — from Kaelith's hard-won peace to Lirien's operative alertness — is devastating and perfectly motivated. The reader MUST be in Lirien's POV for the contract revelation because she is the secret-keeper; experiencing it from Kaelith's side would strip the agency of the confession. The switch is not just earned — it is structurally necessary."
+  },
+  "voiceFingerprintAudit": {
+    "vocabulary": {
+      "score": 10,
+      "analysis": "Excellent operative vocabulary density: 'operative' (18), 'target' (9), 'operational' (8), 'variable' (5), 'intelligence' (4), 'catalogued' (5), 'assessment' (3), 'protocol' (2), 'contingency' (2), 'calculus' (1), 'taxonomy' (2). Clinical emotional processing present: 'damage projections,' 'calculus of containment,' 'information with no actionable intelligence value.' Fae precision markers intact: minimal contractions (only 1 in Kaelith's dialogue), categorical statements, uncertainty expressed as data insufficiency."
+    },
+    "sentenceRhythm": {
+      "score": 9,
+      "analysis": "Strong mixed rhythm with cataloguing fragments ('Still warm. Still unguarded.'), medium analytical sentences, and longer complex structures for problem-solving passages. The observation→assessment cadence is consistently present. Under crisis, sentences shorten appropriately ('The bond went cold.' / 'The wall held.' / 'She did not move.'). The only minor gap: Scene 4's analytical passages occasionally run long when the degradation pattern suggests they should be fragmenting more."
+    },
+    "metaphorDensity": {
+      "score": 9,
+      "analysis": "Post-refinement: water/infiltration metaphors dominate (water: 7, seep: 4, channel: 3, current: 3, seal: 3, surface: 4, seepage: 1, ice: 1, frozen: 1). Contract/binding metaphors present as expected (cage, binding, terms). The remaining 2 'architecture' uses correctly describe Kaelith (face/fortification/survival pattern — acceptable per voice profile as Lirien observing Kaelith's nature). The central Seep metaphor — 'water that found every crack' — powers the chapter's thematic climax beautifully."
+    },
+    "emotionalRegister": {
+      "score": 9,
+      "analysis": "Excellent clinical-to-overwhelmed progression. Emotions start as classified data ('damage projections,' 'calculus of containment'), then classifications begin failing ('the data did not fit'), then the taxonomy empties entirely ('No classification that could separate I love her from the contract requires me to believe I love her'). The breakthrough to plain speech — 'Because I was afraid' — is devastating because it abandons every layer of Lirien's protective vocabulary. This is textbook voice-profile compliance."
+    },
+    "thoughtPatterns": {
+      "score": 9,
+      "analysis": "Associative and comparative throughout: cross-referencing bond signatures against previous experiences, comparing Kaelith's expressions to filed subcategories, evaluating the contract's implications through parallel scenarios. The parenthetical assessment style is appropriately present early ('standard field protocol,' 'several subcategories of professional attention') and dissolves under crisis. The absence of assessment in the final scene — pure observation without annotation — correctly signals the collapse of Lirien's professional framework."
+    }
+  },
+  "sensorySignature": {
+    "score": 9,
+    "analysis": "Visual dominance confirmed: 'tracked' (1), 'noted' (1), 'catalogued' (2), 'read' (16), 'eyes' (3), 'light' (6), 'face' (10), 'visible' (2), 'silver' (3), 'expression' (1). Lirien reads Kaelith's processing through visual tracking of eye movement, postural changes, and micro-expressions — exactly as specified in her sensory profile. Light quality used for emotional register: 'thin grey line' (dread), 'grey morning light' (departure), 'silver' (cold/fae). Auditory secondary channel present: tracking voice register changes in Kaelith's dialogue. One minor note: the bond carries more kinesthetic/emotional data than pure visual, but this is appropriate for the bond mechanic rather than a sensory signature violation."
+  },
+  "voiceDistinctnessFromKaelith": {
+    "score": 10,
+    "analysis": "Strongly distinct on every axis. (1) Opening: Lirien opens with people/intelligence; Ch15 Kaelith opens with architecture/exits ('Two exits. The door...'). (2) Sentence rhythm: Lirien's varied analytical flow vs. Kaelith's percussive short declaratives. (3) Metaphor domain: post-refinement, Lirien's metaphors are water/surface/infiltration; Kaelith's are stone/weight/fortification. (4) Emotional processing: Lirien classifies and fails to classify; Kaelith endures and walls. (5) Attention priority: Lirien reads faces and body language first; Kaelith reads structural integrity first. No reader could confuse these chapters."
+  },
+  "degradationArc": {
+    "score": 8,
+    "analysis": "The arc from operative precision to plain speech is well-executed across 4 scenes. Scene 1: full analytical machinery, long complex sentences, cataloguing behavior. Scene 2: machinery still running but the data 'does not fit,' shorter reactive fragments appearing. Scene 3: the excess of desperate speech ('The words kept coming. Too many.'), followed by stripped-down plain statements ('Because I was afraid'). Scene 4: attempted analytical reconstruction that fails, ending in fragments and silence. The 8/10 reflects that Scene 4's analytical passages are occasionally too controlled for someone whose framework has collapsed — a few more fragment-interruptions mid-thought would strengthen the degradation. However, the final movement from polysyndeton ('and she did not move, and she did not weep, and she did not know') to bare fragments ('Matched. Shared. Inescapable.') is excellent."
+  },
+  "issuesFound": [
+    {
+      "id": "VF-001",
+      "severity": "major",
+      "type": "kaelith-voice-bleed",
+      "description": "9 uses of 'architecture' in the original draft, with 7 being Lirien applying Kaelith's structural metaphor framework to her own internal states. While some late-story bleed-through is an expected intimacy marker, the density was too high and several instances occurred during the crisis where Lirien should be reverting to her native metaphor set under stress.",
+      "resolution": "Reduced to 2 'architecture' uses, both correctly describing Kaelith. Replaced self-referential uses with Lirien-native vocabulary: water (current, seal, surface, depth, shore), operative (machinery, fabrication), and perception (unguarded lines, careful surfaces)."
+    },
+    {
+      "id": "VF-002",
+      "severity": "major",
+      "type": "kaelith-voice-bleed",
+      "description": "'load-bearing walls' metaphor (L86) is quintessentially Kaelith's conceptual framework. Lirien would not naturally reach for structural engineering as her first comparison for emotional collapse.",
+      "resolution": "Replaced with 'a cover failing — not the sudden violence of exposure but the slower horror of every sealed truth leaking at once, the surface cracking along lines that had always been there.' This uses Lirien's native espionage/surface-depth framework."
+    },
+    {
+      "id": "VF-003",
+      "severity": "moderate",
+      "type": "kaelith-voice-bleed",
+      "description": "'brick in a wall' masonry metaphor (L146) for Lirien's desperate speech. Construction/masonry is Kaelith's domain.",
+      "resolution": "Replaced with 'a current she was directing... and each one dissipated before it arrived' — water metaphor consistent with Lirien's Seep identity."
+    },
+    {
+      "id": "VF-004",
+      "severity": "moderate",
+      "type": "kaelith-voice-bleed",
+      "description": "'cracked foundation' (L122) is Kaelith's structural vocabulary. Lirien processes instability through seals/leaks, not foundations.",
+      "resolution": "Replaced with 'cracked seal' and 'certainty leaked' — water/containment vocabulary."
+    },
+    {
+      "id": "VF-005",
+      "severity": "minor",
+      "type": "kaelith-voice-bleed",
+      "description": "Multiple uses of 'architecture' for Lirien's own internal states: 'architecture of her conditioning,' 'architecture she had mistaken for identity,' 'interior architecture.' While some bleed-through is an intimacy marker, the density was excessive for a crisis chapter where stress should push Lirien toward her native metaphor set.",
+      "resolution": "Replaced with Lirien-native vocabulary: 'current of her conditioning,' 'careful surfaces she had mistaken for identity,' 'interior landscape — a depth with no bottom, no shore, no surface.'"
+    },
+    {
+      "id": "VF-006",
+      "severity": "minor",
+      "type": "degradation-pacing",
+      "description": "Scene 4 (final scene, Lirien alone) has some analytically complex passages that run slightly long for a character whose framework has collapsed. The degradation could be tightened with a few more mid-thought interruptions.",
+      "status": "noted-not-corrected",
+      "rationale": "The existing pattern — attempted analytical reconstruction failing into fragments — is narratively effective. The oscillation between control attempts and collapse mirrors Lirien's internal state. Over-fragmenting risks losing the specific quality of an intelligence analyst failing to analyze."
+    }
+  ],
+  "refinementsMade": [
+    {
+      "location": "L28",
+      "original": "systematic architecture of death",
+      "revised": "systematic machinery of death",
+      "rationale": "'machinery' is operative/institutional vocabulary. 'Architecture' is Kaelith-coded."
+    },
+    {
+      "location": "L86",
+      "original": "architecture failing — not the sudden violence of collapse but the slower horror of load-bearing walls discovering they had been undermined... a foundation that had never been what it appeared",
+      "revised": "a cover failing — not the sudden violence of exposure but the slower horror of every sealed truth leaking at once, the surface cracking along lines that had always been there... a surface that had never been what it appeared",
+      "rationale": "Full metaphor rewrite from Kaelith's structural engineering domain to Lirien's espionage/surface-depth domain. 'Cover failing,' 'sealed truth leaking,' 'surface cracking,' 'point of breach' are all intelligence-operative metaphors."
+    },
+    {
+      "location": "L112",
+      "original": "cataloguing the architecture of a sleeping face",
+      "revised": "cataloguing the unguarded lines of a sleeping face",
+      "rationale": "Reduced second 'architecture of a face' reference. 'Unguarded lines' is visual-sensory (Lirien reads faces) rather than structural."
+    },
+    {
+      "location": "L122",
+      "original": "cracked foundation... certainty failed",
+      "revised": "cracked seal... certainty leaked",
+      "rationale": "Water/containment vocabulary replacing structural vocabulary. 'Leaked' extends the seepage metaphor running through the chapter."
+    },
+    {
+      "location": "L146",
+      "original": "Each sentence was a brick in a wall she was laying... each sentence fell short, and she kept laying them",
+      "revised": "Each sentence was a current she was directing... each one dissipated before it arrived, and she kept shaping them",
+      "rationale": "Water/current metaphor replacing masonry. 'Dissipated' and 'shaping' are core Seep vocabulary."
+    },
+    {
+      "location": "L150",
+      "original": "the desperate architecture of a solution",
+      "revised": "the desperate fabrication of a solution",
+      "rationale": "'Fabrication' carries dual meaning (constructed AND lied-about), which is thematically perfect for this moment. Removes architectural language."
+    },
+    {
+      "location": "L154",
+      "original": "some architecture of her conditioning",
+      "revised": "some current of her conditioning",
+      "rationale": "'Current' is water vocabulary and implies something that runs deep — fitting for conditioning."
+    },
+    {
+      "location": "L162",
+      "original": "any of the architecture she had mistaken for identity",
+      "revised": "any of the careful surfaces she had mistaken for identity",
+      "rationale": "'Surfaces' is core Lirien vocabulary — she thinks in surface/depth dichotomy. Operative constructions are surfaces concealing depths."
+    },
+    {
+      "location": "L182",
+      "original": "her interior architecture — a room with no floor, no walls, no ceiling",
+      "revised": "her interior landscape — a depth with no bottom, no shore, no surface",
+      "rationale": "Converts architectural spatial metaphor to water/depth spatial metaphor. 'No surface' is existentially terrifying for a character whose identity is reading surfaces."
+    },
+    {
+      "location": "L200",
+      "original": "a wall built from her blood",
+      "revised": "a cage built from her blood",
+      "rationale": "'Cage' echoes the chapter's central contract-as-cage metaphor. 'Wall' is Kaelith's; 'cage' is the contract metaphor Lirien has been using."
+    }
+  ],
+  "voiceMetricsPostEdit": {
+    "architectureReferences": 2,
+    "architectureContext": "Both correctly describe Kaelith (face, emotional survival pattern)",
+    "fortificationReferences": 3,
+    "fortificationContext": "All acceptable — describing Kaelith's defenses as seen by Lirien/Seep",
+    "waterMetaphors": 26,
+    "operativeVocabulary": 62,
+    "trueContractions": 1,
+    "contractionContext": "Only in Kaelith's dialogue ('Don't') — Lirien's narration maintains fae precision",
+    "visualSensoryTerms": 45,
+    "tactileSensoryTerms": 25,
+    "sensoryBalance": "Visual dominant as specified; tactile secondary through bond mechanic"
+  },
+  "timestamp": "2025-01-20T14:30:00Z"
+}

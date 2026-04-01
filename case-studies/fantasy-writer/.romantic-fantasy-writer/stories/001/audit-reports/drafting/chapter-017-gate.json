@@ -1,0 +1,439 @@
+{
+  "chapter": 17,
+  "agent": "romantic-fantasy-writer-drafting-auditor",
+  "gateId": "GATE-DRAFT-017",
+  "phase": "drafting",
+  "timestamp": "2025-07-18T09:45:00.000000+00:00",
+  "result": "passed",
+  "overallScore": 8,
+  "passThreshold": "Zero critical findings, fewer than 3 warnings",
+  "verdict": "Chapter 17 PASSES the drafting gate with an overall score of 8/10. Zero critical findings. Zero automatic-fail triggers. Two warnings issued (repetition density of 'grief' / 'Lirien's grief' / 'the bond' pattern, and 'walked anyway' refrain overuse in closing). Both are polish-level issues addressable in revision. One major finding: the phrase 'Lirien's grief' appears 11 times — a mechanical repetition that weakens the emotional register through diminishing returns. Seven minor findings across prose quality, sentence structure, and a craft-enforcer consistency note. All outline specifications delivered. Voice unmistakably Kaelith. Continuity clean. Emotional arc from controlled anger through reluctant reassessment to grim resolve is earned through specific triggers (bond evidence, physical decline, combat failure). Both fantasy and romance arcs present and coupled. Craft tools applied. Chapter proceeds to revision pipeline with remediation notes.",
+  "assessments": {
+    "outlineCompliance": {
+      "score": 10,
+      "verdict": "Full compliance",
+      "sceneByScene": {
+        "SCN-47": {
+          "status": "fully_delivered",
+          "checklist": {
+            "povCharacter": "CHAR-001 Kaelith — PRESENT throughout",
+            "sceneGoal": "Kaelith alone processing betrayal while Pallor accelerates — DELIVERED. Camp-making doubles every task, military discipline masks devastation, Pallor symptoms manifest visibly (lines 85-99)",
+            "incitingIncident": "Camp alone, silence as physical presence — DELIVERED (lines 27-31): 'The silence was wrong... The space where Lirien should have been'",
+            "complication": "Pallor accelerates visibly, silver spreading — DELIVERED (lines 85-99): silver wrist to knuckle, cold deepening, timeline 'says days'",
+            "crisis": "Accept accelerated death and stay angry, or acknowledge anger may kill her faster — DELIVERED implicitly through the mission-refocus (lines 101-107)",
+            "climax": "Timeline contraction realized — DELIVERED (line 107): 'The silver said days'",
+            "resolution": "Continues toward objective with military resolve — DELIVERED (lines 101-107)",
+            "valueShift": "'I am safer alone' → 'I am dying alone and the anger isn't keeping me warm' — DELIVERED through Pallor acceleration and fire warmth not reaching fingers (line 109)",
+            "beats": {
+              "campMaking": "PRESENT lines 17-35",
+              "memoryRecontextualization": "PRESENT lines 41-83 — Oathbrand, Calwrath confession, every memory tested as evidence",
+              "pallorManifestation": "PRESENT lines 85-99 — clinical cataloguing of silver spread, cold",
+              "timelineRevision": "PRESENT lines 101-109 — days not weeks, mission refocus"
+            }
+          }
+        },
+        "SCN-48": {
+          "status": "fully_delivered",
+          "checklist": {
+            "sceneGoal": "Bond pulses with genuine grief, proves feelings were real — DELIVERED. Lines 131-211 execute the full sequence from bond breach through logical analysis to wall-lowering",
+            "incitingIncident": "Bond pulse in the night — DELIVERED (lines 131-137): 'Grief. Not a pulse. A breach.'",
+            "complication": "Emotional signature matches Kaelith's own, bond cannot lie — DELIVERED (lines 143-149): syllogistic reasoning through bond mechanics",
+            "crisis": "Accept genuine feelings (walked away from real love) or maintain betrayal narrative — DELIVERED (lines 155-185)",
+            "climax": "Cannot dismiss bond evidence, admits dual truth — DELIVERED (lines 149-177): 'Therefore Lirien's grief was real'",
+            "resolution": "Simple anger fragments into complex grief, stops reinforcing wall — DELIVERED (lines 189-211)",
+            "valueShift": "'She manipulated me' → 'She may have loved me AND been bound to kill me' — DELIVERED through architectural metaphor of load-bearing wall cracking",
+            "beats": {
+              "bondPulseArrival": "PRESENT lines 131-139",
+              "bondEvidenceAnalysis": "PRESENT lines 143-177 — syllogistic reasoning",
+              "simpleStoryCollapse": "PRESENT lines 155-185 — anger as load-bearing wall, grief as subsidence",
+              "wallRelaxation": "PRESENT lines 189-211 — tactical framing as transparent self-deception"
+            }
+          }
+        },
+        "SCN-49": {
+          "status": "fully_delivered",
+          "checklist": {
+            "sceneGoal": "Solo encounter forces tactical recognition that mission requires Lirien — DELIVERED. Vorakh fight exposes physical decline, military assessment confirms solo mission no longer viable",
+            "incitingIncident": "Vorakh attacks — DELIVERED (lines 233-248)",
+            "complication": "Pallor weakened her more than realized, reactions slower, endurance shorter — DELIVERED (lines 247-267): elbow locks, half-second delayed grip, two fingers non-functional",
+            "crisis": "Continue alone and die, or accept mission requires Lirien — DELIVERED (lines 285-301)",
+            "climax": "Survives barely, military assessment: cannot reach seal alone — DELIVERED (lines 279-301)",
+            "resolution": "Changes direction north toward Lirien, framed as mission necessity — DELIVERED (lines 321-379)",
+            "valueShift": "'I can do this alone' → 'the mission requires her and the mission is all I have left' — DELIVERED through physical evidence forcing tactical reassessment",
+            "beats": {
+              "vorahkFight": "PRESENT lines 233-277 — combat with declining capability",
+              "postCombatAssessment": "PRESENT lines 279-291 — 'The structure is compromised. Load-bearing capacity reduced. Reinforcement required.'",
+              "tacticalReality": "PRESENT lines 293-319 — mission requires Lirien, self-sufficiency narrative collapsed",
+              "directionChange": "PRESENT lines 321-379 — north, toward seal, toward Lirien, same heading"
+            }
+          }
+        }
+      }
+    },
+    "styleGuideCompliance": {
+      "score": 8,
+      "verdict": "Compliant with minor repetition concerns",
+      "toneContract": {
+        "dominantTones": "Morally complex: YES — dual truth held without resolution. Atmospherically taut: YES — Pallor as physical threat throughout. Darkly romantic: YES — bond grief as proof of love inside a death contract. Emotionally restrained but intense: YES — grief expressed through architecture and body, never melodrama.",
+        "prohibitedTones": "Whimsical/twee: ABSENT. Grimdark nihilism: ABSENT. Sentimental/melodramatic: ABSENT. Campy/self-aware: ABSENT. Epic-triumphant: ABSENT. Expository/pedagogical: ABSENT. Modern-glib: ABSENT."
+      },
+      "proseQualityFloor": {
+        "bannedPhrases": "Zero of 15 banned phrases detected. PASS.",
+        "cliches": "Zero cliché fantasy phrases detected via automated scan. PASS.",
+        "adverbDensity": "10 unique adverbs across 5004 words (~2 per thousand words). Well within limits. PASS.",
+        "passiveVoice": "15 passive constructions in ~5000 words (~3%). Well under 8% limit. PASS.",
+        "showTellRatio": "One 'she felt' instance (line 329: 'She felt it — the quality of Lirien's grief changing'). This is sensory-bond-reception, not emotion-naming. No telling-not-showing violations for major emotional beats. All major emotions conveyed through body (hand to sternum, arms around knees, jaw tight) and architecture metaphor (load-bearing wall, subsidence, cracks). PASS."
+      }
+    },
+    "craftProfileCompliance": {
+      "score": 9,
+      "verdict": "All 16 tools verified compliant",
+      "upstreamAgreement": "The craft enforcer reported 15 fully compliant and 1 partially compliant (T15 — corrected). My independent review confirms all 16 tools are now effectively compliant after the FS-019 correction. The T17 sentence-length deviation (67% vs 70%) is contextually justified by the breach-chapter authorization in the voice profile.",
+      "independentChecks": {
+        "T5_toneContract": "Verified: morally complex throughout, no prohibited tones",
+        "T10_magicSystem": "Verified: bond mechanics per MAG-007, Pallor per MAG-003/004, no new abilities, loophole distrusted",
+        "T12_dualArc": "Verified: fantasy (Pallor, vorakh) and romance (bond, grief, direction change) coupled — Pallor acceleration caused by romance separation",
+        "T16_motifs": "Verified: Pallor/silver motif present throughout, fortification imagery dominant, one deliberate water exception",
+        "T17_voice": "Verified: Kaelith at maximum compression, architectural metaphors exclusive, body-as-report",
+        "T25_thematic": "Verified: TP-1 (trust examined from wounded side), TP-2 (right choice tested — self-protection killing her), TP-3 (chosen vs bound advanced through bond evidence)"
+      },
+      "craftEnforcerDiscrepancy": "The craft enforcer header reports toolsPartiallyCompliant: 1, but all 16 individual tool assessments show verdict: 'compliant.' This discrepancy appears to reflect the T15 state BEFORE the correction was applied. The final prose includes the FS-019 content. Not a concern for the draft quality, but noted as a reporting inconsistency in the upstream artifact."
+    },
+    "continuityIntegrity": {
+      "score": 10,
+      "verdict": "Clean",
+      "independentChecks": {
+        "knowledgeState": "Verified: Kaelith references only information learned through ch16. Contract details from ch16 communique. Loophole from Lirien's ch16 disclosure (correctly distrusted). Bond mechanics from ch11. Calwrath details consistent with established facts. Thenndal reference is about the event, not FACT-006 lineage. No information leaks detected.",
+        "pallorProgression": "Verified: Silver wrist (ch16) → knuckles/elbow (ch17). Progressive, directional, consistent with MAG-003/004.",
+        "bondMechanics": "Verified: Transmits emotion not facts. Cannot fabricate. Can be walled not severed. Wall reduces but does not eliminate transmission. All per MAG-007.",
+        "physicalState": "Verified: Bruised ribs from ch14 referenced during vorakh fall (line 261). Pack, knife present. Pallor progression tracked.",
+        "location": "Verified: Eastward from safe house (ch16) into Narrowing treeline → rock overhang camp → north toward Quietus/Lirien convergence.",
+        "timeline": "Verified: Three days since ch14 night. Camp evening of ch16 departure day. Dawn, three-hour walk to vorakh. Plausible.",
+        "naming": "Verified: All established names correct — Calwrath, Graymarket, Canal District, Vael'thrin (apostrophe), Ashborne, Cerith Court, Ossya Thenndal, Lessening, Quietus, Pallor, resonance bond. New: vorakh (Pallor-touched predator). Added to continuity tracker."
+      }
+    },
+    "voiceConsistency": {
+      "score": 9,
+      "verdict": "Unmistakably Kaelith. Recognition test passed in 1 line",
+      "recognitionTest": "Opening line 'Fire first. Perimeter second. Don't think about the rest.' is identifiable as Kaelith within a single sentence. Military imperative, short declarative, tactical suppression of emotional content. PASS (INV-003, INV-034).",
+      "voiceFingerprintCompliance": {
+        "sentenceCompression": "58.7% short sentences (below 70% target). Justified by breach-chapter context — the voice profile authorizes longer sentences during defensive breach. SCN-48 is the emotional pivot where Kaelith's defenses fail; longer sentences correctly signal this collapse. Independently verified: the 70% rule is specifically designed for non-breach chapters.",
+        "architecturalMetaphors": "Dominant throughout — load-bearing walls, structures failing, cracks, subsidence, foundations, reinforcement, fortification. Zero lapses into Lirien's water/operative vocabulary in the final draft (voice maintainer corrected 3 water metaphors and 2 intelligence terms).",
+        "emotionalRegister": "Suppressed-to-physical: anger = jaw tight, heat in neck; grief = pressure behind sternum, weight across shoulders, hand to chest. No direct emotion-naming except through bond-reception mechanics.",
+        "deliberateException": "One water metaphor preserved — 'grief came through like floodwater through a crack in a dam' (line 135). Correctly justified as Lirien's influence leaking through Kaelith's defenses — the metaphor IS the theme."
+      },
+      "upstreamCrossReference": "Voice maintainer applied 13 corrections (3 water metaphors, 2 intelligence vocabulary, 5 compression edits, 3 register fixes). All corrections independently verified as appropriate. VF-017-007 (sentence length) and VF-017-008 (closing rhythm) were noted but not corrected, with justified rationale. I AGREE with these decisions — forcing compression in the breach scenes would contradict the emotional content."
+    },
+    "proseQuality": {
+      "score": 7,
+      "verdict": "Publication-quality with repetition issues requiring revision attention",
+      "strengths": [
+        "Opening hook is exceptional — 'Fire first. Perimeter second. Don't think about the rest.' Establishes voice, emotional state, and character in six words",
+        "The load-bearing wall metaphor is the chapter's structural spine and works at multiple levels — Kaelith's anger, the story she tells herself, the bond she maintains. It never becomes mere decoration",
+        "The syllogistic reasoning in SCN-48 (bond cannot fabricate → grief is real → Lirien lost something genuine → the simple story fails) is intellectually satisfying and emotionally devastating. Kaelith's military logic becomes the tool that dismantles her own defenses",
+        "Combat sequence in SCN-49 is tight, tactile, and properly scary — the elbow locking mid-fight is more terrifying than any external threat because it's her body failing",
+        "The Calwrath dream transmuting into silver fire (line 129) is a precisely calibrated detail — connecting her original trauma to the Pallor's cosmology",
+        "The self-deception about tactical monitoring (lines 199-211) is masterfully layered — Kaelith, the bond, and the reader all know the truth simultaneously",
+        "Physical detail carries emotion throughout: fire warmth not reaching fingers (line 109), cold spreading 'another inch' as punctuation for emotional beats (lines 213, 267, 341)"
+      ],
+      "concerns": {
+        "griefRepetition": "The word 'grief' appears 37 times. 'Lirien's grief' appears 11 times as an exact phrase. While grief IS the chapter's emotional substance, the mechanical repetition of 'Lirien's grief' as a construction becomes numbing rather than intensifying by the closing section. Compare: lines 343, 359, 365, 369 all deploy 'grief' in overlapping constructions within 30 lines. Revision should vary the emotional vocabulary — 'the weight Lirien carried,' 'the ache the bond transmitted,' 'what passed through the connection' — to maintain the grief's presence without lexical fatigue.",
+        "bondRepetition": "'The bond' appears 32 times. While the bond IS the chapter's primary mechanism, several constructions are near-identical: 'The bond pulsed' (4×), 'The bond carried' (4×), 'The bond did not' (4×). This creates a mechanical rhythm that dulls impact. Some instances could be varied — 'the resonance,' 'the connection,' 'the link,' or pronoun substitution where antecedent is clear.",
+        "walkedAnywayRefrain": "'She walked anyway' / 'walked anyway' appears 3 times in the closing 25 lines (lines 351, 363, 379). As a deliberate refrain this has power, but 3 instances in such proximity tips from purposeful repetition into noticeable pattern. The first and third are strongest; the middle instance (line 363) could be varied.",
+        "theNounOpeners": "28.6% of sentences begin with 'the' — the highest frequency opening. While not individually problematic, paragraphs where 3+ consecutive sentences start with 'The [noun]' create a monotonous cadence (see lines 339-343 cluster). Revision should vary some openings."
+      }
+    },
+    "emotionalImpact": {
+      "score": 9,
+      "verdict": "Emotional arc earned and organic",
+      "arcProgression": "Controlled anger (SCN-47: camp-making, memory revision, Calwrath pattern) → reluctant reassessment (SCN-48: bond evidence forcing the simple story to crack) → grim resolve (SCN-49: physical reality forcing direction change). Each transition is triggered by specific, concrete evidence rather than emotional fiat. The bond pulse is the pivot — it arrives as external evidence Kaelith cannot manufacture or dismiss.",
+      "keyMoments": [
+        "The soldier who walked into the same ambush twice deserved what happened to her' (line 83) — self-recrimination that is simultaneously self-protective and self-destructive",
+        "'Therefore Lirien's grief was real' (line 173) — the military logic dismantling the military defense",
+        "'Need did not make you weak. Need made you vulnerable. Weakness and vulnerability were not the same thing' (lines 309) — the thematic recognition that reframes six years of isolation",
+        "'She walked anyway' (line 379) — the final line as forward motion despite unreadiness"
+      ],
+      "emotionalHonesty": "The chapter earns its emotional beats because Kaelith's defenses are systematically dismantled by evidence she herself evaluates with her own analytical tools. She is not overcome by feeling — she reasons her way through her own walls. This is consistent with her character and far more devastating than melodramatic collapse."
+    },
+    "invariantCompliance": {
+      "score": 10,
+      "verdict": "All applicable invariants satisfied",
+      "checks": {
+        "INV-001_genrePromise": "PASS. Fantasy arc: Pallor acceleration, vorakh encounter, Quietus mission, divine membrane cosmology. Romance arc: bond grief proving genuine feelings, direction change toward Lirien, cage metaphor for love inside a contract. Both present and coupled.",
+        "INV-003_voiceDistinctness": "PASS. Kaelith identifiable within 1 sentence. Architectural metaphors, military compression, body-as-tactical-report throughout. Zero voice contamination from Lirien's register in final draft.",
+        "INV-005_showDontTell": "PASS. All major emotional beats conveyed through body, architecture metaphor, and bond mechanics. No direct emotion-naming for key moments. 'She felt it' at line 329 is sensory bond reception, not telling.",
+        "INV-008_characterAgency": "PASS. Kaelith drives every decision: walling the bond, lowering the wall, fighting the vorakh, changing direction. The direction change is HER choice reframed through mission logic. No deus ex machina. No rescue. No external force makes the decision for her.",
+        "INV-009_noDeusMachina": "PASS. Vorakh fight uses established knife combat. Bond transmission follows MAG-007 rules. Pallor acceleration follows MAG-003/004. Loophole reference is from ch16. No new abilities, no convenient solutions.",
+        "INV-010_outlineCompliance": "PASS. All three scenes deliver their specified goals, value shifts, five commandments, and beats. See outlineCompliance section for detail.",
+        "INV-012_sequentialProduction": "PASS. Chapters 1-16 all passed gate. Chapter 17 produced after ch16 completion.",
+        "INV-017_proseQualityFloor": "PASS. Zero cliché fantasy phrases detected. Zero banned phrases. No purple prose passages (the most ornate writing is the Calwrath dream sequence, which serves both character and theme). Repetitive constructions exist (grief, bond) but fall into the 'polish-level' category rather than quality-floor violations.",
+        "INV-023_noPlagiarism": "PASS. No identifiable borrowed phrases, plot structures, or character constructions from published works. The load-bearing wall metaphor is original to this character's architectural vocabulary.",
+        "INV-024_noPlagiarism": "PASS. No specific phrases or sentences traceable to published fiction.",
+        "INV-035_microTension": "PASS. No half-page passage without active tension. Every paragraph contains at least one of: physical threat (Pallor, vorakh), emotional conflict (bond vs wall, anger vs grief), tactical assessment (declining capability), or forward urgency (mission timeline). Automated scan confirmed zero dead spots exceeding 250 characters without tension markers.",
+        "INV-056_knowledgeState": "PASS. Verified by continuity integrator and independently confirmed. Kaelith references no information she has not learned through ch16. Thenndal reference is event-based, not FACT-006 lineage."
+      }
+    }
+  },
+  "criticalFindings": [],
+  "majorFindings": [
+    {
+      "id": "MF-017-001",
+      "severity": "major",
+      "category": "repetition",
+      "invariant": "INV-017",
+      "description": "'Lirien's grief' appears 11 times as an exact phrase — a mechanical repetition that creates lexical fatigue in a chapter whose emotional power depends on grief's freshness. The phrase appears at lines 57, 59, 135, 141, 163, 173, 329, 343, 365, 369, and in compound constructions at lines 37, 147. By the closing section (lines 343-375), the reader has encountered this exact construction so many times that it begins to function as a verbal tic rather than an emotional payload. This is the single most significant prose-quality issue in the chapter.",
+      "location": "Throughout, concentrated in SCN-48 and chapter close",
+      "recommendation": "Revision should vary at least 4-5 instances: 'the weight the bond transmitted,' 'what passed through the connection,' 'the ache that arrived without permission,' 'Lirien's devastation.' Preserve the strongest instances (lines 133, 173) and vary the rest."
+    }
+  ],
+  "minorFindings": [
+    {
+      "id": "MN-017-001",
+      "severity": "minor",
+      "category": "repetition",
+      "description": "'The bond' appears 32 times with 'the bond pulsed' (4×), 'the bond carried' (4×), 'the bond did not' (4×) as near-identical constructions. While the bond is the chapter's primary mechanism, revision should vary 8-10 instances to 'the resonance,' 'the connection,' 'it' (where antecedent is clear), or restructure sentences to avoid the subject-verb pattern.",
+      "location": "Throughout"
+    },
+    {
+      "id": "MN-017-002",
+      "severity": "minor",
+      "category": "repetition",
+      "description": "'The cold spread' appears 5 times as a Pallor-progression punctuation device. Effective as motif but could vary 2 instances — 'the silver advanced,' 'warmth retreated another inch,' 'the Pallor claimed further.'",
+      "location": "Lines 99, 213, 267, 341, 359"
+    },
+    {
+      "id": "MN-017-003",
+      "severity": "minor",
+      "category": "sentenceStructure",
+      "description": "28.6% of sentences begin with 'The' — highest-frequency opener. Creates monotonous cadence in clustered paragraphs. Lines 339-343 show three consecutive 'The [noun]' openers in close proximity.",
+      "location": "Throughout, concentrated in closing section"
+    },
+    {
+      "id": "MN-017-004",
+      "severity": "minor",
+      "category": "repetition",
+      "description": "'Maybe' anaphora in lines 183, 339, 369-371 is used as a rhetorical device but appears across three separate passages. The first instance (line 183: 'Grief said: maybe she loved you. Maybe the contract was real...') is the strongest. The third instance (lines 369-371: 'Maybe that was... Maybe the reason... Maybe Lirien understood. Maybe understanding...') is 4× 'maybe' in 5 lines — one too many for the diminishing-returns curve.",
+      "location": "Lines 183, 339, 369-371"
+    },
+    {
+      "id": "MN-017-005",
+      "severity": "minor",
+      "category": "craftEnforcerReporting",
+      "description": "The craft enforcement report header claims toolsPartiallyCompliant: 1 but all 16 individual tool assessments show verdict: 'compliant.' This is a reporting inconsistency — the header appears to reflect the pre-correction state while all individual assessments reflect post-correction. Not a prose issue but a metadata hygiene issue.",
+      "location": "chapters/017/craft-enforcement-report.json"
+    },
+    {
+      "id": "MN-017-006",
+      "severity": "minor",
+      "category": "wordChoice",
+      "description": "'whatever function' appears twice (lines 103, 229) — 'whatever' is a mildly modern-register word. Not anachronistic per se (it has medieval etymology) but its casual tone slightly jars with Kaelith's formal military register. Revision could replace one or both with 'whichever purpose' or 'the function, whatever it proved to be.'",
+      "location": "Lines 103, 229"
+    },
+    {
+      "id": "MN-017-007",
+      "severity": "minor",
+      "category": "paragraphBalance",
+      "description": "The closing section (lines 327-379, roughly 750 words) is the chapter's reflective denouement and runs long relative to the forward-motion it accomplishes. The emotional content is valid but 3-4 paragraphs could be tightened in revision without losing substance. Specifically, lines 347-353 (Kaelith wondering if Lirien felt trapped) overlap thematically with the cage metaphor already established at line 339.",
+      "location": "Lines 327-379"
+    }
+  ],
+  "warnings": [
+    {
+      "id": "WARN-017-001",
+      "category": "repetitionDensity",
+      "description": "Collective repetition load across grief (37×), bond (32×), cold/silver (combined 26×), wall (20×), mission (12×), and Lirien (29×) creates cumulative lexical density that risks numbing the reader. Any ONE of these frequencies would be fine for a chapter about that subject. Collectively, they interact to produce a narrower vocabulary range than the prose's sophistication warrants. Revision should address the grief and bond repetitions specifically (see MF-017-001, MN-017-001) to bring the overall density into a more varied range.",
+      "threshold": "Warning — not a fail trigger. Revision-addressable."
+    },
+    {
+      "id": "WARN-017-002",
+      "category": "refrainOveruse",
+      "description": "'walked anyway' appears at lines 351, 363, 379 — three times in 28 lines. As a deliberate refrain closing the chapter, this has structural intent. However, 3 instances in such proximity tips from purposeful repetition into noticeable pattern. The first (351) and third (379, final line) are the strongest; the middle instance (363) dilutes the impact. Revision should consider cutting or varying the middle occurrence: 'She kept walking.' or 'She did not stop.'",
+      "threshold": "Warning — refrain management, not quality floor."
+    }
+  ],
+  "warningCount": 2,
+  "warningThreshold": 3,
+  "darlings": [
+    {
+      "id": "DAR-017-001",
+      "location": "Lines 347-353",
+      "passage": "Kaelith wondered if Lirien felt as trapped as she did... between the institution that had built the cage and the woman who had been caged inside it.",
+      "assessment": "This passage is beautifully written and emotionally resonant, but it pauses forward motion to speculate about Lirien's interiority in a way Kaelith cannot verify. Kaelith's POV has been rigorously limited to what she can know; this paragraph pushes that boundary toward empathetic projection. KEEP — the projection itself is the thematic work (Kaelith beginning to see Lirien as a person trapped rather than an operative deployed), and it is framed as 'wondered' not assertion. But it IS a darling — it's the paragraph where the author's sympathy for Lirien bleeds through Kaelith's harder register.",
+      "verdict": "keep_with_note"
+    },
+    {
+      "id": "DAR-017-002",
+      "location": "Lines 353-357",
+      "passage": "The morning light was silver through the thinning membrane overhead. The true sky showed through in patches — darker, older, the colour of a wound that had never been permitted to close.",
+      "assessment": "Gorgeous atmospheric writing that contributes to the Pallor-as-cosmic-wound motif. 'A wound that had never been permitted to close' is a strong image that resonates thematically (Kaelith's Calwrath wound, Lirien's operative wound). However, the 'true sky' description pauses the chapter's forward momentum in its final section. KEEP — the image does sufficient thematic work to justify its placement, and the pacing impact is minimal (two sentences). But it's the kind of passage where craft ambition slightly exceeds functional necessity.",
+      "verdict": "keep"
+    },
+    {
+      "id": "DAR-017-003",
+      "location": "Lines 127-129",
+      "passage": "The flames were silver. The screaming was silent. The fire took everything and replaced it with the colour of divine failure, and when it had finished, the Graymarket was not ash but absence — a hole in the world where three hundred people had been, filled now with nothing but the membrane of a flayed god.",
+      "assessment": "The Calwrath dream transformed into Pallor cosmology. This is strong writing that connects Kaelith's foundational trauma to the current threat in a way that deepens both. It advances the Pallor motif and functions as emotional escalation (the dream disturbs her sleep, creating vulnerability for the bond pulse). KEEP — this darling earns its place through double-duty function.",
+      "verdict": "keep"
+    }
+  ],
+  "automaticFailChecklist": {
+    "outlinePOVMismatch": {
+      "triggered": false,
+      "evidence": "POV is CHAR-001 Kaelith throughout. No POV breaks."
+    },
+    "sceneGoalsMissing": {
+      "triggered": false,
+      "evidence": "All three scene goals fully delivered. See outlineCompliance."
+    },
+    "clicheCount": {
+      "triggered": false,
+      "evidence": "Zero cliché fantasy phrases detected via automated regex scan against 20 common patterns."
+    },
+    "halfPageNoTension": {
+      "triggered": false,
+      "evidence": "Automated scan found zero paragraphs exceeding 250 characters without tension markers. Every substantial paragraph contains physical threat, emotional conflict, tactical assessment, or forward urgency."
+    },
+    "povNotIdentifiable": {
+      "triggered": false,
+      "evidence": "Kaelith identifiable in opening line. Military imperative voice unmistakable."
+    },
+    "unestablishedMagic": {
+      "triggered": false,
+      "evidence": "All magic uses established: bond per MAG-007, Pallor per MAG-003/004, kinetic memory per established ch4 mechanic. Vorakh is a creature, not magic. No new abilities introduced."
+    },
+    "informationLeak": {
+      "triggered": false,
+      "evidence": "Independently verified: Kaelith references only information learned through ch16. No FACT-006, FACT-007, or other restricted facts."
+    },
+    "genreArcAbsent": {
+      "triggered": false,
+      "evidence": "Fantasy: Pallor, vorakh, Quietus, divine membrane. Romance: bond grief, genuine feelings proof, direction change toward Lirien. Both present and coupled."
+    },
+    "tellingMajorBeats": {
+      "triggered": false,
+      "evidence": "All major emotional beats (anger, grief recognition, wall-lowering, direction change) conveyed through body, architecture metaphor, and bond mechanics. No 'she felt [emotion]' for key moments."
+    }
+  },
+  "upstreamReportCrossReference": {
+    "voiceReport": {
+      "verdict": "passed",
+      "score": 9,
+      "agreement": "AGREE with voice maintainer's assessment. 13 corrections were appropriate. The two uncorrected observations (VF-017-007 sentence length, VF-017-008 closing rhythm) have valid justification. The 58.7% short-sentence ratio is correct for a breach chapter. One addition: the voice maintainer should have flagged the 'whatever' register issue (MN-017-006) but this is minor.",
+      "independentVerification": "Automated metrics confirmed: 484 sentences, 284 short (58.7%), 54 fortification references, 1 water metaphor (deliberate), 10 operative vocabulary instances (all describing Lirien). Recognition test passed independently."
+    },
+    "continuityReport": {
+      "verdict": "passed",
+      "agreement": "FULLY AGREE. The continuity integrator's work is thorough. The bruised rib correction (CI-017-001) was necessary and properly executed. The knowledge state analysis at INV-056 is detailed and correct — I independently verified the Thenndal reference is event-based. The vorakh addition to naming registry is appropriate.",
+      "independentVerification": "All location, timeline, naming, bond mechanics, and Pallor progression checks independently confirmed."
+    },
+    "craftEnforcementReport": {
+      "verdict": "passed",
+      "agreement": "SUBSTANTIALLY AGREE. All 16 tool assessments are correct. The FS-019 correction was necessary. The T17 sentence-length note is appropriately classified as minor. The T23 mystery box count is correctly identified as a plotting-level issue. ONE DISCREPANCY: the report header says toolsPartiallyCompliant: 1 but all individual assessments read 'compliant' — this is a metadata inconsistency (MN-017-005).",
+      "independentVerification": "T5 (tone), T10 (magic), T12 (dual-arc), T16 (motifs), T17 (voice), T25 (thematic) independently spot-checked and confirmed compliant."
+    }
+  },
+  "observationLog": [
+    {
+      "id": "OBS-017-001",
+      "scene": "SCN-47",
+      "type": "verified_pass",
+      "observation": "Opening hook. 'Fire first. Perimeter second. Don't think about the rest.' Exceptional. Establishes voice, emotional state, and suppression strategy in six words. INV-034 passed in one line."
+    },
+    {
+      "id": "OBS-017-002",
+      "scene": "SCN-47",
+      "type": "verified_pass",
+      "observation": "Camp-making sequence (lines 17-35). Every task doubled by absence. Military efficiency masking devastation. Value: silence as presence. Micro-tension sustained through what is NOT said/done. No dead spots."
+    },
+    {
+      "id": "OBS-017-003",
+      "scene": "SCN-47",
+      "type": "verified_pass",
+      "observation": "Memory recontextualization (lines 41-83). Oathbrand, Calwrath confession, 'I want this' — each tested for manipulation. The parallel structure ('Had that been real? Or had it been...') works without becoming mechanical because the content varies each time. Calwrath pattern ('People you trust will use you for institutional purposes') is a powerful thematic anchor."
+    },
+    {
+      "id": "OBS-017-004",
+      "scene": "SCN-47",
+      "type": "verified_pass",
+      "observation": "Pallor cataloguing (lines 85-99). 'Silver traced the veins from her wrist to her first knuckle.' Clinical precision that IS the emotion — Kaelith processes fear through inventory. 'The warmth did not reach her fingers' (line 109) is a perfect dual-register detail (literal Pallor symptom AND emotional metaphor)."
+    },
+    {
+      "id": "OBS-017-005",
+      "scene": "SCN-47",
+      "type": "verified_pass",
+      "observation": "Loophole reference (lines 111-117). Correctly distrusted. 'Had that been real? Or had it been another frame?' — Kaelith treats it as possible manipulation, consistent with INV-056 and the continuity report's verification."
+    },
+    {
+      "id": "OBS-017-006",
+      "scene": "SCN-48",
+      "type": "verified_pass",
+      "observation": "Calwrath dream transition (lines 125-131). Dream as bridge between scenes. Silver fire connecting personal trauma to cosmic threat. Waking to the bond is a clean transition — the dream opens the defenses that let the bond through."
+    },
+    {
+      "id": "OBS-017-007",
+      "scene": "SCN-48",
+      "type": "verified_pass",
+      "observation": "Bond breach sequence (lines 131-145). 'Grief. Not a pulse. A breach.' — Single word followed by recharacterization. Physical response (hand to sternum) before cognitive processing. The grief described as 'a structure failing — walls coming down, load-bearing elements giving way' is Kaelith applying her own metaphor framework to Lirien's emotional state. Consistent, distinctive, layered."
+    },
+    {
+      "id": "OBS-017-008",
+      "scene": "SCN-48",
+      "type": "verified_pass",
+      "observation": "Syllogistic reasoning (lines 149-177). The passage where Kaelith reasons through bond mechanics to conclude 'Therefore Lirien's grief was real' is the chapter's pivot and one of the most intellectually precise emotional sequences in the manuscript. Military logic as the tool that dismantles military defenses. Format: premise → premise → therefore. This is Kaelith's voice at its most characteristic."
+    },
+    {
+      "id": "OBS-017-009",
+      "scene": "SCN-48",
+      "type": "verified_pass",
+      "observation": "Load-bearing wall metaphor (lines 157-185). The central metaphor works at three levels: (1) anger as structural support for emotional survival, (2) the simple betrayal story as the framework holding up the anger, (3) grief as subsidence — the ground shifting under foundations. 'Remove the story and the wall had nothing to support it.' This is the thematic architecture of the chapter title made narrative."
+    },
+    {
+      "id": "OBS-017-010",
+      "scene": "SCN-48",
+      "type": "verified_pass",
+      "observation": "Tactical self-deception (lines 195-211). 'She told herself it was tactical... The lie was transparent. Kaelith knew it was a lie even as she thought it.' Three-layer irony: Kaelith knows, the bond knows Kaelith knows, the reader watches Kaelith watching herself lie. T24 (subtext) executed perfectly."
+    },
+    {
+      "id": "OBS-017-011",
+      "scene": "SCN-49",
+      "type": "verified_pass",
+      "observation": "Combat sequence (lines 233-277). Tight, tactile, properly frightening. Staccato combat voice: 'Slower. Compensate left.' Elbow locking mid-fight (line 259) is the scariest moment in the chapter — the body betraying the soldier. Vorakh described efficiently (6 limbs, ring-eyes, plated hide) without over-worldbuilding. Kill with knife driven by creature's own momentum — physically plausible, no deus ex machina."
+    },
+    {
+      "id": "OBS-017-012",
+      "scene": "SCN-49",
+      "type": "verified_pass",
+      "observation": "Self-sufficiency collapse (lines 285-309). 'The structure is compromised. Load-bearing capacity reduced. Reinforcement required. She meant herself.' Architectural assessment applied to identity. The realization 'Need did not make you weak. Need made you vulnerable' is a thematic keystone for the entire story — it reframes Kaelith's six-year isolation as a misidentification, not wisdom."
+    },
+    {
+      "id": "OBS-017-013",
+      "scene": "SCN-49",
+      "type": "verified_pass",
+      "observation": "Direction change (lines 321-335). 'North. The bond registered the shift before she had taken three steps.' Physical action → bond response → mutual awareness. The economy is excellent. Kaelith cannot hide from the bond, which means she cannot hide from herself."
+    },
+    {
+      "id": "OBS-017-014",
+      "scene": "SCN-49",
+      "type": "verified_pass",
+      "observation": "Chapter close (lines 375-379). 'She did not know the answers. She walked anyway.' Forward motion with unresolved tension. Kaelith walking toward everything she is not ready for. The close drives the reader forward to ch18/19 reunion. Effective."
+    },
+    {
+      "id": "OBS-017-015",
+      "scene": "all",
+      "type": "verified_pass",
+      "observation": "Word count: 5004 words (target 5000). Within acceptable range."
+    },
+    {
+      "id": "OBS-017-016",
+      "scene": "all",
+      "type": "verified_pass",
+      "observation": "Emotional arc: controlled anger (SCN-47) → reluctant reassessment (SCN-48) → grim resolve with fragile hope (SCN-49). Each transition earned through concrete evidence (bond grief, physical decline, combat failure). No emotional shortcuts. The arc is the chapter's primary accomplishment."
+    },
+    {
+      "id": "OBS-017-017",
+      "scene": "all",
+      "type": "second_pass_note",
+      "observation": "Second adversarial pass specifically hunting: (1) Clichés: Zero found. (2) Tell-not-show: Zero violations for key beats. One 'she felt it' at line 329 is bond-sensory, not emotion-naming. (3) Static scenes: All three have clear value shifts. (4) Voice breaks: None detected in final draft. (5) Darlings: Three identified, all justified to keep. The chapter is clean at the quality-floor level; its issues are in the polish/variation category."
+    }
+  ]
+}

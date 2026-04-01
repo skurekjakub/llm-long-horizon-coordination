@@ -1,0 +1,411 @@
+{
+  "gateId": "revision-gate-022-v2",
+  "phase": "revision",
+  "chapter": 22,
+  "chapterTitle": "What the Water Chose",
+  "auditor": "revision-auditor",
+  "auditIteration": 2,
+  "timestamp": "2026-03-21T08:30:00Z",
+  "verdict": "passed",
+  "verdictRationale": "RE-AUDIT of Chapter 22 following revision v2. All four previous automatic fail triggers have been resolved. (1) LINE-201 negation-contrast saturation reduced from 26+ instances to 10-11 strict instances, within the 10-12 target; final 20 lines contain only 1 instance (target ≤2). (2) LINE-205 near-verbatim grip passage reuse eliminated — first passage (L121) completely rewritten with different physical detail (right hand on granite, redistributed load, economy of private practice); second passage (L207) retained as the emotionally richer version; no shared 'adjusted her grip' or 'the way she [verb]ed everything' syntax between them. (3) Traceability chain (INV-014) fully restored — all finding IDs in revision-log.json now match canonical IDs from the three edit reports exactly. (4) All four darlings flagged by editors have been cut: 'The simplest words. The hardest truth.' removed; 'That was all. That was everything.' removed; backstory parenthetical 'through Calwrath, through exile...' removed; four-location emotional timeline 'closed since Calwrath...cracked in Rivenmarch...' removed. All replacements are stronger than the originals. Additionally, all copy-edit fixes have been applied: 'divine corpse' → 'the divine remains,' 'Serath Dún' → 'Serath Dûn,' 'Seventh Seat' → 'Sixth Seat,' all British spellings converted to American English, 'electric' anachronism removed. The chapter's emotional substance, thematic resolution, and prose quality are maintained or improved. Capstone lines are protected. The chapter is ready to proceed to beta reading.",
+
+  "previousAuditFailures": {
+    "auditTimestamp": "2026-03-21T03:45:00Z",
+    "failTriggerCount": 4,
+    "triggers": [
+      "LINE-201 (critical) unaddressed — reviser confused finding IDs",
+      "LINE-205 (major) unaddressed — reviser addressed wrong finding under this ID",
+      "INV-014 traceability broken — 10+ finding ID mismatches",
+      "INV-081 darlings survived — 4 flagged passages unchanged"
+    ],
+    "resolutionStatus": "ALL RESOLVED in v2 re-revision"
+  },
+
+  "automaticFailTriggers": [],
+
+  "failTriggerVerification": [
+    {
+      "previousTrigger": "LINE-201 (critical) — negation-contrast saturation",
+      "verdict": "RESOLVED",
+      "evidence": {
+        "draftCount": "~22 instances per line editor's analysis",
+        "v1RevisedCount": "26+ instances (WORSE — wrong finding addressed under this ID)",
+        "v2RevisedCount": "10-11 strict instances (within 10-12 target)",
+        "targetCount": "10-12 per LINE-201 recommendation",
+        "final20Lines": "1 instance (L243: 'That was not flowing' — capstone). Target was ≤2.",
+        "final40Lines": "3 strict instances (L213 declaration, L225 bond comparison, L243 capstone). Target was ≤3.",
+        "conversionsVerified": [
+          {"draft": "Not the muffled, second-hand approximation", "revised": "Sentence cut, merged via em dash (L53)", "status": "converted"},
+          {"draft": "not collapsing but giving way", "revised": "giving way, softer than collapse (L71)", "status": "converted to positive-first"},
+          {"draft": "Not the carefully negotiated, effortful access", "revised": "Ambient magic, arriving unbidden (L79)", "status": "converted to positive-first"},
+          {"draft": "Not Kaelith's — a lighter tread", "revised": "A lighter tread than Kaelith's (L85)", "status": "converted to positive-first"},
+          {"draft": "was not institutional", "revised": "was personal, local (L98)", "status": "converted to positive-first"},
+          {"draft": "not bestowed...but maintained", "revised": "earned through recognition rather than decree, maintained (L103)", "status": "converted to positive-first"},
+          {"draft": "Not betrayal. Not forty years of deliberate sabotage.", "revised": "An aberration framing — one deviant seat (L117)", "status": "converted to positive-first"},
+          {"draft": "Not absence of feeling. Presence of it, but resting.", "revised": "a quietness so thorough it carried weight (L125)", "status": "converted to sensory"},
+          {"draft": "not surrender, not frustration. Release.", "revised": "release. The sound of a current... (L129)", "status": "converted to positive-first"},
+          {"draft": "Not a declaration — Kaelith did not make declarations.", "revised": "A statement of structural fact. (L143)", "status": "cut"},
+          {"draft": "Not touching — the space between them deliberate", "revised": "The space between them deliberate (L149)", "status": "converted to positive-first"},
+          {"draft": "not a smile. The Kaelith-equivalent:", "revised": "the Kaelith-equivalent of a smile: (L157)", "status": "converted to positive-first"},
+          {"draft": "Not desperate, not clinging", "revised": "Firm. Steady (L221)", "status": "converted to positive-first"},
+          {"draft": "Not the filtered silver approximation", "revised": "merged into star description (L227)", "status": "cut"},
+          {"draft": "Not perfect.", "revised": "The world was imperfect. (L235)", "status": "converted to positive-first"}
+        ],
+        "instancesRetained": [
+          {"line": 53, "text": "Not the quality she had trained...", "justification": "Opening — establishes analytical mode"},
+          {"line": 77, "text": "not torn, not the raw, violent rending", "justification": "Pallor observation — visual assessment"},
+          {"line": 89, "text": "not Court-formal, not Seep-operational", "justification": "Identity register assessment"},
+          {"line": 107, "text": "Not a Hand... Not a Seep operative... Not a contractor", "justification": "Identity crisis litany — thematic core"},
+          {"line": 135, "text": "Not bitter. Not resigned.", "justification": "Kaelith assessment — structurally earned"},
+          {"line": 173, "text": "Not silence", "justification": "Scene-opening contrast"},
+          {"line": 199, "text": "Not the Seep.", "justification": "Lirien's conscious rejection"},
+          {"line": 213, "text": "Not because I was sent. Not because the world needs it.", "justification": "PROTECTED — climactic declaration"},
+          {"line": 225, "text": "not the static-laden...but clean and warm and chosen", "justification": "Bond evolution statement"},
+          {"line": 243, "text": "That was not flowing.", "justification": "CAPSTONE — novel's closing rhetorical move"}
+        ],
+        "assessment": "The negation-contrast arc now reads as intentional: dense in SCN-62 (Lirien classifying by exclusion — 4 instances), thinning through SCN-63 (3 instances), arriving at direct positive assertion in SCN-64 (3 instances, all thematically essential). The device is no longer the dominant rhetorical move. The reader will feel the pattern as character voice, not authorial habit."
+      }
+    },
+    {
+      "previousTrigger": "LINE-205 (major) — near-verbatim grip passage reuse",
+      "verdict": "RESOLVED",
+      "evidence": {
+        "firstPassageDraft": "She had simply adjusted her grip, the way she adjusted everything: assess the damage, rebuild around it, continue.",
+        "firstPassageRevised": "Kaelith's right hand rested on the granite beside her, fingers spread wide, carrying the morning's weight for both hands now. She had absorbed the loss already — Lirien could see it in the subtle redistribution, the remaining fingers doing the work of ten with an economy that spoke of hours of private practice. (L121)",
+        "secondPassageRevised": "Had simply adjusted her grip, compensated, rebuilt around the damage — with her hands, with her stubbornness, with the quiet insistence that what remained was enough. (L207)",
+        "sharedElementsRemaining": "Both passages mention silver on forearm and frozen fingers, but from different angles (analytical/observational vs. emotional/intimate). No shared 'adjusted her grip' phrase in first passage. No 'the way she [verb]ed everything' tic in first passage. The first passage focuses on compensation mechanics (redistribution, remaining fingers working, private practice); the second focuses on emotional stubbornness. These now function as legitimate callback (the same physical reality seen with deepening emotional context) rather than near-verbatim reuse.",
+        "assessment": "PASS — the two passages are now fully differentiated in focus, syntax, and emotional register."
+      }
+    },
+    {
+      "previousTrigger": "INV-014 traceability broken — finding ID mismatches",
+      "verdict": "RESOLVED",
+      "evidence": {
+        "idVerification": {
+          "developmental": "DEV-221 through DEV-226 — all match developmental-edit.json finding IDs exactly",
+          "lineEdit": "LINE-201 through LINE-217 — all match line-edit.json finding IDs exactly",
+          "copyEdit": "COPY-22-001 through COPY-22-010 — all match copy-edit.json finding IDs exactly",
+          "regressions": "REG-001 through REG-003 — correctly reference regressions identified in previous audit"
+        },
+        "spotChecks": [
+          {"logId": "LINE-201", "claimedFix": "Negation-contrast reduction", "matchesReport": true, "reportDescription": "Negation-contrast structural saturation"},
+          {"logId": "LINE-205", "claimedFix": "First grip passage rewritten", "matchesReport": true, "reportDescription": "Near-verbatim image repetition"},
+          {"logId": "LINE-207", "claimedFix": "Stock constructions cut", "matchesReport": true, "reportDescription": "Three stock literary constructions"},
+          {"logId": "LINE-208", "claimedFix": "Backstory recaps removed", "matchesReport": true, "reportDescription": "Backstory-summary telling at climax"},
+          {"logId": "COPY-22-003", "claimedFix": "Seventh→Sixth Seat", "matchesReport": true, "reportDescription": "Seventh Seat should be Sixth Seat"}
+        ],
+        "assessment": "PASS — traceability chain fully restored. Every finding disposition in the revision log maps to the correct finding in the source editorial report. The v1 systematic ID mismatch has been corrected."
+      }
+    },
+    {
+      "previousTrigger": "INV-081 darlings survived — 4 flagged passages unchanged",
+      "verdict": "RESOLVED",
+      "evidence": {
+        "darling1": {
+          "findingId": "LINE-207 (instance 2)",
+          "originalPassage": "The simplest words. The hardest truth.",
+          "status": "CUT",
+          "replacement": "The italicized thought '*I want this. I want you. Because I choose to.*' now stands alone (L219). The editorial announcement is gone; the reader supplies the weight.",
+          "verified": true
+        },
+        "darling2": {
+          "findingId": "LINE-207 (instance 3)",
+          "originalPassage": "That was all. That was everything.",
+          "status": "CUT",
+          "replacement": "The sentence now ends '...and they held hands.' (L223). The gesture's contrast with the epic setting does the work without narrating its significance.",
+          "verified": true
+        },
+        "darling3": {
+          "findingId": "LINE-208 (instance 1)",
+          "originalPassage": "through Calwrath, through exile, through a binding that had been built to cage her",
+          "status": "CUT",
+          "replacement": "'allowing herself to want something she had learned to stop expecting' (L203). Trusts the reader to supply the backstory from 21 chapters of investment.",
+          "verified": true
+        },
+        "darling4": {
+          "findingId": "LINE-208 (instance 2)",
+          "originalPassage": "closed since Calwrath and had cracked in Rivenmarch and widened in the forward shelter and broken open in the Quietus chamber",
+          "status": "CUT",
+          "replacement": "'had been held closed for a very long time was, for the first time, allowed to remain open' (L215). Present sensation replaces narrator-explained arc.",
+          "verified": true
+        },
+        "assessment": "PASS — all four darlings have been excised. All replacements are more trusting of the reader and stronger than the originals. The reviser correctly identified that these passages explained the character arc the reader has already lived through."
+      }
+    }
+  ],
+
+  "findingVerificationMatrix": {
+    "summary": {
+      "totalCritical": 1,
+      "criticalAddressed": 1,
+      "totalMajor": 8,
+      "majorAddressed": 8,
+      "totalModerate": 5,
+      "moderateAddressed": 5,
+      "totalMinor": 14,
+      "minorAddressed": 13,
+      "minorPartiallyAddressed": 1,
+      "totalRegressions": 3,
+      "regressionsAddressed": 3
+    },
+    "critical": [
+      {
+        "findingId": "LINE-201",
+        "source": "line-edit",
+        "description": "Negation-contrast structural saturation",
+        "verdict": "PASS",
+        "evidence": "See failTriggerVerification[0] above. 10-11 strict instances, within 10-12 target. Final 20 lines: 1 instance."
+      }
+    ],
+    "major": [
+      {
+        "findingId": "DEV-221",
+        "source": "developmental",
+        "description": "Conclave analysis runs ~500 words; tighten by 100-150 words",
+        "verdict": "PASS — exceeded target",
+        "evidence": "Conclave section (L113-L160) reduced from ~1172 words (draft) to ~885 words (revised). Net reduction of ~287 words — nearly double the 100-150 word target. The 'Under review. Noted. Established channels.' catalogue was cut. The delay prediction was compressed from 4+ sentences to 2 (L131-132). The aberration analysis was tightened from 3 sentences to 1 (L117). The positive-first conversion of 'Not betrayal. Not forty years of deliberate sabotage.' simultaneously served DEV-221 and LINE-201."
+      },
+      {
+        "findingId": "LINE-202",
+        "source": "line-edit",
+        "description": "'Through the bond, [she] felt' — 6 instances with near-identical syntax",
+        "verdict": "PASS",
+        "evidence": "Zero exact 'Through the bond' constructions remain in revised chapter (confirmed via grep). All replaced with varied constructions: 'The bond's signal carried' (L65), 'The bond carried' (L125, L149, L183, L191), 'The bond's signal shifted' (L161), 'the bond carried the thing beneath it' (L203), 'The bond shifted' (L215), 'The bond hummed' (L225, L247). The formulaic syntax is broken while maintaining bond-perception as a narrative tool."
+      },
+      {
+        "findingId": "LINE-203",
+        "source": "line-edit",
+        "description": "Bond-mediated emotion-telling at 4 passages",
+        "verdict": "PASS",
+        "evidence": "All four passages converted to sensory-then-analysis: L125 ('a quietness so thorough it carried weight' — sensory). L161 ('the specific signature of a person who was seeing you and choosing not to look away' — showing the bond-data). L203 ('hope, which Lirien identified by the way it made Kaelith's voice precise' — analytical decoding through voice observation). L215 ('a warmth that had been held behind something, arriving now without restraint...Lirien felt it the way she felt weather changes' — filtered through Lirien's perceptual process). All four now render bond-data as sensation that Lirien processes, not as narrator-told emotion labels."
+      },
+      {
+        "findingId": "LINE-204",
+        "source": "line-edit",
+        "description": "'The particular [noun] of a [person] who...' — 5 instances",
+        "verdict": "PASS",
+        "evidence": "Reduced from 5 instances to 2: L87 ('the particular discipline of a soldier' — establishes construction in analytical mode) and L235 ('the particular stubbornness of people who built...' — thematic closing). Removed: L88/125 ('particular peace'), L128 ('particular quality'), L176/203 ('particular vulnerability' → 'The vulnerability'). Target was 2. Met exactly."
+      },
+      {
+        "findingId": "LINE-205",
+        "source": "line-edit",
+        "description": "Near-verbatim image reuse — grip passages",
+        "verdict": "PASS",
+        "evidence": "See failTriggerVerification[1] above. First passage completely rewritten."
+      },
+      {
+        "findingId": "COPY-22-001",
+        "source": "copy-edit",
+        "description": "Systematic British English spelling — 11 instances",
+        "verdict": "PASS",
+        "evidence": "All 11 flagged British spellings converted: re-stabilisation→re-stabilization (L57), coloured→colored (L63), catalogued→cataloged (L67), realised→realized (L79), fibres→fibers (L81), humour→humor (L95), favouring→(passage rewritten, L121), catalogued→cataloged (L67), recognised→recognized (L221), colour→color (L227). Grep confirms zero instances of coloured, fibres, humour, favouring, colour, stabilisation, realised, recognised, catalogued in revised chapter. Note: one instance of 'catalogue' (imperative verb, L79) remains — this was not in the original finding's instance list and is an accepted American variant, though 'catalog' would be more consistent."
+      },
+      {
+        "findingId": "COPY-22-002",
+        "source": "copy-edit",
+        "description": "'Serath Dún' (acute) should be 'Serath Dûn' (circumflex)",
+        "verdict": "PASS",
+        "evidence": "All 3 instances corrected to 'Serath Dûn' (circumflex û) at L53, L81, L169. Confirmed via grep."
+      },
+      {
+        "findingId": "COPY-22-003",
+        "source": "copy-edit",
+        "description": "'The Seventh Seat' should be 'The Sixth Seat'",
+        "verdict": "PASS",
+        "evidence": "L119 now reads 'The Sixth Seat's involvement' — matches politics.json assignment of Thalen Reyvas to the Sixth Seat."
+      }
+    ],
+    "moderate": [
+      {
+        "findingId": "LINE-206",
+        "source": "line-edit",
+        "description": "Classification vocabulary density — 12 instances",
+        "verdict": "PASS",
+        "evidence": "Reduced from 12 to ~9 instances. 'catalogued the departures' → compressed (L167). 'classify as companion' → 'think of as companion' (L175). Classification arc preserved: classify → classify → classify → stop classifying → choose."
+      },
+      {
+        "findingId": "LINE-207",
+        "source": "line-edit",
+        "description": "Three stock literary constructions at climax",
+        "verdict": "PASS",
+        "evidence": "All three addressed. Instance 1 ('hope so careful it was almost indistinguishable from fear') replaced with analytical decoding (L203). Instance 2 ('The simplest words. The hardest truth.') CUT — darling excised. Instance 3 ('That was all. That was everything.') CUT — darling excised. INV-017 cliché cap of 2 per chapter now met with 0 stock constructions at the climax."
+      },
+      {
+        "findingId": "LINE-208",
+        "source": "line-edit",
+        "description": "Backstory-summary telling at climax — 2 passages",
+        "verdict": "PASS",
+        "evidence": "Both passages excised. See darlings verification above. The narrator no longer explains the character arc the reader has lived through 21 chapters of."
+      },
+      {
+        "findingId": "LINE-209",
+        "source": "line-edit",
+        "description": "Star passage thematic over-determination — 'permission to shine'",
+        "verdict": "PASS (retained from v1)",
+        "evidence": "L227 star description ends at '...burning with the hard light of something that had existed before the membrane and would exist after it.' The 'and did not require anyone's permission to shine' clause remains cut. Trust in the image preserved."
+      },
+      {
+        "findingId": "COPY-22-004",
+        "source": "copy-edit",
+        "description": "'divine corpse' contradicts magic-system.json",
+        "verdict": "PASS",
+        "evidence": "L53: 'the sun's intention unmediated by the divine remains.' Factual term corrected — 'remains' acknowledges the Sheltering One's diminished state without implying death. Article 'the' added, also resolving COPY-22-005."
+      }
+    ],
+    "minor": [
+      {"findingId": "DEV-222", "verdict": "PASS", "evidence": "L103: 'arrived in Lirien's chest and sat there' — 'with unexpected weight' removed."},
+      {"findingId": "DEV-223", "verdict": "PASS", "evidence": "Departure inventory compressed to 2 sentences (L167). 'By late afternoon' arrives within 3 lines of scene break."},
+      {"findingId": "DEV-224", "verdict": "PASS", "evidence": "'I don't know what to do' lands in silence. Kaelith's deadpan follows at L179 without explanatory mediation."},
+      {"findingId": "DEV-225", "verdict": "PASS", "evidence": "Kaelith's speech trimmed: 'Outside the Conclave. Outside the empire's approval.' → 'Outside anyone's approval.' (L191). Explanatory clause cut (LINE-214). 'was not punishment' → 'beyond duty.' Now 3 sentences — within 2-3 sentence emotional-territory range."},
+      {"findingId": "DEV-226", "verdict": "PASS", "evidence": "L237: 'Both had been tested to failure and beyond failure. Both had come through changed but intact...' Split creates dual-arc echo."},
+      {"findingId": "LINE-210", "verdict": "PASS", "evidence": "'Something' vague referent reduced. SCN-62 intentional uses retained (L71: 'Something she did not have a category for'). Functional uses thinned."},
+      {"findingId": "LINE-211", "verdict": "PASS", "evidence": "'The way she [verb]ed everything' reduced from 5 to 3: L77 'the way she saw everything' (establishing), L129 'the way she read all of' (analytical voice), L215 'the way she felt weather changes' (bond-perception). Below the density threshold."},
+      {"findingId": "LINE-212", "verdict": "PASS", "evidence": "L143: Interpretive narration → bond-transmitted sensation. 'This was not a woman refusing vindication' → 'The bond carried no bitterness, no longing...just a solidity.'"},
+      {"findingId": "LINE-213", "verdict": "PASS", "evidence": "Tell-tag 'The deadpan was warm' removed. L179: '\"With the afternoon?\" Kaelith said.' Dialogue tone conveyed by the words themselves."},
+      {"findingId": "LINE-214", "verdict": "PASS", "evidence": "'the words extending because the feeling required more room' cut. L191 now reads: 'the slight lengthening of Kaelith's sentences that Lirien had learned to read as emotional territory.' Kaelith's actual dialogue demonstrates the extension."},
+      {"findingId": "LINE-215", "verdict": "PASS", "evidence": "L129: Architectural metaphor → water-domain: 'The sound of a current that had been racing toward rapids and found instead that the river had gone flat.' Lirien's metaphor domain restored."},
+      {"findingId": "LINE-216", "verdict": "PASS", "evidence": "'Held' refrain in closing pages reduced from 6 to 4: L221 'things that lasted' (not 'held'), L227 'Pallor held', L237 'the world held. And the love held', L247 'held Kaelith's hand.' Refrain gains power from scarcity."},
+      {"findingId": "LINE-217", "verdict": "PASS", "evidence": "Body inventory parallelism broken at L57: 'Both legs would carry her, though the muscles from the Quietus descent had set overnight into something specific and punitive.' Personality disrupts clinical rhythm."},
+      {
+        "findingId": "COPY-22-005",
+        "verdict": "PASS",
+        "evidence": "L53: 'unmediated by the divine remains' — definite article added."
+      },
+      {
+        "findingId": "COPY-22-006",
+        "verdict": "PASS",
+        "evidence": "L79: 'A clarity, sharp and immediate' — anachronistic 'electric' replaced with sensation from Lirien's perceptual domain."
+      },
+      {
+        "findingId": "COPY-22-007",
+        "verdict": "RETAINED (acceptable)",
+        "evidence": "'hedge-Shapers' retained as blended military-frontier term. The scout's use is characterologically plausible for an Ashborne veteran."
+      },
+      {
+        "findingId": "COPY-22-008",
+        "verdict": "PASS",
+        "evidence": "L207: 'Three fingers on her left hand would never move again' — hand specified."
+      },
+      {
+        "findingId": "COPY-22-009",
+        "verdict": "PASS",
+        "evidence": "L121: 'the body that had reinforced the god-seal' — ambiguous 'its' replaced."
+      },
+      {
+        "findingId": "COPY-22-010",
+        "verdict": "PASS",
+        "evidence": "L71: 'the way water settled when it found a shape' — intransitive 'released' replaced with naturally intransitive 'settled.'"
+      }
+    ],
+    "regressions": [
+      {
+        "findingId": "REG-001",
+        "description": "Geological domain bleed in Lirien's POV",
+        "verdict": "PASS",
+        "evidence": "L125: 'a quietness so deep it was almost geological' → 'a quietness so thorough it carried weight.' Kaelith's geological domain removed from Lirien's narration."
+      },
+      {
+        "findingId": "REG-002",
+        "description": "Tell-tag replacing old tell-tag",
+        "verdict": "PASS",
+        "evidence": "L179: 'Kaelith's response was immediate, warm, and dry:' → '\"With the afternoon?\" Kaelith said.' Tell-tag eliminated entirely; dialogue conveys tone."
+      },
+      {
+        "findingId": "REG-003",
+        "description": "'The way she' tic count unchanged from draft",
+        "verdict": "PASS",
+        "evidence": "Reduced from 5 instances to 3. L105 'the way she adjusted everything' removed (passage rewritten). L193 'the way she rebuilt everything' removed (restructured). Retained 3 varied instances across 3836 words — below the density threshold."
+      }
+    ]
+  },
+
+  "regressionFindings": [
+    {
+      "id": "REG-V2-001",
+      "severity": "minor",
+      "category": "repetition",
+      "description": "Near-echo between L65 and L125. L65: 'a stillness so thorough it carried weight — the quality of sleep where...' L125: 'a quietness so thorough it carried weight, the quality of a body that...' Both use the '[noun] so thorough it carried weight — the quality of [body-related descriptor]' construction. Created by the REG-001 fix (replacing 'geological' with 'thorough it carried weight'). The nouns differ ('stillness' vs 'quietness') and the passages are 60 lines apart in different scenes. A very minor echo, not a quality-blocking concern.",
+      "location": "L65 and L125",
+      "recommendation": "Could be addressed in polish pass by varying one construction — e.g., L125: 'a quietness so complete it registered as a physical thing.' Not a revision-gate concern."
+    },
+    {
+      "id": "REG-V2-002",
+      "severity": "minor",
+      "category": "spelling",
+      "description": "L79 uses 'catalogue' (imperative verb: 'breathe, assess, catalogue') while L67 uses 'cataloged' (past tense). For full American English consistency, L79 should read 'catalog.' This was not in the original COPY-22-001 instance list (which only flagged 'catalogued' past tense forms) and is an accepted American variant, but it creates a micro-inconsistency within the chapter.",
+      "location": "L79",
+      "recommendation": "Polish pass can normalize to 'catalog' at L79. Not a revision-gate concern."
+    }
+  ],
+
+  "warningAccumulation": {
+    "threshold": 3,
+    "count": 2,
+    "triggersAdditionalFail": false,
+    "warnings": [
+      {
+        "category": "minor-repetition",
+        "description": "L65/L125 'so thorough it carried weight' near-echo (see REG-V2-001). Created by regression fix. 60 lines apart, different nouns, different scenes. Minor.",
+        "status": "noted-for-polish"
+      },
+      {
+        "category": "word-count",
+        "description": "Word count delta: 3836 vs 4322 draft = -486 words (-11.2%). Exceeds 10% threshold but has full structural justification: negation-contrast reductions (~150 words), Conclave section tightening (~287 words), darling excisions (~100 words). All cuts were editorially mandated. The draft was already 222 words over the 4100-word target.",
+        "status": "structurally-justified"
+      }
+    ]
+  },
+
+  "wordCountAnalysis": {
+    "draftWordCount": 4322,
+    "revisedV1WordCount": 4052,
+    "revisedV2WordCount": 3836,
+    "targetWordCount": 4100,
+    "deltaFromDraft": -486,
+    "deltaPercent": -11.2,
+    "deltaFromV1": -216,
+    "exceeds20PercentThreshold": false,
+    "structuralJustification": "All cuts are traceable to specific editorial findings: LINE-201 negation conversions, DEV-221 Conclave tightening, LINE-207/LINE-208 darling cuts, DEV-225 Kaelith speech trimming, LINE-214 explanatory clause removal. The draft was 222 words over target; the revised is 264 words under target. The net position is closer to target than the draft was."
+  },
+
+  "capstoneLinesProtection": {
+    "status": "ALL PROTECTED",
+    "lines": [
+      {"text": "I stay because I want to.", "location": "L213", "status": "intact"},
+      {"text": "Not because I was sent. Not because the world needs it. Because I want this.", "location": "L213", "status": "intact"},
+      {"text": "I stopped needing their permission when I started needing something real.", "location": "L141", "status": "intact"},
+      {"text": "That was not flowing. / That was deciding.", "location": "L243/L245", "status": "intact"},
+      {"text": "She was deciding this. Every day. Starting now.", "location": "L249", "status": "intact"},
+      {"text": "But the world held. And the love held.", "location": "L237", "status": "intact"},
+      {"text": "I want it too.", "location": "L217", "status": "intact"}
+    ]
+  },
+
+  "qualitativeAssessment": {
+    "strengths": [
+      "All four previous audit failures have been comprehensively resolved. The re-revision demonstrates careful, finding-by-finding attention to the editorial reports.",
+      "The negation-contrast reduction is well-executed — the remaining 10-11 instances are all thematically justified and distributed to create the chapter's intended arc from classification-by-exclusion to direct positive assertion.",
+      "The first grip passage rewrite (L121) is genuinely better than the original — the focus on Kaelith's right hand doing the work of ten, the 'economy that spoke of hours of private practice,' gives the reader new physical information rather than repeating the observation from SCN-64.",
+      "The darling replacements are all stronger than the originals. 'Allowing herself to want something she had learned to stop expecting' (L203) is more psychologically precise than the backstory catalogue it replaced. 'Had been held closed for a very long time' (L215) trusts the reader more than the four-location timeline.",
+      "The Conclave section tightening exceeds the target — 287 words cut against a 100-150 word recommendation. The prose is sharper without losing thematic content.",
+      "Traceability is restored with meticulous ID mapping throughout the revision log.",
+      "The river metaphor capstone (L239-249) is untouched and remains the novel's strongest closing passage.",
+      "The HFN resolution is structurally earned — cage opened, both women stay, wanting without compulsion.",
+      "All copy-edit corrections (spelling, naming, factual, anachronism) applied correctly."
+    ],
+    "minorConcerns": [
+      "L65/L125 near-echo ('so thorough it carried weight') — addressable in polish pass.",
+      "L79 'catalogue' vs L67 'cataloged' micro-inconsistency — addressable in polish pass.",
+      "Bond reference density remains high (13 in 250 lines) but the formulaic syntax is broken, so this is acceptable for a bond-perception-heavy final chapter."
+    ]
+  },
+
+  "invariantCompliance": {
+    "INV-013": "PASS — all three edit passes (developmental, line, copy) addressed in the revision log with correct finding IDs.",
+    "INV-014": "PASS — traceability chain restored. Every finding disposition references the correct canonical finding ID.",
+    "INV-027": "PASS — this adversarial audit gate has been executed (iteration 2).",
+    "INV-073": "PASS — prose quality meets publication-ready standard. Negation-contrast pattern is now a controlled device rather than saturation. Stock constructions at the climax have been removed. Voice consistency maintained.",
+    "INV-076": "PASS — all critical (1) and major (8) findings addressed before progression.",
+    "INV-081": "PASS — all 4 flagged darlings have been cut or reworked. No editor-flagged passages survive unchanged."
+  }
+}

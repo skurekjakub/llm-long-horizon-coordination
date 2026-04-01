@@ -1,0 +1,242 @@
+{
+  "chapter": 15,
+  "pov": "CHAR-001",
+  "povName": "Kaelith Maren",
+  "agentRole": "line-editor",
+  "timestamp": "2025-07-29T16:30:00Z",
+  "draftWordCount": 4001,
+  "summary": "Ch15 line edit: 16 findings (2 critical, 5 major, 9 minor). Critical: architectural/structural metaphor saturation (33+ instances across 255 lines — approximately one every 7-8 lines, present on every page, voice markers are the main ingredient rather than seasoning), 'Through the bond' / bond-reference repetition (22 bond references including 7 instances of the 'Through the bond, Kaelith felt...' sentence opener — a continuation of the systemic pattern flagged as critical in ch12, ch13, and ch14). Major: 'Not X. Not Y. [Something else.]' negation-correction rhetorical pattern (18+ instances, confirmed drafter habit persisting from ch14's 22 instances), romance cliché at L109 ('The heat had nothing to do with the fire'), cliché + voice violation at L215-216 ('emotional equivalent of sunlight through a gap in cloud cover' + 'warmth that made you aware of how cold you had been'), meta-commentary breaking immersion at L155-156 ('Three words. Short sentences. No subordinate clauses.'), emotion-labeling density in key scene at L171 (three emotions named directly in a single paragraph during the declaration scene). Prose strengths: dialogue is excellent throughout — naturalism, subtext, and voice distinctness are all at the manuscript's highest quality. The declaration scene (L153-179) is emotionally devastating despite the identified thinning needs. The evidence-consolidation dialogue (L19-73) is flawless: crisp, tactically voiced, with the 'Cannot — not can't' observation at L21 exemplifying Kaelith's linguistic awareness at its best. The Vael Seren future-talk (L189-217) is charming, character-revealing banter with strong subtext ('foundations' as relationship metaphor). Zero banned phrases. Zero purple prose outside identified instances. Adverb density well within limits (~1.2/page). Show-tell ratio approximately 94:6 overall. Micro-tension maintained throughout with zero dead spots — dramatic irony from the reader's contract knowledge provides sustained undercurrent even in the warmest passages. MRU compliance strong at all sampled moments. Verdict: PASS with mandatory thinning — underlying prose is publication-quality once structural metaphors are reduced ~40-50%, bond references reduced ~50%, and negation patterns varied ~40%.",
+  "findingSummary": {
+    "critical": 2,
+    "major": 5,
+    "minor": 9,
+    "total": 16
+  },
+  "findings": [
+    {
+      "id": "LINE-015-001",
+      "severity": "critical",
+      "category": "voice",
+      "description": "Voice marker saturation — architectural/structural metaphors. The chapter contains 33+ structural/architectural metaphors, comparisons, and vocabulary markers across 255 lines (~4001 words). This yields approximately one structural metaphor every 7-8 lines, present in the vast majority of paragraphs and on every page. Key instances: L3 'Load-bearing. Sound.'; L5 'mortar,' 'lintel,' 'settlement'; L17 'A ceiling coming apart'; L65 'building a wall: each stone verified'; L83 'keystone finding its seat'; L89 'different architecture'; L101 'operative architecture came down'; L107 'like a structure that had decided to stop bracing'; L135 'like mortar that had not fully set'; L145 'landed like masonry,' 'architecture of human hearing'; L147 'structural. Load-bearing.'; L151 'placed a stone,' 'keystone settled into an arch'; L161 'gap in the defensive line'; L167 'wall becoming a door,' 'sealed room finding a window'; L171 'Fear — raw and architectural'; L177 'A structure reduced to its essential element, stripped of every decorative buttress'; L179 'opened a gate'; L185 'thermal mass,' 'construction held weight'; L187 'The feeling was structural'; L191 'load-bearing walls,' 'new doors had been cut'; L197 'structural, like a crack'; L209 'foundations are sound'; L213 'mortar between her sentences loosening, the careful structure'; L225 'breach her own defensive perimeter'; L229 'reinforced the perimeter'; L235 'most important structural element'; L239 'fortification with no one inside it. A wall with nothing to protect.'; L241 'watchtower go dark'; L251 'defensible position, sound structure, clear sight lines.' The voice fingerprint's voiceDensityGuidance explicitly states: 'If the voice markers are identifiable on every page, the voice is likely over-applied. Seasoning, not the main ingredient.' And: 'Architectural metaphors — sparse; most prose should be plain and direct, with structural imagery arriving when the moment genuinely calls for it.' In this chapter, structural metaphors are the main ingredient — they saturate every emotional beat, every bond description, every observation. The prose reads as architecturally themed throughout rather than as a character whose structural thinking occasionally surfaces. This is a continuation of the systemic voice-saturation pattern flagged in previous chapters.",
+      "lineRef": {
+        "start": 3,
+        "end": 251
+      },
+      "suggestedFix": "Reduce to approximately 18-20 structural metaphors (from 33+) — roughly one per page or per major emotional beat. Preserve the strongest and most character-essential: L3 opening inventory (establishes voice), L17 'A ceiling coming apart' (Pallor motif), L65 building-a-wall (perfect for evidence work), L83 'keystone finding its seat' (strong), L151 'keystone settled into an arch' (declaration moment), L239 'fortification with no one inside it' (thematic climax), L251 closing (structural callback). Cut or replace: L89 'different architecture' → use plain prose ('different methods' or 'different assessment'). L101 'operative architecture' → 'The operative precision came down' or 'The training came down.' L107 'like a structure that had decided to stop bracing' → render directly: 'Something warmer, looser.' L135 'like mortar that had not fully set' → use a different domain or simply 'softer, not yet settled.' L145 'architecture of human hearing' → cut; 'Words spoken in a voice...' is strong enough alone. L147 'structural. Load-bearing.' → cut the structural gloss; the bond description preceding it carries the weight. L177 'A structure reduced to its essential element, stripped of every decorative buttress' → simplify: 'Stripped to nothing, as small as it could go.' L185 'construction held weight' → cut the comparison; 'the granite held warmth slowly, completely' stands alone. L187 'The feeling was structural' → cut; 'Contentment' followed by 'The word was insufficient' is enough. L191 'load-bearing walls' / 'new doors' → replace one or both with plain observation. L197 'structural, like a crack' → just 'a rare thing, an opening that was somehow an improvement.' L213 'mortar between her sentences' → 'the careful precision developing gaps.' The goal is to thin the texture so structural metaphors land with impact when they arrive, rather than blending into a continuous architectural register."
+    },
+    {
+      "id": "LINE-015-002",
+      "severity": "critical",
+      "category": "repetition",
+      "description": "'Through the bond' and bond-reference repetition. The chapter contains 22 lines with explicit 'bond' references across 255 lines — approximately one every 11.5 lines, or roughly one per half-page. Seven instances use the specific 'Through the bond, Kaelith felt...' sentence opener: L67, L89 (variant: 'Through the bond, Kaelith felt the matched conviction'), L107, L149, L167 ('Through the bond, the response came'), L179 ('Through the bond and through the touch, Kaelith felt'), L203 ('Kaelith felt it through the bond'), L215 ('Through the bond, Kaelith felt Lirien's reaction'). Additional bond-as-subject sentences: L47 ('The bond pulsed cold'), L63 ('The bond carried the shared weight'), L93 ('The bond carried the conviction'), L121 ('The bond carried a shift'), L147 ('the bond contracting'), L173 ('The bond did not transmit'), L187 ('The bond hummed'), L217 ('The bond carried matched quiet'), L241 ('The bond carried the gradual... descent'), L249 ('the bond carried nothing but peace'). The construction 'The bond carried...' specifically appears at L63, L93, L121, L217, L241, L249 — six instances. This is a continuation of the systemic pattern flagged as critical in ch14 (11 instances, recommended reduction to 3-4). In ch15, the problem is worse: 22 references in a shorter chapter.",
+      "lineRef": {
+        "start": 19,
+        "end": 249
+      },
+      "suggestedFix": "Reduce bond references from 22 to approximately 10-12 by rendering bond-transmitted sensations as direct perception without naming the mechanism. Specific approach: (1) Keep 'Through the bond' opener for maximum 3-4 instances — the most important transmissions: L149 (declaration response), L167 (barrier dissolving), and L215 or L241 (one quiet moment). (2) Keep 'The bond carried/pulsed' for maximum 2-3 instances: L47 (cold pulse — strong) and L249 (closing peace). (3) Convert the remainder to direct perception: L63 'The bond carried the shared weight of that knowledge' → 'The weight of that knowledge settled between them — not as words, but as a familiar, heavy pressure in the chest.' L67 'Through the bond, Kaelith felt something she could not name' → 'Something passed between them that she could not name precisely.' L89 'Through the bond, Kaelith felt the matched conviction' → 'She felt the matched conviction — tempered, precise.' L93 'The bond carried the conviction like shared weight' → 'The conviction was shared weight, distributed between them.' L107 'Through the bond, she felt the quality of Lirien's stillness' → 'She felt the quality of Lirien's stillness.' L121 'The bond carried a shift' → 'Something shifted in Lirien's chest.' L187 'The bond hummed between them' → render as physical sensation directly. L203 'Kaelith felt it through the bond' → 'She felt it.' L217 'The bond carried matched quiet' → 'Matched quiet between them.' The bond is established worldbuilding — the reader knows it exists. Trust them to understand that Kaelith perceives Lirien's emotional states through it without naming the mechanism every time."
+    },
+    {
+      "id": "LINE-015-003",
+      "severity": "major",
+      "category": "repetition",
+      "description": "'Not X. Not Y. [Something else.]' negation-then-correction rhetorical pattern. The chapter deploys this pattern 18+ times: L23 'Information, not an obstacle'; L47 'Not Kaelith's feeling — Lirien's'; L63 'not as words, but as a familiar...'; L67 'not admiration... Recognition'; L81 'Not fragments. Not suspicion. Not the kind of evidence...'; L101 'not the encoded gestures... but something purposeless'; L107 'not operative silence but something warmer'; L113 'Not a tactical question. No strategic value'; L121 'Not pushing. Testing'; L127 'not a smile, precisely'; L137 'Not identical. Harmonised'; L139 'Not from suppression — from the effort'; L145 'not through the bond, but through the older... architecture'; L147 'not distance closing but density increasing'; L155 'No subordinate clauses. No military framing, no tactical justification, no cost-benefit analysis'; L171 'Not the calculated version... The uncontained thing' + 'Not grief. Not guilt, precisely'; L179 'not a collapse but a release'; L239 'Not because it was safe... Not because the risk assessment'; L245 'Not thought. Not decision. Something older'; L247 'Not because a contract required it. Not because the mission demanded it.' This is a confirmed drafter habit, persisting from ch14 (22 instances). The pattern defines-by-negation: telling the reader what something is NOT before revealing what it IS. Used selectively, this is an effective rhetorical tool that creates precision through elimination. At 18+ instances in 4001 words, it has become a tic that creates a predictable sentence rhythm — the reader begins anticipating the correction before it arrives, which dulls the effect of every instance.",
+      "lineRef": {
+        "start": 23,
+        "end": 247
+      },
+      "suggestedFix": "Reduce to approximately 10-12 instances by converting the weakest negation-corrections to direct positive statements. Preserve the pattern where it creates the most impact — where the negation genuinely reframes the reader's understanding: L81 ('Not fragments. Not suspicion. Not the kind of evidence...') — strong, earned, structurally important. L121 ('Not pushing. Testing.') — sharp, precise. L155 (partial — keep 'No military framing, no tactical justification' but cut the grammar meta-commentary; see LINE-015-006). L171 ('Not grief. Not guilt, precisely.') — important for dramatic irony. L239 ('Not because it was safe...') — thematic climax. L247 ('Not because a contract required it.') — devastating dramatic irony. Convert the weaker instances to positive statements: L47 'Not Kaelith's feeling — Lirien's' → 'Lirien's feeling, transmitted cold.' L67 'not admiration, which was too simple. Recognition.' → 'Recognition. Simpler than admiration, more precise.' L107 'not operative silence but something warmer' → 'something warmer, looser than operative silence.' L113 'Not a tactical question. No strategic value.' → 'A question with no tactical purpose.' L127 'not a smile, precisely' → 'something that preceded a smile.' L137 'Not identical. Harmonised.' → 'Close. Harmonised.' L139 'Not from suppression — from the effort' → 'Flat from the effort of keeping the question small enough to speak.' L145 'not through the bond, but through the older...' → 'through the older, less reliable architecture of...' L147 'not distance closing but density increasing' → 'density increasing, the connection thickening.' L179 'not a collapse but a release' → 'a release, deliberate.' The goal is variety: some negation-corrections (where they're strongest), some direct statements (where the positive phrasing is clearer), and some rewritten entirely."
+    },
+    {
+      "id": "LINE-015-004",
+      "severity": "major",
+      "category": "cliché",
+      "description": "Romance cliché: 'The heat had nothing to do with the fire.' This is a well-worn romance construction that appears across the genre — the explicit declaration that internal heat is not caused by the external heat source. The reader already knows Kaelith's warm palms are desire, not fireplace warmth. The line's function (making the emotional source explicit) undermines Kaelith's voice (she experiences emotion physically and does NOT explain it) and violates the style guide's 'show don't tell' principle by labeling the distinction the reader has already inferred.",
+      "lineRef": {
+        "start": 109,
+        "end": 109
+      },
+      "suggestedFix": "Cut the entire line. The preceding line ('Kaelith's hands were warm.') is strong and sufficient — the reader understands in context. Alternatively, replace with a physical detail that advances the scene rather than explaining it: 'Kaelith's hands were warm. She pressed them flat against the stone floor, but the heat did not transfer.' This shows the sensation without labeling its cause."
+    },
+    {
+      "id": "LINE-015-005",
+      "severity": "major",
+      "category": "cliché",
+      "description": "Cliché phrasing + voice violation: 'the emotional equivalent of sunlight through a gap in cloud cover. The kind of warmth that made you aware of how cold you had been before it arrived.' Two problems: (1) 'The kind of [positive thing] that made you aware of how [negative thing] you had been before' is a stock romance/literary construction used across genres. (2) Kaelith does not natively use weather or light metaphors — her established domain is architecture, fortification, weight, and heat. 'Sunlight through a gap in cloud cover' is a nature/weather metaphor that belongs to neither character's domain. It reads as the author reaching for an image rather than Kaelith perceiving through her characteristic lens. Additionally, the 'you' construction shifts to second-person universal address, which is uncharacteristic of Kaelith's close-third POV — she thinks in specific, tactical terms, not in universalizing 'you' statements.",
+      "lineRef": {
+        "start": 215,
+        "end": 216
+      },
+      "suggestedFix": "Replace with a metaphor from Kaelith's structural domain, and cut the universalizing 'you' construction: 'Through the bond, Kaelith felt Lirien's reaction before her expression shifted — a flare of warmth so immediate it registered like heat from a forge door swinging open. Something she had not braced for.' This keeps the warmth imagery but grounds it in Kaelith's world (forge, heat, bracing), maintains close-third perspective, and avoids the cliché 'made you aware of how cold you had been' pattern."
+    },
+    {
+      "id": "LINE-015-006",
+      "severity": "major",
+      "category": "prose",
+      "description": "Meta-commentary on prose structure breaks close-third immersion: 'Three words. Short sentences. No subordinate clauses. No military framing, no tactical justification, no cost-benefit analysis.' The observation 'No military framing, no tactical justification, no cost-benefit analysis' IS something Kaelith would think — she would notice the absence of her own characteristic mental processes. But 'Three words. Short sentences. No subordinate clauses.' is writerly observation — a character counting her own words and analyzing her own grammar in the moment of maximum vulnerability. 'No subordinate clauses' is a grammar term, not part of Kaelith's military-architectural vocabulary. This line calls attention to the technique being used in the prose rather than maintaining the close-third illusion, pulling the reader out of the emotional beat to admire the construction. The effect is to explain the vulnerability the reader should feel rather than letting them experience it.",
+      "lineRef": {
+        "start": 155,
+        "end": 156
+      },
+      "suggestedFix": "Cut 'Three words. Short sentences. No subordinate clauses.' and keep the character-appropriate observation: 'No military framing. No tactical justification. No cost-benefit analysis.' This preserves Kaelith's self-awareness (she notices the absence of her characteristic thinking patterns) without the grammatical meta-commentary. Alternatively, replace the writerly observation with physical sensation: 'The words sat in the air between them, undefended. No military framing. No tactical justification.' This maintains the sense of exposure without breaking the POV lens."
+    },
+    {
+      "id": "LINE-015-007",
+      "severity": "major",
+      "category": "show-tell",
+      "description": "Emotion-labeling density in the key declaration scene. Line 171 names three emotions directly in a single paragraph: 'Desire.' (one-word sentence opener), 'Fear — raw and architectural,' and 'a weight Kaelith could not identify. Not grief. Not guilt, precisely.' While the paragraph proceeds to elaborate each emotion through description, the emotions are named BEFORE they are shown — a tell-first, show-second structure that inverts the preferred show-don't-tell sequence. In a scene at vulnerability ladder step 9, where this is the most emotionally exposed Kaelith has been since Calwrath, the naming of emotions undercuts the physical immediacy the scene has built. The preceding lines (L153-167) achieve devastating emotional power through action, gesture, and bond perception — then this paragraph steps back into labeling mode. Additionally, the paragraph is 129 words — the longest in the chapter — which reduces its impact by diluting the sharp, percussive rhythm established by the declaration. The phrase 'Fear — raw and architectural' also adds another structural metaphor to the already-saturated count (see LINE-015-001).",
+      "lineRef": {
+        "start": 171,
+        "end": 172
+      },
+      "suggestedFix": "Restructure to show-then-infer rather than label-then-describe. Lead with what Kaelith physically perceives through the bond, then let the reader name the emotions: 'Everything came through. Heat that had nothing to do with the fire — vast, specific, directed at Kaelith with a precision that had nothing to do with intelligence training. A trembling underneath, the trembling of someone standing in a space they had built no defenses for. And deeper than both, something heavy and unresolved that Kaelith could not reach. Not grief. Not guilt, precisely. Something she carried the way Kaelith carried the Oathbrand's ghost — always present, shaping the posture even when invisible.' This shows what Kaelith senses (heat/desire, trembling/fear, heaviness/weight) without naming the emotions first. Cut the paragraph to approximately 90 words by removing the explanatory clauses: 'the measured, operative-approved quantity that acknowledged attraction without surrendering to it' (this is telling, not showing) and 'the fear of someone who had built her entire identity on assessment and was now standing in a space where assessment could not reach' (explains what the fear IS rather than showing it). Trim to let the short sentences around the paragraph (L169 'Everything came through.' and L173 'The bond did not transmit the content of the weight. Only its mass.') do the framing work."
+    },
+    {
+      "id": "LINE-015-008",
+      "severity": "minor",
+      "category": "repetition",
+      "description": "Word repetition — 'placement' x3 in one sentence: 'Not a grasp. A placement. Deliberate, the way she placed a stone when the placement would be permanent.' Three forms of 'placement/placed/placement' in 22 words creates an audible echo that reads as unintentional rather than deliberate emphasis. The sentence also stacks two structural metaphors (stone placement + keystone arch) in consecutive clauses, contributing to LINE-015-001 density.",
+      "lineRef": {
+        "start": 151,
+        "end": 151
+      },
+      "suggestedFix": "Vary the word: 'Not a grasp. A decision made with her hands. Deliberate, the way she set a stone when the setting would be permanent.' Or simplify: 'Not a grasp. A deliberate choice — the way she placed a stone when the placement would be permanent.' (Reduces three instances to two.)"
+    },
+    {
+      "id": "LINE-015-009",
+      "severity": "minor",
+      "category": "prose",
+      "description": "Double simile — consecutive 'Like' constructions: 'Like a wall becoming a door. Like a sealed room finding a window.' Two parallel similes using the same 'Like a [structure] becoming/finding a [opening]' pattern. The second simile (sealed room/window) adds marginal meaning beyond the first (wall/door) — both describe a barrier becoming an opening. The repetition of 'Like a...' weakens both by suggesting the first was insufficient.",
+      "lineRef": {
+        "start": 167,
+        "end": 167
+      },
+      "suggestedFix": "Keep the stronger and cut the other. 'Like a wall becoming a door' is more immediate and aligns with the architectural theme; cut 'Like a sealed room finding a window.' Alternatively, fuse: 'Like a wall becoming a door she had not known was there.'"
+    },
+    {
+      "id": "LINE-015-010",
+      "severity": "minor",
+      "category": "show-tell",
+      "description": "Direct emotion label — 'Contentment' at L107: 'Contentment. Or something near enough that the distinction carried no tactical value.' The emotion is named directly. The mitigating qualifier ('Or something near enough...') is characteristic of Kaelith's imprecise-about-emotions voice, which partially defuses the tell. But Kaelith's established pattern is to feel physical sensation and assess it, not to label emotions. A stronger rendering would give the physical sensation and let the reader supply 'contentment.'",
+      "lineRef": {
+        "start": 107,
+        "end": 107
+      },
+      "suggestedFix": "Replace the label with the physical quality: 'Something near enough to stillness that the distinction carried no tactical value.' Or: 'A warmth with no edge to it. Near enough to peace that the distinction carried no tactical value.' This shows the quality without naming it."
+    },
+    {
+      "id": "LINE-015-011",
+      "severity": "minor",
+      "category": "show-tell",
+      "description": "Repeated emotion label — 'Contentment' at L187, echoing L107: 'Contentment. The word was insufficient. The feeling was structural.' This is the second time 'Contentment' appears as a one-word label in the same chapter. While the follow-up ('The word was insufficient') acknowledges the label's inadequacy, the label-then-correct pattern itself is a form of telling — naming the emotion and then explaining that the name is wrong rather than showing the feeling directly. 'The feeling was structural' adds another structural metaphor (see LINE-015-001).",
+      "lineRef": {
+        "start": 187,
+        "end": 187
+      },
+      "suggestedFix": "Cut 'Contentment. The word was insufficient.' entirely and keep only the physical description: 'a low, matched frequency that felt less like connection than like the absence of separation.' Then add a physical detail rather than the structural label: 'She did not want to move. Nothing needed to be moved.' This shows contentment through the absence of Kaelith's characteristic need to act."
+    },
+    {
+      "id": "LINE-015-012",
+      "severity": "minor",
+      "category": "show-tell",
+      "description": "Summary statement at L63: 'Two women who had both faced enemies beyond reason.' This is a slight tell — a narrator-voice summary of their shared experience rather than remaining in close-third. Kaelith would not think of herself and Lirien as 'two women who had both...' — this is an exterior observation, not an interior one. The sentence reads as authorial summary stepping outside Kaelith's POV for half a beat.",
+      "lineRef": {
+        "start": 63,
+        "end": 63
+      },
+      "suggestedFix": "Reframe in Kaelith's close-third: 'The word hung between them. She had faced enemies beyond reason before. Lirien had too — different enemies, different reasons, the same answer at the end.' Or simply cut the 'Two women' sentence and let 'The word hung between them' carry into the bond description directly."
+    },
+    {
+      "id": "LINE-015-013",
+      "severity": "minor",
+      "category": "prose",
+      "description": "'Structural' applied to a smile at L197: 'Felt the smile building — a rare thing, structural, like a crack that was somehow an improvement.' Describing a smile as 'structural' stretches the architectural vocabulary past its natural range. While 'like a crack that was somehow an improvement' is a genuinely nice image (a crack in fortification that lets something through), the word 'structural' as an adjective for an involuntary facial expression reads as voice-marker application rather than natural observation. This is a micro-instance of the saturation problem (LINE-015-001) — applying the architectural lens where it creates more noise than signal.",
+      "lineRef": {
+        "start": 197,
+        "end": 197
+      },
+      "suggestedFix": "Cut 'structural': 'Felt the smile building — a rare thing, like a crack that was somehow an improvement.' The 'crack' image does the structural work without the label."
+    },
+    {
+      "id": "LINE-015-014",
+      "severity": "minor",
+      "category": "prose",
+      "description": "Triple description of Lirien's almost-laughter at L203-204: 'a sound that was almost laughter. Not quite. The fae precision in her voice did not accommodate laughter easily, but it had learned to bend around something close. Kaelith felt it through the bond — bright, brief, startling in its warmth, the sound of a person who was discovering that words could be play instead of contract.' Three separate descriptions of the same laugh: (1) 'almost laughter. Not quite.' (2) the fae-precision explanation, (3) 'bright, brief, startling in its warmth, the sound of a person...' The construction is individually graceful but collectively overwrought — the observation that Lirien is learning to laugh does not need three separate formulations. The sentence 'the sound of a person who was discovering that words could be play instead of contract' is the strongest; the others dilute it.",
+      "lineRef": {
+        "start": 203,
+        "end": 204
+      },
+      "suggestedFix": "Compress to one strong rendering: 'Lirien's breath carried something close to laughter — bright, brief, startling. The sound of a person discovering that words could be play instead of contract.' This preserves the best line and cuts the explanatory middle."
+    },
+    {
+      "id": "LINE-015-015",
+      "severity": "minor",
+      "category": "prose",
+      "description": "Extended structural simile for thermal storage at L185: 'the granite held warmth the way good construction held weight: slowly, completely, releasing it in measured increments long after the source was gone.' This is a technically accurate description of thermal mass rendered through Kaelith's engineering knowledge, and it works as characterization. However, in the context of LINE-015-001's overall saturation, this adds another structural comparison in a passage that should be transitioning into intimacy and warmth rather than engineering observation. The simile's precision also undercuts the emotional tone of the post-declaration scene — Kaelith has just made her most vulnerable statement; returning immediately to engineering comparisons suggests the emotional breach has already closed.",
+      "lineRef": {
+        "start": 185,
+        "end": 185
+      },
+      "suggestedFix": "Simplify to keep the physical observation without the extended comparison: 'The heat in the stone walls was enough — the granite held warmth slowly, completely, releasing it long after the source was gone.' This preserves Kaelith's awareness of how stone works (characterization) without the explicit 'the way good construction held weight' comparison (engineering lecture)."
+    },
+    {
+      "id": "LINE-015-016",
+      "severity": "minor",
+      "category": "prose",
+      "description": "Double figurative construction for the same moment at L145: 'The words landed like masonry. Kaelith felt them in her chest — not through the bond, but through the older, less reliable architecture of human hearing. Words spoken in a voice that had been trained for precision and was now being used for something that precision could not contain.' Three layers of figuration for Lirien's 'Wherever you are': (1) 'landed like masonry' — structural simile, (2) 'architecture of human hearing' — structural metaphor, (3) 'precision... something that precision could not contain' — abstract formulation. The first is strong and concrete; the second adds another structural metaphor where one existed; the third is effective but creates a three-beat sequence where two would land harder. Also, 'architecture of human hearing' is a strained application of the structural domain — hearing does not have architecture in any natural sense.",
+      "lineRef": {
+        "start": 145,
+        "end": 145
+      },
+      "suggestedFix": "Keep the strongest and simplify: 'The words landed like masonry. Kaelith felt them in her chest — not through the bond, but through the older, less reliable sense of hearing a voice speak and meaning every word. A voice trained for precision, now being used for something precision could not contain.' This cuts 'architecture of human hearing' (strained) while preserving the contrast between bond-perception and ordinary hearing."
+    }
+  ],
+  "proseStrengths": [
+    "Dialogue is at the manuscript's highest quality. The evidence discussion (L19-73) is crisp, tactically voiced, and flawlessly naturalistic — exchanges are short, purposeful, and reveal character through content and rhythm. Kaelith's 'How committed?' and the 'Zealots don't retreat' / 'No' / 'They don't negotiate' / 'No' exchange is outstanding rhythm. The L21 observation ('Cannot — not can't.') exemplifies Kaelith's linguistic awareness at its best.",
+    "The Vael Seren banter (L189-217) achieves the rare feat of being simultaneously funny, character-revealing, and emotionally devastating through subtext. 'Determine whether the foundations are sound' operates on three levels (property, relationship, emotional safety). 'I want to inspect the future' is one of the chapter's finest lines — plain enough to be Kaelith, loaded enough to carry the scene's weight.",
+    "The declaration itself (L153-165) is masterfully restrained. 'I want this.' / 'I want you.' achieves maximum impact through minimum material. The connection to 'fire the accelerant' provides historical weight without exposition.",
+    "Zero banned phrases from the style guide. Zero purple prose beyond the identified instances at L215 and L171. Adverb density approximately 1.2/page (well within the 3/page ceiling). Show-tell ratio approximately 94:6 overall. No unbroken dialogue exceeding 6 lines.",
+    "Micro-tension is maintained throughout with zero dead spots. The dramatic irony from the reader's knowledge of the kill contract provides a sustained undercurrent of tension even in the warmest, most contented passages — particularly devastating at L175 ('Trust meant believing that she would'), L227 ('Planning harbours with a woman whose operational history spanned decades of completed assignments and one incomplete'), and L247 ('Not because a contract required it').",
+    "MRU structure strong at all sampled moments: L47 (bond-transmitted threat recognition), L83 (pre-engagement clarity), L143-151 (declaration landing — stimulus → physical impact → action → gesture), L167-173 (barrier dissolving — external event → perception → cataloguing), L241 (sleep — stimulus → bond perception → comparison → assessment). No MRU reversals detected.",
+    "Opening paragraph (L3) is an exemplary Kaelith POV opener — tactical inventory, structural assessment, percussive rhythm, attention-to-exits-before-sentiment. Establishes voice immediately and economically.",
+    "The Calwrath parallel at L83-87 is precisely deployed — the pre-engagement clarity memory creates dramatic irony and emotional depth without flashback or exposition. 'The last time she had felt it, three hundred people had been alive' is devastating and perfectly Kaelith.",
+    "Dramatic irony is surgically deployed throughout. Never heavy-handed, never over-signaled. The reader carries the contract knowledge as a persistent ache that intensifies at every trust moment, climaxing at L247's 'Not because a contract required it' — which Kaelith intends as affirmation of Lirien's free choice and the reader receives as devastating irony."
+  ],
+  "invariantResults": {
+    "INV-017": "CONDITIONAL FAIL — zero banned phrases, adverbs within limits, but voice marker saturation exceeds the 'identifiable on every page' threshold. Structural metaphors at 33+ instances produce a density that reads as checklist rather than natural voice. Cliché count at 2 (L109, L215-216). Repetition thresholds exceeded: 'Through the bond' 22x, 'Not X' 18x. Requires thinning to pass.",
+    "INV-005": "CONDITIONAL PASS — approximately 94:6 show:tell ratio overall. Three direct emotion labels in key scenes: 'Contentment' at L107 and L187, and 'Desire'/'Fear' naming at L171. Below the maximum but the Contentment repeat and the emotion-labeling in the declaration scene warrant thinning. The 'tell' instances are partially mitigated by Kaelith's established imprecision with emotional vocabulary.",
+    "INV-019": "PASS — dialogue naturalism excellent throughout. All human speech uses contractions appropriately. Kaelith's dialogue drops contractions during the declaration (L153, L159) — formality as last remaining armor, fully consistent with voice fingerprint. Lirien's 'cannot'/'can't' distinction properly observed. No over-formal spoken lines. All dialogue serves narrative function (evidence delivery, character revelation, emotional declaration, or subtext-laden future planning). Zero dialogue over-voicing — character-distinctive markers appear in a minority of spoken lines, with most dialogue being plain speech.",
+    "INV-035": "PASS — no passages of half a page or more without active tension. Tension sources well-distributed: conspiracy evidence and zealotry (Scene 1), Calwrath parallel and pre-engagement clarity (Scene 1 close), declaration vulnerability and bond perception (Scene 2), dramatic irony sustaining tension through the warmest passages (Scene 3). The post-declaration recovery section (L183-221) has the lowest tension level but is sustained by dramatic irony, banter-as-vulnerability, and the 'foundations' subtext.",
+    "INV-047": "PASS — subtext strong in all charged exchanges. 'What happens when this is over?' says 'Do you stay?' without asking it. 'Wherever you are' answers the unasked question. 'Determine whether the foundations are sound' operates on three levels. 'I want to inspect the future' — surface: planning; subtext: 'I need to know this is real.' The evidence-discussion dialogue doubles as trust-building. No subtext is explained or undermined by subsequent narration.",
+    "INV-003": "CONDITIONAL PASS — Kaelith's voice is unmistakable, consistent, and clearly distinct from Lirien's ch14 POV. The voice is too present, not too absent (see LINE-015-001). Once structural metaphors are thinned ~40-50%, the voice will achieve the 'seasoning not main ingredient' standard specified in the fingerprint's voiceDensityGuidance.",
+    "INV-064": "PASS — tactile/proprioceptive sensory signature consistent throughout. Kaelith feels surfaces (stone, wood, paper), weight (evidence, Lirien against her shoulder), heat (palms, fire, stone), strain (ribs), and the Oathbrand's phantom burn before she names the room's mood. Bond transmissions are rendered through physical sensation (cold pulse, chest pressure, warmth, heaviness).",
+    "INV-052": "PASS — MRU structure verified at 5 key moments. All follow acceptable sequence. The craft profile excluded T14, noting that Kaelith's style 'often deliberately breaks MRU sequence — a character might suppress the involuntary response entirely.' The chapter shows this appropriately: L23 (ribs complain → 'set her jaw' → continues working, suppressing the middle steps). No reversals detected.",
+    "INV-073": "CONDITIONAL PASS — prose is lush but not purple (with exceptions at L171 and L215), emotionally authentic, and genre-appropriate. The underlying prose quality is publication-ready; the saturation issues are density problems, not quality problems. Once thinned per recommendations, this chapter will exceed the prose quality floor."
+  },
+  "revisionPriority": [
+    {
+      "priority": 1,
+      "findingIds": ["LINE-015-001", "LINE-015-002"],
+      "rationale": "Voice marker saturation (structural metaphors) and bond-reference repetition are the chapter's two most pervasive issues, affecting virtually every page. Address together: thin structural metaphors from 33+ to ~18-20, bond references from 22 to ~10-12. This is the same class of issue addressed in ch14 revision and should be familiar to the reviser. Combined thinning will reduce total voice-marker density by ~40-50% and create prose that breathes between markers, allowing the remaining metaphors and bond references to land with impact."
+    },
+    {
+      "priority": 2,
+      "findingIds": ["LINE-015-003"],
+      "rationale": "'Not X' negation pattern is a discrete, countable repetition problem with a clear solution: convert the weakest ~8 instances to direct positive statements. This is a confirmed drafter habit across chapters — systematic variation here establishes the revision pattern for future chapters."
+    },
+    {
+      "priority": 3,
+      "findingIds": ["LINE-015-004", "LINE-015-005"],
+      "rationale": "Two cliché instances that can be individually replaced with targeted fixes. Quick changes with high impact per word changed. L215-216 is the more urgent because it also involves a voice violation."
+    },
+    {
+      "priority": 4,
+      "findingIds": ["LINE-015-006", "LINE-015-007"],
+      "rationale": "Meta-commentary and emotion-labeling in the declaration scene. Both affect the chapter's most emotionally important passage (L153-179). Address as a group during the declaration scene revision pass. These are precision edits — trimming explanatory material to let action and sensation carry the moment."
+    },
+    {
+      "priority": 5,
+      "findingIds": ["LINE-015-008", "LINE-015-009", "LINE-015-010", "LINE-015-011", "LINE-015-012", "LINE-015-013", "LINE-015-014", "LINE-015-015", "LINE-015-016"],
+      "rationale": "Minor prose, repetition, and show-tell issues — address during the general thinning pass. Many of these will be partially resolved when LINE-015-001's structural metaphor reduction is applied (LINE-015-013, LINE-015-015, LINE-015-016 are all instances of the saturation problem). Others are word-level fixes (LINE-015-008 placement repetition, LINE-015-009 double simile, LINE-015-014 triple laugh description)."
+    }
+  ]
+}

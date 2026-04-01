@@ -1,0 +1,49 @@
+{
+  "chapter": 4,
+  "engagementScore": 7,
+  "emotionalImpact": "high",
+  "pacingAssessment": "drags-in-middle",
+  "clarityScore": 7,
+  "findings": [
+    {
+      "id": "BETA-004-001",
+      "type": "pacing",
+      "severity": "critical",
+      "description": "The chapter contains a significant content duplication. In Scene 2 (first tavern meeting), Lirien reveals the Pallor sabotage and Kaelith responds: 'Meaning the brand isn't just locking my magic' / 'Correct. It is locking something deeper.' Kaelith's hand hovers near her collarbone. Then in Scene 3 (Kaelith's return three hours later), the near-identical exchange occurs again: 'The Oathbrand. It's responding to the Pallor tears, isn't it?' leading to 'Meaning the brand isn't just locking my magic. It's locking something deeper' / 'Correct' — with the same hovering-hand gesture repeated verbatim. The reader has already processed this information and this emotional beat.",
+      "location": "Scene 2 (lines ~219-247) vs Scene 3 (lines ~282-297). The duplicated passage includes both dialogue and the gesture description 'Kaelith's hand went to her collarbone. Not touching — hovering half an inch away, as though the proximity alone carried heat.'",
+      "readerImpact": "This is the most significant craft issue in Act I. A reader will notice the repetition and wonder if it's intentional (it doesn't read as intentional) or an editing artifact. It undermines the scene's credibility and breaks immersion at a critical moment. The Scene 3 version should either be cut entirely or reworked to advance the conversation beyond where Scene 2 left it — the 'And if it comes off?' and kinetic memory material is new and should be kept, but the setup dialogue needs to be different."
+    },
+    {
+      "id": "BETA-004-002",
+      "type": "pacing",
+      "severity": "major",
+      "description": "The chapter opens with Lirien trying to write an operational report. This scene runs approximately 800 words and covers ground the reader already traversed in Ch. 2 and Ch. 3 — the contract paradox, the scaffolding intervention, the operational justification for delay. Lirien's internal wrestling is well-written, but the reader already understands the paradox. The scene feels like it's rehashing rather than advancing.",
+      "location": "Scene 1, from opening through 'time was the only currency she had left'",
+      "readerImpact": "After Ch. 3's propulsive escape sequence, the reader arrives at Ch. 4 expecting momentum. Instead they get an internal monologue retreading familiar territory. The emotional content (Lirien's unclassifiable response to Kaelith's potential disappearance) IS new and important, but it's buried inside operational language the reader has already decoded. Suggestion: cut the report scene to ~400 words, leading with the emotional core rather than the operational framing."
+    },
+    {
+      "id": "BETA-004-003",
+      "type": "engagement-drop",
+      "severity": "major",
+      "description": "The tavern negotiation scene (Scene 2) runs approximately 2,000 words and covers: Pallor sabotage reveal, Ythara explanation, Warden capacity, brand implications, the boat plan, the 5-day deadline, and the name exchange. This is an enormous amount of ground for a single seated conversation. While the dialogue is sharp, the scene's length and density risk losing the reader's engagement — particularly because much of the information (Pallor failing, Warden capacity, brand as ontological suppression) has already been established in Chapters 2 and 3. The scene is doing the work of confirming for Kaelith what the reader already knows.",
+      "location": "Scene 2, the extended tavern conversation",
+      "readerImpact": "The reader may feel they're waiting for Kaelith to catch up to information they've had since Ch. 2. The scene's strengths (the verbal sparring, the name exchange, the 'everyone is a tool' line) are real, but they're diluted by the exposition freight. Consider what information is truly new to the reader here vs. what is new to Kaelith — the reader needs the character dynamics, not the worldbuilding recap."
+    },
+    {
+      "id": "BETA-004-004",
+      "type": "romance-gap",
+      "severity": "observation",
+      "description": "The name exchange ('What's your name?' / 'Lirien' / 'Kaelith' / 'I know') is the first genuine romantic beat in the novel. It works beautifully. But it arrives after approximately 12,000 words of operational language, tactical assessment, and political exposition. For an enemies-to-lovers romance, Act I has been heavily weighted toward the 'enemies' side with very little tactile or sensory language to suggest these women are registering each other as anything other than threat/asset.",
+      "location": "Scene 2 closing, name exchange",
+      "readerImpact": "Romance readers tracking the slow burn will feel the first spark here. But they've been patient through a lot of espionage-thriller mechanics to get to it. This is a pacing observation, not a flaw — slow burn means slow burn. But earlier micro-beats (physical awareness, involuntary attention to detail) would help reassure the romance reader that the payoff is coming."
+    }
+  ],
+  "strengths": [
+    "'She had collapsed a building instead.' — This single sentence, after a paragraph of operational justification, is Lirien's voice at its best. The deadpan acknowledgment of absurdity cuts through the clinical distance and makes the reader laugh while understanding the gravity.",
+    "The name exchange is perfectly executed. In a novel where both women use titles, designations, and operational language as armor, the simple act of offering a name carries enormous weight. 'This one, at least, had a name' as a closing line is quietly devastating.",
+    "'Everyone is a tool. The question is whether the use is mutual or extractive.' — This line encapsulates the novel's thematic core. It's the ethical framework for the entire relationship and it lands with precision.",
+    "The 5-day deadline creates genuine narrative urgency. The reader now has a clock, and the ticking is embedded in Lirien's body. This is excellent structural tension.",
+    "Kaelith's directness ('Why haven't you killed me yet?') against Lirien's deflection creates a dialogue dynamic that crackles. They are intellectual equals fighting with different weapons — directness vs. precision — and the reader can feel both women adjusting in real time."
+  ],
+  "verdict": "needs-work"
+}

@@ -1,0 +1,44 @@
+{
+  "agent": "romantic-fantasy-writer-drafting-auditor",
+  "task": "Adversarial drafting gate audit for Chapter 16",
+  "chapter": 16,
+  "iteration": 1,
+  "status": "completed",
+  "result": "passed",
+  "startedAt": "2025-07-17T16:00:00.000000+00:00",
+  "completedAt": "2025-07-17T16:30:00.000000+00:00",
+  "summary": "Chapter 16 PASSED drafting gate audit (iteration 1). Score: 9/10. Zero critical findings, zero major findings, eight minor findings (repetition patterns in 'that had lived in' x4, 'costume of love' x2, 'Not X. Y.' x9, 'the precise/exact' x11, 'the way' x10; scene balance concern with SCN-45 at 43% of chapter; MOT-005 Ythara absence; voice degradation pacing in final scene). Two warnings issued (collective repetition density, scene balance) — below 3-warning failure threshold. All 16 craft tools verified. All outline elements delivered. All automatic-fail checks cleared. Voice consistency excellent with Lirien identifiable in 2 sentences. Continuity flawless with zero violations. Emotional impact devastating — the Black Moment earns its function through restraint and craft discipline. Chapter proceeds to revision pipeline with minor remediation notes.",
+  "verdict": "passed",
+  "overallScore": 9,
+  "findingsSummary": {
+    "critical": 0,
+    "major": 0,
+    "minor": 8,
+    "observations": 15,
+    "warnings": 2,
+    "darlings": 4,
+    "darlingsKept": 4
+  },
+  "artifactsProduced": [
+    "audit-reports/drafting/gate-ch016.json"
+  ],
+  "artifactsRead": [
+    "chapters/016/draft.md",
+    "chapters/016/metadata.json",
+    "chapters/016/voice-report.json",
+    "chapters/016/continuity-report.json",
+    "chapters/016/craft-enforcement-report.json",
+    "plot/chapter-outlines/chapter-016.json",
+    "craft-profile.json",
+    "style/style-guide.json",
+    "continuity/continuity-tracker.json",
+    "continuity/emotional-throughline.json",
+    "continuity/information-asymmetry-map.json"
+  ],
+  "independenceNote": "Audit conducted independently of prior pipeline results. All claims verified against actual draft text through automated scanning (banned phrases, clichés, tell-not-show, modern idioms, sentence structure repetition, paragraph opening distribution, adverb density, em-dash count, word frequency analysis) and manual close-reading of all 4,090 words. Upstream reports (voice, continuity, craft-enforcement) cross-referenced but not taken at face value — each finding independently verified. The craft-enforcement-report's 3 minor issues were independently confirmed as correctly classified. The voice-report's uncorrected VF-006 was independently flagged as MF-008.",
+  "previousChapter": {
+    "chapter": 15,
+    "score": 9.5,
+    "verdict": "passed"
+  }
+}

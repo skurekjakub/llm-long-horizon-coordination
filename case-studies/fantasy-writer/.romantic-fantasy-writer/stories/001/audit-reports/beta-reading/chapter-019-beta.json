@@ -1,0 +1,49 @@
+{
+  "chapter": 19,
+  "engagementScore": 9,
+  "emotionalImpact": "high",
+  "pacingAssessment": "well-paced",
+  "clarityScore": 9,
+  "findings": [
+    {
+      "id": "BETA-019-001",
+      "type": "pacing",
+      "severity": "minor",
+      "description": "The chapter does a LOT of heavy lifting: Ashborne settlement discovery, the emotional impact of 'Commander,' the reunion itself, full disclosure and the cipher fragments, the tactical planning session, and the contract loophole discussion. Each beat is individually well-executed, but the chapter is dense. The transition from the emotional reunion (ten paces, 'Then we burn together') to the tactical briefing at the table is particularly abrupt — the reader needs a breath between the most emotionally intense moment in the book so far and a map-and-intelligence planning session.",
+      "location": "Transition from Section 2 (clearing) to Section 3 (common room map session)",
+      "readerImpact": "The emotional peak of the reunion risks being diminished by the immediate pivot to logistics. The reader is still processing 'Then we burn together' when they're asked to engage with relay points and patrol corridors."
+    },
+    {
+      "id": "BETA-019-002",
+      "type": "observation",
+      "severity": "observation",
+      "description": "The Ashborne settlement discovery (veterans waiting for years, doctrine preserved, tactical signature in the palisade) is doing triple duty: it challenges Kaelith's isolation narrative, provides the logistical infrastructure for Act III's movement, and creates a parallel for Lirien's free-choice proof (if soldiers chose to follow despite Calwrath, maybe Lirien chose despite the contract). This is sophisticated structural work, but the parallel is implicit rather than explicit — the reader has to make the connection themselves.",
+      "location": "Section 1, Kaelith's arrival at the settlement through 'maybe Lirien's choice could be real despite the contract'",
+      "readerImpact": "Attentive readers will feel the parallel click. Others may experience the settlement primarily as plot logistics (safe haven, relay points) and miss the thematic resonance. The one paragraph where Kaelith makes the connection ('if loyalty survived what the empire had done to destroy it — then maybe choice could survive other things') is sufficient but could be more prominent."
+    },
+    {
+      "id": "BETA-019-003",
+      "type": "romance-gap",
+      "severity": "observation",
+      "description": "The reunion maintains professional distance throughout — ten paces, never closing the gap, transitioning to operational partnership at the table. This is absolutely the right choice for these characters and for making the recovery feel earned. But some romance readers may feel frustrated that the chapter delivers strategic partnership rather than emotional reconnection. The intimacy is in the bond and in subtext, not in physical contact or spoken emotion (except Kaelith's 'I am afraid' admission).",
+      "location": "Throughout — the sustained ten-pace distance, the operational framework",
+      "readerImpact": "This is a feature, not a bug, but worth flagging: the chapter will satisfy readers who want earned, rigorous emotional recovery, and may leave readers wanting traditional romance reunion beats (embrace, kiss, explicit declarations) feeling short-changed. The payoff is in Ch 20."
+    },
+    {
+      "id": "BETA-019-004",
+      "type": "character-inconsistency",
+      "severity": "minor",
+      "description": "Kaelith's vulnerability moment ('I am afraid that choosing love will put me back in Calwrath') is the most emotionally exposed she has been in the entire book. The narration acknowledges this — 'She had never said it. Not in six years of exile.' But the trigger for this exposure feels slightly under-motivated in the moment. She has just heard the tactical plan and Lirien's intelligence. What specifically cracks her open HERE, as opposed to five minutes earlier in the clearing? The chapter could use a clearer catalyst for the vulnerability.",
+      "location": "Section 2, 'I am afraid' speech",
+      "readerImpact": "The content of the vulnerability is perfect. The timing feels slightly arbitrary — the reader can see the writer needing the emotional confession to happen at this point in the chapter, but the in-world trigger is fuzzy."
+    }
+  ],
+  "strengths": [
+    "'Then we burn together' is the line of the book. It answers Kaelith's fear on Kaelith's own terms (military, structural, shared risk) while also being a devastating romantic declaration. It reframes love as risk-sharing rather than safety-offering, which is exactly what this particular pairing needs.",
+    "The reunion earns its weight. Ten paces. Cipher fragments as proof. No excuses — 'the silence was mine.' Full accounting before any reconciliation. Kaelith choosing to build on cracked foundations rather than pretending the cracks don't exist. This is the anti-easy-forgiveness scene, and it's the right call.",
+    "Sedara's quiet presence — the sergeant who 'understood that the conversation she was witnessing was not entirely about tactics' — adds a grounding human witness to the emotional scene without intruding on it",
+    "The cracked-foundation metaphor ('cracked foundations could bear weight, if you understood where the fractures ran') is perfect for Kaelith's character and extends the structural/building language that has been her idiom throughout the book",
+    "Lirien bringing the cipher fragments AND the intelligence AND the Ashborne contact information — arriving with action rather than just words — is the right way to show rather than tell that she has changed. She gives Kaelith materials to test rather than asking Kaelith to believe."
+  ],
+  "verdict": "strong"
+}

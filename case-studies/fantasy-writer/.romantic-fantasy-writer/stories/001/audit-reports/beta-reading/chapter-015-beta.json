@@ -1,0 +1,58 @@
+{
+  "chapter": 15,
+  "engagementScore": 8,
+  "emotionalImpact": "high",
+  "pacingAssessment": "slow-start",
+  "clarityScore": 9,
+  "findings": [
+    {
+      "id": "BETA-015-001",
+      "type": "pacing",
+      "severity": "major",
+      "description": "The evidence cross-referencing scene (Scene 1) is the chapter's weakest section from a reader-experience perspective. The conspiracy details are important — four independent sources confirming forty years of sabotage — but the scene reads like watching someone organize a filing cabinet. 'Veldrane's keeper testified... Wending testimony corroborates... Rivenmarch archive... Serath Dûn.' The names blur. The reader needs to understand that the evidence is damning and real, but the specific source names don't carry emotional weight. The scene is saved by the final beat ('Until two people trusted each other's networks enough to lay the fragments side by side') which reframes the evidence-building as an intimacy act.",
+      "location": "Scene 1, from 'She pulled the archived sheets closer' through 'fragments side by side'",
+      "readerImpact": "Romance-focused readers will skim the evidence details. Plot-focused readers will appreciate the rigor. The scene could be tightened by ~20% without losing structural information. The emotional payoff line at the end needs to arrive sooner."
+    },
+    {
+      "id": "BETA-015-002",
+      "type": "engagement-drop",
+      "severity": "minor",
+      "description": "The chapter is structured as a false-calm chapter — the emotional high point before the black moment. This is structurally correct and well-executed, but the reader may feel the reduced urgency as a lull after ch14's combat and sex. The chapter's energy is contemplative rather than kinetic, and while this serves the arc (the reader needs to feel the hope that ch16 destroys), some readers may experience the first half as 'waiting for something to happen.'",
+      "location": "Overall chapter pacing, particularly Scene 1",
+      "readerImpact": "Moderate. The chapter's purpose is to build the structure that ch16 demolishes. Readers who understand this pattern (false victory → reversal) will lean in. Others may find the middle section slow."
+    },
+    {
+      "id": "BETA-015-003",
+      "type": "romance-gap",
+      "severity": "observation",
+      "description": "The 'What happens after?' conversation appears in both ch14 and ch15 — Lirien asks in ch14's afterglow ('What happens after?'), Kaelith asks in ch15's fireside scene ('What happens when this is over?'). The symmetry is intentional and thematically resonant (each asks the other the same question from their own emotional position), but the near-identical framing may feel repetitive to a reader who hasn't noticed the deliberate mirroring. The ch15 version deepens the conversation (Kaelith's 'someone I want tomorrows with'), so it's not redundant — but the echo could be made more overt to reward attentive readers.",
+      "location": "Scene 2, 'What happens when this is over?' and ch14 Scene 2 comparison",
+      "readerImpact": "Readers tracking the mirroring will find it beautiful. Others may experience déjà vu."
+    },
+    {
+      "id": "BETA-015-004",
+      "type": "emotional-flat",
+      "severity": "observation",
+      "description": "The banter section ('You plan futures like campaigns' / 'You assign strategic objectives to hypothetical harbour towns') is the best dialogue exchange in these five chapters and provides essential tonal relief between the intensity of ch13-14 and the devastation of ch16. However, the banter is quite brief — roughly 12 lines — before the chapter returns to its contemplative register. Given how rare genuine humor is in this manuscript, extending the lighter exchange by even a few lines would make the chapter's emotional range feel broader and make the hope feel more real.",
+      "location": "Scene 3, from 'You plan futures like campaigns' through 'I simply choose not to apply the skill recreationally'",
+      "readerImpact": "The humor lands perfectly. There should be more of it. The reader needs to believe in the joy to feel the loss."
+    },
+    {
+      "id": "BETA-015-005",
+      "type": "pacing",
+      "severity": "observation",
+      "description": "The chapter's final section (Kaelith's reflection on hope) is excellent thematic work — the Calwrath parallel ('Hope was the most dangerous item in her inventory'), the fortification metaphor ('a fortification with no one inside it'), and the choice to hope despite the risk assessment. But at ~40 lines, it extends the contemplative register past the point where the chapter has new emotional information to deliver. The thesis ('She chose the hope') is stated clearly. The elaboration after it, while well-written, is the chapter restating its conclusion rather than reaching a new one.",
+      "location": "Scene 3, from 'She was allowing hope' through end of chapter",
+      "readerImpact": "The final lines are beautiful ('for the first time since Calwrath, the silence did not mean danger. It meant someone had chosen to stay.'). But they arrive after a reflective passage that slightly overstays. A reader at this point in the book is eager for the next chapter — the false calm has done its work."
+    }
+  ],
+  "strengths": [
+    "'Wherever you are.' Two words that function as the chapter's emotional detonator. This is Lirien's most vulnerable statement in the entire manuscript — a woman who has never stayed anywhere saying she would stay wherever Kaelith is. The simplicity is devastating, especially in retrospect after ch16 destroys the foundation it stands on.",
+    "The banter scene is genuinely funny and achingly human. 'You assign strategic objectives to hypothetical harbour towns' is the kind of line that makes a reader fall in love with the relationship, not just the characters. These two people are FUNNY together, and showing that matters for the romance's credibility.",
+    "The Calwrath echo in the hope reflection ('Hope was the most dangerous item in her inventory. It had preceded every catastrophe she had survived.') is structurally brilliant. Kaelith recognizing that she is doing the dangerous thing again — choosing to believe — and choosing it anyway is the chapter's thesis and it works because the reader has Calwrath in their body. The parallel is felt, not explained.",
+    "The final line ('It meant someone had chosen to stay') is a perfect chapter ending that retroactively justifies the contemplative pacing. The entire chapter has been building to a single emotional statement: presence as the antidote to exile. After six years of being the person everyone left, Kaelith has someone who stays. The devastating irony (the reader knows ch16 is coming) makes this line function as both comfort and foreshadowing.",
+    "The evidence-building scene works as a relationship beat even when the conspiracy details drag: two people's intelligence networks, combined, producing truth that neither could reach alone. The partnership is intellectual as well as emotional and physical, and showing competence-as-intimacy is rare and effective in the genre.",
+    "The chapter's role as setup for ch16's devastation is perfectly calibrated. Every warm detail — the shared flask, the healing salve, the scarf-as-pillow, the future-planning — becomes weaponized debris in the next chapter. The reader doesn't know this yet, but the author clearly does, and the false victory is constructed with surgical precision."
+  ],
+  "verdict": "adequate"
+}

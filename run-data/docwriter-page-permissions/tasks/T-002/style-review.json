@@ -1,0 +1,189 @@
+{
+  "agent": "docwriter-style-reviewer",
+  "taskId": "T-002",
+  "attempt": 1,
+  "verdict": "rejected",
+  "invariantResults": [
+    {
+      "invariantId": "TINV-002",
+      "result": "pass",
+      "evidence": "All four new notes cross-reference the Page permission management hub page (permissions_pagelevel_xp) created by T-001, providing a centralized access point for permission requirements scattered across multiple how-to sections."
+    },
+    {
+      "invariantId": "INV-crossref-002",
+      "result": "pass",
+      "evidence": "All page_link tags follow the correct syntax: {% page_link identifier linkText=\"...\" anchor=\"...\" %}. The collection attribute is omitted, consistent with all 15+ existing page_link tags on this page (all targets are within the same _documentation collection)."
+    },
+    {
+      "invariantId": "INV-crossref-003",
+      "result": "pass",
+      "evidence": "Writer output claims identifiers verified against actual front matter. The identifiers used (permissions_pagelevel_xp, workflows_xp) follow the snake_case_xp naming convention and are used consistently with pre-existing references on the page. Fabrication risk: low. (Accuracy reviewer to verify existence.)"
+    },
+    {
+      "invariantId": "INV-crossref-005",
+      "result": "pass",
+      "evidence": "Four anchors used: 'Page permissions for publishing pages', 'Permission requirements for page operations', 'Page permissions for unpublishing pages', 'Page permissions for moving pages'. All follow heading-based anchor format. Writer notes state 'All anchors verified against actual hub page headings.' (Accuracy reviewer to verify existence on target page.)"
+    },
+    {
+      "invariantId": "INV-crossref-009",
+      "result": "pass",
+      "evidence": "Link text 'page permissions' clearly describes the target content. Link text 'workflow step' on the Revert note is equally descriptive. No vague link text like 'click here' or 'this page' used."
+    },
+    {
+      "invariantId": "INV-jekyll-010",
+      "result": "pass",
+      "evidence": "All four admonitions correctly use {% note %}...{% endnote %} pairs. Opening and closing tags match. No malformed Liquid syntax."
+    },
+    {
+      "invariantId": "INV-jekyll-003",
+      "result": "pass",
+      "evidence": "File starts with YAML front matter between --- lines (lines 1-15). Unchanged by this task."
+    },
+    {
+      "invariantId": "INV-jekyll-004",
+      "result": "pass",
+      "evidence": "Front matter contains all required fields: title ('Edit and publish pages'), identifier (MAKQC), order (200), redirect_from (x/MAKQC), persona (business), license (1). Unchanged by this task."
+    },
+    {
+      "invariantId": "INV-structure-002",
+      "result": "pass",
+      "evidence": "No 'Next steps' section added. The changes are limited to four inline note admonitions within existing sections."
+    },
+    {
+      "invariantId": "INV-structure-009",
+      "result": "pass",
+      "evidence": "The page remains independent. The new notes add helpful cross-references to the hub page but the permission information is self-contained within each note (stating the specific permissions needed)."
+    },
+    {
+      "invariantId": "INV-structure-011",
+      "result": "pass",
+      "evidence": "Notes work for both new and returning users. They state the permission requirement directly and link to the hub page for deeper details, not assuming prior knowledge."
+    },
+    {
+      "invariantId": "INV-style-057",
+      "result": "pass",
+      "evidence": "Permission requirements are stated neutrally inside note callout boxes, without introductory softening phrases. Example: 'Publishing requires *Read* and *Update* page permissions' — direct, neutral."
+    },
+    {
+      "invariantId": "INV-style-075",
+      "result": "pass",
+      "evidence": "Permission names (*Read*, *Update*, *Create*) and workflow statuses (*Draft*, *Published*) correctly use italics, consistent with the page's established convention for status/value names."
+    },
+    {
+      "invariantId": "INV-style-084",
+      "result": "pass",
+      "evidence": "Single space between sentences in all four notes. No double spaces detected."
+    },
+    {
+      "invariantId": "INV-style-096",
+      "result": "pass",
+      "evidence": "No dashes appear in the new note content. The existing page correctly uses '--' for dashes (e.g., line 92, 110, 111, 158)."
+    },
+    {
+      "invariantId": "INV-style-111",
+      "result": "pass",
+      "evidence": "All four notes are concise — each is 1-2 sentences. No unnecessary verbosity."
+    },
+    {
+      "invariantId": "INV-style-112",
+      "result": "pass",
+      "evidence": "Each note leads with the key information: the specific action and its permission requirements. No preamble or background before the critical point."
+    },
+    {
+      "invariantId": "INV-style-113",
+      "result": "pass",
+      "evidence": "No 'please' used anywhere in the four notes."
+    },
+    {
+      "invariantId": "INV-style-114",
+      "result": "pass",
+      "evidence": "Primary voice is active: 'Publishing requires...', 'Reverting changes requires...', 'Unpublishing requires...', 'Moving a page requires...' One passive construction ('it must be advanced') in the Publish note is acceptable under the exception — it avoids an awkward active rewrite and emphasizes the page (receiver of action)."
+    },
+    {
+      "invariantId": "INV-style-115",
+      "result": "pass",
+      "evidence": "All notes use present simple tense: 'requires', 'can unpublish', 'must be advanced'."
+    },
+    {
+      "invariantId": "INV-style-118",
+      "result": "pass",
+      "evidence": "All four notes consistently use the same pattern: '{Action} requires *Read* and *Update* page permissions'. Terminology is consistent: 'page permissions' used throughout (not alternating with 'access rights' or similar synonyms)."
+    },
+    {
+      "invariantId": "INV-style-132",
+      "result": "fail",
+      "evidence": "Line 128 (Revert note): 'You must also be able to work with the page in its current workflow step.' — 'must' is directed at the reader (a person). Per the invariant, 'must' should be avoided when directed at people; use 'you need to' instead.",
+      "suggestion": "Change to: 'You also need to be able to work with the page in its current {% page_link workflows_xp linkText=\"workflow step\" %}.'"
+    },
+    {
+      "invariantId": "INV-style-138",
+      "result": "pass",
+      "evidence": "All four admonitions use {% note %}, which is the correct severity level for 'important points.' Permission requirements are important information users need to know before performing actions — neither optional tips nor irreversible warnings."
+    },
+    {
+      "invariantId": "INV-style-139",
+      "result": "fail",
+      "evidence": "Three of the four new notes contain 2 sentences but lack a bold title on a separate line. The single-sentence exception only applies to the Move note (line 396-398, 1 sentence). Affected notes: Publish (line 77-79, 2 sentences), Revert (line 127-129, 2 sentences), Unpublish (line 145-147, 2 sentences). Note: two pre-existing notes on this page (lines 141-143, 366-368) also lack titles for multi-sentence content, so the writer matched the page's existing pattern — but the invariant requires titles for multi-sentence callouts.",
+      "suggestion": "Add a bold title to each multi-sentence note. Suggested titles: Publish note → '**Permission requirements**', Revert note → '**Permission requirements**', Unpublish note → '**Permission requirements**'. Alternatively, use a consistent title like '**Required permissions**' across all three. Consider also adding titles to the pre-existing notes at lines 141-143 and 366-368 for full page consistency."
+    },
+    {
+      "invariantId": "INV-style-140",
+      "result": "pass",
+      "evidence": "None of the four notes write the callout type name ('Note') inside the callout box."
+    },
+    {
+      "invariantId": "INV-style-141",
+      "result": "pass",
+      "evidence": "The {% note %} type is appropriate for permission requirements (important points). Not misusing tip (optional), info (context), or warning (destructive)."
+    }
+  ],
+  "additionalFindings": [
+    {
+      "category": "heading-hierarchy",
+      "result": "pass",
+      "evidence": "Heading hierarchy is correct throughout the file: h2 sections (Edit content, Publish pages, Revert changes, Unpublish pages, Move pages, etc.) with h3 and h4 subsections following proper nesting. No skipped levels."
+    },
+    {
+      "category": "consistent-formatting",
+      "result": "pass",
+      "evidence": "All four notes follow a consistent formatting pattern: {% note %} on its own line, content as a single paragraph, {% endnote %} on its own line. Consistent use of italics for permission names (*Read*, *Update*, *Create*) and Liquid page_link tags for cross-references."
+    },
+    {
+      "category": "link-formatting",
+      "result": "pass",
+      "evidence": "All cross-references use correct Jekyll Liquid syntax ({% page_link ... %}). No raw Markdown links or broken Liquid tags."
+    },
+    {
+      "category": "liquid-syntax",
+      "result": "pass",
+      "evidence": "All {% %} tags are properly formed with matching open/close pairs. No broken includes or malformed Liquid expressions."
+    },
+    {
+      "category": "pronoun-clarity",
+      "result": "pass",
+      "evidence": "Publish note uses 'it' (line 78: 'it must be advanced') where the antecedent 'the page' appears in the same sentence's conditional clause. While INV-style-119 discourages 'it', the antecedent is unambiguous within this single sentence. Flagged as a minor observation, not a structural issue."
+    },
+    {
+      "category": "note-placement",
+      "result": "pass",
+      "evidence": "All four notes are placed logically — after introductory text and before the numbered step-by-step instructions in each section. This placement ensures users see permission requirements before attempting the procedure."
+    },
+    {
+      "category": "anti-pattern-check",
+      "result": "pass",
+      "evidence": "Checked against anti-patterns.md: ANTI-001 (create-action rejection rates) — N/A, this is an update task. ANTI-002 (dash confusion) — no dashes in new content. ANTI-004 (unenumerated criteria) — N/A, no API methods. ANTI-010 (phantom methods) — N/A, no code examples. No anti-pattern matches detected."
+    },
+    {
+      "category": "meta-knowledge-style-evolution",
+      "result": "pass",
+      "evidence": "knowledge-brief.json contains STYLE-004 (incorrect page_link identifiers). The writer applied this knowledge by verifying identifiers against actual front matter. No conflicts between this style evolution and invariants detected."
+    }
+  ],
+  "summary": {
+    "invariantsPassed": 24,
+    "invariantsFailed": 2,
+    "additionalIssues": 0,
+    "failedInvariants": ["INV-style-132", "INV-style-139"],
+    "notes": "Both failures are straightforward to fix. INV-style-132 requires changing 'You must' to 'You also need to' in the Revert note. INV-style-139 requires adding bold titles to the three multi-sentence notes (Publish, Revert, Unpublish). The Move note (single sentence) is correctly exempt."
+  }
+}

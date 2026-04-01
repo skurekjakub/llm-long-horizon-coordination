@@ -1,0 +1,58 @@
+{
+  "chapter": 6,
+  "engagementScore": 9,
+  "emotionalImpact": "high",
+  "pacingAssessment": "well-paced",
+  "clarityScore": 9,
+  "findings": [
+    {
+      "id": "BETA-006-001",
+      "type": "pacing",
+      "severity": "minor",
+      "description": "The binding enforcement timeline is restated again: 'The threshold passed twenty-six hours ago. Forty-eight hours from the threshold, pain begins. Seventy-two, incapacitating. Ninety-six, motor function loss. One hundred twenty, the Lessening.' This is the fourth time across Chapters 2, 4, 5, and 6 that these specific numbers have been given. By now the reader has them memorized. The scene would be stronger showing the binding's physical effects (the 'sharper than the monitoring pulse' passage later in the chapter does this well) rather than restating the countdown framework.",
+      "location": "Scene 2, Lirien explaining the binding timeline to Kaelith on the road",
+      "readerImpact": "The reader's internal response is 'I know' rather than 'oh no.' The first time these numbers appeared (Ch. 2), they were terrifying. By the fourth statement, they've become exposition the reader skips. Show the binding hurting Lirien; stop telling us when it will hurt her."
+    },
+    {
+      "id": "BETA-006-002",
+      "type": "pacing",
+      "severity": "minor",
+      "description": "The travel logistics section (calculating miles, pace, checkpoint distances, resupply needs, pursuit timelines) runs approximately 600 words and reads more like operational planning than narrative. While it establishes both women as competent and grounds the journey in physical reality, the specific numbers (thirty-six miles, Twenty-Three Mile checkpoint, twelve hours, eight hours for Seldric) create a clinical feel that conflicts with the emotional momentum of the departure.",
+      "location": "Scene 2, from 'Two hundred paces from the gate' through the pursuit timeline discussion",
+      "readerImpact": "The reader trusts that these women are competent by now — five chapters of demonstrated tactical thinking have established it. The logistics can be compressed. The important information is: they're being pursued, they can't stop, they have roughly a day's head start. The specific mileage calculations can be implied."
+    },
+    {
+      "id": "BETA-006-003",
+      "type": "romance-gap",
+      "severity": "observation",
+      "description": "The shared watch scene is the most overtly romantic passage in Act I and it works. However, the attraction is rendered almost entirely through Lirien's clinical framework — 'target interference,' 'disrupted focus,' 'the thing humans called want.' While this is consistent with her character voice, the reader may want one moment where the clinical frame breaks entirely — one sentence where Lirien just feels something without immediately categorizing it. The 'seep' metaphor comes close but is still analytical.",
+      "location": "Scene 2, shared watch section from 'Lirien became aware' through 'Neither of them spoke'",
+      "readerImpact": "Romance readers have been extraordinarily patient through Act I. This scene rewards that patience, but it pulls its emotional punch slightly by keeping the analytical frame intact throughout. One crack — even half a sentence — where Lirien's categorization system doesn't just fail but is absent would make the scene transcendent rather than very good."
+    },
+    {
+      "id": "BETA-006-004",
+      "type": "engagement-drop",
+      "severity": "minor",
+      "description": "The Tavik confrontation is well-staged but Tavik's dialogue ('You earned nothing... you have been a problem since the day you arrived') reveals a level of resentment that wasn't signaled in his earlier appearances. In Chapters 1 and 3, he reads as a compromised but not hostile figure — uncomfortable, evasive, possibly sympathetic. The 'I never liked you' turn is dramatic but slightly incongruent with the established characterization.",
+      "location": "Scene 1, Tavik's speech beginning 'You earned nothing'",
+      "readerImpact": "Minor whiplash. The reader had Tavik categorized as weak-but-not-malicious. His sudden cruelty could be stress-induced honesty or it could be a characterization shift. If the former, one sentence acknowledging that Tavik is saying things his fear is putting in his mouth would smooth the transition."
+    },
+    {
+      "id": "BETA-006-005",
+      "type": "character-inconsistency",
+      "severity": "minor",
+      "description": "Kaelith says they should head west ('I will end you and walk west alone' in Ch. 5), but the departure is through the eastern gate heading south on the Thornway. Later Lirien says they walked south-southwest. The 'west' reference in Ch. 5 may have been directional shorthand for 'away,' but the compass inconsistency is noticeable on close reading.",
+      "location": "Ch. 5 Scene 2 ('walk west alone') vs Ch. 6 Scene 1 ('east gate' / 'south' / 'south-southwest')",
+      "readerImpact": "Trivial for most readers. A detail-oriented reader may notice. Easy fix: change Ch. 5's 'walk west' to match the actual departure direction, or have Kaelith's threat reference a different escape route to explain the discrepancy."
+    }
+  ],
+  "strengths": [
+    "The coordinated combat scene is the best action writing in Act I. Five seconds, both guards down, no verbal exchange needed. This is competence-as-attraction distilled to its purest form. Romance readers will feel the chemistry through the choreography — these women fight like a matched pair, and neither planned it.",
+    "The shared watch scene accomplishes something remarkable: it makes two people sitting in silence for hours feel like the most intimate scene in the novel. The overlapping surveillance patterns ('One woman watched the road. The other watched the forest') becoming a metaphor for complementary partnership is structurally beautiful.",
+    "The report-filing scene is Lirien's defining character moment. 'Eighteen years of service. Thirty-seven contracts. Every one completed without deviation. This was the thirty-eighth. And it was the first she had chosen to fail.' The weight of that choice registers because the reader has felt Lirien's institutional identity for four chapters. Her betrayal of the Seep is her first act of selfhood.",
+    "'The calculus changes. The arithmetic does not.' / 'I do not understand.' / 'You will.' — Kaelith's closing thematic statement is perfect. The distinction between calculus (variables, optimization) and arithmetic (what simply adds up) encapsulates her worldview and foreshadows her eventual effect on Lirien. The reader trusts that this line will pay off.",
+    "The chapter functions as Act I's coda. Duskhaven is behind them, pursuit is ahead, the binding is counting down, and both women have crossed irreversible thresholds. The final line — 'She was aware of her with every step' — closes the act on exactly the right note: the romance has begun, neither woman has named it, and the danger makes naming it impossible. This is textbook slow-burn execution.",
+    "The Pallor description at night — 'each point of light wearing a faint corona, as though the sky itself had lost the ability to hold anything sharp' — is gorgeous writing that does double worldbuilding/thematic work. Reality losing definition mirrors the characters losing the definitions they've used to keep each other at distance."
+  ],
+  "verdict": "strong"
+}

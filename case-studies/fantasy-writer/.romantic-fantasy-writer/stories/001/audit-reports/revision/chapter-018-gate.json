@@ -1,0 +1,502 @@
+{
+  "gateId": "revision-gate-018",
+  "phase": "revision",
+  "chapter": 18,
+  "title": "The Taxonomy of Choice",
+  "pov": "CHAR-002",
+  "povName": "Lirien Dael",
+  "auditor": "romantic-fantasy-writer-revision-auditor",
+  "timestamp": "2025-07-31T08:00:00Z",
+  "verdict": "passed",
+  "verdictRationale": "All 2 major findings verified as fully addressed with evidence. 1 moderate finding verified as addressed. All 16 minor findings verified as addressed. All 4 observation findings verified (3 applied, 1 noted). 1 finding (COPY-004) legitimately deferred — world-bible update, outside chapter-reviser scope. Zero regressions detected. Zero darlings survived. Traceability complete (23 findings in frontmatter + 1 deferred = 24 total, matching all 24 findings across three reports). Word count +4.6% (4915→5142 words). Revised chapter meets or exceeds draft quality across all dimensions.",
+
+  "inputArtifacts": {
+    "draft": "chapters/018/draft.md",
+    "revised": "chapters/018/revised.md",
+    "developmentalEdit": "revision-reports/018/developmental-edit.json",
+    "lineEdit": "revision-reports/018/line-edit.json",
+    "copyEdit": "revision-reports/018/copy-edit.json",
+    "revisionLog": "revision-reports/018/revision-log.json"
+  },
+
+  "wordCountAudit": {
+    "draftWordCount": 4915,
+    "revisedWordCount": 5142,
+    "delta": 227,
+    "deltaPercent": "+4.6%",
+    "verdict": "PASS — within 10% threshold. Increase attributable to added physical grounding (DEV-003: 3 beats), bridging passage (DEV-004), timing observation (DEV-001), skepticism passage (DEV-002), and bond-pulse beat (LINE-018-014)."
+  },
+
+  "findingSummary": {
+    "totalFindings": 24,
+    "critical": 0,
+    "major": 2,
+    "moderate": 1,
+    "minor": 16,
+    "observations": 4,
+    "deferred": 1,
+    "addressedInFrontmatter": 23,
+    "deferredWithRationale": 1,
+    "traceabilityVerdict": "PASS — all 24 findings accounted for"
+  },
+
+  "findingVerificationMatrix": [
+    {
+      "findingId": "LINE-018-001",
+      "source": "line-edit",
+      "severity": "major",
+      "title": "Sentence template repetition: 'the [adj] quality of someone who had [verb]ed' × 8",
+      "verdict": "PASS",
+      "evidence": {
+        "draftCount": 8,
+        "revisedCount": 4,
+        "reductionPercent": 50,
+        "verifiedChanges": [
+          {
+            "instance": "L51 draft",
+            "draft": "the particular quality of someone who had made a decision they were not yet willing to name",
+            "revised": "resolve not yet articulated",
+            "status": "template eliminated"
+          },
+          {
+            "instance": "L127 draft",
+            "draft": "the rhythm of someone who had spent years giving orders and more years learning not to",
+            "revised": "the rhythm of years spent giving orders and more years learning not to",
+            "status": "template restructured"
+          },
+          {
+            "instance": "L159 draft",
+            "draft": "carrying the particular weight of someone who had been holding dangerous information for a long time and had chosen this moment to release it",
+            "revised": "with years of held intelligence behind them and the visible decision to release it now",
+            "status": "template eliminated"
+          },
+          {
+            "instance": "L185 draft",
+            "draft": "Lirien classified as loyalty under sustained discipline — the register of soldiers who had been ordered to remain hidden",
+            "revised": "loyalty under sustained discipline, soldiers who had been ordered to remain hidden",
+            "status": "explicit template ('the register of') removed; descriptive clause retained"
+          }
+        ],
+        "retainedInstances": [
+          "L115: 'the deliberate economy of someone who had learned' — retained (strongest instance)",
+          "L191: 'the honest assessment of someone shaped by' — retained, tweaked ('who had been shaped' → 'shaped')",
+          "L219: 'the clarity of someone who had found one true thing' — retained, dropped 'specific'",
+          "L251/279: 'the weight of a woman who had been betrayed' — retained, dropped 'particular'"
+        ],
+        "assessmentNote": "4 retained instances is at the upper end of the suggested 3-4 range but acceptable. Two of the four retained instances were additionally modified (dropping 'specific'/'particular' adjectives), reducing the template's recognizability. Distribution is now spread across the chapter rather than concentrated in Scene 2."
+      }
+    },
+    {
+      "findingId": "LINE-018-002",
+      "source": "line-edit",
+      "severity": "major",
+      "title": "Voice marker density in Scene 2 approaches demonstration over inhabitation",
+      "verdict": "PASS",
+      "evidence": {
+        "verifiedChanges": [
+          {
+            "flaggedPassage": "L139: 'interest, controlled, with underlying caution at a ratio of approximately three to one'",
+            "revised": "'interest under heavy caution, and the wariness remaining operational'",
+            "status": "Numerical ratio eliminated. Classification habit preserved without artificial precision."
+          },
+          {
+            "flaggedPassage": "L155: 'Intelligence-briefing cadence: each item delivered as data, not revelation'",
+            "revised": "'Each item delivered as data, not revelation — the cadence of a briefing, not a conversation'",
+            "status": "Compressed. Still labels the cadence but integrates it into prose rhythm rather than presenting it as a standalone analytical tag. Adequate fix."
+          },
+          {
+            "flaggedPassage": "L169: 'Lirien processed this through three independent channels. Operational: [...] Analytical: [...] Emotional: she classified this as hope, provisional'",
+            "revised": "Flowing prose: 'The god-seal was already their destination — no course change required. Binding architecture was her specialisation...' with emotional beat as standalone: 'She catalogued the possibility as hope, provisional'",
+            "status": "Explicit Operational/Analytical/Emotional labels eliminated. Three assessments preserved through content shifts in flowing prose. Character-sheet feel removed."
+          },
+          {
+            "flaggedPassage": "L185: 'Lirien classified as loyalty under sustained discipline'",
+            "revised": "'loyalty under sustained discipline, soldiers who had been ordered to remain hidden'",
+            "status": "Explicit classification verb removed. Quality conveyed through appositive description."
+          }
+        ],
+        "additionalAction": "Bond-pulse physical beat added between consecutive analysis paragraphs (LINE-018-014), re-grounding Scene 2 in embodied experience.",
+        "assessmentNote": "Scene 2 now reads as inhabited perspective rather than voice demonstration. Analytical tags serve intelligence-exchange action rather than characterisation display. ~35% thinning achieved as claimed. No voice marker saturation regression — revised chapter has fewer explicit markers per paragraph than draft."
+      }
+    },
+    {
+      "findingId": "COPY-001",
+      "source": "copy-edit",
+      "severity": "moderate",
+      "title": "Timeline: 'day three' should be 'day two' for Seldric capture",
+      "verdict": "PASS",
+      "evidence": {
+        "draft": "Decision: disrupt Enforcer Seldric's capture of target, day three.",
+        "revised": "Decision: disrupt Enforcer Seldric's capture of target, day two.",
+        "status": "Direct correction applied. Now matches continuity tracker ch3 (day: 2)."
+      }
+    },
+    {
+      "findingId": "LINE-018-003",
+      "source": "line-edit",
+      "severity": "minor",
+      "title": "'Carried' as verbal tic — 10 instances",
+      "verdict": "PASS",
+      "evidence": {
+        "draftCount": 10,
+        "revisedCount": 5,
+        "reductionPercent": 50,
+        "keyChanges": [
+          "L127 'voice carried' → 'voice had'",
+          "L141 'possibility carried' → 'possibility bore'",
+          "L191 'words carried' → 'words held'",
+          "L251 'Kaelith carried' → 'Kaelith bore'",
+          "L253 'hands that carried a death sentence' → 'hands whose operational history held a death sentence'",
+          "L261 'bond carried' → 'bond held'"
+        ],
+        "doubleUseResolved": "L253 double 'carried' resolved — one changed to 'held', one retained."
+      }
+    },
+    {
+      "findingId": "LINE-018-004",
+      "source": "line-edit",
+      "severity": "minor",
+      "title": "'The particular [noun]' × 7",
+      "verdict": "PASS",
+      "evidence": {
+        "draftCount": 7,
+        "revisedCount": 2,
+        "keyChanges": [
+          "'the particular warmth' → 'the warmth'",
+          "'The particular clarity' → 'The clarity'",
+          "'the particular weight' → 'the weight'",
+          "'the specific clarity' → 'the clarity'",
+          "'the specific discipline' → 'the discipline'"
+        ]
+      }
+    },
+    {
+      "findingId": "LINE-018-005",
+      "source": "line-edit",
+      "severity": "minor",
+      "title": "L139 numerical ratio quantification artificial",
+      "verdict": "PASS",
+      "evidence": {
+        "draft": "interest, controlled, with underlying caution at a ratio of approximately three to one",
+        "revised": "interest under heavy caution, and the wariness remaining operational",
+        "status": "Ratio eliminated. Also verified under LINE-018-002."
+      }
+    },
+    {
+      "findingId": "LINE-018-006",
+      "source": "line-edit",
+      "severity": "minor",
+      "title": "L169 three-channel processing explicit category labels",
+      "verdict": "PASS",
+      "evidence": {
+        "draft": "Lirien processed this through three independent channels. Operational: [...] Analytical: [...] Emotional: she classified this as hope, provisional, requiring verification before integration.",
+        "revised": "The god-seal was already their destination — no course change required. Binding architecture was her specialisation, and the claim that substrate thinning could expose anchor points was consistent with her understanding [...] She catalogued the possibility as hope, provisional, requiring verification before she could integrate it into operational planning.",
+        "status": "Labels removed. Three assessments preserved through content shifts. Also verified under LINE-018-002."
+      }
+    },
+    {
+      "findingId": "LINE-018-007",
+      "source": "line-edit",
+      "severity": "minor",
+      "title": "L63 mirror construction with double 'permanently'",
+      "verdict": "PASS",
+      "evidence": {
+        "draft": "an unplanned resonance bond that made Lirien's emotional state permanently legible to the target and the target's emotional state permanently legible to Lirien — the exact antithesis of operative concealment (41 words)",
+        "revised": "an unplanned resonance bond — mutual, permanent, making each of them legible to the other in ways no concealment could survive (21 words)",
+        "status": "Compressed by 49%. Double 'permanently' eliminated. Bidirectional nature and concealment contrast preserved."
+      }
+    },
+    {
+      "findingId": "LINE-018-008",
+      "source": "line-edit",
+      "severity": "minor",
+      "title": "Anaphoric 'Every [noun]' triplet used twice",
+      "verdict": "PASS",
+      "evidence": {
+        "draft": "Every report, every field assessment, every clinical reduction of a living person to a target profile had passed through this device.",
+        "revised": "Reports, field assessments, clinical reductions of living people to target profiles — all of it had passed through this device.",
+        "status": "L203 triplet restructured. L33 triplet retained as the stronger emotional moment. Device duplication eliminated."
+      }
+    },
+    {
+      "findingId": "LINE-018-009",
+      "source": "line-edit",
+      "severity": "minor",
+      "title": "'Binding' × 34 with dense concentration at L61-75",
+      "verdict": "PASS",
+      "evidence": {
+        "keyChanges": [
+          "L71 'The binding should have prevented' → 'The contract should have prevented'",
+          "L71 'the binding recognised' → 'the mechanism recognised'",
+          "L75 'the binding had done nothing' → 'the contract had produced nothing'"
+        ],
+        "status": "3 substitutions in the dense L61-75 section. Syntactic variation also introduced ('Its architecture should have generated' instead of repeating subject-verb pattern)."
+      }
+    },
+    {
+      "findingId": "LINE-018-010",
+      "source": "line-edit",
+      "severity": "minor",
+      "title": "'Classification/classify' variants × 24 — density high",
+      "verdict": "PASS",
+      "evidence": {
+        "keyChanges": [
+          "L139 'classified it' → 'noted'",
+          "L169 'she classified this as hope' → 'she catalogued the possibility as hope'",
+          "L185 'Lirien classified as loyalty' → implicit in voice description",
+          "L201 'resisted clean classification' → 'resisted clean taxonomy'",
+          "L225 'could not classify anything' → 'could not sort anything'",
+          "L229 'Classification: unnecessary. New classification:' → 'Status: destroyed. New designation:'",
+          "L47 'each classification' → 'each entry'"
+        ],
+        "status": "7 substitutions in narrative prose. All ledger-entry uses and key thematic uses preserved."
+      }
+    },
+    {
+      "findingId": "LINE-018-011",
+      "source": "line-edit",
+      "severity": "observation",
+      "title": "L111 'between one heartbeat and the next' — borderline common",
+      "verdict": "PASS",
+      "evidence": {
+        "draft": "The paralysis that had held her dissolved in the space between one heartbeat and the next.",
+        "revised": "The paralysis dissolved between one pulse and the next — operative protocol overriding analytical stillness.",
+        "status": "Replaced with Lirien-specific construction. Adds operative vocabulary and characterisation."
+      }
+    },
+    {
+      "findingId": "LINE-018-012",
+      "source": "line-edit",
+      "severity": "observation",
+      "title": "L187 structural/geological metaphors in Lirien's water domain",
+      "verdict": "PASS",
+      "evidence": {
+        "draft": "The isolation cracked. Not broken [...] But fissured. A hairline fracture in the sealed surface",
+        "revised": "The isolation thinned. Not breached [...] But permeable. Something had seeped through the sealed surface",
+        "status": "Stone-domain words (cracked, fissured, fracture) replaced with water-domain alternatives (thinned, permeable, seeped). Voice domain restored."
+      }
+    },
+    {
+      "findingId": "LINE-018-013",
+      "source": "line-edit",
+      "severity": "observation",
+      "title": "Negation-correction pattern ('Not X.') used 3 times",
+      "verdict": "PASS",
+      "evidence": {
+        "status": "Noted. No additional instances added during revision. Three existing uses retained as structurally important."
+      }
+    },
+    {
+      "findingId": "LINE-018-014",
+      "source": "line-edit",
+      "severity": "observation",
+      "title": "L175-177: two consecutive pure-analysis paragraphs",
+      "verdict": "PASS",
+      "evidence": {
+        "revised": "Bond-pulse beat inserted: 'The bond shifted — a thin pulse from the north, distant enough to be almost imagined, carrying the quality of Kaelith's alertness through the wall. Lirien acknowledged the sensation and returned her attention to the contact.'",
+        "status": "Physical/sensory beat added between analysis paragraphs. Re-anchors processing in embodied experience. Also advances bond subplot."
+      }
+    },
+    {
+      "findingId": "DEV-001",
+      "source": "developmental-edit",
+      "severity": "minor",
+      "title": "Ashborne contact arrival timing convenience",
+      "verdict": "PASS",
+      "evidence": {
+        "revised": "Added: 'The approach had come after Kaelith's departure. Two days of watching, perhaps — waiting for the operative to be alone, separated from the target, and receptive to intelligence that could not be delivered while both women occupied the same space. The timing was too clean to be coincidence. This man, or someone directing him, had been monitoring the safe house.'",
+        "status": "Timing grounded through Lirien's operative deduction. Explains why the approach comes now (Kaelith's departure created the window). Reinforces professional competence."
+      }
+    },
+    {
+      "findingId": "DEV-002",
+      "source": "developmental-edit",
+      "severity": "minor",
+      "title": "Information density in Ashborne intelligence exchange",
+      "verdict": "PASS",
+      "evidence": {
+        "revised": "Added: 'Too much information from a single source, too cleanly assembled, too precisely what she needed — and if she had not spent eleven hours proving to herself that free choice existed, she might have dismissed it as a dangle. But the timing cut both ways. Intelligence that arrived when it was needed was either manufactured or withheld until the moment of maximum utility, and she could not determine which from inside the conversation.'",
+        "status": "Lirien explicitly flags the information as suspiciously generous. Deepens TP-1 (trust) while acknowledging density. 'Dangle' is appropriate operative jargon."
+      }
+    },
+    {
+      "findingId": "DEV-003",
+      "source": "developmental-edit",
+      "severity": "minor",
+      "title": "Physical state ungrounded during 11-hour analysis",
+      "verdict": "PASS",
+      "evidence": {
+        "addedBeats": [
+          "L41: 'Her lower back had seized sometime in the fifth hour, a dull knot she had noted and filed and not addressed.' — stiffness, early scene",
+          "L59: 'The pen had become slippery; she'd been gripping it too long without release, her hand cramping around its axis. She flexed her fingers. Picked it up again.' — sustained grip, mid-scene",
+          "L73: 'A headache had settled behind her eyes — the binding's physiological compliance pressure, low-grade but persistent, a reminder that the contract's clock measured delinquency in tissue as well as time.' — binding effect, before Oathbrand entry"
+        ],
+        "status": "Three physical beats distributed across SCN-50 without clustering. Each serves double duty: physical grounding AND evidence the analysis costs her bodily. Binding headache adds compliance-window stakes."
+      }
+    },
+    {
+      "findingId": "DEV-004",
+      "source": "developmental-edit",
+      "severity": "minor",
+      "title": "Transition between SCN-50 and SCN-51 lacks connective tissue",
+      "verdict": "PASS",
+      "evidence": {
+        "revised": "Added after section break: 'She had not decided what to do with the clarity. It sat in her like a coin on a table — verified, weighed, but not yet spent. She was still sitting with it, hands flat on the ledger's cover, when she heard the footsteps.'",
+        "status": "Bridging passage gives breakthrough time to land. Shows Lirien in a state of not-yet-knowing before operative protocols reassert. Water-adjacent imagery (coin metaphor) maintains voice domain."
+      }
+    },
+    {
+      "findingId": "DEV-005",
+      "source": "developmental-edit",
+      "severity": "minor",
+      "title": "Parallel ending structure with Ch17",
+      "verdict": "PASS",
+      "evidence": {
+        "keyChange": "Bond transmission reframed: 'the bond transmitted Lirien's direction with a fidelity that no cipher could match' → 'the bond transmitted something — not direction but intention, the quality of a person choosing to move toward rather than away'",
+        "additionalChange": "Threshold passage trimmed: removed 'classifying its purpose or' to avoid adding voice markers in closing section.",
+        "status": "Lirien's departure distinguished from Kaelith's Ch17 through intention-framing (vs. Ch17's tactical framing). Also addresses COPY-003 bond mechanics simultaneously."
+      }
+    },
+    {
+      "findingId": "COPY-002",
+      "source": "copy-edit",
+      "severity": "minor",
+      "title": "Timeline: 'nearly two months' overstates overdue period",
+      "verdict": "PASS",
+      "evidence": {
+        "draft": "You've exceeded the compliance window by nearly two months.",
+        "revised": "You've exceeded the compliance window by seven weeks.",
+        "status": "~49 days ≈ 7 weeks. More accurate than 'nearly two months' while remaining approximate (appropriate for intelligence briefing)."
+      }
+    },
+    {
+      "findingId": "COPY-003",
+      "source": "copy-edit",
+      "severity": "minor",
+      "title": "Bond spatial/directional overreach",
+      "verdict": "PASS",
+      "evidence": {
+        "changes": [
+          {
+            "draft": "she could feel distance. Kaelith was alive. Moving.",
+            "revised": "she could feel the quality of Kaelith's absence. Alive. Purposeful.",
+            "status": "Spatial 'distance' and movement data ('Moving') replaced with emotional quality ('absence,' 'Purposeful')."
+          },
+          {
+            "draft": "the bond transmitted Lirien's direction with a fidelity that no cipher could match",
+            "revised": "the bond transmitted something — not direction but intention, the quality of a person choosing to move toward rather than away",
+            "status": "Explicit directional claim reframed as emotional intention. Bond stays within established mechanics."
+          }
+        ]
+      }
+    },
+    {
+      "findingId": "COPY-004",
+      "source": "copy-edit",
+      "severity": "minor",
+      "title": "'Threadbone' not in world-bible",
+      "verdict": "DEFERRED — legitimate",
+      "evidence": {
+        "rationale": "Copy editor stated 'No change required to the prose.' Recommendation is to add term to world-bible, which is outside chapter-reviser's artifact scope. Deferred for continuity-tracker or world-bible update agent.",
+        "status": "Appropriate deferral. No chapter-level change needed."
+      }
+    },
+    {
+      "findingId": "COPY-005",
+      "source": "copy-edit",
+      "severity": "minor",
+      "title": "First ledger entry 'day two' ambiguity",
+      "verdict": "PASS",
+      "evidence": {
+        "draft": "Decision: accept delay in target execution following Pallor-Oathbrand correlation, day two.",
+        "revised": "Decision: accept delay in target execution following Pallor-Oathbrand correlation.",
+        "status": "Day number removed entirely. Eliminates the day-one-vs-day-two ambiguity. Date is not essential to the entry's analytical function."
+      }
+    }
+  ],
+
+  "regressionFindings": {
+    "voiceMarkerSaturation": {
+      "verdict": "NO REGRESSION",
+      "notes": "Revised chapter has fewer explicit voice markers per paragraph than draft. Scene 2 classification tags reduced by ~35%. No markers added in closing section (one was actually removed from threshold passage). Voice reads as inhabited perspective throughout."
+    },
+    "dialogueNaturalism": {
+      "verdict": "NO REGRESSION",
+      "notes": "All dialogue unchanged except COPY-002 ('nearly two months' → 'seven weeks'). Lirien's fae-formal register (no contractions) and contact's military-casual register (contractions, fragments) both preserved. No speech tics added."
+    },
+    "voiceConsistency": {
+      "verdict": "NO REGRESSION",
+      "notes": "Water-domain metaphors maintained throughout (groundwater, currents, sediment, thinned, permeable, seeped). Stone/architecture domain bleed at L187 corrected (LINE-018-012). Classification register preserved in appropriate contexts. No voice breaks at edit boundaries detected."
+    },
+    "continuityErrors": {
+      "verdict": "NO REGRESSION",
+      "notes": "All timeline corrections verified (COPY-001, COPY-002, COPY-005). Bond mechanics brought within established rules (COPY-003). No new continuity errors introduced by added passages."
+    },
+    "pacingDisruption": {
+      "verdict": "NO REGRESSION",
+      "notes": "Added passages (physical grounding ×3, bridging passage, timing observation, skepticism paragraph, bond-pulse beat) are well-distributed and appropriately sized. No clustering. Scene flow remains smooth. Internal→external→decisive scene sequence preserved."
+    },
+    "newClichesOrTellNotShow": {
+      "verdict": "NONE DETECTED",
+      "notes": "No new clichés introduced. Physical grounding beats (back pain, pen grip, headache) are show-not-tell. Skepticism passage uses operative vocabulary, not generic prose."
+    },
+    "awkwardTransitions": {
+      "verdict": "NONE DETECTED",
+      "notes": "Bridging passage (DEV-004) creates smoother SCN-50→SCN-51 transition than draft. Timing observation (DEV-001) integrates naturally after Ashborne Fourth identification. Bond-pulse (LINE-018-014) provides organic break between analysis paragraphs."
+    },
+    "untracedChanges": {
+      "verdict": "MINOR — not a failure condition",
+      "notes": "Two word-level changes not explicitly traced to finding IDs: (1) L115 draft 'legible to anyone trained' → revised 'visible to anyone trained' — reduces 'legible' frequency since the word is important for bond description; likely part of coherence pass. (2) L225 draft 'Thread-bone' → revised 'Threadbone' — spelling normalization to match other uses in the chapter. Both are positive improvements, covered by the revision log's coherence pass notes."
+    }
+  },
+
+  "darlingsSurvived": {
+    "verdict": "NONE",
+    "notes": "No darlings were explicitly flagged by any of the three editors. Independent audit of the revised chapter found no passages that serve the author's aesthetic pride over narrative function. The chapter's most distinctive passages — the ledger framework, the Oathbrand proof sequence, 'She was choosing the love' — all serve structural and thematic purposes. The threshold passage (stone holding without institutional maintenance) could be considered ornamental, but was actually trimmed during revision (removing 'classifying its purpose or'), demonstrating active darling-hunting."
+  },
+
+  "traceabilityAudit": {
+    "verdict": "PASS",
+    "frontmatterFindingCount": 23,
+    "revisionLogFindingCount": 24,
+    "deferredCount": 1,
+    "totalFromEditReports": 24,
+    "coverage": "100% — all findings accounted for (23 addressed + 1 deferred = 24 total)",
+    "notes": "COPY-004 appropriately deferred with clear rationale (world-bible scope, not chapter scope). All addressed findings have specific revision log entries documenting the change. Every change in the diff traces to a finding ID or is covered by the coherence pass."
+  },
+
+  "passFailChecklist": {
+    "automaticFailTriggers": {
+      "criticalFindingUnaddressed": false,
+      "claimedButUnchanged": false,
+      "newCriticalRegression": false,
+      "wordCountDrop20Percent": false,
+      "darlingsPreservedUnchanged": false,
+      "traceabilityBroken": false,
+      "voiceMarkerSaturationRegression": false,
+      "dialogueNaturalismRegression": false
+    },
+    "warnTriggers": {
+      "majorPartiallyAddressed": false,
+      "minorVoiceRegression": false,
+      "pacingDisrupted": false,
+      "newTellNotShow": false,
+      "betaSynthesisUnaddressed": "N/A — no beta synthesis yet",
+      "wordCountDeviation10Percent": false
+    },
+    "warnCount": 0,
+    "failTriggered": false
+  },
+
+  "craftProfileCompliance": {
+    "T5_ToneContract": "Maintained — morally complex, atmospherically taut. No melodrama or grimdark drift in added passages.",
+    "T10_SandersonsLaws": "Maintained — binding mechanics stay consistent. Headache from compliance pressure adds to established physiological deterioration rules.",
+    "T12_DualArcInterleave": "Maintained — added skepticism passage (DEV-002) deepens TP-1 without disrupting arc balance.",
+    "T17_VoiceFingerprinting": "Improved — voice marker density thinned, domain bleed corrected, template repetition reduced.",
+    "T16_SymbolicMotifWeaving": "Maintained — water domain restored at L187, coin metaphor in bridging passage is domain-adjacent.",
+    "T24_SubtextInDialogue": "Maintained — dialogue unchanged except COPY-002 timeline fix.",
+    "T25_ThematicArgument": "Maintained — TP-1 deepened through DEV-002 skepticism passage."
+  },
+
+  "overallAssessment": "Chapter 18 revision is exemplary. The reviser addressed all 23 actionable findings with precision, reduced repetition patterns by 50%, thinned voice marker density by ~35%, corrected three timeline inaccuracies, brought bond mechanics within established rules, added three physical grounding beats, improved scene transitions, and deepened the intelligence-exchange scene's thematic engagement — all without introducing any detectable regression in voice, pacing, continuity, or prose quality. The COPY-004 deferral is appropriate. Traceability is complete. The revised chapter is ready to proceed to beta reading."
+}

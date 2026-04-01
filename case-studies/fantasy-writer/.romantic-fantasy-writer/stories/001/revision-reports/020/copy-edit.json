@@ -1,0 +1,178 @@
+{
+  "chapter": 20,
+  "title": "Contract Fulfilled in Letter, Broken in Spirit",
+  "pov": "CHAR-002 (Lirien Dael)",
+  "editor": "copy-editor",
+  "timestamp": "2026-03-21T05:00:00Z",
+  "iteration": 1,
+  "referencesConsulted": [
+    "continuity/continuity-tracker.json",
+    "world-bible/geography.json",
+    "world-bible/magic-system.json",
+    "world-bible/culture.json",
+    "world-bible/politics.json",
+    "characters/index.json",
+    "plot/chapter-outlines/chapter-020.json",
+    "style/style-guide.json",
+    "chapters/020/metadata.json"
+  ],
+  "overallAssessment": "Chapter 20 is factually strong. All proper nouns, magic system references, bond mechanics, contract terminology, and character knowledge states are consistent with the established canon. The Pallor progression on Kaelith's left arm matches the continuity tracker precisely. The contract loophole mechanics (cessation of heartbeat as state not duration) align with FACT-008 from ch14 and MAG-005. The resonance bond behavior during cardiac arrest is consistent with ch11 formation mechanics. Six findings identified: one moderate factual/terminology issue, five minor issues. No critical errors. No anachronisms that breach INV-018. Grammar and dialogue formatting are clean throughout.",
+  "findingSummary": {
+    "critical": 0,
+    "major": 0,
+    "moderate": 1,
+    "minor": 5,
+    "informational": 0,
+    "total": 6
+  },
+  "findings": [
+    {
+      "id": "COPY-001",
+      "severity": "moderate",
+      "category": "factual",
+      "description": "Misleading terminology: 'god-seal dissolution' conflates binding dissolution with god-seal dissolution. The original primary plan (established ch19) was to dissolve the BINDING at the Quietus, not the god-seal itself. Ch21 confirms the god-seal is reinforced/repaired, not dissolved. Within the same chapter, line 210 has Kaelith correctly stating 'The god-seal still needs reinforcement' — contradicting the line 26 phrase 'god-seal dissolution.' The term should reference binding dissolution near the god-seal, not dissolution OF the god-seal.",
+      "lineRef": "Line 26",
+      "excerpt": "the god-seal dissolution at the Quietus still waited, but the binding could not",
+      "correction": "Recommend: 'the dissolution at the Quietus still waited' or 'the binding dissolution at the Quietus still waited' — removing the implication that the god-seal itself is being dissolved. The god-seal is to be reinforced (line 210 and ch21 events).",
+      "sourceRef": "continuity-tracker.json ch21 events: 'WARDEN MAGIC: Kaelith channels conviction. Cracks slow, stop, close'; ch22 events reference 'seal reinforced'; ch20 line 210: 'The god-seal still needs reinforcement'"
+    },
+    {
+      "id": "COPY-002",
+      "severity": "minor",
+      "category": "continuity",
+      "description": "Physical hand continuity error across the SCN-57/SCN-58 scene break. In line 160, Kaelith's RIGHT hand finds Lirien's hand 'where it pressed against her sternum' — this is Lirien's LEFT hand (established line 86: 'Lirien placed her left palm flat against Kaelith's sternum'). Kaelith therefore grips Lirien's LEFT hand. But in line 170, the aftermath describes Lirien's LEFT hand still on the chest AND her RIGHT hand 'gripped in Kaelith's.' The hand Kaelith holds has switched from Lirien's left to Lirien's right across the scene break without narrated movement.",
+      "lineRef": "Lines 160 and 170",
+      "excerpt": "L160: 'Her right hand found Lirien's where it pressed against her sternum. She gripped it.' → L170: 'Her left hand still flat against Kaelith's chest... Her right hand gripped in Kaelith's.'",
+      "correction": "Option A: Change line 170 to 'Her right hand still flat against Kaelith's chest... Her left hand gripped in Kaelith's.' Option B: Change line 160 to indicate Kaelith's right hand found Lirien's free (right) hand instead. Option C: Add a brief transition where Kaelith releases and regrips.",
+      "sourceRef": "Line 86: 'Lirien placed her left palm flat against Kaelith's sternum'"
+    },
+    {
+      "id": "COPY-003",
+      "severity": "minor",
+      "category": "timeline",
+      "description": "Kaelith estimates 'Three days' to the Quietus from their current position (Day ~31-32). However, the continuity tracker places ch21 (Quietus chamber arrival, Thalen confrontation) at Day ~32-33 — only 1-2 days after ch20's events. Either Kaelith's estimate is slightly high, or the ch21 day estimate should be adjusted to ~34-35. The discrepancy is softened by the '~' approximation markers but is worth reconciling to prevent timeline compression in ch21.",
+      "lineRef": "Line 210",
+      "excerpt": "'Three days. The saboteur is still operating. The god-seal still needs reinforcement.'",
+      "correction": "Option A: Change to 'A day or two' to match ch21's Day ~32-33 estimate. Option B: If three days is intentional, adjust ch21's dayEstimate to ~34-35 in the continuity tracker. Defer to continuity-tracker authority for resolution.",
+      "sourceRef": "continuity-tracker.json ch20 dayEstimate: '~31-32'; ch21 dayEstimate: '~32-33'"
+    },
+    {
+      "id": "COPY-004",
+      "severity": "minor",
+      "category": "factual",
+      "description": "Oathbrand removal duration stated as 'Three hours' in Lirien's recollection. The established duration from ch11 metadata and continuity tracker is '3-4 hours' (7 layers). Truncating to 'three hours' drops the upper bound. For a character defined by precision ('the clinical thoroughness of an operative running a diagnostic'), rounding down is slightly out of voice. However, this could also be read as the minimum duration in a range, which would be within character.",
+      "lineRef": "Line 60",
+      "excerpt": "Three hours of sustained contact, her magic threading through tissue and bone",
+      "correction": "Consider: 'Three hours — closer to four — of sustained contact' or 'Hours of sustained contact' to avoid specifying a number that conflicts with the established range. Alternatively, accept as character memory rounding — low severity.",
+      "sourceRef": "continuity-tracker.json ch11: 'Oathbrand removal procedure. 7 layers, 3-4 hours'"
+    },
+    {
+      "id": "COPY-005",
+      "severity": "minor",
+      "category": "formatting",
+      "description": "Chapter uses British English spellings consistently: 'centre' (lines 18, 22), 'catalogued' (lines 14, 182), 'recognised' (line 178), 'sensitised' (line 186), 'channelling' (line 74), 'unravelling' (lines 60, 116), 'fulfil' (line 110). The chapter is internally consistent in British English. This should be verified against the overall manuscript convention to ensure uniformity across all 22 chapters. If the manuscript standard is American English, these should be standardized (center, cataloged, recognized, sensitized, channeling, unraveling, fulfill).",
+      "lineRef": "Multiple (lines 14, 18, 22, 60, 74, 110, 116, 178, 182, 186)",
+      "excerpt": "centre, catalogued, recognised, sensitised, channelling, unravelling, fulfil",
+      "correction": "Verify against manuscript-wide spelling convention. If American English is the standard: center, cataloged, recognized, sensitized, channeling, unraveling, fulfill. If British English is the standard, no changes needed — chapter is internally consistent.",
+      "sourceRef": "Style guide does not specify British vs American English explicitly."
+    },
+    {
+      "id": "COPY-006",
+      "severity": "minor",
+      "category": "anachronism",
+      "description": "The term 'electrical' is used three times to describe the cardiac conduction system (lines 92, 100, 150). While the world has medical Shapers with detailed anatomical knowledge, and Lirien's analytical voice justifies precise clinical terminology, 'electrical' carries a distinctly modern/scientific register. The magic system document describes bodily processes through 'will,' 'negotiation,' and 'access' rather than electrical analogies. The world does not appear to have electricity as a discovered/named phenomenon. This is a borderline INV-018 finding — plausible given fae knowledge systems and Lirien's analytical voice, but notably modern.",
+      "lineRef": "Lines 92, 100, 150",
+      "excerpt": "'The electrical network of muscle and nerve' (L92); 'The electrical signal that triggered each contraction' (L100); 'the electrical cascade restarting' (L150)",
+      "correction": "Consider alternatives that maintain precision without the modern register: 'The conduction network of muscle and nerve,' 'The signal that triggered each contraction,' 'the conduction cascade restarting.' Alternatively, if fae knowledge systems include understanding of bioelectric phenomena, retain but ensure consistency with future chapters.",
+      "sourceRef": "INV-018 (No Anachronisms); world-bible/magic-system.json (body described through 'will' and 'negotiation,' not electrical terminology)"
+    }
+  ],
+  "verifiedConsistent": {
+    "naming": {
+      "characters": [
+        "Kaelith (CHAR-001) — correct, no surname used in this chapter (appropriate for Lirien's POV)",
+        "Lirien (CHAR-002) — correct",
+        "No other named characters appear — consistent with two-person scene"
+      ],
+      "locations": [
+        "Rivenmarch — correct spelling (line 46, 210)",
+        "Quietus — correct, with article 'the' (lines 26, 206, 210)",
+        "Vael Seren — not referenced directly in draft (only in outline)"
+      ],
+      "organizations": [
+        "Cerith Court — correct (lines 20, 88, 132, 186)",
+        "Seep — correct (lines 178, 180)",
+        "Ashborne — correct (lines 14, 26)"
+      ],
+      "magicTerms": [
+        "Pallor — correct, consistently capitalized (lines 12, 18, 70, 92, 206)",
+        "Oathbrand — correct (line 60)",
+        "ward-stones — correct, hyphenated (lines 20, 170)",
+        "ward-lattice — consistent hyphenation (lines 24, 30)",
+        "resonance bond — correct, lowercase (lines 86, 184)",
+        "threadbone — correct, single word (line 178)",
+        "Shapers — correct, capitalized (line 20)",
+        "kinetic memory — not directly referenced in this chapter"
+      ]
+    },
+    "timeline": {
+      "dayEstimate": "Day ~31-32 — consistent with 'three days since the plan' (ch19 = Day ~28-29)",
+      "ashborneTravel": "Three days of relay points — consistent with ch19 establishing 'Three-day travel plan to Quietus via Ashborne relay points'",
+      "bindingTightening": "'the past forty-eight hours' — within the three-day travel window"
+    },
+    "magicSystem": {
+      "contractLoophole": "'Cessation of heartbeat' as state not duration — matches FACT-008 from ch14 and MAG-005 (binding contracts require precise language, loopholes interpreted literally)",
+      "resuscitation": "NOT resurrection (FU-001 compliance) — Kaelith is in liminal state for 8 seconds, not permanently dead. Lirien uses fae precision magic (Tier 4) to restart cardiac function, which is within her established capabilities",
+      "bindingResistance": "Enforcement mechanism fighting the loophole — consistent with binding architecture designed for death, not technical compliance",
+      "bondMechanics": "Bond goes silent when heart stops, returns when heart restarts — consistent with ch11 formation mechanics (transmits emotions and physical sensations, requires living connection)",
+      "dissolutionCascade": "Contract architecture collapses upon fulfillment — consistent with MAG-005 enforcement patterns",
+      "bondPostDissolution": "Sharper/cleaner without binding interference — consistent with binding and bond being separate magical systems"
+    },
+    "pallorProgression": {
+      "leftArm": "Silver past elbow, three fingers frozen, tracking bone along ulna — matches continuity-tracker.json ch20 exactly",
+      "unchanged": "Pallor not affected by contract dissolution — correct per metadata (Pallor is divine/physical, not contract-related)"
+    },
+    "characterKnowledge": {
+      "lirien": "References defected Architect's intelligence (ch18), cipher destroyed at safe house (ch18), Oathbrand removal (ch11), contract loophole (ch14), Seep tacit support (FS-011) — all within CHAR-002's established knowledge state",
+      "kaelith": "Refers to 'the saboteur' without naming Thalen — correct per ch19 knowledge state (identity not confirmed to leads). References 'god-seal reinforcement' — correct understanding of mission objective",
+      "fortyThreeContracts": "Matches established record in characters/index.json and CHAR-002 profile"
+    },
+    "voiceConsistency": {
+      "lirien": "Water metaphors present throughout (undertow, current, channel, surfacing, flooding, finding every crack). Classification language (noted, catalogued, clinical, field-note). Operative framing (parameters, variables, threat assessment, precision margin). Visual sensory channel dominant. Sentences elongate under emotional pressure per voice fingerprint. One architectural metaphor ('the woman who built walls to survive and opened doors to love') — acceptable as late-story voice contamination per cross-contamination rules",
+      "kaelithDialogue": "Short declarative sentences, military register, no elaboration ('I consent.' / 'Three days. The saboteur is still operating.') — consistent with CHAR-001 voice fingerprint"
+    },
+    "dialogueFormatting": {
+      "speechTags": "All correctly punctuated — commas with speech tags, periods with action beats",
+      "emDashes": "Correctly used for narrative interruptions of dialogue (line 30) and for parenthetical asides throughout",
+      "ellipses": "One instance in narration (line 100: 'simply... paused') — used for dramatic pause, not dialogue trailing off. Acceptable",
+      "italics": "Consistently used for internal thought, bond-transmitted emotion, and emphasis throughout"
+    },
+    "tenseConsistency": "Past tense maintained throughout the chapter without deviation. Past perfect used correctly for anterior events (ch11 Oathbrand removal, ch14 loophole discovery).",
+    "pronounClarity": "Two-character scene (both female) — pronoun references remain clear through subject-sentence proximity and explicit naming where needed. No ambiguous 'she/her' references identified."
+  },
+  "noFindingsCategories": [
+    "No naming inconsistencies detected across proper nouns, place names, or magical terminology",
+    "No magic system violations (INV-009 compliance — no new abilities introduced)",
+    "No cultural norm violations — Lirien's operative behavior and fae cultural references consistent with CUL-002",
+    "No dialogue formatting errors — em dashes, speech tags, and punctuation all correct (INV-019)",
+    "No tense inconsistencies — past tense maintained throughout",
+    "No pronoun ambiguity issues despite two same-gender characters",
+    "No anachronistic cultural references (no clocks, explosives, or post-industrial metaphors beyond the 'electrical' finding)",
+    "No contradictions with world-bible geography — forward shelter location, Pallor gradient, mineral smell of thinning Pallor all consistent with far-western Pallor zone",
+    "No character knowledge state violations — neither character references information they should not possess at this point in the story"
+  ],
+  "crossReferenceNotes": [
+    {
+      "note": "Known manuscript-wide discrepancy DISC-001 (Thalen Reyvas seat number: Sixth in politics.json, Seventh in chapter drafts) does not apply to ch20 — Thalen is not referenced by name or seat number in this chapter."
+    },
+    {
+      "note": "The term 'ozone' (line 116: 'tasted of blood and ozone') is a 19th-century chemical term. However, it is used here as a sensory descriptor for magical energy release and is a widely accepted fantasy convention. Not flagged as anachronistic."
+    },
+    {
+      "note": "Lirien's reference to 'the Seep had known about the wording' (line 180) aligns with FS-011 (Seep tacit support for loophole). The contract language always containing exploitable phrasing is consistent with the Seep's operational character — strategic flexibility over rigid compliance."
+    },
+    {
+      "note": "The phrase 'Two bindings broken' (line 178) refers to (1) the Seep cipher destroyed in ch18 and (2) the kill contract dissolved in this chapter. Both are correctly referenced as prior events."
+    }
+  ]
+}

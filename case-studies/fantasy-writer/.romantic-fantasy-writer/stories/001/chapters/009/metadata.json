@@ -1,0 +1,131 @@
+{
+  "chapterNum": 9,
+  "pov": "CHAR-001",
+  "wordCount": 4986,
+  "status": "draft",
+  "scenesCompleted": ["SCN-025", "SCN-026", "SCN-027"],
+  "emotionalArcAchieved": {
+    "startState": "determination through discipline",
+    "endState": "acknowledged dependence as survival",
+    "pivotDelivered": true,
+    "pivotDescription": "Lirien's hand on Kaelith's wrist during Ythara ontological exposure — physical contact as anchoring mechanism that collapses Kaelith back into singular selfhood"
+  },
+  "craftToolsApplied": [
+    {
+      "tool": "T5",
+      "application": "Tone maintained as morally complex and atmospherically taut throughout. No melodrama during the Ythara exposure or vulnerability moment. The 'Thank you' scene is delivered with deliberate understatement."
+    },
+    {
+      "tool": "T6",
+      "application": "Stakes escalate from theoretical god-threat to tangible ontological danger — Kaelith directly experiences what happens when reality unravels around a person."
+    },
+    {
+      "tool": "T7",
+      "application": "Black Moment foreshadowing through deepening dependency — the trust being built here is what will make the ch16 betrayal revelation devastating."
+    },
+    {
+      "tool": "T8",
+      "application": "Internal resistance: Kaelith cannot process dependence through tactical frameworks, must acknowledge need she cannot classify. External resistance: Conclave agents pursuing, Oathbrand limiting combat capacity."
+    },
+    {
+      "tool": "T12",
+      "application": "Fantasy arc (Ythara exposure, Pallor damage) and romance arc (physical grounding, dependence acknowledgment) are fused — the fantasy threat creates the romantic vulnerability."
+    },
+    {
+      "tool": "T16",
+      "application": "MOT-001 (Pallor as flayed skin — tears described as wounds, flesh swelling through bandage imagery). MOT-002 (Oathbrand as constant burn, screaming near tears, reacting to magic). MOT-004 (body-knowledge — combat coordination as instinctive architecture, Quietus path parallel)."
+    },
+    {
+      "tool": "T17",
+      "application": "Kaelith voice fingerprint maintained: tactical assessments, architectural/fortification metaphors, short declarative sentences, emotions as body events, inventory mode under stress, no water metaphors."
+    },
+    {
+      "tool": "T20",
+      "application": "Emotional progression from determination → disorientation → acknowledged need → tactical partnership. No repeat of ch8's 'exposed fear' — this chapter's dominant emotion is conflicted desire and emerging dependence."
+    },
+    {
+      "tool": "T21",
+      "application": "Vulnerability ladder advances: physical touch as anchoring (hand on wrist over pulse), verbal admission of need ('Thank you. For keeping me here.'), instinctive combat coordination revealing trust built below conscious awareness."
+    }
+  ],
+  "sceneBreakdown": {
+    "SCN-025": {
+      "wordCount": 2180,
+      "valueShift": "theoretical god-threat → present and trying to unmake me",
+      "hookDelivered": "reality-distortion — road forgetting itself, flagstones disagreeing on position",
+      "fiveCommandmentsHit": {
+        "incitingIncident": "Enter Wending where Pallor has catastrophically failed",
+        "complication": "Kaelith experiences dissociation — hands not her hands, identity fracturing into multiple possibilities",
+        "crisis": "Push through or retreat (implicit — no time to choose, the exposure hits)",
+        "climax": "Lirien grips her wrist, speaks facts, anchors her to singular reality",
+        "resolution": "Kaelith stabilizes; they discover mutual need for coherence in Ythara zones"
+      }
+    },
+    "SCN-026": {
+      "wordCount": 1250,
+      "valueShift": "I survive alone → I need her to stay whole",
+      "fiveCommandmentsHit": {
+        "incitingIncident": "Kaelith attempts tactical processing of exposure and fails",
+        "complication": "Lirien provides presence without demand — proximity without requiring engagement",
+        "crisis": "Admit the dependence or maintain fiction of self-sufficiency",
+        "climax": "Kaelith says 'Thank you. For keeping me here.' — closest she can come to admitting need",
+        "resolution": "Lirien responds 'You would have done the same.' Both know it is true. Something fundamental shifts."
+      }
+    },
+    "SCN-027": {
+      "wordCount": 1556,
+      "valueShift": "we travel together → we fight as a unit",
+      "closeDelivered": "aftermath-silence — walking into the Wending without speaking, silence holding what words cannot",
+      "fiveCommandmentsHit": {
+        "incitingIncident": "Three Conclave agents surround waystation",
+        "complication": "Kaelith weakened from Ythara exposure, fighting without magic against warded opponents",
+        "crisis": "Surrender, fight alone, or fight coordinated",
+        "climax": "Coordinated combat — Kaelith engages sword-bearer and caster, Lirien neutralizes third agent and enters at precise moment needed",
+        "resolution": "Victory; agents down; they leave immediately knowing more will follow. Partnership has become military-grade coordination."
+      }
+    }
+  },
+  "continuityNotes": {
+    "characterPositions": "Kaelith and Lirien departing waystation in the Wending, heading northwest on alternate route toward the Quietus after defeating three Conclave agents",
+    "previousLocation": "Veldrane (ch8)",
+    "timeElapsed": "One day of travel from Veldrane into the Wending",
+    "newInformation": [
+      "Ythara's influence causes ontological fragmentation — identity splits into multiple possible selves, selfhood becomes probability rather than fact",
+      "Exposure duration to incapacitation: approximately 40 seconds without anchoring",
+      "Physical contact and factual grounding from a second person provides effective countermeasure",
+      "Pallor degradation in the Wending has exceeded Seep projections by 8-12 months",
+      "Conclave agents are magically armed (warded blades, caster with focus-rings)",
+      "Conclave documents suggest coordination with external parties beyond High Council authority",
+      "Kaelith and Lirien fight as instinctive coordinated unit without prior planning"
+    ],
+    "foreshadowingPlanted": [
+      "Ythara exposure sensory details (identity dissolution, multiple-self experience, screaming potential) — callbacks for climactic ch21 confrontation",
+      "Oathbrand resonating with Pallor tears — shared architecture between personal ward and divine membrane",
+      "Body-knowledge combat coordination as parallel to Quietus kinetic memory (MOT-004)",
+      "Conclave documents hinting at coordination beyond stated authority (FS-011 Seep agenda plant — Lirien withholds full information from documents)"
+    ],
+    "foreshadowingAdvanced": [
+      "FS-002: Pallor tears shown in severe state, escalating toward crisis",
+      "FS-009: Ythara's influence made tangibly terrifying through direct exposure"
+    ],
+    "motifAppearances": [
+      "MOT-001: Pallor tears described as wounds in flayed skin, flesh swelling through bandage cuts, membrane as dying skin",
+      "MOT-002: Oathbrand screaming near Pallor tears, burning chronically, resonating with shared architecture",
+      "MOT-004: Combat coordination as body-knowledge operating below conscious awareness, paralleled to Quietus path memory"
+    ],
+    "informationAsymmetry": {
+      "kaelithKnows": "Ythara exposure is survivable with an anchor; Conclave agents tracking from Veldrane; Lirien withheld something from the captured documents",
+      "kaelithDoesNotKnow": "Full scope of Conclave's external coordination; Lirien's kill contract binding details; the full content of captured documents",
+      "lirienKnows": "Content of Conclave documents; her own Seep's divergent intelligence agenda; the kill contract she carries",
+      "readerKnows": "More than Kaelith about the kill contract scope; Lirien's personal investment beyond operations (from ch8 POV)"
+    }
+  },
+  "proseMetrics": {
+    "averageSentenceLength": "8-12 words (shorter under stress, longer during reflection)",
+    "dialogueToNarrationRatio": "15:85 — heavily narration-focused chapter reflecting Kaelith's interiority and the experiential Ythara exposure",
+    "metaphorSources": ["architecture", "fortification", "structural engineering", "stone", "weight/load-bearing", "fracture mechanics"],
+    "noWaterMetaphors": true,
+    "emotionsAsBodyEvents": ["jaw tension", "heat in palms", "tremor in fingers", "pressure behind sternum", "taste of copper", "shaking in chest"],
+    "inventoryModeInstances": 2
+  }
+}

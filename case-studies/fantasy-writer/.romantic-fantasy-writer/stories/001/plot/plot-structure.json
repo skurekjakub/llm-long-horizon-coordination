@@ -1,0 +1,493 @@
+{
+  "storyId": "001",
+  "framework": "custom",
+  "selectedFramework": {
+    "label": "hybrid three-act + Save the Cat + romance beat sheet",
+    "primary": "three-act",
+    "secondary": [
+      "Save the Cat",
+      "romance beat sheet"
+    ],
+    "rationale": "A 22-chapter adult romantasy with a 0.55/0.45 fantasy-romance balance needs the clarity of a three-act spine, the clean macro turning points of Save the Cat, and the intimacy pacing of an enemies-to-lovers romance beat sheet. The hybrid lets the fantasy plot escalate from localized instability to existential threat while the romance moves from adversarial competence to chosen love without either arc disappearing for long stretches. This also matches the concept's declared 6/10/6 chapter architecture while preserving a midpoint intimacy pivot, a late-Act-II black moment, and an Act III choice-driven resolution."
+  },
+  "acts": [
+    {
+      "act": 1,
+      "startChapter": 1,
+      "endChapter": 6,
+      "thematicFocus": "Recognition before trust \u2014 two institutional weapons identify each other as threats while the world-level danger stops being abstract.",
+      "stakesLevel": "Personal stakes dominate, with early world-threat foreshadowing.",
+      "actPurpose": "Establish Kaelith's exile, Lirien's death contract, the Oathbrand anomaly, the first Pallor failures, and the forced decision to leave Duskhaven together."
+    },
+    {
+      "act": 2,
+      "startChapter": 7,
+      "endChapter": 16,
+      "thematicFocus": "Trust as survival cost \u2014 the road, the conspiracy, and the romance all demand escalating vulnerability before either woman is ready.",
+      "stakesLevel": "Relational and imperial stakes dominate; private choices now determine whether the wider world can be saved.",
+      "actPurpose": "Drive the journey west, reveal the Warden/Quietus truth, deepen the sabotage mystery, restore Kaelith's magic at midpoint, and carry the romance into intimacy before the black-moment rupture."
+    },
+    {
+      "act": 3,
+      "startChapter": 17,
+      "endChapter": 22,
+      "thematicFocus": "Chosen love versus inherited structures \u2014 the protagonists must decide whether trust survives betrayal and whether reality survives institutional zealotry.",
+      "stakesLevel": "Existential stakes dominate; failure costs identity, love, and the world's coherence.",
+      "actPurpose": "Convert fallout into agency, exploit the contract loophole, expose Thalen's sabotage, reach the Quietus, and resolve the story on choice rather than necessity."
+    }
+  ],
+  "keyBeats": [
+    {
+      "id": "BEAT-001",
+      "name": "Opening Image \u2014 Exile Under a Failing Sky",
+      "chapter": 1,
+      "type": "both",
+      "description": "Kaelith survives in self-imposed erasure in Duskhaven while Lirien arrives under a live death contract; the romance opens in adversarial assessment and the fantasy opens with a world already subtly out of joint."
+    },
+    {
+      "id": "BEAT-002",
+      "name": "Inciting Incident \u2014 Surveillance Meets the First Tear",
+      "chapter": 2,
+      "type": "both",
+      "description": "Kaelith catches Lirien watching her just as a visible Pallor irregularity and Oathbrand flare prove that both the target and the sky are behaving incorrectly."
+    },
+    {
+      "id": "BEAT-003",
+      "name": "Debate \u2014 Strike, Delay, or Investigate",
+      "chapter": 4,
+      "type": "both",
+      "description": "A Conclave-linked threat inside Duskhaven turns suspicion into active danger; Lirien cannot justify immediate execution without understanding the anomaly, and Kaelith must decide whether the stranger is a better risk than the town that cages her."
+    },
+    {
+      "id": "BEAT-004",
+      "name": "First Plot Point \u2014 Departure from Duskhaven",
+      "chapter": 6,
+      "type": "both",
+      "description": "Lirien confirms that ending Kaelith's life may erase the only route to the Quietus, while Tavik's procedural reporting and hostile pursuit make staying impossible; they leave together, locking the dual arc in place."
+    },
+    {
+      "id": "BEAT-005",
+      "name": "Promise of Premise \u2014 Forced Partnership on the Road",
+      "chapter": 7,
+      "type": "both",
+      "description": "Travel on the Thornway and through failing borderlands forces competence-based cooperation, giving the story its core romantasy engine: survival, suspicion, and attraction advancing at once."
+    },
+    {
+      "id": "BEAT-006",
+      "name": "B Story Turn \u2014 The Body Cannot Be Hidden",
+      "chapter": 8,
+      "type": "romance",
+      "description": "Marin or another frontier healer names the Oathbrand crisis plainly, and Kaelith stops concealing how badly she is being destroyed, shifting the relationship from tactical alliance toward care."
+    },
+    {
+      "id": "BEAT-007",
+      "name": "Pinch Point One \u2014 Ythara Presses on the Bond",
+      "chapter": 9,
+      "type": "both",
+      "description": "Exposure to Pallor damage and Ythara's influence forces the women to rely on each other's presence to stay coherent, while direct pursuit proves the antagonists are closing the net."
+    },
+    {
+      "id": "BEAT-008",
+      "name": "Midpoint \u2014 Oathbrand Removal and Magic Return",
+      "chapter": 11,
+      "type": "both",
+      "description": "Lirien removes the Oathbrand; Kaelith's power floods back, the resonance bond forms, and the Quietus path begins to wake in Kaelith's body. The romance crosses its intimacy threshold as the fantasy plot gains its true engine."
+    },
+    {
+      "id": "BEAT-009",
+      "name": "Revelation \u2014 The Conspiracy Has a Human Hand",
+      "chapter": 12,
+      "type": "fantasy",
+      "description": "Archive proof, Thenndal-related evidence, or corroborated field data establishes that the Pallor's failure is engineered rather than natural, narrowing suspicion toward Conclave-level sabotage."
+    },
+    {
+      "id": "BEAT-010",
+      "name": "First Kiss \u2014 Witness Without Flinching",
+      "chapter": 13,
+      "type": "romance",
+      "description": "After Kaelith shares the unsanitized truth of Calwrath and Lirien refuses recoil, restraint finally breaks; the kiss lands as earned emotional risk, not relief."
+    },
+    {
+      "id": "BEAT-011",
+      "name": "Pinch Point Two \u2014 Partnership Wins a Battle, Not the War",
+      "chapter": 14,
+      "type": "both",
+      "description": "Combined competence lets them survive a major pursuit or terrain crisis, but victory only confirms how essential their trust has become and how catastrophic betrayal would now be."
+    },
+    {
+      "id": "BEAT-012",
+      "name": "False Victory \u2014 Intimacy Before Collapse",
+      "chapter": 15,
+      "type": "both",
+      "description": "The first full intimate scene and emerging proof against the conspiracy create the illusion that love and mission might align cleanly, setting up the deepest possible fracture."
+    },
+    {
+      "id": "BEAT-013",
+      "name": "All Is Lost \u2014 Death Contract Revealed",
+      "chapter": 16,
+      "type": "both",
+      "description": "A Seep interception or contract exposure reveals that Kaelith's blood lives inside the binding and that Lirien was always meant to stop her heart; romance and strategy shatter together."
+    },
+    {
+      "id": "BEAT-014",
+      "name": "Act III Descent \u2014 Separation Under Accelerating Failure",
+      "chapter": 17,
+      "type": "both",
+      "description": "Kaelith withdraws, Lirien faces the possibility that every feeling was structurally compromised, and the Pallor crisis escalates fast enough that private heartbreak immediately becomes public catastrophe."
+    },
+    {
+      "id": "BEAT-015",
+      "name": "Dark Night / Choice \u2014 Follow Her Freely",
+      "chapter": 18,
+      "type": "romance",
+      "description": "Lirien identifies her attachment as desire rather than obligation and chooses to pursue Kaelith with no institutional justification; this is the emotional hinge that makes recovery possible."
+    },
+    {
+      "id": "BEAT-016",
+      "name": "Break into Three \u2014 Shared Plan, Shared Truth",
+      "chapter": 19,
+      "type": "both",
+      "description": "Reunion is earned through action and full disclosure; the protagonists align on one impossible plan: exploit the contract loophole, expose Thalen, and reach the Quietus before the world thins past repair."
+    },
+    {
+      "id": "BEAT-017",
+      "name": "Contract Fulfilled in Letter, Broken in Spirit",
+      "chapter": 20,
+      "type": "both",
+      "description": "Lirien stops Kaelith's heart for seconds and restarts it, satisfying the binding while proving trust has survived revelation; the cage opens and choice replaces necessity."
+    },
+    {
+      "id": "BEAT-018",
+      "name": "Climax \u2014 Quietus Reached, Sabotage Exposed",
+      "chapter": 21,
+      "type": "both",
+      "description": "At Serath D\u00fbn / the Quietus approach, Kaelith's restored Warden inheritance, Lirien's liberated precision, and allied proof converge to stop Thalen's acceleration and keep Ythara from fully waking."
+    },
+    {
+      "id": "BEAT-019",
+      "name": "Resolution \u2014 The World Holds, Because They Chose It",
+      "chapter": 22,
+      "type": "both",
+      "description": "The immediate crisis is contained at cost, the institutions are forced to confront what they enabled, and Kaelith and Lirien remain together after every external reason to do so has fallen away."
+    }
+  ],
+  "subplots": [
+    {
+      "id": "SUB-001",
+      "name": "The Pallor Sabotage Investigation",
+      "characters": [
+        "CHAR-003",
+        "CHAR-004",
+        "CHAR-005",
+        "CHAR-013",
+        "CHAR-014"
+      ],
+      "startChapter": 3,
+      "endChapter": 21,
+      "resolution": "Vairen, Sendra, and internal Conclave witnesses connect the Dimming rites to Thalen's forty-year poisoning program, giving the climax both political and magical legitimacy.",
+      "type": "conspiracy-mystery",
+      "arc": "anomalies -> archival pattern -> named saboteur -> witnessed exposure",
+      "intersectionChapters": [
+        12,
+        19,
+        21
+      ]
+    },
+    {
+      "id": "SUB-002",
+      "name": "The Death Contract and the Loophole",
+      "characters": [
+        "CHAR-002",
+        "CHAR-011",
+        "CHAR-012",
+        "CHAR-001"
+      ],
+      "startChapter": 1,
+      "endChapter": 20,
+      "resolution": "The exact wording meant to cage Lirien becomes its weakness; the contract is fulfilled through temporary heartbeat cessation rather than Kaelith's true death.",
+      "type": "romance-obstacle / magical-law",
+      "arc": "obedience -> delay -> concealment -> exposure -> loophole exploitation",
+      "intersectionChapters": [
+        5,
+        16,
+        20
+      ]
+    },
+    {
+      "id": "SUB-003",
+      "name": "Ashborne Legacy and Kaelith's Vindication",
+      "characters": [
+        "CHAR-001",
+        "CHAR-006",
+        "CHAR-009",
+        "CHAR-010"
+      ],
+      "startChapter": 4,
+      "endChapter": 22,
+      "resolution": "Former and current Legion figures shift from passive complicity to active support, reframing Kaelith not as erased scandal but as the woman still carrying the unit's original purpose.",
+      "type": "identity / military",
+      "arc": "reputation burden -> survivor testimony -> covert aid -> moral vindication",
+      "intersectionChapters": [
+        10,
+        18,
+        22
+      ]
+    },
+    {
+      "id": "SUB-004",
+      "name": "The Warden Lineage and Ossya Thenndal Mystery",
+      "characters": [
+        "CHAR-001",
+        "CHAR-004",
+        "CHAR-005"
+      ],
+      "startChapter": 5,
+      "endChapter": 21,
+      "resolution": "Kaelith learns that her kinetic gifts were Warden inheritance, not accident, and that Thenndal's death ties directly into the wider conspiracy to neutralize seal-keepers.",
+      "type": "legacy-revelation",
+      "arc": "paradox seed -> historical clue -> identity revelation -> functional payoff at the Quietus",
+      "intersectionChapters": [
+        11,
+        12,
+        21
+      ]
+    },
+    {
+      "id": "SUB-005",
+      "name": "Freeholder Refuge as a Model of Chosen Life",
+      "characters": [
+        "CHAR-006",
+        "CHAR-007",
+        "CHAR-001",
+        "CHAR-002"
+      ],
+      "startChapter": 8,
+      "endChapter": 18,
+      "resolution": "The Rivenmarch communities provide healing, movement, and a proof-of-concept that life beyond empire and Court is difficult but possible, making the lovers' final choice imaginable.",
+      "type": "thematic-counterpoint",
+      "arc": "medical refuge -> practical alliance -> vision of life outside institutions",
+      "intersectionChapters": [
+        8,
+        9,
+        18
+      ]
+    },
+    {
+      "id": "SUB-006",
+      "name": "Iryse's Good-Faith Complicity",
+      "characters": [
+        "CHAR-013",
+        "CHAR-003",
+        "CHAR-004",
+        "CHAR-014"
+      ],
+      "startChapter": 12,
+      "endChapter": 21,
+      "resolution": "The keeper of the rites recognizes that sincere stewardship has made her the sabotage vector and becomes a late but crucial witness against Thalen.",
+      "type": "institutional-tragedy",
+      "arc": "ritual confidence -> shaken certainty -> witness from inside the system",
+      "intersectionChapters": [
+        12,
+        19,
+        21
+      ]
+    }
+  ],
+  "tryFailCycles": [
+    {
+      "challenge": "Keep Kaelith alive long enough to reach the Quietus",
+      "challengeScope": "personal -> relational -> world",
+      "attempts": [
+        {
+          "chapter": 2,
+          "outcome": "fail",
+          "attempt": "Lirien assumes she can maintain clean surveillance and finish the assignment only when convenient.",
+          "lesson": "Kaelith is too perceptive and the situation too anomalous for a routine target model."
+        },
+        {
+          "chapter": 4,
+          "outcome": "fail",
+          "attempt": "Both women try to remain in Duskhaven while separately managing the danger.",
+          "lesson": "Static defense only helps the institutions closing in; staying put equals capture, death, or both."
+        },
+        {
+          "chapter": 7,
+          "outcome": "fail",
+          "attempt": "They try to use imperial roads and ordinary cover identities to travel fast.",
+          "lesson": "The empire's bureaucratic gaze is itself a weapon; open infrastructure is not neutral ground."
+        },
+        {
+          "chapter": 14,
+          "outcome": "partial",
+          "attempt": "Using restored magic and paired competence, they break one major pursuit line.",
+          "lesson": "They can win encounters together, but pursuit will continue until the deeper systems are broken."
+        },
+        {
+          "chapter": 21,
+          "outcome": "succeed",
+          "attempt": "They use Kaelith's awakened kinetic memory, frontier alliances, and mutual trust to reach the Quietus in time.",
+          "lesson": "Survival requires shared agency rather than solitary competence."
+        }
+      ]
+    },
+    {
+      "challenge": "Prove the Pallor is being sabotaged and identify the saboteur",
+      "challengeScope": "mystery -> political exposure",
+      "attempts": [
+        {
+          "chapter": 8,
+          "outcome": "fail",
+          "attempt": "Frontier testimony about Kaelith's brand and the worsening tears is alarming but anecdotal.",
+          "lesson": "Truth without documentation cannot move institutions."
+        },
+        {
+          "chapter": 10,
+          "outcome": "fail",
+          "attempt": "Thenndal and Calwrath-era clues suggest foul play, but the evidence still points to pattern, not perpetrator.",
+          "lesson": "Personal grief can open the mystery, but it cannot close the case by itself."
+        },
+        {
+          "chapter": 12,
+          "outcome": "partial",
+          "attempt": "Archive synthesis links Velmere's renewal theory, Dimming rites, and Pallor decline.",
+          "lesson": "They can name sabotage, but not yet force the system to believe it."
+        },
+        {
+          "chapter": 21,
+          "outcome": "succeed",
+          "attempt": "Thalen's acceleration and insider witnesses convert theory into undeniable proof during the climax.",
+          "lesson": "The conspiracy falls only when lived evidence, ritual evidence, and political witnesses converge."
+        }
+      ]
+    },
+    {
+      "challenge": "Escape the death contract without losing Kaelith",
+      "challengeScope": "romance obstacle -> magical-law problem",
+      "attempts": [
+        {
+          "chapter": 5,
+          "outcome": "fail",
+          "attempt": "Lirien tries delay and noncompliance while she gathers intelligence.",
+          "lesson": "Time buys investigation, not freedom; the binding remains active and tightening."
+        },
+        {
+          "chapter": 11,
+          "outcome": "fail",
+          "attempt": "Lirien hopes saving Kaelith through Oathbrand removal might morally supersede the binding.",
+          "lesson": "Care has emotional power, but contract language does not respond to sentiment."
+        },
+        {
+          "chapter": 16,
+          "outcome": "fail",
+          "attempt": "A hidden or intercepted effort to manage the contract quietly instead exposes it in the worst possible way.",
+          "lesson": "Concealment is now more dangerous than the binding itself; full truth is the only path forward."
+        },
+        {
+          "chapter": 20,
+          "outcome": "succeed",
+          "attempt": "They exploit the contract's literal wording by stopping and restarting Kaelith's heart.",
+          "lesson": "The system that caged them can be defeated only by understanding it more precisely than its authors did."
+        }
+      ]
+    },
+    {
+      "challenge": "Build enough trust to resist Ythara and choose each other freely",
+      "challengeScope": "romantic / thematic",
+      "attempts": [
+        {
+          "chapter": 6,
+          "outcome": "fail",
+          "attempt": "They try to operate as purely tactical allies.",
+          "lesson": "Shared danger can force proximity, but not the coherence they need under metaphysical pressure."
+        },
+        {
+          "chapter": 13,
+          "outcome": "partial",
+          "attempt": "Confession, witness, and the first kiss create genuine intimacy.",
+          "lesson": "Emotional truth can take root, but hidden structural violence still poisons it."
+        },
+        {
+          "chapter": 16,
+          "outcome": "fail",
+          "attempt": "They act as if private intimacy can outrun the hidden contract.",
+          "lesson": "No relationship built inside omission survives until the omission is faced."
+        },
+        {
+          "chapter": 19,
+          "outcome": "partial",
+          "attempt": "Reunion through action and full disclosure repairs enough trust to make cooperation possible again.",
+          "lesson": "Trust after betrayal is not restoration; it is a new structure built with full knowledge of prior harm."
+        },
+        {
+          "chapter": 20,
+          "outcome": "succeed",
+          "attempt": "Kaelith consents to the heart-stop and Lirien carries it through with perfect care.",
+          "lesson": "Chosen vulnerability, not necessity, is the final proof of love."
+        }
+      ]
+    }
+  ],
+  "stakesEscalation": [
+    {
+      "act": 1,
+      "whatIsAtRisk": "Kaelith's remaining life and agency, Lirien's ability to return home, and the possibility that the one person carrying the Quietus path will die before anyone understands why she matters.",
+      "personal": "Kaelith is being slowly murdered by the refreshed Oathbrand; Lirien's identity is still fused to contract completion.",
+      "relational": "Any attraction is indistinguishable from threat; trust would already be dangerous because one woman was sent to execute the other.",
+      "worldLevel": "The Pallor is visibly wrong but still deniable; the apocalypse is a looming hypothesis, not yet a lived certainty.",
+      "comparedToLast": "Baseline act \u2014 stakes move from emotional stagnation to immediate bodily danger and a locked paradox."
+    },
+    {
+      "act": 2,
+      "whatIsAtRisk": "Their intertwined survival, the proof that sabotage is manmade, the Quietus route itself, and the possibility of love that is not merely instrumental.",
+      "personal": "Kaelith's body may fail before the journey ends, and Lirien risks losing the only identity structure she has ever known.",
+      "relational": "Trust becomes mandatory for healing, magic, and navigation; betrayal now has the power to destroy not just feelings but the mission.",
+      "worldLevel": "Pallor tears spread from anomaly to imperial crisis; if the protagonists fail, the empire loses both evidence and access to the seal.",
+      "comparedToLast": "Act II expands the cost of failure from two damaged women to everyone dependent on the Pallor's stability, while making the romance itself part of the solution set."
+    },
+    {
+      "act": 3,
+      "whatIsAtRisk": "Identity, coherence, chosen love, and the survival of a world that may dissolve into unfinished possibility if the Quietus fails.",
+      "personal": "Kaelith may truly die during the loophole; Lirien may lose the first self-chosen future she has ever had; both risk ontological damage under Ythara's influence.",
+      "relational": "If trust fails after the black moment, the lovers do not merely separate \u2014 they prove their institutions right about what they are for.",
+      "worldLevel": "Thalen's acceleration can wake Ythara, collapse the Pallor, and unravel reality beyond repair. Act III risks are categorically greater than Act I: the opening threatened two lives and one secret, while the ending threatens every life and the world's fixedness itself.",
+      "comparedToLast": "Act III converts imperial crisis into existential catastrophe; the cost of failure becomes total rather than local or political."
+    }
+  ],
+  "pacingGuardrails": {
+    "principle": "Alternate external-pressure and recovery/intimacy chapters so no three consecutive chapters sustain the same dominant tension mode.",
+    "chapterRhythm": [
+      {
+        "chapterRange": "1-3",
+        "pattern": "mystery / threat / mystery"
+      },
+      {
+        "chapterRange": "4-6",
+        "pattern": "action / debate / escape"
+      },
+      {
+        "chapterRange": "7-10",
+        "pattern": "road danger / healing / uncanny pressure / emotional reckoning"
+      },
+      {
+        "chapterRange": "11-16",
+        "pattern": "intimacy pivot / investigation / romantic escalation / action / sensual false victory / rupture"
+      },
+      {
+        "chapterRange": "17-22",
+        "pattern": "fallout / choice / planning / sacrificial intimacy / climax / release"
+      }
+    ],
+    "maxConsecutiveSameTensionChapters": 2
+  },
+  "upstreamRefs": [
+    "story-concept.json",
+    "craft-profile.json",
+    "romance-arc.json",
+    "characters/index.json",
+    "world-bible/magic-system.json",
+    "world-bible/geography.json",
+    "world-bible/culture.json",
+    "world-bible/history.json",
+    "world-bible/politics.json"
+  ]
+}

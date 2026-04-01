@@ -1,0 +1,172 @@
+{
+  "agent": "pov-voice-maintainer",
+  "chapter": 19,
+  "storyId": "001",
+  "povCharacter": "CHAR-001",
+  "povName": "Kaelith Maren",
+  "result": "completed",
+  "timestamp": "2026-03-19T11:30:00Z",
+  "summary": "Chapter 19 voice audit PASSED with 5 minor corrections applied. Kaelith's voice is sharply maintained across all three scenes. The draft demonstrates exceptional command of her military-architectural vocabulary, suppressed-to-physical emotional register, and tactile sensory dominance. The 3-4 sentence opening is a textbook Kaelith inventory assessment (exits, terrain, defensive structures). POV transition from Ch18 Lirien is motivated and earned. Five corrections applied: one INV-005 violation (direct emotion naming), two Lirien-register vocabulary incursions, one analytical qualifier removal, one register-appropriate vocabulary swap. No structural or content changes. Voice evolution for Ch19 of 22 is organic and earned — longer sentences during emotional breach, one approved water metaphor with meta-awareness, vulnerability naming in dialogue at Step 10.",
+  "voiceConsistencyScore": 9,
+  "distinctnessScore": 9,
+  "threeFourSentenceTestResult": {
+    "verdict": "PASS",
+    "explanation": "The opening four sentences are unmistakably Kaelith: 'Two exits. One road south. One goat track northwest through the tree cover. Stone-and-timber palisade, chest height, angled outward — not enough to stop a determined assault but sufficient to slow anything moving on instinct.' This is textbook Kaelith — inventory mode, tactical assessment of space before people, short declarative fragments, military vocabulary ('determined assault,' 'interlocking fields of fire'). A reader familiar with both leads would identify Kaelith within the first two words. The attention priority (exits → structural assessment → threat evaluation) exactly matches her voice fingerprint."
+  },
+  "povTransitionMotivation": {
+    "verdict": "PASS",
+    "explanation": "Ch18 ends with Lirien's decision crystallised — she destroys her cipher, walks north, and the final line is 'She walked north.' The departing chapter closes on Lirien's choice but leaves the critical question unanswered: will Kaelith accept? Ch19 opens with Kaelith already at the destination, providing the perspective Lirien's POV cannot: the internal experience of whether the woman who was betrayed will choose to stay. The POV switch is structurally necessary — the reunion's emotional weight depends on seeing Kaelith's tactical defenses crack from inside. Lirien already chose in Ch18; Ch19 asks whether Kaelith will choose back. Temporal/spatial motivation: Lirien is walking toward Kaelith; Kaelith arrives first. The switch provides urgency (Kaelith calculating whether to flee before Lirien arrives) that Lirien's POV could not deliver."
+  },
+  "correctionsApplied": 5,
+  "deviationsFound": 8,
+  "deviationBreakdown": {
+    "major": 1,
+    "minor": 4,
+    "flaggedButAcceptable": 3
+  },
+  "deviationDetails": [
+    {
+      "id": "DEV-001",
+      "severity": "major",
+      "type": "INV-005 violation",
+      "location": "Line ~135, SCN-53",
+      "original": "She was terrified.",
+      "issue": "Direct emotion naming in narrative. Kaelith's voice fingerprint requires emotions expressed as physical events, not named. 'She was terrified' is telling before showing.",
+      "correction": "Removed 'She was terrified.' Restructured to 'Terror lived in her spine. In the muscles of her jaw. In the hyperawareness of every angle and distance and defensible position within thirty paces. Not about Lirien. About what choosing Lirien would mean.' — converts named emotion into physical inventory fragments, maintaining Kaelith's rhythm while showing terror through body locations.",
+      "status": "corrected"
+    },
+    {
+      "id": "DEV-002",
+      "severity": "minor",
+      "type": "Lirien-register vocabulary",
+      "location": "Line ~337, SCN-55",
+      "original": "Success probability: uncertain. Variables: too many.",
+      "issue": "'Probability' and 'variables' are Lirien's analytical vocabulary. Kaelith's tactical mind would use 'odds' and 'unknowns' — military estimation language, not statistical terminology.",
+      "correction": "Changed to 'Odds: poor. Too many unknowns.' — maintains inventory-mode rhythm while using Kaelith's military register.",
+      "status": "corrected"
+    },
+    {
+      "id": "DEV-003",
+      "severity": "minor",
+      "type": "Analytical qualifier",
+      "location": "Line ~169, SCN-54",
+      "original": "the specific quality of two people",
+      "issue": "'Specific' as a qualifier is analytical/Lirien-register. Kaelith does not modify observations with precision qualifiers — she states or shows.",
+      "correction": "Changed to 'the quality of two people' — cleaner, more direct, maintains Kaelith's blunt observation style.",
+      "status": "corrected"
+    },
+    {
+      "id": "DEV-004",
+      "severity": "minor",
+      "type": "Lirien-register phrasing",
+      "location": "Line ~192, SCN-54",
+      "original": "belief held without proof against the evidence of ambiguity",
+      "issue": "'Evidence of ambiguity' is Lirien's analytical framework — she thinks in terms of evidence, ambiguity, and classification. Kaelith would frame this more concretely.",
+      "correction": "Changed to 'belief held without proof against everything that could not be proven' — maintains the philosophical weight while using concrete language Kaelith would reach for.",
+      "status": "corrected"
+    },
+    {
+      "id": "DEV-005",
+      "severity": "minor",
+      "type": "Lirien-register vocabulary",
+      "location": "Line ~375, SCN-55 close",
+      "original": "the mission parameters were clear",
+      "issue": "'Parameters' is Lirien's vocabulary (operational parameters, variables). Kaelith would say 'the mission' or 'the mission requirements.'",
+      "correction": "Changed to 'the mission was clear' — simpler, more direct, appropriate for Kaelith's end-of-chapter declarative register. Also streamlined surrounding phrase for rhythm.",
+      "status": "corrected"
+    },
+    {
+      "id": "DEV-006",
+      "severity": "flaggedButAcceptable",
+      "type": "Water metaphor",
+      "location": "Line ~269, SCN-54",
+      "original": "like a current breaking through a dam",
+      "issue": "Water metaphor in Kaelith's POV — normally a violation of her structural-only metaphor domain. However, this instance is explicitly meta-aware: 'The word rose in Kaelith's mind unbidden, wrong, not hers — *current, dam, water* — and she let it stay. One water image. Lirien's influence, seeping through, and Kaelith did not shore it out.' This is an approved voice evolution marker per the character profile ('She begins using one or two water-adjacent metaphors unconsciously — a sign of Lirien's influence').",
+      "status": "acceptable — approved voice evolution, meta-aware"
+    },
+    {
+      "id": "DEV-007",
+      "severity": "flaggedButAcceptable",
+      "type": "Direct emotion naming in dialogue",
+      "location": "Line ~239, SCN-54",
+      "original": "'I am afraid.' / 'I am afraid that choosing love will put me back in Calwrath.'",
+      "issue": "Kaelith directly names fear and love in spoken dialogue. Her profile says she does not name emotions. However, this is Vulnerability Ladder Step 10 — the highest vulnerability in the book. The naming is narratively earned: she has never said this in six years. The preceding line acknowledges the breach: 'Kaelith heard the words leave her mouth. Short. Undefended. The voice underneath the commander.' The voice fingerprint's 'she never names emotions' is the DEFAULT — this moment is the deviation that proves the rule exists.",
+      "status": "acceptable — earned vulnerability apex, Step 10"
+    },
+    {
+      "id": "DEV-008",
+      "severity": "flaggedButAcceptable",
+      "type": "Qualifier usage",
+      "location": "Lines ~359, ~379",
+      "original": "'the particular stillness' / 'the particular stubbornness'",
+      "issue": "Kaelith's profile says she does not use qualifiers. 'Particular' appears twice. However: (1) 'the particular stillness of a soldier' is Kaelith categorizing someone through her military taxonomy — she recognizes types of stillness the way she recognizes types of fortification. (2) 'the particular stubbornness' is in the final reflective passage where voice softening is earned by Ch19's position in the arc.",
+      "status": "acceptable — military categorization pattern and late-arc softening"
+    }
+  ],
+  "sentenceLengthAnalysis": {
+    "totalSentences": "~466",
+    "shortPercentage": "52.5% (very short 1-2w + short 3-8w combined)",
+    "targetShortPercentage": "70% (3-8w) per voice fingerprint",
+    "assessment": "Below the 70% default target, but justified by chapter context. Ch19 is the reunion chapter where Kaelith's emotional defenses are breached throughout all three scenes. The voice fingerprint explicitly states: 'Occasional longer sentences surface only when she is processing something she cannot reduce to tactical assessment' and 'The shift from short to long signals that her emotional defenses are being breached.' The voice evolution notes add: 'Sentence length gradually increases in Lirien's presence.' Tactical passages (SCN-53 opening, SCN-55 planning) maintain shorter sentences. Emotional passages (reunion, vulnerability naming, bond opening) appropriately lengthen. The distribution is consistent with earned voice evolution at Ch19 of 22.",
+    "tacticalPassageCompliance": "Strong. Opening inventory ('Two exits. One road south.') and planning sequences maintain percussive short rhythm.",
+    "emotionalPassageCompliance": "Appropriate. Longer sentences cluster around emotional breach moments, exactly as the fingerprint predicts."
+  },
+  "vocabularyAudit": {
+    "militaryArchitecturalPresence": "Excellent. Dense military/architectural vocabulary throughout: 'load-bearing' (5), 'killing ground' (3), 'tactical' (12), 'doctrine' (4), 'garrison' (6), 'command' (14), 'assessment' (8), 'foundation' (11), 'structural' (6), 'keystone' (2), 'palisade' (4), 'fields of fire' (1), 'siege' (1). Kaelith thinks in fortification language as specified.",
+    "lirienVocabularyIncursions": "5 total, 2 corrected (probability/variables, mission parameters). 3 acceptable in context: 'classification' (intelligence briefing context), 'leverage' (describing Lirien's choices), 'seep' (proper noun and natural verb usage).",
+    "waterMetaphorCompliance": "One water metaphor present, explicitly flagged as Lirien-influence voice evolution marker with meta-awareness. No unacknowledged water imagery."
+  },
+  "metaphorAnalysis": {
+    "structuralMetaphors": "Rich and consistent. keystone (2), foundation (11), load-bearing (5), cracked (3), structure (10), structural (6), stone (8), weight (10), reinforce (3), arch (contextual), shore (1). Kaelith's internal world is built, not grown.",
+    "similes": "Appropriately sparse and structural: 'like a fist to the sternum,' 'like a siege stone,' 'like a compass finding north,' 'like a stone dropped into the foundation,' 'like a door that had been holding back pressure.' All structural/physical. One water simile ('like a current breaking through a dam') is the approved exception.",
+    "organicOrColorMetaphors": "None detected. Correct per fingerprint."
+  },
+  "emotionalRegisterAudit": {
+    "physicalEmotionShowing": "Strong. Emotions consistently rendered through body: jaw tightening (1), heat climbing neck (1), spine (1), sternum (1), collarbone ache (3), breath caught (1), cold in arm (2+), grip (1), stillness (7), weight (10). Kaelith's body is the primary emotional instrument.",
+    "showDontTellCompliance": "One violation corrected (DEV-001: 'She was terrified'). Post-correction, all emotions in narrative are shown through physical sensation or architectural metaphor. Emotion words in dialogue ('afraid,' 'love') are justified at Vulnerability Step 10.",
+    "bondEmotionTransmission": "Emotion words appearing in bond-related passages (grief, relief, fear) function as sensory data received through the bond mechanism, not as Kaelith naming her own feelings. This distinction is maintained throughout."
+  },
+  "sensorySignatureAudit": {
+    "tactileReferences": 75,
+    "visualReferences": 58,
+    "auditoryReferences": 56,
+    "assessment": "Tactile is dominant as required. Visual count elevated due to reunion scene necessitating sustained visual contact after weeks of separation — Kaelith seeing Lirien and reading her physically. Auditory secondary channel present through structural sounds and voice descriptions. Haptic-dominant signature maintained: textures (grain of stone, wood), temperatures (cold in arm, heat climbing neck), pressure (weight, heaviness), grip/release patterns all present.",
+    "dominantChannel": "Tactile — confirmed",
+    "emotionalAnchoringSensory": "Correct. Key emotional moments anchored in tactile/proprioceptive: 'hit like a fist to the sternum,' 'cold in her arm,' 'phantom ache at collarbone,' 'the weight applied,' 'a keystone finding its seat.'"
+  },
+  "voiceEvolutionAssessment": {
+    "chapterPosition": "19 of 22 — late Act III",
+    "earnedEvolutions": [
+      "Sentence length increases in Lirien's presence (SCN-54, SCN-55) — fingerprint predicted",
+      "One water metaphor with meta-awareness — fingerprint predicted",
+      "One non-tactical question ('Why?') — fingerprint predicted",
+      "Vulnerability naming in dialogue at Step 10 — character arc demands",
+      "Slightly more reflective internal passages in final paragraphs — earned by reconciliation"
+    ],
+    "preservedCore": [
+      "Tactical assessment priority maintained (room before people, every scene)",
+      "Military vocabulary dominant throughout",
+      "Physical emotion expression consistent",
+      "Inventory-mode fragments under stress present",
+      "No contractions in narrative emotional passages",
+      "Structural metaphor exclusivity (minus one approved exception)",
+      "Attention priority: exits → structure → threats → people"
+    ],
+    "verdict": "Voice evolution is organic and earned. The underlying architecture of Kaelith's voice remains intact while showing the specific softening axes the fingerprint predicts for late-story chapters in Lirien's presence."
+  },
+  "contrastWithChapter18": {
+    "distinctnessVerification": "Sharply distinct. Ch18 (Lirien) opens with classification notation, analytical self-interrogation, and water metaphors. Ch19 (Kaelith) opens with tactical inventory. The two chapters read as completely different minds: Lirien branches, cross-references, and annotates; Kaelith assesses, decides, and acts. Lirien's sentences flow and redirect; Kaelith's pound and declare. Lirien names emotions through classification ('I am experiencing X'); Kaelith shows them through body ('jaw tightened'). Lirien sees people first; Kaelith sees exits first.",
+    "sharedSceneDistinctness": "In SCN-54 where both are present, the prose remains firmly Kaelith's: she reads Lirien's body tactically (exhaustion, weight distribution, equipment) before reading her face. The dialogue exchange shows Kaelith's short responses testing Lirien's longer presentations. Bond-transmitted emotion from Lirien is processed through Kaelith's physical register.",
+    "crossContaminationCheck": "Five minor vocabulary incursions detected and addressed. No structural cross-contamination. The two voices are immediately distinguishable."
+  },
+  "invariantCompliance": {
+    "INV-003": "PASS — Voice sharply distinct from Lirien across all three scenes. Vocabulary, rhythm, metaphor domain, emotional register, thought patterns, and attention priority all differentiated.",
+    "INV-005": "PASS (post-correction) — One telling instance corrected. All emotions now shown through physical sensation or structural metaphor in narrative. Dialogue emotion naming at Step 10 justified.",
+    "INV-015": "PASS — Voice consistent across SCN-53, SCN-54, SCN-55 with appropriate evolution under emotional pressure.",
+    "INV-023": "PASS — All prose original. No recognizable borrowed phrases or patterns.",
+    "INV-034": "PASS — Kaelith identifiable within first 2 words ('Two exits.').",
+    "INV-055": "PASS — Voice measured against all fingerprint parameters: vocabulary (structural/military), sentence length (appropriate for context), metaphor density (low, structural), emotional register (suppressed-to-physical), thought patterns (tactical-first).",
+    "INV-064": "PASS — Tactile sensory channel dominant. Emotional moments anchored in touch, temperature, pressure, weight.",
+    "INV-072": "PASS — POV transition motivated by narrative necessity (need Kaelith's perspective on whether to accept Lirien)."
+  }
+}

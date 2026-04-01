@@ -1,0 +1,264 @@
+{
+  "storyId": "001",
+  "chapterId": "005",
+  "revisionAgent": "chapter-reviser",
+  "createdAt": "2025-07-25T10:30:00Z",
+  "sourceFindings": {
+    "developmental": ["DEV-005-001", "DEV-005-002", "DEV-005-003", "DEV-005-004", "DEV-005-005", "DEV-005-006"],
+    "line": ["LINE-005-001", "LINE-005-002", "LINE-005-003", "LINE-005-004", "LINE-005-005", "LINE-005-006", "LINE-005-007", "LINE-005-008"],
+    "copy": ["COPY-005-001", "COPY-005-002", "COPY-005-003", "COPY-005-004", "COPY-005-005", "COPY-005-006", "COPY-005-007", "COPY-005-008"]
+  },
+  "changes": [
+    {
+      "id": "REV-005-001",
+      "findingIds": ["COPY-005-001", "COPY-005-003", "COPY-005-004"],
+      "type": "arithmetic-fix",
+      "description": "Corrected all date arithmetic throughout Scene 1. 'Fifteen years' replaced with 'forty years' (matching Lirien's Ch4 disclosure). 'Year of the Keep 707' context corrected: YK 704-709 is ~38 years ago, not 15. Removed incorrect relative dates ('Five years before Kaelith's exile,' 'Eleven years before the first Pallor tear') and replaced with accurate phrasing. Changed 'twelve years ago' to 'over thirty years ago.' Changed 'Fifteen years of systematic suppression' to 'Decades of systematic suppression.' Changed 'every garrison commander for the past fifteen years' to 'past thirty-five years.'",
+      "details": [
+        {
+          "section": "Scene 1, archive search motivation",
+          "original": "Pallor degradation reports suppressed for fifteen years",
+          "revised": "forty years of sabotage, embedded in the maintenance rites"
+        },
+        {
+          "section": "Scene 1, date calculation paragraph",
+          "original": "Fifteen years. That would be Year of the Keep 707. Five years before Kaelith's exile. Eleven years before the first Pallor tear she'd witnessed personally.",
+          "revised": "Lirien had said forty years. That would place the degradation's start around Year of the Keep 702 — nearly four decades ago. Long before Kaelith's exile. Long before the first Pallor tear she'd witnessed with her own eyes."
+        },
+        {
+          "section": "Scene 1, suppression conclusion",
+          "original": "Fifteen years of systematic suppression.",
+          "revised": "Decades of systematic suppression."
+        },
+        {
+          "section": "Scene 1, commander rotation paragraph",
+          "original": "Every garrison commander for the past fifteen years",
+          "revised": "Every garrison commander for the past thirty-five years"
+        },
+        {
+          "section": "Scene 1, Helric conclusion",
+          "original": "twelve years ago",
+          "revised": "over thirty years ago"
+        }
+      ]
+    },
+    {
+      "id": "REV-005-002",
+      "findingIds": ["DEV-005-001", "COPY-005-002"],
+      "type": "continuity-restructure",
+      "description": "Completely restructured Scene 2 (Lirien confrontation) to build on Chapter 4's disclosures rather than re-reveal them. In Ch4, Lirien already disclosed: kill contract existence, Pallor sabotage (40 years), Warden-lineage capacity, kinetic memory, Quietus, basic stakes. The revised Scene 2 has Kaelith reference her Ch4 knowledge ('You told me enough to secure my cooperation. The Pallor. The Quietus. My supposed capacity. But you held back.') and Lirien reveal NEW information: (1) the contract is a physiological binding, not just a mission; (2) Lirien consumed Kaelith's blood during the ceremony; (3) the Lessening awaits if Lirien fails; (4) the full paradox articulated: killing Kaelith = seal lost = world ends, but not killing = binding destroys Lirien. Kaelith's responses reflect knowledge she already has while processing the deepening.",
+      "details": [
+        {
+          "section": "Scene 2, opening dialogue",
+          "original": "'There is a kill contract,' she said. 'On you. I was sent to execute it.' (presented as new revelation)",
+          "revised": "Kaelith references archives verification, Lirien acknowledges; Kaelith says 'You left things out. In the tavern.' — establishing that prior disclosure occurred and this is the deeper layer."
+        },
+        {
+          "section": "Scene 2, Lirien's disclosure",
+          "original": "Kill contract, Quietus, kinetic memory re-explained as fresh information",
+          "revised": "NEW information only: 'The kill contract is not merely a mission I chose not to execute. It is a binding. Fae construct. The Cerith Court built obligation into my physiology during the assignment ceremony. I consumed your blood.' — the binding mechanism, blood ceremony, and Lessening consequence."
+        },
+        {
+          "section": "Scene 2, paradox articulation",
+          "original": "'So the kill contract is a paradox. You kill me, the seal is lost. You don't kill me, you fail the contract.'",
+          "revised": "'I was sent to kill the only person who can prevent civilizational collapse. If I complete the contract, the world ends. If I do not complete it, the binding destroys me. There is no resolution that preserves both outcomes.' — Lirien articulates the full paradox, building on the framework Kaelith already understood from Ch4."
+        }
+      ]
+    },
+    {
+      "id": "REV-005-003",
+      "findingIds": ["LINE-005-001"],
+      "type": "inv-005-compliance",
+      "description": "Replaced direct emotion labeling with somatic/physical registration per Kaelith's voice fingerprint (suppressed-to-physical emotional register). The original named the emotion ('felt too much'); the revision conveys it through jaw tension, heat propagation, rib pressure, and breathing discipline.",
+      "details": [
+        {
+          "section": "Scene 2, after learning about the binding",
+          "original": "Not because she didn't feel anything. Because she felt too much and the only way to function was to compress it all into something hard and small she could carry.",
+          "revised": "Kaelith's jaw locked. Heat climbed her neck, settled behind her sternum, pressed outward against ribs that would not give. She breathed through it the way she breathed through the brand — controlled, compressed into something the body could carry even when the mind could not."
+        }
+      ]
+    },
+    {
+      "id": "REV-005-004",
+      "findingIds": ["LINE-005-002"],
+      "type": "metaphor-domain-fix",
+      "description": "Replaced organic/botanical metaphor ('branch snapping') with structural domain metaphor ('mortar cracking under load') per Kaelith's established voice fingerprint. Her metaphors draw from architecture, masonry, structural engineering — not organic/natural imagery.",
+      "details": [
+        {
+          "section": "Scene 2, Kaelith's laugh",
+          "original": "The sound cut off like a branch snapping.",
+          "revised": "The sound broke clean, like mortar cracking under load."
+        }
+      ]
+    },
+    {
+      "id": "REV-005-005",
+      "findingIds": ["LINE-005-003"],
+      "type": "cliché-replacement",
+      "description": "Replaced stock wound metaphor ('the wound that wouldn't heal') with fresh membrane imagery that connects to the Pallor's established mechanics and avoids the high-frequency cliché.",
+      "details": [
+        {
+          "section": "Scene 3, Pallor description",
+          "original": "tearing and mending, tearing and mending, the wound that wouldn't heal because someone wanted it that way",
+          "revised": "tearing and mending, tearing and mending — membrane stretched too thin, sutured by forces too tired to hold and reopened by something too patient to stop"
+        }
+      ]
+    },
+    {
+      "id": "REV-005-006",
+      "findingIds": ["LINE-005-004"],
+      "type": "metaphor-precision",
+      "description": "Replaced generic metaphor ('The walls pressed in like a question she couldn't answer') with Kaelith's characteristic dimensional measurement habit. The room doesn't press in abstractly — she knows its exact dimensions, and they are concretely insufficient.",
+      "details": [
+        {
+          "section": "Scene 2, after paradox articulation",
+          "original": "The room felt smaller. The walls pressed in like a question she couldn't answer.",
+          "revised": "The room felt smaller. Eight feet by ten. The same dimensions as always. They were not enough."
+        }
+      ]
+    },
+    {
+      "id": "REV-005-007",
+      "findingIds": ["DEV-005-002", "LINE-005-005"],
+      "type": "pacing-restructure",
+      "description": "Restructured Scene 3 to interleave reflective paragraphs with physical packing actions. The original stacked seven consecutive reflective paragraphs. The revision alternates: pack rations → reflect on necessity → test knife → reflect on exile → roll cloak → reflect on the world following her → pack → sit and process. No more than two reflective paragraphs appear between physical action beats.",
+      "details": [
+        {
+          "section": "Scene 3, full section",
+          "original": "Seven consecutive reflective paragraphs from 'She was not expendable...' through '...same structure.'",
+          "revised": "Packing interleaved: 'Rations first. Dried meat, travel biscuit...' → 'Being expendable meant...' → 'She tested the knife's edge...' → 'The canteen. The garrison-issued cloak...' → 'Command. Decisions...' → 'She packed efficiently...' Each physical beat resets the reader's attention."
+        }
+      ]
+    },
+    {
+      "id": "REV-005-008",
+      "findingIds": ["LINE-005-006"],
+      "type": "repetition-trim",
+      "description": "Reduced counting motif instances from approximately eight to six. Retained: (1) 'counted ten breaths' after brand flare, (2) 'Eight visible joints in the masonry' during confrontation, (3) implicit counts in step measurements (forty-three, seventeen), (4) 'Forty-three stones visible' in final reflection. Removed: intermediate counting instances that had become tic rather than pattern. Varied remaining instances between active counting and dimensional observation.",
+      "details": [
+        {
+          "section": "Throughout chapter",
+          "original": "~8 instances of active counting motif",
+          "revised": "~6 instances: 'counted ten breaths' (Scene 1), 'Eight visible joints' (Scene 2), 'Forty-three steps... Seventeen more' (Scene 1 close), 'Four days if she rationed' (Scene 3), 'Forty-three stones visible' (Scene 3 close), plus characteristic dimensional observations"
+        }
+      ]
+    },
+    {
+      "id": "REV-005-009",
+      "findingIds": ["LINE-005-007"],
+      "type": "voice-refinement",
+      "description": "Added Lirien-specific verbal markers to her dialogue in the confrontation scene. Added 'Noted' as a single-word confirmation (her characteristic monosyllabic acknowledgment). Added 'The calculus has changed since the tavern' (her tactical-mathematical framing pattern). Preserved 'I am experiencing a fear response' which was already present and correctly deployed.",
+      "details": [
+        {
+          "section": "Scene 2, archive confirmation",
+          "original": "(generic acknowledgment)",
+          "revised": "'Noted.' A single word, carrying confirmation without surprise."
+        },
+        {
+          "section": "Scene 2, binding disclosure",
+          "original": "(missing calculus framing)",
+          "revised": "'The calculus has changed since the tavern. I did not disclose the binding because the information was not yet operationally necessary.'"
+        }
+      ]
+    },
+    {
+      "id": "REV-005-010",
+      "findingIds": ["LINE-005-008"],
+      "type": "show-dont-tell",
+      "description": "Replaced telling construction ('refusing to flinch') with observation filtered through Kaelith's characteristic structural-reading lens. Kaelith reads people the way she reads walls — looking for structural strain.",
+      "details": [
+        {
+          "section": "Scene 2, Lirien jaw tension",
+          "original": "Lirien stood like stone — immovable, exact, refusing to flinch. But her hands weren't quite steady.",
+          "revised": "Something shifted in her jaw — a tightening that would have been invisible to anyone who hadn't spent six years reading structural strain in walls and people."
+        }
+      ]
+    },
+    {
+      "id": "REV-005-011",
+      "findingIds": ["DEV-005-003"],
+      "type": "scene-boundary",
+      "description": "Added a physical processing beat between the binding/Lessening reveal and the full paradox articulation. Kaelith presses her palms against the wall, counts masonry joints, and waits for the emotional intensity to settle before the conversation continues. This creates internal separation between the two revelatory moments.",
+      "details": [
+        {
+          "section": "Scene 2, between binding reveal and paradox",
+          "original": "(continuous dialogue flow from binding to paradox)",
+          "revised": "Kaelith pressed her palms flat against the wall behind the cot. Cold stone. Solid. Real. Eight visible joints in the masonry she could reach. She held them there until the heat in her chest settled into something she could think through."
+        }
+      ]
+    },
+    {
+      "id": "REV-005-012",
+      "findingIds": ["DEV-005-004", "COPY-005-005"],
+      "type": "continuity-bridge",
+      "description": "Added departure plan change explanation. Ch4 ended with agreement to board a smuggler boat. Ch5 now opens with Kaelith at the archives instead of the port ('She should have been at the port'), and Lirien arrives with intelligence that the harbor is compromised ('Harbor patrol increased within the hour — Conclave dispatches to the port authority'). They shift to the eastern gate on foot, bridging to Ch6's overland departure.",
+      "details": [
+        {
+          "section": "Scene 1, archive motivation",
+          "original": "(no reference to boat plan)",
+          "revised": "She should have been at the port. The boat left in three hours — Lirien's boat, Lirien's plan, the plan Kaelith had agreed to before she'd had time to think about what agreeing meant. But she'd come here instead."
+        },
+        {
+          "section": "Scene 2, opening exchange",
+          "original": "(no departure plan change)",
+          "revised": "'Compromised. Harbor patrol increased within the hour — Conclave dispatches to the port authority. Someone flagged departure manifests.' ... 'We leave by the eastern gate. On foot. Before dawn.'"
+        }
+      ]
+    },
+    {
+      "id": "REV-005-013",
+      "findingIds": ["DEV-005-005"],
+      "type": "crisis-dramatization",
+      "description": "Added a beat where Kaelith explicitly considers whether the archive evidence could have been fabricated by Lirien — the SCN-013 crisis point ('Accept Lirien's information as truth, or assume manipulation?'). She evaluates the physical evidence: paper age, ink oxidation, compression marks in margins, natural handwriting variation. Concludes: 'You could fake content. You couldn't fake thirty-five years of material decay.'",
+      "details": [
+        {
+          "section": "Scene 1, after reading YK 707 reclassification order",
+          "original": "(evidence accepted without dramatized crisis)",
+          "revised": "She paused. Considered the alternative: that the documents had been planted. Positioned in an archive Lirien knew Kaelith would search, placed to confirm exactly what Lirien wanted confirmed. [...] But the paper was brittle with age. The ink had oxidized to brown. [...] You could fake content. You couldn't fake thirty-five years of material decay."
+        }
+      ]
+    },
+    {
+      "id": "REV-005-014",
+      "findingIds": ["DEV-005-006"],
+      "type": "vulnerability-ladder",
+      "description": "Added a body-resistance paragraph to the packing scene, strengthening the vulnerability ladder step 2 cost. Kaelith's body resists the decision her mind has already made — showing the physical effort of accepting that she cannot solve this alone. Her compulsive motion (wanting to recheck, repack, retest) dramatizes her self-sufficiency defense (IR-K-02) being overcome.",
+      "details": [
+        {
+          "section": "Scene 3, after packing complete",
+          "original": "When she was done, she sat on the cot with the pack at her feet and waited for dawn.",
+          "revised": "When she was done, she sat on the cot with the pack at her feet. / Her body resisted the sitting. It wanted to move — to unlace the pack, recheck the rations, test the knife again. The compulsive motion of someone who solved problems by working and had just been told the problem was too large for work alone. [...] She gripped the edge of the cot. Held on until her knuckles whitened. Then let go."
+        }
+      ]
+    },
+    {
+      "id": "REV-005-015",
+      "findingIds": ["COPY-005-008"],
+      "type": "continuity-awareness",
+      "description": "Added Kaelith's awareness of Tavik's complicity per Ch3 discovery. She references his Conclave communications when describing her prior visits to the archives, showing she has not compartmentalized this knowledge.",
+      "details": [
+        {
+          "section": "Scene 1, archive familiarity paragraph",
+          "original": "Once to repair a collapsed shelf that Tavik had been ignoring for six months.",
+          "revised": "Once to repair a collapsed shelf that Tavik had been ignoring for six months — Tavik, who'd been sending encoded dispatches to the Conclave the entire time she'd been fixing his shelves."
+        }
+      ]
+    }
+  ],
+  "findingsNotAddressed": [
+    {
+      "id": "COPY-005-006",
+      "reason": "Cross-reference note only. Commander Helric is a historical character referenced through documents. No textual change required; flagged for continuity tracker registration."
+    },
+    {
+      "id": "COPY-005-007",
+      "reason": "Verification finding — 'six years in the Ashborne Legion' confirmed consistent with CHAR-001 profile. No change required."
+    }
+  ],
+  "wordCountChange": {
+    "original": 4173,
+    "revised": 4247,
+    "delta": 74
+  },
+  "revisionSummary": "Major revision addressing 2 critical continuity errors (date arithmetic, Ch4 re-revelation), 5 major findings (metaphor domain, INV-005, cliché, paragraph stacking, departure continuity), and 8 minor/suggestion findings. The most substantial change was the complete restructuring of Scene 2 to build on Chapter 4's disclosures rather than repeat them. Scene 3 was reorganized to interleave reflective passages with physical packing actions. Date arithmetic corrected throughout to align with world-bible timeline (YK 742 current year, Pallor poisoning ~YK 702, suppression order YK 707)."
+}

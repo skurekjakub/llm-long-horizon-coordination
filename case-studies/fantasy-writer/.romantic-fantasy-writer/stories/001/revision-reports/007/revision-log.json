@@ -1,0 +1,114 @@
+{
+  "chapterNumber": 7,
+  "revisionTimestamp": "2025-07-27T14:30:00Z",
+  "wordCountBefore": 4255,
+  "wordCountAfter": 4448,
+  "findingsAddressed": [
+    {
+      "findingId": "DEV-007-001",
+      "action": "reviewed — no change needed",
+      "description": "Developmental editor flagged 'Six years since she had climbed' as a continuity error, claiming exile duration is five years. However, CHAR-001.json consistently states 'six years of exile' across multiple fields, and Chapter 6's revision log (COPY-006-004) explicitly corrected 'five years' TO 'six years' to match canonical timeline. The draft's 'six years' is correct. No change applied."
+    },
+    {
+      "findingId": "DEV-007-002",
+      "action": "applied",
+      "description": "Softened the Quietus foreshadowing plant in the blindfolded climbing revelation. Removed the explicit statement 'The blindfolded route-training was where the Quietus path had been encoded' and 'She had just told Lirien the mechanism.' Replaced with implicit unease: 'The words felt heavier than technique should warrant, though she could not say why. Some instinct she could not name suggested she had revealed more than a training method.' The breadcrumb now functions through reader retrospection rather than authorial exposition."
+    },
+    {
+      "findingId": "DEV-007-003",
+      "action": "applied",
+      "description": "Strengthened architectural metaphor distribution across all three scenes. Scene 1: added curtain-wall comparison when reading fracture patterns ('She read the fracture pattern as she would read cracks in a curtain wall: stress lines, load distribution'). Scene 2: proximity metaphor now uses architectural language ('constant load found every weak joint in a wall'). Scene 3: closing proximity metaphor uses 'load-bearing wall' construction. Total architectural metaphors now ~7 across 3 scenes (2-3 per scene), up from 4, within voice density guidelines."
+    },
+    {
+      "findingId": "DEV-007-004",
+      "action": "applied",
+      "description": "Sharpened climbing stakes through accumulated compromise. Added micro-failure at twelve feet ('a hold she tested shifted beneath her fingers — not a break, just enough movement to signal that the rock was less stable than its surface suggested'). Made shoulder injury more debilitating after the fall ('grip strength on the right side had halved') with explicit load-transfer consequence ('every pull required her left arm to carry load the right could no longer sustain'). The overhang now feels like the culmination of accumulated weakness."
+    },
+    {
+      "findingId": "DEV-007-005",
+      "action": "applied",
+      "description": "Added fantasy arc presence to Scene 3 (personal question scene). After Kaelith's blindfolded climbing answer, added: 'Overhead, the Pallor seemed to pulse — a faint brightening that might have been her imagination. Her hands pressed flat against the ground, fingers restless, wanting to move through patterns she did not recognize. The sensation passed.' This hints at kinetic restlessness (pre-Quietus awareness) while maintaining Pallor ambient presence."
+    },
+    {
+      "findingId": "DEV-007-006",
+      "action": "applied",
+      "description": "Developed rope as symbolic motif. Added moment during rope-up: 'Forty feet of shared risk. When she tied them together, each became the other's anchor or the other's weight.' Added moment at coiling: 'The coiled weight settled against her spine — heavier than forty feet of line should warrant.' Rope now functions as early motif for connection/mutual dependence without overwriting the realism."
+    },
+    {
+      "findingId": "LINE-007-001",
+      "action": "applied",
+      "description": "CRITICAL. Replaced water metaphor 'proximity eroded refusal the way water eroded stone. Slowly. Inevitably.' with architectural metaphor from Kaelith's domain: 'proximity compromised refusal the way constant load found every weak joint in a wall. Stress by stress.' Maintains the 'foundation shifted' payoff line. No water imagery in Kaelith's voice."
+    },
+    {
+      "findingId": "LINE-007-002",
+      "action": "applied",
+      "description": "CRITICAL. Replaced second water metaphor 'proximity was eroding safety the way water eroded stone. Slowly. Inevitably.' with architectural: 'proximity was testing every load-bearing wall she had built. Stress by stress. Relentlessly.' Eliminates the identical phrasing repetition while maintaining structural metaphor consistency."
+    },
+    {
+      "findingId": "LINE-007-003",
+      "action": "applied",
+      "description": "Converted direct emotional labeling 'This was attraction. Unwanted. Undeniable. Structurally compromising.' to embodied sensation: 'Heat gathered beneath her sternum — unwanted, undeniable, compromising every defensive position she had built.' Maintains the three-beat rhythm and the 'compromising' payoff while grounding the moment in Kaelith's tactile sensory signature."
+    },
+    {
+      "findingId": "LINE-007-004",
+      "action": "applied",
+      "description": "Replaced two water-adjacent metaphors. 'like the underside of a breaking wave' → 'like an inverted arch with no keystone — all compression, no purchase' (architectural). 'collapsed in ways rope could not measure' → 'collapsed in ways no engineer could quantify' (engineering domain). Both replacements stay within Kaelith's established metaphor territory."
+    },
+    {
+      "findingId": "LINE-007-005",
+      "action": "applied",
+      "description": "Broke 31-word sentence into Kaelith's staccato rhythm. 'She looked tired. Not physically exhausted, but tired in the way operatives got tired when the mission exceeded the parameters they had been trained to handle.' → 'She looked tired. Not physically. The exhaustion that came when a mission exceeded all trained parameters.' Also eliminates a 'the way' repetition and an 'operatives' usage."
+    },
+    {
+      "findingId": "LINE-007-006",
+      "action": "applied",
+      "description": "Reduced 'the way' construction from 13 instances to 3. Retained 2 instances of 'the way Kaelith read fortifications' (line 50 as establishment, line 306 as deliberate echo when Lirien reads Kaelith — the structural parallel is intentional). Retained 1 instance in the architectural proximity metaphor replacement. Other 10 instances replaced with varied constructions: 'as', 'how', 'like', direct restructuring, or eliminated through sentence rewriting."
+    },
+    {
+      "findingId": "LINE-007-007",
+      "action": "applied",
+      "description": "Converted direct emotional statement 'She was attracted to this woman. The attraction was a liability.' to embodied/structural: 'Heat built in her chest when she looked at Lirien. A flaw in her defenses — structural, load-bearing — that she could not locate to reinforce.' Uses both Kaelith's tactile sensory channel (heat in chest) and her architectural metaphor domain (structural flaw)."
+    },
+    {
+      "findingId": "LINE-007-008",
+      "action": "applied",
+      "description": "Deepened dialogue subtext in the competence exchange. Changed 'And I am?' / 'Competent.' to 'And what does yours find when it turns on me?' with narrative note 'Something in Lirien's voice had shifted — lighter, probing, carrying a question underneath the question.' Kaelith's response now carries visible weight: ''Competent.' The word felt insufficient. She did not correct it.' The exchange now operates on two layers per T24 subtext requirements."
+    },
+    {
+      "findingId": "LINE-007-009",
+      "action": "applied",
+      "description": "Reduced operative/operational word family from ~8 distinctive instances to 2 retained ('operational awareness' at watch change, 'operations' in dialogue — both contextually appropriate). Replacements: 'Operative pattern recognition' → 'Pattern recognition from someone trained to read people'; 'Operatives climbed walls' → 'Agents climbed walls'; 'Operatives learned' → 'Field agents learned'; 'operative stillness' → 'trained stillness'; 'operative's assessment-focus' → 'trained assessment-focus'; 'operative conditioning' → 'professional conditioning'; 'operationally necessary' → 'tactically necessary'; 'operative's mind' → 'her mind'; 'operational intelligence gathering' → 'intelligence extraction'."
+    },
+    {
+      "findingId": "LINE-007-010",
+      "action": "applied",
+      "description": "Replaced mixed metaphor 'smooth granite curving away from her like the underside of a breaking wave' with architectural domain metaphor 'smooth granite curving away from her like an inverted arch with no keystone — all compression, no purchase.' Subsumed into LINE-007-004 fix."
+    },
+    {
+      "findingId": "COPY-007-001",
+      "action": "applied",
+      "description": "Softened implication that Kaelith consciously understands she revealed the Quietus mechanism. Removed 'She had just told Lirien the mechanism. Without meaning to. Without realizing the words would reveal more than technique.' Replaced with: 'She had spoken without thinking. The words felt heavier than technique should warrant, though she could not say why. Some instinct she could not name suggested she had revealed more than a training method — that the connection between blindfolded climbing and muscle memory mattered in ways her conscious mind had not yet mapped.' Kaelith now experiences intuitive unease without conscious knowledge of the kinetic memory's strategic significance, consistent with her Ch7 information state."
+    },
+    {
+      "findingId": "COPY-007-002",
+      "action": "applied",
+      "description": "Corrected rope purchase context. Changed 'purchased in Veldrane with coin she could not afford to spend' to 'purchased in Duskhaven with coin she could not afford to spend.' Aligns with continuity tracker showing they traveled toward Veldrane without stopping, and Kaelith's foresight in acquiring supplies before departure."
+    },
+    {
+      "findingId": "COPY-007-003",
+      "action": "applied",
+      "description": "Corrected Pallor night visibility. Changed 'The Pallor overhead was invisible in the darkness but its presence was a weight Kaelith felt even without seeing it' to 'The Pallor overhead was barely visible — a faint silver gleam that might have been clouds to someone who had never seen it clearly — but its presence was a weight Kaelith felt even when she could not trace its edges.' Consistent with magic-system.json description of the Pallor as a visible silver membrane."
+    },
+    {
+      "findingId": "COPY-007-004",
+      "action": "reviewed — no change required",
+      "description": "Timeline verification note confirming Day 4 afternoon camp timing is consistent with story chronology. No text change needed. Noted for continuity tracking."
+    },
+    {
+      "findingId": "COPY-007-005",
+      "action": "applied",
+      "description": "Updated YAML frontmatter wordCount to 4448 to reflect actual prose word count of revised chapter."
+    }
+  ],
+  "summary": "Revised Chapter 7 addressing all 21 findings across three editorial reports. All 2 critical findings applied (water metaphor voice violations LINE-007-001, LINE-007-002 → replaced with architectural domain metaphors). All 6 major findings applied (foreshadowing subtlety DEV-007-002, metaphor density DEV-007-003, show-don't-tell LINE-007-003, water metaphors LINE-007-004, sentence rhythm LINE-007-005, repetition pattern LINE-007-006). All 6 minor findings addressed (climbing stakes DEV-007-004, fantasy arc presence DEV-007-005, embodied emotion LINE-007-007, dialogue subtext LINE-007-008, word repetition LINE-007-009, information asymmetry COPY-007-001, rope purchase COPY-007-002). All 5 suggestions applied (rope symbolism DEV-007-006, granite metaphor LINE-007-010, Pallor visibility COPY-007-003, word count COPY-007-005) except COPY-007-004 (informational, no change needed). DEV-007-001 reviewed but not applied — the 'six years' figure is correct per CHAR-001.json and Chapter 6's revision history. Word count increased from 4255 to 4448 (+193 words) due to micro-failure addition, rope symbolism, Pallor/kinetic restlessness beat, and deepened dialogue. Voice marker density verified: 3 'the way' instances (down from 13), 2 operative-family words (down from 8), ~7 architectural metaphors across 3 scenes (within 1-2 per section guideline). No new clichés introduced; no banned phrases present."
+}

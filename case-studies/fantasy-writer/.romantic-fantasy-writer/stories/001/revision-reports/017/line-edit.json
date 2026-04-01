@@ -1,0 +1,198 @@
+{
+  "chapter": 17,
+  "title": "Load-Bearing Walls",
+  "pov": "CHAR-001",
+  "povName": "Kaelith Maren",
+  "agent": "line-editor",
+  "timestamp": "2025-07-30T15:30:00Z",
+  "verdict": "revision-required",
+  "verdictRationale": "Chapter 17 delivers strong emotional architecture for the Black Moment aftermath, with an excellent combat scene, effective MRU structure, and zero banned-phrase or standard cliché violations. However, severe voice marker saturation in the structural/architectural metaphor domain — approximately 45+ instances across 379 lines — transforms what should be distinctive character seasoning into a pervasive tic that reads as a voice checklist. Word-level repetition of 'grief' (28×), 'bond' (27×), 'wall' (14×), and 'cage' (9×) compounds the saturation effect. The closing section (L323-379) restates emotional ground already covered rather than advancing. Three critical findings, four major findings, and eight minor findings require revision before the chapter meets the prose quality floor.",
+  "findingCounts": {
+    "critical": 3,
+    "major": 4,
+    "minor": 8,
+    "total": 15
+  },
+  "findings": [
+    {
+      "id": "LINE-001",
+      "severity": "critical",
+      "category": "repetition",
+      "description": "Voice marker saturation — architectural/structural metaphors. The chapter contains approximately 45+ structural metaphors (wall, cage, architecture, load-bearing, framework, foundation, subsidence, fortification, corridor, rubble, cracks, shoring, buckle, collapse, structure, settling). The character voice fingerprint explicitly warns: 'Architectural metaphors should be sparse enough to land when they arrive rather than becoming a predictable tic' and 'If the voice markers are identifiable on every page, the voice is likely over-applied. Seasoning, not the main ingredient.' At current density (~1 structural metaphor every 8-10 lines), the reader cannot go a single paragraph without encountering one. The chapter title 'Load-Bearing Walls' naturally invites the domain, but the prose must still function as prose first and voice signal second. When every emotional beat is filtered through architectural language, the metaphors lose their power and the voice becomes a dialect rather than a tendency.",
+      "lineRef": { "start": 37, "end": 375 },
+      "suggestedFix": "Reduce structural metaphors by approximately 50-60%. Retain the strongest instances — the load-bearing wall extended metaphor (L157-159, L177), the subsidence/foundations pair (L181), and the 'stones falling into a foundation' moment (L303) — and convert the rest to plain, direct prose. Many occurrences use 'wall' literally (the bond wall, the emotional wall) when the concept could be expressed differently: 'barrier,' 'distance,' 'silence,' or simply described through action (she pushed the bond away, she refused the connection). Reserve 'cage' for 2-3 key instances rather than 9. Let architectural imagery arrive at emotional peaks and trust plain language between them."
+    },
+    {
+      "id": "LINE-002",
+      "severity": "critical",
+      "category": "repetition",
+      "description": "Word-level repetition: 'grief' appears 28 times, 'bond' 27 times, 'wall' 14 times, and 'cage' 9 times across a ~5000-word chapter. While grief and the bond are the chapter's core concerns, the repetition crosses from thematic emphasis into verbal monotony. 'Grief' averages one appearance every 175 words. 'Bond' averages one every 185 words. A reader will notice these words recurring long before the chapter ends, which undercuts the emotional impact — the word becomes wallpaper rather than meaning.",
+      "lineRef": { "start": 37, "end": 375 },
+      "suggestedFix": "For 'grief': reduce to ~15-18 instances by using specific alternatives in appropriate contexts — 'the weight,' 'what Lirien carried,' 'the ache,' 'the loss,' 'what came through,' or simply describing the grief's physical effect on Kaelith without naming it. For 'bond': reduce to ~15-18 instances by using 'the connection,' 'the resonance,' 'it' (when referent is clear), or describing the experience rather than naming the mechanism ('she could feel Lirien' rather than 'the bond transmitted'). For 'wall': reduce to ~6-8 instances — keep it where the wall metaphor genuinely earns its place; elsewhere use 'barrier,' 'distance,' 'what she had put between them,' or simply show Kaelith's refusal through action. For 'cage': reduce to 3-4 instances at the most resonant moments."
+    },
+    {
+      "id": "LINE-003",
+      "severity": "critical",
+      "category": "voice",
+      "description": "Architectural metaphor pileup in a single sentence. Line 141 stacks five structural images in one construction: 'the quality of a structure failing — walls coming down, load-bearing elements giving way, the controlled architecture of an operative collapsing into something raw and unshaped.' Each individual image is effective; massed together they create a voice-checklist effect. The sentence reads as if the drafter is demonstrating Kaelith's metaphor domain rather than using it. This is the densest concentration of voice markers in the chapter and exemplifies the saturation problem.",
+      "lineRef": { "start": 141, "end": 141 },
+      "suggestedFix": "Choose one structural image and commit to it. For example: 'It had the quality of a structure failing — everything load-bearing giving way at once, collapsing into something raw and unshaped.' Or go non-metaphorical: 'This grief had no precision. It had no edges, no containment. The discipline that had held Lirien together since Duskhaven had simply stopped.' Let the reader supply the architectural association from context."
+    },
+    {
+      "id": "LINE-004",
+      "severity": "major",
+      "category": "show-tell",
+      "description": "Theme stated directly rather than dramatised. Lines 339-340: 'The contract was not a lie that erased the feelings; it was a cage that had contained them. And cages could hold genuine things. Cages could hold love.' This articulates the chapter's thematic insight as a maxim. The style guide prohibits 'metaphors that announce theme instead of embodying it.' Kaelith, who is not yet ready for this conversation and who lies to herself about her motivations (per her character profile), should not arrive at this clarity of thematic statement mid-walk. The insight should be earned through the reunion scene, not pre-articulated in narration.",
+      "lineRef": { "start": 339, "end": 340 },
+      "suggestedFix": "Replace the explicit thematic statement with Kaelith's resistance to it. Show her arriving at the edge of this thought and then deflecting — e.g., 'Both things could be true. She was not ready to think about what that meant.' Or show the insight physically: she tries to clench her left fist, cannot because of the silver, and the failed grip stands as the image for what she cannot hold together. Let the reader assemble the thematic meaning from the dramatised moment."
+    },
+    {
+      "id": "LINE-005",
+      "severity": "major",
+      "category": "show-tell",
+      "description": "Epiphany delivered as aphorism. Lines 309: 'Need did not make you weak. Need made you vulnerable. Weakness and vulnerability were not the same thing. Kaelith had confused them for six years, and the confusion had passed for wisdom, and the wisdom had nearly killed her.' This is four sentences of direct thematic statement, reading more like an essay conclusion than close-third introspection. The distinction between weakness and vulnerability is the central insight of Kaelith's arc — it deserves dramatisation, not declaration. The style guide marks 'therapy-speak in narration' as something to avoid; 'the confusion had passed for wisdom' crosses into that territory.",
+      "lineRef": { "start": 309, "end": 309 },
+      "suggestedFix": "Show the realisation through the physical and tactical lens Kaelith inhabits. She has just fought a vorakh with a failing body — the material is right there. Something like: she looks at her non-functional hand, assesses the damage the way she would assess a compromised position, and realises that calling the retreat would have been the correct tactical decision. She didn't, because there was no one to retreat to. Let the reader arrive at 'vulnerability is not weakness' through the logic of the scene rather than through Kaelith's narrated epiphany."
+    },
+    {
+      "id": "LINE-006",
+      "severity": "major",
+      "category": "tension",
+      "description": "Closing section (L323-379) restates emotional ground already covered without sufficient new information or escalation. The direction change happens at L325-327 (strong moment). But from L329 to L379 — approximately 50 lines — the prose revisits: the bond carrying grief (already established multiple times), the cage metaphor (already used throughout), the 'simple story' failing (stated at L155, L191, L307, now L337 and L369), and 'she walked anyway' (used three times). The closing section orbits the same emotional territory rather than advancing. By L375, the reader has heard 'cage,' 'grief,' 'bond,' 'wall,' and 'simple story' enough times that they land with diminished force.",
+      "lineRef": { "start": 329, "end": 379 },
+      "suggestedFix": "Cut the closing section by approximately 40%. The direction change (L325-327) and the bond's response (L329-331) are strong — keep them. Then move more quickly to the close. Remove or compress the extended meditation on cages and love (L339-340, already flagged), the triple use of 'she walked anyway,' and the restated grief comparison (L365-369). A tighter close might run: direction change → bond response → one paragraph of walking with a new observation (what the terrain ahead looks like, what the body is doing) → the final 'she walked anyway' landing once with full weight. The chapter's emotional work is complete by L325; everything after should be exit momentum, not re-examination."
+    },
+    {
+      "id": "LINE-007",
+      "severity": "major",
+      "category": "repetition",
+      "description": "Near-identical phrasing repeated: 'nothing like the precise emotional management Lirien had maintained for months' (L37) and 'Nothing like the precise emotional management Lirien had demonstrated since the first day in Duskhaven' (L141). The same observation is made in almost the same words within 100 lines. The second instance also introduces a subordinate clause ('when she had watched Kaelith from the market square with the careful attention of a predator assessing terrain') that extends the sentence well past Kaelith's typical rhythm in what should be a high-impact emotional moment.",
+      "lineRef": { "start": 141, "end": 141 },
+      "suggestedFix": "The second instance (L141) is the more significant moment — the bond breach in Scene 2 — so it should be the one that lands. Cut or rephrase the first instance (L37) to something shorter: 'Raw, uncontained, nothing like Lirien.' This allows L141 to develop the contrast more fully without the reader experiencing déjà vu. At L141, also tighten the subordinate clause — the 'predator assessing terrain' image is strong but the extended construction dilutes the grief's impact."
+    },
+    {
+      "id": "LINE-008",
+      "severity": "minor",
+      "category": "prose",
+      "description": "'The night beyond the shelter was cold and silent and full of the nothing that had been everything' (L75). This pushes toward purple prose and literary abstraction atypical of Kaelith's voice. 'The nothing that had been everything' is a philosophical/poetic construction that reads more like Lirien's register than Kaelith's concrete, structural mode. The triple 'and' construction is also rhythmically slack.",
+      "lineRef": { "start": 75, "end": 75 },
+      "suggestedFix": "Ground the sentence in Kaelith's sensory experience. Something like: 'The night beyond the shelter was cold and silent and held the shape of someone missing.' Or simply cut after 'silent' — the paragraph already communicates the absence effectively."
+    },
+    {
+      "id": "LINE-009",
+      "severity": "minor",
+      "category": "repetition",
+      "description": "'She walked anyway' appears three times (L351, L363, L379). The first use is effective — it establishes the refrain of resolve despite unreadiness. The second reinforces. The third, closing the chapter, arrives after the reader has already absorbed the pattern. When a refrain's final instance is its weakest (because the repetition has spent the phrase's charge), it cannot serve as the chapter's closing note. The chapter deserves a close that carries the weight of finality rather than the weight of familiarity.",
+      "lineRef": { "start": 351, "end": 379 },
+      "suggestedFix": "Keep two instances maximum. The strongest positions are L363 (after 'She was not ready') and L379 (chapter close). Remove L351 or replace it with a different construction — 'She kept moving' or simply a physical beat (taking the next step, feeling the cold in her joints, hearing the bond pulse). This allows 'She walked anyway' to land twice: once as emotional recognition, once as the chapter's closing statement."
+    },
+    {
+      "id": "LINE-010",
+      "severity": "minor",
+      "category": "repetition",
+      "description": "'The simple story' appears four times (L155, L191, L307, L369). As a thematic thread, two or three uses would land effectively. Four makes it a verbal tic. The phrase is already clear by L155 when it is introduced; by L369 it feels like narration explaining itself.",
+      "lineRef": { "start": 155, "end": 369 },
+      "suggestedFix": "Retain L155 (first introduction — 'The simple story Kaelith had been telling herself began to crack') and L307 (the post-combat realization — strong contextual placement). At L191, use a variant: 'the version of events she had been using as load-bearing' or simply 'the lie.' At L369, use 'the thing she had been hiding behind' or just drop the reference — the reader knows."
+    },
+    {
+      "id": "LINE-011",
+      "severity": "minor",
+      "category": "show-tell",
+      "description": "Lines 147: 'This was not the grief of a mission that had failed. This was the grief of a person who had lost something irreplaceable and knew they would never get it back.' Kaelith distinguishes between two types of grief with confident precision, but the text never shows what qualitative difference she detects through the bond. How does 'personal loss grief' feel different from 'mission failure grief' in tactile/proprioceptive terms? Kaelith's sensory channel should give us the felt difference rather than the named categories.",
+      "lineRef": { "start": 147, "end": 147 },
+      "suggestedFix": "Show the difference through physical experience: mission-failure grief would feel sharp and directional (toward the failed objective); personal-loss grief would feel diffuse, heavy, settling. Something like: 'This was not directed at anything — not aimed at a failure, not driving toward a solution. It sat. It filled every corner and stayed. The grief of someone who had stopped trying to fix the problem and started simply being inside the loss.' Let the reader categorise the grief type from the physical description."
+    },
+    {
+      "id": "LINE-012",
+      "severity": "minor",
+      "category": "cliché",
+      "description": "'Her body reacted before her mind could catch up' (L135). This is a stock action-writing phrase — the body/mind disconnect cliché. It appears in countless thrillers and fantasy novels. While not on the banned list, it is the kind of generic phrasing the style guide warns against: sentences that 'could be transplanted unchanged into a different fantasy novel.'",
+      "lineRef": { "start": 135, "end": 135 },
+      "suggestedFix": "Use Kaelith's specific physical vocabulary: 'Her hand was at her sternum before the reaction had a name' or simply 'Kaelith's hand went to her sternum. The thought arrived after.' The physical-before-mental pattern is correct for an MRU; the phrasing just needs to be Kaelith's rather than generic."
+    },
+    {
+      "id": "LINE-013",
+      "severity": "minor",
+      "category": "tension",
+      "description": "The introspective passage from L141 to L213 runs approximately 70 lines of sustained internal reflection with only three brief physical beats (L137 — pressing palm, L165 — pressing hand harder, L177 — sitting with ember glow, L213 — cold spreading). The style guide specifies: 'Never stack more than two dense reflective paragraphs without dialogue, gesture, or external movement resetting the scene.' While the physical beats exist, they are minimal gestures rather than genuine scene resets. The passage risks the 'static' quality the introspection scene palette warns against.",
+      "lineRef": { "start": 141, "end": 213 },
+      "suggestedFix": "Introduce 1-2 external beats to break the internal flow. Options: (a) a sound from outside — wind, an animal, a branch falling — that pulls Kaelith's attention outward for a sentence before she returns to the internal argument, (b) a physical action driven by the cold — she wraps her left hand in cloth, or tries to flex her fingers and finds them slower, (c) she feeds the fire, which has burned down, and the physical act of tending flame anchors the scene in the body. These need not be long — 2-3 sentences of external engagement every 20-25 lines would maintain the reflective tone while keeping the scene grounded."
+    },
+    {
+      "id": "LINE-014",
+      "severity": "minor",
+      "category": "prose",
+      "description": "Lines 349: 'Trapped by a contract that demanded death. Trapped by feelings that demanded survival. Trapped between the institution that had built the cage and the woman who had been caged inside it.' The triple 'Trapped' anaphora is the second rhetorical triplet in the closing section (after the earlier 'Maybe' triplet at L183). In combination with the preceding and following meditative paragraphs, the rhetorical patterning creates a stylistic lushness that exceeds Kaelith's austere register. She would not build a three-part parallelism in her internal monologue — her thought mode is linear and tactical, not rhetorical.",
+      "lineRef": { "start": 349, "end": 349 },
+      "suggestedFix": "Compress to Kaelith's tactical frame: 'Kaelith wondered if Lirien felt as pinned as she did — contract pulling one direction, the rest pulling another, no clean exit.' This preserves the empathy beat (Kaelith imagining Lirien's state) while staying in her voice register."
+    },
+    {
+      "id": "LINE-015",
+      "severity": "minor",
+      "category": "prose",
+      "description": "Lines 365-371: The closing meditation on parallel grief — 'the patient, permanent weight of someone who had lost something they would never stop mourning but who was still getting up in the morning and doing what needed to be done anyway' followed by the explicit connection to Calwrath and 'Maybe Lirien understood' — articulates the emotional parallel with unnecessary explicitness. The parallel between Kaelith's Calwrath grief and Lirien's contract grief is one of the story's richest subtextual threads. Stating it this directly ('the same grief — different loss, different cage, same permanent weight') pre-digests the insight for the reader rather than letting them feel it.",
+      "lineRef": { "start": 365, "end": 373 },
+      "suggestedFix": "Show the recognition without explaining it: Kaelith feels the quality of Lirien's grief through the bond and notices it sits in her chest the way Calwrath sits — present, permanent, not asking permission. End on the physical recognition rather than the analytical comparison. Let 'Maybe Lirien understood' stand alone without the explanatory paragraph that follows it."
+    }
+  ],
+  "positiveObservations": [
+    {
+      "category": "hook",
+      "description": "Opening hook (L17): 'Fire first. Perimeter second. Don't think about the rest.' — masterful Kaelith voice in three commands. Establishes military discipline masking devastation. One of the strongest chapter openings in the manuscript.",
+      "lineRef": { "start": 17, "end": 17 }
+    },
+    {
+      "category": "mru",
+      "description": "MRU structure is consistently correct throughout. The bond breach response (L135: stimulus → reflex → physical impact), the vorakh combat (L249-277: external action → physical response → tactical adjustment), and the direction change (L325-329: decision → physical action → bond response) all follow proper motivation-reaction ordering with no reversals.",
+      "lineRef": { "start": 135, "end": 329 }
+    },
+    {
+      "category": "action",
+      "description": "The vorakh combat scene (L233-277) is the chapter's strongest passage. Tight, specific, in-voice. The Pallor's physical cost is shown rather than told through combat degradation — the elbow locking, the half-second delay, the two non-functional fingers. The fight accomplishes plot work (exposing physical decline) and emotional work (proving she cannot do this alone) simultaneously.",
+      "lineRef": { "start": 233, "end": 277 }
+    },
+    {
+      "category": "cliché",
+      "description": "Zero banned phrases detected. Zero standard fantasy or romance clichés. The prose is genuinely distinctive — the problems are overuse of distinctive elements, not reliance on generic ones. This is a much better class of problem to have.",
+      "lineRef": { "start": 17, "end": 379 }
+    },
+    {
+      "category": "craft",
+      "description": "The deliberate water metaphor exception (L135: 'like floodwater through a crack in a dam') is perfectly placed — showing Lirien's domain leaking into Kaelith's structural vocabulary at the moment of maximum emotional breach. The metadata correctly identifies this as intentional. It's the single most effective metaphor in the chapter precisely because it violates Kaelith's pattern.",
+      "lineRef": { "start": 135, "end": 135 }
+    },
+    {
+      "category": "voice",
+      "description": "Military vocabulary deployment is well-calibrated — 'perimeter,' 'sightlines,' 'garrison efficiency,' 'threat vector,' 'compensatable,' 'functional impairment,' 'military assessment' appear at natural intervals without over-concentration. Unlike the architectural metaphors, the tactical vocabulary feels like seasoning rather than the main ingredient. This is what the correct density looks like.",
+      "lineRef": { "start": 17, "end": 303 }
+    },
+    {
+      "category": "craft",
+      "description": "The dream sequence (L125-129) is powerful and efficiently constructed. The melding of Calwrath's fire with Pallor silver — flames turning silver, screaming going silent, the district becoming 'not ash but absence' — creates a genuinely unsettling fusion of past guilt and present physical decline. It accomplishes in 5 lines what an inferior draft would take 20 to do.",
+      "lineRef": { "start": 125, "end": 129 }
+    },
+    {
+      "category": "subtext",
+      "description": "The tactical-monitoring self-deception (L199-206) is well-executed subtext. Kaelith tells herself she is monitoring Lirien for tactical advantage; the narration immediately identifies this as a lie; and the real reason (she cannot bear total severance) is given without sentimentality. The gap between the surface story and the truth is exactly what INV-047 requires.",
+      "lineRef": { "start": 199, "end": 206 }
+    }
+  ],
+  "craftToolAudit": {
+    "T5": "Tone: morally complex throughout. No melodrama. Devastation conveyed through restraint. Some risk of crossing into therapy-speak at L309 and L339-340, flagged in findings.",
+    "T16": "Motif weaving: Pallor/silver motif well-deployed through physical progression. Architectural motif over-deployed (see LINE-001). Water motif single-instance exception correctly placed.",
+    "T17": "Voice: Kaelith's voice is recognisable from the first line, but architectural metaphor saturation (LINE-001) and word repetition (LINE-002) push the voice from 'distinctive tendency' into 'mechanical dialect.' Military vocabulary is correctly calibrated. Sentence length distribution aligns with the profile.",
+    "T24": "Subtext: The tactical-monitoring lie (L199-206) is strong. The 'Had that been real?' refrain works as dramatic subtext. Theme-as-statement at L309 and L339-340 undercuts subtext by making implicit meaning explicit."
+  },
+  "proseQualityMetrics": {
+    "clicheCount": 1,
+    "clicheLimit": 2,
+    "clicheVerdict": "PASS",
+    "bannedPhrasesFound": 0,
+    "bannedPhraseVerdict": "PASS",
+    "showTellViolations": 3,
+    "showTellLimit": 3,
+    "showTellVerdict": "BORDERLINE — at the limit for key scenes",
+    "voiceSaturation": "FAIL — architectural metaphors far exceed sparse deployment guideline",
+    "wordRepetition": "FAIL — grief (28×), bond (27×), wall (14×), cage (9×) exceed natural variation"
+  }
+}

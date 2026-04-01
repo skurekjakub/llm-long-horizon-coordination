@@ -1,0 +1,299 @@
+{
+  "reportType": "line-edit",
+  "storyId": "001",
+  "chapterNumber": 21,
+  "chapterTitle": "What the Stone Remembers",
+  "pov": "Kaelith Maren (CHAR-001)",
+  "draftTimestamp": "2025-07-17T14:30:00Z",
+  "reportTimestamp": "2025-07-31T15:00:00Z",
+  "summary": "Chapter 21 delivers an emotionally earned climax with strong structural bones — the seal scene is genuinely powerful, the Thalen confrontation carries moral weight, and the Kaelith-Lirien partnership payoff lands. However, the prose suffers from severe voice marker saturation (architectural/structural metaphors appear ~30+ times in 218 lines), extreme lexical repetition across multiple word families ('certainty' 11x, 'through the bond' 8x, 'foundation' 7x, 'architecture' 11x, 'hold/held' 23x, 'forty years' 10x), and systematic use of the bond mechanism to bypass show-don't-tell discipline for Lirien's emotions. The chapter exceeds the 2-cliche cap (4 instances). The 'Not X. Not Y. Z.' rhetorical pattern appears 5 times, creating structural monotony. The prose reads like a voice-marker showcase rather than transparent fiction — the reader should feel Kaelith's voice without counting its occurrences. Revision should thin architectural markers by 50-60%, vary bond-mediated passages to show Lirien through external behavior rather than labeled emotions, and break lexical repetition across all flagged word families.",
+  "findingCounts": {
+    "critical": 4,
+    "major": 7,
+    "moderate": 6,
+    "minor": 7,
+    "total": 24
+  },
+  "categoryBreakdown": {
+    "repetition": 10,
+    "voice": 2,
+    "show-tell": 2,
+    "cliche": 2,
+    "prose": 4,
+    "dialogue": 1,
+    "tension": 1,
+    "mru": 2
+  },
+  "findings": [
+    {
+      "id": "LINE-001",
+      "severity": "critical",
+      "category": "voice",
+      "description": "Voice marker saturation — architectural/structural domain. Architectural metaphors and structural vocabulary appear approximately 30-35 times across 218 lines (~1 per 6-7 lines), creating prose that reads like a voice-marker checklist rather than natural Kaelith narration. The character profile's voiceDensityGuidance explicitly warns: 'If the voice markers are identifiable on every page, the voice is likely over-applied. Seasoning, not the main ingredient.' Key offending terms: 'architecture/architectural' (11x), 'foundation' (7x), 'load-bearing' (3x), 'wall/walls' used as metaphor (12x), 'mechanism' (5x), 'structural' (3x), 'keystone' (2x), 'buttress' (2x). The effect is cumulative: each individual instance is defensible, but together they constitute a drumbeat of architectural vocabulary that flattens the prose into a single register. SCN-60 (lines 86-130) is the worst section, where nearly every paragraph contains 2-3 structural terms.",
+      "lineRef": { "start": 14, "end": 212 },
+      "suggestedFix": "Reduce architectural/structural markers by 50-60%. Keep the strongest instances — 'keystone in an arch' (line 44), 'foundation crack' (line 94), and 'load-bearing walls' (line 200) land because they are specific and emotionally charged. Remove or rephrase the weaker/generic uses: 'enforcement architecture' (line 40) to 'enforcement framework'; 'layered architecture' (line 66) to 'layered construction' or cut; 'the architecture of his certainty' (line 182) to 'the structure of his certainty' or rephrase entirely; 'paper architecture' (line 192) to 'paper record' or 'documentary skeleton.' Most critically in SCN-60, alternate architectural imagery with plain description — let Kaelith sometimes just describe what she does without framing it through structural metaphor."
+    },
+    {
+      "id": "LINE-002",
+      "severity": "critical",
+      "category": "repetition",
+      "description": "'Through the bond' appears 8 times as a near-identical sentence-opening construction (lines 24, 38, 72, 104, 112, 124, 140, 206). This is not thematic recurrence but structural monotony — the same phrase introducing the same kind of information (Kaelith perceiving Lirien's internal state) in the same syntactic position. By the 4th occurrence, the reader is ahead of the prose. By the 8th, it has become a tic. Additionally, each instance is followed by an emotion label for Lirien (see LINE-004), making the phrase function as a tell-delivery pipeline.",
+      "lineRef": { "start": 24, "end": 206 },
+      "suggestedFix": "Reduce to 3-4 uses maximum. For the remaining instances, vary the construction radically: 'The bond carried—', 'She felt Lirien—' (without 'through the bond'), or simply show Lirien's state through external behavior Kaelith observes (a sharp breath, a shift in stance, the quality of a deflection). Reserve 'Through the bond' for the most significant moment — the seal scene's climax at line 114 — and use different access paths elsewhere. At lines 104 and 140, Kaelith could perceive Lirien through the bond's effects on her own body rather than through labeled emotions."
+    },
+    {
+      "id": "LINE-003",
+      "severity": "critical",
+      "category": "repetition",
+      "description": "'Certainty/certain' appears 11 times and 'conviction' appears 8 times across the chapter, with peak density in the seal scene (lines 88-120 contain 7 'certainty/certain' instances in 32 lines). While certainty is the thematic and magical core of the Warden function, the lexical density creates a droning effect where the word loses its force through overexposure. The reader stops hearing 'certainty' as a meaningful concept and starts hearing it as a repeated syllable pattern.",
+      "lineRef": { "start": 68, "end": 200 },
+      "suggestedFix": "Keep 'certainty' for the 3-4 most critical uses: the initial magic-system revelation ('a wall built from certainty itself,' line 88), the Warden revelation ('Because Kaelith was *certain*,' line 96), and the thematic mirror with Thalen (line 200). Replace other instances with varied language that conveys the same concept: 'sureness,' 'solidity,' 'the knowledge that refused to doubt,' 'the part of her that had never wavered,' 'the declaration the stone required.' Similarly, keep 'conviction' for Thalen (lines 170, 182) where it characterizes him, and replace Kaelith's uses with 'resolve,' 'weight of belief,' or show the concept through her actions rather than naming it."
+    },
+    {
+      "id": "LINE-004",
+      "severity": "critical",
+      "category": "show-tell",
+      "description": "Bond-mediated emotion telling — the bond mechanism is used as a systematic bypass for show-don't-tell discipline regarding Lirien's emotional states. Six separate instances deliver Lirien's internal experience as labeled emotions through the bond: 'a surge of focused, lethal precision' (line 72), 'cold fury' (line 106), 'determined focus' (line 106), 'rising exhaustion... freely chosen determination' (line 124), 'fierce relief... pride' (line 140), 'satisfaction' (line 206). INV-005 requires emotions be conveyed through action, dialogue, and physical sensation. The bond may carry sensation, but it should not function as a telepathic emotion-labeling service that names what Lirien feels in abstract terms.",
+      "lineRef": { "start": 72, "end": 206 },
+      "suggestedFix": "Convert at least 4 of 6 instances to shown behavior or bond-as-sensation rather than bond-as-label. Line 72: instead of 'a surge of focused, lethal precision,' show the bond tightening into something keen and ready, or Lirien's magic igniting against Kaelith's awareness like cold water hitting hot stone. Line 106: instead of 'cold fury,' show the deflections themselves — each one arriving with a clarity that left no waste, no hesitation. Line 140: instead of 'fierce relief... pride,' show Lirien's hand settling onto Kaelith's shoulder (physical), or the bond carrying the particular quality of someone exhaling after holding their breath too long. Line 206: instead of 'satisfaction,' let the bond carry warmth, steadiness — and let Kaelith interpret (or decline to interpret) what the sensation means. The bond should transmit sensation, not vocabulary."
+    },
+    {
+      "id": "LINE-005",
+      "severity": "major",
+      "category": "repetition",
+      "description": "'Foundation' appears 7 times (lines 66, 92x2, 94, 120x2, 206), including two lines where it appears twice in the same sentence: 'the foundation would bear what the foundation was required to bear' (line 92) and 'Found the foundation beneath the foundation' (line 120). The doubled constructions are intentional rhetorical emphasis, but combined with 5 other uses, the word loses its structural weight.",
+      "lineRef": { "start": 66, "end": 206 },
+      "suggestedFix": "Reduce to 3-4 uses. Keep the strongest: 'compromised the foundation' (line 66, stakes-setting), 'let a foundation crack' (line 94, character embodiment). Revise line 92 to avoid the double: 'that the world was solid, that what bore weight would continue bearing it.' Revise line 120: 'Found bedrock beneath the bedrock' or 'Found the deepest layer — the place where the original Wardens had laid the first stones.' Replace line 206's 'foundation' with a different structural term since the metaphor has already appeared frequently."
+    },
+    {
+      "id": "LINE-006",
+      "severity": "major",
+      "category": "repetition",
+      "description": "'Hold/held/holding/holds' appears 23 times across the chapter. While the chapter's central action is literally holding a seal, the word saturates the prose beyond thematic utility: it appears in thematic statements (line 200: 'The world holds'), physical description (line 138: 'Stable. Holding'), dialogue (line 190: 'into something that would hold'), internal italics (line 210: 'We held. The world held'), partnership descriptions (line 94: 'holding the line when the line needed holding'), and bond passages (line 114: 'hold the line while she held the world'). The word has become white noise.",
+      "lineRef": { "start": 18, "end": 216 },
+      "suggestedFix": "Reduce by 40-50%. Preserve the word for its most powerful deployments: the thematic climax (line 200), the chapter's close (line 210), and the physical moment of seal stabilization (lines 130, 138). Replace elsewhere with synonyms or restructured sentences: 'holding the line' to 'standing the line' or 'manning the position'; duplicate 'hold' in line 114 ('hold the line while she held the world') to 'guard the line while she steadied the world'; line 94's 'holding the line when the line needed holding' to 'standing the line when the line needed standing' or restructure entirely."
+    },
+    {
+      "id": "LINE-007",
+      "severity": "major",
+      "category": "repetition",
+      "description": "'Forty years' appears 10 times (lines 50, 66, 88, 102, 108, 114, 162, 166, 174, 200/204). This is factual information repeated as a rhetorical hammer. By the 6th mention, the reader knows the timeframe. By the 10th, it reads as a verbal tic. The phrase appears in narration (6x), Kaelith's dialogue (2x), and formal accusation (2x).",
+      "lineRef": { "start": 50, "end": 204 },
+      "suggestedFix": "Reduce to 4-5 uses. Keep the first establishment (line 50), the accusation (line 166), and one dialogue use (line 174). Replace others with varied references: 'decades of corruption,' 'a generation of patient sabotage,' 'the length of his tenure,' or simply remove where the timeframe is already established context. Line 108's triple anaphora ('forty years in the Conclave, forty years studying, forty years of conviction') is particularly heavy — consider reducing to two with a concluding phrase that varies."
+    },
+    {
+      "id": "LINE-008",
+      "severity": "major",
+      "category": "cliche",
+      "description": "Cliche threshold exceeded (INV-017 cap: 2 per chapter). Four cliche/stock instances identified: (1) 'fire finding fuel' (line 86) — well-worn simile for power awakening; (2) 'parched stone drinking rain' (line 114) — stock metaphor for absorption; (3) 'wound in the earth' (line 42) — common fantasy trope descriptor for caverns/openings; (4) 'I was waiting for you' (line 114) — chosen-one trope echo, undermined only partially by the 'almost gratitude' qualifier. Together these exceed the 2-cliche maximum by double.",
+      "lineRef": { "start": 42, "end": 114 },
+      "suggestedFix": "(1) 'fire finding fuel' — use Kaelith's tactile domain: 'flooded back like pressure released from a valve she hadn't known was closed — not relief but the full bearing capacity she had been denied.' (2) 'parched stone drinking rain' — 'The seal absorbed her resolve the way cracked mortar drew new cement — hungry, structural, filling gaps that had weakened under decades of neglect.' (3) 'wound in the earth' — 'opened before them like a fracture — not damage but exposure, the mountain's interior laid bare.' (4) 'I was waiting for you' — cut entirely; let the seal's response remain impersonal: 'a hum that deepened, that resonated in Kaelith's sternum, the vibration of a mechanism recognizing the function it had been built to receive.' The seal should respond to her function, not address her personally."
+    },
+    {
+      "id": "LINE-009",
+      "severity": "major",
+      "category": "repetition",
+      "description": "'Not X. Not Y. Z.' rhetorical pattern used 5 times: (1) lines 52-54: 'not surprise. Not fear. Recognition.' (2) line 92: 'Not magic... Not power... Certainty.' (3) lines 170-172: 'not the crumbling... Not the desperate calculation... conviction.' (4) line 194: 'Not fear. Not regret. Grief, perhaps.' (5) line 200: 'Not anger. Not triumph. The verdict...' This is a powerful rhetorical structure that becomes predictable through overuse. The reader begins to anticipate the pattern: two negations followed by the actual state.",
+      "lineRef": { "start": 52, "end": 200 },
+      "suggestedFix": "Keep 2, maximum 3. The strongest instances are lines 52-54 (Thalen's recognition — the dramatic reveal) and line 200 (the thematic verdict — the chapter's moral climax). Restructure the others: line 92 could become 'The Warden's function was certainty itself — not force matched against force but the living declaration that...' Line 170 could become 'His expression held conviction — clear and devastating and whole.' Line 194: 'Thalen watched the evidence accumulate with something that might have been grief — the grief of a visionary watching...' Each restructuring preserves the content while breaking the mechanical pattern."
+    },
+    {
+      "id": "LINE-010",
+      "severity": "major",
+      "category": "show-tell",
+      "description": "Abstract thematic telling in partnership passages. Two passages directly state the chapter's thematic argument about chosen partnership rather than allowing the shown action to carry the meaning: (1) Lines 40-41: 'The partnership operating at the frequency it had been built for — not the frequency imposed by binding or contract, but the one they had chosen when the cage opened and they stayed. The bond carried no compulsion, no enforcement architecture, no secondary directive. Just the steady pulse of two people trusting each other's competence with their lives.' (2) Lines 208-209: 'the steady, uncompelled pulse of two people who had chosen each other when the world was ending and the cage was open and every reason to stay was a reason they had built themselves.' These are editorial summaries that explain the relationship's significance to the reader rather than trusting the dramatized action.",
+      "lineRef": { "start": 40, "end": 209 },
+      "suggestedFix": "Line 40: Cut the editorial from 'not the frequency imposed' through 'with their lives.' The preceding sentence ('Kaelith's body leading, Lirien's mind verifying') already shows the partnership working. If something must follow, keep it physical: 'The bond hummed without static. Kaelith's feet chose the path. Lirien confirmed each step.' Lines 208-209: Replace the thematic summary with a concrete physical moment: 'The bond carried what contact would have said — warmth, exhaustion, and the particular steadiness of someone who intended to still be there tomorrow.' Trust the reader. They have watched twenty-one chapters of this partnership forming."
+    },
+    {
+      "id": "LINE-011",
+      "severity": "major",
+      "category": "repetition",
+      "description": "'Precision/precise' appears 9 times (lines 24, 38, 72, 102, 106, 108, 112, 148, 152) as the default descriptor for both Lirien and Thalen. The word has become a catch-all that flattens the distinction between Lirien's combat magic, Thalen's corruption technique, and military movement. When everything is precise, nothing is specifically characterized.",
+      "lineRef": { "start": 24, "end": 152 },
+      "suggestedFix": "Reduce to 3-4 uses, reserving it for Lirien's defining quality. Replace Thalen's 'surgical precision' (line 102) with 'surgical exactness' or 'practiced skill.' Replace 'precise and layered' (line 108) with 'focused and layered' or 'methodical and layered.' Replace 'military precision' (line 152) with 'military discipline' or 'military cadence.' Let Lirien own 'precision' as her word; others should not share it."
+    },
+    {
+      "id": "LINE-012",
+      "severity": "moderate",
+      "category": "prose",
+      "description": "Purple prose: 'older than' tricolon escalation (line 32). 'The air tasted of something older than stone, older than the mountain, older than the idea of mountains.' The third element ('the idea of mountains') pushes the rhetoric from evocative into self-impressed territory. The concept of tasting something 'older than the idea of mountains' is philosophically overreaching for a character who thinks in tactical assessment and structural observation.",
+      "lineRef": { "start": 32, "end": 32 },
+      "suggestedFix": "Trim to two elements and keep within Kaelith's sensory domain: 'The air tasted of something older than stone, older than the mountain itself — raw, electric, the flavor of potential that had never been permitted to become anything specific.' The 'raw, electric' clause that follows already does the heavy lifting; the tricolon is ornamental."
+    },
+    {
+      "id": "LINE-013",
+      "severity": "moderate",
+      "category": "prose",
+      "description": "Purple narration of command voice (line 166). 'Commander's voice. The register that expected compliance and received it, that carried across battlefields and through chaos and into the silence of an ancient chamber where the world had nearly ended.' The relative clause chain ('that expected... that carried across... and through... and into...') is overwrought for a Kaelith POV. She would not narrate her own voice with this level of romantic self-regard. The dialogue itself already conveys authority through its clipped formality.",
+      "lineRef": { "start": 166, "end": 166 },
+      "suggestedFix": "Cut to the first sentence: 'Commander's voice.' Or at most: 'Commander's voice. The one she had not used in six years.' Let the dialogue carry the authority. Kaelith does not linger on how impressive she sounds."
+    },
+    {
+      "id": "LINE-014",
+      "severity": "moderate",
+      "category": "prose",
+      "description": "Adjective stacking: 'conviction. Clear, devastating, unbroken.' (line 170). Three consecutive adjectives violate the style guide's implicit prohibition on adjective chains of 3+. Additionally, 'devastating' occupies a different register than 'clear' and 'unbroken,' creating a micro-mixed register within the list.",
+      "lineRef": { "start": 170, "end": 170 },
+      "suggestedFix": "Reduce to two adjectives or restructure: 'It was conviction — clear and unbroken.' Or: 'It was conviction. The kind that did not bend.' Let one strong descriptor replace three adequate ones."
+    },
+    {
+      "id": "LINE-015",
+      "severity": "moderate",
+      "category": "cliche",
+      "description": "Seal personification risks chosen-one trope (line 114). 'It responded with something that was almost gratitude — a hum that deepened, that resonated in Kaelith's sternum, that said *I was waiting for you.*' Despite the 'almost' qualifier, 'I was waiting for you' is a direct address that positions Kaelith as a destined savior. The tone contract prohibits 'epic-triumphant' tones and 'generic celestial destiny imagery.' The seal responding to Warden blood is established magic; the seal addressing Kaelith personally is tropey.",
+      "lineRef": { "start": 114, "end": 114 },
+      "suggestedFix": "Replace the personal address with an impersonal mechanical response: '...it responded — a hum that deepened, that resonated in Kaelith's sternum, the vibration of a mechanism recognizing the function it had been built to receive.' Or: '...a hum that said nothing and meant everything — the seal finding its Warden.' Remove the first-person address entirely."
+    },
+    {
+      "id": "LINE-016",
+      "severity": "moderate",
+      "category": "mru",
+      "description": "MRU gap at Thalen discovery (lines 48-58). Kaelith sees Thalen standing at the crumbling seal — the antagonist who has been poisoning the world for forty years, now caught in the act. The sequence jumps from observation ('Thalen Reyvas stood at the seal's edge') to description of Thalen to tactical inventory ('Three exits...') without a physical-emotional flash. Even for Kaelith's suppressed register, discovering the enemy at the moment of maximum stakes deserves a brief body response before the tactical brain engages.",
+      "lineRef": { "start": 48, "end": 58 },
+      "suggestedFix": "Insert a single physical beat between the description of Thalen (line 50) and his looking up (line 52). Example: 'Her grip on the threshold tightened. The silver on her forearm burned cold.' Or: 'Something locked behind her sternum — the particular stillness of a threat she had expected finding confirmed.' Then proceed to his expression and recognition."
+    },
+    {
+      "id": "LINE-017",
+      "severity": "moderate",
+      "category": "prose",
+      "description": "Dense metaphysical exposition in seal scene (lines 86-96). This 10-line passage stacks multiple figurative descriptions of the seal's nature without physical action breaks: the seal as 'architecture at the boundary,' Ythara as 'not malice but potential,' cracks as 'doubt,' poison as 'erosion of certainty,' and then Kaelith's understanding of reinforcement. The passage is necessary for magic-system payoff but its unbroken density creates a pacing lull at the chapter's highest-tension moment.",
+      "lineRef": { "start": 86, "end": 96 },
+      "suggestedFix": "Break the passage with at least one physical-action beat. After line 88 (the seal's nature), insert a physical moment: Kaelith's hands burning against the stone, the cracks spreading wider under her palms, a sound of fracturing that vibrates through her wrists. Then resume the metaphysical understanding through physical sensation rather than abstract narration: instead of 'Certainty. The Warden's function was not to fight the god but to affirm the wall,' try: 'Her palms pressed harder. The stone steadied where she pressed, and she understood: not force against force. Something simpler. The wall needed someone to believe it was a wall.'"
+    },
+    {
+      "id": "LINE-018",
+      "severity": "minor",
+      "category": "prose",
+      "description": "'Two words. Everything.' (line 76). After Lirien's 'Go,' this editorial one-word sentence underscores a moment that needs no underscore. The power of 'Go' is in its brevity and trust; adding 'Two words. Everything.' is romance-novel shorthand that tells the reader how to feel about a line that already lands on its own.",
+      "lineRef": { "start": 76, "end": 76 },
+      "suggestedFix": "Cut 'Two words. Everything.' entirely. Let 'Go' stand alone, followed directly by the crisis decision paragraph. The white space between Lirien's line and Kaelith's response is more powerful than editorial commentary."
+    },
+    {
+      "id": "LINE-019",
+      "severity": "minor",
+      "category": "dialogue",
+      "description": "Kaelith's final thematic statement to Thalen is on-the-nose (line 200). 'The world holds. Not because it's perfect. Because people chose to hold it.' This explicitly states the chapter's (and story's) thematic argument. The preceding dialogue exchange (lines 174-178) handled subtext masterfully — 'Because you did not let them choose' carries double meaning addressing both Thalen and Kaelith's own Calwrath history. But the closing statement becomes a thesis declaration rather than dialogue.",
+      "lineRef": { "start": 200, "end": 200 },
+      "suggestedFix": "Consider ending Kaelith's address to Thalen at 'You were wrong.' The single, flat verdict is more in character than the explanatory addendum. If the thematic statement must remain, embed it in action or internal thought rather than spoken declaration: she could think it as she turns away, or it could surface as italicized interior while she watches Thalen being secured."
+    },
+    {
+      "id": "LINE-020",
+      "severity": "minor",
+      "category": "repetition",
+      "description": "'Chosen/chose/choose/choice' appears 10 times across the chapter (lines 28, 40, 72, 106, 124, 178, 182, 200, 208, 210). While 'choice' is a core thematic pillar (TP-3: chosen versus only), the lexical saturation — particularly 'freely chosen' appearing at lines 106 and 124 in near-identical constructions — becomes editorial insistence.",
+      "lineRef": { "start": 28, "end": 210 },
+      "suggestedFix": "Reduce to 5-6 uses. Keep the strongest: 'she did not choose the route. Her body chose it' (line 28, kinetic memory), 'you did not let them choose' (line 178, the dialogue's moral pivot), 'people chose to hold it' (line 200, if retained), and 'The choice was ours' (line 210, chapter close). Remove 'freely chosen' from lines 106 and 124 — restructure to show the voluntary nature through action description rather than labeling it."
+    },
+    {
+      "id": "LINE-021",
+      "severity": "minor",
+      "category": "mru",
+      "description": "MRU gap at post-seal collapse (lines 146-150). Kaelith turns to find Thalen defeated and immediately enters tactical catalogue mode ('one enemy, neutralized. One partner, wounded but functional. One seal, holding.'). The transition from near-death exhaustion at the seal to clean tactical inventory is too abrupt. A brief physical beat — the effort of turning, her vision still swimming — would bridge the gap.",
+      "lineRef": { "start": 146, "end": 150 },
+      "suggestedFix": "Add a transitional physical beat: 'Thalen was on his knees when Kaelith turned. The movement cost her — vision still swimming, the chamber refusing to settle into stable geometry for a long breath before it did.' Then proceed to the Lirien description and tactical catalogue."
+    },
+    {
+      "id": "LINE-022",
+      "severity": "minor",
+      "category": "voice",
+      "description": "Line 124 is an overloaded sentence (74 words) that stacks multiple voice markers, thematic statements, and emotional labels into a single construction: bond access, emotion labels ('rising exhaustion,' 'freely chosen determination'), wound description, thematic editorial ('that had survived the binding's dissolution and the contract's fulfillment and every reason to walk away'), and internal italics ('*I stay*'). This sentence does the work of an entire paragraph and reads as a voice-marker showcase rather than prose.",
+      "lineRef": { "start": 124, "end": 124 },
+      "suggestedFix": "Break into 2-3 shorter sentences with varied constructions. Separate the physical (wound, exhaustion) from the thematic (reasons to walk away). Let the physical register first, then the emotional undercurrent: 'Lirien's effort registered at the edge of capacity. The burn across her shoulder was spreading, hot and widening. Underneath the strain, something held — the same refusal that had outlasted the binding's dissolution and the contract's fulfillment and every exit she had not taken. *I stay.*'"
+    },
+    {
+      "id": "LINE-023",
+      "severity": "minor",
+      "category": "repetition",
+      "description": "'Bone/bones/bone-deep' appears 7 times (lines 14, 44, 90, 94, 118, 180, 212). 'Bone-deep' specifically appears at lines 94 and 180. While the skeletal/somatic register is part of Kaelith's tactile sensory signature, 7 bone references in one chapter creates an unintentional anatomical motif that competes with the structural/architectural motif.",
+      "lineRef": { "start": 14, "end": 212 },
+      "suggestedFix": "Reduce to 3-4 uses. Keep 'settled in her bones' (line 14, chapter opening resonance), 'Kaelith's bones recognized it' (line 44, the seal reveal), and 'bone-deep knowledge' (line 94, the Warden function). Replace line 180's 'bone-deep, load-bearing kind' with a fresh image. Replace line 90's 'from the bones rather than the mind' with 'from the body rather than the mind' or 'from somewhere beneath thought.'"
+    },
+    {
+      "id": "LINE-024",
+      "severity": "minor",
+      "category": "tension",
+      "description": "Iryse's testimony passage (lines 190-191) reads as formal exposition within a charged confrontation scene. While the testimony context partially justifies the formal register, the specificity ('Year of the Keel 726,' 'efficiency improvements,' 'refinements to strengthen the seal's maintenance cycle') shifts the reader from dramatic tension to information processing.",
+      "lineRef": { "start": 190, "end": 191 },
+      "suggestedFix": "Shorten the technical content and foreground the emotional cost. Replace the bureaucratic detail with a more compressed delivery: 'He gave me the modifications himself. Presented them as improvements — I incorporated them for eighteen years believing they would strengthen the seal.' Beat. 'They were poison. Every rite I performed in devotion was his sabotage.' Keep the 'jaw set' beat but move it to before the statement begins, showing the effort of starting rather than the effort of continuing."
+    }
+  ],
+  "invariantCompliance": {
+    "INV-017": {
+      "status": "FAIL",
+      "detail": "4 cliche instances identified (cap: 2). Voice marker saturation exceeds density threshold. Multiple structural repetition patterns exceed 3-per-page guideline."
+    },
+    "INV-005": {
+      "status": "FAIL",
+      "detail": "6 instances of emotion-labeling through the bond mechanism. The bond is being used as a systematic tell-bypass. Two abstract thematic-telling passages explain the relationship's significance rather than showing it."
+    },
+    "INV-019": {
+      "status": "PASS",
+      "detail": "Dialogue sounds like speech. Contractions absent in command voice (appropriate). Exchanges serve narrative function. No overly formal dialogue that should be naturalistic."
+    },
+    "INV-035": {
+      "status": "PASS",
+      "detail": "No passage exceeds half a page without active tension. The seal scene maintains urgency throughout. The post-combat reckoning scene carries moral-political tension."
+    },
+    "INV-047": {
+      "status": "PASS-WITH-NOTE",
+      "detail": "Subtext present in the Thalen-Kaelith exchange (lines 174-178). Final thematic statement (line 200) is on-the-nose rather than subtextual. The 'Because you did not let them choose' exchange is the chapter's strongest dialogue moment."
+    },
+    "INV-052": {
+      "status": "PASS-WITH-NOTE",
+      "detail": "MRU generally maintained. Two gaps identified: Thalen discovery (lines 48-58) missing physical-emotional beat before tactical assessment, and post-seal collapse (lines 146-150) transitioning too cleanly to tactical inventory."
+    },
+    "INV-003": {
+      "status": "FAIL",
+      "detail": "Kaelith's voice is recognizable but over-applied to the point of self-parody. The architectural metaphor density (~30+ instances) exceeds the voice fingerprint's own guidance ('If the voice markers are identifiable on every page, the voice is likely over-applied')."
+    },
+    "INV-064": {
+      "status": "PASS",
+      "detail": "Tactile/proprioceptive sensory signature maintained — Kaelith feels through hands, feet, weight, temperature. The Oathbrand/silver thread responses are consistent. Water metaphor used once deliberately (line 112) with the narrative flagging it as Lirien's domain."
+    },
+    "INV-073": {
+      "status": "CONDITIONAL-PASS",
+      "detail": "Prose is emotionally authentic and genre-appropriate. Publication readiness conditional on resolving voice saturation and repetition issues, which currently read as draft-quality pattern reliance rather than polished prose."
+    }
+  },
+  "proseMetrics": {
+    "estimatedClicheCount": 4,
+    "clicheCap": 2,
+    "estimatedShowTellRatio": "70:30",
+    "targetShowTellRatio": "90:10 for key scenes",
+    "majorRepetitionPatterns": [
+      { "term": "through the bond", "count": 8 },
+      { "term": "certainty/certain", "count": 11 },
+      { "term": "conviction", "count": 8 },
+      { "term": "hold/held/holding", "count": 23 },
+      { "term": "foundation", "count": 7 },
+      { "term": "architecture/architectural", "count": 11 },
+      { "term": "forty years", "count": 10 },
+      { "term": "precision/precise", "count": 9 },
+      { "term": "chosen/chose/choice", "count": 10 },
+      { "term": "bone/bones/bone-deep", "count": 7 },
+      { "term": "wall/walls (metaphorical)", "count": 12 },
+      { "term": "mechanism", "count": 5 }
+    ],
+    "rhetoricalPatternRepetition": [
+      { "pattern": "Not X. Not Y. Z.", "count": 5 }
+    ],
+    "voiceMarkerDensity": "~1 architectural/structural marker per 6-7 lines (target: handful per section)"
+  },
+  "strengths": [
+    "The Thalen-Kaelith dialogue exchange at lines 174-178 is the chapter's finest prose — tight, subtextual, morally loaded. 'Because you did not let them choose' carries the weight of the entire story's thematic argument about consent and conviction without explaining itself.",
+    "Kinetic memory activation (line 28) is an excellent embodied magic-system payoff — the body knowing what the mind doesn't. The prose trusts physical movement to carry the reveal.",
+    "SCN-59's environmental distortion (lines 32-34) effectively conveys the Quietus's reality-bending influence through concrete sensory details (reversed stairs, temperature shifts, walls curving).",
+    "Thalen is characterized with genuine moral complexity — his conviction is treated with the same weight as Kaelith's, and the parallel between them (line 182) elevates the confrontation above simple villain-defeat.",
+    "The decision not to execute Thalen (lines 184-196) is a strong character moment that dramatizes Kaelith's arc: she can still make the hard call, but now she includes accountability and witnesses rather than unilateral action.",
+    "The water metaphor crossing at line 112 ('water that finds every crack') is well-handled — Kaelith notices herself using Lirien's metaphor domain, making the crossover intentional characterization rather than voice drift.",
+    "The chapter's physical cost is well-rendered — shaking hands, dimming vision, frozen fingers, knees hitting stone. The seal work feels exhausting rather than triumphant."
+  ],
+  "upstreamRefs": [
+    "chapters/021/draft.md",
+    "chapters/021/metadata.json",
+    "style/style-guide.json",
+    "craft-profile.json",
+    "characters/CHAR-001.json"
+  ]
+}

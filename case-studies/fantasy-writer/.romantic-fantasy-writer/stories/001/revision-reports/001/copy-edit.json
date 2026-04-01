@@ -1,0 +1,252 @@
+{
+  "chapterNumber": 1,
+  "editorType": "copy",
+  "iteration": 2,
+  "generatedAt": "2025-07-22T18:30:00Z",
+  "priorIteration": {
+    "iteration": 1,
+    "timestamp": "2025-07-13T12:00:00Z",
+    "findingCount": 7,
+    "note": "Draft has not been revised since iteration 1. All prior findings persist. This iteration re-verifies each finding against the full reference corpus, refines severity assessments where new evidence warrants it, and adds one new finding (COPY-001-008) not caught in the prior pass."
+  },
+  "overallAssessment": "Chapter 1 is factually clean at the level of naming, magic system compliance, cultural norms, and anachronism avoidance. All 27 proper nouns checked — character names, place names, magical terms, faction names, and cultural references — are spelled consistently and match their authoritative sources in characters/index.json, world-bible/geography.json, world-bible/magic-system.json, and story-concept.json nameRegistry. The magic system rules are respected: the Oathbrand's suppression-not-removal mechanic (MAG-008) is correctly depicted, the Pallor's function as a reality-stabilizing membrane is consistent with worldbuilding, and no new magical abilities appear without prior establishment (INV-009). Cultural norms are observed — no honorifics in Duskhaven per garrison coast custom (CUL-003), the Oathbranded addressed by given name only (CUL-001), communal wall maintenance depicted as near-sacred communal activity. No anachronistic concepts, technologies, or idioms are present. Dialogue punctuation and formatting are correct throughout. Information asymmetry is properly maintained: Lirien is never named (Kaelith doesn't learn her name until Chapter 4), and Kaelith's knowledge state is consistent with the continuity tracker's Ch1 entry. Two significant issues are timeline arithmetic errors: the exile duration ('five years' vs. the authoritative six years, affecting four passages) and a carved-initials date that produces an impossible calculation (YK 718 is 24 years ago, not 12). A third concern involves an anatomical location shift between the Oathbrand (collarbone) and the magic-sensing gesture (sternum) that readers will register as inconsistent. These are correctable through targeted revision without structural changes.",
+  "findings": [
+    {
+      "id": "COPY-001-001",
+      "severity": "major",
+      "category": "timeline",
+      "description": "Exile duration stated as 'five years' at four points in the chapter, but the authoritative timeline gives six years. Cross-referenced evidence: (1) world-bible/history.json calendarSystem.currentYear = 742; (2) magic-system.json MAG-008 states 'Kaelith's brand was applied in YK 736 after Calwrath... It is now YK 742 — six years active'; (3) CHAR-001.json consistently references 'six years' of exile in backstory, psychology, and arc fields; (4) story-concept.json says the Oathbrand 'should have dissolved five years ago' — meaning 1-year original term (expired YK 737) plus 5 years overdue, totaling 6 years since branding. The draft conflates 'years overdue' (5) with 'total exile duration' (6). This error propagates to downstream chapters if not corrected. Upstream note: geography.json LOC-001 also says 'Kaelith has been here five years,' suggesting the discrepancy originated in the world-bible and was carried into the draft. Corroborates developmental editor finding DEV-001-002.",
+      "lineRef": "Lines 12, 154, 160, 166",
+      "correction": "Change all four instances of 'five years' (referring to total exile duration) to 'six years'. Specific lines: Line 12 — 'Six years of this. Six years of walking a wall...'; Line 154 — '...six years of penance hadn't bought her the right to stop running.'; Line 160 — '...left here to rot for six years only to be watched now.'; Line 166 — 'Kaelith had spent six years making the smart move. Six years of fixing walls...' Also flag geography.json LOC-001 for upstream correction. Note: Line 58's 'six years in the Ashborne Legion' refers to pre-Calwrath military service, not exile — this is correct and should NOT be changed."
+    },
+    {
+      "id": "COPY-001-002",
+      "severity": "major",
+      "category": "timeline",
+      "description": "Arithmetic error in the carved-initials passage. The text reads '*J.T. YK 718.* Twelve years ago.' The current year is YK 742 per history.json calendarSystem.currentYear. YK 742 − YK 718 = 24 years, not 12. The figure is off by a factor of two. This is a clear calculation error. The passage's narrative purpose — establishing the transience of Duskhaven's occupants — is well-served by any reasonable figure; the specific year is not plot-relevant.",
+      "lineRef": "Line 140",
+      "correction": "Recommended: change 'YK 718' to 'YK 730' to preserve 'twelve years ago,' which has better narrative rhythm and serves the passage's purpose. Alternative: change 'Twelve years ago' to 'Twenty-four years ago' to preserve YK 718, though this is a less natural phrase in interior monologue."
+    },
+    {
+      "id": "COPY-001-003",
+      "severity": "minor",
+      "category": "internal-consistency",
+      "description": "Anatomical location shift between the Oathbrand and the magic-sensing gesture. CHAR-001.json specifies the Oathbrand is 'above LEFT collarbone, ~2 inches diameter.' Three earlier passages (lines 16, 72, 138) correctly show Kaelith touching her 'collarbone' to interact with the brand. At line 182, she 'placed her palm flat against her sternum' to sense suppressed magic. The sternum (center of chest, between the ribs) and the left collarbone (upper chest near shoulder) are anatomically distinct locations separated by several inches. The distinction may be intentional — the brand sits on the collarbone while the deeper magical pressure is felt centrally — but the text does not clarify this, and readers tracking the Oathbrand's physical location will register the shift as a continuity error.",
+      "lineRef": "Line 182 (cf. lines 16, 72, 138)",
+      "correction": "Option A (if the distinction is intentional): Add a clarifying beat — e.g., 'She placed her palm flat against her sternum — not the brand above her collarbone, but lower, deeper, where the pressure built beneath skin and bone.' Option B (if unintentional): Change 'sternum' to 'collarbone' for consistency with the established Oathbrand location."
+    },
+    {
+      "id": "COPY-001-004",
+      "severity": "minor",
+      "category": "factual",
+      "description": "The Oathbrand's laterality is never established in Chapter 1. CHAR-001.json specifies the brand is 'above LEFT collarbone, ~2 inches diameter.' All collarbone references in the chapter (lines 16, 72, 138) say only 'her collarbone' without specifying left vs. right. While the draft is not technically wrong (it never claims 'right'), Chapter 1 is the natural place to establish this detail since it will be visually described in later chapters (combat scenes, the intimate scene in Ch14, the Oathbrand removal in Ch15/17). Establishing it here prevents a jarring first-mention of 'left' in a later chapter.",
+      "lineRef": "Line 16 (first collarbone reference)",
+      "correction": "Add 'left' to the first collarbone reference: 'Her hand went to her left collarbone, fingers finding the ridge of scar tissue through her shirt.' Subsequent references at lines 72 and 138 can omit the laterality specification once established."
+    },
+    {
+      "id": "COPY-001-005",
+      "severity": "suggestion",
+      "category": "factual",
+      "description": "The Pallor's age is stated as 'seven hundred years' (line 38). Verification against history.json confirms: the YK calendar's epochEvent is 'The raising of the Pallor and the sealing of Ythara the Unfinished,' meaning YK 0 = Pallor creation. The Pallor is therefore exactly 742 years old. 'Seven hundred years' is a reasonable character approximation — Kaelith is not performing precise calculation in interior monologue. However, downstream chapters should not use a figure that contradicts this (e.g., 'eight hundred years' would be wrong). This finding is downgraded from minor (iteration 1) to suggestion, as the history.json epochEvent definitively resolves the ambiguity.",
+      "lineRef": "Line 38",
+      "correction": "No change required. 'Seven hundred years' is an acceptable approximation of 742 in character voice. Flag for downstream consistency: all future Pallor-age references should round to 'seven hundred' or use the vaguer 'centuries' for internal consistency."
+    },
+    {
+      "id": "COPY-001-006",
+      "severity": "suggestion",
+      "category": "formatting",
+      "description": "'She sat up.' appears as an isolated one-line emphasis paragraph at line 159. Per the style guide (isolatedLines.rule), one-line paragraphs are reserved for 'reversals, realizations, or emotional impacts that change the scene's value.' This is a transitional physical action — Kaelith sitting up on her bed before resuming threat assessment — which does not constitute a reversal or realization. The technique is used effectively elsewhere in the chapter (lines 14, 28, 60, 128) for genuine pivots. This instance dilutes the emphasis device. Corroborated by line editor finding LINE-001-019.",
+      "lineRef": "Line 159",
+      "correction": "Fold into the surrounding prose by merging with the following paragraph: 'She sat up. She didn't know who the fae woman was...' This preserves the physical action while reserving the isolated-line device for its highest-impact uses."
+    },
+    {
+      "id": "COPY-001-007",
+      "severity": "minor",
+      "category": "naming",
+      "description": "Upstream character ID error in chapter outline artifact. plot/chapter-outlines/chapter-001.json lists 'CHAR-009 (Tavik)' in the charactersPresent field. Per characters/index.json, CHAR-009 is Sethis Varn (Ashborne Legion commander); Tavik Soren is CHAR-008. This error is in the outline artifact, not the draft itself — the draft correctly depicts Tavik as garrison commander consistent with CHAR-008's profile. However, the incorrect ID could cause downstream agents to pull CHAR-009's profile when processing Tavik's behavior in Chapter 1.",
+      "lineRef": "chapter-001.json (not in draft.md)",
+      "correction": "Update plot/chapter-outlines/chapter-001.json charactersPresent field to read 'CHAR-008 (Tavik)' instead of 'CHAR-009 (Tavik)'."
+    },
+    {
+      "id": "COPY-001-008",
+      "severity": "suggestion",
+      "category": "internal-consistency",
+      "description": "Kaelith's deduction that 'someone was maintaining' the Oathbrand (line 134) borders on a knowledge-state advancement that the continuity tracker assigns to Chapter 3. The continuity tracker records Ch1 knowledge as 'Oathbrand not healing' and Ch3 knowledge as 'Oathbrand deliberately maintained.' The draft's line 134 reads: 'Someone was maintaining it. Someone with access to Conclave-level Shapers and the knowledge of how to refresh disciplinary wards that were supposed to fade. Someone who wanted her contained.' This is presented as speculative deduction (not confirmed knowledge), which is narratively distinct from the confirmed discovery in Ch3. The current phrasing is defensible as hypothesis formation — a trained military commander reasoning from evidence. However, the line between 'strong suspicion' and 'confirmed knowledge' is thin, and the chapter reviser should ensure the speculative framing is preserved during any revision to this passage.",
+      "lineRef": "Line 134",
+      "correction": "No immediate change required. The speculative framing ('Someone was maintaining it') is acceptable as hypothesis rather than confirmed fact. If this passage is revised for other reasons, the reviser should preserve the speculative register — avoid phrasing that reads as confirmed knowledge (e.g., 'The Conclave was maintaining it' would be a knowledge leak)."
+    }
+  ],
+  "namingVerification": {
+    "status": "pass",
+    "methodology": "Every proper noun in draft.md cross-referenced against characters/index.json, story-concept.json nameRegistry, world-bible/geography.json, world-bible/magic-system.json, world-bible/culture.json, and continuity/continuity-tracker.json namingConsistency section.",
+    "characterNames": {
+      "Kaelith": {
+        "occurrences": 28,
+        "status": "consistent",
+        "notes": "No surname used in draft. Correct for Oathbranded per CUL-001 ('Oathbranded persons lose the right to their title permanently; they are addressed by given name only'). Canon surname 'Maren' deliberately withheld."
+      },
+      "Tavik": {
+        "occurrences": 12,
+        "status": "consistent",
+        "notes": "First name only. Correct for garrison coast informality (CUL-003). Canon full name 'Tavik Soren' (CHAR-008). Surname appropriately withheld in Kaelith's familiar POV."
+      },
+      "Lirien": {
+        "occurrences": 0,
+        "status": "correctly-absent",
+        "notes": "Not named in Chapter 1. Referred to as 'A woman' (line 62), 'This woman' (line 65), 'The woman' (line 68), 'the fae woman' (lines 132, 172). Correct per information asymmetry: Kaelith does not learn Lirien's name until Chapter 4 (continuity tracker Ch4 knowledge state)."
+      }
+    },
+    "placeNames": {
+      "Duskhaven": {
+        "occurrences": 5,
+        "status": "consistent",
+        "source": "geography.json LOC-001, story-concept.json nameRegistry"
+      },
+      "Listing Mast": {
+        "occurrences": 2,
+        "status": "consistent",
+        "notes": "Used with article 'the Listing Mast' at lines 50 and 127. Matches geography.json LOC-001 tavern name. Article usage is consistent."
+      },
+      "Aranthem": {
+        "occurrences": 1,
+        "status": "consistent",
+        "source": "geography.json LOC-003, story-concept.json nameRegistry (imperial capital)"
+      },
+      "Calwrath": {
+        "occurrences": 1,
+        "status": "consistent",
+        "source": "story-concept.json nameRegistry (siege location)"
+      }
+    },
+    "magicTerms": {
+      "Oathbrand": {
+        "occurrences": 3,
+        "status": "consistent",
+        "notes": "Capitalized as proper noun throughout. Matches magic-system.json MAG-008 naming."
+      },
+      "Pallor": {
+        "occurrences": 7,
+        "status": "consistent",
+        "notes": "Capitalized as proper noun throughout. Described as 'tarnished silver' (line 27) and 'silver membrane' (line 33), both consistent with geography.json Pallor description."
+      },
+      "Shapers": {
+        "occurrences": 1,
+        "status": "consistent",
+        "notes": "Capitalized as faction/class noun at line 134. Used in compound 'Conclave-level Shapers' — shorthand for High Conclave is natural in interior monologue."
+      },
+      "Conclave": {
+        "occurrences": 1,
+        "status": "consistent",
+        "notes": "Used as modifier 'Conclave-level' at line 134. Full name is 'High Conclave' per story-concept.json and history.json. Abbreviated form is acceptable in Kaelith's interior monologue."
+      }
+    },
+    "organizations": {
+      "Ashborne Legion": {
+        "occurrences": 2,
+        "status": "consistent",
+        "notes": "Correct two-word form. Matches story-concept.json nameRegistry. Not confused with historical 'Ashborne Watch' (precursor organization per history.json ERA-003)."
+      },
+      "Cerith Court": {
+        "occurrences": 1,
+        "status": "consistent",
+        "source": "story-concept.json nameRegistry, culture.json CUL-002"
+      }
+    },
+    "raceTerms": {
+      "fae": {
+        "occurrences": 4,
+        "status": "consistent",
+        "notes": "Lowercase when used as adjective/noun mid-sentence ('the fae woman' at lines 132, 172). Capitalized at sentence/fragment boundaries ('Fae, or close enough' at lines 62, 88). This is the expected pattern — 'fae' is a species descriptor, not a proper noun, and follows standard English capitalization rules."
+      }
+    }
+  },
+  "worldRuleCompliance": {
+    "status": "pass",
+    "magicSystem": {
+      "overall": "All magic references comply with established rules.",
+      "oathbrand": "Depicted as suppression-not-removal (MAG-008 compliant). 'Locked it behind a barrier she couldn't cross' (line 186) and 'suppression wasn't removal. The capacity was still there' (line 187) correctly reflect MAG-004 (suppressed magic accumulates as pressure) and MAG-008 (containment not removal). One-year dissolution term correctly stated (line 17). Emotional-trigger flare behavior correctly depicted (lines 14-16, 71-72).",
+      "pallor": "Functions as reality-stabilizing membrane. Tear-and-seal behavior (lines 32-36) is consistent with world-bible. 'Mountains kept their shapes, rivers remembered their courses' (line 39) directly echoes the Unfinished Age description in history.json ERA-001. Pallor gradient referenced correctly: 'border provinces where the Pallor was thinner' (line 150) matches geography.json gradient (heaviest east, thins westward).",
+      "noNewAbilities": "No new magical abilities introduced without prior establishment (INV-009 compliant). Kaelith is correctly depicted as Tier 1 (suppressed) per magic-system.json."
+    },
+    "culturalNorms": {
+      "overall": "All three cultural systems observed correctly where applicable.",
+      "garrisonCoast": "CUL-003 correctly observed: no honorifics used, communal wall maintenance depicted as near-sacred activity ('the seawall held' carries appropriate weight), strangers watched but not directly confronted, practical tolerance of Oathbranded. Tavik's dry humor and resignation are characteristic.",
+      "imperial": "CUL-001 Oathbranded treatment correctly applied: Kaelith addressed by given name only, title rights lost. Her self-identity as 'the woman who fixes walls' reflects internalized status loss.",
+      "fae": "CUL-002 markers correctly applied to Lirien's observed behavior: 'preternatural stillness' (line 63), deliberate gaze-holding (line 65), hands described in terms of what they're not doing (line 68). All observed through Kaelith's human-cultural lens."
+    },
+    "anachronismCheck": "No anachronistic concepts, technologies, metaphors, or idioms detected. Vocabulary is consistently pre-industrial fantasy with magic-based technology. 'Curtain' (line 24) correctly refers to a curtain wall (fortification term), not a textile anachronism. No clock metaphors, no explosive references, no modern slang. Military terminology ('assessment,' 'perimeter,' 'patrol') is appropriate for Kaelith's commander background without being modern-military jargon."
+  },
+  "geographyCompliance": {
+    "status": "pass",
+    "findings": "All spatial and environmental references are consistent with geography.json LOC-001 (Duskhaven). Salt wind from the northeast (line 24) matches LOC-001 climate ('Cold maritime. Persistent sea fog, salt wind from the northeast'). Grey stone walls (line 26) match ('Grey stone walls, salt-stained'). The Listing Mast tavern correctly placed (LOC-001 landmarks). Pallor described as 'tarnished silver' (line 27) and creating 'permanent dusk' — consistent with LOC-001 ('The Pallor sits heavy and intact overhead, dimming even the brightest days to a permanent dusk'). The Ashborne Legion standard 'hung from a pole no one had bothered to remove' (line 124) matches LOC-001 ('Ashborne Legion standard still flies from a pole no one has bothered to take down'). Reference to 'border provinces where the Pallor was thinner' (line 150) is consistent with the Pallor gradient (decreasing suppression east to west). No travel-time claims in this chapter to verify."
+  },
+  "timelineCompliance": {
+    "status": "fail",
+    "findings": "Two timeline arithmetic errors detected (COPY-001-001 and COPY-001-002). The exile duration discrepancy (5 vs. 6 years) affects four passages and contradicts the authoritative timeline (YK 736 branding to YK 742 present = 6 years), the character profile (CHAR-001.json), and the magic system file (MAG-008). The carved-initials arithmetic error (YK 718 claimed as 'twelve years ago' when it is actually 24 years ago) is a clear calculation mistake. Internal timeline within the chapter is otherwise sound: dawn patrol → mid-morning repair work → afternoon Tavik confrontation → evening retreat to room is a plausible single-day progression matching the continuity tracker's Day 1 events."
+  },
+  "informationAsymmetryCompliance": {
+    "status": "pass",
+    "findings": "Kaelith's knowledge state is consistent with the continuity tracker's Ch1 entry. She learns: fae woman is watching her (confirmed via observation and Tavik's deflection), Tavik is lying about the fae woman's purpose (confirmed via his body language), and the Oathbrand is not healing as expected (confirmed via personal experience). She does NOT know: who sent Lirien, why surveillance has begun now, that the brand is killing her, or that she carries the Quietus path. None of these unknown facts leak into the narrative. Lirien's name is correctly withheld. The speculative deduction about active maintenance (line 134) is framed as hypothesis, not confirmed knowledge (see COPY-001-008)."
+  },
+  "grammarAndPunctuation": {
+    "status": "pass",
+    "findings": {
+      "dialogueFormatting": "Correct throughout. Em dashes used for interruptions: 'She's probably just—' (line 99) and 'I told you—' (line 107). Speech tag punctuation correct: '\"It matters,\" she said' (line 121) uses comma before lowercase 'she'. Action beats correctly use periods: '\"You're lying.\" She said it flatly' (line 108) — 'She said it flatly' is an action beat (the pronoun 'it' objectifies the statement, making this narration rather than a direct speech tag). Quotation marks consistently applied.",
+      "tenseConsistency": "Past tense maintained throughout with no tense slips. Present tense appears only in dialogue ('She's watching me,' 'I can't help you'), which is correct.",
+      "pronounClarity": "Unambiguous throughout. Scene 2 has two female characters (Kaelith and the unnamed fae woman), but the text carefully distinguishes them: Kaelith is always named, the fae woman is always referred to by descriptor ('A woman,' 'This woman,' 'The woman,' 'the fae woman'). No ambiguous pronoun references.",
+      "sentenceFragments": "Fragments are used intentionally as stylistic choices consistent with Kaelith's clipped military voice: 'Not casual watching.' (line 54), 'Assessment.' (line 56). These are deliberate and effective.",
+      "paragraphStructure": "Scene breaks use '---' consistently (lines 46, 82). No excessively long paragraphs. YAML frontmatter correctly formatted (lines 1-8)."
+    }
+  },
+  "findingCounts": {
+    "critical": 0,
+    "major": 2,
+    "minor": 3,
+    "suggestion": 3,
+    "total": 8,
+    "byCategory": {
+      "timeline": 2,
+      "internal-consistency": 2,
+      "factual": 2,
+      "naming": 1,
+      "formatting": 1,
+      "grammar": 0,
+      "anachronism": 0
+    }
+  },
+  "crossReferenceWithOtherEdits": {
+    "developmentalEditor": {
+      "COPY-001-001": "Corroborates DEV-001-002 (timeline discrepancy). Both independently flag the five-vs-six-year exile duration as the chapter's most significant factual error.",
+      "COPY-001-006": "Relates to the same passage area as DEV-001-001 (post-Tavik introspection pacing). The isolated one-line paragraph falls within the stretch the dev editor flagged for pacing concerns."
+    },
+    "lineEditor": {
+      "COPY-001-006": "Corroborates LINE-001-019 (isolated one-line paragraph at line 159). Both independently identify 'She sat up.' as failing the style guide's emphasis-paragraph criteria.",
+      "COPY-001-003": "Relates to LINE-001-014 (body-awareness). The sternum/collarbone distinction falls within the broader body-awareness prose the line editor evaluated."
+    }
+  },
+  "upstreamArtifactIssues": [
+    {
+      "artifact": "world-bible/geography.json",
+      "location": "LOC-001 description field",
+      "issue": "Contains 'Kaelith has been here five years' — should be 'six years' per the authoritative timeline (YK 736 to YK 742 = 6 years). This upstream error likely propagated into the draft.",
+      "relatedFinding": "COPY-001-001",
+      "suggestedFix": "Change 'five years' to 'six years' in LOC-001 description."
+    },
+    {
+      "artifact": "plot/chapter-outlines/chapter-001.json",
+      "location": "charactersPresent field",
+      "issue": "Lists 'CHAR-009 (Tavik)' but Tavik Soren is CHAR-008 per characters/index.json. CHAR-009 is Sethis Varn (Ashborne Legion commander).",
+      "relatedFinding": "COPY-001-007",
+      "suggestedFix": "Change 'CHAR-009' to 'CHAR-008' in charactersPresent."
+    }
+  ],
+  "iterationDelta": {
+    "newFindings": ["COPY-001-008"],
+    "refinedFindings": {
+      "COPY-001-005": "Downgraded from minor (iteration 1) to suggestion. History.json calendarSystem.epochEvent definitively confirms YK 0 = Pallor creation, resolving the ambiguity about whether the Pallor predates the calendar.",
+      "COPY-001-006": "Downgraded from minor (iteration 1) to suggestion. This is a style-guide interpretation rather than a factual error.",
+      "COPY-001-003": "Re-categorized from 'factual' to 'internal-consistency' — this is not a fact error but a consistency concern between two body-part references within the same chapter."
+    },
+    "resolvedFindings": "None. Draft has not been revised since iteration 1."
+  }
+}

@@ -1,0 +1,294 @@
+{
+  "chapter": 12,
+  "pov": "CHAR-002",
+  "povName": "Lirien Dael",
+  "agentRole": "line-editor",
+  "timestamp": "2025-07-21T16:30:00Z",
+  "draftWordCount": 5347,
+  "summary": "Chapter 12 delivers exceptional thematic work — the 'recursive transparency' concept, the bond-as-tactical-asset paradox, and the contract omission trio (lines 138-142) are among the strongest prose achievements in the manuscript so far. Lirien's voice is unmistakable from the opening sentence. However, the chapter suffers from two critical repetition problems that must be addressed before it can proceed: (1) the phrase 'through the bond' and its variants appear 23 times in 286 lines, creating a mechanical drone that undercuts the very intimacy the prose is trying to convey; (2) Lirien's voice markers — operational vocabulary, water metaphors, parenthetical field-notes, and the 'she felt [Kaelith's emotion] through the bond' construction — saturate the prose so densely that the chapter reads as a voice-fingerprint demonstration rather than lived experience. These are fixable problems in otherwise outstanding writing.",
+  "findingSummary": {
+    "total": 19,
+    "bySeverity": {
+      "critical": 3,
+      "major": 7,
+      "minor": 7,
+      "note": 2
+    },
+    "byCategory": {
+      "repetition": 5,
+      "voice": 3,
+      "prose": 3,
+      "show-tell": 3,
+      "cliché": 2,
+      "dialogue": 1,
+      "tension": 0,
+      "mru": 2
+    }
+  },
+  "findings": [
+    {
+      "id": "LINE-001",
+      "severity": "critical",
+      "category": "repetition",
+      "description": "'Through the bond' / 'through the resonance' appears 23 times in 286 lines — roughly once every 12 lines. The phrase has become a mechanical connector rather than a meaningful narrative signal. By line 172, the reader can predict its arrival at the start of every Kaelith-observation paragraph. The repetition is especially dense in Scene 2 (the intelligence briefing, lines 132-178: seven instances in 46 lines) and Scene 3 (the chase, lines 188-240: nine instances in 52 lines). The bond is the chapter's central subject; the prose must find more varied ways to render it.",
+      "lineRef": { "start": 24, "end": 284 },
+      "instances": [
+        "L24: 'through the resonance bond with the clarity of intercepted intelligence'",
+        "L34: 'translated through the bond into a phantom pull'",
+        "L38: 'The bond transmitted her emotional state'",
+        "L88: 'Through the bond, Lirien felt Kaelith feeling'",
+        "L92: 'echoed through the bond into Lirien's body'",
+        "L100: 'through the bond's peripheral awareness'",
+        "L132: 'Through the bond, Lirien felt Kaelith's attention sharpen'",
+        "L144: 'Through the bond, Lirien felt the information settle'",
+        "L152: 'Lirien felt it through the bond'",
+        "L156: 'carried something through the bond'",
+        "L164: 'Lirien could feel through the bond the current beneath it'",
+        "L172: 'Through the bond, Lirien felt her reading the terrain'",
+        "L178: 'Through the bond, something passed between them'",
+        "L194: 'reached Kaelith through the resonance' / 'Through the bond, Lirien registered'",
+        "L198: 'through the resonance' / 'transmitted through the bond'",
+        "L208: 'Through the bond: Kaelith's frustration'",
+        "L212: 'through the resonance'",
+        "L214: 'through the bond an instant before'",
+        "L226: 'arrived through the bond from Kaelith' / 'transmitted through the resonance'",
+        "L234: 'Through the bond, Lirien felt every shift'",
+        "L258: 'Through the bond, the look carried everything'",
+        "L268: 'Through the bond, Lirien felt the pull'",
+        "L284: 'The bond hummed between them'"
+      ],
+      "suggestedFix": "Cut at least 14 of 23 instances. The bond is established by line 24; after that, vary the rendering: (a) simply report what Lirien senses without citing the mechanism — 'Kaelith's attention sharpened. A blade drawn from a sheath.' (b) let physical behavior carry the bond's signal — 'Kaelith's shoulders squared and her breath shortened and Lirien's did the same.' (c) use 'the resonance' or 'the connection' sparingly as substitutes where the mechanism needs naming. Reserve 'through the bond' for 5-7 high-impact moments: the first morning transmission (L24), the first bond-as-tactical-tool moment in the chase (L194), and the closing reflection (L276-284). In the chase sequence, especially, the bond should feel invisible — two bodies moving as one — rather than narrated as a communications system."
+    },
+    {
+      "id": "LINE-002",
+      "severity": "critical",
+      "category": "voice",
+      "description": "Voice marker saturation. 'Operational' and its cognates appear 21 times. Water/current/undertow/surface/depth metaphors appear 25+ times. Parenthetical field-note assessments appear 8 times. The 'Lirien felt [emotion label] through the bond' construction appears 15 times. Individually, each marker is voice-appropriate. Collectively, their density means the chapter reads as a voice-fingerprint demonstration rather than natural prose. The markers appear in most paragraphs and on most pages; this is the definition of saturation per the line-editor protocol. A reader does not need to be reminded every paragraph that Lirien thinks in operational terms — once it is established, it should recede into the prose texture and re-emerge only at moments of thematic stress.",
+      "lineRef": { "start": 14, "end": 286 },
+      "instances": [
+        "Operational vocabulary (21x): lines 14, 20, 30, 36, 44, 50, 76, 78, 82, 92, 102, 104, 120, 124, 128, 140, 158, 190, 204, 240, 278",
+        "Water metaphors (25+x): compass-needle L16/L226/L268, current L44/L46/L92/L164/L272/L286, undertow L48/L94, channel L46/L204/L206/L232, water L36/L42/L54/L206/L232, tide/shoreline L80, river L44/L118/L272, erosion L80/L118/L120/L136/L148, surface/depth L38/L48/L70/L276/L286, swimmer L48, swimming L94, sea L286",
+        "Parenthetical assessments (8x): lines 26, 30, 62, 102, 120, 138, 140, 142",
+        "'Lirien felt [X] through the bond' (15x): see LINE-001 instances"
+      ],
+      "suggestedFix": "Reduce operational vocabulary to ~10 uses by cutting instances where the word serves no narrative purpose beyond marking voice (e.g., L204 'The filing was now operational' — just say 'The filing was paying off'). Thin water metaphors to 12-15 total, choosing the strongest and cutting near-duplicates (the chapter uses 'compass needle' three times — keep one). Reduce parenthetical assessments to 4-5 by merging or cutting the weakest (L30 and L102 can be cut; L26 and L62 can merge into inline narrative). The voice should flavor the prose, not coat it."
+    },
+    {
+      "id": "LINE-003",
+      "severity": "critical",
+      "category": "repetition",
+      "description": "'She felt' / 'Lirien felt' appears 15 times in the chapter. This combines with LINE-001 to create a dominant sentence pattern: 'Through the bond, Lirien felt [Kaelith's emotion].' The construction appears so frequently that it becomes the chapter's default mode of observation, converting every moment of connection into the same grammatical shape. By the chase sequence, the reader is numb to it.",
+      "lineRef": { "start": 28, "end": 276 },
+      "instances": [
+        "L28: 'She felt Kaelith's sleep pattern change'",
+        "L88: 'Lirien felt Kaelith feeling Lirien's refusal'",
+        "L92: 'Lirien felt the shift' (x2 in same paragraph)",
+        "L132: 'Lirien felt Kaelith's attention sharpen'",
+        "L144: 'Lirien felt the information settle'",
+        "L152: 'Lirien felt it through the bond'",
+        "L172: 'Lirien felt her reading the terrain'",
+        "L190: 'Lirien felt them before she heard them'",
+        "L194: 'She felt the moment of transmission'",
+        "L210: 'Lirien felt the calculation happen'",
+        "L214: 'Lirien felt her companion's body shift'",
+        "L234: 'Lirien felt every shift in Kaelith's body'",
+        "L268: 'Lirien felt the pull as a phantom tug'",
+        "L276: 'Lirien felt the thought form'"
+      ],
+      "suggestedFix": "Cut to 6-7 uses maximum. Replace the rest with varied constructions: direct sensory rendering ('Kaelith's anger arrived as iron on Lirien's tongue'), physical mirroring ('Her own jaw tightened — Kaelith's tension, echoed'), or simple statement of the information without citing the mechanism of reception. The chase scene (L188-240) is the worst cluster — in action, the bond should be invisible, not narrated. Show two bodies moving as one without explaining how they know."
+    },
+    {
+      "id": "LINE-004",
+      "severity": "major",
+      "category": "show-tell",
+      "description": "The bond mechanism enables a telling shortcut: naming Kaelith's emotions directly rather than showing them through behavior. This produces passages where Lirien reports a labeled emotional state as received data. While the bond justifies the mechanism, it violates INV-005 at scale: the reader is told what Kaelith feels rather than shown it through action, gesture, or dialogue. The effect is that Kaelith becomes a broadcast signal rather than a person.",
+      "lineRef": { "start": 24, "end": 258 },
+      "instances": [
+        "L24: 'deep calm, diffused warmth, the slow churn of dreams' — three emotion labels in sequence",
+        "L100: 'Kaelith's concentration as a quiet heat, her frustration when the working stuttered as a flicker of cold, her satisfaction when it held as a slow bloom' — three labeled emotions in one sentence, decorated with synesthetic metaphors but still told",
+        "L132: 'Lirien felt Kaelith's attention sharpen' — borderline (the blade metaphor partly shows)",
+        "L152: 'not as curiosity but as the specific heaviness' — labels curiosity and heaviness",
+        "L156: 'grim purpose — the emotional equivalent of a load-bearing decision' — direct label",
+        "L164: 'anger, carefully channeled. Not the hot anger of impulse. The cold anger' — three uses of the word 'anger' in two sentences",
+        "L208: 'Kaelith's frustration... Her anger... her awareness' — three labels in rapid succession",
+        "L234: 'the fierce joy... the joy of a body remembering' — label decorated with exposition",
+        "L244: 'The adrenaline. The fear. The savage satisfaction.' — three bare emotion labels in a row"
+      ],
+      "suggestedFix": "For each instance, ask: can the reader infer the emotion from what Kaelith does? If yes, cut the label and let action carry it. L164 is the clearest case: 'Kaelith stood. The motion was controlled' already shows the anger — cutting 'anger, carefully channeled' and the elaboration improves the line. L244 should become physical: what does adrenaline look like in Lirien's body? What does satisfaction feel like in her chest? The bond should deliver sensation, not classification. Allow 2-3 told emotions per scene maximum where the bond's data-transmission quality is itself the point."
+    },
+    {
+      "id": "LINE-005",
+      "severity": "major",
+      "category": "prose",
+      "description": "Purple prose: line 80 stacks five actions and three metaphors into a single sentence that extends to 73 words. The tea-cup delivery becomes an overwrought metaphor vehicle: 'the two paces registered in the bond as a shift in pressure that Lirien absorbed the way shoreline absorbed tide — helplessly, inevitably, with the slow erosion of every boundary she had placed between herself and the specific gravity of this woman's proximity.' The sentence mixes tide, erosion, and gravity in one clause while also asking 'the specific gravity of this woman's proximity' to do emotional work it cannot bear without sounding like a physics textbook crossed with a romance novel.",
+      "lineRef": { "start": 80, "end": 80 },
+      "suggestedFix": "Split the sentence. Let the physical action (Kaelith leaning forward) stand with a single resonance beat. The water metaphor is strong — pick either erosion OR tide, not both. Cut 'the specific gravity of this woman's proximity' entirely; it is the kind of elevated phrasing the style guide explicitly warns against ('ornament for ornament's sake'). Example revision: 'Kaelith leaned forward to retrieve it, and the two paces closed between them registered as pressure Lirien absorbed the way shoreline absorbed tide — helplessly, without choice.'"
+    },
+    {
+      "id": "LINE-006",
+      "severity": "major",
+      "category": "prose",
+      "description": "Line 66-68 is a 93-word sentence that attempts to describe Kaelith's expression through layered negation and abstraction: 'an expression that held no tactical assessment and no deflection and no careful framing. Just attention. Open, unguarded attention from a woman who had spent six years building walls and had deliberately removed them, and the removal was visible in the particular way she held Lirien's gaze — steady, unblinking, the way you looked at something you had decided to see clearly.' The sentence shifts to second-person 'you' (a style guide violation of close-third) and stacks abstractions without grounding them in physical detail. What does 'open attention' look like on a face?",
+      "lineRef": { "start": 66, "end": 66 },
+      "suggestedFix": "Ground the description in specific physical detail. What is Kaelith's actual face doing? The style guide mandates concrete nouns over abstract chains. Replace 'an expression that held no tactical assessment and no deflection and no careful framing' with what the expression actually is — e.g., 'her mouth slightly parted, her eyes wide and undefended.' Cut the second-person shift ('the way you looked at something') — close-third from Lirien's POV should say 'the way someone looked at something' or simply describe the looking."
+    },
+    {
+      "id": "LINE-007",
+      "severity": "major",
+      "category": "repetition",
+      "description": "'Compass needle' appears three times (L16, L226, L268). Each instance describes the Quietus pull or the bond's directional quality. The metaphor is effective on first use; by the third instance, it has become a refrain that diminishes rather than reinforces.",
+      "lineRef": { "start": 16, "end": 268 },
+      "instances": [
+        "L16: 'the way a compass needle oriented toward north'",
+        "L226: 'like a compass needle steadying after disruption'",
+        "L268: 'Kaelith's compass needle, echoed into Lirien's body'"
+      ],
+      "suggestedFix": "Keep one — L16 (the first and most developed use) or L226 (the most contextually specific). Replace the others with different directional imagery. L268 could become: 'Kaelith's north, written into Lirien's body' — which echoes L92's 'someone else's north' without repeating the compass metaphor."
+    },
+    {
+      "id": "LINE-008",
+      "severity": "major",
+      "category": "voice",
+      "description": "Parenthetical field-note assessments appear 8 times (L26, L30, L62, L102, L120, L138, L140, L142). While this is a strong voice marker, the density makes the device predictable. By L102, the reader expects a parenthetical every time Lirien processes something uncomfortable. The trio at L138-142 is excellent — it earns the device by escalating from professional to personal — but that payoff is diluted if the device has already been used five times before it.",
+      "lineRef": { "start": 26, "end": 142 },
+      "suggestedFix": "Cut L30 ('Consistent with resonance theory. Inconsistent with operational viability.') — it adds nothing the paragraph doesn't already convey. Cut L102 ('Operational distraction. Noted. Managed. Insufficiently.') — the rhythm is identical to L26 and creates a pattern that cheapens both. Keep L26, L62 (different enough in tone), L120 (substantively different content), and the L138-142 trio. This reduces the count to 5 and preserves the escalation."
+    },
+    {
+      "id": "LINE-009",
+      "severity": "major",
+      "category": "show-tell",
+      "description": "Lines 108-118 deliver exposition via summary rather than embodied experience. Two full paragraphs of Pallor/Dimming rite intelligence presented as dry factual summary. The style guide mandates max one paragraph of pure exposition before returning to scene action. While the intelligence-reading framing provides some justification, the content reads as worldbuilding lecture rather than POV-filtered discovery. Lirien's reactions are absent — she reads this world-shaking information with no physical or emotional response until line 110, which itself is a telling line ('She had suspected').",
+      "lineRef": { "start": 108, "end": 118 },
+      "suggestedFix": "Break the exposition with Lirien's physical behavior and bond-mediated awareness. After the first paragraph (L108), insert a beat: her hands, the parchment, what the bond is transmitting from Kaelith nearby. Embed Lirien's analytical reaction into the second paragraph (L112-118) — she should be cross-referencing, assessing, noticing how the intelligence changes her operational calculus. The Reyvas paragraph at L118 is stronger because it uses Lirien's water metaphor ('bureaucratic current') — extend that approach to L108."
+    },
+    {
+      "id": "LINE-010",
+      "severity": "major",
+      "category": "show-tell",
+      "description": "Line 244: 'The adrenaline. The fear. The savage satisfaction of a successful evasion.' Three bare emotion labels in a row, violating INV-005. Coming after a physically grounded chase sequence, these abstractions feel like the prose ran out of body and retreated to classification. Lirien would sense these as physical phenomena — her pulse, her heat, the looseness in her limbs after running.",
+      "lineRef": { "start": 244, "end": 244 },
+      "suggestedFix": "Replace with physical sensations: 'Her pulse still running fast. The heat in her legs. The looseness in her hands that came after danger passed.' Or, since this is Lirien — who classifies reflexively — show the classification failing: 'Her body was doing three things she could not rank in order of operational relevance.'"
+    },
+    {
+      "id": "LINE-011",
+      "severity": "major",
+      "category": "repetition",
+      "description": "The phrase 'eighteen years' appears twice (L28 and L48) in close proximity, both referencing Seep training. 'Six years' (Kaelith's exile/brand duration) appears or is implied at L66, L100, and L234. 'Forty years' (Reyvas's conspiracy) appears at L108, L112, L117, L136, L144, L152, and L272. The time-reference repetition, especially for 'forty years,' creates rhythmic monotony in the intelligence briefing section.",
+      "lineRef": { "start": 28, "end": 272 },
+      "suggestedFix": "Cut 'eighteen years' at L48 — say 'a career's worth of operative training' or simply 'training.' Reduce 'forty years' to 3-4 uses in the briefing section; let 'four decades' or 'a generation' substitute in alternation. 'Six years' at L234 can become 'years of disuse.'"
+    },
+    {
+      "id": "LINE-012",
+      "severity": "minor",
+      "category": "cliché",
+      "description": "Line 132: 'A blade being drawn from a sheath' as a metaphor for attention sharpening. This is a stock fantasy metaphor. While not egregious, it is generic enough to transplant into any fantasy novel unchanged — violating the style guide's metaphor originality standard.",
+      "lineRef": { "start": 132, "end": 132 },
+      "suggestedFix": "Replace with a domain-appropriate Lirien metaphor. She is visual/auditory: 'The particular clarity of a signal resolving from noise' or 'A frequency locking in' — something from her intelligence/surveillance domain."
+    },
+    {
+      "id": "LINE-013",
+      "severity": "minor",
+      "category": "cliché",
+      "description": "Line 216: 'the bond sang between them with the terrible intimacy of two people sharing a single adrenaline response.' 'Sang between them' is a stock romantic/fantasy phrasing for magical connection. The rest of the sentence is original, but the verb 'sang' is doing no specific work.",
+      "lineRef": { "start": 216, "end": 216 },
+      "suggestedFix": "Replace 'sang' with something that conveys the bond's operational quality in this moment: 'the bond pulled taut between them' or 'the bond ran live between them' — verbs that suggest a wire under tension rather than a musical instrument."
+    },
+    {
+      "id": "LINE-014",
+      "severity": "minor",
+      "category": "prose",
+      "description": "Line 68: 'She knew because the bond told her. She also knew because she was looking, and looking was different from knowing, and both were different from the third thing, which was being looked at *while knowing the other person knew what you were feeling while they looked.*' The second sentence shifts to second-person 'you' (breaking close-third POV) and the recursive clause structure, while thematically resonant with 'recursive transparency,' becomes syntactically tangled. The sentence tries to intellectualize what should be felt.",
+      "lineRef": { "start": 68, "end": 68 },
+      "suggestedFix": "Keep the intellectual recursion (it IS Lirien's processing mode) but fix the POV break: replace 'what you were feeling while they looked' with 'what she was feeling while they looked.' Consider shortening: 'She knew because the bond told her. She also knew because she was looking. The third knowing — being seen while being known — had no operational precedent.'"
+    },
+    {
+      "id": "LINE-015",
+      "severity": "minor",
+      "category": "dialogue",
+      "description": "Line 154: Lirien's dialogue runs to 49 words without interruption, action beat, or listener reaction. The phrasing is formally precise ('Possible interpretations: Ythara cult allegiance, power acquisition through controlled dissolution, or ideological commitment to a reality restructured without the Pallor's constraints') — which fits her intelligence-briefing register but risks sounding like a mission report rather than speech. The style guide caps unbroken dialogue at 6 spoken lines; this approaches that threshold in a single speech.",
+      "lineRef": { "start": 154, "end": 154 },
+      "suggestedFix": "Insert a Kaelith reaction beat after 'The Seep's intelligence does not specify motivation.' Let Kaelith's face or posture respond before Lirien lists the possible interpretations. This also creates a moment for bond-mediated observation without the 'through the bond' formula."
+    },
+    {
+      "id": "LINE-016",
+      "severity": "minor",
+      "category": "mru",
+      "description": "Line 60: The MRU sequence is inverted. External stimulus (Kaelith says Lirien's name) → emotional response should come first, but the prose routes through the bond mechanism before reaching the character: 'The use of her name registered in the bond before it registered in her ears. A warmth. Kaelith's warmth.' The inversion is partially justified by the bond's speed, but the effect is that Lirien receives Kaelith's emotion before processing her own. Her own response ('Lirien's hands did not pause... Her internal response was immediate, involuntary') comes second. The MRU should go: hear name → Lirien's reaction → then bond echo of Kaelith's feeling.",
+      "lineRef": { "start": 60, "end": 60 },
+      "suggestedFix": "Reorder: 'She heard her name. Something in her chest answered before she could classify it. Then the bond confirmed what she already knew — Kaelith's warmth, directed at her with the specificity of a person saying a name they had been thinking about saying.' This puts Lirien's physical/emotional reaction first, then the bond confirmation."
+    },
+    {
+      "id": "LINE-017",
+      "severity": "minor",
+      "category": "mru",
+      "description": "Lines 242-244: After the chase, the MRU sequence starts with Kaelith's physical response (hands on knees, breathing hard, magic flickering) but then Lirien's paragraph opens with her controlled breathing before reporting her emotional state through bond-transmitted labels ('The adrenaline. The fear. The savage satisfaction'). The physical response is present but the emotion labels override it. The reflex (controlled breathing) appears before the emotion is registered, which is correct for an operative — but the following list of bare labels undercuts the physical grounding.",
+      "lineRef": { "start": 242, "end": 244 },
+      "suggestedFix": "See LINE-010. Replacing the emotion labels with physical sensations fixes both the show-don't-tell and MRU issues simultaneously."
+    },
+    {
+      "id": "LINE-018",
+      "severity": "note",
+      "category": "voice",
+      "description": "Strength: The contract omission trio (lines 138-142) is the chapter's finest passage. The escalation from fact to justification to self-indictment — '(She omitted...) (The omission was operational...) (The omission was also cowardice. She filed the classification. Did not dispute it.)' — is perfectly calibrated for Lirien's voice and demonstrates what the parenthetical device can do at its best. The final line ('Did not dispute it') lands with the force of a confession. This is the emotional center of the chapter and should not be touched.",
+      "lineRef": { "start": 138, "end": 142 },
+      "suggestedFix": "No change. This is exemplary. Protect it during revision."
+    },
+    {
+      "id": "LINE-019",
+      "severity": "note",
+      "category": "prose",
+      "description": "Strength: The chapter's closing line (L286) is outstanding — 'Lirien walked beside the woman she had been sent to kill and felt everything the woman felt and could not hide what she carried and kept carrying it anyway, because the current flowed in two directions now — toward destruction and toward something she still could not classify — and she would navigate both until one of them reached the sea.' The water imagery crystallizes the chapter's dual-current theme. The refusal to classify ('something she still could not classify') is peak Lirien. The sea as destination is new and earns its arrival. Protect this line.",
+      "lineRef": { "start": 286, "end": 286 },
+      "suggestedFix": "No change. This is the chapter's best sentence. If the repetition fixes above thin the water metaphor count earlier, this line will land even harder as a culmination rather than another instance."
+    }
+  ],
+  "categoryAnalysis": {
+    "voiceDistinctness": {
+      "assessment": "Lirien's voice is unmistakable from line 12 — the directional precision, the operational vocabulary, the body-as-instrument framing. The problem is not distinctness but excess. Every voice marker the profile defines is present and deployed so frequently that the chapter demonstrates voice rather than inhabiting it. A reader encountering Lirien for the first time would learn her entire voice fingerprint from this chapter alone, which means the fingerprint is being displayed rather than lived in.",
+      "compliance": "INV-003 met (voice is consistent and recognizable). Voice saturation per Step 2 protocol is the concern."
+    },
+    "metaphorDomain": {
+      "assessment": "All metaphors are domain-appropriate for Lirien (water, current, surface/depth, contractual binding, surveillance). No wrong-domain intrusions. The 'blade drawn from sheath' at L132 is generic-fantasy rather than domain-specific but not domain-wrong. Kaelith's structural metaphors are correctly kept to Kaelith's dialogue and behavior, not Lirien's narration.",
+      "compliance": "Style guide metaphor policy met. Domain fidelity is excellent."
+    },
+    "dialogueNaturalism": {
+      "assessment": "Dialogue is generally strong. The morning exchange (L52-86) has excellent subtext — Kaelith's 'I felt you counting trees' is a perfect balance of humor and emotional exposure. The intelligence briefing dialogue is functional and character-consistent. Post-chase dialogue (L246-258) captures breathlessness well through short fragments. One dialogue passage (L154) runs slightly long for speech. Dialogue does not suffer from over-voicing — Lirien's speech is correctly more formal than Kaelith's without being artificially stiff.",
+      "compliance": "INV-019 met with one minor finding (LINE-015). INV-047 subtext met — charged exchanges say less than they mean."
+    },
+    "microTension": {
+      "assessment": "No dead spots detected. The chapter maintains tension through overlapping sources: the bond's vulnerability (Scenes 1-2), the contract secret (all scenes), the Reyvas intelligence (Scene 2), the Court advisory (Scene 2), and the pursuit (Scene 3). Even the tea-making passage (L36-50) is pressurized by the contract's presence in Lirien's blood.",
+      "compliance": "INV-035 fully met. No passage of half a page lacks active tension."
+    },
+    "mruStructure": {
+      "assessment": "MRU is mostly well-handled given the craft profile's exclusion of T14. The operative's tendency to suppress reflexive response IS the characterization, and the prose correctly uses suppression as signal. Two minor inversions noted (LINE-016, LINE-017) where bond transmission displaces Lirien's own reaction. These are fixable without losing the operative-voice quality.",
+      "compliance": "T14 excluded from craft profile; checked as advisory. Two minor inversions found."
+    }
+  },
+  "proseQualityFloorCheck": {
+    "clichéCount": 2,
+    "clichéMax": 2,
+    "clichéStatus": "AT_LIMIT",
+    "clichéInstances": ["L132 blade-from-sheath", "L216 bond-sang"],
+    "repeatedStructuresPerPage": "EXCEEDS — 'Through the bond, Lirien felt' appears ~4x per conceptual page in dense sections",
+    "repeatedStructuresMax": 3,
+    "repeatedStructuresStatus": "FAIL",
+    "purpleProse": "One instance (L80) meets purple prose criteria (mixed metaphor chain, 73-word sentence). L66 borderline.",
+    "purpleProseStatus": "FAIL",
+    "tellNotShowViolations": "9 instances identified. Three bare-label sequences (L100, L208, L244) are the most concerning. Bond mechanism creates systemic telling risk.",
+    "tellNotShowStatus": "FAIL",
+    "modernSlang": 0,
+    "modernSlangStatus": "PASS",
+    "bannedPhrases": 0,
+    "bannedPhrasesStatus": "PASS"
+  },
+  "revisionPriority": [
+    "1. CRITICAL: Reduce 'through the bond' from 23 to 5-7 instances (LINE-001). This is the single change that will most improve the chapter.",
+    "2. CRITICAL: Thin voice marker saturation across all categories (LINE-002). Aim to halve the density of operational vocabulary, water metaphors, and felt-through-bond constructions.",
+    "3. CRITICAL: Reduce 'Lirien felt' from 15 to 6-7 instances (LINE-003). Vary the construction for bond-mediated perception.",
+    "4. MAJOR: Convert bond-transmitted emotion labels to physical/sensory rendering (LINE-004). Let the reader infer rather than be told.",
+    "5. MAJOR: Fix purple prose at L80 (LINE-005) and L66 (LINE-006). Ground abstraction in physical detail.",
+    "6. MAJOR: De-duplicate compass needle (LINE-007), thin parentheticals (LINE-008), break exposition block (LINE-009).",
+    "7. MINOR: Fix two clichés (LINE-012, LINE-013), POV breaks (LINE-014), dialogue pacing (LINE-015), MRU inversions (LINE-016, LINE-017)."
+  ],
+  "overallAssessment": "Chapter 12 is thematically ambitious and largely succeeds — the recursive transparency concept, the bond-as-operational-paradox, and the pursuit sequence that proves the bond's tactical value are all excellent. Lirien's voice is deeply realized. The problems are all consequences of a single root cause: the chapter is so committed to rendering the bond's perceptual experience that it over-narrates the mechanism. If the reviser trusts the reader to understand the bond after the first scene and shifts from explaining it to simply showing its effects, the repetition, saturation, and telling issues will resolve together. The underlying prose is strong. This needs thinning, not rebuilding."
+}

@@ -1,0 +1,93 @@
+{
+  "storyId": "001",
+  "motifs": [
+    {
+      "id": "MOT-001",
+      "symbol": "The Pallor as flayed divine skin / membrane between order and chaos",
+      "linkedTheme": "TP-1: Trust as structural failure — The Pallor is protection born from violence, a boundary that holds only through sustained damage. Like trust between enemies, it functions not through absence of threat but through containing it.",
+      "appearances": [
+        {
+          "chapter": 1,
+          "scene": "SCN-001",
+          "imagery": "Silver membrane tears, reveals true starlight, knits closed like water finding level",
+          "function": "Establishes Pallor as protective barrier beginning to fail"
+        }
+      ],
+      "targetDensity": "3-4 appearances per act, evolving from protective barrier (Act I) to failing membrane (Act II) to wound reopened (Act III). Imagery should emphasize: silver thinning, tears revealing raw starlight, the skin metaphor becoming more explicit as crisis escalates."
+    },
+    {
+      "id": "MOT-002",
+      "symbol": "The Oathbrand as wound that will not heal / externalized guilt",
+      "linkedTheme": "TP-2: The price of the right choice — The brand should have dissolved but keeps burning fresh because someone profits from the bleeding. Kaelith's self-punishment made literal and maintained by institutional violence.",
+      "appearances": [
+        {
+          "chapter": 1,
+          "scene": "SCN-001",
+          "imagery": "Brand flares unexpectedly, heat spreading in waves, chronic burn that should have dissolved",
+          "function": "Establishes Oathbrand as wound maintained by external force"
+        },
+        {
+          "chapter": 2,
+          "scene": "SCN-006",
+          "imagery": "Oathbrand responding to Pallor tear — wound that shouldn't react to environmental disturbance but does, inflammation visible at collarbone",
+          "function": "Deepens Oathbrand mystery — brand is not just suppression but connection to ontological layer"
+        },
+        {
+          "chapter": 3,
+          "scene": "SCN-007",
+          "imagery": "Brand flares during message discovery, described as persistent burn that should have dissolved years ago. Heat spreading from collarbone in waves. Maintenance schedule revealed — the wound kept fresh deliberately.",
+          "function": "Oathbrand as externalized guilt weaponized by institutions — not her self-punishment but their control mechanism"
+        },
+        {
+          "chapter": 4,
+          "scene": "SCN-012",
+          "imagery": "Kaelith hand hovering near collarbone without touching, heat implied without contact, externalized guilt maintained by institutions",
+          "function": "Oathbrand as wound kept deliberately fresh, Kaelith awareness of pain without needing to touch"
+        },
+        {
+          "chapter": 5,
+          "scene": "SCN-013, SCN-014, SCN-015",
+          "imagery": "Brand burns during archive research and Lirien confrontation, described as wound maintained deliberately, tactical suppression weaponized",
+          "function": "Oathbrand reframed from punishment to control mechanism — not her self-punishment but institutional containment"
+        }
+      ],
+      "targetDensity": "Present in every chapter 1-10, absent 11-22 after removal. Imagery should emphasize: fresh pain from old verdict, heat that serves no purpose, the brand as both punishment and proof of survival, the collarbone as site of enforced shame."
+    },
+    {
+      "id": "MOT-003",
+      "symbol": "Water / the Seep as infiltration-as-intimacy",
+      "linkedTheme": "TP-1: Trust as structural failure — Water finds every crack, patient and relentless. The Seep's name ('water that finds every crack') becomes metaphor for how Lirien infiltrates Kaelith's defenses and how intimacy requires letting someone into your structural weaknesses.",
+      "appearances": [
+        {
+          "chapter": 2,
+          "scene": "SCN-004",
+          "imagery": "Lirien's thought patterns described as 'current' metaphors, water finding cracks, seepage of human language into fae precision",
+          "function": "Establishes Lirien's operative mindset through water metaphors"
+        },
+        {
+          "chapter": 4,
+          "scene": "SCN-010",
+          "imagery": "Lirien classification language, patient waiting, operative precision seeking entry points in conversation",
+          "function": "Establishes Lirien thought patterns through water-like adaptation and seepage metaphors"
+        }
+      ],
+      "targetDensity": "4-5 appearances across story, concentrated in Lirien's POV chapters. Imagery should emphasize: water's patience, adaptation to containers, finding weakness as inevitability not malice, the distinction between flood (violence) and seep (intimacy)."
+    },
+    {
+      "id": "MOT-004",
+      "symbol": "The Quietus as seal accessed through embodied trust / body-as-knowledge",
+      "linkedTheme": "TP-1: Trust as structural failure — The seal can only be reached through kinetic memory, knowledge held in the body rather than mind. Trust requires the body, not just intention. Surrender must be physical.",
+      "appearances": [],
+      "targetDensity": "2-3 appearances in Act I (foreshadowing), 3-4 in Act II (awakening in Kaelith's body), 2-3 in Act III (approach and activation). Imagery should emphasize: the body knowing what the mind cannot access, movement as memory, the path that can only be walked not described."
+    },
+    {
+      "id": "MOT-005",
+      "symbol": "Ythara as raw potential / the unfinished dissolving the finished",
+      "linkedTheme": "TP-3: Chosen versus only — Ythara represents pure possibility, which is another word for annihilation of what already exists. The god is not evil but incompatible. Like necessity-born love, potential without choice is terrifying.",
+      "appearances": [],
+      "targetDensity": "1-2 appearances per act, increasing in intensity. Imagery should emphasize: things becoming what they could have been instead of what they are, coherence dissolving into screaming possibility, the terror of infinite choice with no framework."
+    }
+  ],
+  "lastUpdatedChapter": 5,
+  "notes": "Initial motif registry populated from story-concept thematic pillars, craft-profile symbolic motif selection (T16), and style guide imagery patterns. Five motifs selected to match the three thematic pillars plus two world-mythology symbols (Pallor, Ythara). Each motif assigned target density and evolution pattern. As chapters are drafted, the craft-tracker will log actual appearances with specific imagery used and evolution from previous instances."
+}

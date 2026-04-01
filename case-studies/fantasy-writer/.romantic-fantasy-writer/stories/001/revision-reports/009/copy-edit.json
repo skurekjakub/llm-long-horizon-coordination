@@ -1,0 +1,134 @@
+{
+  "reportType": "copy-edit",
+  "chapter": 9,
+  "pov": "CHAR-001",
+  "generatedAt": "2025-07-17T22:00:00Z",
+  "findings": [
+    {
+      "id": "COPY-009-001",
+      "severity": "major",
+      "category": "naming-consistency",
+      "location": "Line 306",
+      "description": "The term 'High Council' is used instead of the established canonical term 'High Conclave.' All world-bible files (culture.json, history.json, political-structures.json), the continuity tracker, and every other chapter draft consistently use 'High Conclave.' 'High Council' appears nowhere in any canonical source. This naming inconsistency occurs within dialogue but is still a factual error — the institution is called the High Conclave.",
+      "evidence": "world-bible/culture.json uses 'High Conclave' exclusively. continuity-tracker.json uses 'High Conclave' exclusively. Earlier in this same chapter, line 68 and line 228 both correctly use 'High Conclave.' The same line's metadata (chapter metadata line 98) also uses 'High Council,' propagating the error.",
+      "recommendation": "Change 'the High Council's stated authority' to 'the High Conclave's stated authority' on line 306. Also correct the metadata entry at line 98 of metadata.json."
+    },
+    {
+      "id": "COPY-009-002",
+      "severity": "major",
+      "category": "magic-system-violation",
+      "location": "Line 232",
+      "description": "The narration implies the Oathbrand creates an ambient suppression field that interferes with other practitioners' magic. The text reads: 'Someone who could work magic through the Oathbrand's interference because they were using their own focus, not relying on the ambient capacity that the brand suppressed.' Per MAG-008, the Oathbrand is a containment ward that blocks the SUBJECT's (Kaelith's) access to magic. It does not suppress ambient magical capacity or interfere with other practitioners' magic in any way. The magic system explicitly states: 'The brand only affects magical capacity [of the subject] — it does not suppress other abilities, physical strength, or skill.' A nearby caster would have no difficulty using magic near an Oathbranded person.",
+      "evidence": "world-bible/magic-system.json, MAG-008: 'The brand is a containment ward — it does not eliminate the subject's magical capacity but blocks access to it by creating a barrier between will and reality-negotiation.' And: 'The brand only affects magical capacity — it does not suppress other abilities, physical strength, or skill.'",
+      "recommendation": "Remove the implication of ambient suppression. Possible revision: 'Her hands were empty but the ward-marks on her forearms pulsed — a caster, then. Focused. Prepared. The kind of practitioner who could shape magic through will alone, not relying on brute capacity.' This preserves the tactical assessment while eliminating the false magic-system claim."
+    },
+    {
+      "id": "COPY-009-003",
+      "severity": "minor",
+      "category": "anachronism",
+      "location": "Line 48",
+      "description": "The phrase 'supply chain management' is modern corporate/business jargon (originating in 20th-century logistics theory). While the underlying concept of military provisioning exists in this world, the specific term has a distinctly contemporary flavor that breaks immersion and violates the style guide's prohibition on modern phrasing. This same phrase appears in chapters/016/draft.md line 178 in a different context ('supply chains and kill orders'), suggesting a pattern.",
+      "evidence": "style/style-guide.json: vocabularyStandards.avoid includes 'therapy-speak in narration' and vocabularyStandards.requiredQualities includes 'No modern slang or contemporary internet phrasing.' INV-018 (No Anachronisms).",
+      "recommendation": "Replace 'supply chain management' with a period-appropriate equivalent such as 'provisioning logistics,' 'supply doctrine,' or 'quartermaster operations.' Full line revision: '...committed the orthodoxy to memory alongside siege logistics and provisioning doctrine.'"
+    },
+    {
+      "id": "COPY-009-004",
+      "severity": "minor",
+      "category": "formatting",
+      "location": "Line 58",
+      "description": "The measurement 'three meters' uses metric units, while every other measurement in the chapter uses imperial-style units (yards, feet, miles, inches). Specific instances: 'half a mile' (line 12), 'six inches' (line 14), 'five hundred yards' (line 18), 'thirty yards' (line 64), 'one point four miles' (line 104), 'twelve by fourteen feet' (line 139). The lone 'three meters' creates an inconsistency in the world's measurement system.",
+      "evidence": "Internal chapter consistency: 7 imperial measurements vs. 1 metric measurement.",
+      "recommendation": "Replace 'three meters' with 'ten feet' or 'three yards' to maintain consistent measurement conventions throughout."
+    },
+    {
+      "id": "COPY-009-005",
+      "severity": "minor",
+      "category": "naming-consistency",
+      "location": "Line 104",
+      "description": "The road name 'Thornway Extension' is not established in any canonical source. The geography file (LOC-004) defines the road as 'The Thornway' without any named extensions or sections. While a named extension into the Wending area is plausible, it has not been established in the world-bible or any previous chapter, creating a potential naming inconsistency if future references do not maintain this specific designation.",
+      "evidence": "world-bible/geography.json, LOC-004: 'The Thornway' — no subsections or extensions named. No other chapter references 'Thornway Extension.'",
+      "recommendation": "Either (a) change to 'the Thornway, one point four miles past the Veldrane boundary' for consistency with established naming, or (b) add 'Thornway Extension' to geography.json as a named subsection of the Thornway that continues past Veldrane into the Wending approach. Option (b) is preferred as it adds geographic specificity."
+    },
+    {
+      "id": "COPY-009-006",
+      "severity": "minor",
+      "category": "formatting",
+      "location": "Line 116",
+      "description": "The trailing-off dialogue uses a spaced em dash with trailing space before the closing quote: '\"The — \"'. This is inconsistent with standard dialogue formatting conventions. Per the style guide and INV-019, em dashes are used for interruptions ('I don't—') while ellipses are used for trailing off ('I thought maybe…'). In this context, Kaelith is trailing off as she looks at the clearing, not being interrupted by another speaker. The formatting should use either an ellipsis or a closed em dash without spaces.",
+      "evidence": "INV-019 (Dialogue Naturalism): 'em dashes for interruptions, ellipses for trailing off, correct speech tag punctuation.'",
+      "recommendation": "If trailing off: change to '\"The…\"' with an ellipsis. If self-interruption (she stops herself): change to '\"The—\"' with a closed em dash. Either way, remove the spaces around the dash and the trailing space before the closing quote."
+    },
+    {
+      "id": "COPY-009-007",
+      "severity": "suggestion",
+      "category": "anachronism",
+      "location": "Line 156",
+      "description": "The phrase 'combustion required oxygen' uses the modern scientific term 'oxygen' (named by Lavoisier in 1789). While this is a secondary fantasy world and not bound to Earth history, the specificity of the chemical term contrasts with the otherwise non-scientific register of the world's language. The broader phrase 'the physics of this room' similarly imports a named academic discipline. Both terms are technically acceptable but pull toward a modern register that may break immersion for attentive readers.",
+      "evidence": "style/style-guide.json: 'Let terminology emerge from each POV's profession and worldview rather than generic fantasy diction.' Kaelith's established vocabulary is military/architectural, not scientific.",
+      "recommendation": "Consider revising to: 'They burned upward because heat rose and fire required air and the natural order of this room had not been compromised.' This replaces 'oxygen' with 'air' and 'physics' with 'natural order,' maintaining Kaelith's established vocabulary domain while preserving the passage's meaning."
+    },
+    {
+      "id": "COPY-009-008",
+      "severity": "suggestion",
+      "category": "anachronism",
+      "location": "Line 48",
+      "description": "The phrase 'the god had given its skin' uses the pronoun 'its' for the Sheltering One. Earlier theological/cultural references to the Sheltering One in the culture file and history file do not establish a pronoun convention for this deity. The pronoun 'its' depersonalizes the god, which may be consistent with Imperial Keeping theology (gods as natural phenomena to be managed) but is worth verifying for consistency across chapters.",
+      "evidence": "world-bible/culture.json: Imperial theology 'holds that gods are natural phenomena, like weather or geology, to be managed rather than worshipped.' Using 'its' aligns with this theology. However, Ythara is referred to with 'their' pronouns elsewhere ('their nature,' 'their influence'). Cross-chapter pronoun consistency for deities should be verified.",
+      "recommendation": "Verify pronoun convention for the Sheltering One across all chapters. If 'its' is intentionally depersonalizing (consistent with Kaelith's military/Keeping perspective), document this convention. If other chapters use 'their' for the Sheltering One, standardize."
+    }
+  ],
+  "continuityVerification": {
+    "namingConsistency": {
+      "status": "verified with 2 findings",
+      "details": "All character names verified against characters/index.json: Kaelith Maren (CHAR-001), Lirien (CHAR-002) — correct. All place names verified against geography.json: Duskhaven, Veldrane, The Wending, Aranthem, Calwrath, The Quietus — all correct. Magical terms verified against magic-system.json: Oathbrand, Pallor, Ythara, Shapers, Seep — all correct. Two naming deviations found: 'High Council' should be 'High Conclave' (COPY-009-001); 'Thornway Extension' is unestablished (COPY-009-005)."
+    },
+    "timelineProgression": {
+      "status": "verified — consistent",
+      "details": "Chapter 9 takes place on the 14th of Ashfall (stated in text line 104). Previous chapter (ch8) placed characters at Veldrane on Day 5. Ch9 continuity tracker entry confirms departure from Veldrane into the Wending. Timeline progression is logical: one day of travel from Veldrane into the Wending. Pallor degradation described as '8-12 months ahead of projections' matches both metadata and continuity tracker. Travel distances (half mile to 1.4 miles past boundary, then 2 hours to waystation) are internally consistent."
+    },
+    "characterKnowledgeStates": {
+      "status": "verified — no violations",
+      "details": "Kaelith's knowledge state at ch9 cross-referenced against continuity-tracker.json and information-asymmetry-map.json. She correctly references: Oathbrand deliberately maintained (learned ch3), Warden-lineage (learned ch3), Pallor sabotage (learned ch4), kinetic memory / Quietus path (learned ch4), Oathbrand 4-6 month mortality (learned ch8). She does NOT reference: kill contract still active (learned ch16), Thalen Reyvas identity (learned ch15), Ashborne network (learned ch19). Information asymmetry maintained: Lirien withholds full document contents from Kaelith (lines 302-310), consistent with FS-011 Seep agenda plant."
+    },
+    "geographyCompliance": {
+      "status": "verified — consistent",
+      "details": "Characters depart Veldrane (LOC-005) and enter the Wending (LOC-006). Geography.json establishes ~40 miles between these locations. Chapter begins past the boundary, indicating travel has occurred. Physical descriptions of the Wending (Pallor tears, ontological instability, damaged trees, shifting shadows) are consistent with LOC-006 description. The waystation is described as 'Imperial construction' with 'standardized dimensions' — consistent with the Thornway's imperial infrastructure."
+    }
+  },
+  "magicSystemCompliance": {
+    "status": "one violation found",
+    "details": {
+      "oathbrandBehavior": "Mostly consistent. The brand's chronic ache, directional burning near Pallor tears, screaming resonance near Ythara influence, and resonance with magical signatures are all consistent with MAG-008. VIOLATION: Line 232 implies the Oathbrand suppresses ambient magical capacity, which contradicts MAG-008 (brand only affects the subject's capacity). See COPY-009-002.",
+      "ytharaInfluence": "Fully consistent. The ontological fragmentation described (identity dissolution into multiple possible selves, experiencing all versions simultaneously, loss of singular selfhood) matches MAG-009 exactly. Duration to incapacitation (~43 seconds) is within the 'minutes to hours for mild exposure' range, consistent with intense exposure near Pallor tears. Countermeasure (external grounding through physical contact and factual anchoring) is plausible under established rules.",
+      "conclaveCasterMagic": "The caster's use of magic through 'compression of will' (line 244) is consistent with AM-001 (Trained Negotiation) and MAG-001 (magic requires conscious intent). Ward-marks on weapons and focus-rings are consistent with established magical artifacts. The caster's ability to work magic in the Wending (where Pallor is thinner) is consistent with MAG-003 (magic easier where Pallor is weaker).",
+      "oathbrandProximityReaction": "The brand's detection of 'three carriers' (line 220) before Kaelith's ears register them is consistent with established behavior — the brand reacts to magical signatures like 'old injuries react to weather.'"
+    }
+  },
+  "grammarAndPunctuation": {
+    "status": "minor issues found",
+    "details": {
+      "tenseConsistency": "Past tense maintained throughout. No violations.",
+      "dialogueFormatting": "Generally correct. One formatting issue: line 116 uses spaced em dash for trailing-off speech instead of ellipsis (COPY-009-006).",
+      "pronounClarity": "Well-managed despite multiple female characters in scenes. Antecedents are clear throughout, including the three-way combat scene where 'the caster' and 'the sword-bearer' provide unambiguous reference.",
+      "paragraphStructure": "Within style guide limits. Longest paragraphs appear in reflective passages (lines 160-164, 196-200) but do not exceed the 6-sentence maximum.",
+      "sceneBreaks": "Two scene breaks using '---' markers at lines 134 and 206, properly placed between major scene transitions.",
+      "measurementConsistency": "One inconsistency: 'three meters' (line 58) among otherwise consistent imperial-style units (COPY-009-004)."
+    }
+  },
+  "findingSummary": {
+    "critical": 0,
+    "major": 2,
+    "minor": 4,
+    "suggestion": 2,
+    "total": 8,
+    "byCategory": {
+      "naming-consistency": 2,
+      "magic-system-violation": 1,
+      "anachronism": 2,
+      "formatting": 2,
+      "timeline-error": 0,
+      "geography-error": 0,
+      "information-asymmetry": 0
+    }
+  }
+}

@@ -1,0 +1,327 @@
+{
+  "storyId": "001",
+  "globalStyle": {
+    "proseRegister": "literary-formal, restrained, and highly readable",
+    "narrativeDistance": "close-third",
+    "paragraphCadence": "mixed — medium flowing paragraphs cut by selective one-line emphasis and clipped tactical beats",
+    "dialogueToNarrationRatio": "45:55 overall; shift toward 55:45 in confrontation scenes and 35:65 in introspection",
+    "tense": "past",
+    "vocabularyStandards": {
+      "baseline": "Favor precise, emotionally legible diction with a slightly austere fantasy register. Use elevated phrasing sparingly for ceremonial, intimate, or metaphysical moments; otherwise keep syntax clear and exact.",
+      "requiredQualities": [
+        "No modern slang or contemporary internet phrasing.",
+        "Prefer concrete nouns and active verbs over decorative adjective chains.",
+        "Let terminology emerge from each POV's profession and worldview rather than generic fantasy diction.",
+        "Use world-specific terms only when the scene context makes them intelligible without glossary-style explanation."
+      ],
+      "avoid": [
+        "therapy-speak in narration",
+        "campy wink-at-the-reader phrasing",
+        "epic trailer language",
+        "purple-gothic overloading",
+        "stock romantasy descriptors that could fit any book"
+      ]
+    },
+    "sentenceRhythmStandards": {
+      "default": "Alternate taut medium sentences with short declarative hits. Build pressure through accumulation, then release it with a blunt line.",
+      "action": "Bias toward 4-12 word sentences, fragments only when the POV is under real duress.",
+      "introspection": "Allow 12-24 word sentences when thought is genuinely unfolding, but close paragraphs on a clean, hard observation.",
+      "emphasisRule": "Use isolated one-line paragraphs only for reversals, realizations, or emotional impacts that change the scene's value."
+    },
+    "metaphorPolicy": {
+      "density": "low-to-moderate overall; increase only at emotional pivots or mythic/magical thresholds",
+      "rule": "Metaphors must come from the POV character's lived domains. Kaelith gets structure, weight, stone, heat, and tactical space. Lirien gets water, surfaces, currents, contract logic, light, and concealment.",
+      "forbidden": [
+        "mixed metaphor chains spanning unrelated source domains",
+        "generic celestial destiny imagery",
+        "ornament for ornament's sake",
+        "metaphors that announce theme instead of embodying it"
+      ]
+    },
+    "paragraphLengthGuidelines": {
+      "typical": "2-5 sentences",
+      "maximumWithoutBreak": "6 sentences unless the prose is carrying sustained interior logic or ceremonial cadence",
+      "sceneBalance": "Never stack more than two dense reflective paragraphs without dialogue, gesture, or external movement resetting the scene."
+    },
+    "sceneTransitionConventions": {
+      "preferredMethods": [
+        "hard cuts on a loaded image, line, or decision",
+        "emotional carryover rather than connective summary",
+        "brief place-and-pressure orientation in the first 1-3 lines of the new scene"
+      ],
+      "avoid": [
+        "long bridge passages that explain travel beat by beat",
+        "chapter openings that re-summarize the previous scene",
+        "soft transitions that dissipate tension"
+      ]
+    },
+    "craftAlignment": {
+      "activeToolsAffectingProse": [
+        "T10",
+        "T12",
+        "T13",
+        "T15",
+        "T16",
+        "T17",
+        "T18",
+        "T20",
+        "T21",
+        "T23",
+        "T24",
+        "T25",
+        "T5",
+        "T6",
+        "T7",
+        "T8"
+      ],
+      "application": [
+        "T5 Tone Contract: every scene must remain morally complex, twilight-toned, and unsentimental.",
+        "T12 Dual-Arc Interleave: even quiet scenes should carry both relational and fantasy pressure, either directly or by implication.",
+        "T16 Symbolic Motif Weaving: recur Pallor, water, burning brands, thresholds, cracks, membranes, and holding structures without repeating the same phrasing.",
+        "T17 Voice Fingerprinting: voice distinction is mandatory from the opening paragraph of each POV chapter.",
+        "T24 Subtext in Dialogue: charged scenes must say less than they mean."
+      ]
+    }
+  },
+  "perPOVCalibration": [
+    {
+      "charId": "CHAR-001",
+      "voiceFingerprint": {
+        "vocabularyLevel": "Formal-military with salt-worn erosion: precise nouns, active verbs, fortification language, and almost no decorative filler.",
+        "sentenceRhythm": "Predominantly short, declarative, percussive lines; occasional buttressed longer sentences only when emotion breaches control.",
+        "metaphorDensity": "Low and structural; imagery should arise from architecture, weight, pressure, stone, fire, and tactical geometry.",
+        "emotionalRegister": "Suppressed and body-forward; emotion appears as heat, pressure, stillness, jaw tension, grip, posture, and movement toward tasks.",
+        "thoughtPatterns": "Linear, tactical, and solution-oriented: observe threat, assess resources, choose action. Emotional material first appears as a practical problem.",
+        "sensorySignature": "Tactile/proprioceptive. Kaelith feels surfaces, weight, balance, strain, heat, and the Oathbrand's burn before she names the room's mood."
+      },
+      "specificRules": [
+        "Open Kaelith scenes by orienting to space before sentiment: exits, sight lines, structural weakness, weather pressure, or the Oathbrand's reaction.",
+        "Default to short sentences and blunt paragraph endings. If a sentence runs long, it should signal emotional breach, memory pressure, or moral arithmetic she cannot simplify.",
+        "Never let Kaelith narrate herself as 'feeling' first. She notices heat in her palms, a locked jaw, a shift in stance, a need to move, or an urge to repair something.",
+        "Her humor is flat, dry, and unannounced. Do not add smile cues to clarify the joke; the deadpan delivery is the joke.",
+        "In action, Kaelith thinks in inventory: terrain, bodies, angles, timing, cover, sequence. Use clipped noun phrases and command-ready verbs.",
+        "In dialogue, she speaks in statements more often than questions. Questions should usually seek quantity, direction, duration, or tactical clarity.",
+        "When emotionally cornered, remove contractions, shorten the line, and let her pivot toward labor, logistics, or perimeter-checking instead of confession.",
+        "Her metaphors must stay structural. Do not give her water, garden, or dreamlike metaphors except in late-story moments where Lirien's influence is intentionally audible.",
+        "Beauty in Kaelith POV should register as soundness, clean lines, competence, held weight, disciplined movement, or firelight on stone — not ornamental lushness.",
+        "When Kaelith softens, show it through questions with no tactical value, slightly longer internal sentences, and the rare willingness to remain still beside someone."
+      ],
+      "exampleSentences": [
+        "The inn had two doors, one window worth the trouble, and a floor that would complain under a fast retreat.",
+        "Lirien stood too quietly for a civilian. That was the first problem. The second was that Kaelith kept noticing it.",
+        "The brand burned once, sharp and deliberate, as if the room itself had revised its assessment of her chances.",
+        "She could have left then. Instead she stayed, which was not the same as trust but was built from some neighboring material."
+      ]
+    },
+    {
+      "charId": "CHAR-002",
+      "voiceFingerprint": {
+        "vocabularyLevel": "Precise, observational, and intelligence-shaped: leverage, variables, cover integrity, information value, and the gap between surface and truth.",
+        "sentenceRhythm": "Mixed and fluid: medium analytical sentences punctuated by short field-note fragments. Rhythm should feel adaptive rather than percussive.",
+        "metaphorDensity": "Moderate; imagery should arise from water, currents, seals, thresholds, light, reflection, hidden rooms, and contractual binding.",
+        "emotionalRegister": "Classified before it is felt. Lirien initially translates emotion into operational language until experience overwhelms the taxonomy.",
+        "thoughtPatterns": "Associative and comparative. She cross-references gesture against speech, detail against pattern, present data against prior intelligence.",
+        "sensorySignature": "Visual/auditory. Lirien reads faces, light, micro-hesitations, breath, and the tonal gap between words and intent before she touches the world."
+      },
+      "specificRules": [
+        "Open Lirien scenes with people before architecture: who is present, what they are showing, what they are concealing, and where leverage lives.",
+        "Let her internal cadence move observation to interpretation. She rarely stops at what she sees; she evaluates what the sight implies.",
+        "Use clinical or contractual language early in the arc for emotional containment: interference, variables, obligations, miscalculation, structural failure.",
+        "In dialogue, Lirien asks probing questions more often than she offers self-revelation. Her questions should sound casual while serving an intelligence purpose.",
+        "Her early humor comes from misreading human deadpan literally. Later humor should become surgical, exact, and recognizably influenced by Kaelith.",
+        "In action, Lirien notices people, intent, openings, and timing before brute terrain. She tracks who moves first, who lies, who flinches, and where the unseen door is.",
+        "When destabilized, simplify rather than intensify. The most emotional line in her POV is usually the plainest one.",
+        "Her metaphors should privilege permeability, undertow, reflection, hidden depth, or legal/binding language. Avoid giving her Kaelith's stone-and-buttress vocabulary except as late intimacy bleed-through.",
+        "Allow contractions to increase gradually across the book. Each contraction should feel like human warmth breaching fae formality.",
+        "When Lirien falls silent for real rather than tactically, mark the difference: the silence stops gathering data and becomes the absence of a usable framework."
+      ],
+      "exampleSentences": [
+        "Kaelith's expression did not alter, but the stillness around her sharpened, which was often a more reliable warning than motion.",
+        "The conversation had acquired an undertow. Anyone without training might have mistaken it for politeness.",
+        "This, Lirien decided, was the difficulty with humans: they disguised confession as sarcasm and expected the listener to swim accordingly.",
+        "She could classify the risk, the route, and the probable cost. She could not classify the relief of hearing Kaelith breathe beside her."
+      ]
+    }
+  ],
+  "sceneTypePalettes": {
+    "action": {
+      "tempo": "taut, decisive, and unsentimental",
+      "sentenceLength": "Predominantly short-to-medium (4-12 words) with occasional 14-20 word tactical resets.",
+      "focusElements": [
+        "terrain and usable space",
+        "sequence of choice and consequence",
+        "specific bodily strain rather than generic adrenaline",
+        "clear cause-and-effect magic rules",
+        "relationship pressure inside the danger"
+      ],
+      "tone": "Urgent without triumph. Victories should feel costly, narrow, or morally complicated.",
+      "dualArcFunction": "Every action beat should either expose trust, test competence, or sharpen the emotional debt between the leads."
+    },
+    "romantic": {
+      "tempo": "smoldering, restrained, and accumulative",
+      "sentenceLength": "Mostly medium (8-20 words) with clipped impact lines at moments of exposure or touch.",
+      "focusElements": [
+        "gesture before declaration",
+        "proximity, restraint, and withheld motion",
+        "body awareness filtered through character-specific sensory habits",
+        "subtext-laden dialogue",
+        "the cost of wanting"
+      ],
+      "tone": "Darkly romantic, intimate, and sober; desire should feel dangerous because it matters, not because it is melodramatic.",
+      "dualArcFunction": "Romantic scenes must also move the mission, the conspiracy, or the god-seal problem; intimacy cannot float free of plot pressure."
+    },
+    "introspective": {
+      "tempo": "controlled, low-burn, and pressurized rather than static",
+      "sentenceLength": "Medium-to-long (12-24 words) balanced by short verdict sentences or fragments.",
+      "focusElements": [
+        "moral calculation",
+        "memory as pressure, not info-dump",
+        "embodied emotion",
+        "the gap between what the POV knows and what they will admit",
+        "one recurring motif at most per passage"
+      ],
+      "tone": "Reflective but not essayistic. The prose should feel like someone trying not to think about a thing and failing with precision.",
+      "dualArcFunction": "Use reflection to reframe stakes, deepen resistance, or prepare a choice — never to pause the story without consequence."
+    },
+    "dialogue": {
+      "tempo": "quick-turn, subtext-heavy, and rhythmically varied",
+      "sentenceLength": "Short spoken lines with action beats or brief interior tags to control charge and reveal avoidance.",
+      "focusElements": [
+        "what is withheld",
+        "interruption and imperfect speech",
+        "power shifts inside phrasing",
+        "deadpan relief used as coping rather than tonal escape",
+        "distinct diction per speaker"
+      ],
+      "tone": "Tense, intelligent, and emotionally dangerous. Even banter should carry risk.",
+      "dualArcFunction": "Dialogue should exchange information, alter relational position, or both. Empty banter is below the quality bar."
+    }
+  },
+  "dialogueStandards": {
+    "coreRules": [
+      "Use contractions in most human speech. Reserve more formal, uncontracted phrasing for Kaelith under stress, Lirien in fae-default mode, ceremonial language, and explicit contractual speech.",
+      "Allow interruption, overlap, aborted starts, and self-corrections. Characters should not deliver polished essays unless the stiffness itself is characterization.",
+      "No uninterrupted monologue should run longer than 6 spoken lines without an action beat, interruption, counter-question, or visible reaction.",
+      "Favor 'said' and action beats; use marked tags only when they add tonal precision. Do not create tag-synonym clutter.",
+      "Charged conversations must operate on two layers: the surface topic and the submerged topic. If both layers match exactly, deepen the subtext.",
+      "Let wit arise from deflection, misreading, understatement, and competence friction — never from modern snark or self-aware genre parody.",
+      "Dialogue should reveal class, training, species culture, and current stress state through syntax and word choice.",
+      "Use silence as dialogue. A withheld answer, a delayed reply, or the wrong question can carry as much charge as a confession."
+    ],
+    "imperfectionPolicy": "People interrupt themselves, revise phrasing, answer the wrong question, or choose tactical observation over emotional truth. Perfectly articulated vulnerability is rare and should land as a major event.",
+    "tagPolicy": "Average no more than one explicit dialogue tag per 3-4 lines in high-friction scenes; rely on beat placement and voice distinction.",
+    "subtextRequirement": "By midpoint onward, every Kaelith/Lirien charged exchange should contain at least one sentence whose literal meaning is weaker than its implied meaning.",
+    "humorPolicy": "Humor is pressure relief, not tonal escape. If a joke dissolves danger rather than coexisting with it, cut or sharpen it."
+  },
+  "showDontTellRules": {
+    "mandatoryWhenShowing": [
+      "relationship shifts between Kaelith and Lirien",
+      "moments of trust offered, withheld, or broken",
+      "major choices with moral cost",
+      "touch scenes, kiss scenes, and all intimate scenes",
+      "magic use that changes the stakes or reveals a rule",
+      "betrayal, revelation, and Black Moment fallout",
+      "chapter endings that pivot the emotional or plot value"
+    ],
+    "acceptableTelling": [
+      "compressing travel or routine logistics between dramatic beats",
+      "bridging known political context the POV would summarize to herself briefly",
+      "time-skip setup or aftermath orientation",
+      "small factual reminders already dramatized elsewhere",
+      "scene-setting overview when it immediately yields to active perception"
+    ],
+    "prohibitedShortcuts": [
+      "naming an emotion first and adding body language afterward in key scenes",
+      "summarizing attraction with generic intensity language",
+      "explaining subtext immediately after dialogue",
+      "using exposition to stand in for a missing scene of choice",
+      "telling the reader a character is dangerous, clever, or grieving without letting behavior prove it"
+    ],
+    "bodyCuePrinciples": [
+      "Choose 1-3 precise embodied cues and tie them to the POV's habitual sensory channel.",
+      "Prefer consequential gesture over decorative gesture.",
+      "Let physical response and choice interact: a hand stills, then reaches; breath catches, then the lie arrives."
+    ],
+    "decisionMomentRequirement": "When a character makes a consequential choice, the prose must show the perception, hesitation or refusal, and action that commits the choice."
+  },
+  "expositionLimits": {
+    "oneParagraphRule": "No more than one paragraph of pure exposition may appear before the prose returns to scene action, dialogue, or embodied perception.",
+    "deliveryMethods": [
+      "embed world detail in argument, ritual, surveillance, tactical assessment, or physical task",
+      "let memory surface because a present stimulus forces it",
+      "use specific nouns and consequences instead of mini-lectures"
+    ],
+    "forbiddenMoves": [
+      "encyclopedic history paragraphs dropped into active scenes",
+      "explaining the entire magic system at the moment it is used",
+      "political summaries that read like appendix material",
+      "worldbuilding paragraphs detached from POV judgment"
+    ]
+  },
+  "proseQualityFloor": {
+    "maxClichesPerChapter": 2,
+    "maxAdverbsPerPage": 3,
+    "maxPassiveVoicePercent": 8,
+    "showTellRatioTarget": "80:20 show-to-tell overall; 90:10 in key emotional and turning-point scenes",
+    "bannedPhrases": [
+      "let out a breath she didn't realize she was holding",
+      "predator smile",
+      "male/female used as noun labels for the leads",
+      "the air crackled with tension",
+      "ancient power thrummed through her veins",
+      "released a breath she had been holding",
+      "sharp as a blade",
+      "darkness answered",
+      "they were two sides of the same coin",
+      "her body betrayed her",
+      "a mask slipped",
+      "time stood still",
+      "his/her eyes darkened",
+      "the room fell away",
+      "fate had other plans"
+    ],
+    "minimumMetaphorOriginality": "Every metaphor must be traceable to the POV's established domains and phrased specifically enough that it could not be transplanted unchanged into a different fantasy novel. No extended metaphor may run longer than two linked clauses unless it also advances characterization.",
+    "maxToldEmotionStatementsPerKeyScene": 3,
+    "maxBlandGenericSentencesPerChapter": 5,
+    "maxPureExpositionParagraphsBeforeReturningToScene": 1,
+    "maxUnbrokenDialogueLinesBeforeBeatOrInterruption": 6,
+    "modernSlangAllowance": 0
+  },
+  "styleSampleAnalysis": {
+    "inheritedFromReference": "Adopted the reference's close-third intimacy, selective description, alternating cadences, sparse tag usage, embodied emotion, and restraint-first metaphor policy. Dialogue remains quick, revealing, and subtextual, with one-line paragraph emphasis used only at genuine impact points.",
+    "calibratedForStory": "Shifted the inherited style darker, more austere, and more morally pressurized to match the twilight-empire setting and enemies-to-lovers structure. Reduced overt banter, reduced direct emotion-labeling, increased tension-bearing silence, and tied figurative language more strictly to each POV's profession, trauma, and species conditioning."
+  },
+  "toneContract": {
+    "dominantTones": [
+      "morally complex",
+      "atmospherically taut",
+      "darkly romantic",
+      "dry and understatedly witty",
+      "twilight-decayed",
+      "emotionally restrained but intense"
+    ],
+    "prohibitedTones": [
+      "whimsical or twee",
+      "grimdark nihilism",
+      "sentimental or melodramatic",
+      "campy or self-aware",
+      "epic-triumphant",
+      "expository or pedagogical",
+      "modern-glib"
+    ],
+    "sceneSpecificGuidance": {
+      "actionScenes": "Keep action lucid, costly, and sober. Violence should feel like choice under pressure, not spectacle. End beats on consequence, not fist-pump triumph.",
+      "romanticScenes": "Play romance through restraint, attention, and the danger of wanting. Desire should be palpable, but the prose must remain composed enough to preserve dignity and tension.",
+      "conspiracyScenes": "Lean into unease, omission, and intellectual threat. Let the scene feel like a room with too many hidden doors, not a lecture on political machinery.",
+      "magicScenes": "Treat magic as rule-bound, intimate, and destabilizing. Wonder is allowed, but it should arrive threaded with cost, bodily consequence, or metaphysical disquiet."
+    }
+  },
+  "upstreamRefs": [
+    "style/style-analysis.json",
+    "story-concept.json",
+    "craft-profile.json",
+    "characters/index.json",
+    "characters/CHAR-001.json",
+    "characters/CHAR-002.json"
+  ]
+}

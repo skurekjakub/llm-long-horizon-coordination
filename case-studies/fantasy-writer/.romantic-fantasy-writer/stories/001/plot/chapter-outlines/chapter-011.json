@@ -1,0 +1,75 @@
+{
+  "chapterNum": 11,
+  "pov": "CHAR-001",
+  "povTransitionMotivation": "Return to Kaelith for the midpoint chapter where the Oathbrand is removed and magic returns. This is the most physically and emotionally intimate moment so far",
+  "scenes": [
+    {
+      "id": "SCN-031",
+      "goal": "Kaelith and Lirien find Tessen, a rogue mage with knowledge of suppression magic removal, in a hidden sanctuary",
+      "conflict": "Tessen can remove the Oathbrand, but the procedure is dangerous and requires complete trust between subject and operator",
+      "disaster": "Kaelith must allow Lirien to perform the removal — it requires fae precision magic and absolute steadiness. She must trust Lirien with her life in the most literal sense",
+      "valueShift": "From 'we work together' to 'I trust her with my survival'",
+      "fiveCommandments": {
+        "incitingIncident": "Tessen explains the removal procedure",
+        "complication": "The procedure requires the operator to work directly on the collarbone with no margin for error",
+        "crisis": "Trust Lirien to do this, or search for another solution?",
+        "climax": "Kaelith chooses Lirien: 'You do it. I trust you'",
+        "resolution": "The procedure begins — slow, deliberate, charged with proximity and vulnerability"
+      }
+    },
+    {
+      "id": "SCN-032",
+      "goal": "Lirien removes the Oathbrand through careful, precise magical work that takes hours",
+      "conflict": "The work requires physical contact — Lirien's hands on Kaelith's collarbone, her face inches away, absolute concentration",
+      "disaster": "The intimacy is undeniable and overwhelming. Kaelith feels every touch. Lirien's control is absolute but her hands are shaking slightly",
+      "valueShift": "From 'physical contact is tactical' to 'this touch means everything'",
+      "fiveCommandments": {
+        "incitingIncident": "Lirien begins the removal work",
+        "complication": "The proximity and trust required create overwhelming intimacy",
+        "crisis": "Acknowledge the intimacy, or maintain the fiction that this is purely medical?",
+        "climax": "The brand breaks. Kaelith's magic floods back in a wave that overwhelms them both. The resonance bond forms — they can sense each other's presence",
+        "resolution": "They separate, shaken, both knowing something fundamental has changed between them"
+      }
+    },
+    {
+      "id": "SCN-033",
+      "goal": "Kaelith experiences her magic returning — it is overwhelming, terrifying, and exhilarating",
+      "conflict": "The power is greater than she remembers, and the resonance bond with Lirien means she feels Lirien's presence constantly",
+      "disaster": "The Quietus path begins to wake in Kaelith's kinetic memory — she can feel the route pulling at her body, demanding to be walked",
+      "valueShift": "From 'I carry the Quietus location' to 'the Quietus location is active and guiding me'",
+      "fiveCommandments": {
+        "incitingIncident": "Magic returns and stabilizes",
+        "complication": "The resonance bond means Kaelith feels Lirien's relief and fear simultaneously",
+        "crisis": "Acknowledge the bond and its implications, or pretend it is purely magical?",
+        "climax": "Kaelith meets Lirien's eyes and says nothing. They both feel what the other is feeling. Words are insufficient",
+        "resolution": "They leave Tessen's sanctuary knowing they are bound now — magically, emotionally, irrevocably"
+      }
+    }
+  ],
+  "emotionalArc": {
+    "startState": "Kaelith begins in determined pragmatism — the Oathbrand must be removed for operational reasons",
+    "endState": "She ends in overwhelming vulnerability and connection — Lirien's hands on her skin, magic flooding back, the resonance bond making emotional privacy impossible. She has never been this exposed to another person",
+    "pivotMoment": "The moment Lirien's hands settle on her collarbone and begin the removal. Kaelith feels every second of it, and the touch is the most intimate thing she has ever experienced"
+  },
+  "fantasyBeats": [
+    "Midpoint — Oathbrand Removal and Magic Return: Lirien removes the Oathbrand. Kaelith's power floods back, the resonance bond forms, and the Quietus path begins to wake in Kaelith's body. False victory — they are stronger, but also more connected and vulnerable"
+  ],
+  "romanceBeats": [
+    "Hands at the Collarbone — Intimacy Threshold Crossed: The Oathbrand removal requires sustained physical contact and absolute trust. Both women experience it as profoundly intimate. The resonance bond removes emotional privacy. Attraction can no longer be hidden"
+  ],
+  "hookType": "ritual-tension",
+  "hookTypeDescription": "Opens with Tessen explaining the dangerous procedure. The hook is the requirement that Kaelith must trust Lirien completely to do this",
+  "closeType": "transformed-connection",
+  "closeTypeDescription": "Closes with both women experiencing the resonance bond for the first time — feeling each other's emotions as background hum. They are connected now, and there is no undoing it. Neither speaks. The silence is full",
+  "targetWordCount": 4000,
+  "tensionLevel": 9,
+  "pacingNotes": "Midpoint with very high tension through intimate physical procedure and magical transformation. Pacing is deliberate during the removal, then explosive when magic returns. This is the story's pivotal moment",
+  "locationsPrimary": ["Tessen's sanctuary — hidden location in the wilderness, ritual chamber"],
+  "charactersPresent": ["CHAR-001 (Kaelith)", "CHAR-002 (Lirien)", "CHAR-007 (Tessen)"],
+  "upstreamRefs": [
+    "../../plot/plot-structure.json",
+    "../../characters/CHAR-001.json",
+    "../../plot/dual-arc-timeline.json",
+    "../../plot/tension-map.json"
+  ]
+}

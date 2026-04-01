@@ -1,0 +1,248 @@
+{
+  "agent": "pov-voice-maintainer",
+  "chapter": 20,
+  "storyId": "001",
+  "povCharacter": "CHAR-002",
+  "povName": "Lirien Dael",
+  "result": "completed",
+  "timestamp": "2026-03-20T09:15:00Z",
+  "summary": "Chapter 20 voice audit PASSED with 7 corrections applied. Lirien's voice is strongly maintained across all three scenes (SCN-56, SCN-57, SCN-58). The draft demonstrates excellent command of her intelligence-operative vocabulary, classification-based emotional processing, water/current metaphor domain, and visual sensory dominance. The 3-4 sentence recognition test passes decisively — the light-quality opening and information-value assessment are unmistakably Lirien. Seven corrections addressed metaphor domain violations where Kaelith's structural/military vocabulary had leaked into Lirien's narration: 'verbal armour' (2x), 'architecture' used metaphorically for bodies/emotions (3x), 'rivets' describing speech, and 'cracked' for emotional experience. All replaced with Lirien-domain alternatives (clinical membrane, depth, network, current, non-negotiable, tore). No structural or content changes. Voice evolution for Ch20 of 22 is organic and earned — Lirien names emotions more directly, chooses not to classify tears, and the analytical framework coexists with genuine feeling rather than suppressing it.",
+  "overallAssessment": "PASS",
+  "voiceConsistencyScore": 9,
+  "distinctnessScore": 10,
+  "sensorySignatureScore": 9,
+  "povTransitionScore": 9,
+  "threeFourSentenceTestResult": {
+    "verdict": "PASS",
+    "explanation": "The opening four sentences are unmistakably Lirien: 'The light in the room was wrong. / Not dangerous-wrong. Not the thin, grey wrong of a Pallor tear or the too-bright wrong of a hostile approach. / This was the quality of light that fell through stone when the stone was old and the windows were narrow and the day outside was overcast — diffuse, muted, without shadows sharp enough to read. / A room that gave nothing away.' This is textbook Lirien — light-quality assessment as room-reading, classification of types of 'wrong' (sub-categorization), intelligence-operative framing ('shadows sharp enough to read,' 'A room that gave nothing away'). A reader familiar with both leads would identify Lirien within the first sentence. The attention priority (light quality → information value → what the space conceals) exactly matches her voice fingerprint. Contrast with Ch19's opening ('Two exits. One road south.') is immediate and total — Kaelith counts exits and tactical features; Lirien reads light and information."
+  },
+  "povTransitionMotivation": {
+    "verdict": "PASS",
+    "explanation": "Ch19 ends with Kaelith's assessment of the partnership's viability: 'Sound enough. It would have to be.' The departing chapter closes on Kaelith's decision to trust, but the critical question remains: can the trust survive the act? Ch20 opens inside the room where the heart-stopping will occur, in Lirien's head, because she is the one who must perform it. The POV switch is structurally necessary — Ch19 gave us Kaelith deciding to trust; Ch20 gives us Lirien wielding that trust. The emotional weight of stopping someone's heart can only be felt from inside the person doing it. Lirien's interior is where the tension lives: the operative's precision vs. the lover's terror, the classification system vs. the unclassifiable void of bond-silence. Kaelith's POV cannot deliver this — her experience of the cessation is passivity (lying still), while Lirien's is agency (stopping and restarting a heart). The POV switch transforms the question from 'will she trust?' to 'will skill be enough?'"
+  },
+  "waterMetaphorAnalysis": {
+    "count": 19,
+    "target": "8-10 minimum",
+    "assessment": "Exceeds target. Rich, varied water imagery throughout all three scenes. The water domain is used for emotional states (undertow, current, flooding), magical processes (current finding a channel, water finding every crack), relationship dynamics (surface tension), and existential metaphor (surfacing from deep water, drowning). The Seep's identity phrase ('the water that finds every crack') appears organically in the resuscitation scene. Water metaphors intensify during the bond-silence passage (SCN-57), where the absence of the 'current' between them is the primary emotional vehicle.",
+    "instances": [
+      { "location": "L18", "text": "cool and deliberate as a current mapping a new channel", "type": "pallor description through water lens" },
+      { "location": "L22", "text": "deep as an undertow", "type": "emotional depth" },
+      { "location": "L22", "text": "trust like a current she could not redirect", "type": "relational dynamics" },
+      { "location": "L30", "text": "wide enough to drown in", "type": "emotional overwhelm" },
+      { "location": "L50", "text": "the current of what Kaelith was not saying", "type": "subtext as water" },
+      { "location": "L56", "text": "the rhythm that had become the undertow of her awareness", "type": "bond as persistent current" },
+      { "location": "L66", "text": "the quality of a current that has found its channel", "type": "determination as water finding its path" },
+      { "location": "L70", "text": "something underwater — luminous, alien, a membrane", "type": "visual observation through water/surface lens" },
+      { "location": "L86", "text": "like frost through water", "type": "pallor spread" },
+      { "location": "L92", "text": "like a current finding a channel", "type": "magical connection" },
+      { "location": "L92", "text": "the deep tidal hum of a living system", "type": "body as ocean" },
+      { "location": "L94", "text": "hold a thread in still water", "type": "precision magic" },
+      { "location": "L100", "text": "like a blade through a membrane", "type": "magical intervention" },
+      { "location": "L116", "text": "like a wave breaking", "type": "dissolution cascade" },
+      { "location": "L122", "text": "the constant, living undertow of Kaelith's presence", "type": "bond as undertow" },
+      { "location": "L134", "text": "like a current forcing its way through a frozen channel", "type": "resuscitation" },
+      { "location": "L144", "text": "like a tide she could not stop tracking", "type": "Kaelith's heartbeat as tide" },
+      { "location": "L150", "text": "like water finding every crack, every channel", "type": "Seep identity phrase in magic" },
+      { "location": "L154", "text": "like surfacing from deep water", "type": "bond return" },
+      { "location": "L162", "text": "clear as water", "type": "emotional clarity" },
+      { "location": "L162", "text": "relief breaking over her in waves", "type": "transmitted emotion" },
+      { "location": "L176", "text": "absence of a current that had been running beneath the surface", "type": "binding removal" },
+      { "location": "L198", "text": "the way a surface tension gives way", "type": "doubt dissolving" },
+      { "location": "L200", "text": "no undertow of compulsion", "type": "freedom from binding" },
+      { "location": "L202", "text": "the steady current of two people", "type": "relationship as current" }
+    ]
+  },
+  "kaelithDomainViolations": {
+    "beforeCorrection": 7,
+    "afterCorrection": 0,
+    "violations": [
+      {
+        "id": "DEV-001",
+        "severity": "minor",
+        "type": "Military metaphor",
+        "location": "L30",
+        "original": "The verbal armour she defaulted to",
+        "issue": "'Armour' is military vocabulary belonging to Kaelith's domain. Lirien's defensive mechanisms should be described through concealment/surface/membrane language.",
+        "correction": "Changed to 'The clinical membrane she defaulted to' — 'membrane' is Lirien's domain (surfaces, barriers between visible and hidden). 'Clinical' maintains her intelligence-operative register.",
+        "status": "corrected"
+      },
+      {
+        "id": "DEV-002",
+        "severity": "minor",
+        "type": "Structural metaphor",
+        "location": "L50",
+        "original": "words like rivets, driven clean",
+        "issue": "'Rivets' is structural/manufacturing vocabulary. Even when describing Kaelith's speech, the metaphor originates in Lirien's mind and should use her metaphor domain.",
+        "correction": "Changed to 'each word released clean, non-negotiable' — 'non-negotiable' is contract language (Lirien's fae/operative domain). 'Released' is neutral. Preserves the observation of Kaelith's precise, singular speech pattern without importing structural vocabulary.",
+        "status": "corrected"
+      },
+      {
+        "id": "DEV-003",
+        "severity": "minor",
+        "type": "Architectural metaphor for body",
+        "location": "L86",
+        "original": "through the architecture of bone and muscle",
+        "issue": "'Architecture' used metaphorically for body structure is Kaelith's domain. Distinguished from world-building 'architecture' (binding architecture, enforcement architecture) which is established terminology.",
+        "correction": "Changed to 'through the depth of bone and muscle' — 'depth' is Lirien's domain (surfaces vs. depths, concealment vs. revelation). Maintains the sense of penetrating through layers.",
+        "status": "corrected"
+      },
+      {
+        "id": "DEV-004",
+        "severity": "minor",
+        "type": "Architectural metaphor for body",
+        "location": "L92",
+        "original": "The electrical architecture of muscle and nerve",
+        "issue": "Same as DEV-003 — 'architecture' used metaphorically for body systems rather than binding systems.",
+        "correction": "Changed to 'The electrical network of muscle and nerve' — 'network' is neutral with intelligence-operative connotations (spy networks, information networks). Maintains the scientific precision Lirien would use.",
+        "status": "corrected"
+      },
+      {
+        "id": "DEV-005",
+        "severity": "minor",
+        "type": "Architectural metaphor for emotion",
+        "location": "L124",
+        "original": "the cold architecture of distrust",
+        "issue": "Using 'architecture' to describe an emotional state is firmly Kaelith's domain — she thinks of emotions as structures with weight and load-bearing capacity. Lirien would process distrust as a current or temperature.",
+        "correction": "Changed to 'the cold current of distrust' — water metaphor, consistent with Lirien's domain. Maintains the 'cold' temperature element which connects to her sensory processing.",
+        "status": "corrected"
+      },
+      {
+        "id": "DEV-006",
+        "severity": "minor",
+        "type": "Structural metaphor for emotion",
+        "location": "L126",
+        "original": "Lirien's chest cracked open with it",
+        "issue": "'Cracked' connotes structural breakage (stone, wall, foundation) — Kaelith's domain. Lirien's emotional rupture should use non-structural language.",
+        "correction": "Changed to 'Lirien's chest tore open with it' — 'tore' is organic/visceral, not structural. Maintains the intensity of the emotional moment without importing stone/structure vocabulary.",
+        "status": "corrected"
+      },
+      {
+        "id": "DEV-007",
+        "severity": "minor",
+        "type": "Military metaphor (callback)",
+        "location": "L196",
+        "original": "Without the verbal armour.",
+        "issue": "Same violation as DEV-001 — 'armour' in the tricolon stripping passage. Must be consistent with the line 30 correction.",
+        "correction": "Changed to 'Without the clinical membrane.' — maintains consistency with DEV-001 correction. The tricolon now reads: 'Without the clinical register. Without the clinical membrane. Without the careful weighing...' — the repetition of 'clinical' is intentional, hammering the point that Lirien is shedding ALL her clinical defenses simultaneously.",
+        "status": "corrected"
+      }
+    ],
+    "acceptableExceptions": [
+      {
+        "location": "L186",
+        "text": "the woman who built walls to survive and opened doors to love",
+        "reason": "Late-arc (Ch20 of 22) intimacy bleed-through. Lirien is describing Kaelith using Kaelith's own metaphorical framework — structural language to describe a structural person. Per style guide: 'Avoid giving her Kaelith's stone-and-buttress vocabulary except as late intimacy bleed-through.' This is earned evolution: Lirien has been infiltrated by Kaelith's language, mirroring the infiltration of human feeling into fae conditioning."
+      },
+      {
+        "location": "Multiple (L26, L30, L54, L56, L104, L110, L114, L178)",
+        "text": "binding architecture, enforcement architecture, contract architecture, etc.",
+        "reason": "World-building terminology, not metaphor. The binding system's 'architecture' is established world vocabulary used consistently by all POV characters and in world-bible documents. These are not Lirien using architectural METAPHORS but Lirien using the correct TERMINOLOGY for the magical system she is manipulating."
+      },
+      {
+        "location": "L150",
+        "text": "water finding every crack",
+        "reason": "'Crack' here is the gap/fissure that water flows through — it's part of the water metaphor, not a structural metaphor. This is also the Seep's identity phrase ('the water that finds every crack'), making it core Lirien vocabulary."
+      },
+      {
+        "location": "L68, L124, L176",
+        "text": "weight (precise weight, shared weight, carrying weight)",
+        "reason": "Borderline. 'Weight' can be Kaelith's domain (pressure, heaviness, structural load). However, in these uses it functions as general English rather than domain-specific metaphor: 'precise weight of what they were about to do' (measurement, Lirien's precision vocabulary), 'shared weight of it since the black moment' (common idiom), 'carrying weight so long' (literal binding presence). No correction needed."
+      }
+    ]
+  },
+  "classificationLanguageAnalysis": {
+    "count": 14,
+    "instances": [
+      { "location": "L14", "text": "Lirien catalogued it anyway", "type": "operative habit" },
+      { "location": "L30", "text": "She heard herself and noted the register", "type": "self-monitoring" },
+      { "location": "L52", "text": "Noted: the sensation in her chest was not a clinical variable", "type": "classification attempt — with framework failure" },
+      { "location": "L56", "text": "with the clarity of threat assessment", "type": "operative framework" },
+      { "location": "L62", "text": "The analytical framework held, barely", "type": "meta-awareness of framework strain" },
+      { "location": "L172", "text": "She ran the assessment", "type": "operative habit post-crisis" },
+      { "location": "L178", "text": "trained her to catalogue her physical state", "type": "Seep training reference" },
+      { "location": "L182", "text": "She catalogued what remained", "type": "systematic inventory" },
+      { "location": "L186", "text": "She tested this with the clinical thoroughness of an operative running a diagnostic", "type": "diagnostic framework applied to emotion" },
+      { "location": "L186", "text": "the contaminated, suspect, impossible-to-classify desire", "type": "classification failure as emotional revelation" },
+      { "location": "L188", "text": "This was: evidence. This was also: proof.", "type": "SIGNATURE classification pattern" },
+      { "location": "L196", "text": "Surface and depth, for the first time since she had learned the difference, were the same thing", "type": "framework transcendence" },
+      { "location": "L204", "text": "Noted the tears. Did not classify them.", "type": "SIGNATURE evolution — choosing not to classify" },
+      { "location": "L30", "text": "I've calibrated the resonance thresholds", "type": "technical precision in dialogue" }
+    ],
+    "assessment": "Excellent presence and evolution. Classification language appears in every scene, maintaining Lirien's analytical foundation. But the pattern shows earned evolution: early in the chapter she classifies actively (cataloguing, noting registers, running assessments). During the crisis (bond-silence), the framework strains ('The analytical framework held, barely'). Post-crisis, she returns to classification (cataloguing what remained, running diagnostics) but with crucial breakthroughs: 'This was: evidence. This was also: proof' uses the classification pattern for something real rather than something defended against. And the final 'Noted the tears. Did not classify them' is the chapter's emotional apex — the choice to feel without filing."
+  },
+  "sentenceRhythmAnalysis": {
+    "assessment": "Strong compliance with Lirien's mixed-and-fluid fingerprint. The default is medium-length analytical sentences (10-18 words) with clean observation→assessment structure. Field-note fragments punctuate naturally: 'One chair. One table. Two bedrolls in the corner, neither unrolled.' These read as intelligence cataloguing, not military staccato. Longer, clause-heavy sentences appear during analytical processing: 'The irony ran deep as an undertow: the same skills, the same operative precision, the same meticulous elimination of variables.' Under emotional pressure, sentences elongate with qualifiers: 'Not the contaminated, suspect, impossible-to-classify desire that had tortured her for months, but something direct.' When the analytical framework fails, sentences drop to fragments: '*Silent.* / The bond was silent.' — these are not percussive (Kaelith) but stunned (Lirien). The rhythm difference from Ch19 is immediately perceptible.",
+    "contrastWithCh19": "Ch19 opens with fragments: 'Two exits. One road south. One goat track northwest through the tree cover.' — percussive, inventory-mode, 70% short. Ch20 opens with: 'The light in the room was wrong.' — a single medium sentence, observational, reading atmosphere before cataloguing specifics. The pacing difference is audible within the first line of each chapter."
+  },
+  "emotionalRegisterAudit": {
+    "assessment": "Sensation → category pattern maintained with appropriate late-arc evolution. Emotions are primarily processed through the operative framework: sensation first (chest sensation, bond-silence as physical void), then classification attempt, then either successful categorization or framework failure. Direct emotion naming occurs at key moments (terror at L52, love at L132) but is framed within the classification system's collapse: 'Noted: the sensation in her chest was not a clinical variable. The sensation in her chest was terror.' The most powerful emotional moment — the bond-silence — is rendered entirely as absence rather than named emotion: 'Where there had been rhythm, there was nothing.' This is masterful show-don't-tell that uses Lirien's voice (data reception, pattern awareness) to make absence devastating.",
+    "showDontTellCompliance": "No INV-005 violations. Terror is always reached through sensation ('the sensation in her chest'). Love appears in action context ('the desperate focused love of a woman who... was now demanding of her own hands'). Bond-transmitted emotions from Kaelith (fear, relief, gratitude) are rendered as received data, not Lirien's own naming. The tears at L194 and L204 are noticed (visual — her dominant channel) rather than explained.",
+    "lateArcEvolution": "Appropriate. Lirien directly names terror (L52), love (L132), and want (L186) — but each instance shows the evolution FROM the classification system. Terror is named after 'Noted:' acknowledges the framework's failure. Love appears in the action of resuscitation, not in reflection. Want is tested diagnostically ('Did she still want Kaelith? Yes.') before being confirmed. The analytical foundation remains but no longer suppresses the feeling."
+  },
+  "sensorySignatureAudit": {
+    "dominantChannel": "Visual — confirmed",
+    "secondaryChannel": "Auditory — confirmed",
+    "visualReferences": "Light quality throughout (opening assessment, window light on pallor, silver catching light, vision darkening, light unchanged after crisis). Face-reading (Kaelith's expression, mouth shift, eyes opening). Spatial awareness (distance between them, exits, room layout). Lirien watches the world — she describes how light falls, what expressions reveal, what posture conceals.",
+    "auditoryReferences": "Self-monitoring ('She heard herself and noted the register'). Bond-silence as auditory void. Kaelith's gasp as 'the most beautiful thing Lirien had ever heard.' Voice quality assessment ('post-cardiac-arrest rough'). Sound as information channel throughout.",
+    "kinestheticPresence": "Present but subordinate: hand on sternum, heartbeat felt through palm, cold floor under knees, fingers interlacing. Kinesthetic moments serve the visual/auditory primary channels — touch provides data that Lirien then observes or processes.",
+    "contrastWithKaelith": "Ch19: 'She had drilled it into her officers' (touch), 'the recognition hit like a fist to the sternum' (tactile impact), 'the phantom ache' (body memory). Ch20: 'The light in the room was wrong' (visual), 'She heard herself and noted the register' (auditory self-monitoring). The sensory channels are clearly differentiated: Kaelith touches the world; Lirien reads it."
+  },
+  "voiceEvolutionAssessment": {
+    "chapterPosition": "20 of 22 — late Act III, climactic binding dissolution",
+    "earnedEvolutions": [
+      "Direct emotion naming: terror (L52), love (L132), want (L186) — each reached through the classification system's failure, not bypassing it",
+      "Framework transcendence: 'Surface and depth, for the first time since she had learned the difference, were the same thing' (L196) — the core duality of her operative identity resolved",
+      "Choosing not to classify: 'Did not classify them' (L204) — the deliberate choice to feel without filing, the most vulnerable thing she can do",
+      "Unfiltered speech: 'The words came without the clinical register' (L196) — meta-awareness of speaking as the person, not the operative",
+      "One structural metaphor as intimacy bleed-through: 'built walls to survive' (L186) — using Kaelith's language to describe Kaelith, a sign of deep seeing",
+      "Contractions in narration: organic, selective, not defaulting to fae-formal precision",
+      "'I don't know' instead of 'I have insufficient data' (L74) — the language shift the character profile marks as an arc milestone"
+    ],
+    "preservedCore": [
+      "Room-reading opening: light quality assessment before exits before people",
+      "Classification language: 14 instances across all three scenes",
+      "Water metaphor exclusivity: 19+ instances, zero unacceptable structural metaphors (post-correction)",
+      "Intelligence-operative vocabulary: variables, parameters, calibration, diagnostic, operational, register",
+      "Observation→assessment sentence structure throughout",
+      "Field-note fragments: cataloguing mode as default under stress",
+      "Visual/auditory sensory dominance maintained",
+      "Analytical post-crisis processing: 'She ran the assessment' after the resuscitation"
+    ],
+    "verdict": "Voice evolution is organic and earned. The analytical operative remains the foundation, but Ch20 shows the person who has grown through the framework rather than beyond it. The classification system is present but no longer imprisoning — Lirien can use it AND choose not to. This is the payoff the voice has been building toward across 20 chapters."
+  },
+  "kaelithVoiceInDialogue": {
+    "assessment": "Kaelith sounds like Kaelith in every line of dialogue. 'What do you need from me?' (L36) — functional, direct. 'Understood.' (L42) — one word, military. 'You have it. You have had it since Rivenmarch.' (L46) — clean declarative, no hedging. 'I consent' (L50) — two words, unornamented, load-bearing. 'Then let's not waste the seconds' (L82) — dry, action-oriented, no emotional elaboration. 'The binding is gone. You're still here.' (L192) — two short observations, the second carrying enormous subtext. 'Quietus. Three days. Thalen is still operating. The god-seal still needs reinforcement.' (L210) — inventory mode, naming the next objective. Kaelith's clipped, percussive, military register is maintained in dialogue throughout. The contrast with Lirien's longer, more analytically structured speech patterns is sharp and consistent."
+  },
+  "contrastWithChapter19": {
+    "distinctnessVerification": "Immediately and sharply distinct. Ch19 opens with tactical inventory ('Two exits. One road south.'), counts exits before people, uses percussive fragments. Ch20 opens with atmospheric assessment ('The light in the room was wrong'), reads light quality and information value before cataloguing space. The two minds are fundamentally different: Kaelith counts and maps; Lirien reads and classifies. Kaelith's sentences pound; Lirien's flow. Kaelith names through body ('the recognition hit like a fist'); Lirien names through system ('Noted: the sensation in her chest'). The POV transition is unmissable.",
+    "metaphorDomainSeparation": "Post-correction, fully separated. Ch19: stone (8), foundation (11), load-bearing (5), keystone (2), structural (6), weight (10). Ch20: current (11), undertow (4), channel (9), water (6), wave (2), tidal (1), membrane (2), surface tension (1), depth (1). Zero domain contamination in either direction (excepting one approved Kaelith water metaphor in Ch19 and one approved Lirien structural metaphor in Ch20, both flagged as intimacy bleed-through).",
+    "emotionalProcessingContrast": "Kaelith: emotion as physical event (jaw tightening, sternum impact, collarbone ache). Lirien: emotion as data (classified, catalogued, tested diagnostically). When both experience the same moment (the bond's presence), Kaelith feels it as weight and Lirien feels it as current. This distinction is maintained even in the shared climactic moment.",
+    "crossContaminationCheck": "Seven minor vocabulary incursions detected and corrected. No structural cross-contamination post-correction. The two voices are immediately distinguishable at every level: opening attention priority, sentence rhythm, metaphor domain, emotional register, thought pattern, sensory channel."
+  },
+  "correctionsApplied": 7,
+  "deviationsFound": 10,
+  "deviationBreakdown": {
+    "major": 0,
+    "minor": 7,
+    "flaggedButAcceptable": 3
+  },
+  "invariantCompliance": {
+    "INV-003": "PASS — Voice sharply distinct from Kaelith across all three scenes. Vocabulary, rhythm, metaphor domain, emotional register, thought patterns, sensory channels, and attention priority all differentiated. A reader would identify the POV character within the first sentence.",
+    "INV-005": "PASS — No direct emotion naming violations. Emotions reached through sensation and classification framework. Terror named after 'Noted:' acknowledges framework strain. Love named in action context. Bond-transmitted emotions from Kaelith rendered as received data.",
+    "INV-015": "PASS — Voice consistent across SCN-56, SCN-57, SCN-58 with appropriate intensification under crisis. Classification language present in every scene. Water metaphor density consistent throughout.",
+    "INV-023": "PASS — All prose original. No recognizable borrowed phrases or patterns.",
+    "INV-034": "PASS — Lirien identifiable within the first sentence ('The light in the room was wrong'). By sentence four ('A room that gave nothing away'), there is zero ambiguity.",
+    "INV-055": "PASS — Voice measured against all fingerprint parameters: vocabulary (intelligence-operative), sentence rhythm (mixed-fluid, not percussive), metaphor density (moderate, water-domain), emotional register (classified-before-felt with earned evolution), thought patterns (associative, cross-referencing), sensory signature (visual/auditory dominant).",
+    "INV-064": "PASS — Visual sensory channel dominant. Light quality drives the opening assessment. Face-reading, expression-tracking, and spatial-visual awareness present throughout. Auditory secondary confirmed through self-monitoring, bond-silence, and voice quality assessment.",
+    "INV-072": "PASS — POV transition motivated by narrative necessity. Ch19 (Kaelith) establishes the decision to trust; Ch20 (Lirien) inhabits the act of wielding that trust. The heart-stopping scene REQUIRES Lirien's interior — she is the agent, the one whose skill determines life or death. Kaelith's POV would render the climax as passive waiting; Lirien's renders it as active precision under devastating emotional pressure."
+  },
+  "observationsForDownstream": [
+    "The 'architecture' terminology for the binding system (binding architecture, enforcement architecture, contract architecture) is world-building vocabulary, not metaphor. Downstream agents should not flag these as POV violations — they are consistent across both POV characters.",
+    "Lirien's 'built walls to survive and opened doors to love' (L186) is a deliberate late-arc intimacy bleed-through. The revision pipeline should preserve this as earned voice evolution, not correct it as a domain violation.",
+    "The classification pattern 'This was: evidence. This was also: proof.' (L188-190) is a signature Lirien moment that should be preserved through any revision. It is the emotional culmination of her voice arc — the classification system finally used for joy rather than defense.",
+    "The 'I don't know' at L74 (vs. 'I have insufficient data') is an arc milestone per the character profile. Downstream agents should note this as intentional evolution, not a voice break.",
+    "'Noted the tears. Did not classify them.' (L204) is the chapter's most important voice moment. Any revision that adds classification of the tears would be a regression.",
+    "Water metaphor density is very high (19+ instances). This is appropriate for the climactic chapter where Lirien's core metaphor domain should be at maximum presence. Beta readers should note this as intentional saturation, not overcounting.",
+    "Post-correction, 'clinical membrane' appears at both L30 and L196. The repetition creates a frame: the membrane is established when Lirien defaults to it, and named when she sheds it. This is intentional echo structure."
+  ]
+}

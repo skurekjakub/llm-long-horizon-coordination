@@ -1,0 +1,598 @@
+{
+  "storyId": "001",
+  "facts": [
+    {
+      "id": "FACT-001",
+      "fact": "The Oathbrand on Kaelith's collarbone is being deliberately maintained by someone — it should have dissolved years ago but is being secretly refreshed",
+      "revealedToReader": {
+        "chapter": 1
+      },
+      "knownBy": [
+        {
+          "charId": "CHAR-003",
+          "learnedChapter": 0
+        },
+        {
+          "charId": "CHAR-003",
+          "learnedChapter": 0,
+          "note": "Corrected from CHAR-014. Thalen Reyvas = CHAR-003 per characters/index.json"
+        }
+      ],
+      "unknownBy": [],
+      "notes": [
+        {
+          "chapter": "cross-verify",
+          "note": "Both leads learn about deliberate maintenance by ch3-4. CHAR-003 (Thalen) corrected from CHAR-014."
+        }
+      ]
+    },
+    {
+      "id": "FACT-002",
+      "fact": "The Oathbrand on Kaelith responded to the Pallor tear — brands don't typically respond to environmental disturbances unless the subject has ontological capacity. This suggests Kaelith may have Warden inheritance, and the suppression is killing her slowly.",
+      "revealedToReader": {
+        "chapter": 2
+      },
+      "knownBy": [
+        {
+          "charId": "CHAR-001",
+          "learnedChapter": 4
+        }
+      ],
+      "unknownBy": []
+    },
+    {
+      "id": "FACT-003",
+      "fact": "Lirien was sent to Duskhaven under a Cerith Court kill contract to execute Kaelith — Kaelith's blood lives inside the binding ceremony",
+      "revealedToReader": {
+        "chapter": 1
+      },
+      "knownBy": [
+        {
+          "charId": "CHAR-002",
+          "learnedChapter": 0
+        },
+        {
+          "charId": "CHAR-011",
+          "learnedChapter": 0
+        },
+        {
+          "charId": "CHAR-012",
+          "learnedChapter": 0
+        },
+        {
+          "charId": "CHAR-001",
+          "learnedChapter": 4
+        },
+        {
+          "charId": "CHAR-001",
+          "learnedChapter": 5
+        }
+      ],
+      "unknownBy": [],
+      "notes": [
+        {
+          "chapter": 16,
+          "note": "FULL revelation — Kaelith now knows: contract still active (not abandoned), her blood in binding ceremony, physiological enforcement on Lirien, Court enforcement escalation. Previously knew about the contract's existence from ch4 but believed it was no longer being pursued."
+        },
+        {
+          "chapter": 19,
+          "note": "Kaelith and Lirien discuss contract openly. Loophole acknowledged as viable. Both consent to the plan."
+        },
+        {
+          "chapter": 20,
+          "note": "Contract FULFILLED through temporary heartbeat cessation loophole. Binding dissolved. Lirien is unbound. Contract no longer active."
+        }
+      ]
+    },
+    {
+      "id": "FACT-004",
+      "fact": "The Pallor is being deliberately poisoned by someone on the High Conclave — forty years of sabotage, not natural failure",
+      "revealedToReader": {
+        "chapter": 12
+      },
+      "knownBy": [
+        {
+          "charId": "CHAR-003",
+          "learnedChapter": 0,
+          "note": "Corrected from CHAR-014. Thalen = CHAR-003."
+        },
+        {
+          "charId": "CHAR-001",
+          "learnedChapter": 4
+        },
+        {
+          "charId": "CHAR-002",
+          "learnedChapter": 4
+        }
+      ],
+      "unknownBy": [
+        "CHAR-004",
+        "CHAR-005",
+        "CHAR-013"
+      ],
+      "notes": [
+        {
+          "chapter": "cross-verify",
+          "note": "CHAR-001 and CHAR-002 both know about sabotage by ch10-15. Removed from unknownBy."
+        }
+      ]
+    },
+    {
+      "id": "FACT-005",
+      "fact": "Kaelith carries the kinetic memory of the path to the Quietus — she walked it once blindfolded, and the location exists only in her body's memory",
+      "revealedToReader": {
+        "chapter": 5
+      },
+      "knownBy": [
+        {
+          "charId": "CHAR-002",
+          "learnedChapter": 5
+        },
+        {
+          "charId": "CHAR-011",
+          "learnedChapter": 5
+        },
+        {
+          "charId": "CHAR-001",
+          "learnedChapter": 4
+        }
+      ],
+      "unknownBy": []
+    },
+    {
+      "id": "FACT-006",
+      "fact": "Kaelith is descended from the Warden lineage through Ossya Thenndal — her kinetic gifts are inherited, not accidental",
+      "revealedToReader": {
+        "chapter": 12
+      },
+      "knownBy": [
+        {
+          "charId": "CHAR-004",
+          "learnedChapter": 12
+        },
+        {
+          "charId": "CHAR-005",
+          "learnedChapter": 12
+        },
+        {
+          "charId": "CHAR-001",
+          "learnedChapter": 21,
+          "note": "Kaelith uses Warden magic at Quietus; Ossya Thenndal named as source of kinetic memory"
+        },
+        {
+          "charId": "CHAR-002",
+          "learnedChapter": 21,
+          "note": "Lirien witnesses Kaelith's Warden magic at seal; Thenndal connection established"
+        }
+      ],
+      "unknownBy": [],
+      "notes": [
+        {
+          "chapter": "cross-verify",
+          "note": "Both leads learn about Warden lineage by ch21. Thenndal named in ch21."
+        }
+      ]
+    },
+    {
+      "id": "FACT-007",
+      "fact": "Thalen (CHAR-014) is the Conclave member who has been poisoning the Pallor for forty years to release Ythara",
+      "revealedToReader": {
+        "chapter": 10
+      },
+      "knownBy": [
+        {
+          "charId": "CHAR-003",
+          "learnedChapter": 0
+        },
+        {
+          "charId": "CHAR-002",
+          "learnedChapter": 10,
+          "note": "Lirien discovers Thalen as architect in Aranthem archive ch10"
+        },
+        {
+          "charId": "CHAR-001",
+          "learnedChapter": 15,
+          "note": "Kaelith learns Thalen identity in evidence compilation ch15"
+        }
+      ],
+      "unknownBy": [
+        "CHAR-004",
+        "CHAR-005"
+      ],
+      "notes": [
+        {
+          "chapter": "cross-verify",
+          "note": "Both leads know by ch15. Ch21 confrontation. CHAR-003 corrected from CHAR-014."
+        }
+      ]
+    },
+    {
+      "id": "FACT-008",
+      "fact": "The kill contract can be fulfilled through exact wording loophole — temporary heartbeat cessation satisfies 'execute' without permanent death",
+      "revealedToReader": {
+        "chapter": 14
+      },
+      "knownBy": [
+        {
+          "charId": "CHAR-002",
+          "learnedChapter": 14
+        },
+        {
+          "charId": "CHAR-001",
+          "learnedChapter": 16,
+          "note": "Lirien told Kaelith about the loophole during the revelation scene. Kaelith heard the claim but has no basis for trusting it — every word Lirien says is now suspect."
+        }
+      ],
+      "unknownBy": [
+        "CHAR-011",
+        "CHAR-012"
+      ],
+      "notes": [
+        {
+          "chapter": 17,
+          "note": "Kaelith internally references the loophole claim ('cessation of heartbeat, a state not a duration') but continues to distrust it. The bond pulse evidence (Lirien's genuine grief) creates the first crack in her wholesale rejection — if the grief is real, the loophole claim might also be real. No resolution yet."
+        },
+        {
+          "chapter": 19,
+          "note": "Loophole plan solidified. TWO paths: (1) dissolution at Quietus, (2) fallback heartbeat cessation. Kaelith consents to both."
+        },
+        {
+          "chapter": 20,
+          "note": "Loophole EXECUTED. Temporary heartbeat cessation (8 seconds) satisfied clause. Binding dissolved upon literal fulfillment. Resuscitation successful. Both leads now know the loophole worked and love survived."
+        }
+      ]
+    },
+    {
+      "id": "FACT-009",
+      "fact": "Tavik (CHAR-009) is Conclave informant monitoring Kaelith — receives encrypted dispatches, reports her health/activity status on maintenance schedule",
+      "revealedToReader": {
+        "chapter": 3
+      },
+      "knownBy": [
+        {
+          "charId": "CHAR-001",
+          "learnedChapter": 1
+        },
+        {
+          "charId": "CHAR-009",
+          "learnedChapter": 0
+        },
+        {
+          "charId": "CHAR-003",
+          "learnedChapter": 0
+        },
+        {
+          "charId": "CHAR-001",
+          "learnedChapter": 3
+        }
+      ],
+      "unknownBy": [
+        "CHAR-002"
+      ]
+    },
+    {
+      "id": "FACT-010",
+      "fact": "The resonance bond between Kaelith and Lirien transmits emotional state — neither can hide their feelings from the other after chapter 11",
+      "revealedToReader": {
+        "chapter": 11
+      },
+      "knownBy": [
+        {
+          "charId": "CHAR-001",
+          "learnedChapter": 11
+        },
+        {
+          "charId": "CHAR-002",
+          "learnedChapter": 11
+        }
+      ],
+      "unknownBy": [],
+      "notes": [
+        {
+          "chapter": 17,
+          "note": "Bond walled by Kaelith but not severed. Grief bleeds through wall. Bond pulse in the night forces breach. Kaelith stops actively reinforcing wall in SCN-48 but does not reach back. Direction change (north toward Lirien) sensed by Lirien through bond. Bond correctly demonstrates: transmits emotional quality (grief, alertness), does NOT transmit factual content. Walling reduces but does not eliminate transmission."
+        },
+        {
+          "chapter": 19,
+          "note": "Bond opens fully first time since Ch16. Wall removed deliberately. Carries everything without filter. One water metaphor shows Lirien influence."
+        }
+      ]
+    },
+    {
+      "id": "FACT-011",
+      "fact": "Iryse (CHAR-013) has been unknowingly serving as the vector for Pallor poisoning through corrupted Dimming rites — sincere stewardship exploited",
+      "revealedToReader": {
+        "chapter": 19
+      },
+      "knownBy": [
+        {
+          "charId": "CHAR-003",
+          "learnedChapter": 0
+        },
+        {
+          "charId": "CHAR-013",
+          "learnedChapter": 21,
+          "note": "Iryse learns she was unknowing vector at Quietus confrontation"
+        },
+        {
+          "charId": "CHAR-001",
+          "learnedChapter": 21,
+          "note": "Kaelith witnesses Iryse's revelation at Quietus"
+        },
+        {
+          "charId": "CHAR-002",
+          "learnedChapter": 21,
+          "note": "Lirien witnesses Iryse's revelation at Quietus"
+        }
+      ],
+      "unknownBy": [
+        "CHAR-004",
+        "CHAR-005"
+      ],
+      "notes": [
+        {
+          "chapter": "cross-verify",
+          "note": "Iryse learns ch21. Both leads present. Iryse commits to reviewing 18 years of records."
+        }
+      ]
+    },
+    {
+      "id": "FACT-012",
+      "fact": "The Seep supports Lirien's loophole exploitation rather than enforcing the contract literally — strategic flexibility over rigid compliance",
+      "revealedToReader": {
+        "chapter": 20
+      },
+      "knownBy": [
+        {
+          "charId": "CHAR-002",
+          "learnedChapter": 18
+        },
+        {
+          "charId": "CHAR-011",
+          "learnedChapter": 18
+        }
+      ],
+      "unknownBy": [
+        "CHAR-001",
+        "CHAR-012"
+      ]
+    },
+    {
+      "id": "FACT-013",
+      "fact": "Enforcer Seldric sent to rendition Kaelith under guise of medical evaluation — Conclave attempting to disappear her before Warden capacity becomes known",
+      "revealedToReader": {
+        "chapter": 3
+      },
+      "knownBy": [
+        {
+          "charId": "CHAR-001",
+          "learnedChapter": 3
+        },
+        {
+          "charId": "CHAR-002",
+          "learnedChapter": 3
+        },
+        {
+          "charId": "Enforcer Seldric",
+          "learnedChapter": 0
+        }
+      ],
+      "unknownBy": []
+    },
+    {
+      "id": "FACT-014",
+      "fact": "Lirien's operation 31 — a merchant in Vael'thrin with a daughter named Elisi. The Seep's clean arithmetic concealing moral devastation. Lirien retains the name despite training to discard personal data.",
+      "revealedToReader": {
+        "chapter": 13
+      },
+      "knownBy": [
+        {
+          "charId": "CHAR-002",
+          "learnedChapter": 0
+        },
+        {
+          "charId": "CHAR-001",
+          "learnedChapter": 13
+        }
+      ],
+      "unknownBy": []
+    },
+    {
+      "id": "FACT-015",
+      "fact": "Kaelith and Lirien's first kiss — initiated after Calwrath confession, explicitly framed as choice not necessity. Irreversible emotional threshold crossed.",
+      "revealedToReader": {
+        "chapter": 13
+      },
+      "knownBy": [
+        {
+          "charId": "CHAR-001",
+          "learnedChapter": 13
+        },
+        {
+          "charId": "CHAR-002",
+          "learnedChapter": 13
+        }
+      ],
+      "unknownBy": []
+    },
+    {
+      "id": "FACT-016",
+      "fact": "Ashborne Legion survivor network exists — former soldiers of Kaelith's unit coordinating covertly, watching her exile for years. Safe houses, intelligence infrastructure, and active agents.",
+      "revealedToReader": {
+        "chapter": 18
+      },
+      "knownBy": [
+        {
+          "charId": "CHAR-002",
+          "learnedChapter": 18,
+          "context": "Ashborne contact delivers intelligence at safe house"
+        },
+        {
+          "charId": "CHAR-001",
+          "learnedChapter": 19,
+          "note": "Kaelith arrives at Rivenmarch and discovers Ashborne veterans organized using her doctrine"
+        }
+      ],
+      "unknownBy": [],
+      "dramaticWeight": "high — Kaelith's belief in total isolation is a defining wound. Learning she was never abandoned by her soldiers will be emotionally devastating.",
+      "plannedReveal": "RESOLVED ch19",
+      "notes": [
+        {
+          "chapter": "cross-verify",
+          "note": "Kaelith discovers network ch19. No longer unknown to her."
+        }
+      ]
+    },
+    {
+      "id": "FACT-017",
+      "fact": "Contract dissolution is architecturally possible at the Quietus (god-seal) where Pallor substrate thins enough to expose binding anchor structure. Requires both Warden (Kaelith) and Hand (Lirien) working together.",
+      "revealedToReader": {
+        "chapter": 18
+      },
+      "knownBy": [
+        {
+          "charId": "CHAR-002",
+          "learnedChapter": 18,
+          "context": "Ashborne intelligence from three independent sources"
+        },
+        {
+          "charId": "CHAR-001",
+          "learnedChapter": 19,
+          "note": "Lirien shares Ashborne intelligence during reunion briefing"
+        }
+      ],
+      "unknownBy": [],
+      "dramaticWeight": "critical — the mission (fantasy arc) and the freedom (romance arc) converge at the same destination. This is the dual-arc convergence point.",
+      "plannedReveal": "RESOLVED ch19"
+    },
+    {
+      "id": "FACT-018",
+      "fact": "A Court Architect defected 12 years ago and survived without Lessening under Ashborne protection. Implies binding dissolution has precedent — the contract's 'absolute' nature is not absolute.",
+      "revealedToReader": {
+        "chapter": 18
+      },
+      "knownBy": [
+        {
+          "charId": "CHAR-002",
+          "learnedChapter": 18,
+          "context": "Ashborne contact cites defected Architect as intelligence source"
+        },
+        {
+          "charId": "CHAR-001",
+          "learnedChapter": 19,
+          "note": "Lirien shares three-source intelligence during reunion"
+        }
+      ],
+      "unknownBy": [],
+      "dramaticWeight": "major — undermines the 'binding is absolute' assumption that has driven both characters' despair",
+      "plannedReveal": "RESOLVED ch19"
+    },
+    {
+      "id": "FACT-019",
+      "fact": "Lirien has proved (to herself) that free choice exists within the binding: the Oathbrand removal (Ch11) was binding-contrary (directive: prevent) but no resistance was experienced. One verified act of defiance predating the bond, kiss, and intimacy.",
+      "revealedToReader": {
+        "chapter": 18
+      },
+      "knownBy": [
+        {
+          "charId": "CHAR-002",
+          "learnedChapter": 18,
+          "context": "Systematic 11-hour self-interrogation"
+        },
+        {
+          "charId": "CHAR-001",
+          "learnedChapter": 19,
+          "note": "Lirien presents proof during reunion: Oathbrand removal predated bond/kiss/intimacy"
+        }
+      ],
+      "unknownBy": [],
+      "dramaticWeight": "critical — this proof is what Kaelith needs to hear, and the information asymmetry between 'Lirien has proof' and 'Kaelith doesn't know' creates the Ch19 reunion tension",
+      "plannedReveal": "RESOLVED ch19"
+    },
+    {
+      "chapter": 22,
+      "description": "Information asymmetry fully resolved between protagonists. Both women have complete knowledge of each other and the situation. Remaining asymmetries are external: Conclave's internal deliberations, Cerith Court's response to Lirien's defection, long-term effects of Pallor thinning.",
+      "status": "resolved"
+    }
+  ],
+  "dramaticIronyPoints": [
+    {
+      "factId": "FACT-002",
+      "readerKnows": true,
+      "characterDoesnt": "CHAR-001",
+      "activeFromChapter": 2,
+      "resolvedChapter": 4,
+      "note": "Reader and Lirien know Oathbrand killing Kaelith. Ch3: Kaelith learns about conspiracy but not lethality yet. Resolved ch4 when Lirien explains ontological suppression depth."
+    },
+    {
+      "factId": "FACT-003",
+      "readerKnows": true,
+      "characterDoesnt": "CHAR-001",
+      "activeFromChapter": 1,
+      "resolvedChapter": 4,
+      "note": "Reader knows Lirien is under kill contract from chapter 1. Resolved chapter 4 when Lirien directly confirms kill contract to Kaelith in tavern confrontation."
+    },
+    {
+      "factId": "FACT-005",
+      "readerKnows": true,
+      "characterDoesnt": "CHAR-001",
+      "activeFromChapter": 3,
+      "resolvedChapter": 4,
+      "note": "CORRECTED: Was activeFrom:5/resolved:4 (impossible). Reader learns about kinetic memory ch3 when Lirien mentions it. Kaelith learns ch4 when explained directly."
+    },
+    {
+      "factId": "FACT-008",
+      "readerKnows": true,
+      "characterDoesnt": "CHAR-001",
+      "activeFromChapter": 14,
+      "resolvedChapter": 19,
+      "note": "Reader knows Lirien is researching a loophole while Kaelith doesn't — creates hope during black moment that reader has but Kaelith lacks."
+    },
+    {
+      "factId": "FACT-011",
+      "readerKnows": true,
+      "characterDoesnt": "CHAR-013",
+      "activeFromChapter": 19,
+      "resolvedChapter": 21,
+      "note": "Reader learns Iryse is unknowing sabotage vector before she does — institutional tragedy, sincere stewardship exploited."
+    },
+    {
+      "chapter": 18,
+      "irony": "The reader knows both Kaelith (Ch17) and Lirien (Ch18) have independently decided to walk north toward each other, but neither character knows the other has made this choice. The bond transmits intention but not content.",
+      "characters": [
+        "CHAR-001",
+        "CHAR-002"
+      ],
+      "resolution": "Ch19 — physical reunion"
+    },
+    {
+      "chapter": 20,
+      "description": "Contract dramatic irony RESOLVED. Binding dissolved through most intimate act possible. The bond was always real.",
+      "resolves": [
+        "FACT-003 irony",
+        "FACT-008 irony"
+      ]
+    },
+    {
+      "chapter": 22,
+      "description": "All dramatic irony resolved. Reader and characters share the same information. The only remaining uncertainty is the future — which is the point. The story ends on choice, not knowledge.",
+      "status": "resolved"
+    }
+  ],
+  "lastUpdatedChapter": 22,
+  "notes": "Updated through chapter 16. Central dramatic irony: reader knows about kill contract from chapter 1, Kaelith doesn't learn until chapter 16 — 15 chapters of watching trust build inside a cage. Secondary irony: Oathbrand killing her (revealed ch2, resolved ch8), Quietus path in her body (revealed ch5, resolved ch11). Map tracks who-knows-what-when to prevent characters acting on information they haven't received and to maintain reader tension through knowledge gaps. Ch14 adds: FACT-008 (contract loophole — 'cessation of heartbeat' as state not duration) discovered by Lirien in ch14, establishing new dramatic irony (reader and Lirien know the loophole, Kaelith does not). Lirien's guilt during intimacy managed through bond containment — Kaelith senses emotional weight but not factual content, consistent with MAG-007. FACT-007 (Thalen as saboteur) still unknown to both leads. Ch15 adds: Dramatic irony deepens through false victory. Kaelith declares 'I want this. I want you.' and chooses hope — all while FACT-008 (contract loophole) and the active kill contract remain unknown to her. Kaelith's line 'not because a contract required it' is devastating dramatic irony. Ch16 adds: MASSIVE asymmetry shift. FACT-003 fully revealed — Kaelith now knows contract is ACTIVE (not abandoned as told in ch4), her blood was used in binding ceremony, Lirien faces physiological enforcement, Court escalation authorized. FACT-008 (loophole) disclosed to Kaelith by Lirien, but Kaelith has no basis for trusting the claim. Irony inverts: reader and Lirien know the loophole is real and potentially viable, but Kaelith sees it as another manipulation. New dramatic irony: neither woman can determine if Lirien's feelings are genuine or binding-induced (MB-012 activated). FACT-007 (Thalen as saboteur) still unknown to both leads. Ch17 adds: No new facts discovered by any character. Key asymmetry development: Kaelith internally processes bond evidence that Lirien's grief is genuine (resonance cannot fabricate). This shifts her epistemic state — she now holds a more complex model (feelings real AND contract real) rather than simple betrayal. The loophole (FACT-008) is referenced but still distrusted. FACT-006 (Warden lineage through Thenndal) remains unknown to Kaelith — her reference to Thenndal planting kinetic memory is about the EVENT, not the LINEAGE. FACT-007 (Thalen as saboteur) still unknown to both leads. CROSS-MANUSCRIPT VERIFICATION: 9 corrections applied. Character ID CHAR-014->CHAR-003 fixed for Thalen across 5 FACT entries. Stale unknownBy lists updated for 7 FACT entries. FACT-005 temporal ordering corrected. All protagonist information asymmetry resolved by ch22 as expected.",
+  "crossManuscriptVerification": {
+    "performedAt": "2026-03-19T23:07:04.888717+00:00",
+    "corrections": [
+      "CHAR-014 -> CHAR-003 for Thalen Reyvas in FACT-001, FACT-004, FACT-007, FACT-009, FACT-011",
+      "FACT-005 dramatic irony temporal ordering fixed (activeFrom:3, resolved:4)",
+      "FACT-006 unknownBy updated: both leads learn Warden lineage by ch21",
+      "FACT-007 unknownBy updated: both leads learn Thalen identity by ch10-15",
+      "FACT-011 unknownBy updated: Iryse learns ch21, both leads present",
+      "FACT-016 unknownBy updated: Kaelith discovers Ashborne network ch19",
+      "FACT-017 unknownBy updated: Kaelith learns dissolution plan ch19",
+      "FACT-018 unknownBy updated: Kaelith learns about Architect ch19",
+      "FACT-019 unknownBy updated: Kaelith learns free choice proof ch19"
+    ]
+  }
+}

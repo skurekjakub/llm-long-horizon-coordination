@@ -1,0 +1,30 @@
+{
+  "storyId": "001",
+  "abstractPatterns": {
+    "sentenceRhythm": "Reference prose favors alternating cadences: medium-to-long reflective sentences for emotional processing, then short declarative lines for impact. Paragraphs often end on clipped statements, reversals, or repeated syntactic beats that crystallize feeling. For story 001, keep the contrast but tighten the long sentences so they feel taut rather than expansive.",
+    "vocabularyRegister": "The register is accessible and emotionally legible rather than ornate: mostly contemporary, high-clarity diction with occasional elevated phrasing at ceremonial or intimate moments. It rarely becomes densely literary. For story 001, shift this baseline slightly more formal and austere to match the tone contract while preserving readability and immediacy.",
+    "metaphorDensity": "Figurative language appears at low-to-moderate density. The prose relies more on direct emotional framing, selective sensory image clusters, and occasional parallel phrasing than on constant metaphor. When figurative language does surface, it tends to intensify an emotional beat rather than build elaborate lyrical conceits. Preserve that restraint and avoid highly specific or showy image chains.",
+    "emotionalExpression": "Emotion is communicated through a blend of explicit interior acknowledgment and embodied cues: tightening, stillness, touch, breath changes, gaze direction, and action under pressure. The narration frequently pairs thought with bodily sensation, then punctuates it with a simple declarative conclusion. For story 001, keep the body-based signaling but reduce outright naming of feeling so the effect stays restrained rather than melodramatic.",
+    "dialogueStyle": "Dialogue is plentiful, fast-moving, and character-revealing. Tags are used sparingly; action beats, interruptions, and rhythm shifts carry tone. Humor often arrives as deadpan deflection, affectionate needling, or undercutting remarks inside serious scenes. For story 001, retain subtext-heavy dryness but moderate the frequency of overt banter so dialogue remains sharpened by danger and distrust.",
+    "narrativeDistance": "The sample operates in close third-person with frequent access to immediate thought, memory, and judgment. The distance is intimate enough to register fleeting reactions but can pull back briefly for contextual summary. This suits story 001 well: maintain close-third intimacy while ensuring each POV filters the world differently rather than sharing one generic emotional lens.",
+    "paragraphStructure": "The prose mixes medium paragraphs with isolated one-line paragraphs for emphasis. Scene energy often comes from rapid alternation among reflection, dialogue, and brief action beats. Emotional scenes use paragraph breaks to create breath, hesitation, and emphasis rather than dense descriptive blocks. This is useful for story 001 so long as isolated lines are used selectively and not so often that they become melodramatic markers.",
+    "descriptiveApproach": "Description is selective and purpose-driven rather than panoramic. The prose privileges emotional context, gesture, posture, and a few salient visual details over exhaustive environmental rendering. Interiority and interpersonal dynamics outweigh world-description density. For story 001, keep the selective focus but choose details that reinforce the twilight, decaying, conspiratorial atmosphere demanded by the concept."
+  },
+  "toneCharacteristics": {
+    "overall": "The dominant feel is intimate, earnest, and emotionally immediate, with solemnity balanced by warmth and flashes of wry relief. Applied to story 001, the useful inheritance is emotional closeness plus dry wit; the tonal calibration should move darker, tighter, and more morally ambiguous than the reference's more openly emotive baseline.",
+    "emotionalRange": "The prose comfortably spans grief, tenderness, loyalty, longing, irritation, and playful relief, often moving between them within a single scene. It handles high feeling by alternating heaviness with small releases of affection or humor.",
+    "intensity": "Moderate-to-high emotional intensity. The sample is willing to state significance plainly and to foreground charged emotional turning points. For story 001, keep the conviction but channel it through pressure, omission, and subtext so the intensity feels smoldering rather than openly cathartic.",
+    "humor": "Humor is present as dry interpersonal banter, understatement, and coping through wit. It functions as pressure relief and relationship-building, not tonal parody. This is compatible with the story concept so long as humor remains understated and never tips into camp or modern glibness."
+  },
+  "technicalElements": {
+    "povStyle": "Close third-person limited with strong access to interior reaction. Best fit for story 001 is dual close-third, keeping one POV more clipped/tactile and the other more analytic/observational in accordance with the lead voice fingerprints.",
+    "tenseUsage": "Predominantly past tense, with occasional italicized or isolated thought-style lines that create immediacy without leaving past-tense narration. This structure can be adopted directly for story 001.",
+    "transitionStyle": "Transitions are often clean and direct: hard scene cuts, visual or emotional carryover, and simple section breaks rather than elaborate bridge passages. Momentum comes from emotional continuity more than connective exposition. For story 001, this supports a taut journey structure and mystery pressure.",
+    "pacingTechniques": "Pace slows through interior reflection, memory insertion, and ceremonial or relational beats; it accelerates through clipped exchanges, brief paragraphs, and decisive declarative sentences. Repetition, parallel syntax, and isolated punch lines are used to mark emotional peaks. For story 001, combine these techniques with more subtext and less overt explanation so the pace remains tense even in intimate scenes."
+  },
+  "warnings": [],
+  "upstreamRefs": [
+    "external-resources/writing-style.txt",
+    "story-concept.json"
+  ]
+}

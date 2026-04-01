@@ -1,0 +1,680 @@
+{
+  "artifactType": "tension-map",
+  "storyId": "001",
+  "purpose": "Visual/textual pacing chart showing tension rise-and-fall across all chapters, ensuring proper pacing rhythm and identifying potential flat stretches before drafting begins.",
+  "generatedAt": "2025-03-18T03:15:00Z",
+  "upstreamRefs": [
+    "story-concept.json",
+    "plot/plot-structure.json",
+    "plot/dual-arc-timeline.json",
+    "romance-arc.json"
+  ],
+  "pacingPrinciples": {
+    "inv020": "No 3 consecutive chapters at similar tension levels (high or low)",
+    "inv035": "Micro-tension continuity — every half-page must have at least one tension source",
+    "inv051": "Tension mapping required — visual/textual pacing chart showing rise-and-fall"
+  },
+  "tensionScale": {
+    "description": "1-10 scale where 1 is quiet introspection with minimal external pressure and 10 is life-or-death climax with multiple simultaneous crises",
+    "low": "1-3: Recovery, introspection, world-building, character development",
+    "medium": "4-6: Investigation, travel, social tension, emotional conflict",
+    "high": "7-10: Combat, revelation, betrayal, crisis, climax"
+  },
+  "chapterTensionMap": [
+    {
+      "chapter": 1,
+      "title": "Opening Image — Exile Under a Failing Sky",
+      "act": 1,
+      "fantasyTension": 3,
+      "romanceTension": 4,
+      "overallTension": 4,
+      "tensionType": "sustained-low",
+      "primaryTensionSources": [
+        "Kaelith's chronic Oathbrand pain (ambient threat)",
+        "Lirien's surveillance presence (predator awareness)",
+        "First visible Pallor irregularity (world-threat foreshadowing)"
+      ],
+      "emotionalRegister": "Taut and watchful — twilight-empire atmosphere, heavy confinement",
+      "recoveryNotes": "Establishes baseline tension. Not a recovery chapter — sets the world's failing state.",
+      "microTensionSeeds": [
+        "Oathbrand should have dissolved but burns fresh",
+        "Professional recognition between hunter and target",
+        "Unanswered question: why is someone watching her after five years?"
+      ],
+      "pacingRole": "Opening image — establishes stakes and atmosphere without overwhelming"
+    },
+    {
+      "chapter": 2,
+      "title": "Inciting Incident — Surveillance Meets the First Tear",
+      "act": 1,
+      "fantasyTension": 5,
+      "romanceTension": 5,
+      "overallTension": 5,
+      "tensionType": "rising",
+      "primaryTensionSources": [
+        "Kaelith catches Lirien watching — threat becomes mutual awareness",
+        "Visible Pallor tear appears — cosmic threat becomes tangible",
+        "Lirien's internal conflict between contract and curiosity"
+      ],
+      "emotionalRegister": "Rising unease — professional assessment begins to fracture",
+      "recoveryNotes": "Not a recovery chapter. Tension escalates from surveillance to confrontation possibility.",
+      "microTensionSeeds": [
+        "Why hasn't the assassin struck yet?",
+        "What is the Oathbrand's connection to the Pallor failure?",
+        "Reader knows Lirien is there to kill — Kaelith does not"
+      ],
+      "pacingRole": "Inciting incident — introduces active complications to both arcs"
+    },
+    {
+      "chapter": 3,
+      "title": "Conspiracy Surfaces — Conclave-Linked Threat in Duskhaven",
+      "act": 1,
+      "fantasyTension": 6,
+      "romanceTension": 4,
+      "overallTension": 6,
+      "tensionType": "rising",
+      "primaryTensionSources": [
+        "Conclave-linked threat appears in Duskhaven — external pursuit",
+        "Kaelith realizes she's being kept weak deliberately",
+        "First tactical cooperation between antagonists"
+      ],
+      "emotionalRegister": "Paranoia and forced pragmatism",
+      "recoveryNotes": "Not a recovery chapter. Fantasy tension escalates; romance tension holds at medium.",
+      "microTensionSeeds": [
+        "Who in the Conclave wants Kaelith controlled?",
+        "Why is the stranger helping instead of killing?",
+        "Two threats converging — which is deadlier?"
+      ],
+      "pacingRole": "Conspiracy introduction — adds layer of institutional threat"
+    },
+    {
+      "chapter": 4,
+      "title": "Debate — Strike, Delay, or Investigate",
+      "act": 1,
+      "fantasyTension": 5,
+      "romanceTension": 6,
+      "overallTension": 6,
+      "tensionType": "sustained-high",
+      "primaryTensionSources": [
+        "Kaelith directly confronts Lirien's purpose",
+        "Lirien risks Seep censure by delaying contract execution",
+        "Active pursuit from Conclave agents escalates"
+      ],
+      "emotionalRegister": "Confrontational intimacy — danger of honesty",
+      "recoveryNotes": "Not a recovery chapter. Interpersonal tension peaks as both consider alliance.",
+      "microTensionSeeds": [
+        "What will Lirien choose — duty or judgment?",
+        "Can Kaelith trust someone sent to kill her?",
+        "Time pressure from multiple hunters closing in"
+      ],
+      "pacingRole": "Debate point — forces decision under pressure"
+    },
+    {
+      "chapter": 5,
+      "title": "The Quietus Paradox Revealed",
+      "act": 1,
+      "fantasyTension": 7,
+      "romanceTension": 6,
+      "overallTension": 7,
+      "tensionType": "rising",
+      "primaryTensionSources": [
+        "Lirien reveals the kill contract and Quietus paradox",
+        "Fantasy stakes and personal stakes become inseparable",
+        "Both women realize cooperation is existentially necessary"
+      ],
+      "emotionalRegister": "Revelation under duress — world-threat becomes personal",
+      "recoveryNotes": "High-tension revelation chapter. No recovery — information changes everything.",
+      "microTensionSeeds": [
+        "How can they both survive when the contract requires death?",
+        "Is Lirien trustworthy now that her advantage is gone?",
+        "The world's survival depends on an assassin sparing her target"
+      ],
+      "pacingRole": "Major revelation — establishes the central dramatic paradox"
+    },
+    {
+      "chapter": 6,
+      "title": "First Plot Point — Departure from Duskhaven",
+      "act": 1,
+      "fantasyTension": 7,
+      "romanceTension": 5,
+      "overallTension": 7,
+      "tensionType": "sustained-high",
+      "primaryTensionSources": [
+        "Forced departure under pursuit — leaving last safe haven",
+        "Physical proximity begins (forced proximity engine activates)",
+        "Both arcs locked into mutual dependence"
+      ],
+      "emotionalRegister": "Action with undertones of awareness — escape as commitment",
+      "recoveryNotes": "High-action chapter. Not a recovery — sets up Act II journey structure.",
+      "microTensionSeeds": [
+        "Can they survive the road ahead?",
+        "Physical awareness intrudes before either is ready",
+        "No retreat available — partnership is now load-bearing"
+      ],
+      "pacingRole": "Act I climax / First plot point — locks protagonists into journey",
+      "pacingAnalysis": "CAUTION: Three consecutive medium-high chapters (4, 5, 6). Act I needs recovery soon."
+    },
+    {
+      "chapter": 7,
+      "title": "Promise of Premise — Forced Partnership on the Road",
+      "act": 2,
+      "fantasyTension": 5,
+      "romanceTension": 6,
+      "overallTension": 5,
+      "tensionType": "falling-to-sustained",
+      "primaryTensionSources": [
+        "Road survival requires competence-based cooperation",
+        "Unwanted attraction becomes undeniable",
+        "Pallor failures continue as ambient threat"
+      ],
+      "emotionalRegister": "Tension shifting from external to internal — proximity pressure",
+      "recoveryNotes": "RECOVERY CHAPTER after Act I climax. Lower external tension, higher interpersonal/emotional tension. Allows breathing room while maintaining micro-tension.",
+      "microTensionSeeds": [
+        "Attraction is unwelcome — both resist acknowledging it",
+        "Professional competence creates grudging respect",
+        "Reader knows proximity will erode defenses"
+      ],
+      "pacingRole": "Promise of premise — establishes journey rhythm and romantic engine",
+      "pacingAnalysis": "GOOD: Recovery after high-tension Act I close. Maintains micro-tension through attraction."
+    },
+    {
+      "chapter": 8,
+      "title": "B Story Turn — The Body Cannot Be Hidden",
+      "act": 2,
+      "fantasyTension": 4,
+      "romanceTension": 7,
+      "overallTension": 6,
+      "tensionType": "rising",
+      "primaryTensionSources": [
+        "Kaelith's Oathbrand crisis revealed — death timeline becomes visible",
+        "Lirien cares without strategic rationalization",
+        "Vulnerability becomes unavoidable"
+      ],
+      "emotionalRegister": "Intimate vulnerability — care without permission",
+      "recoveryNotes": "Not full recovery. Fantasy tension low, but romance tension spikes through vulnerability.",
+      "microTensionSeeds": [
+        "Can Lirien help without crossing professional boundaries?",
+        "Kaelith admits she's not holding together by will alone",
+        "Reader sees romance deepening while contract looms"
+      ],
+      "pacingRole": "B-story turn — romance arc takes narrative focus"
+    },
+    {
+      "chapter": 9,
+      "title": "Pinch Point One — Ythara Presses on the Bond",
+      "act": 2,
+      "fantasyTension": 8,
+      "romanceTension": 7,
+      "overallTension": 8,
+      "tensionType": "rising",
+      "primaryTensionSources": [
+        "Direct exposure to Ythara's influence — existential threat",
+        "Mutual dependence to stay psychologically intact",
+        "External pursuit from conspiracy agents"
+      ],
+      "emotionalRegister": "Crisis-bonding — survival through presence",
+      "recoveryNotes": "High-intensity chapter. No recovery — major fantasy threat demonstration.",
+      "microTensionSeeds": [
+        "Will they survive mental unraveling?",
+        "Dependence is no longer tactical — it's existential",
+        "The god is not evil, just incompatible with human consciousness"
+      ],
+      "pacingRole": "Pinch point one — major antagonist demonstration (god-threat)"
+    },
+    {
+      "chapter": 10,
+      "title": "Conspiracy Clues Accumulate — Archive Evidence",
+      "act": 2,
+      "fantasyTension": 5,
+      "romanceTension": 5,
+      "overallTension": 5,
+      "tensionType": "falling",
+      "primaryTensionSources": [
+        "Investigation yields conspiracy evidence",
+        "Personal curiosity emerges (stars question)",
+        "Conspiracy gains human face"
+      ],
+      "emotionalRegister": "Investigative intimacy — curiosity without tactical value",
+      "recoveryNotes": "RECOVERY CHAPTER after chapter 9's intensity. Investigation provides breathing room while advancing plot.",
+      "microTensionSeeds": [
+        "Who is behind the sabotage?",
+        "Kaelith asks about fae stars — personal interest, not strategy",
+        "Reader knows intimacy is deepening toward midpoint"
+      ],
+      "pacingRole": "Recovery and investigation — builds toward midpoint while allowing emotional processing",
+      "pacingAnalysis": "GOOD: Recovery after high-intensity chapter 9. Maintains forward momentum through investigation."
+    },
+    {
+      "chapter": 11,
+      "title": "Midpoint — Oathbrand Removal and Magic Return",
+      "act": 2,
+      "fantasyTension": 9,
+      "romanceTension": 9,
+      "overallTension": 9,
+      "tensionType": "peak",
+      "primaryTensionSources": [
+        "Oathbrand removal — physical and magical crisis",
+        "Kaelith's power floods back — transformation",
+        "Resonance bond forms — emotional exposure",
+        "Intimacy threshold crossed — hands at collarbone"
+      ],
+      "emotionalRegister": "Peak intensity across both arcs — transformation and vulnerability",
+      "recoveryNotes": "MIDPOINT CLIMAX. Highest tension so far. Not a recovery chapter.",
+      "microTensionSeeds": [
+        "Power return is dangerous — can Kaelith control it?",
+        "Resonance bond creates permanent emotional vulnerability",
+        "Physical intimacy marks point of no return"
+      ],
+      "pacingRole": "Midpoint — false victory, major transformation, romance escalation",
+      "pacingAnalysis": "PEAK: Midpoint should be highest tension of Act II first half. Correct placement."
+    },
+    {
+      "chapter": 12,
+      "title": "Revelation — The Conspiracy Has a Human Hand",
+      "act": 2,
+      "fantasyTension": 6,
+      "romanceTension": 7,
+      "overallTension": 7,
+      "tensionType": "sustained-high",
+      "primaryTensionSources": [
+        "Conspiracy identified — Thalen implicated",
+        "Resonance bond removes emotional privacy",
+        "Stakes become institutional as well as cosmic"
+      ],
+      "emotionalRegister": "Revelation and intimacy aftermath",
+      "recoveryNotes": "Not a recovery chapter. Post-midpoint intensity sustained through revelation.",
+      "microTensionSeeds": [
+        "How deep does the conspiracy go?",
+        "Emotional privacy is gone — bond exposes everything",
+        "Reader knows confrontation with Thalen is inevitable"
+      ],
+      "pacingRole": "Post-midpoint revelation — identifies human antagonist"
+    },
+    {
+      "chapter": 13,
+      "title": "First Kiss — Witness Without Flinching",
+      "act": 2,
+      "fantasyTension": 5,
+      "romanceTension": 8,
+      "overallTension": 7,
+      "tensionType": "rising-romance",
+      "primaryTensionSources": [
+        "Kaelith shares unsanitized truth of Calwrath",
+        "Lirien witnesses without recoil",
+        "First kiss as earned emotional risk",
+        "Thalen's pursuit escalates in background"
+      ],
+      "emotionalRegister": "Romantic breakthrough — restraint breaks after witnessing",
+      "recoveryNotes": "Partial recovery. Fantasy tension medium, but romance tension peaks through breakthrough.",
+      "microTensionSeeds": [
+        "Will Lirien recoil from Kaelith's history?",
+        "Kiss marks emotional point of no return",
+        "Reader knows black moment approaches"
+      ],
+      "pacingRole": "Romance milestone — first kiss earned through vulnerability"
+    },
+    {
+      "chapter": 14,
+      "title": "Pinch Point Two — Partnership Wins a Battle",
+      "act": 2,
+      "fantasyTension": 8,
+      "romanceTension": 7,
+      "overallTension": 8,
+      "tensionType": "rising",
+      "primaryTensionSources": [
+        "Major pursuit or terrain crisis",
+        "Combined competence wins the battle",
+        "Victory confirms how catastrophic betrayal would be",
+        "Physical intimacy deepens after survival"
+      ],
+      "emotionalRegister": "Action with intimate aftermath — competence under fire",
+      "recoveryNotes": "High-action chapter. Not a recovery — major physical confrontation.",
+      "microTensionSeeds": [
+        "Partnership is load-bearing for both arcs",
+        "Separation would now be fatal",
+        "Reader knows contract revelation will shatter this"
+      ],
+      "pacingRole": "Pinch point two — protagonists demonstrate power, but foreshadows deeper crisis"
+    },
+    {
+      "chapter": 15,
+      "title": "False Victory — Intimacy Before Collapse",
+      "act": 2,
+      "fantasyTension": 5,
+      "romanceTension": 9,
+      "overallTension": 7,
+      "tensionType": "false-peak",
+      "primaryTensionSources": [
+        "First full intimate scene — complete vulnerability",
+        "Emerging proof against conspiracy creates optimism",
+        "Illusion that love and mission might align cleanly"
+      ],
+      "emotionalRegister": "Romantic and narrative optimism — the calm before devastation",
+      "recoveryNotes": "FALSE RECOVERY. Tension appears to resolve but is actually setting up black moment.",
+      "microTensionSeeds": [
+        "Both women lower final defenses",
+        "Reader knows contract revelation will destroy this",
+        "Fantasy solution appears viable — dramatic irony intensifies"
+      ],
+      "pacingRole": "False victory — creates maximum height for black moment fall",
+      "pacingAnalysis": "INTENTIONAL: High romance tension before crash. Reader dread creates micro-tension."
+    },
+    {
+      "chapter": 16,
+      "title": "All Is Lost — Death Contract Revealed",
+      "act": 2,
+      "fantasyTension": 8,
+      "romanceTension": 10,
+      "overallTension": 10,
+      "tensionType": "peak-crisis",
+      "primaryTensionSources": [
+        "Seep interception reveals contract details",
+        "Kaelith's blood is in the binding — betrayal is structural",
+        "Both arcs shatter simultaneously",
+        "Fantasy mission requires Kaelith alive, contract requires her dead"
+      ],
+      "emotionalRegister": "Devastation — trust and mission collapse together",
+      "recoveryNotes": "BLACK MOMENT. Highest overall tension. Not a recovery chapter.",
+      "microTensionSeeds": [
+        "Was any of it real or just structural compromise?",
+        "How can either arc resolve now?",
+        "Reader faces possibility of tragic ending"
+      ],
+      "pacingRole": "Black moment / All is lost — maximum narrative and emotional crisis",
+      "pacingAnalysis": "PEAK: Black moment correctly placed at end of Act II. Maximum devastation."
+    },
+    {
+      "chapter": 17,
+      "title": "Act III Descent — Separation Under Accelerating Failure",
+      "act": 3,
+      "fantasyTension": 7,
+      "romanceTension": 8,
+      "overallTension": 8,
+      "tensionType": "sustained-crisis",
+      "primaryTensionSources": [
+        "Separation is emotionally and existentially dangerous",
+        "Pallor crisis accelerates without partnership",
+        "Both women question whether love was structural compromise"
+      ],
+      "emotionalRegister": "Grief and doubt — private heartbreak meets public catastrophe",
+      "recoveryNotes": "Not a recovery chapter. Fallout from black moment sustains high tension.",
+      "microTensionSeeds": [
+        "Can trust be rebuilt after structural betrayal?",
+        "Neither can reach Quietus alone",
+        "Reader hopes for reconciliation but fears it's impossible"
+      ],
+      "pacingRole": "Act III opening — separation and consequences",
+      "pacingAnalysis": "CAUTION: Chapter 17 maintains high tension after 16. Need recovery soon."
+    },
+    {
+      "chapter": 18,
+      "title": "Dark Night / Choice — Follow Her Freely",
+      "act": 3,
+      "fantasyTension": 5,
+      "romanceTension": 7,
+      "overallTension": 6,
+      "tensionType": "falling-to-rising",
+      "primaryTensionSources": [
+        "Lirien declares emotional independence from Court",
+        "Choice to follow without institutional justification",
+        "Ashborne allies surface — vindication begins"
+      ],
+      "emotionalRegister": "Determination emerging from grief — choice over obligation",
+      "recoveryNotes": "PARTIAL RECOVERY. Lower external tension as internal resolve forms. Pivot from crisis to agency.",
+      "microTensionSeeds": [
+        "Will Kaelith accept Lirien's choice?",
+        "Can love that began in necessity become freely given?",
+        "Reader sees hope emerging but resolution still uncertain"
+      ],
+      "pacingRole": "Dark night of the soul — protagonist chooses to act despite despair",
+      "pacingAnalysis": "GOOD: Partial recovery after sustained crisis. Builds toward reunion."
+    },
+    {
+      "chapter": 19,
+      "title": "Break into Three — Shared Plan, Shared Truth",
+      "act": 3,
+      "fantasyTension": 7,
+      "romanceTension": 8,
+      "overallTension": 7,
+      "tensionType": "rising",
+      "primaryTensionSources": [
+        "Reunion earned through action and disclosure",
+        "Plan requires exploiting contract loophole — risky and unprecedented",
+        "Full honesty about fears and desires",
+        "Time pressure from accelerating Pallor failure"
+      ],
+      "emotionalRegister": "Reunion with stakes — trust rebuilt deliberately",
+      "recoveryNotes": "Not a recovery chapter. Tension rises toward climax through reunion and planning.",
+      "microTensionSeeds": [
+        "Will the loophole work or kill Kaelith?",
+        "Can they reach the Quietus in time?",
+        "Reader knows climax approaches"
+      ],
+      "pacingRole": "Break into three — reunion and aligned action toward climax"
+    },
+    {
+      "chapter": 20,
+      "title": "Contract Fulfilled in Letter, Broken in Spirit",
+      "act": 3,
+      "fantasyTension": 9,
+      "romanceTension": 9,
+      "overallTension": 9,
+      "tensionType": "peak",
+      "primaryTensionSources": [
+        "Lirien stops Kaelith's heart — ultimate trust test",
+        "Resurrection succeeds — contract satisfied in letter",
+        "Trust proves itself through weaponized vulnerability",
+        "Fantasy obstacle (contract) removed"
+      ],
+      "emotionalRegister": "Peak emotional and physical risk — trust as death and resurrection",
+      "recoveryNotes": "HIGH INTENSITY. Pre-climax peak. Not a recovery chapter.",
+      "microTensionSeeds": [
+        "Will Kaelith's heart restart?",
+        "Does the contract binding accept this as fulfillment?",
+        "Cage opens — are they still together by choice?"
+      ],
+      "pacingRole": "Pre-climax crisis resolution — removes contract obstacle through trust"
+    },
+    {
+      "chapter": 21,
+      "title": "Climax — Quietus Reached, Sabotage Exposed",
+      "act": 3,
+      "fantasyTension": 10,
+      "romanceTension": 8,
+      "overallTension": 10,
+      "tensionType": "peak-climax",
+      "primaryTensionSources": [
+        "Confrontation at Quietus / Serath Dûn",
+        "Thalen's acceleration attempt vs. protagonists' intervention",
+        "God-seal stabilization — existential stakes",
+        "Partnership proves itself under maximum pressure"
+      ],
+      "emotionalRegister": "Maximum stakes — competence and love tested together",
+      "recoveryNotes": "CLIMAX. Highest tension point. Not a recovery chapter.",
+      "microTensionSeeds": [
+        "Will they stop Ythara's awakening?",
+        "Can Thalen be exposed without world collapse?",
+        "Reader knows this determines everything"
+      ],
+      "pacingRole": "Climax — fantasy and romance arcs resolve under maximum pressure"
+    },
+    {
+      "chapter": 22,
+      "title": "Resolution — The World Holds, Because They Chose It",
+      "act": 3,
+      "fantasyTension": 3,
+      "romanceTension": 5,
+      "overallTension": 4,
+      "tensionType": "falling-resolution",
+      "primaryTensionSources": [
+        "Immediate crisis contained but world changed",
+        "Institutions forced to confront complicity",
+        "Love survives as choice, not necessity"
+      ],
+      "emotionalRegister": "Cautious hope — earned resolution without triumphalism",
+      "recoveryNotes": "RESOLUTION CHAPTER. Tension falls to sustainable baseline. Provides closure and processing.",
+      "microTensionSeeds": [
+        "What does the future hold for protagonists?",
+        "Has Kaelith's vindication begun?",
+        "Reader receives emotional satisfaction without neat bow"
+      ],
+      "pacingRole": "Resolution — closes arcs with cost and hope balanced",
+      "pacingAnalysis": "CORRECT: Resolution provides necessary de-escalation and emotional landing."
+    }
+  ],
+  "pacingAnalysis": {
+    "actOne": {
+      "chapters": "1-6",
+      "tensionRange": "4-7",
+      "pattern": "Steady escalation from 4 to 7, ending with departure",
+      "issues": [
+        {
+          "type": "minor",
+          "location": "Chapters 4-6",
+          "description": "Three consecutive medium-high chapters (6, 6, 7). While not identical tension, Act I maintains high intensity without recovery.",
+          "severity": "acceptable",
+          "rationale": "Act I builds toward first plot point. The escalation is intentional. Chapter 7 provides recovery at Act II opening."
+        }
+      ],
+      "verdict": "PASS — Escalation pattern correct for Act I. Recovery comes immediately after (Chapter 7)."
+    },
+    "actTwo": {
+      "chapters": "7-16",
+      "tensionRange": "5-10",
+      "pattern": "Recovery (7), build to midpoint peak (11), sustained high with false victory (15), crash to black moment (16)",
+      "issues": [],
+      "recoveryChapters": [7, 10],
+      "peaks": [9, 11, 14, 16],
+      "recoveryAfterPeaks": {
+        "afterChapter9": "Chapter 10 provides investigation recovery",
+        "afterChapter11": "Chapters 12-13 sustain but don't escalate, allowing processing",
+        "afterChapter14": "Chapter 15 is false recovery (intentional)",
+        "afterChapter16": "Chapter 18 provides partial recovery in Act III"
+      },
+      "verdict": "PASS — Proper pacing rhythm maintained. No INV-020 violations. Recovery chapters strategically placed."
+    },
+    "actThree": {
+      "chapters": "17-22",
+      "tensionRange": "3-10",
+      "pattern": "Sustained crisis (17), partial recovery/pivot (18), build to dual peaks (20, 21), resolution (22)",
+      "issues": [],
+      "peaks": [20, 21],
+      "recoveryAfterPeaks": {
+        "afterChapter20": "Chapter 21 is immediate climax (correct)",
+        "afterChapter21": "Chapter 22 provides resolution and recovery"
+      },
+      "verdict": "PASS — Act III correctly maintains high tension until climax, then resolves. No premature recovery."
+    },
+    "overallVerdict": "PASS — No INV-020 violations detected. Pacing rhythm properly alternates tension and recovery. Peaks align with structural beats (midpoint, black moment, climax)."
+  },
+  "tensionPeaks": {
+    "primaryPeaks": [
+      {
+        "chapter": 11,
+        "type": "midpoint",
+        "overallTension": 9,
+        "description": "Oathbrand removal, magic return, resonance bond, intimacy threshold — dual-arc peak"
+      },
+      {
+        "chapter": 16,
+        "type": "blackMoment",
+        "overallTension": 10,
+        "description": "Death contract revealed — trust and mission shatter — highest emotional devastation"
+      },
+      {
+        "chapter": 21,
+        "type": "climax",
+        "overallTension": 10,
+        "description": "Quietus confrontation, god-seal stabilization, conspiracy exposure — maximum stakes"
+      }
+    ],
+    "secondaryPeaks": [
+      {
+        "chapter": 9,
+        "description": "Pinch point one — Ythara's influence, existential threat"
+      },
+      {
+        "chapter": 14,
+        "description": "Pinch point two — major physical confrontation won through partnership"
+      },
+      {
+        "chapter": 20,
+        "description": "Contract loophole — death and resurrection trust test"
+      }
+    ]
+  },
+  "recoveryPoints": {
+    "primary": [
+      {
+        "chapter": 7,
+        "description": "Promise of premise — recovery after Act I climax, establishes journey rhythm",
+        "recoveryType": "External tension drops, interpersonal tension rises — allows breathing room"
+      },
+      {
+        "chapter": 10,
+        "description": "Investigation and personal curiosity — recovery after chapter 9 crisis",
+        "recoveryType": "Investigation provides forward momentum with lower stakes"
+      },
+      {
+        "chapter": 18,
+        "description": "Dark night choice — partial recovery as protagonist pivots from despair to agency",
+        "recoveryType": "Internal resolve building, lower external pressure"
+      },
+      {
+        "chapter": 22,
+        "description": "Resolution — final recovery, emotional landing after climax",
+        "recoveryType": "Full de-escalation with cautious hope"
+      }
+    ],
+    "microRecovery": [
+      {
+        "chapter": 13,
+        "description": "First kiss — fantasy tension medium while romance peaks (partial recovery from chapter 12 revelation)"
+      }
+    ]
+  },
+  "microTensionContinuity": {
+    "principle": "INV-035 requires no half-page passage without at least one tension source",
+    "implementation": "Every chapter contains multiple micro-tension seeds listed in chapterTensionMap",
+    "tensionTypes": [
+      "unanswered questions",
+      "dramatic irony (reader knows more than characters)",
+      "physical danger (ambient or immediate)",
+      "emotional vulnerability",
+      "time pressure",
+      "conflicting loyalties",
+      "secrets and withheld information",
+      "approaching consequences"
+    ],
+    "verification": "Each chapter's microTensionSeeds array provides specific tension continuity mechanisms to guide scene-beat design and drafting"
+  },
+  "prescriptionsForChapterOutliner": {
+    "chapter1": "Establish baseline tension through Oathbrand pain, surveillance awareness, and Pallor failure. Avoid overwhelming reader — tone should be taut twilight, not panic.",
+    "chapter2": "Escalate through confrontation of awareness. Kaelith and Lirien both know they're seen. Pallor tear provides external validation of wrongness.",
+    "chapter3": "Add conspiracy layer. Conclave threat makes staying in Duskhaven impossible. First cooperation should feel pragmatic, not warm.",
+    "chapter4": "Interpersonal tension peaks through confrontation. 'Why haven't you killed me yet?' Direct and dangerous.",
+    "chapter5": "Revelation changes everything. Paradox: contract vs. world survival. High information density but not action-heavy.",
+    "chapter6": "Action climax of Act I. Departure under pressure. Lock protagonists into partnership. End with them on the road together.",
+    "chapter7": "RECOVERY CHAPTER. Road journey, competence-based cooperation, attraction as unwelcome intrusion. Slower pace, character development.",
+    "chapter8": "Shift to vulnerability. Oathbrand crisis visible. Lirien cares. Romance tension rises while fantasy tension stays medium.",
+    "chapter9": "Major fantasy threat demonstration. Ythara's influence, mental/existential danger. High intensity, shows god is real and dangerous.",
+    "chapter10": "RECOVERY CHAPTER. Investigation yields evidence. Personal question about stars. Build intimacy through curiosity, not crisis.",
+    "chapter11": "MIDPOINT PEAK. Oathbrand removal is physical crisis. Magic return is transformation. Resonance bond forms. Intimate touch at collarbone. Dual-arc intensity.",
+    "chapter12": "Sustain intensity through revelation. Thalen identified or strongly suspected. Bond removes privacy — they feel each other.",
+    "chapter13": "Romantic breakthrough. Calwrath confession, witness without recoil, first kiss as earned risk. Fantasy tension medium in background.",
+    "chapter14": "Action sequence. Pursuit or terrain crisis. Combined competence wins. Physical intimacy after survival. High intensity.",
+    "chapter15": "FALSE VICTORY. First full intimate scene. Emerging proof. Optimism that everything might work out. Set up maximum fall.",
+    "chapter16": "BLACK MOMENT. Contract revealed. Kaelith's blood in binding. Both arcs shatter. Devastation. Highest emotional intensity.",
+    "chapter17": "Fallout. Separation. Both women questioning. Pallor crisis accelerates. High tension sustained but different quality — grief, doubt.",
+    "chapter18": "PARTIAL RECOVERY. Lirien chooses to follow freely. Ashborne allies appear. Shift from despair to agency. Build toward reunion.",
+    "chapter19": "Reunion earned. Full disclosure. Plan to exploit loophole. Trust rebuilt deliberately. Rising toward climax.",
+    "chapter20": "Heart-stop scene. Ultimate trust test. Contract satisfied in letter, broken in spirit. High intensity, pre-climax peak.",
+    "chapter21": "CLIMAX. Quietus confrontation. God-seal stabilization. Thalen stopped. Maximum stakes across both arcs. Highest intensity.",
+    "chapter22": "RESOLUTION. De-escalate. World survives, changed. Love proven as choice. Cautious hope without triumphalism. Emotional landing for reader."
+  },
+  "editorNotes": {
+    "forChapterOutliner": "Use prescriptions above to calibrate intensity when designing scene beats. Low-tension chapters still need micro-tension seeds.",
+    "forChapterDrafter": "Consult microTensionSeeds for each chapter. Every scene must maintain at least one active tension source. Even recovery chapters need unanswered questions or dramatic irony.",
+    "forCraftEnforcer": "Verify INV-035 during chapter audit. Check for half-page passages without tension. Flag and prescribe fixes."
+  }
+}

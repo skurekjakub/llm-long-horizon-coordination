@@ -1,0 +1,222 @@
+{
+  "chapterNumber": 16,
+  "revisionTimestamp": "2025-07-30T12:00:00Z",
+  "draftWordCount": 4093,
+  "revisedWordCount": 3814,
+  "wordCountDelta": -279,
+  "findingsAddressed": [
+    {
+      "findingId": "LINE-001",
+      "severity": "critical",
+      "action": "applied",
+      "description": "Bond reference saturation reduced from ~28 named 'the bond' references to 9, with 5 additional varied 'the connection' references (14 total named bond-system references). 'Through the bond' openers reduced from 6 to 2 (kept L44 first distress leak and L96 blood ceremony flare). Remaining references varied through: pronouns ('it,' 'through it'), implicit descriptions ('A sharpening between them,' 'Something fractured between them,' 'What Lirien felt from her'), prepositional phrases ('between them,' 'from her'). Bond references now function as structural markers at key emotional moments rather than a mechanical verbal tic.",
+      "linesAffected": "Throughout — approximately 14 bond references thinned or varied across all three scenes"
+    },
+    {
+      "findingId": "LINE-002",
+      "severity": "critical",
+      "action": "applied",
+      "description": "Reduced 'forty-three' from 6 uses to 2. Kept first occurrence (opening — 'Forty-three contracts had trained them to be steady') and closing callback ('heavier than forty-three completed assignments'). Four interior uses replaced: 'forty-three contracts without deviation' → 'every prior contract without deviation'; 'forty-three completed contracts on the principle' → 'a career on the principle'; 'forty-three confessions and two hundred operational reports' → 'a career's worth of confessions'; 'forty-three targets' → 'every prior target'. The number now functions as a scar bookending the chapter rather than a recited refrain.",
+      "linesAffected": "L38, L146, L162, L178 (four instances changed)"
+    },
+    {
+      "findingId": "LINE-003",
+      "severity": "critical",
+      "action": "applied",
+      "description": "Operative voice marker density reduced from ~67% to ~40% of paragraphs. Thinning concentrated in the heaviest passages: L38 removed 'analytical machinery,' 'contingencies,' 'damage projections,' 'calculus of containment' (stacked synonyms → single image). L76 'The operative mind recorded it. The operative mind recorded everything' → 'She recorded it. She recorded everything.' L88 removed 'catalogued extensively and filed under several subcategories of professional attention' and 'operational framework.' L94 removed 'operational directive' and 'intelligence officer's compulsion to read a subject's.' L108 'Lirien's analytical mind identified it' → 'Lirien identified it' (preserves 'analytical mind' for L178 where its dissolution is the point). L118-122 removed three 'operational' uses. L154 'lived in her taxonomy' → 'lived in her.' L170 'draw the operative toward the target' → 'draw her toward the target.' L200 compressed biographical operative clause. Created voice-absent stretches at maximum emotional intensity (the 'Because I was afraid' passage, the departure, the sitting in ruins) where operative language genuinely fails.",
+      "linesAffected": "L38, L76, L88, L94, L108, L118-122, L154, L170, L200"
+    },
+    {
+      "findingId": "LINE-004",
+      "severity": "major",
+      "action": "applied",
+      "description": "Reinterpretation sequence rhythm varied from three identical structures to accelerating pattern (full → compressed → devastating). Oathbrand memory kept fully articulated (2 lines with 'was it X, or Y' structure). Calwrath memory compressed to single clause ('witnessing, or intelligence gathering?'). First kiss compressed further ('desire, or compliance?'). This creates acceleration toward the declaration memory, which receives full devastating expansion. 'Signature' reduced from 4 to 1 use ('emotional signatures' kept; 'warmth-vulnerability signature,' 'raw-courage signature,' 'bright fierce signature' → removed labels, describing qualities directly). 'That signature surfaced in the bond and detonated' → 'That realisation surfaced and detonated' (removes both 'signature' and 'in the bond').",
+      "linesAffected": "L100-106 reinterpretation sequence"
+    },
+    {
+      "findingId": "LINE-005",
+      "severity": "major",
+      "action": "applied",
+      "description": "Long paragraph at L36 split after 'An absence wearing the shape of what had been removed.' New paragraph begins with 'A timeline. A risk assessment.' — separating the description of the binding's mechanism from the summary of the document's bureaucratic tone. Creates two focused paragraphs: what the contract does, and how the Court talks about it.",
+      "linesAffected": "L36 (paragraph break inserted)"
+    },
+    {
+      "findingId": "LINE-006",
+      "severity": "major",
+      "action": "applied",
+      "description": "Reduced 'cage' from 7 to 3 uses. Kept: L42 'build the cage' (introduction, strong), L110 'designed the cage to feel... exactly like a home' (most devastating), L200 'a cage built from her blood' (closing callback). Changed: L42 'cage existed' → 'it existed' (pronoun), L96 'cage had been constructed' → 'structure had been constructed,' L128 'built the cage around her' → 'held her inside a lie,' L152 'the cage existed' → 'the trap existed.' Three remaining uses now land with full impact at introduction, devastation peak, and closing.",
+      "linesAffected": "L42, L96, L128, L152 (four instances varied)"
+    },
+    {
+      "findingId": "LINE-007",
+      "severity": "major",
+      "action": "applied",
+      "description": "L178 restructured so operative vocabulary thins as the paragraph progresses, with the prose performing the collapse it describes. Opens with full framework language ('The analytical mind that had categorised every prior target, hundreds of variables'), then vocabulary simplifies mid-paragraph ('No way to separate' replaces 'No classification that could separate'; 'The categories dissolved. The words dissolved.' replaces 'The categories had dissolved. The taxonomy was empty.'), ending on plain, unclassified language ('Every feeling she had called real' replaces 'Every feeling she had identified and filed under *real*'). The form now models the content — classification language dissolving into simple speech.",
+      "linesAffected": "L178 (paragraph restructured)"
+    },
+    {
+      "findingId": "LINE-008",
+      "severity": "minor",
+      "action": "applied",
+      "description": "Reframed L96 italicized passage from ambiguous Kaelith-POV thought to explicit Lirien inference. Added attribution: 'Lirien supplied the words the flare could not carry:' before the italicized text, establishing the content as Lirien's projection based on watching Kaelith's eyes reach the blood-ceremony section. Reinforces the established rule that the bond transmits emotional quality, not specific thoughts. Italics retained for visceral impact but now clearly represent Lirien's interpretation rather than Kaelith's direct interior monologue.",
+      "linesAffected": "L96"
+    },
+    {
+      "findingId": "LINE-009",
+      "severity": "minor",
+      "action": "applied",
+      "description": "Redundant near-synonyms resolved. 're-examined, re-evaluated' → 're-evaluated' only. Single verb is sufficient; the 're-' prefix carries full weight without the semantic redundancy.",
+      "linesAffected": "L86"
+    },
+    {
+      "findingId": "LINE-010",
+      "severity": "minor",
+      "action": "applied",
+      "description": "Heavy cataloguing parenthetical trimmed. 'Not the focused stillness of concentration, which Lirien had catalogued extensively and filed under several subcategories of professional attention. This was the other stillness.' → 'A stillness Lirien had seen only once before.' Removes the operative-voice reminder and allows the Calwrath recognition to land immediately. Also addresses LINE-015 by eliminating one instance of the 'Not X. This was Y' pattern.",
+      "linesAffected": "L88"
+    },
+    {
+      "findingId": "LINE-011",
+      "severity": "minor",
+      "action": "applied",
+      "description": "Expository voice reminder compressed. 'Not the controlled instrument she had spent a lifetime calibrating — the precise, modulated delivery that communicated what she chose and nothing more.' → 'Not the controlled instrument.' Trusts the reader to know what Lirien's controlled instrument sounds like after 15 chapters. Allows 'This voice carried too much air' to land immediately as the emotional payload.",
+      "linesAffected": "L142"
+    },
+    {
+      "findingId": "LINE-012",
+      "severity": "minor",
+      "action": "applied",
+      "description": "Double relative clause restructured to lead with emotional payload. 'Lirien, who had been trained since childhood to construct language as a precision instrument, who had shaped forty-three confessions and two hundred operational reports and not once wasted a word — that Lirien had nothing left but the bare, undecorated truth' → 'The woman who had shaped a career's worth of confessions without wasting a word had nothing left but the bare, undecorated truth.' Single clause, faster delivery, eliminates biographical runway. Also eliminates fourth 'forty-three' use (see LINE-002).",
+      "linesAffected": "L162"
+    },
+    {
+      "findingId": "LINE-013",
+      "severity": "minor",
+      "action": "applied",
+      "description": "Calwrath callback trimmed. 'the same architecture of emotional survival that had kept Kaelith alive through six years of exile and the slow work of believing she deserved what had been done to her' → 'the same architecture, rebuilt in seconds.' Trusts the reader to remember what Calwrath means by chapter 16. 'Rebuilt in seconds' adds new information (speed of defensive response) rather than re-explaining known psychology.",
+      "linesAffected": "L126"
+    },
+    {
+      "findingId": "LINE-014",
+      "severity": "minor",
+      "action": "applied",
+      "description": "Double 'only' resolved. 'A seal that could only be reached through a path held in Kaelith's body and walkable only through the kind of trust that no longer existed' → 'A seal reachable only through a path held in Kaelith's body, walkable through trust that no longer existed.' Single 'only' in the sentence.",
+      "linesAffected": "L200"
+    },
+    {
+      "findingId": "LINE-015",
+      "severity": "minor",
+      "action": "applied",
+      "description": "Reduced 'Not X. This was Y' pattern from 4+ uses to 2. Kept the two strongest: L124-126 ('Not severed... This was worse' — the bond hinge moment) and L170 ('Not because she chose to stay' — the existential paralysis moment). L88 rephrased from 'Not the focused stillness of concentration... This was the other stillness' to 'A stillness Lirien had seen only once before' (see LINE-010).",
+      "linesAffected": "L88"
+    },
+    {
+      "findingId": "COPY-016-001",
+      "severity": "moderate",
+      "action": "applied",
+      "description": "Spelling inconsistency corrected. 'recontextualized' (American) → 'recontextualised' (British), matching the manuscript's consistent British spelling convention and the identical word four lines earlier.",
+      "linesAffected": "L104"
+    },
+    {
+      "findingId": "COPY-016-002",
+      "severity": "minor",
+      "action": "applied",
+      "description": "Anachronism corrected. 'supply chains' (20th-century logistics term) → 'provisioning lines' (period-appropriate alternative maintaining bureaucratic cadence). Preserves the contrast between mundane administrative language and the horror of its application.",
+      "linesAffected": "L178"
+    },
+    {
+      "findingId": "COPY-016-003",
+      "severity": "minor",
+      "action": "applied",
+      "description": "Paragraph break inserted at L36 per style guide maximum (6 sentences). Split after 'An absence wearing the shape of what had been removed.' Aligns with LINE-005 resolution.",
+      "linesAffected": "L36"
+    },
+    {
+      "findingId": "COPY-016-004",
+      "severity": "minor",
+      "action": "applied",
+      "description": "Paragraph break inserted at L134 per style guide maximum. Split after inventory items ('Bedroll. Knife. The evidence folio.'). Separates observed action (Kaelith packing) from interpretive assessment (Lirien reading the packing's meaning).",
+      "linesAffected": "L134"
+    },
+    {
+      "findingId": "COPY-016-005",
+      "severity": "minor",
+      "action": "applied",
+      "description": "Bond-mechanics presentation concern resolved. L96 italicized passage reframed as Lirien's inference with explicit attribution ('Lirien supplied the words the flare could not carry:'). Aligns with LINE-008 resolution. Reinforces MAG-007 rule that bond transmits emotional quality, not specific thoughts.",
+      "linesAffected": "L96"
+    },
+    {
+      "findingId": "DEV-016-002",
+      "severity": "minor",
+      "action": "applied",
+      "description": "Post-departure reflective section compressed. (1) Merged 'analytical mind / taxonomy dissolved' passage with 'She had been the Seep / water that found every crack' passage via bridging sentence ('What remained when the categories were gone was simpler and worse.'), creating single identity-crisis movement from classification failure to Seep metaphor. (2) Merged two bond-persistence passages ('The bond remained... / The bond would carry this too...') into one, cutting the third paragraph entirely — its content (matched grief, wall built/earned) is covered by earlier passage and closing lines. (3) Atmospheric coda (Pallor/real sky) reduced from two paragraphs to one: kept 'wound that had never been permitted to close' image, cut 'The real sky did not care who was looking. It existed whether or not anyone trusted it.' (philosophising register that diffused the ending). Integrated sky image into the final passage via 'Lirien sat beneath it.' Chapter now ends cleanly on the bond/silence beat with fewer intermediary layers. Net reduction: ~4 paragraph-units in the post-departure section.",
+      "linesAffected": "Post-departure section (L170-212 equivalent)"
+    }
+  ],
+  "findingsDeferred": [
+    {
+      "findingId": "DEV-016-001",
+      "severity": "minor",
+      "action": "deferred",
+      "rationale": "Pacing note — six-chapter high-tension cluster is structurally mandatory for the black moment. No ch16 changes required per the developmental editor's own assessment (actionRequired: false). Recovery planned at ch18."
+    },
+    {
+      "findingId": "COPY-016-006",
+      "severity": "minor",
+      "action": "deferred",
+      "rationale": "Healing salve and scarf accepted as plausible off-page events between ch15 ending and ch16 dawn. Both serve as powerful relationship-ending props in the packing scene. Recommend establishing in ch15 polish pass — natural insertion points exist in the post-evidence-consolidation downtime (salve) and the sleeping-together scene (scarf)."
+    },
+    {
+      "findingId": "COPY-016-007",
+      "severity": "minor",
+      "action": "deferred",
+      "rationale": "DISC-001 (Thalen Reyvas seat number) does not appear in ch16. Cross-manuscript resolution tracked separately."
+    },
+    {
+      "findingId": "COPY-016-008",
+      "severity": "minor",
+      "action": "deferred",
+      "rationale": "FU-007 tension (blood used without consent in binding) is a deliberate thematic element — the Court's atrocity. The binding's functionality despite the FU-007 violation may be exploited in the dissolution arc (ch18-20): a corrupted binding built on non-consensual blood may be more vulnerable to dissolution than a clean one."
+    }
+  ],
+  "coherenceVerification": {
+    "voiceConsistency": "Lirien's operative voice maintained but appropriately thinned. Early passages retain analytical precision (parsing, cross-referencing, exit scenarios). Middle passages show framework stuttering. Late passages drop into plain, unclassified perception. The planned degradation arc (precise → stuttering → plain) now reads as natural voice evolution rather than marker checklist. 'Because I was afraid' remains the chapter's most powerful sentence precisely because it is the plainest.",
+    "voiceMarkerDensity": "Reduced from ~67% to ~40% of paragraphs containing operative vocabulary markers. Created clear voice-absent stretches at maximum emotional intensity. No passage now feels like a voice marker catalogue.",
+    "dialogueNaturalism": "All dialogue lines preserved unchanged. Kaelith's staccato devastation ('Don't.' / 'Every feeling was built on a lie.' / 'And you chose not to tell me.') and Lirien's breaking speech ('I—' / 'There is—' / desperate loophole explanation / 'Because I was afraid') remain flawless. No dialogue was revised, so no naturalism regression possible.",
+    "sceneFlow": "Three scenes flow naturally. Paragraph breaks at L36 (mechanism → tone) and L134 (action → interpretation) improve rather than disrupt rhythm. Post-departure compression removes redundancy without losing any thematic content. Sky image integration avoids register-shift before the final beat.",
+    "continuityIntegrity": "All events, locations, character references, timeline details, and cross-chapter continuity maintained. Contract text unchanged. All proper nouns verified. Bond mechanics compliant (emotional quality transmitted, not thoughts — now explicitly reinforced at L96).",
+    "newIssuesIntroduced": "None identified. No new repetitions, no voice inconsistencies, no continuity errors, no POV violations."
+  },
+  "metrics": {
+    "bondReferences": {
+      "draft": "~28 named 'the bond'",
+      "revised": "9 'the bond' + 5 'the connection' = 14 named, plus ~5 implicit",
+      "reduction": "50% of named references"
+    },
+    "throughTheBondOpeners": {
+      "draft": 6,
+      "revised": 2,
+      "reduction": "67%"
+    },
+    "fortyThreeUses": {
+      "draft": 6,
+      "revised": 2,
+      "reduction": "67%"
+    },
+    "cageUses": {
+      "draft": 7,
+      "revised": 3,
+      "reduction": "57%"
+    },
+    "operativeMarkerDensity": {
+      "draft": "~67% of paragraphs",
+      "revised": "~40% of paragraphs",
+      "reduction": "~27 percentage points"
+    },
+    "signatureUses": {
+      "draft": 5,
+      "revised": 1,
+      "reduction": "80%"
+    }
+  }
+}

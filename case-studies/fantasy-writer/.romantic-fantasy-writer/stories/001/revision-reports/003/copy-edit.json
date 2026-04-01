@@ -1,0 +1,280 @@
+{
+  "storyId": "001",
+  "chapterId": "003",
+  "editType": "copy",
+  "editorAgent": "copy-editor",
+  "createdAt": "2026-03-20T08:06:48Z",
+  "timelineCheck": {
+    "chapterTimeline": "Day 2: midnight (office break-in) \u2192 dawn (enforcer arrival) \u2192 early morning (escape) \u2192 late morning (warehouse discussion, agreement to leave)",
+    "continuityTrackerAlignment": "aligned",
+    "priorChapterConsistency": "two discrepancies identified",
+    "notes": "Ch3 Day 2 events match the continuity tracker's chapter-3 entries. Timeline within the chapter is internally consistent: midnight \u2192 dawn \u2192 morning \u2192 late morning progression is logical."
+  },
+  "namingCheck": {
+    "characterNames": [
+      {
+        "name": "Kaelith Maren",
+        "status": "consistent",
+        "note": "First and last name used correctly throughout"
+      },
+      {
+        "name": "Tavik",
+        "status": "consistent",
+        "note": "First name only, consistent with ch1-2"
+      },
+      {
+        "name": "Lirien",
+        "status": "consistent",
+        "note": "First name only in dialogue and narration, appropriate for current relationship stage"
+      },
+      {
+        "name": "Enforcer Seldric",
+        "status": "consistent",
+        "note": "Matches continuity tracker exactly"
+      },
+      {
+        "name": "Merik",
+        "status": "new-character",
+        "note": "Quartermaster mentioned line 26. Not in existing character files. Minor background character \u2014 appropriate for garrison texture."
+      }
+    ],
+    "placeNames": [
+      {
+        "name": "Duskhaven",
+        "status": "consistent"
+      },
+      {
+        "name": "Aranthem",
+        "status": "consistent"
+      },
+      {
+        "name": "Calwrath",
+        "status": "consistent"
+      },
+      {
+        "name": "Quietus",
+        "status": "consistent",
+        "note": "Correctly introduced as new information from the dispatches"
+      }
+    ],
+    "termNames": [
+      {
+        "term": "Oathbrand",
+        "status": "consistent"
+      },
+      {
+        "term": "High Conclave",
+        "status": "consistent"
+      },
+      {
+        "term": "Ashborne Legion",
+        "status": "consistent"
+      },
+      {
+        "term": "Warden-lineage",
+        "status": "consistent",
+        "note": "Matches magic-system.json AM-002 Warden lineage terminology"
+      },
+      {
+        "term": "Cerith Court",
+        "status": "consistent"
+      },
+      {
+        "term": "Consolidation Wars",
+        "status": "unverified",
+        "note": "Term does not appear in history.json. Not contradicted by existing world-bible but could create consistency issues. See COPY-004."
+      },
+      {
+        "term": "Graymarket",
+        "status": "not-used",
+        "note": "Continuity tracker lists 'Graymarket' spelling. Not referenced in ch3 \u2014 no issue."
+      }
+    ]
+  },
+  "magicSystemCompliance": {
+    "oathbrandRules": {
+      "status": "mostly-compliant",
+      "notes": "Oathbrand behavior (burning, suppression, maintenance schedule) is consistent with MAG-004 (suppressed magic accumulates as physiological pressure) and the brand's established mechanism. The 14-day refresh schedule is a new detail \u2014 not contradicted but should be tracked for future continuity."
+    },
+    "magicTerms": {
+      "status": "one-concern",
+      "notes": "Line 122 references 'binding sigils, suppression wards, paralytic charms' as Conclave operative equipment. The magic system describes trained negotiation (AM-001) as the standard human approach, not pre-fabricated magical artifacts. Under the strong eastern Pallor (~75% suppression), ambient-magic artifacts are implausible. These tools should be described as alchemical or mechanical rather than magical, or explicitly noted as rare, high-cost items requiring skilled maintenance."
+    }
+  },
+  "informationAsymmetryCheck": {
+    "kaelithKnowledgeState": {
+      "startOfChapter": [
+        "Fae woman watching her (from ch1)",
+        "Tavik lying about something (from ch1)",
+        "Oathbrand not healing as expected (from ch1)",
+        "Brand on left collarbone, six years of exile (established ch1)"
+      ],
+      "endOfChapter": [
+        "All prior knowledge",
+        "Oathbrand deliberately maintained on 14-day refresh schedule (from dispatches)",
+        "Warden-lineage designation (from dispatches)",
+        "Prevention protocol \u2014 Conclave considers her a strategic containment risk (from dispatches)",
+        "Lirien is a Cerith Court operative, not a merchant liaison (from direct admission)",
+        "Execution was one possible outcome of Lirien's mission (from direct admission)",
+        "Pallor is tearing (from Lirien's statement \u2014 Kaelith may have suspected but now confirmed)"
+      ],
+      "complianceStatus": "consistent",
+      "notes": "Kaelith learns no information she shouldn't have access to. All new knowledge comes from plausible sources: encrypted dispatches she physically reads, and Lirien's direct admissions under tactical pressure. She correctly does not know what Warden-lineage means or why she might carry it."
+    },
+    "lirienKnowledgeState": {
+      "referencePoint": "Ch2 end state",
+      "newKnowledge": [
+        "Kaelith broke into Tavik's office (direct observation, line 288)",
+        "Conclave dispatches detail Warden-lineage designation (from Kaelith's disclosure)",
+        "Prevention protocol exists (from Kaelith's disclosure)"
+      ],
+      "complianceStatus": "consistent",
+      "notes": "Lirien's statement 'if the Pallor is failing \u2014 which it is' (line 310) is consistent with ch2 Seep intelligence. She does not reveal knowledge of deliberate Pallor sabotage (which she learns in ch4 per continuity tracker). Her knowledge is appropriately bounded."
+    }
+  },
+  "findings": [
+    {
+      "id": "COPY-001",
+      "severity": "critical",
+      "type": "continuity-error",
+      "lineRange": [
+        14,
+        326
+      ],
+      "title": "Exile duration inconsistency: 'five years' vs established 'six years'",
+      "description": "Lines 14 and 326 reference Kaelith's exile duration as 'five years.' Ch1 revised consistently establishes 'six years' (lines 192, 200: 'Six years of fixing walls'). The magic system (MAG-004) also states: 'Kaelith's Oathbrand has been active for six years instead of one.' Line 96 references 'a siege five years ago' which should be 'six years ago' since the siege preceded the exile.",
+      "affectedLines": [
+        {
+          "line": 14,
+          "text": "She'd watched him do it for five years",
+          "correction": "six years"
+        },
+        {
+          "line": 96,
+          "text": "a siege five years ago",
+          "correction": "six years ago"
+        },
+        {
+          "line": 326,
+          "text": "Five years of exile",
+          "correction": "Six years of exile"
+        }
+      ],
+      "preserveLines": [
+        {
+          "line": 56,
+          "text": "The brand should have dissolved five years ago",
+          "reason": "Correct arithmetic: 1-year brand term within 6-year exile = brand overdue by 5 years"
+        },
+        {
+          "line": 90,
+          "text": "they'd been doing it for five years",
+          "reason": "Correct: illegal maintenance = 6 years exile - 1 year legal term = 5 years"
+        },
+        {
+          "line": 146,
+          "text": "evaluated five years ago",
+          "reason": "Correct: evaluation at end of 1-year term, which was 5 years before current events"
+        }
+      ],
+      "referenceSource": "chapters/001/revised.md lines 192, 200; world-bible/magic-system.json MAG-004"
+    },
+    {
+      "id": "COPY-002",
+      "severity": "major",
+      "type": "continuity-error",
+      "lineRange": [
+        112,
+        112
+      ],
+      "title": "Quarters location inconsistent with Ch1 establishment",
+      "description": "Line 112 \u2014 'She reached her quarters. Closed the door. Locked it. Sat on the edge of her narrow bed' \u2014 implies Kaelith has sleeping quarters in the garrison. Ch1 revised establishes she rents a room above the Listing Mast tavern (line ~197: 'the room she rented above the Listing Mast'). The transition from the garrison corridor directly to 'her quarters' with a 'narrow bed' suggests garrison-based living quarters, which contradicts Ch1.",
+      "recommendation": "Either: (a) Show Kaelith leaving the garrison and walking back to the Listing Mast before reaching her room, or (b) Clarify that she has a work bunk in the garrison for overnight duties. Option (a) is cleaner and more consistent with Ch1.",
+      "referenceSource": "chapters/001/revised.md line ~197"
+    },
+    {
+      "id": "COPY-003",
+      "severity": "moderate",
+      "type": "magic-system-consistency",
+      "lineRange": [
+        122,
+        122
+      ],
+      "title": "Pre-fabricated magical implements inconsistent with magic system",
+      "description": "'Binding sigils, suppression wards, paralytic charms' (line 122) implies pre-made magical artifacts. The magic system (AM-001) describes magic as trained negotiation requiring conscious will and focus. Under Duskhaven's strong Pallor (~75% suppression), pre-fabricated magical tools are implausible \u2014 'ambient magic is nearly absent' in the east. The Oathbrand itself is described as a complex mechanism requiring skilled maintenance, not casual manufacture.",
+      "recommendation": "Describe the tools as alchemical or mechanical restraints rather than magical artifacts. Example: 'alchemical restraint compounds, suppression tools calibrated to the Oathbrand's frequency, paralytic tinctures.' This preserves the threat while respecting the magic system's constraints.",
+      "referenceSource": "world-bible/magic-system.json AM-001, pallorEffect.geographicVariation[0]"
+    },
+    {
+      "id": "COPY-004",
+      "severity": "moderate",
+      "type": "terminology",
+      "lineRange": [
+        94,
+        94
+      ],
+      "title": "Undefined term: 'Consolidation Wars'",
+      "description": "'The Consolidation Wars seventy years ago' (line 94) introduces a historical event not named in history.json. While the timeline is plausible (~YK 672, within the Thinning era) and not contradicted by existing world-bible, the specific term 'Consolidation Wars' could create consistency issues if future chapters or world-bible updates use different terminology for the same events.",
+      "recommendation": "Either: (a) Use a term that aligns with existing history.json content, or (b) Keep the term but flag it for addition to the world-bible history as a named event within the Thinning era. Option (b) is preferred \u2014 the term is evocative and the Warden order's dissolution needs a historical anchor.",
+      "referenceSource": "world-bible/history.json ERA-005"
+    },
+    {
+      "id": "COPY-005",
+      "severity": "moderate",
+      "type": "timeline-consistency",
+      "lineRange": [
+        66,
+        292
+      ],
+      "title": "Lirien's surveillance duration inconsistent with Ch1 timeline",
+      "description": "Line 292: 'I've been following you for six days.' Line 66 dispatch: 'Cerith Court liaison arrived Duskhaven 6 days prior.' However, Ch1 has Tavik saying Lirien 'arrived two days ago' (Day -1 relative to Day 1). Ch3 is Day 2. If Lirien arrived Day -1, she has been in Duskhaven for 3 days, not 6. The '6 days' figure is inconsistent with the established arrival timeline.",
+      "recommendation": "Change both instances to a timeline-consistent figure. If Lirien arrived Day -1 per Ch1: 'I've been watching you since I arrived. Three days.' and dispatch: 'arrived Duskhaven 3 days prior.' Alternatively, establish that Lirien conducted covert surveillance from outside Duskhaven before her cover-identity arrival, but this contradicts Ch2's events which read as her initial arrival.",
+      "referenceSource": "chapters/001/revised.md (Tavik: 'arrived two days ago'), continuity/continuity-tracker.json ch1-ch2 events"
+    },
+    {
+      "id": "COPY-006",
+      "severity": "minor",
+      "type": "new-detail-tracking",
+      "lineRange": [
+        46,
+        46
+      ],
+      "title": "New continuity detail: 14-day Oathbrand refresh interval",
+      "description": "'Next refresh: 14 days' introduces a specific maintenance interval for the Oathbrand. This is not contradicted by existing materials but should be tracked in the continuity tracker for future chapter consistency.",
+      "recommendation": "Flag for continuity tracker update. The 14-day interval becomes a binding constraint for future references to Oathbrand maintenance timing."
+    },
+    {
+      "id": "COPY-007",
+      "severity": "positive",
+      "type": "continuity",
+      "lineRange": [
+        34,
+        34
+      ],
+      "title": "Oathbrand physical description consistent",
+      "description": "'Heat spread from her collarbone' \u2014 consistent with Ch1 revised (brand on collarbone) and CHAR-001 profile. The description of scar tissue through the shirt adds physical specificity without contradicting established details."
+    },
+    {
+      "id": "COPY-008",
+      "severity": "positive",
+      "type": "information-asymmetry",
+      "lineRange": [
+        288,
+        308
+      ],
+      "title": "Information exchange respects character knowledge states",
+      "description": "Kaelith shares dispatch contents with Lirien, and Lirien connects them to Pallor failure. Each character contributes information they plausibly possess: Kaelith has the dispatch details, Lirien has Seep intelligence about the Pallor. Neither reveals knowledge they shouldn't have at this point in the story."
+    }
+  ],
+  "overallAssessment": {
+    "criticalIssues": 1,
+    "majorIssues": 1,
+    "moderateIssues": 3,
+    "minorIssues": 1,
+    "positiveNotes": 2,
+    "namingConsistency": "strong",
+    "timelineConsistency": "needs-correction",
+    "magicSystemConsistency": "needs-minor-adjustment",
+    "informationAsymmetry": "compliant"
+  }
+}

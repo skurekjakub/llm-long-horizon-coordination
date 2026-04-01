@@ -1,0 +1,341 @@
+{
+  "agent": "continuity-integrator",
+  "chapter": 19,
+  "storyId": "001",
+  "result": "completed",
+  "timestamp": "2026-03-19T12:15:00Z",
+  "summary": "Chapter 19 continuity integration completed. Verdict: PASSED with 2 minor corrections applied. 48 verification checks performed across timeline, character locations, knowledge states (INV-056), bond mechanics (MAG-007), world rules (INV-002), naming consistency, information asymmetry, Pallor progression, foreshadowing compliance, source count consistency, and deus ex machina prevention (INV-009). Two corrections applied: (1) 'months ago' corrected to 'weeks ago' for Oathbrand removal timing — the story timeline places the removal approximately 2-3 weeks before Ch19, not months; (2) 'Two field operatives' corrected to match Ch18's established single field operative in Ashborne intelligence source enumeration. One tracking observation flagged: FACT-007 and FACT-011 in information-asymmetry-map.json have revealedToReader set to chapter 19, but the Ch19 draft does not actually reveal Thalen's identity or Iryse's role to the reader. Knowledge states impeccably maintained — zero knowledge leaks. Bond mechanics meticulously consistent throughout — all references transmit emotional quality, never factual content.",
+  "verificationsPerformed": 48,
+  "correctionsApplied": 2,
+  "corrections": [
+    {
+      "id": "COR-019-001",
+      "severity": "minor",
+      "category": "timeline-consistency",
+      "description": "Line 39: 'The brand had been removed months ago' — The Oathbrand was removed in Ch11 (approximately Day 12-16 of the story). Ch19 takes place on Day ~28-29. The elapsed time is approximately 2-3 weeks, not months. This is a factual timeline error.",
+      "invariantViolated": "INV-002 (Internal Consistency) — timeline claim contradicts established story chronology",
+      "location": "chapters/019/draft.md, line 39, SCN-53",
+      "original": "The brand had been removed months ago",
+      "corrected": "The brand had been removed weeks ago",
+      "narrativeImpactAssessment": "Minimal. The surrounding context (six years of nerve memory, body remembering) works identically with 'weeks.' The key point is phantom pain persistence, which is valid even after weeks of brand removal."
+    },
+    {
+      "id": "COR-019-002",
+      "severity": "minor",
+      "category": "cross-chapter-consistency",
+      "description": "Line 221: Ch19 cited 'Two field operatives' as corroborating sources for the god-seal dissolution intelligence, plus a Pallor scholar (for three corroborating sources, with the Architect mentioned separately as a fourth). Ch18 established exactly three total sources: (1) defected Court Architect, (2) one field operative, (3) one Pallor scholar. Ch19 introduced a second field operative not present in Ch18's intelligence briefing and restructured the count to separate the Architect.",
+      "invariantViolated": "INV-002 (Internal Consistency) — source enumeration contradicts Ch18 established facts",
+      "location": "chapters/019/draft.md, line 221, SCN-54",
+      "original": "A defected Court Architect — twelve years under Ashborne protection, alive, not Lessened — confirmed the mechanism. Three independent sources. Two field operatives who observed bindings degrading near active seal-sites. A Pallor scholar who mapped the thinning points.",
+      "corrected": "The binding contracts destabilise at the Quietus. Where the Pallor substrate thins to near-absence, the anchor structure of fae bindings becomes exposed. Three independent sources confirmed the mechanism. A defected Court Architect — twelve years under Ashborne protection, alive, not Lessened. A field operative who observed bindings degrading near an active seal-site. A Pallor scholar who mapped the thinning points.",
+      "narrativeImpactAssessment": "Minimal. The key intelligence content is unchanged. The correction restores the Pallor destabilization explanation (which was in the original but needed restructuring) and aligns the source count with Ch18's established briefing."
+    }
+  ],
+  "issuesFound": {
+    "critical": 0,
+    "major": 0,
+    "minor": 2,
+    "observations": 1
+  },
+  "observations": [
+    {
+      "id": "OBS-019-001",
+      "severity": "observation",
+      "category": "tracking-discrepancy",
+      "description": "FACT-007 (Thalen as Pallor saboteur) and FACT-011 (Iryse as unwitting vector) in information-asymmetry-map.json have 'revealedToReader: chapter 19.' However, the Ch19 draft does not name Thalen or Iryse, and does not reveal their specific roles to the reader. The draft correctly has Lirien say 'The intelligence points to a High Conclave member. We do not have a confirmed identity.' The revealedToReader chapter values should likely be deferred to a later chapter where these facts are actually revealed in the prose.",
+      "affectedArtifacts": ["continuity/information-asymmetry-map.json"],
+      "draftImpact": "None — the draft is correct. This is a tracking metadata issue only.",
+      "recommendation": "Continuity tracker agent should update FACT-007 and FACT-011 revealedToReader to the chapter where these facts actually appear in the prose text."
+    }
+  ],
+  "timelineContinuity": {
+    "status": "pass",
+    "assessment": "Ch19 takes place on Day ~28-29 of the story. Kaelith arrives at the Rivenmarch settlement in the morning after 2-3 days of travel from her Ch17 location in the Narrowing (walking north from the vorakh encounter site). Lirien arrives at midmorning, consistent with walking north from the safe house over a similar timeframe (Ch18 departure in the afternoon, 2-3 days travel). All time references within the chapter are internally consistent: morning arrival, midmorning reunion, planning session. One correction applied: 'months ago' for Oathbrand removal changed to 'weeks ago' to match the ~2-3 week elapsed time since Ch11.",
+    "correctionApplied": true,
+    "notes": "The Narrowing-to-Rivenmarch travel of 2-3 days is plausible given the geography (the Narrowing is the pass through the Vireth Range; Rivenmarch is the territory west of the Range). The Pallor progression from Ch17 (2 fingers non-functional) to Ch19 (3 fingers non-functional) is consistent with the accelerating timeline and loss of resonance stabilization."
+  },
+  "locationContinuity": {
+    "status": "pass",
+    "assessment": "Kaelith arrives at a Rivenmarch freeholder settlement — consistent with walking north/northwest from the Narrowing toward the Quietus. The Rivenmarch description matches geography.json: wood/thatch architecture, thin Pallor overhead with true sky visible through gaps, unstable ontological environment. Lirien arrives from the southwest approach — consistent with Ch18's departure north from the safe house in the Narrowing. Sedara and Ashborne veterans are at the settlement, consistent with FACT-016 (Ashborne network) established in Ch18. No character appears in a location inconsistent with their previous position.",
+    "correctionApplied": false
+  },
+  "knowledgeStateCompliance": {
+    "status": "pass",
+    "assessment": "Exhaustive INV-056 verification. Zero knowledge leaks detected.",
+    "details": {
+      "kaelithKnowsCorrectly": [
+        "Kill contract and its full scope (learned Ch4/Ch16)",
+        "Contract loophole concept — cessation of heartbeat (heard from Lirien Ch16, distrusted)",
+        "Bond evidence that Lirien's grief is genuine (Ch17)",
+        "Pallor sabotage by someone on the High Conclave (Ch4/Ch15)",
+        "Kinetic memory planted by Ossya Thenndal (event knowledge, not lineage — Ch4/Ch5)",
+        "Calwrath details: 300 civilians, 800 soldiers (own experience)",
+        "She has seen a Seep cipher before 'during a border negotiation' (plausible military background)"
+      ],
+      "kaelithDoesNotReferenceCorrectly": [
+        "FACT-006: Warden lineage through Thenndal (correctly unknown — Thenndal reference is about kinetic memory EVENT only, matching Ch17 precedent)",
+        "FACT-007: Thalen as specific saboteur (correctly unknown — Lirien says 'High Conclave member, no confirmed identity')",
+        "FACT-011: Iryse as unwitting vector (correctly absent from draft)",
+        "FACT-012: Seep supports loophole exploitation (correctly unknown to Kaelith)",
+        "Details of Lirien's 11-hour self-interrogation process (learns only the result: 'one verified act')",
+        "Ashborne contact identity from Ch18 (learns network exists through direct observation, not Ch18 briefing details)"
+      ],
+      "lirienKnowsCorrectly": [
+        "Kill contract mechanics (known from inception)",
+        "Oathbrand removal as proof of agency (Ch18 self-interrogation)",
+        "Ashborne network intelligence (Ch18 briefing)",
+        "God-seal dissolution mechanism (Ch18 briefing)",
+        "Defected Court Architect (Ch18 briefing)",
+        "Three independent sources (Ch18 briefing)"
+      ],
+      "lirienDoesNotReveal": [
+        "FACT-012: Seep's strategic position on loophole (correctly withheld)",
+        "Full 11-hour self-interrogation process (shares only the result)",
+        "FACT-007: Thalen's identity (correctly unknown to her)"
+      ]
+    }
+  },
+  "bondMechanicsCompliance": {
+    "status": "pass",
+    "assessment": "All bond references verified against MAG-007 and FACT-010. The bond consistently transmits emotional quality only — never factual content, thoughts, or verbal information. 21 bond references in the chapter, all compliant.",
+    "bondReferencesChecked": 21,
+    "keyVerifications": [
+      "Line 107-113: Bond quality changes with proximity — carries emotional qualities (grief, determination, unnamed emotion) at distance, refines as source approaches. Consistent with MAG-007.",
+      "Line 147: Bond opens 'like a door holding back pressure' — emotional content only (grief, determination, something rawer).",
+      "Line 169: Bond carries 'grief, relief, fear, the quality of two people who had destroyed something' — emotional qualities.",
+      "Line 191: 'felt, through the bond, the absolute sincerity behind it' — emotional quality (sincerity), not factual verification. Consistent.",
+      "Line 215: 'Kaelith felt the truth of it through the bond. Lirien's shame, genuine' — 'truth' refers to authenticity of the emotion (shame), not factual content verification.",
+      "Line 267: Bond opened deliberately, full — carries 'fear, anger, residual betrayal, and underneath... the thing she had been walking toward.' Emotional qualities only.",
+      "Line 269: ONE approved water metaphor ('current breaking through a dam') — Lirien influence acknowledged in prose. Consistent with voice contract.",
+      "Line 231/331: Bond as precision monitoring tool for heartbeat — established functional capability from combat and Oathbrand removal precedent.",
+      "Line 357: 'relief and fear and something fiercer, something that had no name' — emotional qualities."
+    ]
+  },
+  "worldRulesCompliance": {
+    "status": "pass",
+    "assessment": "INV-002 and INV-018 verified. All world rules maintained.",
+    "magicSystem": {
+      "pallorDescription": "Thin, stretched, translucent, true sky visible through gaps — consistent with Rivenmarch geographic description in geography.json (Pallor more tear than membrane, patches of true sky visible). MOT-001 (Pallor/silver) correctly evolved for Act III.",
+      "pallorProgression": "Silver past elbow, three fingers frozen/non-functional (up from Ch17: wrist/knuckles, two fingers). Consistent acceleration without resonance stabilization. Cold tracking bone. Timeline correctly compressed.",
+      "bondMechanics": "See bondMechanicsCompliance section. All MAG-007 rules maintained.",
+      "bindingMechanics": "Contract loophole (cessation of heartbeat satisfies 'execute') consistent with MAG-005 (binding precision matters, loopholes interpreted literally). Dissolution mechanism at god-seal consistent with magic system architecture.",
+      "oathbrandPhantomPain": "Phantom collarbone ache — consistent with Ch17. Brand removed Ch11 but body remembers six years of burning. Correctly phantom (no brand present).",
+      "kinetic memory": "Pull toward Quietus, 'needle swinging to north,' feet wanting to walk northeast — consistent with AM-002 (Kinetic Memory access method) and FACT-005. Intensifies with proximity to destination and Pallor thinning."
+    },
+    "noAnachronisms": "Verified. No modern idioms, technologies, or out-of-world concepts detected. Military vocabulary (killing ground, sight lines, fields of fire, debrief register, fallback) consistent with world's military culture. Intelligence terminology (source classification, tactical notation, briefing mode) consistent with established Seep/Ashborne operational language.",
+    "noDeusExMachina": "INV-009 verified. All new elements use previously established foundations: (1) Ashborne network — foreshadowed FS-013 (planted Ch10, advanced Ch18). (2) Contract dissolution at Quietus — FACT-017 (established Ch18). (3) Defected Architect — FACT-018 (established Ch18). (4) Contract loophole — FACT-008 (established Ch14). (5) Lirien's proof of agency — FACT-019 (established Ch18). No element resolves the plot without further action."
+  },
+  "foreshadowingCompliance": {
+    "status": "pass",
+    "assessment": "Six foreshadowing elements serviced in Ch19, all consistent with the ledger.",
+    "elementsServiced": [
+      {
+        "id": "FS-012",
+        "element": "Contract loophole consent",
+        "action": "Kaelith agrees to heartbeat cessation as fallback. 'If I am trusting you with the world, I can trust you with this.'",
+        "status": "advanced — seeds Ch20 execution"
+      },
+      {
+        "id": "FS-013",
+        "element": "Ashborne reunion",
+        "action": "Eight veterans at Rivenmarch, Sedara (Third Platoon) named, relay network established. Isolation revealed as imposed.",
+        "status": "advanced — seeds Ch22 payoff"
+      },
+      {
+        "id": "FS-021",
+        "element": "God-seal dissolution",
+        "action": "Intelligence shared with Kaelith. Plan established: reach Quietus in three days.",
+        "status": "advanced — seeds Ch21 confrontation"
+      },
+      {
+        "id": "FS-022",
+        "element": "Defected Court Architect",
+        "action": "Referenced as proof that dissolution is possible. 12 years without Lessening.",
+        "status": "advanced — seeds Ch20-21"
+      },
+      {
+        "id": "FS-023",
+        "element": "Bond intention north",
+        "action": "Bond quality change perceived by Kaelith. Pays off in reunion — bond opens fully.",
+        "status": "paying off"
+      },
+      {
+        "id": "FS-024",
+        "element": "Cipher destruction",
+        "action": "Lirien presents destroyed cipher fragments. Kaelith reads identity severance.",
+        "status": "paying off"
+      }
+    ]
+  },
+  "namingConsistency": {
+    "status": "pass",
+    "assessment": "All names verified against naming registry.",
+    "checked": [
+      "Kaelith Maren / Kaelith ✓",
+      "Lirien (no surname in Ch19 — consistent; Kaelith uses first name since Ch4) ✓",
+      "Sedara (new named character — Third Platoon veteran) ✓ NEW",
+      "Ossya Thenndal ✓ (kinetic memory planting reference, matches Ch17)",
+      "Rivenmarch ✓",
+      "Calwrath ✓",
+      "Graymarket ✓",
+      "The Quietus ✓",
+      "The Narrowing ✓",
+      "Vireth Range ✓",
+      "Duskhaven ✓",
+      "The Pallor ✓",
+      "Oathbrand ✓",
+      "Ashborne Fourth / Ashborne ✓",
+      "Seep (cipher reference) ✓",
+      "Cerith Court / Court ✓",
+      "Lessened / Lessening ✓",
+      "Ythara ✓",
+      "threadbone (cipher material — matches Ch18) ✓",
+      "Serath Dûn (NOT mentioned in Ch19 — only 'Pallor scholar'; consistent) ✓",
+      "vorakh (NOT mentioned in Ch19 — correct, no encounter) ✓"
+    ],
+    "newEntries": [
+      "Sedara — Third Platoon, Ashborne Fourth veteran. Steel-grey hair, garrison-coast accent, cropped garrison style. Steady under fire. Coordinating the Ashborne Rivenmarch network."
+    ]
+  },
+  "activeStoryPromises": {
+    "status": "assessed",
+    "promisesAdvanced": [
+      "Lirien's purpose will be revealed — RESOLVED through Ch16. Ch19 furthers resolution through transparency.",
+      "Kaelith will have to choose: stay contained or act — RESOLVED. Kaelith chooses to act (partnership, plan, Quietus march).",
+      "Alliance will be tested — ADVANCED. Alliance rebuilt on damaged foundation, immediately tested through operational planning."
+    ],
+    "promisesStillActive": [
+      "Pallor failure will escalate — active (Pallor thinning at Rivenmarch, three-day march to Quietus)",
+      "Oathbrand anomaly will be explained — partially resolved (removed Ch11, phantom pain remains)",
+      "Kaelith will discover what Warden capacity means — advancing (Warden-adjacent referenced, Quietus approach)",
+      "Contract dissolution will be attempted — set up in Ch19, execution in Ch20-21",
+      "Saboteur identity will be revealed — active (Lirien says 'no confirmed identity')"
+    ]
+  },
+  "newFactsIntroduced": [
+    "Sedara — Third Platoon Ashborne Fourth veteran, steel-grey hair, garrison-coast accent, coordinating Rivenmarch network",
+    "Eight Ashborne veterans organized at Rivenmarch freeholder settlement using Kaelith's tactical doctrine (Third Frontier Manual chapter nine)",
+    "Rivenmarch settlement layout: broken ring around central clearing (well, granary, common hearth), weighted northeast toward high ground, southwest approach as killing ground",
+    "Ashborne relay points established on three-day route northeast to Quietus — provisioned and defensible",
+    "Kaelith's Pallor progression: silver past elbow, three fingers non-functional (acceleration from Ch17's two fingers)",
+    "Kaelith and Lirien agree to two-path plan: (1) dissolution at Quietus primary, (2) heartbeat cessation fallback",
+    "Bond opened fully for first time since Ch16 black moment — deliberately, by Kaelith's choice",
+    "Trust rebuilt as decision, not forgiveness — 'cracked foundations could bear weight if you understood where the fractures ran'"
+  ],
+  "informationFlows": [
+    {
+      "from": "CHAR-002",
+      "to": "CHAR-001",
+      "information": "Seep cipher destroyed — physical fragments presented as proof of Court severance",
+      "scene": "SCN-54",
+      "knowledgeImpact": "Kaelith now knows Lirien has severed Court communication capability"
+    },
+    {
+      "from": "CHAR-002",
+      "to": "CHAR-001",
+      "information": "One verified act of free choice exists — Oathbrand removal predated bond/kiss/intimacy, binding should have prevented it but did not",
+      "scene": "SCN-54",
+      "knowledgeImpact": "Kaelith learns proof of agency exists (result only, not the 11-hour process)"
+    },
+    {
+      "from": "CHAR-002",
+      "to": "CHAR-001",
+      "information": "Ashborne network has been coordinating in Rivenmarch with intelligence on Quietus/god-seal/contract vulnerability",
+      "scene": "SCN-54",
+      "knowledgeImpact": "Kaelith learns the network found Lirien at the safe house (she also discovers the veterans directly via SCN-53)"
+    },
+    {
+      "from": "CHAR-002",
+      "to": "CHAR-001",
+      "information": "Fae bindings destabilise at Quietus where Pallor substrate thins — god-seal dissolution path",
+      "scene": "SCN-54/SCN-55",
+      "knowledgeImpact": "Kaelith now knows the mission destination is also the contract dissolution location (dual-arc convergence)"
+    },
+    {
+      "from": "CHAR-002",
+      "to": "CHAR-001",
+      "information": "Defected Court Architect survived 12 years without Lessening under Ashborne protection — dissolution has precedent",
+      "scene": "SCN-55",
+      "knowledgeImpact": "Kaelith learns the Architect dissolved at a smaller seal-site using cooperative work between bound practitioner and Warden-adjacent capabilities"
+    },
+    {
+      "from": "CHAR-002",
+      "to": "CHAR-001",
+      "information": "Three independent sources corroborate dissolution mechanism: defected Architect, field operative, Pallor scholar",
+      "scene": "SCN-54",
+      "knowledgeImpact": "Kaelith evaluates intelligence credibility through established commander assessment framework"
+    },
+    {
+      "from": "CHAR-002",
+      "to": "CHAR-001",
+      "information": "High Conclave member suspected of 40-year Pallor sabotage (identity NOT confirmed)",
+      "scene": "SCN-55",
+      "knowledgeImpact": "FACT-007 (Thalen) correctly withheld. Lirien says 'we do not have a confirmed identity.'"
+    },
+    {
+      "from": "CHAR-001",
+      "to": "CHAR-002",
+      "information": "Kaelith's deepest fear — choosing love will put her back in Calwrath, becoming blast radius",
+      "scene": "SCN-54",
+      "knowledgeImpact": "Lirien learns the fear Kaelith has never spoken in six years. Vulnerability step 10."
+    },
+    {
+      "from": "CHAR-001",
+      "to": "CHAR-002",
+      "information": "Consent to contract dissolution plan (both paths) — 'If I am trusting you with the world, I can trust you with this'",
+      "scene": "SCN-55",
+      "knowledgeImpact": "Lirien receives explicit consent for both dissolution attempt and heartbeat cessation fallback"
+    }
+  ],
+  "motifTracking": {
+    "MOT-001_pallor_silver": "Present — silver in Kaelith's veins (past elbow, three fingers, tendons visible), Pallor overhead thin and breathing, silver light through gaps, true sky visible. Consistent Act III evolution: membrane thinning toward honest exposure.",
+    "MOT-002_oathbrand_ghost": "Present — phantom collarbone ache (twice: line 39, line 317). Brand removed weeks ago but body remembers six years. Consistent with post-removal pattern.",
+    "MOT-003_water_exception": "ONE approved water image: 'current breaking through a dam' (line 269) when bond opens fully. Acknowledged in prose as Lirien's influence ('The word rose in Kaelith's mind unbidden, wrong, not hers'). Kaelith does not shore it out. Correct use of approved exception.",
+    "MOT-004_quietus_body_pull": "Present — kinetic memory pulling northeast, 'needle swinging to north,' feet wanting to walk, pull stronger with Pallor thinning. Body-knowledge motif consistent.",
+    "MOT-005_ythara": "Present — 'raw, unmade, the colour of potential that had never been given a form' visible through Pallor gaps. True sky as existential reminder. Consistent."
+  },
+  "emotionalContinuityVerified": {
+    "CHAR-001_entry": "grief-tinged resolve (from Ch17) — confirmed. Kaelith arrives operating on mission discipline, bond carrying quality change, not yet processing emotionally.",
+    "CHAR-001_exit": "fierce structural trust / wary reconnection — confirmed. 'Sound enough' as closing assessment. Trust rebuilt through decision, not forgiveness. Bond open fully.",
+    "CHAR-002_entry": "determined clarity (from Ch18) — confirmed. Lirien arrives with proof, cipher destroyed, face open in unprecedented way.",
+    "CHAR-002_exit": "relief tempered by conditional trust — confirmed. Bond carries 'relief and fear and something fiercer.' Partnership restored through operational framework.",
+    "dominantEmotionNotRepeated": "Ch17 dominant: grief-tinged resolve. Ch19 dominant: wary reconnection. No repetition. INV-037 satisfied."
+  },
+  "invariantsVerified": [
+    "INV-002 (Internal Consistency) — all world facts consistent, 2 minor corrections applied for timeline and source count",
+    "INV-005 (Show Don't Tell) — verified. Emotions shown through physical reactions (jaw tightening, heat climbing neck, terror in spine, pressure behind sternum). Love never named by Kaelith. Trust as structural metaphor.",
+    "INV-009 (No Deus Ex Machina) — all resolution elements previously established (FACT-008 Ch14, FACT-016/017/018/019 Ch18, FS-013 Ch10). No element resolves without further action.",
+    "INV-011 (Continuity Tracking) — continuity tracker already updated through Ch19 by upstream agents. Knowledge state updates correctly documented.",
+    "INV-016 (Continuity Verification — Exhaustive) — 48 checks, every factual claim cross-referenced against world-bible, character profiles, information-asymmetry-map, continuity-tracker, foreshadowing-ledger, and preceding chapters.",
+    "INV-018 (No Anachronisms) — no modern idioms, technologies, or out-of-world concepts detected.",
+    "INV-056 (Information Asymmetry) — zero knowledge leaks. Characters reference only information they have legitimately learned. FACT-006 (lineage), FACT-007 (Thalen), FACT-011 (Iryse), FACT-012 (Seep support) all correctly withheld."
+  ],
+  "artifactsRead": [
+    "chapters/019/draft.md",
+    "chapters/019/metadata.json",
+    "chapters/018/draft.md",
+    "chapters/018/continuity-report.json",
+    "continuity/continuity-tracker.json",
+    "continuity/information-asymmetry-map.json",
+    "continuity/foreshadowing-ledger.json",
+    "continuity/emotional-throughline.json",
+    "world-bible/magic-system.json",
+    "world-bible/geography.json",
+    "characters/CHAR-001.json",
+    "characters/CHAR-002.json",
+    "plot/chapter-outlines/chapter-019.json",
+    "agents/continuity-integrator/status.json"
+  ],
+  "artifactsWritten": [
+    "chapters/019/draft.md (2 corrections applied)",
+    "chapters/019/continuity-report.json",
+    "agents/continuity-integrator/status.json"
+  ],
+  "previousChapterStatus": {
+    "chapter": 18,
+    "result": "completed",
+    "issuesFound": 3,
+    "issuesCorrected": 0,
+    "note": "Ch18 had 3 minor observations, none requiring draft corrections"
+  }
+}

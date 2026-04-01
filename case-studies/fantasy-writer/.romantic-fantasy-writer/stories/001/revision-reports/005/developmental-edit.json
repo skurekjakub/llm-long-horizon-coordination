@@ -1,0 +1,79 @@
+{
+  "chapterNumber": 5,
+  "editorType": "developmental",
+  "generatedAt": "2025-07-25T10:00:00Z",
+  "overallAssessment": "Chapter 5 delivers a strong Kaelith-POV return with an effective two-part structure: investigative archive work followed by a high-stakes confrontation with Lirien. Scene 1 (the archive search) is well-crafted — the slow build from bureaucratic tedium to Helric's suppressed journal creates genuine investigative tension. The Lirien confrontation scene carries substantial revelatory weight and lands the chapter's pivotal value shift ('expendable' to 'structurally necessary'). However, the chapter has a critical continuity problem: it re-reveals information already disclosed in Chapter 4 (kill contract, kinetic memory, the Quietus) as though Kaelith is hearing it for the first time. Additionally, the final reflective section stacks too many introspective paragraphs without physical action or gesture, risking reader fatigue at the chapter's emotional peak. The dual-arc interleave is effective — the Pallor suppression evidence and the kill contract paradox advance both fantasy and romance arcs simultaneously.",
+  "findings": [
+    {
+      "id": "DEV-005-001",
+      "severity": "critical",
+      "category": "continuity",
+      "location": "Scene 2, lines 158-210 (Lirien confrontation)",
+      "finding": "The confrontation scene re-reveals the kill contract, the Quietus, and the kinetic memory as though Kaelith is encountering these concepts for the first time. In Chapter 4 (revised), Lirien already disclosed: the kill contract's existence (with the caveat that execution was 'no longer being pursued'), Pallor sabotage for forty years, Kaelith's Warden-lineage capacity, kinetic memory of the Quietus path, and the basic stakes of the Pallor crisis. Kaelith even responded with 'I'm supposed to trust kinetic memory I don't possess' in Ch4. The Ch5 dialogue treats all of this as fresh revelation. This violates cross-chapter continuity and undermines the reader's trust in the information flow.",
+      "recommendation": "Restructure the Lirien confrontation to BUILD on Ch4's disclosures rather than repeat them. The NEW information in Ch5 should be: (1) the kill contract is still binding and active, not abandoned — Lirien cannot simply walk away without facing the Lessening; (2) the blood-in-veins detail from the binding ceremony; (3) the full paradox articulated clearly — killing Kaelith destroys the seal, but NOT killing her means Lirien faces ontological collapse; (4) Lirien's admission that she chose Kaelith's survival over her own compliance. Kaelith should reference what she already knows from Ch4 and react to the DEEPENING of that knowledge, not its repetition."
+    },
+    {
+      "id": "DEV-005-002",
+      "severity": "major",
+      "category": "pacing",
+      "location": "Lines 296-366 (post-confrontation reflection)",
+      "finding": "The chapter's final section stacks seven consecutive reflective paragraphs without dialogue, physical gesture, or external action to break the density. While the thematic content is strong (the shift from 'expendable' to 'necessary'), the sustained interiority violates the style guide's rule: 'Never stack more than two dense reflective paragraphs without dialogue, gesture, or external movement resetting the scene.' The reflection also shifts from embodied experience toward thematic summary — several paragraphs directly state the chapter's argument rather than dramatizing it.",
+      "recommendation": "Interleave physical action beats throughout the reflection. Kaelith is packing — use the packing (sorting gear, checking the knife's edge, folding the cloak) as tactile anchors that ground the reflection in her body. Reduce the most explicit thematic statements ('She was not expendable. She was structurally necessary to the world's coherence.') and let the value shift emerge from what she does and notices rather than what she articulates internally."
+    },
+    {
+      "id": "DEV-005-003",
+      "severity": "major",
+      "category": "scene-structure",
+      "location": "Scene 2 (lines 130-298)",
+      "finding": "The chapter outline specified three scenes (SCN-013: archive research, SCN-014: kill contract deepening, SCN-015: Quietus paradox processing). The draft merges SCN-014 and SCN-015 into a single continuous encounter that moves from kill contract reveal through Quietus explanation to departure agreement without sufficient internal separation. The outline's intended crisis for SCN-015 ('Believe this impossible claim, or assume it is manipulation?') does not receive its own dramatic beat — it is absorbed into the dialogue flow.",
+      "recommendation": "Strengthen the internal boundary between the kill contract deepening and the Quietus paradox by adding a processing beat — Kaelith turning away, touching the wall, counting stones — between the two revelatory moments. The physical interruption creates space for the reader to absorb each revelation separately before the next escalation."
+    },
+    {
+      "id": "DEV-005-004",
+      "severity": "minor",
+      "category": "departure-continuity",
+      "location": "Lines 320-325 (packing scene) and chapter close",
+      "finding": "Chapter 4 ends with Kaelith and Lirien agreeing to board a smuggler boat departing in hours. Chapter 5 ends with Kaelith packing a travel pack and preparing to walk. Chapter 6 opens with departure via the eastern gate on foot. The transition from boat plan to walking plan is not explained, creating a gap in the reader's understanding of events between chapters.",
+      "recommendation": "Add a brief bridging reference — either in the archive scene opening (noting the boat plan fell through, or that Lirien changed the plan based on new intelligence about the harbor being watched) or in the confrontation scene (Lirien explaining why they need to leave by land). One or two sentences suffice."
+    },
+    {
+      "id": "DEV-005-005",
+      "severity": "minor",
+      "category": "outline-compliance",
+      "location": "Scene 1 (lines 12-73)",
+      "finding": "The outline's crisis for SCN-013 ('Accept Lirien's information as truth, or assume manipulation?') is present but understated. Kaelith finds the evidence and accepts it without dramatizing the internal crisis of choosing to believe a woman sent to kill her. The outline specified this as a distinct decision point.",
+      "recommendation": "Add a brief beat where Kaelith explicitly weighs whether the evidence could be fabricated or planted — and then dismisses the possibility based on the age and condition of the documents. This respects her established distrust patterns while showing her analytical competence."
+    },
+    {
+      "id": "DEV-005-006",
+      "severity": "suggestion",
+      "category": "vulnerability-ladder",
+      "location": "Chapter close (lines 280-298)",
+      "finding": "Vulnerability ladder step 2 calls for Kaelith choosing to leave with Lirien as a significant emotional cost — 'She gives a stranger access to her blind spots and admits, however tacitly, that surviving this crisis may require another person.' The chapter delivers the decision but could strengthen the cost by showing more of Kaelith's resistance being overcome. Her internal resistance layer IR-K-02 (self-sufficiency as defense) should create more friction at this decision point.",
+      "recommendation": "Expand the moment of decision slightly — show Kaelith's hands gripping the table or the wall, the physical effort of accepting that she cannot solve this alone. The body resisting what the mind has already decided. This mirrors her voice fingerprint's physical-emotional processing."
+    }
+  ],
+  "structuralVerdict": "Sound in architecture, compromised by continuity error. The two-part structure (investigation → confrontation) mirrors the outline effectively. Scene 1 is the chapter's strongest section. Scene 2 needs restructuring to account for Ch4's prior disclosures. The closing reflection needs physical interruption.",
+  "outlineCompliance": "Partial. SCN-013 fully compliant. SCN-014 and SCN-015 merge into a single encounter, losing the outline's intended separation. The emotional arc endpoints match the outline (verification mode → existential reorientation) but the path between them bypasses several intended crisis beats.",
+  "arcProgressionNotes": {
+    "fantasyArc": "Strong advancement. The Helric journal provides concrete evidence of institutional suppression, grounding the Pallor crisis in documented history rather than intelligence reports. The full paradox articulation (Kaelith's death = seal lost) raises stakes to existential level.",
+    "romanceArc": "On track for 'grudging respect → attraction' transition. Lirien's admission that she chose Kaelith's survival over compliance is the key romance beat — it represents vulnerability step 2 on the ladder. The 'We' exchange at the end signals the shift from forced proximity to chosen proximity.",
+    "dualArcInterleave": "Effective. The suppression evidence and the kill contract paradox advance both arcs simultaneously. The archive scene serves the fantasy arc primarily; the confrontation serves both; the departure decision locks both arcs together."
+  },
+  "pacingAssessment": "Scene 1: well-paced investigative build (~40% of chapter). Scene 2: needs internal restructuring to separate revelatory moments (~35% of chapter). Closing reflection: overextended at ~25% — should be compressed to ~15% with physical action interleaved.",
+  "chapterStrengths": [
+    "The Helric journal is a masterful piece of embedded worldbuilding — the shift from three-sentence bureaucratic compliance to desperate personal documentation conveys the suppression's human cost without editorializing.",
+    "Kaelith's voice is distinctive from the opening paragraph — tactile, specific, military-precise without being mechanical.",
+    "The 'expendable vs. necessary' value shift is the chapter's strongest thematic contribution and lands with real weight.",
+    "The counting motif (stones, steps, breaths, cracks) anchors Kaelith's coping mechanisms in her body consistently.",
+    "The final line ('Tomorrow she'd be gone.') closes with clean, hard finality."
+  ],
+  "prioritizedRevisionOrder": [
+    "DEV-005-001 (continuity fix — critical, restructure Lirien confrontation)",
+    "DEV-005-002 (reflective section compression and physical anchoring)",
+    "DEV-005-003 (scene boundary between kill contract and Quietus revelations)",
+    "DEV-005-004 (departure method bridging)",
+    "DEV-005-005 (SCN-013 crisis dramatization)",
+    "DEV-005-006 (vulnerability ladder cost)"
+  ]
+}

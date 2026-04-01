@@ -1,0 +1,21 @@
+{
+  "agent": "docwriter-content-writer",
+  "taskId": "T-004",
+  "attempt": 2,
+  "action": "update",
+  "targetFile": "_documentation/business-users/website-content/create-pages.md",
+  "sectionsModified": ["Clone a page"],
+  "sectionsAdded": [],
+  "sectionsRemoved": [],
+  "docFactsUsed": ["permissionSummary.clonePage"],
+  "invariantsApplied": [
+    "INV-style-132",
+    "INV-style-001",
+    "INV-persona-013"
+  ],
+  "patternsUsed": ["PAT-009"],
+  "researchRecommendationsCited": [],
+  "recommendationsSkipped": [],
+  "changesSummary": "Attempt 2: Added an info callout to the 'Clone a page' section (GAP-001 fix). Inserted {% info %}...{% endinfo %} block between the section heading and the description paragraph, matching the exact structural pattern of the existing 'Create a new page' permission note. Content states that cloning requires Read page permissions on the source page and Read + Create page permissions on the target parent page, sourced from docFact permissionSummary.clonePage (WebPagesApplication.cs:677-691). Uses 'you need' phrasing per INV-style-132, active voice per INV-style-001, and business-user-appropriate language per INV-persona-013. Cross-references the page-level permissions page via {% page_link permissions_pagelevel_xp %} with the same anchor and linkText as the existing callout. No other content was changed.",
+  "timestamp": "2026-03-18T21:00:44Z"
+}

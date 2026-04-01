@@ -1,0 +1,119 @@
+{
+  "storyId": "001",
+  "leadA": "CHAR-001",
+  "leadB": "CHAR-002",
+  "arcType": "enemies-to-lovers",
+  "stages": [
+    {
+      "stage": "awareness",
+      "description": "Adversarial Assessment (Ch 1-3): Lirien arrives in Duskhaven under a live kill contract and begins by studying Kaelith as a target, not a woman; Kaelith senses surveillance almost immediately and responds with commander-grade threat assessment. Their first recognitions are professional: Kaelith notices Lirien's operative stillness and impossible precision, while Lirien realizes the disgraced Oathbranded exile is far sharper than the file promised. Attraction registers only as heightened threat perception — heat in Kaelith's palms, disruptive target interference in Lirien's calculus. Fantasy interleave: this stage also establishes the Oathbrand anomaly, the first visible Pallor tears, and the crucial paradox seed that killing Kaelith may destroy access to the Quietus before either woman consciously understands why.",
+      "targetChapters": [1, 2, 3]
+    },
+    {
+      "stage": "attraction",
+      "description": "Grudging Respect (Ch 4-6): Forced proximity begins when outside pressure collapses the option of distance. Lirien discovers enough of the Quietus paradox to delay the contract, and Kaelith chooses tactical alliance over isolation when Conclave-linked threats and the failing sky make staying in Duskhaven impossible. Respect is earned under pressure: Kaelith sees that Lirien never wastes motion or words; Lirien sees that Kaelith, even half-dead and suppressed, still reads terrain, danger, and intent better than anyone alive. The romance beat is competence-as-attraction, still resisted by both. Fantasy interleave: the journey toward the Quietus begins, hunters close in, and the conspiracy around Kaelith's maintained suppression becomes active rather than background menace.",
+      "targetChapters": [4, 5, 6]
+    },
+    {
+      "stage": "attraction",
+      "description": "Unwanted Attraction (Ch 7-10): On the road, assessment turns personal. Shared watches, food-sharing across changing cultural contexts, and repeated survival under Pallor damage force each woman to notice details she would rather file elsewhere: the steadiness of Kaelith's hands even while they shake from pain, the exact way Lirien's composure fractures when Kaelith is endangered. Physical awareness intrudes before either is ready — proximity, scent, gaze, the charged restraint of not touching. Internal resistance peaks here: Kaelith's guilt-as-identity frames desire as indulgence she does not deserve, while Lirien experiences wanting Kaelith as structural failure and mission corruption. Fantasy interleave: clues about the High Conclave's sabotage accumulate, Ythara's influence makes certainty more fragile, and Lirien's need to keep Kaelith alive becomes inseparable from the world's need for the Quietus path.",
+      "targetChapters": [7, 8, 9, 10]
+    },
+    {
+      "stage": "resistance",
+      "description": "Trust as Crisis (Ch 11-14): Trust stops being optional and becomes the price of survival. Lirien removes the Oathbrand — hands at Kaelith's collarbone, no emotional shield left intact — and Kaelith remains still for her in the most dangerous act of surrender she has made since Calwrath. Kaelith's magic returns in a flood; shared magical working under pursuit creates the resonance bond, which does not cause trust so much as reveal that trust has already started. Information is shared reluctantly but meaningfully: Kaelith allows Lirien to witness the truth of Calwrath, and Lirien begins to act like Kaelith's safety matters beyond strategy. First kiss belongs here because it is not a victory lap but the breaking point after accumulated restraint. Fantasy interleave: restored magic allows the Quietus path to awaken in Kaelith's body, while the bond helps them survive Pallor tears and Ythara's destabilizing influence.",
+      "targetChapters": [11, 12, 13, 14]
+    },
+    {
+      "stage": "surrender",
+      "description": "Physical Intimacy as Vulnerability (Ch 14-16): The first full intimate scene is steamy, deliberate, and frightening because it is the first thing either woman does that cannot be defended as tactical necessity. Kaelith stops using her body as a site of punishment; Lirien stops using hers as an instrument of contract. Bodies become the language they can manage before clean confession: desire, care, witness, and the terrifying possibility of being chosen. This is not reward after danger — it is the thematic turning point where each risks becoming emotionally legible to the other. Fantasy interleave: the intimacy follows survival under Ythara's pressure, so physical closeness functions as coherence against unraveling; choosing touch is also choosing to remain one self in a world of dissolving possibilities.",
+      "targetChapters": [14, 15, 16]
+    },
+    {
+      "stage": "resistance",
+      "description": "The Black Moment (Ch 16-18): The live contract is revealed in full — not only that Lirien was sent to execute Kaelith, but that the binding remains active, that Kaelith's blood was used in the ceremony, and that every hard-won trust moment existed inside a cage built for Kaelith's death. For Kaelith, this hits the Calwrath wound from a new angle: once again an institution used her body, her competence, and her trust for a morally compromised end, and this time the person she let closest was the mechanism. For Lirien, the revelation proves the Court's shaping went all the way down; even her love can be read as contract contamination. Kaelith walks away, and the separation feels final. Fantasy interleave: this collapse lands amid accelerating Pallor failure and direct pursuit, so the romance and the world crisis hit nadir together — if they cannot repair trust, they likely cannot reach the Quietus in time either.",
+      "targetChapters": [16, 17, 18]
+    },
+    {
+      "stage": "commitment",
+      "description": "Resolution / Commitment (Ch 19-22): Recovery is earned through action rather than apology. Lirien follows Kaelith not because Court, contract, or world logic leaves her no choice, but because she has finally identified desire as her own. Kaelith does not return to trust by forgetting the betrayal; she returns by judging Lirien with full knowledge and deciding that chosen truth inside a damaged structure still counts. Together they exploit the contract loophole: Lirien stops Kaelith's heart, the binding registers fulfillment, and then Lirien restarts it. The cage opens. After that, neither woman has to stay. They still choose each other while also choosing the work of stopping Thalen's conspiracy and reaching the Quietus. The ending is HFN: love survives because it has moved from necessity to choice, and the world survives because that choice makes the final fantasy solution possible.",
+      "targetChapters": [19, 20, 21, 22]
+    }
+  ],
+  "internalResistance": {
+    "leadA": {
+      "fear": "Kaelith fears that loving Lirien will prove she is still the woman who can make the right tactical choice at unbearable human cost; to need anyone again is to risk becoming the blast radius of her own decisions, especially when Lirien arrives carrying the authority and instrumental logic of yet another institution.",
+      "wound": "Calwrath fused guilt into identity. Kaelith's self-sufficiency, refusal to ask for help, and distrust of institutional actors are all extensions of the lie that isolation is penance rather than cowardice; if Lirien sees the full truth and stays, Kaelith loses the structure she built her self-hatred around."
+    },
+    "leadB": {
+      "fear": "Lirien fears that attachment is structural failure, that 'home' is only the place that owns her, and that choosing Kaelith over the Court will reveal she has never made a real choice before; even worse, the contract's physiological binding makes desire feel like malfunction rather than freedom.",
+      "wound": "The Cerith Court shaped Lirien into a weapon and named it belonging. She cannot instinctively distinguish obedience from loyalty or usefulness from love, so every step toward Kaelith threatens the worldview that kept her coherent through forty-three prior kills."
+    }
+  },
+  "vulnerabilityLadder": [
+    {
+      "step": 1,
+      "moment": "Chapter 2: Lirien does not take the clean kill when Kaelith catches her watching; instead she keeps observing, admitting through action that the target is more dangerous, more interesting, and more human than the file allowed.",
+      "character": "CHAR-002",
+      "emotionalCost": "Her first meaningful deviation from perfect obedience in forty-three contracts; professional certainty becomes compromised by curiosity and respect."
+    },
+    {
+      "step": 2,
+      "moment": "Chapters 5-6: Kaelith chooses to leave Duskhaven with Lirien and accepts shared watch, shared route, and shared exposure instead of reverting to isolation or trying to disappear alone.",
+      "character": "CHAR-001",
+      "emotionalCost": "She gives a stranger access to her blind spots and admits, however tacitly, that surviving this crisis may require another person."
+    },
+    {
+      "step": 3,
+      "moment": "Chapter 6: Lirien reveals enough of the larger threat and the Quietus paradox to keep Kaelith alive, surrendering informational dominance and moving from manipulation toward partial honesty.",
+      "character": "CHAR-002",
+      "emotionalCost": "She starts prioritizing Kaelith's survival over mission elegance and risks Seep censure by acting on judgment rather than instructions."
+    },
+    {
+      "step": 4,
+      "moment": "Chapter 8: Kaelith stops hiding the true damage around the Oathbrand and lets Lirien see how badly the long-refreshed suppression is destroying her body — the closest Kaelith can come to asking for help.",
+      "character": "CHAR-001",
+      "emotionalCost": "She has to admit she is not holding together by will alone and that her body is failing in a way she cannot fix with discipline."
+    },
+    {
+      "step": 5,
+      "moment": "Chapter 11: Lirien removes the Oathbrand with her bare hands and no emotional shielding, choosing to free and empower the very woman she is contractually bound to kill.",
+      "character": "CHAR-002",
+      "emotionalCost": "Care becomes undeniable; she crosses from operative detachment into open attachment and experiences that crossing as possible structural failure."
+    },
+    {
+      "step": 6,
+      "moment": "Chapters 13-14: Kaelith tells Lirien the unsanitized truth of Calwrath — that she was right, that three hundred civilians still died, and that her deepest fear is she would make the same choice again.",
+      "character": "CHAR-001",
+      "emotionalCost": "She lets Lirien see the self she considers least forgivable and risks discovering that witness will turn into recoil."
+    },
+    {
+      "step": 7,
+      "moment": "Chapter 15: During the first full intimate scene, Lirien abandons contract-language long enough to name desire as her own and lets Kaelith feel her through the resonance bond without operative filters.",
+      "character": "CHAR-002",
+      "emotionalCost": "She stops pretending obedience and wanting are the same thing; this is tantamount to declaring emotional independence from the Court before she knows how to survive it."
+    },
+    {
+      "step": 8,
+      "moment": "Chapter 20: Kaelith consents to Lirien stopping and restarting her heart to satisfy the contract loophole, trusting the woman who betrayed her with the most literal form of life-or-death surrender possible.",
+      "character": "CHAR-001",
+      "emotionalCost": "She gives up the final defense of self-protection and chooses love with full knowledge of the danger, proving trust can survive even after it has been weaponized."
+    }
+  ],
+  "blackMoment": {
+    "description": "Just after the first time physical intimacy becomes mutual, chosen vulnerability rather than crisis response, the truth surfaces: Lirien's mission was never merely surveillance, the contract was never suspended, and Kaelith's blood lives inside the binding that requires her heartbeat to cease. The revelation retroactively poisons every trust beat — the Oathbrand removal, the kiss, the sex, the shared magic — by making them look like the most sophisticated grooming operation Kaelith has ever endured. Lirien, meanwhile, is forced to confront that the Court built her so thoroughly as a weapon that even the love she thought might be choice can be interpreted as a side effect of proximity and blood-binding.",
+    "triggerEvent": "A Seep interception during an escalating Pallor tear exposes the contract text and blood-binding proof at the exact moment Kaelith and Lirien are moving from private surrender into open strategic partnership, collapsing romance and fantasy trust simultaneously.",
+    "emotionalNadir": "Kaelith believes the one person who saw her clearly only stayed close because institutions always need her alive until they are ready to use or erase her; Lirien believes she has never once acted outside the architecture that made her, and that loving Kaelith may only prove how total her conditioning is. Reunion appears emotionally and strategically irrecoverable."
+  },
+  "resolution": "HFN",
+  "upstreamRefs": [
+    "characters/CHAR-001.json",
+    "characters/CHAR-002.json",
+    "characters/index.json",
+    "story-concept.json",
+    "craft-profile.json",
+    "world-bible/magic-system.json",
+    "world-bible/culture.json",
+    "world-bible/politics.json"
+  ]
+}

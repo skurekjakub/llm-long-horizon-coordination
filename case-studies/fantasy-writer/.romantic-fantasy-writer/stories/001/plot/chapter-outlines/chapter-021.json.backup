@@ -1,0 +1,80 @@
+{
+  "chapterNum": 21,
+  "pov": "CHAR-001",
+  "povTransitionMotivation": "Return to Kaelith for the climax \u2014 reaching the Quietus, reinforcing the seal, exposing Thalen's sabotage",
+  "scenes": [
+    {
+      "id": "SCN-59",
+      "goal": "[To be detailed by scene-beat-designer]",
+      "conflict": "[To be detailed by scene-beat-designer]",
+      "disaster": "[To be detailed by scene-beat-designer]",
+      "valueShift": "[To be detailed by scene-beat-designer]",
+      "fiveCommandments": {
+        "incitingIncident": "[To be detailed]",
+        "complication": "[To be detailed]",
+        "crisis": "[To be detailed]",
+        "climax": "[To be detailed]",
+        "resolution": "[To be detailed]"
+      }
+    },
+    {
+      "id": "SCN-60",
+      "goal": "[To be detailed by scene-beat-designer]",
+      "conflict": "[To be detailed by scene-beat-designer]",
+      "disaster": "[To be detailed by scene-beat-designer]",
+      "valueShift": "[To be detailed by scene-beat-designer]",
+      "fiveCommandments": {
+        "incitingIncident": "[To be detailed]",
+        "complication": "[To be detailed]",
+        "crisis": "[To be detailed]",
+        "climax": "[To be detailed]",
+        "resolution": "[To be detailed]"
+      }
+    },
+    {
+      "id": "SCN-61",
+      "goal": "[To be detailed by scene-beat-designer]",
+      "conflict": "[To be detailed by scene-beat-designer]",
+      "disaster": "[To be detailed by scene-beat-designer]",
+      "valueShift": "[To be detailed by scene-beat-designer]",
+      "fiveCommandments": {
+        "incitingIncident": "[To be detailed]",
+        "complication": "[To be detailed]",
+        "crisis": "[To be detailed]",
+        "climax": "[To be detailed]",
+        "resolution": "[To be detailed]"
+      }
+    }
+  ],
+  "emotionalArc": {
+    "startState": "[To be detailed by scene-beat-designer]",
+    "endState": "[To be detailed by scene-beat-designer]",
+    "pivotMoment": "[To be detailed by scene-beat-designer]"
+  },
+  "fantasyBeats": [
+    "Climax \u2014 Quietus Reached, Seal Reinforced, Thalen's Sabotage Exposed with Witnesses"
+  ],
+  "romanceBeats": [
+    "Partnership Under Pressure \u2014 'We Do This Together'"
+  ],
+  "hookType": "arrival-urgency",
+  "hookTypeDescription": "[To be detailed by scene-beat-designer]",
+  "closeType": "victory-with-cost",
+  "closeTypeDescription": "[To be detailed by scene-beat-designer]",
+  "targetWordCount": 4000,
+  "tensionLevel": 9,
+  "pacingNotes": "Chapter 21 \u2014 Climax \u2014 Quietus Reached, Sabotage Exposed. [To be detailed by scene-beat-designer]",
+  "locationsPrimary": [
+    "Serath D\u00fbn \u2014 the Quietus chamber"
+  ],
+  "charactersPresent": [
+    "CHAR-001",
+    "CHAR-002"
+  ],
+  "upstreamRefs": [
+    "../../plot/plot-structure.json",
+    "../../characters/CHAR-001.json",
+    "../../plot/dual-arc-timeline.json",
+    "../../plot/tension-map.json"
+  ]
+}

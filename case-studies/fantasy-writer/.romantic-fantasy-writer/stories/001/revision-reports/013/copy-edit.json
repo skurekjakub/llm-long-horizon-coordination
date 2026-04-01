@@ -1,0 +1,101 @@
+{
+  "storyId": "001",
+  "chapter": 13,
+  "agent": "romantic-fantasy-writer-copy-editor",
+  "timestamp": "2025-07-18T12:00:00Z",
+  "overallAssessment": "Chapter 13 is exceptionally clean from a factual accuracy and consistency standpoint. All proper nouns, timeline references, magic system mechanics, geographic details, and cultural norms are consistent with established world-bible, continuity-tracker, and character artifacts. Dialogue formatting is correct throughout. Tense consistency is maintained in past tense with no leaks. Pronoun clarity is well-managed despite both leads being female. The only substantive finding is a pre-existing cross-manuscript discrepancy (Thalen Reyvas seat number) that has been tracked since earlier chapters. Two additional minor observations are noted for completeness.",
+  "findingCount": {
+    "total": 3,
+    "critical": 0,
+    "major": 0,
+    "moderate": 1,
+    "minor": 2,
+    "byCategory": {
+      "naming": 0,
+      "timeline": 0,
+      "factual": 2,
+      "grammar": 0,
+      "formatting": 0,
+      "anachronism": 1,
+      "informational": 0
+    }
+  },
+  "findings": [
+    {
+      "id": "COPY-001",
+      "severity": "moderate",
+      "category": "factual",
+      "description": "Thalen Reyvas is referred to as holding the 'Seventh Seat.' World-bible/politics.json assigns the Sixth Seat (Fae Relations and Border Diplomacy) to Thalen Reyvas and the Seventh Seat (Archives and Knowledge Stewardship) to Vairen Ethis. However, ALL chapter drafts (chapters 9, 10, 12, 13, 15, 21) consistently use 'Seventh Seat' for Thalen. This is already tracked as DISC-001 in the continuity tracker with a recommendation to update politics.json to match the drafts. No correction in the draft is recommended — the prose is internally consistent across all chapters. The upstream world-bible artifact requires the fix.",
+      "lineRef": "Line 250: 'Thalen Reyvas sat in his Seventh Seat with forty years of institutional patience'",
+      "correction": "No change to draft. Resolution requires updating world-bible/politics.json to swap Sixth and Seventh seat assignments, aligning with the established prose across all 22 chapters. Cross-reference: continuity-tracker.json DISC-001.",
+      "sourceRef": "world-bible/politics.json (Sixth Seat → Thalen Reyvas), continuity/continuity-tracker.json DISC-001"
+    },
+    {
+      "id": "COPY-002",
+      "severity": "minor",
+      "category": "anachronism",
+      "description": "The phrase 'three in the morning' appears twice, in internal narration and in Kaelith's spoken confession. While not technically anachronistic — the world uses numbered bell-marks for timekeeping, making 'the third hour' a valid concept — the phrasing 'three in the morning' reads as modern English idiom rather than world-grounded diction. Compare with the more world-appropriate 'the sixteenth bell' used in the same chapter (line 98) for the Calwrath breach timeline. The contrast in register is noticeable.",
+      "lineRef": "Line 32: 'woke her shaking at three in the morning' and Line 144: 'Sometimes at three, when the brand used to wake me'",
+      "correction": "Optional: Consider rephrasing to 'the third bell' or 'the dead hours before dawn' for stronger world-grounding. The current phrasing is acceptable if read as colloquial shorthand for the third bell of the morning watch. Low priority — the meaning is clear and the emotional impact of the passage is not diminished.",
+      "sourceRef": "world-bible/culture.json CUL-003 (garrison coast uses military timekeeping — meals at bell-marks)"
+    },
+    {
+      "id": "COPY-003",
+      "severity": "minor",
+      "category": "factual",
+      "description": "Kaelith references 'The Ashborne survivors who found her in Duskhaven' as having received a sanitized version of the Calwrath story. This implies individual Ashborne veterans visited or encountered Kaelith during her five-year exile in Duskhaven. This must remain distinct from the organized Ashborne veteran network at Rivenmarch (revealed in chapter 19), where the continuity tracker notes: 'She thinks she's alone. She's not.' Current phrasing is consistent — individual survivors visiting informally is different from an organized network — but the chapter reviser should ensure this nuance is preserved. No draft change needed unless revision adds language that conflates the two.",
+      "lineRef": "Line 112: 'The Ashborne survivors who found her in Duskhaven had received the strategic abstract.'",
+      "correction": "No change required. Advisory note for continuity tracking: individual Ashborne survivors in Duskhaven ≠ organized Ashborne network at Rivenmarch. The ch19 revelation retains its dramatic force because Kaelith did not know a coordinated network existed, even if scattered individuals crossed her path during exile.",
+      "sourceRef": "continuity/continuity-tracker.json ch19 events: 'She thinks she's alone. She's not.'; ch19 knowledge states"
+    }
+  ],
+  "verificationPasses": {
+    "namingConsistency": {
+      "status": "pass",
+      "details": "All proper nouns verified against continuity tracker and world-bible. Character names: Kaelith (✓), Lirien (✓), Tarris (✓ — Shaper on southeastern battery at Calwrath, female, two years service), Tessen (✓ — Tessen Vael), Thalen Reyvas (✓ — see COPY-001 for seat number), Elisi (✓ — daughter age 7, operation 31). Place names: Calwrath (✓), Graymarket (✓ — one word, capital G), Canal District (✓), Duskhaven (✓), Vael'thrin (✓ — apostrophe between l and t), the Quietus (✓). Magic terms: Oathbrand (✓), Pallor (✓), Shapers (✓), resonance bond (✓), accelerant (✓), Seep (✓), Ashborne Legion (✓). Zero deviations found.",
+      "itemsChecked": 18
+    },
+    "timelineVerification": {
+      "status": "pass",
+      "details": "Chapter takes place the night following ch12 pursuit, consistent with continuity tracker. 'Six years ago at Calwrath' — consistent with YK 736 (Calwrath) → YK 742 (present). 'Days ago' for Oathbrand removal — consistent with ch11 (midpoint) being approximately 2-3 days prior. 'Eighteen years reading the gap' for Lirien — consistent with her established 18 years of Seep service (corroborated in chapters 6, 12). 'Eight minutes' decision window at Calwrath — internally consistent throughout the confession. 'Forty years of institutional patience' for Thalen — consistent with 40-year conspiracy timeline. No temporal impossibilities found.",
+      "itemsChecked": 7
+    },
+    "geographyVerification": {
+      "status": "pass",
+      "details": "Characters on granite shelf in wilderness northeast of previous position, heading toward the Quietus. Northeastern direction for Quietus pull — consistent with geography.json (Quietus in the western Vireth Range, approached from the east/northeast). 'Observation posts along the northeastern approach' — consistent with pursuit from Conclave forces. Terrain description (granite shelf, birch, streambed, hillside) consistent with transitional wilderness between the Wending/central provinces and the Narrowing/Vireth Range. No spatial impossibilities.",
+      "itemsChecked": 4
+    },
+    "magicSystemCompliance": {
+      "status": "pass",
+      "details": "Resonance bond mechanics: transmits emotions and physical sensations, does NOT transmit words or thoughts (line 66: 'it did not transmit words') — fully compliant with magic-system.json MAG-007. Bond as mutual awareness: both parties feel each other simultaneously — compliant. Fae silk detection threads: consistent with Lirien's Tier 4 practitioner abilities. Magical accelerant: 'does not spread... It arrives. Everywhere at once' — matches established magic term definition exactly. Oathbrand: correctly described as removed, phantom ache persists (body memory, not active suppression) — consistent with MAG-008 and post-removal state. Kaelith's returned magical senses: sensing Pallor erosion — consistent with her post-ch11 magic restoration (natural Tier 4, rebuilding). Shaper reference (Tarris): correct terminology for magic practitioners. No new magical abilities appear without establishment (INV-009 compliant). No magic system violations.",
+      "itemsChecked": 8
+    },
+    "worldRuleCompliance": {
+      "status": "pass",
+      "details": "No anachronistic technology references. No modern idioms beyond the minor 'three in the morning' noted in COPY-002. Military terminology (embankment, battery, defensive line, accelerant, tactical, perimeter) consistent with pre-industrial military setting. Cultural norms: Seep terminology ('completions' not 'kills') aligns with fae culture CUL-002. Oathbrand social implications: consistent with CUL-001 (public disgrace, permanent title loss). Bell-based timekeeping ('sixteenth bell') consistent with garrison coast culture CUL-003. Kaelith's structural metaphors (load-bearing, foundation, architecture, walls, mortar, buttress, keystone) — fully consistent with CHAR-001 voice fingerprint; no voice contamination beyond deliberate bond-influenced water metaphor (line 44: 'like water finding the place in a wall where the mortar had thinned' — hybrid metaphor acknowledged as intentional cross-contamination per style guide).",
+      "itemsChecked": 9
+    },
+    "informationAsymmetry": {
+      "status": "pass",
+      "details": "Knowledge state changes in this chapter verified: CHAR-002 (Lirien) learns full Calwrath truth for first time — consistent with progressive knowledge states (previously only public version known). CHAR-001 (Kaelith) learns Lirien's operation 31, Elisi, moral equivalence — consistent with ch13 knowledge additions in continuity tracker. Reader learns complete Calwrath details for first time — consistent with foreshadowing ledger FS-007 payoff. Bond transmits emotions but not facts — correctly maintained throughout (Kaelith must verbally confess; Lirien must verbally share op 31). No information asymmetry violations.",
+      "itemsChecked": 5
+    },
+    "grammarAndFormatting": {
+      "status": "pass",
+      "details": "Dialogue formatting: all speech tags correctly punctuated (commas before speech tags, periods for action beats). Em dashes used correctly throughout for parenthetical interruptions and dramatic pauses. Scene breaks: two '---' markers dividing chapter into 3 scenes, correctly placed. Tense: consistent past tense throughout, no present tense leaks. Pronoun clarity: both leads are female; author consistently uses character names in ambiguous contexts to prevent confusion. Fragments used intentionally for Kaelith's POV voice (short declarative, inventory mode) — stylistically appropriate, not grammatical errors. Paragraph length: generally well-controlled; the kiss passage (line 222) is a single extended paragraph which serves the breathless quality of the moment. No grammatical errors, no formatting issues.",
+      "itemsChecked": 12
+    }
+  },
+  "crossReferences": {
+    "foreshadowingLedger": "FS-007 (Calwrath battlefield decision) receives full payoff in this chapter. FS-015 (resonance bond) advanced — used as mechanism for emotional transparency. Motifs MOT-001 (Pallor as failing membrane), MOT-002 (Oathbrand ghost), MOT-003 (water/infiltration), MOT-004 (Quietus as body-knowledge) all correctly deployed per metadata specifications.",
+    "chapterOutline": "Chapter follows outline for SCN-34, SCN-35, SCN-36. Scene goals, conflicts, and disasters align with outline specifications.",
+    "continuityTracker": "Ch13 timeline entry matches draft content. Character positions consistent. Knowledge state updates correct. Active threats (two hunter teams, observation posts, Thalen Reyvas, Pallor erosion) all referenced in closing passage."
+  },
+  "voiceConsistencyNotes": "Kaelith's POV voice is maintained with exceptional fidelity throughout: short declarative sentences (~70% under 8 words), architectural/structural metaphors (load-bearing, foundation, walls, mortar, buttress, keystone, fissuring), emotions as physical sensations (heat in neck, pressure behind sternum, jaw ache, hand tremor, throat closing). Formal register under maximum stress (no contractions during confession: 'I cannot undo that'). Contractions return when defenses lower ('I do not want to undo it' — actually still formal, indicating residual guard). Lirien's dialogue voice maintained: precise, probing, clinical terminology softening toward human language ('I can feel you'). Contraction usage in Lirien's dialogue follows deliberate pattern: formal in analytical/operative speech, informal in emotional/personal speech — consistent with voice contamination rules for ch13's intimacy threshold.",
+  "casualtyNumberVerification": {
+    "threeHundredCivilians": "Line 84 ('three hundred lives'), line 140 ('three hundred and twelve confirmed dead') — the rounded 300 in the initial statement vs. precise 312 in the tribunal finding is consistent with how Kaelith thinks about it (round number as the weight she carries) vs. how the tribunal documented it.",
+    "eightHundredSoldiers": "Line 102 ('eight hundred soldiers'), line 140 ('eight hundred soldiers were evacuated') — consistent.",
+    "fortySevenChildren": "Line 140 ('forty-seven were children under the age of twelve') — new specific detail, first full disclosure. Consistent with 'children in the market square' (line 114).",
+    "threeThousandResidents": "Line 94 ('Three thousand residents') — Graymarket total population. 312 dead out of 3000 means approximately 90% were evacuated before the burn. Consistent with the evacuation being 'incomplete' but well underway."
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "totalChaptersPolished": 22,
+  "totalEdits": 183,
+  "betaFindingsAddressed": 48,
+  "wordCountBefore": 95750,
+  "wordCountAfter": 91850,
+  "netWordChange": -3900,
+  "percentChange": -4.1,
+  "majorChanges": [
+    {
+      "chapter": 4,
+      "description": "CRITICAL: Removed duplicated passage (~170 words). Scene 2 and Scene 3 contained near-identical Oathbrand/brand-revelation exchange with verbatim hovering-hand gesture. Removed duplicate from Scene 3, replaced with bridge advancing conversation to practical next question."
+    },
+    {
+      "chapter": 18,
+      "description": "MAJOR: Trimmed intel briefing that interrupted dark night of the soul (-564 words). Cut recognition protocol history, compressed Ashborne recap, tightened three-source verification, reduced dissolution exposition. Added urgency cue (binding headache) and bridged analytical audit to decision with 'capacity was enough' line."
+    },
+    {
+      "chapter": 17,
+      "description": "MAJOR: Compressed repetitive doubt-cycling in middle section (-371 words). Removed weakest Lirien-who clause, tightened Oathbrand/Calwrath memory loops. Punched up vorakh fight verbs. Addressed back-to-back internality concern with Ch18."
+    },
+    {
+      "chapter": 10,
+      "description": "MAJOR: Compressed archive procedural section ~25% (-339 words). Cut shelving logistics, charcoal tradecraft explanation, decade-by-decade methodology. Kept all conspiracy evidence and discovery beats."
+    },
+    {
+      "chapter": 7,
+      "description": "MAJOR: Cut ~250 words of redundant interiority from Scene 3. Five restatements of 'I am compromised / I am wanting' removed. Advanced emotion from recognizing want (Scene 2) to wanting to know someone (Scene 3)."
+    },
+    {
+      "chapter": 6,
+      "description": "MAJOR: Cut fourth repetition of binding timeline numbers (48/72/96/120). Compressed travel logistics (~200 words). Added unframed romance crack before classification reasserts."
+    },
+    {
+      "chapter": 2,
+      "description": "MAJOR: Cut Tavik-through-garrison observation (~100 words, reader saw in Ch1). Replaced specific Pallor metrics with pattern language. Fixed emotional distance with water metaphor replacing clinical cluster."
+    },
+    {
+      "chapter": 21,
+      "description": "MAJOR: Trimmed ~255 words of climax padding — redundant partnership description, doubled surgeon metaphors, repeated documentary-evidence reference. Gives both seal-work and trial sequences more breathing room."
+    },
+    {
+      "chapter": 15,
+      "description": "Tightened evidence cross-referencing scene ~15% (-221 words). Consolidated testimony names, shortened cross-referencing description, streamlined recognition beat."
+    }
+  ],
+  "perChapterSummary": [
+    { "chapter": 1, "wordsBefore": 2359, "wordsAfter": 2216, "edits": 8, "betaFindings": 3, "keyFixes": "Framed sensory flash as planted seed; tightened inventory-to-magic section" },
+    { "chapter": 2, "wordsBefore": 2800, "wordsAfter": 2413, "edits": 15, "betaFindings": 3, "keyFixes": "Cut redundant Tavik observation; replaced Pallor metrics with pattern language; fixed emotional distance" },
+    { "chapter": 3, "wordsBefore": 4605, "wordsAfter": 4595, "edits": 5, "betaFindings": 1, "keyFixes": "Rewrote subordinate's decision for chain-of-command credibility; minor filler cuts" },
+    { "chapter": 4, "wordsBefore": 4130, "wordsAfter": 3984, "edits": 6, "betaFindings": 2, "keyFixes": "CRITICAL: Removed duplicated Oathbrand passage from Scene 3; cut repeated distance assessment" },
+    { "chapter": 5, "wordsBefore": 4373, "wordsAfter": 4296, "edits": 12, "betaFindings": 2, "keyFixes": "Compressed drawer-opening section; fixed compass inconsistency; added packing parallel signal" },
+    { "chapter": 6, "wordsBefore": 4761, "wordsAfter": 4459, "edits": 18, "betaFindings": 4, "keyFixes": "Cut binding timeline repetition; compressed travel logistics; added romance crack; reframed Tavik cruelty" },
+    { "chapter": 7, "wordsBefore": 4506, "wordsAfter": 4200, "edits": 15, "betaFindings": 3, "keyFixes": "Cut redundant desire scenes; trimmed architecture metaphors; grounded Pallor description" },
+    { "chapter": 8, "wordsBefore": 4071, "wordsAfter": 4027, "edits": 10, "betaFindings": 5, "keyFixes": "Trimmed Veldrane description; distinct care-gesture motivations; added Kaelith-noticing beat" },
+    { "chapter": 9, "wordsBefore": 4969, "wordsAfter": 4901, "edits": 12, "betaFindings": 3, "keyFixes": "Clarified Ythara birch ontology; embodied gratitude beat; added ward-protection logic" },
+    { "chapter": 10, "wordsBefore": 3959, "wordsAfter": 3620, "edits": 9, "betaFindings": 1, "keyFixes": "Compressed archive procedural section ~25%; people-first scene opening" },
+    { "chapter": 11, "wordsBefore": 4201, "wordsAfter": 4089, "edits": 12, "betaFindings": 2, "keyFixes": "Removed middle frame-echo; tightened consent reflection; fixed POV break; cut filler" },
+    { "chapter": 12, "wordsBefore": 4412, "wordsAfter": 4301, "edits": 10, "betaFindings": 4, "keyFixes": "Split compass-needle sentence; tightened intel briefing; varied current metaphor; bond-misfire motivation" },
+    { "chapter": 13, "wordsBefore": 4845, "wordsAfter": 4797, "edits": 2, "betaFindings": 0, "keyFixes": "Minimal — manuscript's best scene. Fixed repeated 'underneath' and covering construction" },
+    { "chapter": 14, "wordsBefore": 5215, "wordsAfter": 5220, "edits": 5, "betaFindings": 4, "keyFixes": "Added site security bridge; physical specificity in intimate scene; advanced guilt refrain; loophole timing" },
+    { "chapter": 15, "wordsBefore": 3949, "wordsAfter": 3728, "edits": 6, "betaFindings": 1, "keyFixes": "Tightened evidence cross-referencing scene ~15%; compressed hope reflection" },
+    { "chapter": 16, "wordsBefore": 3971, "wordsAfter": 3839, "edits": 4, "betaFindings": 3, "keyFixes": "Added Seep motivation; physical crack in Kaelith composure; trimmed philosophical section. All signature beats preserved" },
+    { "chapter": 17, "wordsBefore": 4544, "wordsAfter": 4173, "edits": 8, "betaFindings": 3, "keyFixes": "Compressed doubt-cycling; punched up vorakh fight; expanded Calwrath dream; fixed communiqué spelling" },
+    { "chapter": 18, "wordsBefore": 5142, "wordsAfter": 4578, "edits": 7, "betaFindings": 2, "keyFixes": "Trimmed intel briefing significantly; added physical grounding; added urgency cue; bridged analytical audit to decision" },
+    { "chapter": 19, "wordsBefore": 5862, "wordsAfter": 5761, "edits": 4, "betaFindings": 2, "keyFixes": "Added sensory transition between reunion and briefing; inserted catalyst beat before vulnerability" },
+    { "chapter": 20, "wordsBefore": 4434, "wordsAfter": 4293, "edits": 3, "betaFindings": 1, "keyFixes": "Trimmed Seep paragraph; fixed word repetition. 8-second bond silence scene untouched" },
+    { "chapter": 21, "wordsBefore": 4526, "wordsAfter": 4271, "edits": 6, "betaFindings": 3, "keyFixes": "Cut ~255 words of climax padding; smoothed seal-work to trial transition; grounded Ashborne positioning" },
+    { "chapter": 22, "wordsBefore": 4116, "wordsAfter": 4089, "edits": 3, "betaFindings": 1, "keyFixes": "Tightened scout report; compressed Conclave framing. All HFN beats preserved" }
+  ],
+  "voiceVerification": {
+    "oddChapters": "Kaelith POV — architectural/structural metaphors verified in all 11 chapters. No water/intelligence domain violations found.",
+    "evenChapters": "Lirien POV — water/intelligence/classification metaphors verified in all 11 chapters. No architectural domain violations found.",
+    "crossChapterBleed": "Intentional late-story voice bleed-through (Ch19-22) preserved as thematic element showing mutual influence."
+  },
+  "timestamp": "2026-03-21T05:00:00Z"
+}

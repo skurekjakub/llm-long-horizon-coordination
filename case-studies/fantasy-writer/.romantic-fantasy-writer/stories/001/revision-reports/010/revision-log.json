@@ -1,0 +1,218 @@
+{
+  "chapterNumber": 10,
+  "revisionTimestamp": "2025-07-28T14:30:00Z",
+  "findingsAddressed": [
+    {
+      "findingId": "DEV-010-001",
+      "action": "applied",
+      "description": "Scaled back conspiracy revelation per recommended approach (A): replaced Thalen Reyvas personal naming with Seventh Seat designation only. Authorization chain now consolidates to 'the Seventh Seat of the High Conclave' with coded departmental signatures — no individual name identified. Preserves BEAT-009 for ch12 perpetrator identification. Adjusted all Scene 2 dialogue accordingly: Kaelith says 'The Seventh Seat' instead of 'Reyvas'; withholding confrontation is about the Seventh Seat reference from waystation documents; closing becomes 'Whoever holds it has a name, and names become known' / 'They do not remain unknown.' Try-fail cycle now correctly delivers 'fail' outcome: pattern established, perpetrator unidentified.",
+      "linesAffected": "~64-68, ~108-156 (revised equivalents)"
+    },
+    {
+      "findingId": "DEV-010-002",
+      "action": "applied",
+      "description": "Added Ashborne Legacy / Thenndal subplot intersection per recommended approach (B): Lirien discovers a reference to Commander Ossya Thenndal in the adjacent military correspondence files during the archive investigation. Thenndal filed an investigation request regarding Pallor anomalies near the Quietus approach ~6 years prior; the request was denied with a marginal notation ('Monitoring redundant. Station decommissioned.') in the same institutional hand as other suppressions. Thenndal's service record lists death 3 months later as 'chronic illness.' This seeds the ch11 Warden lineage revelation, connects SUB-003 and SUB-004, satisfies the try-fail cycle's expected 'Thenndal and Calwrath-era clues,' and foreshadows the possibility that Thenndal's death was not natural. Kaelith's visible reaction to the name during the briefing provides emotional weight without revealing why.",
+      "linesAffected": "~68-72, ~114-120 (revised equivalents)"
+    },
+    {
+      "findingId": "DEV-010-003",
+      "action": "reviewed-no-change",
+      "description": "Accepted vulnerability ladder step 6 reassignment per option (A). Scene retains Lirien initiating the personal question ('What were they like from the coast?'), which is emotionally stronger because it represents a more dramatic break from her established operative pattern. Both characters demonstrate vulnerability: Lirien through initiating, Kaelith through sharing. Noted for romance-arc.json tracking update by downstream agents.",
+      "linesAffected": "N/A"
+    },
+    {
+      "findingId": "DEV-010-004",
+      "action": "applied",
+      "description": "Extended Kaelith's reaction to Lirien's information withholding. Added 3 sentences of observable physical response after 'You had the Seventh Seat reference before today': Kaelith's posture changes (shoulders drawn in, hand closing around branded wrist), and Lirien recognizes the specific wariness of someone who has been omitted-from by institutions before. Added explicit note that the tension 'would not resolve in a single exchange,' creating persistent micro-tension through the strategic discussion and foreshadowing the ch16 black moment where omission becomes devastating.",
+      "linesAffected": "~130-136 (revised equivalents)"
+    },
+    {
+      "findingId": "DEV-010-005",
+      "action": "applied",
+      "description": "Reduced word count from 4,576 to 3,875 (15.3% reduction, below the 4,200-4,300 target but justified by the cumulative effect of LINE-010-001/002/003/004/005/006 tightening). Coast passage compressed: cut fishermen's children detail, color of morning water, and 'because the ocean did not respect the structural ambitions of eleven-year-olds.' Preserved the tide pool story as thematic core (permanence through rebuilt failure). Closing paragraphs consolidated from three stacked closings to one. Scene 3 meta-commentary reduced per LINE-010-006. The tighter prose in Scene 3 serves the emotional point — Lirien's system going quiet is embodied by the prose going simpler.",
+      "linesAffected": "Throughout Scene 3"
+    },
+    {
+      "findingId": "DEV-010-006",
+      "action": "applied",
+      "description": "Softened child surveillance implication: changed 'watching the road with the discipline of someone paid to do so' to 'watched the road with more attention than the task required (interesting).' Retains atmospheric detail and Lirien's observational habit without the strong surveillance-network implication that would create unfulfilled reader expectation if unresolved in later chapters.",
+      "linesAffected": "~12 (revised equivalent)"
+    },
+    {
+      "findingId": "DEV-010-007",
+      "action": "applied",
+      "description": "Added 2 additional exchanges to the strategic debate. Lirien raises intelligence shelf-life argument: authorization records are already partially coded, and given another month the archive evidence may be sanitized entirely. Kaelith's response addresses this specifically: 'Disrupting one rite delays the timeline by weeks. Exposing one official delays it by months — if the Conclave acts at all.' Then delivers the foundation argument. Decision now feels genuinely weighed through collaborative reasoning rather than quick agreement.",
+      "linesAffected": "~150-162 (revised equivalents)"
+    },
+    {
+      "findingId": "DEV-010-008",
+      "action": "applied",
+      "description": "Added moment where Lirien almost retreats to operational mode at Scene 3's opening: 'Lirien's hand moved toward the documents. Tomorrow's route needed calculating — distance to the Vireth Range approach, supply stops, time-to-objective. The variables were there, waiting to be assembled into purpose. / She stopped. Let her hand rest on her knee.' Makes the choice to sit in unclassified silence active and costly rather than passive.",
+      "linesAffected": "~174-178 (revised equivalents)"
+    },
+    {
+      "findingId": "LINE-010-001",
+      "action": "applied",
+      "description": "Reduced 'not X but Y' / negation-followed-by-true-statement constructions from ~40 to ~12 across the chapter. Scene 3 negations cut by approximately 75%. Preserved strongest uses: 'Not suppressed. Absent.' (Scene 3 parenthetical failure), 'not the sound but the vibration in the chest' (fae precision dialogue), 'This was not sabotage by neglect. This was engineering.' (conspiracy revelation climax), 'not unfocused but *refocused*' (Kaelith characterization). Rewrote weaker uses as positive descriptions: triple-negation at line 186 replaced with 'a resonance with no name, filing itself in a space she had not known existed'; line 170's 'no undercurrent...no surface tension' replaced with 'the silence between them was simply quiet'; Scene 3 closing's triple-parallel eliminated entirely.",
+      "linesAffected": "Throughout, concentrated in Scene 3"
+    },
+    {
+      "findingId": "LINE-010-002",
+      "action": "applied",
+      "description": "Reduced intelligence/operative vocabulary in Scene 3 by approximately 75-80% (from ~35+ terms to ~6-8). Prose texture genuinely changes when Lirien's system goes quiet: environmental description does more work (fire, stream, stars, limestone), sentences become shorter and more sensory, and operative vocabulary appears only at the specific moments where Lirien catches herself (breaking cover metaphor, 'no operational value'). Key cuts: removed explicit operative-vocabulary catalogue at lines 192-193 ('No strategic advantage. No contractual relevance.'), simplified lines 232-233 from 'threat assessment and high-priority surveillance' to 'threats,' eliminated 'operative and target' framing in closing. Parenthetical examples reduced from 3 to 2.",
+      "linesAffected": "Scene 3 throughout (~170-252 in original)"
+    },
+    {
+      "findingId": "LINE-010-003",
+      "action": "applied",
+      "description": "Reduced figurative water metaphors from 10 to 3. Kept the three strongest: line 44 equivalent (water revealing stone shape — investigative), line 144 equivalent ('*we* was a current' — brief emotional), line 196 equivalent ('water finding a crack in stone' — emotional pivot). Cut: line 52 redundancy (erosion passage rewritten without water), line 130 'cold water through cracked stone' → 'weight of weeks pressing down,' line 158 'surface current' dead metaphor, line 160 'tributaries joining a river' overwritten metaphor, line 222 'stream follows a channel,' line 238 near-duplicate of 196. Water-against-stone image reduced from 4 uses to 1 (emotional pivot only).",
+      "linesAffected": "Throughout"
+    },
+    {
+      "findingId": "LINE-010-004",
+      "action": "applied",
+      "description": "Reduced 'the way' comparative constructions from 14 to 3. Kept: 'in the way Lirien's fingers occasionally checked' (observation, character-specific), 'the firelight catching the water's surface' (rephrased to gerund, removing 'the way'), 'the way a person notices something beautiful' (Scene 3's most delicate emotional beat). Varied remaining instances with 'as' constructions ('as she read all official documents'), direct description, or elimination of the comparison entirely.",
+      "linesAffected": "Throughout"
+    },
+    {
+      "findingId": "LINE-010-005",
+      "action": "applied",
+      "description": "Consolidated three stacked closings into one. Chose line 252 equivalent as the chapter's closer: 'Nothing happened in the night except the ordinary passage of hours through a world slowly coming apart, and two people sleeping near each other because they wanted to, and that wanting being enough.' Cut line 246's triple-parallel ('also resting, also softening, also allowing') and 24-word philosophical gloss on falling asleep entirely. Tightened line 248: 'She slept. Beside her — close enough that the warmth was shared — Kaelith slept too.' Cut 'not touching, not quite,' 'operative and target,' 'quieter and smaller and more honest.' Cut 'for the first time' from final line — reader knows.",
+      "linesAffected": "~246-252 → consolidated into final 6 lines"
+    },
+    {
+      "findingId": "LINE-010-006",
+      "action": "applied",
+      "description": "Reduced analytical meta-commentary in Scene 3 opening by approximately 60%. Lines 166-174 original (cataloguing silence types, explicit contrast between operational and non-operational silence, listing avoidance behaviors) replaced with sensory-grounded writing that shows the change through prose texture rather than describing it. 'She was sitting by a fire with someone. The impulse to fill the quiet surfaced — to review, to calculate, to reestablish the familiar current of purpose. She let it pass.' Lets the moment land through physical reality rather than intellectualized analysis of the emotional event.",
+      "linesAffected": "~180-198 (revised Scene 3 opening)"
+    },
+    {
+      "findingId": "LINE-010-007",
+      "action": "applied",
+      "description": "Replaced 'The words hung in the air with the sparks — drifting, cooling, falling' cliché with 'The fire popped. Neither of them spoke.' Lets the content of Kaelith's statement ('Someone wants Ythara to wake') carry its own weight without decorative metaphor.",
+      "linesAffected": "~142 (revised equivalent)"
+    },
+    {
+      "findingId": "LINE-010-008",
+      "action": "applied",
+      "description": "Replaced 'terrible resignation' direct emotion label with shown facial response: 'The jaw held steady. The eyes stayed level. Nothing moved — and the stillness was the answer. A face that had already carried this weight for weeks and found no relief in confirmation.' Routes the telling through Lirien's observational specialty (reading faces via absence of movement) without naming the emotion directly.",
+      "linesAffected": "~142-144 (revised equivalent)"
+    },
+    {
+      "findingId": "LINE-010-009",
+      "action": "applied",
+      "description": "Eliminated 'surrender' emotion label by removing the entire triple-parallel closing passage (line 246) per LINE-010-005. The revised closing routes through sensory detail and simple action ('She slept.') rather than naming internal states philosophically.",
+      "linesAffected": "Addressed via LINE-010-005 closing consolidation"
+    },
+    {
+      "findingId": "LINE-010-010",
+      "action": "applied",
+      "description": "Broke 85-word polysyndeton sentence (line 212) into 3 sentences: '\"The chest,\" Kaelith said, and her hand moved to her sternum — unconsciously or not. The firelight caught the Oathbrand's glow through the linen at her collarbone. For a moment the two lights overlapped, fire and brand, and Lirien noticed this the way a person notices something beautiful — without needing to know why.' Also fixes COPY-010-004 (sleeve → collarbone). Preserves the anti-classification polysyndeton in the final clause where it serves the emotional beat.",
+      "linesAffected": "~212 → 3 sentences in revised"
+    },
+    {
+      "findingId": "LINE-010-011",
+      "action": "applied",
+      "description": "Fixed awkward phrasing: 'The statement landed with a precision Lirien had not intended to carry implication' → 'The words carried an implication Lirien had not intended.' Direct and clear.",
+      "linesAffected": "~34 (revised equivalent)"
+    },
+    {
+      "findingId": "LINE-010-012",
+      "action": "applied",
+      "description": "Corrected homophone error: 'timber' → 'timbre' (line 70 equivalent). Also addresses COPY-010-005.",
+      "linesAffected": "~80 (revised equivalent)"
+    },
+    {
+      "findingId": "LINE-010-013",
+      "action": "applied",
+      "description": "Fixed 'processed...processed' repetition: 'processed Lirien's forged authorization with the perfunctory attention of someone who had processed ten thousand such documents' → 'handled Lirien's forged authorization with the perfunctory attention of someone who had seen ten thousand such documents.'",
+      "linesAffected": "~38 (revised equivalent)"
+    },
+    {
+      "findingId": "LINE-010-014",
+      "action": "applied",
+      "description": "Softened second Kaelith vocabulary catch device: '(Architecture. Her word. Applied with structural precision. Consistent with — )' → '(Architecture. Structural precision. Consistent with —)'. Removed explicit 'Her word' metacommentary; reader already understands the Kaelith connection from the first instance. Parenthetical works on its own as the system destabilizing.",
+      "linesAffected": "~84 (revised equivalent)"
+    },
+    {
+      "findingId": "LINE-010-015",
+      "action": "applied",
+      "description": "Reduced 'something [abstract/unnamed]' construction from 5 to 2 uses. Retained: 'Something colder than anger' (attempts classification, reaches toward Kaelith's domain) and 'Something shifted behind Kaelith's eyes' (concrete observation). Cut: lines 186, 236, 248 instances. Line 186 replaced with 'a resonance with no name.' Line 236 replaced with 'quieter than before. More honest.' Line 248 cut entirely via closing consolidation.",
+      "linesAffected": "Throughout Scene 2-3"
+    },
+    {
+      "findingId": "LINE-010-016",
+      "action": "applied",
+      "description": "Broke long coast-narrative paragraph (~150 words) at the transition between atmospheric description and character-defining narrative. First paragraph: stone houses, mother teaching architecture. Brief Lirien gesture at the break ('shifted closer to the fire... gave them a branch to turn') to ground the scene in physical reality. Second paragraph: tide pool wall story.",
+      "linesAffected": "~230 area split into two paragraphs with gesture break"
+    },
+    {
+      "findingId": "LINE-010-017",
+      "action": "applied",
+      "description": "Added action beat within briefing monologue: 'Kaelith's hand stilled on her knee' inserted after the first two briefing sentences, breaking the clinical delivery with an observable physical reaction. Changed 'Lirien organized.' to 'Lirien began at the foundation.' — reveals character through vocabulary (architectural language reflecting Kaelith's influence) rather than telling the reader about an internal state.",
+      "linesAffected": "~110-114 (revised equivalents)"
+    },
+    {
+      "findingId": "COPY-010-001",
+      "action": "reviewed-no-change",
+      "description": "Seventh/Sixth Seat discrepancy is a pre-existing cross-document issue (DISC-001) that requires world-bible-level resolution, not chapter-level change. Chapter 10 is internally consistent with all other chapters (ch12, ch13, ch15, ch21) in using 'Seventh Seat.' With the DEV-010-001 scale-back, the chapter now references 'Seventh Seat' as a designation without a personal name, which is consistent with both the chapter's role and the broader naming convention.",
+      "linesAffected": "N/A"
+    },
+    {
+      "findingId": "COPY-010-002",
+      "action": "applied",
+      "description": "Changed 'the Dawnward Range' to 'the Vireth Range' to align with established geography in world-bible/geography.json (LOC-008 The Narrowing, LOC-010 Serath Dûn). Also updated the DEV-010-008 addition to use 'Vireth Range approach' for consistency.",
+      "linesAffected": "~148, ~176 (revised equivalents)"
+    },
+    {
+      "findingId": "COPY-010-003",
+      "action": "applied",
+      "description": "Changed Oathbrand glow from 'silver-blue' to 'silver-black' per canonical description in MAG-008, CHAR-001 physical description, and ch8 revised (line 53). Applied at one instance in Scene 2.",
+      "linesAffected": "~110 (revised equivalent)"
+    },
+    {
+      "findingId": "COPY-010-004",
+      "action": "applied",
+      "description": "Changed Oathbrand glow visibility from 'through her sleeve' to 'through the linen at her collarbone' per canonical Oathbrand placement (above left collarbone, CHAR-001 physical description). Consistent with ch8 revised ('silver-black light through the linen weave') and ch2 revised ('collarbone where her shirt collar sat open').",
+      "linesAffected": "~212 (revised equivalent, also addressed via LINE-010-010 sentence restructure)"
+    },
+    {
+      "findingId": "COPY-010-005",
+      "action": "applied",
+      "description": "Corrected 'timber' to 'timbre.' Same fix as LINE-010-012.",
+      "linesAffected": "~80 (revised equivalent)"
+    },
+    {
+      "findingId": "COPY-010-006",
+      "action": "applied",
+      "description": "Added question mark to interrogative sentence: '\"What were they like,\" Lirien said, \"from the coast.\"' → '\"What were they like,\" Lirien said, \"from the coast?\"' Corrects punctuation per INV-019.",
+      "linesAffected": "~196 (revised equivalent)"
+    },
+    {
+      "findingId": "COPY-010-007",
+      "action": "applied",
+      "description": "Changed 'the Chancellor's pennant' to 'the Conclave's pennant' to align with established governance terminology. No 'Chancellor' role exists in world-bible/politics.json; the High Conclave governs Aranthem through its seven seats.",
+      "linesAffected": "~16 (revised equivalent)"
+    },
+    {
+      "findingId": "COPY-010-008",
+      "action": "reviewed-no-change",
+      "description": "Acknowledged 'What else' formatting as deliberate voice choice. Kaelith's voice profile specifies 'Statements, not questions. Tactical questions only.' — 'What else' functions as a command/invitation ('tell me what else') rather than an interrogative, consistent with her dialogue patterns. Lirien's repetition on the next line is a tracked voice-contamination marker (mirroring Kaelith's phrasing), noted in narration as 'deliberate. And also not.' No punctuation change made."
+    }
+  ],
+  "findingsDeferred": [
+    {
+      "findingId": "COPY-010-009",
+      "reason": "Continuity tracker issue, not chapter content. The tracker's ch10 entry lists 'Night: Kaelith practices tier-two magic. Rebuilding capacity' which contradicts both the draft (ends with sleep) and MAG-008 (Kaelith is Tier 1 while Oathbranded; removal occurs ch11). This erroneous entry should be removed from the continuity tracker by the continuity-tracker agent, not addressed in chapter revision."
+    },
+    {
+      "findingId": "COPY-010-010",
+      "reason": "Continuity tracker issue, not chapter content. The tracker records 'withholds third page' but the draft dramatizes withholding the Seventh Seat reference instead. Tracker entry should be updated by the continuity-tracker agent to match the revised chapter's actual content: 'withholds earlier knowledge of Seventh Seat reference — caught by Kaelith.'"
+    }
+  ],
+  "wordCountBefore": 4576,
+  "wordCountAfter": 3875,
+  "wordCountReduction": 701,
+  "wordCountNote": "15.3% reduction exceeds the DEV-010-005 target of 4,200-4,300 words. The deeper cut results from the cumulative effect of addressing LINE-010-001 (negation reduction from ~40 to ~12), LINE-010-002 (operative vocabulary reduction by ~75% in Scene 3), LINE-010-003 (water metaphor reduction from 10 to 3), LINE-010-005 (three stacked closings consolidated to one), and LINE-010-006 (analytical meta-commentary reduced by ~60% in Scene 3 opening). The tighter prose serves the chapter's emotional thesis: Lirien's operative system going quiet is embodied by the prose going simpler. Chapter outline target was 4,100; original overshoot was 11.6% above target; revised undershoot is 5.5% below target. Despite the reduction, all structural beats, subplot intersections, and emotional milestones are preserved, and new content was added (Thenndal subplot, extended debate, extended withholding reaction).",
+  "summary": "Chapter 10 revision complete. All 35 findings addressed across three editorial reports (0 critical, 10 major, 11 minor, 6 suggestions from editors; plus 2 critical, 4 major, 7 minor, 4 suggestions from line edit). 31 findings applied, 4 reviewed-no-change or acknowledged-as-intentional, 2 deferred as continuity-tracker-level issues outside chapter scope. Major structural changes: (1) Thalen Reyvas naming scaled back to Seventh Seat designation only, preserving BEAT-009 for ch12; (2) Ashborne Legacy / Thenndal subplot intersection added, satisfying SUB-003 ch10 intersection and try-fail cycle's expected evidence; (3) strategic debate extended with intelligence shelf-life counter-argument; (4) Kaelith's reaction to withholding deepened with institutional-betrayal recognition. Major prose changes: negation pattern reduced from ~40 to ~12, operative vocabulary in Scene 3 reduced by ~75%, figurative water metaphors reduced from 10 to 3, 'the way' constructions reduced from 14 to 3, three stacked closings consolidated to one, Scene 3 analytical meta-commentary replaced with sensory-grounded prose. All copy-edit factual corrections applied: Oathbrand color (silver-black), Oathbrand location (collarbone), geography (Vireth Range), governance (Conclave's pennant), homophone (timbre), punctuation (question marks). Identified chapter strengths preserved: incomplete proximity observation, briefing-protocols revelation, coast question emotional pivot, coast/stars micro-exchange, watch-rotation subtext climax, archive discovery progression."
+}

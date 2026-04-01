@@ -1,0 +1,221 @@
+{
+  "chapter": 20,
+  "title": "Contract Fulfilled in Letter, Broken in Spirit",
+  "pov": {
+    "characterId": "CHAR-002",
+    "characterName": "Lirien Dael",
+    "perspective": "close third person",
+    "tense": "past"
+  },
+  "wordCount": 4031,
+  "targetWordCount": 4100,
+  "act": "Act III",
+  "tensionLevel": 9,
+  "status": "draft",
+  "scenes": [
+    {
+      "id": "SCN-56",
+      "title": "Preparation",
+      "type": "scene",
+      "goal": "Prepare for contract loophole — ritual space, magical parameters, emotional reality",
+      "conflict": "Lirien must prepare to stop the heart of the woman she loves",
+      "valueShift": {
+        "from": "We have a plan",
+        "to": "We are about to enact it, and the plan requires me to kill the person I love"
+      },
+      "fiveCommandments": {
+        "incitingIncident": "Ritual preparation begins — ward-stones placed, magical parameters established",
+        "complication": "The resonance bond is essential for monitoring but means Lirien will feel Kaelith die",
+        "crisis": "Proceed knowing she will feel the death through the bond, or find another way",
+        "climax": "Lirien confirms readiness, Kaelith gives verbal consent, preparations complete",
+        "resolution": "Ready. The loophole depends on precision, trust, and the bond"
+      },
+      "beats": [
+        "ACTION: Ritual space preparation — ward-stones, timing calculations, operative precision",
+        "DIALOGUE: Final exchange — clinical language containing subtext of love and trust",
+        "INTERNAL: Worst-case scenarios — loophole becomes murder if resuscitation fails",
+        "REACTION: Stillness before beginning — eyes meeting, bond carrying determination and terror"
+      ]
+    },
+    {
+      "id": "SCN-57",
+      "title": "Execution",
+      "type": "scene",
+      "goal": "Execute the loophole — stop heart, satisfy binding, restart heart",
+      "conflict": "Millisecond precision from a woman who will feel her love die through the bond",
+      "valueShift": {
+        "from": "Trust tested",
+        "to": "Trust proven through the most literal surrender"
+      },
+      "fiveCommandments": {
+        "incitingIncident": "Lirien initiates — fae magic through the bond targeting heartbeat",
+        "complication": "Binding resists — enforcement mechanism fights the loophole",
+        "crisis": "Push through resistance at risk of damaging the bond, or abort",
+        "climax": "Heart stops. Bond goes silent. Binding registers fulfillment and dissolves",
+        "resolution": "Lirien channels everything and restarts Kaelith's heart"
+      },
+      "beats": [
+        "ACTION: Initiation — fae magic through bond, precision targeting cardiac conduction",
+        "ACTION: Heart stops, bond goes SILENT, binding dissolves in cascade",
+        "ACTION: Resuscitation — everything channeled through bond, heart restarts",
+        "REACTION: Kaelith gasps back, bond floods with mutual sensation"
+      ]
+    },
+    {
+      "id": "SCN-58",
+      "title": "Aftermath",
+      "type": "sequel",
+      "goal": "Process aftermath — binding gone, bond remains, love proven free",
+      "conflict": "Emotional aftermath of literal death and resurrection",
+      "valueShift": {
+        "from": "Contract dissolved",
+        "to": "What remains is only real — and we choose to keep it"
+      },
+      "fiveCommandments": {
+        "incitingIncident": "Quiet after resurrection — both on floor, breathing, bond carrying relief",
+        "complication": "Lirien checks — binding truly gone, body different, feelings unchanged",
+        "crisis": "Accept the proof that the love is real, or continue doubting",
+        "climax": "Kaelith speaks: 'The binding is gone. You're still here.'",
+        "resolution": "Together because they choose to be. The cage is open. Both stay"
+      },
+      "beats": [
+        "INTERNAL: Body-check — cataloguing binding absence, what remains is pure and chosen",
+        "DIALOGUE: 'The binding is gone. You're still here.' / 'I was always going to be here.'",
+        "ACTION: Physical reconnection — hands, foreheads, contact different without binding",
+        "REACTION: Return to mission reality (Quietus, Thalen) but hand doesn't leave. Close: 'What remains is only real.'"
+      ]
+    }
+  ],
+  "romanceBeat": {
+    "beat": "Trust Proves Itself — Kaelith Consents to Death and Resurrection",
+    "stage": "trust-proven",
+    "vulnerabilityLadderStep": 11,
+    "description": "The ultimate vulnerability: allowing the person you love to stop your heart, trusting they will restart it. When the binding dissolves and love remains, proof is complete."
+  },
+  "fantasyBeat": {
+    "beat": "Contract Fulfilled Through Temporary Heartbeat Cessation — Loophole Exploited",
+    "description": "The kill contract's exact wording — 'cessation of heartbeat' as state not duration — is exploited through temporary cardiac arrest. Binding architecture resists but dissolves when the letter of the contract is satisfied."
+  },
+  "emotionalArc": {
+    "start": "Terrified precision — preparing to stop the heart of the woman she loves",
+    "pivot": "The moment Kaelith's heart restarts and the bond floods back",
+    "end": "Stunned, fierce relief — binding gone, love remains, proof complete"
+  },
+  "craftToolCompliance": {
+    "T5-ToneContract": {
+      "applied": true,
+      "notes": "Maintained darkly romantic, emotionally restrained but intense tone throughout. Magic scenes treated as intimate and destabilizing per tone contract. No sentimentality — emotion earned through action and sensation."
+    },
+    "T6-StakesEscalation": {
+      "applied": true,
+      "notes": "Stakes at maximum — literal life and death. The loophole's margin of error (4-7 seconds) creates constant escalation pressure."
+    },
+    "T7-BlackMoment": {
+      "applied": true,
+      "notes": "Recovery from Ch16 black moment completed. Trust rebuilt through ultimate surrender — the inverse of betrayal."
+    },
+    "T8-InternalExternalResistance": {
+      "applied": true,
+      "notes": "External: binding enforcement mechanism resists the loophole. Internal: Lirien's fear of failure, analytical mind running worst-case scenarios."
+    },
+    "T10-SandersonsLaws": {
+      "applied": true,
+      "notes": "All magic uses established mechanics only: resonance bond (Ch11), fae precision magic (established), contract wording loophole (Ch14/FACT-008), binding dissolution cascade. No new abilities introduced."
+    },
+    "T12-DualArcInterleave": {
+      "applied": true,
+      "notes": "Fantasy action (contract dissolution) IS romance proof. The dual arcs merge completely — stopping the heart fulfills the contract AND proves the love."
+    },
+    "T13-TensionMapping": {
+      "applied": true,
+      "notes": "Tension level 9 maintained throughout. Preparation builds dread, execution delivers maximum tension, aftermath provides earned recovery."
+    },
+    "T15-Foreshadowing": {
+      "applied": true,
+      "notes": "FS-008 (Oathbrand removal proof of precision), FS-011 (Seep tacit support), FS-012 (loophole research payoff) all serviced. Seeds planted for Ch21 Quietus approach."
+    },
+    "T16-SymbolicMotifs": {
+      "applied": true,
+      "notes": "MOT-001 (pallor/silver on Kaelith's arm), MOT-002 (bond as living current), MOT-003 (water/current throughout Lirien's narration), MOT-004 (cage opening, door/threshold). Architecture kept exclusively to Kaelith's speech."
+    },
+    "T17-VoiceFingerprinting": {
+      "applied": true,
+      "notes": "Lirien's voice maintained throughout: water metaphors, classification language, field-note fragments, operative precision. No military/percussive rhythm (Kaelith's domain). Sentences elongate under emotional pressure."
+    },
+    "T18-ShowDontTell": {
+      "applied": true,
+      "notes": "All emotion conveyed through sensation, bond physics, physical action, and internal processing. No emotion labels. The bond silence conveys loss better than any stated grief."
+    },
+    "T20-EmotionalThroughline": {
+      "applied": true,
+      "notes": "Lirien's emotional state: terrified precision → desperate determination → overwhelming relief → quiet proof. No repeated dominant emotion from Ch19."
+    },
+    "T21-MRUStructure": {
+      "applied": true,
+      "notes": "MRU pattern maintained in key moments: external stimulus (heart stops) → emotional reaction (bond silence) → physical reflex (vision darkens, hands shake) → rational action (pour everything into bond) → speech ('I was always going to be here')."
+    },
+    "T23-PacingRhythm": {
+      "applied": true,
+      "notes": "Three-beat structure: slow preparation (dread), fast execution (crisis), slow aftermath (processing). High tension balanced by recovery in final scene."
+    },
+    "T24-SubtextInDialogue": {
+      "applied": true,
+      "notes": "Clinical dialogue in SCN-56 carries emotional subtext throughout. Kaelith's consent is love disguised as operational confirmation. Final dialogue in SCN-58 has surface and depth aligned for the first time."
+    },
+    "T25-ThematicArgument": {
+      "applied": true,
+      "notes": "Act III forces hardest version of trust question: can trust survive literal death at a lover's hands? Answer earned through action, not declaration."
+    }
+  },
+  "foreshadowingActivity": {
+    "serviced": [
+      {
+        "id": "FS-008",
+        "description": "Oathbrand removal referenced as proof of what Lirien's hands can do — precision and healing, not just killing"
+      },
+      {
+        "id": "FS-011",
+        "description": "Seep's tacit support for loophole acknowledged — contract language always contained exploitable phrasing"
+      },
+      {
+        "id": "FS-012",
+        "description": "Contract loophole fully executed — cessation of heartbeat as state, not duration, binding dissolved"
+      }
+    ],
+    "planted": [
+      {
+        "target": "Ch21",
+        "description": "Quietus approach seeded — three days travel, god-seal reinforcement still needed, Thalen still operating"
+      },
+      {
+        "target": "Ch21",
+        "description": "Lirien's unbound magic — precision and power without contract interference, available for Quietus confrontation"
+      }
+    ]
+  },
+  "continuityNotes": {
+    "characterPositions": {
+      "CHAR-001": "Forward shelter, Ashborne relay network, between Rivenmarch and Quietus",
+      "CHAR-002": "Forward shelter, same location as CHAR-001"
+    },
+    "bondState": "Open, full, cleaner post-dissolution — binding interference removed, resonance sharper",
+    "contractState": "DISSOLVED. Binding fulfilled through temporary heartbeat cessation. Contract architecture collapsed. Lirien is unbound.",
+    "pallorProgression": "Silver past elbow, three fingers frozen left hand, cold tracking bone along ulna. Unchanged by contract dissolution.",
+    "timelinePosition": "Day ~31-32 (three days after Ch19 Rivenmarch, en route to Quietus)"
+  },
+  "sceneValueShifts": {
+    "SCN-56": "confident planning → crushing emotional reality of what the plan requires",
+    "SCN-57": "trust tested → trust proven through death and resurrection",
+    "SCN-58": "contract dissolved → love proven real and freely chosen"
+  },
+  "emotionalBoundaryStates": {
+    "chapterStart": {
+      "CHAR-002": "Terrified precision, operative mode at maximum, preparing to stop beloved's heart",
+      "CHAR-001": "Determined trust, steady resolve, consenting to vulnerability"
+    },
+    "chapterEnd": {
+      "CHAR-002": "Stunned relief, tears unclassified, love proven real. First experience of unbound choice",
+      "CHAR-001": "Fierce tenderness, structural doubt collapsed, immediately redirecting to mission (Quietus)"
+    }
+  }
+}

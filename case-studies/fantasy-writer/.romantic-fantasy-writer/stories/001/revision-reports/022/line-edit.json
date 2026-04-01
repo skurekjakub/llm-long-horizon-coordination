@@ -1,0 +1,247 @@
+{
+  "chapter": 22,
+  "title": "What the Water Chose",
+  "pov": "Lirien Dael (CHAR-002)",
+  "wordCount": 4098,
+  "editedBy": "line-editor",
+  "timestamp": "2025-08-01T10:00:00Z",
+  "overallAssessment": "Chapter 22 is the strongest emotional chapter in the manuscript. The arc from classification-to-decision, the earned HFN, the river metaphor capstone, and the dialogue — especially 'I stay because I want to' — are all working at a high level. Voice adherence is excellent: Lirien reads as Lirien from the opening line, the classification-first register dissolves appropriately across three scenes, and Kaelith's dialogue is recognisably clipped and structural. The water-motif resolution ('That was not flowing. That was deciding.') is the novel's best single passage. However, the chapter has one critical structural problem that undermines its otherwise strong prose: a pervasive negation-contrast rhetorical pattern ('Not X. Y.' / 'not A but B') that appears approximately 20 times in 222 lines, with 6 instances clustering in the final 20 lines. This single-pattern dominance creates a rhythmic monotony that the reader will feel even if they cannot name it. Additionally, the 'through the bond' mechanism has calcified into a formulaic construction that bypasses show-don't-tell discipline, 'the particular [noun] of' has become a mannered tic, and three stock literary constructions land at the chapter's emotional climax where originality matters most. No banned phrases. No genre clichés. No voice confusion. Dialogue is natural and subtextual throughout. The problems are all repetition and tell-patterns that can be fixed without structural changes.",
+  "findingSummary": {
+    "critical": 1,
+    "major": 4,
+    "moderate": 4,
+    "minor": 8,
+    "total": 17
+  },
+  "findings": [
+    {
+      "id": "LINE-201",
+      "severity": "critical",
+      "category": "repetition",
+      "description": "Negation-contrast structural saturation. The rhetorical move of defining by what something is NOT — 'Not X. Y.' / 'not A but B' / 'No X. No Y. Z.' — appears approximately 20 times across the chapter's 222 lines, making it the dominant rhythmic device. Thematically apt (Lirien classifies by exclusion, the chapter is about moving from what she is NOT to what she chooses), but the sheer density creates monotony. The final 20 lines (L184–200) contain 6 instances, double the INV-017 threshold of >3 repeated structures per page. Additional dense clusters appear at L88–108 (4 instances in ~20 lines) and L38–50 (3 instances in ~12 lines). The reader begins hearing the device rather than the content.",
+      "lineRef": {"start": 14, "end": 208},
+      "instances": [
+        {"line": 14, "text": "'Not the quality she had trained her eyes to assess...' + 'Not the muffled, second-hand approximation'"},
+        {"line": 32, "text": "'not collapsing but giving way'"},
+        {"line": 38, "text": "'not torn, not the raw, violent rending'"},
+        {"line": 40, "text": "'Not the carefully negotiated, effortful access'"},
+        {"line": 46, "text": "'Not Kaelith's — a lighter tread'"},
+        {"line": 50, "text": "'not Court-formal, not Seep-operational. Something between.'"},
+        {"line": 68, "text": "'Not a Hand of the Third Reach. Not a Seep operative. Not a contractor'"},
+        {"line": 78, "text": "'Not betrayal. Not forty years of deliberate sabotage.'"},
+        {"line": 88, "text": "'Not absence of feeling. Presence of it, but resting.'"},
+        {"line": 94, "text": "'not surrender, not frustration. Release.'"},
+        {"line": 100, "text": "'Not bitter. Not resigned.'"},
+        {"line": 108, "text": "'Not a declaration — Kaelith did not make declarations.'"},
+        {"line": 116, "text": "'Not touching — the space between them deliberate'"},
+        {"line": 124, "text": "'not a smile. The Kaelith-equivalent'"},
+        {"line": 144, "text": "'Not silence — the mountain had its own ambient sound.'"},
+        {"line": 184, "text": "'not when the binding demanded it, not when the world was ending'"},
+        {"line": 186, "text": "'Not because I was sent. Not because the world needs it.'"},
+        {"line": 188, "text": "'not suppression but absorption'"},
+        {"line": 192, "text": "'Not because I must — because I choose to.'"},
+        {"line": 194, "text": "'Not desperate, not clinging'"},
+        {"line": 200, "text": "'Not the filtered silver approximation'"},
+        {"line": 208, "text": "'Not perfect.'"}
+      ],
+      "suggestedFix": "Reduce to 10–12 instances by converting approximately half to positive-first constructions. The chapter's thematic arc supports a trajectory: heavy negation early (Lirien classifying by exclusion) thinning toward direct positive assertion by the climax. KEEP the strongest instances — L68 (identity crisis litany), L88 ('Not absence of feeling'), L186 (the spoken declaration 'Not because I was sent'). CONVERT the weakest: L32 ('not collapsing but giving way' → 'giving way — softer than collapse'), L94 ('not surrender, not frustration. Release.' → 'A release. The exhaled weight of a threat that never arrived.'), L116 ('Not touching' → 'The space between them deliberate'), L124 ('not a smile' → 'The Kaelith-equivalent of a smile'), L194 ('Not desperate, not clinging' → 'Firm. Steady.'). In the final pages specifically, reduce from 6 to 2 — the declaration at L186 and one more. This preserves the rhetorical power where it matters while preventing the device from drowning the chapter's resolution."
+    },
+    {
+      "id": "LINE-202",
+      "severity": "major",
+      "category": "repetition",
+      "description": "'Through the bond, [she/Lirien] felt...' appears 6 times with near-identical syntax (L26, L88, L110, L128, L156, L188), and 6 additional bond references use variant phrasing (L116, L160, L164, L176, L198, L204). Total bond-mechanism references: 12 in 222 lines — one every 18 lines. The construction has calcified into a formulaic entry point for conveying Kaelith's emotional state. Five of the six 'through the bond' instances follow the identical pattern: 'Through the bond, [subject] felt [emotion-label or abstract quality].' This structural repetition compounds the show-don't-tell problem in LINE-203.",
+      "lineRef": {"start": 26, "end": 204},
+      "instances": [
+        {"line": 26, "text": "Through the bond, Lirien could feel her: deep and steady"},
+        {"line": 88, "text": "Through the bond, Lirien felt the quality of Kaelith's morning"},
+        {"line": 110, "text": "Lirien felt the words arrive through the bond"},
+        {"line": 128, "text": "Through the bond, she felt Kaelith's response"},
+        {"line": 156, "text": "Through the bond, Lirien felt her considering"},
+        {"line": 188, "text": "Through the bond, she felt Kaelith receive the words"}
+      ],
+      "suggestedFix": "Reduce 'through the bond' to 3 instances — one per scene. Replace the others with varied sensory constructions that convey bond-data without naming the mechanism: 'The warmth at her back shifted — Kaelith, settling deeper' (L26), 'Kaelith's considering arrived the way it always did: straight lines and right angles pressing gently against Lirien's awareness' (L156), 'The impact of Lirien's words registered first as sensation — a stillness spreading through the air between them' (L188). The bond is an established world element by chapter 22; the reader does not need the mechanism named every time."
+    },
+    {
+      "id": "LINE-203",
+      "severity": "major",
+      "category": "show-tell",
+      "description": "Bond-mediated emotion-telling. At four key passages, the bond mechanism is used to name Kaelith's emotions directly rather than conveying sensory data that Lirien must interpret through her analytical process. This bypasses INV-005 by inserting a magical mechanism between stimulus and told emotion. Lirien's voice should process bond-transmitted data as raw sensation, then analyse, then (in SCN-64) allow the emotion through without the analysis step. Instead, the bond functions as an omniscient-narrator shortcut.",
+      "lineRef": {"start": 88, "end": 188},
+      "instances": [
+        {"line": 88, "text": "'the particular peace of a body that had carried weight to its limit and set it down' — names 'peace' directly"},
+        {"line": 128, "text": "'Acknowledgment. The particular quality of being seen by someone whose judgment you trusted completely' — names 'acknowledgment' and explains the trust relationship"},
+        {"line": 176, "text": "'hope so careful it was almost indistinguishable from fear' — names both 'hope' and 'fear' and tells the reader how to compare them"},
+        {"line": 188, "text": "'Something in Kaelith's chest opened' — narrates Kaelith's internal state from outside; this is Lirien's POV but the prose accesses Kaelith's interiority directly"}
+      ],
+      "suggestedFix": "Convert to sensory-then-analysis pattern consistent with Lirien's voice. L88: 'a stillness so thorough it carried its own weight — the quality of sleep where the body had simply stopped negotiating.' L128: show the bond-data as sensation: 'warmth through the bond, steady and directed — the specific signature of someone seeing you and choosing not to look away.' L176: let Lirien's analytical lens decode: 'something in the bond she could read only by its edges — the tremor that could be wanting or its opposite, held so carefully she could not determine which.' L188: filter through bond-perception: 'Through the bond, the stillness shifted — not tightening but opening, a held thing finally released.'"
+    },
+    {
+      "id": "LINE-204",
+      "severity": "major",
+      "category": "repetition",
+      "description": "'The particular [noun] of a [person/body] who/that...' — this formulaic analytical construction appears 5 times (L48, L88, L128, L176, L208) with identical syntactic structure. While Lirien's analytical register naturally gravitates toward taxonomic phrasing, repeating the exact same frame 5 times in ~4100 words creates a mannered tic that the reader will recognise as authorial habit rather than character voice. The pattern is especially dense in SCN-63 (3 instances in 40 lines).",
+      "lineRef": {"start": 48, "end": 208},
+      "instances": [
+        {"line": 48, "text": "'the particular discipline of a soldier who had learned...'"},
+        {"line": 88, "text": "'the particular peace of a body that had carried weight...'"},
+        {"line": 128, "text": "'The particular quality of being seen by someone...'"},
+        {"line": 176, "text": "'The particular vulnerability of a woman who had learned...'"},
+        {"line": 208, "text": "'the particular stubbornness of people who built...'"}
+      ],
+      "suggestedFix": "Reduce to 2 instances. Keep L48 (establishes the construction in Lirien's analytical mode) and one in SCN-64 — either L176 or L208. Replace others: L88 → 'a quietness so deep it felt load-bearing'; L128 → 'Warmth — the quality of attention that did not need to be performed'; L208 → 'the stubbornness of people who built outside the boundaries of approval.' The remaining instances will still mark Lirien's voice without creating a pattern."
+    },
+    {
+      "id": "LINE-205",
+      "severity": "major",
+      "category": "repetition",
+      "description": "Near-verbatim image repetition: Kaelith's silver arm and adjusted grip. L84 and L180 describe the same physical detail with nearly identical language and identical metaphorical function. L84: 'She had simply adjusted her grip, the way she adjusted everything: assess the damage, rebuild around it, continue.' L180: 'Had simply adjusted her grip, compensated, rebuilt around the damage the way she rebuilt everything.' Both include: silver on forearm, three frozen fingers, 'adjusted her grip,' 'the way she [verb]ed everything.' The intent may be deliberate echo (Lirien returning to the same observation with different emotional context), but the syntactic overlap is too close for a ~4100-word chapter — it reads as authorial reuse rather than earned callback.",
+      "lineRef": {"start": 84, "end": 180},
+      "instances": [
+        {"line": 84, "text": "'She had simply adjusted her grip, the way she adjusted everything: assess the damage, rebuild around it, continue.'"},
+        {"line": 180, "text": "'Had simply adjusted her grip, compensated, rebuilt around the damage the way she rebuilt everything: with her hands, with her stubbornness'"}
+      ],
+      "suggestedFix": "Keep L180 (the emotionally richer version in the climactic scene). Rewrite L84 to focus on a different physical detail or approach the arm from Lirien's analytical angle: 'The silver caught the light — permanent now, three fingers that would not answer. The cost, written in flesh. Kaelith did not glance at the hand. She had made her accommodation with the loss the way she made accommodations with everything: by continuing.' This preserves the observation but prevents the reader from recognising the second passage as a rewrite of the first."
+    },
+    {
+      "id": "LINE-206",
+      "severity": "moderate",
+      "category": "repetition",
+      "description": "Classification/catalogue vocabulary density. The classify family (classified, classification, catalogued, catalogue, category, unclassified) appears 12 times across the chapter (L12, L28, L30, L32, L34, L40, L70, L100, L136, L146, L156, L186). While this vocabulary is core to Lirien's voice and the chapter's thematic arc (classification → decision), the density means the reader encounters a classify-family word approximately every 18 lines. Distribution is mostly appropriate — 7 in SCN-62 (peak analytical mode), 2 in SCN-63, 3 in SCN-64 — but SCN-64's instances at L136 and L146 occur before the emotional arrival section and could thin further.",
+      "lineRef": {"start": 12, "end": 186},
+      "suggestedFix": "Reduce to 9–10 instances. Keep all SCN-62 instances (they establish the pattern the chapter breaks). Replace L136 'catalogued the departures' with 'watched the departures' or 'tracked the departures.' Keep L146 'classify as companion' (reclassification = evolution) and L156 'classifying it as operational risk' (conscious rejection). Keep L186 'No classification' (the explicit farewell). The arc should read: classify → classify → classify → stop classifying → choose."
+    },
+    {
+      "id": "LINE-207",
+      "severity": "moderate",
+      "category": "cliche",
+      "description": "Three stock literary constructions cluster at or near the chapter's emotional climax, where originality matters most. (1) L176: 'hope so careful it was almost indistinguishable from fear' — the 'X so Y it was almost Z' formula is a recognisable literary-fiction move. (2) L192: 'The simplest words. The hardest truth.' — superlative-contrast parallelism is editorial shorthand that tells the reader how to weight the dialogue. (3) L196: 'That was all. That was everything.' — stock romantic-literary construction that has appeared in thousands of novels. Three stock phrases exceeds the INV-017 cap of 2 cliché phrases per chapter.",
+      "lineRef": {"start": 176, "end": 196},
+      "instances": [
+        {"line": 176, "text": "'hope so careful it was almost indistinguishable from fear'"},
+        {"line": 192, "text": "'The simplest words. The hardest truth.'"},
+        {"line": 196, "text": "'That was all. That was everything.'"}
+      ],
+      "suggestedFix": "Cut 2 of 3. Best candidates for replacement: L192 — delete entirely; the italicised thought that follows ('I want this. I want you.') carries the weight without the editorial announcement. L196 — rewrite to trust the gesture: 'They sat against the stone wall of a shelter at the base of a mountain where a god was sealed, and they held hands.' Let the contrast between epic setting and simple gesture do the work without narrating the significance. L176 — reframe through Lirien's analytical lens: 'something the bond could not classify cleanly — the tremor that wanting and fearing produced in identical proportions.' This preserves the insight while using Lirien's vocabulary instead of stock phrasing."
+    },
+    {
+      "id": "LINE-208",
+      "severity": "moderate",
+      "category": "show-tell",
+      "description": "Backstory-summary telling at the emotional climax. Two passages in SCN-64 summarise character arcs across multiple story locations rather than trusting the reader's accumulated knowledge. L176–177: 'The particular vulnerability of a woman who had learned — through Calwrath, through exile, through a binding that had been built to cage her — that wanting things was the surest way to lose them.' This parenthetical recaps three major story events as emotional annotation. L188–189: 'Something that had been closed since Calwrath and had cracked in Rivenmarch and widened in the forward shelter and broken open in the Quietus chamber and was now, for the first time, allowed to remain that way.' This traces an emotional timeline through four locations. Both are the narrator explaining the arc the reader has already lived through 21 chapters of.",
+      "lineRef": {"start": 176, "end": 189},
+      "instances": [
+        {"line": 176, "text": "'through Calwrath, through exile, through a binding that had been built to cage her'"},
+        {"line": 188, "text": "'closed since Calwrath and had cracked in Rivenmarch and widened in the forward shelter and broken open in the Quietus chamber'"}
+      ],
+      "suggestedFix": "L176: remove the parenthetical backstory. 'The vulnerability of a woman allowing herself to want something she had learned to stop expecting.' Trusts the reader to supply the reasons. L188: simplify to the present sensation. 'Something that had been held closed for a very long time, opening now — allowed, for the first time, to remain that way.' The reader knows the when and where; the chapter only needs the what."
+    },
+    {
+      "id": "LINE-209",
+      "severity": "moderate",
+      "category": "purple-prose",
+      "description": "Star passage thematic over-determination. L200–201: 'A real star — small and sharp and ancient, burning with the hard light of something that had existed before the membrane and would exist after it and did not require anyone's permission to shine.' The star image is beautiful and earns its place. But the final clause ('did not require anyone's permission to shine') explicitly maps the chapter's permission/choice theme onto the image. With 'permission' already appearing 6 times in the chapter (L44, L58, L106, L112, L168, L200), this seventh instance makes the metaphorical mapping explicit where it should be implicit. The star should simply BE the thing it is; the reader will supply the resonance.",
+      "lineRef": {"start": 200, "end": 201},
+      "suggestedFix": "End the star description at 'burning with the hard light of something that had existed before the membrane and would exist after it.' Delete 'and did not require anyone's permission to shine.' The reader has spent 22 chapters absorbing the permission theme. Trust the image."
+    },
+    {
+      "id": "LINE-210",
+      "severity": "minor",
+      "category": "repetition",
+      "description": "'Something' as vague referent. The word appears approximately 15 times across the chapter. Some instances are intentional and effective — Lirien encountering experiences her classification system cannot name (L32: 'Something she did not have a category for'). But the density creates a crutch where the word substitutes for specificity rather than dramatising unclassifiability. Particularly dense in SCN-64: L164 ('something that works,' 'something that was not punishment,' 'something I would like to do'), L172 ('Something smaller. Something honest'), L188 ('Something in Kaelith's chest opened. Something that had been closed').",
+      "lineRef": {"start": 14, "end": 200},
+      "suggestedFix": "Reduce to 8–10 instances. Keep every intentional-vagueness use (L32, L50, L106/112, L188). Replace the functional uses where a more specific word exists: L14 'thinned to something gossamer' → 'thinned to gossamer'; L40 'something else' → 'a clarity'; L164 'something that works' is Kaelith's dialogue (keep — characters speak loosely). The later 'Somethings' at L188 are effective (Lirien naming what she cannot classify). Focus cuts on instances where 'something' is a lazy placeholder rather than a deliberate choice."
+    },
+    {
+      "id": "LINE-211",
+      "severity": "minor",
+      "category": "repetition",
+      "description": "'The way she [verb]ed everything' — three instances with identical syntax create a recognisable tic. L84: 'the way she adjusted everything.' L108: 'the way she tested everything.' L180: 'the way she rebuilt everything.' All three describe Kaelith's characteristic approach, but the identical frame makes the construction visible as a device.",
+      "lineRef": {"start": 84, "end": 180},
+      "instances": [
+        {"line": 84, "text": "'the way she adjusted everything: assess the damage, rebuild around it, continue'"},
+        {"line": 108, "text": "'the way she tested everything: under pressure, to failure, beyond failure'"},
+        {"line": 180, "text": "'the way she rebuilt everything: with her hands, with her stubbornness'"}
+      ],
+      "suggestedFix": "Keep L108 (the strongest — it characterises Kaelith's testing-to-failure ethic in the book's resolution). Vary the other two. L84: 'with the same economy she brought to everything.' L180: 'rebuilding around the loss — her stubbornness doing the work her fingers could not.'"
+    },
+    {
+      "id": "LINE-212",
+      "severity": "minor",
+      "category": "show-tell",
+      "description": "Interpretive narration. L108–110: 'This was not a woman refusing vindication. This was a woman who had outgrown the need for it.' Lirien's narration tells the reader how to interpret Kaelith's emotional state rather than showing Lirien process the observation. The statement is accurate, but it reads as editorial commentary rather than Lirien's analytical voice arriving at a conclusion.",
+      "lineRef": {"start": 108, "end": 110},
+      "suggestedFix": "Filter through Lirien's bond-reading or observation: 'Through the bond, no bitterness. No longing for the institution's correction. Something steadier — the solidity of a structure that had been tested and found sufficient without external verification.' This lets Lirien arrive at the insight through her characteristic process rather than announcing it."
+    },
+    {
+      "id": "LINE-213",
+      "severity": "minor",
+      "category": "show-tell",
+      "description": "Tell-tag on dialogue. L152: 'The deadpan was warm.' Names the quality of Kaelith's delivery rather than showing it through Lirien's perception. The warmth should arrive through observation — the slight shift in Kaelith's eyes, a quality in the voice Lirien can feel but not name — rather than a narrator's adjective.",
+      "lineRef": {"start": 152, "end": 152},
+      "suggestedFix": "'Kaelith's voice held its usual flat register, but the edges were softer than the words required.' Or simply: 'Kaelith asked. Her voice carried something Lirien had learned to recognise as warmth only by its absence from earlier months.'"
+    },
+    {
+      "id": "LINE-214",
+      "severity": "minor",
+      "category": "show-tell",
+      "description": "Explanatory narration of speech rhythm. L164: 'Then the slight lengthening of Kaelith's sentences that Lirien read as emotional territory — the words extending because the feeling required more room.' The observation is accurate and character-appropriate (Lirien reads speech patterns), but the clause after the dash ('the words extending because the feeling required more room') explains the mechanism. The reader can feel the sentence lengthening in Kaelith's actual dialogue that follows. Let the dialogue do the work.",
+      "lineRef": {"start": 164, "end": 164},
+      "suggestedFix": "Cut the explanatory clause. 'Then the slight lengthening of Kaelith's sentences that Lirien had learned to read as emotional territory.' Follow immediately with Kaelith's longer speech. The reader will hear the extension."
+    },
+    {
+      "id": "LINE-215",
+      "severity": "minor",
+      "category": "metaphor-domain",
+      "description": "Architectural metaphor in Lirien's narration. L94: 'The sound of a structure that had been braced for impact receiving instead a weight so light it did not register.' This uses Kaelith's structural/architectural metaphor domain in Lirien's POV narration. While late-story intimacy bleed-through is established (Lirien borrowing Kaelith's vocabulary is a documented arc marker), this passage is Lirien's own analysis, not a moment of conscious borrowing. L94 is early in the chapter, before the emotional arrival that would justify full metaphor-domain bleed.",
+      "lineRef": {"start": 94, "end": 94},
+      "suggestedFix": "Reframe in Lirien's analytical or water domain: 'The sound of a current that had been rushing toward rapids and found the river had gone flat — the crisis already past.' Or use her intelligence register: 'The sound of a threat assessment returning levels so far below projection that the defensive posture was no longer required.'"
+    },
+    {
+      "id": "LINE-216",
+      "severity": "minor",
+      "category": "repetition",
+      "description": "'The world held' / 'held' refrain density in closing pages. 'Held' appears in L190 ('where it would hold'), L194 ('things that held'), L196 ('held hands'), L200 ('Pallor held'), L210 ('the world held. And the love held'), L220 ('held Kaelith's hand... The world held.'). Six 'held' instances in the final 30 lines, including 'the world held' twice. This is clearly the novel's closing refrain and the word is doing genuine thematic work, but the density means 'held' risks registering as lexical saturation rather than resonance.",
+      "lineRef": {"start": 190, "end": 220},
+      "suggestedFix": "Reduce to 4 instances in the closing pages. Keep L200 ('Pallor held'), L210 ('the world held. And the love held' — the thematic statement), and L220 ('The world held' — the closing beat). Remove one of the supporting uses: L194 'things that held' → 'things that lasted.' The refrain gains power from scarcity."
+    },
+    {
+      "id": "LINE-217",
+      "severity": "minor",
+      "category": "sentence-variety",
+      "description": "Body inventory structural uniformity. Lines 16–20: Five consecutive damage-assessment items use identical structure — 'Body part: assessment. Qualification.' ('Left shoulder: the burn... Not urgent. Manageable. Right hand: a split knuckle... Both legs functional... Her ribs ached...'). While the inventory format is character-appropriate (Lirien's operational morning assessment), the rigid parallelism could be disrupted once to let personality breach the clinical frame.",
+      "lineRef": {"start": 16, "end": 20},
+      "suggestedFix": "Break the pattern on the third item: 'Both legs would carry her, though the muscles from the Quietus descent had set overnight into something she would have classified as punishment if she believed the mountain had opinions.' This introduces a flicker of Lirien's evolving wry humour within the clinical frame."
+    }
+  ],
+  "invariantResults": {
+    "INV-017": "FAIL — negation-contrast pattern exceeds 3 repeated structures per page in final pages (6 instances in L184–200). Three stock literary constructions exceed the 2-cliché cap.",
+    "INV-005": "CONDITIONAL-FAIL — bond mechanism used to tell emotions at L88, L128, L176, L188. Backstory-summary telling at L176–177 and L188–189. Most showing is strong (physical observation, gesture, dialogue), but the bond-tell bypass pattern is systematic.",
+    "INV-003": "PASS — Lirien's voice is consistent and recognisable from the opening line. Classification register dissolves appropriately across the chapter. Kaelith's dialogue is distinctively clipped and structural. No voice confusion between characters.",
+    "INV-019": "PASS — dialogue sounds natural throughout. Scout's speech is efficient military. Kaelith's speech is appropriately short and declarative. Lirien's analytical framing of dialogue is character-appropriate. Contractions are present ('I don't,' 'I've,' 'They'll') consistent with late-story voice evolution.",
+    "INV-035": "PASS — no dead spots exceeding half a page. Tension level 4/10 is appropriate for resolution. Micro-tension sustained through identity questions, institutional uncertainty, emotional vulnerability, and the 'what now?' pressure throughout.",
+    "INV-047": "PASS — key exchanges contain effective subtext. 'Something real' carries romantic subtext beneath political statement. 'You'd stay' is a question wearing a statement's clothes. Rivenmarch conversation surfaces practical planning as love language.",
+    "INV-052": "PASS-WITH-NOTE — T14 excluded from craft profile. MRU structure is generally correct at key moments. The declaration sequence (L174–194) follows a full and effective MRU: stimulus ('You'd stay') → bond sensing → physical turn → observation → internal processing → speech. Minor POV bleed at L188 ('Something in Kaelith's chest opened') narrates Kaelith's interiority directly.",
+    "INV-064": "PASS — Lirien's visual/auditory dominance is consistent. She reads faces (L92, L178–180), light quality (L14, L38, L84, L200), micro-expressions and physical vocabulary (L94, L100). Descriptions prioritise visual processing. Late-chapter sensory expansion (feeling the mountain's hum, the bond) is consistent with the emotional-arrival arc.",
+    "INV-073": "CONDITIONAL-PASS — the prose is frequently beautiful, the closing metaphor is the novel's strongest passage, the HFN is earned without sentimentality. But the negation-contrast saturation, bond-tell patterns, and stock constructions at the climax prevent a clean pass. With the repetition addressed, this would be clear publication-ready."
+  },
+  "summary": {
+    "criticalFindings": 1,
+    "majorFindings": 4,
+    "moderateFindings": 4,
+    "minorFindings": 8,
+    "totalFindings": 17,
+    "overallVerdict": "Strong resolution chapter with the novel's best closing passage. One critical finding (negation-contrast saturation at 20+ instances, exceeding INV-017 per-page threshold in the final pages) and four major findings (bond-tell repetition, bond-mediated emotion-telling, formulaic 'the particular' construction, and near-verbatim image reuse). All problems are addressable through reduction and variation without structural changes. The chapter's emotional substance, thematic resolution, dialogue quality, and voice consistency are all working at a high level. The river metaphor closing is genuinely excellent and should not be touched.",
+    "strengths": [
+      "Opening classification-to-unclassified arc (SCN-62) is the best execution of Lirien's voice dissolution in the manuscript",
+      "River metaphor closing (L212–218) is the novel's strongest single passage — 'That was not flowing. That was deciding.' is earned, specific, and unforgettable",
+      "Dialogue throughout is natural, subtextual, and serves narrative function — 'I stay because I want to' as the arc's climactic line is perfectly placed and perfectly simple",
+      "Voice differentiation between Kaelith and Lirien in dialogue is sharp and consistent — Kaelith's clipped declaratives vs. Lirien's analytical flow",
+      "The HFN achieves earned hope without sentimentality — the tone contract's hardest test, passed cleanly",
+      "No banned phrases, no genre clichés, no purple-gothic excess",
+      "Micro-tension sustained throughout a tension-level-4 resolution chapter through identity questions and vulnerability",
+      "Scout dialogue exchange demonstrates range — a third voice that sounds neither like Lirien nor Kaelith",
+      "Conclave document analysis (L78–82) is Lirien's intelligence voice at its most precise and politically astute"
+    ]
+  }
+}

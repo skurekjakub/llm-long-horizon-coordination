@@ -1,0 +1,797 @@
+{
+  "chapter": 21,
+  "title": "What the Stone Remembers",
+  "pov": "Kaelith Maren (CHAR-001)",
+  "iteration": 1,
+  "activeToolCount": 16,
+  "sceneCount": 3,
+  "scenes": ["SCN-59", "SCN-60", "SCN-61"],
+  "overallComplianceScore": 8.7,
+  "overallVerdict": "compliant-with-observations",
+  "verdictRationale": "Chapter 21 demonstrates strong craft tool compliance across all 16 active tools. No critical violations. Six minor/moderate findings flagged for the revision phase. The chapter's primary strength is the seamless fusion of fantasy and romance arcs in SCN-60, where seal stabilization requires the freely chosen partnership — a textbook T12 interleave. Voice consistency is exceptional (9/10, 113 architectural metaphors, zero named emotions). All 9 foreshadowing payoffs are delivered. All 6 mystery box closures are present. Three thematic pillars are embodied through action, not narration. The chapter earns its climactic position.",
+  "toolAssessments": [
+    {
+      "toolId": "T5",
+      "name": "Tone Contract",
+      "compliance": "compliant",
+      "score": 8.5,
+      "sceneAssessments": [
+        {
+          "scene": "SCN-59",
+          "assessment": "pass",
+          "evidence": "Morally complex tone maintained throughout approach to Serath Dún. Atmospherically taut — Ythara's warping influence described through visceral wrongness, not theatrical horror. No melodrama in the kinetic memory activation or Thenndal revelation. Architecture descriptions serve atmosphere without becoming expository travelogue.",
+          "citations": [
+            "Line 32: 'older than stone, older than the mountain, older than the idea of mountains — raw, electric, the flavor of potential' — atmospherically taut without purple excess",
+            "Line 54: 'Recognition.' — single-word paragraph delivers Thalen's reveal without theatrical buildup"
+          ]
+        },
+        {
+          "scene": "SCN-60",
+          "assessment": "pass-with-observation",
+          "evidence": "The seal reinforcement avoids epic-triumphant tone — explicitly rejected in prose. Victory is exhausted, not glorious. However, the passage explaining the Warden mechanism (lines 88-96) carries a slightly expository quality, approaching the forbidden 'pedagogical' tone. Mitigated by being embedded in Kaelith's direct bone-level experience rather than narrator exposition.",
+          "citations": [
+            "Line 130: 'The process was not dramatic. No explosion of light, no thunderclap of divine resolution.' — explicitly rejects epic-triumphant",
+            "Lines 88-92: 'Not magic in the conventional sense. Not power against power. Certainty. The Warden's function was not to fight the god but to affirm the wall...' — borders on expository explanation but anchored in experiential understanding ('a clarity that came from the bones rather than the mind')",
+            "Line 114: 'something that was almost gratitude — a hum that deepened, that resonated in Kaelith's sternum' — approaches sentimental but saved by somatic framing (sternum resonance, not emotional declaration)"
+          ]
+        },
+        {
+          "scene": "SCN-61",
+          "assessment": "pass",
+          "evidence": "Morally complex — Thalen characterized as a true believer with genuine conviction, not a cackling villain. The Calwrath parallel enriches moral complexity without creating false equivalence. No grimdark nihilism (Kaelith chooses institutional accountability). No triumphalism (world is permanently changed, victory is costly). Dry wit secondary tone appropriately absent — climax chapters do not require humor.",
+          "citations": [
+            "Line 194: 'Grief, perhaps — the grief of a visionary watching the vision catalogued by people who would call it a crime' — morally complex villain rendering without sympathy overflow",
+            "Line 200: 'Not because it's perfect. Because people chose to hold it.' — resolution without triumphalism"
+          ]
+        }
+      ],
+      "findings": [
+        {
+          "id": "CE-021-T5-01",
+          "severity": "minor",
+          "type": "observation",
+          "location": "Lines 88-96 (SCN-60)",
+          "description": "The Warden mechanism explanation ('The Warden's function was not to fight the god but to affirm the wall — to be the living declaration that reality held') leans toward expository/pedagogical tone. The passage is five sentences of explanation embedded in the action sequence. While anchored in Kaelith's experiential understanding ('clarity that came from the bones'), the density of conceptual explanation briefly interrupts the climactic action rhythm.",
+          "recommendation": "During revision, consider compressing this passage by 1-2 sentences. The key concept (certainty as reinforcement) can be conveyed in fewer words by leaning harder into Kaelith's physical experience of the mechanism rather than articulating its philosophy. Example: collapse lines 92-94 into the act of pouring certainty into the seal, trusting the reader to infer the philosophy from the action."
+        }
+      ]
+    },
+    {
+      "toolId": "T6",
+      "name": "Stakes Escalation",
+      "compliance": "compliant",
+      "score": 9.5,
+      "sceneAssessments": [
+        {
+          "scene": "SCN-59",
+          "assessment": "pass",
+          "evidence": "All three stake levels active simultaneously: personal (Kaelith's Warden purpose, Thenndal's legacy), relational (partnership tested in warped architecture), existential (seal failing, Ythara pressing through). Stakes properly escalate from approach urgency to the 'clock is running' realization when Thalen is discovered at the seal.",
+          "citations": [
+            "Line 34: 'The silver thread on her left forearm... pulsed in response to the proximity of the thing behind the seal' — personal stakes (body as membrane)",
+            "Line 40: 'The partnership operating at the frequency it had been built for' — relational stakes under pressure",
+            "Line 46: 'each crack leaking a light that was not quite light' — existential stakes visible in the seal's deterioration"
+          ]
+        },
+        {
+          "scene": "SCN-60",
+          "assessment": "pass",
+          "evidence": "Maximum stakes reached. Personal (Kaelith emptying herself, three frozen fingers burning), relational (Lirien wounded defending Kaelith), existential (ten-minute window before irreversible Pallor failure). All three converge in a single decision point (line 78): trust Lirien completely or lose everything.",
+          "citations": [
+            "Line 68: 'Reality dissolving into raw possibility. Everything becoming what it could have been instead of what it was.' — existential stakes at maximum",
+            "Line 118: 'Her hands shook against the stone. Her vision dimmed at the edges.' — personal stakes in physical collapse",
+            "Line 124: 'a burn across the shoulder, hot and spreading' — relational stakes in Lirien's cost"
+          ]
+        },
+        {
+          "scene": "SCN-61",
+          "assessment": "pass",
+          "evidence": "Stakes shift from existential-immediate to institutional-lasting. The world survived, but the system that enabled the crisis must be confronted. Permanent Pallor thinning maintains consequence-stakes: the world is changed, not restored.",
+          "citations": [
+            "Line 204: 'A new age beginning whether they were ready for it or not.' — stakes persist beyond the immediate crisis"
+          ]
+        }
+      ],
+      "findings": []
+    },
+    {
+      "toolId": "T7",
+      "name": "Black Moment",
+      "compliance": "compliant",
+      "score": 9.0,
+      "sceneAssessments": [
+        {
+          "scene": "SCN-60",
+          "assessment": "pass",
+          "evidence": "Chapter 21 is the payoff for the ch16 Black Moment. The trust destroyed in ch16 ('Every feeling was built on a lie') is proven rebuilt under maximum pressure. The specific reference to the heart-stopping (ch20 loophole) directly connects the black moment's wound to the climactic trust decision.",
+          "citations": [
+            "Line 78: 'believe that the woman who had stopped her heart and restarted it three days ago would keep it beating now' — explicit link from ch20 loophole to ch21 trust proof",
+            "Line 106: 'not the binding's compulsion, not the Court's directive, but the freely chosen decision to stand between Kaelith and harm' — the freely chosen element answers the ch16 Black Moment's core question"
+          ]
+        },
+        {
+          "scene": "SCN-61",
+          "assessment": "pass",
+          "evidence": "Kaelith's recognition of Thalen as mirror connects the Black Moment's thematic argument to the villain's confrontation. The trust theme reaches philosophical resolution: conviction without accountability is what Thalen did; conviction with accountability is what Kaelith is doing.",
+          "citations": [
+            "Line 182: 'conviction was not the same thing as correctness. That the right choice exacted costs the chooser did not get to assign.' — Black Moment's trust wound transformed into moral wisdom"
+          ]
+        }
+      ],
+      "findings": []
+    },
+    {
+      "toolId": "T8",
+      "name": "Internal and External Resistance",
+      "compliance": "compliant",
+      "score": 9.0,
+      "sceneAssessments": [
+        {
+          "scene": "SCN-59",
+          "assessment": "pass",
+          "evidence": "Internal resistance largely resolved by this chapter (appropriate for climax). Kaelith walks into purpose rather than away from it. External resistance: warped architecture (environmental), Thalen's presence (antagonist), failing seal (ticking clock).",
+          "citations": [
+            "Line 28: 'She did not choose the route. Her body chose it.' — the body's certainty overriding the mind's historical hesitation is the resolution of internal resistance",
+            "Lines 33-34: warped terrain, unreliable cover, shifting floors — external resistance through environment"
+          ]
+        },
+        {
+          "scene": "SCN-60",
+          "assessment": "pass",
+          "evidence": "Final internal resistance: the decision to trust completely rather than split attention. This is the last meaningful internal resistance beat — Kaelith overcomes it through deliberate choice, not instinct. External: Thalen's direct magical assault.",
+          "citations": [
+            "Line 78: 'The crisis narrowed to a single decision: split her attention... or trust Lirien completely' — internal resistance as choice point",
+            "Line 108: 'His strikes against the seal were precise and layered' — external resistance through antagonist"
+          ]
+        },
+        {
+          "scene": "SCN-61",
+          "assessment": "pass",
+          "evidence": "Internal: the impulse to execute Thalen vs. choosing institutional accountability. External: the institution itself ('The Conclave will resist').",
+          "citations": [
+            "Line 184: 'She could demand his death. The authority existed.' — internal temptation named",
+            "Line 186: 'Let the impulse pass through her the way a tremor passed through a wall built to absorb it.' — resistance overcome through architectural metaphor for emotional regulation"
+          ]
+        }
+      ],
+      "findings": []
+    },
+    {
+      "toolId": "T10",
+      "name": "Sanderson's Laws of Magic",
+      "compliance": "compliant-with-observation",
+      "score": 7.5,
+      "sceneAssessments": [
+        {
+          "scene": "SCN-59",
+          "assessment": "pass",
+          "evidence": "Kinetic memory activation follows established rules (MAG-006): body knows the path without conscious recall, activated by walking with intent. Ythara's influence follows MAG-009: things existing in superposition, ontological instability. Bond mechanics consistent with established post-dissolution clean signal. All magic previously established.",
+          "citations": [
+            "Line 28: 'Her feet found the path without consultation' — consistent with MAG-006 kinetic memory bypassing conscious recall",
+            "Lines 32-34: warped architecture, reversed staircase, body adjusting — consistent with MAG-009 Ythara influence description"
+          ]
+        },
+        {
+          "scene": "SCN-60",
+          "assessment": "pass-with-observation",
+          "evidence": "The seal reinforcement through 'certainty' is the central magical mechanism resolving the fantasy climax. While thematically consistent (Ythara = unmade potential; Warden = declaration of permanence) and logically derivable from the established magic system (magic is negotiation with suppressed mutability; the seal is the ultimate expression of permanence), the specific mechanism — pouring personal certainty into the seal to close cracks — is fully articulated for the first time in the resolution scene itself. Per Sanderson's First Law, magic used to resolve the main conflict should be understood by the reader beforehand. The reader can INFER this mechanism from prior establishment (the Pallor fixes reality through certainty; the Warden lineage maintains the seal; the kinetic memory is body-knowledge, i.e. embodied certainty), but the explicit connection is made at the point of use.",
+          "citations": [
+            "Lines 88-96: Full articulation of Warden seal-reinforcement mechanism — first time in the manuscript",
+            "Line 92: 'The Warden's function was not to fight the god but to affirm the wall' — this is the key revelation that enables the resolution",
+            "Line 94: 'Every pound of conviction she had ever carried. That walls were sound. That structures held.' — Kaelith's character traits become the magical mechanism, which is thematically elegant but mechanically late"
+          ]
+        },
+        {
+          "scene": "SCN-61",
+          "assessment": "pass",
+          "evidence": "No new magical mechanisms introduced. Thalen's magic described as institutional (Conclave-trained), consistent with established rules. Lirien's combat magic consistent with fae precision.",
+          "citations": []
+        }
+      ],
+      "findings": [
+        {
+          "id": "CE-021-T10-01",
+          "severity": "moderate",
+          "type": "concern",
+          "location": "Lines 88-96 (SCN-60)",
+          "description": "The Warden seal-reinforcement mechanism ('certainty as declaration of reality') is first fully articulated in the resolution scene. Per Sanderson's First Law, magic used to resolve the main conflict should be understood by the reader before the resolution. While the mechanism is logically derivable from established rules (Pallor fixes reality through suppression of mutability; the seal contains a god of unmade potential; kinetic memory is embodied certainty), no prior chapter explicitly states that Warden work involves 'affirming the wall' through personal conviction. The connection between Kaelith's character trait (certainty/conviction) and the seal's mechanism (reality-affirmation) is first made explicit here, which risks feeling like a convenient revelation rather than an earned payoff.",
+          "recommendation": "During revision, seed the certainty-as-reinforcement concept in 1-2 earlier chapters. Candidates: (1) ch17/18 — when Kaelith approaches the Quietus, a brief passage where the pull feels like the seal testing her certainty, or (2) ch13/14 — when Kaelith's restored magic first encounters the seal's pull, a moment where her conviction physically responds. Even a single sentence establishing that Warden magic operates through certainty rather than power would bring this into Sanderson's First Law compliance."
+        }
+      ]
+    },
+    {
+      "toolId": "T12",
+      "name": "Dual-Arc Interleave",
+      "compliance": "compliant-with-observation",
+      "score": 8.5,
+      "sceneAssessments": [
+        {
+          "scene": "SCN-59",
+          "assessment": "pass",
+          "evidence": "Fantasy navigation (reaching the Quietus) requires romance partnership (bond-enabled coordination). Kaelith's instinct and Lirien's precision work in tandem. The bond is described as operating 'at the frequency it had been built for — not the frequency imposed by binding or contract.' Arcs fused.",
+          "citations": [
+            "Line 38: 'Lirien was reading the warped geometry the way Kaelith read fortifications' — complementary skills requiring both arcs",
+            "Line 40: 'Kaelith's body leading, Lirien's mind verifying' — partnership as navigation mechanism"
+          ]
+        },
+        {
+          "scene": "SCN-60",
+          "assessment": "pass — exemplary",
+          "evidence": "Maximum arc fusion. The fantasy climax (seal stabilization) is impossible without the romance achievement (restored trust). The central decision — commit fully to the seal and trust Lirien to handle Thalen — is simultaneously the fantasy crisis (save the world) and the romance proof (absolute trust in your partner). This is textbook T12 enforcement: the arcs cannot be separated without destroying both.",
+          "citations": [
+            "Line 78: 'split her attention... or trust Lirien completely' — single decision point that is both fantasy crisis and romance test",
+            "Line 112: 'The infiltrator choosing to be a wall.' — Lirien's nature (romance character) becomes the mechanism of defense (fantasy function)"
+          ]
+        },
+        {
+          "scene": "SCN-61",
+          "assessment": "pass-with-observation",
+          "evidence": "Fantasy arc dominates in the exposure scene. Lirien is present but passive — standing over Thalen, then walking beside Kaelith. The dialogue, testimony, and institutional confrontation are Kaelith's alone. The romance arc is present but not reinforcing: Lirien's contribution to the exposure is implied (she fought Thalen) rather than active in the scene. The final passage (lines 206-218) restores the dual-arc interleave with bond-carried partnership, but the middle of SCN-61 is effectively a single-arc scene.",
+          "citations": [
+            "Lines 146-148: Lirien present but described in observation, not action — 'Lirien stood over him — magic still flickering along her fingertips'",
+            "Lines 166-200: Kaelith's formal charge, Thalen's response, Iryse's testimony, institutional resolution — all fantasy/political with no romance beat",
+            "Lines 206-208: Dual arc restored — 'the steady, uncompelled pulse of two people who had chosen each other'"
+          ]
+        }
+      ],
+      "findings": [
+        {
+          "id": "CE-021-T12-01",
+          "severity": "minor",
+          "type": "observation",
+          "location": "Lines 152-200 (SCN-61 middle)",
+          "description": "The exposure/confrontation sequence in SCN-61 runs approximately 50 lines of fantasy/political content with minimal romance arc reinforcement. Lirien is physically present but does not speak, act, or influence the outcome during the Thalen confrontation, Iryse testimony, and institutional resolution. The dual-arc interleave weakens to single-arc during this stretch. This is partially mitigated by the opening (Lirien standing over defeated Thalen) and closing (walking out together) beats, and by the chapter's extraordinary fusion in SCN-60.",
+          "recommendation": "During revision, consider adding one brief romance-reinforcement beat during the exposure sequence. Options: (1) Lirien silently adjusting position to support Kaelith when her legs nearly fail (line 164 — 'Her legs held. Barely.'), which would show the partnership functioning in the resolution scene, not just the action scene. (2) A bond-transmitted beat of Lirien's recognition of Kaelith's institutional authority. Either addition would maintain the T12 interleave without disrupting the scene's political focus."
+        }
+      ]
+    },
+    {
+      "toolId": "T13",
+      "name": "Tension Mapping",
+      "compliance": "compliant-with-observation",
+      "score": 8.5,
+      "sceneAssessments": [
+        {
+          "scene": "SCN-59",
+          "assessment": "pass",
+          "evidence": "Tension builds steadily: awe at Serath Dún → urgency through warped architecture → sharp escalation when Thalen is discovered at the seal. No dead spots. The scene-ending 'clock is running' line compresses remaining time into maximum pressure.",
+          "citations": [
+            "Line 58: 'Three exits... The cracks were spreading in real time.' — tactical assessment creating compressed urgency",
+            "Line 60: 'The clock was running.' — tension peak at scene break"
+          ]
+        },
+        {
+          "scene": "SCN-60",
+          "assessment": "pass",
+          "evidence": "Tension at sustained maximum throughout. Dual-threat structure (seal failing + Thalen attacking) maintains relentless pressure. Tension gradually releases as seal begins holding (line 126-130), creating earned relief without deflation.",
+          "citations": [
+            "Lines 100-108: Thalen strikes while Kaelith is defenseless — maximum simultaneous threat",
+            "Line 130: 'Stone closed against stone, quietly, with the patience of mortar setting' — tension releases through natural imagery, not dramatic collapse"
+          ]
+        },
+        {
+          "scene": "SCN-61",
+          "assessment": "pass-with-observation",
+          "evidence": "Tension shifts from physical to institutional. The Thalen confrontation maintains psychological tension through his conviction ('I gave this world a chance to become'). However, two passages of evidence enumeration create brief tension flat spots where the prose catalogues documents rather than dramatizes the exposure.",
+          "citations": [
+            "Lines 160-162: 'Archival records proving forty years... Financial documentation linking... Testimony from... Three independent intelligence sources...' — enumeration reduces dramatic tension to procedural catalogue",
+            "Line 192: 'Financial records, correspondence, ritual specifications — the paper architecture of a forty-year conspiracy' — metaphor ('paper architecture') partially redeems the enumeration"
+          ]
+        }
+      ],
+      "findings": [
+        {
+          "id": "CE-021-T13-01",
+          "severity": "minor",
+          "type": "observation",
+          "location": "Lines 160-162 (SCN-61)",
+          "description": "The evidence enumeration passage runs four sentence fragments listing document types without dramatic framing. At intended tension level 10/10, this creates a brief procedural dead spot. The second enumeration (line 192) is handled better through the 'paper architecture' metaphor. The first enumeration lacks such anchoring.",
+          "recommendation": "During revision, compress lines 160-162 or embed the evidence in character reaction. Instead of listing document types, show the impact of each category through witness reactions or Thalen's response to each damning revelation. This maintains tension through human response rather than procedural catalogue."
+        }
+      ]
+    },
+    {
+      "toolId": "T15",
+      "name": "Foreshadowing and Payoff Ledger",
+      "compliance": "compliant",
+      "score": 9.5,
+      "sceneAssessments": [
+        {
+          "scene": "full-chapter",
+          "assessment": "pass",
+          "evidence": "All 9 foreshadowing payoffs assigned to ch21 are delivered in the prose. Each payoff is earned through prior establishment across multiple earlier chapters. No unlogged payoffs detected — every major revelation in ch21 traces back to a planted seed."
+        }
+      ],
+      "payoffVerification": [
+        {
+          "id": "FS-001",
+          "description": "Oathbrand maintenance exposed as Thalen's suppression",
+          "status": "delivered",
+          "evidence": "Line 162: 'the maintenance orders that had kept Kaelith's Oathbrand burning fresh five years past its dissolution date'",
+          "assessment": "Clean payoff. The Oathbrand mystery opened in ch1 resolves through documentary evidence connecting to Thalen."
+        },
+        {
+          "id": "FS-002",
+          "description": "Pallor failure as forty years of deliberate poisoning",
+          "status": "delivered",
+          "evidence": "Lines 66, 162: 'Forty years of Thalen's patient, devoted corruption' and 'forty years of corrupted Dimming rites'",
+          "assessment": "Clean payoff. The cosmic threat revealed as institutional betrayal."
+        },
+        {
+          "id": "FS-005",
+          "description": "Quietus paradox resolved — kinetic memory guides them",
+          "status": "delivered",
+          "evidence": "Lines 28-29: 'Her feet found the path without consultation... She did not choose the route. Her body chose it.'",
+          "assessment": "Clean payoff. The kinetic memory mechanism works exactly as established."
+        },
+        {
+          "id": "FS-006",
+          "description": "Warden inheritance confirmed through Thenndal",
+          "status": "delivered",
+          "evidence": "Lines 28-30, 96: 'The knowledge Ossya Thenndal had planted in her... The last Warden passing the key to the last keeper' and 'This was what the Warden lineage was for.'",
+          "assessment": "Clean payoff. Thenndal's role revealed as deliberate Warden transmission."
+        },
+        {
+          "id": "FS-009",
+          "description": "Ythara contained — seal reinforced",
+          "status": "delivered",
+          "evidence": "Line 130: 'Ythara's pressure against the seal eased — not vanished, not defeated, but contained. Held.'",
+          "assessment": "Excellent payoff. Ythara is not defeated (consistent with 'not evil but incompatible') but contained. Nuanced resolution."
+        },
+        {
+          "id": "FS-010",
+          "description": "Thalen exposed as Conclave saboteur",
+          "status": "delivered",
+          "evidence": "Lines 48-56 (Thalen at the seal), lines 166 (formal charge), lines 162 (archival evidence)",
+          "assessment": "Multi-layered payoff: physical confrontation + formal charge + documentary evidence. Thorough."
+        },
+        {
+          "id": "FS-016",
+          "description": "Iryse testifies as witness",
+          "status": "delivered",
+          "evidence": "Lines 190: 'Every rite I performed in devotion was an instrument of his sabotage.'",
+          "assessment": "Strong payoff. Iryse's testimony carries the weight of betrayed good faith — her sincerity weaponized against her."
+        },
+        {
+          "id": "FS-018",
+          "description": "Thenndal revealed as last Warden who planted kinetic memory",
+          "status": "delivered",
+          "evidence": "Lines 28-30: 'Ossya Thenndal had planted in her... walking her through this path blindfolded and half-drunk, calling it a routine patrol exercise. The last Warden passing the key to the last keeper without telling her what she was receiving. Thenndal had died within the month.'",
+          "assessment": "Excellent payoff. The mundane cover story ('routine patrol exercise') makes the Warden transmission feel earned and grounded."
+        },
+        {
+          "id": "FS-021",
+          "description": "God-seal confrontation at Quietus",
+          "status": "delivered",
+          "evidence": "Entire SCN-60 is this payoff — the god-seal confrontation, Thalen's interference, and successful reinforcement.",
+          "assessment": "Clean payoff. The intelligence from ch18 proves accurate; the mechanism works as described."
+        }
+      ],
+      "findings": []
+    },
+    {
+      "toolId": "T16",
+      "name": "Symbolic Motif Weaving",
+      "compliance": "compliant",
+      "score": 9.0,
+      "sceneAssessments": [
+        {
+          "scene": "full-chapter",
+          "assessment": "pass",
+          "evidence": "All four expected motifs present with appropriate density and evolution. MOT-001 (Pallor) appears 8+ times with clear evolution from protective barrier to permanently thinned membrane. MOT-003 (Water) appears 4 times, properly attributed to Kaelith's observation of Lirien. MOT-004 (Quietus/body-knowledge) is the chapter's central mechanism. MOT-005 (Ythara/potential) appears 5+ times with consistent imagery."
+        }
+      ],
+      "motifVerification": [
+        {
+          "id": "MOT-001",
+          "symbol": "Pallor as membrane",
+          "appearances": 8,
+          "evolution": "From pre-Pallor stone light (line 18) through membrane-in-skin (line 34) to cracked seal (lines 44-46) to permanently thinned membrane (line 216) with true sky showing through. Final image evolves the motif to its resolution state: 'The true sky was harder than the false one. Less kind. But through the gaps, the stars were real.' This echoes ch14's motif appearance and provides thematic closure — truth is harder than comfortable lies but truth is real.",
+          "citations": [
+            "Line 18: 'not the Pallor's tarnished silver but something older. Warmer.'",
+            "Line 34: 'The membrane in her skin recognizing the membrane in the sky'",
+            "Line 216: 'the true sky show through in patches... the stars were real'"
+          ]
+        },
+        {
+          "id": "MOT-003",
+          "symbol": "Water / Seep as infiltration-as-intimacy",
+          "appearances": 4,
+          "evolution": "Water metaphor deployed at appropriate Kaelith-POV density (lower than Lirien chapters). Each appearance properly attributed to Kaelith's observation of Lirien or universally accessible imagery. The deliberate cross-domain moment ('water that finds every crack... The infiltrator choosing to be a wall') shows Lirien's influence on Kaelith's thinking while maintaining structural translation.",
+          "citations": [
+            "Line 112: 'water that finds every crack... The infiltrator choosing to be a wall' — cross-domain awareness with translation back to structural",
+            "Line 114: 'parched stone drinking rain' — stone-primary, water incidental",
+            "Line 148: 'the way a dam held water' — structural metaphor (dam) containing Lirien's nature (water)"
+          ]
+        },
+        {
+          "id": "MOT-004",
+          "symbol": "Quietus as body-knowledge / embodied trust",
+          "appearances": 6,
+          "evolution": "Central motif of the chapter. Body-knowledge activates as kinetic memory, guides the approach, and then transforms into the seal reinforcement mechanism — certainty held in the bones. The motif reaches its fullest expression: not just the body knowing a path, but the body affirming reality itself.",
+          "citations": [
+            "Line 28: 'Her feet found the path without consultation... She did not choose the route. Her body chose it.'",
+            "Line 90: 'a clarity that came from the bones rather than the mind'",
+            "Line 94: 'Her military discipline... Her architectural instinct... Her refusal, absolute and inarguable'"
+          ]
+        },
+        {
+          "id": "MOT-005",
+          "symbol": "Ythara as raw potential / the unfinished",
+          "appearances": 5,
+          "evolution": "Ythara's nature consistently rendered as potential/becoming rather than evil/destruction. The imagery evolves from sensory distortion (line 32) through philosophical articulation (line 88) to contained presence (line 130). The motif's resolution — contained, not destroyed — mirrors the story's moral complexity: Ythara is not wrong to be what it is, but the world cannot accommodate it.",
+          "citations": [
+            "Line 32: 'raw, electric, the flavor of potential that had never been permitted to become anything specific'",
+            "Line 88: 'not malice but potential, not hatred but becoming'",
+            "Line 172: 'Ythara's waking would have corrected everything' — through Thalen, Ythara's nature is articulated by its advocate"
+          ]
+        }
+      ],
+      "findings": []
+    },
+    {
+      "toolId": "T17",
+      "name": "Voice Fingerprinting",
+      "compliance": "compliant",
+      "score": 9.0,
+      "sceneAssessments": [
+        {
+          "scene": "full-chapter",
+          "assessment": "pass",
+          "evidence": "Voice report confirms 9/10 consistency. Independent verification confirms: 113 architectural metaphors, 61% short sentences, zero named emotions, command voice escalating appropriately across scenes. Kaelith identifiable within 2-3 sentences. Cross-domain water usage properly handled (attributed to Lirien observation, translated back to structural). No voice bleed detected."
+        }
+      ],
+      "voiceMetrics": {
+        "architecturalMetaphors": 113,
+        "namedEmotions": 0,
+        "shortSentences": "61%",
+        "commandVoiceInstances": 4,
+        "crossDomainUsage": 3,
+        "crossDomainHandling": "all properly attributed and translated",
+        "threeFourSentenceTest": "pass — identifiable by sentence 2, confirmed by sentence 4"
+      },
+      "findings": []
+    },
+    {
+      "toolId": "T18",
+      "name": "Information Asymmetry",
+      "compliance": "compliant",
+      "score": 9.0,
+      "sceneAssessments": [
+        {
+          "scene": "SCN-59",
+          "assessment": "pass",
+          "evidence": "Thalen's knowledge of Kaelith's Warden status ('Thenndal's gift') is consistent with his role as Conclave saboteur who has been tracking Warden lineage. Kaelith's tactical assessment of Thalen is appropriate — she reads his behavior, not his mind. No impossible knowledge.",
+          "citations": [
+            "Line 56: 'I wondered when Thenndal's gift would find its way home.' — Thalen's knowledge is consistent with his 40-year conspiracy to suppress Warden lineage"
+          ]
+        },
+        {
+          "scene": "SCN-60",
+          "assessment": "pass",
+          "evidence": "Bond-mediated awareness (feeling Lirien's combat through the bond) is consistent with established bond mechanics. Kaelith cannot see the fight (eyes closed, awareness in the seal) but feels it through the bond — appropriate sensory channel. Thalen's magic described as 'practiced, surgical precision' — Kaelith infers this from the magic's effect on the seal, not from impossible tactical knowledge.",
+          "citations": [
+            "Line 106: 'The sensation was not visual — Kaelith's eyes were closed... But the bond carried it' — proper sensory attribution"
+          ]
+        },
+        {
+          "scene": "SCN-61",
+          "assessment": "pass",
+          "evidence": "Witnesses arrive as pre-coordinated (Ashborne relay from ch19). Iryse's testimony limited to what she could know (the rites she performed, the modifications she was given). The administrator has documents from within the system. No character demonstrates impossible knowledge.",
+          "citations": [
+            "Line 190: Iryse testifies to what she experienced — 'He presented them as efficiency improvements... I implemented them in good faith' — limited to her direct knowledge"
+          ]
+        }
+      ],
+      "findings": []
+    },
+    {
+      "toolId": "T20",
+      "name": "Emotional Throughline",
+      "compliance": "compliant",
+      "score": 9.0,
+      "sceneAssessments": [
+        {
+          "scene": "full-chapter",
+          "assessment": "pass",
+          "evidence": "Emotional progression verified: fierce resolve (opening) → awe/urgency (Serath Dún) → focused determination (Thalen discovered) → transcendent effort (seal work) → physical collapse → cold recognition (Thalen exposure) → moral assessment → institutional authority → exhausted earned satisfaction (closing). The progression is varied — no two consecutive beats share the same emotional state. The start-to-end shift matches the planned throughline (fierce resolve → exhausted satisfaction). Intensity correctly drops from ch20's 10 to ch21's 9."
+        }
+      ],
+      "emotionalVerification": {
+        "plannedStart": "fierce resolve — focused determination, partnership restored",
+        "actualStart": "'The stone knew her.' — purpose, recognition, resolve",
+        "match": true,
+        "plannedEnd": "exhausted earned satisfaction — seal holds, truth told, partnership proven",
+        "actualEnd": "'a satisfaction as clean and solid as a foundation that had been tested under the maximum possible load and held'",
+        "match_end": true,
+        "emotionalVariety": "high — 8+ distinct emotional beats across 3 scenes",
+        "transitionFromCh20": "appropriate — absolute trust (10) → fierce resolve (9)"
+      },
+      "findings": []
+    },
+    {
+      "toolId": "T21",
+      "name": "Vulnerability Ladder",
+      "compliance": "compliant",
+      "score": 9.0,
+      "sceneAssessments": [
+        {
+          "scene": "SCN-60",
+          "assessment": "pass",
+          "evidence": "Ultimate vulnerability rung: Kaelith renders herself completely defenseless during seal work, trusting Lirien with her life under sustained combat conditions. This exceeds ch20's heart-stopping consent in duration (sustained over the entire seal reinforcement, not a single 8-second moment) and in scope (the world's survival depends on this trust, not just her own). The vulnerability is specific and named: 'Leave herself defenseless, wholly absorbed in the ancient architecture, and believe that the woman who had stopped her heart and restarted it three days ago would keep it beating now.'",
+          "citations": [
+            "Line 78: 'split her attention... or trust Lirien completely. Commit everything to the mechanism her blood was built to serve. Leave herself defenseless'",
+            "Line 80: 'Kaelith did not hesitate.' — the absence of hesitation IS the vulnerability proof. The trust is no longer an agonizing decision but a settled reality."
+          ]
+        }
+      ],
+      "findings": []
+    },
+    {
+      "toolId": "T23",
+      "name": "Mystery Box Inventory",
+      "compliance": "compliant-with-observation",
+      "score": 8.0,
+      "sceneAssessments": [
+        {
+          "scene": "full-chapter",
+          "assessment": "pass-with-observation",
+          "evidence": "All 6 mystery box closures assigned to ch21 are delivered in the prose. Each closure is substantive — the answers are specific, earned, and consistent with prior hints."
+        }
+      ],
+      "closureVerification": [
+        {
+          "id": "MB-001",
+          "question": "Oathbrand maintenance — who and why?",
+          "status": "closed",
+          "evidence": "Line 162: Thalen's office linked to maintenance orders. Reason: suppress Warden lineage."
+        },
+        {
+          "id": "MB-002",
+          "question": "Pallor saboteur identity",
+          "status": "closed",
+          "evidence": "Lines 48-56, 166: Thalen Reyvas, Seventh Seat, forty years of corrupted Dimming rites."
+        },
+        {
+          "id": "MB-003",
+          "question": "Blindfolded path — who and when?",
+          "status": "closed",
+          "evidence": "Line 28: Ossya Thenndal, 'routine patrol exercise,' last Warden transmission."
+        },
+        {
+          "id": "MB-004",
+          "question": "Ythara's nature",
+          "status": "closed",
+          "evidence": "Line 88: 'not malice but potential, not hatred but becoming.' Line 130: contained, not destroyed."
+        },
+        {
+          "id": "MB-009",
+          "question": "Quietus mechanism",
+          "status": "closed",
+          "evidence": "Lines 88-96: seal built from certainty, Warden affirms reality against Ythara's potential."
+        },
+        {
+          "id": "MB-010",
+          "question": "Thenndal identity",
+          "status": "closed",
+          "evidence": "Lines 28-30: last official Warden, Kaelith's mentor, died within month of transmission."
+        }
+      ],
+      "postChapterActiveCount": 2,
+      "targetRange": "3-7",
+      "findings": [
+        {
+          "id": "CE-021-T23-01",
+          "severity": "minor",
+          "type": "observation",
+          "location": "Chapter-level",
+          "description": "Post-chapter active mystery box count drops to 2 (MB-014: Ashborne loyalty, MB-015: life after crisis), which is below the 3-7 target range. For the penultimate chapter of a 22-chapter story with 6 major mystery boxes closing simultaneously in the climax, this is structurally expected — the resolution phase naturally has fewer open questions. However, if strict target range compliance is required, the chapter could open a minor question about the institutional reckoning's outcome (e.g., will the Conclave resist the public tribunal?).",
+          "recommendation": "Acceptable for the climactic chapter. If revision addresses this, the line 'The Conclave will resist' (line 198) could be expanded into an implicit new question: what form will their resistance take? This would maintain 3 active boxes (MB-014, MB-015, and a new minor box about institutional aftermath) without disrupting the resolution's momentum."
+        }
+      ]
+    },
+    {
+      "toolId": "T24",
+      "name": "Subtext in Dialogue",
+      "compliance": "compliant-with-observation",
+      "score": 8.0,
+      "sceneAssessments": [
+        {
+          "scene": "SCN-59",
+          "assessment": "pass",
+          "evidence": "Two dialogue exchanges, both with strong subtext. Kaelith's architectural assessment ('pre-empire... Rending-era construction') is surface analysis with subtext of awe and recognition. Thalen's 'Thenndal's gift' carries knowledge, patience, and the zealot's respect for what he has been opposing.",
+          "citations": [
+            "Line 56: 'I wondered when Thenndal's gift would find its way home.' — Surface: he knows about the kinetic memory. Subtext: forty years of waiting, respect for the mechanism he tried to render moot, and the zealot's belief that this confrontation is fated"
+          ]
+        },
+        {
+          "scene": "SCN-60",
+          "assessment": "pass-with-error",
+          "evidence": "Lirien's 'Go' is the chapter's most compressed piece of subtext — a single word carrying complete trust, tactical transfer of control, and everything the rebuilt partnership means. However, Kaelith's response contains a counting error.",
+          "citations": [
+            "Line 74: 'Go,' Lirien said.' — one word carrying the weight of everything rebuilt since ch16",
+            "Line 76: 'Two words. Everything.' — ERROR: 'Go' is one word, not two. The internal narration incorrectly counts the dialogue."
+          ]
+        },
+        {
+          "scene": "SCN-61",
+          "assessment": "pass",
+          "evidence": "Rich subtext throughout. Thalen's 'I gave this world a chance to become' uses Ythara's specific vocabulary ('become'), revealing his theology through word choice. Kaelith's 'Because you did not let them choose' addresses both Thalen AND her own Calwrath history. Iryse's testimony carries the subtext of betrayed devotion. Tessen's nod carries the subtext of completed duty.",
+          "citations": [
+            "Line 172: 'I gave this world a chance to *become*' — surface: defense. Subtext: Thalen speaks Ythara's language — 'become' echoes the god's nature (potential/becoming)",
+            "Line 178: 'Because you did not let them choose.' — surface: rebuke to Thalen. Subtext: Kaelith indicting her own Calwrath decision through Thalen's mirror",
+            "Line 158: 'She met Kaelith's eyes and nodded once.' — surface: acknowledgment. Subtext: completed covenant — the evidence chain she helped build has reached its destination"
+          ]
+        }
+      ],
+      "findings": [
+        {
+          "id": "CE-021-T24-01",
+          "severity": "moderate",
+          "type": "error",
+          "location": "Line 76 (SCN-60)",
+          "description": "Kaelith's internal narration reads 'Two words. Everything.' in response to Lirien's dialogue 'Go' (line 74). 'Go' is one word, not two. This is a word-count error in the prose. The percussive, compressed quality of the narration is excellent ('One word. Everything.' would be equally powerful), but the factual inaccuracy breaks craft precision in what should be the chapter's most emotionally compressed moment.",
+          "recommendation": "Change 'Two words. Everything.' to 'One word. Everything.' This preserves the percussive rhythm and compressed emotional weight while correcting the factual error. Alternatively, revise Lirien's dialogue to two words (e.g., 'Go. Now.' or 'Your turn.') to match the internal narration — but 'Go' as a single word is more powerful and more consistent with Lirien's operational economy of speech."
+        }
+      ]
+    },
+    {
+      "toolId": "T25",
+      "name": "Thematic Argument Scaffolding",
+      "compliance": "compliant",
+      "score": 9.5,
+      "sceneAssessments": [
+        {
+          "scene": "full-chapter",
+          "assessment": "pass",
+          "evidence": "All three thematic pillars are embodied through character action and dialogue. None are stated in narration. Each pillar reaches its climactic expression in this chapter through specific scenes."
+        }
+      ],
+      "pillarVerification": [
+        {
+          "id": "TP-1",
+          "theme": "Trust as structural failure / load-bearing architecture",
+          "status": "proven-through-action",
+          "evidence": "The seal stabilization IS trust — Kaelith literally cannot save the world without trusting Lirien with her life while defenseless. Trust is the structural mechanism that holds the world together. The bond carries the trust; the seal responds to it. Kaelith's architectural vocabulary makes this explicit without being didactic: trust as buttress (line 140), trust as foundation tested under maximum load (line 206).",
+          "citations": [
+            "Line 78: trust as battlefield decision — the crisis point where trust becomes operational necessity",
+            "Line 140: 'a buttress bracing a wall' — trust as architectural reinforcement",
+            "Line 206: 'a foundation that had been tested under the maximum possible load and held' — trust proven through structural metaphor"
+          ]
+        },
+        {
+          "id": "TP-2",
+          "theme": "The price of the right choice",
+          "status": "proven-through-action",
+          "evidence": "Two expressions: (1) Kaelith recognizes Thalen as her Calwrath mirror — both made terrible choices from conviction. The difference is accountability, not conviction. (2) Victory is costly: the Pallor is permanently thinned, the world is changed, and the institutional reckoning has only begun. The right choice (saving the world) exacts permanent costs.",
+          "citations": [
+            "Line 182: 'conviction was not the same thing as correctness' — the thematic argument at its most distilled",
+            "Line 200: 'Not because it's perfect. Because people chose to hold it.' — right choice as imperfect, costly, and human",
+            "Line 204: 'A new age beginning whether they were ready for it or not.' — the price persists beyond the crisis"
+          ]
+        },
+        {
+          "id": "TP-3",
+          "theme": "Chosen versus only",
+          "status": "proven-through-action",
+          "evidence": "The chapter's climactic achievement depends on freely chosen partnership. The prose emphasizes this repeatedly: 'the frequency they had chosen when the cage opened' (line 40), 'not the Court's weapon but the woman who had chosen' (line 72), 'two people who had chosen each other when the world was ending and the cage was open' (line 208). The cage metaphor from TP-3's definition ('the moment when the cage opens and both people must decide') is directly invoked.",
+          "citations": [
+            "Line 40: 'not the frequency imposed by binding or contract, but the one they had chosen when the cage opened and they stayed'",
+            "Line 208: 'two people who had chosen each other when the world was ending and the cage was open and every reason to stay was a reason they had built themselves' — the thematic argument's definitive statement"
+          ]
+        }
+      ],
+      "findings": []
+    }
+  ],
+  "crossToolAnalysis": {
+    "strengths": [
+      "Exceptional T12 fusion in SCN-60 — the fantasy climax and romance proof are literally the same decision point, making this the chapter's strongest craft achievement",
+      "Zero named emotions across 4,000+ words while conveying a full emotional arc (T17 + T20 synergy) — the voice discipline enhances rather than restricts the emotional throughline",
+      "All 9 foreshadowing payoffs and 6 mystery box closures delivered without feeling like a checklist — each resolution is organic to the scene and carries emotional weight (T15 + T23 synergy)",
+      "Thalen as morally complex villain (T5 + T25 synergy) — his conviction mirrors Kaelith's, creating the thematic argument through character rather than narration",
+      "The final image ('the stars were real') unifies T16 motif evolution, T25 thematic resolution, and T5 tone contract in a single sentence — truth is harder than comfortable lies, but truth is real"
+    ],
+    "weaknesses": [
+      "T10 (Sanderson's Laws) concern about certainty-as-reinforcement mechanism being articulated for the first time in the resolution — the most significant craft finding in this chapter",
+      "T12 romance arc backseat in SCN-61 exposure sequence — approximately 50 lines of single-arc content",
+      "T24 word-count error ('Two words' for one-word dialogue) — small but real craft precision failure in the chapter's emotional peak"
+    ],
+    "toolInteractions": "T5 (Tone) and T25 (Theme) reinforce each other through Thalen's characterization — morally complex tone enables the thematic argument about conviction vs. correctness. T12 (Dual-Arc) and T21 (Vulnerability) fuse in SCN-60 — the fantasy mechanism requires the romance vulnerability. T15 (Foreshadowing) and T23 (Mystery Box) converge smoothly — the same revelations serve both payoff and closure functions."
+  },
+  "complianceSummary": {
+    "totalTools": 16,
+    "fullyCompliant": 10,
+    "compliantWithObservation": 5,
+    "nonCompliant": 0,
+    "blocked": 0,
+    "errors": 1,
+    "totalFindings": 7,
+    "findingsBySeverity": {
+      "critical": 0,
+      "moderate": 2,
+      "minor": 5
+    }
+  },
+  "findingsSummary": [
+    {
+      "id": "CE-021-T24-01",
+      "severity": "moderate",
+      "tool": "T24",
+      "type": "error",
+      "summary": "Word-count error: 'Two words. Everything.' for one-word dialogue 'Go' — change to 'One word. Everything.'",
+      "revisionPriority": 1
+    },
+    {
+      "id": "CE-021-T10-01",
+      "severity": "moderate",
+      "tool": "T10",
+      "type": "concern",
+      "summary": "Certainty-as-seal-reinforcement mechanism first fully articulated in the resolution scene — recommend seeding the concept in ch17-19 revision",
+      "revisionPriority": 2
+    },
+    {
+      "id": "CE-021-T5-01",
+      "severity": "minor",
+      "tool": "T5",
+      "type": "observation",
+      "summary": "Lines 88-96 lean slightly expository when explaining the Warden mechanism — consider compressing during revision",
+      "revisionPriority": 3
+    },
+    {
+      "id": "CE-021-T12-01",
+      "severity": "minor",
+      "tool": "T12",
+      "type": "observation",
+      "summary": "SCN-61 exposure sequence runs ~50 lines with minimal romance reinforcement — consider adding one brief partnership beat",
+      "revisionPriority": 4
+    },
+    {
+      "id": "CE-021-T13-01",
+      "severity": "minor",
+      "tool": "T13",
+      "type": "observation",
+      "summary": "Evidence enumeration (lines 160-162) creates brief tension dead spot in 10/10 tension chapter — compress or embed in character reaction",
+      "revisionPriority": 5
+    },
+    {
+      "id": "CE-021-T23-01",
+      "severity": "minor",
+      "tool": "T23",
+      "type": "observation",
+      "summary": "Post-chapter active mystery boxes at 2 (below 3-7 target) — acceptable for penultimate chapter; expand 'Conclave will resist' if strict compliance needed",
+      "revisionPriority": 6
+    },
+    {
+      "id": "CE-021-T5-01b",
+      "severity": "minor",
+      "tool": "T5",
+      "type": "observation",
+      "summary": "Secondary tone (dry wit) absent from chapter — acceptable for 10/10 tension climax but noted for completeness",
+      "revisionPriority": 7
+    }
+  ],
+  "revisionRecommendations": [
+    {
+      "priority": "high",
+      "description": "Fix the word-count error on line 76: change 'Two words. Everything.' to 'One word. Everything.' This is a factual prose error that undermines the chapter's most emotionally compressed moment."
+    },
+    {
+      "priority": "high",
+      "description": "For the book-level revision (not chapter-specific): seed the certainty-as-seal-reinforcement concept in 1-2 earlier chapters to satisfy Sanderson's First Law. Best candidates are ch17 (Kaelith approaching Quietus, seal testing her conviction) or ch13 (restored magic first encounters seal pull). Even one sentence establishing that Warden work operates through certainty rather than power would resolve this finding."
+    },
+    {
+      "priority": "medium",
+      "description": "Consider compressing the Warden mechanism explanation (lines 88-96) by 1-2 sentences during revision, leaning into Kaelith's physical experience of the mechanism rather than articulating its philosophy. This addresses both the T5 (expository tone) and T10 (late articulation) concerns simultaneously."
+    },
+    {
+      "priority": "low",
+      "description": "Add one brief romance-arc beat during the SCN-61 exposure sequence (lines 152-200) to maintain T12 dual-arc interleave. A bond-mediated moment of Lirien supporting Kaelith or reacting to the testimony would maintain the interleave without disrupting the scene's political focus."
+    },
+    {
+      "priority": "low",
+      "description": "Compress evidence enumeration on lines 160-162 or embed in character reaction to maintain T13 tension flow through the resolution."
+    }
+  ],
+  "continuityIssuesAcknowledged": "5 continuity issues documented in continuity-report.json (3 major, 1 moderate, 1 minor) are noted but NOT included as craft enforcement violations per task instructions. These are deferred to the revision phase.",
+  "timestamp": "2025-07-18T03:30:00Z"
+}

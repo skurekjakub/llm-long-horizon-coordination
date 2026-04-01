@@ -1,0 +1,28 @@
+{
+  "agent": "chapter-drafter",
+  "storyId": "001",
+  "chapter": 22,
+  "result": "completed",
+  "summary": "Drafted Chapter 22 'What the Water Chose' \u2014 final chapter, Lirien Dael POV, 4,322 words across 3 scenes (SCN-62: 1,395w, SCN-63: 1,172w, SCN-64: 1,753w). HFN resolution chapter: Lirien wakes to the first morning without the binding, processes institutional hedge from the Conclave, watches Kaelith outgrow vindication, and chooses to stay \u2014 'I stay because I want to.' All three thematic pillars resolved (trust proven through rest, right choice as daily decision, chosen love over compelled attachment). Foreshadowing payoffs: FS-013 (Ashborne support), FS-014 (freeholder model), FS-017 (water imagery). Mystery boxes closed: MB-014, MB-015. Symbolic motifs resolved: water-as-choice, Pallor-as-possibility, Oathbrand-as-anchor. Chapter closes with extended river metaphor \u2014 'That was not flowing. That was deciding.' All craft tools applied per profile. All tracker artifacts updated.",
+  "startedAt": "2025-07-16T12:00:00Z",
+  "completedAt": "2026-03-18T20:01:19.000781+00:00",
+  "artifactsProduced": [
+    "chapters/022/draft.md",
+    "chapters/022/metadata.json"
+  ],
+  "artifactsUpdated": [
+    "continuity/continuity-tracker.json",
+    "continuity/foreshadowing-ledger.json",
+    "continuity/mystery-box-inventory.json",
+    "continuity/emotional-throughline.json",
+    "continuity/information-asymmetry-map.json"
+  ],
+  "metrics": {
+    "wordCount": 4322,
+    "targetWordCount": 4100,
+    "sceneCount": 3,
+    "povCharacter": "CHAR-002",
+    "povCharacterName": "Lirien Dael",
+    "chapterTitle": "What the Water Chose"
+  }
+}

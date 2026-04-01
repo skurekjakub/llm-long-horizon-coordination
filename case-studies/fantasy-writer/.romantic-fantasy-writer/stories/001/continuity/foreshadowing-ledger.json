@@ -1,0 +1,569 @@
+{
+  "storyId": "001",
+  "entries": [
+    {
+      "id": "FS-001",
+      "plant": {
+        "description": "The Oathbrand on Kaelith's collarbone flares unexpectedly during patrol \u2014 it should have dissolved five years ago but keeps burning fresh. Someone is deliberately maintaining it.",
+        "chapter": 1,
+        "lineRef": "Ch1, Scene 1 \u2014 Oathbrand flares during seawall patrol, pain that should not exist | Ch3, SCN-007 \u2014 encrypted messages confirm deliberate Oathbrand maintenance",
+        "status": "active"
+      },
+      "payoff": {
+        "description": "Revealed that the Oathbrand was being secretly refreshed as part of the High Conclave's effort to keep Kaelith suppressed and contained. The conspiracy to prevent her from accessing her Warden abilities is exposed.",
+        "chapter": 21,
+        "lineRef": "Ch21 \u2014 Conclave conspiracy exposed, Oathbrand maintenance tied to Thalen's sabotage"
+      },
+      "type": "foreshadow",
+      "status": "planted"
+    },
+    {
+      "id": "FS-002",
+      "plant": {
+        "description": "First visible Pallor irregularity \u2014 the silver membrane flickers overhead, revealing true starlight for seconds before sealing again. The world-scale protective barrier is failing.",
+        "chapter": 1,
+        "lineRef": "Ch1, Scene 1 \u2014 Pallor tear appears overhead during patrol",
+        "status": "planted"
+      },
+      "payoff": {
+        "description": "Pallor failure reaches crisis point, revealed to be forty years of deliberate poisoning by Thalen. The tears escalate toward Ythara's waking.",
+        "chapter": 21,
+        "lineRef": "Ch21 \u2014 Pallor sabotage exposed, Thalen's forty-year poisoning program revealed"
+      },
+      "type": "foreshadow",
+      "status": "planted"
+    },
+    {
+      "id": "FS-003",
+      "plant": {
+        "description": "Lirien's operative-level surveillance of Kaelith \u2014 she is watching with predator discipline. Professional recognition passes between them when caught. Foreshadows the kill contract.",
+        "chapter": 1,
+        "lineRef": "Ch1, Scene 2 \u2014 Kaelith senses surveillance, sees fae woman (Lirien) who doesn't flinch",
+        "status": "planted"
+      },
+      "payoff": {
+        "description": "The kill contract is fully revealed \u2014 Lirien was sent by the Cerith Court to execute Kaelith, and Kaelith's blood lives inside the binding.",
+        "chapter": 16,
+        "lineRef": "Ch16, SCN-43/SCN-44 \u2014 Intercepted Court communique reveals full contract: blood binding, active enforcement, physiological mechanism. Every chapter since ch1 recontextualized."
+      },
+      "type": "foreshadow",
+      "status": "paid-off"
+    },
+    {
+      "id": "FS-004",
+      "plant": {
+        "description": "Tavik's evasive behavior and transparent lie about Lirien being a 'merchant liaison' \u2014 his fear suggests institutional compromise. Someone with power is monitoring Kaelith through him.",
+        "chapter": 1,
+        "lineRef": "Ch1, Scene 3 \u2014 Tavik's lie is transparent and frightened, suggests compromise",
+        "status": "planted"
+      },
+      "payoff": {
+        "description": "Tavik role as Conclave informant confirmed through encrypted messages in his office. He has been reporting Kaelith status, receiving orders from High Conclave.",
+        "chapter": 3,
+        "lineRef": "Ch3, SCN-007 \u2014 encrypted messages reveal Tavik monitoring and reporting"
+      },
+      "type": "foreshadow",
+      "status": "paid-off"
+    },
+    {
+      "id": "FS-005",
+      "plant": {
+        "description": "The Quietus paradox \u2014 killing Kaelith may erase the only route to the god-seal. The location exists only as kinetic/embodied memory in Kaelith, walked once blindfolded.",
+        "chapter": 2,
+        "lineRef": "Ch2 \u2014 Seep intelligence packet reveals Kaelith may possess Warden-lineage capacity, execution creates operational paradox",
+        "status": "planted"
+      },
+      "payoff": {
+        "description": "Kaelith's kinetic memory guides them to the Quietus. Her Warden inheritance is revealed \u2014 she was deliberately trained to carry this knowledge through embodied movement.",
+        "chapter": 21,
+        "lineRef": "Ch21 \u2014 Quietus reached through Kaelith's kinetic memory, Warden lineage confirmed"
+      },
+      "type": "foreshadow",
+      "status": "planted"
+    },
+    {
+      "id": "FS-006",
+      "plant": {
+        "description": "Kaelith's kinetic gifts and the mystery of how she walked the Quietus path blindfolded \u2014 by whom? why? This suggests Warden inheritance not yet understood.",
+        "chapter": 5,
+        "lineRef": "Ch5 \u2014 Paradox seed mentions blindfolded path, implies prior training",
+        "status": "planted"
+      },
+      "payoff": {
+        "description": "Revealed that Kaelith is descended from the Warden lineage through Ossya Thenndal. Her kinetic abilities are inherited, not accidental. Thenndal's death ties to the conspiracy.",
+        "chapter": 21,
+        "lineRef": "Ch21 \u2014 Warden lineage revelation, Thenndal connection confirmed"
+      },
+      "type": "foreshadow",
+      "status": "planted"
+    },
+    {
+      "id": "FS-007",
+      "plant": {
+        "description": "The Calwrath battlefield decision \u2014 Kaelith saved 800 soldiers and killed 300 civilians. This trauma defines her guilt-as-identity and distrust of institutions.",
+        "chapter": 4,
+        "lineRef": "Ch4 \u2014 Calwrath referenced as the source of Kaelith's disgrace and self-punishment"
+      },
+      "payoff": {
+        "description": "Kaelith shares the unsanitized truth of Calwrath with Lirien, who witnesses without recoil. The confession enables deeper intimacy. Later, Kaelith accepts that being capable of terrible arithmetic doesn't disqualify her from love.",
+        "chapter": 13,
+        "lineRef": "Ch13, SCN-35/SCN-36 \u2014 Full Calwrath confession delivered. Kaelith shares unsanitized truth including 8-minute decision, 300 civilians, children, accelerant, temple collapse, and admission she would make the same call. Lirien witnesses without flinching."
+      },
+      "type": "foreshadow",
+      "status": "resolved"
+    },
+    {
+      "id": "FS-008",
+      "plant": {
+        "description": "The Oathbrand is killing Kaelith \u2014 she doesn't know she's dying from the persistent suppression magic. Lirien begins to sense the depth of damage through fae resonance.",
+        "chapter": 8,
+        "lineRef": "Ch8 \u2014 Healer names Oathbrand crisis plainly, Kaelith stops concealing deterioration"
+      },
+      "payoff": {
+        "description": "The Oathbrand is removed by Lirien in an act of profound trust and intimacy. Kaelith's magic returns, the resonance bond forms, and she stops actively dying.",
+        "chapter": 11,
+        "lineRef": "Ch11 \u2014 Oathbrand removal, magic return, resonance bond forms"
+      },
+      "type": "foreshadow",
+      "status": "resolved",
+      "additionalPayoffs": [
+        {
+          "chapter": 18,
+          "description": "Oathbrand removal (Ch11) used as proof of agency in Lirien's self-interrogation. The absence of binding resistance during a binding-contrary act becomes the foundation of Lirien's proof that free choice exists within the contract. One verified act of defiance that predates the bond, the kiss, and physical intimacy.",
+          "lineRef": "Ch18, SCN-50 \u2014 Lirien classifies Oathbrand removal as 'free choice, confidence: high'"
+        },
+        {
+          "chapter": 20,
+          "description": "Oathbrand removal directly referenced as proof of what Lirien's hands can do \u2014 she had removed a ward that was killing Kaelith, so she can restart a stopped heart. The same precision, the same intimate magic, the same hands. Symmetry between healing and the heart-stop/restart.",
+          "lineRef": "Ch20, SCN-56 \u2014 Lirien's internal: 'The same hands that would stop a heart now had already proven they could save one.'"
+        }
+      ]
+    },
+    {
+      "id": "FS-009",
+      "plant": {
+        "description": "Ythara the Unfinished \u2014 the imprisoned god of unmade things whose nature unravels everything into raw potential. What happens if Ythara fully wakes?",
+        "chapter": 2,
+        "lineRef": "Ch2 \u2014 Pallor damage suggests Ythara's influence beginning to leak through"
+      },
+      "payoff": {
+        "description": "The climax involves stopping Ythara from fully waking. Thalen's acceleration of Pallor poisoning aimed to release Ythara. The Quietus seal is reinforced.",
+        "chapter": 21,
+        "lineRef": "Ch21 \u2014 Quietus reached, Ythara's waking prevented by seal reinforcement"
+      },
+      "type": "foreshadow",
+      "status": "planted"
+    },
+    {
+      "id": "FS-010",
+      "plant": {
+        "description": "Who on the High Conclave has been poisoning the Pallor for forty years? The sabotage is institutional, not accidental.",
+        "chapter": 12,
+        "lineRef": "Ch12 \u2014 Archive proof establishes Pallor failure is engineered, suspicion narrows to Conclave"
+      },
+      "payoff": {
+        "description": "Thalen is exposed as the saboteur \u2014 forty years of Dimming rites corrupted to poison the Pallor. Internal Conclave witnesses testify.",
+        "chapter": 21,
+        "lineRef": "Ch21 \u2014 Thalen's sabotage exposed with archival pattern and witness testimony"
+      },
+      "type": "foreshadow",
+      "status": "planted"
+    },
+    {
+      "id": "FS-011",
+      "plant": {
+        "description": "The Seep's true agenda beyond the Cerith Court's kill contract \u2014 Lirien realizes her organization may have purposes that diverge from Court orders.",
+        "chapter": 9,
+        "lineRef": "Ch9 \u2014 Seep messages suggest intelligence gathering beyond the contract parameters"
+      },
+      "payoff": {
+        "description": "The Seep supports Lirien's loophole exploitation rather than enforcing the contract literally. The organization values strategic outcomes over rigid contractual compliance.",
+        "chapter": 20,
+        "lineRef": "Ch20 \u2014 Seep tacit support for contract loophole, strategic flexibility demonstrated"
+      },
+      "type": "foreshadow",
+      "status": "resolved",
+      "appearances": [
+        {
+          "chapter": 20,
+          "description": "Seep's tacit support for loophole acknowledged \u2014 Lirien recognises that the intelligence packets always contained the contract's exact language, the phrasing that could be parsed as state rather than duration. Strategic flexibility over rigid compliance.",
+          "lineRef": "Ch20, SCN-58 \u2014 Lirien's internal: 'The Seep had known about the wording.'"
+        }
+      ]
+    },
+    {
+      "id": "FS-012",
+      "plant": {
+        "description": "The contract loophole research \u2014 Lirien discovers exact wording can be exploited: 'cessation of heartbeat' is a state not a duration. Temporary cardiac arrest satisfies the binding. Resonance bond enables precision monitoring.",
+        "chapter": 14,
+        "lineRef": "Ch14, SCN-39 \u2014 Lirien's internal analysis: 'Cessation of heartbeat. Not death. Not permanent termination.' Heart stops and restarts = contract fulfilled. Bond monitoring makes precision possible."
+      },
+      "payoff": {
+        "description": "Lirien exploits the exact wording \u2014 stops Kaelith's heart for seconds, fulfills the letter of 'execute,' then restarts it. The contract releases.",
+        "chapter": 20,
+        "lineRef": "Ch20 \u2014 Contract fulfilled in letter via temporary heartbeat cessation, binding released",
+        "status": "delivered"
+      },
+      "type": "foreshadow",
+      "status": "resolved",
+      "appearances": [
+        {
+          "chapter": 15,
+          "note": "Dramatic irony continues \u2014 Kaelith's 'not because a contract required it' is devastating because the contract literally does require Lirien's presence. Every trust moment and declaration compounds the irony."
+        },
+        {
+          "chapter": 16,
+          "note": "Lirien attempts to explain the cessation-of-heartbeat loophole during the revelation scene but every word sounds like manipulation. The loophole exists in contract language but not in trust \u2014 Kaelith has no reason to believe it and every reason to hear it as another operative frame."
+        },
+        {
+          "chapter": 19,
+          "description": "Kaelith agrees to heartbeat cessation as fallback mechanism. 'If I am trusting you with the world, I can trust you with this.' Consent given in steel, not warmth \u2014 trust as engineering. Seeds Ch20 execution.",
+          "lineRef": "Ch19, SCN-55 \u2014 loophole agreement dialogue"
+        },
+        {
+          "chapter": 20,
+          "description": "Contract loophole fully executed. Temporary heartbeat cessation (8 seconds) satisfies 'cessation of heartbeat' clause. Binding architecture resists for ~3 seconds but dissolves when letter of contract is satisfied. Resuscitation successful. Contract fulfilled in letter, broken in spirit.",
+          "lineRef": "Ch20, SCN-57 \u2014 Full execution sequence: heart stops, binding resists, binding dissolves, heart restarts"
+        }
+      ]
+    },
+    {
+      "id": "FS-013",
+      "plant": {
+        "description": "Ashborne Legion survivors and Kaelith's military legacy \u2014 former soldiers who know the truth of Calwrath still exist and may shift from passive to active support.",
+        "chapter": 10,
+        "lineRef": "Ch10 \u2014 Legion survivor testimony hints at covert aid and moral vindication possibility"
+      },
+      "payoff": {
+        "description": "Former and current Ashborne figures provide crucial support at the climax, reframing Kaelith as keeper of the Legion's original purpose rather than erased scandal.",
+        "chapter": 22,
+        "lineRef": "Ch22 \u2014 Legion support materializes, Kaelith's vindication among her former soldiers"
+      },
+      "type": "foreshadow",
+      "status": "paid",
+      "progressions": [
+        {
+          "chapter": 18,
+          "description": "Ashborne network makes direct contact with Lirien at safe house. Former soldier of Ashborne Fourth delivers intelligence and reveals existence of coordinated survivor network. Seeds the Ch22 payoff where Ashborne provide crucial support.",
+          "lineRef": "Ch18, SCN-51 \u2014 Ashborne contact arrives at safe house with neutral intelligence recognition protocol"
+        },
+        {
+          "chapter": 19,
+          "description": "Eight Ashborne veterans discovered at Rivenmarch, organized using Kaelith's tactical doctrine. Sedara (Third Platoon) named. Relay network to Quietus established. The isolation of exile revealed as imposed, not total \u2014 Ashborne survivors waited and prepared.",
+          "lineRef": "Ch19, SCN-53 \u2014 Kaelith recognizes Ashborne tactical signatures, Sedara greets her as Commander"
+        },
+        {
+          "chapter": 22,
+          "description": "Full payoff: Ashborne veterans escort Thalen to public tribunal, scout delivers intelligence to Lirien, 'Commander Maren' title used naturally \u2014 vindication through people rather than institution.",
+          "lineRef": "Ch22, SCN-62 \u2014 Ashborne scout report; SCN-63 \u2014 veterans dispersing with prisoner"
+        }
+      ]
+    },
+    {
+      "id": "FS-014",
+      "plant": {
+        "description": "Freeholder refuge communities as proof-of-concept for life beyond institutions \u2014 Marin and Rivenmarch settlements show another way to live.",
+        "chapter": 8,
+        "lineRef": "Ch8 \u2014 Marin's freeholder healing refuge, practical alliance forms"
+      },
+      "payoff": {
+        "description": "The freeholder model makes Kaelith and Lirien's final choice imaginable \u2014 life outside Court and Conclave is difficult but possible. They don't need institutional permission.",
+        "chapter": 22,
+        "lineRef": "Ch22 \u2014 Resolution includes acknowledgment that life beyond empires is viable"
+      },
+      "type": "foreshadow",
+      "status": "paid",
+      "progressions": [
+        {
+          "chapter": 22,
+          "description": "Full payoff: freeholder communities adapting faster than institutions to changed magic. Rivenmarch specifically named as Kaelith and Lirien's future destination \u2014 life beyond institutions proven viable and chosen.",
+          "lineRef": "Ch22, SCN-62 \u2014 scout reports freeholder adaptation; SCN-64 \u2014 Rivenmarch conversation as future planning"
+        }
+      ]
+    },
+    {
+      "id": "FS-015",
+      "plant": {
+        "description": "The resonance bond forming between Kaelith and Lirien \u2014 they can sense each other's presence and emotional state. Privacy becomes impossible.",
+        "chapter": 11,
+        "lineRef": "Ch11 \u2014 Resonance bond forms during Oathbrand removal, emotional privacy lost"
+      },
+      "payoff": {
+        "description": "The resonance bond transmits Lirien's guilt during the contract revelation, making lies impossible. Later, it proves trust survived betrayal \u2014 both feel the other's truth.",
+        "chapter": 16,
+        "lineRef": "Ch16 \u2014 Bond transmits Lirien's guilt; Ch20 \u2014 Bond confirms genuine choice"
+      },
+      "type": "foreshadow",
+      "status": "planted",
+      "appearances": [
+        {
+          "chapter": 13,
+          "note": "Bond used throughout for emotional transparency during Calwrath confession and first kiss. Recursive feedback loop during kiss \u2014 feeling each other feeling."
+        },
+        {
+          "chapter": 14,
+          "note": "Bond enables combat synchronization (shared sensation allows tactical coordination without verbal communication). Used during intimacy (recursive feedback \u2014 boundary between sensations dissolves). Bond transmits Kaelith's rib pain to Lirien. Bond identified as mechanism enabling contract loophole execution \u2014 monitoring heartbeat cessation with surgical precision. Kaelith senses Lirien carrying weight but bond does not transmit factual specifics."
+        },
+        {
+          "chapter": 15,
+          "note": "Bond used for shared conviction during evidence work, transmits unfiltered desire/fear/weight during declaration when Lirien drops operative filters, carries matched contentment during sleep. Emotional bandwidth increasing."
+        },
+        {
+          "chapter": 19,
+          "note": "Bond opens fully for first time since Ch16 black moment. Kaelith's deliberate wall removal. Bond carries 'everything' \u2014 fear, anger, residual betrayal, and love. One water metaphor in Kaelith's narration marks Lirien's influence through the bond."
+        }
+      ]
+    },
+    {
+      "id": "FS-016",
+      "plant": {
+        "description": "Iryse's good-faith complicity \u2014 the keeper of Dimming rites doesn't know her sincere stewardship has made her a sabotage vector.",
+        "chapter": 12,
+        "lineRef": "Ch12 \u2014 Iryse maintains rites with ritual confidence, unaware of corruption"
+      },
+      "payoff": {
+        "description": "Iryse becomes a crucial witness against Thalen once she recognizes how her stewardship was exploited. Testimony from inside the system carries weight.",
+        "chapter": 21,
+        "lineRef": "Ch21 \u2014 Iryse's witness testimony against Thalen, recognition of manipulation"
+      },
+      "type": "foreshadow",
+      "status": "planted"
+    },
+    {
+      "id": "FS-017",
+      "plant": {
+        "description": "Water imagery through the Seep \u2014 'water that finds every crack' as metaphor for infiltration, intimacy, and relentless investigation.",
+        "chapter": 1,
+        "lineRef": "Ch1 \u2014 Lirien's operative precision described through water metaphors"
+      },
+      "payoff": {
+        "description": "Throughout the story, water imagery reinforces Lirien's character \u2014 she is patient, persistent, finds weaknesses, adapts to containers. The Seep's name becomes thematic.",
+        "chapter": 22,
+        "lineRef": "Recurring motif through entire manuscript"
+      },
+      "type": "callback",
+      "status": "paid",
+      "progressions": [
+        {
+          "chapter": 22,
+          "description": "Final payoff: water imagery completes its arc \u2014 'water finds every crack' (Seep function, SCN-63) and the closing extended river metaphor where a dammed river finding its own shape becomes 'That was not flowing. That was deciding.' Water-as-infiltration transforms into water-as-free-choice.",
+          "lineRef": "Ch22, SCN-63 \u2014 'water finds every crack'; SCN-64 closing \u2014 river metaphor resolution"
+        }
+      ]
+    },
+    {
+      "id": "FS-018",
+      "plant": {
+        "description": "Ossya Thenndal mystery \u2014 who was Thenndal, why did they die, and how does their death connect to Kaelith's Warden inheritance?",
+        "chapter": 5,
+        "lineRef": "Ch5 \u2014 Thenndal name mentioned as historical clue to Warden lineage"
+      },
+      "payoff": {
+        "description": "Thenndal was Kaelith's ancestor and a Warden. Their death tied directly to the wider conspiracy to neutralize seal-keepers before the Pallor could fail.",
+        "chapter": 21,
+        "lineRef": "Ch21 \u2014 Thenndal revelation, connection to conspiracy confirmed"
+      },
+      "type": "foreshadow",
+      "status": "planted"
+    },
+    {
+      "id": "FS-019",
+      "plant": {
+        "description": "Lirien's operation 31 and the name Elisi \u2014 a specific moral wound parallel to Calwrath. Lirien retains personal data (the daughter's name) despite Seep training to discard it.",
+        "chapter": 13,
+        "lineRef": "Ch13, SCN-36 \u2014 Lirien confesses operation 31 in response to Calwrath",
+        "status": "planted"
+      },
+      "payoff": {
+        "description": "May resurface when Lirien's loyalty to the Court is tested, or when the kill contract revelation forces Kaelith to question whether Lirien's vulnerability was genuine.",
+        "chapter": "TBD"
+      },
+      "type": "foreshadow",
+      "status": "planted"
+    },
+    {
+      "id": "FS-020",
+      "plant": {
+        "description": "The first kiss framed as irreversible threshold \u2014 'I cannot undo that' / 'I do not want to undo it.' Chosen intimacy explicitly distinguished from necessity.",
+        "chapter": 13,
+        "lineRef": "Ch13, SCN-36 \u2014 Kiss aftermath dialogue",
+        "status": "planted"
+      },
+      "payoff": {
+        "description": "Ch16's betrayal reveal will reframe this chosen intimacy as potential manipulation \u2014 devastating precisely because it was framed as free choice.",
+        "chapter": 16
+      },
+      "type": "foreshadow",
+      "status": "planted"
+    },
+    {
+      "id": "FS-017",
+      "plant": {
+        "description": "Happiness-before-fall pattern \u2014 Kaelith recognises the Calwrath pattern (hope \u2192 clarity \u2192 catastrophe) and deliberately chooses hope anyway. The choice itself becomes ammunition: in ch16, she will believe she should have known better.",
+        "chapter": 15,
+        "lineRef": "Ch15, SCN-42 \u2014 internal beat: Kaelith recognises she is allowing hope, compares to Calwrath pattern, chooses it anyway"
+      },
+      "payoff": {
+        "description": "Ch16 devastation \u2014 Kaelith's self-recrimination amplified because she chose hope knowing the risk",
+        "chapter": 16,
+        "lineRef": "Ch16 \u2014 black moment uses Kaelith's own choice against her"
+      },
+      "type": "foreshadow",
+      "status": "planted"
+    },
+    {
+      "id": "FS-018",
+      "plant": {
+        "description": "Oathbrand phantom ache unusually quiet when Kaelith is emotionally settled/happy. The reduced intensity noted as suspicious but not analysed. Foreshadows the brand's responsiveness to magical/emotional state.",
+        "chapter": 15,
+        "lineRef": "Ch15, SCN-41 \u2014 Oathbrand ghost 'barely present, faint hum, background noise, almost civil'"
+      },
+      "payoff": {
+        "description": "Brand's responsiveness to emotional/magical state becomes significant in later chapters",
+        "chapter": null,
+        "lineRef": "TBD"
+      },
+      "type": "foreshadow",
+      "status": "planted"
+    },
+    {
+      "id": "FS-019",
+      "plant": {
+        "description": "Court enforcement escalation \u2014 intercepted message reveals secondary operative deployment is under review. The Court may send another agent to complete Lirien's contract.",
+        "chapter": 16,
+        "lineRef": "Ch16, SCN-43 \u2014 Court communique: 'Enforcement escalation approved. Secondary operative deployment under review.'",
+        "status": "planted"
+      },
+      "payoff": {
+        "description": "Secondary operative arrival creates external threat that may force separated protagonists back together.",
+        "chapter": 19,
+        "lineRef": "Ch19 \u2014 External threat forces reunion"
+      },
+      "type": "foreshadow",
+      "status": "advanced",
+      "advancement": {
+        "chapter": 17,
+        "description": "Kaelith's tactical assessment notes enforcement escalation and secondary operative deployment from communique. Filed as threat vector: 'If the Court decided Lirien was compromised, they would send another. Someone without the complication of months spent inside the target's defences.' Plants awareness for ch19 reunion catalyst.",
+        "lineRef": "Ch17, SCN-47 \u2014 tactical assessment passage"
+      }
+    },
+    {
+      "id": "FS-020",
+      "plant": {
+        "description": "Lirien's deterioration timeline \u2014 30 days before progressive physiological deterioration, 90 days before terminal Lessening. A ticking clock on the contract loophole.",
+        "chapter": 16,
+        "lineRef": "Ch16, SCN-43 \u2014 Court communique: 'Progressive physiological deterioration within 30 days... Terminal Lessening projected at 90 days.'",
+        "status": "planted"
+      },
+      "payoff": {
+        "description": "Deterioration timeline creates urgency for loophole execution and forces the question of whether Kaelith will cooperate despite broken trust.",
+        "chapter": 20,
+        "lineRef": "Ch20 \u2014 Contract fulfilled through loophole before Lessening progresses"
+      },
+      "type": "foreshadow",
+      "status": "advanced",
+      "advancement": {
+        "chapter": 17,
+        "description": "Lessening timeline internalized by Kaelith: 'thirty days before deterioration, ninety before terminal Lessening.' Connected to Court enforcement context. The ticking clock creates urgency for eventual loophole execution \u2014 Kaelith knows Lirien's survival depends on contract fulfillment.",
+        "lineRef": "Ch17, SCN-47 \u2014 contract processing passage"
+      }
+    },
+    {
+      "id": "FS-021",
+      "plant": {
+        "description": "God-seal dissolution intelligence \u2014 binding contracts destabilise at the Quietus where Pallor substrate thins enough to expose anchor structure. Requires both Warden and Hand working together.",
+        "chapter": 18,
+        "lineRef": "Ch18, SCN-51 \u2014 Ashborne contact: 'The binding has a vulnerability... At the god-seal. At the Quietus.'",
+        "status": "planted"
+      },
+      "payoff": {
+        "description": "Contract dissolution attempted at the Quietus. The mechanism proves real but more dangerous than intelligence suggested.",
+        "chapter": 21,
+        "lineRef": "Ch21 \u2014 God-seal confrontation"
+      },
+      "type": "foreshadow",
+      "severity": "critical",
+      "progressions": [
+        {
+          "chapter": 19,
+          "description": "Intelligence shared with Kaelith: binding destabilises at Quietus, defected Architect survived 12 years, three independent sources corroborate. Plan established: reach Quietus in three days via Ashborne relay points.",
+          "lineRef": "Ch19, SCN-55 \u2014 strategy session"
+        }
+      ]
+    },
+    {
+      "id": "FS-022",
+      "plant": {
+        "description": "Defected Court Architect \u2014 survived 12 years under Ashborne protection without Lessening. Implies dissolution of binding contracts is not merely theoretical but has precedent.",
+        "chapter": 18,
+        "lineRef": "Ch18, SCN-51 \u2014 Contact names defected Architect; pattern matches Seep archive case classified as 'presumed Lessened'",
+        "status": "planted"
+      },
+      "payoff": {
+        "description": "The Architect's survival and expertise prove critical to understanding the god-seal mechanism.",
+        "chapter": 20,
+        "lineRef": "Ch20-21 \u2014 Architect knowledge applied"
+      },
+      "type": "foreshadow",
+      "severity": "major",
+      "progressions": [
+        {
+          "chapter": 19,
+          "description": "Kaelith learns of the defected Architect \u2014 12 years under Ashborne protection without Lessening. Proof that dissolution is not theoretical.",
+          "lineRef": "Ch19, SCN-55 \u2014 Lirien's intelligence briefing"
+        }
+      ]
+    },
+    {
+      "id": "FS-023",
+      "plant": {
+        "description": "Bond intention north \u2014 Lirien's free choice to walk toward Kaelith transmitted through the bond as 'intention' rather than grief. First positive emotion transmitted since separation.",
+        "chapter": 18,
+        "lineRef": "Ch18, SCN-52 \u2014 'The bond carried her intention north' / 'Not guilt, not obligation... Intention.'",
+        "status": "planted"
+      },
+      "payoff": {
+        "description": "Bond intention enables reunion \u2014 Kaelith recognises the quality change and allows approach. The proof of choice transmitted through the bond begins rebuilding trust.",
+        "chapter": 19,
+        "lineRef": "Ch19 \u2014 Reunion scene"
+      },
+      "type": "foreshadow",
+      "severity": "major",
+      "status": "paying off",
+      "progressions": [
+        {
+          "chapter": 19,
+          "description": "Bond quality change perceived by Kaelith \u2014 Lirien's intention replacing grief. Bond contracts with proximity. Pays off in reunion: bond opens fully, carrying unfiltered emotional truth that enables decision.",
+          "lineRef": "Ch19, SCN-53 and SCN-54"
+        }
+      ]
+    },
+    {
+      "id": "FS-024",
+      "plant": {
+        "description": "Cipher destruction as identity death \u2014 Lirien destroys the Seep's encryption cipher, severing the last material connection to her operative identity. 'Classification: unnecessary. Status: destroyed. New classification: Lirien Dael, unaffiliated.'",
+        "chapter": 18,
+        "lineRef": "Ch18, SCN-52 \u2014 Cipher broken at designed stress point, threadbone fragments left on table",
+        "status": "planted"
+      },
+      "payoff": {
+        "description": "Lirien's unaffiliated status becomes meaningful when the Court assumes she is still their operative and the absence of cipher communication creates tactical advantage.",
+        "chapter": 20,
+        "lineRef": "Ch20-21 \u2014 Court's operational assumptions invalidated"
+      },
+      "type": "foreshadow",
+      "severity": "minor",
+      "status": "paying off",
+      "progressions": [
+        {
+          "chapter": 19,
+          "description": "Lirien presents destroyed cipher fragments to Kaelith. Kaelith reads it as identity severance: 'destroying one was not changing allegiance. It was ending a self.' Physical proof of Court severance.",
+          "lineRef": "Ch19, SCN-54 \u2014 cipher presentation"
+        }
+      ]
+    }
+  ],
+  "completionRate": 0,
+  "lastUpdatedChapter": 20,
+  "notes": "Initial ledger populated from plot-structure.json, subplots, dual-arc-timeline, and chapter outlines. All entries are 'planted' status \u2014 payoffs will be marked 'paid-off' as chapters are drafted and the foreshadowing resolves. Target completion rate: 100% by chapter 22 (excluding any intentional red herrings if added during drafting)."
+}

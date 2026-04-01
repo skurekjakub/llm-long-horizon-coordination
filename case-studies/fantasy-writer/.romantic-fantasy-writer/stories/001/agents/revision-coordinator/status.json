@@ -1,0 +1,57 @@
+{
+  "agent": "revision-coordinator",
+  "storyId": "001",
+  "result": "complete",
+  "summary": "Revision phase completed for all 22 chapters. Chapters 1-7 were previously revised. Chapters 8-22 processed through the full editorial pipeline (developmental edit \u2192 line edit \u2192 copy edit \u2192 chapter revision \u2192 revision audit). All chapters passed the revision audit gate. Chapter 22 required one retry after the initial audit identified unaddressed critical findings (negation-contrast saturation, grip image reuse, traceability errors, surviving darlings); the re-revision resolved all issues and passed on the second attempt.",
+  "startTime": "2025-07-22T00:00:00Z",
+  "endTime": "2026-03-21T05:13:50.153449+00:00",
+  "artifactsProduced": [
+    "chapters/008/revised.md through chapters/022/revised.md",
+    "revision-reports/008/revision-log.json through revision-reports/022/revision-log.json",
+    "revision-reports/009/ through revision-reports/022/ (developmental-edit.json, line-edit.json, copy-edit.json)",
+    "audit-reports/revision/chapter-008-gate.json through chapter-022-gate.json"
+  ],
+  "metadata": {
+    "chaptersProcessed": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22
+    ],
+    "totalChaptersInBook": 22,
+    "allChaptersRevised": true,
+    "retryLoops": {
+      "chapter22": {
+        "totalAttempts": 2,
+        "failureReasons": [
+          "LINE-201 unaddressed, LINE-205 unaddressed, INV-014 traceability broken, INV-081 darlings survived"
+        ],
+        "resolution": "Passed on second attempt after re-revision"
+      }
+    },
+    "recurringEditorialPatterns": [
+      "Architectural metaphor saturation in Kaelith POV chapters",
+      "Water/operative vocabulary saturation in Lirien POV chapters",
+      "Through-the-bond repetition across multiple chapters",
+      "Not X. Not Y. negation pattern",
+      "The way [noun] [verb] comparative construction"
+    ],
+    "crossManuscriptDiscrepancy": "DISC-001: Thalen Reyvas is Seventh Seat in all chapters but Sixth Seat in politics.json. Chapters internally consistent; politics.json needs update.",
+    "invariantsEnforced": [
+      "INV-014 (traceability)",
+      "INV-081 (darling removal)",
+      "INV-030 (no silent failures)"
+    ]
+  }
+}

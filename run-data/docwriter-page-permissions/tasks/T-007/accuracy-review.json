@@ -1,0 +1,151 @@
+{
+  "agent": "docwriter-accuracy-reviewer",
+  "taskId": "T-007",
+  "verdict": "approved",
+  "claims": [
+    {
+      "claim": "Users with permission to *Read* a page can view its version history",
+      "location": "Section: Permissions, Pages row (line 57)",
+      "result": "verified",
+      "evidence": "WebPageVersionsBase.cs line 100: ConfigurePage() calls CheckAclPermission(WebPageIdentifier.WebPageItemID, WebPageAclPermissions.READ). Line 149-151: CanUserDisplayVersions() returns HasAclPermission(WebPageIdentifier.WebPageItemID, WebPageAclPermissions.READ). Both confirm READ is the required permission to view versions.",
+      "docFact": "permissionSummary.viewVersions"
+    },
+    {
+      "claim": "Users with permission to *Update* a page can restore its previous versions",
+      "location": "Section: Permissions, Pages row (line 57)",
+      "result": "verified",
+      "evidence": "WebPageVersionsBase.cs line 142-144: CanUserRestoreContentVersion() returns HasAclPermission(WebPageIdentifier.WebPageItemID, WebPageAclPermissions.UPDATE). Line 199: RestoreVersion() calls CheckAclPermission(WebPageIdentifier.WebPageItemID, WebPageAclPermissions.UPDATE). READ is also implicitly required (line 100 of ConfigurePage), but as documented on the hub page, Read is a prerequisite for all page permissions except Display.",
+      "docFact": "permissionSummary.viewVersions"
+    },
+    {
+      "claim": "Cross-reference identifier 'permissions_pagelevel_xp' is valid",
+      "location": "Section: Permissions, Pages row (line 57), new cross-reference",
+      "result": "verified",
+      "evidence": "page-permission-management.md line 4: identifier: permissions_pagelevel_xp",
+      "docFact": null
+    },
+    {
+      "claim": "Cross-reference anchor 'Edit page permissions' exists in the target page",
+      "location": "Section: Permissions, Pages row (line 57), new cross-reference",
+      "result": "verified",
+      "evidence": "page-permission-management.md line 132: '## Edit page permissions' — heading exists as a valid anchor target",
+      "docFact": null
+    },
+    {
+      "claim": "Cross-reference link text 'page permission management' is descriptive (per REC-005)",
+      "location": "Section: Permissions, Pages row (line 57), new cross-reference",
+      "result": "verified",
+      "evidence": "REC-005 requires descriptive link text. 'page permission management' tells the reader what they'll find at the target. REC-005 is compatible with INV-crossref-009 (no conflict).",
+      "docFact": null
+    },
+    {
+      "claim": "Read and Update permissions for pages can be configured for specific roles",
+      "location": "Section: Permissions, Pages row (line 57), new cross-reference sentence context",
+      "result": "verified",
+      "evidence": "page-permission-management.md 'Edit page permissions' section (lines 132-148) describes breaking inheritance and setting permissions per role. The permission table (lines 26-104) includes Read and Update as configurable page permissions.",
+      "docFact": null
+    },
+    {
+      "claim": "Cross-reference identifier 'page_versioning_xp' is valid (existing references)",
+      "location": "Section: Permissions, introductory paragraph (line 41) and table cells",
+      "result": "verified",
+      "evidence": "content-versioning.md (business-users) line 3: identifier: page_versioning_xp. File path: src/_documentation/_documentation/business-users/content-versioning.md",
+      "docFact": null
+    },
+    {
+      "claim": "Anchor 'View version history' exists in page_versioning_xp target",
+      "location": "Section: Permissions, multiple cross-references (lines 41, 57, 65, 73)",
+      "result": "verified",
+      "evidence": "content-versioning.md (business-users) line 65: '## View version history'",
+      "docFact": null
+    },
+    {
+      "claim": "Anchor 'Restore previously published versions' exists in page_versioning_xp target",
+      "location": "Section: Permissions, multiple cross-references (lines 41, 57, 65, 73)",
+      "result": "verified",
+      "evidence": "content-versioning.md (business-users) line 82: '## Restore previously published versions'",
+      "docFact": null
+    },
+    {
+      "claim": "Users with the *View* permission for a workspace in Content hub can view version history for all items in that workspace",
+      "location": "Section: Permissions, Reusable content items row (line 65)",
+      "result": "verified",
+      "evidence": "ContentItemVersions.cs class attribute: [WorkspaceEvaluatePermission(WorkspaceDataPermissions.VIEW)]. CanUserDisplayVersions() at line ~180 checks WorkspaceDataPermissions.VIEW via workspacePermissionEvaluator.",
+      "docFact": null
+    },
+    {
+      "claim": "Users with *Update* permission for a workspace can restore previous versions of items in that workspace",
+      "location": "Section: Permissions, Reusable content items row (line 65)",
+      "result": "verified",
+      "evidence": "ContentItemVersions.cs CanUserRestoreContentVersion() checks WorkspaceDataPermissions.UPDATE via workspacePermissionEvaluator. RestoreVersion() calls CheckRestorePermission() which throws ForbiddenAccessException if not authorized.",
+      "docFact": null
+    },
+    {
+      "claim": "Users with permission to *View* a headless channel application can view version history for all items in that channel",
+      "location": "Section: Permissions, Headless items row (line 73)",
+      "result": "verified",
+      "evidence": "HeadlessItemVersions.cs class attribute: [UIEvaluatePermission(SystemPermissions.VIEW)]. CanUserDisplayVersions() checks SystemPermissions.VIEW via uiPermissionEvaluator.",
+      "docFact": null
+    },
+    {
+      "claim": "Users with *Update* permission for a headless channel application can restore previous versions of items in this channel",
+      "location": "Section: Permissions, Headless items row (line 73)",
+      "result": "verified",
+      "evidence": "HeadlessItemVersions.cs CanUserRestoreContentVersion() checks SystemPermissions.UPDATE. RestoreVersion() has [PageCommand(Permission = SystemPermissions.UPDATE)] attribute.",
+      "docFact": null
+    },
+    {
+      "claim": "An item can be restored when the item is in any workflow step",
+      "location": "Section: Permissions, paragraph after table (line 78)",
+      "result": "verified",
+      "evidence": "All three RestoreVersion() implementations (WebPageVersionsBase line 197, ContentItemVersions, HeadlessItemVersions) do not check workflow step or CanWorkWithContentItemInCurrentStep. They only check ACL/workspace UPDATE permission, then proceed with TryCreateDraft/TryUpdateDraft/StartNewWorkflowCycle regardless of current step.",
+      "docFact": null
+    },
+    {
+      "claim": "Users can restore a previous version of an item even when the item is in a step they don't have permission for",
+      "location": "Section: Permissions, paragraph after table (line 78)",
+      "result": "verified",
+      "evidence": "RestoreVersion() implementations do not call CanWorkWithContentItemInCurrentStep (unlike save, changeWorkflowStep, discard operations which do). The only permission check is ACL UPDATE (web pages) or workspace/application UPDATE (content items, headless).",
+      "docFact": null
+    },
+    {
+      "claim": "The item is restored to the *Draft* step with the data from the selected version",
+      "location": "Section: Permissions, paragraph after table (line 78)",
+      "result": "verified",
+      "evidence": "WebPageVersionsBase.RestoreVersion() lines 218-227: TryCreateDraft() creates/moves to Draft, TryUpdateDraft() applies the version data, StartNewWorkflowCycle() resets the workflow. Same pattern in ContentItemVersions and HeadlessItemVersions RestoreVersion() methods.",
+      "docFact": null
+    },
+    {
+      "claim": "The item has to go through the regular workflow from the start",
+      "location": "Section: Permissions, paragraph after table (line 78)",
+      "result": "verified",
+      "evidence": "All RestoreVersion() implementations call StartNewWorkflowCycle() after TryCreateDraft/TryUpdateDraft, which resets the workflow cycle. The item must then advance through workflow steps normally from Draft.",
+      "docFact": null
+    }
+  ],
+  "codeExamples": [],
+  "researchRecommendationChecks": [
+    {
+      "recommendationId": "REC-005",
+      "cited": true,
+      "followed": true,
+      "notes": "REC-005 recommends descriptive link text. The new cross-reference uses 'page permission management' as link text, which tells readers what they'll find. No conflict with invariants (INV-crossref-009 compatible)."
+    }
+  ],
+  "domainInsightChecks": [
+    {
+      "insightId": "DOM-017",
+      "relevant": true,
+      "notes": "Multi-layer permission architecture: the content correctly differentiates the page ACL layer (Read/Update) from the application-level permission (Access channel, implicit). No disambiguation issue present."
+    }
+  ],
+  "summary": {
+    "totalClaims": 17,
+    "verified": 17,
+    "incorrect": 0,
+    "unverifiable": 0,
+    "unsupported": 0,
+    "codeExamplesChecked": 0,
+    "codeExamplesCorrect": 0
+  }
+}

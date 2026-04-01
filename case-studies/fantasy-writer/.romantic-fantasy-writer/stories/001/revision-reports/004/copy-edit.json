@@ -1,0 +1,90 @@
+{
+  "chapterNumber": 4,
+  "editorType": "copy",
+  "generatedAt": "2025-07-24T14:40:00Z",
+  "overallAssessment": "Factual consistency is mostly sound. The chapter's revelations align with the continuity tracker's documented information flow for Chapter 4. Key issues: a time-of-day description conflicts with the post-Ch3 timeline, the binding's terminal consequence uses 'termination protocols' rather than the established world-bible term 'the Lessening,' and the binding countdown requires clarification to reconcile with Ch2's established timeline. Naming and world-rule compliance is otherwise strong.",
+  "findings": [
+    {
+      "id": "COPY-004-001",
+      "severity": "critical",
+      "category": "timeline-continuity",
+      "description": "Scene 1 describes 'fishing boats bobbing in the pre-dawn tide' and a 'pre-dawn' harbor view, but the chapter occurs after Ch3 events (enforcer arrival at dawn, scaffolding collapse, escape, warehouse discussion) which concluded in the late morning of Day 2. Lirien's report-writing scene explicitly references 'the scaffolding collapse' and 'the enforcer's arrival,' placing it after those events. Pre-dawn conditions are impossible at this point in the timeline.",
+      "lineRef": "Paragraph 11 ('She stood. Crossed to the window.')",
+      "correction": "Change harbor description to morning or midday conditions. Fishing boats at moorings in midday light, flat harbor under the Pallor's noon silver. Retain the four-hour departure window, which places the boat at late afternoon — consistent with the revised timeline."
+    },
+    {
+      "id": "COPY-004-002",
+      "severity": "major",
+      "category": "world-rule-compliance",
+      "description": "The binding's terminal consequence is described as 'termination protocols,' implying the binding kills the operative. Per magic-system.json MAG-005, breaking or failing a binding results in 'the Lessening — functional but missing aspects of will, memory, or identity.' The binding does not execute the operative; it collapses their ontological coherence. 'Termination protocols' contradicts this established mechanism.",
+      "lineRef": "Scene 1, paragraph 12 ('One hundred twenty hours: the binding would interpret sustained delay as operative incapacity and trigger termination protocols.')",
+      "correction": "Replace 'trigger termination protocols' with a reference to the Lessening: 'the binding would begin the Lessening — the slow collapse of will, memory, and purpose that awaited operatives who could not fulfill their terms.' This aligns with established binding mechanics while preserving the dread."
+    },
+    {
+      "id": "COPY-004-003",
+      "severity": "major",
+      "category": "timeline-continuity",
+      "description": "The binding countdown opens at 'Forty-eight hours' in Scene 1, matching Ch2's evening establishment ('has 48 hours before binding pain starts'). However, Ch3 spans midnight through late morning of Day 2, consuming approximately 14-18 hours. By Ch4's Scene 1, the countdown should be approximately 30-34 hours, not 48. The discrepancy can be resolved by establishing that Lirien's report filing resets the operational clock — the Seep needs processing time before escalation — but this must be stated.",
+      "lineRef": "Scene 1, paragraph 12 ('Forty-eight hours remained')",
+      "correction": "Add a sentence clarifying that the report filing provides a new 48-hour evaluation window: the Seep must receive and process the report before determining its insufficiency and escalating the binding. This reconciles the countdown with Ch2's timeline while preserving the narrative urgency."
+    },
+    {
+      "id": "COPY-004-004",
+      "severity": "minor",
+      "category": "naming-consistency",
+      "description": "Lirien's internal reference to the enforcer uses 'the enforcer' without naming Seldric, which is consistent with Lirien's operational framing. However, the enforcer's name (Seldric) was established in Ch3 — verify Lirien would know this name. As an intelligence operative who observed the confrontation, she likely intercepted the name. Not a true error but worth confirming for consistency if Seldric is named in later Lirien-POV scenes.",
+      "lineRef": "Scene 1, paragraph 7",
+      "correction": "No change required — 'the enforcer' is appropriate for Lirien's POV as she categorizes by function, not identity. Note for continuity: if Lirien later names Seldric, establish when she learned the name."
+    },
+    {
+      "id": "COPY-004-005",
+      "severity": "minor",
+      "category": "world-rule-compliance",
+      "description": "Lirien states 'I am not a Shaper. I cannot safely remove complex bindings without risking permanent damage to the subject.' Per the magic system, fae use binding magic (AM-003), not trained negotiation (AM-001/Shaping). Her statement is consistent — she correctly identifies that Oathbrand removal requires Shaper expertise, not fae binding skills. No error, but the distinction between fae binding magic and imperial Shaping should remain clear in subsequent chapters.",
+      "lineRef": "Scene 3, Oathbrand removal discussion",
+      "correction": "No change required. Statement is accurate and consistent with magic-system.json."
+    },
+    {
+      "id": "COPY-004-006",
+      "severity": "minor",
+      "category": "information-asymmetry",
+      "description": "Lirien reveals that the Pallor sabotage has been ongoing for forty years ('Forty years of it, embedded in the maintenance rites'). Per the continuity tracker, FACT-004 places this knowledge as known to Lirien by Ch4. However, the information-asymmetry map shows CHAR-002 learning about forty-year sabotage at Ch4 alongside CHAR-001. Verify: does Lirien's Seep intelligence packet from Ch2 include the forty-year duration, or does she learn it later? If the packet only confirmed Pallor instability without specifying duration, she should not cite 'forty years' here.",
+      "lineRef": "Scene 2, Pallor revelation paragraph",
+      "correction": "The continuity tracker supports Lirien knowing this by Ch4. Retain as-is but flag for cross-reference: the Seep intelligence packet from Ch2 should contain or imply the forty-year timeline for consistency."
+    },
+    {
+      "id": "COPY-004-007",
+      "severity": "minor",
+      "category": "continuity",
+      "description": "The chapter references 'Kaelith returned three hours later' in Scene 3. This is consistent with the continuity tracker ('Late morning: Kaelith returns after 3 hours'). The four-hour departure window ('four hours before the boat departs') should reconcile: if the tavern conversation began at ~9-10 AM and Kaelith left, she returns at ~12-1 PM, with the boat departing at ~1-2 PM. The final line says Kaelith will be at the port in 'four hours' — this should be 'one hour' or adjusted to maintain the four-hour window from the chapter's earlier reference.",
+      "lineRef": "Scene 3, 'Four hours,' Kaelith said. 'I'll be at the port.'",
+      "correction": "Adjust Kaelith's departure line to reference remaining time accurately. If 3 hours have passed since the first meeting and the original departure was 4 hours away, approximately 1 hour remains. Change to: 'The boat,' Kaelith said. 'I'll be at the port.' — removing the specific hour reference that conflicts with elapsed time."
+    }
+  ],
+  "namingVerification": {
+    "Kaelith Maren": "consistent",
+    "Lirien / Lirien Dael": "consistent — surname revealed at name exchange, correct",
+    "Duskhaven": "consistent",
+    "The Seep": "consistent",
+    "Cerith Court": "consistent",
+    "The Pallor": "consistent",
+    "Ythara / Ythara the Unfinished": "consistent — referred to as 'Ythara' in casual reference, acceptable",
+    "The Quietus": "consistent",
+    "Oathbrand": "consistent",
+    "The Listing Mast": "consistent with Ch1 establishment",
+    "Warden-lineage": "consistent with Ch3 encrypted messages",
+    "Seldric": "not named — appropriate for Lirien's POV"
+  },
+  "worldRuleCompliance": {
+    "bindingMechanics": "Mostly compliant. The countdown/escalation structure is consistent with MAG-005's framework. 'Termination protocols' requires correction to 'Lessening' (COPY-004-002).",
+    "kineticMemory": "Compliant. Lirien's explanation matches MAG-006: 'Kinetic memory functions below conscious access. Your body knows the route even if your mind does not.'",
+    "pallorEffect": "Compliant. The description of Ythara's influence ('oceans forget they are water') matches MAG-009.",
+    "oathbrand": "Compliant. The brand's behavior and Lirien's inability to remove it are consistent with MAG-008.",
+    "faeBindingContracts": "Compliant. The blood-seal, the binding's physiological enforcement, and the consent-based architecture are consistent with MAG-005."
+  },
+  "findingCounts": {
+    "critical": 1,
+    "major": 2,
+    "minor": 4
+  }
+}

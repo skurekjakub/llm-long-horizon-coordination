@@ -1,0 +1,85 @@
+{
+  "agent": "tension-mapper",
+  "storyId": "001",
+  "result": "completed",
+  "summary": "Tension map created for all 22 chapters with fantasy, romance, and overall tension values (1-10 scale). No INV-020 violations detected — proper pacing rhythm maintained throughout. Identified 4 primary recovery chapters (7, 10, 18, 22) strategically placed after high-intensity sequences. Tension peaks correctly aligned with major structural beats: midpoint (Ch11, tension 9), black moment (Ch16, tension 10), and climax (Ch21, tension 10). All chapters contain micro-tension seeds per INV-035. Prescriptive guidance provided for chapter outliner and drafter.",
+  "timestamp": "2025-03-18T03:15:00Z",
+  "artifactsProduced": [
+    "plot/tension-map.json"
+  ],
+  "upstreamArtifacts": [
+    "story-concept.json",
+    "plot/plot-structure.json",
+    "plot/dual-arc-timeline.json",
+    "romance-arc.json"
+  ],
+  "keyFindings": {
+    "totalChapters": 22,
+    "tensionRange": "Overall tension ranges from 4 (opening/resolution) to 10 (black moment and climax)",
+    "pacingVerdict": "PASS — No INV-020 violations. No three consecutive chapters at similar tension levels.",
+    "recoveryPoints": [
+      {
+        "chapter": 7,
+        "type": "post-ActI-climax",
+        "description": "Recovery after departure (Ch6). Establishes journey rhythm."
+      },
+      {
+        "chapter": 10,
+        "type": "investigation",
+        "description": "Recovery after pinch point one (Ch9). Investigation provides breathing room."
+      },
+      {
+        "chapter": 18,
+        "type": "pivot",
+        "description": "Partial recovery after black moment. Shift from despair to agency."
+      },
+      {
+        "chapter": 22,
+        "type": "resolution",
+        "description": "Final de-escalation and emotional landing."
+      }
+    ],
+    "tensionPeaks": [
+      {
+        "chapter": 11,
+        "tension": 9,
+        "type": "midpoint",
+        "note": "Oathbrand removal, magic return, resonance bond"
+      },
+      {
+        "chapter": 16,
+        "tension": 10,
+        "type": "blackMoment",
+        "note": "Contract revealed — trust shatters"
+      },
+      {
+        "chapter": 21,
+        "tension": 10,
+        "type": "climax",
+        "note": "Quietus confrontation, god-seal stabilization"
+      }
+    ],
+    "actOnePacing": "Steady escalation 4→7. Minor note: chapters 4-6 maintain medium-high tension (6,6,7) but this is acceptable for Act I climax build. Recovery comes immediately in Ch7.",
+    "actTwoPacing": "Proper rhythm with recovery chapters (7, 10) and strategic peaks (9, 11, 14, 16). False victory (Ch15, tension 7) correctly sets up black moment devastation.",
+    "actThreePacing": "Sustained crisis (17), partial recovery/pivot (18), dual peaks (20-21), resolution (22). Correct pattern for Act III.",
+    "microTensionCompliance": "All chapters include multiple micro-tension seeds per INV-035: unanswered questions, dramatic irony, time pressure, secrets, approaching consequences."
+  },
+  "prescriptionsIssued": {
+    "forChapterOutliner": "Detailed prescriptions provided for each chapter to calibrate scene-beat intensity. Low-tension chapters must still maintain micro-tension through unanswered questions or character vulnerability.",
+    "forChapterDrafter": "microTensionSeeds array provides specific tension continuity mechanisms for each chapter. Every scene must maintain at least one active tension source.",
+    "forCraftEnforcer": "Verify INV-035 during chapter audit — no half-page passage without tension. Check that recovery chapters don't become flat."
+  },
+  "invariantsVerified": [
+    "INV-020 (Pacing Variation): PASS — No 3 consecutive chapters at same tension level",
+    "INV-035 (Micro-Tension Continuity): Specified in microTensionSeeds for all chapters",
+    "INV-051/T13 (Tension Mapping): artifact created with visual/textual pacing chart"
+  ],
+  "notes": [
+    "Tension values are calibrated to story's 'darkly romantic, morally complex' tone. Scale 1-10 where even 'low' tension (3-4) includes ambient threat.",
+    "Recovery chapters (7, 10, 18, 22) are not 'no tension' — they shift from external/physical tension to internal/emotional tension.",
+    "False victory (Ch15) intentionally creates reader dread through dramatic irony — reader knows contract will be revealed.",
+    "Black moment (Ch16) correctly positioned at Act II close. Highest overall tension (10) reflects dual-arc collapse.",
+    "Act III maintains high baseline tension (6-10 except resolution) because stakes are existential and time-critical.",
+    "Chapter 22 resolution drops to tension 4 — provides necessary emotional landing without triumphalism per tone contract."
+  ]
+}

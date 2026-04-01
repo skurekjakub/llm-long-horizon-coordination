@@ -1,0 +1,48 @@
+{
+  "agent": "romantic-fantasy-writer-developmental-editor",
+  "status": "completed",
+  "result": "completed",
+  "chapter": 22,
+  "startedAt": "2025-07-31T21:30:00Z",
+  "completedAt": "2025-07-31T22:00:00Z",
+  "summary": "Ch22 developmental edit complete. 6 findings (0 critical, 1 major, 4 minor, 1 suggestion). Chapter 22 is the final chapter / resolution and delivers an earned HFN with full thematic closure across both arcs. The three-scene structure (aftermath/changed world → institutional reckoning/outgrowing → HFN/chosen love) is precisely calibrated. Lirien's classification-system-as-character-arc device — beginning in full operative mode and progressively yielding to the unclassifiable — mirrors her novel-length arc within a single chapter. The river metaphor capstone ('That was not flowing. That was deciding.') resolves the Seep water imagery from infiltration to free choice and is the novel's strongest passage. One major finding: Conclave institutional analysis in SCN-63 runs ~500 words and slows emotional momentum between the changed-world discovery and the HFN payoff — tighten by 100-150 words. Four minor findings: (1) 'Commander Maren' emotional beat over-explained (line 64); (2) departure inventory in SCN-64 opening reads as logistics report; (3) 'I don't know what to do' confession immediately explained rather than allowed to land; (4) Kaelith's Rivenmarch speech slightly exceeds established voice cadence. One suggestion: thematic synthesis sentence could be split for rhythmic emphasis. All invariants pass. No structural changes required — findings are refinements to a draft that already achieves its goals.",
+  "findingSummary": {
+    "critical": 0,
+    "major": 1,
+    "minor": 4,
+    "suggestion": 1,
+    "total": 6
+  },
+  "artifactsWritten": [
+    "revision-reports/022/developmental-edit.json",
+    "agents/developmental-editor/status.json"
+  ],
+  "artifactsRead": [
+    "chapters/022/draft.md",
+    "chapters/022/metadata.json",
+    "plot/chapter-outlines/chapter-022.json",
+    "plot/plot-structure.json",
+    "plot/dual-arc-timeline.json",
+    "plot/tension-map.json",
+    "romance-arc.json",
+    "story-concept.json",
+    "craft-profile.json",
+    "chapters/021/metadata.json"
+  ],
+  "invariantResults": {
+    "INV-004": "PASS",
+    "INV-005": "PASS (with minor concerns — three over-explanation passages)",
+    "INV-009": "PASS",
+    "INV-020": "PASS (10→4 correct decompression)",
+    "INV-021": "PASS (full commitment stage reached)",
+    "INV-036": "PASS (all three thematic pillars resolved)",
+    "INV-037": "PASS (both characters distinct from ch21 states)",
+    "INV-040": "PASS (all three scenes shift values)",
+    "INV-042": "N/A (resolution chapter)",
+    "INV-044": "N/A (resolution chapter)",
+    "INV-045": "N/A (payoff verified — proportional to ch16 devastation)",
+    "INV-050": "PASS (full convergence at resolution)"
+  },
+  "iteration": 1,
+  "timestamp": "2025-07-31T22:00:00Z"
+}

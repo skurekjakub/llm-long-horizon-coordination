@@ -1,0 +1,110 @@
+{
+  "chapterNumber": 22,
+  "title": "What the Water Chose",
+  "pov": "Lirien Dael",
+  "povId": "CHAR-002",
+  "scenes": [
+    {
+      "id": "SCN-62",
+      "type": "sequel",
+      "wordCount": 1395,
+      "valueShift": "From 'crisis contained' to 'the world survives changed — and so do we'",
+      "location": "Shelter at the base of Serath Dún",
+      "emotionalArc": "quiet aftermath → awed uncertainty → pragmatic acceptance"
+    },
+    {
+      "id": "SCN-63",
+      "type": "scene",
+      "wordCount": 1172,
+      "valueShift": "From 'waiting for vindication' to 'vindication comes from the people, not the institution'",
+      "location": "Granite outcrop above the shelter, Serath Dún",
+      "emotionalArc": "analytical assessment → tender observation → recognition of growth"
+    },
+    {
+      "id": "SCN-64",
+      "type": "sequel",
+      "wordCount": 1753,
+      "valueShift": "From 'what now?' to 'now we choose — every day, we choose this'",
+      "location": "Exterior wall of shelter, Serath Dún",
+      "emotionalArc": "tentative vulnerability → earned hope → chosen love"
+    }
+  ],
+  "totalWordCount": 4322,
+  "tensionLevel": 4,
+  "fantasyBeats": [
+    "Resolution — Pallor stabilized but permanently thinned, magic more accessible, world changed but surviving",
+    "Institutional reckoning begins — Conclave acknowledges Thalen's crimes, hedges on Kaelith's exile",
+    "Freeholder communities adapting faster than institutions — new world order emerging from margins"
+  ],
+  "romanceBeats": [
+    "Chosen Love — 'I Stay Because I Want To'",
+    "Bond persists as clean, chosen connection without binding interference",
+    "Shared future imagined — Rivenmarch, building together, usefulness as love language"
+  ],
+  "craftToolsApplied": [
+    "T5 — Tone Contract: morally complex, emotionally restrained but intense; no melodrama or triumphalism in resolution; earned hope without sentimentality",
+    "T6 — Stakes Escalation: deliberate decompression; stakes now personal/relational after existential climax; the question 'what now?' carries its own weight",
+    "T7 — Black Moment: full resolution payoff — love proven real through daily choice after crisis-forged bond; the HFN earned by the devastation of ch16-18",
+    "T8 — Internal and External Resistance: Lirien's final internal resistance (who am I without a mission?) resolved through choice; Kaelith's resistance to institutional need dissolved",
+    "T12 — Dual-Arc Interleave: fantasy resolution (world holds, institutions reckoning) enables romance resolution (external reasons gone, only choice remains); arcs close together",
+    "T13 — Tension Mapping: tension at 4/10 — lowest in the book, deliberate decompression; micro-tension sustains interest through identity questions and vulnerability",
+    "T15 — Foreshadowing Payoff: FS-013 (Ashborne Legion support fully materialised), FS-014 (freeholder model as viable future), FS-017 (water imagery resolution — river choosing its own shape)",
+    "T16 — Symbolic Motif Weaving: MOT-001 (Pallor thinner, true sky showing, real star visible — membrane as honest protection), MOT-003 (water finding own shape — Lirien's river metaphor resolving the Seep's channelled current into free choice), bond-hum as clean signal",
+    "T17 — Voice Fingerprinting: Lirien's flowing analytical voice with water/current metaphors, classification systems, visual dominance, cascading sentences — sharp contrast to ch21 Kaelith's percussive stone/architecture voice",
+    "T18 — Information Asymmetry: resolved — both women have full knowledge; Conclave document reveals institutional self-protection; no remaining asymmetries between protagonists",
+    "T20 — Emotional Throughline: Lirien enters with fierce loyalty (ch21), moves through unclassified quiet → pragmatic care → chosen love; Kaelith enters with fierce resolve (ch21), moves through load-bearing peace → outgrown need → hard-won acceptance",
+    "T21 — Vulnerability Ladder: final rung — Lirien declares love as daily choice without operational framing; Kaelith allows hope without bracing for loss; both fully vulnerable with full knowledge",
+    "T23 — Mystery Box Inventory: MB-014 closed (Ashborne support), MB-015 closed (can they build a life together — yes, by choice)",
+    "T24 — Subtext in Dialogue: Rivenmarch conversation surfaces practical planning as love language; 'I stopped needing their permission' carries personal-romantic subtext beneath political statement; 'You'd stay' is a question wearing a statement's clothes",
+    "T25 — Thematic Argument Scaffolding: TP-1 (trust resting, architecture proven), TP-2 (the right choice: staying when leaving is easy), TP-3 (chosen vs only — resolved: 'I stay because I want to' — the cage is open, both stay)"
+  ],
+  "motifInstances": [
+    {
+      "motifId": "MOT-001",
+      "description": "Pallor thinner but holding — 'translucent now where it had been opaque', true sky showing through, a single real star visible. The membrane as honest protection: damaged but functional, letting more light through than before",
+      "function": "Final evolution: from oppressive ceiling (Act I) to failing membrane (Act II) to honest boundary (Act III). The Pallor is no longer a cage — it is a choice to maintain, tended by the people beneath it"
+    },
+    {
+      "motifId": "MOT-003",
+      "description": "Water metaphors throughout — 'surface tension releasing', 'the way water adjusted to a new gradient', 'water finds every crack', and the closing extended metaphor: a dammed river finding its own shape. 'That was not flowing. That was deciding.'",
+      "function": "Final resolution: Lirien's signature motif completes its arc from infiltration-as-intimacy (the Seep finding every crack) to free choice (the river deciding its own course). The water is no longer channelled by someone else's design"
+    },
+    {
+      "motifId": "MOT-002",
+      "description": "Oathbrand absent — noted by omission. Kaelith's collarbone is free. The wound that would not heal has healed because the person maintaining it is in custody",
+      "function": "Resolved through absence. The motif's silence is its payoff"
+    }
+  ],
+  "foreshadowingPayoffs": [
+    {
+      "id": "FS-013",
+      "description": "Ashborne Legion support fully materialised — veterans escorting Thalen to tribunal, scout delivering intelligence reports, title 'Commander Maren' restored through popular use rather than institutional decree",
+      "payoffType": "full"
+    },
+    {
+      "id": "FS-014",
+      "description": "Freeholder model proven viable — Rivenmarch as concrete future for Kaelith and Lirien, freeholder communities adapting to changed magic faster than institutions, life beyond Court and Conclave demonstrated as possible",
+      "payoffType": "full"
+    },
+    {
+      "id": "FS-017",
+      "description": "Water imagery resolution — 'water finds every crack' (the Seep's function) transformed into 'a river that found its own shape' (Lirien's personal freedom). The closing metaphor resolves the entire motif arc: flowing becomes deciding",
+      "payoffType": "full"
+    }
+  ],
+  "emotionalStatesAtChapterEnd": {
+    "CHAR-002": {
+      "dominantEmotion": "chosen love",
+      "intensity": 7,
+      "description": "Lirien ends the story choosing to stay — not because the world needs it, not because a contract demands it, but because she wants to. The classification system that defined her operative identity yields to something unclassified and accepted. The river has found its own shape."
+    },
+    "CHAR-001": {
+      "dominantEmotion": "hard-won peace",
+      "intensity": 6,
+      "description": "Kaelith ends the story having outgrown the need for institutional vindication. The Calwrath wound is integrated, not erased. She wants to build — fortifications, community, a life with Lirien — and the wanting no longer feels like a prelude to loss."
+    }
+  },
+  "chapterOpeningHook": "quiet-aftermath — Lirien's classification system applied to a morning that defies classification; the binding's absence as the first thing she notices; the world changed outside the window",
+  "chapterClosingTechnique": "earned-hope — extended river metaphor resolving Lirien's water motif into free choice; 'That was not flowing. That was deciding.' Small, grounding final image: held hands, the bond humming, the star burning through the Pallor, the world grey and golden and real",
+  "timestamp": "2025-01-22T00:00:00Z"
+}

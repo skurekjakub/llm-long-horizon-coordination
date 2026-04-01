@@ -1,0 +1,269 @@
+{
+  "chapterNumber": 14,
+  "revisionTimestamp": "2025-07-29T14:00:00Z",
+  "draftWordCount": 5125,
+  "revisedWordCount": 5137,
+  "findingsAddressed": [
+    {
+      "findingId": "LINE-014-001",
+      "severity": "critical",
+      "action": "applied",
+      "description": "Reduced voice marker saturation across all three categories. Water metaphors reduced from 12 to 7 — kept strongest instances: 'dissolved like sugar in warm water' (pivotal kiss), 'water through packed earth' (cascading warmth), 'tidewater' (guilt rising), 'water knew downhill' (closing), 'current beneath still water' (desire), 'She was the water' (Seep identity), 'current redirects' (bond directionality). Cut: 'water off oiled stone' (replaced with 'stone turning a blade'), 'surfacing from deep water' (replaced with 'inner ear clearing' echoing suppression field), 'current that could not classify' (replaced with non-water phrasing), 'stones dropped into still water' (cut, used plain prose), 'viewed through water' (replaced with 'muted glass'). Eliminated meta-commentary 'Water. Everything came back to water.' Operative vocabulary thinned from 14+ to ~10 by removing from intimacy scene: cut 'operational scanning,' 'operational gentleness,' 'operational parameters,' 'operational requirement,' 'operational reason,' 'operational lexicon.' Remaining operative terms concentrate in Scene 1 (combat) and early Scene 2, thinning progressively as emotional overwhelm increases — mirroring the character arc the narrative claims. By the climactic intimacy, the classification framework has visibly cracked.",
+      "linesAffected": "Throughout — concentrated reductions in Scene 2 intimacy"
+    },
+    {
+      "findingId": "LINE-014-002",
+      "severity": "critical",
+      "action": "applied",
+      "description": "Reduced 'Through the bond' from 11 instances to 4. Kept: establishing instance (Scene 1 opening — sets up the bond's presence), pain-as-debt transmission (Kaelith's rib pain — emotionally earned), thematic combat reference ('won through the bond'), post-intimacy state (structurally necessary for scene transition). Cut 7 instances by rendering bond transmissions as direct perception: Kaelith's heartbeat 'arrived at her sternum,' her satisfaction 'arrived brief and fierce,' her direction shift rendered as felt displacement. In the intimacy scene, three 'through the bond' phrases removed — sensations now arrive directly in Lirien's awareness without citing the mechanism. The 'Through the bond:' colon-opener formula reduced from 7 to 2.",
+      "linesAffected": "Throughout — heaviest reductions in Scene 1 combat (6 to 1) and Scene 2 intimacy (3 to 0)"
+    },
+    {
+      "findingId": "LINE-014-003",
+      "severity": "critical",
+      "action": "applied",
+      "description": "Reduced 'Not X' negative-elimination pattern from 22 instances to approximately 8 sentence/clause starters. Kept strongest instances where negative framing is essential to meaning: 'not words, not thoughts' (bond's non-verbal quality), 'Not gratitude. Not desire' (elimination as emotional discovery), 'Not death. Not permanent termination. Not destruction' (contract parsing where negation mirrors legal exclusion), 'Not a lie. Not the truth' (morally essential grey territory). Cut remaining ~14 instances by restructuring: 'Not see — *feel*' became 'She felt it before she saw it'; 'Not a killing blow. A disruption' became 'A disruption, across the muscle'; 'It was not a plan' restructured into direct statement; 'Not a visual. A sensation' became 'A sensation'; 'Not because it was easy' cut entirely; 'Not clinical care. Not operational gentleness' became 'A care that existed only when the person underneath you mattered more than the mission above you'; 'Not the desire' restructured to direct statement. Varied rhetorical architecture throughout to prevent monotone.",
+      "linesAffected": "Throughout — all three scenes"
+    },
+    {
+      "findingId": "LINE-014-004",
+      "severity": "major",
+      "action": "applied",
+      "description": "Cut subtext over-explanation at the 'Minor'/'I know' exchange. Removed the entire 'The gap between minor and I know held everything. Minor meant:... I know meant:...' paragraph. Retained only the shortened training meta-commentary pivoting toward action: 'She had been trained to dismantle the layers between what a person said and what they meant, to find the value in the space between surface and depth. None of that training had prepared her for wanting to close the gap instead of analyzing it.' The dialogue and physical context (lingering hands, clinical-not-clinical gesture) now carry the subtext without narratorial explanation.",
+      "linesAffected": "Scene 2, post-injury dialogue"
+    },
+    {
+      "findingId": "LINE-014-005",
+      "severity": "major",
+      "action": "applied",
+      "description": "Cut cliche 'The irony was so sharp it drew blood' entirely. Replaced with physical gesture: 'She pressed two fingers against her own pulse. Counted.' This mirrors the loophole's mechanism (monitoring heartbeat) while carrying emotional weight without labeling the irony. The irony is self-evident from the preceding content (bond that makes them deadly in combat could save Kaelith's life by stopping her heart).",
+      "linesAffected": "Scene 3, loophole discovery"
+    },
+    {
+      "findingId": "LINE-014-006",
+      "severity": "major",
+      "action": "applied",
+      "description": "Replaced stock simile 'like a compass needle finding north' with domain-appropriate alternative: 'the way a current redirects when it finds the gap in the rock.' This uses Lirien's water/infiltration framework while maintaining the directional-pull concept and eliminating the transplantable compass metaphor.",
+      "linesAffected": "Scene 1, Kaelith's directional movement"
+    },
+    {
+      "findingId": "LINE-014-007",
+      "severity": "major",
+      "action": "applied",
+      "description": "Eliminated both instances of 'terrifying' as direct emotion label. L90 ('the terrifying thing was how they'd won') replaced with physical manifestation: 'And her hands were shaking. Not from the fight. From what the fight had proven.' Shows terror through the body rather than naming it. L216 ('That was the most terrifying thing of all') replaced with: 'Her pulse should have spiked. It didn't. The calm itself was the warning.' Lets the preceding line ('She had surrendered control completely. And it had felt right.') carry the emotional weight without explanatory label.",
+      "linesAffected": "Scene 1 close, Scene 2 close"
+    },
+    {
+      "findingId": "LINE-014-008",
+      "severity": "major",
+      "action": "applied",
+      "description": "Cut subtext over-explanation at 'After.' Removed the plot-element list ('After meant: when the Quietus is reached, when the Pallor is addressed...'). Kept only the emotionally charged content: '\"After.\" Lirien let the word sit between them. *Do we still exist outside the emergency?*' The reader understands what 'after' means from context; the italicized question adds the emotional dimension without expository listing.",
+      "linesAffected": "Scene 3, opening dialogue"
+    },
+    {
+      "findingId": "LINE-014-009",
+      "severity": "major",
+      "action": "applied",
+      "description": "Replaced tell-label 'The generosity of it' with physical reaction grounded in Lirien's body and specific character knowledge: 'Lirien's throat constricted. Kaelith had been taught — by six years of exile, by the thing that happened at Calwrath — that trust was the failure that preceded collapse. And she was choosing it anyway.' Removes the abstract label while keeping the thematic observation about Kaelith's choice, grounded in a physical response.",
+      "linesAffected": "Scene 3, post-'inventory' dialogue"
+    },
+    {
+      "findingId": "LINE-014-010",
+      "severity": "major",
+      "action": "applied",
+      "description": "Broke the 80+ word compound sentence at the intimacy climax into shorter sentences that alternate physical and abstract. Original single sentence split into: 'She pulled Kaelith closer. The bond made the closeness recursive — each touch echoing between them, building, until the boundary between *her* pleasure and *mine* became a question neither of them was asking. They were the same circuit. And the pleasure was something they were making together, in the space where two people briefly became one continuous thing.' Rhythm: short grounding action, medium bond-feedback, short declarative, long closing. Follows style guide's 'clipped impact lines at moments of exposure.'",
+      "linesAffected": "Scene 2, intimacy climax"
+    },
+    {
+      "findingId": "LINE-014-011",
+      "severity": "minor",
+      "action": "applied",
+      "description": "Removed meta-aware motif commentary 'Water. Everything came back to water.' and the explicit 'Lirien the Seep — named for' framing. Restructured to enter the Seep meaning organically: 'The Seep. Named for the thing that finds every crack...' Preserves the codename reveal and the water/structure parallel while cutting the narrator-winking-at-the-motif observation.",
+      "linesAffected": "Scene 2, water motif passage"
+    },
+    {
+      "findingId": "LINE-014-012",
+      "severity": "minor",
+      "action": "applied",
+      "description": "Simplified combat data insertion 'for three of her forty-three completions' to remove the file-citation feel. Revised to: 'She'd designed configurations like this herself. Twice, at least. The geometry was familiar.' Preserves characterization (she has relevant experience) without the specific fraction that reads as character-file citation under combat stress.",
+      "linesAffected": "Scene 1, isolation protocol recognition"
+    },
+    {
+      "findingId": "LINE-014-013",
+      "severity": "minor",
+      "action": "applied",
+      "description": "Replaced stock action-scene phrasing 'made Lirien's vision white at the edges' with bond-specific sensory experience: 'compressed the world to a bright, flat plane where only the pain and the granite ledge existed.' More specific to the bond-transmitted pain context and avoids the common vision-going-white shorthand.",
+      "linesAffected": "Scene 1, bond-transmitted pain"
+    },
+    {
+      "findingId": "LINE-014-014",
+      "severity": "minor",
+      "action": "applied",
+      "description": "Removed Kaelith-domain metaphor crossover 'its own kind of structural event' during the first intimate scene. Replaced with Lirien's assessment vocabulary: 'it registered as an event Lirien had no classification for.' Keeps the meaning (Kaelith's vulnerability is significant and unprecedented) while filtering through Lirien's framework rather than borrowing Kaelith's architectural domain prematurely.",
+      "linesAffected": "Scene 2, Kaelith's sound"
+    },
+    {
+      "findingId": "LINE-014-015",
+      "severity": "minor",
+      "action": "applied",
+      "description": "Cut overwrought closing line 'The arithmetic of that was the most dangerous equation she had ever carried.' The preceding line ('She had just staked her survival on a woman she was contractually bound to end.') is the real section closer — specific, devastating, and plain. The mathematical metaphor was a redundant intensifier. Section now ends cleanly on the devastating juxtaposition.",
+      "linesAffected": "Scene 1, section close"
+    },
+    {
+      "findingId": "DEV-014-001",
+      "severity": "major",
+      "action": "applied",
+      "description": "Added a brief recovery/quiet beat at the chapter opening before the ambush triggers. New opening paragraph establishes dawn quiet, Lirien counting Kaelith's breaths through the bond, the fragile stillness before violence. This provides approximately 100 words of lower-register contemplative prose before the action begins, creating a micro-recovery beat at the chapter opening despite the high overall tension level. Helps mitigate the four-chapter sustained-high cluster (ch11-14) by giving the reader breathing room within the chapter's internal pacing.",
+      "linesAffected": "Chapter opening, new paragraphs before ambush"
+    },
+    {
+      "findingId": "DEV-014-003",
+      "severity": "minor",
+      "action": "applied",
+      "description": "Added guilt-transmission beat during Scene 2 intimacy. After the 'I'm not a home' guilt moment, inserted a new beat: 'The thought rose and the bond caught its shadow. Kaelith's hand stilled on Lirien's skin — a pause, barely a breath's width. A searching look, grey-green eyes finding Lirien's face. Lirien pressed the thought down, pressed it deep, and kissed the hollow of Kaelith's throat instead. After a moment, Kaelith's hand moved again.' This creates continuity with Scene 3's 'I know you're carrying something' observation and adds micro-tension to the intimate scene by showing the bond cannot be fully controlled.",
+      "linesAffected": "Scene 2, post-guilt internal monologue"
+    },
+    {
+      "findingId": "DEV-014-005",
+      "severity": "minor",
+      "action": "applied",
+      "description": "Added intellectual scaffolding beat before the contract loophole reasoning. Inserted a Seep training principle memory: 'A Seep principle surfaced, clear as a training instructor's voice: The binding reads what it reads. Precision of language is precision of obligation. She had used the principle before — twice in her career, exploiting the gap between what a contract intended and what its words required. The gap was narrow. But narrow was enough, if you knew where to cut.' This establishes that exploiting literal wording is standard Seep tradecraft, making the loophole discovery feel like applied professional skill rather than narratively convenient eureka. Also added emphasis on the bond as the enabling condition — the loophole existed but was only viable because the bond provides monitoring fidelity.",
+      "linesAffected": "Scene 3, pre-loophole passage"
+    },
+    {
+      "findingId": "COPY-001",
+      "severity": "major",
+      "action": "applied",
+      "description": "Fixed timeline error: 'Three weeks of shared sensation' corrected to 'Days of shared sensation — that was all it had been, though it felt like longer.' The bond formed in ch11 (2-3 days before ch14). Added 'though it felt like longer' to acknowledge the emotional compression without violating the established timeline.",
+      "linesAffected": "Scene 2, injury assessment"
+    },
+    {
+      "findingId": "COPY-002",
+      "severity": "major",
+      "action": "applied",
+      "description": "Fixed timeline error: 'the specific warmth that Lirien had spent weeks learning to recognize' corrected to 'days.' The bond-transmitted warmth can only have been experienced since the bond formed in ch11 (2-3 days prior). Also removed the 'Through the bond:' opener from this passage (addressing LINE-014-002 simultaneously), rendering the warmth as arriving directly.",
+      "linesAffected": "Scene 2, pre-kiss warmth"
+    },
+    {
+      "findingId": "COPY-004",
+      "severity": "minor",
+      "action": "applied",
+      "description": "Replaced anachronistic term 'feedback loop' with world-appropriate phrasing: 'the bond turned sensation back on itself.' Preserves the recursive-sensation concept while eliminating the modern systems-theory terminology.",
+      "linesAffected": "Scene 2, first kiss bond description"
+    },
+    {
+      "findingId": "COPY-005",
+      "severity": "minor",
+      "action": "applied",
+      "description": "Replaced anachronistic term 'probability tree' with simpler phrasing: 'as a branching point, one path leading back toward...' Eliminates the mathematical decision-theory terminology while keeping the branching-choice concept.",
+      "linesAffected": "Scene 2, pre-kiss choice"
+    },
+    {
+      "findingId": "COPY-006",
+      "severity": "minor",
+      "action": "applied",
+      "description": "Fixed awkward repetition 'knew the way the way water knew downhill.' Restructured to: 'knew the path the way water knew downhill.' Disambiguates the two uses of 'the way' (path vs. manner).",
+      "linesAffected": "Closing passage, Quietus pull"
+    },
+    {
+      "findingId": "COPY-007",
+      "severity": "minor",
+      "action": "applied",
+      "description": "Changed British spelling 'colour' to American spelling 'color' to match ch2 precedent and maintain manuscript-wide consistency.",
+      "linesAffected": "Scene 3, Vael Seren passage"
+    },
+    {
+      "findingId": "COPY-008",
+      "severity": "minor",
+      "action": "applied",
+      "description": "Changed British spellings 'offence' and 'defence' to American spellings 'offense' and 'defense' to match manuscript-wide convention.",
+      "linesAffected": "Scene 1, second attacker combat"
+    },
+    {
+      "findingId": "COPY-009",
+      "severity": "minor",
+      "action": "applied",
+      "description": "Fixed factual inaccuracy 'longer than either of them had been alive.' A mid-40s attacker cannot have been doing violence longer than Lirien (fae, 30+ years of operations). Changed to 'for most of his life' which is accurate regardless of the protagonists' ages.",
+      "linesAffected": "Scene 1, second attacker description"
+    }
+  ],
+  "findingsDeferred": [
+    {
+      "findingId": "DEV-014-002",
+      "severity": "major",
+      "action": "deferred",
+      "rationale": "No ch14 change required — this is a forward-facing structural concern about overlap with ch15's romance beat. The boundary should be enforced during ch15 outlining/drafting. The plot-structure.json artifact should be updated separately to reflect that the first intimate scene occurs in ch14, not ch15."
+    },
+    {
+      "findingId": "DEV-014-004",
+      "severity": "minor",
+      "action": "partially-addressed",
+      "rationale": "Word count remains at ~5137 (original 5125). The revision's additions (recovery beat, guilt-transmission beat, loophole scaffolding) offset cuts from voice-marker thinning and subtext-explanation removal. Net change is approximately neutral. Further compression would risk cutting prose the line editor specifically flagged for preservation (combat synchronization, Vael Seren passage, contract loophole discovery, closing image)."
+    },
+    {
+      "findingId": "COPY-003",
+      "severity": "moderate",
+      "action": "deferred",
+      "rationale": "This is a continuity tracker discrepancy (Vael Seren listed as ch12 event but absent from ch12 draft), not a ch14 error. The ch14 prose is internally consistent as the first telling. The continuity tracker should be updated by the continuity-tracker agent to reflect ch14 as the first prose instance of the Vael Seren story."
+    },
+    {
+      "findingId": "LINE-014-016",
+      "severity": "note",
+      "action": "applied-opportunistically",
+      "rationale": "Replaced 'like a bowstring finding its draw' with 'like a seal finding its pressure point' — a simile from Lirien's domain (seals, containment, precision) rather than generic military-fantasy imagery."
+    },
+    {
+      "findingId": "LINE-014-017",
+      "severity": "note",
+      "action": "partially-applied",
+      "rationale": "Shortened the architectural metaphor at L332 to 'New load paths. Weight distributed differently.' — cutting the explicit 'Like a wall that looks identical from outside' frame while preserving the voice-bleed-through that is thematically appropriate at this point in the story."
+    },
+    {
+      "findingId": "LINE-014-018",
+      "severity": "note",
+      "action": "applied",
+      "rationale": "Replaced stock 'surfacing from deep water' with auditory echo: 'an inner ear clearing' — connecting back to the suppression field's described auditory quality and avoiding the common water-surfacing phrase."
+    },
+    {
+      "findingId": "LINE-014-019",
+      "severity": "note",
+      "action": "preserved",
+      "rationale": "All four passages flagged for preservation are intact: combat synchronization sequence, Vael Seren harbour passage, contract loophole discovery, closing image."
+    },
+    {
+      "findingId": "LINE-014-020",
+      "severity": "note",
+      "action": "acknowledged",
+      "rationale": "Process recommendation for drafter. Applied the corrections in this revision; systemic pattern noted for drafting coordinator guidance."
+    }
+  ],
+  "revisionSummary": {
+    "criticalFindings": 3,
+    "criticalAddressed": 3,
+    "majorFindings": 9,
+    "majorAddressed": 8,
+    "majorDeferred": 1,
+    "minorFindings": 11,
+    "minorAddressed": 9,
+    "minorDeferred": 2,
+    "noteFindings": 5,
+    "noteAddressed": 4,
+    "noteDeferred": 1,
+    "totalFindings": 28,
+    "totalAddressed": 24,
+    "totalDeferred": 4
+  },
+  "patternReductions": {
+    "waterMetaphors": { "before": 12, "after": 7, "reduction": "42%" },
+    "throughTheBond": { "before": 11, "after": 4, "reduction": "64%" },
+    "throughTheBondColonOpener": { "before": 7, "after": 2, "reduction": "71%" },
+    "notXPattern": { "before": 22, "after": 8, "reduction": "64%" },
+    "operativeVocabularyInScene2": { "before": 10, "after": 3, "reduction": "70%" }
+  },
+  "newContent": [
+    "Dawn recovery beat — quiet contemplative opening before ambush (DEV-014-001)",
+    "Bond guilt-transmission beat — Kaelith registers shadow of Lirien's distress during intimacy (DEV-014-003)",
+    "Seep training principle — 'The binding reads what it reads' loophole scaffolding (DEV-014-005)"
+  ],
+  "coherenceNotes": "Post-revision coherence pass verified: (1) Voice marker density at sustainable levels — most paragraphs contain zero figurative language, allowing markers to land when they arrive; (2) Operative vocabulary thins progressively from Scene 1 (combat — full density) through Scene 2 (intimacy — reduced) to Scene 3 (guilt/loophole — selective use for contract analysis), mirroring the character's emotional state; (3) Dialogue unchanged and still reads as naturalistic speech; (4) New beats (recovery opening, guilt-transmission, loophole scaffolding) integrate organically without disrupting scene flow; (5) POV voice remains unmistakably Lirien throughout; (6) Closing image preserved intact."
+}

@@ -1,0 +1,48 @@
+{
+  "taskId": "DOC-3167",
+  "completedAt": "2026-03-18T22:24:04Z",
+  "totalTasks": 8,
+  "firstAttemptRate": 0.625,
+  "reviewCycles": 16,
+  "initialReviewCycles": 11,
+  "reEntryReviewCycles": 5,
+  "reEntryReviewMode": "style-only",
+  "patternsDiscovered": 1,
+  "patternsConfirmed": 1,
+  "antiPatternsDiscovered": 1,
+  "antiPatternsConfirmed": 1,
+  "domainInsightsDiscovered": 4,
+  "sourceObservationsDiscovered": 3,
+  "styleEvolutionsConfirmed": 1,
+  "entriesUpdated": 3,
+  "entriesCreated": 9,
+  "entriesDiscarded": 3,
+  "discardedSignals": [
+    {
+      "signal": "DI-6: Cross-cutting code architecture predicts multi-page documentation impact",
+      "reason": "Low actionability; describes a correlation that the impact mapper already operationalizes"
+    },
+    {
+      "signal": "SE-1: 'inherit' flagged as too technical for business users",
+      "reason": "Single occurrence, low strength. DOM-008 already covers business-user vocabulary requirements. Specific 'inherit' example too narrow for standalone entry"
+    },
+    {
+      "signal": "SE-2: Style reviewer catches pre-existing issues beyond diff scope",
+      "reason": "Signal self-identified as not actionable. Pre-existing issue predates pipeline run"
+    }
+  ],
+  "researchRecommendationsUsed": 1,
+  "researchRecommendationsBlocked": 4,
+  "researchCitationRate": 0.1,
+  "gapsFound": 3,
+  "gapsResolved": 3,
+  "gapHuntingCycles": 2,
+  "knowledgeBriefEffectiveness": {
+    "patternsFromBrief": 6,
+    "patternsActuallyUsed": 1,
+    "antiPatternsFromBrief": 4,
+    "antiPatternsViolated": 2,
+    "overIncluded": 5,
+    "suggestedRelevanceThreshold": 0.55
+  }
+}

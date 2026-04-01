@@ -1,0 +1,75 @@
+{
+  "chapterNum": 3,
+  "pov": "CHAR-001",
+  "povTransitionMotivation": "Return to Kaelith's POV to show her response to identified surveillance and the escalation from passive observation to active external threat. Kaelith's tactical response to danger is character-defining",
+  "scenes": [
+    {
+      "id": "SCN-007",
+      "goal": "Kaelith investigates the garrison's recent communications, looking for evidence of who ordered the surveillance",
+      "conflict": "She discovers that Tavik has been receiving encrypted messages from someone in the High Conclave network, asking about her health and whether 'the suppression remains effective'",
+      "disaster": "Kaelith realizes she is not forgotten — she is being actively monitored and maintained in suppression by institutional forces. The Oathbrand is not malfunctioning; it is being refreshed deliberately",
+      "valueShift": "From 'punishment as passive exile' to 'containment as active conspiracy'",
+      "fiveCommandments": {
+        "incitingIncident": "Kaelith breaks into Tavik's office after hours",
+        "complication": "Encrypted messages reference 'maintaining suppression' and 'preventing restoration'",
+        "crisis": "Confront Tavik directly or use this information tactically?",
+        "climax": "Kaelith chooses tactical silence — revealing what she knows gains nothing if she cannot escape",
+        "resolution": "She memorizes message patterns and leaves no evidence of the break-in"
+      }
+    },
+    {
+      "id": "SCN-008",
+      "goal": "Kaelith returns to her quarters to process the discovery, planning her next move",
+      "conflict": "A Conclave-linked enforcer arrives in Duskhaven, asking pointed questions about Kaelith's location and recent activity",
+      "disaster": "The enforcer is not subtle — his presence is a threat display. Kaelith realizes staying in Duskhaven is no longer survivable",
+      "valueShift": "From 'I can endure this' to 'I must leave or be disappeared'",
+      "fiveCommandments": {
+        "incitingIncident": "Kaelith observes the enforcer questioning locals",
+        "complication": "The enforcer is accompanied by two armed subordinates",
+        "crisis": "Flee immediately or gather resources first?",
+        "climax": "Kaelith begins gathering supplies while maintaining normal routine — she will not run blind",
+        "resolution": "She prepares to leave within two days, accepting that exile is about to become fugitive flight"
+      }
+    },
+    {
+      "id": "SCN-009",
+      "goal": "Kaelith encounters the enforcer directly in the garrison courtyard — confrontation is unavoidable",
+      "conflict": "The enforcer demands she report for 'medical evaluation' of her Oathbrand. This is clearly a euphemism for rendition",
+      "disaster": "Violence is about to erupt. Kaelith is outnumbered and magically suppressed. She will lose this fight",
+      "valueShift": "From 'I fight alone' to 'the enemy of my enemy may be my only option'",
+      "fiveCommandments": {
+        "incitingIncident": "The enforcer corners Kaelith publicly",
+        "complication": "Refusal means immediate arrest or violence",
+        "crisis": "Submit and be taken, or fight and die here?",
+        "climax": "Before Kaelith can act, Lirien intervenes — not overtly, but through precise tactical disruption. The enforcer's subordinates are suddenly dealing with 'accidents' that separate them from their superior",
+        "resolution": "The enforcer retreats temporarily, sensing opposition he did not expect. Kaelith and Lirien make no acknowledgment of the cooperation, but both know they just fought the same enemy"
+      }
+    }
+  ],
+  "emotionalArc": {
+    "startState": "Kaelith begins in investigative focus — she has a problem to solve and she knows how to gather intelligence. Emotions are suppressed in favor of tactical thinking",
+    "endState": "She ends in reluctant pragmatism — she cannot survive this alone, and the fae operative who was sent to kill her just acted as an ally. The categories 'enemy' and 'ally' are no longer stable",
+    "pivotMoment": "The moment Lirien disrupts the enforcer's capture attempt without being asked. That intervention is tactically inexplicable unless Lirien has chosen to keep Kaelith alive for reasons beyond the original surveillance"
+  },
+  "fantasyBeats": [
+    "Conspiracy Surfaces — Conclave-Linked Threat in Duskhaven: Tavik's encrypted messages reveal that Kaelith is being actively monitored by High Conclave forces. The Oathbrand suppression is maintained deliberately, not accidental. An enforcer arrives to secure her"
+  ],
+  "romanceBeats": [
+    "Shared Watch — First Tactical Cooperation: External threat forces de facto alliance. Kaelith and Lirien end up fighting the same enemy without coordinating. Afterward, neither acknowledges the cooperation, but both notice how effectively the other moves under pressure"
+  ],
+  "hookType": "escalating-danger",
+  "hookTypeDescription": "Opens with Kaelith breaking into Tavik's office — clean, competent tradecraft. The hook is the discovery that her exile is not neglect but active conspiracy",
+  "closeType": "unstable-alliance",
+  "closeTypeDescription": "Closes with Kaelith and Lirien standing in the aftermath of the disrupted capture attempt, not looking at each other, both aware that they just became tactical allies against a mutual threat. Neither has admitted it aloud",
+  "targetWordCount": 4000,
+  "tensionLevel": 6,
+  "pacingNotes": "Rising tension through external threat escalation. The conspiracy becomes tangible and immediate. The first tactical cooperation introduces action-driven pacing",
+  "locationsPrimary": ["Duskhaven — Tavik's office, Kaelith's quarters, garrison courtyard"],
+  "charactersPresent": ["CHAR-001 (Kaelith)", "CHAR-002 (Lirien)", "CHAR-009 (Tavik)", "unnamed Conclave enforcer and subordinates"],
+  "upstreamRefs": [
+    "../../plot/plot-structure.json",
+    "../../characters/CHAR-001.json",
+    "../../plot/dual-arc-timeline.json",
+    "../../plot/tension-map.json"
+  ]
+}

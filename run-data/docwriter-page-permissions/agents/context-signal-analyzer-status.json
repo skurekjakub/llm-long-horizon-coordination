@@ -1,0 +1,17 @@
+{
+  "agent": "docwriter-context-signal-analyzer",
+  "status": "done",
+  "result": "context-signals-ready",
+  "timestamp": "2026-03-18T22:13:16Z",
+  "gapSignals": 3,
+  "domainInsights": 6,
+  "sourceObservations": 4,
+  "researchSourcesEvaluated": 5,
+  "keyFindings": [
+    "2 of 3 gaps were predictable: clone and synchronize operations had full permission data in code-analysis but were excluded from task scope. ANTI-004 (enumeration without checklist) was violated.",
+    "Permission-requirement prose systematically triggers INV-style-132 ('must' directed at people) — 3 of 8 tasks rejected for this. New domain-specific anti-pattern candidate.",
+    "Research citation rate was 10% (1/10 approved recommendations cited). Low because task was prose gap-fill, not the how-to/API-reference work most sources target.",
+    "Knowledge brief over-included 5 entries (all correctly flagged as low applicability). Raising relevance threshold from 0.4 to 0.55 would eliminate over-inclusion without losing useful entries.",
+    "Hub page absorbing 44.7% of impacts predicted critical-risk multi-cycle outcome. Cross-ref tasks with ≤8 criteria predicted first-attempt acceptance."
+  ]
+}

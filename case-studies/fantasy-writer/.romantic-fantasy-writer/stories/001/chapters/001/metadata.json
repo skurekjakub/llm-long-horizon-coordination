@@ -1,0 +1,79 @@
+{
+  "chapterNum": 1,
+  "povCharacter": "CHAR-001",
+  "wordCount": 4247,
+  "sceneCount": 3,
+  "scenes": [
+    {
+      "id": "SCN-001",
+      "description": "Morning seawall patrol — Oathbrand flares unexpectedly, Pallor tears overhead revealing true starlight, Kaelith chooses silence",
+      "valueShift": "routine endurance → threat awareness",
+      "craftTools": ["T5-tone-contract", "T16-symbolic-motif", "T17-voice-fingerprinting"]
+    },
+    {
+      "id": "SCN-002",
+      "description": "Repairing garrison wall — senses surveillance, sees Lirien who doesn't look away, professional predator recognition",
+      "valueShift": "isolated routine → active target",
+      "craftTools": ["T17-voice-fingerprinting", "T20-emotional-throughline", "T8-resistance"]
+    },
+    {
+      "id": "SCN-003",
+      "description": "Confronts Tavik about the stranger — his transparent lie reveals institutional compromise, Kaelith realizes containment",
+      "valueShift": "seeking information → confirming betrayal",
+      "craftTools": ["T24-subtext-dialogue", "T8-resistance", "T20-emotional-throughline"]
+    }
+  ],
+  "craftToolsApplied": {
+    "T5-tone-contract": "Maintained morally complex and atmospherically taut tone throughout. Avoided prohibited melodrama and sentimentality. Used dry understated observations (counting stones, 'Fine,' garrison routine).",
+    "T6-stakes-escalation": "Personal stakes established: Kaelith's containment, surveillance threat, Oathbrand anomaly. Foundation for later escalation.",
+    "T7-black-moment-setup": "Planted seeds of trust difficulty and institutional betrayal that will pay off in Black Moment.",
+    "T8-internal-external-resistance": "Internal: guilt-as-identity, self-punishment through exile, distrust of institutions. External: Oathbrand throttling magic, surveillance, Tavik's compromise.",
+    "T10-sandersons-laws": "Established Oathbrand mechanics (should dissolve but persists), Pallor function (tears revealing structural failure), magic as suppressed capacity.",
+    "T12-dual-arc-interleave": "Fantasy arc: Pallor tear introduces world-scale threat. Romance arc: Lirien's arrival and predator recognition.",
+    "T13-tension-mapping": "Chapter sustained tension level 4 (atmospheric, low-grade threat). Ended on hyperalert assessment, priming for escalation.",
+    "T15-foreshadowing-ledger": "Planted FS-001 (Oathbrand anomaly), FS-002 (Pallor tear), FS-003 (Lirien surveillance), FS-004 (Tavik's lie).",
+    "T16-symbolic-motif": "Introduced MOT-001 (Pallor as failing membrane), MOT-002 (Oathbrand as externalized guilt). Seawall as structural integrity metaphor.",
+    "T17-voice-fingerprinting": "Kaelith's voice executed: short declarative sentences, structural metaphors, military precision, emotions as physical sensations, counting as self-regulation.",
+    "T18-information-asymmetry": "Kaelith doesn't know: who's watching or why, who's maintaining the brand, that she carries Quietus path. Reader knows slightly more.",
+    "T20-emotional-throughline": "Moved from numb endurance → hypervigilant threat assessment. Body response (shaking hands) showed emotional state without naming it.",
+    "T23-mystery-box": "Opened MB-001 (Oathbrand persistence), MB-007 (surveillance threat). Deepened both through dramatic showing.",
+    "T24-subtext-dialogue": "Tavik scene: surface (merchant liaison) vs. reality (institutional compromise). Kaelith reads subtext through his fear.",
+    "T25-thematic-scaffolding": "TP-1 (trust as structural failure) introduced through Tavik's betrayal and institutional containment. Trust = load-bearing wall metaphor."
+  },
+  "foreshadowingPlanted": [
+    "FS-001: Oathbrand flares when it should have dissolved — someone is maintaining it",
+    "FS-002: Pallor tear reveals true starlight — world-scale protective barrier failing",
+    "FS-003: Lirien's predator surveillance — professional recognition, kill contract foreshadowed",
+    "FS-004: Tavik's transparent lie and fear — institutional compromise, Conclave monitoring"
+  ],
+  "mysteryBoxesOpened": [
+    "MB-001: Why hasn't the Oathbrand dissolved?",
+    "MB-007: Why is Lirien watching Kaelith?"
+  ],
+  "symbolicMotifsIntroduced": [
+    "MOT-001: Pallor as failing membrane (tear scene, silver knitting closed)",
+    "MOT-002: Oathbrand as wound that won't heal (flare, chronic pain, 'should have dissolved')",
+    "Seawall as structural integrity metaphor (holds despite decay, like Kaelith's discipline)"
+  ],
+  "emotionalArcHit": {
+    "start": "Numb endurance, exile as penance accepted — counting stones, routine work, suppressed awareness",
+    "pivot": "Lirien doesn't look away when caught — predator confidence breaks through Kaelith's numbness",
+    "end": "Hyperalert threat assessment, defensive calculation — shaking hands, resource inventory, containment recognized"
+  },
+  "continuityEstablished": {
+    "location": "Duskhaven, garrison town, Kaelith's rented room above Listing Mast",
+    "timelineDay": 1,
+    "charactersIntroduced": ["Kaelith Maren (CHAR-001)", "Lirien (CHAR-002 observed)", "Tavik (garrison commander)"],
+    "knowledgeStates": {
+      "CHAR-001": "Knows: Oathbrand persists abnormally, Pallor tore, someone is watching, Tavik is compromised. Doesn't know: who sent Lirien, why surveillance now, that brand is killing her, that she carries Quietus path."
+    }
+  },
+  "voiceConsistency": {
+    "vocabularyCheck": "Military-formal maintained: 'position,' 'assess,' 'sight lines,' 'chokepoint,' 'fallback,' 'resources,' 'perimeter'",
+    "sentenceLengthCheck": "70%+ sentences 3-8 words. Fragments under stress ('Three exits. Stone floor.'). Longer sentences for emotional breach.",
+    "metaphorCheck": "Structural only: load-bearing, mortar, walls hold/crack, settling, keystone. No water/organic imagery.",
+    "emotionalRegisterCheck": "Suppressed-to-physical: brand burns, jaw tightens, hands shake, heat climbs neck. Never named emotion directly.",
+    "deflectionCheck": "Work as deflection (mortar, counting stones), imperatives to dodge emotional territory."
+  },
+  "notes": "Chapter 1 draft complete. All three scenes executed per outline. Voice fingerprint maintained throughout. Foreshadowing seeds planted for Act I setup. Mystery boxes MB-001 and MB-007 opened dramatically. Emotional arc progresses from resignation to hyperalertness. Atmospheric tone sustained. No info-dumping — worldbuilding woven through observation and physical experience. MRU structure maintained at paragraph level. Chapter ends on defensive calculation and unresolved threat per outline requirements."
+}

@@ -1,0 +1,167 @@
+{
+  "agent": "docwriter-persona-reviewer",
+  "taskId": "T-002",
+  "attempt": 2,
+  "verdict": "approved",
+  "personaChecks": [
+    {
+      "check": "front-matter-personas",
+      "result": "pass",
+      "declaredPersonas": ["business"],
+      "evidence": "Front matter declares `persona: business`. The page lives under `business-users/website-content/`, targets business users exclusively with procedural editing/publishing instructions, and the task's `targetPersonas` is `[\"business\"]`. Per INV-persona-002, business guides → `business`. No developer, admin, or architect content is present that would warrant additional persona tags."
+    },
+    {
+      "check": "tone-business",
+      "result": "pass",
+      "evidence": "The page uses friendly, accessible language throughout. Permission requirement notes use simple phrasing: 'Publishing requires *Read* and *Update* page permissions' — no jargon, no code references, no API terminology. Steps follow the one-step-one-action pattern (e.g., 'Open a website channel application', 'In the content tree, select the page...', 'Select **Publish**'). Technical details are delegated via cross-references (e.g., linking to the permissions page rather than explaining permission internals)."
+    },
+    {
+      "check": "tone-delegation-to-technical-team",
+      "result": "pass",
+      "evidence": "Per INV-persona-014, business users work on a team with technical people. The page correctly applies this principle: the Move section says 'Consult with your website administrator if you are not sure about how moving pages in the content tree reflects on your website' (line 398). The Delete redirects row says 'redirects can be added by developers' (line 285). Permission details are cross-referenced to the dedicated permissions page rather than explained inline."
+    },
+    {
+      "check": "tone-simplicity-non-native-speakers",
+      "result": "pass",
+      "evidence": "Per INV-persona-007, content should use simple, everyday words for non-native speakers. The modified sections use plain language: 'Reverting changes requires...', 'You also need to be able to work with the page...', 'You can unpublish a page regardless of its current workflow step'. No specialized developer terminology or complex sentence constructions. The 'Christmas sale' / 'January sale' redirect example (lines 354-356) uses concrete, relatable scenarios."
+    },
+    {
+      "check": "depth-calibration",
+      "result": "pass",
+      "evidence": "The page is appropriately calibrated for business users — not too shallow, not too deep. It provides enough detail to complete tasks (step-by-step procedures for editing, publishing, unpublishing, moving) while avoiding implementation-level detail. Permission notes state WHAT is required without explaining HOW the permission system works internally. Redirect behavior tables provide practical outcomes without technical architecture details."
+    },
+    {
+      "check": "no-cross-persona-terminology",
+      "result": "pass",
+      "evidence": "Per INV-persona-016, business-user content must not use developer terminology. The page avoids developer terms: no references to APIs, classes, configuration files, or code patterns. The term 'workflow step' is a shared concept appropriate for business users. The page uses 'administration' and 'website channel application' — both are standard Xperience UI concepts, not developer jargon."
+    }
+  ],
+  "classificationCheck": {
+    "declared": "howto",
+    "actual": "howto",
+    "result": "pass",
+    "evidence": "The task defines `contentType: \"howto\"`. The page is a goal-oriented procedural page with multiple task-focused sections (Edit, Publish, Unpublish, Revert, Move, Rename). Each section provides numbered steps for completing a specific operation. It assumes existing knowledge of the Xperience admin interface. This matches the howto classification correctly."
+  },
+  "taxonomyChecks": [
+    {
+      "field": "persona",
+      "result": "pass",
+      "value": "business"
+    },
+    {
+      "field": "identifier",
+      "result": "pass",
+      "value": "MAKQC"
+    },
+    {
+      "field": "license",
+      "result": "pass",
+      "value": "1"
+    },
+    {
+      "field": "related_pages",
+      "result": "pass",
+      "value": ["JwKQC", "LwKQC", "I4XWCQ"]
+    },
+    {
+      "field": "toc",
+      "result": "pass",
+      "value": {"minHeadingLevel": 1, "maxHeadingLevel": 3}
+    },
+    {
+      "field": "user-classifications",
+      "result": "pass",
+      "evidence": "Page uses 'visitors' for anonymous website users (lines 165, 178, 181, 195) — correct per INV-taxonomy-006. No misuse of 'customer', 'member', or 'contact'."
+    },
+    {
+      "field": "feature-capitalization",
+      "result": "pass",
+      "evidence": "Page Builder is capitalized correctly throughout (lines 50, 96). Per INV-taxonomy-004."
+    },
+    {
+      "field": "compound-words",
+      "result": "pass",
+      "evidence": "'live site' (two words, lines 98, 181, 416), 'website' (one word, line 398) — all correct per INV-taxonomy-008."
+    }
+  ],
+  "consistencyCheck": {
+    "result": "pass",
+    "notes": "All sibling pages in the business-users/website-content cluster (Create pages, Delete pages, Page templates, Track page usages, Translate pages, etc.) target `business` persona exclusively. The two exceptions — Manage page URLs (business+admin) and Secure pages (business+admin) — include admin because they involve configuration tasks. This page's business-only targeting is consistent with its pure editorial focus."
+  },
+  "invariantResults": [
+    {
+      "invariantId": "TINV-001",
+      "result": "not-applicable",
+      "evidence": "TINV-001 requires covering both developer and business user scenarios. This ephemeral invariant applies to the overall task set, not this individual page. T-001 covers the developer-facing permissions page; T-002 covers the business-user-facing edit/publish page. Together they satisfy the requirement. This page correctly targets business users only."
+    },
+    {
+      "invariantId": "INV-persona-001",
+      "result": "pass",
+      "evidence": "Front matter `persona: business` uses a valid value from the allowed set (developer, admin, business, architect, all)."
+    },
+    {
+      "invariantId": "INV-persona-002",
+      "result": "pass",
+      "evidence": "Per the persona assignment strategy, business guides → `business`. The page is a business-user guide for editing/publishing pages. No admin, developer, or architect content warrants additional persona tags."
+    },
+    {
+      "invariantId": "INV-persona-007",
+      "result": "pass",
+      "evidence": "Content uses simple, everyday language accessible to non-native English speakers. Examples: 'select the page that you want to publish', 'you can revert the page back to the last Published status'. No complex jargon or idiomatic expressions in the modified sections."
+    },
+    {
+      "invariantId": "INV-persona-012",
+      "result": "pass",
+      "evidence": "The content clearly demonstrates understanding of the business-user persona: procedural focus, outcome-oriented steps, delegation of technical details via cross-references."
+    },
+    {
+      "invariantId": "INV-persona-013",
+      "result": "pass",
+      "evidence": "Business-user documentation rules are followed: friendly, positive tone throughout. Steps follow one-step-one-action pattern. No special developer terminology. Words are understandable by a general audience."
+    },
+    {
+      "invariantId": "INV-persona-014",
+      "result": "pass",
+      "evidence": "The page correctly assumes business users work alongside technical team members. The Move section advises consulting 'your website administrator' for uncertainty about page structure impacts. Redirect detail for deleted pages notes developers can add them via code."
+    },
+    {
+      "invariantId": "INV-persona-016",
+      "result": "pass",
+      "evidence": "No developer-persona terminology appears in the modified business-user content. Permission notes use business-friendly concepts (*Read*, *Update* permissions) without referencing code, APIs, or developer tooling."
+    },
+    {
+      "invariantId": "INV-taxonomy-004",
+      "result": "pass",
+      "evidence": "'Page Builder' is correctly capitalized as a proper noun throughout (lines 50, 96)."
+    },
+    {
+      "invariantId": "INV-taxonomy-005",
+      "result": "pass",
+      "evidence": "No references to 'admin UI' — appropriate for business-user documentation. The page references the 'administration' generally and 'website channel application' specifically."
+    },
+    {
+      "invariantId": "INV-taxonomy-006",
+      "result": "pass",
+      "evidence": "'Visitors' used correctly for anonymous website users. No misuse of 'customer', 'member', 'contact', or 'user' classifications."
+    },
+    {
+      "invariantId": "INV-taxonomy-007",
+      "result": "pass",
+      "evidence": "No use of 'end user'. The page uses 'visitors' for website interaction contexts and direct address ('you') for the business-user reader."
+    },
+    {
+      "invariantId": "INV-taxonomy-008",
+      "result": "pass",
+      "evidence": "'live site' (two words), 'website' (one word) — all compound words spelled correctly."
+    }
+  ],
+  "summary": {
+    "personaChecksPassed": 6,
+    "personaChecksFailed": 0,
+    "classificationCorrect": true,
+    "taxonomyComplete": true,
+    "invariantsPassed": 12,
+    "invariantsFailed": 0,
+    "invariantsNotApplicable": 1
+  }
+}

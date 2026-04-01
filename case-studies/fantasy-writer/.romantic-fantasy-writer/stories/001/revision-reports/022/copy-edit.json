@@ -1,0 +1,275 @@
+{
+  "chapter": 22,
+  "title": "What the Water Chose",
+  "pov": "Lirien Dael (CHAR-002)",
+  "editor": "copy-editor",
+  "timestamp": "2025-08-01T14:30:00Z",
+  "passType": "comprehensive-re-edit",
+  "referencesConsulted": [
+    "continuity/continuity-tracker.json",
+    "characters/index.json",
+    "world-bible/geography.json",
+    "world-bible/magic-system.json",
+    "world-bible/culture.json",
+    "world-bible/politics.json",
+    "style/style-guide.json",
+    "plot/chapter-outlines/chapter-022.json",
+    "chapters/022/metadata.json",
+    "chapters/021/draft.md"
+  ],
+  "overallAssessment": "Comprehensive copy-edit of the final chapter. The prose is structurally excellent and the continuity with ch21 is well-maintained — Kaelith's physical state, Lirien's shoulder burn, Thalen's custody, the Pallor's thinned state, and ally dispositions all track correctly. Bond mechanics are used consistently with established rules (emotional/physical states, not thoughts). All foreshadowing payoffs and motif resolutions align with the continuity tracker. However, three major issues require attention: (1) systematic British English spelling throughout the chapter where the rest of the novel uses American English, (2) the location name 'Serath Dún' uses an acute accent where geography.json establishes a circumflex ('Serath Dûn'), and (3) the Conclave response references 'The Seventh Seat' for Thalen Reyvas, continuing the pre-existing DISC-001 discrepancy with politics.json (which assigns him the Sixth Seat). One moderate factual concern: the term 'divine corpse' contradicts the magic system's statement that the Sheltering One persists in a diminished conscious state. Six minor findings across grammar, anachronism, and naming.",
+  "findingSummary": {
+    "critical": 0,
+    "major": 3,
+    "moderate": 1,
+    "minor": 6,
+    "total": 10,
+    "byCategory": {
+      "spelling": 1,
+      "naming": 3,
+      "factual": 1,
+      "anachronism": 1,
+      "grammar": 3,
+      "continuity": 1,
+      "timeline": 0,
+      "formatting": 0
+    }
+  },
+  "findings": [
+    {
+      "id": "COPY-22-001",
+      "severity": "major",
+      "category": "spelling",
+      "description": "Systematic British English spelling throughout the chapter. The rest of the novel (confirmed in ch21 draft) uses American English ('color,' 'favoring,' 'recognized'). Chapter 22 uses British variants in at least 11 instances across the full text. This creates a jarring inconsistency in the final chapter of the manuscript.",
+      "lineRef": "L18, L24, L40, L42, L56, L84, L100, L136, L194, L200 (throughout)",
+      "instances": [
+        {"line": 18, "british": "re-stabilisation", "american": "re-stabilization"},
+        {"line": 24, "british": "coloured", "american": "colored"},
+        {"line": 28, "british": "catalogued", "american": "cataloged"},
+        {"line": 40, "british": "realised", "american": "realized"},
+        {"line": 42, "british": "fibres", "american": "fibers"},
+        {"line": 56, "british": "humour", "american": "humor"},
+        {"line": 84, "british": "favouring", "american": "favoring"},
+        {"line": 100, "british": "catalogued", "american": "cataloged"},
+        {"line": 136, "british": "catalogued", "american": "cataloged"},
+        {"line": 194, "british": "recognised", "american": "recognized"},
+        {"line": 200, "british": "colour", "american": "color"}
+      ],
+      "correction": "Convert all British spellings to American English to match chs1-21. See instances list for specific replacements.",
+      "sourceRef": "chapters/021/draft.md: uses American spelling throughout ('color' L216, 'favoring' L148, 'recognized' L152/180/182)"
+    },
+    {
+      "id": "COPY-22-002",
+      "severity": "major",
+      "category": "naming",
+      "description": "Location name 'Serath Dún' uses an acute accent (ú) on the u. The authoritative world-bible source (geography.json LOC-010) establishes the spelling as 'Serath Dûn' with a circumflex accent (û). This also appears in ch21 with the acute accent, suggesting a consistent chapter-level spelling that diverges from the world-bible. The world-bible entry is the canonical source.",
+      "lineRef": "L14, L42, L140",
+      "instances": [
+        {"line": 14, "found": "Serath Dún", "correct": "Serath Dûn"},
+        {"line": 42, "found": "Serath Dún", "correct": "Serath Dûn"},
+        {"line": 140, "found": "Serath Dún", "correct": "Serath Dûn"}
+      ],
+      "correction": "Replace all instances of 'Serath Dún' with 'Serath Dûn' (circumflex û, not acute ú).",
+      "sourceRef": "world-bible/geography.json LOC-010: 'Serath Dûn'. Also flagged in ch21 copy-edit as cross-reference concern.",
+      "crossManuscriptNote": "Ch21 also uses 'Serath Dún' — both chapters need correction."
+    },
+    {
+      "id": "COPY-22-003",
+      "severity": "major",
+      "category": "naming",
+      "description": "The Conclave response document references 'The Seventh Seat's involvement in the maintenance of the subject's Oathbrand.' Per politics.json, the Seventh Seat is Vairen Ethis (Archives and Knowledge Stewardship) — an ally, not the antagonist. Thalen Reyvas holds the Sixth Seat (Fae Relations and Border Diplomacy). If the Conclave is referring to Thalen's role in maintaining the Oathbrand, it should reference 'The Sixth Seat.' This continues the pre-existing DISC-001 discrepancy where all chapter drafts consistently use 'Seventh Seat' for Thalen while politics.json assigns him the Sixth Seat.",
+      "lineRef": "L80",
+      "excerpt": "The Seventh Seat's involvement in the maintenance of the subject's Oathbrand beyond its designated dissolution period is noted",
+      "correction": "Either (a) change to 'The Sixth Seat's involvement' to match politics.json, or (b) update politics.json globally to reassign Thalen to the Seventh Seat and Vairen to the Sixth. Option (b) is recommended per DISC-001 since all 22 chapters consistently use 'Seventh Seat' for Thalen — the world-bible should be updated to match the manuscript.",
+      "sourceRef": "world-bible/politics.json: Sixth Seat = Thalen Reyvas, Seventh Seat = Vairen Ethis. continuity-tracker.json DISC-001: flagged as major discrepancy requiring global resolution."
+    },
+    {
+      "id": "COPY-22-004",
+      "severity": "moderate",
+      "category": "factual",
+      "description": "The phrase 'divine corpse' to describe the Pallor contradicts established magic system lore. The magic-system.json (pallorEffect.tearMechanism) explicitly states the Sheltering One 'persists as the membrane in some diminished, conscious state — aware enough to maintain the structure, not aware enough to repair it.' The god is not dead — it is diminished and conscious. 'Corpse' implies death, contradicting the established condition. Lirien, as a Seep operative with intelligence training on the Pallor, would likely know this distinction. Additionally, fae culture (CUL-002) describes the Sheltering One as 'a deity who solved the problem of chaos by dying and becoming a ceiling,' which uses 'dying' (process) rather than 'dead' (state).",
+      "lineRef": "L14",
+      "excerpt": "the sun's intention unmediated by divine corpse",
+      "correction": "Consider 'unmediated by divine membrane,' 'unmediated by divine remains,' or 'unmediated by the god's skin.' Any phrasing that acknowledges the Pallor is the remains of a conscious-if-diminished being rather than a corpse.",
+      "sourceRef": "world-bible/magic-system.json: pallorEffect.tearMechanism; world-bible/culture.json CUL-002: fae view of the Sheltering One"
+    },
+    {
+      "id": "COPY-22-005",
+      "severity": "minor",
+      "category": "grammar",
+      "description": "Missing article before 'divine corpse' (or whatever factual correction is applied). The phrasing 'unmediated by divine corpse' reads as if 'divine corpse' is an uncountable noun like 'stone' or 'water.' Since the Pallor is a specific, singular entity, an article is needed.",
+      "lineRef": "L14",
+      "excerpt": "the sun's intention unmediated by divine corpse",
+      "correction": "the sun's intention unmediated by the divine [corrected term]",
+      "sourceRef": "Grammar: definite article required for specific singular referent"
+    },
+    {
+      "id": "COPY-22-006",
+      "severity": "minor",
+      "category": "anachronism",
+      "description": "The word 'electric' in 'A clarity, almost electric' derives from the concept of electricity, which does not exist in this world's technological context. The magic system operates through will-negotiation and reality-access, not electromagnetism. While the sensation Lirien describes is vivid, the word's etymological origin is anachronistic. Ch21 copy-edit flagged similar issues ('clock' anachronism, 'signal-without-static' electronics metaphor).",
+      "lineRef": "L40",
+      "excerpt": "A clarity, almost electric",
+      "correction": "Consider 'A clarity, almost galvanic' (still borderline), 'A clarity, sharp and immediate,' or 'A clarity that hummed against her senses.' Restructure to use a sensation metaphor from Lirien's established domains (water, contract, perception).",
+      "sourceRef": "INV-018 (No Anachronisms); ch21 copy-edit: similar anachronism findings"
+    },
+    {
+      "id": "COPY-22-007",
+      "severity": "minor",
+      "category": "naming",
+      "description": "The compound 'hedge-Shapers' has not been established in the world-bible or any previous chapter. Geography.json LOC-011 (Rivenmarch) uses 'hedge-witches' for informal frontier practitioners, while the magic system uses 'Shapers' as the formal term for trained practitioners. The compound could work — a frontier colloquialism merging the informal 'hedge-' prefix with the formal 'Shaper' title — but it introduces a term not previously established in the manuscript's final chapter.",
+      "lineRef": "L56",
+      "excerpt": "Rivenmarch has three new hedge-Shapers since yesterday",
+      "correction": "Either (a) change to 'hedge-witches' to match geography.json terminology, or (b) keep 'hedge-Shapers' if intentional — the scout's use of a blended military-frontier term is characterologically plausible for an Ashborne veteran familiar with both registers. If kept, note as a new naming entry.",
+      "sourceRef": "world-bible/geography.json LOC-011: 'hedge-witches'; world-bible/magic-system.json: 'Shapers' (formal)"
+    },
+    {
+      "id": "COPY-22-008",
+      "severity": "minor",
+      "category": "continuity",
+      "description": "The phrase 'Three fingers on that hand would never move again' does not specify which hand. The novel's final chapter should be explicit about which hand carries the permanent damage for readers who may not remember. L84 correctly identifies 'her left forearm' with 'the three frozen fingers,' and L194 clarifies by reaching for 'The right one — the one that still worked.' But L180's reference is isolated from both and relies on the reader tracking 'that hand' back to L84 across nearly 100 lines.",
+      "lineRef": "L180",
+      "excerpt": "Three fingers on that hand would never move again",
+      "correction": "Three fingers on her left hand would never move again",
+      "sourceRef": "continuity-tracker.json: CHAR-001 status — 'Silver on left forearm permanent — three fingers frozen'"
+    },
+    {
+      "id": "COPY-22-009",
+      "severity": "minor",
+      "category": "grammar",
+      "description": "Ambiguous pronoun 'its' in 'the Pallor's permanent claim on the body that had reinforced its seal.' The pronoun 'its' could refer to the Pallor's seal, the body's seal, or (most likely intended) the god-seal at the Quietus. Since the sentence already contains 'the Pallor's' as a possessive, the reader may misparse 'its' as referring to the Pallor rather than the Quietus.",
+      "lineRef": "L84",
+      "excerpt": "the Pallor's permanent claim on the body that had reinforced its seal",
+      "correction": "the Pallor's permanent claim on the body that had reinforced the god-seal",
+      "sourceRef": "Grammar: pronoun clarity in sentence with multiple possible antecedents"
+    },
+    {
+      "id": "COPY-22-010",
+      "severity": "minor",
+      "category": "grammar",
+      "description": "The intransitive use of 'released' for water is slightly awkward. In 'the way water released when it found a shape it could rest in,' the verb 'released' typically requires a direct object (you release something) or the reflexive form. The intended meaning — surface tension easing, water settling — would be clearer with a different verb.",
+      "lineRef": "L32",
+      "excerpt": "the way water released when it found a shape it could rest in without being held",
+      "correction": "Consider 'the way water eased when it found a shape' or 'the way water settled when it found a shape' or 'the way water's tension released when it found a shape.'",
+      "sourceRef": "Grammar: intransitive use of typically transitive verb"
+    }
+  ],
+  "verifiedConsistent": [
+    {
+      "item": "Kaelith's physical state",
+      "detail": "Left shoulder burn from Thalen's ward, three frozen fingers on left hand (progressed from two in ch17), silver on left forearm permanent — all consistent with ch21 and continuity tracker",
+      "lineRefs": "L18, L84, L180, L194"
+    },
+    {
+      "item": "Lirien's physical state",
+      "detail": "Left shoulder burn, split knuckle, rib ache from seal re-stabilization concussive force — all plausible from ch21 events",
+      "lineRef": "L18"
+    },
+    {
+      "item": "Binding/contract status",
+      "detail": "Binding dissolved in ch20 via heartbeat cessation loophole. Eight-second duration confirmed. Lirien correctly experiences absence of contract architecture (spine pressure, directional pull gone)",
+      "lineRefs": "L24-28"
+    },
+    {
+      "item": "Bond mechanics",
+      "detail": "All bond descriptions transmit emotions and physical sensations (not thoughts, words, or facts). Bond described as 'clean' without binding interference — consistent with post-ch20 state. Kaelith can wall the bond (established ch16); here it is open and warm",
+      "lineRefs": "L26, L88, L96, L114, L188, L196"
+    },
+    {
+      "item": "Pallor state",
+      "detail": "Described as thinner but stable, translucent where it was opaque, true sky visible through worn places. Consistent with ch21's seal reinforcement (Kaelith repaired/re-stabilized but at the cost of permanently thinner membrane)",
+      "lineRefs": "L14, L36-42, L130, L200"
+    },
+    {
+      "item": "Thalen Reyvas custody",
+      "detail": "In Ashborne custody, hasn't spoken since Kaelith pronounced charges (consistent with ch21 ending). Being escorted south for public tribunal by Sedara and Ashborne veterans",
+      "lineRefs": "L62-64, L136"
+    },
+    {
+      "item": "Character names",
+      "detail": "All proper nouns verified: Kaelith Maren, Lirien Dael, Thalen Reyvas, Sedara (Ashborne Third Platoon veteran, established ch19), Tessen Vael (CHAR-006), Iryse (CHAR-013 Iryse Caleth), Marin (CHAR-007), Commander Maren (title usage acknowledged as unofficial/popular). Vael Seren not directly named but referenced context matches continuity tracker",
+      "lineRefs": "Throughout"
+    },
+    {
+      "item": "Location names",
+      "detail": "Rivenmarch ✓, Aranthem ✓, Calwrath ✓ — all match geography.json. Serath Dún accent is the only location naming issue (see COPY-22-002)",
+      "lineRefs": "Throughout"
+    },
+    {
+      "item": "Magic system compliance",
+      "detail": "No new magical abilities appear without prior establishment. Ambient magic becoming more accessible is consistent with Pallor thinning (MAG-003). Lirien's fae sensory perception mode described consistently. No resurrection, no compulsion, no forbidden uses attempted",
+      "lineRefs": "L40-42"
+    },
+    {
+      "item": "Timeline",
+      "detail": "Events occur morning after ch21 (Day ~33). 'Months' of binding reference (L24) is accurate — contract was active before Day 1 plus 33 days of story = approximately 2+ months. Eight-second cardiac arrest (L24) matches ch20. Eighteen years of Iryse's corrupted stewardship (L138) is a pre-existing timeline concern flagged in ch21 copy-edit",
+      "lineRefs": "L24, L138"
+    },
+    {
+      "item": "Dialogue formatting",
+      "detail": "All speech tags correctly punctuated. Em dashes used consistently for interruption/aside. No uninterrupted monologues exceed 6 lines. Speech patterns match character voices (scout: clipped, Ashborne-efficient; Lirien: mixed analytical/declarative; Kaelith: short, foundational)",
+      "lineRefs": "Throughout"
+    },
+    {
+      "item": "Tense consistency",
+      "detail": "Past tense maintained throughout. No present-tense slips detected in 222 lines",
+      "lineRefs": "Throughout"
+    },
+    {
+      "item": "Cultural consistency",
+      "detail": "Commander title usage — correctly noted as popular restoration, not institutional reinstatement, consistent with culture.json CUL-001 (Oathbranded lose title permanently; this is an unofficial act by the Ashborne). Cipher destruction (ch18) referenced correctly. Court jurisdiction dissolution accurate post-binding removal",
+      "lineRefs": "L66, L68, L152"
+    },
+    {
+      "item": "Younger Conclave administrator",
+      "detail": "This character was established in ch21 L156: 'a younger administrator Kaelith did not recognize, clutching a satchel that bulged with documents.' Ch22 reference to departure is consistent",
+      "lineRef": "L138"
+    },
+    {
+      "item": "Banned phrases",
+      "detail": "No instances of any banned phrase from the style guide's prohibitedPhrases list detected",
+      "lineRefs": "N/A"
+    },
+    {
+      "item": "Motif consistency",
+      "detail": "Water motif (MOT-003) resolves correctly: 'surface tension releasing,' 'water finds every crack,' and the closing river metaphor all connect to the Seep's description and Lirien's established imagery domain. Pallor motif (MOT-001) resolves: thinner, translucent, real star visible. Oathbrand motif (MOT-002): correctly resolved through absence",
+      "lineRefs": "L32, L120, L208-218"
+    }
+  ],
+  "invariantsChecked": [
+    {
+      "invariant": "INV-002 (Internal Consistency)",
+      "status": "PARTIAL PASS",
+      "notes": "World rules and continuity are well-maintained. Three naming/spelling issues (COPY-22-001, 002, 003) and one factual concern (COPY-22-004) require correction. No contradictions in magic system usage, bond mechanics, or timeline."
+    },
+    {
+      "invariant": "INV-011 (Continuity Tracking)",
+      "status": "PASS",
+      "notes": "All character positions, timeline events, knowledge states, and physical conditions track correctly against the continuity tracker. One minor explicitness improvement needed (COPY-22-008: specify 'left' hand)."
+    },
+    {
+      "invariant": "INV-017 (Prose Quality Floor)",
+      "status": "PASS",
+      "notes": "Grammar is clean aside from minor findings (COPY-22-005, 009, 010). No banned phrases detected. Tense consistent. Dialogue formatting correct."
+    },
+    {
+      "invariant": "INV-018 (No Anachronisms)",
+      "status": "MINOR CONCERN",
+      "notes": "One instance of 'electric' (COPY-22-006) — a word with no in-world basis. Pattern consistent with ch21 findings (clock, signal-without-static)."
+    },
+    {
+      "invariant": "INV-019 (Dialogue Naturalism)",
+      "status": "PASS",
+      "notes": "Em dashes used correctly throughout. Speech tags properly punctuated. No formatting inconsistencies in dialogue. Character voices are distinct and appropriate."
+    },
+    {
+      "invariant": "INV-029 (Artifact Cross-References)",
+      "status": "PASS",
+      "notes": "All in-narrative references to world events, character histories, and magical phenomena match established facts in world-bible and character files. Pre-existing DISC-001 (Thalen's seat number) is the only discrepancy, and it is consistent with all other chapter drafts."
+    }
+  ],
+  "priorReportSuperseded": {
+    "timestamp": "2026-03-21T02:20:00Z",
+    "reason": "Prior report had 6 findings. This comprehensive re-edit identified 10 findings, including the systematic British/American spelling inconsistency (11 instances) which was only partially flagged before (1 instance), the Serath Dún/Dûn accent discrepancy (missed), the Seventh Seat factual issue (missed), the 'divine corpse' factual concern (missed), and the 'electric' anachronism (missed)."
+  }
+}

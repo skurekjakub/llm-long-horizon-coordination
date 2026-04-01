@@ -1,0 +1,93 @@
+{
+  "storyId": "001",
+  "refinedPremise": "Kaelith Maren — disgraced commander of the Ashborne Legion, stripped of rank after the Siege of Calwrath for a battlefield decision that saved eight hundred soldiers and killed three hundred civilians — rots in internal exile in the border garrison town of Duskhaven, her magic throttled by an Oathbrand that should have dissolved five years ago but keeps burning fresh. She does not know the brand is killing her. She does not know she carries, locked in the kinetic memory of a route she walked once blindfolded, the only path to the Quietus — the ancient mechanism sealing Ythara the Unfinished, a god of unmade things whose nature unravels everything it touches into raw, screaming potential. But the Seep knows. Lirien Dael, fae operative of the Seep — the intelligence network whose name translates as 'the water that finds every crack' — arrives in Duskhaven under a kill contract bound by the Cerith Court: execute Kaelith, or never return home. When Lirien discovers that the Quietus's location exists only as embodied memory in a woman she has been ordered to destroy, the assassination becomes a paradox with the weight of the world behind it. The Pallor — the silver membrane stretched across the sky, said to be the flayed skin of a god defeated in an older age — is tearing, and it is tearing because someone on the High Conclave has been poisoning it for forty years. If Kaelith dies, the seal is lost. If the seal is lost, Ythara wakes, and the world becomes possibility — which is another word for annihilation. Two women who cannot trust each other must cross a failing empire to reach a place only one of them can find through the act of moving toward it, while the forces that profit from the god's return work to ensure they never arrive.",
+  "thematicPillars": [
+    {
+      "id": "TP-1",
+      "theme": "Trust as structural failure",
+      "question": "Can genuine trust exist between two people whose survival depends on each other's destruction — and if it does, is it trust or just a more sophisticated form of entrapment?",
+      "argument": "The story argues that real trust is not the absence of threat but the decision to remain vulnerable to someone whose capacity to destroy you is the thing you know best about them. Trust born between enemies is not weaker than trust born between friends — it is more expensive, more deliberate, and ultimately more honest, because it requires full knowledge of the cost. Kaelith and Lirien do not trust each other by forgetting the kill order exists. They trust each other while the kill order is still live."
+    },
+    {
+      "id": "TP-2",
+      "theme": "The price of the right choice",
+      "question": "When the right decision and the good decision diverge — when duty demands one thing and desire demands another, and both are morally defensible — what breaks the tie, and what does the winner cost you?",
+      "argument": "The story argues there is no clean resolution. The right choice extracts payment in the form of who you become afterward; the good choice extracts payment in the form of who you failed to protect. Kaelith already knows this — Calwrath taught her that being correct does not make you innocent. Lirien learns it across the story, discovering that the Cerith Court's definition of duty and her own are no longer the same thing. The story refuses to validate one choice over the other and instead insists that the true cost is the act of choosing itself."
+    },
+    {
+      "id": "TP-3",
+      "theme": "Chosen versus only",
+      "question": "Can love that begins as necessity — as two people trapped in a paradox where neither can survive without the other — become something freely given, or is it always compromised by the cage that created it?",
+      "argument": "The story argues that love's origin in necessity does not invalidate it, but it does demand a second act: the moment when the cage opens and both people must decide whether they would walk toward each other if they could walk away. The romance earns its resolution not by removing the constraints that forced Kaelith and Lirien together, but by reaching the point where the constraints become irrelevant — where the choice would be the same even without the trap. Being someone's only option is not love. Becoming someone's choice, after having been their only option, is."
+    }
+  ],
+  "genreBalance": {
+    "fantasyWeight": 0.55,
+    "romanceWeight": 0.45,
+    "rationale": "The epic scope — a god waking, an empire's conspiracy, a world-membrane tearing — drives the external plot architecture and demands substantial worldbuilding. But the romance is the emotional spine: every fantasy escalation exists to pressure the relationship, and the god-seal paradox is structurally inseparable from the kill-order paradox. Fantasy leads in page-weight; romance leads in stakes-weight."
+  },
+  "compTitles": [
+    {
+      "title": "The Jasmine Throne by Tasha Suri",
+      "rationale": "F/F enemies-to-lovers romance between politically opposed women in an epic fantasy setting with morally complex power structures, slow-burn intimacy, and steamy payoff. Closest structural and tonal parallel for the central romantic dynamic."
+    },
+    {
+      "title": "The Foxglove King by Hannah Whitten",
+      "rationale": "Dark romantic fantasy built on secrets and mutual distrust, with divine-scale stakes and morally grey protagonists navigating a decaying political order. Parallel for the god-related mythology and the romance-built-on-deception dynamic."
+    },
+    {
+      "title": "The Priory of the Orange Tree by Samantha Shannon",
+      "rationale": "Epic-scale fantasy with F/F romance woven into worldbuilding, ancient divine threats, and political intrigue across multiple power structures. Parallel for scope, atmosphere, and the integration of romance into world-altering stakes."
+    },
+    {
+      "title": "A Memory Called Empire by Arkady Martine",
+      "rationale": "Tonal comp rather than genre match. Exemplary for the twilight-empire atmosphere, spy-as-protagonist dynamics, the body-as-knowledge concept (memory as location), and prose that reveals through restraint. Parallel for the intellectual and atmospheric register."
+    }
+  ],
+  "targetAudience": "Adult readers (18+) of romantic fantasy who gravitate toward morally complex narratives, F/F romance with slow-burn enemies-to-lovers dynamics, and epic worldbuilding that rewards attention. Readers who want their romance to feel earned through friction rather than fate, and their fantasy to interrogate power rather than celebrate it. Core readership overlaps with Tasha Suri, Hannah Whitten, and Samantha Shannon audiences. Secondary appeal to readers of literary SFF (Arkady Martine, Ann Leckie) drawn by the restraint of the prose and the thematic density.",
+  "heatLevel": "steamy",
+  "fantasySubgenre": "epic-with-twist",
+  "fantasySubgenreNotes": "Epic fantasy skeleton — continental stakes, ancient gods, empires, military history — but with subversive moral architecture. The god is not evil; it is incompatible. The empire is not noble; it is comfortable. The spy is not villainous; she is contractually obligated. The 'chosen one' element is inverted: Kaelith was not chosen, she was simply the only person in the room when the information was given. There are no prophecies — only bureaucracy, memory, and the slow accumulation of inconvenient truths.",
+  "toneContract": {
+    "primary": "Morally complex and atmospherically taut — the narrative voice does not judge its characters and trusts the reader to hold contradictions without resolution. The atmosphere should feel like twilight: not darkness, but the thinning of light, a world that still functions but no longer believes in itself.",
+    "secondary": "Darkly romantic with dry, understated wit — the romance registers through gesture and omission rather than declaration, and humor surfaces as deflection under pressure. Characters are funny because they are coping, not because the narrative is light.",
+    "forbiddenTones": [
+      "whimsical or twee — the fae are bureaucratic and cold, not charming",
+      "grimdark nihilism — moral complexity is not moral emptiness; the story believes in love even when it doubts everything else",
+      "sentimental or melodramatic — emotion is conveyed through restraint, not volume",
+      "campy or self-aware — the story takes its own stakes seriously",
+      "epic-triumphant — there are no clean victories; resolution comes at cost",
+      "expository or pedagogical — worldbuilding is experienced, not explained"
+    ]
+  },
+  "romanceArcType": "enemies-to-lovers",
+  "romanceArcNotes": "Enemies-to-lovers with forced proximity and mutual dependence as the structural trap. The slow burn is powered by antagonistic competence — each woman recognizes the other's excellence before she recognizes anything softer. The kill order is a live wire throughout, not a premise that dissolves once feelings develop. The arc moves through: professional assessment → grudging respect → unwanted attraction → trust as crisis → physical intimacy as vulnerability → the moment the cage opens and both choose to stay. Heat level escalates from charged restraint to steamy, with the first full intimate scene functioning as a thematic turning point, not a reward.",
+  "estimatedChapterCount": 22,
+  "chapterCountRationale": "Target 90,000 words at approximately 4,000–4,100 words per chapter yields 22 chapters. This provides sufficient room for a three-act structure with: Act I (Chapters 1–6, ~25,000 words) establishing the antagonistic dynamic, the Pallor crisis, and forced proximity; Act II (Chapters 7–16, ~40,000 words) driving the journey, the conspiracy, escalating trust and intimacy, and the black moment; Act III (Chapters 17–22, ~25,000 words) resolving the god-seal, the betrayal within the High Conclave, and the romance's final choice.",
+  "nameRegistry": {
+    "note": "All names below are original inventions replacing placeholder names from the world seed per story-config.json nameHandling directive.",
+    "characters": {
+      "Kaelith Maren": "The disgraced general — formerly commanded the Ashborne Legion, now in internal exile",
+      "Lirien Dael": "The fae spy — operative of the Seep, under binding kill contract from the Cerith Court"
+    },
+    "deity": {
+      "Ythara, the Unfinished": "The imprisoned god of unmade things and unrealized potential — sealed beneath the world, now waking"
+    },
+    "worldElements": {
+      "The Pallor": "The silver atmospheric membrane — remains/skin of a defeated god, dimming starlight and muffling magic, now tearing",
+      "The Quietus": "The god-seal mechanism — its location exists only as embodied kinetic memory in Kaelith",
+      "The Oathbrand": "The magic-suppressing brand on Kaelith's collarbone — designed to dissolve but being secretly refreshed"
+    },
+    "organizations": {
+      "The Seep": "The fae intelligence network — name translates as 'the water that finds every crack'",
+      "The Cerith Court": "The fae court that enforces binding contracts — issued Lirien's kill order",
+      "The Ashborne Legion": "Kaelith's former military command",
+      "The High Conclave": "The empire's ruling council — one member has been poisoning the Pallor for forty years"
+    },
+    "locations": {
+      "Calwrath": "Site of the siege where Kaelith made her infamous battlefield decision",
+      "Duskhaven": "The border garrison town where Kaelith lives in exile and Lirien arrives to kill her"
+    }
+  },
+  "upstreamRef": "story-config.json"
+}

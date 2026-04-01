@@ -1,0 +1,192 @@
+{
+  "chapterNumber": 1,
+  "revisionTimestamp": "2026-03-20T09:30:00Z",
+  "findingsAddressed": [
+    {
+      "findingId": "DEV-001-001",
+      "action": "applied",
+      "description": "Tightened post-Tavik introspection block: condensed physical inventory from full enumeration to 3 telling details ('belt knife, two changes of clothes, and nothing else'); cut 'Everything that mattered' redundancy; compressed fishmonger/children scene observation; trimmed 'Kaelith watched until...' transition; compressed J.T. digression; collapsed tricolons and flowing syntax throughout the block. Net reduction ~100 words from the introspection sequence. Note: word savings partially offset by new content added per DEV-001-003, DEV-001-005, DEV-001-006, and COPY-001-003.",
+      "linesAffected": "~126-195 (revised line numbers)"
+    },
+    {
+      "findingId": "DEV-001-002",
+      "action": "applied",
+      "description": "Changed exile duration from 'five years' to 'six years' at all four instances referring to total exile duration (opening, penance, rot, smart-move passages). Line 58's 'six years in the Ashborne Legion' left unchanged as it correctly refers to pre-Calwrath military service.",
+      "linesAffected": "~12, ~154, ~160, ~166 equivalent in revised"
+    },
+    {
+      "findingId": "DEV-001-003",
+      "action": "applied",
+      "description": "Planted micro-beat during first Oathbrand flare hinting at suppressed magic: 'Beneath the burn, for half a breath, something else — a pressure in her sternum, faint and deep, like a wall bearing weight on the other side. Then nothing.' Uses structural metaphor native to Kaelith's register and establishes sternum as the location of deeper magical pressure (connecting to the explicit magic reveal later).",
+      "linesAffected": "~20-21 in revised"
+    },
+    {
+      "findingId": "DEV-001-004",
+      "action": "applied",
+      "description": "Reframed Pallor exposition from abstract cosmological description to Kaelith's tactile calculus: changed 'people remained people instead of becoming what they might have been' to 'and the stone under her feet remained stone' — grounding the Pallor's function in what she can feel from the seawall rather than conceptual ontology.",
+      "linesAffected": "~39 in revised"
+    },
+    {
+      "findingId": "DEV-001-005",
+      "action": "applied",
+      "description": "Added subtle physical-response beat during Lirien assessment: 'Her palms went warm. The brand pulsed — a single sharp beat, then settled.' Placed immediately after mutual gaze contact, framed as brand reaction to fae proximity (tactical data, not named attraction). Completes the MRU involuntary-response gap identified by LINE-001-014.",
+      "linesAffected": "~65-66 in revised"
+    },
+    {
+      "findingId": "DEV-001-006",
+      "action": "applied",
+      "description": "Added oblique Calwrath echo in the post-Tavik introspection: 'Plaster dust and pine resin — there and gone before she could flinch.' Placed during Kaelith's institutional-betrayal logic ('the empire didn't forget people by accident'), surfacing as an unbidden PTSD-style sensory fragment from the ghost (plaster dust and pine resin from the burning civilian district). Reader cannot decode it yet but it resonates on re-read.",
+      "linesAffected": "~163 in revised"
+    },
+    {
+      "findingId": "COPY-001-001",
+      "action": "applied",
+      "description": "Fixed exile duration from 'five years' to 'six years' at all four instances (same change as DEV-001-002). Corrects timeline to match authoritative sources: YK 742 current year minus YK 736 branding = 6 years.",
+      "linesAffected": "~12, ~154, ~160, ~166 equivalent in revised"
+    },
+    {
+      "findingId": "COPY-001-002",
+      "action": "applied",
+      "description": "Fixed carved-initials date arithmetic: changed 'YK 718' to 'YK 730' to preserve 'twelve years ago' (YK 742 - YK 730 = 12). Also trimmed J.T. digression per LINE-001-020.",
+      "linesAffected": "~140 in revised"
+    },
+    {
+      "findingId": "COPY-001-003",
+      "action": "applied",
+      "description": "Clarified sternum vs collarbone distinction for magic-sensing: 'She sat on the bed and placed her palm flat against her sternum — not the brand above her collarbone, but lower, deeper, where something answered.' Establishes that the magical pressure is felt centrally (sternum) while the Oathbrand sits above the left collarbone — an intentional anatomical distinction.",
+      "linesAffected": "~182 in revised"
+    },
+    {
+      "findingId": "COPY-001-004",
+      "action": "applied",
+      "description": "Added 'left' to first collarbone reference: 'Her hand went to her left collarbone' — establishing laterality per CHAR-001.json ('above LEFT collarbone, ~2 inches diameter').",
+      "linesAffected": "~16 in revised"
+    },
+    {
+      "findingId": "LINE-001-001",
+      "action": "applied",
+      "description": "Replaced water metaphor 'like water finding level' with structural-domain metaphor: 'silver settling back into place like mortar finding a joint.' Removes water (Lirien's domain) and replaces with mortar/joint imagery native to Kaelith's architectural register.",
+      "linesAffected": "~34 in revised"
+    },
+    {
+      "findingId": "LINE-001-002",
+      "action": "applied",
+      "description": "Reduced tricolon count from 9+ to 2-3. Kept: (1) 'when she moved her shoulder, when she thought too hard, when she woke' and (2) 'If. If. If.' Converted: 'Force of habit/training/surviving' → dicolon; 'Someone/Someone/Someone' → single flowing sentence; 'She didn't know/She didn't know/She didn't know' → single complex clause; 'couldn't cross/break/negotiate' → dicolon; 'moved on/died/stopped caring' → cut with J.T. trim; 'never asked/pressed/treated' → dicolon.",
+      "linesAffected": "Multiple locations throughout revised text"
+    },
+    {
+      "findingId": "LINE-001-003",
+      "action": "applied",
+      "description": "Reduced generic second-person 'you' from 8+ instances to 1 passage. Kept: L139 'you're not safe. You've never been safe. You just stopped noticing.' (Kaelith's internal address to herself — strongest use). Converted all others to close-third: 'the way you stop noticing' → 'the way she'd stopped noticing'; 'when someone had acquired you' → 'acquired her'; 'When you had nothing left to lose' → rewritten; 'if you didn't look close' → 'if she didn't'; 'You assessed the threat' → 'She assessed'; 'You got forgotten' → 'People got forgotten'; 'you couldn't tell' → 'she couldn't tell'; 'what you'd done' → 'what she'd done'; 'the way you learn to live' → 'the way she'd learned to live'.",
+      "linesAffected": "Multiple locations throughout revised text"
+    },
+    {
+      "findingId": "LINE-001-004",
+      "action": "applied",
+      "description": "Replaced predator cliché 'Merchants didn't watch like predators picking targets' with military-register imagery: 'Merchants didn't hold a position and sight a target from it. Merchants didn't stand like that.' Uses operational language native to Kaelith's command training.",
+      "linesAffected": "~70 in revised"
+    },
+    {
+      "findingId": "LINE-001-005",
+      "action": "applied",
+      "description": "Replaced dulled/sharpened blade cliché with structural-engineering register: 'That skill hadn't eroded. If anything, exile had stripped it to load-bearing essentials — she noticed threats now because she'd stopped pretending they weren't there.' Replaces generic blade sharpening with Kaelith's architectural vocabulary.",
+      "linesAffected": "~58 in revised"
+    },
+    {
+      "findingId": "LINE-001-006",
+      "action": "applied",
+      "description": "Replaced fog cliché 'like something trying to get in' with factual/structural observation: 'the fog sat thick against the glass, dense enough to swallow the square.' Removes anthropomorphized weather; grounds fog in visual density Kaelith would register.",
+      "linesAffected": "~157 in revised"
+    },
+    {
+      "findingId": "LINE-001-007",
+      "action": "applied",
+      "description": "Fixed textile metaphors: replaced 'ragged at the edges like fabric pulled too tight' with 'ragged at the edges like stone stressed past its tolerance' (structural domain). Replaced 'The Pallor knit itself closed' with 'The Pallor pressed closed' (removes textile verb). Both changes align with Kaelith's material-science register.",
+      "linesAffected": "~33-34 in revised"
+    },
+    {
+      "findingId": "LINE-001-008",
+      "action": "applied",
+      "description": "Removed show-don't-tell attribution 'The message was clear: I'm not hiding. I'm here. Notice me.' Replaced with: 'No weapon drawn, no threat offered — just presence, and the discipline to hold it.' Lets the gesture speak without narrator translation. Also compressed the first interior attribution (LINE-001-017).",
+      "linesAffected": "~72-73 in revised"
+    },
+    {
+      "findingId": "LINE-001-009",
+      "action": "applied",
+      "description": "Removed redundant 'but she saw it' from close-third narration: 'His jaw tightened — a small motion, quickly suppressed.' The specificity of the observation already proves Kaelith's attentiveness.",
+      "linesAffected": "~91 in revised"
+    },
+    {
+      "findingId": "LINE-001-010",
+      "action": "applied",
+      "description": "Condensed three-sentence rehearsal observation to one: 'He said it the way soldiers recite orders they didn't write. Almost naturally.' Single assessment plus qualifying 'Almost' — sharper and more Kaelith than three overlapping observations.",
+      "linesAffected": "~95 in revised"
+    },
+    {
+      "findingId": "LINE-001-011",
+      "action": "applied",
+      "description": "Replaced named 'fear' label with body-language descriptor: 'Something moved through his expression — not anger, but something older and quieter. The tension of a man who has learned when to stop talking.' Shows chronic habitual fear through behavioral description without naming it.",
+      "linesAffected": "~110 in revised"
+    },
+    {
+      "findingId": "LINE-001-012",
+      "action": "applied",
+      "description": "Replaced named 'Resignation' with body-language showing: 'and his shoulders dropped a fraction — not startled, but settled, like a man who'd been waiting for a knock he'd hoped wouldn't come.' Shows the emotion through specific physical detail.",
+      "linesAffected": "~85 in revised"
+    },
+    {
+      "findingId": "LINE-001-013",
+      "action": "applied",
+      "description": "Replaced tactical explanation of 'You're lying' delivery with structural comparison: '\"You're lying.\" Flat. A fact of engineering, not an accusation.' Trusts the dialogue and shows flatness through comparison rather than explaining the interrogation tactic.",
+      "linesAffected": "~108 in revised"
+    },
+    {
+      "findingId": "LINE-001-014",
+      "action": "applied",
+      "description": "MRU gap filled — same change as DEV-001-005. Added involuntary physical reaction (palms warming, brand pulse) between perceiving Lirien and beginning rational assessment. Framed as threat response, not attraction.",
+      "linesAffected": "~65-66 in revised"
+    },
+    {
+      "findingId": "LINE-001-015",
+      "action": "applied",
+      "description": "Pallor function grounded in tactile assessment — same change as DEV-001-004. 'Stone under her feet remained stone' replaces abstract ontological observation.",
+      "linesAffected": "~39 in revised"
+    },
+    {
+      "findingId": "LINE-001-016",
+      "action": "applied",
+      "description": "Physical inventory compressed — same change as DEV-001-001. Full enumeration replaced with 'a belt knife kept sharp from habit, two changes of clothes, and nothing else that would last a day on the road.'",
+      "linesAffected": "~176 in revised"
+    },
+    {
+      "findingId": "LINE-001-017",
+      "action": "applied",
+      "description": "Compressed first interior attribution of Lirien's gaze. 'This woman held the gaze, steady and deliberate, as if to say: I see you. I want you to know I see you. What are you going to do about it?' → 'This woman held the gaze, steady and deliberate and aimed.' The three-sentence mind-reading replaced with one tactical adjective.",
+      "linesAffected": "~67 in revised"
+    },
+    {
+      "findingId": "LINE-001-018",
+      "action": "applied",
+      "description": "Replaced abstract 'functioned without purpose' with sensory/architectural: 'the particular staleness of buildings maintained for no one.' Keeps olfactory grounding while replacing philosophical abstraction with architectural observation.",
+      "linesAffected": "~25 in revised"
+    },
+    {
+      "findingId": "LINE-001-019",
+      "action": "applied",
+      "description": "Folded isolated 'She sat up.' into following paragraph: 'She sat up. She didn't know who the fae woman was...' Reserves isolated-line emphasis device for genuine reversals (Oathbrand flare, Pallor tear, She turned, They were shaking now).",
+      "linesAffected": "~159 in revised"
+    },
+    {
+      "findingId": "LINE-001-020",
+      "action": "applied",
+      "description": "Trimmed J.T. digression from 3 sentences of speculation to 1 sentence of observation: 'Someone had carved initials into the beam above the window — J.T. YK 730 — but whoever they were, they hadn't stayed.' Same atmospheric function, faster return to building tension.",
+      "linesAffected": "~140 in revised"
+    }
+  ],
+  "findingsDeferred": [],
+  "wordCountBefore": 2382,
+  "wordCountAfter": 2281,
+  "wordCountReduction": 101,
+  "wordCountNote": "The original draft's YAML frontmatter stated wordCount: 4247, but actual prose body word count is 2382 (verified against chapters 2-5 where YAML word counts match standard counting). The 4247 figure was a metadata error in the drafting agent's output. Revised chapter body is 2281 words — a net reduction of 101 words. Gross cuts were larger (~200 words) but offset by new content added per DEV-001-003 (suppressed-magic micro-beat), DEV-001-005 (palms-warming beat), DEV-001-006 (Calwrath echo), COPY-001-003 (sternum clarification), and LINE-001-012 (expanded body-language description).",
+  "summary": "Revised Chapter 1 addressing all 30 findings across three edit reports (0 critical, 6 major, 10 minor, 14 suggestions — all applied). Major changes: (1) Timeline corrected — exile duration 'five years' → 'six years' at four instances, carved-initials date fixed YK 718 → YK 730. (2) Metaphor domain violations fixed — water metaphor replaced with structural, textile metaphors replaced with stone/mortar imagery. (3) Tricolon count reduced from 9+ to 2-3 strongest instances. (4) Generic second-person 'you' reduced from 8+ to 1 passage. (5) Post-Tavik introspection tightened through inventory compression, J.T. trim, tricolon collapse, and flowing syntax. (6) Five show-don't-tell violations corrected — emotion labels replaced with body-language descriptions. (7) Three clichés replaced with Kaelith's structural-engineering register. (8) New content planted: suppressed-magic micro-beat in Oathbrand flare, palms-warming MRU beat during Lirien assessment, Calwrath sensory echo, sternum/collarbone clarification, left-collarbone laterality. Voice fingerprint maintained throughout. Three-scene structure preserved. All publication-quality elements preserved (seawall bookend, Pallor tear, Tavik confrontation, counting motif, 'Her resources: none. Her options: fewer.')."
+}

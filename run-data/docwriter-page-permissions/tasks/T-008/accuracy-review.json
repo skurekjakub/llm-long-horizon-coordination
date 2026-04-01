@@ -1,0 +1,86 @@
+{
+  "agent": "docwriter-accuracy-reviewer",
+  "taskId": "T-008",
+  "verdict": "approved",
+  "claims": [
+    {
+      "claim": "You can synchronize individual pages",
+      "location": "Section: Pages (under Synchronize content), sentence 1",
+      "result": "verified",
+      "evidence": "WebPageActionsBuilder.cs line 536-543: SynchronizeAction() creates a ContentItemAction with Name = WebPageActionConstants.SYNCHRONIZE and Permission = WebPageAclPermissions.SYNCHRONIZE for a single page",
+      "docFact": null,
+      "notes": "Pre-existing claim, not introduced by this edit. Confirmed via source."
+    },
+    {
+      "claim": "You can synchronize entire subsections of the page tree",
+      "location": "Section: Pages (under Synchronize content), sentence 1",
+      "result": "verified",
+      "evidence": "WebPageActionsBuilder.cs line 553-559: SynchronizeWithAllSubPagesActionForTree() creates a ContentItemAction with Name = WebPageActionConstants.SYNCHRONIZE_INCLUDE_SUBPAGES for syncing with all subpages",
+      "docFact": null,
+      "notes": "Pre-existing claim, not introduced by this edit. Confirmed via source."
+    },
+    {
+      "claim": "To synchronize pages, you need Read and Synchronize page permissions",
+      "location": "Section: Pages (under Synchronize content), sentence 2",
+      "result": "verified",
+      "evidence": "WebPageAclRolePermissionEvaluator.cs line 90: 'return grantedPermissions.Contains(WebPageAclPermissions.READ) && grantedPermissions.Contains(permission);' — for non-individually-checked permissions (Synchronize is NOT in IndividuallyCheckedPermissions per WebsiteConstants.cs line 20-24), both READ and the requested permission must be granted. WebPageAclPermissions.cs line 17: READ = \"Read\"; line 41: SYNCHRONIZE = \"Synchronize\". WebPageCommandManagerBase.cs line 280 and 493 confirm SYNCHRONIZE is the permission checked during content sync operations.",
+      "correction": null,
+      "docFact": "permissionSummary.synchronize"
+    },
+    {
+      "claim": "Cross-reference identifier permissions_pagelevel_xp is valid",
+      "location": "Section: Pages (under Synchronize content), sentence 2 — {% page_link permissions_pagelevel_xp ... %}",
+      "result": "verified",
+      "evidence": "page-permission-management.md front matter line 5: 'identifier: permissions_pagelevel_xp'",
+      "docFact": null
+    },
+    {
+      "claim": "Cross-reference anchor 'Permission requirements for page operations' exists on the target page",
+      "location": "Section: Pages (under Synchronize content), sentence 2 — anchor=\"Permission requirements for page operations\"",
+      "result": "verified",
+      "evidence": "page-permission-management.md line 175: '## Permission requirements for page operations' — heading exists and matches the anchor string exactly",
+      "docFact": null
+    },
+    {
+      "claim": "Link text 'page permissions' is descriptive per REC-005",
+      "location": "Section: Pages (under Synchronize content), sentence 2 — linkText=\"page permissions\"",
+      "result": "verified",
+      "evidence": "REC-005 recommends descriptive link text that tells the reader what they'll find. 'page permissions' accurately describes the destination content (Page permission management page). REC-005's applicableTo is [edit-and-publish-pages, workflows], not content-sync specifically, but the underlying principle applies universally and no invariants are violated.",
+      "docFact": null,
+      "notes": "REC-005 extended slightly beyond its listed applicableTo scope. The principle is sound and no invariant conflict exists."
+    }
+  ],
+  "codeExamples": [],
+  "researchRecommendationChecks": [
+    {
+      "recommendationId": "REC-005",
+      "cited": true,
+      "applied": true,
+      "notes": "Writer used descriptive link text 'page permissions' instead of vague text. Consistent with recommendation to 'Write link text that makes sense without the surrounding text.' Single cross-reference placement at the most relevant location (Pages subsection)."
+    }
+  ],
+  "domainInsightChecks": [
+    {
+      "insightId": "DOM-017",
+      "relevant": true,
+      "notes": "Multi-layer permission architecture is correctly represented — the sentence states 'Read and Synchronize page permissions' which maps to the ACL layer. Application-layer permission (Access channel) is implied via the channel context but not restated, which is appropriate for a cross-reference sentence that links to the full details page.",
+      "conflict": false
+    },
+    {
+      "insightId": "DOM-008",
+      "relevant": true,
+      "notes": "Business-user page uses domain-specific interaction verbs. 'synchronize' and 'you need' are appropriate business-user vocabulary. No stale icon references introduced.",
+      "conflict": false
+    }
+  ],
+  "summary": {
+    "totalClaims": 6,
+    "verified": 6,
+    "incorrect": 0,
+    "unverifiable": 0,
+    "unsupported": 0,
+    "codeExamplesChecked": 0,
+    "codeExamplesCorrect": 0
+  },
+  "timestamp": "2026-03-18T20:10:27Z"
+}

@@ -1,0 +1,75 @@
+{
+  "chapterNum": 9,
+  "pov": "CHAR-001",
+  "povTransitionMotivation": "Return to Kaelith to experience the Ythara exposure and show how existential threat forces mutual dependence. This is Pinch Point One where the god-threat becomes tangible",
+  "scenes": [
+    {
+      "id": "SCN-025",
+      "goal": "Kaelith and Lirien travel through the Wending, a region where Pallor damage is visibly severe",
+      "conflict": "The Pallor has torn open in multiple places, allowing Ythara's influence to leak into reality",
+      "disaster": "Kaelith is directly exposed to Ythara's ontological unraveling effect — she experiences reality as malleable, her sense of self beginning to fragment",
+      "valueShift": "From 'the god is theoretical threat' to 'the god is present and trying to unmake me'",
+      "fiveCommandments": {
+        "incitingIncident": "They enter a region where the Pallor has catastrophically failed",
+        "complication": "Kaelith begins experiencing dissociation and ontological destabilization",
+        "crisis": "Push through the affected zone or retreat and find another route?",
+        "climax": "Lirien realizes Kaelith is fragmenting and physically grounds her — hand on her wrist, voice in her ear, anchoring her to present reality",
+        "resolution": "Kaelith stabilizes through Lirien's presence. They discover they need each other to stay coherent in Ythara-affected zones"
+      }
+    },
+    {
+      "id": "SCN-026",
+      "goal": "They find shelter in a partially collapsed waystation to recover from the exposure",
+      "conflict": "Kaelith is shaken in ways she cannot name — the experience of nearly ceasing to exist is beyond tactical processing",
+      "disaster": "She realizes she cannot complete this journey alone. If Lirien were not there, she would have unraveled completely",
+      "valueShift": "From 'I survive alone' to 'I need her to stay whole'",
+      "fiveCommandments": {
+        "incitingIncident": "Kaelith attempts to process the Ythara exposure through her usual frameworks and fails",
+        "complication": "Lirien stays close, not leaving her alone, providing presence without demanding conversation",
+        "crisis": "Admit the dependence, or maintain the fiction of self-sufficiency?",
+        "climax": "Kaelith says quietly: 'Thank you. For keeping me here.' It is the closest she can come to admitting need",
+        "resolution": "Lirien responds: 'You would have done the same.' They both know it is true, and that changes something fundamental"
+      }
+    },
+    {
+      "id": "SCN-027",
+      "goal": "Conclave agents catch up to them — the pursuit has not slowed",
+      "conflict": "Three agents, magically armed, demand Kaelith's surrender",
+      "disaster": "Combat erupts. Kaelith fights without full magic, Lirien provides lethal precision. Together they win, but barely",
+      "valueShift": "From 'we travel together' to 'we fight as a unit'",
+      "fiveCommandments": {
+        "incitingIncident": "Agents surround the waystation",
+        "complication": "Kaelith is still weakened from Ythara exposure",
+        "crisis": "Surrender, fight separately, or fight as coordinated team?",
+        "climax": "They fight together — Kaelith creates openings, Lirien exploits them. Their combat styles mesh seamlessly",
+        "resolution": "They win and leave immediately, knowing more agents will follow. The partnership has become military-grade coordination"
+      }
+    }
+  ],
+  "emotionalArc": {
+    "startState": "Kaelith begins in determination — she will complete this journey through discipline and endurance",
+    "endState": "She ends in acknowledged dependence — she cannot do this alone, and needing Lirien no longer feels like weakness. It feels like survival",
+    "pivotMoment": "The moment Lirien's hand on her wrist pulls her back from ontological fragmentation. That touch is the only thing that keeps Kaelith from ceasing to exist, and she knows it"
+  },
+  "fantasyBeats": [
+    "Pinch Point One — Ythara Presses on the Bond: Direct exposure to Ythara's influence forces the women to rely on each other's presence to stay psychologically intact. The god-threat is no longer abstract"
+  ],
+  "romanceBeats": [
+    "Survival Through Presence — They Need Each Other to Stay Whole: Kaelith nearly fragments from Ythara exposure. Lirien grounds her. They discover they cannot survive this journey independently — mutual dependence becomes existential"
+  ],
+  "hookType": "reality-distortion",
+  "hookTypeDescription": "Opens in the Wending where reality itself is unstable. The hook is sensory disorientation — colors bleeding, edges uncertain, the world refusing to stay solid",
+  "closeType": "aftermath-silence",
+  "closeTypeDescription": "Closes after the combat, both women catching their breath, knowing they just fought perfectly coordinated and that coordination reveals how deeply their survival is now intertwined. No celebration. Just acknowledgment",
+  "targetWordCount": 4000,
+  "tensionLevel": 8,
+  "pacingNotes": "Pinch point one with high tension through existential threat and combat. Pacing is intense and visceral. The Ythara exposure should be disorienting and frightening on a fundamental level",
+  "locationsPrimary": ["The Wending — Pallor-damaged wilderness, collapsed waystation"],
+  "charactersPresent": ["CHAR-001 (Kaelith)", "CHAR-002 (Lirien)", "Conclave agents"],
+  "upstreamRefs": [
+    "../../plot/plot-structure.json",
+    "../../characters/CHAR-001.json",
+    "../../plot/dual-arc-timeline.json",
+    "../../plot/tension-map.json"
+  ]
+}

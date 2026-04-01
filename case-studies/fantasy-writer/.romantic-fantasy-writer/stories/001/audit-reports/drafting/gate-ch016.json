@@ -1,0 +1,262 @@
+{
+  "chapter": 16,
+  "agent": "drafting-auditor",
+  "gateId": "GATE-DRAFT-016",
+  "phase": "drafting",
+  "timestamp": "2025-07-17T16:30:00.000000+00:00",
+  "result": "passed",
+  "overallScore": 9,
+  "passThreshold": "Score >= 7 in all categories, no critical findings, fewer than 3 warnings",
+  "verdict": "Chapter 16 PASSES the drafting gate with an overall score of 9/10. This is an exceptional Black Moment chapter that earns its emotional devastation through craft discipline rather than melodrama. Zero critical findings. Zero automatic-fail triggers. Two warnings identified (repetition patterns and one structural issue), well below the 3-warning failure threshold. The chapter delivers on every outline specification, maintains Lirien's voice with precision, sustains micro-tension at maximum intensity throughout, and achieves the dual-arc destruction required of the Black Moment. The prose quality floor is maintained at a high level with only minor polish-level issues. Proceeds to revision pipeline.",
+  "assessments": {
+    "outlineCompliance": {
+      "score": 10,
+      "analysis": "FULL COMPLIANCE. All three scenes (SCN-43, SCN-44, SCN-45) are present and executed per outline. Scene-by-scene verification: SCN-43 (Dead Drop Discovery): Inciting incident (Seep message arrives, cipher recognized) — PRESENT. Complication (blood-binding ceremony, physiological enforcement, contract predates journey) — PRESENT, delivered through italicized Court document. Crisis (explain vs. let Kaelith read unmediated truth) — PRESENT, Lirien cycles through operative options and rejects them. Climax (Kaelith reads message, bond transmits guilt) — PRESENT. Resolution (information in Kaelith's hands, nothing can unsee it) — PRESENT. Value shift from 'secret is mine to manage' to 'cage is visible' — ACHIEVED. SCN-44 (Trust Collapse): Inciting incident (Kaelith reads contract, military mask appears) — PRESENT with Calwrath parallel explicitly noted. Complication (bond transmits systematic reinterpretation of every shared moment) — PRESENT, delivered through three specific memory re-evaluations (Oathbrand removal, Calwrath confession, first kiss). Crisis (speak or let Kaelith process) — PRESENT but handled primarily through Kaelith's 'Don't' pre-empting Lirien's attempt. Climax ('Every feeling was built on a lie,' bond goes cold) — PRESENT, delivered in military casualty-report register. Resolution (Kaelith's face closes like fortification) — PRESENT. Value shift from 'betrayal revealed' to 'every feeling reframed as manipulation' — ACHIEVED. SCN-45 (Separation): Inciting incident (Kaelith begins packing) — PRESENT with military efficiency detail. Complication (Lirien tries to explain loophole, sounds like manipulation) — PRESENT, words described as 'too many' and each one 'dissipating before it arrived.' Crisis (follow and prove binding controls her, or let go permanently) — PRESENT and resolved through paralysis. Climax (Lirien lets Kaelith walk away because she cannot determine if wanting to follow is choice or binding) — PRESENT, the chapter's philosophical centerpiece. Resolution (Kaelith disappears into treeline, bond carries only pain) — PRESENT. Value shift from 'truth is out' to 'separation complete, possibly permanent' — ACHIEVED. POV character (Lirien/CHAR-002) — CORRECT. Emotional arc (operative dread → horror → guilt → helpless witnessing → desperate explanation → existential paralysis → devastated stillness) — FULLY REALIZED. All outline turning points delivered at specified weight.",
+      "sceneBreakdown": {
+        "SCN-43": {
+          "present": true,
+          "fiveCommandments": "all met",
+          "valueShift": "achieved",
+          "wordCount": 1239,
+          "notes": "Scene 1+2 combined (dead drop + Kaelith waking) run 1239 words. Outline allocated ~1600. Slightly compressed but all beats present."
+        },
+        "SCN-44": {
+          "present": true,
+          "fiveCommandments": "all met",
+          "valueShift": "achieved",
+          "wordCount": 1095,
+          "notes": "Trust collapse scene is the emotional core. All five commandments clear. The reinterpretation sequence (three memories re-evaluated) is the strongest passage in the chapter."
+        },
+        "SCN-45": {
+          "present": true,
+          "fiveCommandments": "all met",
+          "valueShift": "achieved",
+          "wordCount": 1753,
+          "notes": "Separation scene is longest. Contains packing, failed explanation, existential crisis, and departure. All outline beats present."
+        }
+      }
+    },
+    "styleGuideCompliance": {
+      "score": 9,
+      "analysis": "STRONG COMPLIANCE. Tone contract: The chapter nails the 'morally complex, atmospherically taut, emotionally restrained but intense' tone demanded by the style guide. The Black Moment is delivered through clinical language, silence, and the gap between bureaucratic prose and its emotional content — not through shouting, melodrama, or sentimentality. No prohibited tones detected: no whimsy, no grimdark nihilism, no sentimentality/melodrama, no camp, no epic-triumphant moments, no exposition-as-lecture, no modern-glib register. Prose quality floor: Zero banned phrases. Approximately 1.0 adverbs per page (well under the 3/page limit). No adjective stacking. Show-to-tell ratio excellent — emotions conveyed through bond transmission, physical detail, behavioral observation, and the contrast between operative language and overwhelming feeling. The 'something called *Lessened*' naming exposition is well-executed (definition embedded in sensory description, not dry exposition). Show-don't-tell rules: All key emotional beats (trust collapse, bond going cold, Kaelith's departure) shown through physical detail and bond mechanics rather than named emotions. Lirien never says 'she felt devastated' — devastation arrives through precision failing, words stalling, the bond transmitting involuntarily. Lirien's POV calibration: Opens with people before architecture (Kaelith sleeping). Observation→interpretation cadence maintained. Clinical/contractual language for emotional containment. Simplifies under destabilization ('Because I was afraid'). Water/permeability metaphor domain correct. One minor concern: em-dash density (80 in ~4,090 words = ~19.6 per 1000 words) is high. While em-dashes are a legitimate tool for interruption, parenthetical thought, and the fragmented rhythm of crisis, the density borders on stylistic tic rather than deliberate choice in some passages."
+    },
+    "craftProfileCompliance": {
+      "score": 9,
+      "analysis": "14 of 16 active craft tools FULLY COMPLIANT. 2 PARTIALLY COMPLIANT with minor issues only. The craft-enforcement-report's 3 minor findings are legitimate but truly minor: (1) MOT-005 (Ythara) absence — the craft enforcer correctly notes this is a natural parallel opportunity missed, but with 3 motifs present (Pallor, Water, Quietus) and the chapter already at maximum emotional density, forcing a 4th motif could dilute focus. AGREE this is minor. (2) MOT-004 (Quietus) as plot-reference only — the Quietus appears as background stakes ('a seal that could only be reached through a path held in Kaelith's body'), not as a fully-deployed motif with body-as-knowledge imagery. Fair criticism but the chapter's function is emotional destruction, not quest advancement. AGREE this is minor. (3) Mystery box count (15 vs. 3-7 target) — this is correctly identified as a structural/plotting-phase issue, not a drafting error. Chapter 16 does not open new boxes recklessly; it intensifies existing ones. The count will resolve in ch17-22. AGREE this is minor and not a drafting-gate concern. Cross-reference with metadata.json craft tool notes: T5 (tone contract) verified above. T7 (black moment) — the chapter IS the black moment, executed with devastating precision. T10 (Sanderson's Laws) — bond mechanics strictly compliant with MAG-007, contract mechanics consistent with MAG-005. T12 (dual-arc interleave) — maximum interleave where fantasy revelation IS romance devastation. T15 (foreshadowing) — FS-003 paid off, FS-017 paid off, FS-012 advanced, new plants FS-019/FS-020. T17 (voice fingerprinting) — verified independently above. T21 (vulnerability ladder) — COLLAPSE as designed. T24 (subtext in dialogue) — minimal dialogue, maximum subtext. All verified."
+    },
+    "continuityIntegrity": {
+      "score": 10,
+      "analysis": "FLAWLESS. The continuity-report found zero corrections needed and I concur after independent verification. Key checks: (1) Character locations: Ch15 ends at safe house, ch16 opens same location, ends with separation — consistent. (2) Timeline: overnight passage from ch15 night to ch16 pre-dawn, 'two hours ago' reference anchors time. (3) Knowledge states: CRITICAL — Kaelith learns everything from the on-page document, not from plot convenience. Bond transmits emotional quality, not factual content, explicitly stated twice (lines 56 and 99). No information leaks. (4) Bond mechanics: All transmissions comply with MAG-007. Bond carries emotional quality, not specifics. Walling is consistent with established bond rules. (5) Contract mechanics: Blood ceremony, physiological enforcement, Lessening — all consistent with magic-system rules. Loophole consistent with FACT-008. (6) Physical state: Kaelith's bruised ribs referenced through healing salve detail. Evidence folio from ch15 packed. (7) Naming: All established names correct. New Court designations (Hand of the Third Reach, Ashborne Fourth) are plausible and registered. One pre-existing flag (binding deterioration timeline: 48hrs/120hrs vs. 30/90 days) is noted in the continuity-report as a global reconciliation issue, not a ch16 drafting error. The proximity-based modulation explanation is reasonable and should be addressed in a future chapter."
+    },
+    "voiceConsistency": {
+      "score": 9,
+      "analysis": "STRONG. The voice-report (score 9/10) found and corrected 6 issues before final draft. Post-correction: (1) RECOGNITION TEST: Opening 3 sentences ('The dead drop had been serviced.' / 'Lirien crouched beside the rock fissure twelve paces...' / 'Dawn was a thin grey line under the Pallor's membrane...') immediately establish operative vocabulary, precise measurement, and visual sensory dominance. Identifiable as Lirien within 2 sentences — PASSES INV-003/INV-034. (2) VOCABULARY: Operative lexicon dense and consistent — 'operative' (18), 'target' (9), 'bond' (29), 'contract' (16), 'catalogued' (5), 'variables,' 'assessment,' 'protocol.' Clinical emotional processing: 'damage projections,' 'calculus of containment,' 'operational category.' (3) METAPHOR DOMAIN: Water/infiltration dominates post-correction (26 water metaphors). Only 2 'architecture' references, both correctly describing Kaelith. The central Seep metaphor ('She had been the Seep. Water that found every crack.') is the chapter's thematic climax. (4) DEGRADATION ARC: Precision→fragmenting→plain. 'Because I was afraid' is the plainest sentence Lirien has ever spoken, correctly deployed at maximum vulnerability. The voice-report notes Scene 4's analytical passages run slightly long for someone whose framework has collapsed (scored 8/10 on degradation). I concur — a few more mid-thought fragment-interruptions would strengthen the degradation, but the existing oscillation between attempted analysis and collapse is narratively effective. (5) SENSORY SIGNATURE: Visual dominance confirmed. Lirien reads faces, tracks eye movement, catalogues micro-expressions. Bond adds kinesthetic/emotional secondary channel appropriately."
+    },
+    "proseQuality": {
+      "score": 8,
+      "analysis": "HIGH QUALITY with specific observations: (1) WORD COUNT: 4,090 words vs. 4,100 target. Within 0.2%. PASS. (2) BANNED PHRASES: Zero found. PASS. (3) CLICHÉS: Zero stock fantasy clichés detected. PASS. (4) TELL-NOT-SHOW: Zero violations detected by automated scan. Manual scan confirms: all major emotional beats shown through physical detail, bond mechanics, behavioral change, and voice degradation. The closest approach to telling is 'Lirien hated it' re: the word 'target,' but this is a controlled break — the word 'hated' is earned by the preceding operative taxonomy context. PASS. (5) MODERN IDIOMS: 'kind of' found once in 'the kind of trust' — this is standard English usage, not a modern slang idiom. PASS. (6) SENTENCE VARIETY: 38% short (≤5 words), 31% medium (6-15), 19% long (16-30), 11% very long (>30). Good distribution with appropriate short-sentence emphasis for emotional intensity. (7) MICRO-TENSION: Sustained throughout. No half-page without active tension. Every paragraph either advances the revelation, processes devastation, or escalates the existential crisis. Even the packing scene maintains tension through detail-as-relationship-erasure. PASS INV-035. CONCERNS: (A) 'had' density at 2.6% (107 occurrences in 4,090 words) is elevated. Much of this is structurally necessary (past-perfect for backstory, 'she had been sleeping,' 'she had set the marker'). However, 'that had lived in' appears 4 times, creating a noticeable pattern. (B) Paragraph openings: 'The' starts 24% of paragraphs. While varied enough to avoid monotony (Lirien 11%, She 8%, Kaelith 7%), the article-heavy pattern is worth noting for polish. (C) 'forty-three' appears 6 times. Clearly intentional as a leitmotif — the number of Lirien's completed contracts is her identity marker. Each usage contextualizes it differently (hands trained, engine carried, contracts built, confessions shaped, targets categorised, assignments purchased silence). Borderline darling territory at 6 but each instance carries narrative weight. Not a fail issue. (D) 'costume of love' appears twice (once as 'precise costume,' once as 'exact costume'). The near-repetition weakens the second usage. Minor polish issue. (E) 'the precise/the exact' appear 11 combined times. This is Lirien's analytical voice — she notices precision — but the density creates a rhythmic echo that a line editor should address.",
+      "specificObservations": [
+        {
+          "type": "repetition",
+          "detail": "'that had lived in' appears 4 times: Kaelith's voice, hope in words, warmth in connection, warmth in bond. The pattern is noticeable.",
+          "severity": "minor",
+          "lineRefs": "SCN-44, SCN-44, SCN-44, SCN-45"
+        },
+        {
+          "type": "repetition",
+          "detail": "'the precise/the exact' combined 11 occurrences. Individual uses are in-voice but cumulative density creates rhythmic echo.",
+          "severity": "minor",
+          "lineRefs": "throughout"
+        },
+        {
+          "type": "repetition",
+          "detail": "'costume of love' appears twice: 'the precise costume of love' and 'the exact costume of love.' Near-repetition weakens second use.",
+          "severity": "minor",
+          "lineRefs": "SCN-44 and SCN-45"
+        },
+        {
+          "type": "structural-pattern",
+          "detail": "9 instances of 'Not X. Y.' negation-then-correction pattern. Individually effective but the cumulative pattern becomes a visible tic by the fourth scene.",
+          "severity": "minor",
+          "lineRefs": "throughout, concentrated in SCN-43 and SCN-45"
+        },
+        {
+          "type": "structural-pattern",
+          "detail": "'the way' appears 10 times as a comparative connector. Some are essential ('the way Kaelith read buildings') but several could be varied.",
+          "severity": "minor",
+          "lineRefs": "throughout"
+        },
+        {
+          "type": "punctuation-density",
+          "detail": "80 em-dashes in ~4,090 words (~19.6 per 1000 words). High density, though appropriate for Lirien's fragmenting analytical voice under crisis.",
+          "severity": "minor",
+          "lineRefs": "throughout"
+        }
+      ]
+    },
+    "emotionalImpact": {
+      "score": 10,
+      "analysis": "DEVASTATING. This chapter achieves the Black Moment's function with extraordinary precision. The emotional impact assessment: (1) ROMANCE SHATTERED: Yes, convincingly. Kaelith's 'Every feeling was built on a lie' lands with the force of 15 chapters of vulnerability ladder escalation behind it. The reinterpretation sequence — where each shared moment is systematically re-evaluated through the contract lens — is the most emotionally destructive passage in the manuscript. The bond going cold (walled, not severed — worse) is a master stroke. (2) DUAL-ARC DESTRUCTION: Maximum. The same revelation destroys both the romance and the fantasy partnership needed for the Quietus. The Court document is simultaneously an intelligence asset and the instrument of personal annihilation. (3) RESTRAINT AS AMPLIFIER: The chapter's greatest craft achievement is its restraint. No shouting. No melodrama. Kaelith does not rage — she goes quiet, which is worse. The devastating sentence is stated in military casualty-report register. The packing scene uses objects as relationship termination. The silence is louder than any confrontation could be. (4) LIRIEN'S PARALYSIS: The existential crisis — 'she cannot follow because following might be obedience' — is philosophically devastating and earned by 15 chapters of binding-as-cage foreshadowing. The irresolvable question (is this love or compliance?) creates an impossible position that CANNOT be resolved by the character alone, which is exactly what a Black Moment requires. (5) VULNERABILITY LADDER COLLAPSE: The chapter explicitly weaponizes every trust moment from chapters 1-15. Each step on the ladder becomes evidence of exploitation. The reader who experienced those moments as genuine now watches them reframed, which is a powerful form of reader-complicity in the devastation. (6) BOND AS TORTURE DEVICE: The bond — previously a source of growing intimacy — becomes a transmission vector for pain. Lirien feels Kaelith's trust collapsing in real time. The wall that replaces warmth is described as 'presence without connection,' which is the chapter's most psychologically precise insight. (7) CHAPTER CLOSE: 'The silence between them was the loudest thing she had ever heard' — the paradox lands because 17 paragraphs of silence-as-communication have prepared it. The closing fragments ('Matched. Shared. Inescapable.') are devastating in their simplicity. This is the emotional centerpiece of the book and it delivers."
+    },
+    "invariantCompliance": {
+      "score": 9,
+      "analysis": "All critical invariants checked: INV-001 (Genre Promise): Both fantasy and romance arcs present and interleaved at maximum intensity. Fantasy: active kill contract, blood binding, physiological enforcement, Court escalation, Quietus quest imperiled. Romance: trust collapse, Black Moment, vulnerability weaponized, separation. PASS. INV-002 (Continuity): Verified above — zero violations. PASS. INV-003 (Voice Distinctness): Lirien identifiable within 2 sentences. PASS. INV-005 (Show Don't Tell): No telling-not-showing for major emotional beats. All conveyed through physical detail, bond mechanics, and behavioral observation. PASS. INV-008 (Protagonist Agency): Lirien makes an active choice: she hands Kaelith the message rather than destroying it. She chooses to attempt explanation. She chooses NOT to follow — this last choice is constrained by the binding uncertainty, but the chapter frames it as Lirien's analytical conclusion, not passive helplessness. PASS — though the paralysis ending is borderline. The paralysis is the correct Black Moment function (protagonist cannot act), but the revision should ensure ch17-18 reasserts agency quickly. INV-009 (No Deus Ex Machina): No new magic introduced. The loophole was established in FACT-008. The Court document reveals pre-established contract mechanics. PASS. INV-010 (Outline Compliance): Verified above — full compliance. PASS. INV-017 (Prose Quality Floor): Zero clichés, zero banned phrases, show-don't-tell maintained. PASS. INV-018 (World Rules): Pallor, bond mechanics, contract mechanics, fae culture — all consistent with established world rules. No anachronisms. PASS. INV-027 (Adversarial Gate): This report. INV-034 (POV Identifiable in 3-4 Sentences): Verified — identifiable in 2. PASS. INV-035 (Micro-Tension): No half-page without active tension. Even meditative passages carry the active tension of the unresolvable binding-vs-love question. PASS. INV-038 (Dialogue Serves Function): Minimal dialogue, every line functional. 'Don't' = boundary enforcement. 'What is it?' = military alertness + bond reading. 'Every feeling was built on a lie' = thesis of devastation. 'And you chose not to tell me' = indictment of silence. 'Because I was afraid' = first honest non-operative statement. PASS. INV-040 (Value Shift): Each scene achieves clear value shift as specified by outline. PASS. INV-056 (Information State Integrity): No character references information they don't know. Bond transmits emotional quality, not facts. Kaelith learns everything from on-page document. PASS. INV-073 (Publication-Ready Prose): Lush but not purple. Emotionally authentic. The prose is controlled, precise, and devastating. PASS. INV-079 (Craft Tool Compliance): All 16 tools verified through craft-enforcement-report cross-reference. PASS. INV-081 (Darlings): See darlings section below."
+    }
+  },
+  "criticalFindings": [],
+  "majorFindings": [],
+  "minorFindings": [
+    {
+      "id": "MF-001",
+      "type": "repetition",
+      "severity": "minor",
+      "invariant": "INV-017",
+      "description": "'that had lived in' appears 4 times across SCN-44 and SCN-45 (Kaelith's voice, hope in words, warmth in connection, warmth in bond). This creates a noticeable echo that a line editor should vary.",
+      "recommendation": "Vary at least 2 of the 4 instances. Options: 'that had occupied,' 'that had threaded through,' or restructure the sentence."
+    },
+    {
+      "id": "MF-002",
+      "type": "repetition",
+      "severity": "minor",
+      "invariant": "INV-017",
+      "description": "'costume of love' appears twice: 'the precise costume of love' (SCN-44) and 'the exact costume of love' (SCN-45). The near-repetition weakens the second usage because the reader recognizes the pattern.",
+      "recommendation": "Vary the second instance. The first is stronger (the binding 'wore the precise costume of love'). The second could become 'wearing the shape of love' or 'indistinguishable from love.'"
+    },
+    {
+      "id": "MF-003",
+      "type": "structural-pattern",
+      "severity": "minor",
+      "invariant": "INV-017",
+      "description": "9 instances of the 'Not X. Y.' negation-then-correction construction. Individually each is effective, but the cumulative pattern becomes a visible rhetorical tic by the fourth scene. Most concentrated in SCN-43 and SCN-45.",
+      "recommendation": "Vary 2-3 instances by restructuring. Instead of 'Not severed. Lirien would have preferred severance' → 'She would have preferred severance — a clean break.' The pattern should remain as a signature move but at reduced density."
+    },
+    {
+      "id": "MF-004",
+      "type": "repetition",
+      "severity": "minor",
+      "invariant": "INV-017",
+      "description": "'the precise' (6) and 'the exact' (5) = 11 combined specificity markers. While in-voice for Lirien's analytical nature, the cumulative density creates rhythmic repetition. The line editor should vary some instances.",
+      "recommendation": "Reduce by 3-4. Some can be cut entirely ('the precise care of someone placing' → 'the care of someone placing'; 'the exact moment' → 'the moment')."
+    },
+    {
+      "id": "MF-005",
+      "type": "structural-pattern",
+      "severity": "minor",
+      "invariant": "INV-017",
+      "description": "'the way' appears 10 times as a comparative connector. Lines 4-5 of the 'the way' list contain a particularly awkward double: 'the way Kaelith took documents the way she took tools.' This is the one instance that genuinely reads as a construction error rather than stylistic choice.",
+      "recommendation": "Fix the double-'the way' sentence: 'the way Kaelith took documents the way she took tools' → 'the way Kaelith took documents — as she took tools.' Vary 2-3 other instances."
+    },
+    {
+      "id": "MF-006",
+      "type": "pacing",
+      "severity": "minor",
+      "invariant": "INV-035",
+      "description": "SCN-45 (separation + existential crisis, 1,753 words) runs notably longer than the other scenes. The philosophical meditation on binding-vs-love (paragraphs 20-25 of the final scene) risks extending the paralysis beat past its natural landing. The ideas are strong but some compression would increase impact.",
+      "recommendation": "Consider tightening paragraphs 23-25 by 80-100 words. The 'She had been the Seep' paragraph and the 'She could not tell' paragraph cover similar ground (self-as-construction, identity-dissolution). Merging or trimming would sharpen the final movement."
+    },
+    {
+      "id": "MF-007",
+      "type": "craft-compliance",
+      "severity": "minor",
+      "invariant": "INV-079",
+      "description": "MOT-005 (Ythara as raw potential/dissolution) absent from chapter. Concur with craft-enforcement-report that this is a natural missed opportunity during Lirien's identity dissolution, but it is a minor miss given the chapter's emotional density and the presence of 3 other motifs.",
+      "recommendation": "In polish or revision, consider a single Ythara echo during the existential crisis — perhaps the perception that something at the edges of identity is dissolving into possibility rather than loss."
+    },
+    {
+      "id": "MF-008",
+      "type": "voice",
+      "severity": "minor",
+      "invariant": "INV-003",
+      "description": "Voice-report VF-006 noted and did not correct: Scene 4's analytical passages occasionally run too controlled for someone whose framework has collapsed. The final long paragraph (142 words starting 'The operative who always had a contingency') reads with too much coherent analytical distance for Lirien's emotional state at that point in the chapter.",
+      "recommendation": "In revision, introduce 1-2 mid-thought interruptions in the final analytical passage — a fragment that breaks the composed reasoning, forcing Lirien to reconstruct her own sentence. This would strengthen the degradation arc."
+    }
+  ],
+  "warnings": [
+    {
+      "id": "WARN-001",
+      "category": "repetition-density",
+      "description": "Multiple minor repetition patterns (MF-001 through MF-005) collectively suggest the prose would benefit from a deliberate variation pass. None individually trigger a warning, but taken together they indicate a rhythmic narrowing in the final scene where Lirien's analytical voice becomes slightly formulaic.",
+      "gateImpact": "WARN — counted toward 3-warning threshold"
+    },
+    {
+      "id": "WARN-002",
+      "category": "scene-balance",
+      "description": "SCN-45 (1,753 words) is 43% of the chapter. While the separation scene requires room for the existential crisis, the binding-vs-love meditation extends past the natural moment of Kaelith's departure. The final ~300 words after Kaelith disappears into the treeline risk diminishing the devastating exit by adding philosophical elaboration to what should be silence.",
+      "gateImpact": "WARN — counted toward 3-warning threshold"
+    }
+  ],
+  "warningCount": 2,
+  "warningThreshold": 3,
+  "darlings": [
+    {
+      "id": "DARL-001",
+      "passage": "'She had been the Seep. Water that found every crack. Patient, relentless, shaping itself to the container it entered.'",
+      "assessment": "NOT A DARLING — this is the chapter's thematic climax. Lirien naming herself as the infiltration mechanism is the moment her operative identity and her lover identity collide. It advances character, theme, and the chapter's central metaphor simultaneously. KEEP.",
+      "verdict": "keep"
+    },
+    {
+      "id": "DARL-002",
+      "passage": "'The paper was thin. Court stationery. It weighed almost nothing.'",
+      "assessment": "NOT A DARLING — the physical weight of the paper contrasted with its devastating content is an earned contrast. Scene-closing function. KEEP.",
+      "verdict": "keep"
+    },
+    {
+      "id": "DARL-003",
+      "passage": "'The real sky did not care who was looking. It existed whether or not anyone trusted it.'",
+      "assessment": "BORDERLINE. This is the Pallor motif's evolution (MOT-001) and provides thematic resonance (trust as irrelevant to reality). However, it is also a beautiful observation that slightly delays the chapter's emotional resolution. The question is whether 'the real sky did not care' serves as earned thematic punctuation or as a writerly flourish. VERDICT: KEEP — the parallel between sky-existing-regardless and love-possibly-existing-regardless is the thematic argument the chapter needs before its final paragraph.",
+      "verdict": "keep-with-note"
+    },
+    {
+      "id": "DARL-004",
+      "passage": "'Lirien sat with the ruins and the message and the absence of the only person she might have loved freely, and she did not move, and she did not weep, and she did not know if the grief was hers or the contract's, and the not-knowing was the worst thing she had ever carried, heavier than forty-three completed assignments and the silence they had purchased her.'",
+      "assessment": "BORDERLINE DARLING. This 66-word polysyndeton sentence is deliberately constructed and emotionally powerful. The 'and...and...and' rhythm creates accumulation that mirrors Lirien's overwhelm. However, it sits within a cluster of similarly long meditative passages in the final scene. The 'forty-three completed assignments and the silence they had purchased her' phrase is the sixth 'forty-three' reference and the one that risks overplaying the leitmotif. VERDICT: KEEP — the polysyndeton is the correct rhetorical tool for the penultimate paragraph, and 'the silence they had purchased her' is the chapter's most devastating reframing of Lirien's career. But flag the 'forty-three' density for line-edit review.",
+      "verdict": "keep-with-note"
+    }
+  ],
+  "automaticFailChecklist": {
+    "outlinePOVMatch": { "status": "PASS", "detail": "Lirien Dael / CHAR-002 — correct" },
+    "sceneGoalsPresent": { "status": "PASS", "detail": "All SCN-43/44/45 goals delivered" },
+    "clicheCount": { "status": "PASS", "detail": "0 cliché fantasy phrases detected (threshold: >2 = fail)" },
+    "microTensionGap": { "status": "PASS", "detail": "No half-page passage without active tension" },
+    "povIdentifiable": { "status": "PASS", "detail": "Identifiable within 2 sentences via operative vocabulary and precise measurement" },
+    "unestablishedMagic": { "status": "PASS", "detail": "No magic used that was not previously established. Bond, contract, Lessening, Pallor — all pre-established" },
+    "informationStateViolation": { "status": "PASS", "detail": "No character references information they don't know. Bond explicitly limited to emotional quality" },
+    "dualArcPresence": { "status": "PASS", "detail": "Both fantasy and romance arcs present at maximum intensity" },
+    "tellNotShowMajorBeat": { "status": "PASS", "detail": "All major emotional beats shown through physical detail, bond mechanics, and behavioral observation" }
+  },
+  "upstreamReportCrossReference": {
+    "voiceReport": {
+      "verdict": "passed",
+      "score": 9,
+      "issuesResolved": "6 of 6 voice-bleed issues corrected. 1 degradation-pacing note flagged but not corrected (acknowledged as design choice).",
+      "auditorAssessment": "Concur. Post-correction voice quality is excellent. The uncorrected VF-006 (Scene 4 analytical passages) is a legitimate minor concern I have also flagged (MF-008)."
+    },
+    "continuityReport": {
+      "verdict": "passed",
+      "corrections": 0,
+      "auditorAssessment": "Concur. Zero continuity violations. Bond mechanics handled with exceptional precision. Pre-existing flags (binding timeline, Reyvas seat) are global issues not requiring ch16 correction."
+    },
+    "craftEnforcementReport": {
+      "verdict": "passed",
+      "minorIssues": 3,
+      "auditorAssessment": "Concur with all 3 findings and their minor severity classification. MOT-005 absence is a missed opportunity. MOT-004 as plot-reference is acceptable given chapter function. Mystery box count is a structural issue, not a drafting error."
+    }
+  },
+  "observationLog": [
+    "OBS-001: Chapter opens with 'The dead drop had been serviced' — perfect intelligence-operative hook that immediately establishes POV, genre, and tension.",
+    "OBS-002: The Court document rendered in italics is a masterful prose choice — the clinical bureaucratic language contrasts devastatingly with the emotional content. 'Auxiliary procurement' for blood theft is the most horrifying phrase in the chapter.",
+    "OBS-003: Scene-break pacing is excellent. Three horizontal rules create four movements: discovery, confrontation, collapse, separation. Each break raises stakes.",
+    "OBS-004: Kaelith's 'Don't' — a single word carrying the register of an operational directive — is more devastating than any speech could be. The chapter's most economical moment.",
+    "OBS-005: The reinterpretation sequence (Oathbrand, Calwrath confession, first kiss, declaration) is the chapter's emotional engine. Each memory is recontextualized through one question: 'was this real or the contract?' The systematic quality mirrors Kaelith's military processing.",
+    "OBS-006: The water flask detail ('She did not take the water flask they had been sharing. She took a different one.') followed by 'The detail was small. It was not small.' — this is showing-not-telling at its finest. Relationship ending through object choice.",
+    "OBS-007: 'Because I was afraid' — the plainest thing Lirien has ever said. The voice-degradation arc from analytical precision to stripped honesty is perfectly calibrated. This sentence is the chapter's emotional puncture point.",
+    "OBS-008: The 'Not because she chose to stay / Not because she chose honesty' parallel across scenes is intentional and effective — it establishes Lirien's pattern of negation-before-truth as a character signature.",
+    "OBS-009: Em-dash density (80) is high but stylistically appropriate for Lirien's fragmenting analytical voice. The dashes represent interrupted thoughts, parenthetical qualifications, and the constant self-correction of someone whose framework is failing.",
+    "OBS-010: 'Casualties. Not a relationship. An operational loss.' — devastating reframing of intimacy as military terminology. Kaelith uses military register for emotional processing; Lirien recognizes this as the worst possible sign.",
+    "OBS-011: The bond-as-torture-device evolution (from warmth carrier to pain carrier to walled-presence) is the chapter's most psychologically sophisticated element. 'Presence without connection' is worse than absence.",
+    "OBS-012: Sentence length distribution (38% short, 31% medium, 19% long, 11% very long) provides excellent rhythmic variety. Short sentences land emotional blows; long sentences carry analytical processing.",
+    "OBS-013: The chapter closes with three one-word sentences: 'Matched. Shared. Inescapable.' This triad mirrors the bond's nature and provides a formal closing structure that resolves the polysyndeton of the preceding sentence.",
+    "OBS-014: 'The silence between them was the loudest thing she had ever heard.' — paradox as chapter close. Earned by the chapter's discipline of restraint. A lesser writer would have ended with the polysyndeton; the paradox provides one final turn.",
+    "OBS-015: Word count (4,090) is within 10 words of target (4,100). Scene allocation: SCN-43 slightly compressed, SCN-45 slightly expanded — appropriate given that the separation scene carries the philosophical weight."
+  ]
+}

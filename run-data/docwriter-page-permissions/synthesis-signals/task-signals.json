@@ -1,0 +1,481 @@
+{
+  "version": 1,
+  "timestamp": "2026-03-18T22:04:14Z",
+  "runStats": {
+    "totalTasks": 8,
+    "firstAttemptAcceptance": 5,
+    "multiCycleAcceptance": 3,
+    "blocked": 0,
+    "reEntryTasks": 5,
+    "totalReviewCycles": 16,
+    "initialReviewCycles": 11,
+    "reEntryReviewCycles": 5,
+    "reEntryReviewMode": "style-only",
+    "gapsFound": 3,
+    "gapsResolved": 3,
+    "gapHuntingCycles": 2
+  },
+  "tasks": [
+    {
+      "taskId": "T-001",
+      "action": "update",
+      "result": "multi-cycle",
+      "initialAttempts": 2,
+      "reEntryAttempts": 1,
+      "totalAttempts": 3,
+      "structuralApproach": "hub-page-with-operation-specific-sections",
+      "invariantsApplied": [
+        "INV-style-132",
+        "INV-style-096",
+        "INV-style-001",
+        "INV-style-139"
+      ],
+      "metaPatternsUsed": [],
+      "researchRecommendationsUsed": [],
+      "acceptanceCriteria": 19,
+      "gapsFixed": [
+        "GAP-001",
+        "GAP-003"
+      ],
+      "signal": {
+        "type": "candidate-anti-pattern",
+        "strength": "medium",
+        "description": "Initial rejection due to INV-style-132 ('must' directed at people) and INV-style-139 (multi-sentence callout without bold title). Same two invariants also failed in T-002. Persona reviewer also rejected for incomplete persona tag (INV-persona-001/002). High acceptance criteria count (19) correlated with multi-cycle outcome."
+      },
+      "rejectionAnalysis": {
+        "cycle1Rejectors": [
+          "style",
+          "persona"
+        ],
+        "rootCauses": [
+          {
+            "category": "style",
+            "invariant": "INV-style-132",
+            "description": "Used 'must' directed at people ('the user must have', 'they must advance') in permission requirement sentences",
+            "fix": "Replaced 'must have' with 'needs to have' / 'need to advance'"
+          },
+          {
+            "category": "style",
+            "invariant": "INV-style-139",
+            "description": "Multi-sentence warning callout lacked bold title on separate line",
+            "fix": "Added '**Read permission prerequisite**' bold title after opening Liquid warning tag"
+          },
+          {
+            "category": "persona",
+            "invariant": "INV-persona-001",
+            "description": "Front matter persona tag listed 'admin' but not 'developer'",
+            "fix": "Changed to 'persona: admin, developer'"
+          }
+        ]
+      }
+    },
+    {
+      "taskId": "T-002",
+      "action": "update",
+      "result": "multi-cycle",
+      "initialAttempts": 2,
+      "reEntryAttempts": 0,
+      "totalAttempts": 2,
+      "structuralApproach": "inline-permission-notes-in-existing-sections",
+      "invariantsApplied": [
+        "INV-crossref-002",
+        "INV-crossref-003",
+        "INV-crossref-005",
+        "INV-crossref-009",
+        "INV-jekyll-010",
+        "INV-style-132",
+        "INV-style-139"
+      ],
+      "metaPatternsUsed": [
+        "PAT-009"
+      ],
+      "researchRecommendationsUsed": [
+        "REC-005"
+      ],
+      "acceptanceCriteria": 11,
+      "gapsFixed": [],
+      "signal": {
+        "type": "candidate-anti-pattern",
+        "strength": "medium",
+        "description": "Rejected for identical INV-style-132 and INV-style-139 failures as T-001. Writer used 'You must' in Revert note and omitted bold titles on 3 multi-sentence notes. Same root causes across 2 tasks in same run confirms systematic writer tendency."
+      },
+      "rejectionAnalysis": {
+        "cycle1Rejectors": [
+          "style"
+        ],
+        "rootCauses": [
+          {
+            "category": "style",
+            "invariant": "INV-style-132",
+            "description": "Used 'You must also be able to' in Revert permission note",
+            "fix": "Changed to 'You also need to be able to'"
+          },
+          {
+            "category": "style",
+            "invariant": "INV-style-139",
+            "description": "Three of four permission notes had 2+ sentences without bold title; Move note (single sentence) was correctly exempt",
+            "fix": "Added '**Required permissions**' bold title to Publish, Revert, and Unpublish notes"
+          }
+        ]
+      }
+    },
+    {
+      "taskId": "T-003",
+      "action": "update",
+      "result": "first-attempt",
+      "initialAttempts": 1,
+      "reEntryAttempts": 1,
+      "totalAttempts": 2,
+      "structuralApproach": "inline-callout-replacement-with-specific-permissions",
+      "invariantsApplied": [
+        "INV-style-001",
+        "INV-style-002",
+        "INV-jekyll-001",
+        "INV-persona-015",
+        "INV-style-096"
+      ],
+      "metaPatternsUsed": [],
+      "researchRecommendationsUsed": [],
+      "acceptanceCriteria": 8,
+      "gapsFixed": [
+        "GAP-002"
+      ],
+      "signal": {
+        "type": "candidate-pattern",
+        "strength": "low",
+        "description": "Passed all 3 reviewers on first attempt during initial execution. Re-entry (GAP-002 en dash fix) also passed on first style-only review. Focused scope (replace generic callouts with specific permission text) may have contributed to first-attempt success."
+      }
+    },
+    {
+      "taskId": "T-004",
+      "action": "update-crossrefs",
+      "result": "first-attempt",
+      "initialAttempts": 1,
+      "reEntryAttempts": 1,
+      "totalAttempts": 2,
+      "structuralApproach": "single-crossref-note-insertion",
+      "invariantsApplied": [
+        "INV-style-132",
+        "INV-style-001",
+        "INV-persona-013"
+      ],
+      "metaPatternsUsed": [
+        "PAT-009"
+      ],
+      "researchRecommendationsUsed": [],
+      "acceptanceCriteria": 5,
+      "gapsFixed": [
+        "GAP-001"
+      ],
+      "signal": {
+        "type": "candidate-pattern",
+        "strength": "medium",
+        "description": "Cross-reference insertion task with narrow scope (5 acceptance criteria) achieved first-attempt acceptance. Used PAT-009 pattern and matched existing structural pattern on page (mirrored 'Create a new page' permission note for 'Clone a page' section)."
+      }
+    },
+    {
+      "taskId": "T-005",
+      "action": "update-crossrefs",
+      "result": "multi-cycle",
+      "initialAttempts": 2,
+      "reEntryAttempts": 0,
+      "totalAttempts": 2,
+      "structuralApproach": "single-crossref-note-insertion",
+      "invariantsApplied": [
+        "INV-style-001",
+        "INV-style-132",
+        "INV-jekyll-001",
+        "INV-persona-013"
+      ],
+      "metaPatternsUsed": [
+        "PAT-009"
+      ],
+      "researchRecommendationsUsed": [
+        "REC-005"
+      ],
+      "acceptanceCriteria": 6,
+      "gapsFixed": [],
+      "signal": {
+        "type": "candidate-anti-pattern",
+        "strength": "medium",
+        "description": "Third instance of INV-style-132 rejection in same run. Writer used 'you must have' despite INV-style-132 being in applied invariants list. Persona reviewer also surfaced non-blocking note about 'inherit' being too technical for business users \u2014 writer incorporated this fix alongside the style fix."
+      },
+      "rejectionAnalysis": {
+        "cycle1Rejectors": [
+          "style"
+        ],
+        "rootCauses": [
+          {
+            "category": "style",
+            "invariant": "INV-style-132",
+            "description": "Used 'you must have the Delete permission' on line 71",
+            "fix": "Changed to 'you need to have' and also rephrased 'does not inherit permissions' to business-user-friendly phrasing per persona reviewer suggestion"
+          }
+        ]
+      }
+    },
+    {
+      "taskId": "T-006",
+      "action": "update-crossrefs",
+      "result": "first-attempt",
+      "initialAttempts": 1,
+      "reEntryAttempts": 1,
+      "totalAttempts": 2,
+      "structuralApproach": "crossref-context-update",
+      "invariantsApplied": [
+        "INV-style-001",
+        "INV-jekyll-001",
+        "INV-persona-015",
+        "INV-style-096"
+      ],
+      "metaPatternsUsed": [],
+      "researchRecommendationsUsed": [],
+      "acceptanceCriteria": 6,
+      "gapsFixed": [
+        "GAP-002"
+      ],
+      "signal": {
+        "type": "candidate-pattern",
+        "strength": "low",
+        "description": "First-attempt acceptance during initial execution. Narrow scope cross-reference update for developer/admin page. Re-entry (GAP-002 en dash fix) also passed on first attempt."
+      }
+    },
+    {
+      "taskId": "T-007",
+      "action": "update-crossrefs",
+      "result": "first-attempt",
+      "initialAttempts": 1,
+      "reEntryAttempts": 0,
+      "totalAttempts": 1,
+      "structuralApproach": "single-crossref-sentence-addition",
+      "invariantsApplied": [
+        "INV-crossref-002",
+        "INV-crossref-003",
+        "INV-crossref-005",
+        "INV-crossref-009",
+        "INV-style-132"
+      ],
+      "metaPatternsUsed": [
+        "PAT-009"
+      ],
+      "researchRecommendationsUsed": [
+        "REC-005"
+      ],
+      "acceptanceCriteria": 4,
+      "gapsFixed": [],
+      "signal": {
+        "type": "candidate-pattern",
+        "strength": "medium",
+        "description": "Cleanest outcome in the run: single attempt, no re-entry needed, all reviewers approved. Minimal-scope cross-reference addition (one sentence) using PAT-009 + REC-005 + comprehensive cross-reference invariant application (4 INV-crossref-* rules). Explicitly verified anchor existence and identifier against target page before submission. Fewest acceptance criteria (4) of all tasks."
+      }
+    },
+    {
+      "taskId": "T-008",
+      "action": "update-crossrefs",
+      "result": "first-attempt",
+      "initialAttempts": 1,
+      "reEntryAttempts": 1,
+      "totalAttempts": 2,
+      "structuralApproach": "single-crossref-note-insertion",
+      "invariantsApplied": [
+        "INV-style-001",
+        "INV-style-132",
+        "INV-persona-013",
+        "INV-style-096"
+      ],
+      "metaPatternsUsed": [],
+      "researchRecommendationsUsed": [],
+      "acceptanceCriteria": 5,
+      "gapsFixed": [
+        "GAP-003"
+      ],
+      "signal": {
+        "type": "candidate-pattern",
+        "strength": "low",
+        "description": "First-attempt acceptance during initial execution. Business-user cross-reference task. Re-entry (GAP-003 synchronize permission fix) also passed on first attempt."
+      }
+    }
+  ],
+  "candidatePatterns": [
+    {
+      "id": "CPAT-001",
+      "name": "narrow-scope-crossref-with-verified-anchors",
+      "strength": "medium",
+      "occurrences": 5,
+      "tasks": [
+        "T-003",
+        "T-004",
+        "T-006",
+        "T-007",
+        "T-008"
+      ],
+      "description": "Cross-reference update tasks with narrow scope (4-8 acceptance criteria) consistently achieved first-attempt acceptance. Tasks that explicitly verified anchor existence and identifier resolution before submission (T-007 documented this in notes) had zero review issues. Pattern: keep changes minimal, mirror existing structural patterns on the page, verify all cross-reference targets.",
+      "invariantCombination": [
+        "INV-crossref-002",
+        "INV-crossref-003",
+        "INV-crossref-005",
+        "INV-crossref-009",
+        "INV-style-001"
+      ],
+      "patternsCited": [
+        "PAT-009"
+      ],
+      "recommendationsCited": [
+        "REC-005"
+      ]
+    },
+    {
+      "id": "CPAT-002",
+      "name": "mirror-existing-page-structure",
+      "strength": "low",
+      "occurrences": 2,
+      "tasks": [
+        "T-004",
+        "T-008"
+      ],
+      "description": "When inserting a new callout or note, mirroring the exact structure and phrasing of an existing callout on the same page achieved first-attempt acceptance. T-004 explicitly noted it 'matching the exact structural pattern of the existing Create a new page permission note.' This approach reduces reviewer friction because the style is pre-validated by the existing content."
+    }
+  ],
+  "candidateAntiPatterns": [
+    {
+      "id": "CAPAT-001",
+      "name": "must-directed-at-people-in-permission-docs",
+      "strength": "high",
+      "occurrences": 3,
+      "tasks": [
+        "T-001",
+        "T-002",
+        "T-005"
+      ],
+      "description": "INV-style-132 ('must' directed at people) was the sole or primary rejection cause in all 3 multi-cycle tasks. The writer consistently produced phrases like 'you must have', 'the user must have', 'they must advance' when documenting permission requirements -- a context where imperative phrasing feels natural but violates the style guide. All 3 fixes were mechanical: 'must' -> 'need to' / 'needs to'. This is a systematic writer tendency specifically triggered by permission-requirement content.",
+      "rootCause": "style",
+      "invariant": "INV-style-132",
+      "fix": "Replace 'must' with 'need to' / 'needs to' when the subject is a person. Alternative: rephrase so the requirement is the subject ('a role assignment is required')."
+    },
+    {
+      "id": "CAPAT-002",
+      "name": "multi-sentence-callout-missing-bold-title",
+      "strength": "medium",
+      "occurrences": 2,
+      "tasks": [
+        "T-001",
+        "T-002"
+      ],
+      "description": "INV-style-139 requires multi-sentence callouts to have a bold title on a separate line. Both T-001 (warning callout) and T-002 (3 note callouts) omitted this title. The writer correctly exempted single-sentence callouts in T-002, showing awareness of the rule but incomplete application when writing multi-sentence content. Both fixes were structural: add bold title line after the opening Liquid callout tag.",
+      "rootCause": "style",
+      "invariant": "INV-style-139",
+      "fix": "Always add a bold title on a separate line after callout opening Liquid tag when the callout body has 2+ sentences."
+    }
+  ],
+  "styleEvolutions": [
+    {
+      "observation": "Persona reviewer surfaced 'inherit' as too technical for business users in T-005; writer incorporated rephrasing alongside style fix",
+      "occurrences": 1,
+      "strength": "low",
+      "description": "The persona reviewer flagged 'does not inherit permissions from its parent' as using system-administration vocabulary inappropriate for business users, suggesting 'uses its own permission settings instead of the parent page's'. This was a non-blocking note (approved-with-notes) but the writer adopted it during the style fix rewrite. Only 1 occurrence -- not enough to establish a pattern, but signals that permission-domain vocabulary may need a business-user glossary."
+    },
+    {
+      "observation": "Style reviewer issued 'approved-with-notes' for pre-existing checkbox spelling issue in T-003 (workflows.md)",
+      "occurrences": 1,
+      "strength": "low",
+      "description": "During GAP-002 re-entry review of T-003, the style reviewer noted a pre-existing issue (checkbox spelling) not introduced by the pipeline changes. This did not block approval but signals that the style reviewer catches issues beyond the immediate diff scope. Not actionable as a style evolution -- the pre-existing issue predates this pipeline run."
+    }
+  ],
+  "gapResolutionAnalysis": {
+    "gapsTotal": 3,
+    "gapsResolved": 3,
+    "gapDetails": [
+      {
+        "gapId": "GAP-001",
+        "description": "Clone page permission requirements undocumented",
+        "affectedTasks": [
+          "T-001",
+          "T-004"
+        ],
+        "resolution": "T-001 added clone permission requirements to 'Page permissions for creating pages' section. T-004 added info callout to 'Clone a page' section with cross-reference.",
+        "reEntryAttempts": 1,
+        "reEntryVerdict": "approved"
+      },
+      {
+        "gapId": "GAP-002",
+        "description": "Unicode en dashes (U+2013) violating INV-style-096",
+        "affectedTasks": [
+          "T-003",
+          "T-006"
+        ],
+        "resolution": "T-003 converted 3 en dashes, T-006 converted 7 en dashes to double-hyphens. Hex-level grep confirmed zero remain.",
+        "reEntryAttempts": 1,
+        "reEntryVerdict": "approved"
+      },
+      {
+        "gapId": "GAP-003",
+        "description": "Synchronize permission not enumerated and ancestor-chain requirement undocumented",
+        "affectedTasks": [
+          "T-001",
+          "T-008"
+        ],
+        "resolution": "T-001 added Synchronize to permission enumeration and new 'Page permissions for synchronizing pages' section. T-008 updated permission sentence to include ancestor requirement and fixed cross-reference anchor.",
+        "reEntryAttempts": 1,
+        "reEntryVerdict": "approved"
+      }
+    ],
+    "signal": {
+      "type": "observation",
+      "description": "All 3 gaps were discovered in gap-hunting cycle 1 and resolved in a single re-entry cycle with 100% first-attempt re-entry acceptance. GAP-002 (Unicode en dashes) is a mechanical/encoding issue that the writer could not reasonably detect without tooling -- suggests adding a pre-submission encoding check. GAP-001 and GAP-003 are coverage gaps where the initial task scope missed specific operations (clone, synchronize) -- suggests the task planner or impact mapper should enumerate all permission constants when scoping permission documentation tasks."
+    }
+  },
+  "complexityCorrelation": {
+    "observation": "Acceptance criteria count correlated with multi-cycle likelihood",
+    "data": [
+      {
+        "taskId": "T-001",
+        "criteria": 19,
+        "result": "multi-cycle",
+        "initialAttempts": 2
+      },
+      {
+        "taskId": "T-002",
+        "criteria": 11,
+        "result": "multi-cycle",
+        "initialAttempts": 2
+      },
+      {
+        "taskId": "T-003",
+        "criteria": 8,
+        "result": "first-attempt",
+        "initialAttempts": 1
+      },
+      {
+        "taskId": "T-004",
+        "criteria": 5,
+        "result": "first-attempt",
+        "initialAttempts": 1
+      },
+      {
+        "taskId": "T-005",
+        "criteria": 6,
+        "result": "multi-cycle",
+        "initialAttempts": 2
+      },
+      {
+        "taskId": "T-006",
+        "criteria": 6,
+        "result": "first-attempt",
+        "initialAttempts": 1
+      },
+      {
+        "taskId": "T-007",
+        "criteria": 4,
+        "result": "first-attempt",
+        "initialAttempts": 1
+      },
+      {
+        "taskId": "T-008",
+        "criteria": 5,
+        "result": "first-attempt",
+        "initialAttempts": 1
+      }
+    ],
+    "analysis": "Tasks with 8 or fewer acceptance criteria had 80% first-attempt success (4/5). Tasks with more than 8 criteria had 0% (0/2). Exception: T-005 (6 criteria) still required 2 cycles, but only due to the recurring INV-style-132 issue -- all other aspects passed first attempt. The complexity threshold is not the criteria count itself but rather the amount of new prose generated: more prose means more opportunities for 'must'-directed-at-people violations."
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "agent": "protagonist-profiler",
+  "result": "completed",
+  "summary": "Created complete psychological profiles for both romantic leads — Kaelith Maren (CHAR-001) and Lirien Dael (CHAR-002) — plus the character index with relationship web and voice distinction guide. Each profile includes: deep psychological profile (wound/desire/fear/lie/ghost/need), positive character arc with 5 turning points mapped to approximate chapters, measurable voice fingerprint (vocabulary, sentence length, metaphor density, emotional register, thought patterns, dialect markers), sensory signature with dominant channel and emotional triggers, internal and external resistance layers per T8, physical description with deterioration/cover details, agency documentation per INV-008, thematic function mapping to all three pillars, and information state at story start. Voice fingerprints are designed for INV-003/INV-034 compliance: Kaelith sees architecture and processes emotion as physical sensation (tactile dominant); Lirien sees people and processes emotion as classification (visual dominant). The distinction is audible within 3-4 sentences. The index includes a voice distinction quick-reference for downstream drafters.",
+  "artifactsProduced": [
+    "characters/CHAR-001.json",
+    "characters/CHAR-002.json",
+    "characters/index.json"
+  ],
+  "artifactsRead": [
+    "story-concept.json",
+    "story-config.json",
+    "craft-profile.json",
+    "world-bible/geography.json",
+    "world-bible/culture.json",
+    "world-bible/history.json",
+    "world-bible/magic-system.json",
+    "world-bible/politics.json"
+  ],
+  "startTime": "2026-03-18T00:38:00Z",
+  "endTime": "2026-03-18T00:52:00Z",
+  "iteration": 1,
+  "invariantsVerified": [
+    "INV-003 (Character Voice Distinctness): Kaelith's voice uses military/architectural vocabulary, short declarative sentences, tactile emotional processing. Lirien's voice uses intelligence/infiltration vocabulary, mixed-length sentences with observation→assessment structure, visual emotional processing with classification containment. Distinguishable within 3-4 sentences.",
+    "INV-008 (Character Agency): Both leads drive plot through active choices documented in agency fields. Kaelith: confronts Lirien, chooses partnership, allows Oathbrand removal, walks away at Black Moment, trusts with heartbeat. Lirien: delays kill, investigates paradox, removes Oathbrand, follows after Black Moment, designs and executes loophole.",
+    "INV-034/T17 (POV 3-4 Sentence Test): Voice distinction guide in index.json provides quick-reference. Kaelith sees buildings/Lirien sees people. Kaelith's emotions are physical events/Lirien's are classification failures.",
+    "INV-055/T17 (POV Voice Fingerprint): Six measurable parameters defined per character: vocabularyLevel, sentenceLength, metaphorDensity, emotionalRegister, thoughtPatterns, dialectMarkers.",
+    "INV-064/T26 (Sensory Signature Anchoring): Kaelith = tactile dominant (heat/weight/texture/stone); Lirien = visual dominant (faces/light/surfaces-vs-depths/stillness).",
+    "INV-029 (Artifact Cross-References): Both profiles include upstreamRefs citing story-concept.json, world-bible files, and specific entries within them.",
+    "T8 (Internal + External Resistance): Both profiles include detailed resistance layers with dissolution conditions.",
+    "T20 (Emotional Throughline): Psychological profiles and arc turning points provide per-character emotional state mapping.",
+    "T21 (Vulnerability Ladder): Relationship web in index.json maps vulnerability escalation across 5 phases with approximate chapter ranges."
+  ]
+}

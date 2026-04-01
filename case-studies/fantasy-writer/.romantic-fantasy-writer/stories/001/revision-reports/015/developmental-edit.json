@@ -1,0 +1,242 @@
+{
+  "artifactType": "developmental-edit",
+  "chapter": 15,
+  "title": "False Victory / I Want This. I Want You.",
+  "povCharacter": "CHAR-001",
+  "editedAt": "2025-07-29T16:00:00Z",
+  "overallAssessment": {
+    "verdict": "strong",
+    "summary": "Chapter 15 achieves its structural purpose with devastating effectiveness. The false victory operates on two levels simultaneously — the fantasy arc's evidence consolidation and the romance arc's verbal declaration — and both are made infinitely more powerful by the reader's knowledge of the kill contract lurking beneath every warm moment. The chapter successfully differentiates from ch14's intimacy by escalating from physical surrender (bodies as language) to verbal declaration (naming desire without tactical justification), resolving the overlap concern from DEV-014-002. Kaelith's voice is impeccable throughout — structural metaphors, tactical assessment before emotion, the stripped-bare prose of the declaration scene providing stunning contrast against her usual architecture. The chapter's single most effective structural choice is making the false victory GENUINE in every visible dimension: the evidence IS real, the love IS real, the plan IS logical. The only false element is the belief that it will last. This maximises dramatic irony and creates the highest possible fall for ch16's devastation. Four findings: 0 critical, 1 major, 3 minor.",
+    "strengths": [
+      "Dramatic irony is surgically precise and never over-signalled. 'Not because a contract required it' (line 247) is the chapter's most devastating sentence precisely because it passes without narrative emphasis — the reader carries the irony, the prose does not.",
+      "Declaration scene prose mastery: Kaelith's usual 70%+ short declaratives contract further into three- and four-word sentences ('I want this.' / 'I want you.') with no subordinate clauses, no contractions, no military metaphor. The formality-as-last-armor choice is structurally brilliant — Kaelith strips away every protective layer except grammatical precision.",
+      "False victory structure is exemplary. Both arcs reach false peak simultaneously: four-source evidence corroboration (fantasy) and named, chosen desire (romance). The convergence feels earned because it IS earned — the victories are real. Only the reader knows the foundation is compromised.",
+      "Calwrath pattern recognition (lines 82-87, 224-233) is a masterful structural choice. Kaelith SEES the pattern (hope → clarity → catastrophe), explicitly compares it to Calwrath, and CHOOSES hope anyway. This ensures ch16's devastation will carry an additional knife: she will believe she should have known better.",
+      "Scene-sequel structure is clean: Scene 1 (evidence case, shared conviction) → Scene 2 (declaration, bond opening) → Scene 3 (sequel — processing hope, choosing trust, fragile peace). The sequel placement in Scene 3 provides emotional grounding after two consecutive scene-type segments.",
+      "Successfully resolves DEV-014-002's overlap concern through three differentiation vectors: POV switch (Lirien→Kaelith), modality shift (physical→verbal), and specificity shift (indirect commitment→explicit declaration).",
+      "Thematic engagement across all three pillars is the strongest since ch11. TP-1 (trust as architecture) is embodied in the evidence-building methodology; TP-2 (false convergence) operates through dramatic irony; TP-3 (chosen vs only) is the chapter's emotional core — 'I want this' not 'I need this.'",
+      "Word count at 4001 against 4000 target — a dramatic improvement from the manuscript's trending 25% over-target pattern."
+    ]
+  },
+  "arcPositionAnalysis": {
+    "act": 2,
+    "actPosition": "Penultimate chapter of Act 2 (ch7-16). BEAT-012: False Victory — Intimacy Before Collapse.",
+    "structuralRole": "The highest point before the fall. This chapter must make the reader simultaneously believe in the happiness and dread its destruction. It is the knife being placed; ch16 is the knife turning.",
+    "fantasyStagePlanned": "False Victory — Emerging Proof Against the Conspiracy",
+    "fantasyStageDelivered": "Delivered. Four independent sources corroborate evidence of 40-year Pallor sabotage by Thalen Reyvas. Plan crystallises. The evidence case is real, which makes the false victory more cruel — the 'false' is not the evidence but the belief that everything will hold.",
+    "romanceStagePlanned": "Surrender — Intimacy Before Collapse",
+    "romanceStageDelivered": "Delivered with escalation from ch14. Kaelith names desire without tactical justification ('I want this. I want you.'). Lirien drops all bond filters in response. Both discuss future. Maximum vulnerability established before ch16.",
+    "vulnerabilityLadderStep": {
+      "planned": 9,
+      "delivered": 9,
+      "note": "The romance-arc.json assigns step 9 to CHAR-002 (Lirien naming desire), but in practice the step is shared: Kaelith makes the verbal declaration while Lirien responds by dropping all operative filters through the bond. The emotional function is correct — desire is named, filters are dropped, maximum vulnerability is established. The ladder's character attribution could be updated to reflect the shared nature of this step, but the chapter correctly executes the intended emotional trajectory."
+    }
+  },
+  "plotProgressionAnalysis": {
+    "fantasyAdvancement": "Substantial. The evidence case against Thalen Reyvas is built from four independent sources (Veldrane, Rivenmarch, Serath Dûn, Seep intelligence), establishing deliberate 40-year modification of Dimming rites with 2% compounding degradation per cycle. Thalen's zealotry motivation (Ytharan revivalism) is revealed, establishing him as a true believer more dangerous than an opportunist. The plan crystallises: reach Quietus, present evidence. The Quietus pull intensifies in the closing, pulling northeast.",
+    "romanceAdvancement": "Major escalation. From unnamed wanting to explicit declaration. 'I want this. I want you.' is the most significant romance beat since the first kiss (ch13) and the first intimate scene (ch14). The escalation from physical to verbal, from bodies-as-language to words-as-vulnerability, represents genuine forward momentum on the vulnerability ladder.",
+    "tryFailCycleStatus": "No try-fail cycle reaches completion in this chapter. The evidence consolidation represents continued progress on 'prove the Pallor is being sabotaged' (partial success at ch12, full corroboration here but not yet presented). The relationship trust cycle advances but will be devastated in ch16. Appropriate for false victory positioning — the point is that success SEEMS achievable.",
+    "forwardMomentum": "Strong. Despite being an intimate, warm chapter, forward momentum is maintained through: evidence consolidation creating actionable plan, Quietus pull intensifying as they approach the Narrowing, and tomorrow's Narrowing crossing established as the next physical challenge. No stalling."
+  },
+  "dualArcInterleaveAnalysis": {
+    "interleaveType": "reinforcing",
+    "genreBalanceTarget": "0.55 fantasy / 0.45 romance",
+    "genreBalanceActual": "Approximately 0.35 fantasy / 0.65 romance by page-weight. Romance-dominant, as planned in the dual-arc-timeline ('romance takes foreground').",
+    "interleaveQuality": "The interleave in Scene 1 is excellent — evidence work and shared purpose function simultaneously as tactical collaboration and intimacy-building. The mission planning IS the foreplay. Cross-referencing evidence IS shared language. This is the chapter's structural achievement. However, the interleave weakens in Scenes 2 and 3, where the fantasy arc reduces to atmospheric Pallor references and a brief Quietus pull mention. The romance dominates the back two-thirds almost entirely.",
+    "assessment": "The concentration of fantasy material in Scene 1 is structurally acceptable for a romance-dominant false victory chapter. The atmospheric Pallor references in Scene 3's closing ('the sky was coming apart') effectively frame the intimate happiness within cosmic instability. However, the fantasy FALSE VICTORY could carry more weight if the evidence's implications were felt more actively in the declaration and future-planning scenes — e.g., the sense that the mission is winnable could more explicitly fuel the emotional courage of the declaration."
+  },
+  "pacingAnalysis": {
+    "chapterTensionLevel": 7,
+    "tensionType": "false-peak",
+    "adjacentChapterTensions": {
+      "chapter13": { "tension": 7, "type": "rising-romance" },
+      "chapter14": { "tension": 8, "type": "rising" },
+      "chapter15": { "tension": 7, "type": "false-peak" },
+      "chapter16": { "tension": 10, "type": "peak-crisis" }
+    },
+    "sustainedHighBlock": "Chapters 11-15 form a five-chapter block at tension 7+ (9, 7, 7, 8, 7). This was first flagged at ch13 (DEV-013-002) and extended at ch14 (DEV-014-001).",
+    "inv020Status": "CAUTION — not violation. The tension TYPES vary significantly across the block: midpoint transformation (ch11) → conspiracy revelation (ch12) → romantic milestone (ch13) → action+intimacy (ch14) → false-peak warmth (ch15). Qualitative variation provides sufficient reader-experience differentiation even within sustained numerical intensity. Additionally, ch15's false-peak is structurally demanded — lowering its tension would undercut the fall into ch16's devastation. The narrative architecture requires this chapter to feel warm and safe before the floor drops.",
+    "readerExperience": "Chapter 15 reads as emotionally intense but tonally warm — its tension is hope, not danger. The reader experiences this as a relief from ch14's action and adrenaline even though the numerical tension level is similar. The dramatic irony provides an entirely separate tension track (dread) that the characters do not share, which means reader tension and character experience are productively misaligned."
+  },
+  "thematicResonanceAnalysis": {
+    "inv036Status": "PASS — all three thematic pillars actively engaged",
+    "pillarEngagement": [
+      {
+        "pillarId": "TP-1",
+        "theme": "Trust as structural failure",
+        "engagement": "Strong. Kaelith builds the evidence case like she builds walls — one verified stone at a time. Trust in Lirien's Seep network IS trust in structural materials she did not quarry herself. The evidence case IS trust-building. The architectural metaphor of the declaration ('a keystone settled into an arch — with the understanding that once seated, the structure held or did not') makes trust literal and structural. The dramatic irony deepens this: the trust architecture is sound but the foundation is compromised by what Kaelith cannot see."
+      },
+      {
+        "pillarId": "TP-2",
+        "theme": "The price of the right choice",
+        "engagement": "Strong through false convergence. Mission and love appear to converge perfectly — evidence is real, the relationship is named, the plan is clear. This is Act 2's 'easy answer' at its most seductive. The convergence is genuine (the evidence IS real, the love IS real) but the foundation is compromised by the contract. Kaelith's Calwrath pattern recognition engages TP-2 directly: she knows the price of the right choice (Calwrath was the right tactical call, but three hundred people died) and chooses hope anyway."
+      },
+      {
+        "pillarId": "TP-3",
+        "theme": "Chosen versus only",
+        "engagement": "Peak engagement — this is the chapter's thematic heart. 'I want this. I want you.' — the move from needing Lirien (tactical partner) to wanting her (chosen person). The distinction between need and want IS the vulnerability. 'Not because a contract required it. Not because the mission demanded it. Because she had said wherever you are and meant it' (lines 247-248) is the thematic argument at its most explicit and its most cruelly ironic."
+      }
+    ]
+  },
+  "emotionalVarietyAnalysis": {
+    "inv037Status": "CAUTION — not violation, but proximity warrants attention",
+    "thisChapterDominantEmotion": "fragile chosen hope",
+    "previousChapterDominantEmotion": "tentative joy (ch14, CHAR-001 POV equivalent)",
+    "emotionalThroughlineEntry": "fragile happiness (per emotional-throughline.json)",
+    "assessment": "Ch14 ends with 'tentative joy' / 'cautious surrender'; ch15 progresses to 'fragile chosen hope' / 'fragile happiness.' Both are positive emotions tempered by fragility/caution. The emotional QUALITY is distinct — ch14's joy arises from physical intimacy and is still unnamed; ch15's hope arises from verbal declaration and is deliberately chosen. The emotional JOURNEY within ch15 is genuine (cautious productivity → named desire → chosen hope). However, the chapter-to-chapter dominant emotional comparison shows two consecutive chapters ending in fragile positive states. The actual reader experience mitigates this: ch14 includes combat adrenaline and Lirien's guilt-weight, while ch15 is uniformly warm. The tonal contrast between the chapters is greater than the emotional-state labels suggest."
+  },
+  "sceneValueShiftAnalysis": {
+    "inv040Status": "PASS — all three scenes shift values meaningfully",
+    "scenes": [
+      {
+        "sceneId": "SCN-40",
+        "valueStart": "fragmented investigation, uncertain significance",
+        "valueEnd": "corroborated case, actionable plan, false confidence",
+        "shift": "fragmentation → corroboration",
+        "assessment": "Clean and meaningful. The shift from scattered fragments to a structured, four-source case is earned through the cross-referencing process."
+      },
+      {
+        "sceneId": "SCN-41",
+        "valueStart": "unnamed desire, protective ambiguity",
+        "valueEnd": "named desire, maximum vulnerability",
+        "shift": "unnamed wanting → spoken commitment",
+        "assessment": "The strongest value shift in the chapter. The declaration moves from the safety of unspoken desire to the terror of explicit commitment. The shift is irreversible — words, once spoken, cannot be unspoken."
+      },
+      {
+        "sceneId": "SCN-42",
+        "valueStart": "declaration made, still testing hope",
+        "valueEnd": "chosen hope, fragile peace, safety",
+        "shift": "named desire → chosen hope",
+        "assessment": "Appropriate sequel-type value shift. The processing of the declaration into active hope is a genuine emotional progression, not repetition."
+      }
+    ]
+  },
+  "findings": [
+    {
+      "id": "DEV-015-001",
+      "severity": "major",
+      "category": "pacing",
+      "title": "Five-chapter sustained-high-tension cluster extends from ch11 through ch15 (INV-020 continuing concern)",
+      "description": "Chapters 11-15 form a five-chapter block at tension level 7+ (9, 7, 7, 8, 7). This was first flagged at ch13 (DEV-013-002) and extended at ch14 (DEV-014-001). While the tension TYPES vary significantly across the block (midpoint transformation → conspiracy revelation → romantic milestone → action+intimacy → false-peak warmth), the sustained numerical intensity is the longest high-tension run in the manuscript. Ch15's false-peak is structurally demanded by its position before ch16's black moment devastation, so reducing its tension level is not recommended. The concern is whether the cumulative effect of five chapters without a genuine recovery chapter produces reader fatigue that undercuts ch16's impact — if the reader has been at sustained high emotional intensity for five chapters, the black moment's 10 may land as continuation rather than escalation.",
+      "location": "Chapter-level structural concern, not localisable to specific lines",
+      "affectedInvariants": ["INV-020"],
+      "relatedFindings": ["DEV-013-002", "DEV-014-001"],
+      "suggestedFix": "No changes recommended to ch15 itself — the false-peak structure is correct and the warmth provides qualitative (if not quantitative) tonal contrast. However, the ch15 REVISER should ensure that the chapter's emotional register reads as warm relief rather than intense buildup, particularly in Scene 1's evidence work. If the cross-referencing sequence reads as urgent or pressured rather than methodical and satisfying, it will compound rather than contrast the preceding chapters' intensity. The reviser should also verify that Scene 3's sequel pacing is deliberately slow and spacious — the chapter's value as pacing relief depends on the closing scenes feeling genuinely peaceful, not narratively tense with ironic overlay. The dramatic irony should breathe through the happiness, not override it.",
+      "reviserGuidance": "Focus Scene 1 on the SATISFACTION of evidence corroborating rather than the URGENCY of building a case. Scene 3 should read as the quietest, most spacious prose in the chapter — let the sentences lengthen, let the pauses breathe, let the reader WANT the peace to last before ch16 destroys it."
+    },
+    {
+      "id": "DEV-015-002",
+      "severity": "minor",
+      "category": "arc",
+      "title": "Ch14→ch15 emotional state proximity — consecutive fragile-positive dominant emotions (INV-037 caution)",
+      "description": "The emotional throughline shows ch14 ending in 'tentative joy' and ch15 ending in 'fragile happiness' — both positive emotions tempered by fragility/caution. While the emotional QUALITY differs (ch14: unnamed physical surrender; ch15: named verbal commitment) and the within-chapter journey is genuine (cautious productivity → named desire → chosen hope), the consecutive fragile-positive endings may produce a sense of emotional stasis for readers tracking the arc at the chapter-boundary level. The emotional throughline tracker shows no formal violation (both emotions are labelled differently), but the proximity warrants attention.",
+      "location": "Chapter-level emotional arc — specifically the transition from ch14's ending state to ch15's ending state",
+      "affectedInvariants": ["INV-037"],
+      "suggestedFix": "Minor tonal adjustment rather than structural change. The reviser could ensure ch15's opening (Scene 1) carries more of the transitional emotional weight — starting from a distinctly DIFFERENT emotional register than ch14's close before progressing into the chapter's own arc. The current draft's opening (tactical assessment, exits, structural integrity) does this well; the reviser should preserve and potentially strengthen the contrast between the tactical opening and the emotional close. The point is not to change ch15's ending but to make its journey from ch14's territory to its own destination more audible."
+    },
+    {
+      "id": "DEV-015-003",
+      "severity": "minor",
+      "category": "structure",
+      "title": "Fantasy arc front-loaded into Scene 1 — Scenes 2 and 3 are romance-dominant with only atmospheric fantasy references",
+      "description": "The evidence consolidation against Thalen Reyvas is concentrated entirely in Scene 1 (approximately lines 1-94). After the evidence work concludes with the shared conviction of the bond, the fantasy arc reduces to atmospheric Pallor references (lines 97, 243-244) and a brief Quietus pull mention (lines 244-245). For a chapter whose structural role is 'False Victory' for BOTH arcs, the fantasy arc's false victory feels achieved and then set aside. The romance arc commands Scenes 2 and 3 almost entirely. While the dual-arc-timeline designates this chapter as 'romance dominant' (accepted), the fantasy false victory would carry more structural weight if its implications — the SENSE that the mission is winnable, that the world might be saved — were felt more actively during the declaration and future-planning scenes.",
+      "location": "Scenes 2-3 (approximately lines 95-255)",
+      "affectedInvariants": ["INV-050"],
+      "suggestedFix": "The reviser could weave 1-2 brief moments into Scenes 2 or 3 where the fantasy arc's false victory actively FUELS the romantic courage. For example: during the future-talk (Scene 3), Kaelith's sense that the mission might actually succeed could be acknowledged as part of what makes hoping feel possible — not just that she wants Lirien, but that for the first time, a future exists that could contain both of them. The Quietus pull or the Pallor's visible damage could be noticed during the declaration scene as context — the world is coming apart, but they might be able to stop it, and THAT is what makes naming desire feel like something other than indulgence. Keep additions brief — 2-3 sentences maximum — to avoid disrupting the romance-dominant register."
+    },
+    {
+      "id": "DEV-015-004",
+      "severity": "minor",
+      "category": "structure",
+      "title": "Vael Seren structural echo between ch14 and ch15 — successfully differentiated but bears monitoring",
+      "description": "Vael Seren appears as a significant emotional reference in both ch14 (Lirien's harbour story as indirect commitment) and ch15 (explicit future-planning with harbour inspection as metaphor). The draft successfully differentiates the two uses: ch14 is storytelling and indirect preference; ch15 is direct planning and architectural inspection metaphor ('determine whether the foundations are sound'). However, the repeated location reference across consecutive chapters could create a structural echo that slightly diminishes ch15's planning conversation by making it feel like continuation rather than escalation. The Vael Seren references in ch15 (lines 195-213) are well-executed but depend on the reader remembering the distinction from ch14.",
+      "location": "Lines 195-213 (Scene 3 future-talk)",
+      "affectedInvariants": [],
+      "suggestedFix": "No structural changes needed. The differentiation is effective and the echo is intentional (building toward a shared future). If the line editor or reviser identifies any specific lines where the ch15 Vael Seren conversation feels like it's retreading rather than building on ch14's, those specific moments could be sharpened. The key principle is: ch14 establishes Vael Seren as a place that matters to Lirien; ch15 transforms it into a place that matters to both of them. This transformation should be audible in the prose."
+    }
+  ],
+  "findingSummary": {
+    "critical": 0,
+    "major": 1,
+    "minor": 3,
+    "total": 4
+  },
+  "invariantChecklist": {
+    "INV-020_pacingVariation": {
+      "status": "caution",
+      "note": "Five consecutive chapters at 7+ (ch11-15). Qualitative tension-type variety mitigates but does not eliminate the sustained-high pattern. Structurally demanded by false-victory positioning."
+    },
+    "INV-021_romanceArcPacing": {
+      "status": "pass",
+      "note": "Romance at surrender stage, consistent with plan. Escalation from ch14 (physical) to ch15 (verbal declaration) is genuine and earned."
+    },
+    "INV-004_earnedEmotionalBeats": {
+      "status": "pass",
+      "note": "The declaration is earned through 14 chapters of vulnerability ladder escalation. The Calwrath pattern recognition provides additional emotional scaffolding. No unearned beats."
+    },
+    "INV-044_T6_stakesEscalation": {
+      "status": "pass",
+      "note": "False victory correctly escalates personal stakes (naming desire creates maximum vulnerability for ch16 devastation) while maintaining world-level stakes (evidence is actionable, plan is crystallised)."
+    },
+    "INV-045_T7_blackMomentSetup": {
+      "status": "pass",
+      "note": "Every warm element is precisely positioned for ch16 weaponization. Trust, declaration, hope, future-planning, falling asleep feeling safe — all will be destroyed by contract revelation. Setup is devastatingly thorough."
+    },
+    "INV-050_T12_dualArcInterleave": {
+      "status": "pass-with-note",
+      "note": "Excellent interleave in Scene 1. Weakens in Scenes 2-3 where romance dominates. Acceptable for a romance-dominant chapter but the fantasy false victory could carry more weight through the back half."
+    },
+    "INV-040_T2_sceneValueShifts": {
+      "status": "pass",
+      "note": "All three scenes shift values meaningfully and distinctly."
+    },
+    "INV-042_T4_tryFailCycles": {
+      "status": "not-applicable",
+      "note": "No try-fail cycle reaches completion in this chapter. The false victory represents apparent success that will be reversed. Appropriate for structural position."
+    },
+    "INV-036_thematicCoherence": {
+      "status": "pass",
+      "note": "All three thematic pillars actively engaged. TP-3 (chosen vs only) reaches peak engagement through the declaration."
+    },
+    "INV-037_emotionalStateVariety": {
+      "status": "caution",
+      "note": "Ch14 'tentative joy' → ch15 'fragile happiness' are close in valence. Emotional quality differs (physical vs verbal, unnamed vs named) but consecutive fragile-positive endings warrant attention."
+    }
+  },
+  "craftProfileCompliance": {
+    "T5_toneContract": "Compliant. Morally complex, unsentimental, emotion through physical sensation and structural metaphor. No forbidden tones detected.",
+    "T6_stakesEscalation": "Compliant. False victory correctly escalates both personal and world-level stakes.",
+    "T7_blackMomentSetup": "Compliant. Setup is devastatingly thorough — every warm element positioned for ch16 weaponization.",
+    "T12_dualArcInterleave": "Compliant with note — interleave strongest in Scene 1, weakens in Scenes 2-3.",
+    "T13_tensionMapping": "Compliant. Level 7 false-peak is correct for structural position. Micro-tension sources present throughout.",
+    "T17_voiceFingerprinting": "Compliant. Kaelith's voice is impeccable — structural metaphors, tactical framing, short declaratives, stripped prose during declaration.",
+    "T18_informationAsymmetry": "Compliant. Dramatic irony is surgically precise and never over-signalled. Bond transmits weight but not content of Lirien's contract guilt.",
+    "T20_emotionalThroughline": "Compliant with caution. Within-chapter arc is genuine; chapter-boundary proximity to ch14 warrants attention.",
+    "T25_thematicArgumentScaffolding": "Compliant. All three pillars at peak engagement."
+  },
+  "forwardLookingNotes": {
+    "ch16Preparation": "Chapter 15 has perfectly positioned every element for ch16's devastation. The ch16 drafter should ensure: (1) Kaelith's Calwrath pattern recognition ('I should have known') is explicitly weaponized; (2) 'Not because a contract required it' is called back or echoed; (3) the bond that transmitted peace now transmits guilt/exposure; (4) the Oathbrand's unusual quiet contrasts with whatever happens to it post-revelation; (5) every future-plan (Vael Seren, harbour, 'after this') becomes a site of loss.",
+    "continuityFlags": [
+      "Kaelith's ribs (3rd and 4th left) still bruised — must persist into ch16-17",
+      "Evidence is encoded as Seep insurance copy — this detail must be tracked for continuity",
+      "Narrowing crossing begins tomorrow — ch16 should open with or reference the crossing",
+      "Oathbrand phantom ache is unusually quiet — ch16 should contrast this with brand behavior post-revelation"
+    ],
+    "artifactAlignmentNote": "Plot-structure.json BEAT-012 still describes 'the first full intimate scene' as belonging to ch15, but this was executed in ch14 (flagged in DEV-014-002). The artifact should be updated to reflect that ch14 delivers the first intimate scene while ch15 delivers the emotional declaration. This is a tracking concern, not a chapter quality issue."
+  },
+  "upstreamRefsUsed": [
+    "chapters/015/draft.md",
+    "chapters/015/metadata.json",
+    "plot/chapter-outlines/chapter-015.json",
+    "plot/plot-structure.json",
+    "plot/dual-arc-timeline.json",
+    "plot/tension-map.json",
+    "romance-arc.json",
+    "story-concept.json",
+    "craft-profile.json",
+    "chapters/013/metadata.json",
+    "chapters/014/metadata.json",
+    "continuity/emotional-throughline.json",
+    "revision-reports/014/developmental-edit.json"
+  ]
+}

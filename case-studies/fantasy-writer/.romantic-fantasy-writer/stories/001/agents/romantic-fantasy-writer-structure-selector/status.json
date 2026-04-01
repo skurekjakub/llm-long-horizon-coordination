@@ -1,0 +1,22 @@
+{
+  "storyId": "001",
+  "agent": "romantic-fantasy-writer-structure-selector",
+  "result": "complete",
+  "summary": "Wrote a hybrid three-act / Save the Cat / romance-beat plot structure for 22 chapters, including act boundaries, key beats, subplots, stakes escalation, pacing guardrails, and explicit try-fail cycles.",
+  "startedAt": "2026-03-18T01:04:16Z",
+  "completedAt": "2026-03-18T01:04:16Z",
+  "artifactsProduced": [
+    "plot/plot-structure.json"
+  ],
+  "upstreamRefs": [
+    "story-concept.json",
+    "craft-profile.json",
+    "romance-arc.json",
+    "characters/index.json",
+    "world-bible/magic-system.json",
+    "world-bible/geography.json",
+    "world-bible/culture.json",
+    "world-bible/history.json",
+    "world-bible/politics.json"
+  ]
+}

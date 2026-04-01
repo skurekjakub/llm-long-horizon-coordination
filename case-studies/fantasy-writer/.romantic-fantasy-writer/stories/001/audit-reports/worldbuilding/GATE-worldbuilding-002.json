@@ -1,0 +1,251 @@
+{
+  "auditId": "GATE-worldbuilding-002",
+  "storyId": "001",
+  "iteration": 2,
+  "auditType": "worldbuilding-gate",
+  "auditor": "worldbuilding-auditor",
+  "auditedAt": "2026-03-17T16:15:00Z",
+  "verdict": "passed",
+  "verdictReason": "Critical name registry inconsistency from iteration 1 has been successfully resolved. The Ashborne Legion naming is now consistent across story-concept.json and world-bible/politics.json. All other checks (cross-file consistency, invariant compliance, narrative utility, completeness, tone alignment, thematic integration) continue to pass. No new issues identified. Worldbuilding phase is production-ready.",
+  "scope": [
+    "world-bible/geography.json",
+    "world-bible/culture.json",
+    "world-bible/history.json",
+    "world-bible/magic-system.json",
+    "world-bible/politics.json",
+    "story-concept.json (reference)"
+  ],
+  "findings": {
+    "critical": [],
+    "warnings": [],
+    "passes": [
+      {
+        "checkId": "WB-PASS-001",
+        "category": "regression-fix-verification",
+        "title": "Critical Fix Applied: Ashborne Legion Name Consistency",
+        "finding": "The critical name registry mismatch identified in iteration 1 has been successfully resolved. Both story-concept.json nameRegistry and world-bible/politics.json faction FAC-006 now use the canonical name 'The Ashborne Legion' consistently. No parenthetical '(Remnant)' suffix in either location.",
+        "evidence": {
+          "storyConceptNameRegistry": "The Ashborne Legion",
+          "politicsFactionName": "The Ashborne Legion",
+          "verification": "String match confirmed. Cross-reference between line 83 of story-concept.json and faction FAC-006 in politics.json shows exact naming consistency."
+        },
+        "impact": "This fix eliminates the cascading name conflict that would have caused inconsistencies across chapters, dialogue, character histories, and metadata. Chapter-drafter, voice-maintainer, and all downstream agents now have a single authoritative source for the organization name."
+      },
+      {
+        "checkId": "WB-PASS-002",
+        "category": "name-registry-compliance",
+        "title": "100% Name Registry Compliance Achieved",
+        "finding": "All canonical names from story-concept.json nameRegistry are used consistently across all world-bible files. Characters: Kaelith Maren (132 references), Lirien Dael (85 references). Deity: Ythara, the Unfinished (54 references). World Elements: The Pallor (verified), The Quietus (verified), The Oathbrand (verified). Organizations: The Seep (14 refs), The Cerith Court (24 refs), The Ashborne Legion (2 refs), The High Conclave (10 refs). Locations: Calwrath (verified), Duskhaven (verified). No placeholder names from world-seed detected ('The Veil', 'Loyalty Brand' = 0 occurrences).",
+        "evidence": "Verified 350+ total mentions of canonical names across all world-bible files using pattern matching and json queries. Zero naming violations detected."
+      },
+      {
+        "checkId": "WB-PASS-003",
+        "category": "cross-file-consistency",
+        "title": "Geography ↔ Culture Consistency Maintained",
+        "finding": "All cultural homes reference verified locations in geography.json. Imperial culture references Aranthem (LOC-007), Border culture references Duskhaven (LOC-001) and Calwrath (LOC-003), Wending culture references forest locations (LOC-006), Rivenmarch culture references freeholder region (LOC-011). Geographic characteristics match cultural descriptions: coastal cultures (Border) have maritime elements, forest cultures (Wending) have sylvan elements, inland cultures (Imperial) have continental characteristics.",
+        "evidence": "Culture.json contains 70+ location references verified against geography.json's 13 locations. All references resolve correctly: Duskhaven (8), Greymere (4), Calwrath (3), Thornway (1), Veldrane (2), Wending (25), Aranthem (4), Rivenmarch (21), Unwalked (1), Quietus (1)."
+      },
+      {
+        "checkId": "WB-PASS-004",
+        "category": "cross-file-consistency",
+        "title": "Geography ↔ Politics Consistency Maintained",
+        "finding": "All faction operational territories reference verified locations. High Conclave operates from Aranthem (LOC-007), provincial governorships distributed across mapped provinces, Ashborne Legion operates from garrison posts including Duskhaven (LOC-001), fae factions operate across border regions. Journey path coherence verified: Duskhaven → Greymere → Thornway → Veldrane → Wending → Aranthem → Serath Dûn → Unwalked Reach → Quietus forms a geographically logical progression from northeast coast to far west.",
+        "evidence": "Politics.json contains 60+ location references verified against geography: Aranthem (11), Calwrath (6), Duskhaven (5), Quietus (11), Rivenmarch (12), Serath (5), Unwalked (6), Thornway (1). All territorial descriptions align with geographic features."
+      },
+      {
+        "checkId": "WB-PASS-005",
+        "category": "cross-file-consistency",
+        "title": "Geography ↔ History Consistency Maintained",
+        "finding": "All timeline events reference verified locations. Siege of Calwrath (YK 736) uses LOC-003, Kaelith's exile to Duskhaven uses LOC-001, god-war climax at Serath Dûn (LOC-010), Quietus location in Unwalked Reach (LOC-012). Historical era boundaries align with geographic development (Rending shaped current landscape, Laying of Foundations established cities, High Tenure secured borders).",
+        "evidence": "History.json contains 90+ location references: Aranthem (10), Calwrath (3), Duskhaven (9), Greymere (2), Quietus (30), Serath (25), Unwalked (2), Veldrane (1), Wending (6). No orphaned location references."
+      },
+      {
+        "checkId": "WB-PASS-006",
+        "category": "cross-file-consistency",
+        "title": "Magic ↔ Politics Power Reflection",
+        "finding": "Political power structures accurately reflect magic access. Oathbrand is Conclave-controlled disciplinary tool (magic suppression as punishment). Cerith Court enforces binding contracts through magical enforcement. Lirien's kill order is magically binding, not merely legal. Power levels in magic system correspond to political influence: High Conclave controls Oathbrand application, Cerith Court controls binding magic, The Seep operatives are Tier 3-4 (high capability).",
+        "evidence": "Politics.json contains 30+ references to Pallor, 11 to Oathbrand, 17 to binding, 11 to Quietus. All magical mechanics described in politics align with rules defined in magic-system.json."
+      },
+      {
+        "checkId": "WB-PASS-007",
+        "category": "cross-file-consistency",
+        "title": "Magic ↔ Culture Consistency Maintained",
+        "finding": "Cultures have consistent and differentiated magical attitudes. Imperial: regulated/administrative (magic as specialized skill, tier-based hierarchy). Fae: foundational/embodied (magic as core identity, binding contracts as cultural norm). Border: pragmatic/survival-focused (magic valued for utility). Wending: fluid/non-categorical (magic as natural variation). Rivenmarch: unstable/fragmentary (magic access declining with social dissolution). These attitudes are woven into cultural norms including marriage customs, social hierarchies, and taboos.",
+        "evidence": "All 5 cultures in culture.json have explicit magical attitudes cross-referenced with magic system practitioner descriptions, access methods, and power levels."
+      },
+      {
+        "checkId": "WB-PASS-008",
+        "category": "cross-file-consistency",
+        "title": "History ↔ All Modules Coherence",
+        "finding": "Historical events are internally consistent across all modules. Thalen Reyvas's 40-year poisoning (YK 702-742) is referenced in history timeline (Era: The Thinning), politics faction profile (Sixth Seat, 43 years tenure), and culture (bureaucratic blindness enabling conspiracy). Warden lineage extinction myth is coordinated across history (key figure Thenndal Maren), magic system (kinetic memory mechanics), and geography (Quietus location knowledge). The Rending (god-war) is consistently described across all files with matching dates, locations, and consequences.",
+        "evidence": "Cross-referenced 5 major historical eras against all 5 world-bible files. 100+ chronological references verified for consistency. Timeline spans ~750 years (Year of the Keeping system). No date contradictions detected."
+      },
+      {
+        "checkId": "WB-PASS-009",
+        "category": "invariant-compliance",
+        "title": "INV-029: Artifact Cross-References Valid",
+        "finding": "All world-bible files have valid upstreamRef fields pointing to their source artifacts. geography.json → story-concept.json. culture.json → story-concept.json, geography.json. history.json → story-concept.json, geography.json, culture.json. magic-system.json → story-concept.json, geography.json, culture.json, history.json. politics.json → story-concept.json, geography.json, culture.json, history.json, magic-system.json. Reference chain is coherent with appropriate dependencies.",
+        "evidence": "Verified upstreamRef field in all 5 world-bible files. Each file's dependencies align with its content — later-phase files reference earlier-phase files appropriately."
+      },
+      {
+        "checkId": "WB-PASS-010",
+        "category": "invariant-compliance",
+        "title": "INV-074: Independently Loadable Files",
+        "finding": "Each world-bible file is independently loadable with proper upstreamRef metadata. Every file includes storyId, upstreamRef, and self-contained structure. A downstream agent can load any single file and understand its source dependencies without requiring external documentation.",
+        "evidence": "All 5 files contain: storyId field (001), upstreamRef field (with clear dependency chain), and complete internal structure. No dangling references that require external knowledge to interpret."
+      },
+      {
+        "checkId": "WB-PASS-011",
+        "category": "invariant-compliance",
+        "title": "INV-009: Deus Ex Machina Prevention (Magic System)",
+        "finding": "Magic system establishes hard boundaries that prevent narrative escape hatches. 10 comprehensive rules (focused will, exponential costs, Pallor gradient, binding mechanics, feedback loops, resistance, range limits, permanence, compatibility, knowledge transmission). 7 forbidden uses block key escape routes: (1) No resurrection, (2) No mental compulsion, (3) No transmutation, (4) No creation ex nihilo, (5) No memory erasure, (6) Cannot break Quietus or Pallor through direct magical force, (7) No non-consensual binding. Zero magical solutions available to resolve conflicts without established rules.",
+        "evidence": "magic-system.json contains: 10 rules + 7 forbidden uses + hardness level 'hard' + explicit rationale. Verified that every major plot obstacle (Oathbrand, kill contract, Quietus seal, Pallor tearing) has defined magical constraints preventing easy resolution."
+      },
+      {
+        "checkId": "WB-PASS-012",
+        "category": "invariant-compliance",
+        "title": "INV-018: No Anachronisms",
+        "finding": "Cultural norms are consistent with world's technology and magic level. Zero anachronistic terms detected (no 'electricity', 'computer', 'algorithm', 'database', 'server', 'internet', 'phone'). Tech level matches medieval-to-early-modern: garrison infrastructure, road maintenance, messenger systems, archive scroll management, guild systems. Magic level is rare/specialized rather than ubiquitous. Religion (the Keeping) is pragmatic state bureaucracy fitting pre-industrial framework. Social structures (hereditary seats, oath-binding, guild systems, territorial governance) are pre-modern.",
+        "evidence": "Comprehensive grep search across all world-bible files for common anachronistic terms returned 0 matches. Tech/magic level analysis shows internal consistency at medieval-equivalent development."
+      },
+      {
+        "checkId": "WB-PASS-013",
+        "category": "invariant-compliance",
+        "title": "INV-022: Antagonist Motivation (Thalen Reyvas)",
+        "finding": "Primary antagonist Thalen Reyvas has comprehensive, comprehensible motivation documented in politics.json. Not a villain of pure malice but a deep-conviction ideologue who believes the Pallor was a mistake and that Ythara's return will restore lost potential rather than destroy the world. 40-year poisoning campaign is methodical, singular (no accomplices), ideologically pure. Thalen sees their actions as renewal, not destruction. Motivation satisfies INV-022 requirement for comprehensible rather than cartoonish antagonism.",
+        "evidence": "Politics.json Sixth Seat profile for Thalen Reyvas (~600 words) details: diplomatic background, ideological conviction, methodology (ritual mechanisms, offering-fires, trace compounds), timeline (YK 702 Second Accords through YK 742 present), psychological framework (renewal vs stagnation), and refusal to confess or repent. Motivation is morally complex, thematically resonant, and narratively sophisticated."
+      },
+      {
+        "checkId": "WB-PASS-014",
+        "category": "invariant-compliance",
+        "title": "INV-081: No Darlings Detected",
+        "finding": "All worldbuilding elaboration serves narrative function. No world elements are elaborate without purpose. Geography (13 locations): every location has documented narrative function for journey or context. Culture (5 cultures, ~16,500 total words): Imperial culture enables Oathbrand taboo + tier system + conspiracy invisibility. Fae culture enables Lirien's arc + binding paradox + contract framework. Border culture opens story + garrison protocols. Wending culture provides space where relationship is unremarkable (Act II). Rivenmarch culture provides final cultural phase before climax. History: 5 eras provide foreshadowing, backstory for magic system, political formation context. No encyclopedic tangents detected.",
+        "evidence": "Reviewed all 5 world-bible files for purposeless elaboration by checking each major section against fantasy plot utility and romantic arc utility. Every cultural detail, historical event, geographic feature, political faction, and magical rule serves at least one narrative function. No 'cool but useless' elements identified."
+      },
+      {
+        "checkId": "WB-PASS-015",
+        "category": "invariant-compliance",
+        "title": "INV-002: Internal Consistency (No Contradictions)",
+        "finding": "Zero contradictions detected across all world-bible files. Geography climate descriptions align with culture descriptions (coastal = maritime customs, forest = sylvan customs). Historical events use correct locations and dates consistently. Political faction territories match geographic boundaries. Magic system rules are applied consistently (Oathbrand suppression described identically in magic-system.json and politics.json). Timeline integrity maintained (Year of the Keeping system used uniformly). Character ages, tenures, and backgrounds cross-reference correctly.",
+        "evidence": "Cross-referenced 200+ factual claims across all files checking for: geographic contradictions (climate, location names, travel distances), chronological contradictions (dates, durations, ages), mechanical contradictions (magic rules, power levels, costs), and nominal contradictions (naming, terminology). Zero conflicts identified."
+      },
+      {
+        "checkId": "WB-PASS-016",
+        "category": "completeness",
+        "title": "Geography: Sufficient for Journey Narrative",
+        "finding": "Geography provides 13 locations with documented narrative functions. 8 locations form coherent journey path from northeastern coast (Duskhaven) to far west (Quietus). 5 additional locations provide context (Imperial heartland, river cities, border regions). Travel routes established (The Thornway road). Climate zones differentiated (cold maritime northeast, temperate continental interior, remote/wild west). Each location has 200-400 word description including atmosphere, function, and sensory details sufficient for chapter-drafter to write immersive scenes.",
+        "evidence": "geography.json contains 13 locations, each with: id, name, type, description (narrative function), atmosphere (sensory details), climate, narrative function explicit statement. Journey path verified as geographically logical."
+      },
+      {
+        "checkId": "WB-PASS-017",
+        "category": "completeness",
+        "title": "Culture: Romantic-Relevant Social Norms",
+        "finding": "All 5 cultures provide romantic-relevant social norms that create structural obstacles or enabling spaces for the relationship. Imperial: Oathbrand erasure (social invisibility), bureaucratic hierarchy (power imbalance), tier-based identity (class separation). Fae: binding mechanics (contract as prison), relationship as negotiation, fae-human taboo. Border: pragmatic survival (no-questions culture enables initial proximity), garrison isolation. Wending: non-categorical identity (fluidity accepted, no taboos = safe space for relationship development). Rivenmarch: fragment culture (dissolution of external constraints, choice becomes possible). Marriage customs, forbidden relationships, and duty vs. desire tensions are embedded in cultural structures.",
+        "evidence": "Each culture.json entry includes explicit sections addressing: social norms, relationship structures, taboos, or romantic obstacles. Culture.json contains 9 explicit mentions of romantic/relationship elements plus embedded obstacles throughout."
+      },
+      {
+        "checkId": "WB-PASS-018",
+        "category": "completeness",
+        "title": "History: Foreshadowing Hooks Provided",
+        "finding": "History provides 5 comprehensive foreshadowing hooks with clear plants and payoffs. (1) Warden lineage extinction myth → Thenndal Maren carried knowledge, Kaelith inherited training unknowingly. (2) Pallor natural fluctuations myth → Camouflages deliberate poisoning. (3) Velmere's Renewal Debate → Prefigures Thalen's methodology and ideological framework. (4) Legion as Watch (original purpose) → Kaelith unknowingly inherits Warden legacy. (5) Thenndal's death as 'chronic illness' → Possible Conclave murder to eliminate Warden knowledge. Each hook has explicit plant + payoff + integration strategy documented in history.json.",
+        "evidence": "history.json foreshadowingHooks array with 5 entries, each containing: id, hook description, plant (what early chapters reveal), payoff (what later revelation occurs), and integration (how to weave naturally). Total ~1,500 words of foreshadowing infrastructure."
+      },
+      {
+        "checkId": "WB-PASS-019",
+        "category": "completeness",
+        "title": "Magic System: Rules, Costs, Limitations Clear",
+        "finding": "Magic system has comprehensive rule structure. 10 fundamental rules establish how magic works. 7 forbidden uses establish what magic cannot do. 6 power levels (Tier 0-4 plus protagonist levels) establish magical hierarchy. Costs documented (exhaustion, mental strain, physical pain, exponential resource drain for divergence). Limitations explicit (Pallor gradient, focused will required, exponential costs, no unconscious magic, range limits, binding requirements). Oathbrand mechanics defined (suppression, reapplication, social marking). Binding mechanics defined (consent, breaking conditions, enforcement). Kinetic memory mechanics defined (embodied knowledge, cannot be extracted).",
+        "evidence": "magic-system.json contains: 10 rules (array), 7 forbidden uses (array), 6 power levels (powerLevels array), 3 major magical elements (majorMagicalElements with Pallor/Oathbrand/Quietus), access methods (3 categories), hardness level (hard), hardness rationale (explicit). Total ~54,000 words of magic system specification."
+      },
+      {
+        "checkId": "WB-PASS-020",
+        "category": "completeness",
+        "title": "Politics: Obstacles and Antagonists Provided",
+        "finding": "Politics provides 7 factions with competing goals and clear antagonist profiles. High Conclave: 7 seats detailed with individual profiles, including Thalen Reyvas (the poisoner with 40-year conspiracy). Cerith Court: enforces Lirien's kill contract. The Seep: intelligence network that issued Lirien's mission. Archival Order: holds evidence but cannot act. Provincial Governorships: institutional inertia. Ashborne Legion: Kaelith's former command, now reduced. Rivenmarch Freeholders: fragmentation and dissolution. Each faction has: leadership structure, motivations, operational methods, relationship to protagonists, fantasy plot role, romantic obstacles.",
+        "evidence": "7 factions in politics.json, each with comprehensive profile (~5,000-8,000 words each). Total ~55,600 words. Every faction provides either direct opposition (Conclave, Court, Seep) or structural obstacles (Archival Order bureaucracy, Provincial inertia, Legion obsolescence)."
+      },
+      {
+        "checkId": "WB-PASS-021",
+        "category": "narrative-utility",
+        "title": "Romance Obstacles: 7 Structural Layers",
+        "finding": "The world provides substantive, multi-layered romantic obstacles that serve both romance and theme. (1) Oathbrand erasure makes Kaelith socially invisible; removal requires vulnerability. (2) Kill contract binding prevents Lirien from leaving without executing Kaelith. (3) Fae-human taboo creates social radioactivity (cultural norm in both Imperial and Fae cultures). (4) Institutional opposition — High Conclave both branded Kaelith AND (indirectly) motivated fae intelligence to issue kill contract. (5) Magical imbalance — Lirien (Tier 4) vs Kaelith (Tier 1 suppressed to Tier 0) creates asymmetric vulnerability. (6) Duty vs desire paradox embodies TP-2 (Price of right choice). (7) Necessity vs choice paradox embodies TP-3 (Chosen vs only). These obstacles are structural, not incidental.",
+        "evidence": "7 distinct obstacles mapped to: culture.json social norms (taboos, erasure customs), magic-system.json power dynamics (tier system, binding mechanics), politics.json institutional forces (Conclave, Court, Seep). Each obstacle documented with romantic impact and thematic resonance."
+      },
+      {
+        "checkId": "WB-PASS-022",
+        "category": "narrative-utility",
+        "title": "Fantasy Plot Fully Supported",
+        "finding": "The god-seal quest is comprehensively enabled by world structure. Quietus seal exists with documented constraints (kinetic memory, embodied knowledge, cannot be extracted magically, only Kaelith can navigate). Ythara defined with clear scope (god of unmade things, unravels reality into unrealized potential, not evil but incompatible with finished world). Stakes explicit (Pallor tearing = god waking = annihilation as 'possibility'). Thalen's conspiracy provides urgency (40 years of poisoning reaching critical point). Journey coherent across 8 key locations from Duskhaven to Quietus. Political obstacles (Conclave paralysis, fae enforcement) complicate the quest. Magic system constraints prevent easy solutions.",
+        "evidence": "Verified journey path logistics: Duskhaven (LOC-001) → Greymere (LOC-002) → Thornway (LOC-004) → Veldrane (LOC-005) → Wending (LOC-006) → Aranthem (LOC-007) → Serath Dûn (LOC-010) → Unwalked Reach (LOC-012) → Quietus (LOC-013). Each location has documented narrative function for quest progression."
+      },
+      {
+        "checkId": "WB-PASS-023",
+        "category": "tone-alignment",
+        "title": "Tone Contract Consistency",
+        "finding": "World-bible is consistent with tone contract from story-concept.json. Primary tone (morally complex, atmospherically taut) reflected in: empire's twilight decay (not ruins but thinning confidence), Conclave's bureaucratic corruption (not cartoonish villainy but institutional blindness), fae as cold/bureaucratic not whimsical (Court as enforcement mechanism, Seep as intelligence apparatus), Thalen's ideological purity not simple villainy (renewal vs stagnation). Secondary tone (darkly romantic with dry wit) reflected in: Oathbrand as externalized guilt, kill contract as binding paradox, culture descriptions using restraint not melodrama. No forbidden tones detected (no whimsy, no grimdark nihilism, no sentimentality, no camp, no epic-triumphant, no expository/pedagogical).",
+        "evidence": "Reviewed all 5 world-bible files against story-concept.json toneContract: 1 primary tone, 1 secondary tone, 6 forbidden tones. All sections align with primary/secondary; zero violations of forbidden tones detected."
+      },
+      {
+        "checkId": "WB-PASS-024",
+        "category": "thematic-alignment",
+        "title": "Thematic Pillar Integration",
+        "finding": "All 3 thematic pillars from story-concept.json are woven into world structure. TP-1 (Trust as structural failure): Kill contract + binding magic creates literal paradox where trust requires vulnerability to someone whose capacity to destroy you is the thing you know best about them. Oathbrand suppression makes Kaelith vulnerable. Binding prevents Lirien from walking away. Trust becomes a deliberate choice under full knowledge of cost. TP-2 (Price of right choice): Kaelith's Calwrath decision (tactically correct, morally devastating, 800 saved/300 killed) + Thalen's 40-year poisoning (ideologically pure, existentially catastrophic). No clean resolutions; every choice extracts payment. TP-3 (Chosen vs only): Necessity cage (kill contract, Quietus knowledge) forces proximity. Geography (Rivenmarch/Unwalked Reach) provides space where external constraints dissolve and choice becomes possible. Romance earns resolution by reaching moment when cage opens and both choose to stay.",
+        "evidence": "Cross-referenced 3 thematic pillars from story-concept.json (TP-1, TP-2, TP-3) against world-bible structure. Each pillar has multiple supporting elements: TP-1 (binding mechanics, Oathbrand, kill contract), TP-2 (Calwrath backstory, Thalen's conspiracy, choice-as-cost framework), TP-3 (forced proximity → free choice arc, Rivenmarch as constraint-dissolving space)."
+      },
+      {
+        "checkId": "WB-PASS-025",
+        "category": "invariant-compliance",
+        "title": "INV-066: Series-Ready Architecture",
+        "finding": "World structure is designed to support potential sequel hooks without requiring them. Pallor tearing is resolved but its underlying causes (divine incompatibility, cosmological tension) remain. Fae-human relations are still fraught. Archival Order has documented knowledge that could drive future investigations. Rivenmarch Freeholders represent ongoing frontier instability. The world's 'twilight era' atmosphere suggests long-term decline that extends beyond this book's events. No forced sequel bait, but the world is robust enough to support additional stories if desired.",
+        "evidence": "World-bible architecture includes: (1) Resolved crisis (god-seal, Thalen's conspiracy), (2) Ongoing tensions (fae-human relations, Imperial decline, frontier fragmentation), (3) Knowledge repositories (Archival Order), (4) Geographic expansion potential (unexploredRegions in geography.json), (5) Sequel-neutral resolution (story-config.json specifies standalone)."
+      },
+      {
+        "checkId": "WB-PASS-026",
+        "category": "invariant-compliance",
+        "title": "INV-007: No Info-Dumping Infrastructure",
+        "finding": "Worldbuilding is structured for narrative weaving, not encyclopedic exposition. Every cultural detail, historical event, and geographic feature is documented with explicit narrative function and integration strategy. Magic system rules are experienceable through character limitations (Oathbrand suppression, binding enforcement). Political structures are encountered through conflict (Conclave paralysis, Court enforcement). History is embedded through foreshadowing hooks, not backstory lectures. Culture is revealed through social norms affecting protagonists, not anthropological surveys.",
+        "evidence": "Each world-bible section includes narrative function or integration guidance. Geography: 'atmosphere' sections provide sensory details for immersion. Culture: 'romanticObstacles' and 'socialNorms' sections show how culture affects protagonists. History: 'foreshadowingHooks' array with plant/payoff structure. No section reads as isolated encyclopedia entry."
+      }
+    ]
+  },
+  "statistics": {
+    "totalFindings": 26,
+    "criticalCount": 0,
+    "warningCount": 0,
+    "passCount": 26,
+    "filesAudited": 5,
+    "crossReferencesVerified": 200,
+    "invariantsChecked": 9,
+    "invariantsViolated": 0,
+    "regressionFixesVerified": 1
+  },
+  "auditNarrative": "Iteration 2 audit PASSES. The critical name registry inconsistency identified in iteration 1 (Ashborne Legion naming mismatch between story-concept.json and politics.json) has been successfully resolved. Both files now use the canonical name 'The Ashborne Legion' consistently, eliminating the cascading conflict that would have caused downstream production issues. All other checks from iteration 1 continue to pass: (1) Cross-file consistency across geography, culture, history, magic, and politics is maintained with 200+ verified cross-references. (2) Name registry compliance is now 100% — all canonical names are used consistently across 350+ references. (3) Invariant compliance is complete: INV-002 (internal consistency), INV-007 (no info-dumping), INV-009 (deus ex machina prevention), INV-018 (no anachronisms), INV-022 (antagonist motivation), INV-029 (artifact cross-references), INV-066 (series-ready), INV-074 (independently loadable), INV-081 (no darlings). (4) Narrative utility is comprehensive: 7 structural romance obstacles, complete fantasy plot support, coherent journey path across 13 locations, 5 foreshadowing hooks, 7 political factions providing opposition. (5) Completeness requirements are met: geography sufficient for journey narrative, cultures provide romantic-relevant social norms, history provides foreshadowing, magic system defines rules/costs/limitations, politics provides obstacles and antagonists. (6) Tone alignment is consistent with story concept's morally complex, atmospherically taut, darkly romantic framework. (7) Thematic integration is sophisticated: all 3 thematic pillars (trust as structural failure, price of right choice, chosen vs only) are woven into world structure through multiple supporting elements. The worldbuilding is production-ready. Character development phase can proceed with confidence. The world structure is robust, internally consistent, thematically coherent, and narratively sophisticated.",
+  "remediationRequired": {
+    "blocking": [],
+    "recommended": []
+  },
+  "comparisonWithIteration1": {
+    "summary": "Iteration 1 identified 1 critical finding (name registry mismatch) and 20 passing checks. Iteration 2 verifies the critical finding has been resolved and re-confirms all 20 original passing checks, plus adds 6 additional verification checks for comprehensiveness.",
+    "resolved": [
+      {
+        "iteration1FindingId": "WB-CRIT-001",
+        "title": "Ashborne Legion Name Inconsistency",
+        "resolution": "Name standardized to 'The Ashborne Legion' in both story-concept.json and politics.json. Cross-reference verified. Issue fully resolved."
+      }
+    ],
+    "newIssues": [],
+    "regressions": []
+  },
+  "nextSteps": [
+    "Proceed to character development phase (character-coordinator)",
+    "World structure is production-ready and requires no further worldbuilding iteration",
+    "All downstream agents (chapter-drafter, continuity-integrator, editors, beta readers) can rely on world-bible as authoritative source"
+  ],
+  "signOff": {
+    "auditor": "worldbuilding-auditor",
+    "iteration": 2,
+    "verdict": "passed",
+    "confidence": "high",
+    "readinessAssessment": "Worldbuilding phase PASSES gate. The critical fix from iteration 1 has been successfully applied. The world-bible for story 001 is production-ready: internally consistent, thematically coherent, narratively sophisticated, and complete. All invariants are honored. All cross-references are valid. All narrative utility requirements are met. Character development can begin immediately. This is a clean pass with zero reservations."
+  }
+}

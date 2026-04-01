@@ -1,0 +1,26 @@
+{
+  "agent": "docwriter-content-writer",
+  "taskId": "T-006",
+  "attempt": 2,
+  "action": "update",
+  "targetFile": "src/_documentation/_documentation/developers-and-admins/security-guidelines.md",
+  "summary": "Converted all 7 Unicode en dashes (U+2013) to double-hyphen (--) per INV-style-096. Lines affected: 68, 69, 70 (User management links), 101-104 (role definitions). Line 103 already had a legitimate double-hyphen ('channel owners -- they can'); only the en dash after 'Channel manager' was converted. Verified zero en dashes remain on the page.",
+  "sectionsModified": ["User management", "Roles and permissions"],
+  "sectionsAdded": [],
+  "sectionsRemoved": [],
+  "docFactsUsed": [],
+  "invariantsApplied": ["INV-style-096"],
+  "patternsUsed": [],
+  "researchRecommendationsCited": [],
+  "recommendationsSkipped": [],
+  "changesDetail": [
+    { "line": 68, "context": "User passwords link", "change": "en dash → --" },
+    { "line": 69, "context": "Multi-factor authentication link", "change": "en dash → --" },
+    { "line": 70, "context": "Account lockout link", "change": "en dash → --" },
+    { "line": 101, "context": "Administrator role definition", "change": "en dash → --" },
+    { "line": 102, "context": "User manager role definition", "change": "en dash → --" },
+    { "line": 103, "context": "Channel manager role definition (first dash only)", "change": "en dash → --" },
+    { "line": 104, "context": "Content editor role definition", "change": "en dash → --" }
+  ],
+  "timestamp": "2026-03-18T21:07:54Z"
+}

@@ -1,0 +1,80 @@
+{
+  "chapterNum": 18,
+  "pov": "CHAR-002",
+  "povTransitionMotivation": "Switch to Lirien for her dark night of the soul and the choice to follow Kaelith freely, defying both Court and Seep",
+  "scenes": [
+    {
+      "id": "SCN-50",
+      "goal": "[To be detailed by scene-beat-designer]",
+      "conflict": "[To be detailed by scene-beat-designer]",
+      "disaster": "[To be detailed by scene-beat-designer]",
+      "valueShift": "[To be detailed by scene-beat-designer]",
+      "fiveCommandments": {
+        "incitingIncident": "[To be detailed]",
+        "complication": "[To be detailed]",
+        "crisis": "[To be detailed]",
+        "climax": "[To be detailed]",
+        "resolution": "[To be detailed]"
+      }
+    },
+    {
+      "id": "SCN-51",
+      "goal": "[To be detailed by scene-beat-designer]",
+      "conflict": "[To be detailed by scene-beat-designer]",
+      "disaster": "[To be detailed by scene-beat-designer]",
+      "valueShift": "[To be detailed by scene-beat-designer]",
+      "fiveCommandments": {
+        "incitingIncident": "[To be detailed]",
+        "complication": "[To be detailed]",
+        "crisis": "[To be detailed]",
+        "climax": "[To be detailed]",
+        "resolution": "[To be detailed]"
+      }
+    },
+    {
+      "id": "SCN-52",
+      "goal": "[To be detailed by scene-beat-designer]",
+      "conflict": "[To be detailed by scene-beat-designer]",
+      "disaster": "[To be detailed by scene-beat-designer]",
+      "valueShift": "[To be detailed by scene-beat-designer]",
+      "fiveCommandments": {
+        "incitingIncident": "[To be detailed]",
+        "complication": "[To be detailed]",
+        "crisis": "[To be detailed]",
+        "climax": "[To be detailed]",
+        "resolution": "[To be detailed]"
+      }
+    }
+  ],
+  "emotionalArc": {
+    "startState": "[To be detailed by scene-beat-designer]",
+    "endState": "[To be detailed by scene-beat-designer]",
+    "pivotMoment": "[To be detailed by scene-beat-designer]"
+  },
+  "fantasyBeats": [
+    "Ashborne Legacy \u2014 Allies Begin to Surface"
+  ],
+  "romanceBeats": [
+    "Dark Night / Choice \u2014 Follow Her Freely"
+  ],
+  "hookType": "internal-crisis",
+  "hookTypeDescription": "[To be detailed by scene-beat-designer]",
+  "closeType": "commitment-without-guarantee",
+  "closeTypeDescription": "[To be detailed by scene-beat-designer]",
+  "targetWordCount": 4100,
+  "tensionLevel": 6,
+  "pacingNotes": "Chapter 18 \u2014 Ashborne Legacy / Dark Night Choice. [To be detailed by scene-beat-designer]",
+  "locationsPrimary": [
+    "Lirien's path, contact with former Ashborne members"
+  ],
+  "charactersPresent": [
+    "CHAR-002",
+    "CHAR-001"
+  ],
+  "upstreamRefs": [
+    "../../plot/plot-structure.json",
+    "../../characters/CHAR-002.json",
+    "../../plot/dual-arc-timeline.json",
+    "../../plot/tension-map.json"
+  ]
+}

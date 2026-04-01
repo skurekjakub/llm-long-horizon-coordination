@@ -1,0 +1,17 @@
+{
+  "agent": "docwriter-task-signal-analyzer",
+  "status": "done",
+  "result": "task-signals-ready",
+  "timestamp": "2026-03-18T22:04:14Z",
+  "tasksAnalyzed": 8,
+  "candidatePatterns": 2,
+  "candidateAntiPatterns": 2,
+  "styleEvolutions": 2,
+  "summary": {
+    "firstAttemptRate": "62.5% (5/8 initial execution)",
+    "dominantRejectionCause": "INV-style-132 ('must' directed at people) -- 3 occurrences across all 3 multi-cycle tasks",
+    "secondaryRejectionCause": "INV-style-139 (multi-sentence callout missing bold title) -- 2 occurrences",
+    "gapResolution": "3/3 gaps resolved in single re-entry cycle, 100% first-attempt re-entry acceptance",
+    "strongestSignal": "CAPAT-001 (high): permission-requirement content systematically triggers 'must' violations"
+  }
+}

@@ -1,0 +1,325 @@
+{
+  "gateId": "GATE-drafting-ch019",
+  "agent": "drafting-auditor",
+  "phase": "drafting",
+  "chapter": 19,
+  "title": "Sound Enough",
+  "pov": "CHAR-001 (Kaelith Maren)",
+  "storyId": "001",
+  "timestamp": "2026-03-19T14:00:00Z",
+  "verdict": "PASSED",
+  "score": 8.5,
+  "gateDecision": "Chapter 19 is CLEARED for the revision pipeline.",
+  "summaryAssessment": "Chapter 19 ('Sound Enough') meets the minimum quality bar for proceeding to revision and in many areas significantly exceeds it. The prose is publication-quality romantic fantasy with a sharply distinctive POV voice. The dual-arc interleave — romance reconciliation inseparable from fantasy planning — is the strongest in the manuscript to date. The vulnerability ladder apex (Step 10) is emotionally earned. All 16 craft tools are correctly applied. Continuity is impeccable (zero knowledge leaks, zero deus ex machina). Three warnings issued: (1) elevated 'She [verb]' sentence-start repetition density in SCN-53/SCN-54 transition zone, (2) word count discrepancy between outline target and actual, (3) one passage of Pallor description that is atmospheric but marginally darling-adjacent. Two warnings is below the 3-warning failure threshold. The chapter proceeds to revision with specific remediation notes for these minor issues.",
+
+  "automaticFailChecklist": {
+    "outlinePOVMatch": {
+      "result": "PASS",
+      "evidence": "Draft is Kaelith Maren (CHAR-001) POV throughout all three scenes. Matches outline specification. No POV breaks or contamination."
+    },
+    "sceneGoalsPresent": {
+      "result": "PASS",
+      "evidence": "All three scene goals delivered: SCN-53 (arrival, Ashborne reunion, bond signal), SCN-54 (confrontation, trust rebuild, vulnerability naming), SCN-55 (strategy session, loophole consent, plan commitment). No outline scene goals missing."
+    },
+    "clicheFantasyPhrases": {
+      "result": "PASS",
+      "count": 0,
+      "evidence": "Automated scan for 24 cliche fantasy phrase patterns returned zero matches. No 'eyes like pools,' 'power coursing through,' 'darkness threatening to consume,' 'ancient power,' 'tendrils of shadow,' or similar. The prose consistently finds original formulations: 'hit like a fist to the sternum,' 'like wet linen over a wound that kept opening,' 'like a keystone finding its seat.'"
+    },
+    "halfPageZeroTension": {
+      "result": "PASS",
+      "evidence": "Tension scan of 200-word chunks found zero low-tension passages. Every chunk contains 3+ tension markers (conflict words, questions, stakes references, emotional pressure). The Ashborne reunion section (lines 65-100) — the quietest passage — sustains tension through the implications of 'the isolation was a lie' and the approaching Lirien bond signal."
+    },
+    "povIdentifiable34Sentences": {
+      "result": "PASS",
+      "evidence": "Opening sentences: 'Two exits. One road south. One goat track northwest through the tree cover. Stone-and-timber palisade, chest height, angled outward — not enough to stop a determined assault but sufficient to slow anything moving on instinct.' This is textbook Kaelith: tactical inventory mode, short declarative fragments, military vocabulary ('determined assault,' 'interlocking fields of fire'). Identifiable as Kaelith within the first two words. Sharply distinct from Ch18 Lirien opening ('Decision: accept delay in target execution following Pallor-Oathbrand correlation, day two. Binding probability: high.')."
+    },
+    "unestablishedMagic": {
+      "result": "PASS",
+      "evidence": "All magical elements use previously established mechanics: Bond emotional transmission (MAG-007, Ch11), contract loophole via heartbeat cessation (FACT-008, Ch14), Pallor substrate thinning at Quietus (FACT-017, Ch18), defected Architect precedent (FACT-018, Ch18), kinetic memory pull (AM-002, Ch5), Oathbrand phantom pain (Ch11 removal). No new magic introduced. Zero deus ex machina (INV-009)."
+    },
+    "characterKnowledgeLeak": {
+      "result": "PASS",
+      "evidence": "Exhaustive verification against information-asymmetry-map.json: FACT-006 (Warden lineage) correctly unknown to Kaelith — Thenndal reference is event-only. FACT-007 (Thalen as saboteur) correctly unknown — Lirien says 'High Conclave member, no confirmed identity.' FACT-011 (Iryse as vector) correctly absent. FACT-012 (Seep supports loophole) correctly unknown to Kaelith. 11-hour self-interrogation process — Kaelith learns only the result ('one verified act'). Continuity integrator verified 48 checks with zero knowledge leaks."
+    },
+    "fantasyRomanceArcPresent": {
+      "result": "PASS",
+      "evidence": "Fantasy arc: Break into Three — plan to exploit contract loophole and reach Quietus. Full strategy session (SCN-55), contract dissolution mechanics, three-day timeline, relay points. Romance arc: Reunion Through Truth — cipher destruction, one verified act of free choice, vulnerability naming (Step 10), bond opens fully, trust rebuilt through decision not forgiveness. Both arcs present in every scene and structurally inseparable."
+    },
+    "tellingNotShowingMajorBeats": {
+      "result": "PASS",
+      "evidence": "Automated scan found zero narrative 'she felt [emotion]' or 'she was [emotion]' patterns. Major emotional beats are shown: anger as 'jaw tightened, heat climbing her neck' (line 187); terror as physical inventory 'lived in her spine, in the muscles of her jaw, in the hyperawareness of every angle' (line 135); recognition shock as 'hit like a fist to the sternum' (line 31); love never named by Kaelith in narrative — shown through bond, physical reactions, structural metaphors. Fear named in DIALOGUE only at Vulnerability Step 10, earned by the narrative structure."
+    }
+  },
+
+  "criticalFindings": [],
+
+  "majorFindings": [],
+
+  "minorFindings": [
+    {
+      "id": "MF-019-001",
+      "severity": "minor",
+      "category": "metadata-consistency",
+      "invariant": "tracking accuracy",
+      "description": "Word count discrepancy between outline target and actual. The chapter outline (chapter-019.json) specifies targetWordCount: 4000. The draft frontmatter claims targetWordCount: 5000. The actual word count is 5717. However, the sum of beat-level word allocations across all 12 scene beats in the outline is 5800 words. The draft at 5717 is within 1.4% of the beat allocation sum. The 4000 headline target appears to be a stale estimate from before scene beats were designed.",
+      "location": "chapter-019.json line 179 vs chapters/019/draft.md frontmatter vs beat allocations",
+      "impact": "No prose quality impact. The chapter is accurately sized for its detailed beat plan. This is a metadata tracking issue only — the headline targetWordCount should be updated to match the sum of beat allocations.",
+      "recommendation": "Chapter outliner should reconcile targetWordCount with beat allocation sums. For this chapter, update targetWordCount to 5800."
+    },
+    {
+      "id": "MF-019-002",
+      "severity": "minor",
+      "category": "tracking-discrepancy",
+      "invariant": "information-asymmetry-map accuracy",
+      "description": "As flagged by the continuity integrator (OBS-019-001): FACT-007 (Thalen as Pallor saboteur) and FACT-011 (Iryse as unwitting vector) have 'revealedToReader: chapter 19' in the information-asymmetry-map.json, but the Ch19 draft does NOT reveal these facts to the reader. The draft correctly has Lirien say 'The intelligence points to a High Conclave member. We do not have a confirmed identity.' The revealedToReader metadata should be deferred to the chapter where these facts actually appear in prose.",
+      "location": "continuity/information-asymmetry-map.json, FACT-007 and FACT-011",
+      "impact": "No prose quality impact. The draft is correct — this is a tracking metadata issue.",
+      "recommendation": "Continuity tracker agent should update FACT-007 and FACT-011 revealedToReader to the actual reveal chapters."
+    },
+    {
+      "id": "MF-019-003",
+      "severity": "minor",
+      "category": "inference-escalation",
+      "invariant": "INV-056 (information asymmetry) — borderline",
+      "description": "In SCN-55 (line 313), Kaelith's internal plan assembly uses the phrase 'Kaelith's Warden capacity' — an escalation from Lirien's briefing term 'Warden-adjacent capabilities.' Kaelith does NOT know about her Warden lineage (FACT-006 unknown to her). However, she has known since Ch4 that she has unusual ontological capacity (Oathbrand responding to Pallor, kinetic memory). Lirien just introduced the term 'Warden-adjacent' in the briefing context. Kaelith shortening this to 'Warden capacity' in her tactical planning is a reasonable inference — she's adopting operational terminology for self-description. This does NOT constitute a knowledge leak of the lineage fact itself, but the phrasing could be tightened to 'Warden-adjacent capacity' (matching Lirien's term) to avoid any ambiguity.",
+      "location": "chapters/019/draft.md, line 313, SCN-55",
+      "impact": "Very low. The inference is reasonable. But 'Warden capacity' vs 'Warden-adjacent capabilities' is a subtle escalation that could be flagged by beta readers as premature self-identification.",
+      "recommendation": "Revision pipeline should consider changing 'Kaelith's Warden capacity' to 'Kaelith's Warden-adjacent capabilities' or 'whatever capacity she carried' to maintain the uncertainty."
+    }
+  ],
+
+  "warnings": [
+    {
+      "id": "WARN-019-001",
+      "severity": "warning",
+      "category": "sentence-structure-repetition",
+      "invariant": "INV-017 (Prose Quality Floor)",
+      "description": "Elevated 'She [verb]' sentence-start density, particularly in the SCN-53/SCN-54 transition zone (pages 6-7 of the chapter, approximately lines 100-138). Page 7 contains 8 sentences beginning with 'She' in approximately 250 words. Pages 6 and 14 each contain 5. The most concentrated passage is the flight-impulse sequence: 'She could be in the tree cover in forty seconds. She knew the terrain now. She had the Ashborne network. She could disappear before Lirien crossed the palisade...' followed immediately by 'She walked... She did not prepare... She did not rehearse... She stood...'",
+      "analysis": "Many of these are DELIBERATE rhetorical patterns consistent with Kaelith's percussive voice: (1) inventory-mode assessment ('She could/She knew/She had/She could' — listing tactical options), (2) parallel negation triads ('She did not prepare/She did not rehearse/She stood'), (3) anaphoric accumulation ('She looked at the woman who.../She looked at the woman who.../She looked at the woman who...'). The voice fingerprint specifies '70%+ short declarative sentences' and 'inventory fragments under stress.' These patterns serve the voice. However, 8 'She' starters in 250 words on a single page exceeds even generous voice-consistent tolerance and risks mechanical monotony.",
+      "impact": "Moderate. The density is defensible as voice but will likely draw beta reader attention. The revision pipeline should vary 2-3 sentence starts in the densest zone (pages 6-7) without losing the percussive rhythm — e.g., leading with the observation rather than the observer: 'The tree cover was forty seconds away. The terrain was known. The Ashborne network was available.'",
+      "recommendation": "Revision: reduce the peak 'She' density by 30-40% in the lines 100-138 zone. Preserve the deliberate triads (negation patterns, anaphoric accumulation) but break the longest uninterrupted 'She' runs with subject-leading or fragment alternatives."
+    },
+    {
+      "id": "WARN-019-002",
+      "severity": "warning",
+      "category": "potential-darling",
+      "invariant": "INV-081 (Kill Your Darlings)",
+      "description": "The Pallor atmospheric description (lines 41-42, approximately 93 words) is beautifully written but partially darling-adjacent: 'The Pallor overhead was thin here. Stretched translucent, like wet linen over a wound that kept opening. Through the gaps she could see the true sky — darker, older, the colour of a world that had never been covered. Not blue. Not black. Something between, something the eye did not have a name for because the Pallor had existed since before names. The silver membrane caught the morning light and threw it back diminished, and in the diminished light the settlement's palisade looked fragile.'",
+      "analysis": "The passage DOES serve: it establishes Pallor instability at Rivenmarch (critical for the Quietus plan), advances MOT-001 (Pallor/silver), and creates atmospheric context for the god-seal intelligence later. However, the middle section ('Not blue. Not black. Something between, something the eye did not have a name for because the Pallor had existed since before names') is 30 words of poetic elaboration on the sky's color that could be tightened by 40% without losing atmospheric function. The passage is beautiful but marginally self-indulgent at the sentence level.",
+      "impact": "Low. The passage is defensible and thematically relevant. But a tighter version would maintain Kaelith's tactical-first voice more cleanly — she would note the colour anomaly, not philosophize about naming.",
+      "recommendation": "Revision: Consider tightening the middle section to ~15 words. Example: 'Through the gaps she could see the true sky — the colour of a world the Pallor had covered since before names.' Preserves atmosphere, removes the 'Not blue. Not black.' meditation that reads as voice deviation."
+    }
+  ],
+
+  "observations": [
+    {
+      "id": "OBS-019-001",
+      "category": "voice-excellence",
+      "description": "The 3-4 sentence POV identification test is a textbook pass. 'Two exits. One road south.' — Kaelith is identifiable within the first TWO WORDS. The contrast with Ch18's opening ('Decision: accept delay in target execution following Pallor-Oathbrand correlation, day two. Binding probability: high.') is immediate and total. The voices are unmistakably different minds.",
+      "invariant": "INV-003, INV-034"
+    },
+    {
+      "id": "OBS-019-002",
+      "category": "dual-arc-interleave-quality",
+      "description": "This chapter achieves the highest quality dual-arc interleave in the manuscript. The fantasy plan and romance reconciliation are structurally inseparable — you cannot advance one without the other. SCN-54's intelligence exchange IS trust rebuilding. SCN-55's strategy session IS the reconciliation's operational test. Kaelith's consent line ('If I am trusting you with the world, I can trust you with this') places the personal inside the global in a single sentence. The interleave is not alternation — it is fusion.",
+      "invariant": "T12"
+    },
+    {
+      "id": "OBS-019-003",
+      "category": "vulnerability-ladder-execution",
+      "description": "Step 10 (Kaelith names deepest fear) is among the strongest emotional moments in the manuscript. The fear naming — 'I am afraid that choosing love will put me back in Calwrath. That loving you will mean I become the blast radius of my own decisions again' — is earned through: (1) the entire preceding chapter's structure (isolation revealed as lie, bond signaling approach, choice to stay rather than flee), (2) the voice deviation being explicitly marked ('the voice underneath the commander'), (3) the emotion naming in dialogue being the EXCEPTION that proves the rule (Kaelith's default is physical emotion showing). Lirien's response ('Then we burn together') matches the structural commitment without sentimentality.",
+      "invariant": "T21, INV-005"
+    },
+    {
+      "id": "OBS-019-004",
+      "category": "show-dont-tell-discipline",
+      "description": "Zero narrative tell-not-show violations found by automated scan. All major emotional beats are shown through physical sensation (jaw tightening, heat climbing neck, cold in arm, phantom collarbone ache), structural metaphor (keystone finding its seat, cracked foundations bearing weight, load-bearing trust), or bond-transmitted emotional quality (grief, determination, sincerity as received data). Emotion words in narrative ('fear,' 'grief,' 'shame,' 'relief') appear exclusively in bond-transmission context, where they function as sensory data rather than narrator declaration. Emotion naming in dialogue at Step 10 is a deliberate and earned breach of the default.",
+      "invariant": "INV-005, INV-017"
+    },
+    {
+      "id": "OBS-019-005",
+      "category": "continuity-integrity",
+      "description": "The continuity integrator performed 48 verification checks with only 2 minor corrections (timeline 'months'→'weeks', source count alignment). Zero knowledge leaks. Zero deus ex machina violations. Bond mechanics consistent across 21 references. All six foreshadowing elements properly serviced. All names consistent with registry. The chapter's factual integrity is excellent.",
+      "invariant": "INV-002, INV-009, INV-056"
+    },
+    {
+      "id": "OBS-019-006",
+      "category": "subtext-quality",
+      "description": "Every major dialogue exchange operates on two levels simultaneously. 'Commander' = 'you are not what they made you.' Cipher presentation = 'I killed my old self for you.' 'Everything after the Oathbrand was mine' = 'the love was real even if the beginning was not.' 'Then we burn together' = 'love is not safety, love is chosen risk.' 'If I'm trusting you with the world, I can trust you with this' = 'the personal is not separate from the global.' The surface/subtext gap is consistently maintained without becoming opaque.",
+      "invariant": "T24"
+    },
+    {
+      "id": "OBS-019-007",
+      "category": "thematic-argument-dramatization",
+      "description": "All three thematic pillars dramatized through action rather than statement. TP-1 (trust as structural failure): 'cracked foundations could bear weight, if you understood where the fractures ran' — trust as engineering, not emotion. TP-2 (price of right choice): both name the cost and proceed — fear naming IS the price, consent to the loophole IS the right choice. TP-3 (chosen vs. only): the core of the chapter — 'She could be in the tree cover in forty seconds. She could disappear.' She stays. The cage is open. She walks back in.",
+      "invariant": "T25"
+    },
+    {
+      "id": "OBS-019-008",
+      "category": "motif-weaving",
+      "description": "All five active motifs present and correctly deployed: MOT-001 Pallor/silver (silver in veins past elbow, three fingers, Pallor overhead thin and breathing, Ythara sky visible through gaps). MOT-002 Oathbrand ghost (phantom collarbone ache, twice — the wound that persists after healing). MOT-003 Water exception (ONE water image — 'current breaking through a dam' — with meta-awareness that it is Lirien's influence, correctly flagged in prose). MOT-004 Quietus body-pull (kinetic memory pulling northeast, 'needle swinging to north'). MOT-005 Ythara (raw unmade sky visible through Pallor gaps).",
+      "invariant": "T16"
+    },
+    {
+      "id": "OBS-019-009",
+      "category": "craft-tool-compliance",
+      "description": "All 16 craft tools from craft-profile.json verified as correctly applied by both the craft enforcer (16/16 PASS, 48 tool-scene checks, 0 violations) and independently verified in this audit. Strongest applications: T12 (dual-arc interleave — structurally inseparable arcs), T21 (vulnerability ladder — Step 10 peak), T24 (subtext in dialogue — every exchange operates on two levels), T17 (voice fingerprinting — sharply distinct from Ch18), T25 (thematic argument — all three pillars dramatized through action).",
+      "invariant": "INV-079"
+    },
+    {
+      "id": "OBS-019-010",
+      "category": "tone-contract-compliance",
+      "description": "Tone contract fully maintained. No forbidden tones detected: no whimsical/twee (reconciliation is steel, not sweetness), no grimdark nihilism (hope exists as structural choice — 'Sound enough'), no sentimentality/melodrama (explicitly 'Not forgiveness'), no campy self-awareness, no epic-triumphant ('The plan was impossible'), no expository/pedagogical (intelligence briefing format organic to scene). Dry wit present in Kaelith's register ('Sound enough. It would have to be.'). Morally complex tone sustained throughout — the reconciliation acknowledges damage rather than erasing it.",
+      "invariant": "T5"
+    },
+    {
+      "id": "OBS-019-011",
+      "category": "scene-structure",
+      "description": "All three scenes have verified five commandments (inciting incident, complication, crisis, climax, resolution) and clear value shifts. SCN-53: isolation-as-identity → isolation revealed as lie. SCN-54: can I trust her → I choose to trust her knowing the risk. SCN-55: together again → together with a plan that might kill them both. Scene types correctly deployed: sequel (SCN-53, processing Ch16-17), scene (SCN-54, confrontation), scene (SCN-55, strategy). Pacing rises from quiet to intense to purposeful.",
+      "invariant": "T13, scene structure"
+    },
+    {
+      "id": "OBS-019-012",
+      "category": "romance-beat-delivery",
+      "description": "Romance beat 'Reunion Through Truth — I Choose This. I Choose You.' fully delivered. The reunion is deliberate, not dramatic — no grand gestures, no sweeping embrace, no instant forgiveness. Lirien stops at ten paces (beyond arm's reach — a distance that requires decision to close). Kaelith's consent is steel, not warmth ('If I am trusting you with the world, I can trust you with this'). The reconciliation is framed as engineering: mapping cracks, distributing load, building on damaged foundation. This is consistent with both characters' voices and with the tone contract's prohibition on sentimentality.",
+      "invariant": "INV-001, T7, T21"
+    },
+    {
+      "id": "OBS-019-013",
+      "category": "fantasy-beat-delivery",
+      "description": "Fantasy beat 'Break into Three — Shared Plan to Exploit Contract Loophole and Reach Quietus' fully delivered. The plan has two paths: (1) dissolution at Quietus via cooperative work (primary), (2) heartbeat cessation fallback. Three independent intelligence sources corroborate. Defected Architect precedent establishes the mechanism is proven. Three-day timeline with Ashborne relay points. The plan is presented as 'impossible' but 'the only plan that works' — maintaining tonal integrity.",
+      "invariant": "INV-001"
+    },
+    {
+      "id": "OBS-019-014",
+      "category": "stakes-escalation",
+      "description": "Stakes properly escalated from Ch18 (tension 6) through Ch19 (tension 7). Personal: Pallor claiming Kaelith's body accelerating (past elbow, three fingers, 'Hours, perhaps'). Relational: trust rebuilt on damaged foundation, immediately tested by plan requiring literal life-and-death trust. Existential: Quietus timeline, Ythara sky visible through gaps, god-seal approach. The escalation trajectory (7 → Ch20 tension 10) is properly positioned.",
+      "invariant": "T6"
+    },
+    {
+      "id": "OBS-019-015",
+      "category": "prose-quality-positive",
+      "description": "Several passages demonstrate exceptional prose craft: (1) 'cracked foundations could bear weight, if you understood where the fractures ran and distributed the load accordingly' — trust as structural engineering, quintessentially Kaelith. (2) 'like a keystone finding its seat — the precise, irreversible moment when the weight of the arch transfers and the structure either holds or collapses' — decision as architecture. (3) 'Sound enough. It would have to be.' — a closing that carries the chapter's entire emotional argument in five words."
+    }
+  ],
+
+  "sceneBySceneBreakdown": {
+    "SCN-53": {
+      "lineRange": "15-138",
+      "wordCount": 1907,
+      "type": "sequel",
+      "outlineCompliance": "FULL — all four beats delivered (arrival/recognition, Ashborne dialogue, internal processing, bond signal/stay decision). Five commandments present: inciting incident (Rivenmarch arrival), complication (Ashborne loyalty), crisis (accept loyalty or maintain isolation fiction), climax (bond signals Lirien's approach), resolution (Kaelith stays).",
+      "valueShift": "From 'I am here for the mission' → 'she is coming and I cannot pretend the mission is all I feel.' Verified present.",
+      "voiceCompliance": "Strong. Opening is textbook Kaelith inventory mode. Military/architectural vocabulary density: 42 terms. Zero water metaphors (correct for Kaelith without Lirien present). Physical emotion showing throughout. One vulnerability: 8 'She' starters on page 7 (see WARN-019-001).",
+      "tensionContinuity": "No dead spots. Tension builds from tactical assessment (4) through emotional recognition (5-6) to anticipatory peak (6-7) as bond signals approach.",
+      "craftToolsVerified": "T5 (tone: understated reunion, no melodrama), T6 (stakes: Pallor progression, isolation collapse), T8 (internal: Calwrath guilt, flight impulse; external: silver claiming body), T16 (MOT-001 Pallor, MOT-002 Oathbrand ghost, MOT-004 Quietus pull), T17 (voice consistent), T20 (emotional arc: grief-tinged resolve → disorientation → terrified stillness), T25 (TP-3 chosen vs. only: she stays)",
+      "issues": "WARN-019-001 applies (She-starter density pages 6-7). Otherwise clean."
+    },
+    "SCN-54": {
+      "lineRange": "139-279",
+      "wordCount": 2203,
+      "type": "scene",
+      "outlineCompliance": "FULL — all four beats delivered (bond opening/tactical assessment, cipher+confrontation dialogue, fear naming/vulnerability apex, decision crystallization). Five commandments present: inciting incident (Lirien arrives, bond opens), complication (cipher + proof of choice + admission of fault), crisis (accept knowing damaged ground or send away), climax (Kaelith names deepest fear, Lirien responds 'Then we burn together'), resolution (decision crystallizes, bond opens fully, 'not forgiveness — decision').",
+      "valueShift": "From 'can I trust her again?' → 'I choose to trust her again, knowing the risk.' Verified present and earned through five supporting elements (cipher, intelligence, one verified act, bond transparency, admission of fault).",
+      "voiceCompliance": "Strong with earned evolution. Military vocabulary maintained in tactical assessment passages. Voice softens appropriately during vulnerability apex — longer sentences, one water metaphor (approved, meta-aware), emotion naming in dialogue at Step 10 (earned). 'She looked at the woman who...' anaphoric triple is a deliberate rhetorical device.",
+      "tensionContinuity": "Chapter's tension peak (~7-8). Tension modulates through informational (cipher), relational (accusation exchange), emotional (vulnerability naming), and resolution tension. No flat spots.",
+      "craftToolsVerified": "T5 (no melodrama in reunion — ten paces, not embrace), T7 (black moment wounds active and confronted — 'You carried a death contract'), T8 (Calwrath fear named explicitly), T10 (bond mechanics consistent — emotional quality, not factual content), T12 (peak interleave — intelligence exchange IS trust rebuilding), T17 (voice evolution earned), T21 (Step 10 — highest vulnerability in book), T24 (subtext in every exchange), T25 (TP-1 trust as structural failure, TP-2 price of right choice, TP-3 chosen vs. only)",
+      "issues": "None. This is the chapter's strongest scene."
+    },
+    "SCN-55": {
+      "lineRange": "281-383",
+      "wordCount": 1610,
+      "type": "scene",
+      "outlineCompliance": "FULL — all four beats delivered (strategy session, contract loophole discussion, internal processing, consent/plan commitment). Five commandments present: inciting incident (strategy session begins), complication (loophole requires Kaelith to trust Lirien with her life literally), crisis (commit to dangerous plan or seek safer approach), climax ('If I am trusting you with the world, I can trust you with this'), resolution (plan set, three days, 'Sound enough').",
+      "valueShift": "From 'together again' → 'together with a plan that might kill them both.' Verified present. Trust immediately tested under operational pressure.",
+      "voiceCompliance": "Strong. Command voice returns naturally — 'not as mask but as function.' Military/architectural vocabulary density high (26 terms). Planning sequences maintain percussive short rhythm. One minor concern: 'Warden capacity' instead of 'Warden-adjacent capabilities' (see MF-019-003).",
+      "tensionContinuity": "Tension redirected from emotional to operational (~7). Sustained through tactical unknowns, literal life-and-death stakes of loophole, Pallor timeline compression ('Hours, perhaps'), and trust test embedded in every planning decision. Forward momentum: 'Three days.'",
+      "craftToolsVerified": "T5 (taut professional tone), T6 (existential stakes: god-seal, Pallor thinning; personal stakes: 'I would need to stop your heart'), T10 (contract mechanics clearly grounded in established rules), T12 (strategy session IS trust exercise), T13 (proper tension 7 placement between Ch18-6 and Ch20-10), T15 (FS-012, FS-021, FS-022 advanced), T23 (MB-008, MB-011, MB-013, MB-014 advanced), T25 (trust as engineering: 'If I'm trusting you with the world...')",
+      "issues": "MF-019-003 (Warden capacity phrasing). Otherwise clean."
+    }
+  },
+
+  "darlings": [
+    {
+      "id": "DARL-019-001",
+      "location": "Lines 41-42, SCN-53",
+      "passage": "'Through the gaps she could see the true sky — darker, older, the colour of a world that had never been covered. Not blue. Not black. Something between, something the eye did not have a name for because the Pallor had existed since before names.'",
+      "wordCount": 47,
+      "beauty": "High — the 'Not blue. Not black. Something between' meditation on unknowable colour is evocative and atmospheric.",
+      "function": "Moderate — establishes Pallor instability and Ythara visibility. Advances MOT-001 and MOT-005. But 30 of these 47 words could be condensed to ~12 without losing the atmospheric function.",
+      "verdict": "BORDERLINE DARLING — beautiful writing that partially serves but is ~60% more elaborate than function requires. Flagged for revision consideration. See WARN-019-002.",
+      "storyService": "The Pallor's thinness at Rivenmarch is plot-critical (foundation for Quietus plan). The sensory description is Kaelith's voice. The elaboration on naming ('because the Pallor had existed since before names') is the part that tips toward darling — it's a philosophical aside that reads more like omniscient narration than Kaelith's tactical observation mode."
+    },
+    {
+      "id": "DARL-019-002",
+      "location": "Lines 237-238, SCN-54",
+      "passage": "'She looked at the woman who had walked into her life with surveillance masquerading as attention and assessment masquerading as care. She looked at the woman who had removed the Oathbrand, who had sat with the Calwrath confession without flinching, who had said I want this too with a contract binding her to the opposite. She looked at the woman who had destroyed her cipher and walked north carrying intelligence and shame and one verified act of free choice...'",
+      "wordCount": 114,
+      "beauty": "High — the anaphoric 'She looked at the woman who' triple builds cumulative emotional weight through specific, concrete details rather than abstract sentiment.",
+      "function": "High — this is the decision's preamble. Each 'She looked' forces Kaelith (and the reader) to hold contradictory truths simultaneously: surveillance AND care, contract AND genuine choice, destruction AND intelligence. The passage is doing essential emotional work.",
+      "verdict": "NOT A DARLING — passes the function test. The beauty serves the story. The specificity (surveillance/attention, assessment/care, cipher/intelligence/shame/one verified act) is load-bearing. Preserve."
+    }
+  ],
+
+  "remediationNotes": [
+    {
+      "priority": "moderate",
+      "issue": "She-starter density in SCN-53/SCN-54 transition (WARN-019-001)",
+      "recommendation": "Reduce peak 'She [verb]' density by 30-40% in the lines 100-138 zone. Preserve the deliberate triads (negation patterns, anaphoric accumulation) but break the 8-sentence run on page 7. Techniques: lead with observation ('The tree cover was forty seconds away'), fragment sentences ('Forty seconds to the tree line'), or passive constructions ('The terrain was known'). The percussive voice should remain — the goal is variety within the rhythm, not elimination of the rhythm."
+    },
+    {
+      "priority": "low",
+      "issue": "Pallor description borderline darling (WARN-019-002)",
+      "recommendation": "Consider tightening the 'Not blue. Not black. Something between' meditation from ~30 words to ~12 words. Kaelith would note the colour anomaly briefly and move on — she does not philosophize about naming. Proposed: 'Through the gaps she could see the true sky — the colour of a world the Pallor had covered since before names.' Preserves atmosphere and motif, removes the mid-passage meditation."
+    },
+    {
+      "priority": "low",
+      "issue": "Warden capacity phrasing (MF-019-003)",
+      "recommendation": "Change 'Kaelith's Warden capacity' (line 313) to 'Kaelith's Warden-adjacent capabilities' or 'whatever capacity she carried' to maintain the epistemic uncertainty of FACT-006. Kaelith should not identify herself with a term of certainty ('Warden capacity') when she doesn't know her lineage."
+    },
+    {
+      "priority": "low",
+      "issue": "Metadata reconciliation (MF-019-001, MF-019-002)",
+      "recommendation": "Update chapter-019.json targetWordCount from 4000 to 5800 (sum of beat allocations). Update information-asymmetry-map.json FACT-007 and FACT-011 revealedToReader to the actual reveal chapters."
+    }
+  ],
+
+  "secondPassResults": {
+    "description": "Per anti-laziness rules, a second adversarial pass was conducted specifically hunting for cliche phrases, tell-not-show violations, static scenes, voice breaks, and darlings.",
+    "clicheSecondPass": "Zero additional cliches found. The prose consistently uses original metaphors grounded in Kaelith's military/architectural vocabulary: 'like a fist to the sternum,' 'like a siege stone,' 'like wet linen over a wound that kept opening,' 'like a keystone finding its seat,' 'like a compass finding north.' None of these are fantasy genre cliches.",
+    "tellNotShowSecondPass": "Zero additional violations. The only emotion words in narrative appear in bond-transmission context (functioning as received sensory data) or in dialogue (the Step 10 vulnerability apex). The voice maintainer's correction of 'She was terrified' → physical inventory fragments was effective.",
+    "staticSceneSecondPass": "No static scenes (scenes with no value shift). All three scenes have verified, earned value shifts. The quietest passage (Ashborne processing, lines 75-100) sustains tension through the implications of isolation being a lie and the approaching bond signal.",
+    "voiceBreakSecondPass": "No voice breaks detected beyond the items already flagged (WARN-019-002 Pallor naming meditation, MF-019-003 Warden capacity phrasing). The 'processed' usage (3 instances) and 'framework' (1 instance) are slightly modern-register but defensible within Kaelith's military-analytical voice. The voice maintainer corrected the most significant incursions (probability→odds, parameters→requirements, evidence of ambiguity→everything that could not be proven).",
+    "darlingsSecondPass": "One borderline darling identified (DARL-019-001, Pallor description). One examined and cleared (DARL-019-002, anaphoric 'She looked' triple). No additional darlings found. The chapter's descriptions are generally tight and functional."
+  },
+
+  "upstreamReportVerification": {
+    "voiceMaintainer": {
+      "claimedScore": "9/10 voice, 9/10 distinctness",
+      "auditorAssessment": "Substantially agree. Voice is sharply distinct and maintained throughout. The 9/10 scores are justified. The She-starter density issue (WARN-019-001) would reduce my score slightly to 8.5/10 for voice, but distinctness remains 9/10.",
+      "corrections": "5 corrections applied. All were appropriate. The major correction (INV-005 violation: 'She was terrified' → physical showing) was essential. The four minor register corrections were warranted."
+    },
+    "continuityIntegrator": {
+      "claimedResult": "48 verifications, 2 corrections, 0 knowledge leaks",
+      "auditorAssessment": "Confirmed. The two corrections (timeline months→weeks, source count alignment) were appropriate and necessary. The observation about FACT-007/FACT-011 revealedToReader metadata is valid. Zero knowledge leaks independently verified by this audit.",
+      "discrepancies": "None."
+    },
+    "craftEnforcer": {
+      "claimedResult": "16/16 tools passed, 48 tool-scene checks, 0 violations",
+      "auditorAssessment": "Substantially confirmed. All 16 tools are correctly applied. The craft enforcer's 4 minor observations are fair assessments (not inflated or deflated). I agree with the 0-violation verdict. The chapter demonstrates excellent craft tool compliance.",
+      "discrepancies": "None."
+    }
+  },
+
+  "findingsCounts": {
+    "critical": 0,
+    "major": 0,
+    "minor": 3,
+    "warnings": 2,
+    "observations": 15,
+    "darlings": 2,
+    "darlingsCleared": 1,
+    "darlingsFlagged": 1
+  }
+}

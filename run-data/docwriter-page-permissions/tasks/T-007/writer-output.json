@@ -1,0 +1,29 @@
+{
+  "agent": "docwriter-content-writer",
+  "taskId": "T-007",
+  "attempt": 1,
+  "action": "update-crossrefs",
+  "targetFile": "_documentation/developers-and-admins/configuration/content-versioning-configuration.md",
+  "sectionsModified": ["Permissions"],
+  "sectionsAdded": [],
+  "sectionsRemoved": [],
+  "docFactsUsed": ["permissionSummary.viewVersions"],
+  "invariantsApplied": [
+    "INV-crossref-002",
+    "INV-crossref-003",
+    "INV-crossref-005",
+    "INV-crossref-009",
+    "INV-style-132"
+  ],
+  "patternsUsed": ["PAT-009"],
+  "researchRecommendationsCited": ["REC-005"],
+  "recommendationsSkipped": [],
+  "changes": [
+    {
+      "section": "Permissions (Pages row)",
+      "line": 57,
+      "description": "Added cross-reference sentence at the end of the Pages cell: 'For details about configuring *Read* and *Update* permissions for specific roles, see {% page_link permissions_pagelevel_xp anchor=\"Edit page permissions\" linkText=\"page permission management\" %}.' This supplements the existing Read/Update permission descriptions with a descriptive link to the hub page's section on configuring page permissions for roles."
+    }
+  ],
+  "notes": "Minimal cross-reference update only — no existing content removed or rewritten. The new sentence uses descriptive link text ('page permission management') per REC-005 and INV-crossref-009, avoiding vague text like 'click here'. The anchor 'Edit page permissions' is verified against the actual heading at line 132 of page-permission-management.md (INV-crossref-005). The identifier 'permissions_pagelevel_xp' is verified against front matter at line 4 of the target page (INV-crossref-003). No 'must' directed at a person (INV-style-132 satisfied — sentence uses 'see' as the imperative, which is standard documentation phrasing). The docFact confirms Read is needed to view version history and Update to restore — the existing content already states this correctly, so no content changes were needed beyond the cross-reference addition."
+}

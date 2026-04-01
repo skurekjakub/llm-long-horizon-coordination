@@ -1,0 +1,42 @@
+{
+  "chapter": 1,
+  "engagementScore": 8,
+  "emotionalImpact": "high",
+  "pacingAssessment": "well-paced",
+  "clarityScore": 9,
+  "findings": [
+    {
+      "id": "BETA-001-001",
+      "type": "confusion",
+      "severity": "minor",
+      "description": "The sensory flash 'Plaster dust and pine resin — there and gone before she could flinch' appears mid-scene with no context. It reads like an involuntary memory or magical flashback but is never explained or connected to anything. A reader encountering this will pause trying to figure out what just happened.",
+      "location": "Scene 3, paragraph beginning 'The smart move was to leave' — single line between paragraphs",
+      "readerImpact": "Momentary confusion. Reader may re-read the surrounding paragraphs looking for context. If this is a planted seed for later payoff (kinetic memory surfacing?), it needs a tiny framing cue — even Kaelith registering surprise — to signal it's intentional, not an editing artifact."
+    },
+    {
+      "id": "BETA-001-002",
+      "type": "observation",
+      "severity": "observation",
+      "description": "At ~2,281 words, the chapter is short. It reads complete — the three-scene structure (patrol/Oathbrand/Pallor → surveillance detection → Tavik/room) covers enough ground — but a reader who paid full price for a fantasy novel may feel this is more of a prologue than a first chapter. The final scene (Kaelith in her room assessing threats) runs slightly long relative to the information it delivers, as it revisits conclusions the reader has already drawn from the earlier scenes.",
+      "location": "Scene 3, final paragraphs from 'She owned: a belt knife...' to end",
+      "readerImpact": "Low risk. The voice is strong enough to carry it. But trimming the explicit resource inventory and 'if/if/if' section by ~200 words would make the ending hit harder. The closing line ('She just wasn't sure how long she would') is excellent — getting there faster would improve it."
+    },
+    {
+      "id": "BETA-001-003",
+      "type": "engagement-drop",
+      "severity": "minor",
+      "description": "The section where Kaelith itemizes her assets (belt knife, clothes, no coin) and then separately reflects on magic and the brand's suppression covers similar emotional ground to the earlier scene where the brand flares during patrol. The reader already understands she's suppressed and under-resourced. The double pass slightly dilutes the impact.",
+      "location": "Scene 3, from 'She owned: a belt knife...' through 'If. If. If.'",
+      "readerImpact": "Mild pacing drag in an otherwise tight chapter. The magic reveal (feeling capacity beneath the brand) is important new information — it just arrives after a paragraph of inventory that slows momentum."
+    }
+  ],
+  "strengths": [
+    "The opening is masterful. 'The seawall held. It always held.' establishes character, setting, and thematic mode in seven words. The immediate subversion when the Oathbrand flares creates instant forward momentum.",
+    "The counting motif (stones, joints, breaths, exits, seconds) is structurally brilliant — it reveals Kaelith as someone holding herself together through measurement and control. It also functions as a readability device, giving the prose a rhythmic, almost meditative quality that makes the violence of the Pallor tear and the surveillance detection land harder by contrast.",
+    "The Pallor tear scene is the best single passage in Act I. The description of true starlight — 'light that had traveled uninterrupted from something burning impossibly far away' — is genuinely beautiful and establishes the worldbuilding through sensory experience rather than exposition.",
+    "Kaelith's voice is immediately distinctive: dry, structural, self-aware. 'Pain was information. The information was: you're not safe.' This is a protagonist readers will want to follow.",
+    "The Tavik conversation is a small masterclass in subtext. Every line does double duty — surface meaning plus the reader's growing awareness that Tavik is compromised. 'Can't, or won't?' / 'Does it matter?' is excellent.",
+    "The chapter ends with genuine emotional impact. 'They were shaking now' after pages of 'her hands were steady' is devastating because it was earned through restraint. The closing callback to the seawall completes the structural metaphor perfectly."
+  ],
+  "verdict": "strong"
+}

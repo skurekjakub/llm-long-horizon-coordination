@@ -1,0 +1,273 @@
+{
+  "chapter": 14,
+  "pov": "CHAR-002",
+  "povName": "Lirien Dael",
+  "agentRole": "line-editor",
+  "timestamp": "2025-07-29T09:30:00Z",
+  "draftWordCount": 5125,
+  "summary": "Ch14 line edit: 20 findings (3 critical, 7 major, 5 minor, 5 notes). Critical: water-metaphor + operative-vocabulary saturation (12 water metaphors + 14 operative-vocabulary instances = voice markers in most paragraphs — Scene 2 intimacy most affected with 16 markers in ~1600 words), 'Through the bond' sentence-opener repetition (11 instances — a direct continuation of the ch12-ch13 systemic pattern), 'Not X' negative-elimination rhetorical pattern (22 instances — exceeding ch13's 17+ count, now a confirmed drafter habit). Major: subtext over-explanation at L150 ('Minor meant... I know meant...'), cliché at L306 ('irony so sharp it drew blood'), stock simile at L38 ('compass needle finding north'), 'terrifying' emotion label used twice as tell-not-show (L90, L216), subtext explanation at L224-225, tell-label at L262 ('The generosity of it'), 80-word compound sentence at L200 abstracting the intimacy climax. Root cause: the same over-narration pattern from ch12-ch13 — the prose explains and classifies experience rather than trusting the reader to infer from action, dialogue, and sensory detail. The intimacy scene is most affected: the operative-assessment overlay during the sex scene should thin as control breaks down, but instead it remains at full density, contradicting the narrative's own claim that Lirien's classification system has been overwhelmed. Prose strengths: combat sequence is the manuscript's tightest action writing to date, dialogue is flawless throughout (zero subtext failures, zero over-voicing in speech), the Vael Seren harbour passage is outstanding indirect revelation, the contract loophole discovery is logically compelling and emotionally devastating, zero banned phrases, zero purple prose, perfect micro-tension, strong MRU compliance. Verdict: PASS with mandatory thinning — underlying prose is publication-quality once voice markers are reduced ~50%, bond openers reduced ~65%, and negative-framing patterns varied.",
+  "findingSummary": {
+    "critical": 3,
+    "major": 7,
+    "minor": 5,
+    "note": 5,
+    "total": 20
+  },
+  "findings": [
+    {
+      "id": "LINE-014-001",
+      "severity": "critical",
+      "category": "voice",
+      "description": "Voice marker saturation — water metaphors, operative vocabulary, and classification framing. The chapter contains 12 water/current/dissolution metaphors across 5125 words (one every ~425 words). Additionally, 14+ operative-vocabulary instances ('operational parameters,' 'status report,' 'tactical silence,' 'risk assessment,' 'probability tree,' 'cover for,' 'classified,' 'catalogued,' etc.) appear across the chapter, with particular density in Scene 2. Combined, the chapter deploys ~26 voice markers across ~5100 words — approximately one every 196 words, present in the vast majority of paragraphs. Scene 2 (the intimacy scene, L106-217) is most severely affected: 5 water metaphors + 10 operative-vocabulary instances = ~15 voice markers in ~1600 words (one every ~107 words). The style guide states: 'Metaphors must come from the POV character's lived domains' and the voice fingerprint notes that emotional destabilization should show through 'sentence shortening' and 'the absence of assessment.' The narrative at L212 claims Lirien's 'system that classified things had been overwhelmed' — but the prose surrounding this claim continues deploying the classification system at full density ('the operational lexicon' L139, 'operational scanning' L142, 'operational parameters' L164, 'operational gentleness' L184, 'operational requirement' L196), contradicting the character arc the scene is meant to embody. The voice should thin as emotional overwhelm increases, not maintain its full vocabulary. This is a continuation of the systemic saturation pattern flagged as critical in ch12 (LINE-001) and ch13 (LINE-013-001).",
+      "lineRef": { "start": 12, "end": 344 },
+      "instances": [
+        "WATER METAPHORS — L58: 'like water off oiled stone'; L84: 'surfacing from deep water'; L88: 'a current that Lirien could not classify'; L138: 'like a current beneath still water'; L170: 'dissolved like sugar in warm water'; L188: 'like water through packed earth'; L190: 'Water. Everything came back to water... She was the water'; L200: 'the same current'; L222: 'viewed through water'; L252: 'like stones dropped into still water'; L268: 'like tidewater... Rising through the cracks'; L328: 'water knew downhill'",
+        "OPERATIVE VOCABULARY — L88: 'operational vocabulary'; L108: 'People first' (field-note habit); L114: 'clinical in execution'; L116: 'Status report. Cover for'; L126: 'tactical silence'; L128: 'operational explanation'; L139: 'operational lexicon'; L142: 'operational scanning'; L164: 'operational parameters' / 'probability tree'; L166: 'Risk assessment'; L184: 'operational gentleness' / 'compromised asset'; L196: 'operational requirement'; L212: 'classified'"
+      ],
+      "suggestedFix": "Reduce water metaphors to 6-7 total (from 12). Keep the strongest and most emotionally loaded: L170 (sugar in warm water — the pivotal kiss), L188 (water through packed earth — specific and earned), L268 (tidewater guilt — unique and chapter-specific), L328 (water knew downhill — beautiful close-of-chapter). Cut or replace: L58 (replace with non-water combat comparison), L84 (replace 'surfacing from deep water' with a different sensation — perhaps auditory, given the suppression field's described effect on her inner ear), L88 ('current' — use a different word for the unclassifiable feeling), L222 ('through water' — use a different visual distortion), L252 ('stones dropped into still water' — this is the third water-dissolution simile; use plain prose or a different domain). Delete L190 entirely — 'Water. Everything came back to water' is meta-commentary that announces the motif rather than embodying it, violating the style guide's prohibition against 'metaphors that announce theme instead of embodying it.' For operative vocabulary: reduce to ~8 uses by cutting from the intimacy scene, where the classification framework should visibly crack. Specifically: cut 'operational scanning' at L142 (let 'the specific act of seeing' stand alone), cut 'operational gentleness' at L184 (rephrase as 'Not the gentleness she had used on people who needed managing'), cut 'operational requirement' at L196 (rephrase without the word 'operational'). Let the operative vocabulary concentrate in Scene 1 (combat — where it belongs) and thin progressively through Scene 2, mirroring Lirien's actual emotional state. By the time she reaches 'This woman. This warmth.' at L212, the operative vocabulary should have disappeared."
+    },
+    {
+      "id": "LINE-014-002",
+      "severity": "critical",
+      "category": "repetition",
+      "description": "'Through the bond' and bond-mechanism sentence openers appear 11 times in 344 lines — once every ~31 lines. While improved from ch12's 23 instances and ch13's 24, the construction remains mechanical, especially the 'Through the bond:' colon-opener which appears 7 times as a sentence starter (L16, L34, L54, L80, L112, L138, L210). The colon construction creates a predictable narrative rhythm: the reader can anticipate that every few paragraphs will open with 'Through the bond:' followed by a catalogue of Kaelith's transmitted state. In Scene 1 (combat), 6 bond references appear in 90 lines — one every 15 lines — making the combat feel more like a bond-demonstration than a fight. The bond's existence is established by L16; after that point, the reader does not need the mechanism cited for every transmission. The information can arrive directly in Lirien's awareness without labeling the channel.",
+      "lineRef": { "start": 16, "end": 316 },
+      "instances": [
+        "L16: 'Through the bond: a sharp, clean awareness. Not words. Not thoughts.'",
+        "L34: 'Through the bond: Kaelith's heartbeat, elevated but steady.'",
+        "L54: 'Through the bond: Kaelith's satisfaction, brief and fierce.'",
+        "L80: 'Through the bond: Kaelith's acknowledgment, not as words but as a shift in direction.'",
+        "L88: 'Through the bond: Kaelith's breathing, harsh and ragged.'",
+        "L96: 'Through the bond, Kaelith's rib pain pulsed'",
+        "L112: 'Through the bond: the dull heat of bruised tissue.'",
+        "L138: 'Through the bond: the specific warmth that Lirien had spent weeks learning to recognize'",
+        "L210: 'Through the bond: Kaelith's state — a warmth so unfamiliar it registered as almost painful.'",
+        "L260: 'The bond doesn't transmit details, but it transmits the weight.' (Kaelith dialogue — appropriate)",
+        "L316: 'Through the bond, Lirien felt the restraint'"
+      ],
+      "suggestedFix": "Cut to 4-5 total. Keep: L16 (establishing — the reader's first bond transmission in this chapter), L96 (pain-as-debt — the metaphor makes it earn its slot), L210 (post-intimacy — emotionally significant and structurally necessary for the scene transition), L260 (Kaelith's dialogue — this is character speech, not narration). Cut the remaining 7 opener instances. For combat bond transmissions (L34, L54, L80, L88), render what Lirien perceives directly: instead of 'Through the bond: Kaelith's heartbeat, elevated but steady,' try 'Kaelith's heartbeat arrived at her sternum — elevated, steady, the particular calm of a woman who had spent a decade reading battlefields.' Instead of 'Through the bond: Kaelith's acknowledgment, not as words but as a shift in direction,' try 'Kaelith shifted direction. Lirien felt it as displacement — the specific way Kaelith's presence angled in the bond's topology.' The reader knows the bond is active; trust them."
+    },
+    {
+      "id": "LINE-014-003",
+      "severity": "critical",
+      "category": "repetition",
+      "description": "'Not X' negative-elimination rhetorical construction used 22 times across 344 lines — once every ~16 lines. This exceeds ch13's 17+ instances (flagged as part of critical finding LINE-013-001) and confirms it as a systemic drafter habit. The construction takes multiple forms: 'Not X. Y.' (reframing), 'Not X — Y' (contrast), 'Not X, not Y' (elimination), and 'Not death. Not permanent termination. Not destruction...' (accumulation). While the pattern is thematically resonant for a character who defines herself by what she isn't (an operative who classifies by exclusion), 22 instances create a rhythmic monotone — the reader begins to predict that every significant observation will arrive through the gateway of 'here is what this is NOT, and here is what it IS.' The pattern is especially dense in Scene 2 (L106-217: 10 instances in ~1600 words — one every 160 words) and Scene 3 (L220-344: 8 instances in ~1800 words). The accumulation deadens impact: by the time the chapter reaches 'Not death. Not permanent termination. Not destruction...' at L288, the reader has been through so many negative framings that the rhetorical escalation fails to escalate.",
+      "lineRef": { "start": 16, "end": 320 },
+      "instances": [
+        "L16: 'Not words. Not thoughts.'",
+        "L46: 'Not see — *feel*.'",
+        "L52: 'Not a killing blow.'",
+        "L62: 'It was not a plan.'",
+        "L66: 'Not a visual.'",
+        "L76: 'Not because it was easy.'",
+        "L92: 'Not through superior numbers. Not through tactical surprise.'",
+        "L126: 'Not tactical silence'",
+        "L138: 'Not gratitude. Not desire'",
+        "L156: 'Not to Kaelith's wound.'",
+        "L170: 'Not the first kiss'",
+        "L172: 'not pain'",
+        "L184: 'Not clinical care. Not operational gentleness'",
+        "L196: 'Not the desire'",
+        "L252: 'not a sob, not anything that dramatic'",
+        "L276: 'Kaelith was not a wall. And the contract was not architecture.'",
+        "L288-290: 'Not death. Not permanent termination. Not destruction...'",
+        "L296: 'not a duration'",
+        "L302: 'Not a clean one'",
+        "L314: 'Not a lie. Not the truth.'",
+        "L320: 'Not *execute target*.'",
+        "Plus: L160 'it was not a word that matched'"
+      ],
+      "suggestedFix": "Reduce to 8-10 instances. Keep the strongest — those where the negative framing is essential to meaning: L16 ('Not words. Not thoughts.' — establishes the bond's non-verbal quality), L92 ('Not through superior numbers. Not through tactical surprise.' — the rhetorical accumulation is earned here as combat debrief), L138 ('Not gratitude. Not desire' — the elimination sequence IS the discovery), L276 ('Kaelith was not a wall' — thematic reversal of the entire story's metaphor system), L288-290 ('Not death. Not permanent termination.' — contract-parsing where the negative framing mirrors legal exclusion), L314 ('Not a lie. Not the truth.' — morally essential). Cut the rest by restructuring: L46 'Not see — *feel*' → 'She felt Kaelith moving before she saw her.' L52 'Not a killing blow. A disruption.' → 'A disruption — across the thigh.' L66 'Not a visual. A sensation' → 'A sensation' (let the reader discover it's not visual). L170 'Not the first kiss' → 'The second kiss' or restructure the sentence. L184 'Not clinical care. Not operational gentleness' → 'A care she had never deployed professionally.' Vary the rhetorical architecture: use direct statement, metaphor, or simple contrast ('this was different' or 'the word was wrong for it') instead of the 'Not X' gateway."
+    },
+    {
+      "id": "LINE-014-004",
+      "severity": "major",
+      "category": "dialogue",
+      "description": "Subtext over-explanation at L150-151. The prose unpacks what 'minor' and 'I know' mean immediately after the dialogue has communicated it through context: 'The gap between *minor* and *I know* held everything. Minor meant: the injury is insignificant. I know meant: the injury is insignificant, and I still need to touch it, and this need is not about medicine.' The style guide's showDontTellRules.prohibitedShortcuts include 'explaining subtext immediately after dialogue.' The scene's physical context (Lirien's lingering hands, the clinical gesture 'if not in origin,' the cover-story status report) has already conveyed exactly what the prose then explains. The explanation strips the subtext of its power — it becomes text, and the reader loses the pleasure of the inference. This is especially problematic because L152-154 then meta-comments on subtext-reading itself ('Lirien had been trained to read subtext'), compounding the over-explanation.",
+      "lineRef": { "start": 150, "end": 154 },
+      "suggestedFix": "Cut L150-151 entirely. The dialogue and physical context have done the work. Retain L152-154 (the training meta-commentary) only if it is shortened and reframed as a pivot toward action rather than analysis: 'She had been trained to dismantle the layers between what a person said and what they meant. None of that training had prepared her for wanting to close the gap instead of analyzing it.' This keeps the character revelation (she wants to stop analyzing) without the preceding explanation of what was already clear."
+    },
+    {
+      "id": "LINE-014-005",
+      "severity": "major",
+      "category": "cliché",
+      "description": "Cliché metaphor at L306: 'The irony was so sharp it drew blood.' This is a well-worn figure of speech that could appear in any genre fiction unchanged — precisely the kind of transplantable metaphor the style guide prohibits. 'Sharp enough to draw blood' / 'sharp it drew blood' is stock phrasing. Additionally, the sentence names the emotion ('irony') and then applies a generic intensifier to it — a double violation of the show-don't-tell principle. The loophole discovery is powerful enough to carry itself without this summarizing cliché.",
+      "lineRef": { "start": 306, "end": 306 },
+      "suggestedFix": "Cut the line entirely. The preceding paragraph (L302-304) has already communicated the irony through content — the bond that makes them deadly in combat could save Kaelith's life by stopping her heart. The irony is self-evident and devastating; naming it diminishes it. If a beat is needed between L304 and L308, use a physical gesture or a brief silence: 'She pressed two fingers against her own pulse. Counted.' — this would mirror the loophole's mechanism (monitoring heartbeat) while carrying the emotional weight without labeling it."
+    },
+    {
+      "id": "LINE-014-006",
+      "severity": "major",
+      "category": "cliché",
+      "description": "Stock simile at L38: 'Kaelith's awareness angling toward Lirien like a compass needle finding north.' This is an extremely common comparison — 'compass needle finding north' appears across fantasy, literary fiction, and commercial fiction frequently enough to qualify as stock. The style guide's minimumMetaphorOriginality rule requires that 'every metaphor must be phrased specifically enough that it could not be transplanted unchanged into a different fantasy novel.' This simile fails that test entirely. Additionally, a compass is not part of Lirien's established metaphor domains (water, surfaces, contract logic, concealment).",
+      "lineRef": { "start": 38, "end": 38 },
+      "suggestedFix": "Replace with a domain-appropriate simile from Lirien's water/infiltration framework: 'Kaelith's awareness angling toward Lirien the way a current redirects when it finds the gap in the rock' — this uses Lirien's water domain while maintaining the directional pull concept. Or use something from the bond's established vocabulary: 'a directional pull, like the tug of a thread stitched between their ribs.' Or simplify: 'Kaelith's awareness swung toward her, precise as a blade finding its mark' (keeps combat-scene register without the stock metaphor)."
+    },
+    {
+      "id": "LINE-014-007",
+      "severity": "major",
+      "category": "show-tell",
+      "description": "Tell-not-show via emotion labeling at L90 and L216 — the word 'terrifying' used as a direct emotion label twice in the same chapter, in nearly identical sentence structures. L90: 'And the terrifying thing was how they'd won.' L216: 'That was the most terrifying thing of all.' Both sentences name the emotion directly rather than showing it through physical response or behavior. INV-005 requires emotions to be 'conveyed through action, dialogue, physical sensation — never through labels.' Using the same label twice compounds the violation: the reader encounters the pattern 'the [superlative] thing was [observation]' and it becomes a formula. The style guide's proseQualityFloor permits maxToldEmotionStatementsPerKeyScene: 3, but using the same label twice within a single chapter suggests reliance on a single emotional shortcut.",
+      "lineRef": { "start": 90, "end": 216 },
+      "suggestedFix": "L90: Replace the label with a physical manifestation. Instead of 'And the terrifying thing was how they'd won,' try: 'Her hands were shaking. Not from the fight. From what the fight had proven.' — this shows the terror through the body and connects it to the specific realization. L216: Instead of 'That was the most terrifying thing of all,' try: 'Her pulse should have spiked. It didn't. The calm itself was the warning.' — or simply let the preceding line ('She had surrendered control completely. And it had felt right.') stand as the paragraph's final beat. The juxtaposition of 'surrendered control' and 'felt right' is devastating without the label; adding 'terrifying' actually weakens the impact by explaining what the reader has already felt."
+    },
+    {
+      "id": "LINE-014-008",
+      "severity": "major",
+      "category": "dialogue",
+      "description": "Subtext over-explanation at L224-225. After Kaelith says 'What happens after?' and Lirien echoes 'After,' the prose unpacks the meaning: 'After meant: when the Quietus is reached, when the Pallor is addressed, when the crisis is resolved. After meant: *do we still exist outside the emergency?*' While less egregious than L150's violation (the italicized question adds genuine emotional content), the first sentence ('After meant: when the Quietus is reached...') is expository — it lists plot elements the reader already knows. The italicized question ('do we still exist outside the emergency?') is the real content and could stand alone or be embedded in Lirien's processing without the explanatory preamble.",
+      "lineRef": { "start": 224, "end": 225 },
+      "suggestedFix": "Cut the first 'After meant:' sentence (the plot-element list). Keep only the emotionally charged content: '\"After.\" Lirien let the word sit between them. *Do we still exist outside the emergency?*' — or restructure to show Lirien processing without explaining: '\"After.\" The word had more weight than two syllables should carry. Lirien let it sit between them.' The reader understands what 'after' means from context."
+    },
+    {
+      "id": "LINE-014-009",
+      "severity": "major",
+      "category": "show-tell",
+      "description": "Tell-label at L262: 'The generosity of it — the deliberate choice to trust without full information, from a woman whose life had taught her that trust was the structural failure that preceded collapse.' The phrase 'The generosity of it' names the emotional quality directly. The remainder of the sentence then explains why it's generous, turning a moment of character-driven showing (Kaelith's dialogue at L260 is excellent: 'I'm choosing not to demand the inventory') into narratorial commentary. The dialogue has already shown the generosity — the reader felt it. Labeling it afterward is redundant.",
+      "lineRef": { "start": 262, "end": 262 },
+      "suggestedFix": "Replace the label with a physical reaction that conveys the same emotional content: 'Lirien's throat constricted. Kaelith had been taught — by six years of exile, by the thing that happened at Calwrath — that trust was the structural failure that preceded collapse. And she was choosing it anyway.' This removes the 'generosity' label while keeping the thematic observation about Kaelith's choice, grounded in Lirien's body."
+    },
+    {
+      "id": "LINE-014-010",
+      "severity": "major",
+      "category": "prose",
+      "description": "80+ word compound sentence at L200 during the intimacy scene's climactic moment. The sentence runs: 'She didn't say it. She pulled Kaelith closer instead, and the bond made the closeness recursive — each touch echoing between them, building, until Lirien couldn't distinguish the sensation of Kaelith's skin beneath her fingers from the sensation of her own skin beneath Kaelith's, and the distinction ceased to matter because they were the same circuit, the same current, and the pleasure was something they were making together, between their bodies, in the space where two separate people briefly became one continuous thing.' At this emotional and physical peak, the prose should be at its most present, most embodied, most in-the-moment. Instead, it spirals into abstraction — 'the same circuit,' 'one continuous thing' — and the sentence length creates an intellectual distance from the physical experience. The style guide's romantic scene palette specifies 'clipped impact lines at moments of exposure or touch.'",
+      "lineRef": { "start": 200, "end": 200 },
+      "suggestedFix": "Break into 2-3 shorter sentences that alternate between the physical and the abstract, letting the moment breathe: 'She pulled Kaelith closer. The bond made the closeness recursive — each touch echoing between them, building, until the boundary between *her* pleasure and *mine* became a question neither of them was asking. They were the same current. And the pleasure was something they were making together, in the space where two people briefly became one continuous thing.' The first short sentence grounds the action. The second carries the bond-feedback. The third is a short declarative that hits. The fourth closes the thought. Rhythm: short, medium, short, long."
+    },
+    {
+      "id": "LINE-014-011",
+      "severity": "minor",
+      "category": "voice",
+      "description": "Meta-aware motif commentary at L190: 'Water. Everything came back to water. Lirien the Seep — named for the thing that finds every crack, that goes where it is not invited, that cannot be stopped once it finds the way in.' This paragraph explicitly identifies and comments on the water motif system — the character (and by extension the prose) steps back to observe the pattern. The style guide prohibits 'metaphors that announce theme instead of embodying it.' While the Seep codename explanation is valid character content, the framing 'Water. Everything came back to water' is a narrator winking at the device. The motif is more effective when it operates below conscious awareness.",
+      "lineRef": { "start": 190, "end": 190 },
+      "suggestedFix": "Remove the opening self-aware sentences. Restructure to enter the Seep meaning organically: 'The Seep. Named for the thing that finds every crack, that goes where it is not invited, that cannot be stopped once it finds the way in. She was the water, and Kaelith was the structure, and the structure was opening to her.' This preserves the codename reveal and the water/structure parallel while cutting the 'Everything came back to water' meta-observation."
+    },
+    {
+      "id": "LINE-014-012",
+      "severity": "minor",
+      "category": "voice",
+      "description": "Data insertion mid-combat at L32: 'She'd designed configurations like this herself, for three of her forty-three completions.' The specific number 'three of her forty-three' is precise in a way that feels like a character-file citation rather than a natural combat thought. Under fire, with a suppression field dampening her capabilities, Lirien would not cross-reference the exact fraction of her career spent on similar configurations. The number 'forty-three' has already appeared in earlier chapters and been established; repeating it here with the specific 'three of' fraction feels like data delivery.",
+      "lineRef": { "start": 32, "end": 32 },
+      "suggestedFix": "Simplify to remove the specific fraction: 'She'd designed configurations like this herself. Twice, at least. The geometry was familiar.' — this preserves the characterization (she has relevant experience) without the file-citation quality."
+    },
+    {
+      "id": "LINE-014-013",
+      "severity": "minor",
+      "category": "cliché",
+      "description": "Stock action-scene phrasing at L66: 'made Lirien's vision white at the edges.' The 'vision going white/grey/dark at the edges' construction is extremely common in action fiction — it's a standard shorthand for pain or shock impact. While not technically a banned phrase, it is exactly the kind of transplantable phrasing the style guide's minimumMetaphorOriginality standard is designed to catch.",
+      "lineRef": { "start": 66, "end": 66 },
+      "suggestedFix": "Replace with a more specific sensory experience grounded in the bond context: 'the bond delivered it as a body-wide flare that compressed the world to a bright, flat plane' — or use Lirien's visual-dominant sensory signature: 'that made the granite ledge and the treeline bleach to a single undifferentiated brightness.' The specificity of the description should match the specificity of the bond-transmitted pain."
+    },
+    {
+      "id": "LINE-014-014",
+      "severity": "minor",
+      "category": "voice",
+      "description": "Kaelith-domain metaphor crossover at L172-173: 'Kaelith Maren, who had held walls and counted dead and carried six years of penance in her bones, letting a sound like that escape was its own kind of structural event.' The phrases 'held walls' and 'structural event' belong to Kaelith's architectural metaphor domain. While the style guide notes that late-story intimacy bleed-through is expected and desirable (Lirien borrowing Kaelith's language), the current context is Lirien's POV during their first intimate scene. The crossover should be subtle and earn its moment — 'structural event' in particular feels like it was pulled from Kaelith's POV rather than filtered through Lirien's framework. This is distinct from L332 (see NOTE-017) where the crossover works because it appears in a reflective, post-intimacy context.",
+      "lineRef": { "start": 172, "end": 173 },
+      "suggestedFix": "Rephrase using Lirien's assessment vocabulary while keeping the meaning: 'Kaelith Maren, who had held walls and counted dead and carried six years of penance in her bones, letting a sound like that escape — it registered in Lirien's operational vocabulary as an event she had no classification for.' Or more simply: '...letting a sound like that escape was an admission Lirien did not have the framework to receive.' The 'held walls' phrase is acceptable (it's factual — Kaelith did hold walls) but 'structural event' should be translated into Lirien's domain."
+    },
+    {
+      "id": "LINE-014-015",
+      "severity": "minor",
+      "category": "prose",
+      "description": "Overwrought closing line at L102: 'The arithmetic of that was the most dangerous equation she had ever carried.' The mathematical metaphor ('arithmetic,' 'equation') is consistent with Lirien's analytical voice, but the construction 'the most [adjective] [noun] she had ever [verbed]' is a stock emphasis pattern, and 'dangerous equation' feels like it's trying too hard to be a chapter-section closer. The preceding paragraph (L98-100) has already communicated the stakes with admirable clarity: 'She had just staked her survival on a woman she was contractually bound to kill.' That line is the real closer — it's specific, devastating, and plain. L102 is a redundant intensifier.",
+      "lineRef": { "start": 102, "end": 102 },
+      "suggestedFix": "Cut L102 entirely. End the section on L100: 'She had just staked her survival on a woman she was contractually bound to kill.' — this is already a perfect section-ending line. If a beat after it is needed for pacing, use a physical gesture: 'She pressed one hand against the granite ledge and waited for her hands to stop shaking.'"
+    },
+    {
+      "id": "LINE-014-016",
+      "severity": "note",
+      "category": "cliché",
+      "description": "Stock simile at L34: 'a tightening, like a bowstring finding its draw.' While less common than 'compass needle finding north,' the bowstring-draw comparison is standard military-fantasy imagery. It's functional here and not transplantable (it's specific to the combat context), but it's worth noting as a simile that doesn't push past the genre default.",
+      "lineRef": { "start": 34, "end": 34 },
+      "suggestedFix": "Consider replacing with something from Lirien's domain: 'a tightening, like a seal finding its pressure point' — or from the bond's specific physicality: 'a tightening at the base of her sternum, as if someone were drawing thread from inside her chest.' Lower priority than the critical and major findings."
+    },
+    {
+      "id": "LINE-014-017",
+      "severity": "note",
+      "category": "voice",
+      "description": "Architectural metaphor at L332: 'Like a wall that looks identical from outside but has been completely rebuilt within — new load paths, new foundations, weight distributed differently.' This is Kaelith's metaphor domain deployed in Lirien's POV. However, this instance is more acceptable than L172 because: (a) it occurs in the chapter's reflective closing after intimacy, where voice bleed-through is thematically appropriate, and (b) the style guide notes that Lirien 'begins unconsciously using Kaelith's architectural metaphors late in the story' as 'a marker of intimacy.' Chapter 14 of 22 is borderline for 'late in the story' but the passage earns it through context. Noted for awareness, not for mandatory revision.",
+      "lineRef": { "start": 332, "end": 332 },
+      "suggestedFix": "Acceptable as-is. If thinning is needed for word count, this could be shortened: 'The surface was the same, but the structure beneath it had shifted. New load paths. Weight distributed differently.' — cutting 'Like a wall that looks identical from outside' which is the most explicitly architectural framing."
+    },
+    {
+      "id": "LINE-014-018",
+      "severity": "note",
+      "category": "prose",
+      "description": "Stock water simile at L84: 'a rush that felt like surfacing from deep water.' While it fits Lirien's water domain (making it less transplantable than other stock similes), 'surfacing from deep water' as a description of restored capability or consciousness is very common across fiction. The preceding suppression-field description (L14) used an auditory metaphor ('as if someone had pressed a wet cloth against her inner ear') — the release could echo that auditory framing rather than defaulting to the water-surfacing standard.",
+      "lineRef": { "start": 84, "end": 84 },
+      "suggestedFix": "Echo the suppression field's established auditory quality: 'a rush that felt like an inner ear clearing — the world snapping into full resolution, louder and more detailed and too bright.' This maintains the sensory connection to L14's description and avoids the stock water-surfacing phrase."
+    },
+    {
+      "id": "LINE-014-019",
+      "severity": "note",
+      "category": "prose",
+      "description": "The chapter's overall prose quality is high, and several passages deserve specific recognition as craft reference points: (1) The combat synchronization sequence (L44-72) is the manuscript's tightest action writing — the bond-as-tactical-tool is shown purely through action with no explanation. (2) The Vael Seren harbour passage (L232-240) is outstanding indirect character revelation — Lirien answers 'what do you want?' with a story about a place instead of a declaration, and the restraint is devastating. (3) The contract loophole discovery (L282-304) is brilliantly structured — legal parsing that also functions as love declaration. (4) The closing image (L340-342) — 'The real sky was darker than the false one. Less kind. But it was true.' — crystallizes the chapter's truth-vs-kindness tension into a single visual. These passages should be preserved intact during revision.",
+      "lineRef": { "start": 12, "end": 344 },
+      "suggestedFix": "No fix needed — preservation note."
+    },
+    {
+      "id": "LINE-014-020",
+      "severity": "note",
+      "category": "repetition",
+      "description": "Systemic drafter pattern alert: this is the third consecutive Lirien-POV chapter (ch12, ch13 alternating, ch14) to exhibit the same three critical issues: (1) 'Through the bond' mechanical repetition (ch12: 23x, ch13: 24x pre-revision, ch14: 11x), (2) voice marker saturation (ch12: 25+ water + 21 operational, ch13: 44 architectural as Kaelith-POV equivalent, ch14: 12 water + 14 operational), (3) 'Not X' negative-framing tic (ch13: 17+x, ch14: 22x). While each chapter's density has modestly decreased, the pattern persists. The drafter may benefit from explicit guidance: draft with 50% fewer voice markers and add back selectively during revision, rather than saturating and cutting.",
+      "lineRef": { "start": 1, "end": 344 },
+      "suggestedFix": "No chapter-level fix — this is a process recommendation for the drafting coordinator. The drafter should receive instructions to: (a) limit 'Through the bond' to 5 per chapter in initial drafts, (b) deploy domain metaphors only at emotional pivots, not in routine narration, (c) vary the 'Not X' construction to max 8 per chapter by using direct statement, contrast clauses, or simple metaphor instead."
+    }
+  ],
+  "proseStrengths": [
+    "Combat sequence (L12-103) is the manuscript's tightest action writing — bond-enabled combat synchronization shown entirely through action with zero exposition. The 'She chose offence. Kaelith would handle defence.' beat (L60) is perfectly timed.",
+    "Dialogue is flawless throughout. Zero over-voicing in spoken lines — most dialogue is plain speech with character-distinctive vocabulary appearing naturally and in a minority of lines. Subtext is consistently strong: 'Inside' (L160), the Vael Seren passage (L232-240), 'About solutions' (L314). Kaelith and Lirien sound like different people without any line feeling artificially marked.",
+    "The Vael Seren harbour passage (L232-240) is the chapter's finest prose — indirect answer to 'what do you want?' that reveals Lirien's capacity for desire through a specific memory rather than declaration. The construction 'I stayed an extra day. I've never stayed an extra day' is devastatingly simple.",
+    "Contract loophole discovery (L282-304) functions simultaneously as legal parsing, tactical planning, and love declaration — a triple-layer passage that earns its length. The progression from 'Cessation of heartbeat' (legal text) to 'the bond that made them deadly in combat could save Kaelith's life by stopping it' (tactical) to L318's internal vow (emotional) is structurally elegant.",
+    "Closing image (L340-342) crystallizes the chapter's central tension — truth vs. kindness — in a single visual metaphor. The Pallor-as-false-sky parallels Lirien's maintained surface, and 'Lirien was done with kind' resolves the visual into character intention.",
+    "Zero banned phrases from style guide. Zero purple prose. Zero unbroken dialogue exceeding 6 lines. Adverb density well within limits (~1/page). Show-tell ratio approximately 91:9 overall.",
+    "Micro-tension maintained throughout with zero dead spots. Every half-page passage carries at least one active tension source. The intimacy scene maintains tension through the secret (contract during tenderness) rather than external threat — sophisticated craft.",
+    "MRU structure is strong across all sampled moments. Combat MRUs follow correct sequence. Intimacy MRUs appropriately layer emotion → physical → bond feedback. The loophole discovery follows external stimulus (heartbeat) → analysis → decision sequence cleanly.",
+    "The italicized internal monologue at L318 — 'I will solve this. I will kill you for three seconds and bring you back...' — is one of the manuscript's most powerful passages. The juxtaposition of 'kill you' and 'bring you back' and 'Vael Seren' compresses the entire story's tension into three sentences."
+  ],
+  "invariantResults": {
+    "INV-017": "CONDITIONAL FAIL — zero banned phrases, but cliché count at 2-3 (L306 clear cliché, L38 and L66 stock phrasing). Repetition thresholds exceeded: water metaphors 12x, 'Through the bond' 11x, 'Not X' 22x. Voice marker saturation in most paragraphs. Requires thinning to pass.",
+    "INV-005": "CONDITIONAL PASS — ~91:9 show:tell ratio. Three direct emotion labels: 'terrifying' at L90 and L216 (same word twice), 'The generosity of it' at L262. Below the 3-per-key-scene maximum but the repeated 'terrifying' is a pattern issue. Two subtext explanations (L150, L224) function as indirect telling.",
+    "INV-019": "PASS — dialogue naturalism excellent throughout. Contractions used appropriately for ch14 arc position. No over-formal spoken lines. All dialogue serves narrative function. Zero dialogue over-voicing.",
+    "INV-035": "PASS — no passages of half a page or more without active tension. Tension sources well-distributed: combat (Scene 1), desire vs. discipline + contract secret (Scene 2), guilt + loophole + deception (Scene 3).",
+    "INV-047": "CONDITIONAL PASS — subtext strong in all charged exchanges. Deducted for L150 and L224 where subtext is explained rather than trusted. The Vael Seren passage is exemplary subtext — L38's 'compass needle' is not a subtext issue but a cliché issue.",
+    "INV-003": "CONDITIONAL PASS — Lirien's voice is unmistakable and consistent, but over-applied. The voice is too present, not too absent. Operative framework should thin during intimate and emotionally overwhelmed passages to show the breakdown the narrative claims is happening.",
+    "INV-064": "PASS — visual/auditory sensory signature consistent with Lirien's profile. She reads faces, light, and the gap between words and intent. Bond-transmitted sensations are appropriately rendered through her perceptual framework.",
+    "INV-052": "PASS — MRU structure verified at 6 key moments. All follow correct sequence: external stimulus → emotional reaction → reflex → rational action → speech. No reversals detected.",
+    "INV-073": "CONDITIONAL PASS — prose is lush but not purple, emotionally authentic, genre-appropriate. Undermined only by saturation density. Once voice markers are thinned ~50%, this chapter will meet publication-ready standard."
+  },
+  "revisionPriority": [
+    {
+      "priority": 1,
+      "findingIds": ["LINE-014-001", "LINE-014-003"],
+      "rationale": "Voice marker saturation and 'Not X' repetition are the chapter's two most pervasive issues, affecting virtually every page. Address together: thin water metaphors to 6-7, operative vocabulary to 8, 'Not X' constructions to 8-10. This will reduce total voice-marker density by ~50% and create prose that breathes between markers."
+    },
+    {
+      "priority": 2,
+      "findingIds": ["LINE-014-002"],
+      "rationale": "'Through the bond' repetition is a discrete, countable problem with a clear solution: cut from 11 to 4-5 by rendering bond transmissions as direct perception. This is the same fix applied in ch12 revision (23→3) and will be familiar to the reviser."
+    },
+    {
+      "priority": 3,
+      "findingIds": ["LINE-014-004", "LINE-014-008", "LINE-014-009"],
+      "rationale": "Subtext explanations and tell-labels are clustered in Scene 2 and Scene 3. Address as a group by cutting the explanatory sentences and trusting the dialogue to communicate. These cuts also contribute to word-count reduction (the developmental editor flagged 25% over target)."
+    },
+    {
+      "priority": 4,
+      "findingIds": ["LINE-014-005", "LINE-014-006", "LINE-014-013"],
+      "rationale": "Cliché and stock phrasing — three specific instances that can be individually replaced. Quick fixes with high impact per word changed."
+    },
+    {
+      "priority": 5,
+      "findingIds": ["LINE-014-007", "LINE-014-010"],
+      "rationale": "Show-tell label ('terrifying' ×2) and the 80-word sentence — both in key emotional passages. Address during Scene 2 revision pass."
+    },
+    {
+      "priority": 6,
+      "findingIds": ["LINE-014-011", "LINE-014-012", "LINE-014-014", "LINE-014-015"],
+      "rationale": "Minor voice and prose issues — address if word count permits. These are refinements, not structural problems."
+    }
+  ]
+}

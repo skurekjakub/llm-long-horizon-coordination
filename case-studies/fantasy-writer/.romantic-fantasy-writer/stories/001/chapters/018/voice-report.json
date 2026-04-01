@@ -1,0 +1,122 @@
+{
+  "chapter": 18,
+  "pov": "CHAR-002",
+  "povName": "Lirien Dael",
+  "overallAssessment": "pass",
+  "voiceMetrics": {
+    "waterCurrentMetaphors": 10,
+    "waterCurrentExamples": [
+      "water with nowhere to drain (para 8)",
+      "A current she had thought was desire might be a channel the Court had carved. She could not tell the difference from inside the flow. (para 12)",
+      "like groundwater finding its level after a flood (para 23)",
+      "like stones at low tide (para 38, binding anchors surfacing as water recedes)",
+      "the way a current erodes a riverbank (para 39)",
+      "settling through her like sediment through still water, finding its level (para 44)",
+      "water filling a container (para 41)",
+      "the way a river's sound changes when the water beneath the surface finds a new channel (para 55)",
+      "a cleared patch of solid ground after a flood (para 48)",
+      "two currents ran together (para 58)"
+    ],
+    "stoneArchitectureMetaphors": 0,
+    "stoneArchitectureNotes": "Zero Kaelith-domain stone/fortification/load-bearing metaphors detected. One literal stone threshold passage (final scene) uses the physical threshold as a launch point for institutional/contractual language — 'without binding contracts specifying its obligations, without anyone classifying its purpose or assessing its operational value.' The observation is filtered entirely through Lirien's classification lens. The phrase 'built it to stand, and it did' carries a faint echo of Kaelith's endurance vocabulary, but this is appropriate as subtle late-story intimacy bleedthrough at Ch18 of 22, consistent with the voice evolution spec.",
+    "classificationFrameworkInstances": 21,
+    "classificationFrameworkNote": "The classification framework is not merely present — it is the chapter's structural and emotional spine. The entire self-interrogation ledger (SCN-50) is a classification exercise. Formal Decision/Binding-probability/Free-choice-probability/Classification entries appear 8 times. Additional classification acts: 'classified it: interest, controlled, with underlying caution at a ratio of approximately three to one,' 'classified this as hope, provisional, requiring verification before integration,' 'classified as loyalty under sustained discipline,' 'Classification: unnecessary. Status: destroyed. New classification: Lirien Dael. Unaffiliated.' The chapter uses classification as the emotional vehicle for Lirien's dark night of the soul — the taxonomy IS the crisis and the breakthrough.",
+    "contractionFrequency": "Extremely low — 1 contraction in narration ('she'd managed') across ~4900 words. Formal-leaning as specified for Ch18. Narratively justified: Lirien is in maximum analytical mode through SCN-50, operative mode through SCN-51, and precision-clarity mode through SCN-52. The extreme formality maps to the chapter's emotional function (classification as containment, precision as the last discipline remaining). Consistent with voice evolution spec: 'still formal-leaning' at this point.",
+    "sentenceRhythm": "Mixed, fluid, and analytical — distinctly not percussive. Medium analytical sentences (12-20 words) dominate, with field-note fragments punctuating at assessment points. Longer contract-style sentences appear during problem-analysis passages (e.g., 'every choice she had made could be explained by the binding' — 60+ word sentence with nested clauses narrowing meaning). Emotional climax uses maximum simplification: 'Free choice. Confidence: high.' / 'But this.' / 'She had it.' These are field-note fragments, not Kaelith-style percussive declarations — the distinction is observational/conclusive vs. active/imperative. No sustained percussive sequences detected.",
+    "emotionalRegister": "Classification-before-feeling is executed throughout with exceptional consistency. Opening: emotion exists only as 'Classification: ambiguous' — the feeling is not named, only its resistance to taxonomy. Mid-chapter: 'She noted the adjustment and classified it: interest, controlled, with underlying caution at a ratio of approximately three to one.' Late chapter: 'she classified this as hope, provisional, requiring verification before integration.' Even the chapter's emotional resolution is delivered through classification language: 'Free choice. Confidence: high.' The single moment where emotion breaches classification — 'She was choosing the love' — is the chapter's final emotional line and arrives only after 4900 words of analytical containment. The plainest line is the most emotional, exactly as specified."
+  },
+  "distinctionFromKaelith": {
+    "assessment": "pass",
+    "evidence": [
+      "OPENING CONTRAST: Ch17 opens 'Fire first. Perimeter second. Don't think about the rest.' (imperative, percussive, task-inventory). Ch18 opens 'Decision: accept delay in target execution following Pallor-Oathbrand correlation, day two. Binding probability: high.' (analytical, classification-structured, probability-assessment). Unmistakably different voices within 1 sentence each.",
+      "METAPHOR DOMAIN SEPARATION: Ch17 contains 'load-bearing wall,' 'rubble,' 'corridor of doubt,' 'stones falling into a foundation,' 'structure failing — walls coming down.' Ch18 contains 'water with nowhere to drain,' 'current/channel,' 'groundwater finding its level,' 'stones at low tide,' 'sediment through still water,' 'water filling a container.' Zero cross-domain leakage.",
+      "THOUGHT PATTERN CONTRAST: Ch17 Kaelith thinks linearly — threat→assessment→action (vorakh fight: 'Slower. Compensate left. The cold in her fingers meant her grip would be weaker'). Ch18 Lirien thinks associatively — three independent channels processed simultaneously ('Operational: the god-seal was already their destination... Analytical: binding architecture was her specialisation... Emotional: she classified this as hope').",
+      "EMOTIONAL PROCESSING CONTRAST: Ch17 Kaelith processes emotion through body — 'Her hand went to her sternum without conscious decision,' 'pressing her palm against her chest.' Ch18 Lirien processes emotion through classification — 'She noted the adjustment and classified it: interest, controlled, with underlying caution at a ratio of approximately three to one.'",
+      "SENSORY SIGNATURE CONTRAST: Ch17 Kaelith is tactile — 'felt the grain,' 'the cold reaching her fingers,' 'blood sprayed — hot against her face.' Ch18 Lirien is visual — 'cataloguing the exact moment when Kaelith's shape became indistinguishable from the trees,' 'the micro-tensions around the eyes,' 'the dawn light shifted across the page, turning the ink from black to a colour closer to deep water.'",
+      "SILENCE TYPE CONTRAST: Ch17 Kaelith's silence is structural — 'a wall,' holding space, blocking. Ch18 Lirien's silences are operative — gathering, reading, professionally alert. In SCN-51, her silence draws the soldier's information out; Kaelith's silence in Ch17 simply holds grief in place."
+    ]
+  },
+  "threeFourSentenceTest": {
+    "result": "PASS — immediate recognition within sentence 1",
+    "evidence": "The chapter opens with 'Decision: accept delay in target execution following Pallor-Oathbrand correlation, day two. Binding probability: high. The binding compels proximity; delay maintains proximity. Free choice probability: unable to determine. Classification: ambiguous.' This is unmistakably Lirien within a single sentence. The classification framework, probability assessment, operational language, and analytical structure could belong to no other character in the story. A reader familiar with both leads would identify the POV character before reaching the second paragraph.",
+    "contrastWithDepartingChapter": "Ch17 closes with short, compressed, emotionally weighted lines ('She did not know the answers. She walked anyway.'). Ch18 opens with an analytical classification ledger entry. The tonal shift is immediate and functions as a POV marker in itself."
+  },
+  "povTransitionMotivation": {
+    "result": "PASS — strongly motivated",
+    "departingChapterEnd": "Ch17 ends with Kaelith walking north, feeling Lirien's grief through the bond, beginning to crack her 'simple betrayal story.' The final image is shared grief across distance and the unanswered question of whether understanding might exist. Reader wants to know: what is Lirien doing during this time?",
+    "arrivingChapterOpening": "Ch18 opens with Lirien deep in an 11-hour self-interrogation exercise, systematically auditing every choice she has made. The fresh perspective (analytical self-destruction vs. Kaelith's emotional self-protection) justifies the switch immediately.",
+    "motivationTypes": [
+      "Temporal necessity: chapters cover overlapping time periods from different perspectives",
+      "Fresh perspective: Lirien's analytical framework for processing the same separation event provides new information unavailable from Kaelith's POV",
+      "Urgency in arriving chapter: Lirien's dark night of the soul, the classification crisis, and the Oathbrand breakthrough discovery",
+      "Unresolved question from departing chapter: Kaelith felt Lirien's grief shift — Ch18 reveals what caused that shift"
+    ]
+  },
+  "sensorySignatureCheck": {
+    "result": "PASS",
+    "visualDominance": "Visual processing dominates throughout: 'cataloguing the exact moment when Kaelith's shape became indistinguishable from the trees,' 'the quality of light falling across her notations,' 'the dawn light shifted across the page, turning the ink from black to a colour closer to deep water,' 'the micro-tensions around the eyes, the set of the jaw,' 'Brown eyes, steady,' 'the threadbone caught the Pallor's silver-grey illumination,' 'the encoding matrix visible as faint raised lines.' Light quality is a consistent emotional register as specified.",
+    "auditorySecondary": "Auditory appears in SCN-51 as expected: 'the footsteps — single person, deliberate pace,' 'His voice carried the flat consonants of the eastern provinces,' 'Something surfaced in his voice that Lirien classified as loyalty under sustained discipline.' Lirien reads voices for subtext, exactly as specified.",
+    "tactileInstances": "One grounding moment: 'Pressed both palms flat against the table's surface and felt the grain of the wood under her fingertips, which were cold.' This is emergency physical grounding during analytical collapse, not habitual tactile processing. Contextually justified and immediately returns to visual observation. Not a violation.",
+    "contrastWithKaelith": "Ch17 Kaelith is body-forward throughout: 'Her hand went to her sternum,' 'pressing her palm against her chest,' 'the cold spreading through her fingers,' 'blood sprayed — hot against her face,' 'wiped blood from her face.' Ch18 Lirien is eyes-forward: faces, light quality, micro-expressions, gesture reading. The distinction is consistent and clear."
+  },
+  "sceneBySceneAnalysis": {
+    "SCN-50": {
+      "voiceAssessment": "Exceptional. Maximum analytical precision deployed as emotional vehicle. The classification ledger structure is uniquely Lirien — no other character in the story would process a dark night of the soul as a probability audit. Voice is at its most formal, most structured, and most devastating in its precision. The breakthrough ('Free choice. Confidence: high.') arrives through the taxonomy itself, not despite it. The simplest line carries the highest emotional charge, exactly per spec.",
+      "keyVoiceMarkers": [
+        "Formal Decision/Binding-probability/Classification entries",
+        "The ledger as emotional architecture",
+        "'The analytical precision that had made her the Court's most effective Hand was now the instrument of her dissolution'",
+        "'The cage did not need its occupant to see the bars'",
+        "'Free choice. Confidence: high.' — plainest line = most emotional"
+      ]
+    },
+    "SCN-51": {
+      "voiceAssessment": "Strong operative-mode Lirien. Professional instincts reactivate cleanly: blade-to-hand, positional awareness, systematic assessment of the Ashborne contact. Intelligence verification protocols, triangulated source assessment, and the clinical 'I do not trust you' statement are all deeply in character. The emotional processing remains classified ('classified as loyalty under sustained discipline'). Three-channel parallel processing is textbook associative/comparative thought.",
+      "keyVoiceMarkers": [
+        "Body-language reading: 'the micro-tensions around the eyes, the set of the jaw'",
+        "Intelligence briefing pattern: 'Each possibility carried different threat profiles. All required more data.'",
+        "Three-channel processing: 'Operational... Analytical... Emotional: she classified this as hope, provisional, requiring verification before integration'",
+        "Precise trust assessment: 'I do not trust you' — delivered as data, not hostility"
+      ]
+    },
+    "SCN-52": {
+      "voiceAssessment": "Rebuilt clarity with Lirien's precision stabilized around a proven data point. The cipher destruction is filtered through classification language even as she destroys the classification tool. 'Classification: unnecessary. Status: destroyed. New classification: Lirien Dael. Unaffiliated.' is a perfect Lirien line — she redefines herself using the same framework she is leaving behind. The closing walk north uses water/current imagery ('two currents ran together') and the final emotional admission ('She was choosing the love') is delivered in the simplest possible phrasing after 4900 words of analytical containment.",
+      "keyVoiceMarkers": [
+        "Cipher destruction as classification exercise",
+        "'That operative was dead. Not Lessened — not an absence wearing the shape of what had been removed. Dead by choice.'",
+        "'She was choosing the love.' — maximum simplicity at maximum emotion",
+        "Water imagery for parallel paths: 'two currents ran together and from the outside they were indistinguishable'"
+      ]
+    }
+  },
+  "voiceEvolutionTracking": {
+    "Ch18Position": "Chapter 18 of 22 — deep Act III. Voice should show significant evolution from early-story Lirien while retaining core analytical architecture.",
+    "evolutionEvidence": [
+      "Contractions: still minimal (1 instance), appropriate for this chapter's intense analytical mode",
+      "Emotional language: 'She was choosing the love' — direct emotional statement that early-Lirien could never produce. Arrives only after exhaustive analytical process, showing the evolution is earned rather than sudden.",
+      "'She wanted to walk north. Toward the seal, toward the dissolution, toward the woman...' — 'wanted' language that early-Lirien would have rendered as 'the operational calculus favored proximity.'",
+      "The threshold observation (literal stone doorway) carries a faint echo of Kaelith's endurance vocabulary ('built it to stand, and it did') — appropriate late-story intimacy bleedthrough per voice evolution spec.",
+      "The cipher destruction scene shows Lirien using classification language to dismantle classification — the framework turning on itself. This is voice evolution: the tools remain, but the purpose has changed."
+    ]
+  },
+  "violations": [],
+  "observations": [
+    {
+      "location": "Para 54 — stone threshold passage",
+      "type": "observation",
+      "note": "The phrase 'built it to stand, and it did' carries a faint Kaelith-resonance (endurance, standing, structural soundness). However, the passage is framed entirely through Lirien's lens (institutional maintenance, binding contracts, classification, operational value). At Ch18 of 22, this reads as appropriate late-story intimacy bleedthrough rather than a voice violation. The style guide permits architectural language as 'late intimacy bleed-through.' No correction needed."
+    },
+    {
+      "location": "Para 8 — tactile grounding",
+      "type": "observation",
+      "note": "'Pressed both palms flat against the table's surface and felt the grain of the wood under her fingertips, which were cold.' Single tactile moment in a visual-dominant chapter. Contextually justified as emergency physical grounding during analytical collapse. Isolated, not habitual. Returns immediately to visual observation. No correction needed."
+    },
+    {
+      "location": "Para 25 (SCN-51 transition) — 'She assumed threat.'",
+      "type": "observation",
+      "note": "This two-word sentence is blunt and could be read as Kaelith-style percussive rhythm. However, it functions as a field-note classification fragment ('assumed threat' is an intelligence assessment, not a tactical imperative). The following sentences immediately expand into Lirien's fluid analytical mode. Within operative context, this is consistent with her voice."
+    }
+  ],
+  "editsApplied": 0,
+  "summary": "Chapter 18 ('The Taxonomy of Choice') passes voice consistency verification with no corrections required. The draft delivers an exceptionally clean Lirien voice across all three scenes. The classification framework functions as the chapter's structural spine (21 instances), water/current metaphors dominate the figurative language (10 instances vs. 0 stone/architecture violations), emotional register is classified-before-felt throughout, sentence rhythm is fluid/analytical rather than percussive, and the sensory signature is visual-dominant with appropriate auditory secondary. The 3-4 sentence recognition test passes within sentence 1. Voice distinction from Ch17 Kaelith is maximal — the chapters could not be more different in opening cadence, metaphor domain, thought pattern, emotional processing, and sensory mode. The chapter's voice evolution is appropriate for Ch18 of 22: 'She was choosing the love' represents earned emotional directness that early-Lirien could not have produced, delivered through rather than despite the analytical framework. This is among the strongest voice-consistency performances in the manuscript."
+}

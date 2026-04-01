@@ -1,0 +1,3335 @@
+{
+  "version": 1,
+  "generatedBy": "docwriter-invariant-scanner",
+  "scanMode": "incremental",
+  "sourceFiles": [
+    {
+      "path": "./.github/resources/codesamples-project.md",
+      "invariantsExtracted": 4,
+      "status": "unchanged"
+    },
+    {
+      "path": "./.github/resources/docsbot-general-info.md",
+      "invariantsExtracted": 1,
+      "status": "unchanged"
+    },
+    {
+      "path": "./.github/resources/markdown-syntax.md",
+      "invariantsExtracted": 34,
+      "status": "unchanged"
+    },
+    {
+      "path": "./.github/resources/new-page-creation.md",
+      "invariantsExtracted": 7,
+      "status": "unchanged"
+    },
+    {
+      "path": "./.github/resources/playwright-screenshots.md",
+      "invariantsExtracted": 5,
+      "status": "unchanged"
+    },
+    {
+      "path": "./.github/resources/styleguides/drawio-diagrams.md",
+      "invariantsExtracted": 3,
+      "status": "unchanged"
+    },
+    {
+      "path": "./.github/resources/styleguides/guides-style-guide-full.md",
+      "invariantsExtracted": 19,
+      "status": "unchanged"
+    },
+    {
+      "path": "./.github/resources/styleguides/typography.md",
+      "invariantsExtracted": 23,
+      "status": "unchanged"
+    },
+    {
+      "path": "./.github/resources/styleguides/word-list.md",
+      "invariantsExtracted": 15,
+      "status": "unchanged"
+    },
+    {
+      "path": "./.github/resources/feature-specifications/code-link-tag-specification.md",
+      "invariantsExtracted": 15,
+      "status": "unchanged"
+    },
+    {
+      "path": "./.github/resources/docwriter-agent-invariants.md",
+      "invariantsExtracted": 15,
+      "status": "changed"
+    },
+    {
+      "path": "./.github/resources/styleguides/docs-style-guide-full.md",
+      "invariantsExtracted": 87,
+      "status": "changed"
+    },
+    {
+      "path": "./.github/resources/styleguides/docs-style-guide.md",
+      "invariantsExtracted": 0,
+      "status": "deleted"
+    },
+    {
+      "path": "./.github/resources/styleguides/guides-style-guide.md",
+      "invariantsExtracted": 0,
+      "status": "deleted"
+    }
+  ],
+  "invariants": [
+    {
+      "id": "TINV-001",
+      "domain": "persona",
+      "rule": "Task must cover both developer and business user scenarios.",
+      "source": {
+        "file": "context.json",
+        "section": "task.instructions"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": true
+    },
+    {
+      "id": "TINV-002",
+      "domain": "structure",
+      "rule": "As described in the task, the information is currently scattered throughout various documentation pages. Some unified/centralized access point, likely on one of the existing pages is necessary.",
+      "source": {
+        "file": "context.json",
+        "section": "task.instructions"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": true
+    },
+    {
+      "id": "TINV-003",
+      "domain": "general",
+      "rule": "Release notes or any extraneous artifacts are not required.",
+      "source": {
+        "file": "context.json",
+        "section": "task.instructions"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": true
+    },
+    {
+      "id": "INV-codesamples-001",
+      "domain": "codesamples",
+      "rule": "Use `//Include:` / `//EndInclude:` comment markers to demarcate extractable code regions in the codesamples project.",
+      "source": {
+        "file": "./.github/resources/codesamples-project.md",
+        "section": "Standalone samples"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-codesamples-002",
+      "domain": "codesamples",
+      "rule": "When adding a new feature area to the codesamples project, create a new top-level folder inside CodeSamples/ following the feature-folder organization pattern.",
+      "source": {
+        "file": "./.github/resources/codesamples-project.md",
+        "section": "Feature-folder organization (CodeSamples)"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-codesamples-003",
+      "domain": "codesamples",
+      "rule": "Place self-contained example files that demonstrate individual API patterns in a StandaloneSamples/ directory within the feature subfolder.",
+      "source": {
+        "file": "./.github/resources/codesamples-project.md",
+        "section": "Standalone samples"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-codesamples-004",
+      "domain": "codesamples",
+      "rule": "After every task/update/iteration on the codesamples project files, run `npm run codesamples:build` to verify the project compiles.",
+      "source": {
+        "file": "./.github/resources/codesamples-project.md",
+        "section": "Build and serve"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-codesamples-005",
+      "domain": "codesamples",
+      "rule": "In source code comments, use the third person singular (as opposed to first person in product source code).",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "Source code comments"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-codesamples-006",
+      "domain": "codesamples",
+      "rule": "Omit the subject in code comments if it is clear from context (e.g., omit 'the method' in a method's summary).",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "Source code comments"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-codesamples-007",
+      "domain": "codesamples",
+      "rule": "In summaries and multi-line comments (/// or /* */), use punctuation as in any other sentence. For single-line comments, do not use a final period.",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "Source code comments"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-codesamples-008",
+      "domain": "codesamples",
+      "rule": "Type a whitespace after the comment symbol that starts the comment. If the comment has an ending symbol, type a whitespace before it.",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "Source code comments"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-codesamples-009",
+      "domain": "codesamples",
+      "rule": "Comment only what is important. Do not comment code that is easy to understand.",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "Source code comments"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-codesamples-010",
+      "domain": "codesamples",
+      "rule": "When writing ID and GUID in source code (not in comments), use them as words: `Id` and `Guid` (not all caps).",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "Source code comments"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-codesamples-011",
+      "domain": "codesamples",
+      "rule": "If a code example contains an attribute or constructor with 4 or more parameters, use named parameter syntax for increased readability.",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "Source code comments"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-codesamples-013",
+      "domain": "codesamples",
+      "rule": "In developer guides, break code examples into steps/sections. Link to the finalized solution on GitHub at the end. Focus code comments on Kentico-specific methods, not generic .NET concepts.",
+      "source": {
+        "file": "./.github/resources/styleguides/guides-style-guide-full.md",
+        "section": "Material for developers"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "guides"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-codesamples-014",
+      "domain": "codesamples",
+      "rule": "{% code %} tags must have title attributes filled out. Example: {% code lang=csharp title=\"concise title\" %}.",
+      "source": {
+        "file": "./.github/resources/docwriter-agent-invariants.md",
+        "section": "Syntax and markup"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-codesamples-015",
+      "domain": "codesamples",
+      "rule": "The code_link `source` attribute path must be relative to the `code_link_include_root` value defined in Jekyll config (_config_primary.yml).",
+      "source": {
+        "file": "./.github/resources/feature-specifications/code-link-tag-specification.md",
+        "section": "Tag Syntax"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-codesamples-016",
+      "domain": "codesamples",
+      "rule": "The code_link `title` attribute defaults to the source filename if not explicitly specified.",
+      "source": {
+        "file": "./.github/resources/feature-specifications/code-link-tag-specification.md",
+        "section": "Tag Syntax"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-codesamples-017",
+      "domain": "codesamples",
+      "rule": "The code_link `id` attribute accepts comma-separated section IDs to include specific code sections from the source file.",
+      "source": {
+        "file": "./.github/resources/feature-specifications/code-link-tag-specification.md",
+        "section": "Tag Syntax"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-codesamples-018",
+      "domain": "codesamples",
+      "rule": "The code_link `exclude` attribute accepts comma-separated section IDs to exclude and is applied after `id` filtering.",
+      "source": {
+        "file": "./.github/resources/feature-specifications/code-link-tag-specification.md",
+        "section": "Tag Syntax"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-codesamples-019",
+      "domain": "codesamples",
+      "rule": "Section markers in C#, TypeScript, JavaScript, CSS, and JSON files must use `//Include:id` and `//EndInclude:id` format.",
+      "source": {
+        "file": "./.github/resources/feature-specifications/code-link-tag-specification.md",
+        "section": "Section Marker Formats"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-codesamples-020",
+      "domain": "codesamples",
+      "rule": "Section markers in HTML and XML files must use `<!--Include:id-->` and `<!--EndInclude:id-->` format.",
+      "source": {
+        "file": "./.github/resources/feature-specifications/code-link-tag-specification.md",
+        "section": "Section Marker Formats"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-codesamples-021",
+      "domain": "codesamples",
+      "rule": "Section markers in SQL files must use `--Include:id` and `--EndInclude:id` format.",
+      "source": {
+        "file": "./.github/resources/feature-specifications/code-link-tag-specification.md",
+        "section": "Section Marker Formats"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-codesamples-022",
+      "domain": "codesamples",
+      "rule": "Section markers in YAML, Bash, PowerShell, and CMD files must use `#Include:id` and `#EndInclude:id` format.",
+      "source": {
+        "file": "./.github/resources/feature-specifications/code-link-tag-specification.md",
+        "section": "Section Marker Formats"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-codesamples-023",
+      "domain": "codesamples",
+      "rule": "Razor/CSHTML files accept both `//Include:id` and `<!--Include:id-->` section marker styles.",
+      "source": {
+        "file": "./.github/resources/feature-specifications/code-link-tag-specification.md",
+        "section": "Section Marker Formats"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-codesamples-024",
+      "domain": "codesamples",
+      "rule": "Only the following languages are supported for the code_link `lang` attribute: aspnet, bash, bicep, c, csharp, cshtml, cmd, css, git, graphql, java, js, json, jsx, ksharp, html, markdown, markup, nginx, powershell, text, tsx, typescript, regex, sql, xml, yaml.",
+      "source": {
+        "file": "./.github/resources/feature-specifications/code-link-tag-specification.md",
+        "section": "Supported Languages"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-codesamples-025",
+      "domain": "codesamples",
+      "rule": "The buildable C# code samples project for code_link is located at `src/_code/`.",
+      "source": {
+        "file": "./.github/resources/feature-specifications/code-link-tag-specification.md",
+        "section": "Code Samples Project"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-codesamples-026",
+      "domain": "codesamples",
+      "rule": "For single-line code comments, do not use the final dot (period) after the sentence.",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "Source code comments"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-codesamples-027",
+      "domain": "codesamples",
+      "rule": "If the comment has a symbol for ending the comment (e.g., */), type a whitespace before it.",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "Source code comments"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-codesamples-028",
+      "domain": "codesamples",
+      "rule": "If a code example is not complete (readers need to add more code), write ellipsis (three manually written dots: ...) in the code to indicate where additional code is needed. Do not write the dots in comments.",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "Source code comments"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-crossref-001",
+      "domain": "crossref",
+      "rule": "In-page links use `{% inpage_link my-id linkText=\"Go\" %}`. Works only on the current page; for cross-page links, use `page_link`.",
+      "source": {
+        "file": "./.github/resources/markdown-syntax.md",
+        "section": "Anchors and Links"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-crossref-002",
+      "domain": "crossref",
+      "rule": "Page links use `{% page_link identifier collection=\"...\" linkText=\"...\" anchor=\"...\" %}`. Set `collection` based on the target file's folder: `_documentation` \u2192 `documentation`, `_guides` \u2192 `guides`, `_api` \u2192 `api`.",
+      "source": {
+        "file": "./.github/resources/markdown-syntax.md",
+        "section": "Anchors and Links"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-crossref-003",
+      "domain": "crossref",
+      "rule": "When inserting `{% page_link %}`, never guess or fabricate the `identifier`. Always locate the target page file, read its YAML front matter, and extract the exact `identifier` value.",
+      "source": {
+        "file": "./.github/resources/markdown-syntax.md",
+        "section": "Create page links without hallucinating identifiers"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-crossref-004",
+      "domain": "crossref",
+      "rule": "If a page link target file cannot be found or has no `identifier`, insert a visible placeholder and a TODO comment (e.g., `<!-- TODO: Insert correct identifier after confirming target page front matter -->`). Do not fabricate an ID.",
+      "source": {
+        "file": "./.github/resources/markdown-syntax.md",
+        "section": "Create page links without hallucinating identifiers"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-crossref-005",
+      "domain": "crossref",
+      "rule": "When adding an anchor to a page_link, only use an anchor that actually exists on the target page (heading-generated anchor or explicit `{% anchor %}` id). Do not invent anchors.",
+      "source": {
+        "file": "./.github/resources/markdown-syntax.md",
+        "section": "Create page links without hallucinating identifiers"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-crossref-006",
+      "domain": "crossref",
+      "rule": "External links use `{% external_link \"URL\" linkText=\"...\" %}`. Default target is `_blank` if not specified.",
+      "source": {
+        "file": "./.github/resources/markdown-syntax.md",
+        "section": "Anchors and Links"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-crossref-007",
+      "domain": "crossref",
+      "rule": "Button links use `{% button_link \"URL\" buttonIcon=\"...\" buttonLabel=\"...\" %}`. Must include the URL scheme; bare domains are treated as relative.",
+      "source": {
+        "file": "./.github/resources/markdown-syntax.md",
+        "section": "Anchors and Links"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-crossref-009",
+      "domain": "crossref",
+      "rule": "Use clear and descriptive link text. Avoid vague phrases like 'click here' or 'this page'. Use keywords that describe the linked content.",
+      "source": {
+        "file": "./.github/resources/styleguides/guides-style-guide-full.md",
+        "section": "Use clear and descriptive link text"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-general-001",
+      "domain": "general",
+      "rule": "All agentic outputs for DocsBot analysis must be saved within the run directory structure (e.g., `run_*/analysis/`), not externally.",
+      "source": {
+        "file": "./.github/resources/docsbot-general-info.md",
+        "section": "DocsBot Analysis Infrastructure"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-general-002",
+      "domain": "general",
+      "rule": "Screenshots must hide the AIRA panel (set `display: none` on `[class*=\"aira___\"]`).",
+      "source": {
+        "file": "./.github/resources/playwright-screenshots.md",
+        "section": "Standard capture workflow"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-general-003",
+      "domain": "general",
+      "rule": "Screenshots must exclude the left sidebar by calculating a clip region starting after the sidebar.",
+      "source": {
+        "file": "./.github/resources/playwright-screenshots.md",
+        "section": "Standard capture workflow"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-general-004",
+      "domain": "general",
+      "rule": "Screenshot files must be in PNG format only.",
+      "source": {
+        "file": "./.github/resources/playwright-screenshots.md",
+        "section": "File naming"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-general-005",
+      "domain": "general",
+      "rule": "Screenshot filenames must use snake_case (e.g., `customer_detail.png`).",
+      "source": {
+        "file": "./.github/resources/playwright-screenshots.md",
+        "section": "File naming"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-general-006",
+      "domain": "general",
+      "rule": "After capture, copy screenshots to the documentation assets directory: `src/_docsassets/documentation/<target-folder>/`.",
+      "source": {
+        "file": "./.github/resources/playwright-screenshots.md",
+        "section": "Screenshot output"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-general-007",
+      "domain": "general",
+      "rule": "Draw.io diagrams: use elements from the Bootstrap library (under 'Software') for text fields and UI, and Material Design library (under 'Other' > 'GMDL / Icons') for icons exclusively.",
+      "source": {
+        "file": "./.github/resources/styleguides/drawio-diagrams.md",
+        "section": "Shape Libraries"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-general-008",
+      "domain": "general",
+      "rule": "Draw.io color palette: primary elements fill `#AF00FA` (Purple), connectors `#BCA39A` (Beige/Brown), text on light backgrounds `#000000`, text on dark backgrounds `#FFFFFF`.",
+      "source": {
+        "file": "./.github/resources/styleguides/drawio-diagrams.md",
+        "section": "Color Palette"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-general-009",
+      "domain": "general",
+      "rule": "Draw.io typography: the only font to use is 'GT Walsheim Pro' (or 'GT Walsheim'). Set `fontFamily` to 'GT Walsheim' in generated XML.",
+      "source": {
+        "file": "./.github/resources/styleguides/drawio-diagrams.md",
+        "section": "Typography"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-general-010",
+      "domain": "general",
+      "rule": "Include visuals (screenshots, short GIFs) where necessary. GIFs should be under 5 seconds. Diagrams must comply with the Kentico style guide. Add alt text and captions for all visuals. Ensure visuals are not too large.",
+      "source": {
+        "file": "./.github/resources/styleguides/guides-style-guide-full.md",
+        "section": "Include visuals"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "guides"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-general-011",
+      "domain": "general",
+      "rule": "Module intro text must not be longer than 152 characters to prevent truncation on smaller screens at default view (FullHD 1920x1080, 100% zoom).",
+      "source": {
+        "file": "./.github/resources/styleguides/guides-style-guide-full.md",
+        "section": "Creating modules and learning paths"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "guides"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-general-012",
+      "domain": "general",
+      "rule": "Pubternal API with the .Internal namespace suffix must never be implemented or showcased directly in the documentation or associated code samples. Hinting at pubternal API to explain public API behavior can only be done in extreme cases when judged absolutely crucial, and should otherwise be avoided.",
+      "source": {
+        "file": "./.github/resources/docwriter-agent-invariants.md",
+        "section": "API boundaries"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-general-013",
+      "domain": "general",
+      "rule": "If a task, or part of a task, requires documenting public APIs from .Internal namespaces, raise this as BLOCKER and abort the corresponding tasks or the entire pipeline. .Internal APIs are not intended for public consumption and cannot be documented.",
+      "source": {
+        "file": "./.github/resources/docwriter-agent-invariants.md",
+        "section": "API boundaries"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-general-014",
+      "domain": "general",
+      "rule": "When making changes to the code_link feature, update the constitution document (code-link-tag-specification.md) with the new behavior.",
+      "source": {
+        "file": "./.github/resources/feature-specifications/code-link-tag-specification.md",
+        "section": "Meta-Instructions for AI Agents"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-general-015",
+      "domain": "general",
+      "rule": "When making changes to the code_link feature, add tests in `gems/liquid-kfm/spec/tests/textblocks/code_link_spec.rb` or `code_link_exclusion_spec.rb`.",
+      "source": {
+        "file": "./.github/resources/feature-specifications/code-link-tag-specification.md",
+        "section": "Meta-Instructions for AI Agents"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-general-016",
+      "domain": "general",
+      "rule": "Tests must be run before completing any code_link feature work.",
+      "source": {
+        "file": "./.github/resources/feature-specifications/code-link-tag-specification.md",
+        "section": "Meta-Instructions for AI Agents"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-general-017",
+      "domain": "general",
+      "rule": "Content from `.github/resources/styleguides/docs-style-guide-full.md` applies only to `src/_documentation/_documentation`.",
+      "source": {
+        "file": "./.github/resources/docwriter-agent-invariants.md",
+        "section": "Content policy"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-general-018",
+      "domain": "general",
+      "rule": "Content from `.github/resources/styleguides/guides-style-guide-full.md` applies only to `src/_documentation/_guides`.",
+      "source": {
+        "file": "./.github/resources/docwriter-agent-invariants.md",
+        "section": "Content policy"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-general-019",
+      "domain": "general",
+      "rule": "Before marking task as complete, the changes must pass the solution build by running `npm run build`.",
+      "source": {
+        "file": "./.github/resources/docwriter-agent-invariants.md",
+        "section": "Verification"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-jekyll-001",
+      "domain": "jekyll",
+      "rule": "Tables must always use the existing Liquid table syntax. See ./src/_documentation/_samples/syntax.md for reference.",
+      "source": {
+        "file": "./.github/resources/docwriter-agent-invariants.md",
+        "section": "Syntax and markup"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-jekyll-002",
+      "domain": "jekyll",
+      "rule": "Use the Liquid tag alternative whenever one exists for native Markdown syntax.",
+      "source": {
+        "file": "./.github/resources/docwriter-agent-invariants.md",
+        "section": "Syntax and markup"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-jekyll-003",
+      "domain": "jekyll",
+      "rule": "Every page must start with YAML front matter between `---` lines.",
+      "source": {
+        "file": "./.github/resources/markdown-syntax.md",
+        "section": "Front Matter"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-jekyll-004",
+      "domain": "jekyll",
+      "rule": "Required front matter fields for `_documentation` and `_guides` collections: `title`, `identifier`, `order`, `redirect_from`, `persona`, `license`.",
+      "source": {
+        "file": "./.github/resources/markdown-syntax.md",
+        "section": "Front Matter"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-jekyll-005",
+      "domain": "jekyll",
+      "rule": "Front matter `identifier` must use snake_case base plus a collection suffix (`_xp` for `_documentation`, `_guides` for `_guides`).",
+      "source": {
+        "file": "./.github/resources/markdown-syntax.md",
+        "section": "Front Matter"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-jekyll-006",
+      "domain": "jekyll",
+      "rule": "Front matter identifiers must be unique across the whole repository.",
+      "source": {
+        "file": "./.github/resources/markdown-syntax.md",
+        "section": "Front Matter"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-jekyll-007",
+      "domain": "jekyll",
+      "rule": "Front matter `order`: start at 100 for new sections; insert between existing values by midpoints (e.g., 550 between 500 and 600).",
+      "source": {
+        "file": "./.github/resources/markdown-syntax.md",
+        "section": "Front Matter"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-jekyll-008",
+      "domain": "jekyll",
+      "rule": "Front matter `redirect_from` must always include `x/<identifier>` plus any additional redirect paths.",
+      "source": {
+        "file": "./.github/resources/markdown-syntax.md",
+        "section": "Front Matter"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-jekyll-009",
+      "domain": "jekyll",
+      "rule": "Front matter `license` tiers: `1` (standard), `2` (advanced).",
+      "source": {
+        "file": "./.github/resources/markdown-syntax.md",
+        "section": "Front Matter"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-jekyll-010",
+      "domain": "jekyll",
+      "rule": "Admonition Liquid tags: `{% tip %}`, `{% info %}`, `{% note %}`, `{% warning %}` with matching `{% end* %}` tags. Optional parameter: `icon=false` hides the icon.",
+      "source": {
+        "file": "./.github/resources/markdown-syntax.md",
+        "section": "Admonitions"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-jekyll-011",
+      "domain": "jekyll",
+      "rule": "Code blocks must use `{% code lang=... %}...{% endcode %}` Liquid syntax with params: `lang`, `title`, `highlight`, `linenumbers`, `header` (true by default).",
+      "source": {
+        "file": "./.github/resources/markdown-syntax.md",
+        "section": "Code Blocks"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-jekyll-012",
+      "domain": "jekyll",
+      "rule": "Supported code block `lang` values: bash, bicep, c, css, csharp, cshtml, git, graphql, js, java, json, jsx, html, markdown, nginx, powershell, tsx, regex, sql, typescript, yaml. Use `lang=text` for no highlighting.",
+      "source": {
+        "file": "./.github/resources/markdown-syntax.md",
+        "section": "Code Blocks"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-jekyll-013",
+      "domain": "jekyll",
+      "rule": "Images use `{% image filename.png title=\"...\" %}` Liquid syntax. Image files must be placed in `src/_docsassets/<collection>/<pagefilename>/`.",
+      "source": {
+        "file": "./.github/resources/markdown-syntax.md",
+        "section": "Assets"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-jekyll-014",
+      "domain": "jekyll",
+      "rule": "Use `border=true` on image tags for UI/screenshot images.",
+      "source": {
+        "file": "./.github/resources/markdown-syntax.md",
+        "section": "Assets"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-jekyll-015",
+      "domain": "jekyll",
+      "rule": "Files use `{% file filename.pdf linkText=\"...\" disposition=download %}` Liquid syntax. Files must be placed in `src/_docsassets/<collection>/<pagefilename>/`. `disposition`: `download` (default) or `open`.",
+      "source": {
+        "file": "./.github/resources/markdown-syntax.md",
+        "section": "Assets"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-jekyll-016",
+      "domain": "jekyll",
+      "rule": "Video embeds use `{% video \"URL\" %}`. YouTube URLs must use the `/embed/` format.",
+      "source": {
+        "file": "./.github/resources/markdown-syntax.md",
+        "section": "Assets"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-jekyll-017",
+      "domain": "jekyll",
+      "rule": "Anchors use `{% anchor my-id %}`. Anchor ID rules: must start with a letter; no whitespace; only ASCII letters, digits, `_`, `-`.",
+      "source": {
+        "file": "./.github/resources/markdown-syntax.md",
+        "section": "Anchors and Links"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-jekyll-018",
+      "domain": "jekyll",
+      "rule": "Related pages: add to front matter as `related_pages: [\"id1\", \"id2\"]` (same collection only).",
+      "source": {
+        "file": "./.github/resources/markdown-syntax.md",
+        "section": "Related Pages"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-jekyll-019",
+      "domain": "jekyll",
+      "rule": "Inline ToC uses front matter `toc:` with `minHeadingLevel`, `maxHeadingLevel`, `excludeHeadings`. Inline macro: `{% toc minHeadingLevel=2 maxHeadingLevel=3 %}` (only these two params supported inline).",
+      "source": {
+        "file": "./.github/resources/markdown-syntax.md",
+        "section": "Inline ToC"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-jekyll-020",
+      "domain": "jekyll",
+      "rule": "Column layout uses `{% columns %}{% column %}...{% endcolumn %}{% endcolumns %}`. Maximum 4 columns, responsive.",
+      "source": {
+        "file": "./.github/resources/markdown-syntax.md",
+        "section": "Layout Components"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-jekyll-021",
+      "domain": "jekyll",
+      "rule": "Panel component: `{% panel %}...{% endpanel %}`.",
+      "source": {
+        "file": "./.github/resources/markdown-syntax.md",
+        "section": "Layout Components"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-jekyll-022",
+      "domain": "jekyll",
+      "rule": "Card component: `{% card title=\"...\" link=\"page-id\" collection=\"...\" icon=\"...\" %}...{% endcard %}`. Use either `icon` OR `image`, not both.",
+      "source": {
+        "file": "./.github/resources/markdown-syntax.md",
+        "section": "Layout Components"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-jekyll-023",
+      "domain": "jekyll",
+      "rule": "Banner component: `{% banner title=\"...\" %}...{% endbanner %}`. Modes: `primary` (default), `secondary`.",
+      "source": {
+        "file": "./.github/resources/markdown-syntax.md",
+        "section": "Layout Components"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-jekyll-024",
+      "domain": "jekyll",
+      "rule": "Icon syntax: `{% icon xp-cb-check color=\"blue\" fastyle=\"fa-solid\" %}`. Libraries: KX13 (`kx13-` prefix), XP (`xp-` prefix), Font Awesome (`fa-*`). Only `fa-solid` is available with current free FA.",
+      "source": {
+        "file": "./.github/resources/markdown-syntax.md",
+        "section": "Icons"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-jekyll-025",
+      "domain": "jekyll",
+      "rule": "Status badge syntax: `{% status ADDED %}` or `{% status UPDATED bgcolor=\"green\" color=\"white\" %}`.",
+      "source": {
+        "file": "./.github/resources/markdown-syntax.md",
+        "section": "Status"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-jekyll-026",
+      "domain": "jekyll",
+      "rule": "Table row options: `header`, `secondaryHeader`, `bgcolor`. Table cell options: `colspan`, `rowspan`.",
+      "source": {
+        "file": "./.github/resources/markdown-syntax.md",
+        "section": "Tables"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-jekyll-027",
+      "domain": "jekyll",
+      "rule": "Arcade demo syntax: `{% arcade URL title=\"...\" mobile=\"inline|tab\" desktop=\"inline|tab\" %}`.",
+      "source": {
+        "file": "./.github/resources/markdown-syntax.md",
+        "section": "Arcade Demos"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-jekyll-028",
+      "domain": "jekyll",
+      "rule": "Page filename must reflect the page title and use hyphens (`-`) as word separators (kebab-case). Example: title 'Business user pages' \u2192 filename `business-user-pages.md`.",
+      "source": {
+        "file": "./.github/resources/new-page-creation.md",
+        "section": "File Naming Conventions"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-jekyll-029",
+      "domain": "jekyll",
+      "rule": "Identifier structure: a unique code name followed by a collection suffix (`_guides`, `_xp`, or `_collection`), in snake_case. Must be unique across the help service.",
+      "source": {
+        "file": "./.github/resources/new-page-creation.md",
+        "section": "Identifier Logic"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-jekyll-030",
+      "domain": "jekyll",
+      "rule": "Order for new subtrees: start at `100`, increment by 100. For insertions: use the mathematical midpoint. Collision handling: split to equidistant values.",
+      "source": {
+        "file": "./.github/resources/new-page-creation.md",
+        "section": "Order (Sorting) Logic"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-jekyll-031",
+      "domain": "jekyll",
+      "rule": "License field: set `license: 1` for standard tier. For section-specific licensing, use `{% license_info %}...{% endlicense_info %}` Liquid tag. Content inside license tags is excluded from search indexing.",
+      "source": {
+        "file": "./.github/resources/new-page-creation.md",
+        "section": "Licensing Features"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-jekyll-032",
+      "domain": "jekyll",
+      "rule": "Front matter `redirect_from` is required and must include `x/<identifier>` as one of its entries.",
+      "source": {
+        "file": "./.github/resources/new-page-creation.md",
+        "section": "Frontmatter Schema (YAML)"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-jekyll-033",
+      "domain": "jekyll",
+      "rule": "The code_link tag requires both `source` and `lang` attributes. Syntax: {% code_link source=\"path/file.cs\" lang=\"csharp\" %}.",
+      "source": {
+        "file": "./.github/resources/feature-specifications/code-link-tag-specification.md",
+        "section": "Tag Syntax"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-persona-001",
+      "domain": "persona",
+      "rule": "Valid front matter `persona` values: `developer`, `admin`, `business`, `architect`, `all`. Comma-separated for multiple.",
+      "source": {
+        "file": "./.github/resources/new-page-creation.md",
+        "section": "Frontmatter Schema (YAML)"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-persona-002",
+      "domain": "persona",
+      "rule": "Persona assignment strategy: general/all \u2192 `all`; developer guides \u2192 `developer` (add `admin`, `architect` if relevant); business guides \u2192 `business` (add `architect` if relevant); architecture \u2192 `architect`; config/user roles \u2192 `admin`, `developer`.",
+      "source": {
+        "file": "./.github/resources/new-page-creation.md",
+        "section": "Persona Assignment Strategy"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-persona-007",
+      "domain": "persona",
+      "rule": "Expect that readers are non-native English speakers. Use simple, ordinary, everyday words. Explain technical terms in simple language.",
+      "source": {
+        "file": "./.github/resources/styleguides/guides-style-guide-full.md",
+        "section": "Expect that your readers are non-native English speakers"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-persona-008",
+      "domain": "persona",
+      "rule": "Business user guide materials: provide real-world marketing scenarios relevant to target audience. Reference KBank, Dancing Goat, or DevNet demos when possible.",
+      "source": {
+        "file": "./.github/resources/styleguides/guides-style-guide-full.md",
+        "section": "Material for business users"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "guides",
+        "business"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-persona-012",
+      "domain": "persona",
+      "rule": "Before starting to write a documentation page or any other educational material, make sure you understand the persona you are writing for.",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "Personas"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-persona-013",
+      "domain": "persona",
+      "rule": "Business users documentation: friendly, positive tone. One step = one action. No special terminology. Use words understandable by a general audience.",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "General rules \u2013 business users"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "business-user"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-persona-014",
+      "domain": "persona",
+      "rule": "Business users documentation: you can write with the assumption that Business users work on a team that includes technical people who can set things up for them.",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "General rules \u2013 business users"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "business-user"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-persona-015",
+      "domain": "persona",
+      "rule": "Developers and admins documentation: if two steps are easy and related to each other, you can write them in one step (e.g., 'Select the desired transformation and click Save').",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "General rules \u2013 developers and admins"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "developer",
+        "admin"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-persona-016",
+      "domain": "persona",
+      "rule": "If writing for developers, do not use the terminology of Business users or administrators. And vice versa. If you need to use a term from another persona's domain, explain it.",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "General rules \u2013 developers and admins"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-structure-001",
+      "domain": "structure",
+      "rule": "The documentation always reflects the latest state of the product. Outside of the changelog, it rarely contains migration guides, information about API breaking changes, and similar. AI agents must never add these unless explicitly instructed in the instructions for the specific workflow.",
+      "source": {
+        "file": "./.github/resources/docwriter-agent-invariants.md",
+        "section": "Content policy"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-structure-002",
+      "domain": "structure",
+      "rule": "Never add a 'Next steps' section to existing documentation pages or new pages in the documentation collection unless specifically requested by task scope.",
+      "source": {
+        "file": "./.github/resources/docwriter-agent-invariants.md",
+        "section": "Content policy"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-structure-009",
+      "domain": "structure",
+      "rule": "Articles should be independent of other pages or the page tree structure. Each page should work on its own. Exceptions for example/reference pages must be properly linked and explained.",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "Documentation page (article)"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-structure-010",
+      "domain": "structure",
+      "rule": "Reference or example pages may use titles starting with 'Reference - XYZ' or 'Example - XYZ'. Prefer including reference/example content on the main page unless the page is too long or the reference relates to multiple pages.",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "References and examples"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-structure-011",
+      "domain": "structure",
+      "rule": "Documentation pages should work well for both new and returning users. Never assume users have read X; you may assume users know about X. Link richly to other pages and materials.",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "Language > General rules"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-structure-020",
+      "domain": "structure",
+      "rule": "Guide code should be at proof-of-concept level that customers should expand in real-life deployments. Focus on Kentico implementation specifics.",
+      "source": {
+        "file": "./.github/resources/styleguides/guides-style-guide-full.md",
+        "section": "Keep the guides simple but still based on real-world examples"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "guides"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-structure-021",
+      "domain": "structure",
+      "rule": "Break long guides into a sequence of materials for extended implementation topics. Each material in the series should work semi-standalone with a short intro and example.",
+      "source": {
+        "file": "./.github/resources/styleguides/guides-style-guide-full.md",
+        "section": "Break long guides into multi-step scenarios"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "guides"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-structure-022",
+      "domain": "structure",
+      "rule": "Always include a table of contents in guides. If each heading describes a specific action, the TOC can double as a checklist or step-by-step path.",
+      "source": {
+        "file": "./.github/resources/styleguides/guides-style-guide-full.md",
+        "section": "Use a table of contents markup (TOC)"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "guides"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-structure-023",
+      "domain": "structure",
+      "rule": "In guides, avoid the related pages component at the end. Include relevant links naturally within the body of the guide, at the point where the reader might need them.",
+      "source": {
+        "file": "./.github/resources/styleguides/guides-style-guide-full.md",
+        "section": "Avoid using the related pages component"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "guides"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-structure-024",
+      "domain": "structure",
+      "rule": "Keep guide sections short \u2014 use headings to indicate steps. Less than 3 paragraphs per section if the material is longer (e.g., 2000 words).",
+      "source": {
+        "file": "./.github/resources/styleguides/guides-style-guide-full.md",
+        "section": "Keep sections short"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "guides"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-structure-025",
+      "domain": "structure",
+      "rule": "Wrap non-module content (prerequisites, next steps, recaps) into a dedicated section for easy removal during module creation.",
+      "source": {
+        "file": "./.github/resources/styleguides/guides-style-guide-full.md",
+        "section": "Wrap non-module content into a dedicated section"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "guides"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-structure-026",
+      "domain": "structure",
+      "rule": "For guide series, include a 'Next step' section at the end with a dedicated heading (e.g., 'Next step', 'Continue with', 'What's next'). Use a dedicated heading so it can be removed for module reuse.",
+      "source": {
+        "file": "./.github/resources/styleguides/guides-style-guide-full.md",
+        "section": "Lead users to the next step in the tutorial/walkthrough series"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "guides"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-structure-027",
+      "domain": "structure",
+      "rule": "When transforming guides into modules, create an admonition pointing users to the existing module using `{% module_link %}` macro.",
+      "source": {
+        "file": "./.github/resources/styleguides/guides-style-guide-full.md",
+        "section": "Inform users about existing module/s"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "guides"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-structure-028",
+      "domain": "structure",
+      "rule": "Every guide material should contain a self-assessment element \u2014 e.g., a simple question to answer or a checklist for understanding.",
+      "source": {
+        "file": "./.github/resources/styleguides/guides-style-guide-full.md",
+        "section": "Help users review what they've learned"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "guides"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-structure-029",
+      "domain": "structure",
+      "rule": "Module naming: avoid using 'in Xperience by Kentico' in module/path names. Use verb-title format (base infinitive, not -ing). Example: 'Work with contacts'.",
+      "source": {
+        "file": "./.github/resources/styleguides/guides-style-guide-full.md",
+        "section": "Understand naming patterns"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "guides"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-structure-030",
+      "domain": "structure",
+      "rule": "The src/_documentation/_guides collection is off limits to modifications unless explicitly requested for a task via context.json or directives.md. Instead of implementing any changes, produce deferred tasks flagging work that needs to be done in the _guides collection.",
+      "source": {
+        "file": "./.github/resources/docwriter-agent-invariants.md",
+        "section": "Collection-specific restrictions"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-structure-031",
+      "domain": "structure",
+      "rule": "Any modifications to src/_documentation/_api files must follow the conventions laid out by other files in the collection. The pages are autogenerated from source code located under resources/repositories/xperience/CMSSolution/Samples/APIExamples, so modify the project sources if you need to add API example pages.",
+      "source": {
+        "file": "./.github/resources/docwriter-agent-invariants.md",
+        "section": "Collection-specific restrictions"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-structure-032",
+      "domain": "structure",
+      "rule": "Changelog page and the `_documentation/changelog/_release_notes` from the documentation inventory is to be ignored. It's a special page composed from special subpages and is not to be edited. Any release note artifacts should be created as separate entries for the handoff process.",
+      "source": {
+        "file": "./.github/resources/docwriter-agent-invariants.md",
+        "section": "Content policy"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-structure-033",
+      "domain": "structure",
+      "rule": "Inside src/_documentation/_documentation/changelog, the _ prefixed release_notes folder should be omitted from documentation indexing.",
+      "source": {
+        "file": "./.github/resources/docwriter-agent-invariants.md",
+        "section": "Collection-specific restrictions"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-structure-034",
+      "domain": "structure",
+      "rule": "An article should consist of: Title (describing the user scenario), Introduction (what you're writing about and how it benefits the user), Body (the process to achieve the goal), Result (what users achieve).",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "Documentation page (article)"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-structure-035",
+      "domain": "structure",
+      "rule": "Write an introduction at the beginning of each article to provide context, describe what you're writing about, and explain how it benefits the user. Articles with no introductory description lack context.",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "Introduction"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-structure-036",
+      "domain": "structure",
+      "rule": "For longer articles that introduce a concept, add a 'Key points' callout using a tip box with bold 'Key points' title. Use a bullet list with 3-5 points summarizing what the article covers.",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "Key points"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-structure-037",
+      "domain": "structure",
+      "rule": "Assume a happy path \u2014 the user has a role that lets them do what they need and their project is correctly set up. Mention prerequisites if necessary.",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "Body"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-structure-038",
+      "domain": "structure",
+      "rule": "At the end of each section, describe the end results of the described scenario. This gives readers confidence they followed the instructions correctly.",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "Result"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-structure-039",
+      "domain": "structure",
+      "rule": "Use a separate reference or example page only when the original page is too long or when the reference relates to multiple documentation pages. Otherwise include examples and references inline.",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "References and examples"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-001",
+      "domain": "style",
+      "rule": "Use 4 spaces for indentation. Do not use tabs or 2-space indents.",
+      "source": {
+        "file": "./.github/resources/markdown-syntax.md",
+        "section": "Formatting"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-002",
+      "domain": "style",
+      "rule": "File naming: use lowercase, hyphenated filenames that reflect page titles (e.g., `administration-interface-basics.md`). Filenames determine URL slugs.",
+      "source": {
+        "file": "./.github/resources/markdown-syntax.md",
+        "section": "File Naming"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-054",
+      "domain": "style",
+      "rule": "Page titles should not end with '-ing'.",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "Title"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-055",
+      "domain": "style",
+      "rule": "For numbered lists, no more than 8 steps. If instructions grow longer, split them into multiple parts with distinct subheadings.",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "Headings"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-056",
+      "domain": "style",
+      "rule": "Pronouns should never leave the paragraph they're introduced in. Always have a clear antecedent when using pronouns.",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "Language > General rules"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-057",
+      "domain": "style",
+      "rule": "If mentioning a restriction, limitation, or possible drawback, do it neutrally without introductory phrases, or use an info/note/warning box as needed.",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "Body"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-058",
+      "domain": "style",
+      "rule": "Opening applications: always write 'Open the XXX application.' Never write 'Open the XXX app from the application list.' or similar.",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "Opening applications"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-059",
+      "domain": "style",
+      "rule": "Authentication terminology: use 'sign in' (verb), 'sign-in' (noun/adjective), 'sign in to' (never 'sign into'). Use 'register' (preferred) or 'sign up'. Never use 'log in', 'login', 'log on' for Kentico functionality.",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "Sign in, sign-in"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-060",
+      "domain": "style",
+      "rule": "UI terminology: 'check box' (two words), 'drop-down list', 'radio button', 'scroll bar', 'user name' (two words).",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "Spaces in terms"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-061",
+      "domain": "style",
+      "rule": "Always use 'curly brackets', never 'braces'.",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "{ and }"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-062",
+      "domain": "style",
+      "rule": "Use 'minimum' for quantities (e.g., 'enter a minimum weight'). Use 'minimal' for probability or quality (e.g., 'it's a minimal chance').",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "Minimum vs. minimal"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-063",
+      "domain": "style",
+      "rule": "For 'that' vs. 'which', follow the Microsoft Style Guide.",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "that vs. which"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-064",
+      "domain": "style",
+      "rule": "Use the `\u2192` (Unicode rightwards arrow) characters for navigation path arrows in documentation.",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "Navigation"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-070",
+      "domain": "style",
+      "rule": "Avoid relying on page or screen content continuity. Use self-contained and contextual phrasing. If referring to a previous step, briefly restate it rather than referring back.",
+      "source": {
+        "file": "./.github/resources/styleguides/guides-style-guide-full.md",
+        "section": "Avoid relying on page or screen content continuity"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "guides"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-071",
+      "domain": "style",
+      "rule": "Share realistic, business-focused examples even in POC-level guides. Avoid creating unrealistic examples just to keep things lightweight.",
+      "source": {
+        "file": "./.github/resources/styleguides/guides-style-guide-full.md",
+        "section": "Share realistic, business-focused examples"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "guides"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-072",
+      "domain": "style",
+      "rule": "Address common questions, concerns, and customer pitfalls. Use WARN callouts to highlight what customers did wrong and how to proceed correctly.",
+      "source": {
+        "file": "./.github/resources/styleguides/guides-style-guide-full.md",
+        "section": "Address common questions, concerns, and customer pitfalls"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "guides"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-073",
+      "domain": "style",
+      "rule": "Use bold for UI element names: applications, tabs, buttons, fields, dialog names (e.g., **Settings** application, **Save** button, **Title** field).",
+      "source": {
+        "file": "./.github/resources/styleguides/typography.md",
+        "section": "Bold formatting"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-074",
+      "domain": "style",
+      "rule": "For repeated UI elements, use italics for second and subsequent mentions in the same paragraph to avoid visual clutter.",
+      "source": {
+        "file": "./.github/resources/styleguides/typography.md",
+        "section": "Bold formatting"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-075",
+      "domain": "style",
+      "rule": "Use italics for: field values (e.g., Type *50*), object names being edited (e.g., Edit the *Send us a message* form), site selector values, and general descriptions in property lists.",
+      "source": {
+        "file": "./.github/resources/styleguides/typography.md",
+        "section": "Italic formatting"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-076",
+      "domain": "style",
+      "rule": "Do not italicize specific values in property lists \u2014 use italics only for general instructions.",
+      "source": {
+        "file": "./.github/resources/styleguides/typography.md",
+        "section": "Italic formatting"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-077",
+      "domain": "style",
+      "rule": "Release notes (files in `src/_documentation/_documentation/changelog/_release-notes`): use italics for text that would normally be bold; use bold only for important emphasis.",
+      "source": {
+        "file": "./.github/resources/styleguides/typography.md",
+        "section": "Italic formatting"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "release-notes"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-078",
+      "domain": "style",
+      "rule": "Avoid underlining. Use underline only when describing underlined UI elements.",
+      "source": {
+        "file": "./.github/resources/styleguides/typography.md",
+        "section": "Other formatting rules"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-079",
+      "domain": "style",
+      "rule": "All caps only for emphasis (NOT, AND, OR) and standard abbreviations (ID, GUID).",
+      "source": {
+        "file": "./.github/resources/styleguides/typography.md",
+        "section": "Other formatting rules"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-080",
+      "domain": "style",
+      "rule": "Punctuation is not bold or italic after formatted text (logical separation).",
+      "source": {
+        "file": "./.github/resources/styleguides/typography.md",
+        "section": "Other formatting rules"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-081",
+      "domain": "style",
+      "rule": "Sentence case for headings and titles: first letter capitalized, others lowercase except proper nouns.",
+      "source": {
+        "file": "./.github/resources/styleguides/typography.md",
+        "section": "Headings and titles"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-082",
+      "domain": "style",
+      "rule": "UI elements: follow exact UI capitalization. Xperience features: use established conventions (Page Builder, Form Builder, Continuous Integration). Non-Kentico features: follow original author's capitalization.",
+      "source": {
+        "file": "./.github/resources/styleguides/typography.md",
+        "section": "Feature names"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-083",
+      "domain": "style",
+      "rule": "Always use sentence case for all list types (first letter capitalized).",
+      "source": {
+        "file": "./.github/resources/styleguides/typography.md",
+        "section": "Lists"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-084",
+      "domain": "style",
+      "rule": "One space between sentences and words. Use 4 spaces for indentation.",
+      "source": {
+        "file": "./.github/resources/styleguides/typography.md",
+        "section": "General spacing"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-085",
+      "domain": "style",
+      "rule": "Serial (Oxford) comma is generally recommended for clarity.",
+      "source": {
+        "file": "./.github/resources/styleguides/typography.md",
+        "section": "Commas"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-086",
+      "domain": "style",
+      "rule": "Always use a comma after 'for example,' 'e.g.,' 'i.e.,'.",
+      "source": {
+        "file": "./.github/resources/styleguides/typography.md",
+        "section": "Commas"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-087",
+      "domain": "style",
+      "rule": "Avoid semi-colons when possible \u2014 split sentences instead.",
+      "source": {
+        "file": "./.github/resources/styleguides/typography.md",
+        "section": "Commas"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-088",
+      "domain": "style",
+      "rule": "Hyphen (-): no spaces around. Used for compound modifiers, split modifiers, established prefixes, page/file names.",
+      "source": {
+        "file": "./.github/resources/styleguides/typography.md",
+        "section": "Hyphens and dashes"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-089",
+      "domain": "style",
+      "rule": "En dash (\u2013): used for ranges (without spaces for numbers: 1975\u20131980; with spaces for dates: 1 May \u2013 1 August), field descriptions, emphasis, and headings.",
+      "source": {
+        "file": "./.github/resources/styleguides/typography.md",
+        "section": "Hyphens and dashes"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-090",
+      "domain": "style",
+      "rule": "Em dash is not used at all in Kentico documentation.",
+      "source": {
+        "file": "./.github/resources/styleguides/typography.md",
+        "section": "Hyphens and dashes"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-091",
+      "domain": "style",
+      "rule": "Use straight quotes (\" and '). Double quotes outside, single inside for nested quotes. Punctuation inside quotation marks (American English style).",
+      "source": {
+        "file": "./.github/resources/styleguides/typography.md",
+        "section": "Quotation marks"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-092",
+      "domain": "style",
+      "rule": "URLs: forward slashes. File system paths: backslashes. Relative paths: forward slashes with tilde (e.g., ~/CMSWebParts/Layouts).",
+      "source": {
+        "file": "./.github/resources/styleguides/typography.md",
+        "section": "File paths and URLs"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-093",
+      "domain": "style",
+      "rule": "Lists: maximum 3 levels deep.",
+      "source": {
+        "file": "./.github/resources/styleguides/typography.md",
+        "section": "Lists"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-094",
+      "domain": "style",
+      "rule": "Time: use a.m./p.m. (lowercase with periods). Temperature: close format (25\u00b0C, 175\u00b0F). Ordinals: no spaces or hyphens (1st, 2nd, 3rd).",
+      "source": {
+        "file": "./.github/resources/styleguides/typography.md",
+        "section": "Time and measurements"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-095",
+      "domain": "style",
+      "rule": "Avoid ellipsis; use 'etc.' instead. Exception: expand box labels may use '...'.",
+      "source": {
+        "file": "./.github/resources/styleguides/typography.md",
+        "section": "Abbreviations and symbols"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-096",
+      "domain": "style",
+      "rule": "All dashes inside markdown files must use `--`. If a page uses preexisting `\u2013` (en dash, U+2013) symbols, everything on the page must be converted to `--`.",
+      "source": {
+        "file": "./.github/resources/docwriter-agent-invariants.md",
+        "section": "Syntax and markup"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-097",
+      "domain": "style",
+      "rule": "Use the task-oriented approach in documentation \u2014 document what scenarios the target audience can accomplish with the product, not what every UI element does.",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "Task-oriented"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-098",
+      "domain": "style",
+      "rule": "Use sentence case for page titles.",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "Title"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-099",
+      "domain": "style",
+      "rule": "Use noun phrases for feature/concept page titles (e.g., 'Page Builder', 'Installation'). For scenario pages, use verb phrases in the imperative mood (e.g., 'Configure your application').",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "Title"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-100",
+      "domain": "style",
+      "rule": "Do not use 'How to' prefixes in page titles.",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "Title"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-101",
+      "domain": "style",
+      "rule": "Page titles must be unique, unambiguous, and optimized for search. Imagine what a user would search for when looking for the topic and use those words.",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "Title"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-102",
+      "domain": "style",
+      "rule": "Avoid generic page names or anything that relies on parent page names. Imagine the documentation structure is completely flat.",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "Title"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-103",
+      "domain": "style",
+      "rule": "Use verb phrases in the imperative mood for headings (e.g., 'Create a new project', 'Deploy your application to the cloud').",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "Headings"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-104",
+      "domain": "style",
+      "rule": "Use general terms for headings rather than terms specific to Kentico Xperience. Readers may not be familiar with Xperience-specific terminology.",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "Headings"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-105",
+      "domain": "style",
+      "rule": "Avoid redundant introduction sentences (e.g., 'To duplicate a content item:') when the heading already specifies the scenario descriptively enough.",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "Headings"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-106",
+      "domain": "style",
+      "rule": "For sections explaining abstract concepts without a specific goal or scenario, using a noun phrase or single word as a heading is acceptable instead of imperative mood.",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "Headings"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-107",
+      "domain": "style",
+      "rule": "Use ordered lists for step-by-step instructions. Use bullet points when the order of steps does not matter. Use sentence case for list items.",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "Body"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-108",
+      "domain": "style",
+      "rule": "Write one action per step. For advanced audiences, two related and easy steps may be merged into one (e.g., 'Select something and click Save').",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "Body"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-109",
+      "domain": "style",
+      "rule": "Write steps as commands using imperative mood with strong modal verbs. Think of it as if the reader asked 'What do I need to do?'",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "Body"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-110",
+      "domain": "style",
+      "rule": "Xperience by Kentico naming: first mention 'Xperience by Kentico', subsequent mentions 'Xperience'. Use 'Kentico' alone only when talking about the company, never for the product.",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "Xperience by Kentico (Odyssey and beyond)"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-111",
+      "domain": "style",
+      "rule": "Keep it simple \u2014 be as concise as possible and focus on what is necessary.",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "General rules"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-112",
+      "domain": "style",
+      "rule": "Get to the point fast \u2014 lead with what's most important.",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "General rules"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-113",
+      "domain": "style",
+      "rule": "Be direct rather than polite. Do not use the word 'please' in documentation.",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "General rules"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-114",
+      "domain": "style",
+      "rule": "Prefer active voice. Use passive voice only when: active would sound condescending or blame the user, to avoid awkward constructions and heavy repetition, to emphasize the receiver of the action, or when the actor is not important or relevant.",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "General rules"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-115",
+      "domain": "style",
+      "rule": "Use the present simple tense.",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "General rules"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-116",
+      "domain": "style",
+      "rule": "Plural contains singular \u2014 do not add (s) at the end of words (e.g., 'Wait 5 minutes' not 'Wait 5 minute(s)').",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "Plurals"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-117",
+      "domain": "style",
+      "rule": "Prefer American English (e.g., 'color' not 'colour').",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "General rules"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-118",
+      "domain": "style",
+      "rule": "Be consistent \u2014 use the same term every time. Avoid unnecessary synonyms. Naming of UI elements, code terms, and specific terminology must remain consistent.",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "General rules"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-119",
+      "domain": "style",
+      "rule": "Avoid the pronoun 'it' \u2014 it fogs the real subject. Text without it is clearer.",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "General rules"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-120",
+      "domain": "style",
+      "rule": "Use the indicative and imperative mood of verbs. Avoid subjunctive mood.",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "General rules"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-121",
+      "domain": "style",
+      "rule": "Use gender-neutral 'they' even for singular usage to avoid gender bias.",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "General rules"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-122",
+      "domain": "style",
+      "rule": "Be inclusive. Don't be culturally specific. Avoid idioms and slang that may not be known worldwide or may be difficult to translate.",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "General rules"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-123",
+      "domain": "style",
+      "rule": "Adjust vocabulary to the target audience. Use terminology that people fitting your target persona know. If unsure, explain the term or find an alternative.",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "General rules"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-124",
+      "domain": "style",
+      "rule": "Use only well-known abbreviations. 'etc.' is better than '...'. 'e.g.' and 'i.e.' are acceptable but using the full term is preferred. Do not invent abbreviations.",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "Abbreviations"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-125",
+      "domain": "style",
+      "rule": "Use common contractions (it's, you're, that's, don't) for friendly, informal tone.",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "Contractions"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-126",
+      "domain": "style",
+      "rule": "Don't mix contractions and their spelled-out equivalents in the same text context (e.g., don't use 'can't' and 'cannot' together).",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "Contractions"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-127",
+      "domain": "style",
+      "rule": "Never form a contraction from a noun and a verb (e.g., 'Microsoft's developing...' is wrong).",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "Contractions"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-128",
+      "domain": "style",
+      "rule": "Avoid ambiguous or awkward contractions (there'd, it'll, they'd). Don't use double contractions (e.g., mustn't've).",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "Contractions"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-129",
+      "domain": "style",
+      "rule": "Use input-agnostic interaction verbs: Select (buttons, checkboxes, dropdowns, radio buttons), Open/Close (applications, UI elements), Enter (typing values), Move/Drag (repositioning), Press (keyboard keys only), Configure (complex inputs).",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "Interaction verbs"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-130",
+      "domain": "style",
+      "rule": "Do not use input-specific verbs for UI interactions: avoid Click, Choose (use Select), Enable/Disable (for UI elements), Check/Uncheck, Type (use Enter).",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "Interaction verbs"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-131",
+      "domain": "style",
+      "rule": "'Enable' and 'disable' may be used when referring to general functionality or settings, not when referring to specific UI elements like checkboxes.",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "Interaction verbs"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-132",
+      "domain": "style",
+      "rule": "Use 'you need to' for required actions directed at people. Avoid 'must' directed at people \u2014 they could perceive it as impolite. 'Must' is acceptable when not writing about people (e.g., 'The conditions must be fulfilled').",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "Modal verbs"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-133",
+      "domain": "style",
+      "rule": "Avoid 'should', 'can', and 'could' when describing expected outcomes \u2014 they imply uncertainty about what the reader will see. Use definitive statements instead.",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "Modal verbs"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-134",
+      "domain": "style",
+      "rule": "Lead with conditions/circumstances, then provide the instruction (e.g., 'To delete the entire document, select Delete' not 'Select Delete if you want to delete the entire document').",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "Sentence structure"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-135",
+      "domain": "style",
+      "rule": "Prefer 'X of Y' over 'Y's X' for possessives for readability. Exception: when the possessive form improves sentence flow or avoids repetitive 'of' constructions.",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "Possessives"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-136",
+      "domain": "style",
+      "rule": "Use backtick formatting (``) for inline code: API members, configuration keys, methods, namespaces, classes, command line tools and arguments. Do not use backticks for database table/column names. Do not add bold or italics to code-highlighted text.",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "Code highlighting"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-137",
+      "domain": "style",
+      "rule": "Never pluralize code elements directly (e.g., `IUserInfoProviders` is wrong). Use noun phrases where the API member functions as an adjective (e.g., '`IUserInfoProvider` classes').",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "Code highlighting"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-138",
+      "domain": "style",
+      "rule": "Callout types in order of severity: tip (bonus info, optional actionable item), info (additional context, edge case behavior), note (important point), warning (irreversible destructive actions, severe consequences only).",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "Info boxes (callouts)"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-139",
+      "domain": "style",
+      "rule": "Always include a title (bold, separate line) in callout boxes. Exception: single-sentence callouts where the title would be redundant.",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "Info boxes (callouts)"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-140",
+      "domain": "style",
+      "rule": "Do not write the callout type name (e.g., 'Note') inside the corresponding callout box \u2014 it is redundant.",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "Info boxes (callouts)"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-141",
+      "domain": "style",
+      "rule": "Do not misuse callout types. Follow the severity order: tip \u2192 info \u2192 note \u2192 warning.",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "Info boxes (callouts)"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-142",
+      "domain": "style",
+      "rule": "Both 'register' and 'sign up' are acceptable. 'Register' is the preferred form because it is easier to distinguish from 'sign in'.",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "Register and sign up"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-143",
+      "domain": "style",
+      "rule": "Use 'Clear' (not 'Uncheck' or 'Disable') to describe deselecting a check box.",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "Interaction verbs"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-144",
+      "domain": "style",
+      "rule": "Use 'Go to' for navigating to tabs, applications, websites, or particular places in the UI. Use 'Switch to' when changing tabs or applications mid-instructions.",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "Interaction verbs"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-145",
+      "domain": "style",
+      "rule": "Never use an arrow for mixing different types of UI elements (e.g., application and tab together) in navigation paths, unless describing settings or when space is limited (with UI type labels added).",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "Navigation"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-146",
+      "domain": "style",
+      "rule": "Avoid 'have to' because 'have' may mean something different and is not suitable for non-native speakers.",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "Modal verbs"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-147",
+      "domain": "style",
+      "rule": "Don't confuse 'its' (possessive) with 'it's' (contraction of 'it is').",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "Contractions"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-style-148",
+      "domain": "style",
+      "rule": "Always write 'sign in to something', never 'sign into something'.",
+      "source": {
+        "file": "./.github/resources/styleguides/docs-style-guide-full.md",
+        "section": "Sign in, sign-in"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-taxonomy-002",
+      "domain": "taxonomy",
+      "rule": ".NET terminology: use '.NET' (general framework), 'ASP.NET' (web development), '.NET Framework' (legacy 4.8 for KX13). Do not use '.NET Core' (replaced by '.NET').",
+      "source": {
+        "file": "./.github/resources/styleguides/word-list.md",
+        "section": ".NET terminology"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-taxonomy-003",
+      "domain": "taxonomy",
+      "rule": "Architecture terms: 'client-side' and 'server-side' always hyphenated as qualifiers. 'front end'/'back end' two words, hyphenated when qualifying nouns. 'file system' two words. 'microsite', 'multichannel', 'multilingual' are one word, no hyphens.",
+      "source": {
+        "file": "./.github/resources/styleguides/word-list.md",
+        "section": "Architecture terms"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-taxonomy-004",
+      "domain": "taxonomy",
+      "rule": "Capitalized Xperience features: Form Builder, Page Builder, Email Builder, Continuous Integration, Continuous Deployment (all proper nouns). 'Digital marketing' uses lowercase 'marketing'.",
+      "source": {
+        "file": "./.github/resources/styleguides/word-list.md",
+        "section": "Capitalized feature names"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-taxonomy-005",
+      "domain": "taxonomy",
+      "rule": "Admin interface terminology: 'Xperience administration' (full form), 'admin UI' (developer docs for frequent references), 'administration interface' (non-technical users). The 'application' is the 'unit' in Xperience admin UI.",
+      "source": {
+        "file": "./.github/resources/styleguides/word-list.md",
+        "section": "Admin interface terminology"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-taxonomy-006",
+      "domain": "taxonomy",
+      "rule": "User classifications: 'user' (someone with Xperience account), 'member' (registered visitor without admin access), 'visitor' (anonymous website user), 'contact' (Xperience entity representing website visitors), 'customer' (commerce contexts only). Visitors become contacts in Xperience. Do not confuse contact with visitor or customer.",
+      "source": {
+        "file": "./.github/resources/styleguides/word-list.md",
+        "section": "User classifications"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-taxonomy-007",
+      "domain": "taxonomy",
+      "rule": "Avoid 'end user' when possible \u2014 use specific terms (developers, business users). Prefer 'visitor' over 'customer' for website interaction.",
+      "source": {
+        "file": "./.github/resources/styleguides/word-list.md",
+        "section": "Preferred terminology"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-taxonomy-008",
+      "domain": "taxonomy",
+      "rule": "Compound word spelling: 'allowlist'/'denylist' (not whitelist/blacklist), 'email' (no hyphen), 'online' (no hyphen), 'website' (one word), 'web server' (two words), 'blog post' (two words), 'check box' (two words), 'user name' (two words), 'live site' (two words, hyphenated as qualifier).",
+      "source": {
+        "file": "./.github/resources/styleguides/word-list.md",
+        "section": "Compound words"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-taxonomy-009",
+      "domain": "taxonomy",
+      "rule": "Time/process terms: 'lifecycle' (one word), 'startup' (one word), 'step-by-step' (hyphenated), 'timeout' (one word), 'plugin' (one word, no hyphen).",
+      "source": {
+        "file": "./.github/resources/styleguides/word-list.md",
+        "section": "Time and process terms"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-taxonomy-010",
+      "domain": "taxonomy",
+      "rule": "'Internet' capitalized as noun, lowercase as adjective. 'intranet' always lowercase.",
+      "source": {
+        "file": "./.github/resources/styleguides/word-list.md",
+        "section": "Internet terminology"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-taxonomy-011",
+      "domain": "taxonomy",
+      "rule": "Action terminology: 'clone' means create duplicate (admin UI listings); 'copy' means add to clipboard (Page Builder widgets). Use 'sign in' consistently per style guide.",
+      "source": {
+        "file": "./.github/resources/styleguides/word-list.md",
+        "section": "UI actions"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-taxonomy-012",
+      "domain": "taxonomy",
+      "rule": "SaaS: general term, not a proper noun, use with definite article 'the' (e.g., 'the SaaS environment'). 'private cloud': common noun, no capitalization. 'Xperience Portal': proper noun, no article.",
+      "source": {
+        "file": "./.github/resources/styleguides/word-list.md",
+        "section": "Environment types"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-taxonomy-013",
+      "domain": "taxonomy",
+      "rule": "'[X] as a service': hyphenated when qualifying nouns (e.g., 'software-as-a-service solution'). Use capitals for abbreviations (SaaS, PaaS, IaaS).",
+      "source": {
+        "file": "./.github/resources/styleguides/word-list.md",
+        "section": "Service terminology"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-taxonomy-014",
+      "domain": "taxonomy",
+      "rule": "Treat 'data' as singular: 'data is' (not 'data are').",
+      "source": {
+        "file": "./.github/resources/styleguides/word-list.md",
+        "section": "Data usage"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-taxonomy-015",
+      "domain": "taxonomy",
+      "rule": "'third party' (two words as noun), 'third-party' (hyphenated as adjective).",
+      "source": {
+        "file": "./.github/resources/styleguides/word-list.md",
+        "section": "Third-party references"
+      },
+      "enforcement": "reviewer-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    },
+    {
+      "id": "INV-taxonomy-016",
+      "domain": "taxonomy",
+      "rule": "Deprecated terms: use 'commerce' (not 'e-commerce'), 'online' (not 'on-line'), 'Digital marketing' (not 'online marketing'), 'allowlist' (not 'whitelist'), 'denylist' (not 'blacklist'), 'sign in' (not 'log in').",
+      "source": {
+        "file": "./.github/resources/styleguides/word-list.md",
+        "section": "Deprecated terms"
+      },
+      "enforcement": "machine-checkable",
+      "appliesTo": [
+        "all"
+      ],
+      "ephemeral": false
+    }
+  ],
+  "summary": {
+    "totalInvariants": 231,
+    "byDomain": {
+      "codesamples": 27,
+      "crossref": 8,
+      "general": 20,
+      "jekyll": 33,
+      "persona": 10,
+      "structure": 26,
+      "style": 92,
+      "taxonomy": 15
+    },
+    "filesScanned": 2,
+    "filesSkipped": 10,
+    "filesDeleted": 2,
+    "invariantsCarriedForward": 156,
+    "invariantsNewlyExtracted": 72,
+    "invariantsRemoved": 82,
+    "taskInstructionsEmitted": 3
+  }
+}

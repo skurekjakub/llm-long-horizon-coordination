@@ -1,0 +1,876 @@
+{
+  "version": 1,
+  "generatedBy": "docwriter-code-analyzer",
+  "analyses": [
+    {
+      "areaId": "AREA-001",
+      "areaName": "Page ACL Permission Evaluation and Constants",
+      "changes": [
+        {
+          "filePath": "CMSSolution/Admin/Kentico.Xperience.Admin.Websites/WebPages/Acls/WebPageAclPermissionEvaluator.cs",
+          "symbols": [
+            "WebPageAclPermissionEvaluator",
+            "IWebPageAclPermissionEvaluator",
+            "Evaluate()",
+            "EvaluatePermission()",
+            "CheckAclSubtreePermission()"
+          ],
+          "behavioralImpact": {
+            "userFacing": "This is the central ACL permission gatekeeper. Every page operation (publish, save, delete, create, move, clone, synchronize) passes through Evaluate() to determine if the current user has the required page-level ACL permission. The evaluator implements a two-tier decision: (1) Channel admin bypass — if the user is a channel admin, permission is immediately granted without checking ACLs. (2) ACL evaluation with the Read prerequisite rule — for non-admin users, the evaluator resolves the user's granted ACL permissions via role mappings, then applies the IndividuallyCheckedPermissions rule: Read and Display are checked individually (just that permission alone), but all other permissions (Create, Update, Delete, Synchronize) require BOTH Read AND the specific permission to be present in the granted set. This means granting Update without Read has zero effect — the user cannot update anything.",
+            "developerFacing": "The evaluator is registered as a scoped service (one instance per HTTP request). It caches granted permissions per web page item ID within a request via a Dictionary<int, HashSet<string>>, so multiple permission checks on the same page within one request only query the database once. The Evaluate() method also supports subtree evaluation via the evaluateChildPages parameter — when true, CheckAclSubtreePermission() is called to verify the permission on all child pages with broken ACL inheritance (for operations like delete-with-children or move that affect entire subtrees).",
+            "sideEffects": "The channel admin bypass (AREA-001 → WebsiteChannelAdminProvider) is checked before any ACL evaluation. This means channel admins are never subject to the Read prerequisite rule. The evaluator is the enforcement point for all ACL checks called from AREA-002 (ContentTab, PageBuilderTab, UrlsTab, CreateWebPage via CheckAclPermission()) and AREA-004 (WebPageBase.CheckAclPermission()). It is also called directly by WebPagesApplication for delete, move, clone, and synchronization operations.",
+            "breaking": null
+          },
+          "docFacts": {
+            "description": "Central ACL permission evaluator implementing the Read prerequisite rule and channel admin bypass",
+            "parameters": [
+              {"name": "webPageItemId", "type": "int", "default": "N/A", "description": "The ID of the web page being checked. Must be >= 0. Value 0 indicates root node (handled specially with direct ACL lookup rather than ACL mapping)."},
+              {"name": "websiteChannelId", "type": "int", "default": "N/A", "description": "The website channel ID. Must be > 0."},
+              {"name": "permission", "type": "string", "default": "N/A", "description": "The permission name to check (e.g., 'Read', 'Update', 'Create', 'Delete', 'Synchronize', 'Display')."},
+              {"name": "evaluateChildPages", "type": "bool", "default": "false", "description": "When true, also checks the permission on all child pages with broken ACL inheritance. Used for subtree operations (delete-with-children, move)."},
+              {"name": "cancellationToken", "type": "CancellationToken", "default": "default", "description": "Cancellation token."}
+            ],
+            "configChanges": [],
+            "errors": [
+              {"condition": "webPageItemId < 0", "message": "ArgumentException: Web page item ID must be greater or equal to 0.", "severity": "error"},
+              {"condition": "websiteChannelId <= 0", "message": "ArgumentException: Website channel ID must be greater than 0.", "severity": "error"},
+              {"condition": "Permission denied", "message": "Returns WebPageAclPermissionEvaluationResult with Succeeded=false (caller typically throws ForbiddenAccessException).", "severity": "error"}
+            ],
+            "prerequisites": [
+              "User must have the Read ACL permission to use any non-individually-checked permission (Update, Create, Delete, Synchronize). This is the Read prerequisite rule enforced at lines 118-123.",
+              "Channel admins (global Administrator role OR ManagePermissions application permission on the website channel) bypass all ACL checks entirely — they are never subject to the Read prerequisite."
+            ],
+            "keyBehaviors": [
+              {
+                "rule": "Read Prerequisite Rule",
+                "description": "For permissions NOT in IndividuallyCheckedPermissions (i.e., Create, Update, Delete, Synchronize), the evaluator requires BOTH grantedPermissions.Contains('Read') AND grantedPermissions.Contains(permission). For Read and Display, only the specific permission itself must be present.",
+                "sourceLine": "Lines 118-123",
+                "implication": "Granting Update, Create, Delete, or Synchronize without also granting Read will silently have no effect. This is a common admin mistake."
+              },
+              {
+                "rule": "Channel Admin Bypass",
+                "description": "The evaluator first calls websiteChannelAdminProvider.IsChannelAdmin(). If true, returns Success immediately without any ACL evaluation.",
+                "sourceLine": "Lines 83-87",
+                "implication": "Users with the Administrator role or ManagePermissions application permission on the website channel skip all ACL checks."
+              },
+              {
+                "rule": "Per-request caching",
+                "description": "Granted permissions for each web page are cached in a Dictionary<int, HashSet<string>> scoped to the HTTP request. Subsequent checks on the same page reuse cached results.",
+                "sourceLine": "Lines 36, 105-116",
+                "implication": "Multiple permission checks on the same page (e.g., READ in ConfigurePage + UPDATE in Publish) only query the database once."
+              },
+              {
+                "rule": "Subtree permission check",
+                "description": "CheckAclSubtreePermission checks only child pages that break inheritance (have their own ACL). It uses a SQL TOP 1 query to find ANY child page without the permission — if found, returns false.",
+                "sourceLine": "Lines 131-157",
+                "implication": "For subtree operations like delete-with-children, ALL child pages with broken ACL inheritance must also grant the required permission."
+              },
+              {
+                "rule": "Root node handling",
+                "description": "When webPageItemId equals ROOT_NODE_ID (0), the evaluator queries WebPageAclInfo directly with WebPageAclWebPageItemID=NULL for the given website channel, instead of using the WebPageAclMappingInfo table.",
+                "sourceLine": "Lines 162-172",
+                "implication": "Root node permissions are stored differently from page-level permissions."
+              }
+            ]
+          },
+          "crossCuttingConcerns": ["AREA-002", "AREA-004"]
+        },
+        {
+          "filePath": "CMSSolution/Websites/Website/WebsiteConstants.cs",
+          "symbols": [
+            "WebsiteConstants",
+            "IndividuallyCheckedPermissions",
+            "WEBSITE_CHANNEL_APPLICATION_PREFIX"
+          ],
+          "behavioralImpact": {
+            "userFacing": "Defines which ACL permissions are checked without the Read prerequisite. Only Read and Display are in IndividuallyCheckedPermissions — meaning these two permissions work standalone. All other permissions (Create, Update, Delete, Synchronize) require Read as a prerequisite. This set directly controls the behavior of the Read prerequisite rule in WebPageAclPermissionEvaluator.",
+            "developerFacing": "IndividuallyCheckedPermissions is a static readonly HashSet<string> containing WebPageAclPermissions.READ and WebPageAclPermissions.DISPLAY. It is consumed solely by WebPageAclPermissionEvaluator.EvaluatePagePermission() to determine which permissions need the Read prerequisite. WEBSITE_CHANNEL_APPLICATION_PREFIX ('Kentico.Xperience.Application.WebPages') is used by WebsiteChannelAdminProvider to construct application identifiers for permission lookups.",
+            "sideEffects": "Adding a permission to this set would exempt it from the Read prerequisite. Removing one would add the Read prerequisite to it.",
+            "breaking": null
+          },
+          "docFacts": {
+            "description": "Defines the set of ACL permissions that are checked individually (without Read prerequisite)",
+            "parameters": [],
+            "configChanges": [],
+            "errors": [],
+            "prerequisites": [],
+            "keyBehaviors": [
+              {
+                "rule": "IndividuallyCheckedPermissions set",
+                "description": "Contains exactly { 'Read', 'Display' }. These are the only two ACL permissions that do NOT require Read as a prerequisite.",
+                "sourceLine": "Lines 20-24",
+                "implication": "The permission hierarchy is: Read stands alone. Display stands alone. Create, Update, Delete, Synchronize all require Read + themselves."
+              }
+            ]
+          },
+          "crossCuttingConcerns": []
+        },
+        {
+          "filePath": "CMSSolution/Websites/ACLs/WebPageAclPermissions.cs",
+          "symbols": [
+            "WebPageAclPermissions",
+            "DISPLAY",
+            "READ",
+            "CREATE",
+            "UPDATE",
+            "DELETE",
+            "SYNCHRONIZE"
+          ],
+          "behavioralImpact": {
+            "userFacing": "Defines all six web page ACL permission constants used throughout the system. These are the permission names that administrators configure in the page ACL UI and that the system checks when users perform operations. The six permissions are: Display (controls visibility in navigation/listings), Read (required to view page content; prerequisite for Update, Create, Delete, Synchronize), Create (create child pages), Update (edit, save, publish, unpublish, rename, discard), Delete (delete pages), Synchronize (create content synchronization).",
+            "developerFacing": "String constants: 'Display', 'Read', 'Create', 'Update', 'Delete', 'Synchronize'. Used as parameters to CheckAclPermission() and WebPageAclPermissionEvaluator.Evaluate() throughout AREA-002 and AREA-004.",
+            "sideEffects": null,
+            "breaking": null
+          },
+          "docFacts": {
+            "description": "Web page ACL permission constants — the six page-level permissions",
+            "parameters": [
+              {"name": "DISPLAY", "type": "string constant", "default": "\"Display\"", "description": "Controls page visibility in navigation, listings, and the page tree. Checked individually (no Read prerequisite)."},
+              {"name": "READ", "type": "string constant", "default": "\"Read\"", "description": "Required to view page content in any tab (Content, Page Builder, URLs). Checked individually. Also serves as a prerequisite for Create, Update, Delete, and Synchronize."},
+              {"name": "CREATE", "type": "string constant", "default": "\"Create\"", "description": "Required to create child pages under a page. Requires Read as a prerequisite. Checked on the PARENT page, not the page being created."},
+              {"name": "UPDATE", "type": "string constant", "default": "\"Update\"", "description": "Required for all mutating operations: save, publish, unpublish, discard, rename, change workflow step, cancel scheduled publish/unpublish, create new version. Requires Read as a prerequisite."},
+              {"name": "DELETE", "type": "string constant", "default": "\"Delete\"", "description": "Required to delete a page. For delete-with-children, evaluated on the page and all child pages with broken ACL inheritance. Requires Read as a prerequisite."},
+              {"name": "SYNCHRONIZE", "type": "string constant", "default": "\"Synchronize\"", "description": "Required to create content synchronization. Evaluated on the page and its parent hierarchy. Requires Read as a prerequisite."}
+            ],
+            "configChanges": [],
+            "errors": [],
+            "prerequisites": [],
+            "keyBehaviors": [
+              {
+                "rule": "Permission registration on WebPagesApplication",
+                "description": "All six permissions are registered via [WebPageAclPermission] attributes on the WebPagesApplication class, making them available in the admin UI for ACL configuration.",
+                "sourceLine": "WebPagesApplication.cs lines 41-46",
+                "implication": "These are the only page-level ACL permissions available. Custom permissions cannot be added."
+              }
+            ]
+          },
+          "crossCuttingConcerns": []
+        },
+        {
+          "filePath": "CMSSolution/Admin/Kentico.Xperience.Admin.Websites/WebPages/Acls/WebsiteChannelAdminProvider.cs",
+          "symbols": [
+            "WebsiteChannelAdminProvider",
+            "IWebsiteChannelAdminProvider",
+            "IsChannelAdmin()",
+            "GetManagingWebsiteChannels()"
+          ],
+          "behavioralImpact": {
+            "userFacing": "Determines which users are treated as channel administrators and thus bypass all page ACL permission checks. A user qualifies as a channel admin if: (1) They have the global Administrator role (user.IsAdministrator() returns true), OR (2) They have the 'ManagePermissions' application permission for the specific website channel's Web Pages application. Channel admins can perform any operation on any page without needing specific ACL permission assignments.",
+            "developerFacing": "IsChannelAdmin() is called by WebPageAclPermissionEvaluator.EvaluatePermission() before any ACL evaluation. GetManagingWebsiteChannels() returns the set of website channel IDs a user can manage (has ManagePermissions for). This result is cached for 60 minutes (HOUR_CACHE_DURATION = 60) with cache dependencies on ApplicationPermissionInfo, UserRoleInfo, and UserInfo. Note: GetManagingWebsiteChannels() does NOT return all channels for global administrators — it only returns channels where the user explicitly has ManagePermissions. The IsChannelAdmin() method handles the global admin case separately.",
+            "sideEffects": "The 60-minute cache means permission changes (adding/removing ManagePermissions or changing Administrator role) may take up to 60 minutes to take effect. Cache is invalidated by changes to ApplicationPermissionInfo, UserRoleInfo, or the specific UserInfo.",
+            "breaking": null
+          },
+          "docFacts": {
+            "description": "Determines channel admin status — controls who bypasses all ACL checks",
+            "parameters": [
+              {"name": "user", "type": "AdminApplicationUser", "default": "N/A", "description": "The user to check."},
+              {"name": "websiteChannelId", "type": "int", "default": "N/A", "description": "The website channel to check admin status for."}
+            ],
+            "configChanges": [],
+            "errors": [],
+            "prerequisites": [],
+            "keyBehaviors": [
+              {
+                "rule": "Two paths to channel admin status",
+                "description": "Path 1: user.IsAdministrator() — global Administrator role. Path 2: user has the ManagePermissions application permission for the specific website channel's WebPages application.",
+                "sourceLine": "Lines 43-52",
+                "implication": "Administrators always bypass ACL. Non-administrator users need ManagePermissions specifically assigned to the website channel application."
+              },
+              {
+                "rule": "ManagePermissions lookup",
+                "description": "Queries ApplicationPermissionInfo joined with UserRoleInfo, filtering by application name starting with WebPagesApplication.IDENTIFIER and permission name equal to WebsiteChannelUIPermissions.MANAGE_PERMISSIONS ('ManagePermissions'). The application unique identifier suffix is stripped to get the website channel ID.",
+                "sourceLine": "Lines 69-87",
+                "implication": "ManagePermissions is a per-channel permission. A user can be a channel admin on one website channel but not another."
+              },
+              {
+                "rule": "60-minute permission cache",
+                "description": "GetManagingWebsiteChannels results are cached for 60 minutes with dependencies on ApplicationPermission, UserRole, and User data.",
+                "sourceLine": "Lines 59-65",
+                "implication": "Changes to ManagePermissions assignments may take up to 60 minutes to propagate. No manual cache invalidation mechanism is exposed."
+              }
+            ]
+          },
+          "crossCuttingConcerns": []
+        }
+      ]
+    },
+    {
+      "areaId": "AREA-002",
+      "areaName": "Page Commands — Content, Page Builder, and URLs Tabs",
+      "changes": [
+        {
+          "filePath": "CMSSolution/Admin/Kentico.Xperience.Admin.Websites/UIPages/WebPages/WebPage/Content/ContentTab.cs",
+          "symbols": [
+            "ContentTab",
+            "Save()",
+            "Publish()",
+            "ChangeWorkflowStep()",
+            "CancelScheduledPublish()",
+            "CancelScheduledPublishAndEdit()",
+            "CancelScheduledUnpublish()",
+            "Unpublish()",
+            "Discard()",
+            "CreateNewVersion()",
+            "Versions()",
+            "ShareablePreview()",
+            "Rename()",
+            "Change()"
+          ],
+          "behavioralImpact": {
+            "userFacing": "The Content tab is the primary editing UI for web page structured content fields. Every command follows the two-layer permission model: [PageCommand(Permission = SystemPermissions.VIEW)] as the application-level gate, then CheckAclPermission() as the page-level ACL gate. Mutating operations (Save, Publish, ChangeWorkflowStep, CancelScheduledPublish, CancelScheduledPublishAndEdit, CancelScheduledUnpublish, Unpublish, Discard, CreateNewVersion, Rename, Change) all require WebPageAclPermissions.UPDATE. Read-only operations (Versions, ShareablePreview) require WebPageAclPermissions.READ. After ACL checks pass, commands delegate to WebPageCommandManagerBase which applies workflow checks. Additionally, ConfigureTemplateProperties checks UPDATE ACL to set forms to ReadOnly mode when the user lacks Update permission — the user can still VIEW the page (due to READ check in WebPageBase.ConfigurePage) but cannot edit.",
+            "developerFacing": "ContentTab extends WebPageBase<ContentTabClientProperties>. The base class ConfigurePage() already enforces READ. All PageCommand methods additionally check either UPDATE or READ via CheckAclPermission(). The MoveItemFormChange command checks workspace permission (WorkspaceDataPermissions.VIEW) instead of ACL — this is for the content item move confirmation dialog which uses a different permission model. ComponentCommand has no explicit permission attribute beyond the base [PageCommand] — it relies on the page-level READ check from ConfigurePage().",
+            "sideEffects": "When UPDATE permission is denied but READ is granted, ConfigureTemplateProperties sets properties.EditMode = FormEditMode.ReadOnly, disabling all form field editing. However, the page still renders — users can view content but not modify it.",
+            "breaking": null
+          },
+          "docFacts": {
+            "description": "Content tab — permission requirements per operation",
+            "parameters": [],
+            "configChanges": [],
+            "errors": [
+              {"condition": "Application permission denied (no View permission on website channel)", "message": "ForbiddenAccessException thrown by PageInvokerBase.CheckPermission(). User cannot access the page at all.", "severity": "error"},
+              {"condition": "ACL permission denied (no Read on page)", "message": "ForbiddenAccessException thrown by WebPageBase.ConfigurePage(). User cannot view the page.", "severity": "error"},
+              {"condition": "ACL permission denied (no Update on page)", "message": "ForbiddenAccessException thrown by CheckAclPermission() inside the specific command (Save, Publish, etc.). User sees the page in read-only mode but mutating operations fail.", "severity": "error"}
+            ],
+            "prerequisites": [],
+            "keyBehaviors": [
+              {
+                "rule": "Permission matrix for ContentTab commands",
+                "description": "Save: VIEW + UPDATE ACL. Publish: VIEW + UPDATE ACL (then workflow check in PublishInternal). ChangeWorkflowStep: VIEW + UPDATE ACL (then workflow step role check). CancelScheduledPublish: VIEW + UPDATE ACL (then workflow step role check). CancelScheduledPublishAndEdit: VIEW + UPDATE ACL (then workflow step role check). CancelScheduledUnpublish: VIEW + UPDATE ACL. Unpublish: VIEW + UPDATE ACL (no workflow step role check). Discard: VIEW + UPDATE ACL (then workflow step role check). CreateNewVersion: VIEW + UPDATE ACL. Versions: VIEW + READ ACL. ShareablePreview: VIEW + READ ACL. Rename: VIEW + UPDATE ACL. Change: VIEW + UPDATE ACL.",
+                "sourceLine": "Lines 161-462",
+                "implication": "Versions and ShareablePreview only need Read. All other mutating operations need Update. Note that Unpublish does NOT check workflow step roles (UnpublishInternal only checks version status)."
+              },
+              {
+                "rule": "Read-only form rendering",
+                "description": "ConfigureTemplateProperties evaluates UPDATE permission and sets EditMode to ReadOnly when denied. This is a UI-level restriction — the user sees content but form fields are disabled.",
+                "sourceLine": "Lines 94-95",
+                "implication": "Users with Read but not Update permission can view page content but cannot edit it."
+              }
+            ]
+          },
+          "crossCuttingConcerns": ["AREA-001", "AREA-003"]
+        },
+        {
+          "filePath": "CMSSolution/Admin/Kentico.Xperience.Admin.Websites/UIPages/WebPages/WebPage/PageBuilder/PageBuilderTab.cs",
+          "symbols": [
+            "PageBuilderTab",
+            "Save()",
+            "Publish()",
+            "ChangeWorkflowStep()",
+            "Discard()",
+            "Unpublish()",
+            "CreateNewVersion()",
+            "CancelScheduledPublish()",
+            "CancelScheduledPublishAndEdit()",
+            "CancelScheduledUnpublish()",
+            "Versions()",
+            "ShareablePreview()"
+          ],
+          "behavioralImpact": {
+            "userFacing": "The Page Builder tab follows the identical two-layer permission model as ContentTab. All mutating operations (Save, Publish, ChangeWorkflowStep, Discard, Unpublish, CreateNewVersion, CancelScheduledPublish, CancelScheduledPublishAndEdit, CancelScheduledUnpublish) use [PageCommand(Permission = SystemPermissions.VIEW)] + CheckAclPermission(UPDATE). Read-only operations (Versions, ShareablePreview) use CheckAclPermission(READ). The permission requirements are identical to ContentTab — the only difference is what data is being saved (Page Builder widget/layout configuration vs. structured content fields).",
+            "developerFacing": "PageBuilderTab extends WebPageBase<PageBuilderPageClientProperties> and overrides GetWebPageCommandManager() to create a PageBuilderWebPageCommandManager instead of the standard one. This specialized command manager handles page builder data differently but the permission model is identical. The tab also has additional page commands for component properties (GetFormItems, ValidateComponents), asset management (GetAssetFolderForm, CreateAssetFolder), and content listing (LoadContentItemPanelItems, LoadContentItemAssetUrls) — these use the base [PageCommand(Permission = SystemPermissions.VIEW)] without additional ACL checks beyond the READ already enforced by ConfigurePage().",
+            "sideEffects": "Unlike ContentTab, PageBuilderTab does not set an explicit ReadOnly mode via ConfigureTemplateProperties — the read-only behavior is controlled by the page builder iframe's readonlyMode parameter derived from the WebPageState.EditMode.",
+            "breaking": null
+          },
+          "docFacts": {
+            "description": "Page Builder tab — same permission model as Content tab",
+            "parameters": [],
+            "configChanges": [],
+            "errors": [
+              {"condition": "Application permission denied", "message": "ForbiddenAccessException — cannot access.", "severity": "error"},
+              {"condition": "ACL READ denied", "message": "ForbiddenAccessException — cannot view.", "severity": "error"},
+              {"condition": "ACL UPDATE denied", "message": "ForbiddenAccessException — mutating operations fail.", "severity": "error"}
+            ],
+            "prerequisites": [],
+            "keyBehaviors": [
+              {
+                "rule": "Permission matrix for PageBuilderTab commands",
+                "description": "Identical to ContentTab: Save/Publish/ChangeWorkflowStep/Discard/Unpublish/CreateNewVersion/CancelScheduledPublish/CancelScheduledPublishAndEdit/CancelScheduledUnpublish all require VIEW + UPDATE ACL. Versions/ShareablePreview require VIEW + READ ACL.",
+                "sourceLine": "Lines 181-441",
+                "implication": "Page Builder and Content tabs have symmetric permission requirements."
+              }
+            ]
+          },
+          "crossCuttingConcerns": ["AREA-001", "AREA-003"]
+        },
+        {
+          "filePath": "CMSSolution/Admin/Kentico.Xperience.Admin.Websites/UIPages/WebPages/WebPage/Urls/UrlsTab.cs",
+          "symbols": [
+            "UrlsTab",
+            "Save()",
+            "Publish()",
+            "ChangeWorkflowStep()",
+            "CancelScheduledPublish()",
+            "CancelScheduledPublishAndEdit()",
+            "CancelScheduledUnpublish()",
+            "Unpublish()",
+            "Discard()",
+            "CreateNewVersion()",
+            "Versions()",
+            "ShareablePreview()",
+            "Rename()",
+            "CheckAclPermissions()",
+            "GetEditUrlFormComponents()",
+            "SubmitUrlEditForm()",
+            "EditUrlChange()",
+            "GenerateShareablePreviewUrl()",
+            "StopShareablePreview()"
+          ],
+          "behavioralImpact": {
+            "userFacing": "The URLs tab follows the same two-layer permission model as ContentTab and PageBuilderTab. All standard mutating operations require VIEW + UPDATE ACL. Read-only operations (Versions, ShareablePreview) require VIEW + READ ACL. Additionally, the URLs tab has URL-specific commands: GetEditUrlFormComponents, SubmitUrlEditForm, and EditUrlChange all require UPDATE ACL — consistent with the other mutating operations. GenerateShareablePreviewUrl and StopShareablePreview only require READ ACL. The tab also has a CheckAclPermissions() method (note: plural) that controls redirect configuration visibility — if the user lacks UPDATE permission, the redirect edit mode is set to 'Forbidden', preventing the user from adding or editing redirects even though they can view the page.",
+            "developerFacing": "UrlsTab has ConfigureTemplateProperties that evaluates UPDATE permission to set EditMode to ReadOnly, similar to ContentTab. The CheckAclPermissions (plural, private method at line 193) controls the redirect configuration — it sets EditRedirectMode.Forbidden when UPDATE is denied, which is a distinct behavior from the general ReadOnly mode.",
+            "sideEffects": "Redirect editing requires UPDATE permission. Shareable preview URL generation and stopping only require READ. This means a user with Read-only access can generate/stop shareable preview links but cannot modify URLs or redirects.",
+            "breaking": null
+          },
+          "docFacts": {
+            "description": "URLs tab — same permission model plus URL-specific permission checks",
+            "parameters": [],
+            "configChanges": [],
+            "errors": [
+              {"condition": "ACL UPDATE denied on redirect operations", "message": "EditRedirectMode set to Forbidden — user cannot add or edit redirects.", "severity": "warning"},
+              {"condition": "ACL UPDATE denied on URL edit operations", "message": "ForbiddenAccessException — cannot edit URL slugs.", "severity": "error"}
+            ],
+            "prerequisites": [],
+            "keyBehaviors": [
+              {
+                "rule": "Permission matrix for UrlsTab commands",
+                "description": "Standard operations: Same as ContentTab. URL-specific: GetEditUrlFormComponents, SubmitUrlEditForm, EditUrlChange require UPDATE. GenerateShareablePreviewUrl, StopShareablePreview require READ. Redirect visibility: UPDATE check in CheckAclPermissions sets EditRedirectMode.Forbidden.",
+                "sourceLine": "Lines 235-862",
+                "implication": "URL editing and redirect management both need Update. Shareable preview only needs Read."
+              }
+            ]
+          },
+          "crossCuttingConcerns": ["AREA-001", "AREA-003"]
+        },
+        {
+          "filePath": "CMSSolution/Admin/Kentico.Xperience.Admin.Websites/UIPages/WebPages/WebPage/Create/WebPage/CreateWebPage.cs",
+          "symbols": [
+            "CreateWebPage",
+            "ConfigurePage()",
+            "Create()",
+            "Publish()",
+            "ChangeWorkflowStep()",
+            "Change()",
+            "SubmitFirstStep()",
+            "SubmitSecondStep()",
+            "Discard()"
+          ],
+          "behavioralImpact": {
+            "userFacing": "The page creation flow uses CREATE ACL permission on the PARENT page (not the page being created, which doesn't exist yet). This is a crucial distinction from existing page operations that check permissions on the page itself. ConfigurePage() checks WebPageAclPermissions.CREATE on ParentWebPageIdentifier — if the user lacks Create on the parent, they cannot even access the creation form. Every command (Create, Publish, ChangeWorkflowStep, Change, SubmitFirstStep, SubmitSecondStep) re-checks CREATE ACL on the parent page. Notably, the Publish command during creation also uses CREATE permission (not UPDATE), since the page doesn't exist yet. The Discard command only navigates back and doesn't check ACL beyond the base SystemPermissions.VIEW.",
+            "developerFacing": "CreateWebPage extends CreateWebPageBase and adds [UIEvaluatePermission(SystemPermissions.VIEW)] at the class level. Each command has [PageCommand(Permission = SystemPermissions.VIEW)]. The class also resolves IWebPageAclPermissionEvaluator for ACL checks. The CreateInternal() method receives a 'publish' boolean parameter — when true, sets VersionStatus.Published; when false, sets VersionStatus.InitialDraft. Both paths require CREATE permission. The CheckAclPermission call in Publish() passes ParentWebPageIdentifier.WebPageItemID with WebPageAclPermissions.CREATE, not UPDATE — this is by design since the page doesn't exist yet to check UPDATE on.",
+            "sideEffects": "The create flow also copies access settings (ACL inheritance) from the parent page to the new page via contentItemMemberRoleRetriever.GetAccessSettings(). This means the new page inherits the parent's security configuration by default.",
+            "breaking": null
+          },
+          "docFacts": {
+            "description": "Page creation — checks CREATE permission on parent page, not the new page",
+            "parameters": [],
+            "configChanges": [],
+            "errors": [
+              {"condition": "No Create permission on parent page", "message": "ForbiddenAccessException — cannot access the creation form at all.", "severity": "error"}
+            ],
+            "prerequisites": [
+              "Create permission on the parent page requires Read on the parent page as a prerequisite (due to the Read prerequisite rule in AREA-001)."
+            ],
+            "keyBehaviors": [
+              {
+                "rule": "CREATE permission checked on parent",
+                "description": "All ACL checks in CreateWebPage use ParentWebPageIdentifier.WebPageItemID with WebPageAclPermissions.CREATE. This applies to ConfigurePage, Create, Publish, ChangeWorkflowStep, Change, SubmitFirstStep, and SubmitSecondStep.",
+                "sourceLine": "Lines 131-236",
+                "implication": "To create a page, the user needs Read + Create ACL on the PARENT page. The new page itself has no permissions to check."
+              },
+              {
+                "rule": "Publish-on-create uses CREATE, not UPDATE",
+                "description": "The Publish command during page creation checks CREATE on the parent, not UPDATE on the new page.",
+                "sourceLine": "Lines 193-198",
+                "implication": "A user with Create permission on a parent page can publish the new page immediately during creation — they don't need Update permission."
+              },
+              {
+                "rule": "Security inheritance from parent",
+                "description": "CreateInternal copies access settings from the parent page to the new page.",
+                "sourceLine": "Lines 271-277",
+                "implication": "New pages inherit their parent's ACL configuration by default."
+              }
+            ]
+          },
+          "crossCuttingConcerns": ["AREA-001", "AREA-003"]
+        }
+      ]
+    },
+    {
+      "areaId": "AREA-003",
+      "areaName": "Workflow Permission Checks",
+      "changes": [
+        {
+          "filePath": "CMSSolution/ContentWorkflowEngine/WorkflowStepRoleArbiter/WorkflowStepRoleArbiter.cs",
+          "symbols": [
+            "WorkflowStepRoleArbiter",
+            "IWorkflowStepRoleArbiter",
+            "CanWorkWithContentItemInStep()",
+            "CanWorkWithContentItemInCurrentStep()",
+            "HasFullControl()",
+            "CanWorkWithContentItemInStepInternal()",
+            "HasFullControlInternal()",
+            "IsDraft()",
+            "IsFinal()"
+          ],
+          "behavioralImpact": {
+            "userFacing": "The workflow step role arbiter is the third layer of the permission model. After application-level (View) and ACL (Read + Update/Create/etc.) permissions are validated, the arbiter determines whether the user can work with content in its current workflow step. The decision tree has four branches: (1) Draft step — ALL users are allowed, no role check needed. (2) Full Control roles — if the user is in any of the workflow's Full Control roles, they can work with any step. (3) Final (Published) step — delegates to the LAST custom step's role assignments. If no custom steps exist, returns true. (4) Custom steps — user must be in at least one of the step's assigned roles. This arbiter is called by WebPageCommandManagerBase.CanWorkWithContentItemInCurrentStep() for operations: Save, ChangeWorkflowStep, Discard, CancelScheduledPublish, CancelScheduledPublishAndEdit, Versions (when updating), ShareablePreview (when updating). Notably, it is NOT called for Unpublish or CancelScheduledUnpublish.",
+            "developerFacing": "CanWorkWithContentItemInCurrentStep() first retrieves the current workflow step via currentWorkflowStepRetriever.Retrieve(). If null (no workflow step assigned), returns true — meaning content not under a workflow always passes this check. CanWorkWithContentItemInStepInternal() is recursive in the Final step case — it calls itself with the last custom step. Step type detection uses ContentWorkflowStepType enum: SystemDraft and SystemFinal.",
+            "sideEffects": "The Final step delegation to the last custom step means that the Published step's role access is determined by which roles were assigned to the last custom step before publication. If the last custom step has no roles assigned, it would block users from working with published content (except Draft step always-allowed and Full Control bypass).",
+            "breaking": null
+          },
+          "docFacts": {
+            "description": "Workflow step role arbiter — determines who can work with content at each workflow step",
+            "parameters": [
+              {"name": "userId", "type": "int", "default": "N/A", "description": "The user ID to check."},
+              {"name": "contentItemId", "type": "int", "default": "N/A", "description": "The content item ID."},
+              {"name": "languageName", "type": "string", "default": "N/A", "description": "The language name to check the workflow step for."}
+            ],
+            "configChanges": [],
+            "errors": [
+              {"condition": "Step not found", "message": "InvalidOperationException: Cannot find a step with ID {stepId}.", "severity": "error"},
+              {"condition": "User not found", "message": "InvalidOperationException: Cannot find a user with ID {userId}.", "severity": "error"},
+              {"condition": "User not in step's assigned roles", "message": "CanWorkWithContentItemInCurrentStep returns false → caller (WebPageCommandManagerBase) returns error message 'changeworkflowstep.changestep.pagevalidation.role'.", "severity": "warning"}
+            ],
+            "prerequisites": [],
+            "keyBehaviors": [
+              {
+                "rule": "Draft step always allowed",
+                "description": "When the content item is in the Draft step (ContentWorkflowStepType.SystemDraft), CanWorkWithContentItemInStepInternal returns true immediately without any role checks.",
+                "sourceLine": "Lines 89-92",
+                "implication": "All users can work with draft content regardless of their roles."
+              },
+              {
+                "rule": "Full Control role bypass",
+                "description": "Users assigned to a workflow's Full Control roles can work with content in ANY step. HasFullControlInternal retrieves the workflow's full control roles and checks if the user is in any of them.",
+                "sourceLine": "Lines 94-98, 117-122",
+                "implication": "Full Control roles on a workflow effectively grant the same step access as an admin for that workflow."
+              },
+              {
+                "rule": "Final step delegates to last custom step",
+                "description": "When checking the Final (Published) step, the arbiter retrieves the last custom step in the workflow and checks role assignments on THAT step. If no custom steps exist, returns true.",
+                "sourceLine": "Lines 100-109",
+                "implication": "The Published step's role restrictions are inherited from the last custom step. A workflow with no custom steps (only Draft→Published) allows all users to work with published content."
+              },
+              {
+                "rule": "Custom step role matching",
+                "description": "For custom steps, GetWorkflowStepRoles retrieves all roles assigned to the step, and the check passes if the user is in ANY one of those roles.",
+                "sourceLine": "Lines 111-113",
+                "implication": "Step roles are OR-ed — the user needs to be in at least one assigned role, not all."
+              },
+              {
+                "rule": "No workflow step = always allowed",
+                "description": "CanWorkWithContentItemInCurrentStep returns true when currentWorkflowStepRetriever.Retrieve() returns null (no current step = no workflow assignment).",
+                "sourceLine": "Lines 71-75",
+                "implication": "Content not under any workflow always passes the workflow step check."
+              }
+            ]
+          },
+          "crossCuttingConcerns": ["AREA-002"]
+        },
+        {
+          "filePath": "CMSSolution/ContentWorkflowEngine/CoveringWorkflowRetriever/CoveringWorkflowRetriever.cs",
+          "symbols": [
+            "CoveringWorkflowRetriever",
+            "ICoveringWorkflowRetriever",
+            "GetForEdit()",
+            "GetForNewCycle()",
+            "GetCoveringWorkflowBasedOnCurrentStep()",
+            "GetCoveringWorkflowBasedOnContentType()"
+          ],
+          "behavioralImpact": {
+            "userFacing": "Determines whether a content item is under a workflow, which directly controls whether direct publish is allowed or blocked. GetForEdit() returns the workflow based on the content item's current workflow step — returns null when no step is assigned (meaning the content is not under any workflow, so direct publish is allowed). GetForNewCycle() determines the workflow for a new lifecycle cycle based on the content type binding. This is the data source for WebPageCommandManagerBase.IsUnderWorkflow().",
+            "developerFacing": "GetForEdit uses GetCoveringWorkflowBasedOnCurrentStep, which retrieves the current step via currentWorkflowStepRetriever.Retrieve(contentItemId, contentLanguageId). If null (no step), returns null. Otherwise, looks up the workflow by the step's ContentWorkflowStepWorkflowID. GetForNewCycle uses GetCoveringWorkflowBasedOnContentType, which queries ContentWorkflowContentTypeInfo to find the workflow bound to the content type. The class is registered as a Singleton.",
+            "sideEffects": "The distinction between GetForEdit and GetForNewCycle is important: GetForEdit checks the current state (is this item in a workflow step right now?), while GetForNewCycle checks the configuration (does this content type have a workflow assigned?). When PublishInternal calls IsUnderWorkflow, it uses GetForEdit — so the check is based on current state, not content type configuration.",
+            "breaking": null
+          },
+          "docFacts": {
+            "description": "Retrieves the workflow covering a content item — controls direct publish vs. workflow-required",
+            "parameters": [
+              {"name": "contentItemId", "type": "int", "default": "N/A", "description": "The content item ID to check."},
+              {"name": "contentLanguageId", "type": "int", "default": "N/A", "description": "The language version to check (workflows are per-language)."}
+            ],
+            "configChanges": [],
+            "errors": [],
+            "prerequisites": [],
+            "keyBehaviors": [
+              {
+                "rule": "No current step = not under workflow",
+                "description": "GetForEdit → GetCoveringWorkflowBasedOnCurrentStep: if currentWorkflowStepRetriever.Retrieve returns null, the method returns null.",
+                "sourceLine": "Lines 64-74",
+                "implication": "Content not currently in any workflow step is considered not under workflow. Direct publish is allowed."
+              },
+              {
+                "rule": "Content type binding for new cycles",
+                "description": "GetForNewCycle → GetCoveringWorkflowBasedOnContentType: queries the ContentWorkflowContentTypeInfo binding table to find the workflow assigned to the content type.",
+                "sourceLine": "Lines 49-61",
+                "implication": "Workflow assignment is per content type, not per page. All pages of the same content type share the same workflow."
+              }
+            ]
+          },
+          "crossCuttingConcerns": []
+        },
+        {
+          "filePath": "CMSSolution/Admin/Kentico.Xperience.Admin.Websites/WebPages/Manager/WebPageCommandManagerBase.cs",
+          "symbols": [
+            "WebPageCommandManagerBase",
+            "IWebPageCommandManager",
+            "PublishInternal()",
+            "ChangeWorkflowStepInternal()",
+            "SaveInternal()",
+            "DiscardInternal()",
+            "UnpublishInternal()",
+            "CancelScheduledPublishInternal()",
+            "CancelScheduledPublishAndEditInternal()",
+            "CancelScheduledUnpublishInternal()",
+            "CreateNewVersionInternal()",
+            "CanWorkWithContentItemInCurrentStep()",
+            "IsUnderWorkflow()",
+            "ExecuteCommand()",
+            "CreateContentSynchronization()",
+            "ValidatePermissionAndLanguageOnWebPages()",
+            "ValidatePermissionsOfWebPageTree()"
+          ],
+          "behavioralImpact": {
+            "userFacing": "This is the workflow enforcement layer for all web page commands. Key behaviors per operation: (1) Publish: if under workflow, returns error 'contentitemunderworkflow' — direct publish is blocked; user must use ChangeWorkflowStep. If not under workflow, proceeds. No workflow step role check for direct publish. (2) ChangeWorkflowStep: requires the item to BE under a workflow; checks step role permission via CanWorkWithContentItemInCurrentStep. (3) Save: checks step role permission; also blocks if publish is already scheduled. (4) Discard: checks step role permission; blocks if publish is scheduled. (5) Unpublish: does NOT check step roles — only checks version status (blocks if InitialDraft/Draft without scheduled publish, or already Unpublished, or unpublish already scheduled). (6) CancelScheduledPublish: checks step role permission. (7) CancelScheduledPublishAndEdit: checks step role permission. (8) CancelScheduledUnpublish: does NOT check step roles — only checks if unpublish is scheduled. (9) CreateNewVersion: no step role check. (10) Versions/ShareablePreview: checks step roles only if data update is needed (dataRetriever is not null).",
+            "developerFacing": "ExecuteCommand is the central dispatcher that routes command names to *Internal methods. CanWorkWithContentItemInCurrentStep delegates to IWorkflowStepRoleArbiter. IsUnderWorkflow delegates to ICoveringWorkflowRetriever.GetForEdit. The class also handles content synchronization via CreateContentSynchronization and ValidatePermissionAndLanguageOnWebPages, which check SYNCHRONIZE ACL permission recursively up the page tree hierarchy. ValidatePermissionsOfWebPageTree checks SYNCHRONIZE permission on each node in the web page tree and disables nodes where permission is denied.",
+            "sideEffects": "The synchronization operations in this class reference AREA-001 via the SYNCHRONIZE permission check using webPageAclPermissionEvaluator.Evaluate(). The SYNCHRONIZE permission follows the same Read prerequisite rule as other non-individually-checked permissions.",
+            "breaking": null
+          },
+          "docFacts": {
+            "description": "Web page command manager — workflow enforcement and synchronization permission validation",
+            "parameters": [],
+            "configChanges": [],
+            "errors": [
+              {"condition": "Direct publish blocked by workflow", "message": "Error message key: 'workflows.cascadepublish.pagevalidation.contentitemunderworkflow'", "severity": "error"},
+              {"condition": "ChangeWorkflowStep called on non-workflow item", "message": "Error message key: 'workflows.pagevalidation.contentitemnotunderworkflow'", "severity": "error"},
+              {"condition": "User not in step's assigned roles", "message": "Error message key: 'changeworkflowstep.changestep.pagevalidation.role'", "severity": "error"},
+              {"condition": "Publish already scheduled", "message": "Error message key: 'websites.webpages.edit.publish.alreadyscheduled'", "severity": "error"},
+              {"condition": "Unpublish on draft content", "message": "Error message key: 'websites.webpages.edit.unpublish.error.draft'", "severity": "error"},
+              {"condition": "Synchronization permission denied", "message": "Error message key: 'websites.webpages.errorsyncpermissionrequired'", "severity": "error"}
+            ],
+            "prerequisites": [],
+            "keyBehaviors": [
+              {
+                "rule": "Workflow blocks direct publish",
+                "description": "PublishInternal calls IsUnderWorkflow first. If true, returns error immediately. Users must use ChangeWorkflowStep instead.",
+                "sourceLine": "Lines 573-579",
+                "implication": "Pages under a workflow cannot be published directly — they must advance through workflow steps."
+              },
+              {
+                "rule": "Unpublish does NOT check workflow step roles",
+                "description": "UnpublishInternal only validates version status conditions (not draft without scheduled publish, not already unpublished, not already scheduled for unpublish). It does not call CanWorkWithContentItemInCurrentStep.",
+                "sourceLine": "Lines 734-756",
+                "implication": "Users with Update ACL permission can unpublish a page even if they are not assigned to the current workflow step's roles. This is different from Save, Discard, and ChangeWorkflowStep which DO check step roles."
+              },
+              {
+                "rule": "CancelScheduledUnpublish does NOT check workflow step roles",
+                "description": "CancelScheduledUnpublishInternal only checks if an unpublish is actually scheduled. It does not call CanWorkWithContentItemInCurrentStep.",
+                "sourceLine": "Lines 685-697",
+                "implication": "Any user with Update ACL can cancel a scheduled unpublish regardless of workflow step role assignments."
+              },
+              {
+                "rule": "CreateNewVersion does NOT check workflow step roles",
+                "description": "CreateNewVersionInternal calls TryCreateDraft without any workflow step role check.",
+                "sourceLine": "Lines 528-542",
+                "implication": "Any user with Update ACL can create a new draft version."
+              },
+              {
+                "rule": "Synchronization validates SYNCHRONIZE ACL recursively",
+                "description": "CreateContentSynchronization and ValidatePermissionsOfWebPageTree check WebPageAclPermissions.SYNCHRONIZE on each page in the tree hierarchy, including parent pages.",
+                "sourceLine": "Lines 202-304, 489-519",
+                "implication": "Content synchronization requires SYNCHRONIZE permission (with Read prerequisite) on the page AND all its ancestors up the tree."
+              },
+              {
+                "rule": "Versions and ShareablePreview conditional step role check",
+                "description": "VersionsInternal and ShareablePreviewInternal only check CanWorkWithContentItemInCurrentStep when dataRetriever is not null (i.e., when the operation includes a data update before navigating).",
+                "sourceLine": "Lines 759-790",
+                "implication": "Viewing versions or shareable preview without saving unsaved changes does not require workflow step role access."
+              }
+            ]
+          },
+          "crossCuttingConcerns": ["AREA-001", "AREA-002"]
+        }
+      ]
+    },
+    {
+      "areaId": "AREA-004",
+      "areaName": "Application-Level Permission Framework",
+      "changes": [
+        {
+          "filePath": "CMSSolution/Membership/ApplicationPermission/SystemPermissions.cs",
+          "symbols": [
+            "SystemPermissions",
+            "VIEW",
+            "UPDATE",
+            "CREATE",
+            "DELETE"
+          ],
+          "behavioralImpact": {
+            "userFacing": "Defines application-level permission constants used to control access to admin UI applications. In the web pages context, SystemPermissions.VIEW ('View') is used as the gate on all page commands — it corresponds to the 'Access channel' permission in the admin UI. A user must have the View application permission for the website channel's Web Pages application to access any page or execute any command. The View permission is labeled '{$base.roles.permissions.accesschannel$}' in the WebPagesApplication class registration. UPDATE, CREATE, DELETE are used by other admin applications but are NOT used as the application-level permission for web page commands (all web page commands use VIEW — the actual operation-level authorization is done via ACL permissions in AREA-001).",
+            "developerFacing": "String constants: 'View', 'Update', 'Create', 'Delete'. These are the permission names used in [PageCommand(Permission = ...)] and [UIEvaluatePermission(...)] attributes. For WebPagesApplication, only VIEW and MANAGE_PERMISSIONS are registered as UI permissions — meaning the web pages application only has two application-level permissions: 'View' (Access channel) and 'ManagePermissions'.",
+            "sideEffects": null,
+            "breaking": null
+          },
+          "docFacts": {
+            "description": "Application-level permission constants — VIEW is the universal gate for web page commands",
+            "parameters": [
+              {"name": "VIEW", "type": "string constant", "default": "\"View\"", "description": "The application-level permission required to access a website channel's web pages. Labeled 'Access channel' in the admin UI."},
+              {"name": "UPDATE", "type": "string constant", "default": "\"Update\"", "description": "Application-level update permission. Not used for web page commands."},
+              {"name": "CREATE", "type": "string constant", "default": "\"Create\"", "description": "Application-level create permission. Not used for web page commands."},
+              {"name": "DELETE", "type": "string constant", "default": "\"Delete\"", "description": "Application-level delete permission. Not used for web page commands."}
+            ],
+            "configChanges": [],
+            "errors": [],
+            "prerequisites": [],
+            "keyBehaviors": [
+              {
+                "rule": "VIEW is the only application-level permission for web page commands",
+                "description": "Every [PageCommand] on ContentTab, PageBuilderTab, UrlsTab, CreateWebPage, and WebPagesApplication uses Permission = SystemPermissions.VIEW. The operation-specific authorization is handled by ACL permissions, not application-level permissions.",
+                "sourceLine": "WebPagesApplication.cs line 39",
+                "implication": "A user who has the View application permission can access any web page — the page-level restrictions are enforced by ACL, not application-level permissions."
+              }
+            ]
+          },
+          "crossCuttingConcerns": []
+        },
+        {
+          "filePath": "CMSSolution/Admin/Kentico.Xperience.Admin.Base/UIFramework/PageHandling/PageInvokerBase.cs",
+          "symbols": [
+            "PageInvokerBase",
+            "CheckPermission()",
+            "CheckNodeAccessPermission()",
+            "IUIPermissionEvaluator",
+            "IUITreeNodeWorkspacePermissionEvaluator"
+          ],
+          "behavioralImpact": {
+            "userFacing": "This is the outermost layer of the permission model — it runs before ANY page-specific code, including ACL checks. When a user triggers a page command (e.g., clicks Publish), the framework first calls CheckPermission() with the permission value from the [PageCommand] attribute. For web page commands, this is always SystemPermissions.VIEW. If the user's role doesn't have the View permission for the website channel application, a ForbiddenAccessException is thrown immediately — the page-specific code never runs. This is the 'application access' gate that determines if a user can even enter the website channel's web pages section.",
+            "developerFacing": "PageInvokerBase is abstract and internal. It handles both standard UI permission evaluation (via IUIPermissionEvaluator) and workspace-scoped evaluation (via IUITreeNodeWorkspacePermissionEvaluator). CheckNodeAccessPermission() falls back to SystemPermissions.VIEW if no custom permission is defined on the node. The workspace-scoped path checks if the application has WorkspaceContextProvider.IsWorkspaceScoped and routes through CheckWorkspacePermission if so.",
+            "sideEffects": "The root node check (node == UITree.Instance.Root) returns early without checking permission — the root node is always accessible. Empty permission strings also return early.",
+            "breaking": null
+          },
+          "docFacts": {
+            "description": "Framework-level permission enforcement — the outermost permission layer",
+            "parameters": [
+              {"name": "node", "type": "UITreeNode", "default": "N/A", "description": "The UI tree node representing the page being accessed."},
+              {"name": "permission", "type": "string", "default": "N/A", "description": "The permission name from the [PageCommand] attribute (e.g., 'View')."}
+            ],
+            "configChanges": [],
+            "errors": [
+              {"condition": "Application permission denied", "message": "ForbiddenAccessException thrown. User cannot access the page or execute the command.", "severity": "error"}
+            ],
+            "prerequisites": [],
+            "keyBehaviors": [
+              {
+                "rule": "Application permission checked before page code",
+                "description": "CheckPermission runs BEFORE ConfigurePage and before any command handler. This means ACL checks never run if the application permission fails.",
+                "sourceLine": "Lines 90-116",
+                "implication": "The execution order is: PageInvokerBase.CheckPermission (application level) → Page.ConfigurePage (ACL READ) → Command handler (ACL UPDATE/CREATE/DELETE + workflow)."
+              },
+              {
+                "rule": "Root node and empty permission bypass",
+                "description": "If the node is the UI tree root or the permission string is null/empty, CheckPermission returns without checking.",
+                "sourceLine": "Lines 92-95",
+                "implication": "Root-level pages and commands without explicit permission attributes are not subject to application-level permission checks."
+              },
+              {
+                "rule": "Workspace-scoped permission path",
+                "description": "When the application uses workspace-scoped permissions, CheckPermission routes through CheckWorkspacePermission instead of the standard IUIPermissionEvaluator.",
+                "sourceLine": "Lines 99-109",
+                "implication": "The workspace permission model is an alternative to the standard permission model, not additive."
+              }
+            ]
+          },
+          "crossCuttingConcerns": []
+        },
+        {
+          "filePath": "CMSSolution/Admin/Kentico.Xperience.Admin.Websites/UIPages/WebPages/WebPage/WebPageBase.cs",
+          "symbols": [
+            "WebPageBase<TClientProperties>",
+            "ConfigurePage()",
+            "CheckAclPermission()",
+            "IWebPageAclPermissionEvaluator",
+            "IWorkflowStepRoleArbiter",
+            "ICoveringWorkflowRetriever"
+          ],
+          "behavioralImpact": {
+            "userFacing": "WebPageBase is the abstract base class for all web page tab UI pages (ContentTab, PageBuilderTab, UrlsTab). Its ConfigurePage() method enforces WebPageAclPermissions.READ on the current page — this means every web page tab requires Read ACL permission just to VIEW the page. If a user has the View application permission but lacks Read ACL on a specific page, they will get a ForbiddenAccessException when trying to open that page. The CheckAclPermission() helper method is the centralized entry point for all ACL checks in tab pages — it delegates to IWebPageAclPermissionEvaluator.Evaluate() and throws ForbiddenAccessException on failure.",
+            "developerFacing": "WebPageBase resolves IWebPageAclPermissionEvaluator via HttpContext.RequestServices (not via constructor injection) because the interface is intentionally kept internal — a comment at line 78-79 notes: 'We do not want to expose IWebPageAclPermissionEvaluator in the public API, we might make it public in the future.' The base class also resolves IWorkflowStepRoleArbiter and ICoveringWorkflowRetriever as protected fields for subclasses to use. The CheckAclPermission method always passes evaluateChildPages=false (default), unlike the WebPagesApplication.CheckAclPermission which has an explicit parameter for it.",
+            "sideEffects": "Because ConfigurePage enforces READ, and the Read prerequisite rule in WebPageAclPermissionEvaluator means Read is checked individually (no prerequisite for Read itself), this is the minimum permission needed to see any page tab.",
+            "breaking": null
+          },
+          "docFacts": {
+            "description": "Base class for web page tabs — enforces Read ACL as the minimum for viewing any page",
+            "parameters": [],
+            "configChanges": [],
+            "errors": [
+              {"condition": "No Read ACL permission on the page", "message": "ForbiddenAccessException thrown in ConfigurePage(). User cannot view the page in any tab.", "severity": "error"},
+              {"condition": "Specific ACL permission denied in a command", "message": "ForbiddenAccessException thrown in CheckAclPermission(). The specific command fails.", "severity": "error"}
+            ],
+            "prerequisites": [
+              "The View application permission must pass first (checked by PageInvokerBase before ConfigurePage runs).",
+              "Read ACL permission is the minimum to view any web page tab."
+            ],
+            "keyBehaviors": [
+              {
+                "rule": "ConfigurePage enforces READ",
+                "description": "WebPageBase.ConfigurePage() calls CheckAclPermission(WebPageIdentifier.WebPageItemID, WebPageAclPermissions.READ) before calling base.ConfigurePage().",
+                "sourceLine": "Lines 132-137",
+                "implication": "Every web page tab (Content, Page Builder, URLs) requires Read permission on the page just to render."
+              },
+              {
+                "rule": "CheckAclPermission is the centralized ACL gate for tabs",
+                "description": "Protected method that delegates to webPageAclPermissionEvaluator.Evaluate() and throws ForbiddenAccessException if not succeeded.",
+                "sourceLine": "Lines 194-201",
+                "implication": "All ACL checks in ContentTab, PageBuilderTab, and UrlsTab go through this method."
+              },
+              {
+                "rule": "IWebPageAclPermissionEvaluator is intentionally internal",
+                "description": "Resolved via HttpContext.RequestServices.GetService() to avoid exposing it in the public API.",
+                "sourceLine": "Lines 78-79",
+                "implication": "Third-party developers cannot directly inject or use this evaluator — they must use the public CheckAclPermission method."
+              }
+            ]
+          },
+          "crossCuttingConcerns": ["AREA-001", "AREA-002"]
+        }
+      ]
+    }
+  ],
+  "crossCuttingMap": {
+    "AREA-001": ["AREA-002", "AREA-004"],
+    "AREA-002": ["AREA-001", "AREA-003"],
+    "AREA-003": ["AREA-002"],
+    "AREA-004": ["AREA-001", "AREA-002"]
+  },
+  "permissionSummary": {
+    "description": "Consolidated permission requirements per operation, derived from tracing all three layers",
+    "operations": {
+      "publish": {
+        "applicationPermission": "SystemPermissions.VIEW (Access channel)",
+        "aclPermission": "WebPageAclPermissions.READ + WebPageAclPermissions.UPDATE on the page",
+        "workflowCheck": "IsUnderWorkflow must be false (otherwise error: 'contentitemunderworkflow'). Pages under workflow cannot be published directly — must use ChangeWorkflowStep instead.",
+        "channelAdminBypass": "Yes — bypasses all ACL checks",
+        "sourceFiles": ["ContentTab.cs:197-200", "PageBuilderTab.cs:226-229", "UrlsTab.cs:274-277", "WebPageCommandManagerBase.cs:573-579"]
+      },
+      "publishOnCreate": {
+        "applicationPermission": "SystemPermissions.VIEW (Access channel)",
+        "aclPermission": "WebPageAclPermissions.READ + WebPageAclPermissions.CREATE on the PARENT page",
+        "workflowCheck": "None for the publish-on-create flow",
+        "channelAdminBypass": "Yes",
+        "sourceFiles": ["CreateWebPage.cs:193-198"]
+      },
+      "save": {
+        "applicationPermission": "SystemPermissions.VIEW",
+        "aclPermission": "READ + UPDATE on the page",
+        "workflowCheck": "CanWorkWithContentItemInCurrentStep must be true. Blocked if publish is already scheduled.",
+        "channelAdminBypass": "Yes",
+        "sourceFiles": ["ContentTab.cs:161-164", "WebPageCommandManagerBase.cs:545-570"]
+      },
+      "changeWorkflowStep": {
+        "applicationPermission": "SystemPermissions.VIEW",
+        "aclPermission": "READ + UPDATE on the page",
+        "workflowCheck": "Must be under workflow (IsUnderWorkflow = true). CanWorkWithContentItemInCurrentStep must be true. Blocked if publish is scheduled.",
+        "channelAdminBypass": "Yes",
+        "sourceFiles": ["ContentTab.cs:231-234", "WebPageCommandManagerBase.cs:592-614"]
+      },
+      "unpublish": {
+        "applicationPermission": "SystemPermissions.VIEW",
+        "aclPermission": "READ + UPDATE on the page",
+        "workflowCheck": "NO workflow step role check. Only checks version status (cannot unpublish Draft, already Unpublished, or scheduled unpublish).",
+        "channelAdminBypass": "Yes",
+        "sourceFiles": ["ContentTab.cs:310-313", "WebPageCommandManagerBase.cs:734-756"]
+      },
+      "createPage": {
+        "applicationPermission": "SystemPermissions.VIEW",
+        "aclPermission": "READ + CREATE on the PARENT page",
+        "workflowCheck": "None for page creation",
+        "channelAdminBypass": "Yes",
+        "sourceFiles": ["CreateWebPage.cs:131-133, 183-188"]
+      },
+      "deletePage": {
+        "applicationPermission": "SystemPermissions.VIEW",
+        "aclPermission": "READ + DELETE on the page (with evaluateChildPages=true for delete-with-children)",
+        "workflowCheck": "None for page deletion",
+        "channelAdminBypass": "Yes",
+        "sourceFiles": ["WebPagesApplication.cs:522-528, 545-551"]
+      },
+      "discard": {
+        "applicationPermission": "SystemPermissions.VIEW",
+        "aclPermission": "READ + UPDATE on the page",
+        "workflowCheck": "CanWorkWithContentItemInCurrentStep must be true. Blocked if publish is scheduled.",
+        "channelAdminBypass": "Yes",
+        "sourceFiles": ["ContentTab.cs:337-340", "WebPageCommandManagerBase.cs:639-657"]
+      },
+      "createNewVersion": {
+        "applicationPermission": "SystemPermissions.VIEW",
+        "aclPermission": "READ + UPDATE on the page",
+        "workflowCheck": "No workflow step role check.",
+        "channelAdminBypass": "Yes",
+        "sourceFiles": ["ContentTab.cs:363-366", "WebPageCommandManagerBase.cs:528-542"]
+      },
+      "cancelScheduledPublish": {
+        "applicationPermission": "SystemPermissions.VIEW",
+        "aclPermission": "READ + UPDATE on the page",
+        "workflowCheck": "CanWorkWithContentItemInCurrentStep must be true.",
+        "channelAdminBypass": "Yes",
+        "sourceFiles": ["ContentTab.cs:265-268", "WebPageCommandManagerBase.cs:660-682"]
+      },
+      "cancelScheduledPublishAndEdit": {
+        "applicationPermission": "SystemPermissions.VIEW",
+        "aclPermission": "READ + UPDATE on the page",
+        "workflowCheck": "CanWorkWithContentItemInCurrentStep must be true.",
+        "channelAdminBypass": "Yes",
+        "sourceFiles": ["ContentTab.cs:280-283", "WebPageCommandManagerBase.cs:700-731"]
+      },
+      "cancelScheduledUnpublish": {
+        "applicationPermission": "SystemPermissions.VIEW",
+        "aclPermission": "READ + UPDATE on the page",
+        "workflowCheck": "NO workflow step role check. Only checks if unpublish is scheduled.",
+        "channelAdminBypass": "Yes",
+        "sourceFiles": ["ContentTab.cs:295-298", "WebPageCommandManagerBase.cs:685-697"]
+      },
+      "viewVersions": {
+        "applicationPermission": "SystemPermissions.VIEW",
+        "aclPermission": "READ on the page (no Update required)",
+        "workflowCheck": "CanWorkWithContentItemInCurrentStep only if data update is included (UpdateBeforeProcessing=true).",
+        "channelAdminBypass": "Yes",
+        "sourceFiles": ["ContentTab.cs:382-385", "WebPageCommandManagerBase.cs:759-770"]
+      },
+      "shareablePreview": {
+        "applicationPermission": "SystemPermissions.VIEW",
+        "aclPermission": "READ on the page (no Update required)",
+        "workflowCheck": "CanWorkWithContentItemInCurrentStep only if data update is included.",
+        "channelAdminBypass": "Yes",
+        "sourceFiles": ["ContentTab.cs:412-415", "WebPageCommandManagerBase.cs:773-790"]
+      },
+      "rename": {
+        "applicationPermission": "SystemPermissions.VIEW",
+        "aclPermission": "READ + UPDATE on the page",
+        "workflowCheck": "No workflow step role check in Rename flow.",
+        "channelAdminBypass": "Yes",
+        "sourceFiles": ["ContentTab.cs:442-445"]
+      },
+      "synchronize": {
+        "applicationPermission": "SystemPermissions.VIEW",
+        "aclPermission": "READ + SYNCHRONIZE on the page AND all ancestor pages up the tree",
+        "workflowCheck": "None",
+        "channelAdminBypass": "Yes",
+        "sourceFiles": ["WebPageCommandManagerBase.cs:202-304, 489-519"]
+      },
+      "movePage": {
+        "applicationPermission": "SystemPermissions.VIEW",
+        "aclPermission": "READ + UPDATE on the source page (with evaluateChildPages=true) AND READ + CREATE on the target parent page",
+        "workflowCheck": "None in the permission check phase",
+        "channelAdminBypass": "Yes",
+        "sourceFiles": ["WebPagesApplication.cs:586-599"]
+      },
+      "clonePage": {
+        "applicationPermission": "SystemPermissions.VIEW",
+        "aclPermission": "READ on the source page AND READ + CREATE on the target parent page",
+        "workflowCheck": "None",
+        "channelAdminBypass": "Yes",
+        "sourceFiles": ["WebPagesApplication.cs:677-691"]
+      }
+    }
+  }
+}

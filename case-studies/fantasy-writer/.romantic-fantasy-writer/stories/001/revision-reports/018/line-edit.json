@@ -1,0 +1,293 @@
+{
+  "chapter": 18,
+  "title": "The Taxonomy of Choice",
+  "pov": "CHAR-002",
+  "povName": "Lirien Dael",
+  "editor": "line-editor",
+  "timestamp": "2025-07-24T01:00:00Z",
+  "overallAssessment": {
+    "verdict": "strong draft with targeted repetition issues",
+    "summary": "Chapter 18 is an outstanding piece of introspective prose that earns its emotional payoff through analytical rigor rather than melodrama. The classification-framework-as-emotional-vehicle is a brilliant structural choice. Zero clichés, zero banned phrases, exemplary show-don't-tell discipline, sustained micro-tension, and correct MRU compliance throughout. The prose is publication-quality in concept and execution. The primary issues are word-level and structural repetition patterns: a recognizable sentence template ('the [adjective] quality of someone who had [verb]ed') used 8 times; the verb 'carried' applied to abstract subjects 10 times; and voice-marker density in Scene 2 that occasionally reads as voice demonstration rather than inhabited perspective. These are craft-level concerns in an otherwise exceptional chapter. The final line — 'She was choosing the love' — achieves the style guide's mandate for plainest language at peak emotion perfectly.",
+    "strengths": [
+      "Zero clichés, zero banned phrases — prose is highly original throughout all 4888 words",
+      "The classification framework as emotional vehicle is the chapter's signature achievement: the ledger IS the action, the taxonomy IS the drama",
+      "Show-don't-tell discipline is exemplary — emotions processed through Lirien's classification system, making the telling itself a form of showing",
+      "One-line emphasis paragraphs ('But this.' / 'She had it.' / 'It had not prevented this.' / 'Intention.') are deployed perfectly for reversals and realizations, never wasted",
+      "Dialogue scene (L107-195) features distinct speaker voices, functional subtext, and correct formality calibration (Lirien fae-formal, contact military-casual)",
+      "Water metaphor domain consistently maintained: groundwater, currents, channels, sediment, tides, rivers — all within Lirien's established imagery",
+      "The Oathbrand proof sequence (L53-97) builds with devastating precision to 'Free choice. Confidence: high.' — understatement as emotional climax",
+      "Cipher destruction scene achieves symbolic weight without violating magic system rules (symbolic act, not magical)",
+      "Micro-tension sustained across all three scenes — no dead spots detected",
+      "Final section (L237-267) earns the emotional resolution through accumulated analytical proof, not sentiment"
+    ],
+    "findingSummary": {
+      "critical": 0,
+      "major": 2,
+      "minor": 8,
+      "observation": 4,
+      "total": 14
+    }
+  },
+  "findings": [
+    {
+      "id": "LINE-018-001",
+      "severity": "major",
+      "category": "repetition",
+      "title": "Sentence template repetition: 'the [adjective] [quality] of someone who had [verb]ed'",
+      "description": "A single recognizable sentence construction — 'the [particular/specific/deliberate/honest] [quality/weight/clarity/economy/register/assessment/discipline] of someone/a woman/soldiers who had [past participle]' — appears 8 times across the chapter. Each instance reads a person's interior state by naming the quality their exterior conveys. While this is Lirien's core skill (reading people through observed qualities), the identical grammatical skeleton becomes a tic that the reader will consciously or subconsciously register. Two instances (L159 and L251) use near-identical phrasing: 'the particular weight of someone/a woman who had...' The pattern concentrates in Scene 2 (5 instances in ~80 lines) but persists into Scene 3.",
+      "lineRef": { "start": 51, "end": 251 },
+      "instances": [
+        { "line": 51, "text": "the particular quality of someone who had made a decision they were not yet willing to name" },
+        { "line": 115, "text": "the deliberate economy of someone who had learned to occupy less space than his frame required" },
+        { "line": 127, "text": "the rhythm of someone who had spent years giving orders and more years learning not to" },
+        { "line": 159, "text": "the particular weight of someone who had been holding dangerous information for a long time" },
+        { "line": 185, "text": "the register of soldiers who had been ordered to remain hidden and had obeyed despite wanting to act" },
+        { "line": 191, "text": "the honest assessment of someone who had been shaped by an institution that manufactured trust" },
+        { "line": 219, "text": "the specific clarity of someone who had found one true thing in a field of ambiguity" },
+        { "line": 251, "text": "the particular weight of a woman who had been betrayed by the person she trusted most" }
+      ],
+      "suggestedFix": "Retain 3-4 of the strongest instances (L115, L191, L219 are the most earned) and vary the construction for the rest. Options: show the observed behavior directly and let the reader infer the quality; use a different syntactic frame ('He moved the way soldiers move when...'); or replace the abstract quality-noun with a concrete sensory detail. The L159/L251 near-duplicate ('the particular weight of') must be resolved — at least one needs a different construction entirely.",
+      "invariantRef": "INV-017"
+    },
+    {
+      "id": "LINE-018-002",
+      "severity": "major",
+      "category": "voice",
+      "title": "Voice marker density in Scene 2 approaches demonstration over inhabitation",
+      "description": "In the intelligence exchange scene (L107-195), Lirien's distinctive voice markers — body-language reading, emotion classification, operative vocabulary, threat assessment — appear in nearly every paragraph. The concentration peaks at L139 (emotional ratio calculation) and L169 (explicitly labeled three-channel processing). While each individual marker is contextually justified (a spy assessing a potential threat), the cumulative density shifts the prose from 'a scene experienced through Lirien's perspective' toward 'a demonstration of how Lirien's perspective works.' The reader spends more time noticing the analytical apparatus than the scene's content. Compare to Scene 1, where the classification framework serves as plot action (the ledger), or Scene 3, where it serves as arc payoff ('Classification: unnecessary') — in both, the voice markers DO something beyond characterization.",
+      "lineRef": { "start": 107, "end": 195 },
+      "specificConcerns": [
+        "L139: 'interest, controlled, with underlying caution at a ratio of approximately three to one' — numerical quantification of emotion reads as voice-marker stunt",
+        "L155: 'Intelligence-briefing cadence: each item delivered as data, not revelation' — labeling the contact's speech style explicitly",
+        "L169: Three-channel processing (Operational/Analytical/Emotional) with explicit category labels — character-sheet formatting",
+        "L185: 'Lirien classified as loyalty under sustained discipline' — another explicit classification amid already-dense classification language"
+      ],
+      "suggestedFix": "Thin the scene by converting 30-40% of the explicit analytical tags into implicit characterization. For L139, cut the ratio — 'She noted the adjustment: interest tempered by caution' conveys the same classification without the artificial number. For L169, integrate the three channels into flowing prose rather than labeled categories. For L155, consider showing the cadence through the contact's dialogue rhythm rather than naming it. The scene can remain spy-craft-heavy while reading less like a Lirien-voice tutorial.",
+      "invariantRef": "INV-003, INV-017"
+    },
+    {
+      "id": "LINE-018-003",
+      "severity": "minor",
+      "category": "repetition",
+      "title": "'Carried' as verbal tic for abstract subjects — 10 instances",
+      "description": "The verb 'carried' is applied to non-physical subjects 10 times: voice carried consonants (L127), word carried years (L185), words carried no hostility (L191), bond carried intentions (L261), hands carried a death sentence (L253), etc. The pattern clusters in Scene 2 (L127, L141, L185, L191 — 4 uses in ~65 lines) and in the closing section (L251, L253×2, L261 — 4 uses in ~10 lines). Two instances appear in L253 alone: 'hands that carried a death sentence' and 'She had carried the contract.' The verb functions as Lirien's way of assigning weight to abstractions, but 10 uses makes it a tic rather than a motif.",
+      "lineRef": { "start": 127, "end": 261 },
+      "instances": [
+        { "line": 127, "text": "His voice carried the flat consonants" },
+        { "line": 141, "text": "Each possibility carried different threat profiles" },
+        { "line": 185, "text": "The word carried years of patience" },
+        { "line": 191, "text": "The words carried no hostility" },
+        { "line": 251, "text": "Kaelith carried her grief" },
+        { "line": 253, "text": "hands that carried a death sentence" },
+        { "line": 253, "text": "She had carried the contract" },
+        { "line": 261, "text": "The bond carried two intentions" }
+      ],
+      "suggestedFix": "Retain 4-5 strongest uses (L185's 'years of patience compressed into a single syllable' is the best; L251's 'Kaelith carried her grief' is earned). Replace the rest with varied verbs: 'held,' 'bore,' 'contained,' 'communicated,' or restructure the sentence entirely. L253's double use must be resolved — one can keep 'carried,' the other should restructure.",
+      "invariantRef": "INV-017"
+    },
+    {
+      "id": "LINE-018-004",
+      "severity": "minor",
+      "category": "repetition",
+      "title": "'The particular [noun]' construction used 7 times",
+      "description": "The phrase 'the particular [noun]' appears 7 times (L33, L39, L51, L99, L159, L219, L251), with 'the specific [noun]' adding 3 more (L137, L163, L219). This construction overlaps with and amplifies the LINE-018-001 pattern. While 'particular' carries intellectual precision appropriate to Lirien's voice, the frequency erodes its precision — if everything is 'particular,' nothing is.",
+      "lineRef": { "start": 33, "end": 251 },
+      "suggestedFix": "Reduce to 3-4 total. Many instances can simply drop the adjective ('the quality of someone who' instead of 'the particular quality of someone who') or substitute: 'a certain,' 'that specific,' or a more descriptive adjective that does characterization work rather than signaling precision generically.",
+      "invariantRef": "INV-017"
+    },
+    {
+      "id": "LINE-018-005",
+      "severity": "minor",
+      "category": "voice",
+      "title": "L139: Numerical ratio quantification of emotion is artificial",
+      "description": "'She noted the adjustment and classified it: interest, controlled, with underlying caution at a ratio of approximately three to one.' A person — even a fae intelligence operative — does not compute numerical ratios of her own emotional state during a live encounter. The classification behavior is Lirien's voice; the numerical ratio is the author demonstrating Lirien's voice. The distinction matters because the ratio adds no information the reader can use (what does 3:1 interest-to-caution look like?) while making the character feel like a concept rather than a person.",
+      "lineRef": { "start": 139, "end": 139 },
+      "suggestedFix": "Cut the ratio. 'She noted the adjustment and classified it: interest under heavy caution' or 'She noted the adjustment: more curiosity than wariness, though the wariness remained operational' — either preserves the classification habit without the artificial precision.",
+      "invariantRef": "INV-003, INV-017"
+    },
+    {
+      "id": "LINE-018-006",
+      "severity": "minor",
+      "category": "prose",
+      "title": "L169: Three-channel processing uses explicit category labels",
+      "description": "'Lirien processed this through three independent channels. Operational: [...] Analytical: [...] Emotional: she classified this as hope, provisional, requiring verification before integration.' The labeled categories (Operational/Analytical/Emotional) format Lirien's thought process like a system architecture diagram. The content is strong — the three assessments are genuinely different and useful — but the labeling creates a character-sheet feel that breaks prose immersion. This is the kind of passage where the framework should be invisible, with the three channels distinguishable through content rather than headers.",
+      "lineRef": { "start": 169, "end": 169 },
+      "suggestedFix": "Integrate the three channels into flowing analytical prose: 'The god-seal was already their destination — no course change required. Binding architecture was her specialisation, and the claim that substrate thinning could expose anchor points was consistent with...' This preserves all three assessments while letting the shift between operational, analytical, and emotional emerge from the content rather than from labels. The emotional beat ('she classified this as hope, provisional') can stand as a separate sentence for emphasis.",
+      "invariantRef": "INV-017, INV-073"
+    },
+    {
+      "id": "LINE-018-007",
+      "severity": "minor",
+      "category": "prose",
+      "title": "L63: Mirror construction with double 'permanently' is wordy",
+      "description": "'The act had generated an unplanned resonance bond that made Lirien's emotional state permanently legible to the target and the target's emotional state permanently legible to Lirien — the exact antithesis of operative concealment.' The A→B and B→A mirror structure is mechanically correct but prosodically clunky (41 words before the dash). 'Permanently' appears twice in the same sentence, and the full construction reads like a contract clause rather than remembered experience — appropriate for Lirien's voice in general, but here it dulls a moment that should sting.",
+      "lineRef": { "start": 63, "end": 63 },
+      "suggestedFix": "Compress the mirror: 'The act had generated an unplanned resonance bond — mutual, permanent, making each of them legible to the other in ways no concealment could survive.' Or lean into the emotional weight: 'The bond made them permanently transparent to each other. The exact antithesis of operative concealment.' Separating the clinical observation from the emotional consequence gives both more space.",
+      "invariantRef": "INV-017"
+    },
+    {
+      "id": "LINE-018-008",
+      "severity": "minor",
+      "category": "repetition",
+      "title": "Anaphoric 'Every [noun]' triplet pattern used twice",
+      "description": "L33: 'Every moment of care, every act of protection, every decision that had felt like hers.' L203: 'Every report, every field assessment, every clinical reduction of a living person to a target profile.' Both use the same rhetorical structure — three-part anaphora with 'every' — to build emotional accumulation. Each individually is effective. Using the identical device twice weakens both because the reader registers the repetition of the technique rather than the content.",
+      "lineRef": { "start": 33, "end": 203 },
+      "suggestedFix": "Keep one triplet (L33 is the stronger emotional moment — it carries the chapter's central crisis). For L203, restructure: 'Forty-three contracts' worth of reports, field assessments, clinical reductions of living people to target profiles — all of it had passed through this device.' The accumulation is preserved through the list without the 'every' anaphora.",
+      "invariantRef": "INV-017"
+    },
+    {
+      "id": "LINE-018-009",
+      "severity": "minor",
+      "category": "repetition",
+      "title": "'Binding' × 34 with dense concentration at L61-75",
+      "description": "The word 'binding' appears 34 times, with the densest concentration at L61-75 (the Oathbrand proof section) where it occurs 7 times in ~15 lines. While 'binding' is the proper term for the magical mechanism and the chapter's subject demands frequent reference, the local density at L61-75 creates prose that reads as slightly monotonous. Many instances use 'the binding' as sentence subject ('The binding should have...', 'The binding knew...', 'the binding had done nothing'), creating a repetitive syntactic pattern.",
+      "lineRef": { "start": 61, "end": 75 },
+      "suggestedFix": "In the L61-75 section, substitute 2-3 instances with: 'the contract,' 'the mechanism,' 'the Court's architecture,' 'it' (when antecedent is clear). Vary the sentence structure so 'the binding' is not always the grammatical subject — e.g., 'Resistance should have materialized' instead of 'The binding should have generated resistance.'",
+      "invariantRef": "INV-017"
+    },
+    {
+      "id": "LINE-018-010",
+      "severity": "minor",
+      "category": "repetition",
+      "title": "'Classification/classify' variants × 24 — density high even for thematic use",
+      "description": "Variants of 'classify/classification' appear 24 times. Approximately 8 are in ledger entries where the word is literal content (the classification IS the action). The remaining ~16 appear in narrative prose. While the classification framework is the chapter's central metaphor and the word's frequency is partly earned, the non-ledger instances could benefit from occasional substitution with synonyms that preserve the analytical register: 'catalogued,' 'filed,' 'labeled,' 'assessed,' 'sorted,' 'categorised.'",
+      "lineRef": { "start": 17, "end": 255 },
+      "suggestedFix": "Retain all ledger-entry uses (these are literal). In narrative prose, substitute 4-5 instances with synonyms. Preserve the key thematic uses: L83 ('She wrote the classification'), L229 ('Classification: unnecessary. New classification: Lirien Dael. Unaffiliated.'), and L255 ('Could not classify in advance'). These are structurally important. Others like L139 ('classified it'), L169 ('she classified this as hope'), and L185 ('Lirien classified as loyalty') can use 'filed,' 'catalogued,' or 'named' without loss.",
+      "invariantRef": "INV-017"
+    },
+    {
+      "id": "LINE-018-011",
+      "severity": "observation",
+      "category": "cliché",
+      "title": "L111: 'Between one heartbeat and the next' — borderline common phrase",
+      "description": "'The paralysis that had held her dissolved in the space between one heartbeat and the next.' The phrase 'between one heartbeat and the next' is a moderately common construction in fantasy prose. It is not on the banned list and is not a true cliché, but it lacks the specificity that characterizes the chapter's best prose. In a chapter where almost every phrase feels precisely Lirien's, this one could belong to any fantasy novel.",
+      "lineRef": { "start": 111, "end": 111 },
+      "suggestedFix": "Consider a more Lirien-specific alternative that uses her operative vocabulary: 'dissolved between one pulse measurement and the next' or simply 'dissolved instantly — operative protocol overriding analytical paralysis.' The second option also adds characterization.",
+      "invariantRef": "INV-017"
+    },
+    {
+      "id": "LINE-018-012",
+      "severity": "observation",
+      "category": "voice",
+      "title": "L187: Structural/geological metaphors in Lirien's water domain",
+      "description": "'The isolation cracked. Not broken [...] But fissured. A hairline fracture in the sealed surface of the aloneness.' The words 'cracked,' 'fissured,' and 'hairline fracture' are structural/geological — closer to Kaelith's stone-and-architecture domain than Lirien's water-and-currents domain. At Chapter 18 (late story), some domain bleed-through from Kaelith's influence is acceptable and even thematically resonant. However, the same moment could be rendered in Lirien's own imagery: 'the isolation thinned,' 'a leak in the sealed surface,' 'something seeped through.' Flagging for awareness rather than mandatory change.",
+      "lineRef": { "start": 187, "end": 187 },
+      "suggestedFix": "Optional: If the domain crossover is deliberate intimacy-bleed, retain. If not, consider water-domain alternatives: 'The isolation thinned. Not breached — Lirien was too trained for that. But permeable. Something had seeped through the sealed surface of the aloneness.'",
+      "invariantRef": "INV-003"
+    },
+    {
+      "id": "LINE-018-013",
+      "severity": "observation",
+      "category": "repetition",
+      "title": "Negation-correction pattern ('Not X.') used 3+ times",
+      "description": "The pattern of listing what something is NOT before stating what it IS appears multiple times: L99 ('Not hope. Clarity.'), L235 ('Not Lessened — not an absence...Dead by choice.'), L245 ('Not guilt. Not the binding's mechanical pull...Not the obligation...'). This is a Lirien pattern — definition through elimination, classification by negation — and each instance individually is strong. Three uses across a chapter is acceptable but at the upper bound of the pattern's welcome.",
+      "lineRef": { "start": 99, "end": 245 },
+      "suggestedFix": "No change required. Flag for the reviser's awareness — if revision adds any additional 'Not X.' constructions, one of the existing instances should be restructured.",
+      "invariantRef": "INV-017"
+    },
+    {
+      "id": "LINE-018-014",
+      "severity": "observation",
+      "category": "prose",
+      "title": "L175-177: Two consecutive pure-analysis paragraphs",
+      "description": "After the contact's intelligence briefing (L173 dialogue), L175 and L177 are consecutive paragraphs of Lirien's analytical processing — epistemic verification, triangulation assessment — before dialogue resumes at L179. The style guide's one-paragraph exposition limit is borderline here. The analysis IS the scene's action (a spy processing intelligence), and the prose remains engaging, but a brief physical gesture, sensory beat, or bond-awareness flash between the two paragraphs would re-ground the scene in the body.",
+      "lineRef": { "start": 175, "end": 177 },
+      "suggestedFix": "Optional: Insert a one-sentence physical beat between L175 and L177 — e.g., a glance at the man's hands, awareness of the light shifting, or a bond-pulse registering Kaelith's distant emotional state. This re-anchors the analytical processing in embodied experience.",
+      "invariantRef": "INV-073"
+    }
+  ],
+  "invariantCompliance": {
+    "INV-017": {
+      "status": "pass with findings",
+      "clicheCount": 0,
+      "bannedPhraseCount": 0,
+      "repeatedStructuresPerPage": "Within limit overall; LINE-018-001 pattern is the main concern at 8 instances across ~20 pages",
+      "purpleProseInstances": 0,
+      "showTellViolations": 0,
+      "notes": "Cliché and purple prose are zero. Repetition findings are structural/word-level, not generic prose quality failures. The chapter's prose is well above the quality floor."
+    },
+    "INV-073": {
+      "status": "pass",
+      "notes": "Prose is lush where earned (the water metaphors, the threshold passage at L239), restrained where needed (ledger entries, operative assessment), and emotionally authentic throughout. The plainest language at peak emotion ('She was choosing the love') is the chapter's finest sentence."
+    },
+    "INV-005": {
+      "status": "pass",
+      "notes": "Zero show-don't-tell violations. Emotions are consistently processed through Lirien's classification framework, making the analytical register itself a form of showing. The few direct emotion names ('hope,' 'clarity,' 'grief') appear inside the classification structure, not as lazy labels."
+    },
+    "INV-019": {
+      "status": "pass",
+      "notes": "Dialogue sounds like speech throughout. Lirien's fae-formal register (no contractions) is correctly calibrated for high-stress operative mode. The Ashborne contact's contractions and military fragments create appropriate contrast. No over-formal or artificially complete sentences."
+    },
+    "INV-035": {
+      "status": "pass",
+      "notes": "No dead spots. Scene 1's introspection is sustained by the escalating analytical spiral and the breakthrough payoff. Scene 2's tension is driven by threat assessment and intelligence stakes. Scene 3's tension comes from identity destruction and the uncertainty of reception."
+    },
+    "INV-052": {
+      "status": "pass (T14 excluded from craft profile)",
+      "notes": "MRU order is correct in all sampled key moments. Stimuli precede reactions; reactions follow emotion→reflex→rational→speech sequence where applicable. Lirien's character-consistent suppression of involuntary responses is handled correctly — the suppression itself becomes the showing."
+    },
+    "INV-047": {
+      "status": "pass",
+      "notes": "Scene 2 dialogue operates on two layers throughout: surface (intelligence exchange) and subtext ('Am I alone? Can anyone escape the cage?'). L191's 'I do not trust you' carries the subtext of 'I want to trust you but cannot identify the wanting.' L185's 'She believes she's alone' carries years of hidden loyalty."
+    },
+    "INV-003": {
+      "status": "pass",
+      "notes": "Lirien's voice is unmistakable within 3-4 sentences. Water metaphors, classification register, observation-to-interpretation pattern, operative vocabulary — all consistently deployed. Distinct from Kaelith's Ch17 voice (short/percussive/architectural). LINE-018-002 concerns density, not accuracy. Minor domain bleed at L187 (observation only)."
+    },
+    "INV-064": {
+      "status": "pass (T26 folded into T17 per craft profile)",
+      "notes": "Lirien's visual/auditory sensory signature is maintained — she reads faces, light, micro-expressions, voice quality. Physical/tactile details appear primarily through the pen, the cipher, the table grain — Lirien's limited proprioceptive channel activating only under stress."
+    }
+  },
+  "dialogueAudit": {
+    "sceneRange": { "start": 107, "end": 195 },
+    "speakerCount": 2,
+    "speakers": [
+      {
+        "name": "Lirien Dael",
+        "voiceConsistency": "Excellent — fae-formal register, no contractions, precise categorical statements",
+        "naturalismScore": "high",
+        "notes": "Correctly uses 'do not' rather than 'don't' and 'is not' rather than 'isn't' — consistent with fae-default under stress per style guide"
+      },
+      {
+        "name": "Ashborne contact (unnamed)",
+        "voiceConsistency": "Excellent — military brevity, contractions, intelligence-briefing cadence",
+        "naturalismScore": "high",
+        "notes": "Distinct from Lirien through contractions ('wouldn't,' 'doesn't'), fragments, and compressed delivery"
+      }
+    ],
+    "subtextPresent": true,
+    "subtextNotes": "Surface: intelligence exchange about binding dissolution. Subtext: mutual recognition of institutional defiance; the question of whether isolation can be broken; hidden loyalty as love in institutional clothing",
+    "overVoicingDetected": false,
+    "functionServed": ["plot advancement (binding dissolution intelligence)", "character revelation (Ashborne network, hidden allies)", "tension creation (potential trap)", "thematic advancement (others have escaped the cage)"]
+  },
+  "microTensionAudit": {
+    "deadSpotsFound": 0,
+    "tensionSources": {
+      "scene1": "Self-interrogation spiral, existential dread about binding vs. free will, absent Kaelith, bond-pulse through the night, escalating toward the single breakthrough classification",
+      "scene2": "Threat assessment, trust negotiation, intelligence verification, potential trap, isolation fracturing",
+      "scene3": "Identity destruction, uncertainty of Kaelith's reception, walking toward an uncontrollable conversation, bond transmitting intention"
+    }
+  },
+  "mruAudit": {
+    "sampleCount": 7,
+    "violations": 0,
+    "notes": "T14 excluded from craft profile but checked regardless. All sampled moments show correct stimulus→reaction order. Key examples: L111 (footsteps heard → paralysis dissolves → blade drawn → position taken); L119-121 (gesture recognized → grip maintained → emotional stillness); L221-223 (cipher pressed → fracture observed → iridescence dies → warmth released → emotional absence noted). Lirien's suppressed involuntary responses are character-consistent, not MRU violations."
+  },
+  "proseMetrics": {
+    "clicheCount": 0,
+    "bannedPhraseCount": 0,
+    "purpleProseInstances": 0,
+    "showTellViolations": 0,
+    "adverbDensity": "~1.2 per manuscript page (well within 3/page limit)",
+    "oneLineEmphasisCount": 7,
+    "oneLineEmphasisVerdict": "All 7 earned — each marks a reversal, realization, or emotional impact. No overuse."
+  },
+  "upstreamRefs": [
+    "chapters/018/draft.md",
+    "chapters/018/metadata.json",
+    "style/style-guide.json",
+    "craft-profile.json",
+    "characters/CHAR-002.json"
+  ]
+}

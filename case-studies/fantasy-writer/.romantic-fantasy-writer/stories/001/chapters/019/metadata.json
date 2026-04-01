@@ -1,0 +1,175 @@
+{
+  "chapterNum": 19,
+  "title": "Sound Enough",
+  "pov": "CHAR-001",
+  "povName": "Kaelith Maren",
+  "scenes": ["SCN-53", "SCN-54", "SCN-55"],
+  "wordCount": 5735,
+  "sceneCount": 3,
+  "tensionLevel": 7,
+  "status": "draft",
+  "act": "Act III — Break into Three",
+  "romanceBeat": "Reunion Through Truth — 'I Choose This. I Choose You.'",
+  "romanceStage": "commitment (first steps)",
+  "fantasyBeat": "Break into Three — Shared Plan to Exploit Contract Loophole and Reach Quietus",
+  "vulnerabilityLadderStep": 10,
+  "craftToolsApplied": {
+    "T5_toneContract": {
+      "status": "compliant",
+      "notes": "Morally complex, atmospherically taut throughout. No melodrama in reunion — earned through quiet words, not grand gestures. No grimdark nihilism — hope exists but is structural, not sentimental. Humor present in Kaelith's dry register ('Heights have never killed me yet' register). No sentimentality — the reconciliation is framed as engineering, not absolution."
+    },
+    "T6_stakesEscalation": {
+      "status": "compliant",
+      "notes": "Personal (Pallor claiming Kaelith's body, three fingers frozen), relational (trust rebuilt on damaged foundation), existential (Quietus timeline, god-seal, Ythara visible through membrane gaps). All three stake levels present and escalating."
+    },
+    "T7_blackMoment": {
+      "status": "compliant",
+      "notes": "Recovery from Ch16 black moment. Reunion earned through Ch17 bond evidence + Ch18 proof of agency. Wounds from Ch16 still open — Kaelith names them explicitly ('You carried a death contract for months. You slept beside me.'). Not forgiveness — decision."
+    },
+    "T8_internalExternalResistance": {
+      "status": "compliant",
+      "notes": "Internal: Calwrath fear (named explicitly — 'afraid that choosing love will put me back in Calwrath'), distrust of institutional betrayal pattern, fear of becoming blast radius. External: Pallor progression (silver past elbow, three fingers frozen), timeline compression, Court enforcement threat, god-seal approach."
+    },
+    "T10_sandersonsLaws": {
+      "status": "compliant",
+      "notes": "Bond mechanics consistent: transmits emotional quality not content, resolution increases with proximity, cannot fabricate emotion. Contract loophole mechanics explained clearly: cessation satisfies execution clause, bond provides monitoring precision. God-seal dissolution mechanism grounded in established Pallor substrate rules (thinning exposes binding anchors). No deus ex machina — all mechanisms established in prior chapters."
+    },
+    "T12_dualArcInterleave": {
+      "status": "compliant",
+      "notes": "Fantasy plan and romance reconciliation happen simultaneously. SCN-54 interweaves intelligence exchange with trust rebuilding — Lirien presents proof of choice (cipher, Ashborne) while Kaelith evaluates both the intelligence and the asker. SCN-55 strategy session IS trust exercise — every tactical decision tests reconciliation."
+    },
+    "T13_tensionMapping": {
+      "status": "compliant",
+      "notes": "Tension 7. Pacing: quiet arrival/recognition (SCN-53, building) → intense confrontation/reunion (SCN-54, peak) → purposeful planning (SCN-55, redirected energy). Moves from emotional recovery through crisis to action. Properly positioned between Ch18 tension-6 and Ch20 tension-10."
+    },
+    "T15_foreshadowing": {
+      "status": "compliant",
+      "notes": "Planted/advanced: Ashborne reunion seeds Ch22 payoff (FS-013 advanced). Contract loophole consent seeds Ch20 (FS-012 advanced). God-seal plan seeds Ch21 (FS-021 advanced). Defected Architect mentioned (FS-022 advanced). Pallor thinning at Quietus established for climax mechanics."
+    },
+    "T16_symbolicMotifs": {
+      "status": "compliant",
+      "notes": "MOT-001 Pallor/silver: silver in Kaelith's veins (past elbow, three fingers), Pallor overhead thin and breathing, Ythara sky visible. MOT-002 Oathbrand ghost: phantom collarbone ache (twice). MOT-003 Water exception: ONE water image ('current breaking through a dam') when bond opens fully — approved Lirien-influence marker. MOT-004 Quietus body-pull: kinetic memory pulling northeast, 'needle swinging to north.' MOT-005 Ythara: raw unmade sky visible through Pallor gaps."
+    },
+    "T17_voiceFingerprinting": {
+      "status": "compliant",
+      "notes": "Kaelith voice maintained throughout: 70%+ short declarative sentences, military/architectural vocabulary ('load-bearing,' 'sight lines,' 'killing ground,' 'sound,' 'compromised,' 'position'), physical emotions (anger as 'heat climbing neck,' terror in 'spine'), tactical assessment of everything (room first, people second), inventory fragments under stress, no contractions under emotional intensity. SHARPLY distinct from Ch18 Lirien (no classification systems, no water metaphors except approved exception, no analytical loops)."
+    },
+    "T18_informationAsymmetry": {
+      "status": "compliant",
+      "notes": "Strict INV-056 compliance. Kaelith does NOT know about: 11-hour self-interrogation (learns only the result — 'one verified act'), Ashborne contact details (learns via Lirien's briefing), cipher destruction (sees fragments as new information). Lirien delivers these as reveals. Kaelith does NOT learn: Thalen as specific saboteur, Iryse as vector, Seep support for loophole, Warden lineage. Knowledge states verified against information-asymmetry-map.json."
+    },
+    "T20_emotionalThroughline": {
+      "status": "compliant",
+      "notes": "Tracked from 'grief-tinged resolve' (Ch17 end) through 'disorientation at Ashborne loyalty' → 'categories reorganising' → 'terrified stillness' → 'decision crystallising' → 'fierce structural trust.' End state: 'wary reconnection' — trust rebuilt on different foundation. No repeated dominant emotion from Ch17 (grief-tinged resolve → wary reconnection). INV-037 satisfied."
+    },
+    "T21_vulnerabilityLadder": {
+      "status": "compliant",
+      "notes": "Step 10: Kaelith names the exact fear she has never spoken — 'I am afraid that choosing love will put me back in Calwrath. That loving you will mean I become the blast radius of my own decisions again.' Highest vulnerability Kaelith has shown. Preceded by staying instead of fleeing (choosing to face Lirien), followed by opening the bond fully."
+    },
+    "T23_mysteryBox": {
+      "status": "compliant",
+      "notes": "MB-011 (will Kaelith trust Lirien?): ADVANCED — trust rebuilt through decision, not forgiveness. MB-014 (Ashborne support): ADVANCED — eight veterans, coordinated network, relay points established. MB-013 (bond after contract): ADVANCED — bond opens fully for first time since black moment. MB-008 (contract loophole): ADVANCED — two paths established (dissolution at Quietus primary, heartbeat cessation fallback)."
+    },
+    "T24_subtextInDialogue": {
+      "status": "compliant",
+      "notes": "Every conversation has surface and subterranean meaning. 'Commander' = 'you are not what they made you.' Cipher presentation = 'I killed my old self for you.' 'Everything after the Oathbrand was mine' = 'the love was real even if the beginning was not.' 'Then we burn together' = 'love is not safety, love is chosen risk.' 'If I'm trusting you with the world, I can trust you with this' = 'the personal is not separate from the global; I love you.'"
+    },
+    "T25_thematicArgument": {
+      "status": "compliant",
+      "notes": "All three pillars dramatized through action: TP-1 (trust as structural failure): Trust rebuilt on cracked foundation — 'cracked foundations could bear weight, if you understood where the fractures ran.' TP-2 (price of right choice): Both choose each other knowing cost — Kaelith names the fear, Lirien names the risk, both proceed. TP-3 (chosen vs only): Core of chapter — 'She could be in the tree cover in forty seconds. She could disappear.' She stays. Reconciliation as deliberate choice. Act III forces hardest version: choosing love AFTER betrayal is harder than choosing love before."
+    }
+  },
+  "sceneValueShifts": {
+    "SCN-53": {
+      "opening": "Mission discipline, isolation as identity",
+      "closing": "Isolation revealed as lie, choosing to face Lirien",
+      "shift": "From 'I am here for the mission' to 'she is coming and I cannot pretend the mission is all I feel'"
+    },
+    "SCN-54": {
+      "opening": "Can I trust her again?",
+      "closing": "I choose to trust her again, knowing the risk",
+      "shift": "From distrust to deliberate trust. Not forgiveness — decision."
+    },
+    "SCN-55": {
+      "opening": "Together again",
+      "closing": "Together with a plan that might kill them both",
+      "shift": "From reconciliation to operational commitment. Trust tested immediately through planning."
+    }
+  },
+  "emotionalArc": {
+    "openingState": "Grief-tinged resolve, walking on mission discipline, bond carrying Lirien's intention",
+    "pivotMoment": "Kaelith names deepest fear: 'I am afraid that choosing love will put me back in Calwrath'",
+    "closingState": "Wary reconnection — fierce structural trust, partnership restored through decision, plan requiring ultimate trust",
+    "dominantEmotion": "wary reconnection",
+    "intensity": 7
+  },
+  "characterEmotionalStates": {
+    "CHAR-001_entry": "grief-tinged resolve (from Ch17)",
+    "CHAR-001_exit": "fierce structural trust — choosing to build on damaged foundation",
+    "CHAR-002_entry": "determined clarity (from Ch18)",
+    "CHAR-002_exit": "relief tempered by knowledge that trust is conditional and earned"
+  },
+  "foreshadowingAdvanced": [
+    {
+      "id": "FS-012",
+      "element": "Contract loophole consent",
+      "action": "Kaelith agrees in principle to heartbeat cessation as fallback. Seeds Ch20 execution.",
+      "status": "advanced"
+    },
+    {
+      "id": "FS-013",
+      "element": "Ashborne reunion",
+      "action": "Eight veterans at Rivenmarch, relay network established. Seeds Ch22 payoff.",
+      "status": "advanced"
+    },
+    {
+      "id": "FS-021",
+      "element": "God-seal dissolution",
+      "action": "Intelligence presented: binding destabilises at Quietus. Seeds Ch21 confrontation.",
+      "status": "advanced"
+    },
+    {
+      "id": "FS-022",
+      "element": "Defected Court Architect",
+      "action": "Referenced as proof that dissolution is possible. Seeds Ch20-21.",
+      "status": "advanced"
+    },
+    {
+      "id": "FS-023",
+      "element": "Bond intention north",
+      "action": "Bond quality change perceived by Kaelith. Paid off in reunion scene.",
+      "status": "paying off"
+    },
+    {
+      "id": "FS-024",
+      "element": "Cipher destruction",
+      "action": "Lirien presents destroyed cipher fragments. Kaelith reads identity severance.",
+      "status": "paying off"
+    }
+  ],
+  "voiceDistinctnessNotes": "Kaelith's voice sharply distinct from Ch18 Lirien. Kaelith: short declarative sentences (70%+), military/architectural metaphors (killing ground, load-bearing, keystone, sight lines, buttress), physical emotions (jaw tightening, heat climbing neck, terror in spine), tactical assessment priority (room before people), inventory fragments, no contractions under stress. Lirien (Ch18): flowing analytical sentences, water metaphors (current, flood, drain), classification systems, probability assessments, emotional processing through taxonomy. The two voices are immediately distinguishable within 3-4 sentences. Ch19 voice evolution: slightly longer sentences in Lirien's presence, one water image (approved), one non-tactical question ('Why?'), humor becoming more inclusive.",
+  "pacingVariation": "SCN-53 (sequel): Quiet arrival, recognition, internal processing — lower intensity building to bond signal. SCN-54 (scene): Emotional intensity peak — confrontation, vulnerability naming, decision. SCN-55 (scene): Redirected energy — tactical planning, operational trust test, closing commitment. Proper rise-and-redirect pattern. No consecutive high-action with prior Ch18 (tension 6) or subsequent Ch20 (tension 10).",
+  "showDontTellEvidence": [
+    "Anger: 'jaw tightened. Heat climbing her neck' — not 'she felt angry'",
+    "Fear: 'terror lived in her spine, in the muscles of her jaw, in the hyperawareness of every angle' — not 'she was afraid'",
+    "Love: bond transmission + physical reactions + structural metaphors — never named as 'love' by Kaelith",
+    "Trust decision: 'keystone finding its seat' — structural metaphor for internal shift",
+    "Grief: 'pressure behind the sternum' pattern maintained from Ch17",
+    "Recognition shock: 'hit like a fist to the sternum' — physical impact"
+  ],
+  "worldbuildingIntegration": [
+    "Rivenmarch: Pallor instability, true sky visible through gaps, ontological weather — woven through Kaelith's tactical assessment, not explained",
+    "Ashborne tactical doctrine: Third Frontier Manual chapter nine — revealed through Kaelith recognizing patterns, not exposition",
+    "Fae binding mechanics: contract loophole explained through Lirien's briefing dialogue, naturally within strategic planning",
+    "Pallor thinning at Quietus: intelligence briefing format, new information for both Kaelith and reader",
+    "Kinetic memory: body-pull northeast, needle-to-north, the feeling of her feet knowing — shown through sensation"
+  ],
+  "continuityNotes": {
+    "pallorProgression": "Silver past elbow, three fingers frozen (progression from Ch17: wrist/knuckles, two fingers). Cold tracking bone. Consistent acceleration without resonance stabilization.",
+    "bondState": "Enters walled-but-not-reinforced (from Ch17). Quality change perceived (Lirien's intention from Ch18). Opens fully in SCN-54 — first full opening since Ch16 black moment.",
+    "oathbrand": "Phantom collarbone ache. Brand removed months ago but body remembers. Consistent with Ch17.",
+    "ashborne": "Eight veterans, organized at Rivenmarch using Kaelith's doctrine. Sedara (Third Platoon) named. Network has relay points northeast toward Quietus.",
+    "locationConsistency": "Rivenmarch as described in geography.json — wood/thatch architecture, thin Pallor, Ythara sky visible, unstable ontological environment.",
+    "timelineConsistency": "2-3 days travel from Ch17 ending location. Silver progression consistent with accelerating timeline."
+  }
+}

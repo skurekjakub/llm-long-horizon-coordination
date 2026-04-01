@@ -1,0 +1,148 @@
+{
+  "agent": "docwriter-accuracy-reviewer",
+  "taskId": "T-002",
+  "attempt": 1,
+  "verdict": "approved",
+  "claims": [
+    {
+      "claim": "Publishing requires Read and Update page permissions",
+      "location": "Publish pages section, {% note %} block (line 78)",
+      "result": "verified",
+      "evidence": "permissionSummary.publish.aclPermission = 'WebPageAclPermissions.READ + WebPageAclPermissions.UPDATE on the page'. ContentTab.cs line 200: CheckAclPermission(WebPageIdentifier.WebPageItemID, WebPageAclPermissions.UPDATE, ...) with [PageCommand(Permission = SystemPermissions.VIEW)]. Read prerequisite enforced by WebPageAclPermissionEvaluator lines 118-123.",
+      "docFact": "permissionSummary.publish"
+    },
+    {
+      "claim": "If the page is under a workflow, it must be advanced through the workflow steps rather than published directly",
+      "location": "Publish pages section, {% note %} block (line 78)",
+      "result": "verified",
+      "evidence": "permissionSummary.publish.workflowCheck = 'IsUnderWorkflow must be false (otherwise error: contentitemunderworkflow). Pages under workflow cannot be published directly — must use ChangeWorkflowStep instead.' WebPageCommandManagerBase.cs PublishInternal (line 576): if (await IsUnderWorkflow(webPage)) returns error.",
+      "docFact": "permissionSummary.publish"
+    },
+    {
+      "claim": "Cross-reference to permissions_pagelevel_xp with anchor 'Page permissions for publishing pages'",
+      "location": "Publish pages section, {% note %} block (line 78)",
+      "result": "verified",
+      "evidence": "Hub page (page-permission-management.md) has identifier: permissions_pagelevel_xp and heading '## Page permissions for publishing pages'. Anchor exists.",
+      "docFact": null
+    },
+    {
+      "claim": "Reverting changes requires Read and Update page permissions",
+      "location": "Revert changes section, {% note %} block (line 128)",
+      "result": "verified",
+      "evidence": "permissionSummary.discard.aclPermission = 'READ + UPDATE on the page'. ContentTab.cs Discard method (line 340): CheckAclPermission(WebPageIdentifier.WebPageItemID, WebPageAclPermissions.UPDATE, ...) with [PageCommand(Permission = SystemPermissions.VIEW)]. Read prerequisite enforced by evaluator.",
+      "docFact": "permissionSummary.discard"
+    },
+    {
+      "claim": "You must also be able to work with the page in its current workflow step (for revert)",
+      "location": "Revert changes section, {% note %} block (line 128)",
+      "result": "verified",
+      "evidence": "permissionSummary.discard.workflowCheck = 'CanWorkWithContentItemInCurrentStep must be true. Blocked if publish is scheduled.' WebPageCommandManagerBase.cs DiscardInternal (line 649): if (!await CanWorkWithContentItemInCurrentStep(webPage, languageName)) returns error with 'changeworkflowstep.changestep.pagevalidation.role'.",
+      "docFact": "permissionSummary.discard"
+    },
+    {
+      "claim": "Cross-reference to permissions_pagelevel_xp with anchor 'Permission requirements for page operations'",
+      "location": "Revert changes section, {% note %} block (line 128)",
+      "result": "verified",
+      "evidence": "Hub page has heading '## Permission requirements for page operations'. No dedicated revert section exists, so the general section is the correct anchor for context on workflow step role requirements.",
+      "docFact": null
+    },
+    {
+      "claim": "Unpublishing requires Read and Update page permissions",
+      "location": "Unpublish pages section, {% note %} block (line 146)",
+      "result": "verified",
+      "evidence": "permissionSummary.unpublish.aclPermission = 'READ + UPDATE on the page'. ContentTab.cs Unpublish method (line 313): CheckAclPermission(WebPageIdentifier.WebPageItemID, WebPageAclPermissions.UPDATE, ...) with [PageCommand(Permission = SystemPermissions.VIEW)]. Read prerequisite enforced by evaluator.",
+      "docFact": "permissionSummary.unpublish"
+    },
+    {
+      "claim": "You can unpublish a page regardless of its current workflow step",
+      "location": "Unpublish pages section, {% note %} block (line 146)",
+      "result": "verified",
+      "evidence": "permissionSummary.unpublish.workflowCheck = 'NO workflow step role check. Only checks version status.' WebPageCommandManagerBase.cs UnpublishInternal (lines 734-756): no call to CanWorkWithContentItemInCurrentStep — only checks version status (Draft, Unpublished, IsUnpublishScheduled). Hub page confirms: 'Unlike publishing, unpublishing does not check workflow step roles.'",
+      "docFact": "permissionSummary.unpublish"
+    },
+    {
+      "claim": "Cross-reference to permissions_pagelevel_xp with anchor 'Page permissions for unpublishing pages'",
+      "location": "Unpublish pages section, {% note %} block (line 146)",
+      "result": "verified",
+      "evidence": "Hub page has heading '## Page permissions for unpublishing pages'. Anchor exists.",
+      "docFact": null
+    },
+    {
+      "claim": "Moving a page requires Read and Update page permissions on the page you want to move",
+      "location": "Move pages section, {% note %} block (line 397)",
+      "result": "verified",
+      "evidence": "permissionSummary.movePage.aclPermission = 'READ + UPDATE on the source page (with evaluateChildPages=true)'. WebPagesApplication.cs MovePage (line 592): CheckAclPermission(args.WebPageItemId, WebPageAclPermissions.UPDATE, true, ...). Read prerequisite enforced by evaluator.",
+      "docFact": "WebPagesApplication.cs"
+    },
+    {
+      "claim": "Moving requires Read and Create permissions on the page's new parent",
+      "location": "Move pages section, {% note %} block (line 397)",
+      "result": "verified",
+      "evidence": "permissionSummary.movePage.aclPermission includes 'AND READ + CREATE on the target parent page'. WebPagesApplication.cs MovePage (lines 593-597): CheckAclPermission(args.TargetParentWebPageItemId, WebPageAclPermissions.CREATE, ...). Read prerequisite enforced by evaluator.",
+      "docFact": "WebPagesApplication.cs"
+    },
+    {
+      "claim": "Cross-reference to permissions_pagelevel_xp with anchor 'Page permissions for moving pages'",
+      "location": "Move pages section, {% note %} block (line 397)",
+      "result": "verified",
+      "evidence": "Hub page has heading '## Page permissions for moving pages'. Anchor exists.",
+      "docFact": null
+    }
+  ],
+  "codeExamples": [],
+  "crossReferenceConsistency": {
+    "hubPageIdentifier": "permissions_pagelevel_xp",
+    "hubPageFile": "src/_documentation/_documentation/developers-and-admins/configuration/users/role-management/page-permission-management.md",
+    "anchorsVerified": [
+      {
+        "anchor": "Page permissions for publishing pages",
+        "heading": "## Page permissions for publishing pages",
+        "exists": true
+      },
+      {
+        "anchor": "Permission requirements for page operations",
+        "heading": "## Permission requirements for page operations",
+        "exists": true
+      },
+      {
+        "anchor": "Page permissions for unpublishing pages",
+        "heading": "## Page permissions for unpublishing pages",
+        "exists": true
+      },
+      {
+        "anchor": "Page permissions for moving pages",
+        "heading": "## Page permissions for moving pages",
+        "exists": true
+      }
+    ],
+    "contentConsistency": "All permission notes in edit-and-publish-pages.md are consistent with the corresponding sections on the hub page. Terminology (Read, Update, Create) and behavioral claims (workflow step asymmetry for unpublish, workflow step requirement for revert) match between both pages."
+  },
+  "researchRecommendationCompliance": {
+    "REC-005": {
+      "cited": true,
+      "followed": true,
+      "notes": "Link text 'page permissions' is descriptive in context (each sentence states the operation and required permissions, making the link text clear). Not maximally specific (REC-005 examples suggest 'page permission requirements') but functionally descriptive. No duplicate links to the same anchor — each note cross-references a different section. Pre-existing link at line 390 (without anchor) is not a writer addition."
+    }
+  },
+  "domainInsightCompliance": {
+    "DOM-017": {
+      "relevant": true,
+      "compliant": true,
+      "notes": "The multi-layer permission model (application → ACL → workflow) is correctly represented. The notes distinguish ACL permissions (Read, Update, Create) from workflow step requirements, avoiding terminology collision."
+    },
+    "DOM-008": {
+      "relevant": true,
+      "compliant": true,
+      "notes": "Business-user page uses appropriate interaction verbs. Permission notes use business-appropriate phrasing ('requires', 'you must', 'you can')."
+    }
+  },
+  "summary": {
+    "totalClaims": 12,
+    "verified": 12,
+    "incorrect": 0,
+    "unverifiable": 0,
+    "unsupported": 0,
+    "codeExamplesChecked": 0,
+    "codeExamplesCorrect": 0
+  }
+}

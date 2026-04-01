@@ -1,0 +1,36 @@
+{
+  "agent": "character-voice-designer",
+  "status": "completed",
+  "result": "completed",
+  "summary": "Refined and differentiated voice fingerprints for both romantic leads (CHAR-001 Kaelith Maren, CHAR-002 Lirien Dael). Added 7 new voice dimensions to each character: humorStyle, attentionPriority, deflectionPattern, stressResponse, silenceStyle, dialogueHabits, voiceEvolution. Added full dialoguePatterns section with initiationStyle, questionStyle, responseStyle, underPressure, verbalTics, favoriteExpressions, and speechRhythm. Enhanced sensorySig with secondaryChannel and cross-character contrast notes. Built 12-dimension voice contrast matrix in index.json with explicit contrast levels. Established cross-contamination rules tracking how voice overlap marks intimacy progression. All 8 distinction checklist items verified: (1) Vocabulary domain — military/engineering vs intelligence/assessment. (2) Sentence rhythm — 70% short/percussive vs medium-flowing with cataloguing bursts. (3) Metaphor sources — architecture/materials vs water/infiltration/contracts. (4) Emotional processing — physical sensation in body vs classification categories. (5) Attention patterns — spaces before people vs people before spaces. (6) Deflection style — physical tasks vs intellectual analysis. (7) Humor — instinctive garrison-coast dry vs absent→acquired surgical precision. (8) Internal monologue — linear tactical vs associative annotated surveillance. Both voices are now UNMISTAKABLE within 3-4 sentences per INV-034.",
+  "artifactsWritten": [
+    "characters/CHAR-001.json",
+    "characters/CHAR-002.json",
+    "characters/index.json"
+  ],
+  "artifactsRead": [
+    "characters/CHAR-001.json",
+    "characters/CHAR-002.json",
+    "characters/index.json",
+    "story-concept.json",
+    "craft-profile.json",
+    "world-bible/culture.json"
+  ],
+  "iteration": 1,
+  "timestamp": "2026-03-18T00:03:45Z",
+  "voiceAssessment": {
+    "preExistingQuality": "The protagonist-profiler created strong initial fingerprints with good conceptual separation across the base 6 dimensions. The main gaps were: (1) no dialoguePatterns defined for either character, (2) humor/deflection/silence/stress behaviors described only in index.json quick-reference but not in the character files themselves, (3) no measurable sentence length targets, (4) no voice evolution tracking, (5) no cross-character contrast notes within the character files.",
+    "refinementsApplied": [
+      "Added measurable sentence length targets (Kaelith: 70% at 3-8 words; Lirien: default 10-18 words with 3-6 word fragments)",
+      "Added 7 new voiceFingerprint fields: humorStyle, attentionPriority, deflectionPattern, stressResponse, silenceStyle, dialogueHabits, voiceEvolution",
+      "Created full dialoguePatterns section with 7 sub-fields for each character",
+      "Enhanced sensorySig with secondaryChannel and explicit cross-character contrast notes",
+      "Built 12-dimension voice contrast matrix with explicit contrast levels (MAXIMUM/HIGH/MODERATE)",
+      "Established cross-contamination rules tracking intentional voice overlap as intimacy markers",
+      "Added specific signature words/expressions for each character as drafter reference",
+      "Sharpened metaphor exclusion zones (Kaelith: no water; Lirien: no architecture-as-strength)",
+      "Defined voice evolution milestones tied to vulnerability ladder"
+    ],
+    "contrastVerdict": "SUFFICIENT. No dimension shows overlap. 8 of 12 dimensions rated MAXIMUM contrast, 3 rated HIGH, 1 rated MODERATE (conversation entry style — mitigated by the thing/person distinction). The 3-4 sentence identification test passes on multiple independent axes."
+  }
+}

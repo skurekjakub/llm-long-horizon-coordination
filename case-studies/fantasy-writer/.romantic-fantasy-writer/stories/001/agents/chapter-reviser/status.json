@@ -1,0 +1,40 @@
+{
+  "agent": "chapter-reviser",
+  "storyId": "001",
+  "chapter": 22,
+  "task": "Re-revision of Chapter 22 (final chapter) following audit gate failure",
+  "result": "completed",
+  "timestamp": "2026-03-21T06:15:00Z",
+  "summary": "Re-revised Chapter 22 to address all audit gate failures. Critical finding LINE-201 (negation-contrast saturation) resolved: reduced from 26+ to 10-11 instances (target 10-12). Major finding LINE-205 (near-verbatim grip passage) resolved: first passage completely rewritten. Four darlings cut (LINE-207, LINE-208). All copy-edit findings addressed including divine corpse→divine remains, Serath Dún→Dûn, Seventh→Sixth Seat, British→American spellings. Traceability chain restored with correct finding IDs. Three v1 regressions also fixed.",
+  "artifactsProduced": [
+    "chapters/022/revised.md",
+    "revision-reports/022/revision-log.json"
+  ],
+  "findingsAddressedCounts": {
+    "critical": 1,
+    "major": 8,
+    "moderate": 5,
+    "minor": 17,
+    "regressions": 3,
+    "total": 34
+  },
+  "findingsDeferred": [],
+  "wordCount": {
+    "draft": 4098,
+    "revised_v1": 4052,
+    "revised_v2": 3836,
+    "target": 4100
+  },
+  "revisionVersion": 2,
+  "auditGateContext": {
+    "previousVerdict": "failed",
+    "failTriggers": [
+      "LINE-201 (critical) unaddressed",
+      "LINE-205 (major) unaddressed",
+      "INV-014 traceability broken",
+      "INV-081 darlings survived",
+      "Multiple copy-edit findings unaddressed"
+    ],
+    "allTriggersResolved": true
+  }
+}

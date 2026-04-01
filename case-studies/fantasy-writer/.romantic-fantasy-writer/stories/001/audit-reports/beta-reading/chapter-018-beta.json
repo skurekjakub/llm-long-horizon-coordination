@@ -1,0 +1,49 @@
+{
+  "chapter": 18,
+  "engagementScore": 7,
+  "emotionalImpact": "high",
+  "pacingAssessment": "drags-in-middle",
+  "clarityScore": 8,
+  "findings": [
+    {
+      "id": "BETA-018-001",
+      "type": "pacing",
+      "severity": "major",
+      "description": "The intelligence briefing with the Ashborne contact occupies roughly a third of the chapter and pulls the reader out of Lirien's dark night of the soul into what is essentially an exposition dump. The contact arrives with exactly the information needed (binding dissolution at the Quietus, three corroborating sources, cooperative mechanism). The chapter's emotional architecture — analytical self-examination → one verified free choice → cipher destruction → walking north — is strong, but the briefing interrupts the emotional throughline at its most vulnerable point.",
+      "location": "Section 2, from 'She had not decided what to do with the clarity' through the contact's departure",
+      "readerImpact": "The reader arrives at this chapter wanting to know what Lirien decides. The briefing scene delays that answer and introduces a lot of logistical setup (dissolution mechanics, defected Architect, Ashborne network) that could have been delivered more economically. Some readers will feel the chapter shifts genres from character study to intelligence thriller mid-stream."
+    },
+    {
+      "id": "BETA-018-002",
+      "type": "confusion",
+      "severity": "minor",
+      "description": "The Ashborne contact uses a recognition protocol that is described as 'older than the current Court hierarchy' and 'retired.' Lirien then identifies it as belonging to 'a neutral verification system designed during the border stabilisation campaigns for interoperability between fae and human intelligence assets.' This is dense worldbuilding delivered during a scene where the reader is primarily invested in whether Lirien will choose Kaelith. The specificity is character-appropriate (Lirien would notice this) but reader-taxing.",
+      "location": "Section 2, recognition exchange at the doorway",
+      "readerImpact": "Mild cognitive overload. The reader needs to track the protocol's provenance, its organizational history, and its implications while also maintaining emotional investment in Lirien's crisis."
+    },
+    {
+      "id": "BETA-018-003",
+      "type": "romance-gap",
+      "severity": "minor",
+      "description": "The chapter's final declaration ('She was choosing the love') is tonally correct but lands slightly too definitively for a character who has just spent four pages proving she can only verify ONE decision as free. The analytical rigor of the ledger audit — the intellectual honesty of 'ambiguous, ambiguous, ambiguous, free choice' — is undermined when the closing narration claims the love with the certainty the audit explicitly refused to provide.",
+      "location": "Final paragraphs, 'She was choosing the love. She walked north.'",
+      "readerImpact": "Slight tonal whiplash. The chapter earns its ending through the audit's honesty, but the final line jumps from 'I can prove the capacity for choice exists' to 'I am choosing the love' in a way that feels like it skips a step. The bridge between those two positions happens off-page."
+    },
+    {
+      "id": "BETA-018-004",
+      "type": "observation",
+      "severity": "observation",
+      "description": "The convenience of the contact's timing (arrives right after Kaelith's departure, while Lirien is alone and receptive) is acknowledged within the text — Lirien herself flags it as either 'manufactured or withheld until the moment of maximum utility.' This meta-awareness helps, but the structural convenience remains visible to the reader.",
+      "location": "Section 2, 'Intelligence that arrived when it was needed was either manufactured or withheld'",
+      "readerImpact": "Lampshading the convenience partially defuses the problem but doesn't eliminate it. The contact is doing heavy plot-mechanical work (delivering the Quietus dissolution setup) and the scaffolding shows."
+    }
+  ],
+  "strengths": [
+    "The ledger audit is a stroke of genius — Lirien doing to herself what the Court trained her to do to targets, weaponizing her own analytical precision against the cage it was built to serve. The repurposed accounting ledger is a perfect physical detail.",
+    "The Oathbrand removal as the ONE verified free choice is the emotional core of the entire Act III recovery. It works because the logic is airtight: the binding should have prevented it, produced no resistance, and the choice predated every other emotional development. One act is enough to prove capacity. This is rigorous and devastating.",
+    "The cipher destruction is symbolically perfect — using the designed stress point (the self-destruct architecture) to break the object that defined her operational identity. 'That operative was dead. Not Lessened — dead by choice.' is a killer line.",
+    "The parallel structure with Chapter 17 (both ending with walking north, both anchored by a single pivotal realization) creates a satisfying mirrored architecture for the separation chapters",
+    "Lirien's awareness that from the outside, her free choice and the binding's pull are indistinguishable — 'the two currents ran together' — preserves the moral complexity that makes this romance feel adult and earned"
+  ],
+  "verdict": "adequate"
+}

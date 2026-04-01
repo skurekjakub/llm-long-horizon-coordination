@@ -1,0 +1,147 @@
+{
+  "agent": "docwriter-persona-reviewer",
+  "taskId": "T-005",
+  "verdict": "approved-with-notes",
+  "personaChecks": [
+    {
+      "check": "front-matter-personas",
+      "result": "pass",
+      "declaredPersonas": ["business"],
+      "evidence": "Front matter declares `persona: business`. The page lives under `business-users/website-content/` and provides a procedural how-to for deleting pages in the administration interface — entirely a business-user workflow. No developer or admin audience is needed for this page. Consistent with all neighbors in the Website Content cluster (create-pages, edit-and-publish-pages, translate-pages, etc.), which are all `persona: business`."
+    },
+    {
+      "check": "tone-business-intro-callout",
+      "result": "pass",
+      "evidence": "The new info callout ('You need the **Read** and **Delete** page permissions to delete a page.') uses plain, direct language. Bold formatting highlights the key permission names. The cross-reference link to the Page permission management page lets curious users learn more without cluttering this page. No jargon, no developer terminology. Friendly, task-oriented tone."
+    },
+    {
+      "check": "tone-business-child-pages-paragraph",
+      "result": "pass-with-notes",
+      "evidence": "The sentence 'You also need the **Delete** page permission for any child pages that have their own permission settings' is clear and accessible. However, the follow-up sentence uses 'does not inherit permissions from its parent' — the verb 'inherit' is a technical/system-administration concept that may not be immediately intuitive to a non-technical business user audience.",
+      "notes": "Per INV-persona-014, it is acceptable to assume business users work alongside technical team members, and the cross-reference to the permissions page provides additional context. The sentence is understandable in context because 'their own permission settings' in the preceding clause sets up the concept. However, a simpler phrasing could improve accessibility — e.g., 'If a child page uses its own permission settings instead of the parent page's permissions, you must have the Delete permission set directly on that page.' This avoids the technical verb 'inherit' entirely."
+    },
+    {
+      "check": "depth-calibration",
+      "result": "pass",
+      "evidence": "Both additions stay at the correct depth for business users: they state WHAT permissions are needed and WHERE to learn more (via cross-reference), without explaining HOW permissions work internally, what ACL inheritance means at a system level, or any implementation details. The content is actionable — users know exactly what to check before attempting the task."
+    },
+    {
+      "check": "no-developer-jargon",
+      "result": "pass",
+      "evidence": "No code snippets, API references, class names, method names, or developer-oriented terminology appear in the added content. Terms used ('permissions', 'child pages', 'parent', 'page permission') are all standard CMS administration vocabulary appropriate for business users."
+    }
+  ],
+  "classificationCheck": {
+    "declared": "howto",
+    "actual": "howto",
+    "result": "pass",
+    "evidence": "The page is a goal-oriented procedure ('To delete a page:') with numbered steps, prerequisites (permission callout), and branching options. The new additions are prerequisite information and a contextual note — both standard elements of how-to content. No conceptual deep-dives or tutorial-style learning scaffolding."
+  },
+  "taxonomyChecks": [
+    {
+      "field": "persona",
+      "result": "pass",
+      "value": "business",
+      "evidence": "Valid value per INV-persona-001."
+    },
+    {
+      "field": "identifier",
+      "result": "pass",
+      "value": "XofWCQ"
+    },
+    {
+      "field": "order",
+      "result": "pass",
+      "value": 800
+    },
+    {
+      "field": "license",
+      "result": "pass",
+      "value": 1
+    },
+    {
+      "field": "redirect_from",
+      "result": "pass",
+      "value": "x/XofWCQ"
+    }
+  ],
+  "consistencyCheck": {
+    "result": "pass",
+    "notes": "All sibling pages in the Website Content cluster (create-pages, edit-and-publish-pages, manage-page-urls, page-templates, secure-pages, track-page-usages, translate-pages, widgets-and-page-builder) target `business` persona. The only exception is manage-page-urls which also includes `admin`, but that page covers URL management tasks that cross into admin territory. delete-pages correctly stays `business`-only since the workflow is entirely within the business-user admin interface. The permission cross-reference pattern is consistent with create-pages and edit-and-publish-pages, which also reference the permissions page."
+  },
+  "invariantResults": [
+    {
+      "invariantId": "TINV-001",
+      "result": "not-applicable",
+      "evidence": "TINV-001 requires the overall task to cover both developer and business user scenarios. This page (T-005) is the business-user facet. Developer scenarios are covered by other tasks in the task graph (e.g., T-001 for the permissions reference page). The invariant applies at the task-set level, not within a single business-user page."
+    },
+    {
+      "invariantId": "INV-persona-001",
+      "result": "pass",
+      "evidence": "Front matter `persona: business` is a valid value from the allowed set {developer, admin, business, architect, all}."
+    },
+    {
+      "invariantId": "INV-persona-002",
+      "result": "pass",
+      "evidence": "Business guide correctly tagged `business`. No architect relevance in page deletion procedures."
+    },
+    {
+      "invariantId": "INV-persona-007",
+      "result": "pass-with-notes",
+      "evidence": "Language is simple and accessible overall. The word 'inherit' in 'does not inherit permissions from its parent' is the only term that might challenge non-native English speakers. Context makes the meaning clear, and the cross-reference provides further explanation."
+    },
+    {
+      "invariantId": "INV-persona-012",
+      "result": "pass",
+      "evidence": "Content demonstrates clear understanding of the business-user persona: procedural, outcome-focused, no implementation details, cross-references for deeper information."
+    },
+    {
+      "invariantId": "INV-persona-013",
+      "result": "pass-with-notes",
+      "evidence": "Friendly, positive tone throughout. One action per step maintained. No special terminology except 'inherit' (see notes). Words are generally understandable by a general audience."
+    },
+    {
+      "invariantId": "INV-persona-014",
+      "result": "pass",
+      "evidence": "The permission callout correctly assumes that permissions are set up by technical team members — the business user only needs to know WHAT permissions they need, not how to configure them. The cross-reference to the permissions page (a developer/admin page) appropriately delegates the 'how' to the technical audience."
+    },
+    {
+      "invariantId": "INV-persona-016",
+      "result": "pass",
+      "evidence": "No developer or admin terminology used in the added content. 'Page permissions', 'child pages', and 'parent' are standard CMS vocabulary shared across personas."
+    },
+    {
+      "invariantId": "INV-taxonomy-005",
+      "result": "pass",
+      "evidence": "The page uses 'website channel application' (line 23) — appropriate terminology. No 'admin UI' references in business-user content."
+    },
+    {
+      "invariantId": "INV-taxonomy-006",
+      "result": "pass",
+      "evidence": "Uses 'visitors' correctly (line 30, 51, 61, 69) for anonymous website users, consistent with taxonomy definitions."
+    }
+  ],
+  "issues": [
+    {
+      "severity": "minor",
+      "location": "Line 71 — 'Deleting a page with child pages' section",
+      "passage": "If a child page does not inherit permissions from its parent, you must have the **Delete** permission set directly on that page.",
+      "issue": "The verb 'inherit' is a technical/system-administration concept. While understandable in context (the preceding clause 'their own permission settings' sets up the idea), non-technical business users and non-native English speakers may find 'inherit' unintuitive.",
+      "suggestion": "Consider rephrasing to: 'If a child page uses its own permission settings instead of the parent page's, you must have the **Delete** permission set directly on that page.' This conveys the same meaning using only common vocabulary.",
+      "invariantRef": "INV-persona-007, INV-persona-013"
+    }
+  ],
+  "summary": {
+    "personaChecksPassed": 5,
+    "personaChecksFailed": 0,
+    "personaChecksWithNotes": 1,
+    "classificationCorrect": true,
+    "taxonomyComplete": true,
+    "consistencyAligned": true,
+    "invariantsPassed": 10,
+    "invariantsFailed": 0,
+    "invariantsWithNotes": 2,
+    "invariantsNotApplicable": 1
+  },
+  "timestamp": "2026-03-18T18:18:50Z"
+}

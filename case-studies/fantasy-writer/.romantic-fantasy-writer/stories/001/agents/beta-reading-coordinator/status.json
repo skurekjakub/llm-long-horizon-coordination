@@ -1,0 +1,33 @@
+{
+  "agent": "romantic-fantasy-writer-beta-reading-coordinator",
+  "status": "completed",
+  "result": "complete",
+  "summary": "Beta reading complete for all 22 chapters. Overall verdict: approved. Manuscript score: 8.6/10. Found 1 critical (ch4 duplicated passage), 12 major, 47 minor, 40 observation findings. 17 chapters rated strong, 4 adequate, 1 needs-work. Romance arc: 9/10 (well-earned). Fantasy arc: 8/10 (satisfying). Peak chapters: 11, 13, 16, 20. Primary concerns: ch4 duplicate, ch17-18 back-to-back internality, ch21 over-compression.",
+  "synthesisVerdict": "approved",
+  "artifactsWritten": [
+    "audit-reports/beta-reading/chapter-001-beta.json",
+    "audit-reports/beta-reading/chapter-002-beta.json",
+    "audit-reports/beta-reading/chapter-003-beta.json",
+    "audit-reports/beta-reading/chapter-004-beta.json",
+    "audit-reports/beta-reading/chapter-005-beta.json",
+    "audit-reports/beta-reading/chapter-006-beta.json",
+    "audit-reports/beta-reading/chapter-007-beta.json",
+    "audit-reports/beta-reading/chapter-008-beta.json",
+    "audit-reports/beta-reading/chapter-009-beta.json",
+    "audit-reports/beta-reading/chapter-010-beta.json",
+    "audit-reports/beta-reading/chapter-011-beta.json",
+    "audit-reports/beta-reading/chapter-012-beta.json",
+    "audit-reports/beta-reading/chapter-013-beta.json",
+    "audit-reports/beta-reading/chapter-014-beta.json",
+    "audit-reports/beta-reading/chapter-015-beta.json",
+    "audit-reports/beta-reading/chapter-016-beta.json",
+    "audit-reports/beta-reading/chapter-017-beta.json",
+    "audit-reports/beta-reading/chapter-018-beta.json",
+    "audit-reports/beta-reading/chapter-019-beta.json",
+    "audit-reports/beta-reading/chapter-020-beta.json",
+    "audit-reports/beta-reading/chapter-021-beta.json",
+    "audit-reports/beta-reading/chapter-022-beta.json",
+    "audit-reports/beta-reading/beta-synthesis.json"
+  ],
+  "timestamp": "2026-03-21T03:30:00Z"
+}

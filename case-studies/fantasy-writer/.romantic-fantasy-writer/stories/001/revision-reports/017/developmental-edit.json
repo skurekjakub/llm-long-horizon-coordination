@@ -1,0 +1,238 @@
+{
+  "artifactType": "developmental-edit-report",
+  "storyId": "001",
+  "chapter": 17,
+  "chapterTitle": "Load-Bearing Walls",
+  "povCharacter": "CHAR-001",
+  "povName": "Kaelith Maren",
+  "generatedAt": "2025-07-30T15:00:00Z",
+  "draftWordCount": 4956,
+  "targetWordCount": 5000,
+  "actPosition": {
+    "act": 3,
+    "positionInAct": "opening chapter — Act III begins here",
+    "structuralBeat": "Act III Descent — Separation Under Accelerating Failure",
+    "tensionMapLevel": 8,
+    "tensionType": "sustained-crisis"
+  },
+  "overallAssessment": {
+    "verdict": "strong",
+    "summary": "Chapter 17 accomplishes its essential structural task with discipline and emotional precision: it takes Kaelith from controlled anger to walking toward Lirien, executing the Act III pivot from fallout to agency within a single chapter. The three-movement structure — isolation with Pallor acceleration (SCN-47), bond pulse disrupting the anger narrative (SCN-48), tactical encounter forcing recognition of mutual necessity (SCN-49) — is cleanly designed and progressively builds. The dual-arc coupling is exemplary: the Pallor's acceleration is a direct physical consequence of romance separation, making the fantasy threat and the emotional wound structurally inseparable. All three thematic pillars are engaged meaningfully, with TP-2 (the price of the right choice) achieving particular force through the devastating insight that self-protection is killing her faster than the threat she's protecting against. The load-bearing wall metaphor — title, structural concept, and emotional thesis — is architecturally elegant. The direction change is earned through both emotional evidence (bond pulse proving genuine grief) and practical necessity (combat decline proving solo completion impossible). Three minor findings identified; no structural changes recommended.",
+    "strengthHighlights": [
+      "Dual-arc coupling at its strongest: Pallor acceleration is directly caused by romance separation — the fantasy threat IS the consequence of the emotional wound, achieving full INV-050 convergence without either arc dominating",
+      "Three-movement internal architecture is clean: isolation → disruption → forced recognition. Each movement has its own inciting event (absence, bond pulse, vorakh attack) and value shift, preventing the chapter from feeling like a single note",
+      "The bond-as-evidence mechanic is brilliant: resonance cannot fabricate emotion, therefore Lirien's grief is genuine, therefore the simple betrayal narrative collapses. The magic system serves the love story without deus ex machina — the bond proves nothing about intent, only about feeling",
+      "Self-deception layers are psychologically sophisticated: 'tactical monitoring' framing, 'mission necessity' for direction change, 'personal considerations are irrelevant' — each transparent lie acknowledged by the narrative without breaking Kaelith's voice",
+      "Load-bearing wall metaphor unifies title, Kaelith's architectural voice, and thematic content: anger as structural support, grief as subsidence, the distinction between removing a wall and letting it crack",
+      "The vorakh encounter perfectly exposes the stakes of separation: ninety seconds instead of thirty, two non-functional fingers, the cold spreading in real time during combat. Physical evidence that isolation is lethal",
+      "TP-2 achieves devastating force: the 'right choice' (protect yourself from someone who deceived you) is the choice that kills you. Self-protection as self-destruction. This is the thematic thesis of the chapter operating at maximum efficiency",
+      "Direction change is doubly earned: emotional evidence (bond pulse) in SCN-48 removes the intellectual justification for anger, and practical evidence (combat decline) in SCN-49 removes the tactical justification for solitude. Neither alone would be sufficient; both together make the turn inevitable",
+      "The 'walking anyway' closing technique: Kaelith is not ready, not resolved, not reconciled — she is simply walking. The motion carries more weight than any declaration because it comes from a character whose default is to stop and fortify. Forward motion as vulnerability",
+      "POV switch from ch16 Lirien to ch17 Kaelith creates structural dramatic irony: the reader knows Lirien's devastation was genuine (from ch16's interior access), making Kaelith's painful reasoning toward the same conclusion more agonising because the reader has already been given the answer"
+    ]
+  },
+  "invariantChecklist": {
+    "INV-004_earnedBeats": {
+      "status": "satisfied",
+      "notes": "The bond pulse as evidence of genuine feeling is earned through established magic-system mechanics: the resonance bond was formed through shared vulnerability (ch11), has been transmitting authentic emotion throughout, and its rules (cannot fabricate, reveals rather than creates) were established before this moment. The direction change is earned through two distinct evidence chains (emotional and tactical). No unearned beats."
+    },
+    "INV-020_pacingVariation": {
+      "status": "noted",
+      "notes": "Seven-chapter sustained high-tension cluster (ch11-17, all 7+). Extends the pattern flagged in DEV-016-001. Chapter 17 at tension 8 continues the cluster but is qualitatively distinct from ch16 (grief and processing vs. revelation and separation). The chapter's actual texture in its first 2/3 is more introspective than action-driven, providing de facto tonal variation even at numerical level 8. First designed recovery point at ch18 (tension 6) will break the cluster. See DEV-017-003."
+    },
+    "INV-021_romanceArcPacing": {
+      "status": "satisfied",
+      "notes": "Romance correctly continues in the 'resistance' stage (black moment aftermath) per romance-arc-design. The chapter does not rush to reconciliation — it moves from 'she manipulated me' to 'she may have loved me AND been bound to kill me.' The direction change is framed as mission necessity, maintaining emotional resistance even while physical trajectory shifts toward reunion. This sets up ch18's dark-night choice and ch19's genuine reunion without premature resolution."
+    },
+    "INV-036_thematicCoherence": {
+      "status": "exemplary",
+      "notes": "All three thematic pillars engaged at high intensity. TP-1 (trust): examined from the wounded side — Kaelith tests every memory for manipulation, then confronts bond evidence that the feelings were genuine. Trust broken but not proven false. TP-2 (right choice): self-protection (the 'right' response to betrayal) is killing her faster than the Pallor. The isolation that served as penance for six years is now physically lethal. TP-3 (chosen vs. bound): bond pulse forces the question — if Lirien's grief is genuine despite the contract, then 'chosen' and 'bound' can coexist. Kaelith is not ready to accept this yet, but the chapter plants the seed."
+    },
+    "INV-037_emotionalVariety": {
+      "status": "satisfied",
+      "notes": "Ch16 (Lirien): existential paralysis — identity dissolution, inability to distinguish binding from love. Ch17 (Kaelith): controlled anger → reluctant reassessment → grim resolve with fragile hope. Different POV characters, different dominant emotional registers, clear progression within ch17 itself. No emotional state repetition between consecutive chapters."
+    },
+    "INV-040_sceneValueShifts": {
+      "status": "satisfied",
+      "notes": "SCN-47: 'I am safer alone' → 'I am dying alone and the anger isn't keeping me warm.' SCN-48: 'She manipulated me' → 'She may have loved me AND been bound to kill me.' SCN-49: 'I can do this alone' → 'The mission requires her and the mission is all I have left.' All three scenes shift values clearly and meaningfully. Each shift builds on the previous one."
+    },
+    "INV-042_tryFailCycles": {
+      "status": "satisfied",
+      "notes": "Kaelith's self-sufficiency narrative is tested and fails across two dimensions: (1) the anger wall fails to hold against bond evidence in SCN-48 — she cannot sustain the simple betrayal story; (2) physical capability fails during the vorakh fight in SCN-49 — she cannot complete the mission solo. These are try-fail cycles within the larger 'survive separation' arc. The successes (partially winning the vorakh fight, not fully opening the bond) are qualified, not clean."
+    },
+    "INV-044_stakesEscalation": {
+      "status": "satisfied",
+      "notes": "Stakes escalate from personal (isolation, emotional processing) through physical (Pallor timeline contracting from weeks to days, combat impairment, two non-functional fingers) to mission-critical (cannot reach the Quietus alone, mission dies if she dies alone). Act III stakes build on Act II's revelatory devastation by adding physical urgency."
+    },
+    "INV-045_blackMoment": {
+      "status": "satisfied",
+      "notes": "Chapter operates in black moment aftermath. The 'all is lost' point (ch16) continues to exert force: the romance seems doomed (Kaelith still framing return as tactical), and the fantasy plot threatens failure (Pallor accelerating, solo capability declining). The chapter begins the recovery arc without resolving the black moment, which is structurally correct for Act III opening."
+    },
+    "INV-050_dualArcInterleave": {
+      "status": "exemplary",
+      "notes": "The arcs are fully coupled in this chapter. Fantasy crisis (Pallor acceleration, vorakh encounter) is directly caused by romance crisis (separation removing resonance stabilisation). The direction change serves both arcs simultaneously — walking toward the Quietus IS walking toward Lirien. Genre balance (55% fantasy / 45% romance) maintained: fantasy provides external evidence (physical decline, combat), romance provides internal evidence (bond pulse, emotional shift). Neither arc dominates."
+    }
+  },
+  "plotProgressionAssessment": {
+    "fantasyArc": {
+      "advancesBy": "Pallor acceleration without resonance counterbalance — silver spreading from wrist to knuckles and elbow, cold deepening, timeline contracted from weeks to days, two fingers non-functional. Vorakh encounter demonstrates declining combat capability. Direction change toward Quietus/Lirien convergence restores forward movement toward the mission objective.",
+      "newStakes": "Timeline contraction (days, not weeks). Physical impairment accelerating. Solo completion of mission now non-viable. Vorakh predators hunting Pallor-touched prey — Kaelith's silver scent will attract more.",
+      "newPlants": [],
+      "advancedPlants": [
+        "FS-019 (Court enforcement escalation — secondary operative possibility present in Kaelith's tactical assessment)",
+        "FS-020 (30/90 day deterioration timeline — Kaelith knows Lirien faces Lessening if contract unfulfilled)"
+      ],
+      "payoffs": [],
+      "assessment": "Fantasy arc advances meaningfully through physical demonstration rather than information delivery, providing excellent contrast with ch16's information-heavy revelatory structure. The Pallor acceleration is shown through body (silver spreading, cold tracking veins, delayed combat response) rather than told through exposition. The vorakh encounter is the chapter's physical proof-of-concept for the stakes."
+    },
+    "romanceArc": {
+      "startState": "Controlled anger — Calwrath pattern deployed, military discipline applied to emotional survival, every memory under revision",
+      "endState": "Grim resolve with fragile hope — walking toward Lirien, framing as mission necessity, grief replacing anger as dominant register",
+      "stageMovement": "resistance (continuing) — anger cracking, simple betrayal narrative failing, but full emotional reconciliation not yet achieved",
+      "vulnerabilityLadder": "VL-12 collapse continues from ch16, but bond pulse begins rebuilding: Kaelith stops actively reinforcing the wall (passive vulnerability), though she does not reach back through the bond",
+      "internalResistance": "Present and believable. Kaelith's Calwrath wound ('people you trust will use you for institutional purposes') provides the interpretive framework for betrayal. The self-sufficiency narrative ('isolation is safer than connection') is challenged but not demolished. Direction change is framed as mission necessity, maintaining resistance even while trajectory shifts.",
+      "assessment": "Romance arc progression is precisely calibrated. The chapter moves from 'she manipulated me' through 'she may have loved me AND been bound to kill me' to 'the mission requires her' — each stage more nuanced than the last, without rushing toward reconciliation. The bond pulse mechanic perfectly solves the epistemic problem (how does Kaelith learn the feelings were genuine?) without requiring dialogue or reconciliation."
+    }
+  },
+  "fiveCommandmentsVerification": {
+    "SCN-47": {
+      "incitingIncident": "Kaelith makes camp alone for the first time — the silence where Lirien's voice should be registers as physical absence. ✓",
+      "complication": "The Pallor accelerates visibly — silver spreading, cold deepening, timeline contracting. Without resonance bond counterbalance, the god-seal decay is unchecked. ✓",
+      "crisis": "Accept the accelerated death and stay angry, or acknowledge that the anger might be killing her faster than the Pallor? ✓",
+      "climax": "Kaelith examines the Pallor marks and realises the timeline has contracted from weeks to days. She continues toward the objective with military resolve, but the body is failing. ✓",
+      "resolution": "Military discipline holds, but the Pallor is winning the race. The stabilising effect is gone. ✓",
+      "status": "satisfied"
+    },
+    "SCN-48": {
+      "incitingIncident": "In the night, the bond transmits a pulse of raw grief from Lirien — uncontrolled, involuntary, breaking through Kaelith's wall. ✓",
+      "complication": "Kaelith analyses the bond evidence against the betrayal narrative. The resonance cannot fabricate emotion. If the grief is genuine, the simple story collapses. ✓",
+      "crisis": "Accept that Lirien's feelings were genuine (meaning Kaelith walked away from real love) or maintain the betrayal narrative (meaning ignoring evidence)? ✓",
+      "climax": "Kaelith cannot dismiss the bond evidence. She admits to herself that the feelings were real — but the contract was also real. Both truths coexist without resolution. ✓",
+      "resolution": "Kaelith stops actively reinforcing the wall but does not reach back. Frames continued bond monitoring as 'tactical.' The self-deception is transparent. ✓",
+      "status": "satisfied"
+    },
+    "SCN-49": {
+      "incitingIncident": "A vorakh attacks. Kaelith fights alone for the first time in weeks. ✓",
+      "complication": "The Pallor has weakened her more than she realised — reactions slower, left arm locking, cold spreading in real time during combat. ✓",
+      "crisis": "Continue alone and die before reaching the seal, or accept that the mission requires Lirien? ✓",
+      "climax": "Kaelith survives the encounter but barely. Military-honest assessment: she cannot reach the seal alone. Mission parameters have changed. ✓",
+      "resolution": "Kaelith changes direction. North — toward the Quietus, toward Lirien. The bond registers the shift immediately. ✓",
+      "status": "satisfied"
+    }
+  },
+  "pacingAssessment": {
+    "chapterTensionLevel": 8,
+    "previousChapterTension": 10,
+    "tensionDrop": 2,
+    "tensionClusterStatus": "Seven consecutive chapters at tension 7+ (ch11: 9, ch12: 7, ch13: 7, ch14: 8, ch15: 7, ch16: 10, ch17: 8). Extends the pattern tracked in DEV-016-001. The cluster will be broken at ch18 (designed tension 6, partial recovery).",
+    "inv020Status": "No technical INV-020 violation — the chapter is qualitatively distinct from ch16 (introspective processing vs. revelatory devastation) and from ch15 (grief vs. false hope). The tension-type shift from 'peak-crisis' (ch16) to 'sustained-crisis' (ch17) provides tonal variation even at sustained numerical intensity. However, seven chapters without genuine recovery represents the longest high-tension cluster in the manuscript. Ch18's partial recovery is structurally essential.",
+    "internalPacingNotes": "The chapter's three-movement structure provides internal variation: SCN-47 (sequel/processing, ~1800 words) → SCN-48 (sequel/disruption, ~1650 words) → SCN-49 (scene/action, ~1550 words). The action arrives in the final third, making the chapter back-loaded. This is appropriate for post-black-moment processing but means the reader experiences approximately 3450 words of internalization before external threat appears. The internal tension (Pallor spreading, memories poisoned, identity under revision) is genuinely high, but the reader-experience of tension may register lower than 8 during the processing sections, which provides de facto pacing relief.",
+    "microTensionSources": [
+      "Bond transmitting Lirien's grief despite Kaelith's wall — emotional intrusion",
+      "Pallor silver spreading visibly in real time — body as ticking clock",
+      "Every shared memory being tested for manipulation — each one painful twice",
+      "Timeline contraction from weeks to days — urgency accelerating",
+      "Calwrath dream transforming familiar guilt into silver/Pallor imagery — the old wound gaining new teeth",
+      "Vorakh fight exposing declining capability — body failing mid-combat",
+      "Direction change transmitting through bond — both women know what it means",
+      "Transparent self-deception ('tactical monitoring,' 'mission necessity') — Kaelith knows she's lying to herself"
+    ],
+    "recoveryOutlook": "Ch18 (tension 6, partial recovery) will break the seven-chapter high-tension cluster. This is structurally essential and must not be undercut."
+  },
+  "thematicResonanceAssessment": {
+    "TP1_trustAsStructuralFailure": {
+      "engagement": "high",
+      "howEngaged": "Trust examined from the wounded side. Kaelith applies the Calwrath interpretive framework to every shared memory: the Oathbrand removal, the confession, 'I want this' — testing each for manipulation. The bond pulse then provides counter-evidence: if the resonance cannot fabricate emotion, the grief is genuine. Trust is broken but not proven false. The chapter holds the tension between 'betrayed' and 'perhaps genuinely loved despite the betrayal' without resolving it."
+    },
+    "TP2_priceOfTheRightChoice": {
+      "engagement": "maximum",
+      "howEngaged": "This is the chapter's thematic masterpiece. Kaelith's 'right choice' — protect yourself from someone who deceived you, isolate, self-suffice — is killing her faster than the Pallor. The cold spreading through her veins IS the price of self-protection. Six years of isolation-as-penance are exposed as the lie they always were: 'Need did not make you weak. Need made you vulnerable. Weakness and vulnerability were not the same thing.' The insight costs her the framework that kept her functional since Calwrath."
+    },
+    "TP3_chosenVersusOnly": {
+      "engagement": "high",
+      "howEngaged": "The bond pulse forces the question: if Lirien's feelings are genuine despite the contract, then the cage held real love. 'Cages could hold genuine things. Cages could hold love.' Kaelith is not ready to accept this yet, but the chapter plants the seed for the ch19 reunion's central argument — that love's origin in necessity does not invalidate it, provided there comes a moment when the cage opens and the choice would be the same."
+    }
+  },
+  "emotionalVarietyCheck": {
+    "previousChapterState": {
+      "CHAR-002_ch16": "existential paralysis — identity dissolution, binding-vs-love indistinguishable",
+      "CHAR-001_ch16": "devastated retreat (implied through external observation and bond transmission)"
+    },
+    "currentChapterState": {
+      "CHAR-001_ch17_start": "controlled anger — Calwrath pattern deployed, military discipline masking devastation",
+      "CHAR-001_ch17_end": "grim resolve with fragile hope — walking toward Lirien, grief replacing anger"
+    },
+    "verdict": "POV switches from Lirien (ch16) to Kaelith (ch17). Kaelith's ch17 state (controlled anger → grim resolve) is emotionally distinct from both Lirien's ch16 state (paralysis/identity dissolution) and Kaelith's ch15 state (fragile happiness/chosen desire). Clear emotional progression within the chapter (anger → grief → resolve). INV-037 satisfied."
+  },
+  "outlineAdherence": {
+    "verdict": "faithful with enhancements",
+    "deviations": [
+      {
+        "area": "Calwrath dream",
+        "outline": "Not explicitly specified in scene beats, though Calwrath processing is central to SCN-47",
+        "draft": "Adds a Calwrath nightmare with the fire turning silver — connecting personal guilt fire to Pallor's cosmic failure",
+        "assessment": "Enhancement. The silver-fire transformation creates a new symbolic connection between Kaelith's personal wound and the cosmic threat. The dream also serves as the transition mechanism between SCN-47 and SCN-48, with the bond pulse waking her. Functionally sound."
+      },
+      {
+        "area": "vorakh creature specificity",
+        "outline": "Specifies 'hunter or Pallor-creature' generically",
+        "draft": "Creates a specific creature type — vorakh — with detailed anatomy (six limbs, ring-eyes, Pallor-plated hide) and hunting behavior (ambush predator, senses Pallor-touch)",
+        "assessment": "Enhancement. The vorakh's Pallor-sensing ability creates a secondary stake: Kaelith's increasing Pallor-touch will attract more predators. This escalates the urgency beyond a single encounter."
+      },
+      {
+        "area": "final meditation",
+        "outline": "Ends with direction change and 'North. Toward the seal. Toward her. Same heading.'",
+        "draft": "Extends the closing with a meditation on Lirien's grief quality, mutual understanding through shared permanent weight, and the question of whether understanding equals forgiveness",
+        "assessment": "Enhancement. The extended closing deepens the emotional texture of the direction change beyond pure tactical framing, giving the reader more emotional material for the ch18-19 gap. The 'She walked anyway' repetition creates rhythmic closure."
+      }
+    ]
+  },
+  "findings": [
+    {
+      "id": "DEV-017-001",
+      "severity": "minor",
+      "category": "pacing",
+      "description": "The 'testing every memory for manipulation' passage in SCN-47 (approximately 600 words covering the Oathbrand removal, the Calwrath confession, and the 'I want this' declaration) reprocesses events that the reader experienced from the inside across chapters 11, 13, and 15, and which were recontextualised from Lirien's perspective in ch16. While Kaelith's specific interpretive lens (military metaphors: 'trust as a defensive position she abandoned, vulnerability as a breach in fortifications, Lirien as a siege weapon disguised as an ally') adds voice-specific value, the underlying emotional territory — 'was the vulnerability real or was it positioning?' — was already established by ch16's systematic memory reinterpretation from Lirien's perspective. The result is that approximately 400 words of this passage cover ground the reader has already traversed, albeit from a different angle.",
+      "location": "SCN-47, 'testing every memory' internal sequence — from 'The Oathbrand removal' through 'Had that been real?'",
+      "suggestedFix": "Compress the memory-testing passage by approximately 200-250 words. Retain the Oathbrand removal beat (most voice-specific and most directly tied to the bond mechanics that SCN-48 will exploit) and the 'I want this' recontextualisation (most emotionally devastating). The Calwrath confession beat ('Had that been real? Or had it been the operative's mirror...') covers territory that ch13's full confession and ch16's Lirien-perspective reinterpretation already established from both sides. Consider reducing this to a single sentence that acknowledges the confession's poisoning without re-examining it: the reader knows the details. This tightening would accelerate the path to the Pallor acceleration reveal, which is the scene's more distinctive contribution.",
+      "crossRef": ["DEV-016-002"],
+      "actionRequired": false
+    },
+    {
+      "id": "DEV-017-002",
+      "severity": "minor",
+      "category": "structure",
+      "description": "The Calwrath-as-interpretive-framework motif appears for the fourth consecutive chapter (ch14 partial reference, ch13 full confession, ch15 pattern recognition, ch16 wound-angle reactivation, ch17 dream + 'soldier who walked into same ambush twice'). The Calwrath dream itself is a valuable addition — the silver-fire transformation creates a new symbolic connection between personal guilt and cosmic threat that advances the Pallor motif. However, the passage immediately before the dream ('The worst part was how easily the pattern fit... The soldier who walked into the same ambush twice deserved what happened to her') restates the Calwrath-as-template insight already delivered in ch15 ('hope → clarity → catastrophe' pattern recognition) and ch16 (institutional betrayal confirmation). The pre-dream passage duplicates rather than advances. The dream then advances the motif genuinely through the silver-fire transformation, making the duplication more noticeable by contrast.",
+      "location": "SCN-47, from 'The worst part was how easily the pattern fit' through 'She had been the weakness. Both times.'",
+      "suggestedFix": "Consider compressing the pre-dream Calwrath passage from its current ~150 words to a single transitional beat that moves directly from the bond-grief observation to the dream. The 'soldier who walked into the same ambush twice' formulation is strong and voice-authentic — retain it as a single-sentence bridge into the dream rather than building the full institutional-parallel analysis around it. The dream's silver-fire transformation does the genuine new work; the pre-dream analysis restates what is already known. Target: reduce ~150 words to ~40 words.",
+      "crossRef": [],
+      "actionRequired": false
+    },
+    {
+      "id": "DEV-017-003",
+      "severity": "minor",
+      "category": "pacing",
+      "description": "Seven-chapter sustained high-tension cluster (ch11-17, all tension 7+). Extends the pattern tracked in DEV-013-001, DEV-014-001, DEV-015-001, and DEV-016-001. This is the longest unbroken high-tension cluster in the manuscript. The chapter's actual texture provides de facto partial relief: its first 2/3 is introspective processing rather than action, and the emotional register (grief, doubt, reluctant reassessment) is qualitatively distinct from ch16's revelatory devastation and ch15's false optimism. The tension-type variation (peak-crisis → sustained-crisis) provides tonal modulation even at sustained numerical intensity. However, readers who have experienced six chapters of escalating intensity may experience fatigue regardless of qualitative variation. Ch18's designed partial recovery (tension 6, Lirien's dark-night choice and Ashborne allies) is structurally essential and must deliver genuine de-escalation.",
+      "location": "chapter-level pacing context",
+      "suggestedFix": "No changes to ch17 recommended — the sustained crisis is structurally correct for Act III opening and the chapter's introspective texture already provides more tonal relief than its tension-8 rating suggests. For ch18 development: the partial recovery must include at least one scene of lower-intensity character work (Lirien's internal choice, Ashborne ally contact) that does not carry immediate physical threat. The cluster break at ch18 should feel earned — genuine breathing room, not simply lower-stakes crisis.",
+      "crossRef": [
+        "DEV-013-001",
+        "DEV-014-001",
+        "DEV-015-001",
+        "DEV-016-001"
+      ],
+      "actionRequired": false
+    }
+  ],
+  "findingSummary": {
+    "critical": 0,
+    "major": 0,
+    "minor": 3,
+    "total": 3
+  },
+  "structuralNotes": {
+    "chapterAsStoryUnit": "The chapter works as a complete story unit with a clear arc: controlled anger → reluctant reassessment → forced recognition → direction change. Kaelith begins fortified behind the Calwrath pattern and ends walking toward the woman she's been fortifying against. This is a complete emotional journey that serves as the Act III pivot point.",
+    "dualArcBalance": "Exemplary. Fantasy provides external evidence (Pallor acceleration, combat decline, timeline contraction); romance provides internal evidence (bond pulse, grief proof, anger cracking). Neither arc dominates. The structural message — separation is physically and emotionally unsustainable — is delivered through both channels simultaneously.",
+    "setupForNextChapter": "Direction change sets up ch18's Lirien dark-night choice and ch19's reunion. The bond has already transmitted Kaelith's trajectory shift, meaning Lirien will know Kaelith is approaching before she arrives. The unresolved question (mission necessity or emotional need?) carries forward as the central tension of the reunion."
+  }
+}

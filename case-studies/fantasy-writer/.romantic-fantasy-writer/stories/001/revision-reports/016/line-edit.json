@@ -1,0 +1,226 @@
+{
+  "chapter": 16,
+  "povCharacter": "CHAR-002",
+  "povName": "Lirien Dael",
+  "draftFile": "chapters/016/draft.md",
+  "totalFindings": 15,
+  "findingCounts": {
+    "critical": 3,
+    "major": 4,
+    "minor": 8
+  },
+  "findingsByCategory": {
+    "repetition": 7,
+    "voice": 3,
+    "prose": 2,
+    "show-tell": 1,
+    "dialogue": 0,
+    "cliché": 0,
+    "tension": 0,
+    "mru": 0
+  },
+  "findings": [
+    {
+      "id": "LINE-001",
+      "severity": "critical",
+      "category": "repetition",
+      "description": "Bond reference saturation. Approximately 30 bond references in ~200 lines (~1 per 6-7 lines). The phrase 'Through the bond' appears as a sentence/clause opener 6 times (L44, L56, L82, L86, L96, L114). Additional formulations include 'the bond carried' (3×), 'felt it through the bond' (2×), 'in the bond' (2×), and 'The bond remained' (2×). While the bond's collapse is the chapter's central event, the repetitive phrasing creates mechanical quality. This mirrors the ch15 finding (22 refs in 255 lines) but is WORSE — 30 refs in fewer lines. The reader begins hearing 'Through the bond' as a verbal tic rather than a narrative device. Recommend ~40-50% reduction by: (a) using pronouns or 'the connection'/'it' for secondary references, (b) describing what Lirien feels without naming the mechanism, (c) varying the opener pattern entirely — e.g., instead of 'Through the bond: a fracture' → 'Something fractured between them.'",
+      "lineRef": { "start": 44, "end": 208 },
+      "instances": [
+        { "line": 16, "text": "The bond carrying the particular quality of unconscious trust" },
+        { "line": 44, "text": "Through the bond, distress was already leaking" },
+        { "line": 56, "text": "Through the bond: a sharpening" },
+        { "line": 68, "text": "The bond carried her guilt" },
+        { "line": 74, "text": "the bond had already transmitted enough" },
+        { "line": 82, "text": "Through the bond, for a space of perhaps ten seconds" },
+        { "line": 86, "text": "Lirien felt it through the bond" },
+        { "line": 86, "text": "Through the bond: a fracture" },
+        { "line": 96, "text": "Through the bond: a flare" },
+        { "line": 100, "text": "Lirien felt it through the bond as a systematic process" },
+        { "line": 100, "text": "each one flaring in the bond and then dying" },
+        { "line": 102, "text": "the warmest thing she had ever felt through the bond" },
+        { "line": 104, "text": "That signature surfaced in the bond and detonated" },
+        { "line": 114, "text": "Through the bond, her hand was not" },
+        { "line": 124, "text": "The bond went cold" },
+        { "line": 126, "text": "The bond remained" },
+        { "line": 128, "text": "Kaelith had walled the bond deliberately" },
+        { "line": 166, "text": "The bond carried nothing" },
+        { "line": 184, "text": "The bond stretched taut between them" },
+        { "line": 190, "text": "The bond remained" },
+        { "line": 194, "text": "The bond would carry this too" },
+        { "line": 200, "text": "A bond that meant she would feel it" },
+        { "line": 208, "text": "The bond carried nothing but pain" }
+      ],
+      "suggestedFix": "Reduce to ~15-18 bond references. Eliminate at least 4 of the 6 'Through the bond' openers — keep 2 at most (recommend L44 for the first distress leak and L96 for the blood ceremony flare). For the rest, describe the sensation directly: instead of 'Through the bond: a fracture' try 'Something cracked between them — quiet, pervasive.' Use 'it' or delete the mechanism tag entirely where the bond context is already established. In the separation sequence (L184-210), the bond can be named once at the start and then referenced implicitly."
+    },
+    {
+      "id": "LINE-002",
+      "severity": "critical",
+      "category": "repetition",
+      "description": "'Forty-three' repetition. The number appears 6 times across the chapter as a character marker: 'forty-three contracts' (L22), 'forty-three contracts without deviation' (L38), 'forty-three completed contracts' (L146), 'forty-three confessions and two hundred operational reports' (L162), 'forty-three targets' (L178), 'forty-three completed assignments' (L206). What should function as an occasional character detail has become a verbal tic — the reader notices the repetition by the third use, and by the sixth it pulls them out of the prose. The phrase carries real weight the first time; by the sixth, it has been diluted.",
+      "lineRef": { "start": 22, "end": 206 },
+      "instances": [
+        { "line": 22, "text": "Forty-three contracts had trained them to be steady" },
+        { "line": 38, "text": "the precise, cold engine that had carried her through forty-three contracts without deviation" },
+        { "line": 146, "text": "Lirien, who had built forty-three completed contracts on the principle that excess language was a structural weakness" },
+        { "line": 162, "text": "who had shaped forty-three confessions and two hundred operational reports" },
+        { "line": 178, "text": "The analytical mind that had categorised forty-three targets" },
+        { "line": 206, "text": "heavier than forty-three completed assignments" }
+      ],
+      "suggestedFix": "Reduce to maximum 3 uses — ideally 2. Keep L22 (first occurrence, strong impact) and L206 (closing callback, full weight). For the others, use variations: 'a career's worth of contracts,' 'every prior assignment,' 'a lifetime of completed kills,' or simply delete the modifier. The number should feel like a scar Lirien carries, not a refrain she recites."
+    },
+    {
+      "id": "LINE-003",
+      "severity": "critical",
+      "category": "voice",
+      "description": "Operative voice marker saturation. Lirien's intelligence/operative vocabulary markers ('cataloguing,' 'operative,' 'operational,' 'classification,' 'taxonomy,' 'categories,' 'framework,' 'variables,' 'calculus,' 'containment,' 'construction,' 'precision,' 'contingency,' 'parameters') appear in approximately 40 of 60 text blocks (~67%). While operative language IS Lirien's voice, and the chapter's arc requires the framework to be present so its collapse can be felt, the density creates a checklist quality in the heaviest passages. Paragraphs at L38, L88, and L178 are the worst offenders — L178 alone contains 7 operative terms ('analytical mind,' 'categorised,' 'forty-three targets,' 'operational variables,' 'framework,' 'classification,' 'categories,' 'taxonomy'). Per INV-017 voice saturation standard: distinctive markers in most paragraphs = repetition problem even when individual markers vary.",
+      "lineRef": { "start": 12, "end": 206 },
+      "instances": [
+        { "line": 38, "text": "parsing each clause for ambiguity, cross-referencing against known variables, running exit scenarios against the new intelligence. The analytical machinery engaged automatically: scenarios, contingencies, damage projections, the calculus of containment" },
+        { "line": 88, "text": "which Lirien had catalogued extensively and filed under several subcategories of professional attention" },
+        { "line": 178, "text": "The analytical mind that had categorised forty-three targets, hundreds of operational variables... No classification... The categories had dissolved. The taxonomy was empty" }
+      ],
+      "suggestedFix": "Thin ~25-30% of operative markers in non-critical passages. The chapter should have stretches where Lirien's operative voice FAILS — where the prose drops into plain, unclassified perception because the framework genuinely cannot hold. These voice-absent stretches should grow as the chapter progresses, mirroring the collapse. Currently the operative voice is most dense at L178, which is the moment of maximum identity crisis — the very paragraph describing taxonomy failure uses the most taxonomic language. Consider: at the point where Lirien says her categories have dissolved, the prose itself should dissolve its categories. Let the language do what it's describing."
+    },
+    {
+      "id": "LINE-004",
+      "severity": "major",
+      "category": "repetition",
+      "description": "Reinterpretation sequence density (L100-106). Three consecutive dense paragraphs describe Kaelith's systematic revision of shared memories through the bond. The word 'signature' appears 4 times in 6 lines: 'emotional signatures' (L100), 'warmth-vulnerability' signature (L100), 'raw-courage signature' (L100), 'bright fierce signature' (L100), plus 'That signature surfaced' (L104). 'Recontextualised/recontextualized' appears twice (L100, L104). The passage also triple-stacks the bond-mediated pattern: 'was it X, or Y?' with three consecutive memories each followed by an operative reinterpretation. While the systematic quality is the point, the repetitive structure makes the third memory feel predictable rather than devastating.",
+      "lineRef": { "start": 100, "end": 106 },
+      "suggestedFix": "Vary the rhythm of the three reinterpreted memories. Keep the first (Oathbrand removal) as fully articulated. For the second (Calwrath confession), compress — perhaps a sentence instead of the full 'was it X, or Y' structure. For the third (declaration), expand — this is the most devastating, so give it the most space. This creates an accelerating pattern (full → compressed → devastating) rather than three identical structures. Also reduce 'signature' from 4 to 2 uses — use 'the quality of,' 'what she felt during,' or drop the label entirely."
+    },
+    {
+      "id": "LINE-005",
+      "severity": "major",
+      "category": "prose",
+      "description": "Paragraph at L36 exceeds the style guide's 6-sentence maximum. This paragraph runs approximately 8-9 sentences describing the message's contents: binding ceremony details, physiological enforcement mechanism, Lessening definition, timeline, risk assessment, and clinical formatting. While the content is justified and the paragraph's relentless accumulation mirrors the horror of bureaucratized violence, the style guide is explicit (paragraphLengthGuidelines.maximumWithoutBreak: '6 sentences unless the prose is carrying sustained interior logic or ceremonial cadence'). This paragraph is carrying informational weight, not interior logic.",
+      "lineRef": { "start": 36, "end": 36 },
+      "suggestedFix": "Break after 'an absence wearing the shape of what had been removed.' Let the Lessening definition land as a paragraph-closing image. Then begin a new paragraph with the timeline and risk assessment details, ending on the devastating 'formatted in the same structure the Court used for boundary adjustments and supply requisitions.' This creates two paragraphs: one about what the contract does, one about how the Court talks about it."
+    },
+    {
+      "id": "LINE-006",
+      "severity": "major",
+      "category": "repetition",
+      "description": "'Cage' repetition. The word appears 6 times: 'build the cage' (L42), 'cage existed' (L42), 'constructed from her own body' (L96), 'cage to feel like a home' (L110), 'cage built from her blood' (L200), and 'cage around her' (L128). The metaphor is thematically central — the contract-as-cage is the chapter's controlling image — but 6 uses in a single chapter dilutes its impact. By the fourth use, the reader hears the metaphor rather than feels it.",
+      "lineRef": { "start": 42, "end": 200 },
+      "instances": [
+        { "line": 42, "text": "The Court had used her body to build the cage" },
+        { "line": 42, "text": "Kaelith had never known the cage existed" },
+        { "line": 96, "text": "the cage had been constructed from her own body" },
+        { "line": 110, "text": "If the Court had designed the cage to feel... exactly like a home" },
+        { "line": 128, "text": "the person who had built the cage around her" },
+        { "line": 200, "text": "a cage built from her blood" }
+      ],
+      "suggestedFix": "Reduce to 3-4 uses. Keep L42 (introduction, strong), L110 (most devastating — 'designed the cage to feel like a home'), and L200 (closing callback). Remove or vary the others — 'the structure,' 'the binding,' 'the enclosure,' or restructure the sentence to avoid the word."
+    },
+    {
+      "id": "LINE-007",
+      "severity": "major",
+      "category": "voice",
+      "description": "L178 represents peak operative vocabulary concentration — 7 distinct operative terms in a single paragraph: 'analytical mind,' 'categorised,' 'forty-three targets,' 'operational variables,' 'framework,' 'classification,' 'categories,' 'taxonomy.' This is the paragraph where Lirien describes her classification system failing — but the paradox is that the prose USES more taxonomic language here than anywhere else in the chapter. The form contradicts the content. When a character says their categories have dissolved, the prose should model the dissolution.",
+      "lineRef": { "start": 178, "end": 178 },
+      "suggestedFix": "Restructure so the operative vocabulary thins as the paragraph progresses. Open with the full framework language ('The analytical mind that had categorised...'), then let the sentence structure simplify and the operative vocabulary drop away mid-paragraph. End on something plain and unclassified: 'Every feeling she had called real might have been built.' Let the prose perform the collapse it's describing — the form doing the work of the content."
+    },
+    {
+      "id": "LINE-008",
+      "severity": "minor",
+      "category": "voice",
+      "description": "POV concern at L96. The italicized passage '*Her blood. Used without her knowledge. Built into the binding that held the woman she had trusted against her.*' reads as Kaelith's direct interior monologue — the pronouns 'her' (referring to Kaelith) and 'the woman she had trusted' (referring to Lirien) are positioned from Kaelith's perspective. But this is Lirien's POV chapter. While the bond transmits emotional quality, the text established that it does NOT transmit specific thoughts or factual content ('the bond did not carry specifics,' L56). The italicized passage implies Lirien is reading Kaelith's exact thoughts.",
+      "lineRef": { "start": 96, "end": 96 },
+      "suggestedFix": "Reframe as Lirien's interpretation rather than Kaelith's direct thought: 'Lirien could feel what the words meant in Kaelith's body — her blood, used without knowledge or consent, built into the very binding that held her betrayer close.' Or remove the italics and present it as Lirien's analytical inference: 'Lirien understood what Kaelith was reading. Her blood. Used without her knowledge. Built into the binding.'"
+    },
+    {
+      "id": "LINE-009",
+      "severity": "minor",
+      "category": "prose",
+      "description": "Redundant near-synonyms at L86: 'each element re-examined, re-evaluated.' Both words mean essentially the same thing. The 're-' prefix repetition creates a pleasing rhythm but the semantic redundancy slightly dulls the prose.",
+      "lineRef": { "start": 86, "end": 86 },
+      "suggestedFix": "Drop one: 'each element re-evaluated and found to rest on a surface that had never been what it appeared.' Or vary the second: 're-examined and reframed' or 're-examined and discredited.'"
+    },
+    {
+      "id": "LINE-010",
+      "severity": "minor",
+      "category": "repetition",
+      "description": "L88: 'which Lirien had catalogued extensively and filed under several subcategories of professional attention' is a heavy-handed operative voice reminder. The reader already knows Lirien catalogues everything — this has been established in 15 prior chapters and in this chapter's first paragraphs. The subordinate clause interrupts the flow of the much stronger observation it's attached to: the recognition of Kaelith's military mask.",
+      "lineRef": { "start": 88, "end": 88 },
+      "suggestedFix": "Trim to something faster: 'Not the focused stillness of concentration — Lirien knew that one. This was the other stillness.' Or delete the cataloguing reference entirely and let the contrast between the two types of stillness carry the beat."
+    },
+    {
+      "id": "LINE-011",
+      "severity": "minor",
+      "category": "repetition",
+      "description": "L142: 'Not the controlled instrument she had spent a lifetime calibrating — the precise, modulated delivery that communicated what she chose and nothing more' is another expository reminder of Lirien's operative training that slows the emotional moment. This is one of the chapter's most important beats (Lirien's voice failing), and the long parenthetical explanation of what her voice USUALLY is delays the payoff of what it IS now ('This voice carried too much air').",
+      "lineRef": { "start": 142, "end": 142 },
+      "suggestedFix": "Compress the reminder: 'Not the controlled instrument. This voice carried too much air.' The reader knows what Lirien's voice usually sounds like. Trust them."
+    },
+    {
+      "id": "LINE-012",
+      "severity": "minor",
+      "category": "prose",
+      "description": "L162: 'Lirien, who had been trained since childhood to construct language as a precision instrument, who had shaped forty-three confessions and two hundred operational reports and not once wasted a word' — the double relative clause ('who had... who had...') creates a biography-like parenthetical that interrupts the payoff ('had nothing left but the bare, undecorated truth'). The sentence structure positions the most important content — the plainness, the vulnerability — at the end of a long runway, reducing its impact. Also contains the fifth use of 'forty-three.'",
+      "lineRef": { "start": 162, "end": 162 },
+      "suggestedFix": "Invert the structure: lead with the emotional payload, then give the operative comparison. 'That sentence was the plainest thing she had ever said. The woman who had shaped a career's worth of confessions without wasting a word had nothing left but the bare truth.' Or simply cut the biographical interpolation — the chapter has already established Lirien's precision repeatedly."
+    },
+    {
+      "id": "LINE-013",
+      "severity": "minor",
+      "category": "show-tell",
+      "description": "L126: 'the same architecture of emotional survival that had kept Kaelith alive through six years of exile and the slow work of believing she deserved what had been done to her' explains the Calwrath callback rather than trusting the reader. By chapter 16, the reader knows what the Calwrath fortification means. The phrase 'the slow work of believing she deserved what had been done to her' is Lirien telling the reader Kaelith's psychology rather than showing it through observation.",
+      "lineRef": { "start": 126, "end": 126 },
+      "suggestedFix": "Trim to the recognition: 'a fortification Lirien recognised from the Calwrath confession — the same architecture, rebuilt in seconds.' Trust the reader to remember what Calwrath means."
+    },
+    {
+      "id": "LINE-014",
+      "severity": "minor",
+      "category": "prose",
+      "description": "L200: 'only' appears twice in one sentence: 'A seal that could only be reached through a path held in Kaelith's body and walkable only through the kind of trust that no longer existed.' The double 'only' creates slight awkwardness.",
+      "lineRef": { "start": 200, "end": 200 },
+      "suggestedFix": "Restructure: 'A seal reachable only through a path held in Kaelith's body — walkable through trust that no longer existed.' Or: 'A seal that required a path held in Kaelith's body, walkable only through trust that no longer existed.'"
+    },
+    {
+      "id": "LINE-015",
+      "severity": "minor",
+      "category": "repetition",
+      "description": "'Not X. This was Y' / 'Not X — Y' distinction pattern used 4+ times as a rhetorical device: L88 ('Not the focused stillness... This was the other stillness'), L124 ('Not severed'), L126 ('This was worse'), L170 ('Not because she chose to stay'). The device is appropriate for Lirien's precision-oriented voice — she makes distinctions — but at 4+ uses it becomes a detectable pattern.",
+      "lineRef": { "start": 88, "end": 170 },
+      "instances": [
+        { "line": 88, "text": "Not the focused stillness of concentration... This was the other stillness" },
+        { "line": 124, "text": "Not severed" },
+        { "line": 126, "text": "This was worse" },
+        { "line": 170, "text": "Not because she chose to stay" }
+      ],
+      "suggestedFix": "Reduce by 1-2 uses. Keep the strongest instances: L124-126 ('Not severed... This was worse' — the bond moment is the chapter's hinge) and L170 ('Not because she chose to stay' — the existential paralysis moment). Rephrase others — L88 could become 'A stillness Lirien had seen only once before.'"
+    }
+  ],
+  "invariantResults": {
+    "INV-017": "CONDITIONAL PASS — zero clichés (excellent), zero banned phrases, adverbs low (~0.8/page per metadata), show:tell ratio strong (~95:5). However, bond reference repetition (~30 refs in 200 lines) and 'forty-three' repetition (6×) exceed acceptable thresholds. Operative voice marker saturation at ~67% of paragraphs constitutes a repetition pattern per INV-017 standards. Requires thinning to pass.",
+    "INV-005": "PASS — show:tell ratio ~95:5. Emotions consistently conveyed through physical sensation, bond mechanics, behavioral observation, and gesture rather than labels. The few direct emotion names ('distress,' 'guilt,' 'pain,' 'grief') appear as bond-transmitted sensory data or in the final reflective passage where their ambiguity (hers or the contract's?) is the point. L126 has a mild telling moment (explaining Kaelith's psychology) but is contextualized within Lirien's analytical observation. No prohibited shortcuts used.",
+    "INV-019": "PASS — dialogue quality at manuscript's highest standard. Kaelith's lines are staccato, military, devastating in their compression ('Don't.' / 'Every feeling was built on a lie.' / 'And you chose not to tell me.'). Lirien's speech breaks appropriately — failed starts ('I—' / 'There is—'), then desperate over-explanation, then devastating plainness ('Because I was afraid'). Zero dialogue over-voicing. No character-specific vocabulary forced into dialogue. Contractions used naturally. All dialogue serves narrative function.",
+    "INV-035": "PASS — zero dead spots. Chapter maintains relentless tension through: bond-transmitted distress (L44-68), the ticking clock of Kaelith waking (L56-70), systematic trust reinterpretation (L86-106), packing-as-relationship-erasure (L132-140), Lirien's explanatory failure (L142-162), existential identity crisis (L170-182), and final devastated stillness (L184-212). The quiet register amplifies rather than dissipates tension.",
+    "INV-047": "PASS — subtext excellent throughout. 'Don't' carries the weight of 'every word you say is another lie.' 'Every feeling was built on a lie' means 'I let you in and you were the weapon.' 'And you chose not to tell me' means the silence was worse than the contract. 'Because I was afraid' means 'I knew the cost and chose cowardice.' No subtext explained or undermined by narration.",
+    "INV-003": "CONDITIONAL PASS — Lirien's voice is unmistakable and consistent: people-first observation, analytical processing, water/contract metaphors, operative vocabulary. Distinct from Kaelith's ch15 POV (structural metaphors, tactile sensory channel, percussive rhythm). The issue is density, not accuracy. Once operative markers thinned per LINE-003, voice achieves 'seasoning not main ingredient' standard.",
+    "INV-064": "PASS — visual/auditory sensory signature consistent with CHAR-002 profile. Lirien reads faces ('Kaelith's eyes moved,' 'the direction of eye movement'), tracks vocal registers ('not alarmed yet, but alert'), notices light quality ('thin grey line under the Pallor's membrane,' 'grey morning light'), and reads body language ('grip precise,' 'hands paused over the pack. A tremor'). Bond sensations rendered as perceived quality rather than tactile — Lirien feels emotional textures, not physical ones.",
+    "INV-052": "PASS — MRU structure verified at 6 key moments. Craft profile explicitly excluded T14, noting deliberate MRU breaks for character voice. No reversals detected. The most important MRU — Kaelith's words (L116) → Lirien's failed verbal response (L122) → analytical processing → bond going cold (L124) — follows acceptable sequence for Lirien's voice (verbal attempt precedes analytical processing because the attempt IS the reflex).",
+    "INV-073": "CONDITIONAL PASS — prose is restrained, emotionally authentic, and genre-appropriate. Lush imagery limited to appropriate moments (bond transmissions, final landscape). No purple prose. The water flask detail (L136-138) and 'The detail was small. It was not small.' (L138) are publication-quality moments. The prose becomes most powerful when it is plainest ('Because I was afraid' — L160). Conditional on thinning the three critical repetition findings."
+  },
+  "strengths": [
+    "Dialogue quality at manuscript's highest standard — minimal, devastating, flawlessly subtextual. Zero over-voicing, perfect naturalism, maximum impact from minimum words.",
+    "Zero clichés detected — extremely impressive for a Black Moment chapter, which is the scene type most prone to romance and fantasy cliché.",
+    "Zero banned phrases. Zero purple prose.",
+    "Show-don't-tell discipline excellent (~95:5 ratio). Emotions conveyed through bond mechanics, physical behavior, failed speech, and the devastating water-flask-detail technique.",
+    "Micro-tension maintained relentlessly — no dead spots despite the quiet, restrained register. The silence amplifies rather than dissipates devastation.",
+    "The water flask detail (L136-138) is masterful — 'She did not take the water flask they had been sharing. She took a different one from the supply shelf. The detail was small. It was not small.' This is publication-quality craft.",
+    "Lirien's voice degradation arc is perfectly tracked: precise early → classification systems stuttering mid-chapter → plain and vulnerable at maximum emotion. The plainest sentence carries the most weight ('Because I was afraid').",
+    "One-line paragraphs used correctly and sparingly for genuine impact: 'Her pulse was not.' (L24), 'Then the meaning arrived.' (L84), 'The bond went cold.' (L124), 'It was obedience.' (L174).",
+    "Emotional throughline perfectly tracked with no repetition: dread → horror → desperate calculation → guilt flooding bond → helpless witnessing → fragmented desperation → existential paralysis → devastated stillness.",
+    "MRU structure sound throughout despite T14 exclusion from craft profile."
+  ],
+  "verdict": "PASS with mandatory thinning",
+  "verdictDetail": "Chapter 16 is a devastatingly effective Black Moment with prose that achieves its impact through restraint. Dialogue, show-don't-tell, tension, and emotional throughline are at manuscript-highest quality. Zero clichés or purple prose. The three critical findings are all repetition/saturation issues — bond references (~30 in 200 lines), 'forty-three' (6×), and operative voice markers (~67% of paragraphs) — that can be addressed through targeted thinning without structural revision. The remediation is: bond refs ~40-50%, forty-three ~50%, operative markers ~25-30% in heaviest paragraphs. Once thinned, this chapter meets publication-ready standard.",
+  "recommendedThinning": {
+    "bondReferences": { "current": "~30", "target": "~15-18", "reduction": "40-50%" },
+    "fortyThreeReferences": { "current": 6, "target": "2-3", "reduction": "50-67%" },
+    "operativeVoiceMarkers": { "current": "~67% of paragraphs", "target": "~45-50% of paragraphs", "reduction": "~25-30% in heaviest passages" }
+  }
+}

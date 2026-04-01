@@ -1,0 +1,101 @@
+{
+  "chapterNumber": 5,
+  "editorType": "copy",
+  "generatedAt": "2025-07-25T10:10:00Z",
+  "overallAssessment": "The chapter contains two critical factual errors and one major continuity violation. The date arithmetic throughout Scene 1 is internally inconsistent — the text claims 'fifteen years' of suppression while citing dates from YK 704-709, which are thirty-five to thirty-eight years before the current year (YK 742). Related arithmetic ('five years before Kaelith's exile,' 'eleven years before the first Pallor tear') compounds the error. Additionally, the Lirien confrontation scene re-reveals information already disclosed in Chapter 4. Naming consistency, world-rule compliance, and magic-system adherence are otherwise sound.",
+  "findings": [
+    {
+      "id": "COPY-005-001",
+      "severity": "critical",
+      "category": "arithmetic-error",
+      "description": "The text states 'Fifteen years. That would be Year of the Keep 707.' The current year is YK 742 per history.json calendar system. 742 minus 15 equals 727, not 707. The Helric reports dated YK 704-709 place the suppression start at approximately thirty-five years before the present — consistent with the world-bible's Pallor poisoning timeline (began ~YK 702) but inconsistent with the 'fifteen years' claim. Additionally, in Ch4 (revised), Lirien states 'Forty years of it' regarding the Pallor sabotage. The 'fifteen years' figure has no established source.",
+      "lineRef": "Line 26 ('Fifteen years. That would be Year of the Keep 707.')",
+      "correction": "Replace 'Fifteen years' with a reference consistent with both the world-bible and Ch4's disclosure. Lirien said forty years of sabotage. The garrison reports starting YK 704 are consistent with degradation becoming observable shortly after the poisoning began (~YK 702). Revise to reference the forty-year timeline: 'Forty years, Lirien had said. That would place the start around Year of the Keep 702. The garrison's atmospheric logs should reach back that far.' Alternatively, note that Kaelith is looking for the earliest evidence available rather than targeting a specific year."
+    },
+    {
+      "id": "COPY-005-002",
+      "severity": "critical",
+      "category": "cross-chapter-continuity",
+      "description": "The Lirien confrontation scene presents the kill contract, the Quietus, and kinetic memory as revelations Kaelith is receiving for the first time. In Chapter 4 (revised), Lirien explicitly disclosed: (1) the kill contract's existence and her decision not to execute, (2) the Pallor's forty-year sabotage, (3) Kaelith's Warden-lineage capacity, (4) kinetic memory of the Quietus path — Kaelith even responded 'I'm supposed to trust kinetic memory I don't possess' in Ch4. The Ch5 scene treats this prior disclosure as though it never occurred.",
+      "lineRef": "Lines 158-210 (Lirien confrontation dialogue)",
+      "correction": "Restructure the confrontation to present NEW information that deepens Ch4's disclosures: (1) the kill contract is still binding and active, not simply a threat Lirien has decided not to execute — if she fails, the Lessening awaits; (2) Lirien consumed Kaelith's blood in the binding ceremony, creating a physiological link; (3) the full paradox: Kaelith's death means the Quietus path dies with her, but Lirien's non-compliance means the binding destroys Lirien. Kaelith should reference her Ch4 knowledge explicitly."
+    },
+    {
+      "id": "COPY-005-003",
+      "severity": "major",
+      "category": "arithmetic-error",
+      "description": "'Five years before Kaelith's exile' — if Kaelith's exile began approximately YK 736 (six years before present at YK 742), then YK 707 is twenty-nine years before her exile, not five. Even if exile began at YK 737, the gap is thirty years.",
+      "lineRef": "Line 26",
+      "correction": "If the Helric dates (YK 704-709) are retained, change 'Five years before Kaelith's exile' to 'Nearly thirty years before her exile' or remove the relative reference entirely."
+    },
+    {
+      "id": "COPY-005-004",
+      "severity": "major",
+      "category": "arithmetic-error",
+      "description": "'Eleven years before the first Pallor tear she'd witnessed personally' — Kaelith has been in Duskhaven approximately five to six years. The first Pallor tear she witnessed was in Chapter 1, approximately YK 742. YK 707 plus eleven equals 718, not 742. The gap is approximately thirty-five years, not eleven.",
+      "lineRef": "Line 26",
+      "correction": "Remove this relative reference or correct the arithmetic. If Helric dates are retained: 'Decades before the first Pallor tear she'd witnessed with her own eyes.'"
+    },
+    {
+      "id": "COPY-005-005",
+      "severity": "major",
+      "category": "departure-continuity",
+      "description": "Chapter 4 (revised) ends with Kaelith and Lirien agreeing to board a smuggler boat departing within hours: 'The boat,' Kaelith said. 'I'll be at the port.' Chapter 5 shows Kaelith in the garrison archives at midnight and ends with her packing a travel kit for an overland journey. Chapter 6 opens with departure via the eastern gate on foot. The change from boat to overland travel is unaccounted for.",
+      "lineRef": "Lines 320-325 (packing scene)",
+      "correction": "Add a bridging reference explaining the departure plan change. Options: (1) the smuggler boat was compromised or departed without them; (2) Lirien's intelligence indicated the harbor was being watched; (3) events between Ch4 and Ch5 (arriving at the port, discovering surveillance) forced the plan change. One or two sentences in the archive scene opening or the confrontation."
+    },
+    {
+      "id": "COPY-005-006",
+      "severity": "minor",
+      "category": "naming-consistency",
+      "description": "Commander Helric is introduced as a character through his garrison reports and personal journal. He is not listed in the established character index. His role is historical and documentary, so formal character registration is not required, but his rank (Commander), posting (Duskhaven garrison), and timeline (active YK 704-709+) should be noted for continuity tracking in future chapters that may reference suppression evidence.",
+      "lineRef": "Lines 30-116",
+      "correction": "No textual change required. Cross-reference note: Helric should be flagged in the continuity tracker as a historical reference character whose journal Kaelith now possesses."
+    },
+    {
+      "id": "COPY-005-007",
+      "severity": "minor",
+      "category": "world-rule-compliance",
+      "description": "The Oathbrand flares at line 76 during an emotionally charged moment in the archives. Per magic-system.json, the Oathbrand flares in response to 'emotional intensity or magical proximity.' The flare here is triggered by emotional intensity (the discovery of institutional betrayal), which is consistent with established behavior in Ch1 and Ch3.",
+      "lineRef": "Lines 76-79",
+      "correction": "No change required. Behavior is consistent with established brand mechanics."
+    },
+    {
+      "id": "COPY-005-008",
+      "severity": "minor",
+      "category": "continuity-detail",
+      "description": "Line 14: 'She'd been in here twice before. Once to repair a collapsed shelf that Tavik had been ignoring for six months.' This establishes Kaelith's familiarity with the archives through practical maintenance work — consistent with her established routine of compulsive repair. However, the reference to Tavik should be cross-checked: Tavik is the garrison administrator who received encrypted Conclave messages in Ch3 and attempted to detain Kaelith in Ch6. At this point in the timeline, Kaelith has already read Tavik's correspondence in Ch3 and knows he is complicit. Her reference to him here should reflect that awareness.",
+      "lineRef": "Line 14",
+      "correction": "Consider adding a brief note of awareness — 'Tavik, who had been monitoring her for the Conclave the entire time' — to reflect Kaelith's Ch3 discovery. Or leave as-is if the reference is meant to show Kaelith's compartmentalized recall during focused investigation."
+    }
+  ],
+  "namingVerification": {
+    "Kaelith / Kaelith Maren": "consistent",
+    "Lirien": "consistent — surname not used in this chapter, appropriate for relationship stage",
+    "Duskhaven": "consistent",
+    "The Pallor": "consistent",
+    "The Quietus": "consistent",
+    "Ythara / Ythara the Unfinished": "consistent — 'Ythara' in casual reference",
+    "Oathbrand": "consistent",
+    "Commander Helric": "new historical character — consistent within chapter, needs continuity registration",
+    "Tavik": "consistent with Ch3 establishment",
+    "Cerith Court": "consistent",
+    "The Ashborne Legion": "consistent",
+    "Year of the Keep (YK)": "format consistent — dates require arithmetic correction",
+    "Regional Command": "consistent with imperial administrative structure",
+    "Conclave / High Conclave": "consistent",
+    "Calwrath": "consistent — referenced in character context"
+  },
+  "worldRuleCompliance": {
+    "oathbrand": "Compliant. Brand behavior consistent with MAG-008 — flares on emotional intensity.",
+    "kineticMemory": "Compliant. Lirien's explanation matches MAG-006: embodied knowledge, body-as-map, blindfolded walking.",
+    "pallorEffect": "Compliant. Description of tears, membrane thinning, and stars visible through gaps matches established Pallor mechanics.",
+    "faeBindingContracts": "Compliant. The binding's physiological consequences (Lessening), blood-in-veins mechanism, and inability to walk away are consistent with MAG-005 and CUL-002.",
+    "suppressionMechanism": "Compliant. The bureaucratic reclassification of atmospheric anomalies matches CUL-001's 'atmospheric speculation' taboo and the institutional culture of managing-rather-than-addressing."
+  },
+  "findingCounts": {
+    "critical": 2,
+    "major": 3,
+    "minor": 3
+  }
+}

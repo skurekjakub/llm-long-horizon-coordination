@@ -1,0 +1,563 @@
+{
+  "chapter": 16,
+  "agent": "craft-enforcer",
+  "timestamp": "2026-03-18T11:31:30Z",
+  "overallVerdict": "passed",
+  "totalActiveTools": 16,
+  "toolsCompliant": 14,
+  "toolsPartiallyCompliant": 2,
+  "toolsNonCompliant": 0,
+  "scenesAudited": 3,
+  "checksPerformed": 48,
+  "toolAssessments": [
+    {
+      "toolId": "T5",
+      "name": "Tone Contract",
+      "verdict": "compliant",
+      "sceneBySceneEvidence": {
+        "SCN-43": {
+          "verdict": "compliant",
+          "evidence": "The scene opens with clinical operative language: 'standard field protocol, habitual as breathing' (L14). The Seep message is rendered in administrative bureaucratese: 'Contract of Execution, Series VII, Entry 44' (L28). Emotion is conveyed through physiological detail ('Her pulse was not' L24) and the gap between clinical language and devastating content. The horror lives in 'auxiliary procurement' — Court language for stealing someone's blood. No melodrama, no sentimental declaration, no shouting.",
+          "forbiddenToneCheck": "No whimsical/twee ✓, No grimdark nihilism ✓, No sentimental/melodramatic ✓, No campy/self-aware ✓, No epic-triumphant ✓, No expository/pedagogical ✓, No modern-glib ✓"
+        },
+        "SCN-44": {
+          "verdict": "compliant",
+          "evidence": "Kaelith's devastation is rendered through restraint: 'Her posture did not change. Her breathing did not change' (L82). The reinterpretation sequence is analytically observed, not melodramatically narrated. The devastating sentence 'Every feeling was built on a lie' (L116) is delivered 'in the register Lirien had heard only in Kaelith's accounting of operational losses' (L118) — casualty-report voice, not theatrical rage. Bond going cold described as architecture: 'Not severed... a wall' (L126). Frozen river metaphor (L128) is restrained, atmospheric, consistent with twilight-toned contract.",
+          "forbiddenToneCheck": "All seven prohibited tones absent. The most emotionally intense moment in the book maintains tonal discipline."
+        },
+        "SCN-45": {
+          "verdict": "compliant",
+          "evidence": "Kaelith's packing rendered through 'military efficiency — each item assessed, stowed with the economy of a soldier' (L134). Lirien's verbal disintegration shown through failed constructions, not through narrated desperation (L142-146). The existential crisis (L172-178) is analytically framed: 'The analytical mind... turned inward and found no framework' (L178). Chapter close: 'she did not move, and she did not weep, and she did not know if the grief was hers or the contract's' (L206) — devastation through negative construction, not sentimental excess.",
+          "forbiddenToneCheck": "All seven prohibited tones absent."
+        }
+      },
+      "issues": [],
+      "recommendations": []
+    },
+    {
+      "toolId": "T6",
+      "name": "Stakes Escalation",
+      "verdict": "compliant",
+      "sceneBySceneEvidence": {
+        "SCN-43": {
+          "verdict": "compliant",
+          "evidence": "Stakes escalate from personal to institutional: the intercepted message reveals not just an active contract but enforcement escalation, secondary operative deployment, and a 30/90-day deterioration timeline (L32-36). The 'auxiliary procurement' detail (L42) escalates stakes to violation-level — Kaelith's blood was taken without consent. Each paragraph of the contract document raises the cost. Physical stakes (Lirien's Lessening), relational stakes (exposure), and mission stakes (Quietus requires trust that's about to shatter) all escalate simultaneously."
+        },
+        "SCN-44": {
+          "verdict": "compliant",
+          "evidence": "Stakes escalate from factual revelation to total relationship reinterpretation. The recontextualization sequence (L100-106) is the stakes escalation mechanism: each shared memory is revisited and poisoned. The Oathbrand removal, Calwrath confession, first kiss, and 'I want this' declaration are each weaponized in turn — each one is a higher-stakes loss than the last because each was a higher-stakes vulnerability. Kaelith's single sentence (L116) crystallizes the destruction. Bond going cold (L124-128) escalates from emotional loss to structural loss — the connection itself is compromised."
+        },
+        "SCN-45": {
+          "verdict": "compliant",
+          "evidence": "Final escalation from relational to existential: Lirien's inability to distinguish binding from love (L172-178) raises stakes from 'will they recover?' to 'was anything real?' The identity-level crisis ('the woman she had been for months might have been a construction' L182) is the highest possible personal stake. Mission stakes crystallized in L200: 'A seal that could only be reached through a path held in Kaelith's body and walkable only through the kind of trust that no longer existed' — both arcs' stakes at maximum."
+        }
+      },
+      "overallAssessment": "Stakes progression from personal → relational → existential is cleanly executed across all three scenes. Each scene raises the cost above the previous. The chapter's position as Black Moment at tension level 10 is earned through progressive escalation, not front-loaded shock.",
+      "issues": [],
+      "recommendations": []
+    },
+    {
+      "toolId": "T7",
+      "name": "Black Moment",
+      "verdict": "compliant",
+      "sceneBySceneEvidence": {
+        "SCN-43": {
+          "verdict": "compliant",
+          "evidence": "Black Moment setup: the mechanism of revelation (intercepted Seep message vs. Lirien's confession) ensures the exposure looks like calculated deception rather than honest disclosure. Lirien's decision to hand over the message (L72-76) is rendered as compulsion ('she could not add another lie'), not as heroic honesty — the operative who controls information has lost control. The bond broadcasting guilt before words (L68) removes even the possibility of managed disclosure."
+        },
+        "SCN-44": {
+          "verdict": "compliant",
+          "evidence": "Black Moment core: the systematic reinterpretation of every trust beat (L100-106) is the defining mechanism. The chapter doesn't just reveal a secret — it retroactively poisons every positive beat from chapters 1-15. The Oathbrand removal, Calwrath confession, first kiss, and 'I want this' declaration are each specifically named and reframed. Kaelith's response is not rage but retreat to the Calwrath fortification (L88, L126-128), which is worse — it means she's been here before, she knows the protocol for surviving institutional betrayal. 'Every feeling was built on a lie' (L116) delivered in casualty-report register confirms the romance appears permanently destroyed."
+        },
+        "SCN-45": {
+          "verdict": "compliant",
+          "evidence": "Black Moment completion: the separation (L170-188) fulfills the Black Moment requirement that recovery seems impossible. The unique twist — Lirien can't follow because following might be obedience, not choice (L172-176) — adds a layer beyond standard Black Moments. It's not just 'will they reunite?' but 'can either of them trust their own feelings enough to try?' The bond persisting while walled (L184, L190-194) ensures pain without connection — presence turned inward, the worst kind of separation."
+        }
+      },
+      "blackMomentChecklist": {
+        "romanceAppearsPermanentlyDestroyed": true,
+        "evidenceForPermanence": "'Every feeling was built on a lie' + bond walled + physical separation + identity crisis about whether love is real or binding-induced",
+        "builtOnVulnerabilityLadder": true,
+        "evidenceForBuildUp": "Each recontextualized memory (Oathbrand removal, confession, kiss, declaration) was a vulnerability ladder step that is now weaponized",
+        "bothCharactersDevastated": true,
+        "evidenceForBothDevastated": "Kaelith: trust architecture collapsed, retreating to Calwrath survival mode. Lirien: existential paralysis, cannot distinguish love from binding",
+        "recoveryRequiresActiveChoice": true,
+        "evidenceForActiveChoice": "Resolution requires both women to choose trust again despite evidence — cannot happen passively"
+      },
+      "issues": [],
+      "recommendations": []
+    },
+    {
+      "toolId": "T8",
+      "name": "Internal and External Resistance",
+      "verdict": "compliant",
+      "sceneBySceneEvidence": {
+        "SCN-43": {
+          "verdict": "compliant",
+          "evidence": "LIRIEN INTERNAL: Operative conditioning surfaces immediately — 'The analytical machinery engaged automatically: scenarios, contingencies, damage projections' (L38). Her first instinct is to manage: 'shape the narrative' (L46). This conditioning IS the cause of the catastrophe — her internal resistance to vulnerability (choosing concealment over disclosure) has detonated. LIRIEN EXTERNAL: Active contract, physiological enforcement, 30/90-day Lessening timeline, secondary operative deployment, Court monitoring (L32-36). KAELITH: Not yet active in this scene."
+        },
+        "SCN-44": {
+          "verdict": "compliant",
+          "evidence": "KAELITH INTERNAL: Calwrath wound reopened — 'once again an institution used her trust as a mechanism' (L106). The military mask (L88) is the Calwrath survival protocol reactivating. Distrust of anyone with institutional authority now includes Lirien. KAELITH EXTERNAL: The active contract makes the person she loved into an existential threat. LIRIEN INTERNAL: Cannot determine if her own feelings are real (L108-112) — the deepest internal resistance is to her own interior. LIRIEN EXTERNAL: Bond transmitting her guilt involuntarily (L68, L86) — she cannot even control her own emotional leakage."
+        },
+        "SCN-45": {
+          "verdict": "compliant",
+          "evidence": "KAELITH INTERNAL: Retreating to amputation-as-survival — packing with 'the discipline of retreat applied to personal devastation' (L134). Refusing shared items (L136-140) is physical enactment of emotional amputation. LIRIEN INTERNAL: Maximum internal resistance crystallized — 'Every impulse that said go after her — each one was potentially binding, not choice' (L172). The fae operative conditioning against attachment has inverted: now she fears the attachment itself is manufactured. LIRIEN EXTERNAL: The binding's physical enforcement mechanism will begin deteriorating her within 30 days."
+        }
+      },
+      "resistanceMapping": {
+        "lirienInternal": [
+          "operative conditioning defaulting to information management",
+          "inability to distinguish binding from genuine feeling",
+          "identity crisis — was she ever more than a weapon?"
+        ],
+        "lirienExternal": [
+          "active kill contract",
+          "Court enforcement escalation",
+          "30/90-day Lessening timeline",
+          "secondary operative deployment"
+        ],
+        "kaelithInternal": [
+          "Calwrath wound pattern reactivating",
+          "self-recrimination for choosing hope",
+          "distrust of institutional agents"
+        ],
+        "kaelithExternal": [
+          "blood used in binding without consent",
+          "Lirien's concealment through months of trust-building"
+        ]
+      },
+      "issues": [],
+      "recommendations": []
+    },
+    {
+      "toolId": "T10",
+      "name": "Sanderson's Laws of Magic",
+      "verdict": "compliant",
+      "sceneBySceneEvidence": {
+        "SCN-43": {
+          "verdict": "compliant",
+          "evidence": "Resonance bond mechanics consistent: transmits 'emotional quality' not 'specific content' — Kaelith feels 'the quality. Terror in a shape Kaelith had never felt from Lirien before' (L56) but doesn't know why. This is consistent with established bond rules (MAG-007). Kill contract mechanics consistent: blood-sealed binding with physiological enforcement parameters (L30-32). The 'cessation of heartbeat' loophole language is consistent with FACT-008 established in ch14."
+        },
+        "SCN-44": {
+          "verdict": "compliant",
+          "evidence": "Bond mechanics strictly maintained: Lirien 'could not read the specific memories, but she could read the emotional signatures' (L100). The bond transmits emotional quality (warmth-vulnerability, raw-courage, bright-fierce) but not factual content — maintaining the established limitation. Bond walling (L124-128) is described as a deliberate choice Kaelith makes — consistent with established agency over the bond. The wall doesn't sever, it blocks warmth while maintaining structural connection."
+        },
+        "SCN-45": {
+          "verdict": "compliant",
+          "evidence": "Bond distance mechanics: 'a connection that did not diminish with distance' (L184). The bond 'stretched taut' but persists across physical separation, carrying 'nothing but matched grief' (L194). This is consistent with bond permanence established in ch11-15. No new magical abilities invented to solve problems. The loophole (cessation of heartbeat) was established in ch14 and merely referenced here (L144) — not a deus ex machina."
+        }
+      },
+      "sandersonsLawChecklist": {
+        "firstLaw_noDeusExMachina": "PASS — No magical solution appears that wasn't previously established. The loophole was discovered in ch14. The bond's properties are consistent with ch11-15.",
+        "secondLaw_limitationsMoreInteresting": "PASS — The bond's limitation (transmits emotion, not facts) is what makes the revelation work. Kaelith feels terror but not its cause, creating the excruciating gap. The binding's limitation (cannot be simply canceled) creates the trap.",
+        "consistencyCheck": "Bond transmission rules, contract binding mechanics, physiological enforcement, walling capability — all consistent with prior chapters."
+      },
+      "issues": [],
+      "recommendations": []
+    },
+    {
+      "toolId": "T12",
+      "name": "Dual-Arc Interleave",
+      "verdict": "compliant",
+      "sceneBySceneEvidence": {
+        "SCN-43": {
+          "verdict": "compliant",
+          "evidence": "The intercepted message is simultaneously a fantasy revelation (contract mechanism, blood binding, Court enforcement) and a romance devastation (trust collapse, concealment exposed). The single document destroys both the partnership needed for the Quietus mission and the love built over 15 chapters. The fantasy plot information (binding mechanics, enforcement timeline) IS the romance destruction mechanism. Maximum interleave — not alternating arcs but a single event viewed through both lenses."
+        },
+        "SCN-44": {
+          "verdict": "compliant",
+          "evidence": "Kaelith's reinterpretation of shared moments (L100-106) operates on both arcs simultaneously. Each memory has a romance reading (intimacy, trust, love) and a fantasy reading (operative positioning, intelligence gathering, binding compliance). The dual-arc interleave is so tight that the reader cannot separate which arc is being destroyed — because both are being destroyed by the same facts. 'Every feeling was built on a lie' (L116) applies equally to the romance and the mission partnership."
+        },
+        "SCN-45": {
+          "verdict": "compliant",
+          "evidence": "The separation's consequences are explicitly dual-arc: Lirien's existential paralysis (romance) and the Quietus being unreachable without trust (fantasy) are stated in the same paragraph (L200). 'A seal that could only be reached through a path held in Kaelith's body and walkable only through the kind of trust that no longer existed' — one sentence carrying both arcs' stakes to maximum. The arcs cannot be resolved independently."
+        }
+      },
+      "interleaveMetrics": {
+        "singleEventDualDestruction": true,
+        "arcsCannotBeResolvedIndependently": true,
+        "noArcSilentForMoreThanOnePage": true
+      },
+      "issues": [],
+      "recommendations": []
+    },
+    {
+      "toolId": "T13",
+      "name": "Tension Mapping",
+      "verdict": "compliant",
+      "sceneBySceneEvidence": {
+        "SCN-43": {
+          "verdict": "compliant",
+          "tensionLevel": "9-10",
+          "evidence": "Micro-tension sustained throughout: the dead drop serviced (dread), the cipher recognition (L20), 'Her pulse was not' (L24), the ticking clock of Kaelith waking (L44), the bond broadcasting distress involuntarily (L44), the operative instinct to destroy vs. the inability to add another lie (L46-74). No passage longer than half a page without active tension source. The tension escalates within the scene from controlled dread to catastrophic exposure."
+        },
+        "SCN-44": {
+          "verdict": "compliant",
+          "tensionLevel": "10",
+          "evidence": "Maximum tension maintained through the reinterpretation sequence — each memory flaring and dying (L100-106) is a micro-escalation. The approach to 'Every feeling was built on a lie' (L116) is the tension peak. The bond going cold (L124) is devastating tension release that immediately creates new tension (the wall, the absence, the Calwrath retreat). Pacing is deliberately controlled and quiet — the restraint amplifies devastation. No dead spots."
+        },
+        "SCN-45": {
+          "verdict": "compliant",
+          "tensionLevel": "10",
+          "evidence": "Tension sustained through Kaelith's packing (each item a micro-beat of relationship ending, L134-140), Lirien's verbal disintegration (L142-146), the tremor in Kaelith's hands (L164), the separation itself (L168-188), and the identity crisis climax (L172-182). The chapter closes at sustained maximum tension — no false resolution, no comfort. 'The bond carried nothing but pain. Matched. Shared. Inescapable.' (L208-210). The silence as loudest thing (L212) sustains tension past the final word."
+        }
+      },
+      "targetTensionLevel": 10,
+      "achievedTensionLevel": 10,
+      "deadSpots": "None identified. Every passage carries active tension through at least one of: ticking clock, emotional transmission, identity crisis, physical separation, or unresolved questions.",
+      "issues": [],
+      "recommendations": []
+    },
+    {
+      "toolId": "T15",
+      "name": "Foreshadowing and Payoff Ledger",
+      "verdict": "compliant",
+      "sceneBySceneEvidence": {
+        "SCN-43": {
+          "verdict": "compliant",
+          "evidence": "FS-003 PAYOFF (planted ch1): Lirien's operative surveillance of Kaelith pays off — the kill contract is fully revealed through intercepted Court communique (L28-36). The predatory surveillance from ch1 is now explained and contextualized. Every chapter of concealment was foreshadowed. FS-019 PLANTED: Court enforcement escalation — 'Enforcement escalation approved. Secondary operative deployment under review' (L35). FS-020 PLANTED: 30/90-day deterioration timeline — 'progressive physiological deterioration within 30 days... Terminal Lessening projected at 90 days' (L32-33)."
+        },
+        "SCN-44": {
+          "verdict": "compliant",
+          "evidence": "FS-015 ADVANCED: Resonance bond transmits Lirien's guilt involuntarily (L44, L68, L86), making lies impossible — advancing the bond foreshadowing toward its ch20 payoff. FS-017 PAYOFF (planted ch15): Kaelith's happiness-before-fall pattern detonates — her ch15 choice to embrace hope despite recognizing the Calwrath pattern is weaponized. The recontextualization sequence (L100-106) specifically names the events that were foreshadowed: Oathbrand removal, Calwrath confession, first kiss, declaration."
+        },
+        "SCN-45": {
+          "verdict": "compliant",
+          "evidence": "FS-012 ADVANCED: Lirien attempts to explain the cessation-of-heartbeat loophole (L144) but every word sounds like manipulation. The loophole exists in language but not in trust — advancing toward ch20 payoff. FS-020 (first kiss as irreversible threshold, planted ch13) implicitly present — the 'chosen' nature of the kiss is exactly what makes the recontextualization devastating."
+        }
+      },
+      "ledgerAlignment": {
+        "payoffsDelivered": [
+          "FS-003 (kill contract fully revealed)",
+          "FS-017 (happiness-before-fall detonates)"
+        ],
+        "plantsAdvanced": [
+          "FS-012 (loophole attempted but sounds like manipulation)",
+          "FS-015 (bond demonstrates guilt transmission)"
+        ],
+        "newPlants": [
+          "FS-019 (Court enforcement escalation)",
+          "FS-020 (30/90-day deterioration timeline)"
+        ],
+        "missingFromLedger": [],
+        "unexpectedPayoffs": []
+      },
+      "issues": [],
+      "recommendations": []
+    },
+    {
+      "toolId": "T16",
+      "name": "Symbolic Motif Weaving",
+      "verdict": "partially-compliant",
+      "sceneBySceneEvidence": {
+        "SCN-43": {
+          "verdict": "compliant",
+          "evidence": "MOT-001 (Pallor): 'Dawn was a thin grey line under the Pallor's membrane' (L14) — establishes the failing protective barrier in opening. MOT-003 (Water/infiltration): 'seepage she could not contain, her emotional state bleeding through the connection with the inevitability of water through a cracked seal' (L44) — water as uncontrolled leakage, evolution from controlled infiltration to involuntary disclosure."
+        },
+        "SCN-44": {
+          "verdict": "compliant",
+          "evidence": "MOT-003 (Water): 'like sunlight entering water — illuminating everything it touched' (L102) inverted in next paragraph to evidence of exploitation. 'A river frozen over' (L128) — critical evolution of water motif from liquid (intimacy/infiltration) to ice (connection frozen, presence without warmth). MOT-004 (Quietus): Not present in this scene. MOT-002 (Oathbrand): Referenced in recontextualization sequence (L100) — the Oathbrand removal reframed as 'positioning.'"
+        },
+        "SCN-45": {
+          "verdict": "partially-compliant",
+          "evidence": "MOT-003 (Water): 'She had been the Seep. Water that found every crack' (L180) — devastating self-recognition. Water motif explicitly weaponized: infiltration-as-intimacy becomes infiltration-as-violation. 'a depth with no bottom, no shore, no surface' (L182) — water imagery for existential dissolution. MOT-001 (Pallor): Closing (L202-204) — 'the real sky showed — darker, older, the colour of a wound that had never been permitted to close.' Excellent evolution from ch14's 'real sky was true' to 'wound never permitted to close.' MOT-005 (Ythara): ABSENT. While Ythara is a background motif, this is a Black Moment chapter where reality dissolution (Ythara's domain) parallels Lirien's identity dissolution. A subtle Ythara echo (e.g., a sensation of coherence dissolving, things becoming what they could have been instead of what they are) would strengthen the thematic resonance. MOT-004 (Quietus): Referenced only obliquely in the closing stakes summary (L200) — 'the Quietus... A seal that could only be reached...' This is more a plot reference than a motif appearance. The body-knowledge/embodied-trust imagery that usually accompanies MOT-004 is absent."
+        }
+      },
+      "motifDensityCheck": {
+        "MOT-001_Pallor": {
+          "appearances": 2,
+          "locations": [
+            "L14 opening",
+            "L202-204 closing"
+          ],
+          "verdict": "Adequate — frames chapter between institutional membrane and wound. Evolution from ch15 tracked."
+        },
+        "MOT-002_Oathbrand": {
+          "appearances": 1,
+          "locations": [
+            "L100 recontextualization"
+          ],
+          "verdict": "Adequate — brand appropriately ghosted post-removal."
+        },
+        "MOT-003_Water": {
+          "appearances": 5,
+          "locations": [
+            "L44 seepage through bond",
+            "L102 sunlight entering water",
+            "L128 frozen river",
+            "L180 Seep self-recognition",
+            "L182 depthless water"
+          ],
+          "verdict": "Excellent — maximum deployment, critical evolution from intimacy to violation to dissolution."
+        },
+        "MOT-004_Quietus": {
+          "appearances": 1,
+          "locations": [
+            "L200 stakes reference"
+          ],
+          "verdict": "Minimal — more plot summary than motif deployment. The body-as-knowledge imagery is absent."
+        },
+        "MOT-005_Ythara": {
+          "appearances": 0,
+          "locations": [],
+          "verdict": "Absent — missed opportunity for thematic parallel."
+        }
+      },
+      "issues": [
+        {
+          "severity": "minor",
+          "description": "MOT-005 (Ythara as raw potential / dissolution of the finished) is absent from the chapter. While the target density is low (1-2 per act), the Black Moment's identity dissolution in SCN-45 — where Lirien's coherent self dissolves into uncertainty about what is real — is a natural parallel to Ythara's domain (things becoming what they could have been instead of what they are). A single subtle echo would strengthen the thematic connection between personal dissolution and world-level threat.",
+          "lineRef": "L172-182 (existential paralysis section)",
+          "recommendation": "Consider adding a brief sensory moment during Lirien's identity crisis where she experiences something becoming undefined or mutable — a flicker of Ythara's influence at the edges — to parallel her internal dissolution with the external world-threat."
+        },
+        {
+          "severity": "minor",
+          "description": "MOT-004 (Quietus as embodied trust) appears only as a plot-level reference in the closing stakes summary (L200), not as a proper motif deployment. The body-as-knowledge imagery — movement as memory, trust held in the body — that usually accompanies this motif is absent from the prose texture.",
+          "lineRef": "L200",
+          "recommendation": "The Quietus reference could be enhanced with a brief embodied-trust image — e.g., Lirien noticing the direction northeast with a physical pull she associates with Kaelith's body-knowledge, now unreachable."
+        }
+      ],
+      "recommendations": [
+        "Both issues are minor. MOT-003 (water) and MOT-001 (Pallor) carry the motif weight effectively. The water motif's evolution from intimacy to violation to dissolution is the chapter's strongest motif work."
+      ]
+    },
+    {
+      "toolId": "T17",
+      "name": "Voice Fingerprinting",
+      "verdict": "compliant",
+      "sceneBySceneEvidence": {
+        "SCN-43": {
+          "verdict": "compliant",
+          "evidence": "Lirien's voice immediately identifiable: opens with people-first perception ('Kaelith was sleeping' L14), operative vocabulary ('standard field protocol' L14, 'operational category' L16, 'compliance window' L33), intelligence-analyst framing ('parsing each clause for ambiguity, cross-referencing against known variables, running exit scenarios' L38). Classification habit: 'things that are true and that I will lose' (L16). Sentence rhythm: fluid, clause-rich, analytical. The voice is unmistakably the fae intelligence operative."
+        },
+        "SCN-44": {
+          "verdict": "compliant",
+          "evidence": "Voice consistency maintained during crisis. Lirien continues to perceive through operative lens even while being destroyed: 'Lirien's analytical mind identified it with the precision of someone watching a blade enter from the correct angle' (L108). Classification vocabulary persists under stress: 'recontextualised' (L100), 'warmth-vulnerability' (L100), 'raw-courage signature' (L100). The voice degradation is itself characteristic — precision starts to fragment but the analytical frame doesn't break."
+        },
+        "SCN-45": {
+          "verdict": "compliant",
+          "evidence": "Progressive voice degradation masterfully executed. Lirien's precision collapses: 'Not the controlled instrument she had spent a lifetime calibrating' (L142). Sentences become rushed and overlapping (L144-146) — the operative who weaponized precision losing her weapon. Yet the analytical frame persists even in self-destruction: 'The analytical mind... turned inward and found no framework. No classification that could separate' (L178). The taxonomy metaphor ('categories dissolved, taxonomy empty' L178) is specifically Lirien's domain. Closing paragraphs (L196-212) achieve maximum plainness — 'she did not move, and she did not weep' — the simplest construction from the most precise character. Plainest sentences carry most weight, consistent with voice fingerprint."
+        }
+      },
+      "voiceDistinctiveness": {
+        "identifiableWithinFirstParagraph": true,
+        "evidence": "'standard field protocol, habitual as breathing' + 'operational category she had labelled' + 'things that are true and that I will lose' — identifiable as Lirien within 3 sentences.",
+        "consistentAcrossChapter": true,
+        "progressiveDegradation": "Yes — precise → fragmenting → plain. The degradation IS the characterization."
+      },
+      "issues": [],
+      "recommendations": []
+    },
+    {
+      "toolId": "T18",
+      "name": "Information Asymmetry",
+      "verdict": "compliant",
+      "sceneBySceneEvidence": {
+        "SCN-43": {
+          "verdict": "compliant",
+          "evidence": "Massive asymmetry shift begins. Lirien reads the message first — she knows the full scope (active contract, blood binding, enforcement, timeline) while Kaelith feels only terror through the bond (L56: 'Not the content — the bond did not carry specifics. The quality.'). The asymmetry gap (Lirien knows facts, Kaelith feels emotion) is the scene's tension engine. Information asymmetry rules strictly respected: bond transmits quality, not content, consistent with established rules."
+        },
+        "SCN-44": {
+          "verdict": "compliant",
+          "evidence": "Asymmetry resolves catastrophically: Kaelith reads the full contract. The dramatic irony that powered ch1-15 (reader knew about kill contract, Kaelith didn't) collapses into direct revelation. New asymmetry created: 'the question pointed at Lirien was one Lirien could not answer either' (L108) — neither woman can determine if Lirien's feelings are genuine or binding-induced. Reader holds this uncertainty too. Additionally: reader knows the loophole is real (established ch14), but Kaelith has no basis for believing it — new asymmetry between reader knowledge and character trust."
+        },
+        "SCN-45": {
+          "verdict": "compliant",
+          "evidence": "The loophole explanation (L144) fails because of the trust asymmetry — Lirien has the information but Kaelith cannot receive it as trustworthy. FACT-008 (loophole) now known to both characters but trusted by neither in the same way. Reader-character asymmetry: reader knows the loophole works and the Seep may support it (from information established in prior chapters), but both characters are in epistemic crisis. The information asymmetry has shifted from factual gaps to trust gaps."
+        }
+      },
+      "asymmetryTracker": {
+        "kaelithLearns": [
+          "Kill contract STILL ACTIVE (not abandoned as told in ch4)",
+          "Her blood used in binding ceremony without knowledge or consent",
+          "Physiological enforcement: Lirien faces Lessening",
+          "Lirien concealed this through months of trust-building",
+          "Alleged loophole exists (cessation of heartbeat) — no reason to trust",
+          "Court has authorized enforcement escalation and secondary operative"
+        ],
+        "lirienLearns": [
+          "Court actively monitoring non-compliance",
+          "30-day deterioration, 90-day terminal Lessening timeline",
+          "Secondary operative deployment under review",
+          "Cannot distinguish binding-induced desire from genuine feeling"
+        ],
+        "readerAsymmetry": "Reader knows loophole is linguistically valid (ch14) but Kaelith has no reason to trust it. Reader knows Thalen is the Pallor saboteur (to be revealed ch19) — both leads still don't. New: reader shares the binding-vs-love uncertainty with both characters."
+      },
+      "issues": [],
+      "recommendations": []
+    },
+    {
+      "toolId": "T20",
+      "name": "Emotional Throughline",
+      "verdict": "compliant",
+      "sceneBySceneEvidence": {
+        "SCN-43": {
+          "verdict": "compliant",
+          "emotionalProgression": "operative dread → horror at clinical details → desperate calculation (no exits) → guilt flooding bond",
+          "evidence": "Opening: 'things that are true and that I will lose' (L16) — operative dread. Reading the contract: 'the morning changed shape' (L27) — quiet horror. Running scenarios: 'No exits. The scenarios collapsed one after another' (L40) — desperate calculation yielding nothing. Bond transmission: 'a seepage she could not contain' (L44) — guilt as involuntary leakage. Each emotional beat is distinct from the previous — no repetition."
+        },
+        "SCN-44": {
+          "verdict": "compliant",
+          "emotionalProgression": "helpless witnessing → excruciating as memories reinterpreted → devastation at Kaelith's sentence → void when bond goes cold",
+          "evidence": "Witnessing: 'the specific transition from sleep to command awareness' (L56) — helpless observation. Memory recontextualization: 'each one flaring in the bond and then dying' (L100) — excruciating. The declaration memory: 'from gift to evidence' (L104) — the worst individual beat. 'Every feeling was built on a lie' (L116) — devastation crystallized. Bond going cold: 'a river frozen over' (L128) — void. The emotional throughline is continuous and never repeats a register."
+        },
+        "SCN-45": {
+          "verdict": "compliant",
+          "emotionalProgression": "fragmented desperation → existential paralysis → identity dissolution → devastated stillness with no next move",
+          "evidence": "Desperation: 'the fae precision had collapsed, and what replaced it was a human rhythm: rushed, overlapping, desperate' (L142). Paralysis: 'she cannot follow because the contract might be why she wanted to' (L172). Identity dissolution: 'the woman she had been for months might have been a construction' (L182). Devastated stillness: 'she did not move, and she did not weep, and she did not know' (L206). Complete inversion of ch15's 'fragile optimism.'"
+        }
+      },
+      "throughlineCheck": {
+        "chapterStartState": "operative dread (from emotional-throughline.json: 'Pre-dawn operational check. Holding the impossible fact of last night's declaration')",
+        "chapterEndState": "existential paralysis (from emotional-throughline.json: 'Motionless in doorway. Cannot determine if desire to follow is love or contract')",
+        "startDiffersFromEnd": true,
+        "matchesPlannedThroughline": true,
+        "noEmotionRepeatedAcrossScenes": true,
+        "completeInversionFromCh15": true
+      },
+      "issues": [],
+      "recommendations": []
+    },
+    {
+      "toolId": "T21",
+      "name": "Vulnerability Ladder",
+      "verdict": "compliant",
+      "sceneBySceneEvidence": {
+        "SCN-43": {
+          "verdict": "compliant",
+          "evidence": "The vulnerability ladder's function in the Black Moment is collapse — every step weaponized. The chapter explicitly references the ladder steps: 'things that are true and that I will lose' (L16) — Lirien's vulnerability in cataloguing Kaelith's sleeping face. The message reveals the cage that surrounded every vulnerability exchange. Lirien's decision to hand over the message (L72-76) is itself a final act of forced vulnerability — not because she chose it but because concealment is no longer possible."
+        },
+        "SCN-44": {
+          "verdict": "compliant",
+          "evidence": "The recontextualization sequence (L100-106) IS the vulnerability ladder collapse rendered in prose. Each step explicitly named and poisoned: 'The particular warmth-vulnerability that had accompanied the Oathbrand removal' (L100) — Step 1 reframed. 'The raw-courage signature of the Calwrath confession' (L100) — Step 2 reframed. 'The bright fierce signature of the first kiss' (L100) — Step 3 reframed. Kaelith's ch15 declaration 'I want this. I want you.' (L102) — the highest step, now 'the most damning proof that the vulnerability had been exploited' (L104). Each higher-stakes surrender is now a higher-stakes violation."
+        },
+        "SCN-45": {
+          "verdict": "compliant",
+          "evidence": "Ladder collapse completes: 'Because I was afraid that you would look at me exactly the way you are choosing not to look at me now' (L160) — Lirien's last vulnerable admission is plain, undecorated, the highest vulnerability she can offer under the circumstances. But it cannot rebuild the ladder — 'something in that sentence was true, and the truth makes this worse' (L164). The tremor-and-suppress (L164) shows Kaelith's own vulnerability breaking through despite the wall. Ladder status: COLLAPSED. Must be rebuilt from zero for recovery."
+        }
+      },
+      "ladderStatus": "COLLAPSED — all steps from ch1-15 weaponized. Recovery requires rebuilt trust from foundation.",
+      "issues": [],
+      "recommendations": []
+    },
+    {
+      "toolId": "T23",
+      "name": "Mystery Box Inventory",
+      "verdict": "partially-compliant",
+      "sceneBySceneEvidence": {
+        "SCN-43": {
+          "verdict": "compliant",
+          "evidence": "MB-008 (loophole) complicated by the contract details — the loophole exists in language but the enforcement mechanism adds urgency. MB-011 (will trust survive) activated by the revelation's scope. No boxes closed — the chapter intensifies rather than resolves."
+        },
+        "SCN-44": {
+          "verdict": "compliant",
+          "evidence": "MB-012 (is attachment real or binding) activated in the most devastating way possible — through the question Lirien cannot answer herself (L108-112). MB-011 (trust survival) driven to crisis: 'Every feeling was built on a lie' suggests the answer is no."
+        },
+        "SCN-45": {
+          "verdict": "compliant",
+          "evidence": "MB-015 (life together) endangered — Vael Seren destroyed, shared future shattered. All active boxes intensified. No boxes opened, no boxes closed. Reader has more active questions than ever."
+        }
+      },
+      "mysteryBoxStatus": {
+        "activeCount": 15,
+        "targetRange": "3-7 per T23 specification",
+        "assessment": "ABOVE TARGET RANGE. 15 active boxes significantly exceeds the 3-7 target. However, this is the Black Moment of a 22-chapter book with dual arcs, multiple conspiracy threads, and layered mysteries. Not all 15 boxes are equally foregrounded in reader consciousness. The chapter itself activates/intensifies 4 specific boxes (MB-008, MB-011, MB-012, MB-015) while the rest remain background. The high count reflects the story's complexity approaching climax.",
+        "foregrounded": [
+          "MB-008 (loophole)",
+          "MB-011 (trust survival)",
+          "MB-012 (real vs binding)",
+          "MB-015 (future)"
+        ],
+        "background": [
+          "MB-001 through MB-010 minus MB-008",
+          "MB-013",
+          "MB-014"
+        ]
+      },
+      "issues": [
+        {
+          "severity": "minor",
+          "description": "Active mystery box count (15) significantly exceeds the T23 target range of 3-7. The specification states the reader should hold 3-7 active questions. At 15, the reader may be holding too many unresolved threads simultaneously. This is mitigated by the chapter's position (late Act 2, approaching resolution), and by the fact that many boxes will close in rapid succession over ch17-22. However, the count is technically non-compliant with the stated target.",
+          "lineRef": "Chapter-level",
+          "recommendation": "This is a structural issue from the plotting phase rather than a drafting-phase error. The chapter correctly intensifies existing boxes rather than opening new ones. The high count should be flagged for the plotting coordinator to ensure boxes close at appropriate rates in ch17-22. No prose changes needed."
+        }
+      ],
+      "recommendations": [
+        "No prose-level action required. Flag to plotting coordinator that 15 active boxes at ch16 exceeds T23 target of 3-7. Verify that ch17-22 close boxes at sufficient rate to bring count into range by story end."
+      ]
+    },
+    {
+      "toolId": "T24",
+      "name": "Subtext in Dialogue",
+      "verdict": "compliant",
+      "sceneBySceneEvidence": {
+        "SCN-43": {
+          "verdict": "compliant",
+          "evidence": "Minimal dialogue, maximum subtext. Kaelith's 'What is it?' (L58) — surface: a question. Subtext: 'I can feel you breaking through the bond. Tell me why before I have to find out myself.' Lirien's stuttered 'I—' and 'There is—' (L64) — surface: failed speech. Subtext: every construction is a frame, and she knows it, and she cannot stop trying to frame."
+        },
+        "SCN-44": {
+          "verdict": "compliant",
+          "evidence": "'Don't.' (L92) — surface: a command to stop. Subtext: 'Every word you say is another lie, and I cannot bear one more.' Kaelith's 'Every feeling was built on a lie' (L116) — surface: factual assessment. Subtext: 'I let you in and you were the weapon. I should have known. I knew the pattern from Calwrath and I chose to trust anyway and here is what trusting costs.' Delivered in casualty-report register — the subtext is in the register choice itself."
+        },
+        "SCN-45": {
+          "verdict": "compliant",
+          "evidence": "Lirien's loophole explanation (L144) — surface: technical solution. Subtext: 'Please believe something in this was real — I was trying to save you, not kill you.' Kaelith's 'And you chose not to tell me' (L148) — surface: factual statement. Subtext: 'The silence was worse than the contract. You could have trusted me with the truth and you chose to be the operative.' Lirien's 'Because I was afraid' (L160) — surface: admission. Subtext: 'I knew the cost of honesty and chose cowardice, and now the cowardice has cost more than the honesty ever would have.' The gap between what is said and what is meant is maintained throughout — no character becomes transparent."
+        }
+      },
+      "subtextDensity": "Every dialogue line carries subtext. The chapter achieves maximum subtext through minimum dialogue — the silences and physical actions between lines carry as much meaning as the words.",
+      "issues": [],
+      "recommendations": []
+    },
+    {
+      "toolId": "T25",
+      "name": "Thematic Argument Scaffolding",
+      "verdict": "compliant",
+      "sceneBySceneEvidence": {
+        "SCN-43": {
+          "verdict": "compliant",
+          "evidence": "TP-1 (Trust as structural failure): The chapter IS the structural failure. Lirien's information management — the 'careful erosion of what stood in its path' (L66) — was the foundation compromise. Trust built on concealment fails when concealment is exposed. TP-2 (Price of the right choice): Lirien's 'right choice' to hide the contract and solve it silently detonates. The operative who chose tactical silence over vulnerable honesty pays the highest price. TP-3 (Chosen vs. only): The binding raises the central question — if the contract shaped desire, was any choice real?"
+        },
+        "SCN-44": {
+          "verdict": "compliant",
+          "evidence": "TP-1: Trust architecture collapses because the foundation was built by an operative managing information flow. The recontextualization sequence (L100-106) tests the thematic argument at maximum intensity — every trust moment is re-evaluated and found to rest on a compromised surface. TP-2: The 'easy answer' (protect through silence) is tested and found catastrophic. TP-3: Weaponized through the question of whether the Oathbrand removal was 'intimacy or positioning,' the confession was 'witnessing or intelligence gathering,' the kiss was 'desire or compliance' (L100)."
+        },
+        "SCN-45": {
+          "verdict": "compliant",
+          "evidence": "TP-1: Embodied through action — Kaelith retreats behind the Calwrath fortification (walls), Lirien is unable to breach the wall because her tool (information management) IS the cause of the collapse. Theme dramatized through character choice, not narrated. TP-2: Lirien's confession 'Because I was afraid' (L160) is the honest version that arrives too late — the right choice (truth) had a window and that window closed. TP-3: Reaches maximum intensity in Lirien's paralysis (L172-178): 'Every impulse toward Kaelith is potentially binding, not love.' The cage question applies to both women. Theme embodied through characters and action, never stated directly."
+        }
+      },
+      "thematicPillarStatus": {
+        "TP1_trustAsStructuralFailure": "At maximum intensity. The argument is fully embodied: trust built on managed information collapses when the management is exposed. The chapter tests the hardest version: can trust survive total compromise of its foundation?",
+        "TP2_priceOfTheRightChoice": "The 'easy answer' (protect through silence) tested and found catastrophic. The harder answer (vulnerable truth) is presented but arrives too late to matter. Lirien's 'Because I was afraid' is the honest version, but honesty after months of concealment cannot undo the damage.",
+        "TP3_chosenVsOnly": "Central question weaponized at identity level. If the Court designed obedience to feel like love, then 'chosen' and 'only' are indistinguishable from inside the cage. Both women face this: Kaelith from outside (was she chosen or used?) and Lirien from inside (does she choose or obey?)."
+      },
+      "themeEmbodiedNotStated": true,
+      "evidenceForEmbodiment": "All three thematic pillars advance through character action, dialogue subtext, and internal experience. No pillar is summarized, explained, or narrated directly. The reader derives the thematic argument from what happens to the characters, not from what the narrator says about it.",
+      "issues": [],
+      "recommendations": []
+    }
+  ],
+  "criticalIssues": [],
+  "minorIssues": [
+    {
+      "toolId": "T16",
+      "description": "MOT-005 (Ythara as raw potential / dissolution of the finished) absent from chapter. Lirien's identity dissolution in SCN-45 is a natural parallel to Ythara's domain. A single subtle echo would strengthen the thematic connection.",
+      "severity": "minor",
+      "recommendation": "Consider adding a brief sensory Ythara echo during Lirien's existential crisis (L172-182) — a flicker of unfinished-ness at the edges of perception."
+    },
+    {
+      "toolId": "T16",
+      "description": "MOT-004 (Quietus as embodied trust) appears only as a plot reference (L200), not as proper motif deployment with body-as-knowledge imagery.",
+      "severity": "minor",
+      "recommendation": "The Quietus reference could include a brief embodied-trust image — the direction northeast experienced as physical pull."
+    },
+    {
+      "toolId": "T23",
+      "description": "15 active mystery boxes exceeds the T23 target range of 3-7. This is a structural/plotting-phase issue, not a drafting error. The chapter correctly intensifies existing boxes without opening new ones.",
+      "severity": "minor",
+      "recommendation": "Flag to plotting coordinator for box-closure pacing review in ch17-22. No prose changes needed."
+    }
+  ],
+  "overallNotes": "Chapter 16 is a masterfully crafted Black Moment that demonstrates exceptional craft tool compliance across all 16 active tools. The prose achieves maximum emotional devastation through restraint rather than excess — the quietest chapter is the most devastating. Tone contract (T5) is maintained at maximum intensity: no melodrama, no shouting, devastation delivered through clinical language and the gap between bureaucratic prose and its emotional content. The dual-arc interleave (T12) is at maximum — a single revelation destroys both arcs simultaneously. Voice fingerprinting (T17) is excellent: Lirien's progressive degradation from precise to fragmenting to plain IS the characterization. The symbolic motif work (T16) is strong on water (MOT-003, five appearances with critical evolution from intimacy to violation) and Pallor (MOT-001, framing device), with minor gaps on Ythara (MOT-005, absent) and Quietus (MOT-004, plot reference only). Mystery box count (T23) exceeds target range at 15 active boxes, but this is a plotting-level issue rather than a drafting failure. Overall verdict: PASSED. This chapter meets the craft standard for the story's most critical emotional beat. The three minor issues identified are enhancement opportunities, not compliance failures."
+}

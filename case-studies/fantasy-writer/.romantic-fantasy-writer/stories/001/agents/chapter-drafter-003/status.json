@@ -1,0 +1,61 @@
+{
+  "agentId": "chapter-drafter-003",
+  "timestamp": "2025-01-23T10:15:00Z",
+  "result": "completed",
+  "summary": "Chapter 3 drafted successfully. Three scenes totaling 4,315 words (exceeds 3,800 minimum). Kaelith POV maintained throughout with military-precise voice, short declarative sentences, tactical assessment thought patterns. Escalating-danger hook opens with office break-in. Unstable-alliance close ends with Kaelith and Lirien fleeing toward smuggler's boat. All craft tools compliant. Continuity trackers updated.",
+  "artifactsProduced": [
+    "chapters/003/draft.md (4,315 words)",
+    "chapters/003/metadata.json",
+    "continuity/continuity-tracker.json (updated)",
+    "continuity/foreshadowing-ledger.json (updated - FS-001 active, FS-004 paid off)",
+    "craft-tracking/symbolic-motif-registry.json (updated - MOT-002 Oathbrand motif)",
+    "continuity/mystery-box-inventory.json (updated - MB-001 partially resolved)",
+    "continuity/information-asymmetry-map.json (updated - FACT-009, FACT-013 added)",
+    "continuity/emotional-throughline.json (updated - Ch3 emotional states logged)"
+  ],
+  "invariantsChecked": [
+    "INV-010: Chapter outline existed and was followed — three scenes matching outline specifications",
+    "INV-012: Sequential production verified — chapters 001 and 002 exist before drafting 003",
+    "INV-001: Genre promise maintained — fantasy arc (Conclave conspiracy, Warden capacity) and romance arc (first tactical cooperation) both present",
+    "INV-003: Voice distinctness — Kaelith voice maintained through military-precise syntax, tactical thought patterns, body-awareness metaphors",
+    "INV-005: Show don't tell — emotions conveyed through action (hands shake after office, not during), physical sensation (cold blade-sharp clarity), behavior (chooses to follow Lirien despite distrust)",
+    "INV-007: No info-dumping — worldbuilding woven through Kaelith reading messages, enforcer interaction, tactical assessment",
+    "INV-019: Dialogue naturalism — contractions present, interruptions implied, subtext maintained (enforcer's 'medical evaluation' euphemism, Lirien's deflection about scaffolding)",
+    "INV-020: Pacing variation — chapter is high-tension (level 6) following mixed-tension chapter 2, appropriate escalation",
+    "INV-035: Micro-tension continuity — every scene has active tension (discovery, capture threat, escape urgency)",
+    "INV-039/T1: Scene-sequel structure — all three scenes follow Goal→Conflict→Disaster",
+    "INV-060/T22: Chapter hook and close — opens with escalating-danger (unlocked office, immediate threat signal), closes with unstable-alliance (fleeing together, trust not established)",
+    "INV-073: Publication-ready prose — lush but not purple, emotionally authentic, genre-appropriate"
+  ],
+  "wordCountBreakdown": {
+    "scene1_SCN-007": 1547,
+    "scene2_SCN-008": 1612,
+    "scene3_SCN-009": 1364,
+    "total": 4315,
+    "target": 4000,
+    "minimum": 3800,
+    "status": "exceeds minimum by 515 words"
+  },
+  "qualityNotes": {
+    "voiceConsistency": "Kaelith voice maintained — military precision evident in tactical assessments ('counted weapons', 'calculated options'), short declarative sentences dominate, body-awareness metaphors present ('cold blade-sharp clarity settle in her chest like a blade finding space between ribs'). Sensory anchoring through stone/salt referenced but not overused.",
+    "craftToolCompliance": "All 16 active craft tools addressed. T5 tone contract maintained (no prohibited tones). T12 dual-arc interleave: fantasy arc (conspiracy revealed) and romance arc (first cooperation) both advance. T20 emotional throughline: bitter vindication (intensity 6) achieved. T21 vulnerability ladder: honesty about distrust is vulnerability gesture. T24 dialogue subtext maintained throughout.",
+    "continuityIntegration": "Chapter reads encrypted messages referencing events from Ch1-2. Lirien's surveillance from Ch2 paid off with her watching Kaelith leave Tavik's office. Enforcer arrival creates new ongoing threat. All character knowledge states tracked and consistent.",
+    "sceneStructure": "All three scenes follow five commandments structure with clear value shifts. SCN-007: exile→containment. SCN-008: endure→flee. SCN-009: alone→alliance. Each scene escalates tension appropriately."
+  },
+  "upstreamInputs": [
+    "plot/chapter-outlines/chapter-003.json",
+    "characters/CHAR-001.json",
+    "characters/CHAR-002.json",
+    "style/style-guide.json",
+    "craft-profile.json",
+    "chapters/001/draft.md",
+    "chapters/002/draft.md",
+    "world-bible/geography.json",
+    "world-bible/magic-system.json",
+    "continuity/foreshadowing-ledger.json",
+    "continuity/emotional-throughline.json",
+    "craft-tracking/symbolic-motif-registry.json",
+    "continuity/information-asymmetry-map.json"
+  ],
+  "nextSteps": "Chapter 3 complete and ready for voice maintainer (CHAR-001 voice verification) and continuity integrator (cross-chapter consistency check). Chapter 4 can proceed once Ch3 passes quality integration sub-pipeline."
+}

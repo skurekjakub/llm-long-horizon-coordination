@@ -1,0 +1,241 @@
+{
+  "reportType": "developmental-edit",
+  "chapter": 10,
+  "pov": "CHAR-002",
+  "generatedAt": "2025-07-18T14:00:00Z",
+  "structuralVerdict": "pass",
+  "overallAssessment": "Chapter 10 is a structurally effective recovery-and-investigation chapter that delivers its primary mandates: advancing the conspiracy subplot through documentary evidence, transitioning the romance from 'acknowledged care' into 'curiosity and intimacy,' and providing necessary breathing room between ch9's high-intensity Ythara exposure (tension 8) and ch11's midpoint transformation (tension 9). The three-scene structure creates excellent internal pacing variation — high-tension archive infiltration → medium-tension strategic debate → low-tension intimate conversation — and the descent from operational competence into personal vulnerability across those scenes is the chapter's strongest structural achievement. Lirien's parenthetical assessment system going silent in scene 3 is a masterful character development marker that earns the emotional pivot without stating it. The archive scene delivers genuine investigative tension, the strategic debate between Kaelith and Lirien is well-argued from both sides, and the fireside conversation is the most emotionally resonant scene in the story so far. Two major structural concerns: (1) the naming of Thalen Reyvas as the conspiracy's architect front-loads BEAT-009's revelation, which is structurally planned for chapter 12, and may undermine that beat's impact; (2) subplot SUB-003 (Ashborne Legacy) lists chapter 10 as an intersection point but receives no representation in the draft. These are addressable without restructuring the chapter's core arc. Minor findings relate to vulnerability ladder attribution, a missed opportunity for friction around Lirien's information withholding, and word count overshoot.",
+  "arcProgressionAssessment": {
+    "fantasyArc": {
+      "assessment": "Strong advancement — possibly too much. The archive investigation delivers the chapter's most important fantasy revelation: forty years of deliberate Pallor sabotage through modified Dimming rites, monitoring station decommissioning, and redacted reports. The evidence is rendered through Lirien's investigative perspective with satisfying procedural detail — the reader experiences discovery through pattern recognition rather than exposition. The discovery that the Dimming rites follow an astronomical schedule designed to maximize cumulative membrane damage is an excellent specificity that makes the conspiracy feel engineered rather than convenient. The strategic debate in scene 2 advances the fantasy arc by establishing the Quietus-first priority and the three-week timeline to the next rite. However, the naming of Thalen Reyvas as the conspiracy's architect in this chapter is structurally premature — see DEV-010-001.",
+      "beatDelivered": "Conspiracy Clues Accumulate — Archive Evidence (dual-arc timeline ch10 beat)",
+      "beatFidelity": "high in execution, but exceeds planned scope by delivering perpetrator identification (planned for BEAT-009 / ch12)"
+    },
+    "romanceArc": {
+      "assessment": "Strong and emotionally earned advancement. The romance moves from 'acknowledged care' (ch8 end state) to 'curiosity and intimacy' — a genuine escalation that marks the first time Lirien initiates personal engagement without operational justification. The fireside scene (SCN-030) is the chapter's emotional center and it succeeds on multiple levels: the question arrives 'before its authorization' (perfect Lirien-voice framing of spontaneity), the internal recognition of 'wanting to know' is rendered with devastating precision, and the reciprocal sharing of fae star perception and coastal memories creates genuine mutual disclosure. The parenthetical assessment system going silent is the single most powerful romance marker in the chapter — the absence of professional annotation IS the confession. The final passage, where they fall asleep without establishing watch rotation, lands as a quietly seismic threshold: the surrender of vigilance as intimacy. Vulnerability ladder step 6 is delivered effectively, though the attribution differs from the romance-arc.json design — see DEV-010-003.",
+      "currentStage": "attraction (unwanted attraction substage, chapters 7-10 — approaching transition to resistance at midpoint)",
+      "vulnerabilityLadderStep": 6,
+      "vulnerabilityLadderFidelity": "partial — step attributed to CHAR-001 in romance-arc.json but delivered primarily through CHAR-002 in draft"
+    },
+    "dualArcInterleave": {
+      "assessment": "Good. The dual-arc timeline correctly marks this chapter's intersection type as 'independent' — fantasy and romance arcs run parallel, each advancing without directly intersecting. The archive investigation advances the conspiracy; the fireside conversation advances interpersonal intimacy. Both receive adequate space. The only connection point — Kaelith using the word 'architecture' which Lirien borrows for the conspiracy analysis — is subtle and effective. The genre balance is maintained: fantasy provides the chapter's central plot discovery; romance provides the chapter's emotional center. This matches the dual-arc timeline's note that romance takes foreground with fantasy in moderate presence.",
+      "intersectionType": "independent",
+      "genreBalance": "fantasy moderate / romance strong — consistent with the dual-arc timeline's 'Romance takes foreground. Fantasy provides discovery; romance provides connection.'"
+    }
+  },
+  "pacingAssessment": {
+    "tensionProgression": "The tension sequence ch8(6) → ch9(8) → ch10(5) → ch11(9) is well-designed. Chapter 10 functions as a necessary recovery chapter, providing breathing room after ch9's high-intensity Ythara exposure and before ch11's midpoint transformation. No INV-020 violation — the pattern alternates between medium, high, low, and peak tension levels across four consecutive chapters.",
+    "internalPacing": "Excellent three-scene variation within the chapter: SCN-028 (archive infiltration, tension ~6) → SCN-029 (strategic debate, tension ~5) → SCN-030 (intimate conversation, tension ~3). The descending tension arc creates a structural funnel toward vulnerability, which is exactly what the chapter requires. T20 pacing variation is satisfied at both the inter-chapter and intra-chapter levels.",
+    "pacingConcern": "None. This chapter fulfills its recovery mandate while maintaining micro-tension throughout — the archive infiltration risk, the conspiracy's scope, and Lirien's internal emotional conflict provide continuous tension sources even in the quieter scenes."
+  },
+  "thematicAssessment": {
+    "pillarEngagement": [
+      {
+        "pillar": "TP-1: Trust as structural failure",
+        "engagement": "Strong. Lirien's withholding of the Reyvas name and her clinical justification ('deception by omission, operational grade, justified by incomplete analysis') directly engages the trust theme. The parenthetical noting that 'the discomfort was not proportional to the justification' is the thematic argument manifesting as internal conflict — Lirien's operative framework cannot account for the emotional cost of withholding from someone she cares about. Kaelith's 'You had the name before today' observation names the omission without accusation, which is a mature thematic handling — trust is tested by omission, and the test matters even when the omission is resolved."
+      },
+      {
+        "pillar": "TP-2: The price of the right choice",
+        "engagement": "Moderate. The strategic debate (Quietus vs. pursue Reyvas) engages this pillar — both options have costs. Kaelith's argument for the Quietus is structurally sound but requires accepting that the next Dimming rite will proceed. The 'right choice' here is the strategic one, and the price is allowing continued sabotage."
+      },
+      {
+        "pillar": "TP-3: Chosen versus only",
+        "engagement": "Strong. The entire fireside scene is an extended meditation on 'chosen versus only.' Lirien's question has no operational value — she asks because she WANTS to know, not because she needs to. The word 'we' slipping into her speech is marked as significant. The final passage — sleeping near each other 'because they wanted to, and that wanting being, for the first time, enough' — is the chapter's thematic thesis statement."
+      }
+    ],
+    "thematicVerdict": "All three pillars engaged. TP-3 receives the most powerful treatment through the fireside scene."
+  },
+  "emotionalVarietyCheck": {
+    "currentChapterState": {
+      "character": "CHAR-002 (Lirien)",
+      "dominantState": "curiosity and intimacy — investigative focus dissolving into personal wanting",
+      "startState": "investigative focus, operative discipline, carrying the weight of withheld intelligence",
+      "endState": "guarded openness — operative armor breached by personal curiosity, classification system failing, choosing proximity"
+    },
+    "comparisonWithPreviousChapters": {
+      "ch8_CHAR002": {
+        "dominantState": "acknowledged care — terrified of Kaelith dying, terror has no operational justification",
+        "verdict": "DISTINCT. Ch8 Lirien is in fear/care territory; ch10 Lirien is in curiosity/wanting territory. Both involve emotional engagement with Kaelith but from different angles — ch8 is reactive (fear of loss), ch10 is proactive (desire to know). INV-037 satisfied."
+      },
+      "ch9_CHAR001": {
+        "dominantState": "acknowledged dependence as survival",
+        "verdict": "DISTINCT. Different character, different emotional territory entirely."
+      }
+    },
+    "inv037Verdict": "No violation. Lirien's emotional state in ch10 (curiosity, personal wanting) is clearly distinct from her ch8 state (care driven by fear of loss)."
+  },
+  "craftToolCompliance": {
+    "T5_ToneContract": {
+      "status": "compliant",
+      "notes": "Morally complex and atmospherically taut throughout. The archive infiltration is rendered with professional restraint. The conspiracy revelation lands as cold clarity rather than melodrama. The intimate scene avoids sentimentality — the emotion is conveyed through restraint, omission, and the absence of classification rather than through declaration. No forbidden tones detected."
+    },
+    "T6_StakesEscalation": {
+      "status": "compliant",
+      "notes": "Stakes escalate from theoretical sabotage to documented forty-year institutional conspiracy with a named architect. The astronomical schedule detail raises the sophistication of the threat. The three-week timeline to the next rite adds urgency. Stakes appropriately mid-Act-II: relational and institutional, with existential implications."
+    },
+    "T8_InternalExternalResistance": {
+      "status": "compliant",
+      "notes": "Internal: Lirien's operative conditioning resists personal engagement throughout, manifesting as classification attempts that fail. Her parenthetical system is the literalization of internal resistance. External: archive security, municipal officers, the conspiracy's institutional power."
+    },
+    "T12_DualArcInterleave": {
+      "status": "compliant",
+      "notes": "Arcs run parallel per dual-arc timeline's 'independent' intersection type. Both receive adequate space and neither dominates at the other's expense."
+    },
+    "T15_ForeshadowingPayoff": {
+      "status": "compliant",
+      "notes": "Multiple plants: Thalen Reyvas named for Act III confrontation; Dimming rites schedule for next rite near Quietus; ideological motivation question (WHY wake Ythara?) left open as mystery box; child with seed basket (potential operative) planted for possible payoff."
+    },
+    "T16_SymbolicMotifWeaving": {
+      "status": "compliant",
+      "notes": "MOT-001 (Pallor) rendered through archived documents as degrading institutional artifact. MOT-003 (water/infiltration/surface-depth) pervasive throughout Lirien's POV — investigation as infiltration, truth as undercurrent, intimacy as permeability, the coast conversation as literal water memory. Motifs appear naturally integrated, not forced."
+    },
+    "T17_VoiceFingerprinting": {
+      "status": "compliant",
+      "notes": "Lirien's voice is highly distinctive and consistent: parenthetical assessments, operative vocabulary ('deception by omission, operational grade'), water/infiltration metaphors, clinical emotional classification, precise cataloguing fragments. The voice evolution markers are correctly deployed — the parenthetical system going silent around Kaelith is an established voice-evolution axis. No water-architecture crossover issues."
+    },
+    "T18_InformationAsymmetry": {
+      "status": "compliant",
+      "notes": "Well-handled asymmetry: Lirien withholds the Reyvas name initially; Kaelith reveals she suspected; Kaelith observes Lirien's briefing-protocol recitation habit. The resolution narrows the asymmetry (both now know Reyvas) while maintaining reader advantage (we see Lirien's internal emotional state that Kaelith cannot)."
+    },
+    "T20_EmotionalThroughline": {
+      "status": "compliant",
+      "notes": "Clear emotional progression from investigative focus through strategic partnership to personal curiosity. The throughline is tracked through the parenthetical system's gradual failure — present in scenes 1-2, absent in scene 3. No repetition of ch8's emotional register."
+    },
+    "T21_VulnerabilityLadder": {
+      "status": "compliant-with-note",
+      "notes": "Step 6 delivered effectively in spirit — the first personal question without operational justification. However, the step is attributed to CHAR-001 (Kaelith) in the romance-arc.json but delivered through CHAR-002 (Lirien) in the draft. See DEV-010-003."
+    }
+  },
+  "findings": [
+    {
+      "id": "DEV-010-001",
+      "severity": "major",
+      "category": "arc",
+      "location": "SCN-028 and SCN-029 — the Thalen Reyvas identification",
+      "description": "Front-loaded conspiracy revelation risks undermining BEAT-009. The plot-structure.json places BEAT-009 ('Revelation — The Conspiracy Has a Human Hand') at chapter 12, and the try-fail cycle for chapter 10 defines the expected outcome as 'fail' with the note: 'Thenndal and Calwrath-era clues suggest foul play, but the evidence still points to pattern, not perpetrator.' However, the chapter 10 draft (following its outline) names Thalen Reyvas as the conspiracy's architect, identifies a forty-year timeline, documents an astronomical schedule, and traces a consolidated authorization chain. This level of specificity exceeds the evidence-gathering planned for ch10 and potentially preempts ch12's structural function. If the perpetrator is already named and the conspiracy's mechanism already documented in ch10, BEAT-009 in ch12 needs to deliver something substantially beyond what ch10 has already established — otherwise it becomes redundant confirmation rather than revelation. Additionally, the dual-arc timeline calls the ch12 perpetrator 'Thalen Veyris' while the ch10 outline and draft use 'Thalen Reyvas' — a naming inconsistency that should be reconciled.",
+      "suggestedFix": "Two approaches: (A) SCALE BACK CH10: Reduce the specificity of the archive evidence — Lirien finds the pattern of modified Dimming rites and decommissioned monitoring stations but does NOT identify the consolidated authorization chain or the name Reyvas. The evidence points to institutional sabotage but the perpetrator remains unnamed. This preserves BEAT-009 for ch12 as designed. The sealed waystation documents can contain partial references that become legible only when cross-referenced with additional evidence obtained later. (B) REDEFINE CH12: Accept that the perpetrator is named in ch10 and redesign BEAT-009 to deliver a qualitatively different revelation — perhaps the WHY (ideological motivation, Ythara theology) or the HOW (the specific mechanism connecting Dimming rites to Ythara's awakening) or the connection to Thenndal's death. In either case, reconcile the name: choose either 'Reyvas' or 'Veyris' and apply consistently. Approach (A) is recommended as it preserves the try-fail cycle's designed rhythm and gives ch12 its planned dramatic weight."
+    },
+    {
+      "id": "DEV-010-002",
+      "severity": "major",
+      "category": "structure",
+      "location": "Overall chapter — missing subplot intersection",
+      "description": "Subplot SUB-003 (Ashborne Legacy and Kaelith's Vindication) lists chapter 10 as one of three intersection points (chapters 10, 18, 22), with an arc described as 'reputation burden → survivor testimony → covert aid → moral vindication.' At chapter 10, the subplot should be at the 'survivor testimony' stage — former or current Legion figures beginning to surface. However, the chapter contains no Ashborne Legacy elements: no references to former Legion members, no survivor testimony, no Calwrath-related material advancing Kaelith's vindication, and no indication that the Ashborne legacy intersects with the archive investigation. Similarly, the try-fail cycle expected 'Thenndal and Calwrath-era clues' in the chapter 10 evidence, but the archive evidence is entirely about Dimming rites and monitoring stations — no Thenndal connection. These absences suggest the chapter outline departed from the high-level plot structure without accounting for these planned intersections.",
+      "suggestedFix": "Integrate a small Ashborne Legacy element into the chapter without disrupting the existing structure. Options: (A) During the Aranthem approach or archive visit, include a brief encounter with a former Ashborne soldier — perhaps the child watching the road is connected to a retired Legionnaire who provides cover or direction; (B) Among the archive documents, Lirien discovers a reference to Commander Ossya Thenndal's activities in the region — connecting the Quietus path history to the Pallor sabotage timeline and seeding the Warden lineage revelation for ch11; (C) Kaelith mentions a Calwrath-related memory triggered by the archive's military administrative records. Option (B) is recommended because it serves double duty — advancing SUB-003, connecting to the try-fail cycle's expected Thenndal evidence, and foreshadowing the Warden lineage revelation at midpoint."
+    },
+    {
+      "id": "DEV-010-003",
+      "severity": "minor",
+      "category": "romance",
+      "location": "SCN-030 — the stars question and vulnerability ladder step 6",
+      "description": "Vulnerability ladder step 6 in romance-arc.json is attributed to CHAR-001 (Kaelith): 'Kaelith asks Lirien a question with no tactical value — \"What do fae call the stars in your territory?\" — simply because she wants to know something about Lirien that is not threat-adjacent or survival-relevant.' The dual-arc timeline for ch10 also assigns the initiating question to Kaelith. However, the chapter outline (which the drafter correctly followed) and the draft assign the initiating personal question to Lirien ('What were they like from the coast'). In the draft, it is Lirien who breaks the operational silence with a personal question, and the internal experience of asking — 'the words arrived before their authorization' — is rendered from Lirien's perspective. Kaelith's reciprocal vulnerability (sharing coast memories, asking 'What else') follows rather than initiates. The draft's choice works well from a craft perspective — a Lirien POV chapter is the right place to show Lirien's internal shock at her own spontaneity — but it reassigns the vulnerability step from Kaelith to Lirien, which affects the designed pacing of each character's vulnerability progression.",
+      "suggestedFix": "This is not a structural flaw — the emotional beat is effectively delivered. Two options: (A) ACCEPT THE REASSIGNMENT and note that both characters demonstrate vulnerability in this scene (Lirien through initiating, Kaelith through sharing). Update the romance-arc.json tracking to reflect that step 6 is a shared step delivered primarily through Lirien's POV. (B) ADJUST THE SCENE to have Kaelith initiate — the comfortable silence is broken by Kaelith asking Lirien about fae star perception, which then prompts Lirien to ask about the coast. This would align with the romance-arc.json while still allowing Lirien's subsequent disclosure to provide the POV-internal vulnerability experience. Recommend option (A) — the draft's version is emotionally stronger because Lirien's initiation represents a more dramatic break from her established pattern (operative who never shares without tactical purpose) than Kaelith's would (Kaelith's curiosity about Lirien is already emerging in prior chapters)."
+    },
+    {
+      "id": "DEV-010-004",
+      "severity": "minor",
+      "category": "romance",
+      "location": "SCN-029 — Kaelith's reaction to Lirien's information withholding",
+      "description": "Lirien withheld the Reyvas name from Kaelith, knowing it from the waystation documents before the archive visit. When Kaelith identifies this omission ('You had the name before today'), the confrontation is structurally understated — Lirien begins her clinical justification ('Sharing unverified intelligence creates—'), Kaelith cuts her off by revealing she has observed Lirien reciting briefing protocols aloud, and the conversation redirects to strategic analysis. The scene handles the omission with sophistication, but Kaelith's reaction is too mild given her established character profile. CHAR-001's internal resistance layer IR-K-03 ('Distrust of institutional authority') and her wound (being used by institutions that withheld critical information) mean that discovering Lirien withheld intelligence should trigger a stronger response — not necessarily anger, but the specific tension of a woman who was once destroyed by institutional omission recognizing the pattern in someone she has begun to trust. The scene resolves the tension too quickly, moving to strategic discussion within a few exchanges.",
+      "suggestedFix": "Extend the beat between Kaelith's identification of the omission and the strategic discussion. Add 2-3 sentences of observable reaction from Kaelith that Lirien registers — perhaps Kaelith's posture changes, her expression shifts to the 'controlled stillness' Lirien has learned to read, or there is a brief silence loaded with the weight of institutional betrayal patterns. Lirien should observe this reaction and recognize its source — not as anger but as the specific wariness of someone who has been omitted-from before. This creates micro-tension that persists through the strategic discussion rather than being fully resolved, and it foreshadows the ch16 black moment where omission becomes the instrument of devastation. The current version handles the omission intellectually; it should also handle it emotionally."
+    },
+    {
+      "id": "DEV-010-005",
+      "severity": "minor",
+      "category": "pacing",
+      "location": "Overall chapter",
+      "description": "Word count overshoot: 4,576 words against a target of 4,100 (11.6% over). The chapter justifies its length through the three-scene structure and the need for both investigative detail and intimate conversation, but the fireside scene (SCN-030) — while emotionally powerful — runs long relative to the chapter's overall economy. Kaelith's extended coast monologue (the tide pool story, the fishermen's children, the color of morning water) is beautiful prose but occupies significant page-space in a chapter that is already over target.",
+      "suggestedFix": "Tighten during line editing rather than structural revision. The coast monologue can be compressed to its most essential elements — the tide pool wall story is the thematic core (permanence built through repeated failure) and should be preserved; the fishermen's children and the color of morning water are atmospheric but could be trimmed. Target: bring the chapter to approximately 4,200-4,300 words by tightening the coast passage and compressing the final 'they fell asleep' passage, which currently restates the emotional throughline with more redundancy than necessary."
+    },
+    {
+      "id": "DEV-010-006",
+      "severity": "minor",
+      "category": "structure",
+      "location": "SCN-028 — the child with the seed basket",
+      "description": "A child selling roasted seeds is introduced with notable specificity — 'watching the road with the discipline of someone paid to do so' — and followed through the gate, then shown pretending interest in a cobbler's display while maintaining surveillance. This level of detail signals narrative importance (Chekhov's principle) and likely plants a minor plot thread. However, the child receives no resolution or further mention within the chapter, and the metadata's foreshadowing notes do not track this element. If the child is a plant for a later payoff (surveillance network, Ashborne connection, Conclave operative), the foreshadowing ledger should track it. If not, the specificity risks creating an unfulfilled reader expectation.",
+      "suggestedFix": "Verify whether the child is tracked in the foreshadowing ledger (craft-tracking/foreshadowing-ledger.json). If intended as a payoff in a later chapter, add it to the ledger. If not intended for payoff, reduce the specificity of the child's description slightly during line editing — keep the atmospheric detail but soften the surveillance implication so readers don't expect a narrative return."
+    },
+    {
+      "id": "DEV-010-007",
+      "severity": "suggestion",
+      "category": "arc",
+      "location": "SCN-029 — the strategic debate",
+      "description": "The strategic debate (pursue Reyvas vs. continue to Quietus) is well-argued but resolved quickly — Kaelith presents the structural argument, Lirien evaluates it, finds it sound, and agrees within a single exchange. While the narrative notes that what convinced Lirien was 'not the soundness but the expression on Kaelith's face,' the debate itself could benefit from slightly more friction. This is a genuine dilemma with costs on both sides, and allowing it to breathe for an additional exchange would (a) demonstrate that the stakes of the choice are real, (b) give Lirien's counter-argument (exposing the authorization chain could prevent future rites) more weight before Kaelith's rebuttal, and (c) increase the value shift of the scene by making the 'we' in 'We have a choice' feel more earned through collaborative reasoning rather than quick agreement.",
+      "suggestedFix": "Add 1-2 additional exchanges to the strategic debate. Lirien could raise the counter-argument that intelligence about Reyvas has a shelf life — if they do not act now, the name may become worthless. Kaelith's response could then address this specifically: disrupting one rite is a battle, not a war, and the foundation (the seal) is what keeps every future battle from being meaningless. This would make the decision feel genuinely weighed rather than quickly resolved."
+    },
+    {
+      "id": "DEV-010-008",
+      "severity": "suggestion",
+      "category": "romance",
+      "location": "SCN-030 — the transition from operational to personal silence",
+      "description": "The transition from scene 2's strategic conversation to scene 3's personal conversation is marked by a section break and a narrative passage describing the difference between operational silence and this new, open silence. The transition is effective, but the mechanism — Lirien sitting still and choosing NOT to manufacture operational function — could be strengthened by including a brief moment where Lirien almost retreats to familiar ground (reaching for the documents, starting to calculate tomorrow's route) and then deliberately stops herself. This would make the choice to sit in the unclassified silence feel more active and costly, aligning with her character's operative conditioning."
+    }
+  ],
+  "findingSummary": {
+    "critical": 0,
+    "major": 2,
+    "minor": 4,
+    "suggestion": 2,
+    "totalFindings": 8
+  },
+  "sceneValueShiftAudit": {
+    "SCN-028": {
+      "designedShift": "From 'sabotage is theoretical' to 'conspiracy has documented history and institutional protection'",
+      "deliveredShift": "From 'sabotage is theoretical' to 'conspiracy has documented forty-year history, named architect, and institutional protection'",
+      "verdict": "Delivered — exceeds designed scope (see DEV-010-001)",
+      "inv040Compliant": true
+    },
+    "SCN-029": {
+      "designedShift": "From 'we must reach the Quietus' to 'we must expose the saboteur or reaching the seal is meaningless — but Quietus first'",
+      "deliveredShift": "From 'we must act on this intelligence' to 'the Quietus is the foundation; everything else is decoration — but names do not become unknown'",
+      "verdict": "Delivered — slightly different framing but equivalent value shift. Kaelith's 'decoration' language and Lirien's 'names do not become unknown' capture both halves of the designed shift.",
+      "inv040Compliant": true
+    },
+    "SCN-030": {
+      "designedShift": "From 'we speak only of tactics' to 'we are people having a conversation because we want to'",
+      "deliveredShift": "From operational silence to open silence — from operative-and-target to two people choosing proximity",
+      "verdict": "Delivered — exceeded. The shift is larger than designed, moving from tactical conversation to personal disclosure to physical proximity and sleep without watch rotation.",
+      "inv040Compliant": true
+    }
+  },
+  "tryFailCycleAudit": {
+    "activeCycles": [
+      {
+        "challenge": "Prove the Pallor is being sabotaged and identify the saboteur",
+        "designedOutcome": "fail — 'Thenndal and Calwrath-era clues suggest foul play, but the evidence still points to pattern, not perpetrator'",
+        "actualOutcome": "exceeds designed outcome — perpetrator named (Thalen Reyvas), mechanism documented (modified Dimming rites on astronomical schedule), authorization chain traced",
+        "concern": "See DEV-010-001"
+      },
+      {
+        "challenge": "Build enough trust to resist Ythara and choose each other freely",
+        "designedOutcome": "incremental advancement",
+        "actualOutcome": "advancement — first personal conversation, mutual disclosure, physical proximity chosen without operational justification",
+        "concern": "none — this is appropriate progression for ch10"
+      }
+    ]
+  },
+  "inv020Check": {
+    "chapterSequence": [
+      {"chapter": 8, "tension": 6, "type": "medium"},
+      {"chapter": 9, "tension": 8, "type": "high"},
+      {"chapter": 10, "tension": 5, "type": "medium-low"},
+      {"chapter": 11, "tension": 9, "type": "high-peak"}
+    ],
+    "verdict": "COMPLIANT. No three consecutive chapters at similar tension levels. Recovery chapter (ch10) is correctly positioned between high-intensity chapters."
+  },
+  "upstreamRefs": [
+    "chapters/010/draft.md",
+    "chapters/010/metadata.json",
+    "plot/chapter-outlines/chapter-010.json",
+    "plot/plot-structure.json",
+    "plot/dual-arc-timeline.json",
+    "plot/tension-map.json",
+    "romance-arc.json",
+    "story-concept.json",
+    "characters/CHAR-001.json",
+    "characters/CHAR-002.json",
+    "plot/chapter-outlines/chapter-008.json",
+    "plot/chapter-outlines/chapter-009.json",
+    "plot/chapter-outlines/chapter-011.json"
+  ]
+}

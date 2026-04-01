@@ -1,0 +1,75 @@
+{
+  "chapterNum": 4,
+  "pov": "CHAR-002",
+  "povTransitionMotivation": "Switch to Lirien to reveal why she intervened and to show the direct confrontation where Kaelith demands answers. This is the 'debate' moment where both women must decide whether cooperation is possible",
+  "scenes": [
+    {
+      "id": "SCN-010",
+      "goal": "Lirien retreats to her quarters after the enforcer confrontation, attempting to rationalize her intervention as operationally sound",
+      "conflict": "She cannot construct a mission-compliant justification. She acted to protect Kaelith, and that protection directly conflicts with the kill contract",
+      "disaster": "Lirien realizes she has compromised mission integrity. The Seep will demand explanation, and she has none that satisfies contract logic",
+      "valueShift": "From 'contracts are absolute' to 'I chose to violate the contract and I would do it again'",
+      "fiveCommandments": {
+        "incitingIncident": "Lirien attempts to file an operational report justifying the intervention",
+        "complication": "Every justification she constructs is transparent rationalization",
+        "crisis": "Report the deviation honestly or construct a plausible lie?",
+        "climax": "Lirien writes a minimal report noting 'evolving tactical considerations' without detail",
+        "resolution": "She knows this will not satisfy the Seep, but delay is her only option"
+      }
+    },
+    {
+      "id": "SCN-011",
+      "goal": "Kaelith confronts Lirien in a neutral location — the garrison tavern, evening, low visibility",
+      "conflict": "Kaelith asks the dangerous question directly: 'Why haven't you killed me yet?'",
+      "disaster": "Lirien cannot answer with contract truth (because killing you may destroy knowledge the world needs) without revealing too much, and cannot answer with personal truth (because you are not what I expected) without admitting attachment",
+      "valueShift": "From operational control to exposed uncertainty",
+      "fiveCommandments": {
+        "incitingIncident": "Kaelith sits down across from Lirien without asking permission",
+        "complication": "Kaelith's directness bypasses all deflection strategies",
+        "crisis": "Lie convincingly, tell partial truth, or admit the mission paradox?",
+        "climax": "Lirien chooses partial truth: 'You are more useful alive than dead, for reasons I am still determining'",
+        "resolution": "Kaelith accepts this as tactical honesty. Neither woman trusts the other, but both recognize they are operating in uncertainty"
+      }
+    },
+    {
+      "id": "SCN-012",
+      "goal": "Lirien attempts to extract information from Kaelith about the Oathbrand anomaly and the Pallor reaction",
+      "conflict": "Kaelith deflects, unwilling to give information without receiving it. The conversation becomes a negotiation",
+      "disaster": "Lirien realizes Kaelith knows more about her own suppression than the Seep briefing suggested, and Kaelith realizes Lirien knows about the Pallor crisis. Both have pieces of a puzzle neither can solve alone",
+      "valueShift": "From 'information extraction' to 'mutual dependence is emerging'",
+      "fiveCommandments": {
+        "incitingIncident": "Lirien asks about the Oathbrand's behavior during the Pallor tear",
+        "complication": "Kaelith counters: 'Why do you care?'",
+        "crisis": "Reveal the Pallor crisis to gain cooperation, or withhold and lose the tactical opening?",
+        "climax": "Lirien reveals that the Pallor is failing across the empire and that Kaelith's suppression is reacting to ontological disturbances",
+        "resolution": "Kaelith absorbs this information in silence. She does not commit to cooperation, but she does not leave. The negotiation remains open"
+      }
+    }
+  ],
+  "emotionalArc": {
+    "startState": "Lirien begins in defensive rationalization — trying to explain away her own choices through operational logic. She is failing and knows it",
+    "endState": "She ends in acknowledged uncertainty — she has revealed mission-critical information to her target, admitted she does not understand the situation, and exposed that her operational judgment is compromised. She is terrified and cannot show it",
+    "pivotMoment": "Kaelith's question: 'Why haven't you killed me yet?' That question strips away every deflection and demands emotional honesty Lirien is not trained to provide"
+  },
+  "fantasyBeats": [
+    "Debate — Strike, Delay, or Investigate: Kaelith confronts Lirien directly. Lirien cannot justify immediate execution without understanding the Oathbrand anomaly. The conversation in the tavern is quiet, economical, loaded with subtext neither can afford to name"
+  ],
+  "romanceBeats": [
+    "The Dangerous Question — 'Why Haven't You Killed Me Yet?': Kaelith's directness forces Lirien into the first honest admission that the mission parameters are insufficient. Respect deepens into something more complex — recognition that the other woman is operating in equally impossible constraints"
+  ],
+  "hookType": "internal-pressure",
+  "hookTypeDescription": "Opens with Lirien staring at an incomplete operational report, unable to justify her own actions. The hook is her internal crisis — the classification system that defines her is failing",
+  "closeType": "uneasy-truce",
+  "closeTypeDescription": "Closes with both women at the same table, information exchanged but no promises made. The conversation ends without resolution, but the foundation for cooperation has been laid through mutual necessity",
+  "targetWordCount": 4100,
+  "tensionLevel": 6,
+  "pacingNotes": "Sustained high tension through confrontation and negotiation. The violence is verbal and psychological rather than physical. The stakes are clarity: can these two women work together, or will institutional loyalties destroy them first?",
+  "locationsPrimary": ["Duskhaven — Lirien's quarters, garrison tavern (evening, low light, sparse crowd)"],
+  "charactersPresent": ["CHAR-002 (Lirien)", "CHAR-001 (Kaelith)"],
+  "upstreamRefs": [
+    "../../plot/plot-structure.json",
+    "../../characters/CHAR-002.json",
+    "../../plot/dual-arc-timeline.json",
+    "../../plot/tension-map.json"
+  ]
+}

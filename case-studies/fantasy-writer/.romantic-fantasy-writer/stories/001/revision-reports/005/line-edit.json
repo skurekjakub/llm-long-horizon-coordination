@@ -1,0 +1,102 @@
+{
+  "chapterNumber": 5,
+  "editorType": "line",
+  "generatedAt": "2025-07-25T10:05:00Z",
+  "overallProseAssessment": "Kaelith's POV voice is strongly established and mostly consistent — the tactile precision, short declarative rhythms, structural framing, and physical-emotional processing are all recognizable. The archive scene is particularly well-written: bureaucratic language rendered with dry specificity, the slow accumulation of evidence building genuine tension. Key areas for revision: two INV-005 violations where emotions are directly labeled rather than shown through body or action, one metaphor from the wrong domain, one cliché that exceeds the max-2 budget in an already borderline chapter, and a stacking violation in the final section where reflective paragraphs accumulate without physical interruption.",
+  "findings": [
+    {
+      "id": "LINE-005-001",
+      "severity": "major",
+      "category": "INV-005",
+      "location": "Scene 2, lines 164-165",
+      "finding": "Direct emotion labeling rather than physical-somatic showing.",
+      "currentText": "Not because she didn't feel anything. Because she felt too much and the only way to function was to compress it all into something hard and small she could carry.",
+      "recommendation": "Replace with physical registration per Kaelith's voice fingerprint (suppressed-to-physical emotional register): 'Her jaw locked. Heat climbed her neck, settled behind her sternum, pressed outward against ribs that would not give. She breathed through it the way she breathed through the brand — controlled, counted, compressed into something the body could carry even when the mind could not.' The emotion is conveyed through physical sensation, not named."
+    },
+    {
+      "id": "LINE-005-002",
+      "severity": "major",
+      "category": "metaphor-domain",
+      "location": "Scene 2, line 172",
+      "finding": "Organic/botanical metaphor in Kaelith's POV. Her established domain is structural/architectural: cracks, weight, load-bearing, mortar, erosion.",
+      "currentText": "She laughed. Short. Sharp. The sound cut off like a branch snapping.",
+      "recommendation": "Replace with structural domain: 'She laughed. Short. Sharp. The sound broke clean, like mortar cracking under load.' Or: 'The sound severed itself — clean break, no echo.' Both maintain the abruptness while staying in Kaelith's metaphor domain."
+    },
+    {
+      "id": "LINE-005-003",
+      "severity": "major",
+      "category": "cliché",
+      "location": "Chapter close, line 328",
+      "finding": "Stock wound metaphor that pushes the chapter past the max-2 cliché threshold. 'The wound that wouldn't heal' is a high-frequency romance/fantasy cliché that undermines the prose's otherwise precise register.",
+      "currentText": "the wound that wouldn't heal because someone wanted it that way",
+      "recommendation": "Replace with a fresh image that maintains the Pallor's dual nature: 'the tear that closed and opened, closed and opened — sutured by something too tired to hold and reopened by something too patient to stop.' This uses the established membrane imagery and avoids the stock wound metaphor."
+    },
+    {
+      "id": "LINE-005-004",
+      "severity": "minor",
+      "category": "metaphor-precision",
+      "location": "Scene 2, line 184",
+      "finding": "Generic metaphor that does not serve Kaelith's established voice domain.",
+      "currentText": "The room felt smaller. The walls pressed in like a question she couldn't answer.",
+      "recommendation": "Strengthen with structural specificity: 'The room felt smaller. The walls pressed in — not physically, but the way a load-bearing wall shifts when the foundation cracks beneath it. Something structural had changed and the room had not caught up.' Or simply: 'The room felt smaller. Eight feet by ten. The same dimensions as always. They were not enough.' The second option uses Kaelith's measurement habit."
+    },
+    {
+      "id": "LINE-005-005",
+      "severity": "minor",
+      "category": "paragraph-stacking",
+      "location": "Lines 296-340 (post-confrontation reflection)",
+      "finding": "Seven consecutive reflective paragraphs without dialogue, physical gesture, or external movement. The style guide specifies: 'Never stack more than two dense reflective paragraphs without dialogue, gesture, or external movement resetting the scene.' The thematic content is strong but the delivery violates prose pacing guidelines.",
+      "currentText": "From 'She was not expendable...' through '...same structure.' — seven paragraphs of unbroken interiority.",
+      "recommendation": "Interleave packing actions: sorting rations, testing the knife's edge, rolling the cloak. Each physical beat resets the reader's attention and grounds the reflection in Kaelith's body. Target: no more than two reflective paragraphs between physical action beats."
+    },
+    {
+      "id": "LINE-005-006",
+      "severity": "minor",
+      "category": "repetition",
+      "location": "Throughout chapter",
+      "finding": "The counting motif ('counted stones,' 'counted steps,' 'counted breaths,' 'counted cracks,' 'counted ten breaths') appears approximately eight times. While characteristic of Kaelith's coping mechanism, the density approaches tic rather than pattern. The voice density guidance warns: 'if a beta reader can highlight the pattern on every page, the voice is over-applied.'",
+      "currentText": "Multiple instances of 'She counted...' / 'Counted...' / 'Kaelith counted...'",
+      "recommendation": "Reduce to five or six instances. Keep the most structurally important: the opening wall count, the breath count after the brand flares, the step count outside, and the final ceiling count. Cut or vary the intermediate instances — replace some with simple observation ('Eight stones visible') rather than active counting."
+    },
+    {
+      "id": "LINE-005-007",
+      "severity": "minor",
+      "category": "voice-consistency",
+      "location": "Scene 2, Lirien's dialogue",
+      "finding": "Lirien's dialogue in the confrontation is functional but lacks her established verbal markers. Per her voice fingerprint, stressed Lirien retreats into Court-formal register and uses characteristic phrases ('Noted,' 'Interesting,' categorical classifications). The scene shows her under significant stress but her dialogue reads as generically precise rather than distinctively Lirien.",
+      "recommendation": "Add one or two Lirien-specific verbal markers: a classification moment ('I am experiencing a fear response' is present and good — keep this), and perhaps one 'the calculus has changed' construction or a Court-formal phrasing when she admits the binding's consequences."
+    },
+    {
+      "id": "LINE-005-008",
+      "severity": "suggestion",
+      "category": "voice-refinement",
+      "location": "Scene 2, line 232",
+      "finding": "'Lirien stood like stone — immovable, exact, refusing to flinch.' The 'refusing to flinch' is a telling construction that names Lirien's action rather than showing it through Kaelith's observation.",
+      "currentText": "Lirien stood like stone — immovable, exact, refusing to flinch.",
+      "recommendation": "Show through Kaelith's tactical assessment: 'Lirien stood like stone — immovable, exact. Her jaw held a tension that would have been invisible to anyone who hadn't spent six years reading structural strain.' This uses Kaelith's characteristic way of reading people (through structural metaphor) and shows rather than tells."
+    }
+  ],
+  "voiceAssessment": {
+    "overallConsistency": "Strong. Kaelith's voice is recognizable from the opening paragraph and sustained through the chapter. Military vocabulary surfaces appropriately ('reconnoiter' is absent but 'assess,' 'verify,' 'contained' are present naturally). Architectural metaphors appear at correct density. Physical-emotional processing dominates.",
+    "strengths": [
+      "The archive scene's bureaucratic language rendered through Kaelith's tactical filter — she reads institutional documents the way she reads fortifications.",
+      "The counting motif as coping mechanism — effective even if slightly overdeployed.",
+      "Dialogue is terse, declarative, and sounds like a person, not a voice-profile checklist.",
+      "The brand's physical presence anchors the chapter's emotional beats in the body."
+    ],
+    "concerns": [
+      "Two INV-005 violations in the confrontation scene.",
+      "One off-domain metaphor.",
+      "Final section drifts from embodied experience toward thematic essay."
+    ]
+  },
+  "clichéAudit": {
+    "identified": [
+      "'the wound that wouldn't heal' (line 328) — high-frequency stock metaphor",
+      "'a chain of lies so long' (line 334) — borderline, common phrasing but not a dead metaphor"
+    ],
+    "count": 2,
+    "maxAllowed": 2,
+    "verdict": "At threshold. The 'wound that wouldn't heal' must be replaced to maintain headroom. 'Chain of lies' can stay if the wound cliché is removed."
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "chapter": 3,
+  "engagementScore": 9,
+  "emotionalImpact": "high",
+  "pacingAssessment": "well-paced",
+  "clarityScore": 9,
+  "findings": [
+    {
+      "id": "BETA-003-001",
+      "type": "pacing",
+      "severity": "minor",
+      "description": "The escape sequence — from Lirien collapsing the scaffolding to the two women walking together — is the best action beat in Act I, but the subordinate's decision to abandon his prisoner to help his partner with a fallen market stall strains credibility slightly. This is a Conclave operative escorting a high-value detainee. Walking away to help untangle someone from canvas feels like a judgment error that trained personnel wouldn't make.",
+      "location": "Scene 2, paragraph 'The subordinate behind Kaelith made a decision. Stay here, he said'",
+      "readerImpact": "Most readers will accept it in the momentum of the scene. But a reader who thinks tactically (and this book trains readers to think tactically) may notice. A small addition — the subordinate seeing Seldric gesture for help, or an implied order — would ground the decision in chain-of-command obedience rather than independent incompetence."
+    },
+    {
+      "id": "BETA-003-002",
+      "type": "observation",
+      "severity": "observation",
+      "description": "The warehouse scene at the end does important work (Kaelith reveals the dispatch contents, Lirien confirms the Warden implications, they establish the mutual-need alliance), but after the high tension of the escape, the pacing necessarily downshifts. This is structurally correct — you can't sustain escape-level tension indefinitely — but the warehouse dialogue covers some of the same ground the reader already knows from Ch. 2 (Pallor failing, Warden capacity, someone wants Kaelith dead).",
+      "location": "Scene 3, from 'They stopped in an abandoned warehouse' to end",
+      "readerImpact": "The reader who has absorbed Lirien's Ch. 2 intelligence knows the Warden/Pallor connection already. What's new here is Kaelith learning it and the two women sharing information — which is emotionally important. The scene works because of the character dynamics, not the information. It just has to earn its length through those dynamics rather than exposition."
+    },
+    {
+      "id": "BETA-003-003",
+      "type": "observation",
+      "severity": "observation",
+      "description": "Kaelith's discovery of the dispatches happens because Tavik's office is coincidentally unlocked with classified materials left out on the desk. The text addresses this obliquely (Tavik left in a hurry, candle still burning), but doesn't fully explain why a compromised commander would leave Conclave encryption on his desk. This could be Tavik being careless, or it could be a planted discovery — but the narrative doesn't signal either interpretation.",
+      "location": "Scene 1, opening paragraphs establishing the unlocked office",
+      "readerImpact": "Minor. The dispatches' content is compelling enough that the reader moves past the convenience. But a sharp reader might wonder if Tavik left the door open deliberately (to warn Kaelith?) — and if so, that's a character beat worth signaling."
+    }
+  ],
+  "strengths": [
+    "This is the engine chapter of Act I — everything shifts here. The pacing is excellent: tense infiltration → devastating revelation → immediate physical threat → forced alliance. Each scene escalates the stakes.",
+    "The dispatch documents are perfectly written. 'Maintenance schedule proceeds per previous instruction. Next refresh: 14 days.' The bureaucratic language makes the horror worse. The reader feels the institutional machinery grinding over a person.",
+    "'Warden-lineage capacity. Access to Quietus location. Execution remains undesirable.' — presented as a list, read by Kaelith in real time. The reader processes the implications alongside the character. This is how you do an exposition reveal without it feeling like exposition.",
+    "The scaffolding collapse is a brilliant intervention device — it communicates Lirien's skill, her choice, and her message ('I did that. This is a window. Use it.') in a single action without dialogue. The reader understands everything through blocking.",
+    "'I don't trust you.' / 'You shouldn't.' / 'But you don't have better options. And neither do I.' — This exchange is the beating heart of the enemies-to-lovers premise. Neither woman is pretending. Neither is yielding. They're building alliance on the only foundation available: mutual necessity. Romance readers will live for this.",
+    "The Calwrath reframe — Kaelith realizing her disgrace was manufactured as a containment mechanism — is emotionally devastating and narratively efficient. It retroactively charges everything in Ch. 1 with new meaning."
+  ],
+  "verdict": "strong"
+}

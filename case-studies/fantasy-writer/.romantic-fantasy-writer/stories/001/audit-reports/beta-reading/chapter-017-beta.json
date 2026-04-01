@@ -1,0 +1,49 @@
+{
+  "chapter": 17,
+  "engagementScore": 8,
+  "emotionalImpact": "high",
+  "pacingAssessment": "slow-start",
+  "clarityScore": 9,
+  "findings": [
+    {
+      "id": "BETA-017-001",
+      "type": "pacing",
+      "severity": "minor",
+      "description": "The middle section between the campfire and the vorakh fight is almost entirely internal cycling through 'was it real?' questions. Kaelith interrogates the same doubt (was the warmth genuine or operative performance?) in at least four slightly different formulations. The emotional logic is sound, but the repetition risks losing readers who are ready for the chapter to move forward.",
+      "location": "Section 1, paragraphs covering the contract recall through 'pain is not proof of anything'",
+      "readerImpact": "Reader patience tested — the emotional content is right but the delivery loops. A tighter pass through this section would preserve the devastation while maintaining momentum."
+    },
+    {
+      "id": "BETA-017-002",
+      "type": "engagement-drop",
+      "severity": "minor",
+      "description": "Coming directly after the black moment of Chapter 16, readers will be hungry for forward movement. This chapter deliberately withholds it (correctly — Kaelith isn't ready to move yet). But paired with Chapter 18, which is ALSO deeply internal and analytical, the two-chapter sequence of introspective processing creates a risk of stalling Act III momentum before it can build.",
+      "location": "Structural — chapters 17-18 as a pair",
+      "readerImpact": "Some readers (especially those reading for romance payoff) may skim the middle of 17 to get to the vorakh fight and the northward turn. The beginning and end of the chapter are strong anchors, but the middle sags."
+    },
+    {
+      "id": "BETA-017-003",
+      "type": "observation",
+      "severity": "observation",
+      "description": "The Calwrath dream sequence is effective but very brief — three paragraphs. Given that Calwrath is THE defining trauma and this is the chapter where Kaelith is processing betrayal through that lens, the dream could carry more weight. The silver flames replacing orange is a gorgeous detail that deserves a beat more to land.",
+      "location": "Section 2, opening dream sequence",
+      "readerImpact": "Slight missed opportunity. The dream works, but it's over before the reader can fully sink into the horror of it. The transition from dream to bond-breach is fast."
+    },
+    {
+      "id": "BETA-017-004",
+      "type": "observation",
+      "severity": "observation",
+      "description": "The tactical framing Kaelith uses to justify turning north ('The mission requires two. Minimum. Personal considerations are irrelevant.') is immediately called out as a lie by the narration itself. This is excellent character work — the reader sees Kaelith lying to herself and then catching herself. The self-awareness elevates what could have been a cliché 'duty not love' motivation.",
+      "location": "Post-vorakh fight, 'Military assessment. Clinical. Honest.' through the northward turn",
+      "readerImpact": "This is where the chapter earns its keep. The vorakh fight externalizes the internal stakes, and the transparent self-deception makes Kaelith deeply human."
+    }
+  ],
+  "strengths": [
+    "The fire-building opening is masterful scene-setting — military habit as emotional containment, the absence of Lirien made physical through the missing sounds of another person",
+    "The resonance bond as grief-carrier is the chapter's best device. Kaelith feeling Lirien's uncontrolled grief despite her walls creates the crack in her anger without requiring any actual contact",
+    "The vorakh fight perfectly externalizes internal stakes — the Pallor's physical progression and Kaelith's reduced capability make 'I cannot do this alone' a bodily truth, not just an emotional one",
+    "The northward turn is earned on BOTH levels (tactical and emotional) simultaneously, and the narration's self-awareness about the tactical framing being a cover is sophisticated characterization",
+    "Pallor-as-metaphor (divine membrane failing = Kaelith's defenses failing) continues to work beautifully at the physical level — silver spreading through veins is viscerally compelling imagery"
+  ],
+  "verdict": "strong"
+}

@@ -1,0 +1,410 @@
+{
+  "version": 1,
+  "generatedBy": "docwriter-frontmatter-validator",
+  "timestamp": "2026-03-18T22:45:55Z",
+  "results": [
+    {
+      "file": "_documentation/developers-and-admins/configuration/users/role-management/page-permission-management.md",
+      "taskId": "T-001",
+      "frontMatter": {
+        "valid": true,
+        "fields": {
+          "title": {
+            "present": true,
+            "valid": true,
+            "value": "Page permission management"
+          },
+          "identifier": {
+            "present": true,
+            "valid": true,
+            "value": "permissions_pagelevel_xp"
+          },
+          "order": {
+            "present": true,
+            "valid": true,
+            "value": 100
+          },
+          "redirect_from": {
+            "present": true,
+            "valid": true,
+            "value": "x/permissions_pagelevel_xp"
+          },
+          "persona": {
+            "present": true,
+            "valid": true,
+            "value": [
+              "admin",
+              "developer"
+            ]
+          },
+          "license": {
+            "present": true,
+            "valid": true,
+            "value": 1
+          }
+        },
+        "missingRequired": [],
+        "invalidValues": []
+      },
+      "liquid": {
+        "valid": true,
+        "issues": []
+      },
+      "buildReady": true,
+      "issues": []
+    },
+    {
+      "file": "_documentation/business-users/website-content/edit-and-publish-pages.md",
+      "taskId": "T-002",
+      "frontMatter": {
+        "valid": true,
+        "fields": {
+          "title": {
+            "present": true,
+            "valid": true,
+            "value": "Edit and publish pages"
+          },
+          "identifier": {
+            "present": true,
+            "valid": true,
+            "value": "MAKQC"
+          },
+          "order": {
+            "present": true,
+            "valid": true,
+            "value": 200
+          },
+          "redirect_from": {
+            "present": true,
+            "valid": true,
+            "value": "x/MAKQC"
+          },
+          "persona": {
+            "present": true,
+            "valid": true,
+            "value": [
+              "business"
+            ]
+          },
+          "license": {
+            "present": true,
+            "valid": true,
+            "value": 1
+          }
+        },
+        "missingRequired": [],
+        "invalidValues": []
+      },
+      "liquid": {
+        "valid": true,
+        "issues": []
+      },
+      "buildReady": true,
+      "issues": []
+    },
+    {
+      "file": "_documentation/developers-and-admins/configuration/workflows.md",
+      "taskId": "T-003",
+      "frontMatter": {
+        "valid": true,
+        "fields": {
+          "title": {
+            "present": true,
+            "valid": true,
+            "value": "Workflows"
+          },
+          "identifier": {
+            "present": true,
+            "valid": true,
+            "value": "workflows_xp"
+          },
+          "order": {
+            "present": true,
+            "valid": true,
+            "value": 600
+          },
+          "redirect_from": {
+            "present": true,
+            "valid": true,
+            "value": "x/workflows_xp"
+          },
+          "persona": {
+            "present": true,
+            "valid": true,
+            "value": [
+              "admin"
+            ]
+          },
+          "license": {
+            "present": true,
+            "valid": true,
+            "value": 1
+          }
+        },
+        "missingRequired": [],
+        "invalidValues": []
+      },
+      "liquid": {
+        "valid": true,
+        "issues": []
+      },
+      "buildReady": true,
+      "issues": []
+    },
+    {
+      "file": "_documentation/business-users/website-content/create-pages.md",
+      "taskId": "T-004",
+      "frontMatter": {
+        "valid": true,
+        "fields": {
+          "title": {
+            "present": true,
+            "valid": true,
+            "value": "Create pages"
+          },
+          "identifier": {
+            "present": true,
+            "valid": true,
+            "value": "LwKQC"
+          },
+          "order": {
+            "present": true,
+            "valid": true,
+            "value": 100
+          },
+          "redirect_from": {
+            "present": true,
+            "valid": true,
+            "value": "x/LwKQC"
+          },
+          "persona": {
+            "present": true,
+            "valid": true,
+            "value": [
+              "business"
+            ]
+          },
+          "license": {
+            "present": true,
+            "valid": true,
+            "value": 1
+          }
+        },
+        "missingRequired": [],
+        "invalidValues": []
+      },
+      "liquid": {
+        "valid": true,
+        "issues": []
+      },
+      "buildReady": true,
+      "issues": []
+    },
+    {
+      "file": "_documentation/business-users/website-content/delete-pages.md",
+      "taskId": "T-005",
+      "frontMatter": {
+        "valid": true,
+        "fields": {
+          "title": {
+            "present": true,
+            "valid": true,
+            "value": "Delete pages"
+          },
+          "identifier": {
+            "present": true,
+            "valid": true,
+            "value": "XofWCQ"
+          },
+          "order": {
+            "present": true,
+            "valid": true,
+            "value": 800
+          },
+          "redirect_from": {
+            "present": true,
+            "valid": true,
+            "value": "x/XofWCQ"
+          },
+          "persona": {
+            "present": true,
+            "valid": true,
+            "value": [
+              "business"
+            ]
+          },
+          "license": {
+            "present": true,
+            "valid": true,
+            "value": 1
+          }
+        },
+        "missingRequired": [],
+        "invalidValues": []
+      },
+      "liquid": {
+        "valid": true,
+        "issues": []
+      },
+      "buildReady": true,
+      "issues": []
+    },
+    {
+      "file": "_documentation/developers-and-admins/security-guidelines.md",
+      "taskId": "T-006",
+      "frontMatter": {
+        "valid": true,
+        "fields": {
+          "title": {
+            "present": true,
+            "valid": true,
+            "value": "Security guidelines"
+          },
+          "identifier": {
+            "present": true,
+            "valid": true,
+            "value": "security_guidelines_xp"
+          },
+          "order": {
+            "present": true,
+            "valid": true,
+            "value": 650
+          },
+          "redirect_from": {
+            "present": true,
+            "valid": true,
+            "value": "x/security_guidelines_xp"
+          },
+          "persona": {
+            "present": true,
+            "valid": true,
+            "value": [
+              "developer",
+              "architect",
+              "admin"
+            ]
+          },
+          "license": {
+            "present": true,
+            "valid": true,
+            "value": 1
+          }
+        },
+        "missingRequired": [],
+        "invalidValues": []
+      },
+      "liquid": {
+        "valid": true,
+        "issues": []
+      },
+      "buildReady": true,
+      "issues": []
+    },
+    {
+      "file": "_documentation/developers-and-admins/configuration/content-versioning-configuration.md",
+      "taskId": "T-007",
+      "frontMatter": {
+        "valid": true,
+        "fields": {
+          "title": {
+            "present": true,
+            "valid": true,
+            "value": "Content versioning configuration"
+          },
+          "identifier": {
+            "present": true,
+            "valid": true,
+            "value": "versioning_configuration_xp"
+          },
+          "order": {
+            "present": true,
+            "valid": true,
+            "value": 350
+          },
+          "redirect_from": {
+            "present": true,
+            "valid": true,
+            "value": "x/versioning_configuration_xp"
+          },
+          "persona": {
+            "present": true,
+            "valid": true,
+            "value": [
+              "admin",
+              "developer"
+            ]
+          },
+          "license": {
+            "present": true,
+            "valid": true,
+            "value": 1
+          }
+        },
+        "missingRequired": [],
+        "invalidValues": []
+      },
+      "liquid": {
+        "valid": true,
+        "issues": []
+      },
+      "buildReady": true,
+      "issues": []
+    },
+    {
+      "file": "_documentation/business-users/content-sync.md",
+      "taskId": "T-008",
+      "frontMatter": {
+        "valid": true,
+        "fields": {
+          "title": {
+            "present": true,
+            "valid": true,
+            "value": "Content sync"
+          },
+          "identifier": {
+            "present": true,
+            "valid": true,
+            "value": "content_sync_xp"
+          },
+          "order": {
+            "present": true,
+            "valid": true,
+            "value": 450
+          },
+          "redirect_from": {
+            "present": true,
+            "valid": true,
+            "value": "x/content_sync_xp"
+          },
+          "persona": {
+            "present": true,
+            "valid": true,
+            "value": [
+              "business"
+            ]
+          },
+          "license": {
+            "present": true,
+            "valid": true,
+            "value": 2
+          }
+        },
+        "missingRequired": [],
+        "invalidValues": []
+      },
+      "liquid": {
+        "valid": true,
+        "issues": []
+      },
+      "buildReady": true,
+      "issues": []
+    }
+  ],
+  "summary": {
+    "filesChecked": 8,
+    "allValid": true,
+    "frontMatterIssues": 0,
+    "liquidIssues": 0,
+    "buildBlockers": 0
+  }
+}

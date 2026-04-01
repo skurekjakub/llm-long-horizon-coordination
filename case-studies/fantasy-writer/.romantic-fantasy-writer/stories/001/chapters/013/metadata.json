@@ -1,0 +1,185 @@
+{
+  "chapterNum": 13,
+  "title": "Chapter Thirteen",
+  "povCharacter": "CHAR-001",
+  "povName": "Kaelith Maren",
+  "wordCount": 5099,
+  "sceneCount": 3,
+  "scenesCompleted": ["SCN-34", "SCN-35", "SCN-36"],
+  "status": "draft",
+  "craftToolsApplied": {
+    "T1_sceneSequelStructure": {
+      "applied": true,
+      "notes": "SCN-34 is a sequel (Reaction to ch12 pursuit → Dilemma of whether to confess → Decision to tell Calwrath truth). SCN-35 is a scene (Goal: confess fully → Conflict: walking through impossible math → Disaster: admits she'd do it again). SCN-36 is a scene (Goal: receive Lirien's response → Conflict: neither absolution nor judgment → Disaster: kiss happens, intimacy cannot be undone)."
+    },
+    "T14_motivationReactionUnits": {
+      "applied": true,
+      "notes": "MRU pattern consistent throughout: external stimulus (bond transmission, Lirien's questions, physical proximity) → emotional reaction (experienced as physical sensation) → physical reflex (pressing stone, driving branch, jaw tension) → rational processing (tactical assessment) → speech. Particularly visible in Kaelith's reaction to Lirien's 'I don't flinch' — throat closes (physical) → presses back against granite (reflex) → notes breathing wrong (rational) → 'You understand' (speech)."
+    },
+    "T22_subtextInDialogue": {
+      "applied": true,
+      "notes": "Multiple layers throughout. 'You're building a windbreak that won't break wind' — surface: practical observation; subtext: 'I see you avoiding something.' 'What are you afraid of?' — surface: direct question; subtext: 'The bond means we cannot hide. Choose trust or admit you won't.' 'This is not survival' — surface: naming the moment; subtext: 'I am choosing you, not needing you.' 'I can feel you' — surface: bond mechanics; subtext: 'I feel everything and I am choosing to stay.'"
+    },
+    "T25_thematicArgumentScaffolding": {
+      "applied": true,
+      "notes": "TP-1 (Trust as structural failure): Kaelith deliberately exposes her worst self through the bond, choosing vulnerability with someone who could weaponize it. TP-2 (Price of the right choice): Calwrath confession is the central dramatization — right tactically, devastating morally, and she would choose it again. TP-3 (Chosen vs only): The kiss is explicitly framed as 'not survival, not the bond, not necessity' — the first freely chosen intimacy."
+    },
+    "T16_voiceFingerprinting": {
+      "applied": true,
+      "notes": "Kaelith's voice maintained throughout: short declarative sentences (70%+ under 8 words), structural metaphors (load-bearing, foundation, architecture, walls, mortar, buttress, keystone), emotions as physical events (heat in neck, pressure in sternum, jaw ache, hand tremor), military vocabulary (position, defensive, assess, perimeter, exits). Formal register under stress — no contractions in confession. Contractions return when defenses lower ('I cannot undo that' vs 'I do not want to undo it'). Lirien's dialogue voice maintained: precise, probing, clinical terminology softening toward human language ('I can feel you')."
+    },
+    "T18_informationAsymmetry": {
+      "applied": true,
+      "notes": "Bond eliminates information asymmetry for emotional states but not for factual knowledge. Kaelith's confession fills the factual gap about Calwrath — Lirien knew the public version but not the unsanitized truth. Lirien reciprocates with operation 31 (merchant in Vael'thrin), equalizing vulnerability. Reader receives full Calwrath details for the first time."
+    },
+    "T19_emotionalThroughline": {
+      "applied": true,
+      "notes": "Arc: defensive fear (opening) → terrified resolve (deciding to confess) → raw exposure (confession itself) → annihilating vulnerability (waiting for judgment) → overwhelmed relief (Lirien doesn't flinch) → courageous desire (closing distance) → terrified hope (aftermath). Dominant emotion shifts from 'exposed fear' to 'courageous vulnerability' per the throughline chart."
+    },
+    "T20_vulnerabilityLadder": {
+      "applied": true,
+      "notes": "Vulnerability ladder step 4: sharing the unforgivable parts. Both Kaelith (Calwrath) and Lirien (operation 31) share the thing they believe makes them monstrous. The kiss is the response to mutual vulnerability, not reward for confession."
+    },
+    "T15_foreshadowingPayoff": {
+      "applied": true,
+      "notes": "FS-007 (Calwrath battlefield decision) — PAYOFF delivered. Full unsanitized truth shared with Lirien. FS-015 (resonance bond) — ADVANCED. Bond used throughout as mechanism for emotional transparency, amplifying the confession and kiss. MOT-002 (Oathbrand ghost) — phantom collarbone ache referenced, Lirien's hand finds throat-hollow NOT the collarbone. MOT-003 (water/infiltration) — Lirien's attention 'like water finding where the mortar thinned,' fountain detail in Lirien's confession. MOT-004 (Quietus as body-knowledge) — pulls at Kaelith's bones northeast, patient. MOT-001 (Pallor) — thinning membrane referenced in closing, Kaelith sensing its erosion."
+    },
+    "T23_hookAndClose": {
+      "applied": true,
+      "notes": "Hook: confession-courage — chapter opens with Kaelith in tactical mode but the bond bleeding her fear, scene 1 culminates in the decision to tell the truth. Close: kiss-aftermath — chapter closes with the resonance of the kiss, the pursuit still active (two hunter teams, observation posts), Quietus pulling northeast, 'terrified hope' emotional register. The close mirrors ch11's ending ('It was enough') as deliberate echo."
+    },
+    "T13_tensionMapping": {
+      "applied": true,
+      "notes": "Micro-tension sources maintained throughout: background pursuit (two hunter teams remain), bond exposure (emotional transparency as constant vulnerability), Calwrath memory as active wound, the question of Lirien's response, the choice to close physical distance, the irreversibility of the kiss. No half-page passage without at least one active tension source."
+    }
+  },
+  "sceneValueShifts": {
+    "SCN-34": {
+      "startValue": "concealment — Kaelith hiding Calwrath behind defensive activity",
+      "endValue": "exposure — choosing to tell the truth because the bond makes hiding impossible",
+      "shift": "concealment → exposure"
+    },
+    "SCN-35": {
+      "startValue": "controlled confession — telling Calwrath like a mission briefing",
+      "endValue": "complete exposure — admitting she would make the same choice again",
+      "shift": "control → surrender"
+    },
+    "SCN-36": {
+      "startValue": "bracing for judgment — expecting Lirien to leave",
+      "endValue": "terrified hope — kissed, chosen, unable to undo it and unwilling to",
+      "shift": "anticipated rejection → irreversible intimacy"
+    }
+  },
+  "emotionalArc": {
+    "startState": "Defensive fear — bond exposing her agitation, Calwrath rising, displacement activity as coping mechanism",
+    "dominantEmotionStart": "exposed fear",
+    "pivotMoment": "Lirien's response: 'I don't think you're wrong. I think you're carrying something you can't put down' — and the follow-up: 'You're not asking for forgiveness. You're asking if I flinch. I don't flinch.'",
+    "endState": "Terrified hope — she showed Lirien everything, Lirien stayed, kissed her, chose her. Hands steady for the first time. The relief and the terror are indistinguishable.",
+    "dominantEmotionEnd": "courageous vulnerability",
+    "intensity": 8
+  },
+  "romanceBeat": {
+    "beat": "First Kiss — Witness Without Flinching",
+    "stage": "resistance → early surrender",
+    "vulnerabilityLadderStep": 4,
+    "description": "After Calwrath confession (the unforgivable truth), Lirien witnesses without recoil and reciprocates with her own unforgivable truth (operation 31). Kiss emerges not as reward but as mutual recognition — deliberate, not desperate. Explicitly framed as 'not survival, not the bond, not necessity' to satisfy TP-3 (chosen vs only)."
+  },
+  "fantasyBeat": {
+    "beat": "Thalen's Network — Conclave Pursuit Escalates",
+    "description": "Background threat maintained throughout: two hunter teams remain active, observation posts on northeastern approach, Thalen Reyvas directing from Seventh Seat. Pursuit provides micro-tension and reinforces that intimacy happens in the absence of safety, not the presence of it. Pallor erosion sensed by Kaelith with returned magic."
+  },
+  "continuityNotes": {
+    "characterPositions": {
+      "CHAR-001": "Granite shelf in wilderness northeast of Rivenmarch, heading toward the Quietus. Camp position defensible, two exits.",
+      "CHAR-002": "Same position. Both stationary at chapter end, intending to move before dawn."
+    },
+    "timeline": "Night following the hunter pursuit of chapter 12. Several hours after the flight. Pre-dawn by chapter end.",
+    "newKnowledgeStates": {
+      "CHAR-002_learns": [
+        "Full unsanitized truth of Calwrath — the 8-minute decision, 300 civilians, children in market, magical accelerant, temple collapse, she would make the same choice again",
+        "Kaelith's deepest fear: not that she was wrong but that she was right and would do it again",
+        "The sensory ghost: plaster dust, pine resin, rendered fat"
+      ],
+      "CHAR-001_learns": [
+        "Lirien's operation 31 — merchant in Vael'thrin, daughter named Elisi, clean arithmetic concealing moral devastation",
+        "Lirien carries equivalent weight — 43 completions, at least one that haunts her",
+        "Lirien does not flinch from Calwrath. Not absolution. Witness."
+      ],
+      "reader_learns": [
+        "Complete Calwrath details for the first time — previously referenced but never told in full",
+        "The specific tactical situation: 8 minutes, defensive line, fire option, children, temple",
+        "Kaelith would make the same call again",
+        "Lirien has her own version of moral devastation (op 31, Elisi)"
+      ]
+    },
+    "activeThreats": [
+      "Two hunter teams remain in region",
+      "Observation posts on northeastern approach to Quietus",
+      "Thalen Reyvas directing pursuit from Seventh Seat",
+      "Pallor erosion continuing — Kaelith can sense it with returned magic"
+    ],
+    "bondStatus": "Fully active. Used throughout chapter for emotional transparency. Amplified the confession (Lirien felt Kaelith's distress before the words), the response (Kaelith felt Lirien's unclassified emotional state), and the kiss (recursive feedback loop — feeling each other feeling). Bond treated as both vulnerability and connection."
+  },
+  "foreshadowingActivity": {
+    "payoffs": [
+      {
+        "id": "FS-007",
+        "description": "Calwrath battlefield decision — full payoff. Unsanitized truth shared with Lirien, enabling deeper intimacy.",
+        "status": "resolved"
+      }
+    ],
+    "advanced": [
+      {
+        "id": "FS-015",
+        "description": "Resonance bond — advanced. Bond used as mechanism for emotional transparency throughout confession and kiss. Foreshadows its role in ch16 (transmitting guilt during contract revelation).",
+        "status": "active"
+      }
+    ],
+    "planted": [
+      {
+        "description": "Lirien's operation 31 and the name Elisi — a specific moral wound that parallels Calwrath. May resurface when Lirien's loyalty to the Court is tested.",
+        "chapter": 13,
+        "lineRef": "SCN-36 — Lirien's confession about the merchant in Vael'thrin"
+      },
+      {
+        "description": "The kiss as irreversible threshold — 'I cannot undo that' / 'I do not want to undo it.' Foreshadows the devastation of ch16's betrayal reveal, when this chosen intimacy is reframed as potential manipulation.",
+        "chapter": 13,
+        "lineRef": "SCN-36 — aftermath dialogue"
+      }
+    ]
+  },
+  "motifAppearances": [
+    {
+      "motifId": "MOT-001",
+      "symbol": "Pallor as failing membrane",
+      "appearance": "Closing passage: Kaelith senses the Pallor's erosion with returned magic — 'a ceiling losing structural integrity.' Filtered silver starlight, never fully visible.",
+      "function": "Reinforces world-threat background during intimate moment — the sky is failing even as personal connection forms"
+    },
+    {
+      "motifId": "MOT-002",
+      "symbol": "Oathbrand ghost",
+      "appearance": "Phantom ache at collarbone where brand lived. Lirien's hand finds throat-hollow specifically NOT the collarbone — the pulse, not the scar.",
+      "function": "The absence of the brand is itself significant — Kaelith's guilt persists without its physical enforcer. Lirien choosing to touch the living pulse rather than the ghost of punishment."
+    },
+    {
+      "motifId": "MOT-003",
+      "symbol": "Water / infiltration as intimacy",
+      "appearance": "Lirien's attention 'like water finding the place in a wall where the mortar had thinned.' Lirien's confession: 'hands in a fountain, and the water was very cold.'",
+      "function": "Lirien-as-water infiltrating Kaelith's defenses; water as attempted cleansing that does not cleanse."
+    },
+    {
+      "motifId": "MOT-004",
+      "symbol": "Quietus as body-knowledge",
+      "appearance": "Pulls at Kaelith's bones northeast. Patient. Certain. 'The path did not care what she felt or wanted or feared. The path only knew where it went.'",
+      "function": "The body's knowledge persists independent of emotional state — destination is fixed even when identity is in flux."
+    }
+  ],
+  "proseQualityMetrics": {
+    "bannedPhrasesUsed": 0,
+    "approximateAdverbsPerPage": 1.7,
+    "approximateShowTellRatio": "92:8",
+    "longestUnbrokenDialogueWithoutBeat": 4,
+    "maxConsecutiveReflectiveParagraphs": 2,
+    "pureExpositionParagraphs": 0
+  }
+}

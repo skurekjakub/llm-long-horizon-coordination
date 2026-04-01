@@ -1,0 +1,111 @@
+{
+  "chapterNum": 11,
+  "pov": "CHAR-001",
+  "wordCount": 5135,
+  "status": "draft",
+  "scenesCompleted": ["SCN-031", "SCN-032", "SCN-033"],
+  "emotionalArcAchieved": {
+    "startState": "determined pragmatism — tactical assessment, deflection through structural analysis, exits-first evaluation",
+    "endState": "overwhelming vulnerability and connection — walls voluntarily removed, resonance bond making emotional privacy impossible, silence carrying everything words cannot",
+    "pivotDelivered": true,
+    "pivotDescription": "The moment Lirien's hands settle on Kaelith's collarbone and begin the removal — Kaelith's tactical assessment system breaks down as six years of suppressed tactile sensitivity flood through a single point of sustained contact"
+  },
+  "craftToolsApplied": [
+    "T1 — Scene-Sequel structure: SCN-031 follows Goal→Conflict→Disaster (trust crisis); SCN-032 follows sustained rising tension through the removal procedure; SCN-033 follows Reaction→Dilemma→Decision (acknowledge the bond or deny it)",
+    "T5 — Subtext in dialogue: 'The case is not mine to make' carries subtext of Lirien's restraint and respect; 'I trust you' carries subtext heavier than any declaration of love; Tessen's 'Rest before you move' acknowledges what he's witnessing without naming it",
+    "T6 — Tone contract: intense and intimate without melodrama; removal scene has surgical tension; intimacy emerges from procedure, not romantic staging",
+    "T7 — Black Moment setup: the depth of trust built here (I trust you + hours of physical vulnerability + resonance bond) establishes stakes for the ch16 revelation — the deeper the trust, the more devastating the betrayal",
+    "T8 — Internal and External Resistance: Kaelith's internal resistance (counting stones, cataloguing walls, deflecting through assessment) gradually failing under the weight of the experience; external resistance from the procedure's danger",
+    "T10 — Sanderson's Laws: Oathbrand removal follows established magic system rules (ward-thread dismantling, fae precision required, subject must not resist, layers peeled sequentially); resonance bond forms per MAG-007 (shared working while vulnerable)",
+    "T12 — Dual-Arc Interleave: fantasy arc (Oathbrand removal, magic return, Quietus activation) and romance arc (trust declaration, physical intimacy, resonance bond) fully fused — one cannot happen without the other",
+    "T14 — MRU structure maintained throughout: external stimulus (Lirien's touch) → emotional reaction (breath stopping) → physical reflex (gripping table) → rational processing (counting stones) → speech ('Steady')",
+    "T16 — Symbolic Motif Weaving: MOT-002 (Oathbrand as wound finally opened and treated), MOT-004 (Quietus as body-knowledge activating in kinetic memory), MOT-001 (Pallor as membrane/ceiling she can now assess for weakness)",
+    "T17 — Emotional Throughline: Kaelith progresses from determined pragmatism (I know the brand needs removing) through resistance (counting stones) to overwhelmed vulnerability (internal monologue breaking apart) to chosen openness (removing walls deliberately)",
+    "T20 — Pacing variation: deliberate tension build (Scene 1) → sustained high-intensity intimate procedure (Scene 2) → explosive magic return settling into quiet, charged aftermath (Scene 3)",
+    "T21 — Micro-tension continuity: every passage maintains active tension — will the procedure work? will Kaelith flinch? what does the intimacy mean? what does the resonance bond reveal? where does the Quietus lead?",
+    "T22 — Hook and Close: opens with ritual-tension hook (one door, no windows; procedure explanation creating dread); closes with transformed-connection (resonance bond, shared silence, neither moving toward or away)",
+    "T24 — Voice Fingerprinting: Kaelith's POV maintains architectural metaphors (keystone, load-bearing, foundations, walls), tactical assessment, short fragments under stress, emotions as physical sensations (jaw tightening, heat in palms, pressure behind sternum), contractions dropping under intensity",
+    "T25 — Thematic Argument Scaffolding: Act 2 midpoint tests the 'easy answer' about trust (trust is earned through demonstrated loyalty). Kaelith trusts Lirien despite withheld information — testing whether trust can be built through action rather than disclosure. The midpoint suggests yes; ch16 will force the hardest version of the question"
+  ],
+  "sceneValueShifts": [
+    {
+      "scene": "SCN-031",
+      "startValue": "pragmatic cooperation — we work together for operational reasons",
+      "endValue": "chosen trust — I trust you with my survival, voluntarily, irrevocably",
+      "shiftMagnitude": "major"
+    },
+    {
+      "scene": "SCN-032",
+      "startValue": "physical contact is tactical/medical — this is a procedure",
+      "endValue": "this touch means everything — intimacy that cannot be denied or contained",
+      "shiftMagnitude": "major"
+    },
+    {
+      "scene": "SCN-033",
+      "startValue": "I carry the Quietus location as passive information",
+      "endValue": "the Quietus is active in my body; the resonance bond has destroyed emotional privacy; I choose openness",
+      "shiftMagnitude": "transformative"
+    }
+  ],
+  "emotionalStatesAtBoundaries": {
+    "CHAR-001": {
+      "chapterStart": "determined pragmatism — tactical assessment mode, deflecting through structural analysis",
+      "chapterEnd": "overwhelmed vulnerability and chosen openness — walls voluntarily removed, resonance bond accepted, magic returning, identity in flux"
+    },
+    "CHAR-002": {
+      "chapterStart": "controlled restraint — waiting for Kaelith's decision, hands unsteady, afraid of the answer",
+      "chapterEnd": "stripped of fae precision — hours of sustained intimacy and the resonance bond have removed the operative framework, feeling exposed and feeling Kaelith's feelings"
+    }
+  },
+  "foreshadowingElements": {
+    "planted": [
+      "Resonance bond implications — emotional privacy permanently destroyed between Kaelith and Lirien; will intensify through Act 2 and make the ch16 black moment devastating",
+      "Quietus path activation — kinetic memory pulling northeast, body knows the route; this will drive the journey direction from ch12 onward",
+      "Kaelith's magical recovery arc — returned at reduced capacity (Tier 2, not Tier 4); gaps from six years of atrophy; must rebuild",
+      "Pallor as assessable structure — Kaelith can now feel the Pallor as a ceiling with weaknesses, foreshadowing her role in the climactic seal",
+      "Tessen's 'Didn't think there were any left' — Warden rarity, foreshadowing the significance of Kaelith's inheritance"
+    ],
+    "resolved": [
+      "Oathbrand as death sentence — the brand that was killing Kaelith has been removed; the immediate mortality threat is neutralized",
+      "Oathbrand as suppression — Kaelith's magic has returned after six years of forced dormancy"
+    ]
+  },
+  "motifAppearances": [
+    {
+      "motifId": "MOT-002",
+      "description": "Oathbrand as wound that won't heal — in this chapter the wound is finally opened and treated. Six years of accumulated damage released. The scar remains visible but the geometric lines are dead. Healing as architectural restoration.",
+      "instances": ["brand examination by Tessen", "layer-by-layer removal as palimpsest of damage", "touching bare skin where the brand was — tender, raw, but the pulse is gone"]
+    },
+    {
+      "motifId": "MOT-004",
+      "description": "Quietus as body-knowledge — the path activating in Kaelith's kinetic memory. Her body knows the route: left foot northeast, right hip knows the angle, shoulders carry the memory. A compass needle in her bones.",
+      "instances": ["muscles recognizing a direction like a drill", "patient irresistible pull like magnetic alignment", "route written in movement language rather than geography"]
+    },
+    {
+      "motifId": "MOT-001",
+      "description": "Pallor as membrane — parallel between the Oathbrand (personal membrane of suppression now removed) and the Pallor (world membrane she can now sense as a structural ceiling with assessable weaknesses).",
+      "instances": ["Pallor registered as pressure/ceiling overhead", "structural constraint that bears weight and limits height", "can theoretically be assessed for weakness"]
+    }
+  ],
+  "continuityNotes": {
+    "characterPositions": "Kaelith and Lirien at Tessen's sanctuary (hillside location in wilderness between Aranthem and the Quietus approach). Preparing to continue northeast toward the Quietus.",
+    "newInformation": [
+      "Oathbrand successfully removed by Lirien with Tessen's guidance",
+      "Kaelith's Shaper magic has returned at reduced capacity (Tier 2 — gaps from six years of atrophy)",
+      "Resonance bond formed between Kaelith and Lirien — mutual emotional/presence awareness, cannot be turned off",
+      "Quietus path activated in Kaelith's kinetic memory — body knows the northeast route",
+      "Tessen recognizes kinetic memory as Warden-work, notes Wardens are thought extinct"
+    ],
+    "informationAsymmetry": {
+      "CHAR-001_knows": "Oathbrand removed, magic returned, resonance bond with Lirien, Quietus path direction (northeast), Tessen's assessment of Warden-work",
+      "CHAR-001_doesNotKnow": "Kill contract binding details, full contents of Lirien's withheld documents, who specifically refreshed the brand, Warden inheritance mechanism",
+      "CHAR-002_knows": "Everything Kaelith knows via the resonance bond's emotional transmission, plus whatever she has been withholding from previous chapters",
+      "CHAR-002_doesNotKnow": "The full implications of the resonance bond on her contract obligations"
+    }
+  },
+  "vulnerabilityLadderPosition": {
+    "rung": "highest yet — physical vulnerability (brand exposure, sustained touch on most damaged body part) combined with emotional vulnerability (trust declaration, resonance bond destroying privacy) combined with magical vulnerability (subject must not resist during removal)",
+    "escalationFromPrevious": "Major escalation from ch10 (personal conversation under stars) to ch11 (hours of physical contact on most intimate wound, verbal trust declaration, involuntary emotional bonding)",
+    "setupForFuture": "The deeper this trust, the more devastating the ch16 black moment revelation"
+  }
+}

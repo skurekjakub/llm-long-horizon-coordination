@@ -1,0 +1,18 @@
+{
+  "agent": "drafting-auditor",
+  "chapter": 22,
+  "result": "passed",
+  "summary": "Chapter 22 'What the Water Chose' passes the drafting gate with a strong performance. The chapter delivers on every outline requirement, maintains Lirien's voice with exceptional consistency, correctly applies all 16 active craft tools, resolves both the romance and fantasy arcs with earned emotional weight, and completes all three thematic pillars. The two warnings (repetitive bond-access phrasing and one borderline authorial-voice paragraph) are genuine craft observations appropriate for the revision pipeline but do not rise to the level of quality-bar failures. The final chapter provides an emotionally authentic HFN that refuses triumphalism, grounds love in daily choice, and closes the book with thematic precision. The chapter is cleared to exit the drafting pipeline and enter revision.",
+  "startTime": "2026-03-18T22:10:00Z",
+  "endTime": "2026-03-18T21:29:52Z",
+  "artifactsProduced": [
+    "chapters/022/drafting-gate-report.json"
+  ],
+  "metadata": {
+    "verdict": "passed",
+    "criticalFindings": 0,
+    "majorFindings": 0,
+    "warnings": 2,
+    "note": "Status file reconstructed by drafting-coordinator after auditor agent hit rate limit; gate report artifact was already written with verdict=passed"
+  }
+}

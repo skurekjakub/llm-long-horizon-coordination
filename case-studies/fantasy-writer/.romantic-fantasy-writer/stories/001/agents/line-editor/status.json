@@ -1,0 +1,37 @@
+{
+  "agent": "line-editor",
+  "chapter": 22,
+  "action": "line-edit",
+  "timestamp": "2025-08-01T10:00:00Z",
+  "result": "completed",
+  "summary": "Ch22 line edit complete. 17 findings (1 critical, 4 major, 4 moderate, 8 minor). One critical finding: negation-contrast structural saturation — approximately 20 instances of 'Not X. Y.' / 'not A but B' across 222 lines, with 6 instances clustering in the final 20 lines (L184–200), double the INV-017 per-page threshold. This is the chapter's dominant rhythmic device and creates monotony. Four major findings: 'through the bond' appears 6 times with near-identical syntax functioning as tell-bypass, bond-mediated emotion-telling names emotions at L88/L128/L176/L188 rather than showing through sensory data, 'the particular [noun] of' formulaic construction appears 5 times, and near-verbatim image repetition (Kaelith's silver arm + adjusted grip) at L84 and L180. Four moderate: classification vocabulary 12 instances (density acceptable but SCN-64 could thin), 3 stock literary constructions at the climax exceeding 2-cliché cap, backstory-summary telling at L176–177 and L188–189, star passage thematic over-determination at L200. Eight minor: 'something' overuse (~15x), 'the way she [verb]ed everything' pattern (3x), interpretive narration at L108–110, tell-tags at L152/L164, architectural metaphor in Lirien's domain at L94, 'held' refrain density in closing pages, body inventory structural uniformity. INV-017 FAIL (repetition + clichés). INV-005 CONDITIONAL-FAIL (bond-tell bypasses). INV-003 PASS. INV-019 PASS. INV-035 PASS. INV-047 PASS. INV-073 CONDITIONAL-PASS. Chapter's emotional substance, thematic resolution, and voice consistency are strong. The river metaphor closing is the novel's best passage. All problems are addressable through reduction and variation without structural changes.",
+  "artifactsWritten": [
+    "revision-reports/022/line-edit.json",
+    "agents/line-editor/status.json"
+  ],
+  "artifactsRead": [
+    "chapters/022/draft.md",
+    "chapters/022/metadata.json",
+    "style/style-guide.json",
+    "craft-profile.json",
+    "characters/CHAR-002.json"
+  ],
+  "findingCounts": {
+    "critical": 1,
+    "major": 4,
+    "moderate": 4,
+    "minor": 8,
+    "total": 17
+  },
+  "invariantResults": {
+    "INV-017": "FAIL",
+    "INV-005": "CONDITIONAL-FAIL",
+    "INV-003": "PASS",
+    "INV-019": "PASS",
+    "INV-035": "PASS",
+    "INV-047": "PASS",
+    "INV-052": "PASS-WITH-NOTE",
+    "INV-064": "PASS",
+    "INV-073": "CONDITIONAL-PASS"
+  }
+}

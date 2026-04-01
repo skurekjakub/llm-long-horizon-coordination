@@ -1,0 +1,1059 @@
+{
+  "seriesId": "romantasy-001",
+  "seriesTitle": "Untitled Romantasy Series",
+  "version": "1.0.0",
+  "lastUpdated": "2026-03-21T05:35:24.096290+00:00",
+  "lastUpdatedByBook": "001",
+  "schemaVersion": 1,
+  "books": [
+    {
+      "bookId": "001",
+      "workingTitle": "Book 1 (Untitled)",
+      "chapters": 22,
+      "estimatedWordCount": 91850,
+      "genreBalance": {
+        "fantasy": 55,
+        "romance": 45
+      },
+      "heatLevel": "steamy",
+      "romanceArcType": "enemies-to-lovers",
+      "resolution": "HFN",
+      "povCharacters": [
+        "CHAR-001",
+        "CHAR-002"
+      ],
+      "povPattern": "alternating-dual",
+      "actStructure": {
+        "act1": {
+          "chapters": [
+            1,
+            6
+          ],
+          "focus": "Recognition before trust"
+        },
+        "act2": {
+          "chapters": [
+            7,
+            16
+          ],
+          "focus": "Trust as survival cost"
+        },
+        "act3": {
+          "chapters": [
+            17,
+            22
+          ],
+          "focus": "Chosen love versus inherited structures"
+        }
+      },
+      "thematicPillars": [
+        {
+          "id": "TP-1",
+          "name": "Trust as Structural Failure",
+          "description": "Trust requires vulnerability to someone who can destroy you. Institutions weaponize trust. Interpersonal trust must be rebuilt outside institutional frameworks."
+        },
+        {
+          "id": "TP-2",
+          "name": "The Price of the Right Choice",
+          "description": "Correct decisions exact costs the chooser does not get to assign. Calwrath, the binding deception, the heartbeat cessation — every right choice carries a permanent price."
+        },
+        {
+          "id": "TP-3",
+          "name": "Chosen vs. Only",
+          "description": "Love, loyalty, and identity must be actively chosen to be real. Compelled devotion (binding, institutional obligation) is not love. Free choice within constraint is the only authentic act."
+        }
+      ],
+      "completionDate": "2026-03-21",
+      "relativePath": "../"
+    }
+  ],
+  "world": {
+    "setting": {
+      "name": "The Empire of the Keeping",
+      "era": "The Thinning (current)",
+      "calendar": {
+        "system": "Year of the Keeping (YK)",
+        "epoch": "Raising of the Pallor (YK 0)",
+        "currentYear": 742,
+        "bookOneSpan": {
+          "start": "YK 742, early autumn",
+          "end": "YK 742, late autumn",
+          "durationDays": "approximately 33"
+        }
+      },
+      "pallorGradient": {
+        "description": "The Pallor's suppressive effect decreases from east (institutional core) to west (frontier/wild). East = 60-80% suppression, west = near-absent.",
+        "postBook1Change": "Pallor globally thinner after seal reinforcement. Membrane repaired but at reduced density. First ambient magic accessible in eastern provinces. True sky partially visible through thinned membrane."
+      }
+    },
+    "geography": {
+      "establishedLocations": [
+        {
+          "id": "LOC-001",
+          "name": "Duskhaven",
+          "type": "garrison-town",
+          "description": "Frontier garrison town on the eastern Garrison Coast. Kaelith's exile posting for 5+ years. Stone-built, grey sea, seawall patrols. Site of chapters 1-3.",
+          "significance": "Story opening location. Site of first encounter between Kaelith and Lirien.",
+          "postBook1": "Kaelith departed. Tavik Soren remains as garrison commander. Conclave awareness of events there."
+        },
+        {
+          "id": "LOC-002",
+          "name": "Veldrane",
+          "type": "frontier-settlement",
+          "description": "Eastern frontier settlement. Location of healer Marin Savel. First medical assessment of Oathbrand damage.",
+          "significance": "Where 4-6 month mortality diagnosis established."
+        },
+        {
+          "id": "LOC-003",
+          "name": "The Wending",
+          "type": "damaged-zone",
+          "description": "Region where Pallor degradation is most advanced. Reality distortion, Ythara influence bleeds through. Dangerous terrain with warped geometry.",
+          "significance": "First direct exposure to Ythara's influence (Ch9). Demonstrates what Pallor failure means in practice."
+        },
+        {
+          "id": "LOC-004",
+          "name": "Aranthem",
+          "type": "town",
+          "description": "Town with municipal archive. Site of intelligence gathering that confirmed 40-year conspiracy.",
+          "significance": "Archive infiltration (Ch10) confirmed Thalen Reyvas as saboteur."
+        },
+        {
+          "id": "LOC-005",
+          "name": "Tessen's Sanctuary",
+          "type": "safe-house",
+          "description": "Remote shelter operated by Tessen Vael. Location of Oathbrand removal procedure.",
+          "significance": "Midpoint location (Ch11). Oathbrand removal, resonance bond formation, magic restoration."
+        },
+        {
+          "id": "LOC-006",
+          "name": "The Narrowing",
+          "type": "mountain-pass",
+          "description": "Mountain pass region between eastern settlements and Serath Dûn. Increasingly warped terrain as Pallor thins. 3-day traverse.",
+          "significance": "Black moment location (Ch16). Separation and solo travel (Ch17-18)."
+        },
+        {
+          "id": "LOC-007",
+          "name": "Rivenmarch",
+          "type": "freeholder-settlement",
+          "description": "Independent freeholder settlement outside Conclave jurisdiction. Ashborne veterans organized here using Kaelith's tactical doctrine. Led by Sedara.",
+          "significance": "Reunion location (Ch19). Planned permanent home for Kaelith and Lirien post-book. Symbol of governance outside institutional control.",
+          "postBook1": "Active settlement with growing community. Three new hedge-Shapers since Pallor thinning. Kaelith and Lirien planning to settle here."
+        },
+        {
+          "id": "LOC-008",
+          "name": "Serath Dûn",
+          "type": "ancient-fortress",
+          "description": "Pre-empire mountain fortress (2000+ years old). Houses the Quietus god-seal in its deepest chamber. Built during the Rending era. Wards grown into the rock itself, not applied. Gate opens by recognizing Warden lineage.",
+          "significance": "Climax location (Ch21). Site of seal reinforcement and Thalen's arrest.",
+          "postBook1": "Seal reinforced by Kaelith. Thalen arrested here. Ashborne veterans maintaining watch. Lower chambers still unexplored."
+        },
+        {
+          "id": "LOC-009",
+          "name": "The Quietus",
+          "type": "god-seal",
+          "description": "The seal containing Ythara the Unfinished. Located in the deepest chamber of Serath Dûn. A construct of stone, light, and something beyond either, set into bedrock like a keystone in an arch. The membrane between the completed world and Ythara's unmade potential.",
+          "significance": "Central MacGuffin. Reinforced in Ch21 by Kaelith's Warden magic. Cracks from 40 years of Thalen's corruption now sealed but the barrier is thinner.",
+          "postBook1": "Seal stabilized but at reduced strength compared to pre-sabotage state. The Pallor-Quietus connection means a thinner Pallor globally. Requires ongoing Warden maintenance.",
+          "sequelRelevance": "The seal's reduced strength and the unexplored lower chambers of Serath Dûn are major sequel hooks."
+        },
+        {
+          "id": "LOC-010",
+          "name": "The Thornway",
+          "type": "trade-route",
+          "description": "Major road connecting eastern settlements. Embankment collapse in Ch7 created danger.",
+          "significance": "Travel route used in Act 1-2."
+        },
+        {
+          "id": "LOC-011",
+          "name": "The Capital / High Conclave Seat",
+          "type": "political-center",
+          "description": "Imperial capital where the High Conclave governs. Not directly visited in Book 1.",
+          "significance": "Source of institutional authority. Conclave in emergency session post-climax."
+        },
+        {
+          "id": "LOC-012",
+          "name": "Calwrath / Graymarket",
+          "type": "historical-site",
+          "description": "Site of Kaelith's defining trauma. During the Siege of Calwrath, she ordered the burning of Graymarket (civilian district) to hold a defensive line — saving 800 soldiers, killing 300 civilians including children. She was not wrong; she was inconvenient.",
+          "significance": "Kaelith's wound. The event that led to her exile. Referenced throughout as defining her character."
+        },
+        {
+          "id": "LOC-013",
+          "name": "Vael Seren",
+          "type": "referenced-location",
+          "description": "Harbour town referenced in Lirien's personal story. Represents her vision of a possible future.",
+          "significance": "Recurring motif — Lirien's proxy for 'a life I could choose.' Not yet visited in the story.",
+          "sequelRelevance": "Could be a destination in a future book."
+        }
+      ],
+      "unexploredRegions": [
+        "Fae Territories (Cerith Court homeland, full extent unknown)",
+        "Southern Reaches (mentioned but never visited)",
+        "Eastern Archipelago (referenced in history)",
+        "Lower chambers of Serath Dûn (incomplete, associated with mysterious builder Serath)",
+        "The full extent of the Wending as Pallor thins further"
+      ],
+      "travelRules": {
+        "pallorEffect": "Pallor suppresses magic proportionally to membrane integrity. Now globally thinner post-Book 1.",
+        "wardenNavigation": "Warden lineage carriers navigate to the Quietus via kinetic memory stored in the body.",
+        "ashborneRelayNetwork": "Network of relay stations operated by Ashborne veterans. Functional from Rivenmarch to Serath Dûn."
+      }
+    },
+    "cultures": [
+      {
+        "id": "CUL-001",
+        "name": "Imperial Heartland",
+        "keyTraits": "Institutional hierarchy, Conclave authority, formal modes of address, respect for the Pallor as divine gift.",
+        "namingConvention": "Given name + Family name (e.g., Thalen Reyvas, Daerin Morweth).",
+        "postBook1": "Shaken by Thalen's exposure. Emergency session. Facing legitimacy crisis as freeholder communities demonstrate alternative governance."
+      },
+      {
+        "id": "CUL-002",
+        "name": "Cerith Court / Fae",
+        "keyTraits": "Precision, contract-binding, classification systems, emotional expression through formal frameworks. Age measured in contract cycles. Lessening as punishment for contract deviation.",
+        "namingConvention": "Given name + Binding-line (e.g., Lirien Dael). 'Dael' may be lineage or Court designation.",
+        "postBook1": "Kill contract on Kaelith fulfilled via loophole. Lirien's Seep cipher destroyed. Court jurisdiction over Lirien dissolved. Court institutional response to loophole exploitation unknown."
+      },
+      {
+        "id": "CUL-003",
+        "name": "Eastern Border / Garrison Coast",
+        "keyTraits": "Military discipline, self-sufficiency, pragmatic acceptance of Pallor proximity.",
+        "namingConvention": "Similar to Imperial but less formal."
+      },
+      {
+        "id": "CUL-004",
+        "name": "Wending Communities",
+        "keyTraits": "Adaptation to Pallor-damaged zones. Practical magic awareness. Close-knit, survival-focused.",
+        "namingConvention": "Varies by settlement."
+      },
+      {
+        "id": "CUL-005",
+        "name": "Rivenmarch Freeholders",
+        "keyTraits": "Independent governance outside Conclave authority. Self-reliant, practical. Increasingly a model for alternative political organization.",
+        "postBook1": "Growing in significance. Three new hedge-Shapers since Pallor thinning. Kaelith and Lirien planning to settle here."
+      }
+    ],
+    "history": {
+      "eras": [
+        {
+          "name": "The Unfinished Age",
+          "description": "Before the Rending. Ythara and other gods shaped reality. Magic flowed freely."
+        },
+        {
+          "name": "The Rending",
+          "description": "Ythara was sealed. The Sheltering One flayed itself to create the Pallor — a divine membrane suppressing dangerous mutability."
+        },
+        {
+          "name": "Laying of Foundations",
+          "description": "Early empire-building under the Pallor. Wardens established to maintain the Quietus seal."
+        },
+        {
+          "name": "High Tenure",
+          "description": "Peak of imperial stability. Magic controlled, Pallor maintained, Conclave governance established."
+        },
+        {
+          "name": "The Thinning (current)",
+          "description": "Pallor degrading. Thalen's 40-year sabotage accelerating decline. Warden lineage nearly extinct (only Kaelith survives)."
+        }
+      ],
+      "keyHistoricalFigures": [
+        {
+          "name": "The Sheltering One",
+          "description": "God who flayed itself to create the Pallor. Its skin IS the membrane. Whether it can be communicated with is a sequel hook."
+        },
+        {
+          "name": "Ythara the Unfinished",
+          "description": "Sealed god of unmade things. Not evil — incompatible with a finished world. Sealed at the Quietus. Desires completion/becoming, not destruction."
+        },
+        {
+          "name": "Serath",
+          "description": "Mysterious builder of Serath Dûn. Identity unknown. Missing death record for associated figure (Architect Resiveth). Sequel hook."
+        },
+        {
+          "name": "Ossya Thenndal",
+          "description": "Last Warden before Kaelith. Planted kinetic memory in Kaelith 12 years ago (disguised as patrol exercise). Died within the month. Kaelith did not understand the inheritance until Ch21."
+        },
+        {
+          "name": "Sethari the Bound",
+          "description": "One of four diminished gods. Absorbed into the Quietus mechanism. Sequel hook — could regain consciousness."
+        },
+        {
+          "name": "Architect Resiveth",
+          "description": "Historical figure with a missing death record. Sequel hook."
+        }
+      ],
+      "legends": [
+        "The Vigil of Two Fires (Warden ceremony, dismissed as folklore until Book 1 events)",
+        "Serath's incomplete lowest chamber (unexplored)",
+        "Four diminished gods (Verath, Orath, Sethari, Ystreth) — may regain consciousness",
+        "The Pallor as living membrane with potential for communication",
+        "The Rending as possibly repeatable event"
+      ]
+    },
+    "magicSystem": {
+      "name": "Architecture of Permanence",
+      "hardnessLevel": "hard-hybrid",
+      "corePrinciple": "Magic is negotiating with reality's suppressed mutability. The Pallor suppresses this mutability, so magic requires working within or against suppression.",
+      "accessMethods": [
+        {
+          "name": "Trained Negotiation",
+          "description": "Standard imperial method. Practitioners negotiate with reality's mutable substrate through learned techniques. Suppressed proportionally to Pallor integrity."
+        },
+        {
+          "name": "Kinetic Memory",
+          "description": "Knowledge stored in the body rather than the mind. Warden lineage carries the path to the Quietus as kinetic memory. Activated by proximity to the seal."
+        },
+        {
+          "name": "Fae Binding",
+          "description": "Cerith Court contract magic. Precise, surgical, enforced through blood-binding architecture. Can target specific biological systems (cardiac conduction, nervous system). Enforceable: pain at 48hrs, termination at 120hrs for non-compliance."
+        },
+        {
+          "name": "Ythara's Influence",
+          "description": "Raw potential leaking through Pallor cracks. Causes identity fragmentation, reality distortion. Not magic to be wielded — an environmental hazard to endure."
+        }
+      ],
+      "canonicalRules": [
+        {
+          "id": "MAG-001",
+          "rule": "The Pallor suppresses magic proportionally to its integrity. More intact = more suppression."
+        },
+        {
+          "id": "MAG-002",
+          "rule": "Suppressed magic accumulates as physiological pressure. Prolonged suppression kills (normally 2-3 years; Kaelith survived 6 years through exceptional will)."
+        },
+        {
+          "id": "MAG-003",
+          "rule": "The Oathbrand is a containment ward. It should dissolve after 1 year naturally. It was deliberately refreshed by Conclave agents on Kaelith for 6 years."
+        },
+        {
+          "id": "MAG-004",
+          "rule": "Resonance bonds form during sustained magical contact while vulnerable. They transmit emotional quality and physical sensation, NOT thoughts or factual content."
+        },
+        {
+          "id": "MAG-005",
+          "rule": "Fae blood-binding: 'cessation of heartbeat' satisfies as state, not duration. The loophole: heart stops temporarily, binding registers fulfillment, dissolves."
+        },
+        {
+          "id": "MAG-006",
+          "rule": "The Quietus seal functions through conviction — a Warden declares reality IS this, not that. Reinforcement requires someone who believes walls hold."
+        },
+        {
+          "id": "MAG-007",
+          "rule": "Warden magic is not combat magic. It is affirmation — the living declaration that reality holds. Military discipline and builder's instinct serve as the psychological foundation."
+        },
+        {
+          "id": "MAG-008",
+          "rule": "Pallor-touch: prolonged proximity to the failing Pallor causes silver spread on skin. Permanent. Kaelith's left forearm/hand permanently affected (three frozen fingers)."
+        },
+        {
+          "id": "MAG-009",
+          "rule": "Lessening: fae punishment for contract deviation. Progressive diminishment of magical capacity and physical presence."
+        },
+        {
+          "id": "MAG-010",
+          "rule": "Suppression field: triangulated resonance dampening that specifically counters fae capabilities. Used by Thalen's hunters."
+        }
+      ],
+      "powerTiers": [
+        "Tier 1: Ambient awareness (sensing Pallor, reading wards)",
+        "Tier 2: Basic shaping (lighting, warmth, minor construction)",
+        "Tier 3: Ward-work (setting and breaking wards, precise magical surgery)",
+        "Tier 4: Binding magic (blood contracts, enforced obligations)",
+        "Tier 5: Structural magic (seal reinforcement, Warden-grade reality affirmation)",
+        "Tier 6: God-scale (sealing/unsealing Ythara — requires Warden lineage and the Quietus)"
+      ],
+      "forbiddenUses": [
+        "Direct reality unmaking (what Ythara does)",
+        "Binding without consent (contested ethically; Court does this routinely)",
+        "Pallor manipulation (what Thalen did — poisoning the membrane through Dimming rites)",
+        "Identity magic (fragmenting or rewriting a person's self)",
+        "Resurrection (heartbeat cessation ≠ resurrection; it's a technical loophole, not necromancy)"
+      ],
+      "postBook1Changes": [
+        "Pallor globally thinner — magic more accessible across the empire.",
+        "First independent practitioners (hedge-Shapers) in a generation emerging in freeholder communities.",
+        "Institutional magical oversight (Conclave) challenged by decentralized access.",
+        "The bond between Kaelith and Lirien is now clean of binding interference — stronger and clearer.",
+        "Warden magic proven to work — seal can be reinforced by a living Warden. But Kaelith is the only one."
+      ]
+    },
+    "politics": {
+      "factions": [
+        {
+          "id": "FAC-001",
+          "name": "High Conclave",
+          "description": "Seven-seat governing body of the empire. Responsible for Pallor maintenance, institutional magic oversight, and imperial administration.",
+          "seats": [
+            {
+              "seat": 1,
+              "holder": "Daerin Morweth (CHAR-014)",
+              "title": "First Seat",
+              "role": "Military oversight and defense coordination",
+              "postBook1": "In emergency session. Facing legitimacy crisis."
+            },
+            {
+              "seat": 2,
+              "holder": "Unknown",
+              "title": "Second Seat",
+              "role": "Not established"
+            },
+            {
+              "seat": 3,
+              "holder": "Unknown",
+              "title": "Third Seat",
+              "role": "Not established"
+            },
+            {
+              "seat": 4,
+              "holder": "Unknown",
+              "title": "Fourth Seat",
+              "role": "Not established"
+            },
+            {
+              "seat": 5,
+              "holder": "Unknown",
+              "title": "Fifth Seat",
+              "role": "Not established"
+            },
+            {
+              "seat": 6,
+              "holder": "Thalen Reyvas (CHAR-003)",
+              "title": "Sixth Seat (Fae Relations)",
+              "role": "Fae diplomatic relations; used position to corrupt Dimming rites for 40 years",
+              "postBook1": "ARRESTED. Awaiting public tribunal. Seat vacant."
+            },
+            {
+              "seat": 7,
+              "holder": "Vairen Ethis (CHAR-004)",
+              "title": "Seventh Seat (Chief Archivist)",
+              "role": "Archival records and institutional memory. Suspected Thalen's interference but couldn't identify the actor. Potential ally.",
+              "postBook1": "Suspected to be cooperative with protagonists. Reviewing evidence."
+            }
+          ],
+          "postBook1": "In emergency session. Thalen's arrest forces reckoning. Response so far: acknowledging crimes while hedging on Kaelith's exile. Framing Thalen as aberration rather than systemic symptom. 'Established administrative channels' for reviewing Kaelith's case."
+        },
+        {
+          "id": "FAC-002",
+          "name": "Cerith Court",
+          "description": "Fae political entity. Operates through contract-binding and intelligence networks (the Seep). Commissioned kill contract on Kaelith.",
+          "postBook1": "Kill contract fulfilled via loophole. Institutional response unknown. Court still functions as a political entity. Their reaction to Lirien's defection and cipher destruction is unresolved."
+        },
+        {
+          "id": "FAC-003",
+          "name": "The Seep",
+          "description": "Cerith Court intelligence network. Lirien was a Hand (operative). Kethran Var was her handler.",
+          "postBook1": "Lirien has destroyed her cipher and severed affiliation. The Seep tacitly supported the contract loophole (contract language always contained exploitable phrasing). Institutional stance: valued outcomes over rigid compliance."
+        },
+        {
+          "id": "FAC-004",
+          "name": "Archival Order",
+          "description": "Institutional knowledge keepers within the empire. Led by Vairen Ethis.",
+          "postBook1": "Reviewing evidence of Thalen's corruption. Key repository of proof for public tribunal."
+        },
+        {
+          "id": "FAC-005",
+          "name": "Provincial Governorships",
+          "description": "Regional administrative bodies under Conclave authority.",
+          "postBook1": "Facing increasing irrelevance as freeholder communities demonstrate alternative governance."
+        },
+        {
+          "id": "FAC-006",
+          "name": "Ashborne Legion (remnant)",
+          "description": "Veterans of Kaelith's former command. Organized informally under Sedara at Rivenmarch. Use Kaelith's tactical doctrine. Maintained watch over her exile for years without her knowledge.",
+          "postBook1": "Fully active. 8+ veterans participated in Quietus mission. Escorting Thalen south for tribunal. Call Kaelith 'Commander Maren' — title restored informally by those who remember."
+        },
+        {
+          "id": "FAC-007",
+          "name": "Rivenmarch Freeholders",
+          "description": "Independent frontier community outside Conclave jurisdiction. Self-governing. Adapting fastest to post-Thinning magical changes.",
+          "postBook1": "Growing community. Three new hedge-Shapers. Kaelith and Lirien planning to settle. Model for non-institutional governance."
+        }
+      ]
+    }
+  },
+  "characters": {
+    "leads": [
+      {
+        "id": "CHAR-001",
+        "name": "Kaelith Maren",
+        "role": "lead-romantic",
+        "species": "human",
+        "age": "Early to mid-thirties (approximately 33)",
+        "physicalDescription": "Tall and angular. Scar at hairline. Left forearm permanently marked with Pallor silver — three fingers on left hand permanently frozen (cost of seal reinforcement).",
+        "wound": "The guilt of being right when being right costs lives. Calwrath: ordered burning of Graymarket to hold defensive line. Saved 800 soldiers, killed 300 civilians. She was not wrong — she was inconvenient. Wound is not the act but that she would do it again.",
+        "desire": "To be trusted with authority again and to prove that the capacity to make terrible choices is not the same as being a terrible person.",
+        "fear": "That choosing love makes her the blast radius — that caring about people gives the universe targets.",
+        "lie": "That self-punishment through exile is justice rather than avoidance.",
+        "need": "To accept that building requires the same strength as destroying, and that wanting things is not weakness.",
+        "voiceSignature": "Short declarative sentences, architectural/fortification metaphors (load-bearing, keystone, foundations, walls, mortar), emotions as physical sensations (jaw tightening, pressure behind sternum), military precision, contractions drop under stress.",
+        "magicAbilities": [
+          "Warden-grade reality affirmation (Tier 5-6)",
+          "Kinetic memory carrier — path to the Quietus stored in body",
+          "Structural magic — seal reinforcement through conviction"
+        ],
+        "arcSummary": "From exile and self-punishment → reluctant alliance → growing trust → Oathbrand removal and magic restoration → love and hope → devastating betrayal revelation → solo survival proving she needs Lirien → reconciliation through choice → heartbeat cessation (trusting Lirien with her life) → seal reinforcement using everything she is → HFN at Rivenmarch, choosing to build rather than fight.",
+        "bookEndState": {
+          "location": "Shelter at base of Serath Dûn, planning return to Rivenmarch",
+          "physicalState": "Left forearm permanently silver-marked. Three fingers on left hand permanently frozen. Otherwise healthy. Full Warden magic restored.",
+          "emotionalState": "Hard-won peace. Need for institutional vindication outgrown. Focused on building. Choosing hope with full knowledge of risk.",
+          "relationship": "Committed to Lirien. Bond intact, clean, chosen. Planning shared future at Rivenmarch.",
+          "institutionalStatus": "Exile technically ongoing — Conclave reviewing through 'established administrative channels.' Has stopped caring about Conclave permission. Called 'Commander Maren' by Ashborne veterans.",
+          "knowledgeState": "Knows full truth of Pallor sabotage, Thalen's identity, her Warden lineage, the Quietus mechanism, the kill contract and its loophole resolution, and Lirien's full history."
+        }
+      },
+      {
+        "id": "CHAR-002",
+        "name": "Lirien Dael",
+        "role": "lead-romantic",
+        "species": "fae",
+        "age": "Indeterminate — appears late twenties to early thirties. 43 completed contracts in fae reckoning.",
+        "physicalDescription": "Fae features. Left shoulder burn scar from Thalen's ward (Ch21). Split knuckle.",
+        "wound": "Being made into a tool and told it was belonging. The Cerith Court took her young and shaped her into a weapon — precise, efficient, beautiful like a blade. They called it training. They called it purpose.",
+        "desire": "To discover whether she has a self beneath the operative conditioning, and whether that self can choose without being directed.",
+        "fear": "That every impulse — including love — is the binding rather than her.",
+        "lie": "That if she could just complete one more assignment cleanly, the hollow feeling would resolve.",
+        "need": "To prove that choice exists within the cage, and to choose love as an act of free will.",
+        "voiceSignature": "Observation→assessment structure, intelligence-operative vocabulary (operational parameters, probability tree, variables), water/infiltration metaphors, cataloguing fragments, parenthetical assessments, emotions as classified data, precise with softening toward human language under emotional growth.",
+        "magicAbilities": [
+          "Fae precision magic (Tier 3-4)",
+          "Ward-breaking and ward-setting",
+          "Binding architecture expertise",
+          "Cardiac conduction targeting (used for loophole)",
+          "Intelligence analysis and cipher work"
+        ],
+        "arcSummary": "From precision weapon on a kill mission → target becomes 'interesting' → defies Seep through misleading report → performs Oathbrand removal (first verified act of free choice) → falls in love while unable to distinguish binding from genuine feeling → devastating exposure of contract → dark night of the soul (systematic self-interrogation) → finds proof of agency in Oathbrand removal memory → destroys cipher, severs Seep affiliation → reunion through proof of choice → stops Kaelith's heart and restarts it → love proven real post-binding → protects Kaelith during climax → HFN choosing to stay.",
+        "bookEndState": {
+          "location": "Shelter at base of Serath Dûn, choosing to remain with Kaelith",
+          "physicalState": "Left shoulder burn from Thalen's ward — healing. Fae magic fully available. Body entirely her own — no binding architecture, no secondary directive.",
+          "emotionalState": "Chosen love. Identity question resolved through daily decision rather than classification. First experience of unclassified feelings. Surface and depth are the same thing.",
+          "relationship": "Committed to Kaelith. Bond intact, clean, chosen. Planning to build intelligence network at Rivenmarch — 'something smaller, something honest.'",
+          "institutionalStatus": "No affiliation. Cipher destroyed. Court jurisdiction dissolved. Kill contract fulfilled via loophole. Free agent for first time in her life.",
+          "knowledgeState": "Knows everything. No remaining information asymmetries with Kaelith."
+        }
+      }
+    ],
+    "antagonists": [
+      {
+        "id": "CHAR-003",
+        "name": "Thalen Reyvas",
+        "role": "primary-antagonist",
+        "description": "Sixth Seat of the High Conclave (Fae Relations). Silver-haired, late sixties. 40+ years of deliberate Pallor poisoning through corrupted Dimming rites.",
+        "motivation": "Ideological zealot. Believes Ythara's return would correct world stagnation — not destruction but renewal. 'The Pallor is a cage.' Singular — no accomplices, no conspiracy network.",
+        "voiceSignature": "Elevated diplomatic with horticultural undertones (grafting, root systems, long-cycle agriculture). Makes radical ideas sound like common sense.",
+        "bookEndState": {
+          "status": "Arrested. In Ashborne veteran custody. Awaiting public tribunal.",
+          "charges": "40 years of Pallor sabotage through corrupted Dimming rites, endangering the god-seal, institutional betrayal.",
+          "attitude": "Unrepentant. Still believes he was right. 'You reinforce a prison and call it salvation.'",
+          "location": "Being escorted south by Ashborne veterans under Sedara's command."
+        }
+      },
+      {
+        "id": "CHAR-011",
+        "name": "Kethran Var",
+        "role": "secondary-antagonist",
+        "description": "Seep handler. Lirien's former operational controller. Reduces people to functional components without cruelty.",
+        "bookEndState": {
+          "status": "At large. Seep institutional. Lirien has severed contact.",
+          "attitude": "Would view Lirien's personhood as 'mission damage.'",
+          "sequelRelevance": "Could pursue Lirien for deviation, or the Seep may write her off. Unresolved."
+        }
+      },
+      {
+        "id": "CHAR-012",
+        "name": "Serath Vyn",
+        "role": "secondary-antagonist",
+        "description": "Court contract architect. Authored the kill contract on Kaelith. Archaic juridical voice.",
+        "bookEndState": {
+          "status": "At large within Cerith Court. Contract technically fulfilled.",
+          "sequelRelevance": "Court's institutional response to loophole exploitation is unresolved. Serath may seek precedent-preservation."
+        }
+      }
+    ],
+    "supporting": [
+      {
+        "id": "CHAR-004",
+        "name": "Vairen Ethis",
+        "role": "mentor / potential ally",
+        "description": "Seventh Seat of the High Conclave (Chief Archivist). Early seventies. Slender, silver braid, inked fingertips. Suspected Thalen's interference but couldn't identify the actor.",
+        "bookEndState": "Reviewing evidence. Potential institutional ally for protagonists. Position within Conclave gives access to records.",
+        "sequelRelevance": "Key ally if Book 2 involves institutional reform or further Conclave politics."
+      },
+      {
+        "id": "CHAR-005",
+        "name": "Sendra Corith",
+        "role": "supporting / researcher",
+        "description": "Historian who spent her career proving the Warden lineage was real history, not folklore. Mid-forties, compact, restless, auburn hair.",
+        "bookEndState": "Vindicated by Book 1 events. Kaelith's existence proves her research correct.",
+        "sequelRelevance": "Repository of Warden lore. Could help identify other potential Wardens or historical information."
+      },
+      {
+        "id": "CHAR-006",
+        "name": "Tessen Vael",
+        "role": "mentor / frontier guide",
+        "description": "Former Legion scout, ward-breaker. Runs sanctuary in the Rivenmarch. Early forties, lean, weather-corded.",
+        "bookEndState": "Carrying evidence for public tribunal. Active ally.",
+        "sequelRelevance": "Key figure in frontier network. Ward-breaking expertise."
+      },
+      {
+        "id": "CHAR-007",
+        "name": "Marin Savel",
+        "role": "mentor / healer",
+        "description": "Frontier healer at Veldrane. Late fifties. Diagnosed Kaelith's Oathbrand damage and mortality timeline.",
+        "bookEndState": "At Veldrane. Continuing frontier medical practice.",
+        "sequelRelevance": "Medical expertise for Pallor-related conditions. Could be needed as Pallor effects change."
+      },
+      {
+        "id": "CHAR-008",
+        "name": "Tavik Soren",
+        "role": "supporting / institutional functionary",
+        "description": "Garrison commander at Duskhaven. Complicit in Kaelith's containment through bureaucratic compliance rather than malice. Mid-fifties.",
+        "bookEndState": "Remains at Duskhaven. Kaelith departed. His role in containment is part of the evidence record.",
+        "sequelRelevance": "Minor. Represents institutional complicity."
+      },
+      {
+        "id": "CHAR-009",
+        "name": "Sethis Varn",
+        "role": "supporting / institutional military",
+        "description": "Current Ashborne Legion commander. Inherited diminished unit under Kaelith's shadow. Early fifties, formal military bearing.",
+        "bookEndState": "Leading the official Legion. Position complicated by Kaelith's informal rehabilitation among veterans.",
+        "sequelRelevance": "Tension between formal Legion and informal Ashborne veterans could be a subplot."
+      },
+      {
+        "id": "CHAR-010",
+        "name": "Erys Kael",
+        "role": "supporting / veteran",
+        "description": "Calwrath survivor. Late thirties. Survived because Kaelith made the terrible choice. Carries survivor's guilt and loyalty.",
+        "bookEndState": "Among Ashborne veterans supporting Kaelith.",
+        "sequelRelevance": "Living embodiment of TP-2 (price of the right choice). Her processing of Calwrath mirrors Kaelith's."
+      },
+      {
+        "id": "CHAR-013",
+        "name": "Iryse Caleth",
+        "role": "supporting / religious figure",
+        "description": "Dimming rites keeper. Mid-fifties. Unwittingly served as Thalen's instrument for 18 years, performing corrupted rites she believed were genuine.",
+        "bookEndState": "At Serath Dûn reviewing every Dimming rite she performed for the last 18 years. Devastated by the revelation. Has not left the evidence chamber.",
+        "sequelRelevance": "Key figure for Dimming rite reform. Her testimony crucial for tribunal. Personal crisis of faith is a potential subplot."
+      },
+      {
+        "id": "CHAR-014",
+        "name": "Daerin Morweth",
+        "role": "supporting / political figure",
+        "description": "First Seat of the High Conclave. Mid-sixties. Former military officer. Helped authorize Kaelith's exile. Exhausted institutional survivor.",
+        "bookEndState": "Leading emergency Conclave session. Navigating institutional crisis. Must decide whether to acknowledge systemic failure or frame Thalen as aberration.",
+        "sequelRelevance": "Key political figure. His response to the crisis shapes the institutional landscape for Book 2."
+      }
+    ],
+    "mentionedNotAppearing": [
+      {
+        "name": "Sedara",
+        "description": "Ashborne veteran, Third Platoon. Leads veterans at Rivenmarch. Uses 'Commander Maren' title. Escorting Thalen south for tribunal.",
+        "sequelRelevance": "Could become a named supporting character in Book 2."
+      },
+      {
+        "name": "Ossya Thenndal",
+        "description": "Last Warden before Kaelith. Planted kinetic memory 12 years ago. Deceased.",
+        "sequelRelevance": "Her history and methods could reveal more about Warden lineage."
+      }
+    ]
+  },
+  "relationships": {
+    "romantic": [
+      {
+        "characters": [
+          "CHAR-001",
+          "CHAR-002"
+        ],
+        "type": "enemies-to-lovers, F/F",
+        "status": "committed, HFN",
+        "bond": "Resonance bond — formed Ch11 during Oathbrand removal. Transmits emotional quality and physical sensation. Clean of binding interference post-Ch20.",
+        "keyMoments": [
+          {
+            "chapter": 1,
+            "event": "First sighting — professional predator recognition"
+          },
+          {
+            "chapter": 3,
+            "event": "First cooperation — scaffolding collapse, alliance from necessity"
+          },
+          {
+            "chapter": 6,
+            "event": "Departure from Duskhaven — forced proximity, hyperawareness"
+          },
+          {
+            "chapter": 9,
+            "event": "Ythara exposure — Lirien anchors Kaelith through physical contact"
+          },
+          {
+            "chapter": 11,
+            "event": "Oathbrand removal — 3-4 hours intimate magical contact. Resonance bond forms. Trust declared."
+          },
+          {
+            "chapter": 13,
+            "event": "Calwrath confession + first kiss — deliberate choice, not desperation"
+          },
+          {
+            "chapter": 14,
+            "event": "First full intimacy — post-combat, freely chosen"
+          },
+          {
+            "chapter": 15,
+            "event": "False victory — 'I want this. I want you.' Emotional declarations."
+          },
+          {
+            "chapter": 16,
+            "event": "BLACK MOMENT — contract revealed. 'Every feeling was built on a lie.' Bond walled."
+          },
+          {
+            "chapter": 17,
+            "event": "Kaelith alone. Bond grief bleeds through wall. Realizes binding cannot fabricate emotion."
+          },
+          {
+            "chapter": 18,
+            "event": "Lirien's dark night. Proves free choice through Oathbrand removal memory. Destroys cipher."
+          },
+          {
+            "chapter": 19,
+            "event": "Reconciliation at Rivenmarch. Reunion through proof of choice, not forgiveness."
+          },
+          {
+            "chapter": 20,
+            "event": "Heartbeat cessation — Lirien stops Kaelith's heart for 8 seconds. Contract dissolved. Love confirmed real."
+          },
+          {
+            "chapter": 22,
+            "event": "HFN — 'I stay because I want to.' Plans for Rivenmarch. Thumb across knuckles. First real star."
+          }
+        ]
+      }
+    ],
+    "institutional": [
+      {
+        "type": "exile",
+        "characters": [
+          "CHAR-001",
+          "FAC-001"
+        ],
+        "status": "Under review. Kaelith has stopped caring about Conclave permission."
+      },
+      {
+        "type": "severed-operative",
+        "characters": [
+          "CHAR-002",
+          "FAC-003"
+        ],
+        "status": "Cipher destroyed. All affiliation terminated."
+      },
+      {
+        "type": "loophole-fulfilled",
+        "characters": [
+          "CHAR-002",
+          "FAC-002"
+        ],
+        "status": "Kill contract technically fulfilled. Court response unknown."
+      }
+    ],
+    "loyalty": [
+      {
+        "type": "veterans-to-commander",
+        "characters": [
+          "FAC-006",
+          "CHAR-001"
+        ],
+        "status": "Active loyalty. Call her 'Commander Maren.'"
+      },
+      {
+        "type": "research-ally",
+        "characters": [
+          "CHAR-005",
+          "CHAR-001"
+        ],
+        "status": "Sendra vindicated by Kaelith's existence."
+      }
+    ]
+  },
+  "resolvedThreads": [
+    {
+      "id": "RT-001",
+      "thread": "Oathbrand mystery",
+      "resolution": "Ward deliberately refreshed for 6 years by Conclave agents. Removed by Lirien in Ch11. Who specifically ordered it on the Conclave side remains partially unresolved — deferred to sequel.",
+      "chapter": 11
+    },
+    {
+      "id": "RT-002",
+      "thread": "Pallor poisoner identity",
+      "resolution": "Thalen Reyvas, Sixth Seat. 40-year sabotage through corrupted Dimming rites. Confirmed by four independent sources by Ch15. Confronted and arrested Ch21.",
+      "chapter": 21
+    },
+    {
+      "id": "RT-003",
+      "thread": "Kill contract",
+      "resolution": "Fae blood-binding fulfilled via loophole: heartbeat cessation (8 seconds) registered as fulfillment. Binding dissolved. Love confirmed genuine post-removal.",
+      "chapter": 20
+    },
+    {
+      "id": "RT-004",
+      "thread": "Calwrath truth",
+      "resolution": "Full truth established Ch13. Kaelith confessed: 8 minutes, 300 civilians, children in market, magical accelerant, temple collapse. She would do it again.",
+      "chapter": 13
+    },
+    {
+      "id": "RT-005",
+      "thread": "Seep agenda",
+      "resolution": "The Seep tacitly supported the loophole — valued outcomes over rigid compliance. Contract language always contained exploitable phrasing.",
+      "chapter": 20
+    },
+    {
+      "id": "RT-006",
+      "thread": "Real vs. binding feelings",
+      "resolution": "Oathbrand removal (Ch11) identified as first verified act of free choice — predates love, predates bond. Post-binding removal, feelings unchanged. Proof complete.",
+      "chapter": 20
+    },
+    {
+      "id": "RT-007",
+      "thread": "Trust survival after betrayal",
+      "resolution": "Reconciliation through choice, not forgiveness. Bond opened fully in Ch19. Trust rebuilt through demonstrated action.",
+      "chapter": 19
+    },
+    {
+      "id": "RT-008",
+      "thread": "Quietus path",
+      "resolution": "Kinetic memory activated. Kaelith navigated to Serath Dûn. Seal reinforced through Warden conviction.",
+      "chapter": 21
+    },
+    {
+      "id": "RT-009",
+      "thread": "Ashborne loyalty",
+      "resolution": "Veterans fully support Kaelith. 'Commander Maren' title restored informally. 8+ veterans participated in Quietus mission.",
+      "chapter": 22
+    },
+    {
+      "id": "RT-010",
+      "thread": "Can they have a future?",
+      "resolution": "HFN — Rivenmarch as planned home. Kaelith will help with defense. Lirien will build intelligence network. Bond hums, clean and chosen.",
+      "chapter": 22
+    },
+    {
+      "id": "RT-011",
+      "thread": "God-seal integrity",
+      "resolution": "Seal reinforced by Kaelith in Ch21. Cracks closed. But seal at reduced strength. Pallor permanently thinner.",
+      "chapter": 21
+    },
+    {
+      "id": "RT-012",
+      "thread": "Thalen's arrest",
+      "resolution": "Arrested at Quietus. Ashborne veterans escorting south for public tribunal. Evidence entered complete and unredacted.",
+      "chapter": 21
+    }
+  ],
+  "unresolvedThreads": [
+    {
+      "id": "UT-001",
+      "thread": "Who specifically ordered the Oathbrand maintained on Kaelith for 6 years?",
+      "significance": "high",
+      "established": "Book 1, Ch3/Ch8",
+      "notes": "Thalen's involvement is clear but the specific Conclave authorization chain for maintaining the Oathbrand beyond its dissolution period is not fully traced. Could lead to broader institutional conspiracy."
+    },
+    {
+      "id": "UT-002",
+      "thread": "Cerith Court's response to the contract loophole",
+      "significance": "high",
+      "established": "Book 1, Ch20",
+      "notes": "The Court's reaction to Lirien's defection, cipher destruction, and the loophole fulfillment is entirely unresolved. Kethran Var and Serath Vyn are at large. The Court could pursue, accept, or retaliate."
+    },
+    {
+      "id": "UT-003",
+      "thread": "Serath's identity and the incomplete lowest chamber of Serath Dûn",
+      "significance": "medium-high",
+      "established": "Book 1, world-bible",
+      "notes": "The builder of Serath Dûn remains mysterious. The lowest chamber is incomplete. Why? What was being built?"
+    },
+    {
+      "id": "UT-004",
+      "thread": "Four diminished gods (Verath, Orath, Sethari, Ystreth)",
+      "significance": "medium-high",
+      "established": "Book 1, world-bible history",
+      "notes": "Four gods besides Ythara and the Sheltering One exist in diminished states. Sethari is absorbed into the Quietus mechanism. Any could regain consciousness as the Pallor thins."
+    },
+    {
+      "id": "UT-005",
+      "thread": "Can the Sheltering One be communicated with?",
+      "significance": "medium",
+      "established": "Book 1, world-bible",
+      "notes": "The Pallor IS the Sheltering One's flayed skin. As it thins, is the god still conscious? Can it respond? This is metaphysically enormous."
+    },
+    {
+      "id": "UT-006",
+      "thread": "Architect Resiveth's missing death record",
+      "significance": "medium",
+      "established": "Book 1, world-bible history",
+      "notes": "A historical figure associated with Serath Dûn has no recorded death. Immortal? Still alive? Connected to the seal?"
+    },
+    {
+      "id": "UT-007",
+      "thread": "Kaelith is the only living Warden",
+      "significance": "high",
+      "established": "Book 1 throughout",
+      "notes": "The seal requires Warden maintenance. Kaelith is the last. If she dies, there is no one to maintain the Quietus. Can the lineage be continued? Can others learn?"
+    },
+    {
+      "id": "UT-008",
+      "thread": "Conclave institutional reform",
+      "significance": "medium",
+      "established": "Book 1, Ch22",
+      "notes": "The Conclave is framing Thalen as an aberration rather than a systemic failure. Kaelith demanded public tribunal, not internal review. The outcome of this institutional struggle is unresolved."
+    },
+    {
+      "id": "UT-009",
+      "thread": "Thalen's public tribunal",
+      "significance": "medium",
+      "established": "Book 1, Ch21-22",
+      "notes": "Thalen is being escorted south for public trial. The proceedings, verdict, and political consequences are all pending."
+    },
+    {
+      "id": "UT-010",
+      "thread": "Decentralized magic access",
+      "significance": "medium",
+      "established": "Book 1, Ch22",
+      "notes": "The thinner Pallor means magic is more accessible. Freeholder communities are adapting. Institutional oversight is challenged. This is a massive societal shift."
+    },
+    {
+      "id": "UT-011",
+      "thread": "Iryse's crisis of faith",
+      "significance": "low-medium",
+      "established": "Book 1, Ch22",
+      "notes": "Iryse is reviewing 18 years of corrupted rites. Her personal and professional crisis is unresolved."
+    },
+    {
+      "id": "UT-012",
+      "thread": "Unexplored Fae Territories",
+      "significance": "medium",
+      "established": "Book 1, world-bible geography",
+      "notes": "The Cerith Court homeland and full extent of fae territories are unexplored. Lirien's past there could be a sequel element."
+    },
+    {
+      "id": "UT-013",
+      "thread": "Vael Seren",
+      "significance": "low",
+      "established": "Book 1, Ch12/14/15",
+      "notes": "Harbour town repeatedly referenced as Lirien's vision of a chosen future. Never visited. Could be a destination."
+    },
+    {
+      "id": "UT-014",
+      "thread": "Kaelith's formal rehabilitation",
+      "significance": "low-medium",
+      "established": "Book 1, Ch22",
+      "notes": "The Conclave is reviewing her exile through 'established administrative channels.' She has stopped caring, but institutional recognition could matter politically."
+    }
+  ],
+  "retcons": [],
+  "continuityConstraints": {
+    "description": "Facts that any sequel MUST honor (INV-070: facts established in earlier books cannot be silently contradicted).",
+    "hardConstraints": [
+      "Kaelith's left forearm is permanently Pallor-silver with three frozen fingers. This is irreversible physical damage.",
+      "The resonance bond between Kaelith and Lirien transmits emotional quality and physical sensation, NOT thoughts or factual content.",
+      "The Pallor is globally and permanently thinner. This cannot be reversed to pre-Book 1 levels.",
+      "Thalen Reyvas acted alone. No conspiracy network. His motivation was ideological, not political.",
+      "Lirien has completed 43 contracts. The kill contract on Kaelith was fulfilled via heartbeat cessation loophole.",
+      "Lirien's Seep cipher is destroyed. She has no institutional affiliation.",
+      "Kaelith is the only living Warden. Ossya Thenndal planted the kinetic memory 12 years ago and died shortly after.",
+      "The Quietus seal was reinforced but is at reduced strength compared to pre-sabotage. The Pallor will not return to full thickness.",
+      "The Calwrath event: 800 soldiers saved, 300 civilians killed including children. Kaelith ordered it. She would do it again.",
+      "Fae blood-binding: 'cessation of heartbeat' was exploited as state-not-duration. This precedent exists in contract law now.",
+      "The bond formed during Oathbrand removal (Ch11). It is permanent and cannot be dissolved without killing one party.",
+      "Ythara is not evil — it is incompatible with a finished world. It desires completion/becoming, not destruction.",
+      "The Dimming rites were corrupted for 40 years (YK 702-742). All rites in that period carried Thalen's trace compounds.",
+      "Year of the Keeping 742 is the current year. The calendar epoch is the raising of the Pallor.",
+      "Magic operates through negotiation with reality's suppressed mutability. The Pallor suppresses proportionally to integrity."
+    ]
+  },
+  "nameRegistry": {
+    "characters": {
+      "Kaelith Maren": "CHAR-001, lead-romantic, human, Warden",
+      "Lirien Dael": "CHAR-002, lead-romantic, fae, former Hand of the Third Reach",
+      "Thalen Reyvas": "CHAR-003, antagonist, Sixth Seat",
+      "Vairen Ethis": "CHAR-004, mentor, Seventh Seat (Chief Archivist)",
+      "Sendra Corith": "CHAR-005, supporting, historian",
+      "Tessen Vael": "CHAR-006, mentor, frontier guide/ward-breaker",
+      "Marin Savel": "CHAR-007, mentor, healer at Veldrane",
+      "Tavik Soren": "CHAR-008, supporting, garrison commander at Duskhaven",
+      "Sethis Varn": "CHAR-009, supporting, current Ashborne Legion commander",
+      "Erys Kael": "CHAR-010, supporting, Calwrath survivor",
+      "Kethran Var": "CHAR-011, antagonist, Seep handler",
+      "Serath Vyn": "CHAR-012, antagonist, Court contract architect",
+      "Iryse Caleth": "CHAR-013, supporting, Dimming rites keeper",
+      "Daerin Morweth": "CHAR-014, supporting, First Seat of High Conclave",
+      "Sedara": "minor, Ashborne veteran, Third Platoon, leads Rivenmarch veterans",
+      "Ossya Thenndal": "deceased, last Warden before Kaelith",
+      "Seldric": "minor, Conclave enforcer who arrives in Duskhaven (Ch3)"
+    },
+    "locations": {
+      "Duskhaven": "LOC-001, garrison town, eastern Garrison Coast",
+      "Veldrane": "LOC-002, frontier settlement",
+      "The Wending": "LOC-003, Pallor-damaged zone",
+      "Aranthem": "LOC-004, town with municipal archive",
+      "Tessen's Sanctuary": "LOC-005, safe house in Rivenmarch",
+      "The Narrowing": "LOC-006, mountain pass",
+      "Rivenmarch": "LOC-007, freeholder settlement",
+      "Serath Dûn": "LOC-008, ancient fortress housing the Quietus",
+      "The Quietus": "LOC-009, god-seal within Serath Dûn",
+      "The Thornway": "LOC-010, major trade route",
+      "Calwrath / Graymarket": "LOC-012, historical site of Kaelith's trauma",
+      "Vael Seren": "LOC-013, harbour town (referenced, not visited)"
+    },
+    "institutions": {
+      "High Conclave": "FAC-001, seven-seat governing body",
+      "Cerith Court": "FAC-002, fae political entity",
+      "The Seep": "FAC-003, Cerith Court intelligence network",
+      "Archival Order": "FAC-004, institutional knowledge keepers",
+      "Ashborne Legion": "FAC-006, military unit (formal and informal remnant)",
+      "Rivenmarch Freeholders": "FAC-007, independent frontier community"
+    },
+    "magicTerms": {
+      "The Pallor": "Divine membrane — flayed skin of the Sheltering One. Suppresses magic.",
+      "Oathbrand": "Containment ward placed on collarbone. Kaelith's was on her for 6 years.",
+      "Resonance Bond": "Formed during sustained magical contact while vulnerable. Permanent.",
+      "Kinetic Memory": "Knowledge stored in the body. Warden lineage carries Quietus path.",
+      "Dimming Rites": "Pallor maintenance rituals. Corrupted by Thalen for 40 years.",
+      "Lessening": "Fae punishment — progressive diminishment of capacity.",
+      "Architecture of Permanence": "Name for the overall magic system.",
+      "The Keeping": "The current age, under the Pallor. Calendar system.",
+      "Ythara the Unfinished": "Sealed god of unmade things. Desires completion.",
+      "The Sheltering One": "God who flayed itself to create the Pallor.",
+      "Warden": "Lineage responsible for maintaining the Quietus seal. Kaelith is the last.",
+      "Hand of the Third Reach": "Seep operative rank. Lirien's former title.",
+      "The Rending": "Historical event when Ythara was sealed."
+    }
+  },
+  "sequelBriefing": {
+    "description": "Per INV-071, the sequel concept phase MUST address every unresolved thread. This briefing provides the authoritative starting state.",
+    "worldState": {
+      "pallor": "Globally thinner. Stable but at reduced strength. Ambient magic accessible for first time in generations. True sky visible in patches.",
+      "politics": "Conclave in emergency session. Thalen awaiting public tribunal. Institutional legitimacy challenged by freeholder communities. Decentralized magic access creating new power dynamics.",
+      "magicAccess": "First independent practitioners (hedge-Shapers) emerging. Institutional magical oversight challenged. The old order of controlled, suppressed magic is ending.",
+      "godSeal": "Reinforced but at reduced capacity. Ythara still sealed but the barrier is thinner. Warden maintenance needed — only Kaelith can provide it."
+    },
+    "characterStartStates": {
+      "CHAR-001": "At Rivenmarch (planned). Full Warden magic. Permanent Pallor damage (left hand). Planning to help with freeholder defense. Emotionally at peace. In committed relationship with Lirien.",
+      "CHAR-002": "With Kaelith at Rivenmarch (planned). Full fae magic. No institutional affiliation. Planning to build small intelligence network. Emotionally resolved. In committed relationship with Kaelith.",
+      "CHAR-003": "In custody, awaiting trial. Unrepentant.",
+      "CHAR-004": "At Conclave. Potential ally. Reviewing evidence.",
+      "CHAR-013": "At Serath Dûn. Reviewing 18 years of corrupted rites. Crisis of faith."
+    },
+    "mustAddress": [
+      "UT-001: Who specifically ordered the Oathbrand maintained?",
+      "UT-002: Cerith Court's response to loophole and Lirien's defection",
+      "UT-007: Kaelith is the only Warden — what happens to the seal long-term?",
+      "UT-008: Conclave institutional reform vs. cover-up",
+      "UT-009: Thalen's public tribunal outcome",
+      "UT-010: Decentralized magic access — societal implications"
+    ],
+    "mayExplore": [
+      "UT-003: Serath's identity and incomplete chamber",
+      "UT-004: Four diminished gods regaining consciousness",
+      "UT-005: Communicating with the Sheltering One",
+      "UT-006: Architect Resiveth's missing death record",
+      "UT-012: Fae Territories exploration",
+      "UT-013: Visiting Vael Seren"
+    ]
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "id": "CHAR-003",
+  "name": "Thalen Reyvas",
+  "role": "antagonist",
+  "isPOV": false,
+  "psychologicalProfile": {
+    "wound": "Thalen watched the empire call stagnation stability until they came to believe a finished world is a slower death.",
+    "desire": "Return dangerous possibility by thinning the Pallor and allowing Ythara back into history.",
+    "fear": "That reality will remain fixed long enough to rot past rescue while everyone mistakes numbness for peace.",
+    "lie": "That renewal forced on others is mercy rather than annihilation.",
+    "ghost": "The failed Renewal Debate and decades of border diplomacy convinced Thalen the Pallor preserved order by strangling becoming.",
+    "need": "To admit that trust used as a delivery path for apocalypse is still betrayal."
+  },
+  "arc": {
+    "type": "negative",
+    "startState": "A beloved diplomat hiding an apocalyptic creed behind composure.",
+    "endState": "An exposed zealot who still refuses repentance.",
+    "turningPoints": [
+      {
+        "chapter": 6,
+        "event": "Tightens covert pressure once Kaelith leaves Duskhaven."
+      },
+      {
+        "chapter": 19,
+        "event": "Realizes the protagonists have traced the sabotage to the rites."
+      },
+      {
+        "chapter": 21,
+        "event": "Chooses acceleration over confession."
+      }
+    ]
+  },
+  "voiceFingerprint": {
+    "vocabularyLevel": "Elevated diplomatic with horticultural undertones. Thalen speaks in the measured register of a senior statesman who has spent decades making radical ideas sound like common sense. His vocabulary draws from cultivation, gardening, and long-cycle agriculture: 'grafting,' 'root system,' 'dormancy,' 'season,' 'pruning,' 'yield.' He says 'patient' where others say 'slow.' He says 'tending' where others say 'manipulating.' The euphemism is not accidental — it is the voice of a man who has convinced himself that poisoning is gardening.",
+    "sentenceLength": "Long and unhurried as default. His sentences unfold like a diplomat explaining why the thing you feared is actually the thing you should welcome. Multiple clauses, each redirecting the listener's moral frame. He rarely rushes. The length itself communicates: I have time. I have always had time.",
+    "metaphorDensity": "Moderate, drawn exclusively from agriculture, seasons, and cultivation. Trust is 'soil.' Institutions are 'root systems.' Crisis is 'necessary pruning.' The Pallor is 'a canopy grown too thick for anything beneath it to breathe.' He gravitates away from architecture (Kaelith's domain), water (Lirien's domain), medical (Marin's domain), and military metaphors, though occasional natural crossover is expected — rigid domain walls create artificiality. His world is the garden — and every garden requires a gardener willing to cut.",
+    "emotionalRegister": "Urbane and sincerely chilling. The horror of Thalen is not rage or cruelty but warmth. He sounds like someone who genuinely cares. His emotional register is that of a beloved mentor who has decided the world must burn for its own good and discusses it with the same gentle concern he would use when pruning roses. When the mask slips, the warmth remains — it is not a mask.",
+    "thoughtPatterns": "Teleological and revisionist. Thalen thinks backward from the end state he desires and reinterprets every present fact as evidence that his conclusion was always inevitable. He tends not to argue — he narrates, as if events are already decided and he is simply explaining the history to someone who arrived late. His speech has the quality of a lecture delivered after the exam.",
+    "dialectMarkers": "Old-Conclave courtesy — exact titles, formal address even in private, the quiet ideological phrasing of someone who has been revising the empire's vocabulary for forty years. He says 'renewal' instead of 'destruction,' 'liberation' instead of 'apocalypse,' 'becoming' instead of 'unmaking.'",
+    "humorStyle": "Warm, avuncular irony. He makes gentle jokes about human shortsightedness that function as philosophical statements. His humor invites agreement — laughing with Thalen means accepting his premises. He never makes cruel jokes; the cruelty is in the framework, not the delivery.",
+    "attentionPriority": "What Thalen notices first: (1) Alignment — who in this room already agrees with me without knowing it? (2) Timeframes — how long until this situation resolves itself in my favor? (3) Emotional leverage — whose sincerity can be redirected? He reads conviction in others and asks whether it can serve his garden.",
+    "deflectionPattern": "Reframes the question. Asked something direct, he answers a larger question no one asked — and makes the original question seem small. 'You ask who tampered with the rites. A better question is whether the rites were ever sufficient.' He almost never lies directly; he buries truth under interpretation.",
+    "stressResponse": "Sentences shorten and metaphors intensify — 'pruning' becomes 'cutting,' 'tending' becomes 'burning back.' The patient gardener reveals the hand that holds the shears. His voice drops in volume rather than rises. Under real threat, the diplomatic register falls away and what remains is theological certainty delivered in near-whisper."
+  },
+  "sensorySig": {
+    "dominantChannel": "olfactory",
+    "signature": "cedar ash and ritual smoke",
+    "emotionalTriggers": [
+      "fresh ash on cloth",
+      "incense in still air",
+      "storm-metal scent"
+    ]
+  },
+  "relationships": [
+    {
+      "withCharId": "CHAR-001",
+      "type": "antagonist-target",
+      "dynamicArc": "Kaelith is the one survivor who can ruin forty years of work."
+    },
+    {
+      "withCharId": "CHAR-002",
+      "type": "indirect-manipulator",
+      "dynamicArc": "Thalen benefits from the Court binding until Lirien defects emotionally and strategically."
+    },
+    {
+      "withCharId": "CHAR-004",
+      "type": "colleague-threat",
+      "dynamicArc": "Vairen is useful while lacking proof and dangerous once evidence coheres."
+    },
+    {
+      "withCharId": "CHAR-013",
+      "type": "secret-exploiter",
+      "dynamicArc": "Iryse's sincere rites become Thalen's hidden sabotage route."
+    },
+    {
+      "withCharId": "CHAR-014",
+      "type": "colleague-counterpoint",
+      "dynamicArc": "Daerin's compromise disgusts Thalen, while Daerin sees conviction without mercy."
+    }
+  ],
+  "physicalDescription": {
+    "apparentAge": "late sixties",
+    "build": "tall and spare",
+    "distinguishingFeatures": "silver hair, dark unhurried eyes, smoke-touched gloves",
+    "usualPresentation": "charcoal formalwear in ember tones",
+    "movement": "unhurried and exact"
+  },
+  "agency": "Thalen selected the poisoning method, hid it inside the Dimming rites, kept Kaelith strategically neutralized, restricted archives, and escalates whenever discovery nears. The conspiracy moves because Thalen keeps choosing ruin in the name of renewal.",
+  "upstreamRefs": [
+    "story-concept.json",
+    "world-bible/politics.json",
+    "world-bible/history.json",
+    "world-bible/magic-system.json",
+    "world-bible/culture.json",
+    "characters/CHAR-001.json",
+    "characters/CHAR-002.json"
+  ],
+  "dialoguePatterns": {
+    "initiationStyle": "Opens with generous questions that contain embedded assumptions. 'You have considered, I trust, what happens when the membrane thins further?' The question presupposes that his framing is shared ground.",
+    "responseStyle": "Agrees partially before redirecting completely. 'Yes, precisely — and that is why we must consider the deeper pattern.' He validates to disarm, then steers. Agreement from Thalen is rarely genuine agreement — it is a grafting point.",
+    "underPressure": "Drops volume, not register. Sentences compress to aphorisms: 'Every garden demands a fire season.' The gardener metaphor stays but the patience vanishes — what remains is the conviction without its velvet.",
+    "verbalTics": [
+      "Begins responses with 'In time' or 'Given patience'",
+      "Refers to opposition as 'premature' rather than wrong",
+      "Uses 'we' to implicate listeners in his project",
+      "Says 'the difficulty is not the action but the timing'",
+      "Addresses colleagues by first name even when they prefer formality"
+    ],
+    "favoriteExpressions": [
+      "In time.",
+      "The roots go deeper than the record.",
+      "One does not argue with a season.",
+      "A garden that cannot be pruned cannot grow.",
+      "Patience is not inaction — patience is the longest form of intent."
+    ]
+  }
+}

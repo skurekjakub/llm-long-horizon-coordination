@@ -1,0 +1,147 @@
+{
+  "chapterNumber": 2,
+  "editorType": "copy",
+  "generatedAt": "2026-03-20T10:05:00Z",
+  "overallFactualAssessment": "The chapter's continuity with established world-building is generally sound: Oathbrand behavior matches the magic system, the Pallor description matches geography, and binding contract mechanics align with established rules. However, two factual issues require correction: (1) a critical duplicate-content error in Scene 3 where a block of analysis and a structural beat are repeated nearly verbatim, and (2) a major continuity error where Lirien's narration references 'five years' of exile when all authoritative sources (Chapter 1 revised, character profiles, magic system timeline) establish six years (YK 736 branding to YK 742 present). Information asymmetry compliance is clean — Lirien does not access information she should not have at this point in the narrative. Grammar and punctuation are professional-grade with only minor items. Naming consistency is maintained throughout.",
+  "findings": [
+    {
+      "id": "COPY-002-001",
+      "severity": "critical",
+      "category": "duplicate-content",
+      "location": "Scene 3, lines 302-311 repeated at lines 326-333; 'set papers down / stared at wall' beat repeated",
+      "finding": "A block of operational assessment text in Scene 3 appears twice with near-identical content. The first occurrence (lines 302-311) includes Lirien's analysis of the operational paradox — she cannot execute the contract on incomplete intelligence, but the intelligence she needs can only be obtained through proximity that compromises operational distance. The second occurrence (lines 326-333) restates this same paradox with minor rephrasing. Additionally, the physical beat 'set her papers down and stared at the wall' (or close variant) appears twice in the section, marking the same emotional shift both times. This is a drafting artifact — the duplicate was likely an incomplete revision where the original passage was not removed after the replacement was written. The duplication adds approximately 200-250 words to the chapter's word count.",
+      "currentText": "[First occurrence approximately lines 302-311] ... [Second occurrence approximately lines 326-333 with minor rewording]",
+      "recommendation": "Remove the first occurrence entirely and retain the second, which is the more refined formulation. Remove the second 'set papers down' physical beat. The paradox should appear once, at the section's climactic moment, where its weight is maximized."
+    },
+    {
+      "id": "COPY-002-002",
+      "severity": "major",
+      "category": "continuity-error",
+      "location": "Lines 12, 47, 128, 155-158, 318 — 'five years' references",
+      "finding": "The chapter consistently references 'five years' for Kaelith's exile duration: 'five years in this coastal backwater' (line 12), 'five years of exile' (line 47), 'five years' in the market scene context (line 128), the Oathbrand passage noting suppression duration as five years (lines 155-158), and the intelligence packet's reference to the exile period (line 318). However, all authoritative sources establish six years: Chapter 1's revised text consistently uses 'six years' (corrected from 'five' during Ch1 revision), the continuity tracker records the Calwrath incident at YK 736 with the current date as YK 742 (6 years), Kaelith's character profile states 6 years of exile, and the magic system timeline confirms the same. The intelligence packet references (lines 318) might plausibly reflect outdated Court records (compiled a year ago), but Lirien's own narration at lines 12, 47, and 128 should reflect current intelligence — she would know the accurate timeline. Particularly, the Oathbrand analysis (lines 155-158) is her own professional assessment, not drawn from the file, and should use the correct figure.",
+      "currentText": "Line 12: 'five years in this coastal backwater' / Line 47: 'five years of exile' / Lines 155-158: 'five years of active suppression' / Line 318: 'five-year exile period'",
+      "recommendation": "Change all instances of 'five years' to 'six years' in Lirien's narration (lines 12, 47, 128, 155-158). For the intelligence packet reference (line 318), the reviser may choose to keep 'five years' if the packet was compiled a year ago (which would be an interesting detail about intelligence lag), but only if this discrepancy is explicitly noted by Lirien as a data-accuracy issue. If not exploited narratively, change to 'six years' for consistency."
+    },
+    {
+      "id": "COPY-002-003",
+      "severity": "minor",
+      "category": "naming-consistency",
+      "location": "General — character and place name verification",
+      "finding": "All character names are consistent with established usage: Kaelith Maren (never 'Maron' or 'Karen'), Lirien (no surname given in chapter, consistent with CHAR-002), Tavik Ren (correctly named in Lirien's observation, consistent with CHAR-008). Place names: Duskhaven (consistent), Calwrath (consistent), the Listing Mast (consistent with Ch1). The Seep (intelligence network) is referenced by name, consistent with CHAR-002 profile. 'Pallor' as a geographical/environmental phenomenon is consistent with geography.json. 'Oathbrand' is consistently used (never 'oath-brand' or 'Oath Brand'). One note: the chapter outline references CHAR-009 for Tavik, but this was flagged in Ch1 as a known outline error — the correct ID is CHAR-008. This outline discrepancy does not affect the prose.",
+      "currentText": "[No prose error — naming is consistent]",
+      "recommendation": "No prose changes required. The chapter outline's CHAR-009 reference for Tavik remains a metadata error that should be corrected in the outline file (outside the scope of chapter revision)."
+    },
+    {
+      "id": "COPY-002-004",
+      "severity": "minor",
+      "category": "formatting",
+      "location": "Scene 3, intelligence packet — bold-formatted headers",
+      "finding": "The intelligence packet section uses bold markdown formatting for headers: **SUBJECT**, **CLASSIFICATION**, **INCIDENT REPORT**, **ANOMALY NOTATION**, **ASSESSMENT**, **OPERATIONAL RECOMMENDATION**, **SECONDARY NOTATION**, **TERTIARY NOTATION**. While the developmental and line editors have addressed this as a narrative structure issue, from a copy editing perspective the formatting is inconsistent with the rest of the manuscript, which uses no in-line formatting. The revised chapter (whether the packet is restructured or retained) should maintain consistent formatting conventions. If any formatted-document elements are retained, they should use a consistent style (italics for embedded documents is the convention established in the style guide for quoted/read material).",
+      "currentText": "**SUBJECT:** Kaelith Maren, former Garrison Commander...",
+      "recommendation": "Remove all bold formatting from the intelligence packet. If document-style elements are retained after developmental revision, use italics for quoted/read material per the style guide convention. Preferably, restructure entirely as close-third narration per LINE-002-003."
+    },
+    {
+      "id": "COPY-002-005",
+      "severity": "minor",
+      "category": "timeline-consistency",
+      "location": "Scene 1, lines 15-20 — morning routine timeline",
+      "finding": "Lirien notes she has been observing Kaelith for 'three days' (line 15) from her surveillance position. The continuity tracker establishes that Lirien arrived in Duskhaven 'several days' before Chapter 2's Day 1 events, with active surveillance beginning immediately. This is consistent. Chapter 2 takes place on the same Day 1 as Chapter 1 (confirmed by the dual-arc timeline), with the surveillance having begun prior. The 'three days' figure is plausible and creates no contradiction. Note: if Chapter 1 occurs on Day 1 and Chapter 2 also occurs on Day 1, Lirien's three days of prior surveillance would place her arrival around Day -2, which is consistent with 'several days' in the tracker.",
+      "currentText": "Three days of watching the same routine.",
+      "recommendation": "No change required. The timeline is internally consistent."
+    },
+    {
+      "id": "COPY-002-006",
+      "severity": "minor",
+      "category": "world-rule-compliance",
+      "location": "Lines 145-162 — Oathbrand description and behavior",
+      "finding": "Lirien's observation of Kaelith's Oathbrand matches established magic system rules: (1) The brand is described as showing 'inflammation consistent with sustained magical interference' — this aligns with MAG-004 (Oathbrand actively suppresses bearer's abilities, causing ongoing physical distress). (2) 'Range-of-motion interference in the branded shoulder' — consistent with the brand's placement and physical effects. (3) 'Five years of active suppression' — correctly describes the Oathbrand's function (suppression of magical ability), though the duration should be corrected to six years per COPY-002-002. (4) Lirien's assessment that 'discipline beyond what most people could sustain for five months' is an intelligence evaluation, not a statement of magical mechanics, and is appropriately within her expertise. No violations of MAG-004, MAG-005, or MAG-008 rules. No new magical abilities introduced (INV-009 compliant).",
+      "currentText": "[Multiple lines describing Oathbrand effects]",
+      "recommendation": "No magical-rule changes required. Duration correction per COPY-002-002 applies."
+    }
+  ],
+  "namingVerification": {
+    "characterNames": {
+      "status": "pass",
+      "details": "Kaelith Maren: consistent throughout (12+ references). Lirien: consistent (POV, no surname used, correct per CHAR-002). Tavik Ren: consistent in one named reference and multiple 'the younger soldier' references. No misspellings or variant forms detected."
+    },
+    "placeNames": {
+      "status": "pass",
+      "details": "Duskhaven: consistent (5 references). Calwrath: consistent (3 references). The Listing Mast: consistent (1 reference, matches Ch1). The Pallor: consistent with geography.json. The Court: consistent (3 references, always capitalized). No variant spellings detected."
+    },
+    "magicTerms": {
+      "status": "pass",
+      "details": "Oathbrand: consistent (4 references, always one word, capitalized). Binding contract/binding pressure: consistent with magic-system.json terminology. Pallor tear: consistent with geography.json. Warden lineage: consistent with character profile. No invented terms that contradict established terminology."
+    }
+  },
+  "worldRuleCompliance": {
+    "magicSystem": {
+      "status": "pass",
+      "details": "Oathbrand behavior matches MAG-004 (suppression, physical distress, ongoing). Binding contract mechanics match MAG-005 (Lirien feels binding pressure, constraint on action). Pallor tear environmental data matches geography.json. No new abilities introduced (INV-009 compliant). No deus ex machina resolutions."
+    },
+    "culturalRules": {
+      "status": "pass",
+      "details": "Fae Court operational protocols (Seep network, intelligence packets, binding contracts) are consistent with culture.json and CHAR-002's background. Lirien's reference to 'forty-seven cities across three nations' is consistent with her operational history. The binding contract's behavioral constraints (Lirien cannot indefinitely delay execution) are consistent with MAG-005."
+    }
+  },
+  "geographyCompliance": {
+    "status": "pass",
+    "details": "Duskhaven described as coastal, decaying, with a garrison wall, market square, and tavern district — all consistent with geography.json. The two-rooftops-east surveillance position is consistent with a dense coastal town. The Pallor is referenced as a regional environmental phenomenon affecting the area — consistent. No geographical contradictions with Ch1 (which also takes place in Duskhaven)."
+  },
+  "timelineCompliance": {
+    "status": "conditional-pass",
+    "details": "Chapter takes place on Day 1, consistent with the dual-arc timeline and continuity tracker. Lirien's three days of prior surveillance is consistent with 'several days' arrival window. HOWEVER: the exile duration error (five years vs. six years) is a timeline compliance failure — see COPY-002-002. All other temporal references are consistent: morning surveillance → afternoon market → evening quarters follows a single-day arc. The intelligence packet's compilation date is not specified, which is acceptable.",
+    "issues": [
+      "COPY-002-002: 'Five years' exile duration should be 'six years' per YK 736→742 timeline"
+    ]
+  },
+  "informationAsymmetryCompliance": {
+    "status": "pass",
+    "details": "Verified against information-asymmetry-map.json. (1) SEALED-001 (contract commissioner identity): Lirien does NOT access this information — she refers to the contract generically without naming who issued it. COMPLIANT. (2) FACT-001 (Kaelith's kinetic memory ability): Lirien does NOT know about this — she observes Kaelith's physical competence and deduces 'operative-grade' training but does not identify the specific ability. COMPLIANT. (3) FACT-003 (Warden lineage): Lirien learns this from the intelligence packet in Scene 3, which is the correct revelation point per the information asymmetry map. COMPLIANT. (4) Lirien's observation of Kaelith is filtered through external behavior only — she does not access Kaelith's internal state from Ch1. COMPLIANT. (5) Lirien does not know about Kaelith's stone-counting ritual, seawall ritual, or internal emotional processing from Ch1. COMPLIANT."
+  },
+  "grammarAndPunctuation": {
+    "status": "pass-with-notes",
+    "details": "Professional-grade throughout. No grammatical errors detected. Punctuation is consistent: em-dashes used for interruptions and asides (consistent with style guide), ellipses absent (correct for Lirien's voice — she does not trail off), semicolons used sparingly and correctly. One note: the intelligence packet section's formatting (bold headers, structured data) uses punctuation conventions (colons after headers, categorized lists) that are inconsistent with the narrative prose conventions — this will be resolved by the restructuring recommended in LINE-002-003.",
+    "notes": [
+      "Em-dash usage consistent with style guide conventions",
+      "No comma splices detected",
+      "Semicolon usage appropriate and sparing",
+      "Intelligence packet formatting punctuation to be resolved by narrative restructuring"
+    ]
+  },
+  "crossReferenceWithOtherEdits": {
+    "developmentalOverlap": [
+      {
+        "copyFinding": "COPY-002-001",
+        "devFinding": "DEV-002-002",
+        "note": "Same duplicate content flagged from both structural (developmental) and factual (copy) perspectives. The copy edit confirms the duplication is verbatim enough to constitute a drafting artifact, not an intentional echo."
+      },
+      {
+        "copyFinding": "COPY-002-002",
+        "devFinding": "DEV-002-001",
+        "note": "The continuity error contributes to the word count issue flagged in DEV-002-001 — correcting 'five' to 'six' is a minimal word-count-neutral change, but the correction should be applied alongside the larger cuts."
+      }
+    ],
+    "lineEditOverlap": [
+      {
+        "copyFinding": "COPY-002-004",
+        "lineFinding": "LINE-002-003",
+        "note": "The formatting issue (bold headers) is the copy-edit surface of the deeper narrative structure problem identified in LINE-002-003. Both recommend removing the document-style formatting."
+      }
+    ]
+  },
+  "findingCounts": {
+    "critical": 1,
+    "major": 1,
+    "minor": 4,
+    "suggestion": 0,
+    "total": 6,
+    "byCategory": {
+      "duplicate-content": 1,
+      "continuity-error": 1,
+      "naming-consistency": 1,
+      "formatting": 1,
+      "timeline-consistency": 1,
+      "world-rule-compliance": 1
+    }
+  }
+}

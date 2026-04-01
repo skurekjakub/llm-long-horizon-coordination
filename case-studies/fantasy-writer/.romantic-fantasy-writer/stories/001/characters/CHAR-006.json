@@ -1,0 +1,111 @@
+{
+  "id": "CHAR-006",
+  "name": "Tessen Vael",
+  "role": "mentor",
+  "isPOV": false,
+  "psychologicalProfile": {
+    "wound": "Tessen survived a patrol disaster and learned the empire blames scouts faster than bad intelligence.",
+    "desire": "Remain beholden to no chain of command and keep the Rivenmarch navigable on his own terms.",
+    "fear": "Being drawn back into someone else's mission and losing more people to lies from above.",
+    "lie": "Refusing to belong is the same as being free.",
+    "ghost": "A border patrol he guided was sent into a trap, then blamed on terrain error after the dead were counted.",
+    "need": "To choose loyalty again as consent rather than obedience."
+  },
+  "arc": {
+    "type": "positive",
+    "startState": "A ghost of the Legion who trusts trails more than people.",
+    "endState": "A guide who reclaims part of his old oath by helping the right commander.",
+    "turningPoints": [
+      {
+        "chapter": 9,
+        "event": "Reads Kaelith's movement as old Ashborne path-work."
+      },
+      {
+        "chapter": 10,
+        "event": "Agrees to guide only after Kaelith offers real truth."
+      },
+      {
+        "chapter": 17,
+        "event": "Stays after leaving becomes safer."
+      }
+    ]
+  },
+  "voiceFingerprint": {
+    "vocabularyLevel": "Plain border vernacular stripped to essentials. Tessen speaks as though words are rations — you use what you need and waste nothing. His vocabulary comes from terrain, weather, and animal behavior: 'ridge,' 'runoff,' 'game trail,' 'wind-shift,' 'false ground.' He names things by what they do, not what they are: a cliff is 'a fall,' a marsh is 'slow death,' a clear path is 'a gift or a trap.' He rarely reaches for abstractions and tends not to name emotions directly.",
+    "sentenceLength": "Short to clipped as default. Instruction-shaped: subject-verb or imperative. 'Step where I step.' 'Wind's shifting.' 'Not that way.' Longer sentences emerge only when explaining terrain danger, and even then they are chains of short clauses: 'The ground looks solid but it shifted last season and anything built on the old line is sitting on air.' He seldom elaborates unless the elaboration prevents death.",
+    "metaphorDensity": "Low, drawn from weather, terrain, and animal sign. A trustworthy person is 'solid ground.' A liar 'reads like false trail.' Danger 'smells like still water.' He gravitates away from garden (Thalen's domain), architecture (Kaelith's domain), water-as-infiltration (Lirien's domain), medical (Marin's domain), and scholarly metaphors, though occasional natural crossover is expected — rigid domain walls create artificiality. His world is the land — and the land does not explain itself.",
+    "emotionalRegister": "Dry, suspicious, and intermittently tender. His default register is wariness — every person is terrain he hasn't verified. Warmth emerges obliquely: he expresses care through practical action (sharing food, adjusting someone's pack) rather than words. When genuinely moved, he goes silent rather than eloquent.",
+    "thoughtPatterns": "Environmental and conditional. Tessen thinks in if-then chains rooted in terrain: 'If the wind shifts, then the scent carries. If the scent carries, then we're downwind of the patrol.' Most thoughts run as trail assessments. He applies this pattern to people too — reading body language as animal sign, treating trust as ground you test before you cross.",
+    "dialectMarkers": "Rivenmarch freeholder speech: avoids titles and honorifics, chosen names only. Landmark directions instead of compass points: 'toward the split oak,' 'past where the cairn was.' Practical profanity — brief, functional, not performative. He drops subjects from sentences: 'Shifting' instead of 'The wind is shifting.'",
+    "humorStyle": "Rare, deadpan, and terrain-based. His jokes are so dry they might not be jokes: 'Last three people who took that path came back. Two of them on foot.' The humor functions as warning dressed in understatement. He does not laugh.",
+    "attentionPriority": "What Tessen notices first: (1) Ground — is this surface trustworthy? (2) Wind — what does it carry, what does it reveal? (3) Silence — what should be making sound and isn't? (4) People's feet — how they walk tells him more than what they say.",
+    "deflectionPattern": "Changes the subject to immediate terrain. Asked about his past: 'Ground's soft here. Watch your step.' Asked about loyalty: 'Trail forks ahead. Left is faster, right is safer.' He answers emotional questions with environmental facts, and the facts are always relevant enough that the deflection succeeds.",
+    "stressResponse": "Words drop to single-word commands. 'Down.' 'Still.' 'Now.' Under extreme stress he goes entirely silent and communicates through gesture — a raised fist, a pointed finger, a head shake. Speech returns only after the danger passes, and it returns with one extra sentence of explanation that is the closest Tessen comes to apology."
+  },
+  "sensorySig": {
+    "dominantChannel": "auditory",
+    "signature": "wind on stone and birdless silence",
+    "emotionalTriggers": [
+      "silence in marshland",
+      "loose shale clicks",
+      "a frightened horse exhale"
+    ]
+  },
+  "relationships": [
+    {
+      "withCharId": "CHAR-001",
+      "type": "recognition-ally",
+      "dynamicArc": "Trust hinges on whether Kaelith offers honesty rather than rank."
+    },
+    {
+      "withCharId": "CHAR-002",
+      "type": "guarded-ally",
+      "dynamicArc": "He distrusts Lirien until she adapts to the land instead of managing it."
+    },
+    {
+      "withCharId": "CHAR-010",
+      "type": "residual-comrade",
+      "dynamicArc": "Erys represents the loyalty Tessen walked away from."
+    },
+    {
+      "withCharId": "CHAR-007",
+      "type": "frontier-acquaintance",
+      "dynamicArc": "Marin and Tessen trade practical trust outside imperial structures."
+    }
+  ],
+  "physicalDescription": {
+    "apparentAge": "early forties",
+    "build": "lean and weather-corded",
+    "distinguishingFeatures": "sun-scoured skin and an old patrol scar",
+    "usualPresentation": "patched trail leathers and oilskin",
+    "movement": "gliding and economical"
+  },
+  "agency": "Tessen determines whether the protagonists can move through the Rivenmarch with any realistic chance of survival. His decision to help is contingent, active, and strategically decisive.",
+  "upstreamRefs": [
+    "story-concept.json",
+    "world-bible/politics.json",
+    "world-bible/geography.json",
+    "world-bible/culture.json",
+    "characters/CHAR-001.json",
+    "characters/CHAR-002.json"
+  ],
+  "dialoguePatterns": {
+    "initiationStyle": "Doesn't initiate unless necessary. When he must: a single factual statement about the environment. 'Weather's turning.' 'Something moved up the ridge.' He trusts others to understand the implication.",
+    "responseStyle": "Answers questions with the minimum viable information. 'How far?' 'Half a day.' 'Is it safe?' 'Safer than here.' His responses are compressed to the point where listeners must unpack the meaning themselves.",
+    "underPressure": "Single-word imperatives. All grammar falls away. 'Move.' 'Stop.' 'Quiet.' If pressed to explain: one terse clause. 'Because the ground is about to give.' Then silence.",
+    "verbalTics": [
+      "Drops sentence subjects: 'Shifting' not 'The wind is shifting'",
+      "Uses 'reads like' for assessments: 'Reads like false ground'",
+      "Says 'not that way' instead of explaining why",
+      "Refers to distances by landmarks, never measurements",
+      "Begins rare longer statements with 'Here's the thing about —'"
+    ],
+    "favoriteExpressions": [
+      "Step where I step.",
+      "Wind's shifting.",
+      "Not that way.",
+      "Reads like false trail.",
+      "Ground doesn't lie. People do."
+    ]
+  }
+}

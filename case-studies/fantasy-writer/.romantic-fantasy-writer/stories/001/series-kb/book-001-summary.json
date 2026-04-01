@@ -1,0 +1,515 @@
+{
+  "bookId": "001",
+  "seriesId": "romantasy-001",
+  "generatedAt": "2026-03-21T05:37:35.836612+00:00",
+  "generatedBy": "romantic-fantasy-writer-series-kb-manager",
+  "overview": {
+    "workingTitle": "Book 1 (Untitled)",
+    "genre": "Romantic Fantasy (F/F enemies-to-lovers)",
+    "genreBalance": {
+      "fantasy": 55,
+      "romance": 45
+    },
+    "heatLevel": "steamy",
+    "resolution": "HFN (Happy For Now)",
+    "chapters": 22,
+    "estimatedWordCount": 91850,
+    "povPattern": "Alternating dual POV — Kaelith Maren (CHAR-001) and Lirien Dael (CHAR-002)",
+    "timeline": "Approximately 33 days in YK 742 (early-to-late autumn)",
+    "premise": "A disgraced military commander exiled to the empire's edge discovers that the divine membrane holding reality together is being deliberately poisoned — and the fae operative sent to kill her may be her only ally in stopping it. An enemies-to-lovers romantic fantasy where the romance IS the mechanism for saving the world."
+  },
+  "thematicPillars": [
+    {
+      "id": "TP-1",
+      "name": "Trust as Structural Failure",
+      "resolution": "Trust rebuilt through demonstrated action, not institutional guarantee. Kaelith and Lirien choose trust despite being burned by institutions (Conclave, Court). The 'hard truth' of the thematic argument: trust requires accepting vulnerability to someone who can destroy you, with full knowledge of the risk."
+    },
+    {
+      "id": "TP-2",
+      "name": "The Price of the Right Choice",
+      "resolution": "Right choices carry permanent costs. Calwrath (300 civilians), the binding deception (months of guilt), the heartbeat cessation (8 seconds of death). The novel does not resolve the price — it affirms that paying it is what makes the choice meaningful."
+    },
+    {
+      "id": "TP-3",
+      "name": "Chosen vs. Only",
+      "resolution": "Free choice within constraint is the only authentic act. Lirien proves this through the Oathbrand removal memory (free choice predating love), cipher destruction (severing compulsion), and the final 'I stay because I want to.' The river metaphor: a river that breaks free and finds its own shape is deciding, not just flowing."
+    }
+  ],
+  "chapterSynopsis": [
+    {
+      "chapter": 1,
+      "pov": "Kaelith",
+      "title": "Opening",
+      "synopsis": "Kaelith patrols Duskhaven seawall. Oathbrand flares unexpectedly. Pallor tears overhead. She spots Lirien watching — professional predator recognition. Confronts Tavik about the stranger; his lie confirms institutional compromise.",
+      "wordCount": 4247
+    },
+    {
+      "chapter": 2,
+      "pov": "Lirien",
+      "title": "The Assignment",
+      "synopsis": "Lirien assesses Kaelith as target. Realizes the file is fundamentally wrong — Kaelith is compressed, not broken. Receives intelligence on Warden lineage. Killing Kaelith becomes strategically catastrophic, not just morally complex.",
+      "wordCount": 5935
+    },
+    {
+      "chapter": 3,
+      "pov": "Kaelith",
+      "title": "Escape from Duskhaven",
+      "synopsis": "Kaelith breaks into Tavik's office — discovers Oathbrand actively maintained by Conclave. Enforcer Seldric arrives demanding rendition. Lirien disrupts capture through 'accidental' scaffolding collapse. Unstable alliance formed.",
+      "wordCount": 4523
+    },
+    {
+      "chapter": 4,
+      "pov": "Lirien",
+      "title": "Departure Planning",
+      "synopsis": "Lirien processes her contract violation — she chose to intervene. Kaelith asks directly 'Why haven't you killed me yet?' Files misleading report to Seep. Stakes raised: binding timeline ticking.",
+      "wordCount": 3902
+    },
+    {
+      "chapter": 5,
+      "pov": "Kaelith",
+      "title": "Revelations",
+      "synopsis": "Kaelith researches Pallor in garrison archives. Lirien reveals the kill contract. Kaelith learns she carries the Quietus location as kinetic memory — her survival is structurally necessary to world coherence.",
+      "wordCount": 4173
+    },
+    {
+      "chapter": 6,
+      "pov": "Lirien",
+      "title": "First Plot Point — Departure",
+      "synopsis": "Tavik confrontation forces flight. Combat coordination reveals partnership. Shared watch — hyperawareness acknowledged. Lirien's misleading report buys time. Depart Duskhaven. Act 1 ends.",
+      "wordCount": 4247
+    },
+    {
+      "chapter": 7,
+      "pov": "Kaelith",
+      "title": "The Road",
+      "synopsis": "Journey begins. Thornway embankment collapse. First shared danger on the road. Trust building through competence.",
+      "wordCount": 4200
+    },
+    {
+      "chapter": 8,
+      "pov": "Lirien",
+      "title": "Veldrane Diagnosis",
+      "synopsis": "Arrive at Veldrane. Marin diagnoses: Oathbrand actively refreshed for 6 years. 4-6 month mortality without removal. Mission now has medical deadline.",
+      "wordCount": 4089
+    },
+    {
+      "chapter": 9,
+      "pov": "Kaelith",
+      "title": "The Wending",
+      "synopsis": "Enter Pallor-damaged zone. Kaelith exposed to Ythara influence for 43 seconds — identity fragmentation. Lirien anchors through voice and physical contact. Three Conclave agents attack. Documents reference Thalen Reyvas.",
+      "wordCount": 4986
+    },
+    {
+      "chapter": 10,
+      "pov": "Lirien",
+      "title": "Archive Infiltration",
+      "synopsis": "Lirien infiltrates Aranthem archive. 40-year conspiracy confirmed — Dimming rites weakening Pallor. Authorization chain to Thalen Reyvas. First personal vulnerability exchange (fae stargazing).",
+      "wordCount": 4576
+    },
+    {
+      "chapter": 11,
+      "pov": "Kaelith",
+      "title": "MIDPOINT — Oathbrand Removal",
+      "synopsis": "Arrival at Tessen's Sanctuary. Oathbrand removal: 7 layers, 3-4 hours of Lirien's fae precision magic. Trust declared ('I trust you'). Magic floods back. RESONANCE BOND FORMS. Kinetic memory activates — Quietus pull.",
+      "wordCount": 5135
+    },
+    {
+      "chapter": 12,
+      "pov": "Lirien",
+      "title": "Pursuit and Disclosure",
+      "synopsis": "Continue northeast. Seep dead drop confirms 40-year sabotage. Lirien flagged as deviation risk. Four hunter teams attack — bond-enabled combat. Lirien shares Vael Seren story (first genuine personal disclosure).",
+      "wordCount": 4301
+    },
+    {
+      "chapter": 13,
+      "pov": "Kaelith",
+      "title": "Calwrath Confession",
+      "synopsis": "Kaelith confesses Calwrath fully: 8 minutes, 300 civilians, children. She would do it again. Lirien witnesses without absolution. First kiss — deliberate choice, not desperation.",
+      "wordCount": 5099
+    },
+    {
+      "chapter": 14,
+      "pov": "Lirien",
+      "title": "Intimacy and Loophole",
+      "synopsis": "Coordinated ambush — bond-enabled combat. First full intimacy, freely chosen. Post-intimacy: Lirien discovers contract loophole ('cessation of heartbeat' = state not duration). Commits to solving contract without confessing.",
+      "wordCount": 5125
+    },
+    {
+      "chapter": 15,
+      "pov": "Kaelith",
+      "title": "False Victory",
+      "synopsis": "Evidence case appears complete — four independent sources. 'I want this. I want you.' Emotional declarations. Future-planning (Vael Seren). Kaelith chooses hope. Falls asleep feeling safe. Every warm element is a knife placed for Ch16.",
+      "wordCount": 4001
+    },
+    {
+      "chapter": 16,
+      "pov": "Lirien",
+      "title": "BLACK MOMENT — Contract Revealed",
+      "synopsis": "Intercepted Court communiqué exposes active kill contract. Bond transmits Lirien's distress. Kaelith reads contract — trust architecture collapses. 'Every feeling was built on a lie.' Bond walled. Kaelith departs alone. Lirien paralyzed by inability to distinguish binding from genuine feeling.",
+      "wordCount": 4026
+    },
+    {
+      "chapter": 17,
+      "pov": "Kaelith",
+      "title": "Load-Bearing Walls",
+      "synopsis": "Kaelith alone in the Narrowing. Pallor progression accelerating without Lirien's stabilizing presence. Bond grief bleeds through wall. Vorakh encounter — solo combat nearly fails. Realizes solo mission completion not viable. Changes direction toward Lirien.",
+      "wordCount": 4956
+    },
+    {
+      "chapter": 18,
+      "pov": "Lirien",
+      "title": "The Taxonomy of Choice",
+      "synopsis": "Dark night of the soul. Systematic self-interrogation of every decision since contract inception. Breakthrough: Oathbrand removal was verified free choice (binding directive was PREVENT, actual action was PERFORM). Destroys Seep cipher. Walks north — toward Kaelith and Quietus by free choice.",
+      "wordCount": 4888
+    },
+    {
+      "chapter": 19,
+      "pov": "Kaelith",
+      "title": "Sound Enough",
+      "synopsis": "Kaelith arrives at Rivenmarch. Discovers Ashborne veterans organized using her doctrine. Greeted as 'Commander.' Lirien arrives with destroyed cipher and proof of choice. Reconciliation through decision, not forgiveness. Strategy session. Bond opens fully.",
+      "wordCount": 5735
+    },
+    {
+      "chapter": 20,
+      "pov": "Lirien",
+      "title": "Contract Fulfilled in Letter, Broken in Spirit",
+      "synopsis": "Forward shelter. Lirien sets ward-lattice. Kaelith gives explicit verbal consent. Lirien stops Kaelith's heart through fae magic targeting cardiac conduction. 8 seconds of silence. Binding registers fulfillment and dissolves. Lirien restarts heart through the bond. Love confirmed: feelings unchanged. 'Now we both know it's real.'",
+      "wordCount": 4031
+    },
+    {
+      "chapter": 21,
+      "pov": "Kaelith",
+      "title": "What the Stone Remembers",
+      "synopsis": "Descent into Serath Dûn. Kinetic memory navigates impossible geometry. Quietus chamber — seal cracked, Ythara's influence leaking. Thalen at the seal. Kaelith trusts Lirien completely and commits to seal reinforcement. Warden magic floods — she pours conviction into the seal. Cracks close. Thalen arrested. Public tribunal ordered.",
+      "wordCount": 4218
+    },
+    {
+      "chapter": 22,
+      "pov": "Lirien",
+      "title": "What the Water Chose",
+      "synopsis": "First morning without binding. Changed world — Pallor thinner, ambient magic accessible, true sky visible. Conclave responds with institutional hedging. Allies disperse. Kaelith and Lirien alone — plan Rivenmarch future. 'I stay because I want to.' HFN resolution. First real star through thinned Pallor.",
+      "wordCount": 4019
+    }
+  ],
+  "arcTrajectories": {
+    "romanceArc": {
+      "type": "enemies-to-lovers",
+      "stages": [
+        {
+          "stage": "Awareness",
+          "chapters": [
+            1,
+            2
+          ],
+          "description": "Professional predator recognition. Target assessment disrupted by competence."
+        },
+        {
+          "stage": "Reluctant Alliance",
+          "chapters": [
+            3,
+            6
+          ],
+          "description": "Alliance from necessity. Forced proximity. Hyperawareness acknowledged."
+        },
+        {
+          "stage": "Growing Trust",
+          "chapters": [
+            7,
+            10
+          ],
+          "description": "Shared danger, shared vulnerability. First personal disclosures."
+        },
+        {
+          "stage": "Intimacy",
+          "chapters": [
+            11,
+            15
+          ],
+          "description": "Oathbrand removal (midpoint), bond formation, first kiss, first full intimacy, emotional declarations."
+        },
+        {
+          "stage": "Devastation",
+          "chapters": [
+            16,
+            18
+          ],
+          "description": "Black moment: contract revealed, trust destroyed, separation, dark night of the soul."
+        },
+        {
+          "stage": "Reconciliation",
+          "chapters": [
+            19,
+            20
+          ],
+          "description": "Reunion through proof of choice, contract loophole execution, love confirmed real."
+        },
+        {
+          "stage": "Commitment",
+          "chapters": [
+            21,
+            22
+          ],
+          "description": "Partnership by choice during climax, HFN resolution, future planned."
+        }
+      ],
+      "blackMoment": {
+        "chapter": 16,
+        "description": "'Every feeling was built on a lie.' Trust destroyed by kill contract revelation. Bond walled. Separation."
+      },
+      "resolution": "HFN — 'I stay because I want to.' Committed partnership at Rivenmarch. Bond clean and chosen."
+    },
+    "fantasyArc": {
+      "centralConflict": "40-year deliberate poisoning of the Pallor (divine membrane) threatening to unseal Ythara the Unfinished and dissolve reality's coherence.",
+      "stages": [
+        {
+          "stage": "Discovery",
+          "chapters": [
+            1,
+            5
+          ],
+          "description": "Oathbrand anomaly, Pallor irregularity, Warden lineage revealed, strategic necessity established."
+        },
+        {
+          "stage": "Investigation",
+          "chapters": [
+            6,
+            10
+          ],
+          "description": "Journey eastward, Pallor damage observed, archive infiltration, Thalen Reyvas identified."
+        },
+        {
+          "stage": "Transformation",
+          "chapters": [
+            11,
+            15
+          ],
+          "description": "Oathbrand removal, magic restoration, evidence consolidation, false victory."
+        },
+        {
+          "stage": "Crisis",
+          "chapters": [
+            16,
+            18
+          ],
+          "description": "Separation endangers mission, Pallor progression accelerates, solo survival."
+        },
+        {
+          "stage": "Convergence",
+          "chapters": [
+            19,
+            20
+          ],
+          "description": "Ashborne network activated, contract resolved, partnership restored for final mission."
+        },
+        {
+          "stage": "Climax",
+          "chapters": [
+            21,
+            22
+          ],
+          "description": "Serath Dûn. Seal reinforced. Thalen arrested. Pallor permanently thinner but stable."
+        }
+      ],
+      "resolution": "Seal reinforced. Pallor stable but permanently thinner. Thalen arrested. World changed — more magic accessible, more uncertainty, more possibility."
+    },
+    "dualArcInterleave": "Romance and fantasy arcs are structurally fused — the romance IS the mechanism for the fantasy resolution. Oathbrand removal requires trust → bond enables combat coordination → partnership enables seal reinforcement. The black moment (romance) also threatens the fantasy mission. Resolution of the binding (romance) enables the climax (fantasy)."
+  },
+  "structuralMetrics": {
+    "actBreakdown": {
+      "act1": {
+        "chapters": [
+          1,
+          6
+        ],
+        "focus": "Recognition before trust",
+        "wordEstimate": 27027
+      },
+      "act2": {
+        "chapters": [
+          7,
+          16
+        ],
+        "focus": "Trust as survival cost",
+        "wordEstimate": 41301
+      },
+      "act3": {
+        "chapters": [
+          17,
+          22
+        ],
+        "focus": "Chosen love vs. inherited structures",
+        "wordEstimate": 23522
+      }
+    },
+    "keyBeats": {
+      "incitingIncident": {
+        "chapter": 2,
+        "event": "Lirien realizes killing Kaelith would be catastrophic"
+      },
+      "firstPlotPoint": {
+        "chapter": 6,
+        "event": "Departure from Duskhaven"
+      },
+      "midpoint": {
+        "chapter": 11,
+        "event": "Oathbrand removal, bond formation"
+      },
+      "falseVictory": {
+        "chapter": 15,
+        "event": "Evidence complete, love declared"
+      },
+      "blackMoment": {
+        "chapter": 16,
+        "event": "Kill contract revealed"
+      },
+      "darkNight": {
+        "chapters": [
+          17,
+          18
+        ],
+        "event": "Separation, solo survival, self-interrogation"
+      },
+      "climax": {
+        "chapters": [
+          20,
+          21
+        ],
+        "event": "Heartbeat cessation, seal reinforcement"
+      },
+      "resolution": {
+        "chapter": 22,
+        "event": "HFN"
+      }
+    },
+    "povDistribution": {
+      "CHAR-001_Kaelith": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11,
+        13,
+        15,
+        17,
+        19,
+        21
+      ],
+      "CHAR-002_Lirien": [
+        2,
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20,
+        22
+      ]
+    }
+  },
+  "mysteryBoxes": {
+    "total": 15,
+    "closedInBook1": 15,
+    "carryingForward": 0,
+    "keyResolutions": [
+      {
+        "id": "MB-001",
+        "question": "What is the Oathbrand and why won't it dissolve?",
+        "answer": "Containment ward deliberately refreshed for 6 years by Conclave agents. Removed Ch11.",
+        "fullyClosed": true,
+        "note": "Who specifically ordered it maintained is deferred."
+      },
+      {
+        "id": "MB-002",
+        "question": "Who is poisoning the Pallor?",
+        "answer": "Thalen Reyvas, Sixth Seat. 40 years through corrupted Dimming rites.",
+        "fullyClosed": true
+      },
+      {
+        "id": "MB-003",
+        "question": "What is the Quietus and where is it?",
+        "answer": "God-seal containing Ythara, inside Serath Dûn. Path stored as kinetic memory in Warden lineage.",
+        "fullyClosed": true
+      },
+      {
+        "id": "MB-005",
+        "question": "What does the Seep want?",
+        "answer": "Outcomes over rigid compliance. Tacitly supported the loophole.",
+        "fullyClosed": true
+      },
+      {
+        "id": "MB-006",
+        "question": "What really happened at Calwrath?",
+        "answer": "Kaelith ordered burning of Graymarket: 800 soldiers saved, 300 civilians killed. She would do it again.",
+        "fullyClosed": true
+      },
+      {
+        "id": "MB-008",
+        "question": "Can the binding be broken without killing Kaelith?",
+        "answer": "Yes — 'cessation of heartbeat' as state not duration. 8-second stop, binding dissolved.",
+        "fullyClosed": true
+      },
+      {
+        "id": "MB-012",
+        "question": "Are Lirien's feelings real or the binding?",
+        "answer": "Real. Oathbrand removal was verified free choice (binding directive was PREVENT). Feelings unchanged post-dissolution.",
+        "fullyClosed": true
+      }
+    ]
+  },
+  "symbolicMotifs": [
+    {
+      "id": "MOT-001",
+      "name": "The Pallor as Flayed Divine Skin",
+      "description": "The sky-membrane as living damage — something that protects through sacrifice. Evolved from oppressive ceiling to ambiguous gift to fragile, necessary, and imperfect protection.",
+      "bookEndState": "Thinner. More honest. Letting more light through."
+    },
+    {
+      "id": "MOT-002",
+      "name": "The Oathbrand as Wound That Won't Heal",
+      "description": "Kaelith's collarbone ward as metaphor for institutional damage — deliberately maintained to keep her controllable.",
+      "bookEndState": "Removed Ch11. Ghost phantom ache persists but diminishing. The wound closed by the same hands that could have killed her."
+    },
+    {
+      "id": "MOT-003",
+      "name": "Water/Seep as Infiltration-Is-Intimacy",
+      "description": "Lirien's dominant metaphor domain. Water finding its level, currents, seepage, tidal patterns. Love and espionage use the same vocabulary.",
+      "bookEndState": "Final evolution: 'A river that breaks free and finds its own shape is deciding, not just flowing.' Water as chosen direction, not just gravity."
+    },
+    {
+      "id": "MOT-004",
+      "name": "Architectural Metaphors — Load-Bearing Walls",
+      "description": "Kaelith's dominant metaphor domain. Walls, foundations, keystones, mortar, load-bearing structures. Character as architecture — some walls protect, some walls imprison.",
+      "bookEndState": "Final evolution: choosing to build at Rivenmarch. The builder who destroyed (Calwrath) now building again."
+    }
+  ],
+  "craftProfile": {
+    "selectedTools": "T1 (Scene-Sequel), T5 (Tone Contract), T6 (Stakes Escalation), T7 (Black Moment Setup), T8 (Internal/External Resistance), T10 (Sanderson's Laws), T12 (Dual-Arc Interleave), T13 (Tension Mapping), T14 (MRU Structure), T15 (Foreshadowing Ledger), T16 (Symbolic Motif Weaving), T17 (Voice Fingerprinting), T18 (Information Asymmetry), T20 (Emotional Throughline), T21 (Vulnerability Ladder), T22 (Hook and Close), T23 (Mystery Box), T24 (Subtext in Dialogue), T25 (Thematic Argument Scaffolding)",
+    "toneContract": "Morally complex, atmospherically taut, twilight-toned. No melodrama, no grimdark nihilism, no whimsy. Emotion through restraint. Dry wit permitted.",
+    "voiceContrast": "Kaelith: short/percussive/architectural. Lirien: medium-long/analytical/water-metaphors. Identifiable within 3-4 sentences."
+  },
+  "sequelHooks": {
+    "highPriority": [
+      "Cerith Court response to loophole and Lirien's defection",
+      "Kaelith as sole Warden — seal maintenance long-term",
+      "Conclave institutional reform vs. cover-up",
+      "Oathbrand authorization chain (who ordered it maintained?)",
+      "Decentralized magic access societal implications"
+    ],
+    "mediumPriority": [
+      "Serath's identity and incomplete chamber",
+      "Diminished gods regaining consciousness",
+      "Sheltering One communication",
+      "Thalen's public tribunal",
+      "Iryse's crisis of faith"
+    ],
+    "lowPriority": [
+      "Visiting Vael Seren",
+      "Kaelith's formal rehabilitation by Conclave",
+      "Fae Territories exploration"
+    ]
+  }
+}

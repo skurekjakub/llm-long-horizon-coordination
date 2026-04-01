@@ -1,0 +1,75 @@
+{
+  "chapterNum": 8,
+  "pov": "CHAR-002",
+  "povTransitionMotivation": "Switch to Lirien to reveal the Oathbrand crisis from her perspective and show her shift from tactical concern to genuine care. This is the B-story turn where romance takes narrative focus",
+  "scenes": [
+    {
+      "id": "SCN-022",
+      "goal": "Lirien and Kaelith reach Veldrane, a frontier settlement where they can resupply without attracting attention",
+      "conflict": "Kaelith's Oathbrand flares severely during the approach, causing her to stagger. She tries to hide the severity, but Lirien notices",
+      "disaster": "Lirien realizes Kaelith is failing faster than she admitted. The suppression is actively destroying her, and time is limited",
+      "valueShift": "From 'Kaelith is operationally necessary' to 'Kaelith is dying and I cannot accept that'",
+      "fiveCommandments": {
+        "incitingIncident": "Kaelith's Oathbrand flare forces her to stop and brace against a wall",
+        "complication": "Kaelith deflects when questioned, claiming it is manageable",
+        "crisis": "Accept the deflection and maintain professional distance, or push past her defenses?",
+        "climax": "Lirien insists they see a healer, framing it as operational necessity",
+        "resolution": "Kaelith agrees, too exhausted to argue convincingly"
+      }
+    },
+    {
+      "id": "SCN-023",
+      "goal": "They visit Marin, a frontier healer with knowledge of suppression magic and Oathbrand mechanics",
+      "conflict": "Marin examines Kaelith and delivers the diagnosis plainly: the Oathbrand is being refreshed remotely, and the ongoing suppression is destroying her body at the cellular level",
+      "disaster": "Marin estimates Kaelith has months, not years. If the brand is not removed, she will die from systemic organ failure",
+      "valueShift": "From 'we have time to reach the Quietus' to 'we are in a race against Kaelith's body shutting down'",
+      "fiveCommandments": {
+        "incitingIncident": "Marin examines the Oathbrand and finds active magical signature",
+        "complication": "The brand should be inert after five years; active signature means deliberate refresh",
+        "crisis": "Tell Kaelith the full prognosis, or soften it?",
+        "climax": "Marin tells Kaelith directly: 'If this is not removed, you will be dead before winter'",
+        "resolution": "Kaelith absorbs this information in silence. Lirien experiences something she cannot classify as anything but fear"
+      }
+    },
+    {
+      "id": "SCN-024",
+      "goal": "After leaving the healer, Lirien attempts to rationalize her fear as mission concern",
+      "conflict": "She cannot construct a rational justification. Her fear is not about mission failure; it is about Kaelith dying",
+      "disaster": "Lirien realizes she cares about Kaelith as a person, not as mission necessity. This is the first time in decades she has cared about someone outside operational parameters",
+      "valueShift": "From 'I am protecting an asset' to 'I am caring for someone I cannot afford to lose'",
+      "fiveCommandments": {
+        "incitingIncident": "Lirien watches Kaelith rest after the examination",
+        "complication": "She notices small details: the exhaustion in Kaelith's posture, the way she holds her collarbone unconsciously, the suppressed pain in every movement",
+        "crisis": "Acknowledge that she cares, or continue denying it?",
+        "climax": "Lirien acknowledges internally: 'I do not want her to die. Not because the mission requires her survival, but because I require it'",
+        "resolution": "She begins making adjustments to their pace, their route, their rest schedule — caring without strategic justification"
+      }
+    }
+  ],
+  "emotionalArc": {
+    "startState": "Lirien begins in observational concern — noting Kaelith's deterioration as a tactical variable that must be managed",
+    "endState": "She ends in acknowledged care — she is terrified of Kaelith dying, and the terror has nothing to do with the mission. She is caring for Kaelith because she cannot bear not to",
+    "pivotMoment": "Marin's diagnosis. The moment the healer says 'dead before winter,' and Lirien feels fear that has no operational justification. That fear is her first honest emotion in decades"
+  },
+  "fantasyBeats": [
+    "B Story Turn — The Body Cannot Be Hidden: Marin names the Oathbrand crisis plainly. Kaelith stops concealing how badly she is being destroyed. The fantasy threat (Pallor crisis) intersects with personal vulnerability (Kaelith's mortality)"
+  ],
+  "romanceBeats": [
+    "Care Without Strategy — Lirien Adjusts for Kaelith's Pain: Lirien begins providing aid beyond contract necessity — wrapping Kaelith's collarbone, adjusting pace, preparing food without being asked. She cannot justify these actions tactically when questioned internally"
+  ],
+  "hookType": "medical-crisis",
+  "hookTypeDescription": "Opens with Kaelith's severe Oathbrand flare forcing them to stop. The hook is the visible deterioration — Kaelith can no longer hide that she is failing",
+  "closeType": "quiet-devotion",
+  "closeTypeDescription": "Closes with Lirien watching Kaelith sleep, adjusting her cloak to keep her warm, knowing that this small act of care reveals everything she has been trying not to feel. No words are spoken. The care is silent and absolute",
+  "targetWordCount": 4100,
+  "tensionLevel": 6,
+  "pacingNotes": "B-story turn with romance taking narrative focus. Tension comes from medical crisis revelation and Lirien's internal emotional breakthrough. Pacing is deliberate, allowing emotional processing time",
+  "locationsPrimary": ["Veldrane — frontier settlement, Marin's healer hut"],
+  "charactersPresent": ["CHAR-002 (Lirien)", "CHAR-001 (Kaelith)", "CHAR-008 (Marin)"],
+  "upstreamRefs": [
+    "../../plot/plot-structure.json",
+    "../../characters/CHAR-002.json",
+    "../../plot/dual-arc-timeline.json",
+    "../../plot/tension-map.json"
+  ]
+}

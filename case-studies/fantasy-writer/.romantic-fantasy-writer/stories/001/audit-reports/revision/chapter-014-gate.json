@@ -1,0 +1,499 @@
+{
+  "gateId": "REVISION-GATE-014",
+  "phase": "revision",
+  "chapter": 14,
+  "agent": "romantic-fantasy-writer-revision-auditor",
+  "timestamp": "2025-07-29T15:30:00Z",
+  "verdict": "passed",
+  "verdictSummary": "Chapter 14 revision PASSED adversarial gate. All 3 critical findings verified as addressed with substantial, evidence-backed reductions: water metaphors 12→7, 'Through the bond' openers 11→3-4 (colon-openers 7→2), 'Not X' rhetorical patterns 22→~8. All 10 actionable major findings verified: subtext explanations cut, clichés replaced, tell-labels eliminated, timeline errors corrected, sentence structure improved, recovery beat added. 1 major finding correctly deferred (DEV-014-002, forward-facing ch15 overlap). Minor/note findings appropriately handled. Zero regressions. Zero darlings survived that were flagged for cutting. Traceability chain intact — every frontmatter finding ID maps to a verified change. 2 warnings issued: (1) LINE-014-007 fix introduced a new 'Not X' pattern at L121, but total count remains within 8-10 target; (2) word count essentially unchanged (5137 vs 5125) despite DEV-014-004 flagging 25% over target. Neither warning triggers failure threshold. Chapter proceeds to beta reading.",
+  "inputArtifacts": {
+    "draft": "chapters/014/draft.md",
+    "revised": "chapters/014/revised.md",
+    "developmentalEdit": "revision-reports/014/developmental-edit.json",
+    "lineEdit": "revision-reports/014/line-edit.json",
+    "copyEdit": "revision-reports/014/copy-edit.json",
+    "revisionLog": "revision-reports/014/revision-log.json"
+  },
+  "findingCounts": {
+    "critical": { "total": 3, "verified": 3, "unaddressed": 0 },
+    "major": { "total": 11, "verified": 10, "deferred": 1, "unaddressed": 0 },
+    "minor": { "total": 14, "verified": 12, "deferred": 2, "unaddressed": 0 },
+    "note": { "total": 5, "verified": 4, "deferred": 1, "unaddressed": 0 }
+  },
+  "findingVerificationMatrix": [
+    {
+      "findingId": "LINE-014-001",
+      "severity": "critical",
+      "title": "Voice marker saturation — water metaphors + operative vocabulary",
+      "verificationStatus": "pass",
+      "evidence": {
+        "waterMetaphors": {
+          "draftCount": 12,
+          "revisedCount": 7,
+          "reduction": "42%",
+          "keptInstances": [
+            "L69: 'current redirects when it finds the gap in the rock' — domain-appropriate replacement for compass simile",
+            "L167: 'current beneath still water' — desire description, earned",
+            "L197: 'dissolved like sugar in warm water' — pivotal kiss moment",
+            "L219: 'water through packed earth' — specific and embodied",
+            "L221: 'She was the water' — Seep identity",
+            "L299: 'tidewater' — guilt, chapter-specific variant",
+            "L361: 'water knew downhill' — closing echo"
+          ],
+          "cutInstances": [
+            "Draft L58 'water off oiled stone' → Revised L89 'stone turning a blade'",
+            "Draft L84 'surfacing from deep water' → Revised L115 'inner ear clearing'",
+            "Draft L88 'current that Lirien could not classify' → Revised L119 non-water phrasing",
+            "Draft L222 'viewed through water' → Revised L253 'muted glass'",
+            "Draft L252 'stones dropped into still water' → Revised L283 plain prose"
+          ],
+          "metaCommentaryCut": "Draft L190 'Water. Everything came back to water.' → DELETED entirely — narrator announcing motif eliminated"
+        },
+        "operativeVocabulary": {
+          "draftCountScene2": 10,
+          "revisedCountScene2": "2-3 (clinical, Status report/Cover for, People first)",
+          "cutFromScene2": [
+            "Draft 'operational scanning' → Revised removed entirely",
+            "Draft 'operational gentleness designed to manage a compromised asset' → Revised 'A care that existed only when the person underneath you mattered more than the mission above you'",
+            "Draft 'operational parameters' → Revised 'the woman who had never before formed the sentence *I want*'",
+            "Draft 'operational requirement' → Revised 'the same efficiency she brought to everything'",
+            "Draft 'operational lexicon' → Revised 'her lexicon'"
+          ],
+          "progressiveThinning": "Operative vocabulary concentrates in Scene 1 (combat: catalogued, tactically sound, tactical picture, tactical mind) and thins progressively through Scene 2, disappearing before the intimacy climax. By L212+ the classification framework has visibly cracked — consistent with the narrative's claim that Lirien's system was overwhelmed."
+        }
+      }
+    },
+    {
+      "findingId": "LINE-014-002",
+      "severity": "critical",
+      "title": "'Through the bond' repetition",
+      "verificationStatus": "pass",
+      "evidence": {
+        "draftCount": 11,
+        "revisedCount": 4,
+        "colonOpenersDraft": 7,
+        "colonOpenersRevised": 2,
+        "reduction": "64% overall, 71% colon-openers",
+        "keptInstances": [
+          "L47: 'Through the bond: not words, not thoughts' — establishing instance, sets up bond presence",
+          "L123: 'won through the bond' — thematic combat reference (not a transmission opener)",
+          "L127: 'Through the bond, Kaelith's rib pain pulsed' — pain-as-debt, emotionally earned",
+          "L241: 'Through the bond: Kaelith's state' — post-intimacy, structurally necessary for scene transition"
+        ],
+        "cutInstances": [
+          "Draft L34 'Through the bond: Kaelith's heartbeat' → Revised L65 'Kaelith's heartbeat arrived at her sternum' — rendered as direct perception",
+          "Draft L54 'Through the bond: Kaelith's satisfaction' → Revised L85 'Kaelith's satisfaction arrived brief and fierce' — rendered as direct perception",
+          "Draft L80 'Through the bond: Kaelith's acknowledgment, not as words but as a shift' → Revised L111 'Kaelith shifted direction. Lirien felt her go' — rendered as direct perception",
+          "Draft L88 'Through the bond: Kaelith's breathing' → Revised L119 'Kaelith's breathing, harsh and ragged' — bond not cited",
+          "Draft L112 'Through the bond: the dull heat' → Revised L141 bond-duration passage rewritten without opener",
+          "Draft L138 'Through the bond: the specific warmth' → Revised L167 'The warmth that Lirien had spent days learning to recognize' — opener removed",
+          "Draft L316 'Through the bond, Lirien felt the restraint' → Revised L349 'Lirien felt the restraint' — bond not cited"
+        ],
+        "intimacySceneBondOpeners": "Scene 2 reduced from 3 to 0 bond-mechanism openers — sensations arrive directly in Lirien's awareness without citing the transmission channel"
+      }
+    },
+    {
+      "findingId": "LINE-014-003",
+      "severity": "critical",
+      "title": "'Not X' negative-elimination rhetorical pattern",
+      "verificationStatus": "pass",
+      "evidence": {
+        "draftCount": 22,
+        "revisedCount": "~8 strong rhetorical instances",
+        "reduction": "64%",
+        "keptInstances": [
+          "L47: 'not words, not thoughts' — bond's non-verbal quality, essential",
+          "L167: 'Not gratitude. Not desire' — elimination as emotional discovery, essential",
+          "L199: 'not pain, though the ribs must have protested' — character beat",
+          "L283: 'not a sob' — emotional restraint",
+          "L299: 'not crashing, not dramatic' — tidewater modifier",
+          "L321: 'Not death. Not permanent termination. Not destruction' — contract parsing where negation mirrors legal exclusion, essential",
+          "L327: 'Seconds, not minutes. A pause, not an ending' — factual/legal contrast",
+          "L369: 'not against her, but against the terms' — clarifying contrast"
+        ],
+        "cutInstances": [
+          "Draft L46 'Not see — *feel*' → Revised L77 'She felt it before she saw it'",
+          "Draft L52 'Not a killing blow. A disruption.' → Revised L83 'A disruption, across the muscle'",
+          "Draft L62 'It was not a plan' → Revised L93 direct statement 'Plans required communication'",
+          "Draft L66 'Not a visual. A sensation' → Revised L97 'A sensation — sudden, blooming'",
+          "Draft L76 'Not because it was easy' → DELETED",
+          "Draft L92 'Not through superior numbers. Not through tactical surprise' → Revised L122-123 restructured",
+          "Draft L170 'Not the first kiss' → Revised L197 'The second kiss'",
+          "Draft L184 'Not clinical care. Not operational gentleness' → Revised L215 'A care that existed only when'",
+          "Draft L196 'Not the desire' → Revised L227 direct statement 'She had experienced desire before'",
+          "Draft L302 'Not a clean one' → DELETED",
+          "Draft L314 'Not a lie. Not the truth.' → Revised L348 'The grey territory between a lie and the truth'",
+          "Draft L320 'Not *execute target*' → Revised L353 direct statement 'Save target from contract'"
+        ],
+        "note": "LINE-014-007 fix at L121 introduced one new 'Not X' pattern ('Not from the fight. From what the fight had proven.') — total count remains within 8-10 target range. See warnings."
+      }
+    },
+    {
+      "findingId": "LINE-014-004",
+      "severity": "major",
+      "title": "Subtext over-explanation at 'Minor'/'I know' exchange",
+      "verificationStatus": "pass",
+      "evidence": {
+        "draftPassage": "L150-154: 'The gap between *minor* and *I know* held everything. Minor meant: the injury is insignificant. I know meant: the injury is insignificant, and I still need to touch it, and this need is not about medicine. Lirien had been trained to read subtext. She had been trained by the Cerith Court's finest analysts to dismantle the layers between what a person said and what they meant, to find the operational value in the space between surface and depth.'",
+        "revisedPassage": "L179-181: 'She had been trained to dismantle the layers between what a person said and what they meant, to find the value in the space between surface and depth. None of that training had prepared her for wanting to close the gap instead of analyzing it.'",
+        "assessment": "The entire 'Minor meant... I know meant...' paragraph is gone. The training meta-commentary is shortened — 'read subtext. She had been trained by the Cerith Court's finest analysts' collapsed to a single statement. 'operational value' simplified to 'the value.' The pivot to action ('wanting to close the gap instead of analyzing it') stands as the real content. Clean fix."
+      }
+    },
+    {
+      "findingId": "LINE-014-005",
+      "severity": "major",
+      "title": "Cliché 'The irony was so sharp it drew blood'",
+      "verificationStatus": "pass",
+      "evidence": {
+        "draftPassage": "L306: 'The irony was so sharp it drew blood.'",
+        "revisedPassage": "L337: 'She pressed two fingers against her own pulse. Counted.'",
+        "assessment": "Cliché eliminated. Replacement is a physical gesture that mirrors the loophole mechanism (monitoring heartbeat) while carrying emotional weight without labeling the irony. No grep hits for 'irony' in revised chapter confirm complete removal."
+      }
+    },
+    {
+      "findingId": "LINE-014-006",
+      "severity": "major",
+      "title": "Stock simile 'compass needle finding north'",
+      "verificationStatus": "pass",
+      "evidence": {
+        "draftPassage": "L38: 'Kaelith's awareness angling toward Lirien like a compass needle finding north'",
+        "revisedPassage": "L69: 'Kaelith's awareness angling toward Lirien the way a current redirects when it finds the gap in the rock'",
+        "assessment": "Stock simile replaced with domain-appropriate alternative from Lirien's water/infiltration framework. No grep hits for 'compass' in revised chapter confirm complete removal. The replacement maintains directional-pull concept while being untransplantable."
+      }
+    },
+    {
+      "findingId": "LINE-014-007",
+      "severity": "major",
+      "title": "'Terrifying' emotion label used twice",
+      "verificationStatus": "pass",
+      "evidence": {
+        "draftPassage1": "L90: 'And the terrifying thing was how they'd won.'",
+        "revisedPassage1": "L121: 'And her hands were shaking. Not from the fight. From what the fight had proven.'",
+        "draftPassage2": "L216: 'That was the most terrifying thing of all.'",
+        "revisedPassage2": "L247: 'Her pulse should have spiked. It didn't. The calm itself was the warning.'",
+        "assessment": "Both 'terrifying' labels eliminated — no grep hits in revised chapter. Both replacements show the emotional state through physical manifestation rather than naming it. L121 replacement does introduce a 'Not X' pattern ('Not from the fight') — flagged as a warning but within the overall Not X target range."
+      }
+    },
+    {
+      "findingId": "LINE-014-008",
+      "severity": "major",
+      "title": "Subtext over-explanation at 'After'",
+      "verificationStatus": "pass",
+      "evidence": {
+        "draftPassage": "L224-225: '\"After.\" Lirien let the word sit between them. After meant: when the Quietus is reached, when the Pallor is addressed, when the crisis is resolved. After meant: *do we still exist outside the emergency?*'",
+        "revisedPassage": "L255: '\"After.\" Lirien let the word sit between them. *Do we still exist outside the emergency?*'",
+        "assessment": "The expository list ('when the Quietus is reached, when the Pallor is addressed, when the crisis is resolved') is removed. Only the emotionally charged italicized question remains. Clean fix — context carries the meaning."
+      }
+    },
+    {
+      "findingId": "LINE-014-009",
+      "severity": "major",
+      "title": "Tell-label 'The generosity of it'",
+      "verificationStatus": "pass",
+      "evidence": {
+        "draftPassage": "L262: 'The generosity of it — the deliberate choice to trust without full information, from a woman whose life had taught her that trust was the structural failure that preceded collapse.'",
+        "revisedPassage": "L293: 'Lirien's throat constricted. Kaelith had been taught — by six years of exile, by the thing that happened at Calwrath — that trust was the failure that preceded collapse. And she was choosing it anyway.'",
+        "assessment": "Abstract label removed. Physical reaction ('Lirien's throat constricted') grounds the beat. The thematic observation about Kaelith's choice is preserved but filtered through specific character knowledge rather than narratorial commentary."
+      }
+    },
+    {
+      "findingId": "LINE-014-010",
+      "severity": "major",
+      "title": "80-word compound sentence at intimacy climax",
+      "verificationStatus": "pass",
+      "evidence": {
+        "draftPassage": "L200: 'She didn't say it. She pulled Kaelith closer instead, and the bond made the closeness recursive — each touch echoing between them, building, until Lirien couldn't distinguish the sensation of Kaelith's skin beneath her fingers from the sensation of her own skin beneath Kaelith's, and the distinction ceased to matter because they were the same circuit, the same current, and the pleasure was something they were making together, between their bodies, in the space where two separate people briefly became one continuous thing.'",
+        "revisedPassage": "L230-231: 'She didn't say it. She pulled Kaelith closer. The bond made the closeness recursive — each touch echoing between them, building, until the boundary between *her* pleasure and *mine* became a question neither of them was asking. They were the same circuit. And the pleasure was something they were making together, in the space where two people briefly became one continuous thing.'",
+        "assessment": "Broken into 4 rhythmic units: short action ('She pulled Kaelith closer.'), medium bond-feedback, short declarative ('They were the same circuit.'), longer closing. Follows style guide's 'clipped impact lines at moments of exposure.' The abstraction is still present but punctuated by physical grounding."
+      }
+    },
+    {
+      "findingId": "DEV-014-001",
+      "severity": "major",
+      "title": "Sustained high-tension cluster — recovery beat needed",
+      "verificationStatus": "pass",
+      "evidence": {
+        "draftOpening": "L12: 'Three people in the treeline. Two behind granite, one elevated.' — combat begins immediately",
+        "revisedOpening": "L41-44: 'Dawn was thin and grey, the Pallor's membrane catching the ridgeline light and bending it silver. Lirien sat with her back against the ledge's granite lip, counting Kaelith's breaths. Not deliberately — the bond did it for her, each exhale arriving at her awareness like a second pulse... Quiet. The kind of quiet that pressed against the inner ear, fragile as glass and about as trustworthy.'",
+        "assessment": "Recovery beat added: ~100 words of lower-register contemplative prose before the ambush triggers. Establishes dawn quiet, Lirien counting breaths through the bond, fragile stillness. Provides the micro-recovery the developmental editor requested to mitigate the four-chapter sustained-high cluster."
+      }
+    },
+    {
+      "findingId": "DEV-014-002",
+      "severity": "major",
+      "title": "Potential structural overlap with ch15 romance beat",
+      "verificationStatus": "deferred-acceptable",
+      "evidence": {
+        "assessment": "Correctly deferred — this is a forward-facing concern about ch15 overlap, not a ch14 revision issue. The revision log accurately identifies this as requiring enforcement during ch15 outlining/drafting, not ch14 changes. Acceptable deferral."
+      }
+    },
+    {
+      "findingId": "COPY-001",
+      "severity": "major",
+      "title": "Timeline error — 'Three weeks' should be 2-3 days",
+      "verificationStatus": "pass",
+      "evidence": {
+        "draftPassage": "L112: 'Three weeks of shared sensation had taught her the specific textures of Kaelith's body in distress'",
+        "revisedPassage": "L141: 'Days of shared sensation — that was all it had been, though it felt like longer. Days that had taught her the specific textures of Kaelith's body in distress'",
+        "assessment": "Timeline error corrected. 'Three weeks' → 'Days of shared sensation.' The 'though it felt like longer' addition acknowledges the emotional compression without violating the established timeline. No grep hits for 'weeks' in revised chapter confirm complete removal of the error."
+      }
+    },
+    {
+      "findingId": "COPY-002",
+      "severity": "major",
+      "title": "Timeline error — 'weeks learning to recognize'",
+      "verificationStatus": "pass",
+      "evidence": {
+        "draftPassage": "L138: 'Through the bond: the specific warmth that Lirien had spent weeks learning to recognize and days failing to classify.'",
+        "revisedPassage": "L167: 'The warmth that Lirien had spent days learning to recognize settled at the base of her throat.'",
+        "assessment": "Timeline error corrected — 'weeks' → 'days.' Additionally, the 'Through the bond:' opener was removed (addressing LINE-014-002 simultaneously). Double fix achieved. No grep hits for 'weeks' in revised chapter."
+      }
+    },
+    {
+      "findingId": "DEV-014-003",
+      "severity": "minor",
+      "title": "Bond guilt-transmission gap during SCN-38 intimacy",
+      "verificationStatus": "pass",
+      "evidence": {
+        "newContent": "L207-210: 'The thought rose and the bond caught its shadow. Kaelith's hand stilled on Lirien's skin — a pause, barely a breath's width. A searching look, grey-green eyes finding Lirien's face. Lirien pressed the thought down, pressed it deep, and kissed the hollow of Kaelith's throat instead. After a moment, Kaelith's hand moved again.'",
+        "assessment": "New beat inserted after the 'I'm not a home' guilt moment. Creates continuity with Scene 3's 'I know you're carrying something.' Adds micro-tension to the intimate scene by showing the bond transmits shadows of guilt that Lirien actively suppresses. Integrates organically without disrupting scene flow."
+      }
+    },
+    {
+      "findingId": "DEV-014-005",
+      "severity": "minor",
+      "title": "Contract loophole needs intellectual scaffolding",
+      "verificationStatus": "pass",
+      "evidence": {
+        "newContent": "L319-320: 'A Seep principle surfaced, clear as a training instructor's voice: *The binding reads what it reads. Precision of language is precision of obligation.* She had used the principle before — twice in her career, exploiting the gap between what a contract *intended* and what its words *required*. The gap was narrow. But narrow was enough, if you knew where to cut.'",
+        "assessment": "New intellectual scaffolding establishes that exploiting literal contract wording is standard Seep tradecraft. The loophole discovery now feels like applied professional skill rather than narratively convenient eureka. Also emphasizes the bond as the enabling condition (L333-334)."
+      }
+    },
+    {
+      "findingId": "LINE-014-011",
+      "severity": "minor",
+      "title": "Meta-aware motif commentary",
+      "verificationStatus": "pass",
+      "evidence": {
+        "draftPassage": "L190: 'Water. Everything came back to water. Lirien the Seep — named for the thing that finds every crack...'",
+        "revisedPassage": "L221: 'The Seep. Named for the thing that finds every crack, that goes where it is not invited, that cannot be stopped once it finds the way in.'",
+        "assessment": "'Water. Everything came back to water.' — the narrator-winking-at-motif meta-commentary — is eliminated. The Seep reveal enters organically."
+      }
+    },
+    {
+      "findingId": "LINE-014-012",
+      "severity": "minor",
+      "title": "Data insertion 'three of her forty-three completions'",
+      "verificationStatus": "pass",
+      "evidence": {
+        "draftPassage": "L32: 'She'd designed configurations like this herself, for three of her forty-three completions.'",
+        "revisedPassage": "L63: 'She'd designed configurations like this herself. Twice, at least. The geometry was familiar.'",
+        "assessment": "File-citation fraction removed. Characterization preserved without the specific-data-under-fire quality."
+      }
+    },
+    {
+      "findingId": "LINE-014-013",
+      "severity": "minor",
+      "title": "Stock action-scene phrasing 'vision white at the edges'",
+      "verificationStatus": "pass",
+      "evidence": {
+        "draftPassage": "L66: 'made Lirien's vision white at the edges'",
+        "revisedPassage": "L97: 'compressed the world to a bright, flat plane where only the pain and the granite ledge existed'",
+        "assessment": "Stock phrasing replaced with bond-specific sensory experience grounded in the scene's physical reality."
+      }
+    },
+    {
+      "findingId": "LINE-014-014",
+      "severity": "minor",
+      "title": "Kaelith-domain metaphor crossover 'structural event'",
+      "verificationStatus": "pass",
+      "evidence": {
+        "draftPassage": "L172-173: 'its own kind of structural event'",
+        "revisedPassage": "L199: 'it registered as an event Lirien had no classification for'",
+        "assessment": "Kaelith's architectural domain ('structural event') replaced with Lirien's assessment domain ('no classification for'). Premature voice bleed-through corrected."
+      }
+    },
+    {
+      "findingId": "LINE-014-015",
+      "severity": "minor",
+      "title": "Overwrought closing line 'arithmetic/equation'",
+      "verificationStatus": "pass",
+      "evidence": {
+        "draftPassage": "L102: 'The arithmetic of that was the most dangerous equation she had ever carried.'",
+        "revisedPassage": "Line deleted. Section now ends at L131: 'She had just staked her survival on a woman she was contractually bound to end.'",
+        "assessment": "Redundant intensifier eliminated. The preceding devastating juxtaposition is now the section closer. No grep hits for 'arithmetic' or 'equation' confirm complete removal."
+      }
+    },
+    {
+      "findingId": "COPY-004",
+      "severity": "minor",
+      "title": "Anachronistic term 'feedback loop'",
+      "verificationStatus": "pass",
+      "evidence": {
+        "draftPassage": "L170: 'feedback loop of sensation'",
+        "revisedPassage": "L197: 'the bond turned sensation back on itself'",
+        "assessment": "Modern systems-theory term eliminated. Replaced with world-appropriate phrasing preserving the recursive-sensation concept. No grep hits for 'feedback' confirm removal."
+      }
+    },
+    {
+      "findingId": "COPY-005",
+      "severity": "minor",
+      "title": "Anachronistic term 'probability tree'",
+      "verificationStatus": "pass",
+      "evidence": {
+        "draftPassage": "L164: 'a branching point in a probability tree'",
+        "revisedPassage": "L191: 'a branching point, one path leading back toward'",
+        "assessment": "Mathematical decision-theory term eliminated. No grep hits for 'probability' confirm removal."
+      }
+    },
+    {
+      "findingId": "COPY-006",
+      "severity": "minor",
+      "title": "Awkward repetition 'knew the way the way'",
+      "verificationStatus": "pass",
+      "evidence": {
+        "draftPassage": "L328: 'Kaelith's body knew the way the way water knew downhill'",
+        "revisedPassage": "L361: 'Kaelith's body knew the path the way water knew downhill'",
+        "assessment": "Disambiguated — 'the way' (path) → 'the path' so 'the way' (manner) reads cleanly."
+      }
+    },
+    {
+      "findingId": "COPY-007",
+      "severity": "minor",
+      "title": "British spelling 'colour'",
+      "verificationStatus": "pass",
+      "evidence": {
+        "draftPassage": "L236: 'Real colour.'",
+        "revisedPassage": "L267: 'Real color.'",
+        "assessment": "Changed to American spelling per ch2 precedent. No grep hits for 'colour' confirm correction."
+      }
+    },
+    {
+      "findingId": "COPY-008",
+      "severity": "minor",
+      "title": "British spellings 'offence/defence'",
+      "verificationStatus": "pass",
+      "evidence": {
+        "draftPassage": "L58, L60: 'offence' and 'defence'",
+        "revisedPassage": "L89, L91: 'offense' and 'defense'",
+        "assessment": "Changed to American spelling per manuscript convention. No grep hits for 'offence' or 'defence' confirm correction."
+      }
+    },
+    {
+      "findingId": "COPY-009",
+      "severity": "minor",
+      "title": "Factual error — attacker age comparison",
+      "verificationStatus": "pass",
+      "evidence": {
+        "draftPassage": "L58: 'longer than either of them had been alive'",
+        "revisedPassage": "L89: 'for most of his life'",
+        "assessment": "Factual inaccuracy corrected. A mid-40s attacker cannot have been doing violence longer than Lirien (fae, 30+ years of operations). 'For most of his life' is accurate regardless of protagonists' ages."
+      }
+    },
+    {
+      "findingId": "DEV-014-004",
+      "severity": "minor",
+      "title": "Word count 25% over target",
+      "verificationStatus": "partially-addressed",
+      "evidence": {
+        "draftWordCount": 5228,
+        "revisedWordCount": 5215,
+        "assessment": "Word count essentially unchanged (~0.2% reduction). The revision's additions (recovery beat, guilt-transmission beat, loophole scaffolding) offset cuts from voice-marker thinning and subtext-explanation removal. Net change approximately neutral. The revision log honestly acknowledges this and notes that further compression would require cutting passages the line editor specifically flagged for preservation. Not a failure — the finding was minor severity and the revision log's rationale is defensible."
+      }
+    },
+    {
+      "findingId": "LINE-014-016",
+      "severity": "note",
+      "title": "Stock simile 'bowstring finding its draw'",
+      "verificationStatus": "pass-opportunistic",
+      "evidence": {
+        "draftPassage": "L34: 'like a bowstring finding its draw'",
+        "revisedPassage": "L65: 'like a seal finding its pressure point'",
+        "assessment": "Applied opportunistically. Replaced with Lirien-domain simile (seals, containment, precision)."
+      }
+    },
+    {
+      "findingId": "LINE-014-017",
+      "severity": "note",
+      "title": "Architectural metaphor voice bleed-through",
+      "verificationStatus": "pass-partial",
+      "evidence": {
+        "draftPassage": "L332: 'Like a wall that looks identical from outside but has been completely rebuilt within — new load paths, new foundations, weight distributed differently.'",
+        "revisedPassage": "L365: 'But something had changed. The surface was the same, but what it rested on had shifted. New load paths. Weight distributed differently.'",
+        "assessment": "Shortened — explicit 'Like a wall' simile frame cut. Architectural terms 'new load paths' and 'weight distributed differently' retained as thematically appropriate voice bleed-through at this late story point."
+      }
+    },
+    {
+      "findingId": "LINE-014-018",
+      "severity": "note",
+      "title": "Stock water simile 'surfacing from deep water'",
+      "verificationStatus": "pass",
+      "evidence": {
+        "draftPassage": "L84: 'a rush that felt like surfacing from deep water'",
+        "revisedPassage": "L115: 'a rush that felt like an inner ear clearing'",
+        "assessment": "Replaced with auditory echo of the suppression field's described inner-ear quality (L47). Eliminates stock phrase while creating internal consistency."
+      }
+    }
+  ],
+  "regressionFindings": [
+    {
+      "id": "REG-014-001",
+      "severity": "note",
+      "category": "pattern-introduction",
+      "description": "LINE-014-007 fix introduced a new 'Not X' pattern at L121 ('Not from the fight. From what the fight had proven.'). This replaces the 'terrifying' tell-label, so it addresses a major finding while introducing a minor instance of a critical pattern. The total 'Not X' count (~8-9) remains within the 8-10 target specified by LINE-014-003. Not a regression that triggers failure.",
+      "assessment": "WARNING — does not trigger failure"
+    },
+    {
+      "id": "REG-014-002",
+      "severity": "note",
+      "category": "lexical-change",
+      "description": "The revision consistently changed 'kill' to 'end' or 'stop' throughout the chapter (L131 'bound to end', L207/229 'designed to end you', L309 'contracted to end', L351 'I will stop your heart'). This change is not cited by any specific finding ID in the revision log. However, the change is thematically consistent with Lirien's internal reframing (she's found the loophole — she's planning cessation, not death) and aligns with the chapter's character arc. Not a traceability violation — it's a natural extension of the revision's direction.",
+      "assessment": "NOTE — not a traceability violation, thematically appropriate"
+    }
+  ],
+  "voiceMarkerSaturationCheck": {
+    "status": "no-regression",
+    "assessment": "The revised chapter has FEWER voice markers per page than the draft across all categories (water metaphors, operative vocabulary, bond openers, Not X patterns). The reductions are substantial: 42% water, 64% bond openers, 64% Not X, 70%+ operative vocabulary in Scene 2. Most paragraphs in the revised chapter contain zero figurative voice markers, allowing markers to land with impact when they arrive. The progressive thinning from Scene 1 (combat — full operative density) through Scene 2 (intimacy — reduced) mirrors the character's emotional state. No saturation regression."
+  },
+  "dialogueNaturalismCheck": {
+    "status": "no-regression",
+    "assessment": "All dialogue appears unchanged from the draft. No voice markers were added to spoken lines. Dialogue continues to read as natural speech — Kaelith's structural directness ('That's enough,' 'Agreed,' 'Northeast. The pull is stronger today') and Lirien's clipped formality ('Minor,' 'Unconscious. You?') remain distinct without artificial characterization. Zero dialogue naturalism regression."
+  },
+  "darlingsSurvived": {
+    "count": 0,
+    "assessment": "No darlings flagged by editors survived unchanged. Specific darlings cut: 'Water. Everything came back to water' (meta-motif commentary), 'The arithmetic of that was the most dangerous equation' (overwrought closer), 'The irony was so sharp it drew blood' (cliché). Passages preserved were explicitly flagged FOR preservation by both developmental and line editors (combat synchronization, Vael Seren passage, contract loophole, closing image)."
+  },
+  "traceabilityCheck": {
+    "inv014Status": "pass",
+    "assessment": "Every finding ID listed in the revised.md frontmatter (26 IDs) maps to a verified change in the revised text. The revision log provides detailed descriptions of each change with linesAffected references. Two regression notes (REG-014-001, REG-014-002) are new observations, not traceability breaks. Deferred findings (DEV-014-002, COPY-003, DEV-014-004) are correctly absent from the frontmatter and properly documented in the revision log's findingsDeferred section."
+  },
+  "warnings": [
+    {
+      "id": "WARN-014-001",
+      "description": "LINE-014-007 fix introduced a new 'Not X' pattern at L121, but total Not X count (~8-9) remains within 8-10 target range.",
+      "severity": "minor",
+      "failureContribution": false
+    },
+    {
+      "id": "WARN-014-002",
+      "description": "Word count essentially unchanged (5215 vs 5228) despite DEV-014-004 flagging 25% over the 4100-word target. New content additions (recovery beat, guilt-transmission beat, loophole scaffolding) offset cuts. Revision log's rationale is defensible.",
+      "severity": "minor",
+      "failureContribution": false
+    }
+  ],
+  "warningCount": 2,
+  "failureThresholdWarnings": 3,
+  "passFailGateChecklist": {
+    "allCriticalFindingsAddressed": true,
+    "allMajorFindingsAddressed": true,
+    "findingIdClaimedButPassageUnchanged": false,
+    "newCriticalIssuesIntroduced": false,
+    "revisedShorterThan20PercentWithoutJustification": false,
+    "darlingsFlaggedByEditorsPreservedUnchanged": false,
+    "traceabilityBroken": false,
+    "voiceMarkerSaturationRegression": false,
+    "dialogueNaturalismRegression": false,
+    "automaticFailTriggered": false
+  },
+  "chapterProceeds": "beta-reading"
+}

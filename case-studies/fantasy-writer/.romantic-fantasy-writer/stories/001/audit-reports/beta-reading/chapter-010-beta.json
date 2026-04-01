@@ -1,0 +1,65 @@
+{
+  "chapter": 10,
+  "engagementScore": 9,
+  "emotionalImpact": "high",
+  "pacingAssessment": "slow-start",
+  "clarityScore": 8,
+  "findings": [
+    {
+      "id": "BETA-010-001",
+      "type": "pacing",
+      "severity": "major",
+      "description": "The archive infiltration scene (scene 2) runs approximately 1,200 words of procedural intelligence work — locating shelves, reading reports, discovering redactions, charcoal-copying documents. While the conspiracy revelation is plot-critical, the scene reads like a spy procedural dropped into a romantic fantasy. The mechanical details of the archive work (organizational logic, chronological vs. categorical shelving, charcoal transcription technique) don't carry the emotional weight that every other scene in these five chapters sustains. A reader who has been living inside Kaelith and Lirien's charged proximity for four chapters is now watching someone take notes in a library.",
+      "location": "Scene 2, archive section (roughly lines 73-125)",
+      "readerImpact": "Significant. This is the chapters-7-11 stretch's most significant pacing issue. The archive scene is necessary for plot (the conspiracy needs evidence) but it feels like homework between the emotional peaks of chapters 9 and the star conversation in this chapter's scene 3. The procedural detail could be reduced by 40% without losing any plot information."
+    },
+    {
+      "id": "BETA-010-002",
+      "type": "engagement-drop",
+      "severity": "minor",
+      "description": "The conspiracy revelation — forty years of Dimming rites, Seventh Seat authorization, Thenndal's death — is delivered in a dense expository exchange. Kaelith and Lirien trade intelligence assessments ('The conspiracy is ideological,' 'Someone wants Ythara to wake') in language so controlled it distances the reader from the enormity of what's been discovered. The revelation that someone on the High Conclave has been deliberately killing the sky for forty years should be devastating. Instead it feels like a briefing.",
+      "location": "Scene 2-3 transition, conspiracy discussion by the fire",
+      "readerImpact": "Moderate. The emotional impact of the conspiracy is muted because it's processed through two professionals who handle information professionally. This is in-character but the reader needs a beat where the scale of the horror registers viscerally. Kaelith's 'someone wants Ythara to wake' gets close but is immediately followed by tactical analysis rather than an emotional beat."
+    },
+    {
+      "id": "BETA-010-003",
+      "type": "character-inconsistency",
+      "severity": "minor",
+      "description": "Kaelith calls out Lirien's withholding of the Seventh Seat reference ('You had the Seventh Seat reference before today') and Lirien begins her trained justification ('Sharing unverified intelligence creates—'). Kaelith cuts her off by revealing she's noticed Lirien recites briefing protocols aloud. The exchange is sharp, well-written, and reveals mutual observation. But the resolution feels too clean — Kaelith doesn't express hurt or anger, and Lirien's discomfort is brief. Given that institutional withholding of information is Kaelith's core wound (the Conclave withheld, managed, and controlled her access to truth about herself), this should land harder. Lirien doing the same thing — even with good reason — should trigger more than a dry quip.",
+      "location": "Scene 2-3 transition, Seventh Seat discussion",
+      "readerImpact": "Moderate. The reader expects friction here. Chapter 9 set up the withheld documents as a trust test, and when the test arrives, it resolves in under ten exchanges. The scene acknowledges the institutional parallel ('Institutions had withheld critical information from Kaelith before') but doesn't let the confrontation breathe. A reader invested in the trust arc may feel shortchanged."
+    },
+    {
+      "id": "BETA-010-004",
+      "type": "confusion",
+      "severity": "minor",
+      "description": "The strategic decision — Quietus first vs. disrupting the Dimming rites — is made quickly and without much tension. Kaelith argues for the seal, Lirien agrees within two exchanges. Given that this decision shapes the entire second half of the book, the ease of agreement feels too frictionless. A dissenting beat from Lirien (who has the intelligence background to argue for disruption) would add weight to the choice.",
+      "location": "Scene 2-3, strategic discussion",
+      "readerImpact": "Low-to-moderate. The decision's logic is sound (repair what holds or nothing holds). But from a reader-engagement standpoint, a significant strategic choice that's resolved in four paragraphs without disagreement misses an opportunity for dramatic tension."
+    },
+    {
+      "id": "BETA-010-005",
+      "type": "worldbuilding-gap",
+      "severity": "observation",
+      "description": "The fae perception of stars as 'persistent sound' / resonance is beautiful worldbuilding. But it's introduced and then immediately moved past. This is a rare window into fae consciousness — how Lirien experiences reality differently at a sensory level — and it deserves one more beat of exploration. Kaelith's response ('So when you look up, you hear the sky') is perfect, but Lirien's correction ('Not hear... Resonance') could be expanded. This is the kind of detail that builds a reader's understanding of fae otherness, which will matter for the resonance bond in chapter 11.",
+      "location": "Scene 3, star conversation",
+      "readerImpact": "Low. The scene is already excellent. But the fae-perception detail is doing double duty (worldbuilding + foreshadowing the resonance bond) and could afford to linger. One more exchange — Kaelith asking what Earth resonance feels like for fae, or Lirien describing what Kaelith's voice sounds like in that register — would deepen both the worldbuilding and the intimacy."
+    },
+    {
+      "id": "BETA-010-006",
+      "type": "pacing",
+      "severity": "observation",
+      "description": "Thenndal's name clearly lands with significance for Kaelith ('Something shifted behind Kaelith's eyes — quick, controlled') but Lirien notes it and neither character follows up. This is appropriate for a Lirien-POV chapter (she can't know Kaelith's connection to Thenndal) but it creates an unresolved beat that's never returned to in chapters 10-11. If Thenndal matters, the reader needs a payoff within a chapter or two.",
+      "location": "Scene 2-3, Thenndal mention",
+      "readerImpact": "Low. The beat registers as a planted seed. But if it doesn't bloom by chapter 13 or so, readers will flag it as a dropped thread."
+    }
+  ],
+  "strengths": [
+    "The star conversation is the emotional centerpiece of the entire five-chapter arc. 'What were they like from the coast?' is Lirien asking a question with zero operational value and knowing it and asking anyway. The moment she breaks cover — 'the vertiginous drop of breaking cover, the free-fall between action and consequence' — is devastating because the 'cover' she's breaking is not a false identity but a lifetime of treating every interaction as intelligence gathering. Asking because she wants to know is the most radical thing Lirien has done.",
+    "Lirien's parenthetical annotations going silent ('The parenthetical annotations that normally accompanied Lirien's processing were absent. Not suppressed. Absent.') is the single most elegant piece of craft in these five chapters. It shows the analytical framework failing not through dramatic collapse but through quiet irrelevance. The system doesn't break. It simply has nothing to say. This is how defenses actually fall — not in explosions but in the realization that you no longer need them.",
+    "Kaelith's coast memories — stone houses built into cliffside, the tide-pool wall rebuilt daily — are the first time we see her as someone who existed before the military, before Calwrath, before exile. The detail about her mother teaching her to read buildings before letters is character-building that retroactively enriches every engineering metaphor in the previous four chapters. The wall-building childhood foreshadows everything she becomes and everything she loses.",
+    "The chapter's final beat — no watch rotation established, sleeping near each other 'because they wanted to, and that wanting being enough' — is the perfect pre-midpoint landing. It says: they have arrived at wanting. Not acting on it. Not declaring it. Just allowing it to exist without tactical justification. After four chapters of denial, rationalization, and framework-building, simple wanting is revolutionary.",
+    "The incomplete parenthetical — '(Classification: )' — with the empty space where the category should go, is a typographic representation of Lirien's framework failing. It's the kind of detail that only works in prose, and it works perfectly. The reader feels the gap where the word should be."
+  ],
+  "verdict": "strong"
+}

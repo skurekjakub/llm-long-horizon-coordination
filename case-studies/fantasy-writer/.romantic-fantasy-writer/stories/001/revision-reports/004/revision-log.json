@@ -1,0 +1,235 @@
+{
+  "storyId": "001",
+  "chapterId": "004",
+  "revisionAgent": "chapter-reviser",
+  "createdAt": "2025-07-24T14:55:00Z",
+  "sourceFindings": {
+    "developmental": ["DEV-004-001", "DEV-004-002", "DEV-004-003", "DEV-004-004", "DEV-004-005", "DEV-004-006"],
+    "line": ["LINE-004-001", "LINE-004-002", "LINE-004-003", "LINE-004-004", "LINE-004-005", "LINE-004-006", "LINE-004-007", "LINE-004-008", "LINE-004-009", "LINE-004-010"],
+    "copy": ["COPY-004-001", "COPY-004-002", "COPY-004-003", "COPY-004-004", "COPY-004-005", "COPY-004-006", "COPY-004-007"]
+  },
+  "changes": [
+    {
+      "id": "REV-004-001",
+      "findingIds": ["COPY-004-001", "DEV-004-002"],
+      "type": "continuity-fix",
+      "description": "Corrected time-of-day description from pre-dawn to midday. Ch3 events concluded late morning; Ch4 Scene 1 follows. Changed harbor description from 'fishing boats bobbing in the pre-dawn tide' to 'fishing boats rocking at their moorings in the flat midday light. The Pallor's noon silver pressed the harbor into a study of pewter and bone.' Removed all pre-dawn references throughout.",
+      "details": [
+        {
+          "section": "Scene 1, window paragraph",
+          "original": "fishing boats bobbing in the pre-dawn tide",
+          "revised": "fishing boats rocking at their moorings in the flat midday light. The Pallor's noon silver pressed the harbor into a study of pewter and bone."
+        }
+      ]
+    },
+    {
+      "id": "REV-004-002",
+      "findingIds": ["COPY-004-002"],
+      "type": "world-rule-fix",
+      "description": "Replaced 'termination protocols' with 'the Lessening' to align with MAG-005 binding mechanics. The world bible establishes that binding failure triggers 'the Lessening — functional but missing aspects of will, memory, or identity,' not death. Revised to: 'the binding would begin the Lessening — the slow collapse of will, memory, and purpose that awaited operatives who could not fulfill their terms.'",
+      "details": [
+        {
+          "section": "Scene 1, binding countdown paragraph",
+          "original": "the binding would interpret sustained delay as operative incapacity and trigger termination protocols",
+          "revised": "the binding would begin the Lessening — the slow collapse of will, memory, and purpose that awaited operatives who could not fulfill their terms"
+        },
+        {
+          "section": "Scene 2, post-Kaelith-departure reflection",
+          "original": "termination protocols",
+          "revised": "the Lessening"
+        },
+        {
+          "section": "Chapter close",
+          "original": "Five days to solve a paradox or face termination",
+          "revised": "Five days to solve a paradox or face the Lessening"
+        }
+      ]
+    },
+    {
+      "id": "REV-004-003",
+      "findingIds": ["COPY-004-003"],
+      "type": "continuity-clarification",
+      "description": "Added clarification that the binding countdown resets when Lirien files her report. The report filing registers with the binding as operational activity, resetting the evaluation clock. This reconciles the 48-hour countdown with Ch2's timeline — the original 48h window was from Ch2 evening, but this new 48h window starts from the report submission in Ch4.",
+      "details": [
+        {
+          "section": "Scene 1, binding countdown paragraph",
+          "original": "Forty-eight hours remained before the binding registered delay as failure.",
+          "revised": "The report filing would register with the binding — operational activity acknowledged, evaluation clock reset. Forty-eight hours from submission before the Seep processed the report, determined its insufficiency, and escalated the binding's enforcement."
+        }
+      ]
+    },
+    {
+      "id": "REV-004-004",
+      "findingIds": ["LINE-004-003"],
+      "type": "metaphor-domain-fix",
+      "description": "Replaced 'like a blade on the table' with water/contract-domain metaphor per Lirien's established voice fingerprint. Lirien's metaphors draw from water, currents, contracts, surfaces/depths — not blade/weapon imagery.",
+      "details": [
+        {
+          "section": "Scene 2, revelation stakes paragraph",
+          "original": "The words sat between them like a blade on the table",
+          "revised": "The words settled between them like the terms of a contract neither had agreed to sign"
+        }
+      ]
+    },
+    {
+      "id": "REV-004-005",
+      "findingIds": ["LINE-004-001", "LINE-004-005"],
+      "type": "inv-005-compliance",
+      "description": "Reworked Scene 1 emotional passage where Lirien names what she felt during the scaffolding collapse. Replaced 'She had felt something when the scaffolding came down' with operational/somatic framing: 'Something had registered when the scaffolding came down — not in the operational framework, which had no category for it, but lower, behind the sternum where classification did not reach. A tightening. A sharp, clean rejection of the scenario.' The emotion is conveyed through the failure of classification systems, consistent with Lirien's voice.",
+      "details": [
+        {
+          "section": "Scene 1, scaffolding reflection",
+          "original": "She had felt something when the scaffolding came down",
+          "revised": "Something had registered when the scaffolding came down — not in the operational framework, which had no category for it, but lower, behind the sternum where classification did not reach. A tightening. A sharp, clean rejection of the scenario"
+        }
+      ]
+    },
+    {
+      "id": "REV-004-006",
+      "findingIds": ["LINE-004-009"],
+      "type": "inv-005-compliance",
+      "description": "Replaced 'Lirien felt something shift in her chest' with binding-mechanics-based somatic description: 'Something shifted behind Lirien's sternum — not pain, but the binding's awareness recalibrating.' Grounds the sensation in established magic mechanics rather than vague emotion.",
+      "details": [
+        {
+          "section": "Scene 2, binding awareness passage",
+          "original": "Lirien felt something shift in her chest",
+          "revised": "Something shifted behind Lirien's sternum — not pain, but the binding's awareness recalibrating. Execution had not occurred within the expected timeline. The contract was taking note."
+        }
+      ]
+    },
+    {
+      "id": "REV-004-007",
+      "findingIds": ["LINE-004-006"],
+      "type": "voice-refinement",
+      "description": "Replaced vague 'something almost like humor' with specific observable micro-expression: 'A shift in the muscles around Kaelith's mouth — not a smile, but the architecture of one, suppressed before it fully formed.' Lirien reads faces professionally; vague characterization undermines her established competence.",
+      "details": [
+        {
+          "section": "Scene 3, humor response",
+          "original": "Something almost like humor moved through Kaelith's expression",
+          "revised": "A shift in the muscles around Kaelith's mouth — not a smile, but the architecture of one, suppressed before it fully formed"
+        }
+      ]
+    },
+    {
+      "id": "REV-004-008",
+      "findingIds": ["LINE-004-004"],
+      "type": "repetition-fix",
+      "description": "Varied the 'question was direct' pattern. The draft used this phrasing three times. Revised to use distinct framings for each: (1) 'Operatives appreciated directness' (2) 'Three letters. It should have had a simple answer.' (3) 'Lirien registered the question as an input her operational framework had no protocol for.'",
+      "details": [
+        {
+          "section": "Scene 2, first occurrence",
+          "original": "The question was direct.",
+          "revised": "Operatives appreciated directness. It eliminated the need for deflection, which was exhausting work when both parties knew the deflection was occurring."
+        },
+        {
+          "section": "Scene 2, 'Why?' question",
+          "original": "The question was direct and deserved a direct answer.",
+          "revised": "Three letters. It should have had a simple answer."
+        },
+        {
+          "section": "Scene 3, name exchange",
+          "original": "The question was direct.",
+          "revised": "Lirien registered the question as an input her operational framework had no protocol for."
+        }
+      ]
+    },
+    {
+      "id": "REV-004-009",
+      "findingIds": ["DEV-004-006", "LINE-004-002"],
+      "type": "voice-strengthening",
+      "description": "Added Scene 1 dual-arc beat: 'And somewhere in the framework of threat assessment and operational variables, the image of Kaelith Maren's face kept surfacing — green eyes sharp with the assessment Lirien was trained to perform and unaccustomed to receiving. Not relevant to the report. Noted anyway.' This plants the romance thread in Scene 1 (previously absent) and uses Lirien's classified/annotation voice pattern.",
+      "details": [
+        {
+          "section": "Scene 1, before report writing",
+          "original": "(no dual-arc beat in Scene 1)",
+          "revised": "And somewhere in the framework of threat assessment and operational variables, the image of Kaelith Maren's face kept surfacing — green eyes sharp with the assessment Lirien was trained to perform and unaccustomed to receiving. Not relevant to the report. Noted anyway."
+        }
+      ]
+    },
+    {
+      "id": "REV-004-010",
+      "findingIds": ["DEV-004-004", "DEV-004-005"],
+      "type": "structural-refinement",
+      "description": "Tightened chapter close. Reduced tactical inventory before the 'had a name' beat. The final paragraphs now move from negotiation outcome → operational assessment → the name exchange significance → forward momentum, without the extended probability calculation that diluted the emotional beat.",
+      "details": [
+        {
+          "section": "Chapter close, final paragraphs",
+          "original": "Extended tactical inventory followed by 'had a name' beat",
+          "revised": "Compressed: 'She had built worse operational plans on less intelligence. / This one, at least, had a name.' — tactical framing delivers the emotional beat through Lirien's voice without sentimentality."
+        }
+      ]
+    },
+    {
+      "id": "REV-004-011",
+      "findingIds": ["LINE-004-008", "LINE-004-010"],
+      "type": "voice-refinement",
+      "description": "Strengthened Lirien's observation-mode descriptions throughout. Replaced generic 'she noticed' constructions with specific cataloguing: barkeeper's tell (left-hand favoring, glass-cleaning frequency, shoulder tension), Kaelith's micro-expressions quantified in degrees, and spatial positions measured in paces/feet. Added Lirien's assessment of Kaelith seeing through her cover ('She was being assessed by someone whose assessment she could not dismiss').",
+      "details": [
+        {
+          "section": "Scene 2, barkeeper description",
+          "original": "The barkeeper was cleaning a glass and watching them with the careful disinterest of someone who preferred not to know.",
+          "revised": "The barkeeper, who favored his left hand, had cleaned the same glass three times since Lirien entered, and whose shoulders had risen incrementally with each pass of the cloth. He knew something had shifted in Duskhaven's usual stillness."
+        }
+      ]
+    },
+    {
+      "id": "REV-004-012",
+      "findingIds": ["DEV-004-001", "DEV-004-003"],
+      "type": "pacing-adjustment",
+      "description": "Rebalanced Scene 2 information delivery. The Pallor revelation is now preceded by additional negotiation beats and Lirien's tactical evaluation of whether to reveal at all. Added her internal calculus: 'The woman across from her was not an asset to be manipulated. She was competent, distrustful, and sufficiently desperate that offering nothing would fracture the fragile cooperation.' Scene 3 weight increased with expanded Oathbrand exchange and the name-exchange beat gaining more narrative space.",
+      "details": [
+        {
+          "section": "Scene 2, pre-revelation passage",
+          "original": "Direct transition to Pallor revelation",
+          "revised": "Added Lirien's tactical evaluation paragraph weighing cooperation vs. revelation risk, establishing the decision to share as deliberate strategic choice rather than capitulation"
+        }
+      ]
+    },
+    {
+      "id": "REV-004-013",
+      "findingIds": ["COPY-004-007"],
+      "type": "continuity-fix",
+      "description": "Adjusted Kaelith's departure line to remove the specific four-hour reference that conflicted with elapsed time. After three hours of waiting, the original four-hour departure window would leave approximately one hour. Changed to: 'The boat,' Kaelith said. 'I'll be at the port.' — removing the conflicting time reference.",
+      "details": [
+        {
+          "section": "Scene 3, Kaelith's departure line",
+          "original": "'Four hours,' Kaelith said. 'I'll be at the port.'",
+          "revised": "'The boat,' Kaelith said. 'I'll be at the port.'"
+        }
+      ]
+    },
+    {
+      "id": "REV-004-014",
+      "findingIds": ["LINE-004-007"],
+      "type": "voice-refinement",
+      "description": "Added Lirien's signature observation mode to the 'Why did you help me' exchange. Her internal attempt to classify the emotion and the failure of classification ('the classification system had encountered an input it could not process') uses her established pattern of containment-through-categorization as emotional defense.",
+      "details": [
+        {
+          "section": "Scene 2, intervention justification passage",
+          "original": "Generic tactical justification",
+          "revised": "Added: 'Not because the mission required it. Because the scenario where Kaelith Maren vanished without knowing she had been lied to produced a response Lirien's operational framework could not accommodate — not strategic, not tactical, but irreducible. The classification system had encountered an input it could not process.'"
+        }
+      ]
+    }
+  ],
+  "wordCountChange": {
+    "original": 3902,
+    "revised": 4038,
+    "delta": 136,
+    "reason": "Net increase from added dual-arc beat in Scene 1, expanded observation passages, binding-clock clarification, and Scene 3 enrichment. Partially offset by tightened chapter close, compressed repetitive patterns, and removal of redundant tactical inventory."
+  },
+  "unaddressedFindings": [
+    {
+      "id": "COPY-004-004",
+      "reason": "The enforcer naming verification is informational — Lirien correctly refers to the enforcer by function, not name. No textual change required. Flagged for continuity tracking in future Lirien-POV chapters."
+    },
+    {
+      "id": "COPY-004-005",
+      "reason": "Lirien's statement 'I am not a Shaper' was verified as consistent with magic-system.json. No change required."
+    },
+    {
+      "id": "COPY-004-006",
+      "reason": "The forty-year Pallor sabotage timeline is supported by the continuity tracker's information flow. No change required. Flagged for cross-reference with Ch2 Seep intelligence packet."
+    }
+  ]
+}

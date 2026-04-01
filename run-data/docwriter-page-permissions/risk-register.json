@@ -1,0 +1,197 @@
+{
+  "version": 1,
+  "generatedBy": "docwriter-risk-analyzer",
+  "generatedAt": "2026-03-18T14:18:35Z",
+  "risks": [
+    {
+      "taskId": "T-001",
+      "name": "Update Page permission management page with operation-specific permission sections",
+      "overallRisk": "critical",
+      "dimensions": {
+        "technicalAccuracy": "high",
+        "scopeCreep": "high",
+        "crossReference": "high",
+        "staleness": "medium",
+        "personaComplexity": "medium",
+        "researchAlignment": "medium"
+      },
+      "incomingLinkCount": 27,
+      "impactPriority": "critical",
+      "mitigations": [
+        "Accuracy reviewer must cross-check every permission requirement statement against the permissionSummary in code-analysis.json — specifically verify the ACL+application permission combinations for publish (READ+UPDATE), create (READ+CREATE on PARENT), delete (READ+DELETE with evaluateChildPages), and unpublish (READ+UPDATE, no workflow step check).",
+        "Accuracy reviewer must verify the Read prerequisite rule against WebPageAclPermissionEvaluator.cs IndividuallyCheckedPermissions logic — only Read and Display are exempt from the double-check.",
+        "Accuracy reviewer must verify the channel admin bypass claim against WebsiteChannelAdminProvider.cs (two paths: global Administrator role, and ManagePermissions on website channel application) and the 60-minute cache TTL.",
+        "Writer must not expand beyond the 6 operation sections planned (publish, create, delete, unpublish, plus Read table update and Delete table update). Save, discard, rename, clone, cancel-scheduled operations are out of scope for this task.",
+        "Cross-ref updater must verify all 27 incoming links remain valid after headings are added/modified, particularly any anchor links that reference existing heading text in the permission descriptions table area.",
+        "Writer should use existing 'Page permissions for moving pages' section as the structural template for new operation sections to maintain consistency and reduce scope creep risk."
+      ],
+      "notes": "T-001 is the critical hub task: all 7 other tasks depend on it, it absorbs 17 of the 38 impacts, and it requires adding 6 new sections plus modifying 3 existing ones. The page has 27 incoming links, making heading changes ripple-prone. Technical accuracy risk is high because the permission model has three interacting layers (application → ACL → workflow) with non-obvious behaviors: publish-on-create uses CREATE not UPDATE on the parent, unpublish bypasses workflow step roles unlike other operations, and delete-with-children recurses over broken-inheritance subtrees. REC-002 (adapted) recommends a summary table format which may need adjustment to fit the project's Markdown table conventions — this adds a minor research alignment concern. REC-009 (adapted) recommends prerequisites as intro text instead of callouts, which diverges from the planned warning callout approach. Two adapted recommendations create reviewer awareness needs but both were approved with modifications."
+    },
+    {
+      "taskId": "T-002",
+      "name": "Update Edit and publish pages with permission requirements and cross-references",
+      "overallRisk": "medium",
+      "dimensions": {
+        "technicalAccuracy": "medium",
+        "scopeCreep": "medium",
+        "crossReference": "high",
+        "staleness": "medium",
+        "personaComplexity": "low",
+        "researchAlignment": "low"
+      },
+      "incomingLinkCount": 28,
+      "impactPriority": "high",
+      "mitigations": [
+        "Accuracy reviewer must verify the permission summary notes added to Publish/Unpublish/Revert/Move sections match the exact ACL requirements from code-analysis.json — particularly the unpublish asymmetry (no workflow step role check) and revert requiring CanWorkWithContentItemInCurrentStep.",
+        "Cross-ref updater must verify all 28 incoming links remain valid after the 4 section modifications, especially anchor links to 'Publish pages', 'Unpublish pages', 'Revert changes', and 'Move pages' headings.",
+        "Writer must keep permission notes as brief cross-referencing additions, not duplicate the full permission detail from T-001. The page is business-user-facing; avoid developer-level detail about ACL internals.",
+        "Writer must ensure consistency between the permission notes added here and the language used in the T-001 hub page — use the same terminology for 'Read and Update page permissions' across both pages."
+      ],
+      "notes": "T-002 modifies 4 existing sections in a heavily-linked page (28 incoming links) to add permission requirement notes and cross-references to the T-001 hub page. The edits are additive (brief notes and links) rather than restructuring, limiting scope creep risk. Technical accuracy risk is medium because the permission statements are summaries cross-referencing T-001, not primary reference content — but the unpublish/revert distinction (workflow step check vs. no check) could be mischaracterized. IMP-011 flags the Move pages section as already having a cross-reference pattern to follow. Persona complexity is low — this is a single-persona (business user) page."
+    },
+    {
+      "taskId": "T-003",
+      "name": "Update Workflows page with specific permission cross-references",
+      "overallRisk": "medium",
+      "dimensions": {
+        "technicalAccuracy": "high",
+        "scopeCreep": "low",
+        "crossReference": "high",
+        "staleness": "medium",
+        "personaComplexity": "low",
+        "researchAlignment": "low"
+      },
+      "incomingLinkCount": 36,
+      "impactPriority": "high",
+      "mitigations": [
+        "Accuracy reviewer must verify that the replacement text for the two 'Workflow roles and other permissions' callouts correctly states: users need the View (Access channel) application permission for the respective website channel, plus Read + Update page permissions. Cross-check against permissionSummary.changeWorkflowStep in code-analysis.json.",
+        "Accuracy reviewer must verify the Draft step always-allowed rule (IMP-009: no step role check on the Draft step) if this nuance is included — cross-check against WorkflowStepRoleArbiter.cs behavior documented in code-analysis.json.",
+        "Cross-ref updater must verify all 36 incoming links remain valid. This page has the highest incoming link count of all targets. Any heading text changes in 'Create a workflow' or 'Configure the workflow steps' could break anchors from 36 linking pages.",
+        "Writer must restrict changes to the two callout replacements and any step-role clarification. Do not expand into documenting other workflow behaviors."
+      ],
+      "notes": "T-003 replaces two vague callouts with specific permission requirements in the workflows page. Despite the narrow scope (low scope creep risk), technical accuracy risk is high because the workflow permission model involves the interplay of application permissions, ACL permissions, and workflow step roles — three distinct layers that must be stated precisely. The workflows page has the highest incoming link count (36) of any target page, making cross-reference risk high. The Draft step always-allowed rule (IMP-009, medium priority) adds complexity if included. Persona is single (admin)."
+    },
+    {
+      "taskId": "T-004",
+      "name": "Update Create pages with permission cross-reference",
+      "overallRisk": "low",
+      "dimensions": {
+        "technicalAccuracy": "low",
+        "scopeCreep": "low",
+        "crossReference": "medium",
+        "staleness": "low",
+        "personaComplexity": "low",
+        "researchAlignment": "low"
+      },
+      "incomingLinkCount": 11,
+      "impactPriority": "medium",
+      "mitigations": [
+        "Writer must ensure the cross-reference link text follows REC-005 (descriptive link text) and points to the correct anchor for the 'Page permissions for creating pages' section in the T-001 hub page.",
+        "Accuracy reviewer should spot-check that the brief permission note mentions CREATE permission on the parent page (not the page being created) to match the code-analysis.json permissionSummary.createPage."
+      ],
+      "notes": "T-004 is a minimal cross-reference update: add a brief permission note and link to the T-001 hub page in the 'Create a new page' section. The page has 11 incoming links (medium cross-reference risk), but since no heading text is changing, the actual ripple risk is minimal. Technical accuracy risk is low because this task only adds a cross-reference sentence, not primary permission documentation. Single persona (business user), clear boundaries, self-contained change."
+    },
+    {
+      "taskId": "T-005",
+      "name": "Update Delete pages with permission cross-reference",
+      "overallRisk": "low",
+      "dimensions": {
+        "technicalAccuracy": "low",
+        "scopeCreep": "low",
+        "crossReference": "medium",
+        "staleness": "low",
+        "personaComplexity": "low",
+        "researchAlignment": "low"
+      },
+      "incomingLinkCount": 10,
+      "impactPriority": "medium",
+      "mitigations": [
+        "Writer must ensure the cross-reference link text follows REC-005 (descriptive link text) and points to the correct anchor for the 'Page permissions for deleting pages' section in the T-001 hub page.",
+        "Accuracy reviewer should spot-check that the brief permission note in the 'Deleting a page with child pages' subsection mentions the subtree permission check (Delete required on child pages with broken ACL inheritance) to match code-analysis.json permissionSummary.deletePage."
+      ],
+      "notes": "T-005 is a minimal cross-reference update across two locations: the introductory steps and the 'Deleting a page with child pages' subsection. The page has 10 incoming links (medium cross-reference risk), but no heading changes minimize actual ripple. The child-page subtree check is a secondary note that the accuracy reviewer should verify against the hub page's treatment. Single persona (business user), clear boundaries."
+    },
+    {
+      "taskId": "T-006",
+      "name": "Update Security guidelines with improved permission cross-reference",
+      "overallRisk": "low",
+      "dimensions": {
+        "technicalAccuracy": "low",
+        "scopeCreep": "low",
+        "crossReference": "low",
+        "staleness": "low",
+        "personaComplexity": "medium",
+        "researchAlignment": "low"
+      },
+      "incomingLinkCount": 2,
+      "impactPriority": "low",
+      "mitigations": [
+        "Writer should verify that the 'Roles and permissions' and 'Data permissions' sections' existing cross-references are updated to point to specific operation sections in the T-001 hub page, not just the page root.",
+        "Persona reviewer should confirm the cross-reference language works for all three target personas (developer, architect, admin) without being too role-specific."
+      ],
+      "notes": "T-006 is a low-risk cross-reference improvement: update existing links in two sections of the security guidelines to be more specific. Only 2 incoming links, low impact priority (IMP-023), no heading changes. The only elevated dimension is persona complexity (medium) because the page serves developers, architects, and admins — but the change is just a link update, minimizing tone/depth concerns."
+    },
+    {
+      "taskId": "T-007",
+      "name": "Update Content versioning configuration with improved permission cross-reference",
+      "overallRisk": "low",
+      "dimensions": {
+        "technicalAccuracy": "low",
+        "scopeCreep": "low",
+        "crossReference": "low",
+        "staleness": "low",
+        "personaComplexity": "low",
+        "researchAlignment": "low"
+      },
+      "incomingLinkCount": 7,
+      "impactPriority": "low",
+      "mitigations": [
+        "Writer should verify that the updated cross-reference in the 'Permissions' section points to the correct anchor in the T-001 hub page (likely the multi-layer model introduction or a specific operation section).",
+        "Accuracy reviewer should confirm the existing permission text in this section remains accurate after the cross-reference update — no permissions content should be removed, only supplemented with a more specific link."
+      ],
+      "notes": "T-007 is a minimal cross-reference update in the 'Permissions' section of the content versioning configuration page. Single impact (IMP-024, low priority), 7 incoming links (low), dual persona (admin/developer) but the change is just a link, and the section already discusses permissions. All dimensions are low."
+    },
+    {
+      "taskId": "T-008",
+      "name": "Update Content sync with permission cross-reference",
+      "overallRisk": "low",
+      "dimensions": {
+        "technicalAccuracy": "low",
+        "scopeCreep": "low",
+        "crossReference": "medium",
+        "staleness": "low",
+        "personaComplexity": "low",
+        "researchAlignment": "low"
+      },
+      "incomingLinkCount": 30,
+      "impactPriority": "low",
+      "mitigations": [
+        "Writer must ensure the cross-reference in the 'Synchronize content' and 'Pages' sections correctly links to the T-001 hub page. The Synchronize permission (READ + SYNCHRONIZE on the page and all ancestors) has a unique ancestor-chain check that should be noted if mentioned.",
+        "Cross-ref updater should verify no heading changes affect the 30 incoming links, though the planned modification is purely additive (adding a cross-reference sentence, not restructuring headings)."
+      ],
+      "notes": "T-008 updates two sections in the content sync page with permission cross-references. Despite the high incoming link count (30), the change is purely additive (inserting cross-reference text, not modifying headings), so cross-reference risk is medium rather than high. The Synchronize permission has a unique ancestor-chain ACL check that is documented in code-analysis.json but this task only needs a brief cross-reference, not full permission documentation. Low priority impact (IMP-027), single persona (business user)."
+    }
+  ],
+  "summary": {
+    "critical": 1,
+    "high": 0,
+    "medium": 2,
+    "low": 5,
+    "highestRiskTasks": ["T-001"],
+    "riskDistribution": {
+      "technicalAccuracy": {"high": 2, "medium": 1, "low": 5},
+      "scopeCreep": {"high": 1, "medium": 1, "low": 6},
+      "crossReference": {"high": 3, "medium": 3, "low": 2},
+      "staleness": {"high": 0, "medium": 4, "low": 4},
+      "personaComplexity": {"high": 0, "medium": 2, "low": 6},
+      "researchAlignment": {"high": 0, "medium": 1, "low": 7}
+    },
+    "keyFindings": [
+      "T-001 is the single critical-risk task: it absorbs 17 of 38 impacts, has 11 docFacts to verify, adds 6 new sections, and all 7 other tasks depend on its output. Errors here cascade everywhere.",
+      "Cross-reference risk is the most prevalent elevated dimension (3 high, 3 medium) because the target pages collectively have 151 incoming links. T-003 (workflows, 36 links) and T-008 (content sync, 30 links) have the highest counts.",
+      "Technical accuracy risk concentrates in T-001 and T-003 — both document the three-layer permission model (application → ACL → workflow) where the interactions are non-obvious.",
+      "T-004 through T-008 are uniformly low risk: simple cross-reference additions with clear boundaries and no heading changes.",
+      "Two adapted research recommendations (REC-002, REC-009) affect only T-001. No research recommendations were found conflicting with invariants beyond what the research-brief's gate already caught (4 blocked recs)."
+    ]
+  }
+}

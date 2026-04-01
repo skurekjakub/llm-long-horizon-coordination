@@ -1,0 +1,203 @@
+{
+  "gateId": "GATE-concept-001",
+  "phase": "concept",
+  "timestamp": "2026-03-17T21:08:00Z",
+  "findings": [
+    {
+      "id": "AUD-001",
+      "severity": "minor",
+      "category": "craft-compliance",
+      "description": "T10 (Sanderson's Laws of Magic) enforcement phases omit beta-reading. The story features at least four magical systems (Oathbrand, Pallor, Quietus, fae/Seep magic) whose consistency is a primary fantasy reader concern. The fantasy-beta-reader agent should verify magic system rules are respected, but T10 enforcement currently stops at revision. This creates a gap where magic inconsistencies introduced during revision could escape detection.",
+      "artifactRef": "craft-profile.json → selectedTools[4] (T10)",
+      "suggestedFix": "Add 'beta-reading' to T10's enforcementPhases array: [\"worldbuilding\", \"plotting\", \"drafting\", \"revision\", \"beta-reading\"]."
+    },
+    {
+      "id": "AUD-002",
+      "severity": "minor",
+      "category": "consistency",
+      "description": "Act II proportioning is ambitious for story density. The chapterCountRationale allocates 10 chapters (~40,000 words) to Act II (Ch 7–16), which must accommodate: the cross-empire journey, conspiracy escalation (Pallor poisoning reveal), the full slow-burn enemies-to-lovers progression from grudging respect through unwanted attraction to trust-as-crisis and physical intimacy, PLUS the Black Moment. Standard 3-act structure allocates ~50% to Act II; this story allocates ~45%. For a dual-arc enemies-to-lovers with this many moving parts, the compression risk is real — the Black Moment especially needs room to breathe.",
+      "artifactRef": "story-concept.json → chapterCountRationale",
+      "suggestedFix": "Consider 24 chapters (still within 90K at ~3,750 words/chapter) with Act II spanning Ch 7–18 (12 chapters, ~45K words). Alternatively, flag this as a known risk for the plotting phase to monitor — the chapter outliner should verify Act II pacing has sufficient room for the vulnerability ladder and Black Moment."
+    },
+    {
+      "id": "AUD-003",
+      "severity": "minor",
+      "category": "consistency",
+      "description": "One of four comp titles (A Memory Called Empire by Arkady Martine) is from a different genre entirely (literary science fiction, not romantic fantasy). While the rationale explicitly flags this as a 'tonal comp rather than genre match,' comp titles serve as market positioning signals for downstream agents. A non-genre comp could confuse the style-guide writer or beta readers about audience expectations, particularly around romance arc delivery and heat level norms.",
+      "artifactRef": "story-concept.json → compTitles[3]",
+      "suggestedFix": "No change required — the rationale is transparent and well-justified. Downstream agents should treat this as an atmospheric/prose reference only, not a structural or romance-arc model. Consider adding a 'compType' field (e.g., 'genre' vs 'tonal') to disambiguate programmatically if schema permits."
+    }
+  ],
+  "observations": [
+    {
+      "id": "OBS-001",
+      "status": "verified",
+      "check": "INV-001 Genre Promise — Fantasy Element in Premise",
+      "detail": "refinedPremise contains: imprisoned god (Ythara the Unfinished), god-seal mechanism (Quietus), atmospheric membrane (Pallor), magic-suppressing brand (Oathbrand), fae intelligence network (Seep), fae court (Cerith Court), kinetic/embodied memory magic. Fantasy element thoroughly present."
+    },
+    {
+      "id": "OBS-002",
+      "status": "verified",
+      "check": "INV-001 Genre Promise — Romantic Relationship in Premise",
+      "detail": "refinedPremise establishes: kill-contract-to-love-interest paradox between Kaelith Maren and Lirien Dael, enemies-to-lovers trajectory, forced proximity through mutual survival need, explicit f/f pairing. Romance element thoroughly present."
+    },
+    {
+      "id": "OBS-003",
+      "status": "verified",
+      "check": "INV-001 Genre Promise — No Zero-Weight Genre Balance",
+      "detail": "genreBalance: fantasyWeight 0.55, romanceWeight 0.45. Both non-zero. Rationale articulates the distinction well: 'Fantasy leads in page-weight; romance leads in stakes-weight.' Split is coherent with 'epic-with-twist' subgenre."
+    },
+    {
+      "id": "OBS-004",
+      "status": "verified",
+      "check": "INV-001 Genre Promise — HFN/HEA Minimum",
+      "detail": "TP-3 argument explicitly describes the romance resolution: 'the moment when the cage opens and both people must decide whether they would walk toward each other if they could walk away.' romanceArcNotes confirms 'the moment the cage opens and both choose to stay.' This strongly implies HEA. No explicit HEA/HFN field exists in the concept, but the commitment is clear in the thematic argument and arc notes."
+    },
+    {
+      "id": "OBS-005",
+      "status": "verified",
+      "check": "INV-036 Thematic Coherence — Pillar Count and Structure",
+      "detail": "Three thematic pillars present (≥2 required). Each has id, theme, question, and argument fields. All fields populated with substantive content — no placeholder text."
+    },
+    {
+      "id": "OBS-006",
+      "status": "verified",
+      "check": "INV-036 Thematic Coherence — Expressibility Through Story Elements",
+      "detail": "TP-1 (Trust as structural failure): Expressible through worldbuilding (Oathbrand as betrayed trust, Seep as infiltration), character arcs (Kaelith's institutional betrayal, Lirien's binding contract), and plot (the kill-order paradox). TP-2 (Price of the right choice): Expressible through worldbuilding (Calwrath as historical moral dilemma), character arcs (duty vs. desire for both leads), and plot (irreconcilable choices during the journey). TP-3 (Chosen vs. only): Expressible through worldbuilding (forced proximity of the journey), character arcs (from mutual dependence to free choice), and plot (the cage-opening moment as climactic test). All three pillars are narratively grounded."
+    },
+    {
+      "id": "OBS-007",
+      "status": "verified",
+      "check": "INV-036 Thematic Coherence — Inter-Pillar Connection",
+      "detail": "The three pillars form a coherent philosophical cluster: trust (TP-1) → making choices about trust under pressure (TP-2) → whether choice made under constraint can become free (TP-3). They escalate from the epistemological (can trust exist?) to the ethical (what does choosing cost?) to the existential (can love born in a cage be real?). Strong thematic architecture."
+    },
+    {
+      "id": "OBS-008",
+      "status": "verified",
+      "check": "INV-031 Scope Fidelity — Premise Alignment",
+      "detail": "All 8 worldSeed coreConcepts from story-config.json are faithfully represented: The Veil → The Pallor, imprisoned god → Ythara the Unfinished, the general → Kaelith Maren (disgraced, meticulous, ruthless), Loyalty Brand → Oathbrand (magic-suppressing, supposedly temporary, secretly refreshed), the fae spy → Lirien Dael (kill order with binding clause from Cerith Court), god-seal as embodied memory → Quietus accessed through kinetic memory, Imperial Council poisoning → High Conclave poisoning Pallor for forty years, romance built on antagonistic competence → explicitly referenced in romanceArcNotes."
+    },
+    {
+      "id": "OBS-009",
+      "status": "verified",
+      "check": "INV-031 Scope Fidelity — Constraints Preserved",
+      "detail": "All 5 required tropes present: enemies-to-lovers (romanceArcType), forced proximity/mutual dependence (romanceArcNotes 'structural trap'), slow burn with steamy payoff (romanceArcNotes escalation + heatLevel 'steamy'), competence as attraction (romanceArcNotes 'antagonistic competence — each woman recognizes the other's excellence before she recognizes anything softer'), morally grey protagonists (fantasySubgenreNotes 'The god is not evil... The spy is not villainous'). moralComplexity constraint ('No clean heroes, assassination dynamic live throughout') reflected in toneContract and romanceArcNotes ('kill order is a live wire throughout')."
+    },
+    {
+      "id": "OBS-010",
+      "status": "verified",
+      "check": "INV-031 Scope Fidelity — User Themes Mapped to Pillars",
+      "detail": "All 4 user-specified themes from constraints.themes mapped: 'Trust as vulnerability' → TP-1, 'The cost of duty vs. desire' → TP-2, 'Whether the right choice and the good choice are the same thing' → TP-2, 'What it means to be someone's only option vs. their choice' → TP-3. Complete coverage."
+    },
+    {
+      "id": "OBS-011",
+      "status": "verified",
+      "check": "INV-031 Scope Fidelity — Word Count and Heat Level",
+      "detail": "targetWordCount target 90K; estimatedChapterCount 22 × ~4,050 ≈ 89,100 words — within the 80K–120K range and close to 90K target. heatLevel 'steamy' matches config. fantasySubgenre 'epic-with-twist' matches config."
+    },
+    {
+      "id": "OBS-012",
+      "status": "verified",
+      "check": "INV-043 Tone Contract — Present with Non-Empty Primary",
+      "detail": "toneContract has primary ('Morally complex and atmospherically taut...'), secondary ('Darkly romantic with dry, understated wit...'), and forbiddenTones (6 entries). Primary field captures the user's 'morally complex' mood. 'Twilight-era atmosphere' from config reflected as 'a world that still functions but no longer believes in itself.' forbiddenTones are well-calibrated to this specific story's risks."
+    },
+    {
+      "id": "OBS-013",
+      "status": "verified",
+      "check": "INV-078/079 Craft Profile — Tool Count and Binding",
+      "detail": "16 tools selected (requirement: ≥5). Each has toolId, name, rationale, and enforcementPhases. All rationales are substantive and story-specific — none are generic boilerplate. bindingFrom: 'concept'. All 10 excluded tools have individual exclusion rationales. toolCount field (16) matches actual selectedTools array length."
+    },
+    {
+      "id": "OBS-014",
+      "status": "verified",
+      "check": "Craft Profile — Story-Critical Tools Present",
+      "detail": "T12 (Dual-Arc Interleave) present ✓ — essential for 0.55/0.45 genre balance. T7 (Black Moment) present ✓ — essential for enemies-to-lovers. T17 (Voice Fingerprinting) present ✓ — essential for dual-POV. T25 (Thematic Argument Scaffolding) present ✓ — essential for 3 thematic pillars. T21 (Vulnerability Ladder) present ✓ — essential for enemies-to-lovers + steamy. T18 (Information Asymmetry) present ✓ — essential for spy/conspiracy narrative."
+    },
+    {
+      "id": "OBS-015",
+      "status": "verified",
+      "check": "INV-029 Upstream References",
+      "detail": "story-concept.json → upstreamRef: 'story-config.json' ✓. craft-profile.json → upstreamRef: 'story-concept.json' ✓. Chain is valid: config → concept → craft-profile."
+    },
+    {
+      "id": "OBS-016",
+      "status": "verified",
+      "check": "Name Originality — Forbidden Names Absent",
+      "detail": "Word-boundary search for all 20 forbidden names (Sable, Iseir, Vrath-Usal, Lách, Ironmark, Brennach, Greylock, Godlock, Thornless Court, Odin, Toni, Frigga, Hela, Loki, Thor, Heimdall, Asgard, Einherjar, Valkyrie, Niflheim) returned zero matches in both story-concept.json and craft-profile.json. All world-seed concepts have been renamed with original names documented in nameRegistry."
+    },
+    {
+      "id": "OBS-017",
+      "status": "verified",
+      "check": "Name Originality — All Seed Concepts Renamed",
+      "detail": "Name mapping verified: The Veil → The Pallor, Loyalty Brand → Oathbrand, Imperial Council → High Conclave. New original names created: Kaelith Maren, Lirien Dael, Ythara the Unfinished, The Quietus, The Seep, The Cerith Court, The Ashborne Legion, Calwrath, Duskhaven. nameRegistry is comprehensive with descriptions for each entry."
+    },
+    {
+      "id": "OBS-018",
+      "status": "verified",
+      "check": "romanceArcType Specificity",
+      "detail": "romanceArcType is 'enemies-to-lovers' — specific, not generic. romanceArcNotes elaborate the arc's distinct trajectory: professional assessment → grudging respect → unwanted attraction → trust as crisis → physical intimacy as vulnerability → the cage-opening choice. The kill order as 'live wire throughout' distinguishes this from generic enemies-to-lovers."
+    },
+    {
+      "id": "OBS-019",
+      "status": "verified",
+      "check": "Schema Completeness — story-concept.json",
+      "detail": "All expected fields present: storyId, refinedPremise, thematicPillars (3), genreBalance (fantasyWeight/romanceWeight/rationale), compTitles (4), targetAudience, heatLevel, fantasySubgenre, fantasySubgenreNotes, toneContract (primary/secondary/forbiddenTones), romanceArcType, romanceArcNotes, estimatedChapterCount, chapterCountRationale, nameRegistry, upstreamRef. No missing fields detected."
+    },
+    {
+      "id": "OBS-020",
+      "status": "verified",
+      "check": "Schema Completeness — craft-profile.json",
+      "detail": "All expected fields present: storyId, selectedTools (16 entries), excludedTools (10 entries), toolCount, selectionRationale, bindingFrom, upstreamRef. Each selectedTool has toolId/name/rationale/enforcementPhases. Each excludedTool has toolId/name/reason. No missing fields detected."
+    },
+    {
+      "id": "OBS-021",
+      "status": "verified",
+      "check": "Comp Title Alignment with Tone/Subgenre",
+      "detail": "3 of 4 comp titles are F/F romantic fantasy with morally complex themes (The Jasmine Throne, The Foxglove King, The Priory of the Orange Tree). 1 of 4 is a non-genre tonal comp (A Memory Called Empire) — flagged in AUD-003 as minor. The 3 genre comps match the stated tone (morally complex), subgenre (epic with political intrigue), and romance dynamic (F/F enemies-to-lovers or trust-built-on-deception). Good market positioning for core readership."
+    },
+    {
+      "id": "OBS-022",
+      "status": "verified",
+      "check": "Craft Tool Exclusion Rationale Quality",
+      "detail": "All 10 excluded tools have substantive, story-specific rationales. Key pattern: tools are excluded either because they represent baseline craft (T1, T2, T11), are subsumed by selected tools (T9→T5, T19/T26→T17, T22→T13+T23), or conflict with the emotionally restrained prose style (T3, T14). The T14 (MRU) exclusion is particularly well-reasoned — formal MRU enforcement could force more explicit interiority than this story's restrained voice permits."
+    }
+  ],
+  "summary": {
+    "critical": 0,
+    "major": 0,
+    "minor": 3
+  },
+  "verdict": "pass",
+  "verdictRationale": "Both artifacts are exceptionally well-crafted. story-concept.json faithfully translates every element of the user's story-config.json — all 8 world-seed concepts, all 5 required tropes, all 4 user-specified themes, and all tonal/stylistic requirements — into a cohesive, original concept with strong thematic architecture. craft-profile.json selects 16 tools with story-specific rationales and covers all structurally critical tools for this dual-arc enemies-to-lovers narrative. The three minor findings are genuine but non-blocking: T10 enforcement gap in beta-reading, Act II compression risk, and a non-genre comp title. Zero critical findings, zero major findings. No automatic-fail triggers. Fewer than 3 warnings. Concept phase may proceed to worldbuilding.",
+  "craftToolEnforcement": [
+    {"toolId": "T5", "enforced": true, "violations": []},
+    {"toolId": "T6", "enforced": true, "violations": []},
+    {"toolId": "T7", "enforced": true, "violations": []},
+    {"toolId": "T8", "enforced": true, "violations": []},
+    {"toolId": "T10", "enforced": true, "violations": ["Missing beta-reading from enforcementPhases — see AUD-001"]},
+    {"toolId": "T12", "enforced": true, "violations": []},
+    {"toolId": "T13", "enforced": true, "violations": []},
+    {"toolId": "T15", "enforced": true, "violations": []},
+    {"toolId": "T16", "enforced": true, "violations": []},
+    {"toolId": "T17", "enforced": true, "violations": []},
+    {"toolId": "T18", "enforced": true, "violations": []},
+    {"toolId": "T20", "enforced": true, "violations": []},
+    {"toolId": "T21", "enforced": true, "violations": []},
+    {"toolId": "T23", "enforced": true, "violations": []},
+    {"toolId": "T24", "enforced": true, "violations": []},
+    {"toolId": "T25", "enforced": true, "violations": []}
+  ],
+  "darlingsIdentified": [
+    {
+      "element": "None identified",
+      "assessment": "All concept elements serve demonstrable narrative functions. The most elaborate element — the Quietus accessible only through kinetic memory — serves triple duty: creates the kill-contract paradox (plot), generates a mystery box (who took her, why blindfolded?), and connects to the embodied-trust theme (TP-1). The Seep's etymological meaning ('water that finds every crack') serves the infiltration/intimacy motif (T16). The six forbidden tones each guard against a genuine risk for this genre/tone combination. No elements identified as clever-but-non-functional."
+    }
+  ],
+  "upstreamRefs": ["story-config.json", "story-concept.json", "craft-profile.json"],
+  "auditMethodology": {
+    "passesCompleted": 2,
+    "firstPass": "Field-by-field verification of both artifacts against story-config.json, schema requirements, and invariant checklist. Verified 22 specific observations.",
+    "secondPass": "Cross-field coherence check: comp titles vs. tone, genre balance vs. premise, themes vs. romance arc type, chapter count vs. word count, craft tools vs. story needs. Checked for darlings. Verified all forbidden names absent via word-boundary search.",
+    "nameCheck": "Word-boundary regex search of all 20 forbidden names against both artifacts. Zero matches. Substring false positive ('Thor' inside 'authority') correctly identified and excluded."
+  }
+}

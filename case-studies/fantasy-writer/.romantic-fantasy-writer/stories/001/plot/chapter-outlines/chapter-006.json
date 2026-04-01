@@ -1,0 +1,75 @@
+{
+  "chapterNum": 6,
+  "pov": "CHAR-002",
+  "povTransitionMotivation": "Switch to Lirien to show the mechanics of departure and the forced proximity that will define Act II. Lirien's perspective reveals her internal conflict as professional distance collapses into something more complex",
+  "scenes": [
+    {
+      "id": "SCN-016",
+      "goal": "Lirien and Kaelith prepare to leave Duskhaven covertly before the enforcer returns with reinforcements",
+      "conflict": "Preparation requires coordination and shared decision-making, forcing both women into cooperation that feels uncomfortably intimate",
+      "disaster": "Tavik discovers their departure plan and confronts them — he cannot allow Kaelith to leave because his Conclave handlers will punish him for losing her",
+      "valueShift": "From 'we control the departure' to 'we are being actively hunted and must leave immediately'",
+      "fiveCommandments": {
+        "incitingIncident": "Lirien and Kaelith gather supplies for the journey",
+        "complication": "Tavik appears with armed garrison guards, attempting to detain Kaelith",
+        "crisis": "Fight through the guards and guarantee enemy pursuit, or find a way to neutralize Tavik without killing him?",
+        "climax": "Lirien disables Tavik non-lethally while Kaelith handles the guards using suppressed combat training. Both women fight efficiently and without hesitation",
+        "resolution": "They leave Duskhaven immediately, knowing pursuit will follow within hours"
+      }
+    },
+    {
+      "id": "SCN-017",
+      "goal": "Lirien and Kaelith travel through the first night, putting distance between themselves and Duskhaven",
+      "conflict": "Forced proximity on the road requires constant spatial awareness of each other — where the other is, what she is doing, how she moves",
+      "disaster": "Lirien realizes she is hyper-aware of Kaelith in ways that exceed operational necessity. Heat in palms, disrupted focus, the kind of attention that compromises fieldwork",
+      "valueShift": "From 'target management' to 'I am physically attracted to her and cannot classify it away'",
+      "fiveCommandments": {
+        "incitingIncident": "They make camp in a defensible location after hours of travel",
+        "complication": "Kaelith suggests they share watch rather than sleep in shifts — greater security but also greater proximity",
+        "crisis": "Accept shared watch and the intimacy it creates, or insist on separate shifts and reveal discomfort?",
+        "climax": "Lirien accepts shared watch, rationalizing it as operationally sound",
+        "resolution": "They sit together in silence, both hyperaware of the other's presence, neither acknowledging it. The forced proximity engine has activated"
+      }
+    },
+    {
+      "id": "SCN-018",
+      "goal": "Lirien attempts to file a progress report to the Seep but cannot construct narrative that satisfies both truth and mission compliance",
+      "conflict": "The Seep will demand explanation for why the contract remains unfulfilled. Lirien cannot explain without admitting that she has chosen Kaelith's survival over contract obedience",
+      "disaster": "Lirien realizes she is now operating in defiance of both the Cerith Court and the Seep. She has chosen a side, and it is not the side of her institutional loyalties",
+      "valueShift": "From 'I serve the contract' to 'I serve the mission as I understand it, not as it was written'",
+      "fiveCommandments": {
+        "incitingIncident": "Lirien drafts a progress report during Kaelith's brief sleep",
+        "complication": "Every version she writes is either a lie or a confession of mission deviation",
+        "crisis": "Send a lie and maintain cover, or send truth and accept consequences?",
+        "climax": "Lirien sends a minimal report: 'Contract delayed. Target possesses intelligence critical to Pallor crisis. Proceeding with information extraction.' It is technically true and deliberately misleading",
+        "resolution": "She knows this will buy time but not indefinitely. She has committed to the path she chose, and there is no clean exit"
+      }
+    }
+  ],
+  "emotionalArc": {
+    "startState": "Lirien begins in tactical execution mode — departure logistics, threat assessment, resource management. She is in control",
+    "endState": "She ends in acknowledged loss of control — she is attracted to Kaelith, she has defied the contract, and she cannot rationalize her choices through operational logic anymore. She is terrified that caring has made her incompetent",
+    "pivotMoment": "Sitting in shared watch with Kaelith, hyperaware of her presence, unable to classify the awareness as anything but attraction. That moment is the death of professional distance"
+  },
+  "fantasyBeats": [
+    "First Plot Point — Departure from Duskhaven: Lirien confirms that ending Kaelith's life may erase the only route to the Quietus. Tavik's intervention and hostile pursuit make staying impossible. They leave together, locking the dual arc in place"
+  ],
+  "romanceBeats": [
+    "Shared Watch, Shared Route — Forced Proximity Begins: Leaving Duskhaven requires shared decision-making, shared risk, and constant physical proximity. Both women are hyperaware of each other and pretending they are not. The forced proximity engine activates"
+  ],
+  "hookType": "action-momentum",
+  "hookTypeDescription": "Opens with departure preparation — efficient, tense, tactically sound. The hook is Tavik's appearance with guards, forcing immediate escalation",
+  "closeType": "point-of-no-return",
+  "closeTypeDescription": "Closes with Lirien sending a misleading report to the Seep, knowing she has crossed a line she cannot uncross. Both women are now fugitives from their respective institutions, and the only way forward is together",
+  "targetWordCount": 4100,
+  "tensionLevel": 7,
+  "pacingNotes": "Act I climax with sustained high tension through departure conflict and the activation of forced proximity. Pacing shifts from investigative to kinetic, establishing the journey rhythm that will define Act II",
+  "locationsPrimary": ["Duskhaven — departure staging, garrison confrontation", "The Thornway — first night camp, wilderness travel"],
+  "charactersPresent": ["CHAR-002 (Lirien)", "CHAR-001 (Kaelith)", "CHAR-009 (Tavik)", "garrison guards"],
+  "upstreamRefs": [
+    "../../plot/plot-structure.json",
+    "../../characters/CHAR-002.json",
+    "../../plot/dual-arc-timeline.json",
+    "../../plot/tension-map.json"
+  ]
+}

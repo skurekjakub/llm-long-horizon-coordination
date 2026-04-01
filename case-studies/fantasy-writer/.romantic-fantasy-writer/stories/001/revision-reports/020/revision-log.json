@@ -1,0 +1,220 @@
+{
+  "chapter": 20,
+  "title": "Contract Fulfilled in Letter, Broken in Spirit",
+  "pov": "CHAR-002 (Lirien Dael)",
+  "revisionVersion": 1,
+  "timestamp": "2026-03-21T06:30:00Z",
+  "draftWordCount": 4031,
+  "revisedWordCount": 4332,
+  "wordCountDelta": 301,
+  "inputReports": [
+    "revision-reports/020/developmental-edit.json",
+    "revision-reports/020/line-edit.json",
+    "revision-reports/020/copy-edit.json"
+  ],
+  "betaSynthesisAvailable": false,
+  "findingsSummary": {
+    "total": 28,
+    "critical": 2,
+    "major": 6,
+    "moderate": 1,
+    "minor": 18,
+    "informational": 0,
+    "addressed": 27,
+    "deferred": 1
+  },
+  "conflictResolutions": [
+    {
+      "conflict": "DEV-205 (mission redirect position) overlaps with DEV-201 (aftermath brevity)",
+      "resolution": "DEV-205 explicitly notes it is addressed by the DEV-201 fix. Expanding the aftermath scene naturally pushes the mission redirect later without changing the redirect itself. Both findings treated as a single intervention.",
+      "priority": "DEV-201 (higher severity)"
+    },
+    {
+      "conflict": "LINE-001/LINE-002 (reduce voice markers) versus maintaining Lirien's established voice identity",
+      "resolution": "Reduced water-domain markers from ~25 to ~13 instances (48% reduction) and classification markers from ~39 to ~22 instances (44% reduction). Retained markers at the three emotional peaks (bond silence, resuscitation reach, surfacing) and at thematically essential moments (Surface and depth, surface tension). Post-revision coherence pass confirmed voice remains recognisably Lirien without marker saturation.",
+      "priority": "Both critical findings addressed; voice identity preserved"
+    }
+  ],
+  "findingsAddressed": [
+    {
+      "id": "LINE-001",
+      "severity": "critical",
+      "category": "repetition",
+      "action": "Reduced water/current metaphor domain from ~25 instances to ~13 (48% reduction, exceeding the 40% target). Retained strongest instances at three emotional peaks: (1) L153 bond-silence passage ('The current that had run between them'), (2) L175 reaching through silence ('current forcing its way through a frozen channel'), (3) L183 bond return ('surfacing from deep water'). Also retained thematic resolution instances ('Surface and depth' at L227, 'surface tension gives way' at L231). Flattened or replaced ~12 lower-impact instances throughout. Replaced water metaphors with literal description, contractual language, or non-metaphorical phrasing."
+    },
+    {
+      "id": "LINE-002",
+      "severity": "critical",
+      "category": "repetition",
+      "action": "Reduced classification/operative vocabulary from ~39 instances to ~22 (44% reduction). Key changes: L30 'clinical, flat' → 'flat, measured' (removed one 'clinical'); L88 removed 'clinical framework,' 'operational protocols' stack; L126 'Her analytical mind' → 'Her mind'; L186 'clinical thoroughness of an operative running a diagnostic' → 'thoroughness the Court had trained into her'; L196 'clinical register' → 'careful register'; L210 'clipped, precise' → 'clipped, direct'. Retained classification vocabulary at contextually essential moments (the clinical membrane concept, the evidence/proof field-note, the operative body-check)."
+    },
+    {
+      "id": "LINE-003",
+      "severity": "major",
+      "category": "repetition",
+      "action": "Reduced 'through the bond' exact phrase from 8 instances to 0. Varied constructions used: 'carried in the resonance between them' (L50), 'through the resonance' (L74, L131), 'the bond carrying it whole' (L78), 'into the bond' (L90), 'in the bond' (L124, L194, L227, L231, L253), 'The bond carried' (L193). One remaining near-variant at L245 ('heartbeat in the bond')."
+    },
+    {
+      "id": "LINE-004",
+      "severity": "major",
+      "category": "cliché",
+      "action": "Eliminated all 5 identified stock/cliché phrases, bringing count to 0 (well under INV-017 maximum of 2): (1) 'taste like ash' → 'carry the weight of a contract completed against its own purpose'; (2) 'torch against the dark' → 'against the worst case the way she held a datum against a hypothesis'; (3) 'most beautiful thing she had ever heard' → cut entirely, letting anti-beauty description carry emotional weight; (4) 'heartbeat hammering back to life' → 'heartbeat reasserting itself in uneven, insistent rhythm'; (5) 'relief breaking over her in waves' → 'The grip of her fingers — refusing to let go'."
+    },
+    {
+      "id": "LINE-005",
+      "severity": "major",
+      "category": "show-tell",
+      "action": "Converted emotion-labeling through the bond to sensation-based showing at key moments: L66 'Kaelith's determination' → 'a steadiness in the shared resonance that did not waver'; L154 'fear and relief and pain and a fierce, stunned gratitude' → 'a pulse fighting to find its rhythm, lungs dragging at air, warmth flooding extremities that had gone cold — and underneath it all, a gratitude so sharp it hurt'; L162 'Kaelith's relief/terror' → shown through physical actions (grip, shudder, body's reckoning); L184 'relief, exhaustion' → 'a loosening in the body, the heaviness of someone who has spent everything.' Retained L124's emotion catalogue (grief, anger, betrayal, distrust) per editor's note that the contrast with absence is effective."
+    },
+    {
+      "id": "LINE-006",
+      "severity": "major",
+      "category": "repetition",
+      "action": "Reduced anaphoric 'Not X. Not Y. Not Z.' pattern from 6 instances to 2. Kept two strongest: (1) L153 bond-silence scene ('Not walled. Not muted. Not the guarded quiet...'); (2) L169 resuscitation ('Not Cerith Court precision. Not Seep methodology. Everything.'). Restructured others: L12 opening rewritten as direct description; L100 'Not damage. Not destruction.' → 'A clean interruption, nothing more'; L186 restructured; L202 restructured."
+    },
+    {
+      "id": "LINE-007",
+      "severity": "major",
+      "category": "prose",
+      "action": "Reduced purple prose at L132/L169: cut one antithetical pair ('not end but begin') as least specific, cut one adjective ('impossible') as weakest. Retained 'not silence but sound, not death but the ragged, defiant continuation' — two pairs and two adjectives, within style guide limits."
+    },
+    {
+      "id": "DEV-201",
+      "severity": "major",
+      "category": "pacing",
+      "action": "Expanded aftermath scene (SCN-58) by approximately 165 words. Added new passage between the tears beat and the wind-shift environmental transition: a moment of mutual stillness where neither speaks, Lirien registers that she has never rested in another person before without operative awareness, and she recognises that every second of staying is a deliberate act of volition. The expansion provides breathing room for the emotional climax ('The binding is gone. You're still here.') to resonate before the mission redirect. The Quietus transition mechanism (wind shift, mineral smell) retained unchanged but arrives after a longer moment of uninterrupted togetherness."
+    },
+    {
+      "id": "COPY-001",
+      "severity": "moderate",
+      "category": "factual",
+      "action": "Corrected 'the god-seal dissolution at the Quietus still waited' → 'the Quietus still waited, but the binding could not.' Removed misleading implication that the god-seal itself is dissolved. The god-seal is reinforced (per ch21 events and L247's 'The god-seal still needs reinforcement')."
+    },
+    {
+      "id": "DEV-202",
+      "severity": "minor",
+      "category": "romance",
+      "action": "Added a brief physical indicator of Kaelith's subjective death experience during the post-resuscitation passage. Kaelith's eyes open with 'a brief, unplaceable expression, as if Kaelith had looked at something in the silence and found no framework for it.' The expression lasts one heartbeat before her soldier-self reasserts. This acknowledges the gap without breaking POV discipline or explaining the experience — Lirien notices something happened but cannot classify it."
+    },
+    {
+      "id": "DEV-203",
+      "severity": "minor",
+      "category": "structure",
+      "action": "Made binding resistance mechanism more specific. Added: 'trying to redirect her magic from interruption to destruction, turning the scalpel into a hammer.' Then: 'The binding wanted force where she needed finesse, and the pressure to comply made her fingers ache with the effort of holding the scalpel steady.' This makes the crisis (push through or abort) more concrete — the binding is specifically trying to turn Lirien's precision into blunt force, and her triumph is maintaining the scalpel under compulsion to use a hammer."
+    },
+    {
+      "id": "DEV-204",
+      "severity": "minor",
+      "category": "arc",
+      "action": "Added emotional registration beat for Seep realization. After 'She filed it. Later.' added: 'But something in her chest shifted at the implication — the Seep had not abandoned her to the contract. The institution she had served, the one she had been ready to walk away from, had left her a way out woven into the very language of her chains. She did not have a name for what that meant. She filed that, too.' This acknowledges the significance while maintaining the filing-for-later instinct."
+    },
+    {
+      "id": "DEV-205",
+      "severity": "minor",
+      "category": "pacing",
+      "action": "Addressed by DEV-201 fix. The expanded aftermath passage naturally delays the mission redirect, giving the emotional climax more space before the world reasserts itself."
+    },
+    {
+      "id": "LINE-008",
+      "severity": "minor",
+      "category": "prose",
+      "action": "Replaced off-domain simile 'like a predator scenting the end of a hunt' with contractual-domain imagery: 'narrowing toward completion the way a contract narrows toward its final clause.' This stays in Lirien's established metaphor territory."
+    },
+    {
+      "id": "LINE-009",
+      "severity": "minor",
+      "category": "prose",
+      "action": "Changed 'the realest thing in the room' → 'the truest thing in the room.' Eliminates colloquial register while maintaining meaning."
+    },
+    {
+      "id": "LINE-010",
+      "severity": "minor",
+      "category": "show-tell",
+      "action": "Reworked L52 direct emotion label. Original: 'The sensation in her chest was terror, and it had Kaelith's name in it.' Revised: 'Noted: the sensation in her chest defied classification. It had Kaelith's name in it, and no framework around it.' Uses the classify-then-fail pattern — Lirien attempts her analytical framework and it breaks, which is more characteristic and avoids naming the emotion directly."
+    },
+    {
+      "id": "LINE-011",
+      "severity": "minor",
+      "category": "prose",
+      "action": "Replaced vague 'something older, something that belonged to the fae substrate' with specific: 'the raw resonance of the fae substrate where all binding magic was rooted.' Names the world element directly rather than gesturing at unspecified depth."
+    },
+    {
+      "id": "LINE-012",
+      "severity": "minor",
+      "category": "repetition",
+      "action": "Collapsed triple 'every' construction. 'every crack, every channel, every route back to rhythm' → 'every route back to rhythm.' Preserves the Seep motto echo ('water that finds every crack') in the single deployment while maintaining the urgency the scene requires."
+    },
+    {
+      "id": "LINE-013",
+      "severity": "minor",
+      "category": "prose",
+      "action": "Replaced 'tasted of iron and salt' with 'carrying the aftertaste of dissolved binding.' More specific to the world's magic system and avoids the stock fantasy descriptor."
+    },
+    {
+      "id": "LINE-014",
+      "severity": "minor",
+      "category": "cliché",
+      "action": "Replaced 'the woman who built walls to survive and opened doors to love' with 'the woman who kept people out until she chose not to.' Eliminates the greeting-card walls/doors metaphor while maintaining the character observation in plain, direct language."
+    },
+    {
+      "id": "LINE-015",
+      "severity": "minor",
+      "category": "prose",
+      "action": "Replaced generic 'Just skin against skin. Warmth meeting warmth.' with specific: 'Just her palm against the back of Kaelith's hand. Warmth without static.' Adds the physical detail that distinguishes this touch from stock romance construction and echoes the binding's interference ('static') being absent."
+    },
+    {
+      "id": "LINE-016",
+      "severity": "minor",
+      "category": "dialogue",
+      "action": "Inserted action beat mid-briefing at L30. Added 'her fingers found the edge of the table; held' between 'thresholds for' and 'cardiac monitoring.' Grounds the clinical dialogue in the body and creates tension between the measured words and the unclinical hands."
+    },
+    {
+      "id": "LINE-017",
+      "severity": "minor",
+      "category": "repetition",
+      "action": "Eliminated 'fierce' duplication. Kept L184's 'a fierce and fragile tenderness' (stronger construction). Changed L154's 'a fierce, stunned gratitude' → 'a gratitude so sharp it hurt' — different intensifier, different construction, no echo."
+    },
+    {
+      "id": "COPY-002",
+      "severity": "minor",
+      "category": "continuity",
+      "action": "Fixed hand continuity error. L86 establishes Lirien's LEFT palm on sternum. L160 now specifies: 'Her right hand found Lirien's right — the free one, the one not pressed against her chest.' L170 confirms: 'Her left hand still flat against Kaelith's chest... Her right hand gripped in Kaelith's.' All three references now consistent."
+    },
+    {
+      "id": "COPY-003",
+      "severity": "minor",
+      "category": "timeline",
+      "action": "Changed 'Three days' to 'A day's march, maybe two' for Quietus travel estimate, consistent with continuity tracker showing ch20 at Day ~31-32 and ch21 at Day ~32-33 (1-2 days gap, not 3)."
+    },
+    {
+      "id": "COPY-004",
+      "severity": "minor",
+      "category": "factual",
+      "action": "Changed 'Three hours of sustained contact' → 'Three hours, closer to four, of sustained contact' for Oathbrand removal recollection, consistent with established '3-4 hours' duration from continuity tracker ch11 entry."
+    },
+    {
+      "id": "COPY-006",
+      "severity": "minor",
+      "category": "anachronism",
+      "action": "Replaced all 3 instances of 'electrical' with 'conduction': 'The electrical network' → 'The conduction network' (L92); 'The electrical signal' → 'The signal' (L100); 'the electrical cascade' → 'the conduction cascade' (L150). Removes the distinctly modern/scientific term while maintaining anatomical precision appropriate to fae knowledge systems."
+    }
+  ],
+  "findingsDeferred": [
+    {
+      "id": "COPY-005",
+      "severity": "minor",
+      "category": "formatting",
+      "rationale": "Non-issue. Verified manuscript convention against ch19 (revised): 7 British English spellings, 0 American English spellings. Chapter 20's British English spellings (centre, catalogued, recognised, sensitised, channelling, unravelling, fulfil) are consistent with the manuscript-wide convention. No changes needed."
+    }
+  ],
+  "coherencePassNotes": {
+    "voiceConsistency": "Post-revision voice remains recognisably Lirien: water/surface metaphors present at emotionally significant moments (not every paragraph), classification/analytical vocabulary retained as flavoring (not constant drumbeat), field-note fragments preserved at key beats ('This was: evidence. This was also: proof.'). Voice marker density reduced to approximately one cluster per scene rather than per paragraph. Dialogue maintains naturalistic register — Kaelith's military brevity and Lirien's clinical-then-failing pattern both intact.",
+    "voiceMarkerDensity": "Checked for cumulative over-saturation from multiple finding fixes. Water-domain markers now appear at ~3-4 key moments rather than every 162 words. Classification markers appear at ~5-6 contextually appropriate moments rather than every 104 words. No paragraph contains more than 2 voice domain markers. Prose reads as a person thinking, not a voice checklist.",
+    "dialogueNaturalism": "Verified all revised dialogue still reads as speech. Kaelith's lines remain clipped and military. Lirien's briefing scene now grounded with physical action beat. No dialogue packed with character tics beyond what was already present.",
+    "sceneFlow": "Three-scene structure (preparation/execution/aftermath) maintained. Scene breaks clean. The expanded aftermath flows naturally from the emotional climax through the breathing-room passage to the environmental transition. No abrupt tonal shifts introduced.",
+    "newInconsistencies": "None detected. Hand continuity now internally consistent. Timeline estimate matches continuity tracker. God-seal reference corrected. Oathbrand duration matches established facts. All 'conduction' replacements maintain anatomical accuracy."
+  },
+  "artifactsProduced": [
+    "chapters/020/revised.md"
+  ]
+}

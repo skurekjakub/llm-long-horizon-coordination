@@ -1,0 +1,83 @@
+{
+  "storyId": "001",
+  "confirmedAt": "2026-03-17T14:23:00Z",
+  "premise": "A disgraced war general and the fae spy sent to kill her must survive each other long enough to stop a god from returning.",
+  "romanceLeads": {
+    "genders": ["female", "female"],
+    "pairing": "f/f"
+  },
+  "targetWordCount": {
+    "min": 80000,
+    "max": 120000,
+    "target": 90000
+  },
+  "romanceHeatLevel": "steamy",
+  "fantasySubgenre": "epic-with-twist",
+  "fantasySubgenreNotes": "Epic fantasy foundation but with a subversive/unconventional twist — not standard chosen-one heroics. The god isn't evil, the empire isn't noble, the spy isn't villainous. Moral ambiguity baked into the structure.",
+  "moodAndTone": {
+    "primary": "morally complex",
+    "notes": "Lean into the assassination subtext as ongoing romantic and dramatic tension. No clean heroes. The spy's kill order doesn't go away — it is a live wire throughout. Trust is structural failure, not comfort. Twilight-era atmosphere: not ruins, but thinning confidence."
+  },
+  "styleReference": {
+    "file": "external-resources/writing-style.txt",
+    "abstractPatterns": [
+      "Emotionally restrained prose — reveals through omission and gesture, not declaration",
+      "Short declarative sentences as default rhythm, with occasional longer reflective passages",
+      "Dry, understated humor in dialogue — characters deflect with wit under pressure",
+      "Internal monologue that shows what characters notice and avoid, not what they feel directly",
+      "Character dynamics conveyed through small physical actions (squeezing a hand, crossing arms, catching a dagger)",
+      "Scene transitions via hard cuts (+++), not bridging narration",
+      "Comfort with silence and white space — not every emotion needs a sentence",
+      "Ensemble dialogue that differentiates voices through cadence and preoccupation, not dialect"
+    ],
+    "safetyNote": "Abstract stylistic patterns only — no content, phrases, metaphors, or plot elements reproduced (INV-023, INV-024)"
+  },
+  "characterSeeds": null,
+  "worldSeed": {
+    "file": "external-resources/world-seed.txt",
+    "nameHandling": "ALL names from the world seed must be replaced with original names. This includes character names, place names, organization names, magical terms, and proper nouns. The structural and thematic concepts are source material; the specific nomenclature is not.",
+    "coreConcepts": [
+      "The Veil — atmospheric phenomenon that is the skin/remains of a defeated god, dimming starlight and muffling magic, now tearing",
+      "Imprisoned god — not evil, but incompatible with a finished world; god of unmade things and unrealized potential",
+      "The general — disgraced after a battlefield call that was right but inconvenient; lives in internal exile; meticulous, ruthless in crisis, never asks for help",
+      "Loyalty Brand — magic-suppressing brand on the general, supposedly temporary but being secretly refreshed; slowly killing her",
+      "The fae spy — from a fae intelligence network; sent to kill the general because she's the only person who knows the location of the god-seal mechanism",
+      "Kill order has a binding clause from the fae court — cannot return home without completing it",
+      "The god-seal location exists only as embodied memory in the general — a route she walked once, blindfolded, that she only knows when she moves",
+      "Someone on the Imperial Council has been poisoning the Veil for forty years",
+      "Tonal framework: twilight-era empire with thinning confidence; fae are bureaucratic and cold, not whimsical; the god bleeds through as wrongness in the natural world",
+      "Romance built on antagonistic competence — grudging recognition of skill; trust as structural failure"
+    ]
+  },
+  "constraints": {
+    "writingStyle": "Must follow abstract stylistic patterns extracted from external-resources/writing-style.txt",
+    "moralComplexity": "No clean heroes. The assassination dynamic remains a live tension throughout — not resolved by the spy simply deciding not to do it.",
+    "tropesRequired": [
+      "enemies-to-lovers",
+      "forced proximity / mutual dependence",
+      "slow burn with steamy payoff",
+      "competence as attraction",
+      "morally grey protagonists"
+    ],
+    "tropesToAvoid": [],
+    "themes": [
+      "Trust as vulnerability",
+      "The cost of duty vs. desire",
+      "Whether the 'right' choice and the 'good' choice are the same thing",
+      "What it means to be someone's only option vs. their choice"
+    ]
+  },
+  "seriesPosition": {
+    "type": "standalone",
+    "seriesName": null,
+    "bookNumber": null,
+    "totalPlanned": null
+  },
+  "defaults": {
+    "appliedDefaults": [
+      "targetWordCount: 80k-100k range, 90k target",
+      "seriesPosition: standalone",
+      "characterSeeds: none — pipeline generates from scratch using world seed context"
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "agent": "docwriter-research-scout",
+  "status": "done",
+  "result": "research-brief-ready",
+  "timestamp": "2026-03-18T13:50:22Z",
+  "recommendationsApproved": 8,
+  "recommendationsBlocked": 4,
+  "recommendationsAdapted": 2,
+  "sourcesConsulted": 8,
+  "sourceEffectiveness": {
+    "SRC-001-google-style": {
+      "useful": true,
+      "pagesConsulted": 4,
+      "recommendationsGenerated": 7,
+      "domains": ["notices", "tables", "cross-references", "api-reference-comments"],
+      "notes": "Highest yield source — 4 sub-pages consulted, 7 recommendations generated. The notices and cross-references pages were especially relevant to the permission documentation task."
+    },
+    "SRC-002-diataxis": {
+      "useful": true,
+      "pagesConsulted": 1,
+      "recommendationsGenerated": 2,
+      "domains": ["how-to-guides"],
+      "notes": "Conditional imperatives pattern (REC-004) directly applicable to dual-audience challenge. 'How to' title recommendation blocked by INV-style-100. Moderate yield."
+    },
+    "SRC-003-microsoft-style": {
+      "useful": true,
+      "pagesConsulted": 3,
+      "recommendationsGenerated": 3,
+      "domains": ["procedures", "global-communications", "accessibility"],
+      "notes": "Step-by-step and global audience writing tips directly applicable. Accessibility overview page too shallow to generate recommendations."
+    }
+  }
+}

@@ -1,0 +1,674 @@
+{
+  "storyId": "001",
+  "artifactType": "dual-arc-timeline",
+  "generatedAt": "2025-03-18T02:15:00Z",
+  "purpose": "Chapter-by-chapter mapping of fantasy and romance arcs showing where they reinforce, complicate, or independently advance. Ensures neither arc goes silent for more than one chapter and that major beats coincide at structurally significant moments.",
+  "genreBalance": {
+    "fantasyWeight": 0.55,
+    "romanceWeight": 0.45,
+    "rationale": "Epic scope drives external plot architecture, but romance is the emotional spine. Fantasy leads in page-weight; romance leads in stakes-weight."
+  },
+  "arcOverview": {
+    "fantasySpine": "The Pallor crisis, journey to the Quietus, and High Conclave conspiracy — a god waking because someone has been poisoning the world's ontological membrane for forty years.",
+    "romanceSpine": "Enemies-to-lovers progression with the kill order as live wire — forced proximity, grudging respect, unwanted attraction, trust as crisis, intimacy as vulnerability, and finally choice over necessity."
+  },
+  "chapterTimeline": [
+    {
+      "chapter": 1,
+      "fantasyBeat": {
+        "beat": "Opening Image — Exile Under a Failing Sky",
+        "description": "Kaelith survives in Duskhaven, a border garrison town where she has been forgotten. First visible Pallor irregularity appears: the silver membrane flickers overhead, dimming starlight further. The Oathbrand on her collarbone burns fresh despite being five years old. The world is subtly wrong but no one is paying attention.",
+        "stakes": "World-threat is abstract foreshadowing; immediate stakes are Kaelith's slow death from maintained suppression.",
+        "progression": "Establishes the baseline — the world is failing, institutions are complicit, Kaelith is being destroyed deliberately."
+      },
+      "romanceBeat": {
+        "beat": "Adversarial Assessment — Target and Hunter Meet",
+        "stage": "awareness",
+        "description": "Lirien arrives in Duskhaven under a live kill contract from the Cerith Court. She studies Kaelith as a target: assessing vulnerabilities, movement patterns, threat level. Kaelith senses surveillance within hours and responds with commander-grade threat assessment. Their first recognition is professional: Lirien notices operative stillness and impossible precision in a disgraced exile; Kaelith recognizes predator discipline in a stranger.",
+        "stakes": "Lirien's contract binds her — fulfill or never return home. Kaelith's survival instinct has not dulled despite five years of erasure.",
+        "progression": "Attraction registers only as heightened threat perception. Heat in palms, disrupted target calculus. Neither woman admits anything softer than danger.",
+        "vulnerabilityLadderStep": 1
+      },
+      "intersection": {
+        "type": "independent",
+        "description": "Fantasy and romance arcs run parallel but not yet entangled. Lirien's mission and the Pallor crisis exist in separate logics — she has been sent to kill someone, not save the world. Kaelith's danger is immediate (the spy watching her) and chronic (the Oathbrand killing her), but the cosmic stakes are not yet visible to her."
+      },
+      "emotionalRegister": "Taut and watchful. The tone is twilight-empire: heavy, grey, confined. Both women are caged — Kaelith by exile and suppression, Lirien by binding contract.",
+      "arcBalance": {
+        "fantasyPresence": "strong",
+        "romancePresence": "strong",
+        "note": "Both arcs establish clearly. Fantasy sets the cosmic threat; romance sets the personal one."
+      }
+    },
+    {
+      "chapter": 2,
+      "fantasyBeat": {
+        "beat": "Inciting Incident — Surveillance Meets the First Tear",
+        "description": "A visible Pallor tear appears above Duskhaven during Kaelith and Lirien's first close encounter. The silver membrane parts for seconds, revealing true starlight — beautiful and existentially disturbing. Kaelith's Oathbrand flares in sync with the tear, reacting to something it should not sense. Lirien witnesses both phenomena and realizes the target is anomalous in ways her briefing did not explain.",
+        "stakes": "The Pallor's failure is no longer theoretical. The Oathbrand's behavior suggests Kaelith is connected to something larger than her own disgrace.",
+        "progression": "Establishes the paradox seed: killing Kaelith may destroy access to something crucial before anyone understands what it is."
+      },
+      "romanceBeat": {
+        "beat": "Delayed Strike — Choosing to Observe Instead of Execute",
+        "stage": "awareness",
+        "description": "Kaelith catches Lirien watching her in the market. Direct eye contact, mutual recognition of threat. Lirien does not take the clean kill opportunity. Instead she keeps observing, admitting through action that the target is more dangerous, more interesting, and more human than the file allowed. Kaelith does not run or confront — she watches back.",
+        "stakes": "Lirien's first meaningful deviation from perfect obedience in forty-three contracts. Professional certainty becomes compromised by curiosity and respect.",
+        "progression": "Antagonistic competence begins. Each woman recognizes the other's excellence before recognizing anything softer.",
+        "vulnerabilityLadderStep": 1
+      },
+      "intersection": {
+        "type": "complicating",
+        "description": "The Pallor tear complicates Lirien's mission logic. The clean assassination becomes impossible because the target's anomalous behavior (Oathbrand reaction, calm under threat) suggests she is more valuable alive than dead. Fantasy crisis introduces doubt into the romance's antagonistic opening."
+      },
+      "emotionalRegister": "Charged and unsettled. The starlight through the tear is beautiful enough to frighten both women. The surveillance dynamic shifts from hunter/prey to mutual assessment.",
+      "arcBalance": {
+        "fantasyPresence": "strong",
+        "romancePresence": "strong",
+        "note": "Arcs begin to entangle. Fantasy provides the reason for romance's first deviation from hostility."
+      }
+    },
+    {
+      "chapter": 3,
+      "fantasyBeat": {
+        "beat": "Conspiracy Surfaces — Conclave-Linked Threat in Duskhaven",
+        "description": "Tavik, the garrison administrator, receives an encrypted message from someone in the High Conclave network asking pointed questions about Kaelith's health, location, and whether 'the suppression remains effective.' Lirien intercepts the message through Seep channels and realizes Kaelith is not just in exile — she is being actively monitored and maintained in suppression by someone with institutional power. The Oathbrand is not malfunctioning; it is being refreshed deliberately.",
+        "stakes": "Kaelith is not forgotten. She is being kept weak on purpose by forces that should have moved on six years ago.",
+        "progression": "Establishes that the conspiracy is not abstract — it has hands, it has agents, and it is already moving against Kaelith."
+      },
+      "romanceBeat": {
+        "beat": "Shared Watch — First Tactical Cooperation",
+        "stage": "awareness",
+        "description": "After the encrypted message is sent, external threats (Conclave agents or local enforcers) begin circling Duskhaven. Kaelith and Lirien end up on opposite ends of the same confrontation without coordinating. They fight separately but toward the same goal: keeping Kaelith from being taken. Afterward, neither acknowledges the de facto alliance, but both notice how effectively the other moves under pressure.",
+        "stakes": "Lirien realizes killing Kaelith now would hand her to the Conclave's agents instead. Kaelith realizes the stranger might be a better risk than the empire she once served.",
+        "progression": "Respect is earned under pressure. Competence-as-attraction begins, still resisted by both.",
+        "vulnerabilityLadderStep": null
+      },
+      "intersection": {
+        "type": "reinforcing",
+        "description": "Fantasy threat creates the tactical necessity that forces romance cooperation. The conspiracy makes staying in Duskhaven impossible, setting up the departure that locks the dual arc in place. Kaelith cannot survive alone; Lirien cannot complete her mission without understanding the larger context."
+      },
+      "emotionalRegister": "Adrenaline and aftermath. The fight is efficient and unglamorous. The silence after is charged with unspoken alliance.",
+      "arcBalance": {
+        "fantasyPresence": "strong",
+        "romancePresence": "moderate",
+        "note": "Fantasy arc escalates; romance arc responds by moving from surveillance to tactical cooperation."
+      }
+    },
+    {
+      "chapter": 4,
+      "fantasyBeat": {
+        "beat": "Debate — Strike, Delay, or Investigate",
+        "description": "Lirien contacts the Seep for guidance and receives cold calculus: eliminate the target or explain the delay. She cannot justify the delay without more proof that Kaelith's survival is necessary. Lirien begins investigating the Oathbrand anomaly and the encrypted Conclave message, searching for the pattern that will make the paradox legible. Meanwhile, Tavik escalates his reporting, and the window for staying in Duskhaven closes.",
+        "stakes": "Lirien risks Seep censure by prioritizing investigation over execution. Kaelith's danger escalates from surveillance to active pursuit.",
+        "progression": "Lirien moves from obedience to judgment, choosing to delay the kill based on incomplete information and instinct she does not trust."
+      },
+      "romanceBeat": {
+        "beat": "The Dangerous Question — 'Why Haven't You Killed Me Yet?'",
+        "stage": "attraction",
+        "description": "Kaelith confronts Lirien directly in the tavern after the Conclave-linked threat. She asks the question plainly: 'You've had three opportunities. Why am I still alive?' Lirien does not lie, but she does not tell the full truth either. She admits she is waiting for more information. Kaelith reads the evasion and makes a calculated decision: the stranger is dangerous, but the empire she once trusted is more dangerous.",
+        "stakes": "Kaelith chooses tactical alliance over isolation. Lirien admits through omission that the contract is not the only thing guiding her decisions anymore.",
+        "progression": "Forced proximity begins. Distance is no longer an option. Respect starts shifting toward something more complicated.",
+        "vulnerabilityLadderStep": 2
+      },
+      "intersection": {
+        "type": "reinforcing",
+        "description": "Fantasy investigation gives Lirien the justification to delay the kill, which creates the space for romance to begin moving from hostility toward alliance. The Conclave threat makes staying apart more dangerous than staying together."
+      },
+      "emotionalRegister": "Understated and wary. The conversation in the tavern is quiet, economical, and loaded with subtext neither woman can afford to name.",
+      "arcBalance": {
+        "fantasyPresence": "strong",
+        "romancePresence": "strong",
+        "note": "Arcs converge. Fantasy provides the logic; romance provides the choice."
+      }
+    },
+    {
+      "chapter": 5,
+      "fantasyBeat": {
+        "beat": "The Quietus Paradox Revealed",
+        "description": "Through Seep archives and cross-referencing Conclave activity, Lirien discovers fragmentary references to 'the Quietus' — an ancient god-seal mechanism whose location was lost centuries ago. The references suggest the location exists not as coordinates but as embodied memory, held by someone who walked the path once without knowing what they were walking toward. The timing of Kaelith's suppression, the Oathbrand refresh pattern, and the Conclave's interest in her movements suddenly cohere into a terrifying hypothesis: Kaelith carries the path to the Quietus in her kinetic memory, and killing her may erase the only way to reach the god-seal before Ythara fully wakes.",
+        "stakes": "The kill contract and the world's survival are now in direct opposition. Lirien cannot fulfill the contract without potentially dooming the world.",
+        "progression": "Fantasy plot shifts from 'kill the target' to 'keep the target alive long enough to understand what she knows.'"
+      },
+      "romanceBeat": {
+        "beat": "Partial Honesty — Lirien Reveals Enough to Keep Kaelith Alive",
+        "stage": "attraction",
+        "description": "Lirien tells Kaelith enough of the Quietus hypothesis to make staying alive a shared goal. She does not reveal the kill contract's full terms or that Kaelith's blood is already bound into it, but she does admit that Kaelith may be the key to something larger than either of them. Kaelith listens, skeptical but not dismissive, and agrees to leave Duskhaven together.",
+        "stakes": "Lirien surrenders informational dominance and risks Seep censure by acting on judgment rather than orders. Kaelith accepts shared danger and admits she may need another person to survive.",
+        "progression": "Trust begins as necessity. Neither woman trusts the other, but both trust the logic that staying together is less dangerous than staying apart.",
+        "vulnerabilityLadderStep": 3
+      },
+      "intersection": {
+        "type": "reinforcing",
+        "description": "Fantasy paradox creates the structural trap that forces romance into forced proximity. The Quietus revelation gives both women a shared goal that supersedes (temporarily) the kill contract. The arcs lock into mutual dependence."
+      },
+      "emotionalRegister": "Quiet and decisive. The conversation is sparse, tactical, and laced with unspoken fear. Both women are committing to something they do not fully understand.",
+      "arcBalance": {
+        "fantasyPresence": "dominant",
+        "romancePresence": "strong",
+        "note": "Fantasy arc provides the architecture; romance arc accepts the terms of the trap."
+      }
+    },
+    {
+      "chapter": 6,
+      "fantasyBeat": {
+        "beat": "First Plot Point — Departure from Duskhaven",
+        "description": "Tavik's procedural reporting to the Conclave and escalating local hostility make staying in Duskhaven impossible. Kaelith and Lirien leave together, heading west along the Thornway toward the borderlands where the Pallor is thinner and the Quietus path may begin to wake in Kaelith's body. The departure is not triumphant — it is a retreat under pressure, with hunters already closing in.",
+        "stakes": "Leaving Duskhaven means leaving the last place Kaelith was safe (even if barely). The journey becomes the story's central engine.",
+        "progression": "Act I closes. The dual arc is locked in place: they are together, they are moving toward the Quietus, and neither can afford to separate."
+      },
+      "romanceBeat": {
+        "beat": "Shared Watch, Shared Route — Forced Proximity Begins",
+        "stage": "attraction",
+        "description": "On the road, proximity is unavoidable. Shared watches, shared meals, shared silence. Kaelith notices how Lirien never wastes motion or words. Lirien notices how Kaelith reads terrain, danger, and intent better than anyone she has ever worked with. Neither acknowledges attraction, but both notice details they would rather file elsewhere: steadiness of hands, rhythm of breath, the exact timbre of the other's voice when tired.",
+        "stakes": "Physical awareness intrudes before either woman is ready. Proximity becomes a pressure neither can escape.",
+        "progression": "Competence-as-attraction deepens. Respect shifts toward something more dangerous: recognition of the person behind the operative discipline.",
+        "vulnerabilityLadderStep": 2
+      },
+      "intersection": {
+        "type": "reinforcing",
+        "description": "Fantasy necessity (the journey) creates romance proximity (shared watches, shared danger). The arcs advance in lockstep: every mile west is also a day closer together."
+      },
+      "emotionalRegister": "Restrained and watchful. The road is cold, grey, and unforgiving. Both women are hyperaware of each other and pretending they are not.",
+      "arcBalance": {
+        "fantasyPresence": "strong",
+        "romancePresence": "strong",
+        "note": "Act I closes with both arcs advancing together. The dual-arc engine is fully engaged."
+      }
+    },
+    {
+      "chapter": 7,
+      "fantasyBeat": {
+        "beat": "Promise of Premise — Forced Partnership on the Road",
+        "description": "Travel through the Thornway and failing borderlands forces cooperation. They navigate Pallor tears together, survive an ambush by Conclave-linked hunters, and encounter the first signs of Ythara's influence: landscapes that shift subtly, animals behaving erratically, the air tasting of ozone and unrealized potential. Magic becomes easier but less predictable. Kaelith's suppressed magic begins to stir faintly, responding to the thinning Pallor.",
+        "stakes": "The Pallor's failure is no longer distant. The world is unraveling in real time. Survival requires competence from both women.",
+        "progression": "Fantasy arc shifts from setup to active journey. The god-threat becomes visceral rather than abstract."
+      },
+      "romanceBeat": {
+        "beat": "Unwanted Attraction Begins — Proximity Creates Awareness",
+        "stage": "attraction",
+        "description": "On the road, assessment turns personal. Kaelith catches herself watching how Lirien's hands move when she works — precise, efficient, beautiful. Lirien notices the exact way Kaelith's composure fractures when pain flares around the Oathbrand, and she finds herself adjusting their pace without being asked. Physical awareness intensifies: scent, warmth, the charged restraint of not touching. Internal resistance peaks — Kaelith frames desire as indulgence she does not deserve; Lirien experiences wanting Kaelith as mission corruption.",
+        "stakes": "Attraction becomes undeniable and unwelcome. Both women resist because acknowledging it means admitting the mission and the contract are compromised.",
+        "progression": "Competence-as-attraction shifts into genuine want. Neither woman acts on it, but both are aware of the restraint.",
+        "vulnerabilityLadderStep": null
+      },
+      "intersection": {
+        "type": "reinforcing",
+        "description": "Fantasy survival pressure creates romance proximity pressure. Every crisis they survive together deepens the awareness neither wants to admit. Shared competence under threat becomes shared intimacy under restraint."
+      },
+      "emotionalRegister": "Taut and charged. The road is beautiful and dangerous. The restraint between them is louder than the words they do not say.",
+      "arcBalance": {
+        "fantasyPresence": "strong",
+        "romancePresence": "strong",
+        "note": "Act II begins. Both arcs escalate in parallel. The dual-arc promise is delivered: survival, suspicion, and attraction advancing at once."
+      }
+    },
+    {
+      "chapter": 8,
+      "fantasyBeat": {
+        "beat": "B Story Turn — The Body Cannot Be Hidden",
+        "description": "They reach a freeholder community in the Rivenmarch borderlands where Marin, a frontier healer, examines Kaelith and names the Oathbrand crisis plainly: the suppression is killing her, the brand is being refreshed externally, and she has perhaps weeks before the damage becomes irreversible. The diagnosis is clinical and devastating. Lirien witnesses the full extent of what has been done to Kaelith and cannot rationalize it as justice or necessity.",
+        "stakes": "Kaelith's death is no longer abstract. The timeline is now visible and urgent.",
+        "progression": "Fantasy arc provides the medical framing that shifts romance from tactical alliance toward care."
+      },
+      "romanceBeat": {
+        "beat": "Care Without Strategy — Lirien Adjusts for Kaelith's Pain",
+        "stage": "attraction",
+        "description": "After the diagnosis, Lirien begins providing aid beyond contract necessity: wrapping Kaelith's collarbone with field dressings, preparing food without being asked, adjusting their pace and watch rotations to accommodate Kaelith's deteriorating condition. Kaelith stops hiding the true damage and lets Lirien see how badly she is failing — the closest she can come to asking for help.",
+        "stakes": "Lirien catches herself caring without strategic rationalization. Kaelith admits she is not holding together by will alone.",
+        "progression": "The relationship shifts from tactical alliance toward something more dangerous: care. Neither can justify it tactically, which means it is genuine.",
+        "vulnerabilityLadderStep": 4
+      },
+      "intersection": {
+        "type": "reinforcing",
+        "description": "Fantasy crisis (Kaelith's medical decline) creates romance shift (care replacing strategy). The healer's diagnosis makes Kaelith's vulnerability undeniable, and Lirien's response proves her attachment has moved beyond mission parameters."
+      },
+      "emotionalRegister": "Quiet and aching. The healer's hut is warm and safe. The diagnosis is delivered gently but lands like a blow. Kaelith's exhaustion is finally visible.",
+      "arcBalance": {
+        "fantasyPresence": "moderate",
+        "romancePresence": "dominant",
+        "note": "Romance arc takes foreground. Fantasy provides the medical stakes that allow romance to shift from restraint toward care."
+      }
+    },
+    {
+      "chapter": 9,
+      "fantasyBeat": {
+        "beat": "Pinch Point One — Ythara Presses on the Bond",
+        "description": "Traveling through a region where the Pallor is severely torn, Kaelith and Lirien are exposed to Ythara's influence. Reality becomes dangerously responsive: thoughts shape matter, certainty dissolves, and both women experience the terrifying instability of a world where nothing is fixed. Lirien's discipline falters; Kaelith's suppressed magic surges chaotically. They survive only by relying on each other's presence to stay coherent — Lirien's precision anchoring Kaelith's instinct, Kaelith's embodied certainty grounding Lirien's fracturing control.",
+        "stakes": "The god-threat is no longer abstract. Ythara is not evil but incompatible with human consciousness. Exposure to unfiltered divine influence could unmake them.",
+        "progression": "Fantasy arc escalates. The Quietus becomes urgent — if they do not reach it soon, there may be no coherent world left to save."
+      },
+      "romanceBeat": {
+        "beat": "Survival Through Presence — They Need Each Other to Stay Whole",
+        "stage": "attraction",
+        "description": "Under Ythara's influence, staying separate is more dangerous than staying close. They hold each other through the worst of it — not romantically, but functionally, using physical contact and shared focus to resist the dissolution. Afterward, neither acknowledges how tightly they held on or how long it took to let go. The bond they form is not intentional, but it is undeniable.",
+        "stakes": "Mutual dependence is no longer tactical — it is existential. They need each other to remain themselves.",
+        "progression": "Attraction shifts into something deeper: recognition that the other is necessary, not just useful.",
+        "vulnerabilityLadderStep": 5
+      },
+      "intersection": {
+        "type": "reinforcing",
+        "description": "Fantasy crisis (Ythara's influence) creates romance necessity (physical closeness as survival). The god-threat forces intimacy before either woman is ready, revealing that trust has already begun without permission."
+      },
+      "emotionalRegister": "Terrifying and raw. The Ythara exposure is beautiful and existentially disturbing. The aftermath is silent, shaken, and charged with unspoken recognition.",
+      "arcBalance": {
+        "fantasyPresence": "dominant",
+        "romancePresence": "strong",
+        "note": "Fantasy crisis drives romance escalation. The arcs reinforce each other: surviving the god requires trusting the person."
+      }
+    },
+    {
+      "chapter": 10,
+      "fantasyBeat": {
+        "beat": "Conspiracy Clues Accumulate — Archive Evidence",
+        "description": "In a borderland archive or freeholder library, Lirien uncovers historical records suggesting the Pallor's degradation is not natural. References to 'Dimming rites' and 'membrane stabilization ceremonies' administered by the High Conclave show an unexpected pattern: the rites have been modified over the past forty years in ways that weaken rather than strengthen the membrane. Someone with deep knowledge and Conclave access has been poisoning the Pallor slowly, patiently, and effectively.",
+        "stakes": "The god-threat is not an accident — it is an intentional act by someone in power. The conspiracy gains a human face.",
+        "progression": "Fantasy arc shifts from 'the world is failing' to 'someone is making the world fail.' The antagonist narrows from cosmic threat to institutional sabotage."
+      },
+      "romanceBeat": {
+        "beat": "The Question With No Tactical Value — 'What Do Fae Call the Stars?'",
+        "stage": "attraction",
+        "description": "Around the fire after the archive discovery, Kaelith asks Lirien a question with no strategic purpose: 'What do fae call the stars in your territory?' Lirien answers, surprised by the question and by her own willingness to answer it. They talk for the first time not about survival or strategy but about small, personal things: what home means, what they miss, what they fear. The conversation is quiet and ordinary and more dangerous than any fight.",
+        "stakes": "Kaelith admits through curiosity that Lirien has become a person she wants to understand, not just assess. Lirien reveals something personal for the first time.",
+        "progression": "The relationship shifts from competence and care toward genuine connection. Desire is still unspoken, but the foundation for trust is being laid.",
+        "vulnerabilityLadderStep": 6
+      },
+      "intersection": {
+        "type": "independent",
+        "description": "Fantasy arc advances the conspiracy; romance arc advances interpersonal intimacy. The arcs run parallel rather than intersecting, allowing both space to develop independently before the midpoint collision."
+      },
+      "emotionalRegister": "Quiet and intimate. The archive is dusty and cold. The fire after is warm. The conversation is the first time either woman has spoken about something other than danger.",
+      "arcBalance": {
+        "fantasyPresence": "moderate",
+        "romancePresence": "strong",
+        "note": "Romance takes foreground. Fantasy provides discovery; romance provides connection."
+      }
+    },
+    {
+      "chapter": 11,
+      "fantasyBeat": {
+        "beat": "Midpoint — Oathbrand Removal and Magic Return",
+        "description": "Lirien removes the Oathbrand using fae magic and precise control, her hands at Kaelith's collarbone, the sigil dissolving slowly under her touch. Kaelith's magic floods back in a torrent — chaotic, overwhelming, ecstatic. Her kinetic gifts reawaken, and the Quietus path begins to stir in her body, pulling her west with physical certainty. The Warden lineage she did not know she carried activates. During the removal and the magical flood, a resonance bond forms between them: unintentional, undeniable, and exposing.",
+        "stakes": "Kaelith is no longer powerless. The path to the Quietus is now accessible. The bond exposes them emotionally to each other in ways neither can control.",
+        "progression": "Fantasy arc gains its true engine. The midpoint shift is complete: Kaelith can now act, not just survive. The journey becomes possible."
+      },
+      "romanceBeat": {
+        "beat": "Hands at the Collarbone — Intimacy Threshold Crossed",
+        "stage": "resistance",
+        "description": "The Oathbrand removal is both magical and erotic: Lirien's hands on Kaelith's skin, sustained touch, mutual vulnerability. Kaelith must trust Lirien not to harm her while exposed; Lirien must trust Kaelith not to lash out once her power returns. When the magic floods back, Kaelith gasps with the intensity of it, and Lirien feels the resonance through the forming bond. This is the first time they touch with intent, and neither can pretend it is only tactical.",
+        "stakes": "Care becomes undeniable. Lirien crosses from operative detachment into open attachment. Kaelith lets someone touch her in the most vulnerable place she has.",
+        "progression": "The intimacy threshold is crossed. The relationship shifts from attraction-under-restraint to trust-as-risk. The bond reveals that trust has already begun.",
+        "vulnerabilityLadderStep": 7
+      },
+      "intersection": {
+        "type": "reinforcing",
+        "description": "Fantasy action (Oathbrand removal) IS romance action (intimacy threshold). The arcs collide at the midpoint: magical necessity creates emotional vulnerability, and both advance simultaneously. The resonance bond literalizes the metaphor — they are now tied to each other magically and emotionally."
+      },
+      "emotionalRegister": "Intense and breathless. The removal is slow, deliberate, and charged. The magical flood is overwhelming. The silence after is loaded with unspoken recognition.",
+      "arcBalance": {
+        "fantasyPresence": "dominant",
+        "romancePresence": "dominant",
+        "note": "Midpoint convergence. Both arcs escalate together. This is the structural hinge of the story."
+      }
+    },
+    {
+      "chapter": 12,
+      "fantasyBeat": {
+        "beat": "Revelation — The Conspiracy Has a Human Hand",
+        "description": "Cross-referencing the archive evidence with Seep intelligence and Conclave records, Lirien and Kaelith identify the saboteur: Thalen Veyris, a senior Conclave member who has been overseeing the Dimming rites for forty years. Thalen's modifications to the rites have been systematically weakening the Pallor under the guise of maintenance. The motive is still unclear, but the hand behind the god's waking is now named.",
+        "stakes": "The antagonist is human, institutional, and has been operating for decades. Stopping Ythara means confronting the empire's own leadership.",
+        "progression": "Fantasy arc narrows from cosmic to political. The climax will require not just reaching the Quietus but exposing Thalen's sabotage."
+      },
+      "romanceBeat": {
+        "beat": "Resonance Bond — They Can Feel Each Other",
+        "stage": "resistance",
+        "description": "The bond formed during the Oathbrand removal persists. Lirien can sense Kaelith's presence, emotional state, and magical signature. Kaelith can sense Lirien's precision, control, and the exact moment that control slips. The bond is not romantic — it is functional and exposing. Neither wanted it, and both are disturbed by how much it reveals. They cannot hide from each other anymore.",
+        "stakes": "Emotional privacy is gone. Trust is no longer optional — it is structural.",
+        "progression": "The bond does not create trust; it reveals that trust has already formed. Both women are frightened by how much they need each other.",
+        "vulnerabilityLadderStep": null
+      },
+      "intersection": {
+        "type": "independent",
+        "description": "Fantasy arc advances political stakes; romance arc deals with magical intimacy aftermath. The arcs run parallel, allowing both to develop independently before the next convergence."
+      },
+      "emotionalRegister": "Unsettled and raw. The bond is a constant presence neither can ignore. The conspiracy revelation is cold and clarifying.",
+      "arcBalance": {
+        "fantasyPresence": "strong",
+        "romancePresence": "moderate",
+        "note": "Fantasy takes foreground with the conspiracy revelation. Romance processes the bond's implications."
+      }
+    },
+    {
+      "chapter": 13,
+      "fantasyBeat": {
+        "beat": "Thalen's Network — Conclave Pursuit Escalates",
+        "description": "Identifying Thalen triggers immediate retaliation. Conclave-linked hunters close in with new urgency. It becomes clear that Thalen has eyes throughout the borderlands and is aware that Kaelith and Lirien are moving west. The pursuit intensifies: ambushes, magical tracking, and attempts to separate the women. Survival requires combined competence and the resonance bond's advantage.",
+        "stakes": "Thalen knows they know. The conspiracy will not allow them to reach the Quietus unchallenged.",
+        "progression": "Fantasy arc escalates external pressure. The journey becomes a race against institutional power."
+      },
+      "romanceBeat": {
+        "beat": "First Kiss — Witness Without Flinching",
+        "stage": "resistance",
+        "description": "After Kaelith shares the unsanitized truth of Calwrath — that she was right, that three hundred civilians still died, that her deepest fear is she would make the same choice again — Lirien does not recoil. She listens, she does not absolve, and she does not flinch. The kiss happens in the aftermath: not as reward but as the breaking point after accumulated restraint. It is earned emotional risk, not relief. Kaelith lets Lirien see the self she considers least forgivable. Lirien stays.",
+        "stakes": "Kaelith risks discovery that witness will turn into recoil. Lirien admits through the kiss that care has moved beyond strategic attachment.",
+        "progression": "Restraint finally breaks. The kiss is not a victory lap — it is the first thing either woman does that cannot be defended as tactical. Trust moves from structural to chosen.",
+        "vulnerabilityLadderStep": 8
+      },
+      "intersection": {
+        "type": "reinforcing",
+        "description": "Fantasy pressure (pursuit, danger) creates the emotional intensity that allows romance breakthrough (first kiss). The arcs converge: external threat strips away the last defenses, and intimacy becomes possible because there is no safety left to hide behind."
+      },
+      "emotionalRegister": "Aching and charged. The Calwrath confession is quiet and devastating. The kiss is slow, deliberate, and frightening because it is real.",
+      "arcBalance": {
+        "fantasyPresence": "strong",
+        "romancePresence": "dominant",
+        "note": "Romance takes foreground with the first kiss. Fantasy provides the pressure that makes the moment possible."
+      }
+    },
+    {
+      "chapter": 14,
+      "fantasyBeat": {
+        "beat": "Pinch Point Two — Partnership Wins a Battle, Not the War",
+        "description": "Kaelith and Lirien use combined magic and tactical coordination to survive a major ambush or navigate a catastrophic Pallor tear. Their complementary styles — Kaelith's instinct finding the opening, Lirien's precision exploiting it — prove devastatingly effective. They win the immediate crisis, but victory only confirms how essential their partnership has become and how catastrophic betrayal would now be. The bond amplifies their effectiveness and their vulnerability.",
+        "stakes": "They are stronger together, which means separation or betrayal would be fatal. The partnership is now load-bearing for both arcs.",
+        "progression": "Fantasy arc demonstrates that the protagonists can win battles but are not yet safe. The Quietus is still far, and Thalen's network is still closing in."
+      },
+      "romanceBeat": {
+        "beat": "After the Battle — Physical Intimacy as Vulnerability Begins",
+        "stage": "surrender",
+        "description": "After surviving the crisis, the tension that has been building for weeks finally breaks. The first full intimate scene is steamy, deliberate, and frightening because it is the first thing either woman does that cannot be defended as survival necessity. Kaelith stops using her body as a site of punishment. Lirien stops using hers as an instrument of contract. Bodies become the language they can manage before clean confession: desire, care, witness, and the terrifying possibility of being chosen.",
+        "stakes": "Physical intimacy is not reward after danger — it is the thematic turning point where each risks becoming emotionally legible to the other.",
+        "progression": "Intimacy moves from kiss to full physical vulnerability. This is surrender: not giving up, but giving in to something they both want and fear.",
+        "vulnerabilityLadderStep": 9
+      },
+      "intersection": {
+        "type": "reinforcing",
+        "description": "Fantasy victory (surviving the ambush) creates romance space (intimacy as aftermath). The arcs converge: the battle proves they are stronger together, and the intimacy afterward proves they want to be together, not just need to be."
+      },
+      "emotionalRegister": "Intense and raw. The battle is visceral and exhausting. The intimacy after is slow, deliberate, and emotionally overwhelming.",
+      "arcBalance": {
+        "fantasyPresence": "strong",
+        "romancePresence": "dominant",
+        "note": "Romance takes foreground with the intimate scene. Fantasy provides the victory that creates the emotional opening."
+      }
+    },
+    {
+      "chapter": 15,
+      "fantasyBeat": {
+        "beat": "False Victory — Emerging Proof Against the Conspiracy",
+        "description": "Lirien secures corroborated evidence linking Thalen to the Pallor poisoning: testimonies from freeholders who witnessed rite tampering, archived formulas showing deliberate modifications, and Seep intelligence confirming Thalen's motivations (likely zealotry — belief that Ythara's waking will 'correct' the world's stagnation). The evidence is not yet actionable, but it is real. For the first time, exposing the conspiracy seems possible.",
+        "stakes": "The fantasy arc appears solvable. If they can reach the Quietus and present the evidence, they can stop both the god and the saboteur.",
+        "progression": "Fantasy arc reaches its false peak. The illusion that the mission and the love might align cleanly is at its strongest. This sets up the deepest possible fracture."
+      },
+      "romanceBeat": {
+        "beat": "Intimacy Before Collapse — 'I Want This. I Want You.'",
+        "stage": "surrender",
+        "description": "During or after the intimacy, Lirien abandons contract-language long enough to name desire as her own. She lets Kaelith feel her through the resonance bond without operative filters. Kaelith, for the first time since Calwrath, allows herself to want something without framing it as selfishness or indulgence. They talk about what happens after — tentatively, carefully, as if speaking it might break it. The illusion of a future together feels real.",
+        "stakes": "Both women lower their final defenses. The relationship feels like it might survive the journey.",
+        "progression": "Intimacy deepens into emotional commitment. The cage (contract, mission, conspiracy) feels like it might open. This is the false victory that makes the black moment devastating.",
+        "vulnerabilityLadderStep": 9
+      },
+      "intersection": {
+        "type": "reinforcing",
+        "description": "Fantasy false victory (evidence against Thalen) creates romance false victory (intimacy as possible future). The arcs converge at their highest point before the fall. The illusion that both love and mission might succeed creates the conditions for maximum betrayal."
+      },
+      "emotionalRegister": "Tender and hopeful. The evidence feels like a breakthrough. The intimacy feels like a beginning. The hope is real, which makes what comes next unbearable.",
+      "arcBalance": {
+        "fantasyPresence": "strong",
+        "romancePresence": "dominant",
+        "note": "Both arcs reach false peak. Romance takes foreground with emotional commitment; fantasy provides the hope that makes it possible."
+      }
+    },
+    {
+      "chapter": 16,
+      "fantasyBeat": {
+        "beat": "All Is Lost — Death Contract Revealed",
+        "description": "A Seep interception or confrontation with another Court operative exposes the kill contract in full. Not just that Lirien was sent to execute Kaelith, but that the binding remains active, that Kaelith's blood was used in the ceremony, and that the contract is physiologically woven into Lirien's existence. Every hard-won trust moment existed inside a cage built for Kaelith's death. Worse: the contract may be the reason Lirien delayed the kill at all — not because she chose to care, but because the binding's wording created a paradox that forced delay.",
+        "stakes": "The fantasy mission and the romance both collapse. Reaching the Quietus requires Kaelith alive, but the contract requires her dead. The paradox is now inescapable.",
+        "progression": "Fantasy arc hits its black moment. The dual goals (save the world, kill Kaelith) are revealed as structurally opposed."
+      },
+      "romanceBeat": {
+        "beat": "The Black Moment — 'Every Feeling Was Built on a Lie'",
+        "stage": "resistance",
+        "description": "For Kaelith, the revelation hits the Calwrath wound from a new angle: once again an institution used her body, her competence, and her trust for a morally compromised end. This time the person she let closest was the mechanism. For Lirien, the revelation proves the Court's shaping went all the way down — even her love can be read as contract contamination. Kaelith walks away. The separation feels final. Lirien does not follow because she does not know if her desire to follow is real or binding-driven.",
+        "stakes": "Trust shatters. Love feels like another form of entrapment. The romance appears unsalvageable.",
+        "progression": "The black moment lands. The cage is revealed to have been there the entire time. The relationship fractures completely.",
+        "vulnerabilityLadderStep": null
+      },
+      "intersection": {
+        "type": "reinforcing",
+        "description": "Fantasy revelation (contract exposure) IS romance devastation (betrayal revealed). The arcs collapse together. The black moment is structural: both the world-saving mission and the love story appear doomed by the same mechanism."
+      },
+      "emotionalRegister": "Devastating and cold. The revelation is clinical and brutal. The separation is quiet. Kaelith leaves without shouting. Lirien lets her go.",
+      "arcBalance": {
+        "fantasyPresence": "dominant",
+        "romancePresence": "dominant",
+        "note": "Black moment convergence. Both arcs hit nadir simultaneously. This is the lowest point of the story."
+      }
+    },
+    {
+      "chapter": 17,
+      "fantasyBeat": {
+        "beat": "Act III Descent — Separation Under Accelerating Failure",
+        "description": "The Pallor crisis escalates catastrophically. With Kaelith and Lirien separated, the journey toward the Quietus stalls. Thalen's network closes in on both women separately. Pallor tears widen, Ythara's influence spreads, and the timeline for reaching the seal compresses. The world is failing faster than either woman can respond to alone. Private heartbreak becomes public catastrophe.",
+        "stakes": "Separation is not just emotionally devastating — it is existentially dangerous. Neither woman can reach the Quietus or survive Thalen's pursuit alone.",
+        "progression": "Fantasy arc makes clear that reconciliation is not optional. The mission requires partnership, and partnership requires repaired trust."
+      },
+      "romanceBeat": {
+        "beat": "Separation and Doubt — 'Was Any of It Real?'",
+        "stage": "resistance",
+        "description": "Kaelith travels alone, processing the betrayal. She does not doubt that Lirien cares — she doubts whether care that began inside a binding can ever be called love. Lirien travels separately, wrestling with the same question from the other side: if the contract shaped every decision, how can she trust her own feelings? The resonance bond persists, making the separation physically painful and emotionally inescapable. Neither can ignore the other even when apart.",
+        "stakes": "Both women are trying to determine whether love that began in a cage can become something freely given.",
+        "progression": "The black moment continues. Doubt is corrosive. The question 'was any of it real?' has no clean answer, and both women know it."
+      },
+      "intersection": {
+        "type": "reinforcing",
+        "description": "Fantasy crisis (Pallor acceleration) mirrors romance crisis (separation under doubt). The arcs run parallel in descent: the world is failing because they are failing. The structural message is clear — separation is unsustainable."
+      },
+      "emotionalRegister": "Bleak and quiet. The separation is worse than the revelation. The resonance bond makes the absence unbearable. The world continues to fall apart.",
+      "arcBalance": {
+        "fantasyPresence": "strong",
+        "romancePresence": "strong",
+        "note": "Both arcs remain in crisis. Fantasy escalates external stakes; romance processes internal devastation."
+      }
+    },
+    {
+      "chapter": 18,
+      "fantasyBeat": {
+        "beat": "Ashborne Legacy — Allies Begin to Surface",
+        "description": "Former Ashborne Legion members — soldiers who survived Calwrath because of Kaelith's decision — begin surfacing to offer covert aid. They have been watching her exile, and the conspiracy's exposure galvanizes them into action. They provide intelligence on Thalen's movements, safe passage through hostile territory, and moral support. Kaelith is not as alone as she thought, and her reputation is not as destroyed as the empire wanted her to believe.",
+        "stakes": "The fantasy arc gains unexpected reinforcements. Kaelith's vindication begins, not through institutional reversal but through the loyalty of those she saved.",
+        "progression": "Fantasy arc shifts from isolation toward coalition. The climax will not be a solo act — it will require allies, evidence, and collective action."
+      },
+      "romanceBeat": {
+        "beat": "Dark Night / Choice — Follow Her Freely",
+        "stage": "resistance",
+        "description": "Lirien identifies her attachment as desire rather than obligation. She examines the contract's wording, her own behavior, and the timeline of her feelings. She concludes that while the binding may have created the initial delay, everything that followed — the care, the intimacy, the bond — was her choice. She chooses to pursue Kaelith with no institutional justification, knowing that doing so may mean breaking with the Cerith Court permanently. This is the emotional hinge that makes recovery possible.",
+        "stakes": "Lirien declares emotional independence from the Court. She follows Kaelith not because she must, but because she wants to.",
+        "progression": "The romance arc turns. Lirien's choice is not apology (which would be insufficient) but action. She proves through movement that desire is hers.",
+        "vulnerabilityLadderStep": 15
+      },
+      "intersection": {
+        "type": "independent",
+        "description": "Fantasy arc builds coalition; romance arc makes the choice that enables reconciliation. The arcs run parallel, each preparing for the final convergence."
+      },
+      "emotionalRegister": "Determined and raw. The Ashborne aid is quiet and fierce. Lirien's choice is internal and absolute. Hope begins to surface, fragile and hard-won.",
+      "arcBalance": {
+        "fantasyPresence": "moderate",
+        "romancePresence": "dominant",
+        "note": "Romance takes foreground with Lirien's choice. Fantasy builds the support structure for the climax."
+      }
+    },
+    {
+      "chapter": 19,
+      "fantasyBeat": {
+        "beat": "Break into Three — Shared Plan, Shared Truth",
+        "description": "Lirien finds Kaelith in the freeholder refuge at Rivenmarch. They share intelligence, allies, and the plan that has been forming in both their minds separately: exploit the contract loophole, expose Thalen with Ashborne and freeholder witnesses, and reach the Quietus before the Pallor fails completely. The plan is impossible, but it is the only plan that addresses both the god-threat and the personal betrayal. Fantasy and romance goals align through shared truth.",
+        "stakes": "Reunion is earned through action and full disclosure. The plan requires trust, and trust requires choosing to repair what was broken.",
+        "progression": "Fantasy arc gains its final trajectory. The climax is now structured: contract loophole, conspiracy exposure, Quietus approach."
+      },
+      "romanceBeat": {
+        "beat": "Reunion Through Truth — 'I Choose This. I Choose You.'",
+        "stage": "commitment",
+        "description": "Kaelith does not return to trust by forgetting the betrayal. She returns by judging Lirien with full knowledge and deciding that chosen truth inside a damaged structure still counts. Lirien admits that she cannot prove her feelings are untainted by the binding, but she can prove that she chooses Kaelith now, after the cage is visible, after every illusion is gone. The reunion is not about absolution — it is about deciding that the relationship is worth repairing despite the damage.",
+        "stakes": "Both women choose each other with full knowledge of the cost. Trust is rebuilt not through erasure but through deliberate decision.",
+        "progression": "The romance arc turns toward resolution. Reconciliation is not clean, but it is real. The relationship survives because both women decide it will.",
+        "vulnerabilityLadderStep": 10
+      },
+      "intersection": {
+        "type": "reinforcing",
+        "description": "Fantasy plan (shared goal) and romance reconciliation (shared choice) converge. The arcs realign: partnership is restored through truth, and the mission becomes possible because the relationship is repaired."
+      },
+      "emotionalRegister": "Quiet and fierce. The reunion is not dramatic — it is deliberate. The plan is spoken aloud. The choice is made without fanfare.",
+      "arcBalance": {
+        "fantasyPresence": "strong",
+        "romancePresence": "dominant",
+        "note": "Romance takes foreground with reconciliation. Fantasy provides the structure that makes the reunion functional as well as emotional."
+      }
+    },
+    {
+      "chapter": 20,
+      "fantasyBeat": {
+        "beat": "Contract Fulfilled in Letter, Broken in Spirit",
+        "description": "Using the contract loophole and the resonance bond's precision, Lirien stops Kaelith's heart for seconds — satisfying the binding's literal requirement ('end her life') — and then restarts it using fae magic and the bond's connection. The binding registers fulfillment and dissolves. Lirien is freed from the Cerith Court's control, and Kaelith survives. The loophole works because the contract was written for obedience, not imagination. The cage opens.",
+        "stakes": "The fantasy obstacle (contract) is removed through cleverness and trust. The romance obstacle (binding) is neutralized through partnership.",
+        "progression": "Fantasy arc clears the personal obstacle, allowing the final push toward the Quietus. The contract is no longer a barrier."
+      },
+      "romanceBeat": {
+        "beat": "Trust Proves Itself — Kaelith Consents to Death and Resurrection",
+        "stage": "commitment",
+        "description": "Kaelith consents to Lirien stopping and restarting her heart. She trusts the woman who betrayed her with the most literal form of life-or-death surrender possible. The act is terrifying, intimate, and absolute. When Kaelith's heart stops, Lirien experiences the binding's satisfaction and her own horror simultaneously. When she restarts it and Kaelith gasps back into life, the cage is gone and choice replaces necessity. They are together because they choose to be, not because the contract forced it.",
+        "stakes": "Kaelith gives up the final defense of self-protection. Lirien proves that trust can survive even after it has been weaponized.",
+        "progression": "The romance arc completes its central question: love that began in necessity becomes something freely given. The cage opens, and both women stay.",
+        "vulnerabilityLadderStep": 11
+      },
+      "intersection": {
+        "type": "reinforcing",
+        "description": "Fantasy action (contract loophole) IS romance action (ultimate trust). The arcs converge completely: the magical solution requires emotional surrender, and both succeed simultaneously. This is the moment the dual-arc structure resolves its central tension."
+      },
+      "emotionalRegister": "Terrifying and tender. The heartbeat cessation is clinical and overwhelming. The restart is gasping and raw. The silence after is relief and awe.",
+      "arcBalance": {
+        "fantasyPresence": "dominant",
+        "romancePresence": "dominant",
+        "note": "Full convergence. Both arcs resolve their central obstacles through the same action. This is the dual-arc payoff."
+      }
+    },
+    {
+      "chapter": 21,
+      "fantasyBeat": {
+        "beat": "Climax — Quietus Reached, Sabotage Exposed",
+        "description": "At Serath Dûn, Kaelith's Warden inheritance and the kinetic path guide them to the Quietus mechanism. Lirien's precision and the resonance bond allow them to stabilize the god-seal temporarily. Simultaneously, the evidence against Thalen — corroborated by Ashborne witnesses, freeholder testimony, and Conclave whistleblowers like Iryse — is presented to the remaining High Conclave members. Thalen's sabotage is exposed, and the conspiracy collapses. Ythara does not wake fully, but the Pallor cannot be restored — the world will have to adapt to a thinner membrane and more responsive magic.",
+        "stakes": "The fantasy arc resolves. The god is contained (not destroyed), the saboteur is exposed (not absolved), and the world survives (not unchanged).",
+        "progression": "Fantasy climax delivers on all promises: the Quietus is reached, the conspiracy is named, and the immediate existential threat is neutralized. The resolution is costly but earned."
+      },
+      "romanceBeat": {
+        "beat": "Partnership Under Pressure — 'We Do This Together'",
+        "stage": "commitment",
+        "description": "The Quietus work and the Thalen exposure both require Kaelith and Lirien working in tandem. Kaelith's instinct finds the seal's mechanism; Lirien's precision stabilizes it. Kaelith's testimony as a Warden descendant carries weight; Lirien's Seep evidence provides proof. They are not just together — they are effective together, and that effectiveness is the physical proof that the partnership has been rebuilt.",
+        "stakes": "The romance survives the climax not through grand declaration but through competence under pressure. They prove the relationship works functionally and emotionally.",
+        "progression": "Romance arc demonstrates that reconciliation was real. The partnership is load-bearing again, and trust functions under maximum stress."
+      },
+      "intersection": {
+        "type": "reinforcing",
+        "description": "Fantasy climax (Quietus stabilization, Thalen exposure) requires romance partnership (complementary skills, mutual trust). The arcs converge at their highest stakes: saving the world requires both women working together, and working together proves the love is real."
+      },
+      "emotionalRegister": "Intense and focused. The Quietus work is visceral and exhausting. The conspiracy exposure is cold and precise. The partnership is seamless.",
+      "arcBalance": {
+        "fantasyPresence": "dominant",
+        "romancePresence": "strong",
+        "note": "Fantasy takes foreground for the climax action. Romance provides the partnership that makes the fantasy resolution possible."
+      }
+    },
+    {
+      "chapter": 22,
+      "fantasyBeat": {
+        "beat": "Resolution — The World Holds, Because They Chose It",
+        "description": "The immediate crisis is contained. Ythara remains sealed (for now), Thalen is removed from power, and the High Conclave is forced to confront its complicity. The Pallor cannot be fully restored, so the world will adapt to thinner membrane and more accessible magic — a new age, uncertain but alive. Kaelith's exile is not formally lifted, but the Ashborne Legion's support and the freeholder communities' recognition give her a place outside imperial approval. The institutions are not redeemed, but they are no longer omnipotent.",
+        "stakes": "Fantasy arc closes with cautious hope. The world survives, but it is changed. There are no clean victories, only earned ones.",
+        "progression": "Fantasy resolution delivers cost and consequence. The world is safer but not fixed. The story refuses triumphalism."
+      },
+      "romanceBeat": {
+        "beat": "Chosen Love — 'I Stay Because I Want To'",
+        "stage": "commitment",
+        "description": "After the crisis, Kaelith and Lirien remain together. The contract is gone, the mission is complete, and every external reason to stay has fallen away. They stay because they choose to. The ending is HFN (happy for now): they do not have a defined future, they do not have institutional approval, and they do not have certainty. But they have each other, and that is enough. The resonance bond persists, no longer a burden but a chosen connection. They talk about what comes next — tentatively, honestly, without pretending the damage is erased.",
+        "stakes": "Romance arc closes with love that has moved from necessity to choice. The relationship is real because it survives after the cage opens.",
+        "progression": "Romance resolution delivers on the thematic promise: trust born between enemies is more expensive and more honest. Love survives because it was chosen, not because it was fated."
+      },
+      "intersection": {
+        "type": "reinforcing",
+        "description": "Fantasy resolution (world survives) enables romance resolution (they stay together). The arcs close in alignment: the world holds because they chose to save it together, and the relationship holds because they choose each other after every external pressure is gone."
+      },
+      "emotionalRegister": "Quiet and hopeful. The ending is not triumphant — it is earned. The world is still grey, but the light is real. The love is fragile and fierce.",
+      "arcBalance": {
+        "fantasyPresence": "moderate",
+        "romancePresence": "dominant",
+        "note": "Romance takes foreground for the emotional resolution. Fantasy provides the stable world that allows the relationship to imagine a future."
+      }
+    }
+  ],
+  "keyIntersections": [
+    {
+      "chapter": 2,
+      "type": "complicating",
+      "description": "Pallor tear complicates Lirien's clean assassination by proving Kaelith is anomalous and potentially necessary."
+    },
+    {
+      "chapter": 5,
+      "type": "reinforcing",
+      "description": "Quietus paradox revelation forces romance into forced proximity by making Kaelith's survival a world-level necessity."
+    },
+    {
+      "chapter": 9,
+      "type": "reinforcing",
+      "description": "Ythara exposure forces physical intimacy as survival mechanism, revealing trust has begun without permission."
+    },
+    {
+      "chapter": 11,
+      "type": "reinforcing",
+      "description": "Oathbrand removal is simultaneously fantasy midpoint (magic returns) and romance intimacy threshold (first intentional touch)."
+    },
+    {
+      "chapter": 14,
+      "type": "reinforcing",
+      "description": "Fantasy battle victory creates space for romance physical intimacy — proving they want each other, not just need each other."
+    },
+    {
+      "chapter": 16,
+      "type": "reinforcing",
+      "description": "Contract revelation is black moment for both arcs: fantasy mission and romance both collapse under the same betrayal."
+    },
+    {
+      "chapter": 20,
+      "type": "reinforcing",
+      "description": "Contract loophole requires ultimate trust — fantasy obstacle removed through romance action."
+    },
+    {
+      "chapter": 21,
+      "type": "reinforcing",
+      "description": "Climax requires partnership: fantasy goal (Quietus stabilization) only succeeds because romance goal (repaired trust) has been achieved."
+    }
+  ],
+  "balanceVerification": {
+    "fantasyDominantChapters": [1, 5, 9, 11, 12, 16, 17, 21],
+    "romanceDominantChapters": [8, 10, 13, 14, 15, 18, 19, 22],
+    "balancedChapters": [2, 3, 4, 6, 7, 20],
+    "longestFantasySilence": 0,
+    "longestRomanceSilence": 0,
+    "note": "Neither arc goes silent. Fantasy leads in chapter count (8 vs 8 balanced/romance), but romance carries emotional weight throughout. Genre balance (55% fantasy, 45% romance) is maintained through page-weight in fantasy chapters and stakes-weight in romance chapters."
+  },
+  "blackMomentAlignment": {
+    "chapter": 16,
+    "fantasyNadir": "Contract exposure makes fantasy mission (reach Quietus with Kaelith alive) structurally opposed to contract requirement (Kaelith must die).",
+    "romanceNadir": "Trust shatters completely. Love appears to be contract contamination rather than genuine feeling.",
+    "convergence": "Both arcs hit nadir simultaneously. The black moment is structural: the same mechanism (kill contract) dooms both the world-saving mission and the love story. INV-045 satisfied."
+  },
+  "upstreamRefs": [
+    "story-concept.json",
+    "plot/plot-structure.json",
+    "romance-arc.json",
+    "characters/CHAR-001.json",
+    "characters/CHAR-002.json",
+    "world-bible/geography.json",
+    "world-bible/magic-system.json",
+    "world-bible/politics.json"
+  ]
+}

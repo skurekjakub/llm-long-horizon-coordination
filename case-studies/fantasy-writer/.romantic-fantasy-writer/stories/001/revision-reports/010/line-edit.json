@@ -1,0 +1,279 @@
+{
+  "reportType": "line-edit",
+  "chapter": 10,
+  "pov": "CHAR-002",
+  "timestamp": "2025-07-18T14:30:00Z",
+  "overallAssessment": {
+    "verdict": "PASS with revision required",
+    "prose_quality": "Strong. Lirien's POV is convincingly rendered — the operative consciousness, the parenthetical assessment system, the water metaphor domain, and the gradual emotional destabilization are all structurally sound and often beautiful. The archive infiltration scene is taut and precise. The coast conversation achieves genuine intimacy. The pivot from 'What were they like from the coast' through to 'She required a moment' is among the most emotionally effective passages in the manuscript so far. The dialogue is natural, subtext-laden, and distinctively voiced for both characters.",
+    "primary_concern": "Three interlocking repetition/saturation issues compromise what is otherwise excellent work: (1) the 'not X but Y' negation pattern dominates the chapter's syntactic texture (~40 instances), (2) water metaphors appear 10 times with the specific 'water against/through stone' image recurring 4 times, and (3) Scene 3 narrates the dissolution of Lirien's operative consciousness using the very operative vocabulary it claims is going quiet, creating a paradox that undercuts the emotional landing. The prose constantly defines experience through negation and comparison rather than letting moments simply exist — this is characterologically justified (Lirien does think this way) but the density transforms a voice trait into a reading experience that feels controlled rather than felt."
+  },
+  "findingSummary": {
+    "critical": 2,
+    "major": 4,
+    "minor": 7,
+    "suggestion": 4,
+    "total": 17
+  },
+  "findings": [
+    {
+      "id": "LINE-010-001",
+      "severity": "critical",
+      "category": "repetition",
+      "subcategory": "syntactic-pattern-saturation",
+      "location": "Chapter-wide, all three scenes",
+      "problematicText": "Selected instances: 'not concealing, precisely, but minimizing' (26), 'was not quite a smile but operated in the same territory' (34), 'Not architecture' (52), 'Not anger. Something colder. Something architectural' (118), 'was not accusatory. It was structural analysis' (120), 'not unfocused but *refocused*' (146), 'was not what convinced her' (152), 'was not gathering intelligence' (172), 'not because the input was complex but because it was simple' (180), 'was not the binding-pressure of the contract and was not the cold clarity of intelligence analysis and was not any variable' (186), 'Not suppressed. Absent.' (226), 'not the operational silence of managed disclosure, and not the comfortable silence' (236), 'was not fatigue but surrender' (246), 'not touching, not quite' (248)",
+      "description": "The 'not X but Y' / negation-followed-by-true-statement construction appears approximately 40 times across the chapter, making it the dominant syntactic pattern of the prose. While characterologically appropriate — Lirien defines through elimination, approaching truth by ruling out what something isn't — the density exceeds the INV-017 threshold of no more than 3 repeated structures per page. Virtually every paragraph uses this construction at least once. The most severe concentration occurs in Scene 3 (lines 162-252), where nearly every emotional beat is framed as a negation: 'was not gathering intelligence,' 'was not maintaining cover,' 'was not tactical,' 'was not the binding-pressure,' 'was not fatigue but surrender.' The cumulative effect is that the reader experiences Lirien's emotional awakening primarily as a list of things it is not, rather than as a felt experience of what it is. The triple-negation at line 186 ('was not...and was not...and was not') is particularly heavy — three negations stacked in a single sentence to describe a moment that should feel unclassifiable, but instead feels exhaustively catalogued through its negations.",
+      "recommendation": "Reduce negation-based constructions from ~40 to ~15-18 across the chapter, preserving the pattern as voice seasoning rather than primary prose mode. In Scene 3 specifically, cut at least 60% of the negations. The most powerful uses — 'Not suppressed. Absent.' (226), 'not because the input was complex but because it was simple' (180), and 'She was not gathering intelligence. She was listening' (228) — work precisely because they resolve the negation into a clear positive statement. Weaker uses that merely negate without resolving (line 186's triple-negation, line 170's 'no undercurrent...no surface tension') should be rewritten as positive descriptions. Line 186 could become: 'felt something shift in her chest — a resonance with no operational name, filing itself in a space she had not known existed.' Line 170 could become: 'This silence was open. Unmanaged. The fire burned. The stream murmured.' — letting the environmental details embody the openness rather than defining it through the absence of spy-terms."
+    },
+    {
+      "id": "LINE-010-002",
+      "severity": "critical",
+      "category": "repetition",
+      "subcategory": "voice-marker-saturation",
+      "location": "Lines 162-252 (Scene 3 — intimate fireside scene)",
+      "problematicText": "Intelligence/operative vocabulary in the intimate scene: 'catalogued' (166), 'Operational silence' (166), 'managed disclosure' (170), 'tactical' (170, 180, 190, 238), 'gathering intelligence' (172, 228), 'maintaining cover' (172), 'operational function' (172), 'variables' (172), 'classified' (180), 'operational categories' (180), 'navigational utility' (182), 'binding-pressure of the contract' (186), 'intelligence analysis' (186), 'variable' (186), 'operative who has broken cover' (190), 'tactical justification' (190), 'operational value' (192), 'intelligence' (192, 204), 'strategic advantage' (192), 'contractual relevance' (192), 'classify' (198), 'intelligence value' (204), 'personal disclosure' (206), 'strategic purpose' (206), 'operationally relevant' (210), 'metaphorical significance' / 'file it' (212), '(consistent with profile), (deviation noted), (cross-reference with operational history)' (226), 'monitoring station' / 'calibration range' (226), 'threat assessment' / 'surveillance' (232), 'operational capacity' (232), 'classification' (234, 248), 'operational silence' / 'managed disclosure' (236), 'tactical positioning' (238), 'operative and target' (248)",
+      "description": "Scene 3 is the chapter's emotional pivot — the moment Lirien's operative framework goes quiet and she experiences a personal connection with Kaelith. The metadata explicitly notes that parenthetical assessments should be 'absent in scene 3' to signal this shift. The parenthetical device does beautifully fail (empty at line 178, explicitly absent at line 226). However, the prose surrounding these parenthetical failures is saturated with the same intelligence/operative vocabulary at near-Scene-1 density — approximately 35+ intelligence-domain terms across 90 lines. The narrative tells us the system has gone quiet while the vocabulary insists it is still running at full volume. This creates a paradox: the reader is informed that Lirien has stopped being an operative, but the prose itself continues to operate in operative mode. The emotional landing — the reader should FEEL the silence of the classification system — is undercut because the reader is still swimming in the very vocabulary that's supposed to be absent. It's the narrative equivalent of explaining silence loudly.",
+      "recommendation": "In Scene 3, reduce intelligence/operative vocabulary by approximately 50-60%. The key is to trust the reader to notice the change in texture without being told. Currently the prose announces 'I am not gathering intelligence' while using intelligence vocabulary to make the announcement. Instead: (1) Let the environmental description do more work — the fire, the stream, the stars, the limestone walls. When Lirien stops analyzing, the prose should become more sensory and less analytical. (2) Reserve operative vocabulary for the specific moments where Lirien catches herself (lines 190-192 work because the operative language is the point — she hears herself thinking in tradecraft). (3) Remove the explicit contrast vocabulary ('operational value,' 'strategic advantage,' 'contractual relevance' at lines 192-193 are three synonyms for the same negation — one is sufficient). (4) Lines 232-233 ('the full attention she normally reserved for threat assessment and high-priority surveillance, and the realization that she was applying her deepest operational capacity') can be drastically simplified: 'the full attention she normally reserved for surveillance' delivers the same meaning in half the words. (5) The final paragraph's 'operative and target' (248) is the right place for the operative vocabulary to return — one surgical strike of the old framework at the very end. But it loses impact when surrounded by 30 other operative terms."
+    },
+    {
+      "id": "LINE-010-003",
+      "severity": "major",
+      "category": "repetition",
+      "subcategory": "metaphor-density",
+      "location": "Chapter-wide, concentrated in Scenes 2-3",
+      "problematicText": "'the way water revealed the shape of stone not by flowing through it but by flowing around it' (44), 'the way water could be directed to undermine a foundation' (52), 'settled through her like cold water through cracked stone' (130), '*we* was a current she had not intended to release' (144), 'functioned as the surface current beneath which everything else moved' (158), 'nested together like tributaries joining a larger river' (160), 'the water in which she swam' (166), 'moved through her like water finding a crack in stone' (196), 'the way a stream follows a channel cut by a previous current' (222), 'the way a stream's course shifted...through the cumulative pressure of water against stone' (238)",
+      "description": "Ten figurative water metaphors/similes in a 4,576-word chapter — approximately one every 450 words, or roughly one per half-page. The style guide specifies 'low-to-moderate' metaphor density overall with increase 'only at emotional pivots or mythic/magical thresholds.' More critically, the specific image of water meeting/eroding/finding cracks in stone appears four times (lines 44, 130, 196, 238). This single image — water-against-stone — constitutes a repeated metaphor construction that the reader will consciously register by its third appearance and experience as mechanical by its fourth. Lines 196 and 238 are separated by only 42 lines and use near-identical constructions ('water finding a crack in stone' / 'cumulative pressure of water against stone'). The metaphor policy states 'No extended metaphor may run longer than two linked clauses unless it also advances characterization' — but the issue here is not extension within a single metaphor but repetition of the same base metaphor across the chapter.",
+      "recommendation": "Reduce figurative water metaphors from 10 to 5-6. Keep the strongest: line 44 (water reading documents — vivid and character-specific), line 144 ('*we* was a current' — brief and emotionally precise), line 196 ('water finding a crack in stone' — the emotional pivot moment earns it). Cut or replace: line 52 (redundant with 44), line 158 ('surface current' is a dead metaphor that adds nothing), line 160 ('tributaries joining a larger river' is overwritten for document storage), line 238 (near-duplicate of 196, occurring only 42 lines later). Line 166 ('the water in which she swam') can stay — it's characterizing the Seep connection, not decorating prose. For the water-against-stone image specifically, choose ONE use (line 196 is strongest) and find alternative imagery for the others. Line 130's 'cold water through cracked stone' can become a simpler physical description: 'settled through her with the weight of something that had been pressing for weeks.' Line 238's stream simile can become a plain observation: 'the distance was narrower than it had been an hour ago, though she could not identify the specific moment of contraction.'"
+    },
+    {
+      "id": "LINE-010-004",
+      "severity": "major",
+      "category": "repetition",
+      "subcategory": "syntactic-pattern",
+      "location": "Chapter-wide",
+      "problematicText": "'the way Lirien's fingers' (14), 'the way Kaelith held her branded arm' (26), 'the way she read all official documents' (44), 'the way water revealed' (44), 'the way water could be directed' (52), 'the way she looked for the logic' (102), 'the way Kaelith's gaze went distant' (146), 'the way Kaelith's voice changed' (204), 'the way a person notices' (212), 'the way she was learning to recognize' (220), 'the way a stream follows a channel' (222), 'the way other children learned' (224), 'the way a monitoring station went quiet' (226), 'the way a stream's course shifted' (238)",
+      "description": "The comparative 'the way' construction appears 14 times across the chapter — averaging more than 3 per manuscript page. This construction serves two functions: (1) observation comparisons ('the way Kaelith held her arm') and (2) simile introductions ('the way water revealed'). Both functions are characteristic of Lirien's analytical voice. However, 14 uses creates a rhythmic monotony where the reader begins anticipating '— the way...' at the end of every other sentence. The densest cluster occurs in Scene 3's intimate section (lines 204-238), where 6 instances appear within 34 lines — one every 5-6 lines.",
+      "recommendation": "Reduce 'the way' constructions from 14 to 7-8 by varying the comparative syntax. Alternatives: 'as' ('as she read all official documents'), 'like' ('like a stream following a channel'), direct description ('Lirien recognized Kaelith's emotional signals — not the surface expression but the architecture beneath'), or elimination of the comparison entirely when the observation is strong enough to stand alone. Prioritize cutting the simile-introducing uses (lines 44 second instance, 52, 222, 226, 238) since these tend to introduce water metaphors that are already flagged for reduction. Keep the observation uses that are most character-specific (line 14's wrist-checking, line 146's gaze-reading)."
+    },
+    {
+      "id": "LINE-010-005",
+      "severity": "major",
+      "category": "prose",
+      "subcategory": "purple-prose",
+      "location": "Lines 246-252",
+      "problematicText": "'Lirien's eyes grew heavy with a weight that was not fatigue but surrender — the specific gravity of allowing vigilance to soften, of permitting the boundary between watching and resting to become permeable in the presence of someone who was also resting, also softening, also allowing a boundary to thin.' (246) / 'Beside her — not touching, not quite, but close enough that the warmth was shared and the distance was a choice that had already been made by the parts of them that did not require classification — Kaelith slept too. The stream moved in the dark. The stars resonated through the Pallor's wounded skin. And the space between two people who had begun as operative and target and become something that neither of them had a word for yet grew quieter and smaller and more honest with every breath.' (248) / 'Nothing happened in the night except the ordinary passage of hours through a world that was slowly coming apart, and two people sleeping near each other because they wanted to, and that wanting being, for the first time, enough.' (252)",
+      "description": "The chapter's final seven lines attempt three separate poetic closings stacked on top of each other: (1) the vigilance-surrender metaphor with triple-parallel ('also resting, also softening, also allowing'), (2) the 'operative and target become something unnamed' construction with 'quieter and smaller and more honest,' and (3) the 'nothing happened except wanting' philosophical coda. Each individually could land as a strong closer. Together they create a diminishing-returns effect where each subsequent ending dilutes the one before it. The style guide specifically prohibits 'purple-gothic overloading' and 'ornament for ornament's sake,' and states that 'isolated one-line paragraphs' should be used 'only for reversals, realizations, or emotional impacts.' Three consecutive closings violate this economy. Line 246 in particular features the phrase 'the specific gravity of allowing vigilance to soften, of permitting the boundary between watching and resting to become permeable' — 24 words of abstract philosophical metaphor describing falling asleep. The style guide's sentencing rhythm standard for introspection says to 'close paragraphs on a clean, hard observation.' None of these closings is clean or hard.",
+      "recommendation": "Choose one closing and commit to it. Strongest candidate: line 252 ('Nothing happened in the night except the ordinary passage of hours through a world that was slowly coming apart, and two people sleeping near each other because they wanted to, and that wanting being, for the first time, enough.'). This is the most emotionally honest and the least decorated. Cut line 246's triple-parallel entirely — 'Lirien's eyes grew heavy' is sufficient to transition to sleep; the 24-word philosophical gloss explaining the heaviness is unnecessary. Tighten line 248: 'She slept. Beside her — close enough that the warmth was shared — Kaelith slept too.' This lets the proximity speak for itself. Then land on 252 (slightly tightened): 'The watch rotation was never established. Nothing happened in the night except the ordinary passage of hours through a world slowly coming apart, and two people sleeping near each other because they wanted to, and that wanting being enough.' The 'for the first time' can be cut — the reader knows."
+    },
+    {
+      "id": "LINE-010-006",
+      "severity": "major",
+      "category": "prose",
+      "subcategory": "narrated-emotion",
+      "location": "Lines 162-198 (Scene 3 opening)",
+      "problematicText": "'Lirien catalogued the difference with the precision of someone whose survival depended on reading atmospheric shifts.' (166) / 'She was not gathering intelligence. She was not maintaining cover. She was sitting by a fire with someone, and the absence of operational function in the moment was so unfamiliar that her instinct was to manufacture function' (172) / 'The system that classified her experiences into operational categories had encountered input it could not process' (180) / 'experienced the precise, vertiginous sensation of an operative who has broken cover without tactical justification — the free-fall between action and consequence when neither can be retrieved' (190)",
+      "description": "Scene 3's opening (lines 162-198) narrates Lirien's emotional state through intellectual analysis rather than letting the reader experience it through sensory detail and body. The prose tells us about Lirien's system failing rather than showing the failure through changed prose texture. We are informed that 'the absence of operational function was unfamiliar' (172) rather than shown what unfamiliarity feels like in Lirien's body. We are told her system 'encountered input it could not process' (180) rather than experiencing the system error through a shift in prose rhythm. The passage reads like a clinical report on an emotional event rather than an emotional event itself. The style guide's show-don't-tell rules specifically prohibit 'naming an emotion first and adding body language afterward in key scenes' and require that 'when a character makes a consequential choice, the prose must show the perception, hesitation or refusal, and action.' The key moment — Lirien choosing to sit in non-operational silence — is consequential but narrated rather than dramatized.",
+      "recommendation": "Reduce the analytical meta-commentary by approximately 40%. Let the prose itself change texture when the operative system fails, rather than describing the failure in operative language. Lines 172-174 can be compressed: cut the catalogue of avoidance behaviors ('to review the documents again, to plan tomorrow's route, to calculate time-to-objective and supply requirements and a dozen other variables') and let the moment land through its physical reality. 'She was sitting by a fire with someone. The impulse to reach for purpose surfaced and — for the first time — she let it pass.' Then 'She did not.' (174) as the paragraph break. Lines 180-181 can be compressed similarly: 'The classification system had gone quiet. Not crashed — just... quiet. She was sitting by a fire. She was not working. Kaelith was beside her.' The simpler the language in this passage, the more the reader feels the simplicity of the experience that overwhelms Lirien. Currently the prose intellectualizes the very simplicity it's trying to convey."
+    },
+    {
+      "id": "LINE-010-007",
+      "severity": "minor",
+      "category": "cliché",
+      "location": "Line 138",
+      "problematicText": "The words hung in the air with the sparks — drifting, cooling, falling.",
+      "description": "'The words hung in the air' is a stock phrase that appears in countless novels. The extension ('with the sparks — drifting, cooling, falling') attempts to freshen it by linking it to the fire's sparks, which partially succeeds — the parallel between words and sparks is evocative. However, the base construction remains a recognized cliché. The style guide's prose quality floor sets maxClichesPerChapter at 2, and while this chapter is otherwise cliché-lean, this phrase is the most prominent instance.",
+      "recommendation": "Replace the stock phrase while keeping the sparks parallel. Option: 'Kaelith's words drifted upward with the sparks — cooling, falling, settling into the dark.' Or cut the metaphor entirely and let the statement land in silence: 'The fire popped. A log settled, and neither of them spoke.' The content of the line — 'Someone wants Ythara to wake' — is strong enough to carry its own weight without the ornament."
+    },
+    {
+      "id": "LINE-010-008",
+      "severity": "minor",
+      "category": "show-dont-tell",
+      "location": "Line 138",
+      "problematicText": "Lirien watched Kaelith's face in the firelight and observed something she had never seen there before: not surprise, not fear, but the terrible resignation of a person who had suspected the worst and been proven correct.",
+      "description": "'Terrible resignation' is a direct emotion label. While it is Lirien's analytical interpretation of Kaelith's expression (consistent with her visual-assessment habit), the passage names the emotion before showing what it looks like. The style guide prohibits 'naming an emotion first and adding body language afterward' in key scenes. The subsequent sentence — 'Kaelith had been carrying this possibility since before the Wending' — is also interpretation-as-telling rather than observable detail. In Lirien's visual-dominant POV, the reader should see what Kaelith's face does and draw the conclusion alongside Lirien.",
+      "recommendation": "Show the expression, then let Lirien interpret it: 'Lirien watched Kaelith's face in the firelight. The jaw did not tighten. The eyes did not widen. Nothing moved — and the very absence of reaction was the reaction. This was a face that had already carried the weight of this possibility for weeks and found no relief in having it confirmed.' This routes the telling through Lirien's observational specialty (reading faces) and avoids labeling the emotion directly."
+    },
+    {
+      "id": "LINE-010-009",
+      "severity": "minor",
+      "category": "show-dont-tell",
+      "location": "Line 246",
+      "problematicText": "Lirien's eyes grew heavy with a weight that was not fatigue but surrender",
+      "description": "'Surrender' is a direct emotion label applied to the physical sensation of growing sleepy. The word names an internal state rather than letting the reader infer it from behavior. The subsequent clause ('the specific gravity of allowing vigilance to soften') attempts to embody the concept but is itself abstract and analytical rather than physical. Lirien's sensory signature is visual/auditory — the passage should show what she sees dimming, what sounds she stops monitoring, rather than naming the internal experience philosophically.",
+      "recommendation": "Route through sensory detail: 'Lirien's eyes grew heavy. The fire's last embers blurred. She stopped tracking the shapes in the dark above the limestone walls, stopped sorting the stream's murmur from the wind. She let the watching go.' This shows the surrender through the cessation of her habitual visual monitoring without naming it."
+    },
+    {
+      "id": "LINE-010-010",
+      "severity": "minor",
+      "category": "prose",
+      "subcategory": "sentence-mechanics",
+      "location": "Line 212",
+      "problematicText": "'The chest,' Kaelith said, and her hand moved to her own sternum, unconsciously or not, and the firelight caught the Oathbrand's glow through her sleeve and for a moment the two lights — fire and brand — overlapped, and Lirien observed this convergence and did not assign it metaphorical significance and did not file it and did not do anything at all except *notice*, the way a person notices something beautiful without needing to know why.",
+      "description": "This is a single sentence of approximately 85 words joined by 7 'and' conjunctions (polysyndeton). While polysyndeton can create breathless momentum, this sentence attempts to carry four distinct actions (Kaelith's gesture, the light convergence, Lirien's observation, Lirien's non-classification) plus a final simile, resulting in a run-on that loses force through accumulation. The four-fold 'did not' repetition ('did not assign...did not file it and did not do anything at all') is the negation pattern at its most mechanical. The moment itself — Lirien simply noticing beauty — is the chapter's most delicate emotional beat and deserves prose that breathes rather than accumulates.",
+      "recommendation": "Break into 2-3 sentences. Let the image and the emotional beat each have their own space: '\"The chest,\" Kaelith said, and her hand moved to her own sternum — unconsciously or not. The firelight caught the Oathbrand's glow through her sleeve. For a moment the two lights overlapped, fire and brand, and Lirien noticed this the way a person notices something beautiful — without filing it, without assigning it significance, without needing to know why.' This preserves the polysyndeton in the final clause (where it serves the anti-classification theme) while giving the visual image room to land."
+    },
+    {
+      "id": "LINE-010-011",
+      "severity": "minor",
+      "category": "prose",
+      "subcategory": "awkward-phrasing",
+      "location": "Line 34",
+      "problematicText": "The statement landed with a precision Lirien had not intended to carry implication",
+      "description": "The syntax is unclear. 'Landed with a precision Lirien had not intended to carry implication' — what 'carries implication'? The statement or the precision? The sentence appears to mean: 'The statement carried an implication Lirien had not intended.' But the current phrasing routes through 'precision' as an intermediary, creating a grammatically awkward construction where 'precision' becomes the agent of 'carrying implication.'",
+      "recommendation": "Simplify: 'The statement carried implication Lirien had not intended' or 'The words landed with more precision than she had aimed for.'"
+    },
+    {
+      "id": "LINE-010-012",
+      "severity": "minor",
+      "category": "prose",
+      "subcategory": "word-error",
+      "location": "Line 70",
+      "problematicText": "listening for footsteps, for the specific timber of a door hinge that indicated approach rather than adjustment",
+      "description": "'Timber' (wood/lumber) should be 'timbre' (the characteristic quality of a sound). This is a homophone error. Lirien is listening for the specific sound quality of a hinge, not the wood of a door.",
+      "recommendation": "Change 'timber' to 'timbre.'"
+    },
+    {
+      "id": "LINE-010-013",
+      "severity": "minor",
+      "category": "repetition",
+      "subcategory": "word-level",
+      "location": "Line 38",
+      "problematicText": "processed Lirien's forged authorization with the perfunctory attention of someone who had processed ten thousand such documents",
+      "description": "'Processed' appears twice in the same sentence. While the repetition creates a slight echo effect (the attendant processes mechanically, having processed many), the word is not distinctive enough to earn deliberate repetition. It reads as an oversight.",
+      "recommendation": "Vary the second instance: '...with the perfunctory attention of someone who had handled ten thousand such documents' or '...who had seen ten thousand such documents and found none of them interesting.'"
+    },
+    {
+      "id": "LINE-010-014",
+      "severity": "suggestion",
+      "category": "voice",
+      "subcategory": "device-repetition",
+      "location": "Lines 50-52 and 84",
+      "problematicText": "'(Consistent with deliberate institutional restructuring. Not negligence — architecture.) She corrected herself. Not architecture. Architecture was Kaelith's word.' (50-52) vs. '(Architecture. Her word. Applied with structural precision. Consistent with — ) Lirien terminated the parenthetical.' (84)",
+      "description": "The 'catching herself using Kaelith's vocabulary' device appears twice within 34 lines. The first instance (lines 50-52) is excellent — it reveals Lirien's growing unconscious absorption of Kaelith's framework and her self-awareness about it. The second instance (line 84) repeats the same discovery with less impact. By the second occurrence, the device feels mechanical rather than revelatory. The reader already understands that Lirien borrows Kaelith's vocabulary.",
+      "recommendation": "Keep the first instance (50-52) intact — it's a strong character moment. For line 84, remove the explicit 'Her word' notation and let the parenthetical work on its own: '(Architecture. Structural precision. Consistent with —)' — the reader will understand the Kaelith connection without being told. Or cut the self-correction entirely and let the parenthetical simply trail off as a sign of the system destabilizing under the pressure of the archive infiltration."
+    },
+    {
+      "id": "LINE-010-015",
+      "severity": "suggestion",
+      "category": "repetition",
+      "subcategory": "emotional-evasion-device",
+      "location": "Lines 118, 186, 234, 236, 248",
+      "problematicText": "'Something colder. Something architectural' (118), 'was not any variable she had a name for' (186), 'something else was living instead' (236), 'something newer and more fragile' (236), 'become something that neither of them had a word for' (248)",
+      "description": "The 'something [abstract/unnamed]' construction — used to signal emotions Lirien cannot classify — appears 5 times. Each use works in isolation, but collectively they risk becoming a formula: encounter unclassifiable emotion → describe it as 'something.' The reader begins to anticipate the evasion rather than experiencing it freshly. The style guide notes that 'When [Lirien] cannot classify what she feels, the failure manifests as silence' — but these constructions are not silence; they are explicit narration of the inability to name, which is a different (and less powerful) effect.",
+      "recommendation": "Retain 2-3 of the strongest uses. Line 118 ('Something colder. Something architectural') is effective because it attempts classification and reaches toward Kaelith's domain. Line 248 ('something that neither of them had a word for') works as a chapter-closing statement. Cut or vary lines 186 and 236, which use the construction more generically. Line 186 can route through the body instead: the chest-shift described there should be physical enough to stand without the 'any variable she had a name for' gloss."
+    },
+    {
+      "id": "LINE-010-016",
+      "severity": "suggestion",
+      "category": "prose",
+      "subcategory": "paragraph-length",
+      "location": "Line 230",
+      "problematicText": "The fire burned lower. The stream continued its commentary. Kaelith spoke about the color of the water in the early morning — grey-green [...] the memory of every previous attempt in its foundations.",
+      "description": "This paragraph runs approximately 150 words as a single unbroken block. The content — Kaelith's coast narrative delivered through Lirien's listening — is strong and emotionally resonant. The tide pool story is a beautiful metaphor for Kaelith's character. However, the single-paragraph delivery creates a dense wall of text at precisely the chapter's most intimate moment. The style guide recommends 2-5 sentences per paragraph and warns against stacking 'more than two dense reflective paragraphs without dialogue, gesture, or external movement resetting the scene.'",
+      "recommendation": "Break the paragraph at 'She spoke about the fishermen's children...' to create two movements: (1) the sensory beauty of the coast (color of water, mist, morning light) and (2) the tide pool story (cruelty, building, rebuilding, permanence). This gives the reader a breath between the atmospheric description and the character-defining narrative. Consider inserting a brief Lirien gesture at the break — a shift in posture, the fire being tended — to keep the scene grounded in physical reality."
+    },
+    {
+      "id": "LINE-010-017",
+      "severity": "suggestion",
+      "category": "dialogue",
+      "subcategory": "naturalism",
+      "location": "Line 110",
+      "problematicText": "Lirien organized. 'Forty years of Dimming rites performed on a precise astronomical schedule. Each rite incrementally weakens the Pallor membrane at targeted locations. Monitoring stations that detected the thinning were systematically decommissioned. Reports documenting the damage were redacted. The authorization chain consolidates to a single office within the High Conclave.'",
+      "description": "This briefing runs five consecutive sentences without any action beat, interruption, or response from Kaelith. The dialogue standards specify 'No uninterrupted monologue should run longer than 6 spoken lines without an action beat, interruption, counter-question, or visible reaction.' While this passage is at 5 sentences (within the limit), the briefing format — every sentence a passive-voice summary of a finding — creates a clinical distance from what should be devastating news. The content itself is strong; the delivery could be more dramatized. Additionally, 'Lirien organized' as a dialogue beat is technically telling rather than showing — what does organizing look like in her body?",
+      "recommendation": "Consider inserting one brief Kaelith reaction within the briefing — a hand stilling, the Oathbrand flaring, a jaw muscle moving — to break the clinical delivery and remind the reader that this information is landing on a person. Alternatively, Lirien could deliver the first two sentences, Kaelith could ask a sharpening question ('How long?'), and Lirien could deliver the rest. This creates dialogue exchange rather than monologue delivery. For 'Lirien organized,' consider: 'Lirien arranged the facts in the order of their weight' or simply 'Lirien began at the foundation' — using vocabulary that reveals character."
+    }
+  ],
+  "chapterStrengths": [
+    {
+      "location": "Lines 88-90",
+      "description": "The incomplete proximity observation — 'a proximity that was operationally unnecessary and contextually unremarkable and physically — / She declined to complete the observation.' — is perfectly executed. The polysyndeton builds toward a physical admission that Lirien cannot make, and the abort is more revealing than any completion could be. This is show-don't-tell at its best."
+    },
+    {
+      "location": "Lines 126-131",
+      "description": "The briefing-protocols revelation. Kaelith's casual mention that Lirien recites protocols aloud — a habit Lirien didn't know she had — is a brilliant inversion of the spy dynamic. The observer has been observed. Lirien's physical reaction ('Mouth closed. Opened. Closed again.') is perfect MRU: stimulus → reflex → processing. The incomplete parenthetical '(Deviation from expected — )' is exquisite."
+    },
+    {
+      "location": "Lines 188-198",
+      "description": "The coast question and its aftermath. 'What were they like from the coast' arriving 'before its authorization' is the chapter's emotional fulcrum and it lands beautifully. The vertiginous sensation of breaking cover is the right metaphor for this moment. 'Because she wanted to know.' as a standalone line has the clean, hard impact the style guide calls for."
+    },
+    {
+      "location": "Lines 214-222",
+      "description": "The coast/stars micro-exchange. 'I did not ask about the coast.' / 'You asked about the stars from the coast. The coast is included.' — This is exceptional dialogue: naturalistic, funny, subtextual (the real invitation is *keep asking*), and distinctively Kaelith. Lirien's recognition of it as 'Dry, structural, load-bearing humor' is a strong beat."
+    },
+    {
+      "location": "Lines 240-244",
+      "description": "'I should maintain a watch rotation.' / 'You should.' / 'Neither of them moved.' — This three-line sequence is the chapter's emotional climax delivered with perfect restraint. The gap between what is said and what is done carries more romantic charge than any extended metaphor. This is subtext operating exactly as designed."
+    },
+    {
+      "location": "Lines 54-66",
+      "description": "The archive document discovery — the progression from omission to redaction to consolidation to Thalen Reyvas — is expertly paced. Each beat tightens the conspiracy. The prose is lean, the information delivery is embedded in Lirien's analytical process, and the landing ('The office resolved to a name.') has the clean impact of intelligence crystallizing."
+    }
+  ],
+  "invariantCompliance": {
+    "INV-017": {
+      "status": "VIOLATION — negation pattern exceeds 3/page threshold; water-against-stone metaphor repeats 4 times",
+      "details": "The 'not X but Y' syntactic pattern and 'the way' comparative construction each exceed per-page repetition limits. The specific metaphor of water eroding/finding cracks in stone appears 4 times. Total cliché count (1 clear, 1 borderline) is within the 2-per-chapter limit."
+    },
+    "INV-005": {
+      "status": "MINOR VIOLATIONS — 2 instances of emotion labeling",
+      "details": "Line 138 ('terrible resignation') and line 246 ('surrender') name emotions directly. Most of the chapter's emotional content is effectively shown through behavior, incomplete thoughts, and physical detail."
+    },
+    "INV-019": {
+      "status": "COMPLIANT",
+      "details": "Dialogue sounds natural throughout. Both characters speak distinctively. Contractions are appropriately absent from Lirien's speech (fae formality). Kaelith uses natural speech patterns. No artificial exposition-through-dialogue."
+    },
+    "INV-047": {
+      "status": "COMPLIANT",
+      "details": "Subtext operates throughout the strategic debate (trust/withholding beneath conspiracy discussion) and the coast conversation (emotional intimacy beneath cultural exchange). The watch-rotation exchange (240-244) is a masterclass in subtext — saying one thing while meaning its opposite."
+    },
+    "INV-035": {
+      "status": "COMPLIANT",
+      "details": "No half-page without active tension. Scene 1: surveillance + withholding. Scene 2: detection risk + conspiracy discovery. Scene 3a: strategic conflict + trust negotiation. Scene 3b: emotional vulnerability as tension. Even the coast narrative carries the tension of Lirien's classification system failing."
+    },
+    "INV-003": {
+      "status": "COMPLIANT",
+      "details": "Lirien's voice is distinctly rendered from the opening paragraph. Her observational-to-analytical internal cadence, parenthetical assessments, and visual dominance are immediately identifiable. She is clearly not Kaelith."
+    },
+    "INV-073": {
+      "status": "MINOR CONCERNS — closing paragraphs trend purple",
+      "details": "Lines 246-252 stack metaphorical closings and abstract philosophical constructions that push toward the overwrought end of the spectrum. The rest of the chapter maintains the 'lush but not purple' target effectively."
+    }
+  },
+  "mruAudit": {
+    "sampleCount": 5,
+    "samples": [
+      {
+        "location": "Lines 54-61",
+        "moment": "Discovery of redacted report",
+        "pattern": "Stimulus (text resolves under angled light) → Emotion ('cold clarity behind her sternum') → Reflex (breathing unchanged, hands steady — trained suppression AS reflex) → Rational action ('She worked faster')",
+        "verdict": "CORRECT — trained suppression of reflex is characterization, not MRU violation"
+      },
+      {
+        "location": "Lines 74-81",
+        "moment": "Kaelith warns of approaching officer",
+        "pattern": "Stimulus ('Company') → Rational action ('Lirien calculated') → Speech ('Two minutes')",
+        "verdict": "ACCEPTABLE — operative training bypasses emotional/reflex stages; the absence of emotion IS the characterization"
+      },
+      {
+        "location": "Lines 124-132",
+        "moment": "Kaelith reveals she knows about briefing protocols",
+        "pattern": "Stimulus (Kaelith's words) → Reflex ('Mouth closed. Opened. Closed again.') → Emotion (realization settling 'like cold water') → Rational action ('redirecting. Containment.')",
+        "verdict": "CORRECT — excellent MRU with physical reflex preceding processing"
+      },
+      {
+        "location": "Lines 188-198",
+        "moment": "The coast question",
+        "pattern": "Speech ('What were they like from the coast') → Stimulus recognition (hearing her own words) → Emotion ('vertiginous sensation') → Processing ('no operational value') → Realization ('Because she wanted to know')",
+        "verdict": "CORRECT — speech preceding emotion is the narrative point (spoke before authorization); this is a deliberate and effective MRU violation"
+      },
+      {
+        "location": "Lines 240-244",
+        "moment": "Watch rotation exchange",
+        "pattern": "Speech ('I should maintain a watch rotation') → Response ('You should') → Inaction ('Neither of them moved')",
+        "verdict": "CORRECT — inaction as climax; the MRU terminates at refusal-to-act, which carries the emotional weight"
+      }
+    ],
+    "overallVerdict": "MRU structure is consistently correct throughout the chapter, with deliberate violations that serve characterization. No unintentional reversals detected."
+  }
+}

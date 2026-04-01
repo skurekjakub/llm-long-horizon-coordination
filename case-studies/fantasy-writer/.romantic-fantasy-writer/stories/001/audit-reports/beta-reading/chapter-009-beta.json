@@ -1,0 +1,65 @@
+{
+  "chapter": 9,
+  "engagementScore": 9,
+  "emotionalImpact": "high",
+  "pacingAssessment": "well-paced",
+  "clarityScore": 8,
+  "findings": [
+    {
+      "id": "BETA-009-001",
+      "type": "pacing",
+      "severity": "major",
+      "description": "The chapter contains three distinct set pieces — Ythara exposure/dissociation, waystation recovery, combat encounter — each of which would dominate a normal chapter. Together they create tonal whiplash. The Ythara sequence is cosmic horror. The recovery is quiet intimacy. The combat is action-thriller. The transitions are clean (scene breaks) but the emotional register shifts so dramatically that a reader barely processes one mode before being pulled into the next. The Ythara exposure, which is the chapter's most original and powerful sequence, gets compressed by the combat that follows it.",
+      "location": "Full chapter — three scenes, three distinct modes",
+      "readerImpact": "Significant. The Ythara exposure is the kind of scene readers will want to sit with — it's existentially terrifying and the grounding scene is achingly intimate. But the combat arrives 800 words later, demanding a completely different kind of engagement. Some readers will feel the emotional whiplash as excitement; others will feel the Ythara sequence was cut short before they could fully process it."
+    },
+    {
+      "id": "BETA-009-002",
+      "type": "confusion",
+      "severity": "minor",
+      "description": "The Ythara dissociation sequence is deliberately disorienting, which is effective — but the mechanics of what's happening blur in places. The birch tree multiplying, the hands becoming 'not her hands,' the name slipping — these work individually. But the sequence doesn't clearly establish whether this is a perceptual distortion (Kaelith seeing things wrong), an ontological event (reality actually fracturing), or a psychological breakdown (dissociative episode). The grounding scene treats it as ontological ('the version who never went to Calwrath and the version who died there'), but the initial description reads more like hallucination. The inconsistency is minor but creates a moment of 'wait, what's actually happening?'",
+      "location": "Scene 1, birch tree sequence through identity dissolution (lines ~94-140)",
+      "readerImpact": "Moderate. Readers will understand the emotional stakes (Kaelith is losing herself, Lirien saves her) even if the metaphysics are fuzzy. But for a worldbuilding-attentive reader, the question 'is this happening to reality or to her perception?' matters, and the chapter doesn't commit to an answer."
+    },
+    {
+      "id": "BETA-009-003",
+      "type": "romance-gap",
+      "severity": "observation",
+      "description": "The grounding scene — Lirien's hand on Kaelith's wrist, reciting facts — is the most romantic moment in the book so far. But the chapter processes it almost entirely through tactical language afterward ('external grounding through physical contact and factual anchoring'). Kaelith's acknowledgment ('Thank you for keeping me here') is perfect, as is Lirien's response ('You would have done the same'). What's missing is a beat where the romantic dimension is felt rather than analyzed. The chapter tells us 'the heat in her palms had nothing to do with the Oathbrand' but doesn't give us the specific physical sensation the way chapter 7 did with the wound-tending.",
+      "location": "Scene 2, waystation recovery, post-grounding",
+      "readerImpact": "Low-to-moderate. The scene works on an existential level (she kept me real) which is arguably deeper than physical attraction. But romance readers may miss the body-heat, the awareness of proximity, the involuntary physical response that made chapter 7's attraction scenes so visceral. The emotional processing is cerebral where the moment calls for embodiment."
+    },
+    {
+      "id": "BETA-009-004",
+      "type": "plot-hole",
+      "severity": "minor",
+      "description": "Three Conclave agents tracked Kaelith and Lirien from Veldrane to the waystation in Ythara-damaged territory. But chapter 9 has just established that this territory causes reality distortion, identity dissolution, and perceptual chaos. How did three agents navigate the Wending without their own anchor/grounding system? Either the agents have countermeasures (which should be noted and possibly looted), or the Wending's effects are inconsistent. The chapter doesn't address this.",
+      "location": "Scene 3, agent encounter",
+      "readerImpact": "Moderate. An action-focused reader won't pause to wonder. A worldbuilding-attentive reader will immediately ask: 'If the Wending nearly destroyed Kaelith, how are these agents fine?' The question has reasonable answers (ward-protection, training, shorter exposure) but none are offered."
+    },
+    {
+      "id": "BETA-009-005",
+      "type": "pacing",
+      "severity": "minor",
+      "description": "The combat scene, while technically well-executed, feels like it belongs in a different chapter. After the existential horror and intimate recovery, the fight sequence introduces plot mechanics (Conclave pursuit, sealed documents, alternate route) that shift the chapter's center of gravity from emotional to logistical. The documents subplot — Lirien withholding information — is important for chapter 10 but its introduction here fragmentizes the chapter's emotional unity.",
+      "location": "Scene 3, combat through document discovery",
+      "readerImpact": "Moderate. The fight is competent and the coordination between Kaelith and Lirien (unstaged, instinctive) reinforces their bond. But the document reveal and route-planning feel like chapter 10's opening moved backward. The chapter's strongest material (Ythara, grounding, mutual dependence) is diluted by its weakest (plot logistics)."
+    },
+    {
+      "id": "BETA-009-006",
+      "type": "engagement-drop",
+      "severity": "observation",
+      "description": "Kaelith's internal decision not to press Lirien about the withheld documents ('Trust was still under construction. She would not tear down the scaffolding to test whether the foundation held.') is well-reasoned but risks frustrating readers who just watched these two women nearly lose each other to Ythara. The reader knows Lirien is hiding something. The reader knows Kaelith suspects. The mutual non-acknowledgment makes strategic sense but could read as artificial restraint after the chapter's intense intimacy.",
+      "location": "Scene 3, final paragraphs",
+      "readerImpact": "Low. Most readers will accept this as slow-burn tension. But a reader who processes trust and honesty as the core romance currency may feel this beat undermines what the Ythara scene built."
+    }
+  ],
+  "strengths": [
+    "The Ythara dissociation sequence is the best scene in these five chapters. The progression from environmental wrongness (shadows falling wrong, stones reflecting the wrong face) to identity dissolution (her hands not being her hands, her name slipping) is genuinely terrifying in a way that transcends fantasy genre conventions. This isn't a monster or a spell — it's the dissolution of selfhood, and the writing conveys it through sensory specifics rather than abstract description.",
+    "The grounding scene redefines the romance. 'You are Kaelith Maren. You are standing on the Thornway.' — Lirien reciting facts to hold Kaelith in reality is the most profound expression of intimacy in the book so far. It says: your existence matters to me specifically, not generically. I know your name and where you are and I will hold you to the facts of yourself. This is love expressed as ontological commitment, and it's breathtaking.",
+    "The chapter earns its central thesis — 'the journey through the Wending required two; one to fragment, one to hold' — through experience rather than assertion. By the time Kaelith articulates this, the reader has lived through it. The stakes are not 'we might die' but 'I might stop being me,' which is more terrifying and more intimate. The mutual dependence is existential, not tactical, and that escalation from chapters 7-8 is perfectly calibrated.",
+    "The instinctive combat coordination — no signal, no plan, Lirien goes through the window at exactly the right moment — demonstrates the bond through action rather than interiority. After 1,500 words of emotional processing, the fight scene lets the reader see the connection instead of hearing about it. The unspoken synchronization is more convincing than any declaration would be.",
+    "Kaelith's post-exposure reflection ('She had never learned how to need someone without calculating the cost') is character-defining. It names the central tension: not whether she'll fall for Lirien, but whether she can survive the vulnerability of needing someone. This reframes the romance from 'will they get together' to 'can Kaelith tolerate being known,' which is a far more compelling question."
+  ],
+  "verdict": "strong"
+}

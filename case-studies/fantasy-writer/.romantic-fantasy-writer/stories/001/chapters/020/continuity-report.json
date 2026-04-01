@@ -1,0 +1,522 @@
+{
+  "chapter": 20,
+  "title": "Contract Fulfilled in Letter, Broken in Spirit",
+  "pov": "Lirien Dael (CHAR-002)",
+  "assessmentDate": "2025-07-18",
+  "overallAssessment": "PASS — with corrections applied",
+  "totalChecksPerformed": 47,
+  "issuesFound": {
+    "critical": 1,
+    "major": 1,
+    "minor": 3,
+    "informational": 3
+  },
+  "correctionsApplied": 6,
+  "correctionsNeeded": 0,
+
+  "categories": {
+
+    "1_contractLoopholeMechanics": {
+      "status": "PASS",
+      "checksPerformed": 12,
+      "issuesFound": 1,
+      "details": [
+        {
+          "check": "Contract wording consistency",
+          "result": "PASS",
+          "evidence": "Line 112: 'The contract said *cessation of heartbeat*' — matches magic-system.json faeBindingContracts.liriensKillContract: 'confirmed by cessation of heartbeat.' Line 30: Lirien explains binding will register cessation as irreversible. Consistent with FS-012 plant (Ch14): 'Cessation of heartbeat. Not death. Not permanent termination.'"
+        },
+        {
+          "check": "Loophole discovery timeline",
+          "result": "PASS",
+          "evidence": "FACT-008: Loophole discovered by Lirien Ch14. Kaelith learned Ch16 (revelation). Consented Ch19. FS-012 tracks the entire chain. Draft references 'the calculations' and preparation without re-discovering anything — consistent with prior knowledge."
+        },
+        {
+          "check": "Binding dissolution follows established rules",
+          "result": "PASS",
+          "evidence": "MAG-005 states bindings interpret loopholes literally. The magic system's loopholeExploitation section explicitly describes this exact mechanism. Lines 100-114: magic interrupts cardiac conduction, binding registers cessation, architecture resists then collapses. The resistance (3 seconds) before dissolution is consistent with binding trying to resist technical compliance — this is plausible behavior for a system designed for actual death."
+        },
+        {
+          "check": "No resurrection violation (FU-001)",
+          "result": "PASS",
+          "evidence": "Magic-system.json loopholeExploitation: 'This is not resurrection (FU-001) because Kaelith does not fully die — she is in a liminal state.' The 8-second window is within the margin described. Lirien restarts the heart through the bond channel using established fae precision magic — she is preventing the finish, not reversing it. Lines 134-150: cardiac tissue is 'waiting in the gap between one state and the next' — explicitly liminal, not finished."
+        },
+        {
+          "check": "Resonance bond provides monitoring precision",
+          "result": "PASS",
+          "evidence": "Bond formed Ch11 (Oathbrand removal). Lines 86-92: bond amplifies heartbeat sensation, enables Lirien to map cardiac rhythm. Line 30: Lirien explains bond will transmit heartbeat as baseline pulse. This is consistent with MAG-007 (bonds transmit emotional state and physical sensations) and the established bond behavior since Ch11."
+        },
+        {
+          "check": "No new magical abilities introduced (INV-009)",
+          "result": "PASS",
+          "evidence": "All magic used is previously established: ward-stone placement (fae operative skill), resonance bond monitoring (since Ch11), precision fae magic through contact (established in Oathbrand removal Ch11, 3 hours sustained contact), cardiac intervention through bond channel (described in magic-system.json loopholeExploitation). No deus ex machina."
+        },
+        {
+          "check": "4-7 second window for binding registration",
+          "result": "PASS",
+          "evidence": "Line 30: '4 to 7 seconds.' Line 114: binding dissolves at 4 seconds. Line 126: total silence lasts ~8 seconds (4 seconds for binding + additional seconds for resuscitation). The 8-second total is within the 12-second brain damage threshold stated at line 34."
+        },
+        {
+          "check": "Resuscitation window (12 seconds)",
+          "result": "PASS",
+          "evidence": "Line 34: '12 seconds before oxygen deprivation begins to cause damage.' Line 126: count reaches 7 seconds before she pours everything into revival. Lines 148-154: heart restarts. Total cessation ~8 seconds, well within the 12-second window."
+        },
+        {
+          "check": "Blood-sealed contract dissolution description",
+          "result": "PASS",
+          "evidence": "Lines 104, 116, 176: binding described as 'blood-sealed,' 'written itself into her body,' 'threading its architecture through her nervous system,' and dissolution as 'unwound from her bones, her blood, her will.' Matches magic-system.json: 'Lirien consumed a preparation made from her own blood mixed with Kaelith's... The binding is now part of Lirien's physiology.'"
+        },
+        {
+          "check": "Binding vs. bond distinction maintained",
+          "result": "PASS",
+          "evidence": "Lines 174-184: binding dissolves (spine pressure gone, directional pull gone, emotional interference gone) but bond persists (present, vivid, sharper without interference). Explicitly distinguished: 'the dissolution had burned away the binding's interference, and the resonance between them was cleaner now.' This is correctly handled — the binding was the contract, the bond was formed independently in Ch11."
+        },
+        {
+          "check": "Defected Architect intelligence referenced appropriately",
+          "result": "PASS",
+          "evidence": "Line 54: 'binding architecture notes she had transcribed from the defected Architect's intelligence.' FACT-018 confirms Lirien learned about the defected Architect in Ch18. Kaelith learned about it in Ch19 (knowledgeStateUpdates). The notes are Lirien's preparation materials — no knowledge leak."
+        },
+        {
+          "check": "Forty-three threads in dissolution",
+          "result": "CORRECTED",
+          "severity": "minor",
+          "issue": "Line 116 originally read 'forty-three threads of enforcement pulling free.' The current kill contract is Lirien's 44th (established Ch2: 'Forty-three contracts... This would be forty-four'). The number forty-three is the count of PREVIOUS contracts, not threads in this one. Having exactly forty-three threads in this single binding's architecture creates false resonance with the previous contract count and could confuse attentive readers.",
+          "correction": "Changed to 'threads of enforcement pulling free' — removed the specific number to avoid confusion with the established forty-three previous contracts motif.",
+          "invariant": "INV-002 (internal consistency)"
+        }
+      ]
+    },
+
+    "2_bondMechanics": {
+      "status": "PASS — with informational notes",
+      "checksPerformed": 8,
+      "issuesFound": 2,
+      "details": [
+        {
+          "check": "Bond transmits emotional quality, not factual content",
+          "result": "PASS — with notes",
+          "evidence": "The draft generally handles this well. Line 50: bond carries 'the current of what Kaelith was not saying' — emotional quality, not words. Line 66: Lirien feels Kaelith's 'determination... steady, deep' — emotional quality. Line 162: 'fear and relief and pain and a fierce, stunned gratitude' — emotional quality. Line 184: 'relief, exhaustion, a fierce and fragile tenderness' — emotional quality.",
+          "informationalNotes": [
+            {
+              "location": "Line 78",
+              "text": "'Through the bond, she let the answer pass without words' — phrasing suggests intentional information transfer. The italicized content ('I will feel you die...') reads as Lirien's emotional state translated for the reader, but 'let the answer pass' implies deliberate content transmission. Could be tightened to 'Through the bond, the answer was in everything she felt' to make the emotional-quality-not-content distinction clearer.",
+              "severity": "informational",
+              "recommendation": "Consider rewording for line editors. Not a blocking issue — the emotional quality IS the answer, but the phrasing is ambiguous."
+            },
+            {
+              "location": "Line 218",
+              "text": "'Through the bond, Lirien felt the question before it was spoken: *Are you staying?*' — the bond should not transmit questions. However, Kaelith's emotional state (hope, uncertainty, vulnerability about whether Lirien will remain) would naturally be interpreted as this question. Functionally correct, phrasing pushes boundary.",
+              "severity": "informational",
+              "recommendation": "Consider 'Through the bond, Lirien felt the question behind the emotion before it was spoken' for clarity."
+            }
+          ]
+        },
+        {
+          "check": "Bond silence during cardiac arrest",
+          "result": "PASS — excellent",
+          "evidence": "Lines 120-124: 'Not walled. Not muted. Not the guarded quiet of someone choosing not to share. Empty.' This is precisely correct. The bond transmits living emotional state — death = absence, not cold or walled. The distinction between presence-modes (walled, muted, guarded) and absence (empty) is exactly right and consistent with the task specification and Ch17 bond-wall behavior."
+        },
+        {
+          "check": "Bond formed during Oathbrand removal (Ch11)",
+          "result": "PASS",
+          "evidence": "Line 60: 'The Oathbrand removal. She had put her hands on Kaelith's collarbone and dissolved a ward that was killing her. Three hours of sustained contact.' References the Ch11 event accurately. Line 144: 'the pattern of Kaelith's heartbeat that she had carried in her own chest for weeks, the rhythm she knew better than her own because she had spent every moment since the Oathbrand removal listening to it.' Correctly identifies Ch11 as the bond's origin."
+        },
+        {
+          "check": "Bond cannot fabricate emotion",
+          "result": "PASS",
+          "evidence": "Lines 186-188: Lirien tests whether feelings survive binding removal with 'clinical thoroughness' and finds them 'undiminished.' This is consistent with the Ch17-18 established principle that the bond cannot fabricate emotion. The feelings' persistence after binding removal provides the empirical proof that they were always real — exactly the payoff for the 'are the feelings real or contract-manufactured?' question."
+        },
+        {
+          "check": "Bond persists after binding dissolves",
+          "result": "PASS",
+          "evidence": "Line 184: 'The bond: present. Vivid. If anything, sharper than before — the dissolution had burned away the binding's interference, and the resonance between them was cleaner now, a signal without static.' Bond persists because it was formed independently (Ch11, shared vulnerability during Oathbrand removal per MAG-007). Binding dissolution only removes interference."
+        },
+        {
+          "check": "Bond resolution increases with proximity",
+          "result": "PASS",
+          "evidence": "Line 86: 'The resonance bond amplified the sensation until the rhythm was twinned — Lirien's own pulse aligning to the cadence of the heart she was about to stop.' Physical contact = maximum proximity = maximum bond resolution. Consistent with established rules."
+        },
+        {
+          "check": "Bond walling vs. openness",
+          "result": "PASS",
+          "evidence": "Line 66: 'The bond was open between them — full, carrying everything, neither of them walling anything off.' Consistent with Ch19 state: bond opened fully for the first time since Ch16 black moment. No regression."
+        },
+        {
+          "check": "Bond re-flood after resuscitation",
+          "result": "PASS",
+          "evidence": "Lines 152-154: 'The bond flooded back... Kaelith's presence roared back into the bond with an intensity that buckled Lirien's knees.' The overwhelming intensity is consistent with the bond going from total absence to full presence — the contrast would be overwhelming after 8 seconds of void."
+        }
+      ]
+    },
+
+    "3_characterPhysicalStates": {
+      "status": "PASS — with corrections applied",
+      "checksPerformed": 7,
+      "issuesFound": 2,
+      "details": [
+        {
+          "check": "Kaelith Pallor progression",
+          "result": "CORRECTED",
+          "severity": "major",
+          "issue": "Line 18 originally read 'The pallor had climbed past her wrist' — this UNDERSTATES the progression. Ch19 (line 347): 'The cold past her elbow, tracking the bone, the silver visible in the tendons of her forearm.' Ch19 continuity tracker: 'silver past elbow, three fingers frozen left hand, cold tracking bone along ulna.' Saying the silver 'climbed past her wrist' implies the silver is at forearm level when it should be past the elbow. Additionally, 'pallor' was lowercase.",
+          "correction": "Changed to 'The Pallor had climbed past her elbow and was tracking bone' — corrects both the extent of progression and capitalization. Ulna detail preserved (ulna is the forearm bone from elbow to wrist, consistent with silver being visible on forearm). Three frozen fingers preserved.",
+          "invariant": "INV-002, INV-011"
+        },
+        {
+          "check": "Kaelith three frozen fingers",
+          "result": "PASS",
+          "evidence": "Lines 18, 70, 80, 160, 200: consistently reference three frozen fingers on left hand, right hand functional. Ch19 state: 'three fingers frozen left hand.' Line 80: 'her hand — the right one, the one that still worked.' Line 200: 'Kaelith's hand, the right one — the one that still worked.' Perfectly consistent."
+        },
+        {
+          "check": "Silver on tendons",
+          "result": "CORRECTED",
+          "severity": "minor",
+          "issue": "Line 70 originally read 'Silver traced the tendons of her wrist' — but Ch19 says 'silver visible in the tendons of her forearm.' By this point the silver is past the elbow, so describing it on wrist tendons understates. Also 'pallor' was lowercase.",
+          "correction": "Changed to 'Silver traced the tendons of her forearm' and 'the Pallor on her skin' (capitalized). Consistent with Ch19 description."
+        },
+        {
+          "check": "Kaelith post-cardiac-arrest state",
+          "result": "PASS",
+          "evidence": "Lines 156-160: gasp, ragged inhalation, eyes unfocused then sharp, commander reassessment. Line 192: voice 'rough — post-cardiac-arrest rough.' Line 210: voice returns to normal register. Physiologically plausible recovery sequence for 8-second cardiac arrest."
+        },
+        {
+          "check": "Bruised ribs from Ch14",
+          "result": "INFORMATIONAL — not referenced",
+          "note": "Kaelith's bruised ribs (Ch14, aggravated Ch17 vorakh fight) are not mentioned in Ch20. This is acceptable because: (a) this is Lirien's POV, not Kaelith's; (b) the ribs would be healing by Day 31-32 (two weeks since Ch14); (c) the Pallor/cardiac arrest are the dominant physical concerns. Not a continuity error, but downstream editors could add a brief rib reference during Kaelith's physical description for thoroughness."
+        },
+        {
+          "check": "Lirien physical state post-dissolution",
+          "result": "PASS",
+          "evidence": "Lines 168-178: exhaustion, kneeling on cold floor, gasping, staggering during dissolution cascade. Consistent with the physical toll of (a) binding dissolution cascade and (b) intensive magical effort during resuscitation. No injuries or conditions mentioned that weren't established."
+        },
+        {
+          "check": "Lirien cipher destroyed (Ch18)",
+          "result": "PASS",
+          "evidence": "Line 178: 'the cipher she had destroyed at the safe house — the threadbone cracking at its designed stress point.' Correctly references Ch18 cipher destruction. 'Safe house' matches Ch18 location. 'Threadbone' and 'designed stress point' are consistent with Ch18 description."
+        }
+      ]
+    },
+
+    "4_characterKnowledgeStates": {
+      "status": "PASS — with critical correction applied",
+      "checksPerformed": 10,
+      "issuesFound": 1,
+      "details": [
+        {
+          "check": "Thalen name usage (INV-056)",
+          "result": "CORRECTED — CRITICAL",
+          "severity": "critical",
+          "issue": "Line 210: Kaelith originally said 'Thalen is still operating.' Per FACT-007, Thalen's identity as the Pallor saboteur is UNKNOWN to both CHAR-001 and CHAR-002. Ch19 knowledge state: 'High Conclave member suspected of Pallor sabotage (identity not confirmed to leads).' Ch19 draft line 305: Lirien explicitly states 'We do not have a confirmed identity.' Ch19 draft line 307: Kaelith files the saboteur as unnamed. Zero references to 'Thalen' in Ch19 draft. This was a definitive knowledge leak — Kaelith cannot name someone whose identity she does not know.",
+          "correction": "Changed 'Thalen is still operating' to 'The saboteur is still operating.' Preserves Kaelith's awareness of the conspiracy without leaking the name she cannot know.",
+          "invariant": "INV-056 (Information Asymmetry)"
+        },
+        {
+          "check": "Both know about contract loophole",
+          "result": "PASS",
+          "evidence": "FACT-008: Lirien discovered Ch14, Kaelith learned Ch16, consented Ch19. Draft shows both operating with full shared knowledge of the plan. No surprise or confusion about the mechanism. Kaelith gives informed consent (line 50)."
+        },
+        {
+          "check": "Both consented to plan in Ch19",
+          "result": "PASS",
+          "evidence": "Line 46: 'You have it. You have had it since Rivenmarch.' Line 50: 'I consent.' Explicit callback to Ch19 consent. The additional consent request in the ritual space (lines 44-50) adds proper ceremony without contradicting prior consent."
+        },
+        {
+          "check": "Kaelith knows about Ashborne veterans (learned Ch19)",
+          "result": "PASS",
+          "evidence": "Lines 14, 26: Ashborne relay points and veterans referenced without surprise. Kaelith arrived at Rivenmarch in Ch19 and met the veterans directly. No knowledge leak — both characters use the Ashborne infrastructure naturally."
+        },
+        {
+          "check": "Lirien knows about god-seal dissolution path (learned Ch18)",
+          "result": "PASS",
+          "evidence": "Line 26: references god-seal dissolution at the Quietus as the primary plan. Line 54: binding architecture notes from defected Architect. Consistent with Ch18 intelligence briefing. Kaelith also knows (shared in Ch19)."
+        },
+        {
+          "check": "Seep tacit support — Lirien knows, Kaelith does not (FACT-012)",
+          "result": "PASS",
+          "evidence": "Line 180: Lirien's INTERNAL thought: 'the Seep had known about the wording... Tacit support. Strategic flexibility over rigid compliance. She filed it. Later.' This is Lirien's private realization, not shared with Kaelith. FACT-012 says Kaelith is in unknownBy list. No dialogue shares this with Kaelith. Knowledge asymmetry correctly maintained."
+        },
+        {
+          "check": "Kaelith Warden-adjacent capacity reference",
+          "result": "PASS",
+          "evidence": "Line 206: 'the god-seal waiting in the terrain Kaelith's body remembered even if her mind did not.' This references kinetic memory (FACT-005, known to both since Ch4-5) without invoking the Warden lineage through Ossya Thenndal (FACT-006, unknown to both leads). Correctly bounded."
+        },
+        {
+          "check": "Pallor sabotage knowledge (FACT-004)",
+          "result": "PASS",
+          "evidence": "Both leads know the Pallor is being deliberately poisoned (learned Ch4). The 'saboteur' reference on line 210 is consistent. They know the fact but not the specific perpetrator's identity (Thalen — FACT-007, corrected above)."
+        },
+        {
+          "check": "Forty-three contracts as prior operations",
+          "result": "PASS",
+          "evidence": "Line 22: 'Forty-three contracts, and every one required a controlled environment.' This matches Ch2 (first establishment) and Ch13, Ch14, Ch16, Ch18 references. The current contract is the forty-fourth — Lirien's count is consistently forty-three previous completions."
+        },
+        {
+          "check": "Defected Architect intelligence — no overreach",
+          "result": "PASS",
+          "evidence": "Line 54: Lirien references notes from defected Architect without adding information beyond what was established in Ch18. Used for preparation, not as source of new revelation."
+        }
+      ]
+    },
+
+    "5_locationAndTimeline": {
+      "status": "PASS",
+      "checksPerformed": 5,
+      "issuesFound": 0,
+      "details": [
+        {
+          "check": "Location consistent with Ch19 ending",
+          "result": "PASS",
+          "evidence": "Ch19 ended at Rivenmarch freeholder settlement. Ch20 takes place at forward shelter between Rivenmarch and the Quietus (Ashborne relay network). Line 24: 'a pocket of controlled stillness in the vast uncertain terrain between Rivenmarch and the Quietus.' Line 26: 'Three days of walking, of Ashborne relay points handing them forward.' Consistent with Ch19's three-day travel plan."
+        },
+        {
+          "check": "Timeline progression (Day ~28-29 → ~31-32)",
+          "result": "PASS",
+          "evidence": "Ch19: Day ~28-29. Ch20 line 26: 'Three days since the plan.' Three days of travel places this at Day ~31-32, matching the continuity tracker. The three-day interval is consistent with the Ashborne relay plan established in Ch19."
+        },
+        {
+          "check": "Fallback becoming primary — justified",
+          "result": "PASS",
+          "evidence": "Line 26: 'the fallback had quietly become the primary — the god-seal dissolution at the Quietus still waited, but the binding could not. Lirien had felt it tightening over the past forty-eight hours, the enforcement architecture sensing the approach of its own fulfillment window.' The binding's enforcement escalation provides narrative justification for executing the fallback before reaching the Quietus. The Quietus (god-seal) remains the mission objective."
+        },
+        {
+          "check": "Forward shelter characterization",
+          "result": "PASS",
+          "evidence": "Line 14: hearth system built by Ashborne veterans. The shelter is part of the relay network. One room, packed earth floor, stone walls, narrow windows. Consistent with a military forward position in the terrain between Rivenmarch and the Quietus."
+        },
+        {
+          "check": "Quietus still three days away post-procedure",
+          "result": "PASS",
+          "evidence": "Line 210: 'Three days.' This means they are still en route — the forward shelter is at a stopping point, not at the Quietus. Consistent with the chapter taking place between Rivenmarch and the Quietus."
+        }
+      ]
+    },
+
+    "6_namingConsistency": {
+      "status": "PASS — with corrections applied",
+      "checksPerformed": 15,
+      "issuesFound": 4,
+      "details": [
+        {
+          "check": "Kaelith Maren",
+          "result": "PASS",
+          "evidence": "All references use 'Kaelith' consistently. No misspellings."
+        },
+        {
+          "check": "Lirien Dael",
+          "result": "PASS",
+          "evidence": "Line 4: 'Lirien Dael (CHAR-002).' All references use 'Lirien' consistently."
+        },
+        {
+          "check": "Cerith Court",
+          "result": "PASS",
+          "evidence": "Lines 20, 30, 88, 132: 'Cerith Court.' Correctly capitalized and spelled."
+        },
+        {
+          "check": "The Pallor (capital P)",
+          "result": "CORRECTED",
+          "severity": "minor",
+          "issue": "Lines 18, 70, 86, 92 originally used lowercase 'pallor' when referring to the Pallor's physical manifestation (silver spread on Kaelith's skin). Naming convention requires capital P for all references to the Pallor, whether the membrane itself or its effects.",
+          "correction": "Capitalized all four instances to 'Pallor.' Lines 12, 14, 206 already used correct capitalization.",
+          "invariant": "INV-002 (naming consistency)"
+        },
+        {
+          "check": "The Quietus (capital Q)",
+          "result": "PASS",
+          "evidence": "Lines 24, 28, 206, 210: 'Quietus.' Correctly capitalized."
+        },
+        {
+          "check": "The Seep (capital S)",
+          "result": "PASS",
+          "evidence": "Lines 88, 132, 178, 180: 'Seep.' Correctly capitalized."
+        },
+        {
+          "check": "Oathbrand (capital O, one word)",
+          "result": "PASS",
+          "evidence": "Lines 60, 144: 'Oathbrand.' Correctly capitalized and spelled as one word."
+        },
+        {
+          "check": "Thalen",
+          "result": "CORRECTED (removed — knowledge violation)",
+          "note": "See Category 4, Issue 1. Name removed from Kaelith's dialogue."
+        },
+        {
+          "check": "Rivenmarch",
+          "result": "PASS",
+          "evidence": "Lines 24, 46: 'Rivenmarch.' Correctly spelled."
+        },
+        {
+          "check": "Ashborne (capital A)",
+          "result": "PASS",
+          "evidence": "Lines 14, 26, 54: 'Ashborne.' Correctly capitalized."
+        },
+        {
+          "check": "Resonance bond (lowercase 'resonance bond')",
+          "result": "PASS",
+          "evidence": "Line 86: 'resonance bond.' Correctly lowercase as established in naming registry."
+        },
+        {
+          "check": "Ward-lattice",
+          "result": "PASS",
+          "evidence": "Lines 24, 30: 'ward-lattice.' Consistent hyphenation."
+        },
+        {
+          "check": "Ward-stones",
+          "result": "PASS",
+          "evidence": "Lines 20, 170, 202, 208: 'ward-stones.' Consistent hyphenation."
+        },
+        {
+          "check": "Lessened/Lessening (not referenced)",
+          "result": "N/A — term not used in this chapter. Appropriate since binding was fulfilled through loophole, not broken."
+        },
+        {
+          "check": "Vorakh (not referenced)",
+          "result": "N/A — creature not present in this chapter. Appropriate."
+        }
+      ]
+    },
+
+    "7_foreshadowingService": {
+      "status": "PASS",
+      "checksPerformed": 5,
+      "issuesFound": 0,
+      "details": [
+        {
+          "check": "FS-008: Oathbrand removal as proof of what Lirien's hands can do",
+          "result": "SERVICED",
+          "evidence": "Line 60: 'The Oathbrand removal. She held that thought like a torch against the dark. She had put her hands on Kaelith's collarbone and dissolved a ward that was killing her. Three hours of sustained contact, her magic threading through tissue and bone... The same hands that would stop a heart now had already proven they could save one.' Line 62: 'I have done precise, intimate magic through sustained contact with this body. I know the terrain. I know the resonance. I have the skill.' — Direct payoff of FS-008's additional payoff registered for Ch20.",
+          "foreshadowingLedgerMatch": "FS-008 additionalPayoffs[1]: 'Oathbrand removal directly referenced as proof of what Lirien's hands can do — she had removed a ward that was killing Kaelith, so she can restart a stopped heart.' ✓"
+        },
+        {
+          "check": "FS-011: Seep's true agenda — tacit support for loophole",
+          "result": "SERVICED",
+          "evidence": "Line 180: 'the Seep had known about the wording. The intelligence packets had always contained the contract's exact language, the phrasing that could be parsed as state rather than duration. Tacit support. Strategic flexibility over rigid compliance.' — Direct payoff of FS-011.",
+          "foreshadowingLedgerMatch": "FS-011 payoff chapter: 20. Appearances[0]: 'Seep tacit support for loophole acknowledged.' ✓"
+        },
+        {
+          "check": "FS-012: Contract loophole research — fully paid off",
+          "result": "FULLY RESOLVED",
+          "evidence": "The entire chapter IS the payoff. Ch14 plant: loophole discovered. Ch16: told to Kaelith. Ch19: consent given. Ch20: executed. Lines 100-154: the full execution sequence — heart stops, binding resists, binding dissolves, heart restarts. Line 112: 'The contract said *cessation of heartbeat*.' The exact wording from FS-012 plant is paid off in action.",
+          "foreshadowingLedgerMatch": "FS-012 status: resolved. Payoff chapter: 20. Appearances includes Ch20 entry: 'Contract loophole fully executed. Temporary heartbeat cessation (8 seconds) satisfied clause.' ✓"
+        },
+        {
+          "check": "FS-008 original payoff (Ch11 Oathbrand removal) referenced correctly",
+          "result": "PASS",
+          "evidence": "Line 60 accurately describes the Ch11 Oathbrand removal: Lirien's hands on Kaelith's collarbone, three hours, dissolving the sigil. Matches FS-008 original payoff and creates deliberate symmetry (healing hands → stopping/restarting heart)."
+        },
+        {
+          "check": "No premature payoff of unresolved foreshadowing",
+          "result": "PASS",
+          "evidence": "Chapter does not accidentally resolve FS-013 (Ashborne reunion — planned Ch22), FS-021 (god-seal plan — planned Ch21), or any other unresolved entries. Quietus references remain future-facing."
+        }
+      ]
+    }
+  },
+
+  "correctionsAppliedDetail": [
+    {
+      "id": "COR-001",
+      "severity": "critical",
+      "line": 210,
+      "original": "\"Three days. Thalen is still operating. The god-seal still needs reinforcement.\"",
+      "corrected": "\"Three days. The saboteur is still operating. The god-seal still needs reinforcement.\"",
+      "reason": "INV-056 Knowledge leak. Neither CHAR-001 nor CHAR-002 knows Thalen's identity per FACT-007 and Ch19 information asymmetry. Ch19 draft line 305 explicitly states 'We do not have a confirmed identity.'"
+    },
+    {
+      "id": "COR-002",
+      "severity": "major",
+      "line": 18,
+      "original": "The pallor had climbed past her wrist and was tracking bone",
+      "corrected": "The Pallor had climbed past her elbow and was tracking bone",
+      "reason": "INV-002/INV-011 Pallor progression understated + naming consistency. Ch19 establishes silver past elbow. Also corrected lowercase 'pallor' to 'Pallor.'"
+    },
+    {
+      "id": "COR-003",
+      "severity": "minor",
+      "line": 70,
+      "original": "Silver traced the tendons of her wrist. The light from the window made the pallor on her skin",
+      "corrected": "Silver traced the tendons of her forearm. The light from the window made the Pallor on her skin",
+      "reason": "INV-002 Pallor extent consistency (silver is past elbow, forearm tendons more accurate than wrist) + naming consistency (Pallor capitalization)."
+    },
+    {
+      "id": "COR-004",
+      "severity": "minor",
+      "line": 86,
+      "original": "despite the pallor, despite the silver",
+      "corrected": "despite the Pallor, despite the silver",
+      "reason": "Naming consistency — Pallor should be capitalized."
+    },
+    {
+      "id": "COR-005",
+      "severity": "minor",
+      "line": 92,
+      "original": "where the pallor's silver interfered",
+      "corrected": "where the Pallor's silver interfered",
+      "reason": "Naming consistency — Pallor should be capitalized."
+    },
+    {
+      "id": "COR-006",
+      "severity": "minor",
+      "line": 116,
+      "original": "forty-three threads of enforcement pulling free",
+      "corrected": "threads of enforcement pulling free",
+      "reason": "INV-002 Internal consistency. The current kill contract is Lirien's 44th (per Ch2). 'Forty-three' is the established count of PREVIOUS completed contracts. Having exactly forty-three threads in this one binding's dissolution architecture creates false resonance and confuses the established motif."
+    }
+  ],
+
+  "downstreamNotes": {
+    "forCraftEnforcer": [
+      "Bond-as-information-channel: Lines 78 and 218 use phrasing that approaches factual content transmission ('let the answer pass without words,' 'felt the question'). The emotional quality IS the content being transmitted, and the italicized text is narrator interpretation for the reader. Functionally correct per bond rules, but consider whether phrasing should be tightened.",
+      "Death-language vs. liminal-state: Lines 154 and 170 use 'dead for eight seconds' and 'died and returned.' The magic system specifies Kaelith was in a 'liminal state' not truly dead (FU-001 compliance). The draft uses 'dead' as Lirien's emotional perception rather than magical classification. This is defensible as POV voice — Lirien EXPERIENCED it as death — but editors should verify the distinction is clear enough for readers."
+    ],
+    "forDevelopmentalEditor": [
+      "The chapter's pacing is three-phase: preparation (SCN-56, building tension), execution (SCN-57, peak crisis), aftermath (SCN-58, emotional resolution + mission redirect). All three phases serve both the romance arc (trust proven through ultimate vulnerability) and the fantasy arc (binding dissolved, Quietus still ahead). Dual-arc interleave is strong.",
+      "Kaelith's immediate redirect to mission objectives (line 210) while maintaining physical contact (forehead touching, hand gripping) is excellent character consistency — she IS the commander who names the next objective, AND the woman who will not let go."
+    ],
+    "forLineEditor": [
+      "Medical/scientific terminology: 'cardiac conduction pathway,' 'electrical signal,' 'aorta,' 'oxygen deprivation.' The fae and trained Shapers would have detailed anatomical knowledge (they perform binding contracts that thread through physiology), but verify these terms feel appropriate to the world's register rather than modern clinical language.",
+      "Water metaphor count: Several water metaphors in Lirien's POV ('current,' 'undertow,' 'wave,' 'surfacing from deep water,' 'frozen channel'). This is consistent with Lirien's established water-metaphor voice fingerprint. No violations — just note for tracking."
+    ],
+    "forCopyEditor": [
+      "Verify 'forty-three' count remains consistent — the removal of 'forty-three threads' on line 116 was deliberate. The number should appear only in reference to previous contracts (line 22), not in the current binding's dissolution.",
+      "Open discrepancy DISC-001 (Thalen seat number) remains unresolved from Ch13. Ch20 does not reference Thalen's seat, so no new inconsistency introduced."
+    ]
+  },
+
+  "continuityStatePostChapter": {
+    "characterPositions": {
+      "CHAR-001": "Forward shelter between Rivenmarch and Quietus. Post-cardiac-arrest recovery. Pallor progression: silver past elbow, three fingers frozen left hand. Kill contract binding DISSOLVED.",
+      "CHAR-002": "Same location. Kill contract DISSOLVED. Binding architecture fully removed. Exhausted but magically functional. First experience of complete free will."
+    },
+    "timelineAdvance": "Day ~31-32. Three days travel from Rivenmarch. Three days remaining to Quietus.",
+    "newKnowledgeStates": {
+      "bothLearn": [
+        "Kill contract loophole works — binding dissolved through temporary heartbeat cessation",
+        "Bond persists without binding — it was always independent",
+        "Feelings survived binding removal — empirically proven real"
+      ],
+      "lirienOnly": [
+        "Seep tacitly supported the loophole through contract language (FACT-012, internal realization only)"
+      ],
+      "neitherLearns": [
+        "Thalen's specific identity (FACT-007 — still unknown to both leads)",
+        "Kaelith's Warden lineage through Ossya Thenndal (FACT-006)",
+        "Iryse as unwitting sabotage vector (FACT-011)"
+      ]
+    },
+    "activeStoryPromises": {
+      "advanced": [
+        "Quietus approach and god-seal reinforcement (three days away)",
+        "Saboteur (Thalen, unknown to leads) still operating"
+      ],
+      "resolved": [
+        "Kill contract binding — DISSOLVED through loophole",
+        "Are the feelings real? — PROVEN real through empirical test",
+        "Contract loophole — FULLY EXECUTED"
+      ],
+      "newlyActive": [
+        "Partnership continues by free choice — what does the relationship look like without obligation?",
+        "Quietus confrontation approaches — both leads now unbound and committed"
+      ]
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "agent": "docwriter-code-analyzer",
+  "context": "AREA-003",
+  "cycle": 1,
+  "timestamp": "2026-03-18T13:50:27Z",
+  "discoveries": [
+    {
+      "id": "DISC-CA-001",
+      "type": "undocumented-behavior",
+      "summary": "UnpublishInternal does NOT check workflow step roles — unlike Save, Discard, ChangeWorkflowStep, and CancelScheduledPublish which all call CanWorkWithContentItemInCurrentStep, UnpublishInternal only validates version status conditions. A user with Update ACL can unpublish a page even if they have no role assigned to the current workflow step.",
+      "evidence": "WebPageCommandManagerBase.cs:734-756 — UnpublishInternal checks only VersionStatus conditions (InitialDraft/Draft, Unpublished, IsUnpublishScheduled) with no call to CanWorkWithContentItemInCurrentStep. Compare with SaveInternal (line 554), DiscardInternal (line 648), ChangeWorkflowStepInternal (line 601), CancelScheduledPublishInternal (line 669) which all call CanWorkWithContentItemInCurrentStep.",
+      "suggestedAction": "Document this exception in the operation-specific permission requirements: 'Unpublish does not require a role assigned to the current workflow step — only Update page permission is needed.'",
+      "affectedArea": "workflow-permissions",
+      "severity": "high"
+    },
+    {
+      "id": "DISC-CA-002",
+      "type": "undocumented-behavior",
+      "summary": "CancelScheduledUnpublish does NOT check workflow step roles — unlike CancelScheduledPublish and CancelScheduledPublishAndEdit which do check CanWorkWithContentItemInCurrentStep.",
+      "evidence": "WebPageCommandManagerBase.cs:685-697 — CancelScheduledUnpublishInternal only checks webPage.IsUnpublishScheduled. Compare with CancelScheduledPublishInternal (line 669) which calls CanWorkWithContentItemInCurrentStep.",
+      "suggestedAction": "Note this asymmetry in the documentation: CancelScheduledPublish requires workflow step role, but CancelScheduledUnpublish does not.",
+      "affectedArea": "workflow-permissions",
+      "severity": "medium"
+    },
+    {
+      "id": "DISC-CA-003",
+      "type": "undocumented-behavior",
+      "summary": "CreateNewVersion does NOT check workflow step roles — any user with Update ACL can create a new draft version of a published page regardless of workflow step assignments.",
+      "evidence": "WebPageCommandManagerBase.cs:528-542 — CreateNewVersionInternal calls TryCreateDraft without calling CanWorkWithContentItemInCurrentStep. All other mutating operations (Save, ChangeWorkflowStep, Discard, CancelScheduledPublish, CancelScheduledPublishAndEdit) do check step roles.",
+      "suggestedAction": "Document that creating a new version is not gated by workflow step roles.",
+      "affectedArea": "workflow-permissions",
+      "severity": "medium"
+    },
+    {
+      "id": "DISC-CA-004",
+      "type": "undocumented-behavior",
+      "summary": "Channel admin permission cache has a 60-minute TTL with no manual invalidation — changes to ManagePermissions or Administrator role may take up to 60 minutes to take effect.",
+      "evidence": "WebsiteChannelAdminProvider.cs:26 — HOUR_CACHE_DURATION = 60; Lines 59-65 — LoadAsync with CacheSettings(HOUR_CACHE_DURATION). Cache dependencies exist (ApplicationPermissionInfo, UserRoleInfo, UserInfo) but depend on the cache system detecting data changes.",
+      "suggestedAction": "Add a note to the permissions documentation about the cache delay for ManagePermissions changes.",
+      "affectedArea": "configuration",
+      "severity": "medium"
+    },
+    {
+      "id": "DISC-CA-005",
+      "type": "cross-cutting-concern",
+      "summary": "Delete operations (DeletePage, DeletePageWithChildren) in WebPagesApplication use evaluateChildPages=true when checking DELETE ACL — meaning the user needs Delete permission not just on the page but also on all child pages with broken ACL inheritance. This subtree permission check is unique to delete and move operations.",
+      "evidence": "WebPagesApplication.cs:528 — CheckAclPermission(args.WebPageItemId, WebPageAclPermissions.DELETE, true, ...) and line 551 — same for DeletePageWithChildren. The 'true' parameter maps to evaluateChildPages in WebPageAclPermissionEvaluator.Evaluate(), which triggers CheckAclSubtreePermission.",
+      "suggestedAction": "Document that delete-with-children requires Delete permission on the target page AND all child pages that have broken ACL inheritance.",
+      "affectedArea": "page-permissions",
+      "severity": "high"
+    }
+  ]
+}

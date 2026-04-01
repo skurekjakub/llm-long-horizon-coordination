@@ -1,0 +1,120 @@
+{
+  "chapterNumber": 4,
+  "editorType": "line",
+  "generatedAt": "2025-07-24T14:35:00Z",
+  "overallProseAssessment": "Lirien's POV voice is strongly established — the analytical, intelligence-shaped observation style is recognizable from the opening paragraph and maintained throughout. The classification-as-containment pattern works well for a chapter about a system under failure. Prose rhythm is fluid with good variation between analytical medium sentences and cataloguing fragments. Key areas for revision: several INV-005 violations where emotions are labeled rather than shown through sensation, a metaphor from the wrong domain, and some repetitive phrasing patterns that reduce impact over the chapter's length.",
+  "findings": [
+    {
+      "id": "LINE-004-001",
+      "severity": "major",
+      "category": "INV-005",
+      "location": "Scene 1, paragraph 10",
+      "finding": "Emotion labeled directly rather than shown through physical sensation or classified operationally.",
+      "currentText": "She had felt something when the scaffolding came down. Not doubt — doubt was a luxury operatives could not afford. Not mercy — mercy presumed moral authority she did not possess. What she had felt was refusal.",
+      "recommendation": "Replace 'felt' framing with operational classification or physical registration: 'Something had registered when the scaffolding came down — not in the operational framework, which had no category for it, but in the body. A tightening behind the sternum. A sharp, clean rejection of the scenario where Kaelith Maren disappeared into Conclave custody.' The classification failure IS the emotion."
+    },
+    {
+      "id": "LINE-004-002",
+      "severity": "major",
+      "category": "INV-005",
+      "location": "Scene 2, mid-conversation",
+      "finding": "Direct emotion labeling in a moment that should register as binding mechanics.",
+      "currentText": "Lirien felt something shift in her chest — not pain, but pressure. The beginning of the binding's awareness that execution had not occurred within the expected timeline.",
+      "recommendation": "Remove 'felt' framing and lead with the physical/mechanical: 'Something shifted behind her sternum — not pain, but the binding's awareness recalibrating. Execution had not occurred within the expected timeline. The contract was taking note.' This preserves the beat while keeping it in Lirien's operational register."
+    },
+    {
+      "id": "LINE-004-003",
+      "severity": "major",
+      "category": "metaphor-domain",
+      "location": "Scene 2, after Lirien reveals the deadline",
+      "finding": "Generic blade metaphor used where Lirien's water/contract domain should govern.",
+      "currentText": "The words sat between them like a blade on the table.",
+      "recommendation": "Replace with contract/water domain: 'The words sat between them like the terms of a contract neither had agreed to sign.' Or water domain: 'The words settled between them like sediment in still water — visible, undeniable, and impossible to retrieve.'"
+    },
+    {
+      "id": "LINE-004-004",
+      "severity": "minor",
+      "category": "repetition",
+      "location": "Scene 2 and Scene 3",
+      "finding": "'The question was direct' appears twice, and the pattern 'The question was [adjective]' appears three times total, dulling impact.",
+      "currentText": "'The question was direct. Operatives appreciated directness.' (Scene 2) / 'The question was direct. Simple. Three letters.' (Scene 2 later) / 'The question was direct and deserved a direct answer.' (Scene 3)",
+      "recommendation": "Vary the construction. Keep the first instance, replace the second with Lirien's assessment of WHY it is dangerous rather than noting its directness, and rework the third entirely."
+    },
+    {
+      "id": "LINE-004-005",
+      "severity": "minor",
+      "category": "voice-consistency",
+      "location": "Scene 3, near end",
+      "finding": "Vague observation that does not match Lirien's precise visual reading.",
+      "currentText": "Something almost like humor moved through Kaelith's expression.",
+      "recommendation": "Replace with specific micro-expression reading: 'A shift in the muscles around Kaelith's mouth — not a smile, but the architecture of one, suppressed before it fully formed.' This matches Lirien's face-reading priority."
+    },
+    {
+      "id": "LINE-004-006",
+      "severity": "minor",
+      "category": "INV-005",
+      "location": "Scene 2, Lirien's internal assessment of Kaelith",
+      "finding": "Near-emotion label in the passage about why Lirien intervened.",
+      "currentText": "the scenario where Kaelith Maren vanished without knowing she'd been lied to felt wrong in a way Lirien did not have language to classify",
+      "recommendation": "Good that she flags the classification failure, but 'felt wrong' is close to emotion labeling. Strengthen: 'the scenario where Kaelith Maren vanished without knowing she had been lied to produced a response Lirien could not classify — not operational concern, not strategic calculation, but something that sat in the space between and refused to resolve.' The unresolvable nature IS Lirien's voice."
+    },
+    {
+      "id": "LINE-004-007",
+      "severity": "minor",
+      "category": "voice-consistency",
+      "location": "Scene 2, Lirien's assessment of being observed",
+      "finding": "The observation about being measured is good but could be sharpened with Lirien's specific operational framing.",
+      "currentText": "The reversal created an unfamiliar sensation — not quite discomfort, but awareness. She was being measured, and the measurement mattered.",
+      "recommendation": "Lean into the operative's vocabulary: 'The reversal registered as a variable she had not accounted for. She was being assessed by someone whose assessment she could not dismiss. In forty-three prior contracts, this had not been a factor.'"
+    },
+    {
+      "id": "LINE-004-008",
+      "severity": "suggestion",
+      "category": "voice-evolution",
+      "location": "Scene 3, Kaelith's laugh",
+      "finding": "'Kaelith laughed. The sound was dry and utterly without humor.' — the pattern repeats from Scene 2's 'same dry, humorless sound.' Lirien would note the repetition and evaluate what it signals.",
+      "currentText": "Kaelith laughed again. Same dry, humorless sound.",
+      "recommendation": "Differentiate the second instance: 'Kaelith's mouth produced the same sound it had in the tavern — the mechanical approximation of amusement. Lirien noted its repetition. A stress response, not a response to humor. Catalogued.' This shows Lirien's pattern-recognition at work."
+    },
+    {
+      "id": "LINE-004-009",
+      "severity": "suggestion",
+      "category": "subtext",
+      "location": "Scene 2, Lirien's internal response to 'Why?'",
+      "finding": "The passage where Lirien contemplates the truth ('because letting them take you felt wrong') is effective but could use one more beat of operational language collapsing under the weight of what she actually means.",
+      "currentText": "Lirien paused. The truth — *because letting them take you felt wrong* — was operationally inadmissible. Wrong was a moral category. Operatives did not operate in moral categories.",
+      "recommendation": "Add a brief classification attempt that fails: 'Lirien paused. She attempted to classify the truth: *because letting them take you produced a response incompatible with operational parameters.* The classification was accurate. It was also insufficient. The word she did not use was *wrong*, which was a moral category, and operatives did not operate in moral categories.' The failed attempt to classify is more Lirien than jumping straight to 'felt wrong.'"
+    },
+    {
+      "id": "LINE-004-010",
+      "severity": "suggestion",
+      "category": "sensory-signature",
+      "location": "Scene 2, opening",
+      "finding": "The barkeeper description is functional but could better showcase Lirien's people-reading sensory priority.",
+      "currentText": "The tavern was empty except for the barkeeper, who favored his left hand and had cleaned the same glass three times since she'd entered. Nervous habit.",
+      "recommendation": "Expand slightly with Lirien's assessment lens: 'The tavern was empty except for the barkeeper, who favored his left hand, had cleaned the same glass three times since Lirien entered, and whose shoulders had risen incrementally with each pass of the cloth. He knew something had shifted in Duskhaven's usual stillness. People who did not know why they were nervous were the most transparent kind.'"
+    }
+  ],
+  "voiceAssessment": {
+    "overallGrade": "strong",
+    "vocabularyCompliance": "High. Intelligence-operative vocabulary (variables, parameters, operational, assessment, calculus) is consistent throughout. The classification system functions as both voice marker and character arc engine.",
+    "sentenceRhythm": "Effective. Good alternation between medium analytical sentences and shorter cataloguing fragments. Scene 2's dialogue sections maintain the mixed-fluid rhythm. Under-stress moments appropriately shorten.",
+    "metaphorCompliance": "Mostly compliant. Water/contract/observation metaphors dominate. One blade metaphor (LINE-004-003) requires replacement. The 'counting' motif (counting stones, counting exits, counting time) is a strong recurring pattern.",
+    "emotionalRegister": "Classification-to-overwhelmed trajectory is present. The moments where Lirien's framework fails register as system errors, which is correct. Some instances still use 'felt' where operational language would be stronger.",
+    "sensorySig": "Visual/auditory channels appropriately dominant. Lirien reads faces, body language, and vocal tone throughout. Could add more light-quality observations per her sensory signature.",
+    "contrastWithKaelith": "Effective. Where Ch3 (Kaelith POV) opened with architecture and exits, Ch4 opens with paper and assessment. Lirien's people-first attention priority is maintained."
+  },
+  "strengths": [
+    "The failed-report framework in Scene 1 is voice-as-structure — the inability to write a justification IS the chapter's thematic argument.",
+    "Dialogue subtext is consistently layered — surface tactical exchange conceals emotional negotiation throughout.",
+    "The counting motif (stones, exits, breaths, hours) anchors Lirien's operative nature without becoming a tic.",
+    "Kaelith's physical descriptions are filtered through Lirien's assessment lens ('military posture even sitting,' 'hands that stayed visible') — correct for the POV.",
+    "The distinction between Lirien's silence (gathering) and Kaelith's silence (structural) is maintained in the tavern scenes."
+  ],
+  "findingCounts": {
+    "critical": 0,
+    "major": 3,
+    "minor": 4,
+    "suggestion": 3
+  }
+}

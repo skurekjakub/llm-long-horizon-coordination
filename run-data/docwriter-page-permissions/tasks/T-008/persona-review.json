@@ -1,0 +1,126 @@
+{
+  "agent": "docwriter-persona-reviewer",
+  "taskId": "T-008",
+  "attempt": 1,
+  "verdict": "approved",
+  "personaChecks": [
+    {
+      "check": "front-matter-personas",
+      "result": "pass",
+      "declaredPersonas": ["business"],
+      "evidence": "Front matter declares `persona: business`. The page lives in the `business-users/` directory and provides step-by-step procedures for synchronizing content — squarely a business-user audience. No additional personas are warranted: the page contains zero code, no configuration syntax, and no architecture discussion. Per INV-persona-002 ('business guides → business'), tagging is correct."
+    },
+    {
+      "check": "tone-business",
+      "result": "pass",
+      "evidence": "The added sentence reads: 'To synchronize pages, you need *Read* and *Synchronize* page permissions.' This is outcome-focused (tells the user what they need to proceed), uses friendly 'you need' phrasing (not 'you must'), names permissions by their UI labels (italicized *Read* and *Synchronize*), and links out for detail rather than diving into implementation. No developer jargon, no class names, no code. Language is simple enough for non-native English speakers per INV-persona-007."
+    },
+    {
+      "check": "depth-calibration",
+      "result": "pass",
+      "evidence": "The sentence adds exactly the right amount of depth for business users: it states the two required permissions by name and provides a descriptive cross-reference link ('page permissions') to the hub page for anyone who needs more detail. No implementation internals (e.g., no mention of WebPageAclPermissionEvaluator or ACL inheritance). The linked hub page (permissions_pagelevel_xp) is where deeper detail lives — appropriate layering."
+    },
+    {
+      "check": "cross-reference-persona-fit",
+      "result": "pass",
+      "evidence": "The descriptive link text 'page permissions' uses general audience vocabulary. The anchor target 'Permission requirements for page operations' is an operationally named section suitable for business users to land on. The cross-reference does not send business users into a developer-only section."
+    },
+    {
+      "check": "consistency-with-permission-pattern",
+      "result": "pass",
+      "evidence": "The permission cross-reference follows the identical pattern established across sibling business-user pages: create-pages.md uses 'you need *Read* and *Create* page permissions', delete-pages.md uses 'You need the **Read** and **Delete** page permissions'. The sentence structure and vocabulary are consistent with the cluster convention."
+    },
+    {
+      "check": "no-persona-bleed",
+      "result": "pass",
+      "evidence": "No developer/admin terminology leaks into the added sentence. No mention of APIs, classes, configuration files, code patterns, or system architecture. The sentence stays entirely within business-user vocabulary."
+    }
+  ],
+  "classificationCheck": {
+    "declared": "howto",
+    "actual": "howto",
+    "result": "pass",
+    "evidence": "The page is a goal-oriented procedure with numbered steps for synchronizing content items, pages, and forms. The modified 'Pages' subsection contains a 7-step numbered procedure (Open → Find → Context menu → Select action → Choose time → Review → Sync). The added permission sentence is a prerequisite statement integrated into the introductory paragraph before the steps, which is standard howto structure."
+  },
+  "taxonomyChecks": [
+    {
+      "field": "persona",
+      "result": "pass",
+      "value": "business",
+      "evidence": "Valid value per INV-persona-001."
+    },
+    {
+      "field": "identifier",
+      "result": "pass",
+      "value": "content_sync_xp",
+      "evidence": "Identifier present and follows project naming convention."
+    },
+    {
+      "field": "license",
+      "result": "pass",
+      "value": "2",
+      "evidence": "License tier present in front matter."
+    },
+    {
+      "field": "related_pages",
+      "result": "pass",
+      "value": ["content_items_xp", "JwKQC", "content_sync_configuration_xp"],
+      "evidence": "Related pages present and populated with valid identifiers."
+    }
+  ],
+  "consistencyCheck": {
+    "result": "pass",
+    "notes": "All pages in the business-users cluster (create-pages.md, delete-pages.md, edit-and-publish-pages.md, content-sync.md) declare `persona: business` and follow the same permission cross-reference pattern. The content-sync page now aligns with established cluster conventions for stating permission requirements before procedural steps."
+  },
+  "invariantResults": [
+    {
+      "invariantId": "TINV-001",
+      "result": "pass",
+      "evidence": "TINV-001 requires the overall task set to cover both developer and business user scenarios. T-008 is a cross-reference update on a business-user page that correctly serves the business persona. The linked hub page (permissions_pagelevel_xp, written in T-001) covers developer/admin scenarios. The pipeline as a whole satisfies the dual-persona requirement; applying developer tone to this business-user page would violate INV-persona-016."
+    },
+    {
+      "invariantId": "INV-persona-001",
+      "result": "pass",
+      "evidence": "Front matter `persona: business` is a valid value from the allowed set (developer, admin, business, architect, all)."
+    },
+    {
+      "invariantId": "INV-persona-002",
+      "result": "pass",
+      "evidence": "Business guides → `business`. The page is in the business-users directory and contains no developer or admin configuration content. Single persona tag is correct."
+    },
+    {
+      "invariantId": "INV-persona-007",
+      "result": "pass",
+      "evidence": "The added sentence uses simple, ordinary words: 'you need', 'synchronize', 'page permissions'. Permission names (*Read*, *Synchronize*) are UI labels that business users encounter in the product. No complex or unusual vocabulary."
+    },
+    {
+      "invariantId": "INV-persona-012",
+      "result": "pass",
+      "evidence": "The writer clearly understood the business persona — the sentence uses operational language, avoids code references, and links to further detail rather than inlining technical explanations."
+    },
+    {
+      "invariantId": "INV-persona-013",
+      "result": "pass",
+      "evidence": "Friendly, positive tone ('you need' not 'you must'). No special terminology — permission names are the exact UI labels business users see. The sentence is a single clear statement, not overloaded."
+    },
+    {
+      "invariantId": "INV-persona-014",
+      "result": "pass",
+      "evidence": "The cross-reference to the permissions hub page acknowledges that technical team members may need to configure permissions, while business users just need to know what's required. Appropriate delegation."
+    },
+    {
+      "invariantId": "INV-persona-016",
+      "result": "pass",
+      "evidence": "No developer terminology used on this business-user page. Permission names are presented as product UI labels, not as code constants or API identifiers."
+    }
+  ],
+  "summary": {
+    "personaChecksPassed": 6,
+    "personaChecksFailed": 0,
+    "classificationCorrect": true,
+    "taxonomyComplete": true,
+    "invariantsPassed": 8,
+    "invariantsFailed": 0
+  },
+  "timestamp": "2026-03-18T20:13:14Z"
+}

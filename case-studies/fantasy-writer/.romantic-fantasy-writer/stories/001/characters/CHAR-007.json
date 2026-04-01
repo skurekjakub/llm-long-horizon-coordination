@@ -1,0 +1,111 @@
+{
+  "id": "CHAR-007",
+  "name": "Marin Savel",
+  "role": "mentor",
+  "isPOV": false,
+  "psychologicalProfile": {
+    "wound": "Marin watched the empire suppress Pallor illness findings while patients died of conditions they were not allowed to officially have.",
+    "desire": "Keep people alive with knowledge beyond institutional reach and force one undeniable truth into the record.",
+    "fear": "That bodies will keep being turned into administrative inconveniences.",
+    "lie": "Useful healing is only local because systems are too rotten to confront.",
+    "ghost": "A cluster of patients died after her warnings about prolonged magical suppression were buried for political convenience.",
+    "need": "To push knowledge back into the main current when the stakes demand it."
+  },
+  "arc": {
+    "type": "flat",
+    "startState": "A clear-eyed healer who already knows the empire lies about what it harms.",
+    "endState": "The same healer, but willing to feed her knowledge into larger events through Kaelith and Lirien.",
+    "turningPoints": [
+      {
+        "chapter": 7,
+        "event": "Diagnoses the Oathbrand as actively lethal."
+      },
+      {
+        "chapter": 8,
+        "event": "Gives treatment and warning instead of staying neutral."
+      },
+      {
+        "chapter": 19,
+        "event": "Lets suppressed research become evidence."
+      }
+    ]
+  },
+  "voiceFingerprint": {
+    "vocabularyLevel": "Plain clinical with frontier directness. Marin's vocabulary is medical-practical: 'inflammation,' 'tissue,' 'dosage,' 'contraindicated,' 'presenting symptoms,' 'prognosis.' But she translates freely — she says the clinical word first, then the plain one: 'Necrotic. Dying, that is.' She learned medicine in institutions and practices it in kitchens, and both registers live in her speech. She says 'the body tells you' not 'I think' — the body is the authority, not her opinion.",
+    "sentenceLength": "Mixed with a diagnostic rhythm — brisk declarative sentences in assessment mode ('The brand is active. It shouldn't be.'), slower and more careful in prognosis mode (building toward an unwelcome conclusion). Her sentences have the cadence of someone who gives bad news for a living and has learned to deliver it in the right order: observation, then implication, then what-can-be-done. She rarely opens with the worst part.",
+    "metaphorDensity": "Low-to-moderate, drawn from anatomy, cooking, and rot. A hidden problem is 'an abscess — looks contained until it isn't.' A bad system is 'spoiled meat someone keeps putting back in the pantry.' Treatment is 'pulling the thread before the whole seam goes.' She gravitates away from garden (Thalen's domain), architecture (Kaelith's domain), water (Lirien's domain), and textile (Sendra's domain) metaphors, though occasional natural crossover is expected — rigid domain walls create artificiality. Her world is the body and the kitchen — things that sustain or poison.",
+    "emotionalRegister": "Steady, unsentimental, and quietly furious. Marin does not perform compassion — she practices it through competence. Her warmth comes through in what she does (treats first, asks questions after) rather than what she says. Beneath the steadiness: a banked rage about systems that turn illness into paperwork and patients into statistics. The rage surfaces as black humor rather than outbursts.",
+    "thoughtPatterns": "Diagnostic and triage-minded. Marin triages everything: most urgent first, everything else in order of what-kills-soonest. She applies this to conversations — cutting through social protocol to reach the medical fact, then ranking what matters. Her thinking is empirical: she trusts what she can observe and measure, distrusts what requires institutional interpretation.",
+    "dialectMarkers": "Frontier directness — instruction-first replies ('Sit down. Drink this. Then we talk.'), medical terms used casually, and the occasional kitchen-wisdom phrasing ('You don't fix a burn with more fire'). She uses 'the body' as an authority figure: 'The body doesn't care about your politics.' Black humor that only another healer would find funny.",
+    "humorStyle": "Black medical humor — the humor of someone who has seen too many patients die of treatable conditions. 'The good news is, the brand hasn't killed you yet. The bad news is, it's working on it.' Her humor is a diagnostic tool — it tests whether the patient can handle truth. If they laugh, she gives them more truth.",
+    "attentionPriority": "What Marin notices first: (1) Physical condition — skin color, breathing, posture, signs of pain. (2) What someone is hiding — medical concealment has a specific body language she reads instantly. (3) Environmental hazards — what in this space can hurt someone? (4) Smell — she diagnoses by scent before she diagnoses by sight.",
+    "deflectionPattern": "Redirects to the patient. Asked how she feels about the empire: 'I feel that your pulse is too fast and you haven't eaten today. Sit.' She converts every personal question into a medical observation about the asker. It is both genuine care and effective evasion.",
+    "stressResponse": "Voice flattens to pure clinical instruction. All warmth drains from delivery — not because she stops caring but because triage requires emotional distance. 'Pressure here. Hold. Don't let go.' Under extreme stress: her hands keep working even when her voice fails. She treats first and processes later."
+  },
+  "sensorySig": {
+    "dominantChannel": "olfactory",
+    "signature": "bitterroot, spirits, clean linen, fresh blood",
+    "emotionalTriggers": [
+      "burned skin under salve",
+      "heated tinctures",
+      "fear-sweat"
+    ]
+  },
+  "relationships": [
+    {
+      "withCharId": "CHAR-001",
+      "type": "healer-patient",
+      "dynamicArc": "Marin is among the first people to say plainly that the brand is ending Kaelith."
+    },
+    {
+      "withCharId": "CHAR-002",
+      "type": "suspicious-observer",
+      "dynamicArc": "She reads Lirien as dangerous before she reads her as devoted."
+    },
+    {
+      "withCharId": "CHAR-006",
+      "type": "frontier-peer",
+      "dynamicArc": "Their trust is built on practical competence."
+    },
+    {
+      "withCharId": "CHAR-014",
+      "type": "institutional-break",
+      "dynamicArc": "Daerin represents the tired system Marin abandoned."
+    }
+  ],
+  "physicalDescription": {
+    "apparentAge": "late fifties",
+    "build": "sturdy and work-built",
+    "distinguishingFeatures": "silver-threaded dark hair and stained fingertips",
+    "usualPresentation": "plain wool, rolled sleeves, leather apron",
+    "movement": "efficient and unhurried"
+  },
+  "agency": "Marin gives the journey medical urgency and a non-Conclave interpretation of the brand. Her decision to share suppressed knowledge expands the plot from survival to proof.",
+  "upstreamRefs": [
+    "story-concept.json",
+    "world-bible/politics.json",
+    "world-bible/culture.json",
+    "world-bible/magic-system.json",
+    "characters/CHAR-001.json",
+    "characters/CHAR-002.json"
+  ],
+  "dialoguePatterns": {
+    "initiationStyle": "Opens with an observation about the other person's physical state. 'You're favoring your left side. Sit down.' She rarely greets — she assesses. Social niceties happen after the diagnosis.",
+    "responseStyle": "Answers with medical framing, often regardless of the question's intent. 'Are you angry?' 'I'm observing elevated stress responses in someone who should be resting.' She wraps truth in clinical language that sounds like deflection but is actually precision.",
+    "underPressure": "Pure triage voice — short imperative sentences stripped of personality. 'Pressure. Here. Hold.' The warmth returns only after the crisis passes, and it returns as gentleness that surprises people who only saw the clinical mode.",
+    "verbalTics": [
+      "Says clinical term first, then translates: 'Necrotic. Dying, that is.'",
+      "Opens assessments with 'The body tells you' or 'The body doesn't lie'",
+      "Begins instructions with 'Sit down' regardless of context",
+      "Uses 'presenting as' for descriptions: 'Presenting as exhaustion but reads deeper'",
+      "Says 'You don't fix a burn with more fire' for misguided solutions"
+    ],
+    "favoriteExpressions": [
+      "Sit down.",
+      "The body doesn't care about your politics.",
+      "Necrotic. Dying, that is.",
+      "You don't fix a burn with more fire.",
+      "I've seen what 'acceptable' looks like in a patient file. It looks like a corpse."
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "agent": "docwriter-content-writer",
+  "taskId": "T-002",
+  "attempt": 2,
+  "action": "update",
+  "targetFile": "_documentation/business-users/website-content/edit-and-publish-pages.md",
+  "sectionsModified": [
+    "Publish pages",
+    "Unpublish pages",
+    "Revert changes",
+    "Move pages"
+  ],
+  "sectionsAdded": [],
+  "sectionsRemoved": [],
+  "docFactsUsed": [
+    "permissionSummary.publish",
+    "permissionSummary.unpublish",
+    "permissionSummary.discard",
+    "permissionSummary.movePage"
+  ],
+  "invariantsApplied": [
+    "INV-crossref-002",
+    "INV-crossref-003",
+    "INV-crossref-005",
+    "INV-crossref-009",
+    "INV-jekyll-010",
+    "INV-style-132",
+    "INV-style-139"
+  ],
+  "patternsUsed": [
+    "PAT-009"
+  ],
+  "researchRecommendationsCited": [
+    "REC-005"
+  ],
+  "recommendationsSkipped": [
+    {
+      "id": "REC-004",
+      "reason": "Not applicable — this task modifies a single-persona (business) page. The conditional imperative pattern for dual-audience routing is not needed here; cross-references point to the hub page instead."
+    },
+    {
+      "id": "REC-007",
+      "reason": "Not applicable — the permission notes are brief admonitions, not UI step-by-step procedures. Location-first phrasing does not apply to prerequisite notes."
+    }
+  ],
+  "notes": "Attempt 2: Fixed two style review failures from attempt 1. (1) INV-style-132: Changed 'You must also be able to' → 'You also need to be able to' in the Revert note to avoid 'must' directed at people. (2) INV-style-139: Added bold '**Required permissions**' title on a separate line after {% note %} in the Publish, Revert, and Unpublish notes (all have 2+ sentences). The Move note (single sentence) remains correctly exempt. No permission facts, cross-references, tone, or other content was changed — only the two style fixes identified in review feedback."
+}

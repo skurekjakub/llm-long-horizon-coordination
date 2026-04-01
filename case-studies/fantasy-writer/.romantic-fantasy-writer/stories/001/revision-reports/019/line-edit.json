@@ -1,0 +1,180 @@
+{
+  "reportType": "line-edit",
+  "storyId": "001",
+  "chapter": 19,
+  "pov": "CHAR-001",
+  "povName": "Kaelith Maren",
+  "draftWordCount": 5747,
+  "timestamp": "2026-03-20T01:00:00Z",
+  "referencesUsed": [
+    "chapters/019/draft.md",
+    "chapters/019/metadata.json",
+    "style/style-guide.json",
+    "craft-profile.json",
+    "characters/CHAR-001.json"
+  ],
+  "summaryVerdict": "The chapter delivers a powerful reunion-through-truth scene with strong dialogue, effective MRU sequencing, and a well-earned emotional arc from isolation to deliberate trust. Kaelith's voice is recognizable and distinct from Lirien's Ch18 POV. However, the prose suffers from severe architectural/structural metaphor saturation — the voice fingerprint's own density guidance warns 'if the voice markers are identifiable on every page, the voice is likely over-applied,' and this chapter places structural vocabulary on virtually every page. The word 'structural' appears 6 times, 'foundation(s)' 9 times, 'load-bearing' 5 times, 'wall(s)' 10 times, and 'engineer' 4 times. The thematic intent (trust-as-architecture, building on cracked foundations) is sound, but the execution saturates to the point where the strongest metaphors lose impact by drowning in weaker ones. A 40-50% reduction in architectural imagery — preserving the best instances and converting the rest to plain prose — would let the keystone moments land with the force they deserve. Secondary issues include a repeated simile pattern ('hit like [object]' x3) and a monotonous 'the way [noun] [verb]' comparative construction used 13 times.",
+  "findingSummary": {
+    "critical": 1,
+    "major": 2,
+    "minor": 8,
+    "total": 11
+  },
+  "findings": [
+    {
+      "id": "LINE-001",
+      "severity": "critical",
+      "category": "repetition",
+      "title": "Architectural/structural voice marker saturation",
+      "description": "The chapter deploys architectural and structural metaphors at a density that transforms Kaelith's voice from a distinctive seasoning into the entire meal. Key counts: 'structural' (6×: lines 63, 215, 241, 323, 355, 367), 'foundation(s)' (9×: lines 73×2, 211, 241, 257, 259, 297, 325, 367, 379×2), 'load-bearing' (5×: lines 103, 215, 241, 323, 355), 'wall(s)' (10×: lines 43, 67, 119, 147, 155, 239, 241, 263, 267×2, 367), 'weight' as metaphor (7×: lines 59, 93, 201, 215, 253, 259, 355), 'engineer/engineering' (4×: lines 67, 103, 227, 355), 'keystone' (2×: lines 253, 355), 'crack(ed)' (4×: lines 257, 259, 297, 379), 'sound' as adjective (3×: lines 83, 323, 381). Three sentences pack 2–3 architectural terms each into a single line: line 241 ('structural — load-bearing, the foundation'), line 323 ('structural way...materials were sound...load-bearing'), and line 355 ('load-bearing — functional, structural...weight...engineering...keystone...arch'). The character's voiceDensityGuidance explicitly states: 'If the voice markers are identifiable on every page, the voice is likely over-applied. Seasoning, not the main ingredient.' At ~50+ architectural/structural instances in 5747 words, markers are present roughly once every 115 words — far beyond seasoning.",
+      "lineRef": { "start": 17, "end": 383 },
+      "suggestedFix": "Preserve the 6–8 strongest architectural metaphors that carry genuine thematic weight: the cracked-foundation passage (lines 257–259), the keystone-finding-its-seat simile (line 253), 'Trust as engineering' (line 355), and the wall-knew-its-own-foundations closing image (line 367). Convert the remaining ~30 instances to plain, direct prose. Specific cut candidates: (1) Line 63 — drop 'it was structural'; the preceding clause already conveys the point. (2) Line 103 — replace the engineer simile with a simpler observation about letting something settle. (3) Lines 73, 211 — the 'stones into a foundation' and 'stone dropped into the foundation' similes are similar enough that one should go. (4) Line 215 — replace 'load-bearing' with a plain descriptor; 'genuine, heavy' or similar. (5) Line 323 — drop either 'structural' or 'load-bearing'; one structural term per sentence maximum. (6) Line 325 — 'at its foundation' can become 'at its root' or 'at its source' for variety. (7) Line 355 — this sentence currently contains 'load-bearing,' 'structural,' 'weight,' 'engineering,' 'keystone,' and 'arch' — six architectural terms. Keep 'Trust as engineering' and 'keystone'; convert the rest to plain prose. (8) Line 367 — 'the knowledge was structural' can go since it follows the wall simile and the word has already appeared five times."
+    },
+    {
+      "id": "LINE-002",
+      "severity": "major",
+      "category": "repetition",
+      "title": "'The way [noun] [verb]' comparative construction used 13 times",
+      "description": "The construction 'the way X did/does Y' appears approximately 13 times across the chapter (lines 25×3, 47, 63, 65, 67, 103, 115, 151, 155×3, 171, 227, 367). While each individual instance is natural enough, the cumulative effect creates a monotonous comparative rhythm — the reader keeps encountering the same syntactic template for analogies. Line 155 alone contains the construction four times: 'the way she had been...the way she had been...Open the way a structure is open when the walls have come down.' Line 25 contains it three times in one sentence. The style guide calls for varied sentence rhythm ('Alternate taut medium sentences with short declarative hits'), but this construction homogenizes the prose's comparative register.",
+      "lineRef": { "start": 25, "end": 367 },
+      "suggestedFix": "Cut or recast at least half the instances. Effective alternatives include: direct statements ('her stance said everything'), adverbial constructions ('moving visibly, deliberately — as someone does when distrusted'), participial phrases ('folding the military architecture into the civilian settlement, a good engineer reinforcing rather than dismantling'), or simply removing the comparison when the observation stands alone. The triple instance at line 25 and the quadruple instance at line 155 should each be reduced to one 'the way' at most. Line 115 ('the way a soldier reads weather') is strong enough to keep. Line 367 ('the way a wall knew its own foundations') is the chapter's closing image and should stay."
+    },
+    {
+      "id": "LINE-003",
+      "severity": "major",
+      "category": "repetition",
+      "title": "'Hit/hitting like [object]' simile pattern repeated three times",
+      "description": "The same simile structure — an emotional impact described as 'hit like [physical object]' — appears three times: 'The recognition hit like a fist to the sternum' (line 31), 'The word hit Kaelith like a siege stone' (line 55), and 'hitting Lirien like a current breaking through a dam' (line 269). Lines 31 and 55 are only 24 lines apart, making the repetition conspicuous. The 'fist to the sternum' version is also a somewhat generic impact simile, while the 'siege stone' version has more domain specificity. Three instances of 'X hit like Y' in a single chapter reduces the force of each.",
+      "lineRef": { "start": 31, "end": 269 },
+      "suggestedFix": "Keep one 'hit like' simile — preferably line 55's 'siege stone' for its military-domain specificity, or line 269's water version for its deliberate cross-domain significance. For the others, replace with constructions that show the impact differently: Line 31 could become a physical-sensation beat ('The recognition landed in her sternum. She stopped breathing.') rather than a simile. Line 55 could use Kaelith's body-forward emotional register: 'The word went through Kaelith like a crack through a load-bearing wall' — no, that adds to the architectural saturation. Try: 'The word stopped her. Commander.' Let the impact show through the pause rather than the simile."
+    },
+    {
+      "id": "LINE-004",
+      "severity": "minor",
+      "category": "cliché",
+      "title": "'Breath caught' — stock romance reaction",
+      "description": "'Kaelith's breath caught' (line 249) is one of the most overused physical reactions in romance fiction. It appears immediately after Lirien's powerful 'Then we burn together' line — a moment that deserves a more specific, Kaelith-coded physical response. The character's sensory signature is tactile/proprioceptive; her emotional register runs through heat, pressure, grip, and weight. A breath-catch is generic where a tactile response would be distinctive.",
+      "lineRef": { "start": 249, "end": 249 },
+      "suggestedFix": "Replace with a response rooted in Kaelith's established sensory channels. Options: 'Her fingers curled — the functional ones — as though reaching for something solid.' Or: 'Heat flared at her collarbone, phantom and precise.' Or simply cut the line entirely and let the silence between Lirien's statement and Kaelith's paragraph at line 251 carry the weight. The absence of a named reaction can be more powerful than a stock one."
+    },
+    {
+      "id": "LINE-005",
+      "severity": "minor",
+      "category": "show-tell",
+      "title": "'Terror lived in her spine' — names emotion before physicalizing",
+      "description": "Line 135: 'Terror lived in her spine. In the muscles of her jaw. In the hyperawareness of every angle and distance and defensible position within thirty paces.' The word 'terror' names the emotion explicitly before the physical localization follows. The style guide's CHAR-001 rule states: 'Never let Kaelith narrate herself as 'feeling' first. She notices heat in her palms, a locked jaw, a shift in stance.' The physicalization here is strong, but the emotion label leads. Inverting the order — body first, label second or omitted — would be more consistent with Kaelith's established voice.",
+      "lineRef": { "start": 135, "end": 135 },
+      "suggestedFix": "Lead with the body: 'Her spine locked. Her jaw. The hyperawareness of every angle and distance and defensible position within thirty paces.' The reader will name the emotion without being told. If the word 'terror' must appear, move it to the end: '...within thirty paces. Terror, if she had to name it. Not about Lirien.'"
+    },
+    {
+      "id": "LINE-006",
+      "severity": "minor",
+      "category": "repetition",
+      "title": "'Had been / had [verb]' past-perfect density in lines 67–93",
+      "description": "A cluster of past-perfect constructions creates rhythmic monotony across lines 67–93: 'had integrated' (67), 'had built' (67), 'had done' (67), 'had been here' (69), 'had been waiting' (71), 'had believed' (77), 'had built' (79), 'had believed' (79), 'had been waiting' (85), 'had been coordinating' (87), 'had been wrong' (89), 'had been alone...had slept...had walked...had carried' (93). That is 14 past-perfect constructions in 27 lines. While past-perfect is grammatically necessary for backstory, the density here creates a drone. Line 93 alone packs four 'had' constructions into a single sentence ('had been alone...had slept alone and walked alone and carried the weight alone').",
+      "lineRef": { "start": 67, "end": 93 },
+      "suggestedFix": "Thin the past-perfect by converting select instances to simple past after the temporal anchor is established. After line 67 establishes the retrospective frame, subsequent sentences can shift: 'They were here for years' (from 'had been'). 'She believed she was alone' (from 'had believed'). Keep past-perfect for the most emphatic beats — the anaphoric 'They had been waiting' lines (69, 71, 85) are intentional and should stay. Line 93: break the quadruple 'had' into varied constructions: 'She had been alone in the ways that mattered — sleeping alone, walking alone, carrying the weight alone.' The participial forms eliminate three 'had' constructions while preserving the tricolon rhythm."
+    },
+    {
+      "id": "LINE-007",
+      "severity": "minor",
+      "category": "prose",
+      "title": "Narration over-explains Lirien's dialogue intent",
+      "description": "Lines 183–184: 'The precision now served a different purpose — not concealment but clarity. She was choosing each word because she wanted Kaelith to hear exactly what she meant, without ambiguity, without subtext, without the operative's habit of leaving space for the listener to hear what they wanted.' This narration explains at length WHY Lirien is speaking plainly, but Lirien's preceding dialogue ('Because the Court sent me to kill you. And I am done being what they sent.') already demonstrates the clarity. The reader can hear the shift from operative precision to vulnerable directness without being told that's what's happening. The explanation converts a powerful moment of showing into a moment of telling-about-showing.",
+      "lineRef": { "start": 183, "end": 183 },
+      "suggestedFix": "Cut or sharply compress. The contrast 'not concealment but clarity' is enough on its own. Cut 'She was choosing each word because she wanted Kaelith to hear exactly what she meant, without ambiguity, without subtext, without the operative's habit of leaving space for the listener to hear what they wanted.' Trust the dialogue and the bond to convey the shift. If compression is preferred: 'The precision now served a different purpose — not concealment but clarity.' Full stop. Move directly to the next dialogue."
+    },
+    {
+      "id": "LINE-008",
+      "severity": "minor",
+      "category": "repetition",
+      "title": "Bond-mediated emotion lists — similar structure three times",
+      "description": "The bond transmits named emotions to Kaelith three times via catalogue-style listing: (1) Line 169: 'grief, relief, fear, the quality of two people who had destroyed something...' (2) Line 267: 'the fear, the anger, the residual betrayal, and underneath all of it...' (3) Line 357: 'relief and fear and something fiercer, something that had no name...' Each follows the same pattern: comma-separated emotion nouns, then an elaborating clause. While the bond mechanic legitimately transmits emotional quality, the structural similarity across three instances makes the technique predictable. The reader encounters the same sentence template three times in the chapter's second half.",
+      "lineRef": { "start": 169, "end": 369 },
+      "suggestedFix": "Vary the delivery mechanism. Keep one instance as a direct list (line 267 is the most dramatically justified — it's the full bond opening). For line 169, recast as a single dominant quality: 'The bond carried the silence's weight — the quality of two people who had destroyed something between them and did not know if the wreckage was salvageable.' For line 357, use a physical/sensory beat instead of a list: 'Through the bond, Kaelith felt something land in Lirien — a physical jolt, the precise opposite of the operative's composure.' Line 369 also lists bond contents ('the fear, the resolve, the damaged trust') — consider cutting the list entirely and trusting the earlier full-opening moment to carry."
+    },
+    {
+      "id": "LINE-009",
+      "severity": "minor",
+      "category": "prose",
+      "title": "Meta-commentary on metaphor domain sounds authorial rather than character-internal",
+      "description": "Line 269: 'The word rose in Kaelith's mind unbidden, wrong, not hers — *current, dam, water* — and she let it stay. One water image. Lirien's influence, seeping through, and Kaelith did not shore it out.' The concept of Kaelith noticing Lirien's metaphor domain bleeding into her thinking is excellent characterization and properly tracks the voice evolution described in CHAR-001's voiceFingerprint. However, the sentence 'One water image' reads as authorial bookkeeping rather than character interiority — it sounds like the writer acknowledging a style rule rather than Kaelith observing her own thought patterns. The pun in 'shore it out' is also slightly too self-aware for Kaelith's established humor register, which is flat and unannounced rather than wordplay-driven.",
+      "lineRef": { "start": 269, "end": 269 },
+      "suggestedFix": "Remove 'One water image.' and let the observation work through Kaelith's natural register: 'The word rose in Kaelith's mind unbidden, wrong, not hers — *current, dam, water* — and she let it stay. Lirien's influence, seeping through. Kaelith did not push it out.' The cut removes the meta-commentary while preserving the domain-awareness. Replace 'shore it out' with 'push it out' or 'force it out' to avoid the water-pun cleverness that doesn't match Kaelith's deadpan sensibility."
+    },
+    {
+      "id": "LINE-010",
+      "severity": "minor",
+      "category": "repetition",
+      "title": "'She looked at' anaphoric chain at lines 237",
+      "description": "Line 237: 'Kaelith looked at Lirien. She looked at the woman who had walked into her life with surveillance masquerading as attention...She looked at the woman who had removed the Oathbrand...She looked at the woman who had destroyed her cipher...' The tripled 'She looked at the woman who' construction is a deliberate rhetorical escalation (anaphora), and the content it carries is strong — each repetition adds a layer to the accumulated history. However, the technique feels slightly overwrought for Kaelith's predominantly terse, unrhetorical voice. The character who favors short declarative sentences and resists ornamentation would not naturally produce a triple anaphoric catalogue. The same information could be delivered through her more characteristic stacking of shorter observations.",
+      "lineRef": { "start": 237, "end": 237 },
+      "suggestedFix": "Consider compressing to two iterations or restructuring as a shorter cascade: 'Kaelith looked at Lirien. Surveillance masquerading as attention. The Oathbrand removed. The Calwrath confession received without flinching. *I want this too* with a death sentence underneath. The cipher destroyed, the intelligence carried north, one verified act of free choice.' This converts the anaphoric pattern into Kaelith's inventory mode — clipped noun phrases stacking under pressure — which is more consistent with her established stress response."
+    },
+    {
+      "id": "LINE-011",
+      "severity": "minor",
+      "category": "dialogue",
+      "title": "Lirien's heartbeat-cessation explanation shifts register mid-sentence in a way that draws attention to craft",
+      "description": "Lines 231–232: 'Cessation of heartbeat satisfies the binding's execution clause. The bond allows precise monitoring — Lirien stopped herself. Started again. \"I would need to stop your heart. Briefly. Seconds.\"' The self-correction — from clinical to direct — is a strong character beat. However, the narration 'Lirien stopped herself. Started again.' is an external description of what is happening in Lirien's speech, inserted between Lirien's spoken lines without a clear POV anchor. Since this is Kaelith's POV, the observation should feel like something Kaelith notices rather than an omniscient stage direction. A brief Kaelith-filtered perception would ground the interruption more firmly.",
+      "lineRef": { "start": 231, "end": 232 },
+      "suggestedFix": "Filter through Kaelith's perception: 'The bond allows precise monitoring —' She stopped. The clinical register cracked. 'I would need to stop your heart. Briefly. Seconds.' This lets Kaelith hear the register-break and names what she perceives (the clinical mask cracking) rather than neutrally narrating Lirien's self-correction."
+    }
+  ],
+  "positiveObservations": [
+    {
+      "category": "voice",
+      "observation": "Kaelith's voice is sharply distinct from Lirien's Ch18 POV. The military-assessment opening (two exits, palisade angles, interlocking fields of fire) establishes the POV character within three sentences. Sentence rhythm is predominantly short and declarative, with longer sentences surfacing at emotional breaches (lines 33, 237, 241). No risk of cross-POV confusion."
+    },
+    {
+      "category": "dialogue",
+      "observation": "All dialogue exchanges serve dual narrative function (information delivery + relational shift). Subtext operates throughout: 'Commander' carries loyalty-and-identity weight; the cipher presentation is identity severance performed as proof; 'Then we burn together' enters Kaelith's fire domain as an act of metaphorical intimacy. No empty exchanges. Every line advances plot, relationship, or both."
+    },
+    {
+      "category": "show-tell",
+      "observation": "The chapter handles its central emotion — the decision to trust — almost entirely through showing. Kaelith never says 'I love you' or 'I trust you.' Trust is conveyed through structural metaphor (cracked foundations bearing weight), through action (staying instead of fleeing, choosing Lirien), and through the bond opening. The one explicit emotional declaration ('I am afraid') is framed as a peak vulnerability-ladder event, not routine narration."
+    },
+    {
+      "category": "mru",
+      "observation": "MRU sequencing is consistently sound across all sampled key moments. External stimulus precedes character reaction throughout. The 'Commander' impact (lines 53–59), the bond-opening moment (lines 143–147), and the decision crystallization (lines 253–261) all follow proper emotion → physical → rational → speech ordering."
+    },
+    {
+      "category": "tension",
+      "observation": "No dead spots exceeding half a page. The longest introspective passage (lines 77–101) maintains internal tension through the cascading collapse of Kaelith's isolation narrative. The planning scene (lines 283–382) sustains tension through the ticking clock (Pallor progression, Kaelith's deteriorating body) and the operational risk of the heartbeat-cessation plan."
+    },
+    {
+      "category": "prose",
+      "observation": "No banned phrases detected. Only one borderline romance cliché ('breath caught'). Metaphors stay within Kaelith's established domains with one intentional, well-handled exception (the water image at line 269). No purple prose, no adjective stacking, no mixed metaphors. The prose is restrained, precise, and emotionally authentic — the primary quality issue is density of voice markers, not quality of individual sentences."
+    }
+  ],
+  "invariantCompliance": {
+    "INV-017_proseQualityFloor": {
+      "status": "partial",
+      "notes": "Cliché count: 1 (breath caught, line 249) — within the 2-max limit. Purple prose: none. Repeated structures per page: EXCEEDS threshold — 'structural' (6×), 'foundation' (9×), 'the way' (13×) constitute repeated structural patterns well above 3-per-page. Show-don't-tell: strong with one minor label-first violation (line 135). Main INV-017 concern is the repetition dimension."
+    },
+    "INV-005_showDontTell": {
+      "status": "compliant",
+      "notes": "One minor violation (LINE-005, line 135). All major emotional beats — trust decision, fear naming, bond opening — are shown through action, physical response, and structural metaphor. The 'I am afraid' dialogue is telling-as-vulnerability-event, not narrative shortcut. Bond-mediated emotion naming is mechanically justified."
+    },
+    "INV-019_dialogueNaturalism": {
+      "status": "compliant",
+      "notes": "Dialogue sounds like speech. Kaelith drops contractions under stress (verified: 'I will be outside,' 'I am afraid,' 'I am trusting'). Lirien self-corrects mid-speech (lines 231–232). No overly formal phrasing where fragments would be natural. No character delivers polished essays. All exchanges under the 6-line unbroken limit."
+    },
+    "INV-035_microTension": {
+      "status": "compliant",
+      "notes": "No passage of half a page or more without active tension. Tension sources are varied: unresolved recognition (SCN-53), bond-proximity urgency (SCN-53 close), trust crisis (SCN-54), operational risk (SCN-55), physical deterioration timeline."
+    },
+    "INV-047_dialogueSubtext": {
+      "status": "compliant",
+      "notes": "All charged exchanges operate on dual layers. 'Commander' = identity reclamation. Cipher presentation = identity death for love. 'Everything after the Oathbrand was mine' = the love was real. 'Then we burn together' = shared destruction as intimacy. 'If I am trusting you with the world' = 'I love you' expressed as tactical assessment."
+    },
+    "INV-003_voiceDistinctness": {
+      "status": "compliant",
+      "notes": "Voice is immediately identifiable as Kaelith — military opening, short sentences, tactical assessment, physical emotion, structural metaphors. Sharply distinct from Ch18 Lirien. Voice evolution (longer sentences in Lirien's presence, one water image) properly tracked."
+    },
+    "INV-073_publicationReadyProse": {
+      "status": "partial",
+      "notes": "Prose is emotionally authentic and genre-appropriate. Lush where needed without being purple. Main gap to publication-ready is the voice-marker saturation, which must be addressed in revision to prevent the prose from reading as a structural-engineering manual with a romance plot."
+    }
+  }
+}

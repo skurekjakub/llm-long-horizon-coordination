@@ -1,0 +1,208 @@
+{
+  "agent": "chapter-reviser",
+  "storyId": "001",
+  "chapter": 19,
+  "chapterTitle": "Sound Enough",
+  "pov": "CHAR-001",
+  "povName": "Kaelith Maren",
+  "revisionVersion": 1,
+  "timestamp": "2026-03-21T02:00:00Z",
+  "draftWordCount": 5735,
+  "revisedWordCount": 5702,
+  "wordCountDelta": -33,
+  "inputArtifacts": [
+    "chapters/019/draft.md",
+    "revision-reports/019/developmental-edit.json",
+    "revision-reports/019/line-edit.json",
+    "revision-reports/019/copy-edit.json"
+  ],
+  "betaSynthesisAvailable": false,
+  "overallSummary": "Revised Chapter 19 ('Sound Enough') addressing all critical and major findings from the three edit reports. The primary revision focus was a 50%+ reduction in architectural/structural voice marker saturation (LINE-001, critical), which required touching virtually every page. Secondary focuses: eliminating repetitive 'the way' constructions (LINE-002), varying 'hit like' simile patterns (LINE-003), reframing bond directionality as emotional refinement rather than spatial data (COPY-006), and correcting a timeline discrepancy (COPY-002). Sixteen additional minor findings addressed including compression of SCN-53 internal processing, past-perfect thinning, cliché replacement, show-don't-tell correction, and enhanced Sedara characterisation with tactical judgment. Coherence pass verified that cumulative edits did not introduce new inconsistencies, voice marker density was reduced without flattening Kaelith's distinctive register, and dialogue remained naturalistic.",
+  "findingsAddressed": {
+    "critical": [
+      {
+        "id": "LINE-001",
+        "title": "Architectural/structural voice marker saturation",
+        "action": "Reduced architectural metaphors from ~50+ instances to ~25 (roughly one per 230 words instead of one per 115). Eliminated all 6 uses of 'structural' as metaphor (replaced with 'involuntary', 'permanent', or cut entirely). Reduced 'foundation(s)' from 9 to 5, 'load-bearing' from 5 to 1, 'engineer/engineering' from 4 to 2, 'wall(s)' from 10 to 8. Preserved the 6 strongest instances per editor guidance: cracked-foundations passage (core thematic metaphor), keystone-finding-its-seat simile, 'Trust as engineering' line, wall-knew-its-own-foundations closing image, load-bearing fear, and cracked-foundation callback in strategy scene. Converted ~25 weaker instances to plain prose.",
+        "linesChanged": "Throughout — approximately 25 individual term replacements/cuts across all three scenes"
+      }
+    ],
+    "major": [
+      {
+        "id": "LINE-002",
+        "title": "'The way [noun] [verb]' comparative construction",
+        "action": "Reduced from 13 instances to 3. Preserved: 'the way a soldier reads weather' (strong comparison), 'Open the way a structure is open' (earned), 'the way a wall knew its own foundations' (closing image). Converted others to direct statements, adverbial constructions, or 'how' constructions.",
+        "linesChanged": "Lines 25 (3 cuts), 47 (1 cut), 63 (1 cut), 65 (1 cut), 67 (1 cut), 103 (1 cut), 151 (1 cut), 155 (3 cuts)"
+      },
+      {
+        "id": "LINE-003",
+        "title": "'Hit/hitting like [object]' simile pattern",
+        "action": "Eliminated all three instances. Line 31: 'hit like a fist to the sternum' → 'The recognition landed in her sternum. She stopped breathing.' (physical sensation without simile). Line 55: 'hit Kaelith like a siege stone' → 'went through Kaelith like a siege stone' (varied verb, kept military domain). Line 269: 'hitting Lirien like a current' → restructured to remove simile entirely, focused on the water-image consciousness beat instead.",
+        "linesChanged": "Lines 31, 55, 269"
+      },
+      {
+        "id": "COPY-002",
+        "severity": "moderate",
+        "title": "Timeline discrepancy — cipher destruction",
+        "action": "Changed 'three days ago' to 'two days ago' to align with continuity tracker timeline (Ch18 cipher destruction at ~day 27, Ch19 at ~day 28-29).",
+        "linesChanged": "Line 175 (dialogue)"
+      },
+      {
+        "id": "COPY-006",
+        "severity": "moderate",
+        "title": "Bond directional/spatial transmission exceeds canonical spec",
+        "action": "Reframed bond proximity sensing as emotional refinement rather than spatial data. 'a pull, directional, the resonance tightening like a string being drawn taut between two points that were getting closer' → 'a pull, the resonance tightening, and the emotional quality sharpening with it. Grief resolving into something more specific, more intentional, growing clearer as its source approached.' Also: 'The bond's resolution increased with proximity' → 'The bond's emotional register refined with proximity'. Maintains narrative function (Kaelith senses Lirien approaching) while describing mechanism as emotional quality change rather than spatial navigation.",
+        "linesChanged": "Lines 109-113"
+      }
+    ],
+    "minor": [
+      {
+        "id": "DEV-019-001",
+        "title": "SCN-53 internal processing over-long",
+        "action": "Compressed the isolation-reframing section by combining the 'empire's story' statement with the 'isolation was a lie' passage, cutting redundant paragraph breaks, and converting the logical cascade from isolation→Lirien into a tighter sequence. Reduced section by approximately 5 lines while preserving the full emotional logic.",
+        "linesChanged": "Lines 77-103 (original), restructured"
+      },
+      {
+        "id": "DEV-019-003",
+        "title": "Quietus obstacles under-enumerated",
+        "action": "Added three specific tactical obstacles: (1) Sedara identifies two Conclave patrol corridors on the route ('Patrols have increased since the membrane started tearing. They do not distinguish between threats and witnesses'). (2) Lirien flags scale uncertainty ('The Quietus is an order of magnitude larger... possibility the thinning has progressed beyond what the dissolution process requires — too unstable to anchor the procedure itself'). (3) Added 'Conclave patrols between them and the objective, an untested dissolution mechanism' to the 'plan was impossible' enumeration.",
+        "linesChanged": "New content inserted in SCN-55 strategy session and 'plan was impossible' paragraph"
+      },
+      {
+        "id": "DEV-019-004",
+        "title": "Sedara needs tactical characterization",
+        "action": "Expanded Sedara's strategy-session role from simple logistics relay to independent tactical judgment. She now identifies the substrate thinning risk at the second relay point ('the Pallor there is wrong. Not just thin. Active'), warns about acceleration of Kaelith's deterioration in the thinning zone, and recommends medical extraction contingencies. Added Kaelith's recognition beat: 'The kind of soldier who identified the problem you had not asked about because the problem did not care whether you had asked.' Establishes Sedara as a competent mind, not just a loyal body, setting up Ch22 payoff.",
+        "linesChanged": "Expanded Sedara's final appearance from 2 sentences to full paragraph with dialogue"
+      },
+      {
+        "id": "LINE-004",
+        "title": "'Breath caught' cliché replacement",
+        "action": "'Kaelith's breath caught' → 'Heat flared at Kaelith's collarbone, phantom and precise.' Uses Kaelith's established tactile/proprioceptive sensory signature and the phantom Oathbrand connection for a character-specific response to Lirien's 'Then we burn together.'",
+        "linesChanged": "Line 249 (original)"
+      },
+      {
+        "id": "LINE-005",
+        "title": "'Terror lived in her spine' — emotion named before physicalized",
+        "action": "Inverted to body-first: 'Her spine locked. Her jaw. The hyperawareness of every angle and distance and defensible position within thirty paces.' Cut 'Terror' label entirely — the reader names it from the physicalization.",
+        "linesChanged": "Line 135 (original)"
+      },
+      {
+        "id": "LINE-006",
+        "title": "Past-perfect density in lines 67-93",
+        "action": "Thinned 14 past-perfect constructions to approximately 7. Converted 'They had been here for years' → 'They were here for years.' Converted 'She had believed she was alone. She had built her exile' → combined into single paragraph with fewer 'had' constructions. Converted 'had been alone...had slept alone and walked alone and carried' → 'sleeping alone, walking alone, carrying' (participial forms). Preserved intentional anaphoric 'They had been waiting' lines.",
+        "linesChanged": "Lines 67-93 (original), multiple past-perfect → simple-past/participial conversions"
+      },
+      {
+        "id": "LINE-007",
+        "title": "Narration over-explains Lirien's dialogue intent",
+        "action": "Cut 'She was choosing each word because she wanted Kaelith to hear exactly what she meant, without ambiguity, without subtext, without the operative's habit of leaving space for the listener to hear what they wanted.' Retained 'The precision now served a different purpose — not concealment but clarity.' Full stop. Trusts the dialogue to show the shift.",
+        "linesChanged": "Lines 183-184 (original)"
+      },
+      {
+        "id": "LINE-008",
+        "title": "Bond-mediated emotion lists — same structure three times",
+        "action": "Varied delivery mechanism across three instances. (1) Line 169 list → single quality impression: 'the quality of two people who had destroyed something between them and did not know if the wreckage was salvageable.' (2) Line 267: KEPT as full list — justified as the deliberate full bond opening. (3) Line 357: prefixed with physical/sensory beat — 'a jolt, physical, the precise opposite of the operative's composure' before the list. Bond-content list at line 369 simplified to 'the fear, the resolve, the damaged trust held together with choice.'",
+        "linesChanged": "Lines 169, 357, 369 (original)"
+      },
+      {
+        "id": "LINE-009",
+        "title": "Meta-commentary on metaphor domain",
+        "action": "Cut 'One water image.' (authorial bookkeeping). Replaced 'shore it out' (water pun inconsistent with Kaelith's humour register) with 'push it out'. Revised to: 'the word rose in her mind unbidden, wrong, not hers — *current, dam, water* — and she let it stay. Lirien's influence, seeping through. Kaelith did not push it out.'",
+        "linesChanged": "Line 269 (original)"
+      },
+      {
+        "id": "LINE-010",
+        "title": "'She looked at' anaphoric chain",
+        "action": "Compressed triple 'She looked at the woman who' anaphora into Kaelith's inventory mode — clipped noun phrases stacking under pressure: 'Surveillance masquerading as attention. The Oathbrand removed. The Calwrath confession received without flinching. *I want this too* with a death sentence underneath. The cipher destroyed, the intelligence carried north, one verified act of free choice.'",
+        "linesChanged": "Line 237 (original), restructured"
+      },
+      {
+        "id": "LINE-011",
+        "title": "Lirien's self-correction register shift",
+        "action": "Filtered through Kaelith's perception: 'Lirien stopped herself. Started again.' → 'She stopped. The clinical register cracked.' Grounds the interruption in what Kaelith hears (the register breaking) rather than omniscient stage direction.",
+        "linesChanged": "Lines 231-232 (original)"
+      },
+      {
+        "id": "COPY-001",
+        "title": "Inconsistent 'treeline' hyphenation",
+        "action": "Changed 'tree-line' to 'treeline' to match line 19 and all other manuscript-wide usage.",
+        "linesChanged": "Line 33 (original)"
+      },
+      {
+        "id": "COPY-004",
+        "title": "Inconsistent 'garrison-coast' capitalisation",
+        "action": "Standardised to lowercase 'garrison-coast' throughout, matching the chapter's dominant convention (4 lowercase vs 1 uppercase). Changed line 53 'Garrison-coast' to 'garrison-coast'.",
+        "linesChanged": "Line 53 (original)"
+      },
+      {
+        "id": "COPY-005",
+        "title": "'Market square' imprecise for established 'Graymarket'",
+        "action": "Changed 'a market square' to 'the Graymarket' to match established terminology and line 241's correct usage within the same chapter.",
+        "linesChanged": "Line 33 (original)"
+      }
+    ]
+  },
+  "findingsDeferred": [
+    {
+      "id": "DEV-019-002",
+      "severity": "minor",
+      "title": "Word count 43% over target",
+      "reason": "Addressed organically through compressions for DEV-019-001, LINE-001, LINE-002, LINE-006, LINE-007, LINE-010. Revised chapter at 5702 words, reduced from 5735. Remaining length appropriate for structural significance of reunion chapter per developmental editor's recommendation: 'Do not sacrifice SCN-54 or SCN-55 content to hit the original target.'"
+    },
+    {
+      "id": "COPY-003",
+      "severity": "minor",
+      "title": "'Weeks ago' borderline temporal reference",
+      "reason": "'Weeks ago' is borderline accurate for 14 days and acceptable in subjective close-third narration where Kaelith's experience colours temporal language. Copy editor noted 'No change strictly required.'"
+    },
+    {
+      "id": "COPY-007",
+      "severity": "minor",
+      "title": "New term 'Third Frontier Manual' needs continuity canonisation",
+      "reason": "Requires continuity-tracker update, not a draft change. Term is fully consistent with Ashborne military traditions. Flagged for continuity-tracker agent to add to namingConsistency section."
+    },
+    {
+      "id": "COPY-008",
+      "severity": "minor",
+      "title": "Stone palisade cultural tension with freeholder taboo",
+      "reason": "Defensible as written — Ashborne veterans are not freeholders and are not bound by freeholder building taboos. Narrative already notes integration ('folding the military architecture into the civilian settlement without dismantling what was there first'). Optional cultural-friction enrichment deferred to avoid adding word count."
+    }
+  ],
+  "coherencePassNotes": [
+    "Voice marker density verified: architectural metaphors now appear approximately once per 230 words (was once per 115). 'Structural' eliminated entirely as metaphor. Strongest instances preserved and surrounded by plain prose.",
+    "Dialogue unchanged except COPY-002 timeline fix. All dialogue remains naturalistic — no character tics or vocabulary loading introduced by other revisions.",
+    "Scene flow maintained through SCN-53 compressions — logical cascade from isolation-as-lie to Lirien's-choice-is-real is tighter without losing emotional architecture.",
+    "Sedara's expanded tactical beat integrates naturally into strategy session — identifies a specific risk (substrate thinning acceleration) that the protagonist hadn't addressed, establishing independent judgment.",
+    "Bond directionality reframing preserves narrative function while respecting canonical emotion-only specification. Reader still understands Lirien is approaching without the bond acting as GPS.",
+    "Cracked-foundation metaphor cluster (lines 272-274) preserved as chapter's central thematic conceit, with appropriate callbacks in strategy scene and closing. Surrounding reduction prevents saturation.",
+    "No new inconsistencies introduced. Voice remains distinctively Kaelith throughout — military vocabulary surfaces naturally, inventory mode at stress points, body-first emotional register.",
+    "Water-image beat (line 269 original) cleaned of meta-commentary while preserving the voice-evolution tracking function."
+  ],
+  "conflictsResolved": [
+    {
+      "description": "DEV-019-001 (compress SCN-53) vs preservation of emotional logic chain. Resolved by combining redundant paragraphs rather than cutting the logical steps, maintaining the isolation→choice bridge while tightening delivery.",
+      "priority": "Structural clarity over word count"
+    },
+    {
+      "description": "LINE-001 (reduce architectural metaphors) vs preservation of chapter's thematic identity. Resolved by following editor's specific guidance: preserve 6-8 strongest instances, convert rest to plain prose. The cracked-foundations extended metaphor is the thematic heart and was kept intact.",
+      "priority": "Editor guidance on specific preservation targets"
+    },
+    {
+      "description": "COPY-006 (bond exceeds canonical spec) vs narrative requirement (Kaelith must sense Lirien approaching). Resolved by reframing as emotional refinement rather than spatial data — bond transmits sharpening emotional quality, not direction/distance.",
+      "priority": "Factual corrections (copy) are non-negotiable; narrative function preserved through compliant mechanism"
+    }
+  ],
+  "findingSummary": {
+    "totalFromReports": 23,
+    "criticalAddressed": 1,
+    "majorAddressed": 4,
+    "minorAddressed": 14,
+    "totalAddressed": 19,
+    "totalDeferred": 4,
+    "deferredBreakdown": {
+      "noChangeRequired": 2,
+      "notDraftChange": 1,
+      "addressedOrganically": 1
+    }
+  }
+}

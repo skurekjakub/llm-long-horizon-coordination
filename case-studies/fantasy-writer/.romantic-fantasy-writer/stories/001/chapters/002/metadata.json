@@ -1,0 +1,57 @@
+{
+  "chapterNum": 2,
+  "pov": "CHAR-002",
+  "wordCount": 5935,
+  "sceneCount": 3,
+  "craftToolCompliance": {
+    "T5_ToneContract": "Maintained morally complex and atmospherically taut tone. Avoided melodrama through clinical assessment language. Dry wit in 'The file was wrong about many things' and Lirien's parenthetical observations.",
+    "T6_StakesEscalation": "Stakes elevated from personal (fulfill contract) to strategic (Warden-lineage revelation means execution may worsen Pallor crisis). Lirien now facing operational paradox.",
+    "T7_BlackMoment": "Groundwork laid \u2014 dramatic irony of Kaelith trusting someone contractually bound to kill her, with reader aware of both the contract and now the paradox that killing her may destroy god-seal access.",
+    "T8_InternalExternalResistance": "Internal: Lirien's operative conditioning vs emerging curiosity/respect for Kaelith. External: binding contract vs Seep directive to gather intelligence. 48-hour deadline introduced.",
+    "T10_SandersonsLaws": "Oathbrand mechanics clarified \u2014 suppresses but doesn't remove capacity, responds to ontological disturbances if subject has Warden inheritance. Pallor failure established as measurable, trackable phenomenon.",
+    "T12_DualArcInterleave": "Fantasy beat (Pallor tear + Oathbrand flare revealing Warden capacity) creates romantic complication (killing Kaelith becomes strategically catastrophic, not just morally complex).",
+    "T13_TensionMapping": "Tension level 5 maintained. Three escalating beats: surveillance assessment (operational), direct eye contact (interpersonal), intelligence packet (world-scale crisis introduction).",
+    "T15_ForeshadowingPayoff": "FS-003 advanced (surveillance becomes mutual recognition). FS-009 planted (Ythara reference as imprisoned god). FS-005 introduced (Warden-lineage paradox).",
+    "T16_SymbolicMotif": "Water/infiltration imagery ('current' metaphors in Lirien's thought patterns, 'seepage' of human language into fae precision). Oathbrand as wound that shouldn't respond but does.",
+    "T17_VoiceFingerprinting": "Lirien's voice distinct from Kaelith: longer sentences with observation\u2192assessment structure, operative vocabulary ('variables,' 'parameters,' 'calculate'), fae precision markers ('I have observed,' avoids contractions), clinical emotional register.",
+    "T18_InformationAsymmetry": "Reader knows kill contract (ch1), Kaelith suspects threat but doesn't know specifics. Lirien learns about Warden inheritance (reader and Lirien both learn together). Dramatic irony maintained.",
+    "T20_EmotionalThroughline": "Lirien moves from 'controlled precision' (ch1) to 'analytical concern' (target more competent than briefed) to operational decision to delay \u2014 emotional state now matches throughline projection.",
+    "T21_VulnerabilityLadder": "First vulnerability step: Lirien admits internally that Kaelith is 'interesting' beyond target parameters. Does not yet name this as compromise, but recognizes the danger.",
+    "T23_MysteryBox": "MB-002 opened (Pallor poisoning suggested by accelerated failure), MB-004 advanced (Ythara nature hinted), MB-007 advanced (why Court wants Kaelith dead becomes more mysterious given Warden capacity).",
+    "T24_SubtextInDialogue": "Kaelith and Lirien's exchange is layered subtext. 'Are you here to kill me?' answered with 'You would not have seen me' \u2014 not denial, not confirmation. Both reading each other, neither fully transparent.",
+    "T25_ThematicScaffolding": "TP-1 (trust as structural failure) \u2014 both characters assessing whether the other is threat or resource. Neither trusts, both calculate. Trust will require vulnerability neither has offered."
+  },
+  "sceneValueShifts": [
+    {
+      "sceneId": "SCN-004",
+      "shift": "From 'routine contract execution' to 'target is more dangerous than briefed' \u2014 Lirien realizes Kaelith is compressed, not broken, and the file is fundamentally wrong."
+    },
+    {
+      "sceneId": "SCN-005",
+      "shift": "From 'professional distance' to 'target has become interesting beyond mission parameters' \u2014 direct eye contact, mutual recognition, Lirien holds position instead of withdrawing."
+    },
+    {
+      "sceneId": "SCN-006",
+      "shift": "From 'assassination mission' to 'target is anomalous and possibly key to larger crisis' \u2014 Seep packet reveals Warden inheritance, execution becomes operationally paradoxical."
+    }
+  ],
+  "emotionalStatesAtBoundaries": {
+    "chapterStart": "Lirien begins in clinical assessment mode, counting patterns, filing observations, experiencing no moral conflict.",
+    "chapterEnd": "Lirien ends in operational uncertainty \u2014 has made the decision to delay execution (violating doctrine), curiosity has compromised professional distance, counting hours until binding pain starts."
+  },
+  "foreshadowingElements": {
+    "planted": [
+      "Warden-lineage capacity in Kaelith (FS-005 introduced)",
+      "Ythara the Unfinished as imprisoned god whose nature dissolves reality (FS-009)",
+      "Court contract origin unclear \u2014 someone commissioned Kaelith's execution (FS-011 hinted)",
+      "48-hour binding deadline \u2014 Lirien must act or die (creates urgency for ch3-4)"
+    ],
+    "resolved": []
+  },
+  "continuityCitations": [
+    "Day 1 dawn patrol from ch1 \u2014 Pallor tear occurred during Kaelith's seawall walk",
+    "Lirien's surveillance from ch1 \u2014 direct eye contact moment continues from marketplace scene",
+    "Tavik's compromise from ch1 \u2014 referenced in Lirien's observation of their interaction",
+    "Oathbrand flare from ch1 \u2014 now revealed to correlate with Pallor tear, suggesting ontological connection"
+  ]
+}

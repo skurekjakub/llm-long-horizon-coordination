@@ -1,0 +1,164 @@
+{
+  "chapterNumber": 2,
+  "editorType": "line",
+  "generatedAt": "2026-03-20T10:00:00Z",
+  "overallProseAssessment": "Lirien's POV voice is well-established from the opening paragraph — the shift from Kaelith's tactile, structural register to Lirien's visual, analytical framework is immediately apparent. The chapter's best prose operates at publication quality: the market confrontation's dialogue, the Oathbrand inflammation observation, and the closing binding-pressure beat are all precisely calibrated to Lirien's intelligence-operative register. However, three prose-level patterns require correction: (1) a repetitive assessment-revision cycle that creates verbal monotony ('revised her assessment' ×4, 'the file was wrong' ×6+, 'not broken' ×3), (2) Lirien's established water/current/surface metaphor domain is significantly underrepresented — the chapter relies almost entirely on neutral analytical language where her voice profile calls for moderate metaphor density drawn from infiltration and permeability imagery, and (3) the intelligence packet section (Scene 3) abandons close-third immersion in favor of document-style exposition with formatted headers, violating both the one-paragraph exposition rule and the POV intimacy standards. The dialogue in Scene 2 is the chapter's strongest writing — subtext-laden, economical, and precisely calibrated to both characters' profiles. The cliché count is low (1-2 borderline instances), and the show-don't-tell discipline is generally maintained except in the closing admission and one section of file analysis.",
+  "findings": [
+    {
+      "id": "LINE-002-001",
+      "severity": "major",
+      "category": "repetition",
+      "location": "Lines 49-50, 72, 99, 159-161 — 'revised her assessment' and variants",
+      "finding": "The phrase 'revised her assessment' (or functional equivalents: 'revised her working file,' 'revised her threat assessment') appears four times in the chapter. Additionally, 'the calculus had changed' appears at line 106, and 'adjusted her operational assessment' at line 24. The cumulative effect is six named assessment-revision moments in a single chapter. Lirien's character profile establishes her as someone who cross-references constantly and revises evaluations — but the verbal marker should be used once for impact, not six times as a structural tic. After the second instance, the phrase stops revealing character and starts functioning as a paragraph-level transition device: 'now she knows more → revised assessment → next observation.' The reader begins to anticipate the revision before it arrives, which is the definition of a pattern that has outlasted its usefulness.",
+      "currentText": "Line 49: 'Lirien revised her assessment. Again.' / Line 72: 'Lirien revised her working file again.' / Line 99: '...revised her assessment. Again.' / Lines 159-161: 'Lirien revised her threat assessment. Again. Target was not diminished...'",
+      "recommendation": "Preserve one instance — the final one (lines 159-161), positioned after the direct confrontation, carries the most weight because it follows the chapter's highest dramatic beat. Replace earlier instances: (1) line 24 'adjusted her operational assessment' → cut entirely; the subsequent observations demonstrate the adjustment without naming it. (2) Line 49 → show the revision through the shift in her language about Kaelith (from 'the target' to more specific descriptors). (3) Line 72 → replace with a Lirien-specific phrase: 'The working model was not wrong in kind. It was wrong in scale.' (4) Line 99 → cut and let the observation that follows serve as the implicit revision."
+    },
+    {
+      "id": "LINE-002-002",
+      "severity": "major",
+      "category": "repetition",
+      "location": "Lines 22, 78, 88, 104, 214 — 'not broken' / 'compressed' refrain",
+      "finding": "The 'not broken — compressed' formulation and its variants appear five times: 'Not broken. Compressed.' (line 22), 'Not broken' echoed in the file analysis (line 78 area), 'Still compressed. Still tactical.' (line 88), 'The target was waking up' (line 104, semantic echo), 'Still compressed. Still tactical. Still very much not broken.' (line 214). The initial formulation (line 22) is strong — it crystallizes Lirien's insight into a precise operational distinction. But by the fifth occurrence, the refrain has become a chorus that the chapter repeats rather than develops. Each repetition should add new information or emotional weight; instead, they confirm what the reader already understands. The tripartite 'Still compressed. Still tactical. Still very much not broken' at line 214 is particularly weakened by the three preceding uses — it aims for emphasis but achieves redundancy.",
+      "currentText": "Line 22: 'Not broken. Compressed.' / Line 88: 'Still compressed. Still tactical.' / Line 214: 'Still compressed. Still tactical. Still very much not broken.'",
+      "recommendation": "Keep the initial formulation (line 22) and the Scene 2 closing (line 214). Cut or vary the intermediate instances. The initial states the insight; the Scene 2 closing confirms it after direct evidence. Everything between should show compression through specific behavioral observation rather than repeating the label. At line 214, tighten to two beats instead of three: 'Still tactical. Not broken.' — the inversion mirrors the opening while compressing the refrain itself."
+    },
+    {
+      "id": "LINE-002-003",
+      "severity": "major",
+      "category": "exposition",
+      "location": "Scene 3, lines 254-325 — intelligence packet consecutive exposition",
+      "finding": "The intelligence packet reading contains approximately 1500 words of consecutive exposition with no scene action, dialogue, or embodied perception. The style guide mandates a maximum of one paragraph of pure exposition before returning to scene action. The current structure stacks 6+ exposition paragraphs in sequence, formatted with bold headers (SUBJECT, CLASSIFICATION, INCIDENT REPORT, ANOMALY NOTATION, ASSESSMENT, OPERATIONAL RECOMMENDATION, SECONDARY NOTATION, TERTIARY NOTATION) that belong to a briefing document, not close-third narration. Lirien's voice disappears during this section — the prose reads as the packet itself rather than as Lirien processing the packet. Her characteristic analytical processing (observation → interpretation, cross-referencing against prior intelligence) is absent. The section where she forces herself to 'read clinically' (line 302) is the one moment where her presence reasserts, and it demonstrates what the rest of the section lacks.",
+      "currentText": "[Multiple paragraphs of formatted intelligence data without scene-level narrative beats]",
+      "recommendation": "Restructure as Lirien's active analysis rather than passive transcription. After every paragraph of intelligence content, return to Lirien in the room: her posture shifting, her attention sharpening, the binding pressure pulsing in her veins, her hands going still on the parchment. Use her physical responses to mark the escalation of revelations. Replace formatted headers with Lirien's processing language: 'The first page was routine — environmental degradation data she had seen in forty previous packets' (establishes and dismisses quickly). 'The second page changed everything' (marks the shift through her assessment, not through a formatted header). Remove bold formatting entirely — this is close-third prose, not a document."
+    },
+    {
+      "id": "LINE-002-004",
+      "severity": "minor",
+      "category": "metaphor",
+      "location": "Throughout — water/current metaphor domain underrepresented",
+      "finding": "Lirien's voice profile specifies moderate metaphor density drawn from 'water, currents, seals, thresholds, light, reflection, hidden rooms, and contractual binding.' The chapter uses primarily neutral analytical language with very few metaphors from her established domains. The style guide states: 'Metaphors must come from the POV character's lived domains... Lirien gets water, surfaces, currents, contract logic, light, and concealment.' The chapter contains zero explicit water/current metaphors and only scattered contract language. This is a missed opportunity to differentiate Lirien's narration from what would be generic third-person analytical prose. Her assessment of Kaelith, the intelligence analysis, and the operational dilemma all have natural touchpoints with permeability, undertow, hidden depth, and concealment imagery.",
+      "currentText": "[No specific passage — this is a pattern absence]",
+      "recommendation": "Add 3-5 metaphors from Lirien's domains across the chapter, positioned at emotional or analytical pivot points. Examples of natural insertion points: (1) The initial surveillance could describe Kaelith's routine as having 'no visible current beneath the surface' — appearing stagnant but concealing depth. (2) The direct confrontation could note that the conversation 'acquired an undertow.' (3) The intelligence packet revelation could describe information flooding through a gap in her operational model 'like water finding a crack in otherwise sound stone.' (4) The binding pressure could be described as a 'tide' she has learned to ignore. These should feel organic to Lirien's assessment style, not decorative."
+    },
+    {
+      "id": "LINE-002-005",
+      "severity": "minor",
+      "category": "voice-consistency",
+      "location": "Lines 52-55: 'This was operative-grade' passage",
+      "finding": "The passage 'This was not command-grade threat awareness. / This was operative-grade' introduces classification jargon ('command-grade,' 'operative-grade') that reads as report-speak rather than close-third interior narration. While Lirien's voice profile includes professional terminology, the hyphenated grade classifications are a level of bureaucratic formality that belongs in written assessments, not in the flowing internal monologue of an intelligence operative watching from a rooftop. The style guide specifies that Lirien's thought patterns are 'associative and comparative' — she would express this distinction through observation of specific behavioral differences, not through classification labels.",
+      "currentText": "But this was not command-grade threat awareness. / This was operative-grade.",
+      "recommendation": "Show the distinction through behavioral specifics rather than classification labels. Suggested direction: 'But garrison commanders learned to read battlefields. They did not learn to locate a surveillance position and hold gaze without searching — not unless the training went deeper than any file recorded.' This grounds the insight in observed behavior (Lirien's domain) rather than bureaucratic taxonomy."
+    },
+    {
+      "id": "LINE-002-006",
+      "severity": "minor",
+      "category": "repetition",
+      "location": "Throughout Scene 1 — approximately 10 references to 'the file' or 'the intelligence file'",
+      "finding": "The intelligence file is referenced approximately ten times in Scene 1 alone: 'the intelligence file's assessment' (line 12), 'The file was wrong about many things' (line 14), 'The file had described' (line 47), 'The file had used the word broken six times' (line 48), 'The file listed' (line 58), 'the file had indicated' (line 53), 'the file's broad assessment' (line 66), 'Gaps in the file' (lines 63, 74). While the discrepancy between file and reality is the scene's central tension, the word 'file' becomes a drumbeat that the reader tires of. The concept can be conveyed through varied phrasing: 'the briefing,' 'what she had been told,' 'the Court's assessment,' 'the intelligence she had been given.'",
+      "currentText": "[Multiple instances — see location list]",
+      "recommendation": "Reduce 'the file' references from ~10 to 4-5 by varying the phrasing. Keep the first ('the intelligence file's assessment'), the most damning ('The file had been compiled by someone who had never watched Kaelith Maren work a wall while being actively surveilled'), and the conclusion ('The gaps in the file were not accidental. They were architectural.'). Replace intermediate references with synonyms: 'the briefing,' 'what the Court had provided,' 'the assessment she'd been given.'"
+    },
+    {
+      "id": "LINE-002-007",
+      "severity": "minor",
+      "category": "show-dont-tell",
+      "location": "Lines 219-221",
+      "finding": "The passage 'Kaelith Maren was interesting. Not as a target. As a person. And interest was the first stage of compromise in an operative whose survival depended on maintaining professional distance from the people she was sent to kill' names the emotional shift too explicitly. Per Lirien's voice profile, when her classification system fails, the failure manifests as silence or stillness, not successful labeling. At this stage in the arc, Lirien would note the anomaly (she delayed execution when opportunity existed) and find her operational justification insufficient — but she would NOT correctly diagnose her own emotional state as 'interest' or articulate the 'first stage of compromise.' That level of self-awareness belongs to a later chapter. The reader should see the gap; Lirien should not.",
+      "currentText": "Kaelith Maren was interesting. Not as a target. As a person. And interest was the first stage of compromise in an operative whose survival depended on maintaining professional distance from the people she was sent to kill.",
+      "recommendation": "Replace the explicit diagnosis with a classification failure. Suggested direction: 'The operational justification — that the file was inaccurate, that acting on false intelligence was the faster route to failure — was sound. It was also, Lirien suspected, incomplete. There was another variable she had not yet categorized, and the inability to categorize it was itself data she did not know how to file.' This shows Lirien's system failing without her successfully naming what's causing the failure. 'Interesting' can remain as the one-word paragraph earlier (line 46) where it functions as her characteristic word, but the extended analysis of interest-as-compromise should be cut."
+    },
+    {
+      "id": "LINE-002-008",
+      "severity": "minor",
+      "category": "POV-discipline",
+      "location": "Lines 28-29",
+      "finding": "Generic second-person 'you' in close-third narration: 'the slow erosion of competence into routine, day after day, until you forgot what you had been before the empire decided you were too dangerous or too inconvenient or simply too visible.' Same issue flagged in the Chapter 1 line edit (LINE-001-003). Close-third POV's power is its restriction to one consciousness; generic 'you' universalizes Lirien's specific professional assessment. Unlike Kaelith (who had 8+ instances), Lirien's chapter has only this one instance, so the impact is minimal — but consistency with the established editorial standard requires flagging it.",
+      "currentText": "...until you forgot what you had been before the empire decided you were too dangerous or too inconvenient or simply too visible.",
+      "recommendation": "Convert to close-third. Suggested: '...until the person inside it forgot what they had been before the empire decided they were too dangerous, too inconvenient, or simply too visible.' Or more directly in Lirien's register: '...until whatever had been operational inside it eroded into mechanical repetition.'"
+    },
+    {
+      "id": "LINE-002-009",
+      "severity": "minor",
+      "category": "sentence-rhythm",
+      "location": "Scene 1, lines 10-75 — medium-length sentence uniformity",
+      "finding": "Scene 1's prose maintains a consistently medium-length analytical cadence (12-20 words per sentence) without sufficient variation. Lirien's voice profile calls for 'mixed and fluid' rhythm with 'medium analytical sentences punctuated by short field-note fragments.' The short field-note fragments are present in a few places ('The file was wrong about many things.' 'Interesting.') but are outnumbered by the medium-analytical default. The 'cataloguing fragments that read like field notes' described in the profile — three-to-six-word observations with the quality of surveillance shorthand — are underrepresented. The effect is prose that is competent but rhythmically monochrome, lacking the current-like variation that distinguishes Lirien's voice from generic analytical narration.",
+      "currentText": "[Pattern issue — no single passage]",
+      "recommendation": "Introduce 4-6 additional field-note fragments across Scene 1, positioned after key observations. Examples: After the observation of Kaelith's morning routine, add a clipped assessment: 'Thirty-seven paces. No variation.' After the Tavik confrontation observed from distance: 'Refusal. Not hostile — resigned.' These fragments break the analytical medium-length default and create the surveillance-notes texture that distinguishes Lirien's voice."
+    },
+    {
+      "id": "LINE-002-010",
+      "severity": "minor",
+      "category": "repetition",
+      "location": "Lines 58-64, 90-98 — 'someone' / 'something' density",
+      "finding": "The file-analysis sections use 'someone' and 'something' with high density: 'Someone had removed Kaelith's operational history' (line 62), 'Someone with classification authority' (line 63), repeated in discussion of file-cleaning. Similarly, 'something' appears in the Tavik observation section. The indefinite pronouns create a vagueness that is thematically appropriate (Lirien doesn't know who) but verbally repetitive. The conspiracy thread can be conveyed with more varied phrasing.",
+      "currentText": "Someone had removed Kaelith's operational history before Calwrath. Someone with classification authority high enough that the erasure itself would not show up in audit logs.",
+      "recommendation": "Vary the phrasing. First instance: 'Someone had removed Kaelith's operational history before Calwrath.' Second: 'The erasure required classification authority high enough that the act itself would not show up in audit logs.' The second sentence conveys the same information without the anaphoric 'Someone' — the implied subject is the same person, and the sentence structure makes this clear."
+    },
+    {
+      "id": "LINE-002-011",
+      "severity": "suggestion",
+      "category": "voice-consistency",
+      "location": "Throughout — Lirien's characteristic phrases underrepresented",
+      "finding": "Lirien's voice profile establishes several characteristic verbal markers: 'Noted' (acknowledgment without opinion), 'Interesting' (meaning dangerous), 'the calculus has changed' (situation shifted), 'I have insufficient data,' and 'That is not relevant to the current situation.' The chapter uses 'Interesting' once (line 46) and 'the calculus had changed' once (line 106). The others are absent. While these markers should surface sparingly (the voice profile is a tendency, not a checklist), the current density is below what would make Lirien's narration immediately recognizable to a reader familiar with her patterns. Two or three additional characteristic phrases across the chapter would strengthen the voice fingerprint without over-seasoning.",
+      "currentText": "[Pattern absence]",
+      "recommendation": "Add 2-3 characteristic Lirien phrases at natural points. 'Noted' could appear in her processing of Kaelith's morning routine — filing an observation without emotional engagement. 'Insufficient data' could appear in her analysis of the Tavik confrontation — she can observe the exchange but cannot hear it, which is a data-sufficiency problem. 'Not relevant to the current situation' could appear internally when she catches herself dwelling on Kaelith's steadiness beyond operational necessity."
+    },
+    {
+      "id": "LINE-002-012",
+      "severity": "suggestion",
+      "category": "metaphor",
+      "location": "Lines 125-135 — Duskhaven decay observation",
+      "finding": "The passage about Duskhaven's decay (lines 122-135) is well-written atmospheric prose that reads as generic third-person description rather than distinctly Lirien. Her voice profile specifies that she 'reads the world through sight — not passive seeing but active visual interrogation.' The decay observation could be filtered more strongly through her intelligence-operative lens: not just what the decay looks like but what it means operationally — a town where no one is watching because everyone has stopped caring, a town that offers cover through indifference, a town where infrastructure failure provides as much intelligence as infrastructure function.",
+      "currentText": "Lirien had been in forty-seven cities across three nations over the course of her operational service. She had learned to read a place through its decay patterns.",
+      "recommendation": "Strengthen the intelligence-operative framing. Instead of generic observation about decay, have Lirien assess what Duskhaven's decay means for her mission: reduced surveillance capacity, degraded communication infrastructure, institutional indifference that provides cover. This is how an operative reads a location — not aesthetically but operationally."
+    }
+  ],
+  "voiceAssessment": {
+    "consistency": "Good with notable gaps. Lirien's analytical register, intelligence-operative framing, and visual-primary sensory processing are maintained consistently across all three scenes. The shift from Kaelith's POV is immediately recognizable. The dialogue in Scene 2 is precisely calibrated to Lirien's profile — her responses are controlled, precise, and deliberately ambiguous. Where the voice falters: the intelligence packet section (Scene 3) loses Lirien's presence entirely in favor of document-style exposition; the repetitive assessment-revision phrasing creates mechanical rather than organic narration; and the water/current metaphor domain that should differentiate her prose from generic analytical writing is largely absent.",
+    "distinctiveness": "Strong. A reader could identify this as not-Kaelith within the opening sentences. Lirien notices people before architecture, evaluates implications before noting physical details, and processes the world through visual assessment rather than tactile engagement. The opening paragraph — 'The target woke at dawn. Lirien noted the timing from her position two rooftops east' — immediately establishes the intelligence-operative frame. The distinction from Kaelith is clearest in the confrontation scene, where Lirien's responses to the same encounter that Kaelith experienced in Chapter 1 reveal entirely different professional priorities.",
+    "fingerPrintCompliance": "Moderate compliance. Vocabulary level (precise, observational, intelligence-shaped): confirmed. Sentence rhythm (mixed and fluid): partially confirmed — medium-analytical dominates with insufficient field-note fragments. Metaphor density (moderate, from water/current/contract domains): fails — density is low and domain-specific metaphors are largely absent. Emotional register (classified before felt): confirmed throughout except the closing admission (LINE-002-007). Thought patterns (associative and comparative): confirmed in Scene 1 and Scene 2; absent in Scene 3 where exposition replaces Lirien's active analysis. Sensory signature (visual/auditory): confirmed — Lirien reads faces, postures, distances, and the gap between words and intent. Dialect markers (fae precision, categorical statements): partially confirmed — her dialogue demonstrates fae formality ('I was not hiding before,' 'It is the answer I am providing') but internal narration uses contractions that should be largely absent at this stage. The profile notes contractions should 'increase gradually across the book' — at Chapter 2, they should be rare."
+  },
+  "prosePatterns": {
+    "sentenceRhythm": "The default rhythm is medium-analytical (12-20 words), which is within Lirien's profile but lacks the full range described. The profile calls for 'mixed and fluid: medium analytical sentences punctuated by short field-note fragments' with 'sharp cataloguing fragments that read like field notes.' The short fragments are present but sparse — 'Interesting.' (line 46), 'Not broken. Compressed.' (line 22), 'Watching back.' (line 88) are effective but outnumbered by the medium-analytical default. Longer, unfolding sentences for complex analysis are present in the file-analysis sections but could be more distinctive. Scene transitions are clean hard cuts. Isolated one-line paragraphs are used effectively: 'Interesting.' (line 46), 'The calculus had changed.' (line 106), 'The difference this time was that the target had looked back.' (line 371) — all mark genuine shifts.",
+    "repetitionIssues": "Three significant repetition patterns: (1) 'Revised assessment' — 4+ named instances plus 2 functional equivalents, the chapter's most prominent verbal tic. (2) 'Not broken' / 'compressed' — 5 instances of functionally identical formulation. (3) 'The file' — ~10 references in Scene 1 alone. Secondary: 'someone' density in conspiracy analysis, 'operational' as modifier (appears 8+ times). The repetition issues are concentrated in Scene 1 and the analytical passages of Scene 3; Scene 2 (the dialogue scene) is notably clean.",
+    "clicheCount": 1,
+    "showDontTellViolations": "Two instances identified. (1) Lines 219-221: Lirien names 'interest' as 'the first stage of compromise' — explicit emotional self-diagnosis that her profile says she cannot yet perform. (2) Lines 100-101: 'Anger, suppressed but visible to anyone who knew how to read kinetic tells' — the word 'anger' names Kaelith's emotion where a behavioral description would be more consistent with Lirien's observational register ('jaw tight, stride sharper — the kinetic signature of a controlled fury she was not yet ready to use'). Both are about observed/self-assessed emotions. Lirien's own emotional state is otherwise maintained in classified-before-felt register throughout."
+  },
+  "strengths": [
+    "The market confrontation dialogue is the chapter's masterpiece — five exchanges where both characters say less than they mean, each response operating on surface and subtext simultaneously. 'If I intended to kill you, you would not have seen me yesterday' is a perfect contract-trained deflection: literally true, tactically ambiguous, and emotionally revealing to the reader while concealing from the speaker.",
+    "The Oathbrand inflammation observation (lines 146-158) is publication-quality show-don't-tell: Lirien reads the brand's physical state (inflammation pattern, thermal damage, range-of-motion interference) and deduces that five years of active suppression would require 'discipline beyond what most people could sustain for five months.' This passage accomplishes four things at once: fantasy-arc information delivery, characterization of both women (Lirien's observational precision and Kaelith's endurance), romance-arc seeding (hyper-awareness of the other's body), and thematic work (competence-as-attraction).",
+    "The 'compressed, not broken' initial formulation (line 22-23) is a strong insight that crystallizes the chapter's central tension — and its structural metaphor ('a structure under load that had not yet determined whether to collapse or push back') works for Lirien because she is evaluating pressure dynamics, not architecture per se.",
+    "Lirien's closing inventory of remaining hours mirrors Kaelith's stone-counting from Chapter 1, creating a structural parallel that the reader will track. Both protagonists measure what constrains them as a coping mechanism — an elegant dual-POV motif.",
+    "The pacing of the direct confrontation — Kaelith stopping three paces away, the distance described as 'close enough that conversation would be possible, far enough that neither was within striking range' — demonstrates spatial precision that is distinctly Lirien (she measures the gap between people as information) while creating genuine tension."
+  ],
+  "prioritizedRevisionOrder": [
+    "LINE-002-001",
+    "LINE-002-002",
+    "LINE-002-003",
+    "LINE-002-004",
+    "LINE-002-007",
+    "LINE-002-005",
+    "LINE-002-006",
+    "LINE-002-008",
+    "LINE-002-009",
+    "LINE-002-010",
+    "LINE-002-011",
+    "LINE-002-012"
+  ],
+  "findingCounts": {
+    "critical": 0,
+    "major": 3,
+    "minor": 7,
+    "suggestion": 2,
+    "total": 12,
+    "byCategory": {
+      "repetition": 4,
+      "exposition": 1,
+      "metaphor": 2,
+      "voice-consistency": 2,
+      "show-dont-tell": 1,
+      "POV-discipline": 1,
+      "sentence-rhythm": 1
+    }
+  }
+}

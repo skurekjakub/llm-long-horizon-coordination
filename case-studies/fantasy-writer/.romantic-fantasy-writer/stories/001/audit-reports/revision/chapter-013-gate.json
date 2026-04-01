@@ -1,0 +1,579 @@
+{
+  "gateId": "GATE-REVISION-013",
+  "phase": "revision",
+  "chapter": 13,
+  "agent": "revision-auditor",
+  "timestamp": "2025-07-29T07:00:00Z",
+  "verdict": "passed",
+  "verdictRationale": "All 3 critical findings verified as substantially addressed through specific textual comparison between draft.md and revised.md. All 9 major findings verified — 8 fully addressed, 1 (LINE-013-009) partially addressed with 1 warning issued. 1 warning total (below the 3-warning failure threshold). No regression detected in voice, dialogue naturalism, continuity, or pacing. No darlings survived revision unchanged. New content (breathing passage, fantasy threading, bond trigger for Op 31, MRU fix) integrates naturally without seam artifacts. Traceability chain is complete — every change cites its prompting finding, deferred findings documented with rationale. The revised chapter meets or exceeds draft quality while resolving the three critical over-narration problems (structural metaphor saturation, bond-mechanism repetition, mannered sentence constructions) that were undercutting the emotional power of the manuscript's strongest dramatic sequence.",
+
+  "inputArtifacts": {
+    "draft": "chapters/013/draft.md",
+    "revised": "chapters/013/revised.md",
+    "developmentalEdit": "revision-reports/013/developmental-edit.json",
+    "lineEdit": "revision-reports/013/line-edit.json",
+    "copyEdit": "revision-reports/013/copy-edit.json",
+    "revisionLog": "revision-reports/013/revision-log.json"
+  },
+
+  "findingSummary": {
+    "totalFindings": 25,
+    "critical": 3,
+    "major": 9,
+    "minor": 8,
+    "moderate": 1,
+    "notes": 2,
+    "informational": 2,
+    "applied": 22,
+    "deferred": 2,
+    "unaddressed": 0,
+    "partiallyAddressed": 1
+  },
+
+  "findingVerificationMatrix": [
+    {
+      "findingId": "LINE-013-001",
+      "severity": "critical",
+      "source": "line-edit",
+      "description": "Architectural/structural metaphor saturation — 44 instances in 276 lines",
+      "verificationMethod": "grep count of structural vocabulary + manual line-by-line scan of metaphorical vs literal uses",
+      "draftCount": 44,
+      "revisedCount": "~14-18 metaphorical uses (22 lines match structural vocabulary including literal references to actual architecture in Calwrath confession)",
+      "target": "15-18",
+      "verdict": "PASS",
+      "evidence": {
+        "keyReductions": [
+          "'the flatness was the only architecture she had left' (L122 draft) → 'the flatness was all she had left' (L153 revised) — structural metaphor cut, raw emotion retained",
+          "L206 5-structural-term sentence ('pressurized, load-bearing, structural properties, structure was being tested') completely rewritten to physical rendering: 'Her skin burned where Lirien was not touching it. Her breathing had matched Lirien's and she had not decided to match it' (L239 revised)",
+          "'load-bearing looked sound — no fracture lines' (L16 draft) → 'was sound — no fracture lines' (L41 revised) — cut 'load-bearing'",
+          "'settled into its foundations' (L272 draft) → 'settled into place' (L307 revised) — structural vocabulary thinned",
+          "'the way she held walls — through commitment, not force' (L272 draft) → 'through commitment, not force' (L307 revised) — 'walls' cut"
+        ],
+        "retainedStrongest": [
+          "L39: 'buttress bracing against its own weight' — opening orientation, strong",
+          "L105: 'still as a well-set wall' — Lirien's presence, earned simile",
+          "L175: 'keystone carries the arch' — confession climax, the chapter's strongest metaphor",
+          "L283: 'second point of support' — emotional thesis of the chapter",
+          "L289: 'bore weight' — closing, connects to thematic arc"
+        ],
+        "assessment": "Most paragraphs now contain zero figurative language. Structural metaphors land at thematic peaks rather than saturating every emotional beat. The drumbeat effect identified by the line editor is eliminated."
+      }
+    },
+    {
+      "findingId": "LINE-013-002",
+      "severity": "critical",
+      "source": "line-edit",
+      "description": "Bond/resonance mechanism references — 24 instances (29 lines) in 276 lines",
+      "verificationMethod": "grep count of 'bond' and 'resonance' + manual verification of formulaic openers",
+      "draftCount": "29 lines containing bond/resonance references",
+      "revisedCount": "11 lines containing bond/resonance references",
+      "target": "7-9 references",
+      "verdict": "PASS",
+      "evidence": {
+        "formulaicOpeners": {
+          "draftCount": 6,
+          "revisedCount": 0,
+          "detail": "All 'Through the bond:' colon-openers eliminated. Zero instances remain."
+        },
+        "revisedInstancesVerified": [
+          "L61: 'The bond carried everything' — establishing statement (retained correctly)",
+          "L63: 'through the resonance' — establishes mechanism (retained correctly)",
+          "L65: 'It did not discriminate' (implicit bond reference, no explicit citation)",
+          "L81: 'The bond is not selective' — dialogue, thematic (retained correctly)",
+          "L89: 'through the bond before it arrived through the air' — name arrival, emotionally significant (retained correctly)",
+          "L169: 'The resonance was carrying the memory's residue' — thematic (retained correctly)",
+          "L193: 'through the bond simultaneously' — dual-channel moment (retained correctly)",
+          "L213: 'Through the bond, Kaelith's relief' — NEW, added for DEV-013-004 bond trigger (justified addition)",
+          "L243: 'This is not the bond' — dialogue, thematic declaration (retained correctly)",
+          "L251: 'through the resonance the echo' — MRU fix, LINE-013-014 (justified addition)",
+          "L255: 'The bond cracked open' — kiss climax (retained correctly)",
+          "L289: 'the bond hummed between them' — closing (retained correctly)"
+        ],
+        "assessment": "Count of 11 is slightly above 7-9 target. Excess justified: 2 are dialogue uses (thematic, not mechanism), 2 are new additions addressing other findings (DEV-013-004, LINE-013-014). The mechanical repetition pattern is broken — no formulaic openers remain, emotional transmissions are rendered through physical perception rather than mechanism citation."
+      }
+    },
+    {
+      "findingId": "LINE-013-003",
+      "severity": "critical",
+      "source": "line-edit",
+      "description": "Three sentence-construction patterns: 'the way X' (26x), 'specific/particular' (14x), 'Not X' negation (17+x) — ~56 combined instances",
+      "verificationMethod": "grep count for each pattern + manual verification of retained instances",
+      "verdict": "PASS",
+      "evidence": {
+        "theWayConstruction": {
+          "draftCount": 26,
+          "revisedCount": 4,
+          "target": "10-12",
+          "retainedInstances": [
+            "L117: 'in the way the body rehearsed' — body-memory, Kaelith's voice",
+            "L137: 'the way they always tasted' — recurring sensory memory, specific",
+            "L153: 'the way natural fire burns' — dialogue, literal comparison of fire types",
+            "L279: 'in a way Kaelith could feel' — perception, not comparison"
+          ],
+          "assessment": "Reduction from 26 to 4 exceeds target. All 4 retained instances serve genuine purpose. The mannered comparison structure is eliminated."
+        },
+        "specificParticular": {
+          "draftCount": 14,
+          "revisedCount": 1,
+          "target": "4-5",
+          "retainedInstance": "L49: 'at this particular moment' — new breathing passage, one occurrence in natural context",
+          "assessment": "Aggressive reduction. 'Specific' eliminated entirely from narration as instructed. Single 'particular' in new content is natural and unforced."
+        },
+        "notXNegation": {
+          "draftCount": "17+",
+          "revisedCount": 10,
+          "target": "8-10",
+          "assessment": "Within target range. Retained at emotional peaks where negation does genuine work: 'Not bravado. Not performance.' (L207), 'not gentle. Not desperate.' (L255), 'Not the Oathbrand's heat' (L257). Cut from routine descriptions."
+        },
+        "combinedReduction": "~56 instances → ~15. Mannered prose rhythm eliminated."
+      }
+    },
+    {
+      "findingId": "DEV-013-001",
+      "severity": "major",
+      "source": "developmental-edit",
+      "description": "Fantasy arc relegated to bookends — minimal integration through chapter middle",
+      "verificationMethod": "Manual verification of new fantasy content in middle 80% of chapter",
+      "verdict": "PASS",
+      "evidence": {
+        "insertionsVerified": [
+          {
+            "location": "Lines 51-52 (Scene 1 breathing passage)",
+            "content": "Pallor membrane thinning + Quietus pulling northeast in Kaelith's marrow + 'compass needle buried in her bones'",
+            "assessment": "Substantive fantasy threading. Establishes fantasy backdrop (Pallor erosion, Quietus pull) as lived physical experience through Kaelith's returned senses. Integrates with DEV-013-002 breathing passage."
+          },
+          {
+            "location": "Lines 155-156 (Scene 2, mid-confession)",
+            "content": "'The same force — magical, industrial, precise — that Thalen Reyvas was now wielding against the Pallor itself. Different scale. Different target. The same reckless certainty that an acceptable loss existed and could be calculated.'",
+            "assessment": "Strong thematic parallel between Calwrath accelerant and Thalen's Pallor assault. Weaves fantasy-arc thread through the chapter's most romance-dominant sequence without disrupting emotional momentum. The parallel is drawn in Kaelith's internal narration, not spoken aloud — correct choice."
+          },
+          {
+            "location": "Lines 285, 299 (Enhanced closing)",
+            "content": "Pallor membrane thinning as physical experience + 'Thalen Reyvas was dismantling the sky with the same institutional patience' — previously bookend-only, now more deeply integrated with specific Thalen reference and Kaelith's sensory experience",
+            "assessment": "Closing fantasy elements expanded from brief mentions to felt physical experience. The connection between personal stakes (the kiss) and world stakes (the dying sky) is explicit."
+          }
+        ],
+        "assessment": "Fantasy elements now thread through all three scenes. The middle 80% (Scenes 2-3) contains active fantasy references at L155-156 and several references in the closing section. The 'bookends only' problem is resolved."
+      }
+    },
+    {
+      "findingId": "DEV-013-002",
+      "severity": "major",
+      "source": "developmental-edit",
+      "description": "Four-chapter sustained-high tension cluster — no genuine breathing passage",
+      "verificationMethod": "Manual verification of new breathing passage in Scene 1",
+      "verdict": "PASS",
+      "evidence": {
+        "newContent": "Lines 47-54: Trail rations shared in the dark, night sounds (streambed, birch, owl), Pallor/Quietus sensory awareness, Lirien cleaning hands, eyes meeting, the ordinariness of the moment",
+        "wordCount": "~180 words (suggested 300-400)",
+        "assessment": "Shorter than suggested but functionally effective. The passage provides genuine low-intensity domestic routine — eating, listening to night sounds, noticing the ordinariness of shared space. The reader's sympathetic nervous system gets a recovery beat before the confession. The passage also serves as vehicle for DEV-013-001 fantasy threading. The shorter length is appropriate given the chapter's already-elevated word count (4781 vs 4000 target)."
+      }
+    },
+    {
+      "findingId": "LINE-013-004",
+      "severity": "major",
+      "source": "line-edit",
+      "description": "'Quality' used as abstract emotional descriptor — 8 instances",
+      "verificationMethod": "grep -i 'quality' + manual line-by-line verification",
+      "draftCount": 8,
+      "revisedCount": 0,
+      "verdict": "PASS",
+      "evidence": {
+        "replacementsVerified": [
+          "L44 draft 'the particular quality of Lirien's attention' → L77 revised 'Lirien's attention narrowed — focused, deciding whether to press' — concrete, actionable",
+          "L96 draft 'the quality of someone listening to load-bearing specifications' → L127 revised 'Just steadiness — deep and patient, waiting for the numbers to finish' — sensory, present",
+          "L124 draft 'The specific, deliberate quality of a person holding their position' → L157 revised 'Just presence. Deliberate. Holding position.' — stripped to essence",
+          "L244 draft 'The quality of a person who had just crossed a threshold' → L279 revised 'Someone who had crossed a threshold she could not return from' — direct attribution"
+        ],
+        "assessment": "All 8 instances eliminated. Replacements ground each observation in concrete perception or direct statement rather than abstracting through 'quality.'"
+      }
+    },
+    {
+      "findingId": "LINE-013-005",
+      "severity": "major",
+      "source": "line-edit",
+      "description": "'The X of a person who Y' abstract-definition construction — 8+ instances",
+      "verificationMethod": "grep -i 'of a person' + manual verification",
+      "draftCount": 11,
+      "revisedCount": 0,
+      "verdict": "PASS",
+      "evidence": {
+        "replacementsVerified": [
+          "L22 draft 'the focused precision of a person who needed her hands occupied' → L55 revised 'her hands needed occupation or they would shake' — direct",
+          "L124 draft 'the specific, deliberate quality of a person holding their position' → L157 revised 'Just presence. Deliberate. Holding position.' — stripped",
+          "L204 draft 'the steadiness of a person who had decided not to look away' → L237 revised 'Lirien holding Kaelith's gaze without looking away' — specific to Lirien",
+          "L244 draft 'The quality of a person who had just crossed a threshold' → L279 revised 'Someone who had crossed a threshold' — simplified"
+        ],
+        "assessment": "All instances eliminated. The universalizing 'a person who' construction is replaced with direct attribution to the specific characters present."
+      }
+    },
+    {
+      "findingId": "LINE-013-006",
+      "severity": "major",
+      "source": "line-edit",
+      "description": "Body-sensation catalog repetition — L26/L116 near-identical phrases, jaw tension 3x, hand tremor 6x",
+      "verificationMethod": "Manual comparison of body-sensation passages between draft and revised",
+      "verdict": "PASS",
+      "evidence": {
+        "l26_l116_duplication": {
+          "draft_l26": "'heat climbing her neck, pressure behind her sternum'",
+          "draft_l116": "'the muscles of the jaw and the pressure behind the sternum and the heat that climbed the back of the neck'",
+          "revised_l59": "'heat climbing her neck, pressure behind her sternum' — unchanged (establishes pattern)",
+          "revised_l147": "'in the tightness of her throat, in the pressure across her shoulders, in the heat that settled behind her eyes' — DIFFERENT body geography",
+          "assessment": "Near-identical phrasing eliminated. L147 uses throat, shoulders, eyes instead of duplicating jaw, sternum, neck. Each emotional peak now reveals different body geography."
+        },
+        "jawTension": {
+          "draft": "3 references (L68, L116, L246)",
+          "revised": "2 references (L101 opening, L281 closing) — middle cut, bookend preserved",
+          "assessment": "Clean bookend arc: jaw aches at start → jaw unlocked at end."
+        },
+        "handTremor": {
+          "draft": "6 references",
+          "revised": "Intentional arc preserved (shaking → steady) with middle instances thinned",
+          "assessment": "The intentional throughline is maintained without catalog effect."
+        }
+      }
+    },
+    {
+      "findingId": "LINE-013-007",
+      "severity": "major",
+      "source": "line-edit",
+      "description": "'Six years' time-marker — 10 instances",
+      "verificationMethod": "grep -i 'six years'",
+      "draftCount": 10,
+      "revisedCount": 2,
+      "target": "5-6",
+      "verdict": "PASS",
+      "evidence": {
+        "retainedInstances": [
+          "L115: 'Six years ago at Calwrath' — dialogue, confession opening (essential)",
+          "L283: 'bearing alone for six years' — emotional thesis (essential)"
+        ],
+        "cutsVerified": [
+          "Draft L36 'for six years' → Revised L69 removed entirely",
+          "Draft L64 'She had managed this for six years' → Revised L97 'She had managed this'",
+          "Draft L128 'what it had carried six years ago' → Revised L161 'what it had carried then'",
+          "Draft L142 'not for a single day in six years' → Revised L175 'had never contained'"
+        ],
+        "assessment": "More aggressive than target (2 vs 5-6) but highly effective. Each remaining instance serves essential purpose. The reader holds the six-year timeline without repetitive reinforcement."
+      }
+    },
+    {
+      "findingId": "LINE-013-008",
+      "severity": "major",
+      "source": "line-edit",
+      "description": "Water metaphor domain violation — 'words fell like stones into deep water'",
+      "verificationMethod": "grep for stones/water + manual line comparison",
+      "verdict": "PASS",
+      "evidence": {
+        "draft": "L148: 'The words fell into the silence like stones into deep water.'",
+        "revised": "L181: 'The words settled into the silence and the silence held their weight.'",
+        "assessment": "Water metaphor eliminated. Replacement uses structural vocabulary (settled, held, weight) consistent with Kaelith's metaphor domain. Also avoids the near-cliché 'words falling like stones into water.'"
+      }
+    },
+    {
+      "findingId": "LINE-013-009",
+      "severity": "major",
+      "source": "line-edit",
+      "description": "Bond-transmitted emotion telling — 4 instances of direct emotion labeling through bond mechanism",
+      "verificationMethod": "Manual comparison of each flagged passage",
+      "verdict": "WARNING — partially addressed",
+      "evidence": {
+        "l72_concern": {
+          "draft": "'concern. Not the kind that demanded a response.'",
+          "revised": "L105: 'concern that would wait. That would not stop waiting.'",
+          "assessment": "Emotion still named ('concern'). Context improved — grounded in Kaelith's perception ('what Kaelith felt beneath it') rather than bond-label. Bond mechanism not cited. Partial fix. The line editor requested replacing with physical correlate."
+        },
+        "l160_emotional_state": {
+          "draft": "'Lirien's emotional state — clear, without the classification architecture'",
+          "revised": "L193: 'simpler and harder than anything an operative assessment could contain. Something that had no professional framework and existed anyway'",
+          "assessment": "Abstract labels ('emotional state,' 'clear') eliminated. Replacement is more evocative but still somewhat abstract. Improved."
+        },
+        "l214_wanting_attraction": {
+          "draft": "'Through the bond: both of them. Simultaneously. The wanting that had been accumulating...'",
+          "revised": "L247: 'The wanting had been accumulating since the first time Kaelith noticed Lirien's hands...'",
+          "assessment": "PARTIAL FIX. Bond-framing ('Through the bond: both of them. Simultaneously.') correctly removed. But 'wanting' label remains despite revision log claiming it was cut. The line editor specifically instructed: 'The first sentence names wanting directly — let the reader feel it through the specific memories and sensations that follow instead.' This instruction was not fully executed. The 'attraction' re-naming was retained correctly as the editor recommended ('the self-aware re-naming IS the emotional beat')."
+        },
+        "l244_shaken_warm_certain": {
+          "draft": "'shaken and warm and certain'",
+          "revised": "L279: 'shaken, warm, certain in a way Kaelith could feel through the pulse under her palm'",
+          "assessment": "Adjective labels retained but now grounded through physical mechanism (pulse under palm). Improved from abstract bond-label to embodied perception."
+        },
+        "overallAssessment": "3 of 4 instances improved. The 'wanting' label at L247 contradicts the revision log's claim of elimination and the line editor's explicit instruction. However: (1) the bond-framing that made it a show-tell violation via mechanism was correctly removed, (2) at this pivotal moment, Kaelith naming the emotion she has been deflecting for weeks arguably IS the dramatic beat, (3) the line editor's own guidance was mixed ('consider keeping the second [attraction]'). This is a warning, not a fail: the finding was partially addressed with contextual improvement."
+      }
+    },
+    {
+      "findingId": "LINE-013-010",
+      "severity": "major",
+      "source": "line-edit",
+      "description": "Character-summary telling at L166-168 (Lirien's 18-year biography) and L200 (redundant summary of preceding action)",
+      "verificationMethod": "Manual comparison of specific passages",
+      "verdict": "PASS",
+      "evidence": {
+        "l166_biography": {
+          "draft": "'the specific quality of someone who had spent eighteen years reading the gap between what people said and what they meant and was now, deliberately, closing that gap'",
+          "revised": "L199: 'Lirien's voice was quiet and precise. A pause. Then, quieter:' — biography eliminated, replaced with present-moment observation",
+          "assessment": "18-year professional biography cut completely. Replacement shows what Kaelith perceives (tone, pause, shift in register) rather than summarizing Lirien's career."
+        },
+        "l200_summary": {
+          "draft": "'the fae precision set aside, the operative's careful architecture abandoned, and what remained was a woman in the dark who had answered Kaelith's worst with her own and had not flinched from either'",
+          "revised": "L233: 'Her expression was unguarded — the fae precision set aside, and what remained was a woman in the dark.'",
+          "assessment": "Redundant summary ('who had answered Kaelith's worst with her own and had not flinched from either') cut. 'A woman in the dark' preserved as strong image. Reader does not need recap of what they just witnessed."
+        }
+      }
+    },
+    {
+      "findingId": "COPY-001",
+      "severity": "moderate",
+      "source": "copy-edit",
+      "description": "Thalen Reyvas 'Seventh Seat' vs world-bible 'Sixth Seat'",
+      "verdict": "CORRECTLY DEFERRED",
+      "evidence": "Prose internally consistent across all chapters (Seventh Seat). Resolution requires upstream world-bible artifact update (DISC-001 in continuity tracker). No draft change appropriate."
+    },
+    {
+      "findingId": "COPY-002",
+      "severity": "minor",
+      "source": "copy-edit",
+      "description": "'Three in the morning' — modern English idiom in fantasy world",
+      "verificationMethod": "grep for 'three in the morning' + grep for 'third bell'",
+      "verdict": "PASS",
+      "evidence": {
+        "draft": "L32: 'three in the morning', L144: 'three, when the brand'",
+        "revised": "L65: 'the third bell', L177: 'at the third bell'",
+        "assessment": "Both instances replaced with world-grounded 'the third bell.' Consistent with garrison coast bell-mark timekeeping (CUL-003) and 'the sixteenth bell' in the same chapter."
+      }
+    },
+    {
+      "findingId": "COPY-003",
+      "severity": "minor",
+      "source": "copy-edit",
+      "description": "Ashborne survivors in Duskhaven vs organized network at Rivenmarch — advisory note",
+      "verdict": "CORRECTLY DEFERRED",
+      "evidence": "The revised chapter preserves the distinction between individual survivors visiting informally and the organized Ashborne network (ch19 revelation). No new language conflates the two."
+    },
+    {
+      "findingId": "DEV-013-003",
+      "severity": "minor",
+      "source": "developmental-edit",
+      "description": "'It was enough' closing echo — identical to ch11 ending",
+      "verificationMethod": "Direct comparison of final lines",
+      "verdict": "PASS",
+      "evidence": {
+        "draft": "'It was enough.' (identical to ch11 ending)",
+        "revised": "'It held.' — structural vocabulary (connects to weight-bearing thematic arc), distinct from ch11, maintains emotional register of quiet sufficiency",
+        "assessment": "Echo eliminated. 'It held.' is thematically precise — the chapter's question is whether this moment/structure/trust can bear weight, and the answer is: it held."
+      }
+    },
+    {
+      "findingId": "DEV-013-004",
+      "severity": "minor",
+      "source": "developmental-edit",
+      "description": "Lirien's Operation 31 confession arrives with structural convenience — lacks explicit bond trigger",
+      "verificationMethod": "Manual verification of new bond-trigger passage",
+      "verdict": "PASS",
+      "evidence": {
+        "newContent": "L213: 'Through the bond, Kaelith's relief must have reached her — the weight of carrying something alone and finally, for the first time, not.'",
+        "assessment": "Explicit causal mechanism added. Lirien's confession is now triggered by feeling Kaelith's relief through the bond — recognizing her own parallel burden in Kaelith's emotional release. The confession feels pulled to the surface by the resonance rather than offered as diplomatic reciprocity."
+      }
+    },
+    {
+      "findingId": "DEV-013-005",
+      "severity": "minor",
+      "source": "developmental-edit",
+      "description": "Word count 27% over target (5099 vs 4000)",
+      "verdict": "PASS",
+      "evidence": {
+        "draftWordCount": 5113,
+        "revisedWordCount": 4845,
+        "target": 4000,
+        "reduction": "5.2% reduction despite ~280 words of new content added",
+        "overTarget": "21% over (vs 27% in draft)",
+        "assessment": "Net reduction while adding structurally necessary content (breathing passage, fantasy threading, MRU fix). Remaining excess concentrated in Calwrath confession — the story's central foreshadowing payoff (FS-007) that structurally earns its length."
+      }
+    },
+    {
+      "findingId": "LINE-013-011",
+      "severity": "minor",
+      "source": "line-edit",
+      "description": "'Not metaphorical/Not metaphorically' self-conscious disclaimers — 2 instances",
+      "verificationMethod": "grep -i 'not metaphor'",
+      "draftCount": 2,
+      "revisedCount": 0,
+      "verdict": "PASS",
+      "evidence": {
+        "draft_l116": "'not metaphorical weight, actual weight' → revised L147: 'Each one carried weight — in the tightness of her throat' — body locations prove literalness",
+        "draft_l164": "'Not metaphorically. The muscles contracted' → revised L197: 'The muscles contracted' — physical description self-evident"
+      }
+    },
+    {
+      "findingId": "LINE-013-012",
+      "severity": "minor",
+      "source": "line-edit",
+      "description": "Adjective stacking — 'The surgical, devastating accuracy'",
+      "verdict": "PASS",
+      "evidence": {
+        "draft": "L168: 'The surgical, devastating accuracy of a person who saw exactly what Kaelith was doing'",
+        "revised": "L201: 'Lirien saw what Kaelith was doing and named it first.'",
+        "assessment": "Purple prose eliminated. Direct statement carries the impact through content rather than competing adjectives."
+      }
+    },
+    {
+      "findingId": "LINE-013-013",
+      "severity": "minor",
+      "source": "line-edit",
+      "description": "Contraction inconsistency in Lirien's speech — rapid shift from formal to contracted",
+      "verdict": "PASS",
+      "evidence": {
+        "draft": "'You are not asking for forgiveness. You're asking if I flinch.' — unearned shift",
+        "revised": "L199: ''You are not asking for forgiveness.' A pause. Then, quieter: 'You're asking if I flinch.' — beat inserted, shift marked as deliberate pivot from clinical to personal",
+        "assessment": "The pause and register change ('quieter') make the contraction feel chosen. Lirien's shift from analytical to personal is now a visible dramatic beat rather than an inconsistency."
+      }
+    },
+    {
+      "findingId": "LINE-013-014",
+      "severity": "minor",
+      "source": "line-edit",
+      "description": "MRU compression at first physical contact — no sensation beat between touch and response",
+      "verdict": "PASS",
+      "evidence": {
+        "draft": "L216-220: Lirien touches jaw → 'Kaelith did not pull away' → 'She closed the distance' (no internal processing)",
+        "revised": "L249-253: Lirien touches jaw → 'Kaelith did not pull away. The touch was warm — not the Oathbrand's warmth, not punishment. A hand, deliberate on her skin, and through the resonance the echo of it: Lirien feeling Kaelith's jaw under her fingers, Kaelith feeling Lirien feeling it.' → 'She closed the distance.'",
+        "assessment": "Tactile/bond sensation beat inserted. The Oathbrand contrast (not punishment) and the bond's recursive echo (feeling each other feeling) ground the transition in Kaelith's body at the chapter's most pivotal physical moment."
+      }
+    },
+    {
+      "findingId": "LINE-013-015",
+      "severity": "minor",
+      "source": "line-edit",
+      "description": "L206 — 53-word sentence combining telling with 5 structural metaphors",
+      "verdict": "PASS",
+      "evidence": {
+        "draft": "'The bond between them was doing something she had no tactical framework for — transmitting not information but intensity, the raw weight of proximity amplified by mutual awareness until the air between them felt pressurized, load-bearing, as though the space itself had structural properties and the structure was being tested.'",
+        "revised": "L239: 'Kaelith stopped. Her skin burned where Lirien was not touching it. Her breathing had matched Lirien's and she had not decided to match it. Something she had no framework for — and the framework did not matter because her hands were shaking again and it was not from Calwrath.'",
+        "assessment": "Complete rewrite. Abstract telling ('intensity,' 'mutual awareness') replaced with physical rendering (burning skin, matched breathing, shaking hands). Five structural metaphors eliminated. The 'not from Calwrath' callback is elegant — the hands were shaking from Calwrath earlier, now they shake from desire. Shows intensity through physical effects without naming it."
+      }
+    },
+    {
+      "findingId": "LINE-013-016",
+      "severity": "note",
+      "source": "line-edit",
+      "description": "MRU inversion at post-kiss speech — speech before physical reaction",
+      "verdict": "PASS",
+      "evidence": {
+        "newContent": "L263: 'Her lips were numb. Her hands were on Lirien's neck and she could feel the pulse there, still fast.'",
+        "assessment": "Physical beat inserted before speech. Grounds the post-kiss 'I cannot undo that' in Kaelith's body (numb lips, fast pulse) without slowing the moment."
+      }
+    },
+    {
+      "findingId": "LINE-013-017",
+      "severity": "note",
+      "source": "line-edit",
+      "description": "'Tactical' repetition — 9 instances",
+      "verificationMethod": "grep -i 'tactical'",
+      "draftCount": 9,
+      "revisedCount": 5,
+      "target": "5-6",
+      "verdict": "PASS",
+      "evidence": "Reduced to target range. Remaining instances in dialogue/narration where 'tactical' does specific military-voice work (L53 'tactical designation,' L97 'tactical clarity,' L125 'tactical projections,' L143 'tactical summary,' L173 'tactical operation')."
+    }
+  ],
+
+  "regressionAnalysis": {
+    "voiceConsistency": {
+      "verdict": "NO REGRESSION",
+      "assessment": "Kaelith's voice remains unmistakable throughout the revised chapter. Architectural metaphors are present at lower density but still define her figurative mode. Short declarative sentences (~70% under 8 words), physical-sensation focus, formal register under stress (no contractions during confession), and military-tactical framing are all maintained. The reduction in voice markers did NOT push the chapter into under-voicing — the structural metaphors that remain are stronger because they are not competing with 30 other instances."
+    },
+    "voiceMarkerSaturation": {
+      "verdict": "NO REGRESSION — markers REDUCED, not added",
+      "assessment": "The revision reduced voice markers (structural metaphors 44→~14-18, bond references 24→11, 'the way' 26→4). The concern was over-application in the draft. The revised chapter has FEWER voice markers per page. No paragraph feels like a voice-marker checklist. The reduction is appropriate — the voice is now seasoning, not the main ingredient, per the style guide's instruction."
+    },
+    "dialogueNaturalism": {
+      "verdict": "NO REGRESSION",
+      "assessment": "All dialogue changes verified for naturalism: Lirien's contraction fix (L199) with inserted beat reads naturally. No dialogue was rewritten to add voice markers or character-specific tics. The dialogue sounds like speech throughout."
+    },
+    "continuityErrors": {
+      "verdict": "NO NEW ERRORS",
+      "assessment": "All new content verified against established facts: Pallor thinning (consistent with world-bible), Quietus pulling northeast (consistent with geography.json), Thalen's 40-year conspiracy (consistent with politics.json), Kaelith's returned senses (consistent with post-ch11 restoration), bell-mark timekeeping (consistent with CUL-003), trail rations as food source (consistent with pursuit context). Fantasy parallel between Calwrath accelerant and Thalen's Pallor assault is thematic connection, not factual claim. No new information asymmetry violations."
+    },
+    "pacingDisruptions": {
+      "verdict": "NO DISRUPTION",
+      "assessment": "The breathing passage (L47-54) inserts naturally between camp setup and agitation. Transition from eating to deadwood-gathering is organic. The fantasy parallel in the confession (L155-156) is internal narration, not spoken — does not break confession momentum. MRU insertions (L251, L263) add appropriate processing beats without slowing pivotal moments. All edit boundaries read smoothly."
+    },
+    "newCliches": {
+      "verdict": "NONE FOUND",
+      "assessment": "grep for common romance/fantasy clichés returned zero matches. New content uses fresh imagery: 'a compass needle buried in her bones' (vivid), 'The parallel lived in her body like the memory of heat' (grounded), 'the noise the relief made' (synesthetic). No new clichés introduced."
+    },
+    "awkwardTransitions": {
+      "verdict": "NONE FOUND",
+      "assessment": "All edit boundaries read smoothly. Key transitions verified: L153 'the flatness was all she had left' → L155 fantasy parallel → L157 'Lirien's presence held'; L239 new L206 replacement → L241 'One pace'; L263 new post-kiss beat → L265 'Kaelith pressed her forehead.' No seam artifacts visible."
+    }
+  },
+
+  "darlingsAudit": {
+    "verdict": "NO DARLINGS SURVIVED UNCHANGED",
+    "inv081Status": "PASS",
+    "flaggedDarlings": [
+      {
+        "passage": "'the flatness was the only architecture she had left' (L122 draft)",
+        "flaggedBy": "LINE-013-001 (critical — structural metaphor saturation)",
+        "action": "Simplified to 'the flatness was all she had left' (L153 revised)",
+        "assessment": "Structural metaphor removed. Raw emotion retained. The line is stronger without the engineering frame."
+      },
+      {
+        "passage": "L206 53-word sentence with 5 structural metaphors",
+        "flaggedBy": "LINE-013-015 (minor), LINE-013-001 (critical)",
+        "action": "Completely rewritten to physical rendering (L239 revised)",
+        "assessment": "Darling killed. Replacement is more effective."
+      },
+      {
+        "passage": "'The surgical, devastating accuracy' (L168 draft)",
+        "flaggedBy": "LINE-013-012 (minor — adjective stacking)",
+        "action": "Simplified to 'Lirien saw what Kaelith was doing and named it first' (L201 revised)",
+        "assessment": "Purple prose cut. Direct statement carries impact."
+      },
+      {
+        "passage": "'It was enough.' (L276 draft — ch11 echo)",
+        "flaggedBy": "DEV-013-003 (minor — proximity to ch11 ending)",
+        "action": "Changed to 'It held.' (L311 revised)",
+        "assessment": "Echo eliminated. New ending is thematically precise."
+      },
+      {
+        "passage": "'She was falling apart. She was being put together. She could not tell the difference' (L226 draft)",
+        "flaggedBy": "NOT flagged as darling — identified as 'chapter's finest single line' by line editor",
+        "action": "Preserved with minor trim (L259 revised: 'She could not tell the difference and she could not pretend there was one')",
+        "assessment": "Correctly retained. This is earned prose, not a darling. The slight modification ('and she could not pretend there was one') adds to the emotional truth."
+      }
+    ]
+  },
+
+  "traceabilityAudit": {
+    "verdict": "COMPLETE",
+    "inv014Status": "PASS",
+    "frontmatterFindings": 22,
+    "editReportFindings": 25,
+    "deferredWithRationale": 2,
+    "changesWithoutFindingIds": 0,
+    "assessment": "Every change in the revised chapter maps to a specific finding ID in the revision log. The frontmatter lists all 22 applied findings. The revision log documents each finding's action with specific line references. The 2 deferred findings (COPY-001, COPY-003) have documented rationale. No orphan changes found."
+  },
+
+  "wordCountAnalysis": {
+    "draft": 5113,
+    "revised": 4845,
+    "target": 4000,
+    "change": "-5.2%",
+    "deviation": "+21% over target (improved from +28%)",
+    "assessment": "Net reduction despite ~280 words of new content. Remaining excess is structurally justified — the Calwrath confession is the story's central foreshadowing payoff (FS-007) and earns its length. Word count deviation is within acceptable range for a milestone chapter."
+  },
+
+  "warnings": [
+    {
+      "findingId": "LINE-013-009",
+      "severity": "warning",
+      "description": "'Wanting' label at L247 not cut per line editor instruction. Revision log claims 'wanting' was eliminated, but the word remains in the revised text. Bond-framing was correctly removed, and the emotion label's context changed from bond-transmitted to internal narration, which is an improvement. However, the line editor's explicit instruction — 'The first sentence names wanting directly — let the reader feel it through the specific memories and sensations that follow instead' — was not fully executed. This is a partial fix, not an absent one. The 'attraction' re-naming was correctly retained as the editor recommended. One warning does not trigger failure (threshold: 3+ warnings).",
+      "impact": "Low — the passage works well in context. The wanting label at this climactic moment arguably serves the dramatic beat (Kaelith finally naming what she has been deflecting). The improvement from removing the bond-framing is significant.",
+      "recommendation": "In beta reading or polish, consider whether 'The wanting had been accumulating' could open with the memories/sensations instead, arriving at the emotion through physical experience rather than naming it. Low priority."
+    }
+  ],
+
+  "overallAssessment": "The revised Chapter 13 is a substantial improvement over the draft while preserving the draft's extraordinary strengths — the Calwrath confession, the earned first kiss, the vulnerability symmetry, the thematic precision. The three critical over-narration problems (structural metaphor saturation, bond-mechanism repetition, mannered sentence constructions) have been addressed with surgical precision: the voice is still unmistakable but no longer saturating. The breathing passage and fantasy threading additions strengthen the chapter's structural role in the four-chapter arc. No regressions detected. The revised chapter meets publication-quality standards (INV-073) and is ready for beta reading."
+}

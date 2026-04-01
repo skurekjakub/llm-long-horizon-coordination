@@ -1,0 +1,57 @@
+{
+  "chapter": 7,
+  "engagementScore": 8,
+  "emotionalImpact": "high",
+  "pacingAssessment": "slow-start",
+  "clarityScore": 9,
+  "findings": [
+    {
+      "id": "BETA-007-001",
+      "type": "pacing",
+      "severity": "minor",
+      "description": "The climbing scene (scene 1) runs roughly 1,800 words for a single obstacle. The technical detail — handholds, friction hitch, overhang geometry — is immersive on first read but risks losing momentum before the emotional payoff at the top. The scene earns its length through the trust metaphor, but a reader skimming could miss the shift from tactical to intimate.",
+      "location": "Scene 1, paragraphs 5-45 (the full climb sequence)",
+      "readerImpact": "Moderate. Readers who came for romance may grow impatient during the extended climbing mechanics. Readers who enjoy competence porn will love it. The payoff (wrist-grab, 'partnership dependency confirmed') is strong enough to retroactively justify the length, but the chapter asks for patience to get there."
+    },
+    {
+      "id": "BETA-007-002",
+      "type": "engagement-drop",
+      "severity": "major",
+      "description": "Scenes 2 and 3 cover the same emotional ground twice. Scene 2 (camp): Kaelith notices Lirien's hands, feels unwanted attraction, receives wound-tending with lingering touch. Scene 3 (watch): Kaelith watches Lirien sleep, feels attraction she cannot afford, reflects on wanting. Both scenes deliver the same revelation — 'I am compromised, I am wanting, I cannot stop' — through nearly identical interiority. The emotional insight doesn't deepen meaningfully between them.",
+      "location": "Scene 2 (camp/fireside) through Scene 3 (night watch)",
+      "readerImpact": "Significant. The chapter's final third feels like it's circling rather than advancing. A reader who was electrified by the climb and the wound-tending may find the watch scene redundant. The closing paragraphs ('She was falling. Slowly. Inevitably.') say beautifully what the chapter has already demonstrated — but saying it after showing it dilutes the impact."
+    },
+    {
+      "id": "BETA-007-003",
+      "type": "romance-gap",
+      "severity": "minor",
+      "description": "Lirien remains largely opaque throughout. We see her through Kaelith's POV as efficient, competent, carefully avoiding contact — but we get no reciprocal signal of attraction beyond the 3-second hand-linger during bandaging. The chapter's entire romantic weight rests on Kaelith's interiority. This is appropriate for a slow burn setup, but it creates asymmetry that could make Lirien feel more like a projection surface than a person with her own desire.",
+      "location": "Across all three scenes",
+      "readerImpact": "Low-to-moderate. Readers experienced with slow-burn romance will read Lirien's restraint as its own kind of signal. But less patient readers may wonder if the attraction is one-sided. Chapter 8's POV switch resolves this, but within chapter 7 alone, Lirien's interiority is a gap."
+    },
+    {
+      "id": "BETA-007-004",
+      "type": "pacing",
+      "severity": "observation",
+      "description": "The engineering/architecture metaphor is deployed roughly 14 times in this chapter ('load-bearing', 'structural', 'curtain wall', 'keystone', 'foundation shifted', 'defensive perimeter', etc.). It's the novel's central conceit and works beautifully in the climb scene where it's literal. In the camp/watch scenes it risks becoming a verbal tic. The metaphor is strongest when it's structural (describing actual walls and forces) and weakest when it's emotional ('heat built behind her sternum... a flaw in her defenses — structural, load-bearing').",
+      "location": "Throughout, especially scenes 2-3",
+      "readerImpact": "Low. Most readers will experience this as voice consistency rather than repetition. But for attentive readers, the metaphor density in the emotional passages can feel like the prose is working too hard to stay in-brand."
+    },
+    {
+      "id": "BETA-007-005",
+      "type": "worldbuilding-gap",
+      "severity": "observation",
+      "description": "The Pallor is mentioned four times but never with enough context for a reader who might be fuzzy on details from chapters 1-6. Phrases like 'tarnished silver, the Pallor unbroken' and 'the membrane between order and chaos' are atmospheric but assume full reader retention. A single grounding sentence — establishing it as the sky-membrane that keeps reality stable — would anchor the references without feeling expository.",
+      "location": "Scene 1 (post-climb), Scene 3 (night watch)",
+      "readerImpact": "Low. The Pallor details are sufficiently atmospheric to carry mood even if a reader can't recall the exact mechanics. But this chapter introduces the Pallor's visible damage for the first time, and the moment deserves clearer framing."
+    }
+  ],
+  "strengths": [
+    "The climbing scene is a masterclass in using physical action as a romance accelerant. The rope-as-shared-risk metaphor is both literal and emotional, and the trust it demands is the trust the relationship needs. 'Partnership dependency — confirmed functional' is the chapter's thesis statement delivered with perfect understatement.",
+    "Competence-as-attraction is executed flawlessly. Kaelith's growing awareness tracks from professional assessment ('the woman moved to the fire's opposite side') to involuntary fixation ('beautiful hands, competent hands') to full admission ('she was not watching anymore, she was wanting'). The progression is gradual enough to feel inevitable rather than sudden.",
+    "The wound-tending scene — Lirien bandaging Kaelith's hand by firelight — is the chapter's best romance beat. The three-second held contact. The deliberate avoidance of touch during food-passing, which speaks as loudly as the touch itself. The economy of this scene is perfect.",
+    "Kaelith's voice is distinctive and fully realized. The military precision of her thought patterns, the way she processes emotion through tactical frameworks, the self-aware irony of court-martialing herself for unprofessional behavior — all of it builds a character whose vulnerability is more devastating for being so heavily defended.",
+    "The chapter's final exchange ('How did you learn to climb like that?' / 'The conversation ends there') is the best dialogue beat. It shows Kaelith opening one inch and slamming the door, and Lirien's 'Thank you for answering' honors both the opening and the closure. The dynamic is established: Lirien asks, Kaelith gives a fraction, both pretend it was nothing."
+  ],
+  "verdict": "strong"
+}

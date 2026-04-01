@@ -1,0 +1,120 @@
+{
+  "chapter": 17,
+  "agent": "continuity-integrator",
+  "timestamp": "2025-07-17T18:00:00.000000+00:00",
+  "verdict": "passed",
+  "issuesFound": [
+    {
+      "id": "CI-017-001",
+      "severity": "minor",
+      "category": "physicalStateContinuity",
+      "invariant": "INV-002",
+      "description": "Bruised ribs from ch14 (3rd/4th left, sustained during hunter ambush) not mentioned during vorakh combat fall. When Kaelith hits the ground hard on her left side, the bruised ribs should cause pain. Physical state must persist across chapters.",
+      "location": "Line 257 — 'She hit the ground hard. Rolled.'",
+      "fix": "Added rib pain reference: 'She hit the ground hard. Left side — the ribs from the ambush, third and fourth, announcing themselves with a flare of white heat. Rolled through it.' Maintains Kaelith's compressed combat voice while tracking the persistent injury."
+    }
+  ],
+  "issuesFixes": [
+    {
+      "issueId": "CI-017-001",
+      "fixApplied": true,
+      "description": "Inserted bruised rib pain reference in vorakh combat fall, line 257. Phrasing matches Kaelith's staccato combat voice — short, specific, body-as-tactical-report.",
+      "linesAffected": "Line 257"
+    }
+  ],
+  "knowledgeStateChanges": [
+    {
+      "character": "CHAR-001",
+      "factId": "INTERNAL",
+      "change": "Kaelith processes bond evidence and concludes Lirien's grief is genuine. The simple betrayal narrative ('calculated manipulation') fails against bond logic — resonance cannot fabricate emotion. New epistemic model: feelings real AND contract real simultaneously.",
+      "howDisclosed": "Internal reasoning through bond mechanics she already understood (MAG-007). No new external information — she applies existing knowledge of bond rules to the emotional data she's receiving.",
+      "previousState": "Wholesale rejection of Lirien's feelings — every memory under revision as manipulation. Bond walled.",
+      "newState": "Dual truth accepted: feelings genuine AND contract real. Anger cracking into grief. Bond wall relaxed (not opened). Direction changed toward Lirien under mission framing."
+    },
+    {
+      "character": "CHAR-001",
+      "factId": "TACTICAL",
+      "change": "Kaelith assesses that Pallor progression has contracted her timeline from weeks to days and that solo mission completion is no longer viable.",
+      "howDisclosed": "Direct observation of silver spread rate and combat performance degradation during vorakh fight.",
+      "previousState": "Believed she had weeks to reach the Quietus.",
+      "newState": "Knows she has days. Two fingers non-functional. Solo survival questionable."
+    }
+  ],
+  "continuityChecks": {
+    "characterLocations": {
+      "status": "pass",
+      "invariant": "INV-002",
+      "details": "Ch16 ends with Kaelith departed east into Narrowing treeline from safe house near the Narrowing. Ch17 opens with Kaelith in a rock overhang shelter on the Narrowing's granite slopes — consistent with eastward travel into the Narrowing. She has been walking approximately 1.5 days. Ch17 ends heading north from vorakh encounter site. All movements plausible given terrain (granite ridges, pine forest, Vireth Range approach) and travel capacity."
+    },
+    "timelineContinuity": {
+      "status": "pass",
+      "invariant": "INV-002",
+      "details": "Ch16 is early morning of the day after ch15. Ch17 opens with an evening camp, implying Kaelith walked all day after departing the safe house at dawn (ch16) and made camp that evening. The 'three days' Pallor tracking (line 85) counts from the night before the ch15 declaration — verified: ch14 night/ch15 eve + ch15 day + ch16 day + ch17 = ~3 days. Timeline internally consistent. Dawn arrival after one camp night, three-hour morning walk to vorakh site — all plausible."
+    },
+    "knowledgeStateIntegrity": {
+      "status": "pass",
+      "invariant": "INV-056",
+      "details": "CRITICAL CHECK — All clear. (1) Contract details referenced (line 43-44, 59, 107) match what Kaelith learned from the intercepted communique in ch16. (2) Loophole reference (line 107: 'cessation of heartbeat, a state not a duration') correctly attributed to what Lirien told her in ch16. (3) Bond mechanics reasoning (lines 145, 163-168) uses only established MAG-007 rules that Kaelith has known since ch11. (4) Ossya Thenndal reference (line 89): refers to the EVENT of kinetic memory planting, not the LINEAGE (FACT-006). Kaelith knows Thenndal as her commander and learned about kinetic memory in ch4 — connecting the two is reasonable inference. FACT-006 (Warden lineage through Thenndal) remains unknown to Kaelith. (5) Ythara reference (line 315: 'Ythara was waking') — Kaelith learned this through ch15 evidence consolidation. (6) No references to: Thalen Reyvas identity (FACT-007), secondary operative specifics, or any other information Kaelith has not learned. (7) Kaelith does NOT reference loophole as verified or trustworthy — correctly treats it with suspicion."
+    },
+    "bondMechanicsCompliance": {
+      "status": "pass",
+      "invariant": "MAG-007",
+      "details": "All bond transmissions verified against MAG-007. Bond transmits: emotional quality of grief (lines 37, 57-58, 129-131, 157-159, 361), emotional quality of alertness/hope when direction changes (line 325, 339). Bond does NOT transmit: thoughts, words, factual content, specific memories — explicitly stated at lines 113 ('the bond did not tell her whether the emotional state was genuine') and reinforced at line 145 ('The bond could not fabricate emotion'). Bond walling (lines 37, 192) consistent with MAG-007: can be walled by sustained emotional withdrawal, wall reduces but does not eliminate transmission, walling is a choice. Bond cannot be severed (correctly maintained — Kaelith stops reinforcing but does not sever). Critically: line 113's statement that 'the bond did not tell her whether the emotional state was genuine' is Kaelith's DEFENSIVE reasoning, later corrected by her own logic in SCN-48 (lines 145-168) — the emotion IS genuine, but the cause/motivation is what she can't verify through the bond. Both positions consistent with MAG-007."
+    },
+    "pallorMechanicsCompliance": {
+      "status": "pass",
+      "invariant": "INV-002, MAG-003, MAG-004",
+      "details": "Pallor progression follows established rules: (1) The Pallor in Kaelith's blood accelerates without the resonance bond's stabilizing effect — consistent with MAG-004 (suppressed magic accumulates as physiological pressure) and the established complementary magic dynamic (romantic intersection: 'they are better together than apart'). (2) Silver spreading from wrist (ch16) to knuckles and elbow (ch17) is directional and progressive. (3) Cold described as internal, not environmental — correct per Pallor mechanics. (4) Functional impairment (delayed reactions, locked elbow, two non-functional fingers) is proportional to spread area. (5) Timeline contraction from weeks to days is plausible given acceleration rate. (6) Vorakh hunting by Pallor-touch sensing is consistent with Pallor-adapted fauna in thinning-membrane zones."
+    },
+    "physicalStateContinuity": {
+      "status": "pass_with_correction",
+      "invariant": "INV-002",
+      "details": "Bruised ribs (3rd/4th left from ch14) now mentioned during vorakh combat fall (CI-017-001 correction applied). Pack with essentials and knife present — consistent with ch16 departure. Evidence folio not mentioned but established as packed. Pallor silver progression tracked with specific body locations. Two fingers non-functional by chapter end. Physical state persistent and worsening as expected."
+    },
+    "namingConsistency": {
+      "status": "pass_with_notes",
+      "invariant": "INV-002",
+      "details": "All established names verified: Kaelith Maren (Kaelith throughout), Lirien Dael (Lirien throughout), Pallor, Oathbrand, Narrowing, Vireth Range, Calwrath, Graymarket (one word, capital G — line 123), Canal District (canal wall — line 125), Vael'thrin (apostrophe correct — line 51), Ashborne (line 75), Elisi (line 52), Lessening (line 59), Quietus (lines 99, 295, 319, 371), Cerith Court (line 76), Ossya Thenndal (line 89), resonance bond (referenced throughout). NEW: 'vorakh' — Pallor-touched predator introduced in ch17. Not in world-bible; added to continuity-tracker naming registry. 'operation thirty-one' (line 51) — matches established naming for Lirien's past operation."
+    },
+    "worldRuleCompliance": {
+      "status": "pass",
+      "invariant": "INV-002, INV-018",
+      "details": "No anachronisms. No modern idioms. All metaphors within Kaelith's established architectural/military domain. One deliberate water metaphor ('like floodwater through a crack in a dam' — line 131) correctly noted in metadata as showing Lirien's influence. Calwrath memory details (accelerant, eight minutes, 300 civilians, children in market square, canal wall) all match established facts. Pallor described correctly as divine membrane, tarnished silver. Magic system rules respected throughout."
+    },
+    "emotionalContinuity": {
+      "status": "pass",
+      "invariant": "INV-002",
+      "details": "Ch16 ends with Kaelith in 'devastated retreat' — military containment of grief, Calwrath-pattern fortification, bond walled. Ch17 opens in exactly this state: controlled anger, military discipline applied to camp-making, every memory under revision. The emotional arc across ch17 (anger → reluctant reassessment → grim resolve with fragile hope) is earned through specific triggers: bond grief evidence (SCN-48), physical decline evidence (SCN-49). No emotional state appears without transition. The direction change at chapter end is emotionally justified by the convergence of bond evidence and tactical reality."
+    },
+    "foreshadowingCompliance": {
+      "status": "pass",
+      "invariant": "INV-009",
+      "details": "FS-019 (Court enforcement/secondary operative): Advanced — Kaelith's awareness of Court enforcement escalation (from ch16 communique) informs her tactical assessment of timeline pressure. Not explicitly named in prose but present in her knowledge state and the urgency driving the direction change. FS-020 (30/90 day deterioration timeline): Advanced — referenced at line 59 ('thirty days before deterioration, ninety before terminal Lessening'). Kaelith's own Pallor timeline contraction (days, not weeks) creates parallel urgency. No new foreshadowing plants. No deus ex machina — vorakh fight uses established knife and physical combat, not new magical abilities."
+    }
+  },
+  "preExistingFlags": [
+    {
+      "id": "FLAG-001",
+      "severity": "minor",
+      "description": "Binding deterioration timeline discrepancy (ch2/4/6 vs ch16 Court message). Not triggered in ch17. Ch17 references 30/90 day timeline from the Court communique, which is the authoritative source.",
+      "affectsChapter17": false
+    },
+    {
+      "id": "DISC-001",
+      "severity": "major",
+      "description": "Thalen Reyvas seat number (Sixth vs. Seventh). Not triggered in ch17 — no reference to Thalen's seat number.",
+      "affectsChapter17": false
+    }
+  ],
+  "newItems": {
+    "namingEntries": [
+      {
+        "term": "vorakh",
+        "definition": "Pallor-touched predator found in the Narrowing. Six limbs ending in hooked claws, compressed wolf-head with ring-eyes (full spherical vision), thick plated hide with Pallor silver seepage. Ambush predator hunting by Pallor-touch sensing. Mottled grey-brown coloring for granite/bark camouflage.",
+        "firstAppearance": "ch17, SCN-49"
+      }
+    ]
+  },
+  "draftCorrections": 1,
+  "summary": "Chapter 17 passes continuity verification with one minor correction applied (bruised ribs from ch14 added to vorakh combat fall scene). All continuity checks passed. Bond mechanics (MAG-007) meticulously consistent — the chapter's central emotional pivot (bond grief proving Lirien's feelings genuine) correctly applies established bond rules without introducing new capabilities. Knowledge state integrity clean: Kaelith references only information she has learned through ch16, the Ossya Thenndal reference is about the event not the lineage, and the loophole claim is correctly treated with suspicion. Pallor acceleration follows established rules with the resonance bond absence as the accelerating factor. New creature 'vorakh' introduced and added to naming registry. Emotional arc earned through specific triggers. Pre-existing flags (FLAG-001 binding timeline, DISC-001 Reyvas seat) not triggered."
+}

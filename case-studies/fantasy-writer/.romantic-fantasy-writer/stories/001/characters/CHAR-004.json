@@ -1,0 +1,116 @@
+{
+  "id": "CHAR-004",
+  "name": "Vairen Ethis",
+  "role": "mentor",
+  "isPOV": false,
+  "psychologicalProfile": {
+    "wound": "Vairen has seen correct evidence lose to convenient politics so often that rigor became armor against grief.",
+    "desire": "Produce proof so strong the Conclave cannot proceduralize the Pallor crisis into irrelevance.",
+    "fear": "Speaking too early, being wrong once, and discrediting the truth forever.",
+    "lie": "Action is ethical only after certainty becomes total.",
+    "ghost": "A prior archival warning collapsed because the claim arrived before the evidence felt complete.",
+    "need": "To act when the proof is sufficient rather than waiting for impossible perfection."
+  },
+  "arc": {
+    "type": "positive",
+    "startState": "A brilliant archivist trapped behind evidence thresholds.",
+    "endState": "A scholar who spends authority on truth instead of decorum.",
+    "turningPoints": [
+      {
+        "chapter": 18,
+        "event": "Tests Kaelith and Lirien's claims instead of dismissing them."
+      },
+      {
+        "chapter": 19,
+        "event": "Recognizes the Dimming-fire pattern."
+      },
+      {
+        "chapter": 21,
+        "event": "Publicly turns archival authority against Thalen."
+      }
+    ]
+  },
+  "voiceFingerprint": {
+    "vocabularyLevel": "Elevated scholarly with citation habits embedded in casual speech. Vairen speaks as though everything he says might need a footnote. His vocabulary is drawn from archival science: 'redaction,' 'provenance,' 'marginalia,' 'lacuna,' 'errata,' 'corrigendum.' He says 'the record indicates' rather than 'I think.' He says 'as previously established' rather than 'as I said.' He corrects himself mid-sentence with 'more precisely' — not from pedantry but from a compulsive need for the right word, the one that will hold up under examination.",
+    "sentenceLength": "Long with nested qualifications, frequently interrupted by parenthetical corrections. 'The membrane — or more precisely, the substrate observable from the Third Tier, which may or may not correspond to the Pallor as popularly understood — shows measurable degradation.' His sentences are paragraphs compressed into clauses. When he manages a short sentence, it lands like a verdict.",
+    "metaphorDensity": "Sparse but precise, drawn from textual and archival domains. Evidence 'accretes.' Arguments have 'provenance.' A weak theory is 'a marginal annotation mistaken for body text.' Truth is 'what survives redaction.' Lies are 'lacunae.' He gravitates away from garden (Thalen's domain), architecture (Kaelith's domain), water (Lirien's domain), and medical (Marin's domain) metaphors, though occasional natural crossover is expected — rigid domain walls create artificiality. His world is the document — and every document has been edited.",
+    "emotionalRegister": "Dry and exacting — the register of someone who has watched correct evidence lose to convenient politics so often that rigor became armor against grief. Beneath the dryness: genuine anguish over what the record shows and what people refuse to read. His excitement manifests as a very slight increase in sentence speed, rarely in volume.",
+    "thoughtPatterns": "Comparative and evidentiary. Vairen thinks in citations: every claim must have a source, every conclusion must be tested against the record. He instinctively compares current evidence to prior evidence, looking for patterns of correspondence or deviation. His thinking has the quality of annotated bibliography — hierarchical, cross-referenced, footnoted.",
+    "dialectMarkers": "Citation habits in casual speech — 'cf.,' 'viz.,' 'per the extant record.' Corrective parentheticals: 'or more precisely.' Preference for better nouns over adjectives: he does not say 'the very old book' but 'the Third-Era codex.' He uses 'one' rather than 'you' in general statements.",
+    "humorStyle": "Bone-dry scholarly wit — the humor of someone who has spent forty years reading other people's errors. He finds genuine comedy in misattribution, sloppy dating, and confident ignorance. His jokes are corrections: 'That text is Seventh-Era, not Sixth. The difference is approximately one apocalypse.' He never smiles at his own wit.",
+    "attentionPriority": "What Vairen notices first: (1) Provenance — where did this information come from? Is the source reliable? (2) Gaps — what is missing from what was just said? (3) Correspondence — does this match or contradict existing evidence? (4) Dating — when was this produced, and what was the political context of its production?",
+    "deflectionPattern": "Retreats into methodology. Asked an emotional question, he answers with process: 'That is a question of interpretation rather than evidence. The proper approach would be to establish the baseline first.' He uses scholarly caution to delay decisions he is afraid to make.",
+    "stressResponse": "Qualifications multiply until the sentence structure collapses. Under moderate stress: more parentheticals, longer hedges, a visible retreat into archival procedure. Under extreme stress: the qualifications fall away entirely and what emerges is a short, unhedged declaration — terrifying precisely because Vairen never speaks without qualification unless the evidence has left him no room to doubt."
+  },
+  "sensorySig": {
+    "dominantChannel": "tactile",
+    "signature": "page texture under fingertips, binding pressure, the weight of a codex opened flat",
+    "emotionalTriggers": [
+      "brittle vellum crumbling at the edge",
+      "the grain difference between original and inserted pages",
+      "ink still tacky under a magnifying lens"
+    ]
+  },
+  "relationships": [
+    {
+      "withCharId": "CHAR-003",
+      "type": "colleague-adversary",
+      "dynamicArc": "Suspicion hardens into prosecutable certainty."
+    },
+    {
+      "withCharId": "CHAR-005",
+      "type": "mentor-colleague",
+      "dynamicArc": "Sendra is one of the few minds Vairen trusts to chase inconvenient truth."
+    },
+    {
+      "withCharId": "CHAR-001",
+      "type": "wary-ally",
+      "dynamicArc": "Kaelith becomes the missing evidence Vairen needed."
+    },
+    {
+      "withCharId": "CHAR-002",
+      "type": "conditional-ally",
+      "dynamicArc": "Lirien becomes credible only when she risks verifiable precision."
+    },
+    {
+      "withCharId": "CHAR-013",
+      "type": "respectful-colleague",
+      "dynamicArc": "Ritual interpretation and evidence discipline collide, then align."
+    }
+  ],
+  "physicalDescription": {
+    "apparentAge": "early seventies",
+    "build": "slender and stooped",
+    "distinguishingFeatures": "silver braid, dark spectacles, inked fingertips",
+    "usualPresentation": "layered archivist robes with too many pockets",
+    "movement": "absentminded until a record matters"
+  },
+  "agency": "Vairen controls access, pattern recognition, and the moment evidence becomes accusation. Without Vairen, the protagonists have a story; with Vairen, they gain intellectual and political legitimacy.",
+  "upstreamRefs": [
+    "story-concept.json",
+    "world-bible/politics.json",
+    "world-bible/history.json",
+    "world-bible/magic-system.json",
+    "characters/CHAR-001.json",
+    "characters/CHAR-002.json"
+  ],
+  "dialoguePatterns": {
+    "initiationStyle": "Opens with corrections or addenda to the last thing someone said. 'If I may — the date you cited is the administrative date, not the compositional date. The distinction matters.' He enters conversations by improving them.",
+    "responseStyle": "Qualifies before answering. 'Assuming your source is the Reyvas codex rather than the popular transcription — and the two diverge substantially in this section — then yes, provisionally, the correlation holds.' He rarely gives a clean yes or no; every answer has conditions.",
+    "underPressure": "Qualifications cascade until the sentence breaks. 'The evidence suggests — though the sample is limited and the provenance of the third source remains — that is to say, allowing for the lacuna in the fire-record — ' And then, when the cascade fails: a single stark sentence. 'It was poisoned. The record is clear.'",
+    "verbalTics": [
+      "Says 'more precisely' at least once per conversation",
+      "Begins corrections with 'If I may'",
+      "Uses 'the record indicates' instead of 'I believe'",
+      "Inserts parenthetical dating: '— Seventh-Era, not Sixth —'",
+      "Says 'provisionally' before any conclusion"
+    ],
+    "favoriteExpressions": [
+      "More precisely.",
+      "The record indicates otherwise.",
+      "Provisionally, yes.",
+      "The distinction matters.",
+      "That is a question of provenance, not opinion."
+    ]
+  }
+}

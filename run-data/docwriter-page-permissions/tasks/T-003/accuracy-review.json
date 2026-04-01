@@ -1,0 +1,105 @@
+{
+  "agent": "docwriter-accuracy-reviewer",
+  "taskId": "T-003",
+  "verdict": "approved",
+  "claims": [
+    {
+      "claim": "Users need the *View* (Access channel) application-level permission for the respective website channel",
+      "location": "Section: Create a workflow, first callout",
+      "result": "verified",
+      "evidence": "WebPagesApplication.cs line 39: [UIPermission(SystemPermissions.VIEW, \"{$base.roles.permissions.accesschannel$}\")]. SystemPermissions.cs line 11: VIEW = \"View\". The VIEW permission is labeled 'Access channel' in the admin UI.",
+      "docFact": "ContentTab.cs: Every command checks [PageCommand(Permission=VIEW)] at the application level"
+    },
+    {
+      "claim": "Users must hold *Read* and *Update* page permissions for the content item",
+      "location": "Section: Create a workflow, first callout",
+      "result": "verified",
+      "evidence": "WebPageBase.cs line 134: CheckAclPermission(WebPageItemID, WebPageAclPermissions.READ) in ConfigurePage(). ContentTab.cs line 164: CheckAclPermission(WebPageItemID, WebPageAclPermissions.UPDATE) on Save. Same pattern on lines 200, 234, 268, 283, 298, 313, 340, 366, 445, 462 for all mutating operations. WebPageAclPermissions.cs defines READ and UPDATE as string constants.",
+      "docFact": "ContentTab.cs: Every command checks CheckAclPermission at the ACL level before any workflow step role check"
+    },
+    {
+      "claim": "Users must satisfy all permission layers to work with workflow items",
+      "location": "Section: Create a workflow, first callout",
+      "result": "verified",
+      "evidence": "The three layers are checked sequentially: (1) [PageCommand(Permission = SystemPermissions.VIEW)] at application level, (2) CheckAclPermission(READ + UPDATE) at ACL level, (3) CanWorkWithContentItemInCurrentStep() for workflow. All three must pass — they are separate checks that each independently block the operation if denied.",
+      "docFact": "ContentTab.cs: Every command checks [PageCommand(Permission=VIEW)] at the application level and CheckAclPermission at the ACL level before any workflow step role check"
+    },
+    {
+      "claim": "Workflow roles are one of several permission layers the system evaluates",
+      "location": "Section: Create a workflow, first callout",
+      "result": "verified",
+      "evidence": "Three layers confirmed in code: application-level (PageCommand attribute), ACL (CheckAclPermission), and workflow step roles (CanWorkWithContentItemInCurrentStep). Workflow roles are the third and final layer.",
+      "docFact": "WorkflowStepRoleArbiter.cs: Workflow step role arbiter is the third layer"
+    },
+    {
+      "claim": "The system checks step role restrictions in addition to page permissions required for editing, and users must satisfy both to perform any action on items in the step",
+      "location": "Section: Configure the workflow steps, 'Roles that can work with this step' description",
+      "result": "verified",
+      "evidence": "ContentTab.cs checks CheckAclPermission (ACL/page permissions) first, then WebPageCommandManagerBase.cs calls CanWorkWithContentItemInCurrentStep (step roles) for Save (line 554), ChangeWorkflowStep (line 601), Discard (line 648), CancelScheduledPublish (line 669), CancelScheduledPublishAndEdit (line 709). Both must pass.",
+      "docFact": "WebPageCommandManagerBase.cs: CanWorkWithContentItemInCurrentStep is checked for Save, ChangeWorkflowStep, Discard, CancelScheduledPublish, CancelScheduledPublishAndEdit operations"
+    },
+    {
+      "claim": "To work with a content item in a workflow step, users need the *View* (Access channel) application-level permission for the website channel",
+      "location": "Section: Configure the workflow steps, second callout",
+      "result": "verified",
+      "evidence": "Same evidence as claim 1. WebPagesApplication.cs line 39: [UIPermission(SystemPermissions.VIEW, \"{$base.roles.permissions.accesschannel$}\")]. All page commands in ContentTab.cs use [PageCommand(Permission = SystemPermissions.VIEW)].",
+      "docFact": "ContentTab.cs: Every command checks [PageCommand(Permission=VIEW)] at the application level"
+    },
+    {
+      "claim": "Users must hold *Read* and *Update* page permissions for the content item (second callout)",
+      "location": "Section: Configure the workflow steps, second callout",
+      "result": "verified",
+      "evidence": "Same evidence as claim 2. WebPageBase.cs line 134 checks READ. ContentTab.cs checks UPDATE on all mutating commands.",
+      "docFact": "ContentTab.cs: Every command checks CheckAclPermission at the ACL level before any workflow step role check"
+    },
+    {
+      "claim": "These requirements apply independently of step role restrictions",
+      "location": "Section: Configure the workflow steps, second callout",
+      "result": "verified",
+      "evidence": "ACL checks in ContentTab.cs (lines 161-164 for Save, etc.) execute before and independently of workflow step role checks in WebPageCommandManagerBase.cs. The WorkflowStepRoleArbiter.cs does not check any ACL permissions — it only checks workflow step roles. The two systems are independent.",
+      "docFact": null
+    },
+    {
+      "claim": "The **Draft** step does not enforce step role restrictions and allows all users with the required permissions to edit items",
+      "location": "Section: Configure the workflow steps, second callout",
+      "result": "verified",
+      "evidence": "WorkflowStepRoleArbiter.cs lines 89-92: if (IsDraft(step)) { return true; }. Line 126-128: IsDraft checks step.ContentWorkflowStepType == ContentWorkflowStepType.SystemDraft. The arbiter immediately returns true for Draft steps without checking any roles, meaning all users pass this check.",
+      "docFact": "WorkflowStepRoleArbiter.cs: Draft step always allows all users"
+    },
+    {
+      "claim": "Roles with full control — users with these roles are permitted to edit items in all steps within the workflow, move items to the next or previous step, and also directly publish items",
+      "location": "Section: Create a workflow, step 4",
+      "result": "verified",
+      "evidence": "WorkflowStepRoleArbiter.cs lines 94-98: if (hasFullControl) { return true; } — checked after Draft check, before custom step role check. HasFullControlInternal (lines 117-122) checks if user is in any of the workflow's full control roles. Full control bypasses all step restrictions.",
+      "docFact": "WorkflowStepRoleArbiter.cs: Full Control roles bypass step restrictions"
+    },
+    {
+      "claim": "For the final custom step in the workflow, the roles gain the ability to publish items or send/schedule regular emails",
+      "location": "Section: Configure the workflow steps, 'Roles that can work with this step' description",
+      "result": "verified",
+      "evidence": "WorkflowStepRoleArbiter.cs lines 100-109: if (IsFinal(step)) checks for the Published/SystemFinal step and delegates to the last custom step's roles via CanWorkWithContentItemInStepInternal(lastCustomStep, ...). This means the roles on the last custom step determine who can work with items at the final/Published step.",
+      "docFact": "WorkflowStepRoleArbiter.cs: Final step delegates to last custom step's roles"
+    }
+  ],
+  "codeExamples": [],
+  "headingIntegrity": {
+    "result": "verified",
+    "notes": "No markdown headings (## or ###) were changed — only bold text inside {% note %} callout blocks was modified. The callout titles changed from 'Workflow roles and other permissions' to 'Workflow roles and page permissions' and 'Workflow step roles and page permissions'. No incoming anchor links reference the old callout titles. All 36 incoming page_link references to workflows_xp use page-level linking, not anchor-level linking to these callouts."
+  },
+  "summary": {
+    "totalClaims": 11,
+    "verified": 11,
+    "incorrect": 0,
+    "unverifiable": 0,
+    "unsupported": 0,
+    "codeExamplesChecked": 0,
+    "codeExamplesCorrect": 0
+  },
+  "riskMitigationVerification": {
+    "permissionSummaryCrossCheck": "The permissionSummary.changeWorkflowStep in code-analysis.json confirms: applicationPermission = SystemPermissions.VIEW, aclPermission = READ + UPDATE on the page, workflowCheck = CanWorkWithContentItemInCurrentStep must be true. The documentation correctly states View (Access channel) + Read + Update page permissions, matching the permissionSummary exactly.",
+    "draftStepAlwaysAllowed": "WorkflowStepRoleArbiter.cs lines 89-92 confirms IsDraft(step) returns true immediately. The documentation correctly states the Draft step does not enforce step role restrictions."
+  },
+  "metaKnowledgeNotes": "knowledge-brief.json reviewed. No domain insights conflict with documented claims. PAT-002 (high invariant count correlates with success) and PAT-004 (formatting invariants cause most rejections) are meta-process insights, not accuracy concerns.",
+  "researchBriefNotes": "research-brief.json reviewed. No research recommendations conflict with invariants or documented content. Research focused on presentation patterns (callout formatting, step-by-step instructions) rather than factual claims.",
+  "timestamp": "2026-03-18T17:21:09Z"
+}

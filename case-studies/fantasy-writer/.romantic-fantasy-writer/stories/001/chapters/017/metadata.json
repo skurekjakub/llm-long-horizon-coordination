@@ -1,0 +1,200 @@
+{
+  "chapter": 17,
+  "title": "Load-Bearing Walls",
+  "pov": "CHAR-001",
+  "povName": "Kaelith Maren",
+  "wordCount": 4956,
+  "sceneCount": 3,
+  "scenes": [
+    {
+      "id": "SCN-47",
+      "type": "sequel",
+      "title": "Isolation and Pallor Acceleration",
+      "wordCount": 1800,
+      "valueShift": {
+        "start": "I am safer alone",
+        "end": "I am dying alone and the anger isn't keeping me warm"
+      },
+      "craftToolsApplied": {
+        "T5": "Morally complex tone maintained — devastation through restraint, no melodrama",
+        "T8": "Internal resistance (Calwrath pattern, self-sufficiency narrative) established",
+        "T10": "Pallor acceleration rules followed — resonance bond absence causes progression",
+        "T12": "Fantasy threat (Pallor) caused by romance separation",
+        "T17": "Kaelith voice at maximum compression — short declarative sentences, architectural metaphors",
+        "T20": "Emotional state: controlled anger masking grief",
+        "T21": "VL-12 collapse — every ch15 memory now evidence of manipulation"
+      },
+      "emotionalBeats": [
+        "Military efficiency masking devastation",
+        "Testing every memory for manipulation",
+        "Pallor symptoms worsening without Lirien's stabilising presence",
+        "Timeline revision from weeks to days"
+      ]
+    },
+    {
+      "id": "SCN-48",
+      "type": "sequel",
+      "title": "The Bond Pulse",
+      "wordCount": 1650,
+      "valueShift": {
+        "start": "She manipulated me",
+        "end": "She may have loved me AND been bound to kill me, and I don't know which is worse"
+      },
+      "craftToolsApplied": {
+        "T5": "Restrained tone — grief examined through architectural collapse metaphor",
+        "T7": "Black moment aftermath — anger cracking, simple betrayal narrative failing",
+        "T10": "Bond mechanics consistent — cannot fabricate emotion, reveals genuine grief",
+        "T12": "Romance beat (bond pulse proving genuine feelings) drives internal shift",
+        "T16": "Load-bearing wall metaphor for anger — remove it and structure collapses",
+        "T17": "Voice maintains compression but longer sentences appear when defences breach",
+        "T20": "Emotional state: reluctant reassessment",
+        "T24": "Subtext — Kaelith tells herself monitoring Lirien is tactical, bond knows it isn't"
+      },
+      "emotionalBeats": [
+        "Bond pulse carries Lirien's genuine grief through the wall",
+        "Analysing bond evidence — resonance cannot fabricate emotion",
+        "Simple betrayal story collapses",
+        "Stops actively walling bond but does not reach back"
+      ]
+    },
+    {
+      "id": "SCN-49",
+      "type": "scene",
+      "title": "Hunter Encounter and Direction Change",
+      "wordCount": 1550,
+      "valueShift": {
+        "start": "I can do this alone",
+        "end": "The mission requires her and the mission is all I have left"
+      },
+      "craftToolsApplied": {
+        "T5": "Action sequence maintains morally complex tone — no heroic framing",
+        "T6": "Stakes escalation — physical capability declining, timeline contracting",
+        "T8": "Self-sufficiency narrative collapses under practical reality",
+        "T10": "Pallor acceleration shown physically — cold in joints, delayed response",
+        "T12": "Fantasy action (vorakh fight) exposes consequences of romance separation",
+        "T13": "Tension level 8 maintained through physical danger and internal crisis",
+        "T17": "Combat voice: staccato fragments, compensate commands",
+        "T20": "Emotional state: grim resolve with fragile hope underneath tactical framing",
+        "T25": "TP-2 tested — right choice (protect yourself) is killing her faster"
+      },
+      "emotionalBeats": [
+        "Vorakh encounter exposes physical decline",
+        "Military assessment of declining capability",
+        "Tactical reality — mission requires Lirien",
+        "Direction change toward Lirien framed as mission necessity",
+        "Walking toward conversation she's not ready for"
+      ]
+    }
+  ],
+  "craftToolCompliance": {
+    "T5": {
+      "status": "compliant",
+      "notes": "Tone morally complex throughout. No melodrama. Devastation conveyed through restraint and physical detail."
+    },
+    "T6": {
+      "status": "compliant",
+      "notes": "Stakes escalated from personal (isolation) through physical (Pallor acceleration, combat) to mission-critical (timeline contracted to days)."
+    },
+    "T7": {
+      "status": "compliant",
+      "notes": "Black moment aftermath executed. Anger cracking. Simple betrayal narrative failing. Grief emerging beneath."
+    },
+    "T8": {
+      "status": "compliant",
+      "notes": "Internal resistance (Calwrath pattern, self-sufficiency) and external (Pallor, vorakh, contract timeline) both present and overcome through necessity."
+    },
+    "T10": {
+      "status": "compliant",
+      "notes": "Bond mechanics strictly consistent — cannot fabricate emotion, transmits genuine emotional quality, can be walled but not severed. Pallor acceleration follows established rules."
+    },
+    "T12": {
+      "status": "compliant",
+      "notes": "Fantasy threat (Pallor acceleration) directly caused by romance separation. Arcs fully coupled."
+    },
+    "T13": {
+      "status": "compliant",
+      "notes": "Tension level 8 maintained. Three distinct movements with rising stakes. Internal and physical pacing balanced."
+    },
+    "T15": {
+      "status": "compliant",
+      "notes": "FS-019 advanced (Kaelith thinks about secondary operative possibility). FS-020 advanced (deterioration timeline pressure). Direction change plants reunion setup for ch19."
+    },
+    "T16": {
+      "status": "compliant",
+      "notes": "Pallor motif present throughout — silver spreading on skin mirrors cosmic membrane failure. Fortification imagery dominates Kaelith's metaphor space. Water imagery deliberately absent except one instance of grief 'like floodwater' showing Lirien's influence."
+    },
+    "T17": {
+      "status": "compliant",
+      "notes": "Kaelith voice at maximum compression. 70%+ sentences under 10 words. Architectural metaphors exclusively. Emotion expressed through body. Longer sentences only when defences breach."
+    },
+    "T18": {
+      "status": "compliant",
+      "notes": "Information asymmetry maintained — Kaelith knows contract exists but cannot verify loophole validity. Bond transmits emotion, not facts."
+    },
+    "T20": {
+      "status": "compliant",
+      "notes": "Emotional arc: controlled anger → reluctant reassessment → grim resolve with fragile hope. Clear progression."
+    },
+    "T21": {
+      "status": "compliant",
+      "notes": "VL-12 collapse shown through Kaelith testing every ch15 memory for manipulation. Intimacy apex recontextualised as potential final stage of infiltration."
+    },
+    "T23": {
+      "status": "compliant",
+      "notes": "MB-011 (will trust survive) and MB-012 (real or binding) both active and advanced. Question not resolved but pushed toward eventual answer."
+    },
+    "T24": {
+      "status": "compliant",
+      "notes": "Minimal dialogue (none with other characters). Subtext in what Kaelith tells herself vs. what bond reveals — 'tactical monitoring' framing is transparent self-deception."
+    },
+    "T25": {
+      "status": "compliant",
+      "notes": "All three thematic pillars present. TP-1 (trust) examined from wounded side. TP-2 (right choice) tested — self-protection killing her faster. TP-3 (chosen vs bound) advanced — bond pulse forces question of genuine feelings within contract."
+    }
+  },
+  "emotionalStatesAtBoundaries": {
+    "CHAR-001": {
+      "chapterStart": "Controlled anger — Calwrath pattern, military discipline applied to emotional survival, every memory under revision",
+      "chapterEnd": "Grim resolve with fragile hope — walking toward Lirien, framing as mission necessity, grief replacing anger"
+    },
+    "CHAR-002": {
+      "statePerceived": "Raw grief transmitting through bond — uncontrolled, patient, permanent weight. Not diminishing. Quality of loss not mission failure."
+    }
+  },
+  "foreshadowingElements": {
+    "planted": [],
+    "advanced": [
+      {
+        "id": "FS-019",
+        "description": "Court enforcement escalation — secondary operative possibility present in Kaelith's tactical assessment",
+        "lineRef": "Internal reference to Court monitoring and enforcement escalation"
+      },
+      {
+        "id": "FS-020",
+        "description": "30/90 day deterioration timeline — Kaelith knows Lirien faces Lessening if contract unfulfilled",
+        "lineRef": "Internal acknowledgment of Lirien's timeline pressure"
+      }
+    ],
+    "payoffs": []
+  },
+  "continuityNotes": {
+    "pallorProgression": "Silver spread from wrist (ch16) to knuckles and elbow (ch17). Cold deepening. Timeline contracted from weeks to days. Two fingers non-functional by chapter end.",
+    "bondState": "Walled by Kaelith but not severed. Transmits Lirien's grief. Kaelith stops actively reinforcing wall in SCN-48 but does not reach back.",
+    "locationProgression": "Started heading east into Narrowing treeline, ended heading north toward Quietus/Lirien convergence",
+    "physicalState": "Bruised ribs (3rd/4th left, from ch14). Pallor-related cold and silver spreading. Combat-capable but degrading."
+  },
+  "voiceMarkers": {
+    "sentenceLength": "70%+ under 10 words. Longer sentences (15-25 words) appear only when emotional defences breach",
+    "metaphorDomain": "Architecture, fortification, material science exclusively. Load-bearing walls, structures failing, cracks, weight",
+    "emotionalRegister": "Suppressed-to-physical throughout. Anger = jaw tight, heat in neck. Grief = pressure behind sternum, weight across shoulders",
+    "thoughtPatterns": "Linear tactical assessment applied to emotional situations. Under stress: fragments to inventory mode",
+    "waterImagery": "One deliberate exception — grief arriving 'like floodwater through a crack' — showing Lirien's influence leaking through",
+    "distinctFromLirien": "No water-as-identity metaphors, no precise spacing between words, no operative taxonomies, no fae distance"
+  },
+  "hookAndClose": {
+    "openingHook": "Imperative voice hook — 'Fire first. Perimeter second. Don't think about the rest.' Establishes military discipline masking devastation.",
+    "closingTechnique": "Forward motion with unresolved tension — walking toward conversation she's not ready for, but walking anyway. Hope fragile but present."
+  },
+  "status": "draft",
+  "draftedAt": "2024-03-18T13:45:00Z"
+}

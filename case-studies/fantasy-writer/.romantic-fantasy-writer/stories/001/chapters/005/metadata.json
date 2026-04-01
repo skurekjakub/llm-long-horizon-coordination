@@ -1,0 +1,101 @@
+{
+  "chapterNum": 5,
+  "povCharacter": "CHAR-001",
+  "wordCount": 4173,
+  "sceneCount": 3,
+  "status": "draft",
+  "scenes": [
+    {
+      "id": "SCN-013",
+      "goal": "Kaelith researches the Pallor in garrison archives, verifying Lirien's claims",
+      "valueShift": "From 'I failed my duty' to 'my duty was to a lie'",
+      "achieved": true
+    },
+    {
+      "id": "SCN-014",
+      "goal": "Lirien reveals the kill contract to Kaelith",
+      "valueShift": "From 'she chose not to kill me' to 'she is trapped by the order to kill me'",
+      "achieved": true
+    },
+    {
+      "id": "SCN-015",
+      "goal": "Kaelith learns she carries the Quietus location as kinetic memory",
+      "valueShift": "From 'I am expendable' to 'my survival is structurally necessary to the world's coherence'",
+      "achieved": true
+    }
+  ],
+  "craftToolsApplied": {
+    "T5": "Tone maintained — morally complex, no melodrama. Kaelith's reaction to kill contract is compressed cold rather than dramatic breakdown.",
+    "T6": "Stakes escalation — personal (exile) to existential (world's coherence depends on her). Chapter raises stakes from local to apocalyptic.",
+    "T8": "Internal resistance shown through Kaelith's self-punishment mindset ('I am expendable' vs 'I am necessary'). External resistance via Oathbrand, kill contract paradox.",
+    "T10": "Magic rules reinforced — kinetic memory as embodied knowledge, Oathbrand as suppression, Pallor membrane physics established through Helric's journal.",
+    "T12": "Dual-arc interleave — fantasy beat (Quietus paradox revealed) and romance beat (Lirien admits kill contract) converge. Both arcs require same choice: leave together.",
+    "T15": "Foreshadowing planted — Ossya Thenndal referenced in kinetic memory explanation, Helric disappearance suggests Conclave silencing pattern.",
+    "T17": "Voice fingerprint maintained — Kaelith's short sentences, stone/wall metaphors, suppressed emotional register, counting as coping mechanism. Lirien's clinical precision, classification language, observable in dialogue.",
+    "T18": "Information asymmetry managed — Kaelith learns kill contract exists, learns she carries Quietus path, learns Pallor poisoning confirmed. Reader knew these facts earlier (Ch1-4), now Kaelith catches up partially.",
+    "T20": "Emotional throughline — Kaelith moves from 'forced alliance acceptance with undercurrent of self-loathing' (Ch4 end state) to 'pragmatic bitterness transitioning to grim resolve' (Ch5 end state). No repeated emotional state.",
+    "T21": "Vulnerability ladder — Lirien's admission of kill contract is surrender of informational control, highest vulnerability she's shown yet. Kaelith's acknowledgment that she's 'capable of arithmetic' is admission of ruthlessness, accepting Lirien sees her clearly.",
+    "T23": "Mystery boxes managed — MB-001 (Oathbrand maintenance) further confirmed via Helric's journal. MB-003 (how Kaelith walked Quietus path) opened this chapter. MB-005 (Seep's agenda) implicitly referenced through Lirien's paradox choice.",
+    "T24": "Subtext in dialogue — Lirien's clinical language masks terror. Kaelith's 'you're lying to yourself' cuts through operative facade. The 'I don't trust you / You should not' exchange establishes pragmatic cooperation without emotional resolution.",
+    "T25": "Thematic scaffolding — TP-1 (trust as structural failure) advanced: Kaelith accepts cooperation despite distrust because alternative is worse. TP-2 (price of right choice) embodied in Calwrath arithmetic applied to new situation."
+  },
+  "sceneValueShifts": [
+    {
+      "scene": "SCN-013",
+      "startValue": "Kaelith believes her exile was earned punishment",
+      "endValue": "Kaelith understands her exile was tactical containment, her disgrace manufactured",
+      "mechanism": "Discovery of suppressed Pallor reports and Helric's journal"
+    },
+    {
+      "scene": "SCN-014",
+      "startValue": "Kaelith views Lirien as strategic threat with unknown agenda",
+      "endValue": "Kaelith understands Lirien is trapped by kill contract, not freely choosing mercy",
+      "mechanism": "Lirien's direct revelation of contract paradox"
+    },
+    {
+      "scene": "SCN-015",
+      "startValue": "Kaelith believes she is expendable, owes world nothing",
+      "endValue": "Kaelith accepts she is structurally necessary to world's survival, cannot refuse responsibility",
+      "mechanism": "Revelation of kinetic memory + Lirien's appeal to her capacity for terrible arithmetic"
+    }
+  ],
+  "emotionalBoundaryStates": {
+    "chapterStart": "Forced alliance acceptance with undercurrent of self-loathing — choosing survival over isolation, hating that she still makes calculations this cold",
+    "chapterEnd": "Pragmatic bitterness transitioning to grim resolve — accepts cooperation as existential necessity, applies Calwrath arithmetic to new context, commits to departure"
+  },
+  "foreshadowingElements": {
+    "planted": [
+      {
+        "element": "Commander Helric disappeared from records after reporting Pallor failures — suggests systematic silencing of witnesses",
+        "ledgerRef": "FS-018 (Ossya Thenndal mystery) pattern — Conclave neutralizes those who know too much"
+      },
+      {
+        "element": "Kaelith walked Quietus path 'during Legion training' blindfolded — by whom? when exactly? This is FS-006",
+        "ledgerRef": "FS-006"
+      }
+    ],
+    "paid": []
+  },
+  "continuityUpdates": {
+    "characterLocations": {
+      "CHAR-001": "Duskhaven garrison, her quarters, preparing to depart",
+      "CHAR-002": "Duskhaven, met with Kaelith in her quarters"
+    },
+    "timeline": "Night following Chapter 4 tavern conversation. Dawn departure planned for next morning.",
+    "knowledgeStateChanges": {
+      "CHAR-001": [
+        "Now knows kill contract exists and Lirien was sent to execute her (FACT-003)",
+        "Now knows she carries Quietus location as kinetic memory (FACT-005)",
+        "Now understands Pallor suppression is institutional policy, not incompetence (FACT-004 confirmed)",
+        "Discovered Helric's journal documenting twelve-year-old Pallor observations"
+      ]
+    }
+  },
+  "motifAppearances": {
+    "MOT-002": {
+      "appearance": "Chapter 5, multiple references — Oathbrand burns during revelation scenes, described as wound maintained, referenced as tactical suppression not justice",
+      "function": "Reinforces Oathbrand as externalized guilt weaponized by institutions"
+    }
+  },
+  "draftNotes": "Chapter hits all three required scenes from outline. Word count 4187 exceeds minimum 3800. Voice fingerprinting maintained — Kaelith's short sentences, counting behavior, architectural metaphors, suppressed emotional register all present. Lirien's clinical precision and classification language audible in dialogue. Major revelation chapter — both kill contract and Quietus paradox disclosed. Emotional arc: Kaelith moves from self-loathing to grim acceptance of necessity. Ends with commitment to departure, setting up Chapter 6. Tonal balance maintained — no melodrama, reactions compressed and tactical rather than emotionally explosive."
+}

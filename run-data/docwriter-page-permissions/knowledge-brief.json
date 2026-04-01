@@ -1,0 +1,377 @@
+{
+  "version": 1,
+  "generatedAt": "2026-03-18T13:05:24Z",
+  "taskProfile": {
+    "domains": [
+      "admin-ui",
+      "api-reference",
+      "authentication",
+      "content-security",
+      "cross-references",
+      "how-to",
+      "xperience-platform"
+    ],
+    "docTypes": [
+      "reference",
+      "how-to",
+      "conceptual"
+    ],
+    "changeScope": "gap-fill",
+    "historicalSimilarity": "DOM-004 (content-security domain overlap, prior security model documentation)"
+  },
+  "patterns": [
+    {
+      "id": "PAT-002",
+      "title": "High invariant count correlates with first-attempt success for update tasks",
+      "insight": "First-attempt tasks applied more invariants on average (13.1 vs 6.7 in DOC-3137). The 3 highest invariant counts (T-008: 24, T-007: 18, T-012: 29) all achieved first-attempt acceptance. Encourage writers to explicitly apply more invariants upfront.",
+      "applicability": "Directly applicable \u2014 this task updates existing pages (gap-fill). Writers should apply invariants comprehensively for the permission requirement sections being added.",
+      "invariantsReferenced": [],
+      "confidence": "high",
+      "relevanceScore": 0.7143,
+      "sourceTask": "TASK-010, TASK-008, T-007",
+      "usageCount": 3,
+      "consumers": [
+        "task-planner",
+        "content-writer"
+      ]
+    },
+    {
+      "id": "PAT-004",
+      "title": "Only 5.2% of invariants caused rejections. The invariant inventory is well-calib",
+      "insight": "Only 5.2% of invariants cause rejections. Top rejection causes are formatting/structural rules (callout titles, dash types, frontmatter), not content/accuracy rules. Formatting invariants need stronger pre-writing emphasis.",
+      "applicability": "Applicable \u2014 permission documentation will include callouts and structured formatting. Writers should prioritize formatting invariant compliance.",
+      "invariantsReferenced": [],
+      "confidence": "high",
+      "relevanceScore": 0.7143,
+      "sourceTask": "N/A (aggregate)",
+      "usageCount": 3,
+      "consumers": [
+        "task-planner",
+        "content-writer"
+      ]
+    },
+    {
+      "id": "PAT-001",
+      "title": "Focused single-persona developer update pages achieve first-attempt acceptance",
+      "insight": "Single-persona developer update pages with medium complexity achieve high first-attempt success (100% in DOC-3137). Profile: action=update, contentType=howto, targetPersonas=[developer].",
+      "applicability": "Partially applicable \u2014 developer pages (Page permission management, Workflows) match this profile; the business-user page (Edit and publish pages) requires extra care per DOM-008.",
+      "invariantsReferenced": [],
+      "confidence": "medium",
+      "relevanceScore": 0.7,
+      "sourceTask": "TASK-004, TASK-006, TASK-008",
+      "usageCount": 7,
+      "consumers": [
+        "task-planner",
+        "content-writer"
+      ]
+    },
+    {
+      "id": "PAT-009",
+      "title": "Cross-reference update tasks achieve near-perfect first-attempt rates",
+      "insight": "Cross-reference update tasks achieve 75% first-attempt rate (vs 56% overall). With INV-structure-017, cross-ref content accuracy hits 100% on first attempt.",
+      "applicability": "Applicable \u2014 this task requires cross-reference insertions between 4 pages. These are low-risk and can be batched or deprioritized for review overhead.",
+      "invariantsReferenced": [
+        "INV-structure-017"
+      ],
+      "confidence": "medium",
+      "relevanceScore": 0.5929,
+      "sourceTask": "T-013, T-014, T-015",
+      "usageCount": 2,
+      "consumers": [
+        "task-planner",
+        "content-writer"
+      ]
+    },
+    {
+      "id": "PAT-010",
+      "title": "Code-sample mechanical conversion with INV-codesamples-* suite + build verification achieves first-attempt acceptance",
+      "insight": "Full INV-codesamples-* suite with build verification achieves 100% first-attempt acceptance for mechanical code-sample transformations. Only works for compilable files.",
+      "applicability": "Low applicability \u2014 this task is primarily prose documentation about permissions, not code sample transformation.",
+      "invariantsReferenced": [
+        "INV-codesamples-004",
+        "INV-codesamples-011"
+      ],
+      "confidence": "low",
+      "relevanceScore": 0.5393,
+      "sourceTask": "DOC-2847",
+      "usageCount": 3,
+      "consumers": [
+        "task-planner",
+        "content-writer"
+      ]
+    },
+    {
+      "id": "PAT-011",
+      "title": "Minimal-scope code-only updates with 2-4 invariants achieve first-attempt acceptance",
+      "insight": "Narrow-scope tasks (\u22642 code blocks, 2-4 invariants) consistently pass first-attempt review. Lowest-complexity tier, essentially risk-free.",
+      "applicability": "Low direct applicability \u2014 this task involves prose updates. However, the cross-reference insertion sub-tasks are narrow-scope and should achieve first-attempt success.",
+      "invariantsReferenced": [
+        "INV-style-019",
+        "INV-style-025"
+      ],
+      "confidence": "low",
+      "relevanceScore": 0.5179,
+      "sourceTask": "DOC-2847",
+      "usageCount": 2,
+      "consumers": [
+        "task-planner",
+        "content-writer"
+      ]
+    }
+  ],
+  "antiPatterns": [
+    {
+      "id": "ANTI-001",
+      "title": "Create-action pages have higher rejection rates than updates",
+      "insight": "Create tasks averaged 3.33 attempts vs update 1.33 in DOC-3137. Create tasks trigger frontmatter, cross-ref, and structural rejections, consuming 40% of writer attempts despite being 19% of tasks.",
+      "applicability": "Applicable \u2014 the task adds new sections analogous to create-within-update. Writers need explicit guidance on structural conventions and cross-ref identifiers for new content.",
+      "invariantsReferenced": [
+        "INV-crossref-001",
+        "INV-structure-001",
+        "INV-frontmatter-004"
+      ],
+      "confidence": "medium",
+      "relevanceScore": 0.5929,
+      "sourceTask": "TASK-001, TASK-002",
+      "usageCount": 2,
+      "consumers": [
+        "style-reviewer",
+        "gap-hunter"
+      ]
+    },
+    {
+      "id": "ANTI-004",
+      "title": "When acceptance criteria say 'document methods of interface X' without enumerati",
+      "insight": "Acceptance criteria saying 'document X' without explicit enumeration lead to missed items. Code analysis should feed explicit checklists into task planning.",
+      "applicability": "Applicable \u2014 the task defines 4 operations with specific per-operation requirements. The task planner should enumerate each operation's exact permission requirements as acceptance criteria.",
+      "invariantsReferenced": [],
+      "confidence": "medium",
+      "relevanceScore": 0.5929,
+      "sourceTask": "N/A",
+      "usageCount": 2,
+      "consumers": [
+        "style-reviewer",
+        "gap-hunter"
+      ]
+    },
+    {
+      "id": "ANTI-002",
+      "title": "Style invariant INV-formatting-016 (em dash vs en dash) is the most frequent ...",
+      "insight": "Writers consistently produce em dashes (\u2014) when the style guide requires en dashes (\u2013). INV-formatting-016 is the most frequent rejection trigger across all runs (19% of tasks in DOC-3137).",
+      "applicability": "Applicable \u2014 the permission sections will contain list items and descriptive text where dash usage is common. Writers should be explicitly reminded of the em-dash/en-dash rule.",
+      "invariantsReferenced": [
+        "INV-formatting-016"
+      ],
+      "confidence": "low",
+      "relevanceScore": 0.5393,
+      "sourceTask": "TASK-007, TASK-010, TASK-014",
+      "usageCount": 3,
+      "consumers": [
+        "style-reviewer",
+        "gap-hunter"
+      ]
+    },
+    {
+      "id": "ANTI-010",
+      "title": "Writers trust pre-existing code examples without verifying API surface, propagating phantom method calls",
+      "insight": "Writers trust pre-existing code examples without verifying API surface, propagating phantom method calls. Documentation .md code blocks bypass build verification.",
+      "applicability": "Low applicability \u2014 this task adds permission requirement prose sections, not code examples.",
+      "invariantsReferenced": [
+        "INV-codesamples-004"
+      ],
+      "confidence": "low",
+      "relevanceScore": 0.5179,
+      "sourceTask": "DOC-2847",
+      "usageCount": 2,
+      "consumers": [
+        "style-reviewer",
+        "gap-hunter"
+      ]
+    }
+  ],
+  "domainInsights": [
+    {
+      "id": "DOM-017",
+      "title": "Multi-layer parameter architectures require per-layer disambiguation in documentation",
+      "insight": "APIs with layered architectures create disambiguation challenges when concepts at different layers share terminology. Documentation must explicitly map each concept to its layer.",
+      "applicability": "Highly applicable \u2014 the page permission model is explicitly multi-layered (application-level \u2192 ACL \u2192 workflow). Each layer has its own permission concepts that share terminology. Documentation must disambiguate these layers clearly.",
+      "invariantsReferenced": [],
+      "confidence": "low",
+      "relevanceScore": 0.6964,
+      "sourceTask": "DOC-2847",
+      "usageCount": 1,
+      "consumers": [
+        "accuracy-reviewer",
+        "task-planner"
+      ]
+    },
+    {
+      "id": "DOM-002",
+      "title": "Hub/index pages require manual enumeration updates when new pages are created",
+      "insight": "Xperience uses manual hub/index pages enumerating sub-pages in prose. When new content is added, parent index pages must be updated manually.",
+      "applicability": "Applicable \u2014 the role-management parent page may need enumeration updates if Page permission management page structure significantly changes.",
+      "invariantsReferenced": [],
+      "confidence": "medium",
+      "relevanceScore": 0.5929,
+      "sourceTask": "N/A (aggregate)",
+      "usageCount": 2,
+      "consumers": [
+        "accuracy-reviewer",
+        "task-planner"
+      ]
+    },
+    {
+      "id": "DOM-003",
+      "title": "Xperience documentation spans two content collections: _documentation (reference",
+      "insight": "Xperience documentation spans _documentation and _guides collections. Feature changes affecting authentication and content security impact both collections.",
+      "applicability": "Directly applicable \u2014 page permissions are an authentication/content-security feature. The task explicitly limits scope to _documentation; _guides work should be noted as deferred.",
+      "invariantsReferenced": [],
+      "confidence": "medium",
+      "relevanceScore": 0.5929,
+      "sourceTask": "N/A",
+      "usageCount": 2,
+      "consumers": [
+        "accuracy-reviewer",
+        "task-planner"
+      ]
+    },
+    {
+      "id": "DOM-006",
+      "title": "Xperience API reference pages follow a dual-page pattern: a conceptual how-to pa",
+      "insight": "Xperience API reference follows a dual-page pattern: conceptual how-to + reference table. Impact mapper must capture both pages when a feature area changes.",
+      "applicability": "Moderately applicable \u2014 page permissions are documented on a management page (conceptual) and referenced from how-to pages. Dual-page awareness helps ensure all affected pages are updated.",
+      "invariantsReferenced": [],
+      "confidence": "medium",
+      "relevanceScore": 0.5929,
+      "sourceTask": "TASK-009, TASK-010",
+      "usageCount": 2,
+      "consumers": [
+        "accuracy-reviewer",
+        "task-planner"
+      ]
+    },
+    {
+      "id": "DOM-008",
+      "title": "Xperience business-user documentation requires domain-specific interaction verb ",
+      "insight": "Business-user pages require domain-specific interaction verbs (INV-style-034, INV-style-036) and face unique accuracy challenges around UI behavior. Stale icon references cause rejections.",
+      "applicability": "Highly applicable \u2014 'Edit and publish pages' is a business-user page. Permission cross-references added there must use approved interaction verbs and current UI element references.",
+      "invariantsReferenced": [
+        "INV-style-034",
+        "INV-style-036"
+      ],
+      "confidence": "medium",
+      "relevanceScore": 0.5929,
+      "sourceTask": "TASK-013, TASK-012",
+      "usageCount": 2,
+      "consumers": [
+        "accuracy-reviewer",
+        "task-planner"
+      ]
+    },
+    {
+      "id": "DOM-018",
+      "title": "Pre-existing documentation code examples contain phantom API method calls invisible to compilation",
+      "insight": "Documentation code blocks in .md files can contain phantom API method calls that persist indefinitely. Only accuracy review catches these since .md code is not compiled.",
+      "applicability": "Low applicability \u2014 primarily relevant to code example updates, not this permission documentation task.",
+      "invariantsReferenced": [
+        "INV-codesamples-004"
+      ],
+      "confidence": "low",
+      "relevanceScore": 0.5179,
+      "sourceTask": "DOC-2847",
+      "usageCount": 2,
+      "consumers": [
+        "accuracy-reviewer",
+        "task-planner"
+      ]
+    }
+  ],
+  "sourceObservations": [
+    {
+      "id": "SRC-OBS-002",
+      "title": "Base-class property with high internal fanout predicts dedicated documentation section need",
+      "insight": "A base-class property consumed at 7+ internal call sites needs a dedicated documentation section, not just a table cell. High internal fanout predicts multi-page documentation impact.",
+      "applicability": "Principle applies: each permission type (Read, Update, Create, Delete) should get its own documented section rather than a single table, given their cross-cutting impact across operations.",
+      "invariantsReferenced": [],
+      "confidence": "low",
+      "relevanceScore": 0.6964,
+      "sourceTask": "DOC-2847",
+      "usageCount": 1,
+      "consumers": [
+        "code-analyzer",
+        "task-planner",
+        "gap-hunter"
+      ]
+    },
+    {
+      "id": "SRC-OBS-003",
+      "title": "Shared lexical root on different type hierarchies predicts disambiguation section need",
+      "insight": "Two concepts sharing a lexical root but on different type hierarchies need explicit disambiguation. Without it, developers assume they are interchangeable.",
+      "applicability": "Applicable \u2014 'View' appears at application-permission level (SystemPermissions.VIEW) and could be confused with page-level display/read. 'Update' in ACL could be confused with workflow step transitions.",
+      "invariantsReferenced": [],
+      "confidence": "low",
+      "relevanceScore": 0.6964,
+      "sourceTask": "DOC-2847",
+      "usageCount": 1,
+      "consumers": [
+        "code-analyzer",
+        "task-planner",
+        "gap-hunter"
+      ]
+    },
+    {
+      "id": "SRC-OBS-001",
+      "title": "API methods with 3+ similar-type parameters predict named parameter documentation need",
+      "insight": "API methods with 3+ similar-type parameters need named parameter syntax in code examples to disambiguate call semantics.",
+      "applicability": "Low applicability \u2014 this task is primarily prose documentation about permissions, not code sample updates.",
+      "invariantsReferenced": [
+        "INV-codesamples-011"
+      ],
+      "confidence": "low",
+      "relevanceScore": 0.625,
+      "sourceTask": "DOC-2847",
+      "usageCount": 7,
+      "consumers": [
+        "code-analyzer",
+        "task-planner",
+        "gap-hunter"
+      ]
+    }
+  ],
+  "styleEvolutions": [
+    {
+      "id": "STYLE-004",
+      "title": "Incorrect page_link identifiers triggered rejections in 2 tasks (TASK-002, TASK-",
+      "insight": "Writers fabricate page_link identifiers instead of verifying against actual front matter. Cross-reference accuracy requires identifier verification against target page frontmatter.",
+      "applicability": "Highly applicable \u2014 this task requires cross-references between 4 pages. All page_link identifiers must be verified against actual frontmatter, not guessed.",
+      "invariantsReferenced": [
+        "INV-crossref-001"
+      ],
+      "confidence": "medium",
+      "relevanceScore": 0.5929,
+      "sourceTask": "TASK-002",
+      "usageCount": 2,
+      "consumers": [
+        "style-reviewer",
+        "content-writer"
+      ]
+    }
+  ],
+  "taskRetroLessons": [],
+  "staleEntries": [],
+  "conflicts": [],
+  "summary": {
+    "patternsIncluded": 6,
+    "antiPatternsIncluded": 4,
+    "domainInsightsIncluded": 6,
+    "sourceObservationsIncluded": 3,
+    "styleEvolutionsIncluded": 1,
+    "taskRetroLessonsIncluded": 0,
+    "staleEntriesFlagged": 0,
+    "conflictsDetected": 0,
+    "totalIndexEntries": 52,
+    "relevanceThreshold": 0.4,
+    "truncated": true,
+    "coldStart": false
+  }
+}

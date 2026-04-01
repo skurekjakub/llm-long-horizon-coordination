@@ -1,0 +1,75 @@
+{
+  "chapterNum": 5,
+  "pov": "CHAR-001",
+  "povTransitionMotivation": "Return to Kaelith to show her processing Lirien's revelation about the Pallor crisis and making the choice to trust provisionally. This is the chapter where cooperation shifts from tactical to existential",
+  "scenes": [
+    {
+      "id": "SCN-013",
+      "goal": "Kaelith researches the Pallor in the garrison's limited archives, verifying Lirien's claims",
+      "conflict": "The archives confirm that Pallor degradation reports have been suppressed by the High Conclave for at least fifteen years. The crisis is real and being hidden",
+      "disaster": "Kaelith realizes the empire she served has been concealing existential threat while maintaining her suppression. Her loyalty was to an institution that does not exist",
+      "valueShift": "From 'I failed my duty' to 'my duty was to a lie'",
+      "fiveCommandments": {
+        "incitingIncident": "Kaelith searches garrison archives after the tavern conversation",
+        "complication": "Pallor reports are incomplete, redacted, or missing entirely",
+        "crisis": "Accept Lirien's information as truth, or assume manipulation?",
+        "climax": "Kaelith finds a single unredacted report from twelve years ago describing Pallor membrane thinning — proof that the crisis is long-standing and deliberately concealed",
+        "resolution": "She accepts that Lirien told the truth, which means cooperation is operationally justified"
+      }
+    },
+    {
+      "id": "SCN-014",
+      "goal": "Lirien finds Kaelith and reveals the kill contract — not all details, but enough to explain the paradox",
+      "conflict": "Kaelith must process that the woman she is considering trusting was sent explicitly to end her life",
+      "disaster": "Lirien explains that the contract is binding and permanent — she cannot simply walk away. But she also reveals the paradox: if Kaelith dies, something critical to stopping the Pallor crisis may be lost forever",
+      "valueShift": "From 'she chose not to kill me' to 'she is trapped by the order to kill me'",
+      "fiveCommandments": {
+        "incitingIncident": "Lirien admits the kill contract exists",
+        "complication": "Kaelith's immediate response is to assess threat level and escape options",
+        "crisis": "Flee now, or hear the full explanation?",
+        "climax": "Kaelith stays — she wants to understand the paradox before she acts",
+        "resolution": "Lirien explains the Quietus: the mechanism that sealed Ythara, the god of unmade things. Its location exists only as embodied memory — and Kaelith carries it without knowing she does"
+      }
+    },
+    {
+      "id": "SCN-015",
+      "goal": "Kaelith tries to understand how she could carry the location of the Quietus without knowing it",
+      "conflict": "Lirien explains: the Warden who created the Quietus encoded its location as kinetic memory in a route Kaelith once walked blindfolded during her Legion training, years before Calwrath. She has no conscious memory of it, but her body remembers the path",
+      "disaster": "Kaelith realizes she is the only living map to the mechanism that keeps a god imprisoned. If she dies, the seal is lost. If the seal is lost, reality unravels",
+      "valueShift": "From 'I am expendable' to 'my survival is structurally necessary to the world's coherence'",
+      "fiveCommandments": {
+        "incitingIncident": "Kaelith demands proof of the Quietus claim",
+        "complication": "Lirien cannot provide proof — only intelligence reports and fae historical records",
+        "crisis": "Believe this impossible claim, or assume it is manipulation to gain cooperation?",
+        "climax": "Kaelith chooses to operate as if it is true, because the alternative (ignoring existential threat) is unacceptable",
+        "resolution": "She commits to leaving Duskhaven with Lirien, accepting that cooperation is existentially necessary even if trust is not yet earned"
+      }
+    }
+  ],
+  "emotionalArc": {
+    "startState": "Kaelith begins in verification mode — she will not trust without evidence. Emotions are held at distance while she confirms the Pallor crisis is real",
+    "endState": "She ends in overwhelming existential reorientation — she is not expendable, her body carries knowledge that determines whether reality persists, and her death would be catastrophic beyond her own life. She shifts from 'I owe the world nothing' to 'the world's survival depends on me whether I consent or not'",
+    "pivotMoment": "The revelation that she carries the Quietus location as embodied memory. That moment transforms her from 'forgotten exile' to 'structurally irreplaceable.' She did not choose this, but she cannot refuse it"
+  },
+  "fantasyBeats": [
+    "The Quietus Paradox Revealed: Lirien explains that Kaelith carries the only route to the Quietus as kinetic memory encoded during Legion training. If Kaelith dies, the god-seal is lost. Fantasy stakes and personal stakes become inseparable"
+  ],
+  "romanceBeats": [
+    "Partial Honesty — Lirien Reveals Enough to Keep Kaelith Alive: Lirien admits the kill contract exists and explains the paradox that prevents her from fulfilling it. This is surrender of informational control and the closest Lirien can come to admitting she does not want Kaelith to die"
+  ],
+  "hookType": "revelation-momentum",
+  "hookTypeDescription": "Opens with Kaelith in the archives, hunting for evidence. The hook is the discovery of suppressed reports — proof that the empire's betrayal is institutional and long-standing",
+  "closeType": "committed-alliance",
+  "closeTypeDescription": "Closes with Kaelith accepting that she will leave Duskhaven with Lirien, not because she trusts her but because the alternative is allowing the world to end through inaction. The choice is pragmatic, not emotional, but it locks the dual arc in place",
+  "targetWordCount": 4000,
+  "tensionLevel": 7,
+  "pacingNotes": "Major revelation chapter with high tension sustained through information disclosure. The Quietus paradox is the story's central dramatic engine, and its revelation shifts both arcs from local to existential stakes",
+  "locationsPrimary": ["Duskhaven — garrison archives, Kaelith's quarters, private meeting location"],
+  "charactersPresent": ["CHAR-001 (Kaelith)", "CHAR-002 (Lirien)"],
+  "upstreamRefs": [
+    "../../plot/plot-structure.json",
+    "../../characters/CHAR-001.json",
+    "../../plot/dual-arc-timeline.json",
+    "../../plot/tension-map.json"
+  ]
+}

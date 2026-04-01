@@ -1,0 +1,265 @@
+{
+  "storyId": "001",
+  "chapterId": "003",
+  "editType": "line",
+  "editorAgent": "line-editor",
+  "createdAt": "2026-03-20T08:06:48Z",
+  "voiceCompliance": {
+    "povCharacter": "CHAR-001",
+    "overallCompliance": "good-with-exceptions",
+    "sentenceRhythm": "Strong. Default short-declarative cadence is well-maintained. Longer sentences appear at appropriate emotional moments (lines 56-58, 98-100).",
+    "metaphorDomain": "Mostly compliant. Two violations identified: water metaphor (line 14) and blade metaphor (lines 50-51, 282) outside Kaelith's structural/stone/fire/tactical domain.",
+    "emotionalRegister": "Three INV-005 violations identified where emotions are named directly rather than expressed through physical sensation.",
+    "militaryVocabulary": "Excellent. 'Operational capacity,' 'threat vectors,' 'prisoner security,' 'binding pain' \u2014 all appropriate.",
+    "tacticalFraming": "Strong in Scenes 1 and 2. Scene 3 shifts toward analytical vocabulary ('parameters,' line 320) that belongs to Lirien's voice rather than Kaelith's."
+  },
+  "clicheAudit": {
+    "count": 2,
+    "maxAllowed": 2,
+    "instances": [
+      {
+        "line": 50,
+        "text": "like a blade finding space between ribs",
+        "severity": "moderate",
+        "note": "Common fantasy clich\u00e9 for cold realization. Also outside Kaelith's structural metaphor domain."
+      },
+      {
+        "line": 282,
+        "text": "cold blade-sharp clarity",
+        "severity": "minor",
+        "note": "Repeats the blade metaphor from line 50, compounding the domain violation."
+      }
+    ],
+    "assessment": "At the 2-clich\u00e9 limit. Both involve blade imagery, which is not Kaelith's established metaphor domain. Replacing both with structural metaphors would eliminate the clich\u00e9s and improve voice compliance simultaneously."
+  },
+  "metaphorAudit": {
+    "totalMetaphors": 8,
+    "domainCompliant": 5,
+    "domainViolations": 3,
+    "details": [
+      {
+        "line": 14,
+        "text": "routine as tide",
+        "domain": "water",
+        "compliant": false,
+        "note": "Water/tide belongs to Lirien's domain. Replace with structural metaphor."
+      },
+      {
+        "line": 50,
+        "text": "like a blade finding space between ribs",
+        "domain": "weapon",
+        "compliant": false,
+        "note": "Blade is not Kaelith's primary domain. Replace with weight/stone/compression."
+      },
+      {
+        "line": 242,
+        "text": "like tarnished silver weight",
+        "domain": "structural-weight",
+        "compliant": true
+      },
+      {
+        "line": 282,
+        "text": "cold blade-sharp clarity",
+        "domain": "weapon",
+        "compliant": false,
+        "note": "Repeats blade domain violation."
+      },
+      {
+        "line": 26,
+        "text": "Duskhaven at night sounded like a place slowly forgetting it was inhabited",
+        "domain": "structural-decay",
+        "compliant": true
+      },
+      {
+        "line": 58,
+        "text": "a weapon stored but not destroyed",
+        "domain": "military-tactical",
+        "compliant": true
+      },
+      {
+        "line": 334,
+        "text": "a cage she'd pretended was choice",
+        "domain": "structural-containment",
+        "compliant": true
+      },
+      {
+        "line": 112,
+        "text": "narrow bed",
+        "domain": "structural-space",
+        "compliant": true
+      }
+    ]
+  },
+  "findings": [
+    {
+      "id": "LINE-001",
+      "severity": "critical",
+      "type": "INV-005",
+      "lineRange": [
+        88,
+        88
+      ],
+      "originalText": "She should be feeling something \u2014 rage, fear, betrayal, anything. But what she felt instead was the cold, clear focus that came when a tactical situation clarified from chaos into legible threat.",
+      "issue": "Direct emotion naming. 'Rage, fear, betrayal' are emotion labels, violating INV-005 (emotions through action/sensation, never labels). The second sentence recovers by shifting to tactical framing, but the damage is done in the first clause.",
+      "recommendation": "Replace emotion labels with physical absence: the expected heat/pressure/reaction that fails to arrive. Example: 'Her body should have been reacting \u2014 heat behind the sternum, pressure in the jaw, the physiological inventory of betrayal. Instead: nothing. Just the cold, clear architecture of a tactical situation resolving from noise into signal.'",
+      "ruleReference": "INV-005, style-guide.json perPOVCalibration CHAR-001 specificRules[2]"
+    },
+    {
+      "id": "LINE-002",
+      "severity": "major",
+      "type": "INV-005",
+      "lineRange": [
+        282,
+        282
+      ],
+      "originalText": "Kaelith felt the cold blade-sharp clarity settle deeper.",
+      "issue": "'Felt' + emotion descriptor. The construction 'Kaelith felt X' is the exact pattern the style guide prohibits for CHAR-001. Additionally, 'blade-sharp clarity' repeats the blade metaphor from line 50 and is outside Kaelith's structural domain.",
+      "recommendation": "Rewrite as physical sensation without 'felt' framing. Example: 'The cold settled deeper \u2014 not blade-sharp now but load-bearing, the kind of weight that held a structure together when the foundations shifted.'",
+      "ruleReference": "INV-005, style-guide.json perPOVCalibration CHAR-001 specificRules[2], metaphorPolicy"
+    },
+    {
+      "id": "LINE-003",
+      "severity": "major",
+      "type": "voice-domain",
+      "lineRange": [
+        14,
+        14
+      ],
+      "originalText": "routine as tide, predictable as stone",
+      "issue": "'Tide' is a water/current metaphor that belongs to Lirien's (CHAR-002) metaphor domain. Kaelith's metaphors must stay structural: architecture, weight, pressure, stone, fire, tactical geometry.",
+      "recommendation": "Replace with structural metaphor. Example: 'routine as brickwork, predictable as stone' or 'routine as load-bearing habit, predictable as stone.'",
+      "ruleReference": "style-guide.json metaphorPolicy, perPOVCalibration CHAR-001 specificRules[7]"
+    },
+    {
+      "id": "LINE-004",
+      "severity": "moderate",
+      "type": "voice-vocabulary",
+      "lineRange": [
+        320,
+        320
+      ],
+      "originalText": "The parameters were clear. The outcome was not.",
+      "issue": "'Parameters' is analytical/classificatory vocabulary belonging to Lirien's voice (CHAR-002). Kaelith's tactical vocabulary uses concrete military terms: situation, terrain, position, facts.",
+      "recommendation": "Replace: 'The situation was clear. What to do with it was not.' or 'The facts were clear. The terrain ahead was not.'",
+      "ruleReference": "style-guide.json perPOVCalibration CHAR-001 voiceFingerprint, CHAR-002 voiceFingerprint"
+    },
+    {
+      "id": "LINE-005",
+      "severity": "moderate",
+      "type": "tone-violation",
+      "lineRange": [
+        318,
+        318
+      ],
+      "originalText": "Two operatives. Two targets. One conspiracy neither of them had chosen.",
+      "issue": "This reads as tagline or trailer language rather than Kaelith's internal voice. The style guide explicitly forbids 'epic trailer language' (vocabularyStandards.avoid). The tricolon structure with descending word count is a rhetorical device that breaks Kaelith's pragmatic, unsentimental thought patterns.",
+      "recommendation": "Ground in Kaelith's tactical assessment: 'Neither of them had chosen this. That didn't change what it was.' or 'Two women standing in a warehouse with one conspiracy and no plan. Kaelith had worked with worse odds.'",
+      "ruleReference": "style-guide.json globalStyle.vocabularyStandards.avoid, T5 tone contract"
+    },
+    {
+      "id": "LINE-006",
+      "severity": "moderate",
+      "type": "INV-005",
+      "lineRange": [
+        128,
+        128
+      ],
+      "originalText": "Fear. Not the reactive fear of immediate threat but the chronic fear of someone who'd learned that certain people could destroy you with administrative precision",
+      "issue": "The bare declaration 'Fear.' is an emotion label applied to Tavik's observed behavior. While reading others' emotional states through body language is consistent with Kaelith's tactical observation, the flat label violates the principle of filtering emotion through physical detail. The subsequent clause recovers by grounding the observation in behavioral specifics, but the opening label weakens it.",
+      "recommendation": "Open with physical observation, let the assessment follow: 'Tavik's shoulders drew in. His hands went still. His gaze fixed on the enforcer's chest \u2014 the specific posture of a man who'd learned that certain people could destroy you with administrative precision.'",
+      "ruleReference": "INV-005, style-guide.json perPOVCalibration CHAR-001 specificRules[2]"
+    },
+    {
+      "id": "LINE-007",
+      "severity": "minor",
+      "type": "voice-domain",
+      "lineRange": [
+        50,
+        51
+      ],
+      "originalText": "Felt something cold and sharp settle in her chest like a blade finding space between ribs",
+      "issue": "Blade metaphor is outside Kaelith's structural domain, and 'felt something' uses the prohibited 'felt' framing. Additionally, this is a common fantasy clich\u00e9.",
+      "recommendation": "Replace with structural metaphor: 'Something cold settled behind her sternum \u2014 the specific weight of a keystone dropping into an arch that would not open again.'",
+      "ruleReference": "style-guide.json metaphorPolicy, perPOVCalibration CHAR-001"
+    },
+    {
+      "id": "LINE-008",
+      "severity": "minor",
+      "type": "repetition",
+      "lineRange": [
+        233,
+        338
+      ],
+      "originalText": "'Behind them... Ahead...' parallel construction used at end of both Scene 2 (233-236) and Scene 3 (334-338)",
+      "issue": "The Behind/Ahead parallel summary appears twice in the chapter \u2014 as Scene 2's close and as the chapter's close. First use is effective. Second use is diminished by repetition and makes the chapter feel like it ends the same way twice.",
+      "recommendation": "Retain the Scene 2 usage. Revise the chapter close to end on a single concrete sensory image: the Oathbrand's burn, the salt air of the port, the sound of water against the dock. Ground the ending in physical present rather than reflective summary."
+    },
+    {
+      "id": "LINE-009",
+      "severity": "minor",
+      "type": "voice-vocabulary",
+      "lineRange": [
+        244,
+        244
+      ],
+      "originalText": "The categories were breaking. Enemy. Ally. Threat. Protection.",
+      "issue": "'Categories' is classificatory vocabulary more aligned with Lirien's analytical voice. The subsequent list (Enemy, Ally, Threat, Protection) is effective tactical inventory, but the framing word weakens it.",
+      "recommendation": "Replace 'categories' with tactical language: 'The classifications were collapsing' or simply cut the framing line and let the list speak: 'Enemy. Ally. Threat. Protection. Five minutes ago she'd known what Lirien was. Now she didn't.'",
+      "ruleReference": "style-guide.json perPOVCalibration CHAR-001 voiceFingerprint"
+    },
+    {
+      "id": "LINE-010",
+      "severity": "minor",
+      "type": "INV-005",
+      "lineRange": [
+        310,
+        310
+      ],
+      "originalText": "She looked at Kaelith with something that might have been respect or might have been professional reassessment.",
+      "issue": "Labels two possible emotions. The hedging ('might have been') partially mitigates the violation, but the construction still names emotions rather than describing what Kaelith observes in Lirien's physical behavior.",
+      "recommendation": "Describe the observable shift: 'Lirien's gaze changed \u2014 the same eyes, but the calculation behind them had rearranged its priorities.' or 'Something shifted in the way Lirien looked at her. Not warmer. Recalibrated.'",
+      "ruleReference": "INV-005"
+    },
+    {
+      "id": "LINE-011",
+      "severity": "positive",
+      "type": "voice",
+      "lineRange": [
+        226,
+        226
+      ],
+      "originalText": "Trust no one. Survive alone. Die clean.",
+      "issue": "Excellent Kaelith voice. Short, declarative, military cadence. The three-beat structure works here because it sounds like internal doctrine rather than rhetorical flourish."
+    },
+    {
+      "id": "LINE-012",
+      "severity": "positive",
+      "type": "craft",
+      "lineRange": [
+        102,
+        110
+      ],
+      "originalText": "She refolded the parchment exactly as she'd found it... Walked the length of the hall with measured steps",
+      "issue": "The evidence-clearing sequence is flawless tactical voice \u2014 methodical, precise, professional. The contrast between the devastating content of the messages and Kaelith's disciplined response is one of the chapter's strongest passages."
+    },
+    {
+      "id": "LINE-013",
+      "severity": "positive",
+      "type": "dialogue",
+      "lineRange": [
+        206,
+        222
+      ],
+      "originalText": "The post-escape dialogue exchange",
+      "issue": "Excellent subtext-laden dialogue. Lirien's deflection about 'poor construction' and Kaelith's repeated demand demonstrate T24 (Subtext in Dialogue) effectively. Both characters maintain distinct voices under pressure."
+    }
+  ],
+  "overallAssessment": {
+    "inv005Violations": 3,
+    "voiceDomainViolations": 3,
+    "clicheCount": 2,
+    "maxClichesAllowed": 2,
+    "proseQuality": "strong",
+    "revisionPriority": "Fix LINE-001 (critical INV-005 violation) first. LINE-002 and LINE-003 are next priority. Remaining findings are moderate-to-minor improvements."
+  }
+}

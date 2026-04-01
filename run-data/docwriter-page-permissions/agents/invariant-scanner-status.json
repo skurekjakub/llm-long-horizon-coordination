@@ -1,0 +1,12 @@
+{
+  "agent": "docwriter-invariant-scanner",
+  "status": "done",
+  "result": "invariant-inventory-ready",
+  "scanMode": "incremental",
+  "totalInvariants": 231,
+  "taskInstructionsEmitted": 3,
+  "sourceFiles": 12,
+  "filesScanned": 2,
+  "filesSkipped": 10,
+  "timestamp": "2026-03-18T13:42:51Z"
+}

@@ -1,0 +1,169 @@
+{
+  "chapter": 21,
+  "pov": "Kaelith Maren",
+  "povId": "CHAR-001",
+  "overallAssessment": "pass",
+  "voiceConsistencyScore": 9,
+  "contrastWithPreviousChapter": "strong",
+  "quantitativeAnalysis": {
+    "totalWords": 4016,
+    "totalSentences": 333,
+    "sentenceLengthDistribution": {
+      "short_leq10_words": "61%",
+      "medium_11to25_words": "25%",
+      "long_gt25_words": "14%",
+      "averageLength": 12.1
+    },
+    "architecturalTermInstances": 113,
+    "waterTermInstances": 7,
+    "physicalBodyTermInstances": 61,
+    "namedEmotionInstances": 0,
+    "commandTacticalTermInstances": 10
+  },
+  "findings": [
+    {
+      "type": "strength",
+      "severity": "n/a",
+      "location": "Lines 12-14 (opening sentences)",
+      "description": "The opening four sentences establish Kaelith's voice unmistakably: 'The stone knew her' (percussive, stone imagery), followed by tactile/proprioceptive sensation (boots, feet, bones), then architectural assessment (raw granite, fortification, defensive positions, sight lines). A reader familiar with both POVs would identify Kaelith by sentence 2 and confirm with absolute certainty by sentence 4. Passes the 3-4 sentence recognition test (INV-034/T17) decisively.",
+      "recommendation": null
+    },
+    {
+      "type": "strength",
+      "severity": "n/a",
+      "location": "Lines 58-61 (Three exits paragraph)",
+      "description": "Quintessential Kaelith tactical inventory: 'Three exits. The corridor behind them, a passage in the far wall, a fissure in the ceiling that might lead to the surface. The seal was twelve meters from her current position. Thalen was between them and it. The cracks were spreading in real time.' Clipped noun phrases, distances, threat-resource assessment. This passage could appear in a voice fingerprint exemplar.",
+      "recommendation": null
+    },
+    {
+      "type": "strength",
+      "severity": "n/a",
+      "location": "Line 151",
+      "description": "'Kaelith catalogued: one enemy, neutralized. One partner, wounded but functional. One seal, holding.' — Peak Kaelith. Three-item tactical inventory delivered in staccato rhythm. The parallel structure and the progression from threat to ally to objective is military briefing cadence rendered as internal narration.",
+      "recommendation": null
+    },
+    {
+      "type": "strength",
+      "severity": "n/a",
+      "location": "Lines 91-97 (Seal reinforcement passage)",
+      "description": "The extended passage where Kaelith pours certainty into the seal uses her exact metaphor domain at maximum density: 'walls were sound,' 'structures held,' 'stone laid properly endured,' 'military discipline,' 'architectural instinct,' 'load-bearing,' 'a foundation crack.' This is Kaelith's voice applied to magic — she does not learn new vocabulary for the extraordinary; she forces the extraordinary into the framework she already carries.",
+      "recommendation": null
+    },
+    {
+      "type": "strength",
+      "severity": "n/a",
+      "location": "Entire chapter — named emotions",
+      "description": "Zero named emotions in the entire chapter. Kaelith never states 'she felt afraid,' 'she was proud,' or 'she was grateful.' Every emotional beat is conveyed through physical sensation (hands shaking, knees hitting stone, sternum resonating), tactical framing (the trust decision as a battlefield split-attention problem), or structural metaphor (a tremor passing through a wall built to absorb it). Exemplary adherence to INV-005 and the physical-not-emotional register.",
+      "recommendation": null
+    },
+    {
+      "type": "strength",
+      "severity": "n/a",
+      "location": "Lines 112-113 (water metaphor crossover)",
+      "description": "The one deliberate use of Lirien's water metaphor domain ('water that finds every crack') is properly handled: it surfaces as a thought Kaelith notices arriving 'without permission,' she attributes it to the Seep's nomenclature, and she immediately translates it back to her own domain: 'The infiltrator choosing to be a wall.' This is not voice bleed — it is voice awareness, showing Lirien's influence on Kaelith's thinking while maintaining Kaelith's structural framework as the containing structure.",
+      "recommendation": null
+    },
+    {
+      "type": "strength",
+      "severity": "n/a",
+      "location": "Lines 166-168 (Commander's address)",
+      "description": "The formal charge against Thalen is delivered in full command register — long, authoritative, procedurally precise. The narration explicitly names it: 'Commander's voice. The register that expected compliance and received it.' This is Kaelith at maximum institutional authority, and the rhythm shifts appropriately from percussive internal narration to sustained formal address.",
+      "recommendation": null
+    },
+    {
+      "type": "strength",
+      "severity": "n/a",
+      "location": "Line 140-141 (Buttress metaphor)",
+      "description": "'Lirien's presence settled over her like a buttress bracing a wall that had taken the full weight of the world and was still standing.' Kaelith translates Lirien's emotional support into architectural vocabulary. She does not receive comfort — she receives structural reinforcement. This is the definitive Kaelith way of perceiving love.",
+      "recommendation": null
+    },
+    {
+      "type": "observation",
+      "severity": "minor",
+      "location": "Lines 32-33 (Ythara influence passage)",
+      "description": "The triple 'older than' construction ('older than stone, older than the mountain, older than the idea of mountains — raw, electric, the flavor of potential') is more lyrical and rhythmically elaborate than Kaelith's typical percussive voice. The anaphoric repetition and the movement from concrete ('stone') to abstract ('the idea of mountains') follows a literary cadence more associated with omniscient narration than close-third Kaelith.",
+      "recommendation": "Acceptable as-is. The passage describes Ythara's influence warping reality itself, and the style guide permits longer sentences when 'emotion breaches control.' The extraordinary sensory input of approaching a god-seal justifies a brief rhythmic shift. Additionally, the sensory content (tasting, feeling temperature) remains tactile/proprioceptive, which anchors the passage in Kaelith's signature even as the rhythm expands. No revision needed."
+    },
+    {
+      "type": "observation",
+      "severity": "minor",
+      "location": "Line 42",
+      "description": "'The Quietus chamber opened before them like a wound in the earth.' The simile 'wound' is biological rather than architectural. Kaelith's domain would more naturally produce 'breach,' 'collapse,' or 'fault line.'",
+      "recommendation": "Acceptable as-is. 'Wound' is physical/bodily (consistent with Kaelith's body-forward register) and is not from Lirien's domain (water/currents/thresholds). It reads as a visceral, tactile observation rather than a metaphor drift. The phrase also serves a narrative function — the chamber as wound foreshadows the seal's damaged state. No revision needed, but flagged for awareness."
+    },
+    {
+      "type": "observation",
+      "severity": "minor",
+      "location": "Line 114",
+      "description": "'The seal drank her conviction like parched stone drinking rain.' The simile's vehicle ('rain') introduces a water element into Kaelith's narration. However, the primary subject is 'stone' and the metaphor describes absorption/capacity, which is structural.",
+      "recommendation": "Acceptable. The stone is the structural anchor; rain is incidental and universally accessible. This is not Lirien's water-as-current/infiltration domain. No revision needed."
+    },
+    {
+      "type": "observation",
+      "severity": "minor",
+      "location": "Lines 148-149",
+      "description": "'The operative's mask not hiding emotion but containing it, the way a dam held water.' Uses 'water' in Kaelith's observation of Lirien. The structural element (dam) is Kaelith's; the water is Lirien's nature being observed.",
+      "recommendation": "This is exemplary cross-character observation: Kaelith perceives Lirien through a structural metaphor (dam) while acknowledging Lirien's nature (water). No revision needed — this is exactly how voice-aware cross-POV observation should work."
+    },
+    {
+      "type": "strength",
+      "severity": "n/a",
+      "location": "Lines 180-183 (Thalen parallel recognition)",
+      "description": "'She recognized the architecture of his certainty because she had carried its mirror at Calwrath.' Kaelith uses 'architecture' to describe someone's psychological structure — entirely on-brand. The reflection on conviction as 'bone-deep, load-bearing' maintains structural vocabulary even during the chapter's most philosophical passage. Her thought process remains linear and pattern-recognition-based: she sees the structural parallel, names it, and draws the conclusion.",
+      "recommendation": null
+    },
+    {
+      "type": "strength",
+      "severity": "n/a",
+      "location": "Lines 186-187",
+      "description": "'Let the impulse pass through her the way a tremor passed through a wall built to absorb it.' Emotional regulation expressed as engineering principle. The simile is entirely architectural — seismic design as a model for emotional discipline. This is Kaelith at her most distinctive.",
+      "recommendation": null
+    },
+    {
+      "type": "strength",
+      "severity": "n/a",
+      "location": "POV transition from Chapter 20",
+      "description": "Chapter 20 (Lirien POV) ends with the intimate aftermath of the binding dissolution — emotional resolution, clinical register dissolving, 'What remained was only real.' Chapter 21 opens with 'The stone knew her.' The contrast is immediate and sharp: from Lirien's visual/emotional register to Kaelith's tactile/structural. The temporal and spatial shift (travel completed, new location) provides narrative motivation. The POV switch is earned: Kaelith must lead at the Quietus because she carries the Warden inheritance. The departing chapter sets up the objective ('Quietus. Three days.'); the arriving chapter delivers it immediately. INV-072 fully satisfied.",
+      "recommendation": null
+    }
+  ],
+  "metaphorDomainAnalysis": {
+    "architectural": 113,
+    "offDomain": 3,
+    "offDomainDetails": "1 biological ('wound in the earth' — line 42, physical not Lirien's domain), 1 deliberate cross-domain ('water that finds every crack' — line 112, flagged and translated back to structural), 1 incidental water element ('stone drinking rain' — line 114, stone-primary)",
+    "domainRatio": "97% architectural/structural, 3% off-domain (all accounted for)",
+    "examples": [
+      "keystone in an arch (line 44)",
+      "subsurface vibration of stone under stress, the structural tremor that preceded collapse (line 66)",
+      "compromised the foundation (line 67)",
+      "a wall built from certainty itself (line 88)",
+      "what was load-bearing and what was not (line 94)",
+      "a buttress bracing a wall (line 140)",
+      "the paper architecture of a forty-year conspiracy (line 193)",
+      "the architecture of his certainty (line 180)",
+      "a tremor passed through a wall built to absorb it (line 187)",
+      "a foundation that had been tested under the maximum possible load and held (line 206)"
+    ]
+  },
+  "sentenceRhythmAnalysis": "Strongly percussive. 61% of sentences are ≤10 words, consistent with Kaelith's 'short, declarative, percussive' fingerprint. Average sentence length of 12.1 words. Long sentences (>25 words, 14%) cluster in three justified contexts: (1) tactical inventory/assessment passages where complexity requires enumeration, (2) the seal reinforcement sequence where emotional breach permits rhythmic expansion per style guide, and (3) Kaelith's formal commander's address which appropriately shifts to sustained authoritative cadence. Action beats maintain punchy rhythm: 'She assessed. Ten minutes. Maybe fifteen.' / 'Kaelith did not hesitate. She moved toward the seal.' / 'The clock was running.' Reflection beats expand appropriately without losing structural vocabulary.",
+  "emotionalRegisterAnalysis": "Exemplary physical-not-emotional register. Zero named emotions across 4,016 words. Emotional beats are consistently expressed through: bodily sensation (hands shaking, knees hitting stone, sternum resonance, frozen fingers burning), tactical framing (trust as a split-attention battlefield decision), structural metaphor (tremor absorbed by an engineered wall, buttress bracing), and physical action (moving toward the seal, pressing palms to stone, breathing). Even the chapter's most emotionally charged moment — Lirien saying 'Go' — is processed as 'Two words. Everything.' — compressed, percussive, refusing to name what the words contain.",
+  "commandVoicePresence": "Strong and appropriately deployed. Command register appears in: (1) 'Stay close' — direct order during Ythara approach (line 37, explicitly tagged 'Command register'), (2) 'I need the seal... He needs to be stopped' — operational directive splitting the tactical problem (lines 70-71), (3) The formal charge against Thalen — full commander's voice with procedural authority (lines 166-168), (4) 'Secure him. He stands for public tribunal' — post-action command decisions (lines 197-198). The command voice escalates appropriately from field orders through operational directives to institutional authority.",
+  "sensorySignatureAnalysis": "Tactile/proprioceptive dominance confirmed. Kaelith's primary sensory channel is consistently tactile throughout all three scenes: the hum through boot soles into bones (line 13), kinetic memory in the feet (line 28), body adjusting to warped geometry (line 33), palms on stone (line 84), the seal's vibrations through her feet (line 66), hands shaking (line 118), knees on stone (line 134), the seal's hum in her sternum (line 115). Visual information is secondary and tactical (sight lines, distances, Thalen's position). Auditory information is minimal and structural (stone grinding, footstep cadence). No emotional moments rely primarily on visual or auditory channels.",
+  "threeFourSentenceTest": {
+    "result": "pass",
+    "analysis": "Sentence 1: 'The stone knew her.' — Percussive, stone imagery, immediately signals structural consciousness. Sentence 2: Tactile/proprioceptive chain (boots → feet → bones) with architectural vocabulary (threshold). Sentence 3: Granite, construction assessment. Sentence 4: 'She read the entrance the way she read any fortification' — definitive Kaelith identifier. A reader who knows both POVs would identify Kaelith by sentence 2 (tactile sensory channel + stone) and confirm with certainty by sentence 4 (fortification reading). Compare to Chapter 20's Lirien opening: 'The light in the room was wrong' — visual assessment, classification of wrongness types. The POV contrast is immediate and unmistakable."
+  },
+  "povTransitionMotivation": {
+    "result": "strong",
+    "departingChapterEnd": "Chapter 20 (Lirien) ends with emotional resolution of the binding dissolution and explicit naming of the next objective: 'Quietus. Three days. The saboteur is still operating.' The final line — 'The cage was open. The binding was gone. What remained was only real.' — provides emotional closure while the named objective creates forward pull.",
+    "arrivingChapterOpen": "Chapter 21 (Kaelith) opens at Serath Dún, the Quietus location, immediately delivering on the objective set up in Chapter 20. The POV switch is narratively necessary: Kaelith carries the Warden inheritance and must operate the seal. After seeing through Lirien's eyes how she risked everything, we now see through Kaelith's eyes as she fulfills her purpose. Spatial shift (new location), temporal shift (travel completed), and character-capability motivation (Warden POV for seal scene) all justify the transition."
+  },
+  "voiceBleedCheck": {
+    "result": "clean",
+    "details": "Seven water-domain terms appear in the chapter. Analysis: (1) Two instances of 'water' at lines 112-113 are the deliberately flagged cross-domain moment — Kaelith notices herself thinking in Lirien's metaphors and translates back to 'wall.' (2) 'Dam held water' (line 149) is Kaelith observing Lirien through a structural metaphor (dam), with water as the observed content. (3) 'Current of order' (line 38) and 'current of precision' (line 112) describe Lirien's nature as Kaelith perceives it. (4) 'Current position' (line 58) is literal/tactical, not metaphorical. (5) 'Stone drinking rain' (line 114) is stone-primary with rain as incidental natural element. No unattributed voice bleed detected. All water-domain usage is either properly attributed to Kaelith's observation of Lirien or is a universally accessible image with structural anchoring."
+  },
+  "refinementsMade": [],
+  "refinementsNeeded": false,
+  "summary": "Chapter 21 exhibits exceptional voice consistency for Kaelith Maren. The architectural/structural metaphor domain is maintained at overwhelming density (113 instances). The percussive sentence rhythm holds at 61% short sentences. The physical-not-emotional register achieves perfect zero named emotions across 4,016 words. Command voice escalates appropriately across all three scenes. The one deliberate cross-domain metaphor (water/crack) is properly flagged, attributed, and translated back to structural vocabulary. The POV transition from Chapter 20 (Lirien) is sharply contrasted and narratively motivated. No prose refinements required.",
+  "timestamp": "2025-07-18T02:47:00Z"
+}

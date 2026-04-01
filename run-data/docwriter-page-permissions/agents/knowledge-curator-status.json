@@ -1,0 +1,15 @@
+{
+  "agent": "docwriter-knowledge-curator",
+  "status": "done",
+  "result": "knowledge-brief-ready",
+  "timestamp": "2026-03-18T13:05:24Z",
+  "patternsIncluded": 6,
+  "antiPatternsIncluded": 4,
+  "domainInsightsIncluded": 6,
+  "sourceObservationsIncluded": 3,
+  "styleEvolutionsIncluded": 1,
+  "conflictsDetected": 0,
+  "coldStart": false,
+  "truncated": true,
+  "directivesApplied": []
+}

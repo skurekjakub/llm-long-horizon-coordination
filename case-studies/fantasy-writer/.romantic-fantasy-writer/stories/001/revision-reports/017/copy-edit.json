@@ -1,0 +1,178 @@
+{
+  "storyId": "001",
+  "chapter": 17,
+  "chapterTitle": "Load-Bearing Walls",
+  "pov": "CHAR-001",
+  "povName": "Kaelith Maren",
+  "editPassType": "copy-edit",
+  "totalFindings": 6,
+  "findingsByCategory": {
+    "factual": 4,
+    "timeline": 1,
+    "grammar": 1,
+    "naming": 0,
+    "formatting": 0,
+    "anachronism": 0
+  },
+  "findingsBySeverity": {
+    "critical": 0,
+    "major": 1,
+    "moderate": 1,
+    "minor": 4
+  },
+  "findings": [
+    {
+      "id": "COPY-001",
+      "severity": "major",
+      "category": "factual",
+      "description": "Children described as having sheltered 'in the market square' with stone walls that they believed would protect them. Chapter 13 establishes that the families sheltered in the 'district temple' — a separate structure within the Graymarket with 'Good walls' that were 'rated for conventional fire' but collapsed under the accelerant. Ch13 line 114 mentions children being present 'in the market square' during the market, but the deliberate sheltering behind stone walls occurred at the temple (ch13 lines 134-136). The ch17 dream conflates these two locations, attributing the temple's stone-wall sheltering to the market square.",
+      "lineRef": "127-128",
+      "currentText": "three hundred civilians including the children who had sheltered in the market square because they had believed stone walls would protect them",
+      "correction": "Replace 'in the market square' with 'in the district temple' to match ch13's established account. The stone walls that failed under accelerant belonged to the temple, not the market square.",
+      "sourceReference": "chapters/013/draft.md lines 114, 134-136",
+      "invariant": "INV-002, INV-011"
+    },
+    {
+      "id": "COPY-002",
+      "severity": "moderate",
+      "category": "factual",
+      "description": "The phrase '*I want this too*' is attributed to Lirien ('the woman who had... said *I want this too*'), but ch15 establishes that KAELITH said 'I want this' (ch15 line 153) and 'I want you' (ch15 line 159). Ch15 line 247 confirms 'Kaelith had said *I want this* and meant it.' Lirien's corresponding words were 'wherever you are' (ch15 line 247). There is no established instance of Lirien saying 'I want this too.' The 'too' creates a false attribution — it implies Lirien echoed Kaelith's declaration, which is not what ch15 depicts.",
+      "lineRef": "117",
+      "currentText": "the woman who had touched her and kissed her and said *I want this too* had been real or a construction",
+      "correction": "Replace '*I want this too*' with the correct recalled phrasing. Options: (a) use '*wherever you are*' which is Lirien's actual declaration from ch15, or (b) remove the specific quote and use a general reference to Lirien's reciprocation, or (c) restructure to reference what Kaelith said rather than what Lirien said.",
+      "sourceReference": "chapters/015/draft.md lines 153, 159, 247",
+      "invariant": "INV-002, INV-011"
+    },
+    {
+      "id": "COPY-003",
+      "severity": "minor",
+      "category": "timeline",
+      "description": "The appositional 'since' construction ('since the night before the declaration, since *I want this*') implies these two temporal references are identical, but they are contradictory. 'The night before the declaration' means the night PRECEDING the declaration event, while '*I want this*' IS the declaration event (ch15 evening). If Kaelith has been tracking since the night before she said 'I want this,' that is a different time than the moment of saying it. The most likely authorial intent is 'since the night of the declaration' — the evening when 'I want this' was spoken — which would make both temporal references consistent.",
+      "lineRef": "89",
+      "currentText": "since the night before the declaration, since *I want this*",
+      "correction": "Change 'the night before the declaration' to 'the night of the declaration' to align the appositional temporal references. Both clauses should point to the same moment: the evening of ch15 when 'I want this' was spoken.",
+      "sourceReference": "chapters/015/draft.md lines 153, 159; continuity/continuity-tracker.json ch15 timeline",
+      "invariant": "INV-011"
+    },
+    {
+      "id": "COPY-004",
+      "severity": "minor",
+      "category": "grammar",
+      "description": "'Compensatable' is a nonstandard English word. The standard adjective form is 'compensable' (meaning 'able to be compensated for'). While Kaelith's military voice favours clipped technical language, 'compensatable' is not an established military or engineering term. The staccato fragment pattern of the surrounding text ('Functional impairment. Minor.') suggests a single-word assessment that should be precise.",
+      "lineRef": "224",
+      "currentText": "Functional impairment. Minor. Compensatable. For now.",
+      "correction": "Replace 'Compensatable' with 'Compensable' (standard form). Alternative: 'Manageable' fits Kaelith's voice register and avoids the nonstandard formation entirely.",
+      "invariant": "INV-017"
+    },
+    {
+      "id": "COPY-005",
+      "severity": "minor",
+      "category": "factual",
+      "description": "The sentence states 'Lirien had felt her change direction' as if the bond transmitted spatial/directional information. Established bond mechanics (continuity-tracker.json, magic-system.json) specify the bond 'Transmits emotions and physical sensations. Does NOT transmit thoughts, words, or factual information.' A physical change of walking direction is factual/spatial information, not an emotion or physical sensation. The preceding text correctly describes Lirien's grief 'gaining an edge of something that might have been alertness' — this emotional shift is bond-consistent. But the subsequent assertion that Lirien felt the direction change specifically overreaches the bond's established capabilities.",
+      "lineRef": "329",
+      "currentText": "Lirien had felt her change direction. Lirien knew.",
+      "correction": "Reframe to show Lirien detecting the emotional shift rather than the physical direction change. Example: 'Lirien had felt something change. Lirien knew — not the direction, but the intent behind it.' Or simply: 'Lirien had felt the shift.' This preserves the emotional beat while respecting bond mechanics.",
+      "sourceReference": "continuity/continuity-tracker.json namingConsistency.resonance bond; world-bible/magic-system.json",
+      "invariant": "INV-002, INV-010"
+    },
+    {
+      "id": "COPY-006",
+      "severity": "minor",
+      "category": "factual",
+      "description": "The dream describes 'The accelerant spreading through the Graymarket district in eight minutes' — this implies the fire took eight minutes to spread. Ch13 establishes that the accelerant 'does not spread. It arrives. Everywhere at once. The Graymarket was burning in ninety seconds' (ch13 line 122). The 'eight minutes' was the decision window — the time between the runner's arrival and the breach force reaching the embankments (ch13 line 102), not the duration of the fire's spread. The sentence's 'arriving everywhere at once' clause partially corrects this, but the 'in eight minutes' phrasing creates temporal confusion between the decision window and the fire event.",
+      "lineRef": "127",
+      "currentText": "The accelerant spreading through the Graymarket district in eight minutes, arriving everywhere at once",
+      "correction": "Clarify the temporal reference. Example: 'The accelerant arriving everywhere at once because magical fire did not care about wind direction or building density.' Drop the 'in eight minutes' modifier, or restructure to separate the decision window from the fire event: 'Eight minutes from decision to aftermath, and the accelerant spreading through the Graymarket in ninety seconds of silver flame, arriving everywhere at once.' The dream context allows some temporal compression, but the current phrasing suggests the wrong duration.",
+      "sourceReference": "chapters/013/draft.md lines 102, 122",
+      "invariant": "INV-002, INV-011"
+    }
+  ],
+  "verifiedConsistencies": [
+    {
+      "category": "naming",
+      "details": "All character names verified against continuity tracker: Kaelith Maren (CHAR-001), Lirien Dael (CHAR-002), Ossya Thenndal, Elisi, Ythara — all correctly spelled."
+    },
+    {
+      "category": "naming",
+      "details": "All place names verified: The Narrowing, Calwrath, Graymarket (one word, capital G), The Quietus, Duskhaven, Vael'thrin (with apostrophe), Vireth Range, Canal District — all correct."
+    },
+    {
+      "category": "naming",
+      "details": "All magical terms verified: Pallor, resonance bond, Oathbrand, accelerant, vorakh, kinetic memory, Lessening, Shapers — all correctly spelled and used."
+    },
+    {
+      "category": "naming",
+      "details": "Calwrath casualty count: Chapter uses 'three hundred' consistently, matching Kaelith's informal reference in ch13 line 84. Formal count is 'three hundred and twelve' (ch13 line 140). Informal rounding is character-consistent."
+    },
+    {
+      "category": "factual",
+      "details": "Vorakh description precisely matches continuity tracker: six limbs, hooked claws, compressed wolf-head, ring-eyes (full spherical vision), thick plated hide with Pallor silver seepage, ambush predator sensing Pallor-touch."
+    },
+    {
+      "category": "factual",
+      "details": "Pallor progression matches continuity tracker: silver at wrist-to-first-knuckle (evening) → tendons on back of hand/cold to elbow (dawn) → wrist inside/all knuckles outside/two fingers non-functional (post-combat morning). Consistent acceleration shown."
+    },
+    {
+      "category": "factual",
+      "details": "Rib injury correctly attributed: third and fourth left ribs, from ch14 ambush. Matches continuity tracker ('Bruised ribs, 3rd/4th left, from ch14')."
+    },
+    {
+      "category": "factual",
+      "details": "Bond mechanics mostly correctly portrayed. Bond cannot fabricate emotion (line 149), reveals whether trust exists (line 149), formed through shared vulnerability (line 149), can be walled but not severed (line 37, 195-197). All consistent with magic-system.json and continuity tracker."
+    },
+    {
+      "category": "factual",
+      "details": "Contract details match ch16: blood-sealed, dual-source, 30 days deterioration, 90 days terminal Lessening, enforcement escalation, secondary operative deployment under review, cessation of heartbeat loophole. All verified."
+    },
+    {
+      "category": "factual",
+      "details": "Oathbrand removal reference correct — Lirien's hands on Kaelith's collarbone, consistent with magic-system.json (brand location above collarbone) and ch11 event."
+    },
+    {
+      "category": "factual",
+      "details": "Operation thirty-one reference correct — merchant in Vael'thrin, daughter Elisi. Matches ch13 confession and continuity tracker."
+    },
+    {
+      "category": "factual",
+      "details": "Geography consistent. The Narrowing described as granite ridges and pine forest, elevation rising toward Vireth Range. Matches LOC-008 (granite faces, alpine terrain) and ch16 reference ('rock and pine')."
+    },
+    {
+      "category": "factual",
+      "details": "Pallor gradient correct for The Narrowing (LOC-008): 'visibly torn' membrane, thinning, true sky visible through gaps. Consistent with western_mountain zone description in geography.json."
+    },
+    {
+      "category": "timeline",
+      "details": "Day count approximately ~1.5 days after ch16, consistent with continuity tracker. Travel direction (east then north) matches continuity notes."
+    },
+    {
+      "category": "formatting",
+      "details": "Scene breaks (---) correctly placed at lines 123 and 215, separating three scenes (SCN-47, SCN-48, SCN-49)."
+    },
+    {
+      "category": "formatting",
+      "details": "Past tense maintained consistently throughout. No tense shifts detected."
+    },
+    {
+      "category": "formatting",
+      "details": "Em dashes used correctly throughout for parenthetical insertions and clausal breaks. Ellipsis used correctly at line 197 for trailing thought."
+    },
+    {
+      "category": "formatting",
+      "details": "Italics used consistently for recalled speech, internal thoughts, and contract text quotations."
+    },
+    {
+      "category": "formatting",
+      "details": "British English spelling used consistently: 'centre' (19), 'colour' (129, 353), 'stabilising' (93, 267, 295, 299), 'recognise' (45), 'discolouration' (88). No UK/US inconsistencies detected."
+    },
+    {
+      "category": "anachronism",
+      "details": "No anachronistic references detected. No modern technology, clocks, explosives idioms, therapy-speak, or contemporary phrasing found. Metaphor domains stay within Kaelith's established register (architecture, fortification, military, material science)."
+    },
+    {
+      "category": "factual",
+      "details": "Calwrath institutional-betrayal parallel correctly maintained. Ashborne command structure reference consistent with established backstory."
+    }
+  ],
+  "overallAssessment": "Chapter 17 demonstrates strong factual consistency with the established manuscript and world-bible. Naming is flawless — every proper noun matches canonical spelling. Timeline and geography are well-tracked. Bond mechanics are mostly correctly applied. The six findings are concentrated in cross-chapter factual verification (where recalled events from ch13 and ch15 show minor deviations from their source text) and one grammar issue. The most significant finding (COPY-001) involves a location conflation in the Calwrath dream that could undermine the authority of the memory sequence. No anachronisms, no formatting issues, no naming errors. The chapter's factual integrity is high with targeted corrections needed.",
+  "editedAt": "2025-01-18T14:30:00Z"
+}

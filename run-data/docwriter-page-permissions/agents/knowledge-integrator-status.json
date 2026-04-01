@@ -1,0 +1,40 @@
+{
+  "agent": "docwriter-knowledge-integrator",
+  "status": "done",
+  "result": "knowledge-integrated",
+  "timestamp": "2026-03-18T22:24:04Z",
+  "newEntries": 9,
+  "updatedEntries": 3,
+  "discarded": 3,
+  "retrospectiveWritten": true,
+  "sourcesUpdated": 2,
+  "sourcesCandidateAdded": 1,
+  "details": {
+    "promotions": [
+      {"id": "PAT-009", "from": "medium", "to": "high", "reason": "3rd pipeline run confirmation, 80% aggregate acceptance rate across 10 cross-ref tasks"}
+    ],
+    "newEntries": [
+      "PAT-012", "ANTI-012", "DOM-021", "DOM-022", "DOM-023", "DOM-024",
+      "SRC-OBS-005", "SRC-OBS-006", "SRC-OBS-007"
+    ],
+    "updatedEntries": [
+      {"id": "PAT-009", "action": "promoted to high"},
+      {"id": "STYLE-002", "action": "added DOC-3167 evidence, kept medium"},
+      {"id": "ANTI-004", "action": "added DOC-3167 evidence, kept medium, noted briefing failure"}
+    ],
+    "discardedSignals": [
+      {"signal": "DI-6: cross-cutting architecture", "reason": "low actionability, impact mapper already operationalizes"},
+      {"signal": "SE-1: inherit vocabulary", "reason": "single occurrence, DOM-008 covers concept"},
+      {"signal": "SE-2: pre-existing issues", "reason": "self-identified as not actionable"}
+    ],
+    "indexTotals": {
+      "totalEntries": 61,
+      "activeEntries": 60,
+      "patterns": 12,
+      "antiPatterns": 12,
+      "domainInsights": 24,
+      "styleEvolutions": 6,
+      "sourceObservations": 7
+    }
+  }
+}

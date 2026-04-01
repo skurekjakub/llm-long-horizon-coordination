@@ -1,0 +1,309 @@
+{
+  "chapter": 20,
+  "title": "Contract Fulfilled in Letter, Broken in Spirit",
+  "pov": "Lirien Dael (CHAR-002)",
+  "wordCount": 4055,
+  "editedBy": "line-editor",
+  "timestamp": "2026-03-21T04:00:00Z",
+  "overallAssessment": "Chapter 20 delivers the story's most pivotal scene — the contract loophole execution — with emotional power and structural clarity. The dual-arc interleave is seamless: stopping a heart IS proving love. Dialogue is excellent throughout, with strong subtext and natural voice distinction between Kaelith and Lirien. MRU structure holds at key beats. The chapter's most significant issue is voice marker saturation: the water-domain metaphor system, the classification/operative vocabulary layer, and the phrase 'through the bond' are each deployed so densely that Lirien's voice reads as a checklist of fingerprint markers rather than natural thought. The prose is performing the voice rather than inhabiting it. Additionally, several stock phrases ('taste like ash,' 'heartbeat hammering,' 'relief breaking in waves') exceed the INV-017 cliché threshold. The bond is used as a mechanism to deliver named emotions in bulk at several key moments, creating tell-not-show clusters that undercut an otherwise excellent show-first chapter. These are addressable issues in an otherwise powerful and structurally sound draft.",
+  "findingSummary": {
+    "critical": 2,
+    "major": 5,
+    "minor": 10,
+    "total": 17
+  },
+  "findings": [
+    {
+      "id": "LINE-001",
+      "severity": "critical",
+      "category": "repetition",
+      "description": "Voice marker saturation — water/current metaphor domain. The water metaphor system (Lirien's primary image domain) appears ~25 times in 4055 words: 'current' (11×), 'undertow' (3×), 'channel' (4×), 'flood/flooded' (2×), 'wave/waves' (1×), 'membrane' (2×), 'surface/surfacing' (3×), 'drown' (1×), 'tide' (1×), 'deep water' (1×). This yields approximately one water-domain marker every 162 words. While the current/water frame is Lirien's established domain, this density creates a reading experience where the metaphor system announces itself rather than illuminating. Several instances within the same paragraph compound the problem (e.g., L122 uses both 'current' and 'undertow'; L134 uses 'channel' twice plus 'current'; L162 uses 'waves' and 'clear as water'). The prose needs to trust the reader to recognise Lirien's voice without constant domain reinforcement. Reduce water-domain markers by approximately 40%, keeping the strongest and most original instances and replacing the rest with literal description, non-metaphorical phrasing, or metaphors from Lirien's secondary domains (visual perception, contractual/legal language, light/reflection).",
+      "lineRef": { "start": 18, "end": 202 },
+      "instances": [
+        { "line": 18, "text": "current mapping a new channel" },
+        { "line": 22, "text": "irony ran deep as an undertow" },
+        { "line": 22, "text": "trust like a current she could not redirect" },
+        { "line": 30, "text": "wide enough to drown in" },
+        { "line": 50, "text": "the current of what Kaelith was not saying" },
+        { "line": 56, "text": "the undertow of her awareness" },
+        { "line": 66, "text": "the quality of a current that has found its channel" },
+        { "line": 70, "text": "a membrane between what she was" },
+        { "line": 92, "text": "a current finding a channel" },
+        { "line": 92, "text": "the smaller currents branching through tissue" },
+        { "line": 100, "text": "a blade through a membrane" },
+        { "line": 116, "text": "hit Lirien like a wave breaking" },
+        { "line": 122, "text": "The current that had run between them... undertow" },
+        { "line": 124, "text": "the cold current of distrust" },
+        { "line": 134, "text": "the empty channel... like a current forcing its way through a frozen channel" },
+        { "line": 144, "text": "like a tide she could not stop tracking" },
+        { "line": 154, "text": "like surfacing from deep water" },
+        { "line": 162, "text": "breaking over her in waves... clear as water" },
+        { "line": 176, "text": "absence of a current... beneath the surface" },
+        { "line": 196, "text": "Surface and depth" },
+        { "line": 198, "text": "surface tension gives way" },
+        { "line": 200, "text": "undertow of compulsion" },
+        { "line": 202, "text": "the steady current of two people... flood of the resuscitation" }
+      ],
+      "suggestedFix": "Prioritise keeping water metaphors at the chapter's three emotional peaks: (1) L122–124 where the bond goes silent — the current/undertow imagery here is the strongest and most earned; (2) L134 where Lirien reaches through the silence — 'current forcing its way through a frozen channel' is precise and vivid; (3) L198 where surface tension gives way — this is the chapter's most original metaphor. Flatten or replace the ~15 lower-impact instances. For example, L22 could drop 'like a current she could not redirect' and simply use 'with an expression that carried trust she could not set aside.' L50 could become 'what Kaelith was not saying' without 'the current of.' L66 could describe Kaelith's determination without 'current that has found its channel.' L92 could describe the connection opening without doubling 'current' and 'channel' in the same sentence. The goal is not to remove the water domain but to make each instance feel surprising rather than expected."
+    },
+    {
+      "id": "LINE-002",
+      "severity": "critical",
+      "category": "repetition",
+      "description": "Voice marker saturation — classification/operative vocabulary domain. The clinical-operative lexicon saturates the chapter: 'precision/precise' (11×), 'clinical' (6×), 'operative' (5×), 'variable/variables' (5×), 'parameters' (3×), 'catalogued/catalogue' (3×), 'assessment' (3×), 'calculated/calculation' (3×). Combined total: ~39 classification-domain markers in 4055 words, or approximately one every 104 words. This makes Lirien's narration read as a continuous performance of her voice profile rather than as a person thinking. The problem is compounded by co-occurrence: L30 contains 'clinical' twice plus 'parameters' plus 'precise'; L186 contains 'clinical' plus 'operative' plus 'diagnostic.' When multiple voice markers stack within a single paragraph, the artifice becomes visible.",
+      "lineRef": { "start": 14, "end": 210 },
+      "instances": [
+        { "line": 14, "text": "catalogued it anyway" },
+        { "line": 20, "text": "Precision work... Each stone a variable isolated" },
+        { "line": 22, "text": "operative precision... elimination of variables" },
+        { "line": 30, "text": "clinical, flat... clinical membrane... precise word" },
+        { "line": 32, "text": "margin... the distance between a loophole and a murder" },
+        { "line": 40, "text": "precision margin" },
+        { "line": 52, "text": "clinical variable" },
+        { "line": 54, "text": "the timing calculations" },
+        { "line": 56, "text": "threat assessment" },
+        { "line": 58, "text": "same precision she had been trained to use" },
+        { "line": 62, "text": "analytical framework" },
+        { "line": 66, "text": "held the variable that decided" },
+        { "line": 68, "text": "the precise weight" },
+        { "line": 74, "text": "The clinical register failed" },
+        { "line": 88, "text": "clinical framework... operational protocols... The precision that was hers" },
+        { "line": 94, "text": "not force but precision" },
+        { "line": 126, "text": "Her analytical mind counted" },
+        { "line": 132, "text": "Not Cerith Court precision" },
+        { "line": 170, "text": "with the distant clarity of a mind reassembling itself" },
+        { "line": 172, "text": "She ran the assessment" },
+        { "line": 178, "text": "operative checking... the Seep had trained her to catalogue" },
+        { "line": 186, "text": "clinical thoroughness of an operative running a diagnostic" },
+        { "line": 196, "text": "Without the clinical register. Without the clinical membrane." },
+        { "line": 198, "text": "the precise moment" },
+        { "line": 210, "text": "clipped, precise" }
+      ],
+      "suggestedFix": "Reduce by approximately 40%. The classification vocabulary is Lirien's voice — eliminating it would destroy her character. But the prose should use it as flavoring, not as constant drumbeat. Specific recommendations: (1) L30 should not contain 'clinical' twice — choose one usage ('clinical membrane' is the more original construction; cut 'clinical, flat' to just 'flat, measured'). (2) L88 stacks 'clinical framework,' 'operational protocols,' and 'The precision that was hers' in three consecutive clauses — collapse to two. (3) L186 stacks 'clinical thoroughness of an operative running a diagnostic' — this reads like a voice-marker checklist; replace with something simpler: 'She tested this with the thoroughness the Court had trained into her.' (4) L196 repeats 'clinical register' and 'clinical membrane' from L30 and L74 — the callback is deliberate but 'clinical' has been overused enough that the echo falls flat; consider 'Without the careful register' for the first to avoid the triple 'clinical' in the aftermath scene. (5) L22 and L58 both use 'precision' in relation to killing — keep one, replace the other with 'exactness' or 'care.' The goal is to make each classification-domain word land with weight rather than blur into background noise."
+    },
+    {
+      "id": "LINE-003",
+      "severity": "major",
+      "category": "repetition",
+      "description": "'Through the bond' — exact phrase repeated 8 times. Lines 50, 56, 74, 90, 100, 124, 126, 208 use the identical construction. This becomes a rhythmic tic. The bond is the chapter's central mechanism and must be referenced, but the repeated identical prepositional phrase creates a monotonous access pattern. The phrase also appears in slightly varied form at L66 ('Through it'), L162, L194, L198, and L202, bringing bond-access constructions to approximately 13 total instances.",
+      "lineRef": { "start": 50, "end": 208 },
+      "suggestedFix": "Vary the construction. Options: 'the bond carried,' 'the resonance showed,' 'she felt through the connection,' 'the link between them,' or simply dropping the prepositional phrase where context makes the mechanism clear. When Lirien is touching Kaelith and the scene has established the bond is active, 'she felt Kaelith's fear' is sufficient — the reader knows how. Aim for no more than 4 uses of the exact phrase 'through the bond' in the chapter, with varied constructions for the remaining instances."
+    },
+    {
+      "id": "LINE-004",
+      "severity": "major",
+      "category": "cliché",
+      "description": "INV-017 violation: cliché count exceeds the maximum of 2 per chapter. At least 4 stock or near-stock phrases identified: (1) L58 'freedom would taste like ash' — a widely-used metaphor for hollow victory; (2) L162 'heartbeat hammering back to life' — near-match for the banned-list romance cliché 'heart hammering'; (3) L162 'relief breaking over her in waves' — stock emotional wave metaphor; (4) L60 'She held that thought like a torch against the dark' — stock courage/defiance image. Additionally borderline: L154 'tasted of iron and salt' (fairly standard), L158 'the most beautiful thing Lirien had ever heard' (stock superlative).",
+      "lineRef": { "start": 58, "end": 162 },
+      "instances": [
+        { "line": 58, "text": "freedom would taste like ash in the mouth", "severity": "clear cliché" },
+        { "line": 60, "text": "She held that thought like a torch against the dark", "severity": "stock image" },
+        { "line": 158, "text": "the most beautiful thing Lirien had ever heard", "severity": "stock superlative" },
+        { "line": 162, "text": "Kaelith's heartbeat hammering back to life", "severity": "near-banned — echoes 'heart hammering'" },
+        { "line": 162, "text": "relief breaking over her in waves", "severity": "stock emotional wave" }
+      ],
+      "suggestedFix": "Replace or rework at least 3 of the 5 identified stock phrases to bring the chapter under the 2-cliché maximum. Suggestions: (1) L58 — 'taste like ash' could become something specific to Lirien's fae experience: 'freedom would carry the weight of a contract completed against its purpose' or similar contractual-domain replacement. (2) L162 — 'hammering' should change to something less stock: 'Kaelith's heartbeat reasserting itself,' 'Kaelith's heart finding its rhythm,' or 'Kaelith's pulse fighting back to tempo.' (3) L162 — 'relief breaking over her in waves' could become 'Kaelith's relief arriving in a rush that filled the bond.' (4) L60 — 'torch against the dark' could become something from Lirien's visual domain: 'She held that thought against the worst-case the way she held a datum against a hypothesis.' (5) L158 — consider cutting 'the most beautiful thing she had ever heard' entirely and letting the description of the gasp ('ragged, ugly, the desperate inhalation') do the emotional work alone — the anti-beauty description is more powerful without the stock superlative preceding it."
+    },
+    {
+      "id": "LINE-005",
+      "severity": "major",
+      "category": "show-tell",
+      "description": "Emotion-labeling through the bond. The bond is used as a mechanism to deliver named emotions directly, bypassing show-don't-tell discipline. In key emotional scenes, the bond transmits catalogues of labelled feelings rather than showing their physical or behavioural correlates. While the bond's mechanics justify Lirien sensing Kaelith's feelings, the prose defaults to naming the emotions rather than conveying what the bond actually transmits — sensation, not taxonomy. This creates tell-heavy clusters at precisely the moments that should be most visceral.",
+      "lineRef": { "start": 66, "end": 202 },
+      "instances": [
+        {
+          "line": 66,
+          "text": "Lirien felt Kaelith's determination: steady, deep... And underneath, the matching terror",
+          "note": "Two emotions named directly — 'determination' and 'terror'"
+        },
+        {
+          "line": 124,
+          "text": "She had felt grief through the bond... She had felt anger, betrayal, the cold current of distrust",
+          "note": "Four emotions named in rapid succession — grief, anger, betrayal, distrust"
+        },
+        {
+          "line": 154,
+          "text": "fear and relief and pain and a fierce, stunned gratitude",
+          "note": "Four emotions catalogued in a single clause"
+        },
+        {
+          "line": 162,
+          "text": "Kaelith's relief breaking over her in waves, Kaelith's terror",
+          "note": "Relief and terror named again — repeating the same emotion labels from earlier in the chapter"
+        },
+        {
+          "line": 184,
+          "text": "relief, exhaustion, a fierce and fragile tenderness",
+          "note": "Three more emotions named directly"
+        }
+      ],
+      "suggestedFix": "The bond should transmit sensation, not labels. Instead of 'Lirien felt Kaelith's determination,' show what determination feels like through the bond: a steadiness in the shared pulse, a stillness that does not waver, a quality of presence that refuses to flinch. Instead of 'fear and relief and pain and a fierce, stunned gratitude,' show these as bodily states: a heart pounding too fast, a chest expanding past its limits, warmth flooding cold extremities, the specific grip of fingers that refuse to let go. Keep at most 2 named emotions in the chapter — use them as Lirien's attempt to classify sensations that overwhelm her taxonomy, not as the default mode of emotional delivery. The L124 passage is the exception where naming works: the list of past emotions (grief, anger, betrayal, distrust) contrasted with the present absence is effective precisely because it catalogues what was there to emphasise what is gone."
+    },
+    {
+      "id": "LINE-006",
+      "severity": "major",
+      "category": "repetition",
+      "description": "Anaphoric 'Not X. Not Y. Not Z.' structural pattern appears 4 times in the chapter, becoming a prose tic rather than a rhetorical device. Each instance uses the identical syntactic construction of negated fragments building to a contrasting positive statement.",
+      "lineRef": { "start": 12, "end": 202 },
+      "instances": [
+        { "line": 12, "text": "Not dangerous-wrong. Not the thin, grey wrong..." },
+        { "line": 100, "text": "Not damage. Not destruction. Interruption." },
+        { "line": 122, "text": "Not walled. Not muted. Not the guarded quiet..." },
+        { "line": 132, "text": "Not Cerith Court precision. Not Seep methodology. Everything." },
+        { "line": 186, "text": "Not because a contract... Not because a bond..." },
+        { "line": 202, "text": "Not the overwhelming flood... but the steady current..." }
+      ],
+      "suggestedFix": "Keep the two strongest instances and rewrite the others. The L122 usage (bond-silence scene) is the most powerful — the triple negation mirrors the emptiness Lirien is describing. The L132 usage (resuscitation) is the second strongest — the negation-then-affirmation mirrors the stakes. The remaining instances should be restructured: L12 could open with a direct positive description ('The light was diffuse, muted, without shadows sharp enough to read'); L100 could use a single contrast ('A clean interruption, not damage — the electrical signal simply... paused'). Limiting the pattern to 2 uses preserves its impact."
+    },
+    {
+      "id": "LINE-007",
+      "severity": "major",
+      "category": "prose",
+      "description": "Purple prose at L132: triple antithesis compounded with triple adjective stacking. 'Not end but begin, not silence but sound, not death but the ragged, impossible, defiant continuation of a heartbeat' piles three paired antitheses in sequence, then closes with three consecutive adjectives ('ragged, impossible, defiant'). This is the chapter's most intense emotional moment and the rhetorical escalation is understandable, but the construction crosses from lyrical into overwrought. The style guide mandates 'lush but not purple' and specifies max 2 consecutive adjectives without exceptional justification.",
+      "lineRef": { "start": 132, "end": 132 },
+      "suggestedFix": "Reduce from three antithetical pairs to two, and from three adjectives to two. For example: 'not silence but sound, not death but the ragged, defiant continuation of a heartbeat she refused to let remain stopped.' Cutting 'not end but begin' loses the least specific of the three pairs, and cutting 'impossible' removes the weakest adjective (it tells rather than shows). The revision preserves the escalating rhythm while staying within the prose quality floor."
+    },
+    {
+      "id": "LINE-008",
+      "severity": "minor",
+      "category": "prose",
+      "description": "L26: 'leaning into the anticipation like a predator scenting the end of a hunt.' Stock thriller/fantasy simile. Predator-prey imagery is not Lirien's established metaphor domain (water/surfaces/contracts), and 'predator scenting' is a generic intensifier.",
+      "lineRef": { "start": 26, "end": 26 },
+      "suggestedFix": "Replace with imagery from Lirien's domain: 'pressing toward its own closure like a current sensing the fall' or 'tightening toward its own completion the way a contract narrows toward its final clause.'"
+    },
+    {
+      "id": "LINE-009",
+      "severity": "minor",
+      "category": "prose",
+      "description": "L46: 'the realest thing in the room.' The superlative 'realest' reads as slightly informal/modern for the story's register. The style guide specifies 'no modern slang or contemporary internet phrasing' and while 'realest' is grammatically valid, its register skews colloquial.",
+      "lineRef": { "start": 46, "end": 46 },
+      "suggestedFix": "Replace with 'the most real thing in the room' or restructure: 'a formality that was also the truest thing in the room.'"
+    },
+    {
+      "id": "LINE-010",
+      "severity": "minor",
+      "category": "show-tell",
+      "description": "L52: 'The sensation in her chest was terror, and it had Kaelith's name in it.' Direct emotion label ('terror'). The second clause ('had Kaelith's name in it') is evocative showing, but the first clause names the emotion outright. While this follows Lirien's classify-first pattern, the chapter already uses this technique at L66, L124, L154, L162, and L184 — the cumulative effect is too much telling.",
+      "lineRef": { "start": 52, "end": 52 },
+      "suggestedFix": "Lean into the sensation rather than the label: 'The sensation in her chest was not a clinical variable. It was the weight of Kaelith's name, pressing against the inside of her ribs.' Or lean fully into the classify-then-fail pattern: 'Noted: the sensation in her chest defied classification. It had Kaelith's name in it, and no operational framework around it.'"
+    },
+    {
+      "id": "LINE-011",
+      "severity": "minor",
+      "category": "prose",
+      "description": "L116: 'something older, something that belonged to the fae substrate where all binding magic was rooted.' The phrase 'something older' is a common fantasy intensifier — vague, gesturing at depth without specificity. The style guide prohibits 'stock romantasy descriptors that could fit any book.'",
+      "lineRef": { "start": 116, "end": 116 },
+      "suggestedFix": "Replace vague 'something older' with something specific to the world: 'something that carried the resonance of the fae substrate,' or name it directly: 'the raw potential of the Pallor's deeper layer, where all binding magic was rooted.'"
+    },
+    {
+      "id": "LINE-012",
+      "severity": "minor",
+      "category": "repetition",
+      "description": "L150: Triple 'every' construction — 'every crack, every channel, every route back to rhythm.' This appears in a passage where the water-domain metaphor is already explicit ('like water finding'), and the triple repetition adds rhetorical weight to what is essentially a clarifying simile. The triple emphasis slows a moment that should feel urgent.",
+      "lineRef": { "start": 150, "end": 150 },
+      "suggestedFix": "Collapse to a single 'every': 'like water finding every route back to rhythm.' The Seep motto echo ('water that finds every crack') is strong enough with one deployment — tripling it dilutes the reference."
+    },
+    {
+      "id": "LINE-013",
+      "severity": "minor",
+      "category": "prose",
+      "description": "L154: 'tasted of iron and salt' — moderately stock phrasing for post-crisis or blood-adjacent sensation. While not a clear cliché, the iron-and-salt combination is common enough in fantasy/literary fiction to risk a 'seen this before' response from genre-literate readers.",
+      "lineRef": { "start": 154, "end": 154 },
+      "suggestedFix": "Either cut (the sentence works without the taste detail) or replace with something more specific to this world's magic: 'that carried the aftertaste of dissolved binding' or 'that hummed with the overtone of fae-substrate resonance.'"
+    },
+    {
+      "id": "LINE-014",
+      "severity": "minor",
+      "category": "cliché",
+      "description": "L186: 'the woman who built walls to survive and opened doors to love.' The walls/doors metaphor is in Kaelith's architectural domain, which is appropriate, but 'opened doors to love' approaches greeting-card territory. The style guide prohibits 'stock romantasy descriptors that could fit any book.'",
+      "lineRef": { "start": 186, "end": 186 },
+      "suggestedFix": "Ground the metaphor in specificity: 'the woman who built walls to survive and chose, against every structural instinct, to leave a gap in them.' Or drop the metaphor entirely and stay literal: 'the commander, the exile, the woman who kept people out until she chose not to.'"
+    },
+    {
+      "id": "LINE-015",
+      "severity": "minor",
+      "category": "prose",
+      "description": "L200: 'Just skin against skin. Warmth meeting warmth.' While effective in its simplicity, 'skin against skin' is an extremely common romance-genre construction. In context, the sentence is doing important thematic work (touch without binding interference), but the phrasing itself is so well-worn that it risks pulling the reader out of the specific into the generic.",
+      "lineRef": { "start": 200, "end": 200 },
+      "suggestedFix": "Keep the simplicity but add one specific detail: 'Just her palm against the back of Kaelith's hand. Warmth without static.' This preserves the stripped-down register while adding the specificity that distinguishes this touch from a thousand other romance-novel touches."
+    },
+    {
+      "id": "LINE-016",
+      "severity": "minor",
+      "category": "dialogue",
+      "description": "L30: Lirien's clinical briefing runs 4 lines of unbroken technical dialogue without an action beat or interruption. While this is within the style guide's 6-line maximum and the stiffness is characterisation (clinical membrane), the absence of any physical gesture or environmental detail during this speech makes it feel recited rather than spoken in a room with the woman she is about to kill.",
+      "lineRef": { "start": 30, "end": 30 },
+      "suggestedFix": "Insert one brief action beat mid-briefing — a gesture that betrays the emotion the clinical language is containing. For example, after 'cardiac monitoring': 'Her fingers found the edge of the table. Held.' Then continue with 'The bond will transmit heartbeat as a baseline pulse.' This grounds the dialogue in the body and creates the tension between clinical words and unclinical hands."
+    },
+    {
+      "id": "LINE-017",
+      "severity": "minor",
+      "category": "repetition",
+      "description": "L154 and L184 both use the construction 'fierce [adjective] [emotion noun]': L154 has 'a fierce, stunned gratitude' and L184 has 'a fierce and fragile tenderness.' The repetition of 'fierce' as an emotional intensifier within 30 lines creates an echo that flattens both instances.",
+      "lineRef": { "start": 154, "end": 184 },
+      "suggestedFix": "Change one of the two. L184 'a fierce and fragile tenderness' is the more original construction; keep it. Replace L154's 'fierce' with a different intensifier: 'a stunned, raw gratitude' or 'a gratitude so sharp it hurt.'"
+    }
+  ],
+  "positiveNotes": [
+    {
+      "lineRef": { "start": 10, "end": 14 },
+      "note": "Excellent chapter opening. 'The light in the room was wrong' immediately establishes Lirien's visual-perceptual POV and creates micro-tension from the first sentence. The environmental scan in L14 is pure operative voice without being heavy-handed."
+    },
+    {
+      "lineRef": { "start": 22, "end": 22 },
+      "note": "The irony of kill-space preparation being identical to the protective ritual is powerful thematic work — Lirien's skills are the same, only the purpose has changed. This embodies TP-3 (chosen versus only) through action."
+    },
+    {
+      "lineRef": { "start": 30, "end": 50 },
+      "note": "The consent dialogue is outstanding. Lirien's clinical language containing raw emotional need, Kaelith's terse responses carrying trust — this is INV-047 (subtext) at its best. 'You have it. You have had it since Rivenmarch' packs enormous emotional history into a single line."
+    },
+    {
+      "lineRef": { "start": 60, "end": 62 },
+      "note": "The Oathbrand callback (FS-008 payoff) is perfectly deployed — not exposition but self-reassurance. Lirien using her own past achievement as evidence her hands can save rather than kill is earned and moving."
+    },
+    {
+      "lineRef": { "start": 74, "end": 74 },
+      "note": "'The clinical register failed' — a three-word sentence that carries enormous weight because the chapter has established just how load-bearing that register is. Perfect use of the one-line-emphasis rule."
+    },
+    {
+      "lineRef": { "start": 82, "end": 82 },
+      "note": "'Then let's not waste the seconds' — quintessential Kaelith. Practical, courageous, and carrying love as subtext. The voice distinction from Lirien is instantaneous and the line lands perfectly."
+    },
+    {
+      "lineRef": { "start": 96, "end": 100 },
+      "note": "The actual heart-stopping is handled with superb craft. 'Now' as a single-word paragraph, then the clinical description of cardiac interruption, then the ellipsis pause — the prose rhythm mirrors the heartbeat's cessation."
+    },
+    {
+      "lineRef": { "start": 118, "end": 124 },
+      "note": "The bond-silence passage is the chapter's strongest prose. 'The difference between a room gone dark and a room that had never contained light' is an original, precise metaphor that earns its place. The structural repetition here (unlike elsewhere) is deliberately deployed for the void-effect."
+    },
+    {
+      "lineRef": { "start": 188, "end": 190 },
+      "note": "'This was: evidence. This was also: proof.' — the colon construction reads like a field note filing a conclusion, and the shift from 'evidence' to 'proof' carries Lirien's entire arc. Brilliant two-line compression."
+    },
+    {
+      "lineRef": { "start": 196, "end": 196 },
+      "note": "'Surface and depth, for the first time since she had learned the difference, were the same thing.' — This is Lirien's thematic resolution stated through her own metaphor domain. The moment when the spy's defining framework (surface vs depth) collapses into unity is the character arc completed."
+    },
+    {
+      "lineRef": { "start": 218, "end": 222 },
+      "note": "The silent answer (not letting go of Kaelith's hand) is perfect show-don't-tell. The chapter earns its closing line — 'What remained was only real' — through 4000 words of proving it."
+    }
+  ],
+  "craftToolAudit": {
+    "T5-ToneContract": "COMPLIANT. Darkly romantic, emotionally restrained but intense throughout. No sentimentality — emotion earned through action and sacrifice. The clinical-register-as-love-language is tonally distinctive and morally complex.",
+    "T17-VoiceFingerprinting": "PARTIALLY COMPLIANT. Lirien's voice is correct in domain and pattern but over-performed. The density of voice markers creates artificiality. Voice fingerprint should be a flavour, not a constant signal. Kaelith's brief appearances are well-voiced — clipped, direct, military.",
+    "T18-ShowDontTell": "PARTIALLY COMPLIANT. Majority of the chapter shows through action, sensation, and the bond's physical effects. However, the bond is used to deliver catalogues of named emotions at L154, L162, and L184, creating tell-heavy clusters at key moments.",
+    "T21-MRU": "COMPLIANT. Key MRU sequences check correctly: binding resistance (L102–108), bond silence (L118–128), heart restart (L148–154). External stimuli consistently precede reactions.",
+    "T24-SubtextInDialogue": "COMPLIANT. Every dialogue exchange operates on two layers. The preparation dialogue is clinical on the surface and devastating underneath. 'Then let's not waste the seconds' is subtext mastered."
+  },
+  "invariantAudit": {
+    "INV-017": "VIOLATED — 4–5 cliché/stock phrases exceed the maximum of 2 per chapter. See LINE-004.",
+    "INV-005": "PARTIALLY VIOLATED — bond-mediated emotion catalogues at L154, L162, L184 deliver emotions as labels. See LINE-005.",
+    "INV-019": "COMPLIANT — dialogue sounds like speech, with appropriate register and voice distinction.",
+    "INV-035": "COMPLIANT — no half-page dead spots. Tension maintained throughout via procedural dread, crisis, and emotional aftermath.",
+    "INV-047": "COMPLIANT — charged dialogue carries strong subtext throughout.",
+    "INV-003": "PARTIALLY COMPLIANT — Lirien's voice is consistent and recognisable but over-saturated with markers. See LINE-001, LINE-002.",
+    "INV-073": "PARTIALLY VIOLATED — prose is lush and emotionally authentic but edges into purple at L132. See LINE-007."
+  }
+}

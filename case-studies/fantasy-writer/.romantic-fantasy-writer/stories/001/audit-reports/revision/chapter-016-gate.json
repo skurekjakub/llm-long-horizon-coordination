@@ -1,0 +1,294 @@
+{
+  "gateId": "REVISION-GATE-016",
+  "phase": "revision",
+  "chapter": 16,
+  "agent": "romantic-fantasy-writer-revision-auditor",
+  "timestamp": "2025-07-30T14:00:00Z",
+  "verdict": "passed",
+  "verdictSummary": "Chapter 16 revision PASSED adversarial gate. All 3 critical findings verified addressed with quantitative evidence: bond references 29→10 (66% reduction, 'Through the bond' openers 9→2), 'forty-three' 6→2 (bookend structure maintained), operative voice markers ~67%→~40% of paragraphs with voice-absent stretches at maximum emotional intensity. All 4 major findings verified: reinterpretation sequence rhythm varied to accelerating pattern, paragraph split at L36, 'cage' 7→3, L178 dissolution paragraph restructured so form models content. 1 moderate and 14 minor findings verified. 4 minor findings deferred with legitimate rationale. Zero regressions detected. Zero darlings survived. Traceability complete (21 finding IDs in frontmatter, all verified; 4 deferred with rationale). Dialogue unchanged — no naturalism regression possible. Word count -3.4% (4111→3971). Chapter proceeds to beta reading.",
+  "inputArtifacts": {
+    "draft": "chapters/016/draft.md",
+    "revised": "chapters/016/revised.md",
+    "developmentalEdit": "revision-reports/016/developmental-edit.json",
+    "lineEdit": "revision-reports/016/line-edit.json",
+    "copyEdit": "revision-reports/016/copy-edit.json",
+    "revisionLog": "revision-reports/016/revision-log.json"
+  },
+  "wordCountAnalysis": {
+    "draftWordCount": 4111,
+    "revisedWordCount": 3971,
+    "delta": -140,
+    "deltaPercent": -3.4,
+    "threshold": 20,
+    "warningThreshold": 10,
+    "status": "within-bounds"
+  },
+  "findingVerificationMatrix": {
+    "critical": [
+      {
+        "findingId": "LINE-001",
+        "source": "line-edit",
+        "severity": "critical",
+        "title": "Bond reference saturation (~30 refs in 200 lines)",
+        "verification": "passed",
+        "draftEvidence": "29 'bond' instances in draft. 'Through the bond' appears 9 times as clause/sentence opener (L44, L56, L68, L74, L82, L86, L96, L100, L102, L106, L114). Additional formulations: 'the bond carried' (3×), 'felt it through the bond' (2×), 'the bond remained' (2×).",
+        "revisedEvidence": "10 'bond' instances in revised. 'Through the bond' openers reduced from 9 to 2 — kept L74 (first distress leak) and L126 (blood ceremony flare). Added 5 varied 'the connection' references. Total named bond-system references: 15. Variations used: 'between them' (L86, L112), 'the connection' (L44, L86, L132, L156, L216), pronouns 'it' (L156, L176), implicit descriptions ('Something fractured between them' L116, 'What Lirien felt from her' L144).",
+        "quantitativeResult": "'bond' 29→10 (66% reduction). 'Through the bond' 9→2 (78% reduction). Total named refs 29→15 (48% reduction). Target was 40-50% reduction — exceeded.",
+        "evidence": "Bond references now function as structural markers at key emotional turning points (distress leak, guilt transmission, blood ceremony flare, bond going cold, bond carrying nothing but pain) rather than a mechanical verbal tic appearing every 6-7 lines. The varied alternatives sound natural and maintain voice."
+      },
+      {
+        "findingId": "LINE-002",
+        "source": "line-edit",
+        "severity": "critical",
+        "title": "'Forty-three' repetition (6 uses)",
+        "verification": "passed",
+        "draftEvidence": "6 instances: L22 'Forty-three contracts had trained them,' L38 'forty-three contracts without deviation,' L146 'forty-three completed contracts on the principle,' L162 'forty-three confessions and two hundred operational reports,' L178 'forty-three targets,' L206 'forty-three completed assignments.'",
+        "revisedEvidence": "2 instances: L50 'Forty-three contracts had trained them to be steady' (opening, kept), L234 'forty-three completed assignments' (closing callback, kept). Four interior uses replaced: L68 'every prior contract without deviation,' L178 'a career on the principle,' L194 'a career's worth of confessions,' L210 'every prior target.'",
+        "quantitativeResult": "6→2 (67% reduction). Target was 2-3 — met exactly.",
+        "evidence": "The number now bookends the chapter (first occurrence and closing callback), functioning as a scar that brackets the devastation rather than a recited refrain. Interior substitutions are contextually appropriate and avoid repetitive diction."
+      },
+      {
+        "findingId": "LINE-003",
+        "source": "line-edit",
+        "severity": "critical",
+        "title": "Operative voice marker saturation (~67% of paragraphs)",
+        "verification": "passed",
+        "draftEvidence": "33 operative vocabulary markers (cataloguing, classification, taxonomy, categories, framework, variables, calculus, containment, construction, contingency, parameters, analytical) across draft. L38 stacked 6 operative terms in one paragraph. L88 had heavy cataloguing parenthetical. L178 had 7 distinct operative terms at the moment of identity crisis.",
+        "revisedEvidence": "19 operative vocabulary markers in revised (42% reduction). Non-contract prose markers reduced from ~27 to ~14. Key thinnings: L68 removed 'analytical machinery,' 'contingencies,' 'damage projections,' 'calculus of containment' → simplified to 'cold engine.' L118 removed cataloguing parenthetical entirely. L124 'intelligence officer's compulsion to read a subject's' → 'compulsion to read a person's.' L210 restructured: 'No framework. No classification' → 'nothing. No way to separate'; 'The taxonomy was empty' → 'The words dissolved'; 'identified and filed under *real*' → 'called real.'",
+        "quantitativeResult": "Operative markers 33→19 in total (42% reduction). 'operative' count 17→13 (but 6 of 13 are in the unchangeable Court document text). Prose-only operative count ~11→7. Created voice-absent stretches at maximum emotional intensity.",
+        "evidence": "The voice degradation arc is now visible in the prose structure: precise analytical language in early passages → framework stuttering mid-chapter → plain unclassified perception at maximum emotion. The 'Because I was afraid' passage and the departure sitting-in-ruins passage are notably free of operative markers, creating authentic voice dissolution. L210 (the identity crisis paragraph) now performs the collapse it describes — opening with full classification language that dissolves into plain words by paragraph's end."
+      }
+    ],
+    "major": [
+      {
+        "findingId": "LINE-004",
+        "source": "line-edit",
+        "severity": "major",
+        "title": "Reinterpretation sequence density — three identical structures",
+        "verification": "passed",
+        "draftPassage": "The particular warmth-vulnerability that had accompanied the Oathbrand removal: was it intimacy, or positioning — freeing the target's magic...? The raw-courage signature of the Calwrath confession: was it witnessing, or intelligence gathering — a trained spy cataloguing vulnerabilities? The bright fierce signature of the first kiss: desire, or compliance with a binding that required closeness?",
+        "revisedPassage": "The warmth that had accompanied the Oathbrand removal: was it intimacy, or positioning — freeing the target's magic to make her more useful to an operative whose binding rewarded proximity? The Calwrath confession — witnessing, or intelligence gathering? The first kiss — desire, or compliance?",
+        "evidence": "Rhythm varied from three identical 'was it X, or Y — elaboration' structures to accelerating pattern: full (Oathbrand, 2 clauses) → compressed (Calwrath, single clause) → most compressed (first kiss, two words each). Creates acceleration toward the devastating declaration memory. 'Signature' eliminated entirely: 4→0 uses (draft had 'warmth-vulnerability signature,' 'raw-courage signature,' 'bright fierce signature,' 'That signature surfaced' → all labels removed, qualities described directly, 'That signature surfaced' → 'That realisation surfaced')."
+      },
+      {
+        "findingId": "LINE-005",
+        "source": "line-edit",
+        "severity": "major",
+        "title": "Paragraph at L36 exceeds 6-sentence maximum",
+        "verification": "passed",
+        "draftPassage": "[Single paragraph running ~8 sentences from 'The message continued...' through '...boundary adjustments and supply requisitions.']",
+        "revisedPassage": "Paragraph 1 (L64): 'The message continued. Details of the binding ceremony...' through 'An absence wearing the shape of what had been removed.' Paragraph 2 (L66): 'A timeline. A risk assessment. Clinical language applied to the systematic machinery of death...'",
+        "evidence": "Split verified at correct point. Break after 'An absence wearing the shape of what had been removed.' creates two focused paragraphs: what the contract does (binding mechanism, Lessening definition) and how the Court talks about it (clinical language, bureaucratic formatting). Both paragraphs now fall within the 6-sentence guideline. Aligns with COPY-016-003 resolution."
+      },
+      {
+        "findingId": "LINE-006",
+        "source": "line-edit",
+        "severity": "major",
+        "title": "'Cage' repetition (7 uses)",
+        "verification": "passed",
+        "draftEvidence": "7 'cage' instances at L42 (×2: 'build the cage,' 'cage existed'), L96 ('cage had been constructed'), L110 ('designed the cage to feel'), L128 ('built the cage around her'), L152 ('cage existed'), L200 ('cage built from her blood').",
+        "revisedEvidence": "3 instances: L72 'build the cage' (introduction), L140 'designed the cage to feel... exactly like a home' (devastation peak), L230 'a cage built from her blood' (closing callback). Changes: L72 'cage existed' → 'it existed' (pronoun), L126 'cage had been constructed' → 'structure had been constructed,' L158 'built the cage around her' → 'held her inside a lie,' L184 'cage existed' → 'trap existed.'",
+        "quantitativeResult": "7→3 (57% reduction). Target was 3-4 — met exactly.",
+        "evidence": "Three remaining uses are positioned at introduction, devastation peak, and closing callback — the three strongest structural positions. Substitutions are contextually appropriate and avoid repetitive diction while maintaining the metaphor's resonance."
+      },
+      {
+        "findingId": "LINE-007",
+        "source": "line-edit",
+        "severity": "major",
+        "title": "L178 peak operative vocabulary concentration — form contradicts content",
+        "verification": "passed",
+        "draftPassage": "The analytical mind that had categorised forty-three targets, hundreds of operational variables, and the precise moment Kaelith's trust collapsed turned inward and found no framework. No classification that could separate *I love her* from *the contract requires me to believe I love her*. The categories had dissolved. The taxonomy was empty. Every feeling she had identified and filed under *real* was suspect",
+        "revisedPassage": "The analytical mind that had categorised every prior target, hundreds of variables, and the precise moment Kaelith's trust collapsed turned inward and found — nothing. No way to separate *I love her* from *the contract requires me to believe I love her*. The categories dissolved. The words dissolved. Every feeling she had called real was suspect",
+        "evidence": "Operative vocabulary now thins as paragraph progresses, with form performing the content it describes. Opening retains framework language ('analytical mind,' 'categorised,' 'variables'). Mid-paragraph simplifies: 'no framework. No classification' → 'nothing. No way to separate.' End drops to plain language: 'The categories dissolved. The words dissolved.' (→ replaces 'taxonomy,' a jargon word, with 'words,' a plain word). 'identified and filed under *real*' → 'called real' (plain verb replaces operative compound). The dissolution is now modeled in the prose structure."
+      }
+    ],
+    "minor": [
+      {
+        "findingId": "LINE-008",
+        "source": "line-edit",
+        "severity": "minor",
+        "title": "POV concern — italicized passage reads as Kaelith's direct thought",
+        "verification": "passed",
+        "evidence": "Added attribution 'Lirien supplied the words the flare could not carry:' before the italicized text. Content also revised from 'the woman she had trusted against her' (Kaelith-perspective) to 'her betrayer close' (Lirien-perspective self-identification). Bond-mechanics rule (emotional quality, not specific thoughts) now explicitly reinforced."
+      },
+      {
+        "findingId": "LINE-009",
+        "source": "line-edit",
+        "severity": "minor",
+        "title": "Redundant near-synonyms 're-examined, re-evaluated'",
+        "verification": "passed",
+        "evidence": "Draft L86: 'each element re-examined, re-evaluated, and found to rest on a surface.' Revised L116: 'each element re-evaluated and found to rest on a surface.' Redundant synonym removed."
+      },
+      {
+        "findingId": "LINE-010",
+        "source": "line-edit",
+        "severity": "minor",
+        "title": "Heavy cataloguing parenthetical at L88",
+        "verification": "passed",
+        "evidence": "Draft L88: 'Not the focused stillness of concentration, which Lirien had catalogued extensively and filed under several subcategories of professional attention. This was the other stillness. The one Lirien had seen only once...' Revised L118: 'A stillness Lirien had seen only once before — on a granite shelf in the dark.' Complete removal of the cataloguing parenthetical. Also eliminates one 'Not X. This was Y' pattern instance (LINE-015)."
+      },
+      {
+        "findingId": "LINE-011",
+        "source": "line-edit",
+        "severity": "minor",
+        "title": "Expository voice reminder at L142",
+        "verification": "passed",
+        "evidence": "Draft L142: 'Not the controlled instrument she had spent a lifetime calibrating — the precise, modulated delivery that communicated what she chose and nothing more. This voice carried too much air.' Revised L174: 'Not the controlled instrument. This voice carried too much air.' Compressed to trust the reader after 15 chapters."
+      },
+      {
+        "findingId": "LINE-012",
+        "source": "line-edit",
+        "severity": "minor",
+        "title": "Double relative clause at L162",
+        "verification": "passed",
+        "evidence": "Draft L162: 'Lirien, who had been trained since childhood to construct language as a precision instrument, who had shaped forty-three confessions and two hundred operational reports and not once wasted a word — that Lirien had nothing left but the bare, undecorated truth.' Revised L194: 'The woman who had shaped a career's worth of confessions without wasting a word had nothing left but the bare, undecorated truth.' Single clause, faster delivery, eliminates biographical runway and fifth 'forty-three' (see LINE-002)."
+      },
+      {
+        "findingId": "LINE-013",
+        "source": "line-edit",
+        "severity": "minor",
+        "title": "Over-explaining Calwrath callback at L126",
+        "verification": "passed",
+        "evidence": "Draft L126: 'the same architecture of emotional survival that had kept Kaelith alive through six years of exile and the slow work of believing she deserved what had been done to her.' Revised L156: 'the same architecture, rebuilt in seconds.' Trimmed to trust reader's memory. 'Rebuilt in seconds' adds new information (speed of defensive response) rather than re-explaining known psychology."
+      },
+      {
+        "findingId": "LINE-014",
+        "source": "line-edit",
+        "severity": "minor",
+        "title": "Double 'only' at L200",
+        "verification": "passed",
+        "evidence": "Draft L200: 'A seal that could only be reached through a path held in Kaelith's body and walkable only through the kind of trust.' Revised L230: 'A seal reachable only through a path held in Kaelith's body, walkable through trust that no longer existed.' Single 'only' in sentence."
+      },
+      {
+        "findingId": "LINE-015",
+        "source": "line-edit",
+        "severity": "minor",
+        "title": "'Not X. This was Y' distinction pattern (4+ uses)",
+        "verification": "passed",
+        "evidence": "Draft: 4+ uses at L88, L124, L126, L170. Revised: L118 (formerly L88) rephrased from 'Not the focused stillness... This was the other stillness' to 'A stillness Lirien had seen only once before.' Retained 2 strongest instances: L156 'Not severed... This was worse' (bond hinge) and L204 'Not because she chose to stay' (existential paralysis). Reduced from 4+ to 2 core uses."
+      },
+      {
+        "findingId": "COPY-016-001",
+        "source": "copy-edit",
+        "severity": "moderate",
+        "title": "British/American spelling inconsistency — 'recontextualized'",
+        "verification": "passed",
+        "evidence": "Draft L104: 'recontextualized' (American). Revised: 0 instances of 'recontextualized,' 2 instances of 'recontextualised' (British). Spelling convention now consistent throughout."
+      },
+      {
+        "findingId": "COPY-016-002",
+        "source": "copy-edit",
+        "severity": "minor",
+        "title": "Anachronism — 'supply chains'",
+        "verification": "passed",
+        "evidence": "Draft L178: 'supply chains and kill orders.' Revised L210: 'provisioning lines and kill orders.' Anachronistic term replaced with period-appropriate alternative maintaining bureaucratic cadence."
+      },
+      {
+        "findingId": "COPY-016-003",
+        "source": "copy-edit",
+        "severity": "minor",
+        "title": "Paragraph at L36 exceeds style guide maximum",
+        "verification": "passed",
+        "evidence": "Addressed jointly with LINE-005. Paragraph break inserted after 'An absence wearing the shape of what had been removed.' Both resulting paragraphs within the 6-sentence guideline."
+      },
+      {
+        "findingId": "COPY-016-004",
+        "source": "copy-edit",
+        "severity": "minor",
+        "title": "Paragraph at L134 exceeds style guide maximum",
+        "verification": "passed",
+        "evidence": "Paragraph break inserted after inventory items ('Bedroll. Knife. The evidence folio.'). Separates observed action (Kaelith packing) from Lirien's interpretive assessment. Both paragraphs now within guideline."
+      },
+      {
+        "findingId": "COPY-016-005",
+        "source": "copy-edit",
+        "severity": "minor",
+        "title": "Bond-mechanics presentation concern — italicized passage could be misread as thought-transmission",
+        "verification": "passed",
+        "evidence": "Addressed jointly with LINE-008. Attribution 'Lirien supplied the words the flare could not carry:' frames content as Lirien's inference. MAG-007 rule (bond transmits emotional quality, not thoughts) explicitly reinforced."
+      },
+      {
+        "findingId": "DEV-016-002",
+        "source": "developmental-edit",
+        "severity": "minor",
+        "title": "Post-departure reflective section — overlapping passages and diffused ending",
+        "verification": "passed",
+        "evidence": "Three compressions verified: (1) 'Analytical mind/taxonomy dissolved' and 'She had been the Seep' passages merged via bridging sentence 'What remained when the categories were gone was simpler and worse.' (2) Two bond-persistence passages merged — 'The bond would carry this too' paragraph removed entirely, content covered by earlier passage and closing lines. (3) Atmospheric coda reduced: 'The real sky did not care who was looking. It existed whether or not anyone trusted it.' removed (grep confirms absent from revised). Sky image integrated via 'Lirien sat beneath it' in the final paragraph. Chapter now ends cleanly on the bond/silence beat."
+      }
+    ],
+    "deferred": [
+      {
+        "findingId": "DEV-016-001",
+        "source": "developmental-edit",
+        "severity": "minor",
+        "title": "Six-chapter sustained high-tension cluster",
+        "rationale": "Legitimate deferral. Original finding had actionRequired: false. The six-chapter tension cluster (ch11-16, all 7+) is structurally mandatory for the midpoint-to-black-moment arc. No ch16 changes could address a multi-chapter pacing pattern. Recovery planned at ch18.",
+        "assessment": "Deferral appropriate."
+      },
+      {
+        "findingId": "COPY-016-006",
+        "source": "copy-edit",
+        "severity": "minor",
+        "title": "Unestablished continuity details (healing salve, scarf)",
+        "rationale": "Legitimate deferral. Both details are plausible off-page events between ch15 ending and ch16 dawn. Recommendation to establish in ch15 polish pass is reasonable. Details serve as powerful relationship-ending props in the packing scene and their removal would weaken the scene.",
+        "assessment": "Deferral appropriate. Continuity note to be tracked for ch15 polish."
+      },
+      {
+        "findingId": "COPY-016-007",
+        "source": "copy-edit",
+        "severity": "minor",
+        "title": "DISC-001 cross-manuscript note (Thalen Reyvas seat number)",
+        "rationale": "Does not appear in ch16 text. Cross-manuscript resolution tracked separately.",
+        "assessment": "Deferral appropriate — not actionable at ch16 level."
+      },
+      {
+        "findingId": "COPY-016-008",
+        "source": "copy-edit",
+        "severity": "minor",
+        "title": "FU-007 tension — blood used without consent in functional binding",
+        "rationale": "Deliberate thematic element. The Court's atrocity (building a functional binding on non-consensual blood) is central to the chapter's horror. The FU-007 tension may be exploited in the dissolution arc (ch18-20).",
+        "assessment": "Deferral appropriate — thematic design, not error."
+      }
+    ]
+  },
+  "regressionFindings": [],
+  "voiceMarkerSaturationCheck": {
+    "status": "no-regression",
+    "detail": "Operative voice markers reduced from ~67% to ~40% of paragraphs. The revision REMOVED markers rather than adding them. No passage in the revised text reads as a voice-marker checklist. Voice-absent stretches were created at maximum emotional intensity (the 'Because I was afraid' passage L192, the departure sequence L200-204, the final sitting-in-ruins passage L234), where operative language genuinely fails. The voice degradation arc (precise → stuttering → plain) is now visible in the prose structure without being artificially signposted. No saturation regression."
+  },
+  "dialogueNaturalismCheck": {
+    "status": "no-regression",
+    "detail": "All dialogue lines preserved unchanged between draft and revised. Kaelith's staccato devastation ('Don't.' / 'Every feeling was built on a lie.' / 'And you chose not to tell me.') and Lirien's breaking speech ('I—' / 'There is—' / desperate loophole explanation / 'Because I was afraid') remain flawless. Since no dialogue was revised, no naturalism regression is possible. Verified by line-by-line comparison of all dialogue lines."
+  },
+  "darlingsSurvived": [],
+  "darlingsAudit": {
+    "status": "clean",
+    "detail": "No darlings were explicitly flagged by editors for removal. The line editor flagged three 'beautiful but burdensome' passages (cataloguing parenthetical L88, biographical interpolation L162, Calwrath over-explanation L126), all of which were cut or compressed in revision. The water flask detail (L136-138: 'She did not take the water flask they had been sharing. She took a different one from the supply shelf. The detail was small. It was not small.') was specifically praised by the line editor as 'publication-quality craft' and correctly preserved unchanged. No darlings survived editor flags."
+  },
+  "traceabilityCheck": {
+    "status": "complete",
+    "detail": "21 finding IDs listed in revised.md frontmatter (LINE-001 through LINE-015, COPY-016-001 through COPY-016-005, DEV-016-002). All 21 verified as addressed with specific textual changes. 4 findings listed as deferred with rationale (DEV-016-001, COPY-016-006, COPY-016-007, COPY-016-008). Total findings across all three reports: 25. All accounted for: 21 addressed + 4 deferred = 25. INV-014 satisfied."
+  },
+  "continuityCheck": {
+    "status": "clean",
+    "detail": "All proper nouns, character references, timeline details, and cross-chapter continuity maintained between draft and revised. Contract text unchanged. Bond mechanics compliant with MAG-007 (emotional quality transmitted, not thoughts — now explicitly reinforced at L126). No new continuity errors introduced by revisions."
+  },
+  "pacingCheck": {
+    "status": "clean",
+    "detail": "Paragraph splits at L64-66 and L164-166 improve rather than disrupt rhythm. Post-departure section compression removes redundancy without losing thematic content. Sky image integration avoids register-shift before the final beat. Three-scene structure intact. No dead spots introduced. Chapter ending strengthened by removal of the philosophising atmospheric coda."
+  },
+  "warnings": [],
+  "warningCount": 0,
+  "failureThreshold": "3+ warnings = failure",
+  "automaticFailChecks": {
+    "unaddressedCriticalFindings": false,
+    "claimedButUnchangedPassages": false,
+    "newCriticalIssues": false,
+    "contentCutWithoutReplacement": false,
+    "darlingsPreservedUnchanged": false,
+    "traceabilityBroken": false,
+    "voiceMarkerSaturationRegression": false,
+    "dialogueNaturalismRegression": false
+  },
+  "remediationNotes": "None. Chapter 16 proceeds to beta reading."
+}

@@ -1,0 +1,104 @@
+{
+  "id": "CHAR-010",
+  "name": "Erys Kael",
+  "role": "supporting",
+  "isPOV": false,
+  "psychologicalProfile": {
+    "wound": "Erys survived Calwrath because Kaelith made a choice she still cannot morally settle and can never stop understanding.",
+    "desire": "Make her survival mean something more than being the beneficiary of atrocity.",
+    "fear": "That loyalty to Kaelith is another way of refusing to look at the dead.",
+    "lie": "Silence is the only honorable repayment for survival bought so dearly.",
+    "ghost": "She was one of the eight hundred who crossed the breach while civilians burned on the other side of the wall.",
+    "need": "To speak plainly and choose her commander openly rather than hiding behind gratitude."
+  },
+  "arc": {
+    "type": "positive",
+    "startState": "A loyal survivor carrying gratitude and horror in the same locked box.",
+    "endState": "A witness who stops letting silence sanitize Calwrath.",
+    "turningPoints": [
+      {
+        "chapter": 9,
+        "event": "Meets Kaelith on the road and must choose."
+      },
+      {
+        "chapter": 10,
+        "event": "Lets Kaelith pass and provides practical help."
+      },
+      {
+        "chapter": 20,
+        "event": "Names Calwrath as tactically right and morally devastating."
+      }
+    ]
+  },
+  "voiceFingerprint": {
+    "vocabularyLevel": "Plain military with a survivor's specificity. Erys speaks in concrete, remembered detail — not abstractions. She says 'the third wall, the east section, the one with the cracked lintel' rather than 'the fortification.' Her vocabulary is soldier-practical but charged with memory: every technical term carries the weight of where she learned it. She says 'the breach' and means one specific breach, one specific night, one specific choice. She rarely uses euphemisms for death — she says 'dead,' 'killed,' 'burned.' The directness is not callousness; it is precision purchased at enormous cost.",
+    "sentenceLength": "Short when guarded, medium when memory breaks through. Her default is clipped and controlled — the speech pattern of someone who has learned that saying less means risking less. When memory activates, sentences lengthen involuntarily as specific details emerge: times, positions, sequences. The shift from short to medium is the shift from the present-tense soldier to the past-tense witness.",
+    "metaphorDensity": "Low-to-moderate, drawn from fire, scars, and soldier habits — the specific vocabulary of Calwrath. A hidden truth is 'char under the surface — looks solid until you press.' Loyalty is 'the kind of weight you carry because putting it down means looking at it.' She gravitates away from garden (Thalen's domain), architecture-as-strength (Kaelith's domain), water (Lirien's domain), and medical (Marin's domain) metaphors, though occasional natural crossover is expected — rigid domain walls create artificiality. Her world is the aftermath — things that burned and what grew back wrong.",
+    "emotionalRegister": "Tight, earnest, and held together by discipline. Erys carries enormous feeling in a very small container. Her register is controlled not because she is cold but because the alternative is collapse. When sincerity breaks through the control, it arrives as short, blunt declarations that sound like confessions. She rarely cries — she goes very still and speaks more carefully, as though each word is a stitch holding something closed.",
+    "thoughtPatterns": "Memory-led and sequence-specific. Erys's thinking anchors to remembered sequences — she recalls events in order, with physical detail, the way a witness gives testimony. She tends not to generalize; she remembers specifically. This makes her both an unreliable narrator (memory is partial) and a devastating witness (what she remembers, she remembers exactly).",
+    "dialectMarkers": "Frontier military bluntness — minimal hedging or softening. Blunt affirmations: 'Yes.' 'No.' 'That's what happened.' Concrete remembered detail inserted where others would use abstractions: not 'the battle was bad' but 'the heat cracked the stone on the third wall and someone's boot was melted into the mortar.' She uses soldier shorthand: 'the breach,' 'the order,' 'the count' — typically with the definite article, typically specific.",
+    "humorStyle": "Nearly absent, but occasionally a survivor's gallows humor surfaces — brief, flat, and immediately retracted. 'I made it. Lucky me.' Said without inflection, said as though the words taste wrong. Her humor is not coping; it is the edge of something she cannot say directly.",
+    "attentionPriority": "What Erys notices first: (1) Kaelith — when her former commander is present, everything else dims. (2) Fire and smoke — involuntary alertness. (3) Who is in command and whether they deserve it. (4) Exits — the specific, survivor's calculation of 'can I get everyone out.'",
+    "deflectionPattern": "Returns to duty. Asked about Calwrath: 'I'm still serving. That's the answer.' Asked about guilt: 'I survived. Others didn't. There's nothing else to say about it.' She treats silence on the topic not as avoidance but as discipline — the refusal to turn grief into conversation.",
+    "stressResponse": "Goes very still. Speech becomes measured, deliberate, and stripped of all soldier shorthand — she speaks in complete, precise sentences as though giving testimony. Under extreme stress: concrete detail floods in — specific numbers, positions, names — as though the memory is replaying in real time and she is transcribing it."
+  },
+  "sensorySig": {
+    "dominantChannel": "olfactory",
+    "signature": "smoke in wool, hot iron, rain on ash",
+    "emotionalTriggers": [
+      "pine resin burning",
+      "crowded barracks at night",
+      "char under fingernails"
+    ]
+  },
+  "relationships": [
+    {
+      "withCharId": "CHAR-001",
+      "type": "former-commander",
+      "dynamicArc": "Erys's residual loyalty comes from understanding exactly what the order cost."
+    },
+    {
+      "withCharId": "CHAR-009",
+      "type": "subordinate-commander",
+      "dynamicArc": "Sethis commands the safer Legion, not the one Erys was willing to die for."
+    },
+    {
+      "withCharId": "CHAR-006",
+      "type": "shared-lineage",
+      "dynamicArc": "Tessen's desertion and Erys's continued service show opposite responses to the same failure."
+    }
+  ],
+  "physicalDescription": {
+    "apparentAge": "late thirties",
+    "build": "rangy and scarred",
+    "distinguishingFeatures": "healed burn at one jaw hinge and watchful eyes",
+    "usualPresentation": "Thornway leathers adapted from Legion issue",
+    "movement": "quick and soldierly"
+  },
+  "agency": "Erys is the human face of Kaelith's surviving command legacy. Her choice not to report, and later to witness, directly affects both movement and moral framing.",
+  "upstreamRefs": [
+    "story-concept.json",
+    "world-bible/politics.json",
+    "world-bible/history.json",
+    "characters/CHAR-001.json"
+  ],
+  "dialoguePatterns": {
+    "initiationStyle": "Rarely initiates. When she must, it is direct and personal: 'Commander.' (Just the title. The weight is in the silence after it.) Or: 'I need to tell you something I should have said five years ago.' She does not ease in. She arrives carrying the whole weight.",
+    "responseStyle": "Short affirmations or specific corrections. 'Yes.' 'No.' 'Not three hundred — two hundred and eighty-seven. I counted.' She responds with precision that feels like both honesty and armor. When she agrees, she commits fully: 'Yes, Commander. Same as before.'",
+    "underPressure": "Memory surfaces in concrete detail — times, numbers, positions. Her speech becomes testimonial: precise, sequential, almost dissociative in its clarity. 'The order came at the fourth bell. We moved at the fifth. The fire started at the sixth.' The precision is her way of controlling what the memory does to her.",
+    "verbalTics": [
+      "Uses definite articles for specific memories: 'the breach,' 'the order,' 'the count'",
+      "Corrects numbers: 'Not three hundred — two hundred and eighty-seven'",
+      "Says 'Commander' as complete sentence when addressing Kaelith",
+      "Uses 'I survived' as both statement and question",
+      "Says 'that's what happened' to close testimony"
+    ],
+    "favoriteExpressions": [
+      "Commander.",
+      "I survived. Others didn't.",
+      "That's what happened.",
+      "Not three hundred. Two hundred and eighty-seven.",
+      "I was there. I counted."
+    ]
+  }
+}

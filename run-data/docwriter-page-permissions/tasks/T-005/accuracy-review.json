@@ -1,0 +1,65 @@
+{
+  "agent": "docwriter-accuracy-reviewer",
+  "taskId": "T-005",
+  "verdict": "approved",
+  "claims": [
+    {
+      "claim": "Deleting a page requires the Read and Delete page permissions",
+      "location": "Info callout before introductory steps, line 19",
+      "result": "verified",
+      "evidence": "WebPageAclPermissionEvaluator.cs line 118-123: DELETE is not in IndividuallyCheckedPermissions (WebsiteConstants.cs line 20-24 lists only READ and DISPLAY), so EvaluatePagePermission falls through to line 123 which checks grantedPermissions.Contains(WebPageAclPermissions.READ) && grantedPermissions.Contains(permission), i.e., READ + DELETE. WebPagesApplication.cs line 528 passes WebPageAclPermissions.DELETE to CheckAclPermission.",
+      "docFact": "permissionSummary.deletePage"
+    },
+    {
+      "claim": "The Delete page permission is required for child pages that have their own permission settings (broken ACL inheritance)",
+      "location": "Section: Deleting a page with child pages, paragraph 2 (line 71)",
+      "result": "verified",
+      "evidence": "WebPageAclPermissionEvaluator.cs line 91-93: when evaluateChildPages=true, calls CheckAclSubtreePermission. Line 130 remark: 'For performance purposes, only web pages with broken inheritance are checked.' Line 146: InnerJoin<WebPageAclInfo> selects only child pages with their own ACL records (broken inheritance). Line 151: checks for DELETE permission specifically. WebPagesApplication.cs line 551 passes evaluateChildPermissions=true for DeletePageWithChildren.",
+      "docFact": "permissionSummary.deletePage"
+    },
+    {
+      "claim": "If a child page does not inherit permissions from its parent, you must have the Delete permission set directly on that page",
+      "location": "Section: Deleting a page with child pages, paragraph 2, sentence 2 (line 71)",
+      "result": "verified",
+      "evidence": "Same source as above. The InnerJoin<WebPageAclInfo> in CheckAclSubtreePermission (line 146) means only pages with their own ACL record are checked — 'does not inherit permissions from its parent' accurately represents a page having its own ACL record. The HAVING clause (line 151) checks for the specific permissionName (DELETE), so 'Delete permission set directly on that page' is accurate.",
+      "docFact": "permissionSummary.deletePage"
+    },
+    {
+      "claim": "Cross-reference to permissions_pagelevel_xp identifier (intro callout)",
+      "location": "Info callout, line 19: {% page_link permissions_pagelevel_xp linkText=\"page permissions\" %}",
+      "result": "verified",
+      "evidence": "Identifier confirmed in src/_documentation/_documentation/developers-and-admins/configuration/users/role-management/page-permission-management.md line 4: 'identifier: permissions_pagelevel_xp'",
+      "docFact": null
+    },
+    {
+      "claim": "Cross-reference to permissions_pagelevel_xp identifier (child pages section)",
+      "location": "Section: Deleting a page with child pages, line 71: {% page_link permissions_pagelevel_xp linkText=\"page permission\" %}",
+      "result": "verified",
+      "evidence": "Same identifier verified as above.",
+      "docFact": null
+    }
+  ],
+  "codeExamples": [],
+  "researchRecommendationCheck": {
+    "REC-005": {
+      "cited": true,
+      "followed": true,
+      "notes": "REC-005 recommends descriptive cross-reference link text. The link texts 'page permissions' and 'page permission' are descriptive and tell the reader what they will find. REC-005 also advises avoiding duplicate links to the same destination — the content has two links to permissions_pagelevel_xp in different sections (intro callout and child pages section), but these serve distinct contextual purposes for different aspects of permission requirements. Acceptable for a business audience who may navigate directly to either section."
+    }
+  },
+  "domainInsightCheck": {
+    "relevant": false,
+    "notes": "No domain insights in knowledge-brief.json directly address delete page permissions or ACL inheritance topics."
+  },
+  "summary": {
+    "totalClaims": 5,
+    "verified": 5,
+    "incorrect": 0,
+    "unverifiable": 0,
+    "unsupported": 0,
+    "codeExamplesChecked": 0,
+    "codeExamplesCorrect": 0
+  },
+  "notes": "All technical claims trace cleanly to source code. The permission logic in WebPageAclPermissionEvaluator.cs confirms: (1) READ + DELETE is required for the page itself (line 123), (2) child pages with broken ACL inheritance (own WebPageAclInfo record) require DELETE permission specifically (CheckAclSubtreePermission, lines 131-157). The business-friendly phrasing 'their own permission settings' is an accurate representation of 'broken ACL inheritance' for the target business persona. Both cross-reference identifiers resolve correctly.",
+  "timestamp": "2026-03-18T18:27:47Z"
+}

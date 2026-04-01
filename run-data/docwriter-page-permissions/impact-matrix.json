@@ -1,0 +1,478 @@
+{
+  "version": 1,
+  "generatedBy": "docwriter-impact-mapper",
+  "impacts": [
+    {
+      "id": "IMP-001",
+      "areaId": "AREA-001",
+      "changeFile": "CMSSolution/Admin/Kentico.Xperience.Admin.Websites/WebPages/Acls/WebPageAclPermissionEvaluator.cs",
+      "type": "update",
+      "priority": "critical",
+      "targetPage": "_documentation/developers-and-admins/configuration/users/role-management/page-permission-management.md",
+      "targetSections": ["(after permission descriptions table — new section)"],
+      "reason": "The Read prerequisite rule is completely undocumented: granting Update, Create, Delete, or Synchronize without also granting Read has zero effect. WebPageAclPermissionEvaluator enforces grantedPermissions.Contains(READ) && grantedPermissions.Contains(permission) for all permissions except Read and Display (IndividuallyCheckedPermissions). This is a critical pit of failure for admins. A warning callout must be added after the permission table explaining this prerequisite.",
+      "relatedChanges": [
+        "CMSSolution/Websites/Website/WebsiteConstants.cs",
+        "CMSSolution/Websites/ACLs/WebPageAclPermissions.cs"
+      ]
+    },
+    {
+      "id": "IMP-002",
+      "areaId": "AREA-001",
+      "changeFile": "CMSSolution/Admin/Kentico.Xperience.Admin.Websites/WebPages/Acls/WebPageAclPermissionEvaluator.cs",
+      "type": "update",
+      "priority": "high",
+      "targetPage": "_documentation/developers-and-admins/configuration/users/role-management/page-permission-management.md",
+      "targetSections": ["(new section) Page permissions for publishing pages"],
+      "reason": "The page has a 'Page permissions for moving pages' section that enumerates exact requirements for move operations. An analogous section is needed for publishing. Code analysis confirms: Publish requires SystemPermissions.VIEW (application level) + Read + Update ACL on the page. Under workflow: direct publish is blocked — user must use ChangeWorkflowStep and needs a role assigned to the current step, or a Full Control workflow role. Channel admins and users with Manage permissions bypass all ACL checks.",
+      "relatedChanges": [
+        "CMSSolution/Admin/Kentico.Xperience.Admin.Websites/UIPages/WebPages/WebPage/Content/ContentTab.cs",
+        "CMSSolution/Admin/Kentico.Xperience.Admin.Websites/UIPages/WebPages/WebPage/PageBuilder/PageBuilderTab.cs",
+        "CMSSolution/Admin/Kentico.Xperience.Admin.Websites/UIPages/WebPages/WebPage/Urls/UrlsTab.cs",
+        "CMSSolution/Admin/Kentico.Xperience.Admin.Websites/WebPages/Manager/WebPageCommandManagerBase.cs"
+      ]
+    },
+    {
+      "id": "IMP-003",
+      "areaId": "AREA-002",
+      "changeFile": "CMSSolution/Admin/Kentico.Xperience.Admin.Websites/UIPages/WebPages/WebPage/Create/WebPage/CreateWebPage.cs",
+      "type": "update",
+      "priority": "high",
+      "targetPage": "_documentation/developers-and-admins/configuration/users/role-management/page-permission-management.md",
+      "targetSections": ["(new section) Page permissions for creating pages"],
+      "reason": "No existing section documents the Create permission requirements end-to-end. Code analysis confirms: Create requires SystemPermissions.VIEW + Read + Create ACL on the PARENT page (not the page being created, which doesn't exist yet). This parent-page distinction is critical and analogous to the existing 'moving pages' section's treatment of source/target locations. Publish-on-create uses Create (not Update) on the parent.",
+      "relatedChanges": [
+        "CMSSolution/Admin/Kentico.Xperience.Admin.Websites/WebPages/Acls/WebPageAclPermissionEvaluator.cs"
+      ]
+    },
+    {
+      "id": "IMP-004",
+      "areaId": "AREA-001",
+      "changeFile": "CMSSolution/Admin/Kentico.Xperience.Admin.Websites/WebPages/Acls/WebPageAclPermissionEvaluator.cs",
+      "type": "update",
+      "priority": "high",
+      "targetPage": "_documentation/developers-and-admins/configuration/users/role-management/page-permission-management.md",
+      "targetSections": ["(new section) Page permissions for deleting pages"],
+      "reason": "No existing section documents the Delete permission requirements end-to-end. Code analysis confirms: Delete requires SystemPermissions.VIEW + Read + Delete ACL on the page. DISC-CA-005 reveals that delete-with-children uses evaluateChildPages=true — the user needs Delete permission on the target page AND all child pages with broken ACL inheritance. This subtree check is unique to delete and move operations and must be documented.",
+      "relatedChanges": [
+        "CMSSolution/Admin/Kentico.Xperience.Admin.Websites/WebPages/Acls/WebsiteChannelAdminProvider.cs"
+      ]
+    },
+    {
+      "id": "IMP-005",
+      "areaId": "AREA-002",
+      "changeFile": "CMSSolution/Admin/Kentico.Xperience.Admin.Websites/UIPages/WebPages/WebPage/Content/ContentTab.cs",
+      "type": "update",
+      "priority": "high",
+      "targetPage": "_documentation/developers-and-admins/configuration/users/role-management/page-permission-management.md",
+      "targetSections": ["(new section) Page permissions for unpublishing pages"],
+      "reason": "No existing section documents the Unpublish permission requirements end-to-end. Code analysis confirms: Unpublish requires SystemPermissions.VIEW + Read + Update ACL on the page. DISC-CA-001 reveals a critical difference from other operations: UnpublishInternal does NOT check workflow step roles — unlike Save, Discard, ChangeWorkflowStep which all call CanWorkWithContentItemInCurrentStep. A user with Update ACL can unpublish even without a role assigned to the current workflow step. This asymmetry must be documented.",
+      "relatedChanges": [
+        "CMSSolution/Admin/Kentico.Xperience.Admin.Websites/WebPages/Manager/WebPageCommandManagerBase.cs",
+        "CMSSolution/ContentWorkflowEngine/WorkflowStepRoleArbiter/WorkflowStepRoleArbiter.cs"
+      ]
+    },
+    {
+      "id": "IMP-006",
+      "areaId": "AREA-001",
+      "changeFile": "CMSSolution/Admin/Kentico.Xperience.Admin.Websites/WebPages/Acls/WebsiteChannelAdminProvider.cs",
+      "type": "update",
+      "priority": "high",
+      "targetPage": "_documentation/developers-and-admins/configuration/users/role-management/page-permission-management.md",
+      "targetSections": ["Allow users to work with website channel content"],
+      "reason": "The existing tip in this section mentions that 'Administrator role and roles with the Manage permissions permission always have all page permissions.' This is correct but incomplete. The new operation-specific sections need to consistently reference this bypass, and the existing tip should be expanded or a new introductory paragraph should explain the multi-layer permission model (application-level → ACL → workflow) as a contextual introduction before the operation-specific sections. This consolidation satisfies the task requirement for a 'centralized/unified access point' for scattered permission information.",
+      "relatedChanges": [
+        "CMSSolution/Admin/Kentico.Xperience.Admin.Base/UIFramework/PageHandling/PageInvokerBase.cs",
+        "CMSSolution/Membership/ApplicationPermission/SystemPermissions.cs"
+      ]
+    },
+    {
+      "id": "IMP-007",
+      "areaId": "AREA-002",
+      "changeFile": "CMSSolution/Admin/Kentico.Xperience.Admin.Websites/UIPages/WebPages/WebPage/Content/ContentTab.cs",
+      "type": "update",
+      "priority": "high",
+      "targetPage": "_documentation/business-users/website-content/edit-and-publish-pages.md",
+      "targetSections": ["Publish pages"],
+      "reason": "The 'Publish pages' section currently lists only workflow conditions for publishing (must be in the last step or have full control). It does not mention page permission requirements at all. A brief note must be added stating that users also need appropriate page permissions (Read and Update) to publish, and that users with the Administrator role or Manage permissions are exempt from page permission checks. Cross-reference to the Page permission management page for details.",
+      "relatedChanges": [
+        "CMSSolution/Admin/Kentico.Xperience.Admin.Websites/UIPages/WebPages/WebPage/PageBuilder/PageBuilderTab.cs",
+        "CMSSolution/Admin/Kentico.Xperience.Admin.Websites/UIPages/WebPages/WebPage/Urls/UrlsTab.cs"
+      ]
+    },
+    {
+      "id": "IMP-008",
+      "areaId": "AREA-003",
+      "changeFile": "CMSSolution/Admin/Kentico.Xperience.Admin.Websites/WebPages/Manager/WebPageCommandManagerBase.cs",
+      "type": "update",
+      "priority": "high",
+      "targetPage": "_documentation/developers-and-admins/configuration/workflows.md",
+      "targetSections": ["Create a workflow", "Configure the workflow steps"],
+      "reason": "Two instances of the vague 'Workflow roles and other permissions' callout need to be made specific. The current text says 'the system also checks other relevant permissions (application-level and page permissions)' without specifying what those are. Per task description and code analysis, replace with: users need the View (Access channel) application permission for the respective website channel, and Read + Update page permissions on the item they are working with. Cross-reference to the operation-specific requirements in Page permission management.",
+      "relatedChanges": [
+        "CMSSolution/ContentWorkflowEngine/WorkflowStepRoleArbiter/WorkflowStepRoleArbiter.cs",
+        "CMSSolution/ContentWorkflowEngine/CoveringWorkflowRetriever/CoveringWorkflowRetriever.cs"
+      ]
+    },
+    {
+      "id": "IMP-009",
+      "areaId": "AREA-003",
+      "changeFile": "CMSSolution/ContentWorkflowEngine/WorkflowStepRoleArbiter/WorkflowStepRoleArbiter.cs",
+      "type": "update",
+      "priority": "medium",
+      "targetPage": "_documentation/developers-and-admins/configuration/workflows.md",
+      "targetSections": ["Configure the workflow steps"],
+      "reason": "The 'Roles that can work with this step' field description says roles 'are permitted to edit items in this step and move to the next or previous step. For the final custom step in the workflow, the roles gain the ability to publish items.' This is partially incomplete: code analysis confirms the Draft step always allows all users (no step role check), and the Published step delegates to the last custom step's role assignments. These nuances should be mentioned or cross-referenced, particularly the Draft step always-allowed rule.",
+      "relatedChanges": []
+    },
+    {
+      "id": "IMP-010",
+      "areaId": "AREA-002",
+      "changeFile": "CMSSolution/Admin/Kentico.Xperience.Admin.Websites/UIPages/WebPages/WebPage/Content/ContentTab.cs",
+      "type": "update",
+      "priority": "medium",
+      "targetPage": "_documentation/business-users/website-content/edit-and-publish-pages.md",
+      "targetSections": ["Unpublish pages"],
+      "reason": "The 'Unpublish pages' section has no mention of permission requirements. Should add a brief note that users need Read and Update page permissions, with a cross-reference to Page permission management. Per DISC-CA-001, unpublish does NOT require workflow step role assignment (unlike other mutating operations), which makes it simpler from a permissions perspective — but this should still be noted for completeness.",
+      "relatedChanges": [
+        "CMSSolution/Admin/Kentico.Xperience.Admin.Websites/WebPages/Manager/WebPageCommandManagerBase.cs"
+      ]
+    },
+    {
+      "id": "IMP-011",
+      "areaId": "AREA-002",
+      "changeFile": "CMSSolution/Admin/Kentico.Xperience.Admin.Websites/UIPages/WebPages/WebPage/Content/ContentTab.cs",
+      "type": "stale",
+      "priority": "medium",
+      "targetPage": "_documentation/business-users/website-content/edit-and-publish-pages.md",
+      "targetSections": ["Move pages"],
+      "reason": "Cross-cutting concern: the 'Move pages' section already links to the page permission management page with text 'allowed to do with them', but does not explicitly state what permissions are needed for moving. The page permission management page already has a 'Page permissions for moving pages' section, so this is partially covered. However, adding the new operation-specific sections on the permission management page makes this existing cross-reference more valuable and its placement consistent with the new permission notes being added to Publish and Unpublish sections.",
+      "relatedChanges": []
+    },
+    {
+      "id": "IMP-012",
+      "areaId": "AREA-001",
+      "changeFile": "CMSSolution/Websites/ACLs/WebPageAclPermissions.cs",
+      "type": "update",
+      "priority": "medium",
+      "targetPage": "_documentation/developers-and-admins/configuration/users/role-management/page-permission-management.md",
+      "targetSections": ["(permission descriptions table — Read row)"],
+      "reason": "The Read permission description currently says 'Allows users to view the content of pages and link to them through the page selector' and mentions it's needed for moving pages. It should be updated to also note that Read is a prerequisite for all other permissions except Display — this is the single most important behavioral fact about the Read permission and is currently undocumented in the table itself.",
+      "relatedChanges": [
+        "CMSSolution/Websites/Website/WebsiteConstants.cs"
+      ]
+    },
+    {
+      "id": "IMP-013",
+      "areaId": "AREA-001",
+      "changeFile": "CMSSolution/Websites/ACLs/WebPageAclPermissions.cs",
+      "type": "update",
+      "priority": "medium",
+      "targetPage": "_documentation/developers-and-admins/configuration/users/role-management/page-permission-management.md",
+      "targetSections": ["(permission descriptions table — Delete row)"],
+      "reason": "The Delete permission description currently says only 'Allows users to delete pages and folders.' Per DISC-CA-005, deleting a page with children requires Delete permission on the target page AND all child pages with broken ACL inheritance. This subtree behavior should be noted in the Delete description, analogous to how the Read row references moving pages.",
+      "relatedChanges": []
+    },
+    {
+      "id": "IMP-014",
+      "areaId": "AREA-002",
+      "changeFile": "CMSSolution/Admin/Kentico.Xperience.Admin.Websites/UIPages/WebPages/WebPage/Content/ContentTab.cs",
+      "type": "stale",
+      "priority": "medium",
+      "targetPage": "_documentation/business-users/website-content/edit-and-publish-pages.md",
+      "targetSections": ["Revert changes"],
+      "reason": "The 'Revert changes' section (which maps to the Discard operation in the codebase) has no mention of permission requirements. Revert/Discard requires Read + Update ACL and CanWorkWithContentItemInCurrentStep (workflow step role). While not a primary target of this task, its absence creates an inconsistency now that Publish and Unpublish sections will have permission cross-references. At minimum, a brief note should be added for consistency.",
+      "relatedChanges": [
+        "CMSSolution/Admin/Kentico.Xperience.Admin.Websites/WebPages/Manager/WebPageCommandManagerBase.cs"
+      ]
+    },
+    {
+      "id": "IMP-015",
+      "areaId": "AREA-004",
+      "changeFile": "CMSSolution/Admin/Kentico.Xperience.Admin.Base/UIFramework/PageHandling/PageInvokerBase.cs",
+      "type": "no-doc-impact",
+      "priority": "low",
+      "reason": "PageInvokerBase is the framework-level enforcement infrastructure for the [PageCommand] attribute permission check. It is an internal implementation detail — the user-facing behavior it enforces (application-level View permission required) is already documented at the right abstraction level in the Role management page and will be referenced in the new operation-specific sections. No separate documentation of this class is needed.",
+      "relatedChanges": []
+    },
+    {
+      "id": "IMP-016",
+      "areaId": "AREA-004",
+      "changeFile": "CMSSolution/Membership/ApplicationPermission/SystemPermissions.cs",
+      "type": "no-doc-impact",
+      "priority": "low",
+      "reason": "SystemPermissions defines the application-level permission constants (View, Create, Update, Delete). These constants are already documented at the user-facing level in the Role management page's permission table. The constants themselves are an implementation detail. The new operation-specific sections on the Page permission management page will reference 'View (Access channel)' which covers the user-facing manifestation of SystemPermissions.VIEW.",
+      "relatedChanges": []
+    },
+    {
+      "id": "IMP-017",
+      "areaId": "AREA-004",
+      "changeFile": "CMSSolution/Admin/Kentico.Xperience.Admin.Websites/UIPages/WebPages/WebPage/WebPageBase.cs",
+      "type": "update",
+      "priority": "medium",
+      "targetPage": "_documentation/developers-and-admins/configuration/users/role-management/page-permission-management.md",
+      "targetSections": ["(contextual introduction before operation-specific sections)"],
+      "reason": "WebPageBase.ConfigurePage() enforces Read ACL permission on every web page tab — meaning Read is required just to VIEW any page content in the admin UI, even before attempting any operation. This should be mentioned in the contextual introduction section that explains the multi-layer permission model, reinforcing why Read is a prerequisite for everything.",
+      "relatedChanges": [
+        "CMSSolution/Admin/Kentico.Xperience.Admin.Websites/WebPages/Acls/WebPageAclPermissionEvaluator.cs"
+      ]
+    },
+    {
+      "id": "IMP-018",
+      "areaId": "AREA-002",
+      "changeFile": "CMSSolution/Admin/Kentico.Xperience.Admin.Websites/UIPages/WebPages/WebPage/PageBuilder/PageBuilderTab.cs",
+      "type": "no-doc-impact",
+      "priority": "low",
+      "reason": "PageBuilderTab follows the identical two-layer permission pattern as ContentTab: [PageCommand(Permission=VIEW)] + CheckAclPermission(UPDATE) for mutating operations, READ for read-only operations. The permission model is the same across all tabs (Content, Page Builder, URLs). The documentation impact is captured in IMP-002 through IMP-005 on the Page permission management page — the operation-specific sections describe permissions at the operation level regardless of which tab the user is on. No separate documentation needed for this tab.",
+      "relatedChanges": []
+    },
+    {
+      "id": "IMP-019",
+      "areaId": "AREA-002",
+      "changeFile": "CMSSolution/Admin/Kentico.Xperience.Admin.Websites/UIPages/WebPages/WebPage/Urls/UrlsTab.cs",
+      "type": "no-doc-impact",
+      "priority": "low",
+      "reason": "UrlsTab follows the same two-layer permission pattern as ContentTab and PageBuilderTab. The permission model is uniform across tabs. Documentation impact is captured in the operation-specific sections (IMP-002 through IMP-005). No separate UrlsTab documentation needed.",
+      "relatedChanges": []
+    },
+    {
+      "id": "IMP-020",
+      "areaId": "AREA-003",
+      "changeFile": "CMSSolution/ContentWorkflowEngine/CoveringWorkflowRetriever/CoveringWorkflowRetriever.cs",
+      "type": "no-doc-impact",
+      "priority": "low",
+      "reason": "CoveringWorkflowRetriever is an internal service that determines whether a content item is under a workflow. Its user-facing behavior (pages under workflow cannot be directly published) is already described in the Workflows page and the 'Publish pages' section on Edit and publish pages. The retriever itself is an implementation detail. The documentation impact of its behavioral consequences is captured in IMP-002 (publish section) and IMP-008 (workflows page).",
+      "relatedChanges": []
+    },
+    {
+      "id": "IMP-021",
+      "areaId": "AREA-001",
+      "changeFile": "CMSSolution/Websites/Website/WebsiteConstants.cs",
+      "type": "no-doc-impact",
+      "priority": "low",
+      "reason": "WebsiteConstants.IndividuallyCheckedPermissions defines which permissions bypass the Read prerequisite rule (Read and Display only). This is an implementation detail. The user-facing impact is documented in IMP-001 (Read prerequisite warning) and IMP-012 (Read row in permission table). No separate documentation of this constant is needed.",
+      "relatedChanges": []
+    },
+    {
+      "id": "IMP-022",
+      "areaId": "AREA-001",
+      "changeFile": "CMSSolution/Admin/Kentico.Xperience.Admin.Websites/WebPages/Acls/WebsiteChannelAdminProvider.cs",
+      "type": "stale",
+      "priority": "medium",
+      "targetPage": "_documentation/developers-and-admins/configuration/users/role-management/page-permission-management.md",
+      "targetSections": ["Allow users to work with website channel content"],
+      "reason": "DISC-CA-004 reveals that the channel admin permission cache has a 60-minute TTL — changes to ManagePermissions or Administrator role assignment may take up to 60 minutes to take effect. The existing tip in 'Allow users to work with website channel content' mentions 'roles with the Manage permissions permission always have all page permissions' but does not mention any propagation delay. A note should be added about the potential delay after changing admin/ManagePermissions role assignments.",
+      "relatedChanges": []
+    },
+    {
+      "id": "IMP-023",
+      "areaId": "AREA-001",
+      "changeFile": "CMSSolution/Admin/Kentico.Xperience.Admin.Websites/WebPages/Acls/WebPageAclPermissionEvaluator.cs",
+      "type": "stale",
+      "priority": "low",
+      "targetPage": "_documentation/developers-and-admins/security-guidelines.md",
+      "targetSections": ["Roles and permissions", "Data permissions"],
+      "reason": "Cross-cutting concern: The security guidelines page mentions page permissions at a high level — 'Page permissions manage access and allowed actions in website channels, specific content tree sections, and individual pages and folders via an access-control list (ACL).' This is accurate but shallow. With the detailed operation-specific sections being added to the Page permission management page, the security guidelines' cross-reference becomes more valuable but needs no change beyond verifying the existing link is accurate. No content update needed — the existing description and link remain correct.",
+      "relatedChanges": []
+    },
+    {
+      "id": "IMP-024",
+      "areaId": "AREA-003",
+      "changeFile": "CMSSolution/ContentWorkflowEngine/WorkflowStepRoleArbiter/WorkflowStepRoleArbiter.cs",
+      "type": "stale",
+      "priority": "low",
+      "targetPage": "_documentation/developers-and-admins/configuration/content-versioning-configuration.md",
+      "targetSections": ["Permissions"],
+      "reason": "Cross-cutting concern: The content versioning configuration page's Permissions section says 'Users with permission to Read a page can view its version history. Users with permission to Update a page can restore its previous versions.' It also notes: 'Users can restore a previous version of an item even when the item is in a step they don't have permission for.' This is still accurate per code analysis (CreateNewVersionInternal and the restore flow do not check workflow step roles per DISC-CA-003). No update needed — the existing content is correct.",
+      "relatedChanges": []
+    },
+    {
+      "id": "IMP-025",
+      "areaId": "AREA-002",
+      "changeFile": "CMSSolution/Admin/Kentico.Xperience.Admin.Websites/UIPages/WebPages/WebPage/Create/WebPage/CreateWebPage.cs",
+      "type": "stale",
+      "priority": "medium",
+      "targetPage": "_documentation/business-users/website-content/create-pages.md",
+      "targetSections": ["Create a new page"],
+      "reason": "Cross-cutting concern: The 'Create a new page' section describes the procedural steps for creating a page but has no mention of permission requirements. Code analysis confirms: creating a page requires Read + Create ACL on the parent page. The Create pages page should have a brief permission cross-reference note, consistent with the notes being added to Publish pages and Unpublish pages sections on the Edit and publish pages page.",
+      "relatedChanges": []
+    },
+    {
+      "id": "IMP-026",
+      "areaId": "AREA-001",
+      "changeFile": "CMSSolution/Admin/Kentico.Xperience.Admin.Websites/WebPages/Acls/WebPageAclPermissionEvaluator.cs",
+      "type": "stale",
+      "priority": "medium",
+      "targetPage": "_documentation/business-users/website-content/delete-pages.md",
+      "targetSections": ["(introductory steps)", "Deleting a page with child pages"],
+      "reason": "Cross-cutting concern: The Delete pages page describes the procedural steps for deleting a page but has no mention of permission requirements. Code analysis confirms: deleting requires Read + Delete ACL on the page. DISC-CA-005 adds that delete-with-children requires Delete on all child pages with broken ACL inheritance. A brief permission cross-reference note should be added, consistent with other business-user pages being updated.",
+      "relatedChanges": []
+    },
+    {
+      "id": "IMP-027",
+      "areaId": "AREA-002",
+      "changeFile": "CMSSolution/Admin/Kentico.Xperience.Admin.Websites/UIPages/WebPages/WebPage/Content/ContentTab.cs",
+      "type": "stale",
+      "priority": "low",
+      "targetPage": "_documentation/business-users/content-sync.md",
+      "targetSections": ["Synchronize content", "Pages"],
+      "reason": "Cross-cutting concern: Content sync's 'Pages' section mentions 'if you have sufficient permissions to synchronize forms' in passing but does not detail page-level synchronization permission requirements. Code analysis shows Synchronize requires Read + Synchronize ACL on the page AND all ancestor pages. However, this is a niche detail about the Synchronize ACL permission, not the core publish/create/delete/unpublish scope of this task. The content sync page is still technically correct (it mentions needing permissions without specifics). No update needed for this task scope.",
+      "relatedChanges": []
+    },
+    {
+      "id": "IMP-028",
+      "areaId": "AREA-001",
+      "changeFile": "CMSSolution/Admin/Kentico.Xperience.Admin.Websites/WebPages/Acls/WebPageAclPermissionEvaluator.cs",
+      "type": "update",
+      "priority": "medium",
+      "targetPage": "_documentation/developers-and-admins/configuration/users/role-management/page-permission-management.md",
+      "targetSections": ["(new section) Page permissions for publishing pages", "(new section) Page permissions for creating pages", "(new section) Page permissions for deleting pages", "(new section) Page permissions for unpublishing pages"],
+      "reason": "Research-driven impact (REC-006, approved): Add a contextual introduction before the operation-specific permission sections explaining the multi-layer permission model: (1) application-level — View (Access channel), (2) page permissions — ACL-based Read/Update/Create/Delete/Synchronize, (3) workflow step roles (when applicable). This provides the conceptual framework before diving into per-operation details.",
+      "researchDriven": true,
+      "relatedChanges": []
+    },
+    {
+      "id": "IMP-029",
+      "areaId": "AREA-001",
+      "changeFile": "CMSSolution/Admin/Kentico.Xperience.Admin.Websites/WebPages/Acls/WebPageAclPermissionEvaluator.cs",
+      "type": "update",
+      "priority": "medium",
+      "targetPage": "_documentation/developers-and-admins/configuration/users/role-management/page-permission-management.md",
+      "targetSections": ["(after permission descriptions table — warning callout)"],
+      "reason": "Research-driven impact (REC-001, approved): The prerequisite-Read rule warning should use a Warning callout severity (not Note or Info) because granting a permission without Read silently has no effect — this matches the Warning severity for behavior that can cause unexpected results. Compatible with INV-style-138 callout severity rules.",
+      "researchDriven": true,
+      "relatedChanges": []
+    },
+    {
+      "id": "IMP-030",
+      "areaId": "AREA-002",
+      "changeFile": "CMSSolution/Admin/Kentico.Xperience.Admin.Websites/UIPages/WebPages/WebPage/Content/ContentTab.cs",
+      "type": "update",
+      "priority": "medium",
+      "targetPage": "_documentation/developers-and-admins/configuration/users/role-management/page-permission-management.md",
+      "targetSections": ["(new section) Page permissions for publishing pages", "(new section) Page permissions for creating pages", "(new section) Page permissions for deleting pages", "(new section) Page permissions for unpublishing pages"],
+      "reason": "Research-driven impact (REC-003, approved): For each operation's permission documentation, explicitly state what happens when the prerequisite is not met. E.g., 'If a user does not have the Read permission, they cannot view the page content and all other permission checks are skipped.' This makes failure modes predictable for admins troubleshooting permission problems.",
+      "researchDriven": true,
+      "relatedChanges": []
+    },
+    {
+      "id": "IMP-031",
+      "areaId": "AREA-001",
+      "changeFile": "CMSSolution/Admin/Kentico.Xperience.Admin.Websites/WebPages/Acls/WebPageAclPermissionEvaluator.cs",
+      "type": "update",
+      "priority": "medium",
+      "targetPage": "_documentation/developers-and-admins/configuration/users/role-management/page-permission-management.md",
+      "targetSections": ["(new section) Page permissions for publishing pages", "(new section) Page permissions for creating pages", "(new section) Page permissions for deleting pages", "(new section) Page permissions for unpublishing pages"],
+      "reason": "Research-driven impact (REC-002, adapted): Present the mapping of page operations to their required ACL permissions using a structured format. Adapted to use Liquid table syntax per INV-jekyll-001 (not HTML or Markdown tables). A summary table at the beginning of the operations section, before the per-operation detailed sections, would provide a quick reference.",
+      "researchDriven": true,
+      "relatedChanges": []
+    },
+    {
+      "id": "IMP-032",
+      "areaId": "AREA-002",
+      "changeFile": "CMSSolution/Admin/Kentico.Xperience.Admin.Websites/UIPages/WebPages/WebPage/Content/ContentTab.cs",
+      "type": "update",
+      "priority": "medium",
+      "targetPage": "_documentation/business-users/website-content/edit-and-publish-pages.md",
+      "targetSections": ["Publish pages", "Unpublish pages"],
+      "reason": "Research-driven impact (REC-005, approved): When cross-referencing from 'Edit and publish pages' to the permission management page, use descriptive link text that tells the reader what they'll find (e.g., 'page permission requirements for publishing' not just 'Page permission management'). Compatible with INV-crossref-009.",
+      "researchDriven": true,
+      "relatedChanges": []
+    },
+    {
+      "id": "IMP-033",
+      "areaId": "AREA-003",
+      "changeFile": "CMSSolution/Admin/Kentico.Xperience.Admin.Websites/WebPages/Manager/WebPageCommandManagerBase.cs",
+      "type": "update",
+      "priority": "medium",
+      "targetPage": "_documentation/developers-and-admins/configuration/workflows.md",
+      "targetSections": ["Create a workflow", "Configure the workflow steps"],
+      "reason": "Research-driven impact (REC-005, approved): When updating the 'Workflow roles and other permissions' callouts to be specific, use descriptive cross-reference link text. Current links say 'application-level' and 'page permissions' — updated text should use descriptive phrasing like 'operation-specific page permission requirements' to tell the reader what they'll find at the target.",
+      "researchDriven": true,
+      "relatedChanges": []
+    },
+    {
+      "id": "IMP-034",
+      "areaId": "AREA-001",
+      "changeFile": "CMSSolution/Admin/Kentico.Xperience.Admin.Websites/WebPages/Acls/WebPageAclPermissionEvaluator.cs",
+      "type": "update",
+      "priority": "medium",
+      "targetPage": "_documentation/developers-and-admins/configuration/users/role-management/page-permission-management.md",
+      "targetSections": ["(all new operation-specific sections)"],
+      "reason": "Research-driven impact (REC-010, approved): Use consistent terminology across all permission documentation pages. Standardize on 'page permission' (not 'ACL permission' or 'access control' interchangeably), 'permission prerequisite' (not 'dependency' or 'requirement'), and 'permission check' (not 'authorization check'). This applies to all new content being added across the three target pages.",
+      "researchDriven": true,
+      "relatedChanges": []
+    },
+    {
+      "id": "IMP-035",
+      "areaId": "AREA-002",
+      "changeFile": "CMSSolution/Admin/Kentico.Xperience.Admin.Websites/UIPages/WebPages/WebPage/Content/ContentTab.cs",
+      "type": "update",
+      "priority": "medium",
+      "targetPage": "_documentation/business-users/website-content/edit-and-publish-pages.md",
+      "targetSections": ["Publish pages", "Unpublish pages"],
+      "reason": "Research-driven impact (REC-004, approved): Use conditional imperatives for dual-audience permission guidance. The Edit and publish pages is a business-user page, so permission notes should use business-user language: 'If you don't have the required page permissions, contact your administrator' rather than referencing technical ACL concepts.",
+      "researchDriven": true,
+      "relatedChanges": []
+    },
+    {
+      "id": "IMP-036",
+      "areaId": "AREA-001",
+      "changeFile": "CMSSolution/Admin/Kentico.Xperience.Admin.Websites/WebPages/Acls/WebPageAclPermissionEvaluator.cs",
+      "type": "update",
+      "priority": "medium",
+      "targetPage": "_documentation/developers-and-admins/configuration/users/role-management/page-permission-management.md",
+      "targetSections": ["(new operation-specific sections)"],
+      "reason": "Research-driven impact (REC-008, approved): Limit callouts to 2-3 per page section in the permission documentation. The new operation-specific sections will need callouts for the Read prerequisite warning, workflow caveats, and channel admin bypass — ensure these don't exceed the recommended limit per section to prevent notice fatigue. Compatible with INV-style-138 and INV-style-141.",
+      "researchDriven": true,
+      "relatedChanges": []
+    },
+    {
+      "id": "IMP-037",
+      "areaId": "AREA-001",
+      "changeFile": "CMSSolution/Admin/Kentico.Xperience.Admin.Websites/WebPages/Acls/WebPageAclPermissionEvaluator.cs",
+      "type": "update",
+      "priority": "medium",
+      "targetPage": "_documentation/developers-and-admins/configuration/users/role-management/page-permission-management.md",
+      "targetSections": ["(new operation-specific sections)"],
+      "reason": "Research-driven impact (REC-009, adapted): State the Read permission prerequisite as introductory text before operational details, not only inside a callout. Adapted per invariant check: INV-structure-036 recommends a 'Key points' callout for longer articles, so the adapted approach is to state the prerequisite in introductory text AND in a Key points callout at the top of the operations area, but NOT to rely solely on a callout for this critical information.",
+      "researchDriven": true,
+      "relatedChanges": []
+    },
+    {
+      "id": "IMP-038",
+      "areaId": "AREA-002",
+      "changeFile": "CMSSolution/Admin/Kentico.Xperience.Admin.Websites/UIPages/WebPages/WebPage/Content/ContentTab.cs",
+      "type": "update",
+      "priority": "medium",
+      "targetPage": "_documentation/business-users/website-content/edit-and-publish-pages.md",
+      "targetSections": ["Publish pages"],
+      "reason": "Research-driven impact (REC-007, approved): When describing permission requirements for publishing in the business-user page, use location-first phrasing: 'In the **Properties -> Permissions** tab, verify your role has the required permissions' rather than 'Verify your role has the required permissions in the Properties -> Permissions tab.' Compatible with INV-style-134.",
+      "researchDriven": true,
+      "relatedChanges": []
+    }
+  ],
+  "summary": {
+    "totalImpacts": 38,
+    "byType": {
+      "update": 24,
+      "new-page": 0,
+      "stale": 8,
+      "no-doc-impact": 6
+    },
+    "byPriority": {
+      "critical": 1,
+      "high": 7,
+      "medium": 21,
+      "low": 9
+    },
+    "pagesAffected": 8,
+    "newPagesNeeded": 0
+  },
+  "researchDiscards": [],
+  "notes": {
+    "blockedRecommendations": "REC-B01 (blocked by INV-style-100: no 'How to' title prefixes), REC-B02 (blocked by INV-style-090: no em dashes), REC-B03 (blocked by INV-structure-002: no Next steps sections), REC-B04 (blocked by INV-jekyll-001: no HTML tables) — all correctly blocked at the research-brief gate, no slip-through detected.",
+    "scopeLimitation": "Task explicitly limits scope to _documentation collection. _guides collection may also have permission-related content but is out of scope per context.json.",
+    "consolidationStrategy": "The Page permission management page serves as the centralized/unified access point per task instructions. All operation-specific permission requirements are consolidated there, with brief cross-reference notes on the business-user pages (Edit and publish pages, Create pages, Delete pages) and the Workflows page pointing back to it."
+  }
+}

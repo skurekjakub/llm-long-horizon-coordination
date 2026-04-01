@@ -1,0 +1,212 @@
+{
+  "reportType": "copy-edit",
+  "chapter": 8,
+  "pov": "CHAR-002",
+  "reviewer": "copy-editor",
+  "generatedAt": "2025-07-24T00:00:00Z",
+  "overallAssessment": {
+    "verdict": "pass-with-revisions",
+    "summary": "Chapter 8 is largely factually consistent with the established world-bible and continuity tracker. The Oathbrand mechanics, the diagnosis timeline, and the Veldrane setting are correctly handled. However, several continuity and naming issues require correction: Veldrane is described inconsistently with its geography.json entry (described as a 'settlement' here vs. a trade hub with three bridges), the timeline of travel from Duskhaven does not match the continuity tracker's day count, the Oathbrand's age is inconsistently stated, and one information asymmetry violation needs attention. Magic system rules are correctly applied. Grammar and punctuation are clean throughout.",
+    "strengths": [
+      "Oathbrand mechanics are consistent with MAG-004 (suppressed magic accumulates as physiological pressure) and MAG-008 (containment, not removal)",
+      "The brand's visible appearance matches magic-system.json description (silver-black sigil, geometric patterns, glowing when active)",
+      "Kaelith's physical deterioration symptoms match CHAR-001.json deterioration notes (tremors, fatigue, weight loss)",
+      "Marin's diagnostic mirror is a plausible frontier medical tool consistent with the world's magical technology level",
+      "Information asymmetry for FACT-002 (Oathbrand killing Kaelith) is correctly managed — Lirien knows, reader knows from Ch2"
+    ],
+    "primaryConcerns": [
+      "Veldrane description does not match geography.json entry",
+      "Travel timeline inconsistency between draft and continuity tracker",
+      "Oathbrand duration stated as both 'five years' and 'six years' in the same chapter",
+      "Incorrect destination for brand removal in Lirien's route calculation"
+    ]
+  },
+  "findings": [
+    {
+      "id": "COPY-008-001",
+      "severity": "major",
+      "category": "continuity",
+      "title": "Veldrane description contradicts geography.json",
+      "location": "Lines 90-95",
+      "description": "The draft describes Veldrane as: 'typical frontier development: functional architecture designed for harsh weather and limited resources, minimal decoration, everything built to last. Stone foundations, timber frames, slate roofs. The kind of construction that valued survival over aesthetics.' Geography.json (LOC-005) describes Veldrane as: 'Once the eastern trade hub where the Thornway meets the river roads. Three bridges span the River Carith, two of them crumbling. A marketplace that still operates on momentum — sellers outnumbering buyers, the quality of goods declining each season.' The established Veldrane is a declining trade town with infrastructure beyond what the draft describes — it has an inn (the Hound and Hammer), a bathhouse with a failing enchantment, a garrison office with a bounty board, and a temple to six gods. The draft's description of 'frontier development' and 'minimal decoration' better fits Rivenmarch freeholder settlements than Veldrane, which is still an operational (if declining) trade hub.",
+      "recommendation": "Revise the Veldrane description to match geography.json. Include: the River Carith, the crumbling bridges, the marketplace operating on momentum, the sense of a town that was once important. The physical description should convey decline rather than frontier sparseness. Lirien's operative eye would note the gap between infrastructure designed for prosperity and current population — a town that remembers being important.",
+      "canonicalSource": "world-bible/geography.json LOC-005"
+    },
+    {
+      "id": "COPY-008-002",
+      "severity": "major",
+      "category": "timeline",
+      "title": "Travel duration inconsistency",
+      "location": "Lines 31-32",
+      "description": "Lirien states Kaelith has been concealing the Oathbrand flares 'Since Duskhaven' and Lirien calculates this as 'Four days of increasing frequency.' The continuity tracker places Chapter 8 on Day 5 ('four days post-Duskhaven'). Chapter 6 events occur on Day 3 (departure from Duskhaven) and Day 4 (continued travel). Chapter 7 occurs on Day 4 (Thornway embankment). If they departed Day 3 morning and arrive at Veldrane on Day 5, that is approximately 2 days of travel, not 4. The geography.json travel rules state Duskhaven to Calwrath via Thornway is 4-5 days on horseback, and Calwrath to Veldrane is 2-3 days — but they appear to be traveling directly from Duskhaven toward Veldrane (not via Calwrath). The 'four days' claim needs verification against the established route and timeline.",
+      "recommendation": "Reconcile with continuity tracker. If Day 5 is correct (the tracker's entry for Ch8), then the time since leaving Duskhaven is approximately 2 full days of travel. Change 'four days' to match the actual elapsed time, or adjust the continuity tracker's day count. The geography.json also notes Duskhaven to Calwrath is 160 miles via Thornway (4-5 days horseback) — confirm whether they have passed Calwrath or taken a different route.",
+      "canonicalSource": "continuity/continuity-tracker.json Ch6-Ch8 timeline"
+    },
+    {
+      "id": "COPY-008-003",
+      "severity": "major",
+      "category": "naming-consistency",
+      "title": "Oathbrand duration stated inconsistently within chapter",
+      "location": "Lines 24-26 vs. Lines 119, 200, etc.",
+      "description": "Line 24-25: 'the Ashborne crossed keys beneath the imperial circle, branded into her collarbone six years ago.' Line 119: Marin asks 'How long have you carried this?' and Kaelith responds 'Six years.' This is internally consistent. However, CHAR-001.json states the brand was applied in YK 736 and the current year is YK 742 — which is indeed 6 years. The geography.json description of the brand uses 'five years' in one place ('five years of exile') and the story concept uses 'five years ago' in its Duskhaven description. The canonical answer per the history timeline is 6 years (YK 736 to YK 742). The draft is correct on this point, but the discrepancy with other artifacts should be flagged for cross-manuscript consistency.",
+      "recommendation": "The chapter's use of 'six years' is correct per the YK 736-742 timeline. Flag for the continuity tracker to verify all other manuscript references use 'six years' consistently. Any references to 'five years' in geography.json or story-concept.json should be corrected as a separate maintenance task.",
+      "canonicalSource": "world-bible/history.json ERA-005 (YK 736 branding, YK 742 present)"
+    },
+    {
+      "id": "COPY-008-004",
+      "severity": "major",
+      "category": "continuity",
+      "title": "Incorrect ward-breaking destination in Lirien's route calculation",
+      "location": "Lines 228-231",
+      "description": "'The journey to the Quietus would require three weeks under optimal conditions. Less time than I had initially planned for, which meant increased risk in exchange for increased speed.' Lirien conflates the Quietus (destination for the god-seal mission) with the location where the Oathbrand will be removed. Per the continuity tracker and chapter outlines, the Oathbrand is removed in Chapter 11 at a sanctuary by Tessen Vael, not at the Quietus. The Quietus journey continues after brand removal. Lirien's calculation here sets up a false narrative expectation that brand removal and Quietus arrival are the same event.",
+      "recommendation": "Revise Lirien's route calculation. She should be calculating time to find a qualified ward-breaker (which she knows will be difficult in frontier territory) rather than assuming the Quietus is the solution. Her internal logic should acknowledge that brand removal is the immediate priority and reaching the Quietus is the larger mission — these are sequential goals, not the same destination.",
+      "canonicalSource": "continuity/continuity-tracker.json Ch11, plot/chapter-outlines/chapter-011.json"
+    },
+    {
+      "id": "COPY-008-005",
+      "severity": "moderate",
+      "category": "magic-rules",
+      "title": "Marin's diagnosis should reference Pallor suppression interaction",
+      "location": "Lines 140-151",
+      "description": "Marin diagnoses 'magical pressure fractures' and a 4-6 month mortality timeline. Per MAG-003 (Pallor suppresses magic proportional to integrity) and MAG-004 (suppressed magic accumulates as physiological pressure), the Oathbrand's effect should interact with the Pallor's local integrity level. In Veldrane, the Pallor shows 'first visible irregularities' and magic suppression is approximately 50-60% (geography/magic-system cross-reference). This means the Oathbrand may be working harder to maintain suppression in an area where the Pallor is already weaker — which could accelerate the damage or cause the flares. Marin, as a frontier healer, would likely notice this interaction.",
+      "recommendation": "Add 1-2 sentences from Marin noting that the brand's behavior may be worsening because they are moving into territory where the Pallor is thinner — the containment ward is fighting not just Kaelith's natural capacity but the increased ambient magical pressure from the weakening membrane. This connects the personal medical crisis to the larger Pallor crisis and is consistent with the established magic rules.",
+      "canonicalSource": "world-bible/magic-system.json MAG-003, MAG-004"
+    },
+    {
+      "id": "COPY-008-006",
+      "severity": "moderate",
+      "category": "information-asymmetry",
+      "title": "Lirien's knowledge of remote refresh mechanics exceeds established information state",
+      "location": "Lines 53-57",
+      "description": "Lirien's internal analysis: 'Remote refresh. Someone with access to the original brand matrix was strengthening the containment ward at regular intervals. Someone who understood that a standard Oathbrand dissolved naturally and who chose to maintain this one indefinitely. Someone who knew the accumulated magical pressure would eventually destroy her.' Per the information asymmetry map, FACT-001 establishes that the Oathbrand is being deliberately maintained. Lirien (via the Seep) knows about the conspiracy around Kaelith (learned pre-story through intelligence). However, the specificity of 'remote refresh' and 'original brand matrix' implies technical knowledge of Oathbrand ward mechanics that may exceed what a fae operative would know about Imperial military magical systems. The Seep specializes in fae binding magic, not Imperial suppression wards.",
+      "recommendation": "Soften the technical certainty slightly. Lirien can deduce that someone is maintaining the brand (which she already knows from intelligence) but the precise mechanism ('remote refresh,' 'brand matrix') should be framed as inference or comparison to fae binding mechanics rather than stated as technical knowledge. She could compare it to fae contract maintenance: 'The mechanism was unfamiliar — not binding maintenance as I understood it — but the principle was clear: someone held the control structure and was actively reinforcing it.'",
+      "canonicalSource": "continuity/information-asymmetry-map.json FACT-001, characters/CHAR-002.json"
+    },
+    {
+      "id": "COPY-008-007",
+      "severity": "moderate",
+      "category": "naming-consistency",
+      "title": "Oathbrand sigil description adds detail not in canonical source",
+      "location": "Lines 24, 112-113",
+      "description": "The draft describes the Oathbrand sigil as 'the Ashborne crossed keys beneath the imperial circle' (line 24) and 'the crossed keys of the Ashborne Legion beneath the Imperial circle' (line 113). The magic-system.json describes the brand as 'a silver-black sigil burned into the skin above the collarbone, roughly two inches in diameter, consisting of interlocking geometric patterns derived from god-sealing wards.' There is no mention of 'crossed keys' or an 'imperial circle' as the sigil's design. The 'interlocking geometric patterns' from the canonical source are more abstract. The 'crossed keys' detail appears to be an invention of this chapter.",
+      "recommendation": "Either (a) remove the 'crossed keys' / 'imperial circle' detail and use the canonical 'interlocking geometric patterns derived from god-sealing wards,' or (b) flag this as a new detail to be added to magic-system.json for consistency. Given that the Oathbrand was originally an Ashborne Legion disciplinary tool, an Ashborne insignia element is plausible, but it should be canonicalized if kept. The detail appears twice and would need to be consistent across all chapters that describe the brand.",
+      "canonicalSource": "world-bible/magic-system.json theOathbrand.appearance"
+    },
+    {
+      "id": "COPY-008-008",
+      "severity": "moderate",
+      "category": "continuity",
+      "title": "Healer character ID inconsistency",
+      "location": "Lines 80, 98-100",
+      "description": "The frontier healer is named 'Marin' in the draft. The chapter outline lists 'CHAR-008 (Marin)' as a character present. This is consistent internally. However, verification is needed that CHAR-008 exists in the characters index and that the name 'Marin' is registered. The outline describes the location as 'Marin's healer hut' while the draft describes 'a well-maintained building near Veldrane's center' — this is a minor description difference but should be aligned.",
+      "recommendation": "Verify CHAR-008 exists in characters/index.json. If Marin is a new character introduced in this chapter, ensure a character file or index entry has been created. Align the location description — 'healer hut' vs. 'well-maintained building' should be consistent between outline and draft.",
+      "canonicalSource": "plot/chapter-outlines/chapter-008.json, characters/index.json"
+    },
+    {
+      "id": "COPY-008-009",
+      "severity": "minor",
+      "category": "naming-consistency",
+      "title": "Imperial capitalization inconsistency",
+      "location": "Lines 67, 90, 113, 160",
+      "description": "The word 'Imperial' is capitalized in most instances (line 67: 'Imperial healers'; line 113: 'Imperial circle'; line 160: 'Imperial magical systems') but appears lowercase in line 90 ('minimal Imperial presence') which is actually correct. All instances should be consistent — as a reference to the specific empire in this world, 'Imperial' should be capitalized throughout when used as an adjective referring to the empire.",
+      "recommendation": "Verify all instances use 'Imperial' (capitalized) when referring to the empire. Current usage appears consistent but should be verified against manuscript-wide convention.",
+      "canonicalSource": "Style convention — proper adjective"
+    },
+    {
+      "id": "COPY-008-010",
+      "severity": "minor",
+      "category": "grammar",
+      "title": "Comma splice in compound observation",
+      "location": "Line 177",
+      "description": "'I found my attention divided between tactical awareness and something I could not classify as mission-relevant observation.' This is not technically a comma splice but the sentence structure is awkward — 'something I could not classify as mission-relevant observation' reads as though 'observation' is a noun being classified, when the intended meaning is that the attention itself could not be classified as mission-relevant. The syntax creates momentary ambiguity.",
+      "recommendation": "Revise for clarity: 'I found my attention split between tactical awareness and something I could not classify as operationally relevant' or 'I found my attention divided between tactical awareness and a form of observation that served no mission purpose.'",
+      "canonicalSource": "N/A — grammar"
+    },
+    {
+      "id": "COPY-008-011",
+      "severity": "minor",
+      "category": "continuity",
+      "title": "Kaelith's knowledge of Marin's existence needs justification",
+      "location": "Lines 80-86",
+      "description": "Kaelith knows about Marin 'by reputation' as 'a practitioner in the settlement. Former military medic turned frontier healer.' Lirien observes: 'Information that suggested Kaelith had researched Veldrane's resources before our arrival.' This is plausible but thin — Kaelith has been in Duskhaven for six years. How would she know about a specific healer in Veldrane? Two options: (1) garrison-coast military intelligence networks that persisted after her disgrace, or (2) she researched options for the Oathbrand's increasing pain. Option 2 is supported by her awareness that the brand is problematic, but she has shown reluctance to seek help (IR-K-02). The text should briefly ground this knowledge.",
+      "recommendation": "Add a brief justification — Kaelith could mention that frontier healers are known quantities along the Thornway garrison network, or that she heard of Marin from someone passing through Duskhaven. This is a minor detail but prevents the reader from wondering how an isolated exile knows the name of a specific healer two days' travel away.",
+      "canonicalSource": "characters/CHAR-001.json (isolation, information state)"
+    },
+    {
+      "id": "COPY-008-012",
+      "severity": "minor",
+      "category": "timeline",
+      "title": "Three-night lodging purchase contradicts stated plan",
+      "location": "Lines 190-191",
+      "description": "'Kaelith paid for three nights, though I calculated our stay would not exceed one.' This is a reasonable security measure (paying for extra nights to avoid drawing attention to departure timing). However, per the continuity tracker, they depart Veldrane in Chapter 9. If Chapter 9 occurs the following morning, the three-night payment is indeed excessive by two nights. This is consistent with Kaelith's tactical thinking (maintain cover of expected stay) and Lirien's observation is correct.",
+      "recommendation": "No change required — this is internally consistent and characterizes both women (Kaelith's practical cover maintenance, Lirien noting the discrepancy). Flagged for tracking only to ensure Chapter 9's departure timing is consistent.",
+      "canonicalSource": "continuity/continuity-tracker.json Ch9 timeline"
+    }
+  ],
+  "findingsSummary": {
+    "critical": 0,
+    "major": 4,
+    "moderate": 4,
+    "minor": 4,
+    "total": 12
+  },
+  "continuityVerification": {
+    "characterLocations": {
+      "CHAR-001": "Veldrane (consistent with tracker — arrived from Thornway)",
+      "CHAR-002": "Veldrane (consistent with tracker — traveling with CHAR-001)",
+      "CHAR-008": "Veldrane (healer Marin — verify character index entry exists)"
+    },
+    "timelinePosition": {
+      "trackerDay": "Day 5 (four days post-Duskhaven)",
+      "draftConsistency": "Partially consistent — '4 days' travel claim needs verification against route",
+      "dayNightCycle": "Consistent — chapter moves from daytime arrival through evening"
+    },
+    "activeStoryPromises": {
+      "brandRemovalUrgency": "Established — 4-6 month deadline creates medical ticking clock",
+      "quietusJourney": "Maintained — route calculations referenced but conflated with brand removal",
+      "conclaveSurveillance": "Implied — remote brand refresh indicates active monitoring"
+    },
+    "characterKnowledgeStates": {
+      "CHAR-002_knows": [
+        "Kill contract (from story start — FACT-003)",
+        "Oathbrand being deliberately maintained (from Ch3 intelligence — FACT-001)",
+        "Kaelith carries Quietus path (from Ch5 intelligence — FACT-005)",
+        "Pallor being sabotaged (from Ch4 intelligence — FACT-004)",
+        "NEW: Specific mortality timeline (4-6 months) from Marin's diagnosis"
+      ],
+      "CHAR-001_knows": [
+        "Brand should have dissolved (knew before story start)",
+        "Brand is being refreshed (learned Ch3)",
+        "General conspiracy exists (learned Ch3-4)",
+        "NEW: Specific mortality timeline from Marin's diagnosis"
+      ],
+      "CHAR-001_doesNotKnow": [
+        "Lirien's kill contract (FACT-003 — unknown until Ch16)",
+        "Lirien carries her blood (FACT-003 detail — unknown until Ch16)",
+        "Warden lineage through Thenndal (FACT-006 — unknown until Ch21)",
+        "Full scope of Conclave conspiracy (partial knowledge from Ch3-4)"
+      ],
+      "informationAsymmetryStatus": "Correctly maintained — Lirien holds significantly more information than Kaelith at this point. No violations detected where characters act on information they should not possess."
+    }
+  },
+  "magicSystemCompliance": {
+    "MAG-001": "Compliant — no unconscious magic use depicted",
+    "MAG-003": "Partially compliant — Pallor gradient effect on brand not mentioned despite being in Veldrane (moderate Pallor zone)",
+    "MAG-004": "Compliant — accumulated pressure causing physiological damage correctly depicted",
+    "MAG-008": "Compliant — brand described as containment ward, not removal of capacity. Active glow, chronic irritation, and pressure buildup are consistent",
+    "FU-001": "N/A — no resurrection themes",
+    "FU-002": "N/A — no compulsion magic depicted"
+  },
+  "grammarAndPunctuation": {
+    "overallQuality": "Clean. No significant grammatical errors detected.",
+    "minorIssues": [
+      {
+        "location": "Line 177",
+        "issue": "Syntactically ambiguous compound noun phrase",
+        "severity": "minor"
+      }
+    ],
+    "spellingErrors": [],
+    "punctuationErrors": []
+  }
+}

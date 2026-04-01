@@ -1,0 +1,190 @@
+{
+  "storyId": "001",
+  "chapter": 11,
+  "agent": "copy-editor",
+  "timestamp": "2025-07-28T19:00:00Z",
+  "artifactsRead": [
+    "chapters/011/draft.md",
+    "chapters/011/metadata.json",
+    "continuity/continuity-tracker.json",
+    "world-bible/geography.json",
+    "world-bible/magic-system.json",
+    "world-bible/culture.json",
+    "world-bible/politics.json",
+    "characters/index.json",
+    "plot/chapter-outlines/chapter-011.json",
+    "style/style-guide.json",
+    "chapters/008/draft.md"
+  ],
+  "summary": "Copy edit of Chapter 11 (Oathbrand removal / midpoint). 6 findings: 1 moderate naming inconsistency (Marin Savel surname not established in prior narrative text), 1 moderate factual error (word-count arithmetic 'Four words. Five.' does not match the 6-word sentence), 3 minor anachronisms in close-third POV vocabulary ('chemical,' 'proprioception,' 'geological'), and 1 informational cross-reference error in the chapter outline character ID. All proper nouns, magic system rules, timeline references, geography, information asymmetry, and dialogue formatting verified correct. Chapter is factually sound with minor corrections needed.",
+  "findingCounts": {
+    "total": 6,
+    "critical": 0,
+    "major": 0,
+    "moderate": 2,
+    "minor": 3,
+    "informational": 1
+  },
+  "findingsByCategory": {
+    "naming": 1,
+    "timeline": 0,
+    "factual": 1,
+    "grammar": 0,
+    "formatting": 0,
+    "anachronism": 3,
+    "crossReference": 1
+  },
+  "findings": [
+    {
+      "id": "COPY-001",
+      "severity": "moderate",
+      "category": "naming",
+      "lineRef": "62",
+      "description": "Surname 'Savel' used for Marin ('Marin Savel had said it plainly') but this surname has never been established in prior narrative text. Chapter 8 (Marin's introduction and extended diagnostic scene) uses only 'Marin' throughout — no surname is spoken or referenced. The continuity tracker naming section explicitly states 'Marin: Frontier healer, former military medic. First appears ch8 Veldrane. No surname.' While politics.json (FAC-007) does list the character as 'Marin Savel,' this is a world-bible backstage reference, not an in-narrative establishment. A reader encountering 'Marin Savel' in ch11 would have no context for the surname.",
+      "correction": "Either (a) replace 'Marin Savel' with 'Marin' on line 62 to match established narrative usage, or (b) retroactively establish the surname in ch8 during revision (e.g., have the character introduce herself with her full name). Option (a) is simpler and consistent with the continuity tracker. Update continuity tracker naming section accordingly if (b) is chosen.",
+      "sourceRef": "continuity-tracker.json (namingConsistency.characters.Marin), chapters/008/draft.md (lines 80, 98, 102, 114, 116, 124, 130, 136, 142, 160, 172, 174)"
+    },
+    {
+      "id": "COPY-002",
+      "severity": "moderate",
+      "category": "factual",
+      "lineRef": "90-92",
+      "description": "Arithmetic error in the internal narration. Line 90: Kaelith says 'You do it. I trust you.' Line 92: The narration states 'Four words. Five.' — but the actual word count does not yield 4 or 5 under any parsing. 'You do it' = 3 words. 'I trust you' = 3 words. Combined = 6 words. Neither clause alone is 4 or 5 words. This is a character who counts stones precisely (14 in the top course, 13 in the second) while under extreme emotional stress — an inaccurate word count in the narration would be an uncharacteristic error noticed by attentive readers.",
+      "correction": "Align the word count to match the actual dialogue. Options: (a) Change to 'Three words. Six.' reflecting 'I trust you' and the combined sentence. (b) Change to 'Six words.' as a simple correction. (c) Modify the dialogue to match the stated count — e.g., 'I will trust you' (4 words) or 'I trust you with this' (5 words). (d) Use 'Three words. Three.' mirroring the symmetric structure of the two clauses. Option (c) with 'I will trust you' ('Four words') is cleanest, though it slightly changes Kaelith's voice register.",
+      "sourceRef": "chapters/011/draft.md lines 90, 92"
+    },
+    {
+      "id": "COPY-003",
+      "severity": "minor",
+      "category": "anachronism",
+      "lineRef": "180",
+      "description": "The term 'chemical conversation' appears in 'she could read its chemical conversation with the air.' 'Chemical' is a modern scientific term (from alchemy/chemistry) that implies a disciplinary framework unlikely to exist in this world's vocabulary. While the concept being conveyed (Kaelith perceiving the combustion process through her returned magic) is consistent with the magic system, the specific word 'chemical' sits outside the established vocabulary register for this world. The close-third POV means the narration should use vocabulary accessible to Kaelith's frame of reference.",
+      "correction": "Replace 'chemical' with a world-appropriate term. Suggestions: 'its burning conversation with the air,' 'its combustive exchange with the air,' 'its elemental conversation with the air,' or simply 'its conversation with the air' (the specificity of 'chemical' isn't needed — the meaning is carried by context).",
+      "sourceRef": "INV-018 (No Anachronisms), style/style-guide.json (perPOVCalibration)"
+    },
+    {
+      "id": "COPY-004",
+      "severity": "minor",
+      "category": "anachronism",
+      "lineRef": "204",
+      "description": "The term 'proprioception' appears in 'as her proprioception recalibrated to include magical awareness.' This is a modern medical/neurological term (coined 1906 by Charles Sherrington) referring to the body's sense of its own position. While the physical concept exists universally, the Latinate technical term belongs to modern clinical vocabulary and would not exist in this world. Kaelith would experience this sensation but would not label it with this term in close-third POV.",
+      "correction": "Replace with a world-appropriate description. Suggestions: 'as her body-sense recalibrated,' 'as her sense of her own position recalibrated,' 'as her spatial awareness recalibrated,' or 'as her balance recalibrated to include magical awareness.'",
+      "sourceRef": "INV-018 (No Anachronisms), style/style-guide.json (perPOVCalibration)"
+    },
+    {
+      "id": "COPY-005",
+      "severity": "minor",
+      "category": "anachronism",
+      "lineRef": "180",
+      "description": "The term 'geological sentence' appears in 'The stone table beneath her was a geological sentence she could suddenly parse.' 'Geological' is a modern scientific term (from 18th-century natural philosophy). Kaelith's Shaper training would give her deep material perception of stone, but the specific disciplinary term 'geological' implies a scientific framework that may not exist in this world. The sentence structure ('geological sentence she could suddenly parse') is effective — only the adjective needs replacement.",
+      "correction": "Replace 'geological' with a world-appropriate term. Suggestions: 'a stone sentence,' 'a deep-earth sentence,' 'a mineral sentence,' 'a record written in strata.' Given Kaelith's architectural vocabulary, 'a structural sentence' would work but risks voice-marker contamination; 'a stone sentence' is cleanest.",
+      "sourceRef": "INV-018 (No Anachronisms), style/style-guide.json (perPOVCalibration)"
+    },
+    {
+      "id": "COPY-006",
+      "severity": "informational",
+      "category": "crossReference",
+      "lineRef": "n/a (reference artifact, not draft)",
+      "description": "Chapter outline (plot/chapter-outlines/chapter-011.json) lists 'CHAR-007 (Tessen)' in the charactersPresent array. However, characters/index.json assigns CHAR-007 to Marin Savel. Tessen Vael is CHAR-006. This is a character ID error in the chapter outline, not in the draft text. It does not affect the chapter's prose but creates a tracking discrepancy.",
+      "correction": "Update chapter-011.json to reference 'CHAR-006 (Tessen)' instead of 'CHAR-007 (Tessen).' This is a metadata correction outside the draft revision pipeline — the continuity-tracker agent or plotting coordinator should action this.",
+      "sourceRef": "characters/index.json, plot/chapter-outlines/chapter-011.json"
+    }
+  ],
+  "verifiedCorrect": [
+    {
+      "category": "naming",
+      "details": "All character names verified against continuity tracker and character index: Kaelith (CHAR-001), Lirien (CHAR-002 / Lirien Dael), Tessen Vael (CHAR-006). Spellings consistent throughout chapter."
+    },
+    {
+      "category": "naming",
+      "details": "All place names verified: Calwrath (line ~159, historical reference), Aranthem (implied via journey context), Duskhaven (not referenced — correct for this setting). Consistent with geography.json."
+    },
+    {
+      "category": "naming",
+      "details": "All magic terms verified: Oathbrand, Pallor, resonance bond, ward-threads, Shapers, kinetic memory, Warden, Quietus. Spellings and usage consistent with magic-system.json and continuity tracker namingConsistency.magicTerms."
+    },
+    {
+      "category": "timeline",
+      "details": "Six years of Oathbrand duration verified (YK 736 application per MAG-008, now YK 742). Brand refreshment 'every two weeks' consistent with external maintenance. Mortality timeline 'months, not years' consistent with ch8 diagnosis (4-6 months)."
+    },
+    {
+      "category": "timeline",
+      "details": "Procedure duration '3-4 hours' consistent with continuity tracker ch11 events. Seven ward layers consistent with tracker record."
+    },
+    {
+      "category": "factual",
+      "details": "Oathbrand mechanics fully compliant with MAG-008: containment ward on collarbone, silver-black sigil with interlocking geometric pattern, god-sealing ward geometry, fae precision required for removal, subject must remain still."
+    },
+    {
+      "category": "factual",
+      "details": "Resonance bond formation compliant with MAG-007: formed through shared vulnerability during magical working, transmits emotional states and presence, does not transmit thoughts or factual information, mutual and involuntary, can be felt at distance."
+    },
+    {
+      "category": "factual",
+      "details": "Kinetic memory activation compliant with MAG-006: body-encoded directional knowledge, bypasses conscious recall, immune to Pallor suppression, cannot be described or mapped, manifests as automatic movement orientation (northeast toward Quietus)."
+    },
+    {
+      "category": "factual",
+      "details": "Kaelith's magic return at reduced capacity consistent with protagonist power level trajectory (Tier 1 Oathbranded → Tier 2 post-removal). Draft explicitly describes gaps and reduced capacity from six years of disuse."
+    },
+    {
+      "category": "factual",
+      "details": "Pallor perception consistent with magic system: described as membrane/pressure/ceiling, registered through returned Shaper awareness, can be assessed for structural weaknesses."
+    },
+    {
+      "category": "factual",
+      "details": "Tessen Vael characterization consistent with FAC-007 and continuity tracker: former Ashborne Legion (consistent with 'former Legion scout' in politics.json), terrain-reading expertise, patrol scar, blunt-fingered practical hands. Ward-breaking knowledge not explicitly in politics.json but consistent with his role in the continuity tracker ch11 events."
+    },
+    {
+      "category": "factual",
+      "details": "Tessen's recognition of 'Warden-work' consistent with MAG-006: kinetic memory is a Warden lineage capability, and former Ashborne Legion members may know the old path-keeping traditions."
+    },
+    {
+      "category": "informationAsymmetry",
+      "details": "Kaelith's knowledge state verified correct for ch11. She does NOT reference the kill contract (learned ch16), does NOT know who refreshed the brand, does NOT know the Warden inheritance mechanism. She correctly references the Oathbrand diagnosis from ch8 and the brand's deliberate maintenance from ch3."
+    },
+    {
+      "category": "informationAsymmetry",
+      "details": "Lirien's withholding is maintained: no reference to contract details, no disclosure of kill order. Kaelith notes 'there were still things she didn't ask about, still doors she chose not to open' — consistent with the information gap."
+    },
+    {
+      "category": "formatting",
+      "details": "Dialogue formatting verified correct throughout: speech tags use commas ('said,' 'confirmed,' 'murmured'), action beats use periods, em dashes not needed (no interruptions in this chapter), italics used for emphasis correctly."
+    },
+    {
+      "category": "formatting",
+      "details": "Scene breaks (---) properly placed: 2 breaks creating 3 scenes, matching metadata scenesCompleted count."
+    },
+    {
+      "category": "grammar",
+      "details": "Tense consistency verified: past tense maintained throughout all three scenes with no slips."
+    },
+    {
+      "category": "grammar",
+      "details": "Pronoun clarity verified: in scenes with multiple female characters (Kaelith and Lirien), pronouns are disambiguated through context, proper noun alternation, and clear antecedent placement. No ambiguous pronoun references found."
+    },
+    {
+      "category": "factual",
+      "details": "Compass metaphor for kinetic memory pull is an established recurring motif used across chapters 11, 12, 14, 15, 18, 19. Consistent pattern, not an isolated anachronism."
+    },
+    {
+      "category": "factual",
+      "details": "Direction 'northeast' for Quietus pull verified consistent across continuity tracker and multiple chapter drafts."
+    },
+    {
+      "category": "factual",
+      "details": "Cultural consistency verified: 'garrison coast' reference (line ~56) consistent with CUL-003 Eastern Border Culture. Oathbrand social dynamics consistent with CUL-001 (Oathbranded persons socially erased). Fae magic scent description ('green-and-rain') consistent with fae characterization."
+    }
+  ],
+  "crossReferenceNotes": [
+    {
+      "note": "Continuity tracker ch10 timeline records 'Night: Kaelith practices tier-two magic. Rebuilding capacity' — but Kaelith's Oathbrand is not removed until ch11. Tier-two magic practice should be impossible while Oathbranded (Tier 1). This is a pre-existing tracker inconsistency, not a ch11 draft error. Flagged for continuity-tracker agent to investigate and correct.",
+      "affectedArtifacts": ["continuity/continuity-tracker.json (ch10 timeline entry)"]
+    },
+    {
+      "note": "Continuity tracker namingConsistency lists 'Marin: No surname' while politics.json FAC-007 lists 'Marin Savel.' These reference artifacts contradict each other. The narrative (ch8) uses only 'Marin.' Recommend aligning — either update continuity tracker to include surname and establish it in ch8 revision, or remove surname from politics.json to match narrative usage.",
+      "affectedArtifacts": ["continuity/continuity-tracker.json", "world-bible/politics.json", "chapters/008/draft.md"]
+    }
+  ],
+  "overallAssessment": "Chapter 11's factual integrity is strong. The Oathbrand removal procedure, resonance bond formation, kinetic memory activation, and magic return all comply with established world rules (MAG-004, MAG-006, MAG-007, MAG-008). Character knowledge states are correctly maintained — no information asymmetry violations. Timeline references are accurate. Geography and direction (northeast for Quietus) verified. The two moderate findings (Marin's unestablished surname, word-count arithmetic) require correction. The three minor anachronisms (chemical, proprioception, geological) are vocabulary-level issues that can be resolved with simple word substitutions. No critical or major findings."
+}

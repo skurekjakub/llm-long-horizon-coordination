@@ -1,0 +1,80 @@
+{
+  "chapterNum": 19,
+  "pov": "CHAR-001",
+  "povTransitionMotivation": "Return to Kaelith for the reunion \u2014 earned through truth, shared plan, and mutual choice",
+  "scenes": [
+    {
+      "id": "SCN-53",
+      "goal": "[To be detailed by scene-beat-designer]",
+      "conflict": "[To be detailed by scene-beat-designer]",
+      "disaster": "[To be detailed by scene-beat-designer]",
+      "valueShift": "[To be detailed by scene-beat-designer]",
+      "fiveCommandments": {
+        "incitingIncident": "[To be detailed]",
+        "complication": "[To be detailed]",
+        "crisis": "[To be detailed]",
+        "climax": "[To be detailed]",
+        "resolution": "[To be detailed]"
+      }
+    },
+    {
+      "id": "SCN-54",
+      "goal": "[To be detailed by scene-beat-designer]",
+      "conflict": "[To be detailed by scene-beat-designer]",
+      "disaster": "[To be detailed by scene-beat-designer]",
+      "valueShift": "[To be detailed by scene-beat-designer]",
+      "fiveCommandments": {
+        "incitingIncident": "[To be detailed]",
+        "complication": "[To be detailed]",
+        "crisis": "[To be detailed]",
+        "climax": "[To be detailed]",
+        "resolution": "[To be detailed]"
+      }
+    },
+    {
+      "id": "SCN-55",
+      "goal": "[To be detailed by scene-beat-designer]",
+      "conflict": "[To be detailed by scene-beat-designer]",
+      "disaster": "[To be detailed by scene-beat-designer]",
+      "valueShift": "[To be detailed by scene-beat-designer]",
+      "fiveCommandments": {
+        "incitingIncident": "[To be detailed]",
+        "complication": "[To be detailed]",
+        "crisis": "[To be detailed]",
+        "climax": "[To be detailed]",
+        "resolution": "[To be detailed]"
+      }
+    }
+  ],
+  "emotionalArc": {
+    "startState": "[To be detailed by scene-beat-designer]",
+    "endState": "[To be detailed by scene-beat-designer]",
+    "pivotMoment": "[To be detailed by scene-beat-designer]"
+  },
+  "fantasyBeats": [
+    "Break into Three \u2014 Shared Plan to Exploit Contract Loophole and Reach Quietus"
+  ],
+  "romanceBeats": [
+    "Reunion Through Truth \u2014 'I Choose This. I Choose You.'"
+  ],
+  "hookType": "reunion-tension",
+  "hookTypeDescription": "[To be detailed by scene-beat-designer]",
+  "closeType": "aligned-action",
+  "closeTypeDescription": "[To be detailed by scene-beat-designer]",
+  "targetWordCount": 4000,
+  "tensionLevel": 7,
+  "pacingNotes": "Chapter 19 \u2014 Break into Three \u2014 Shared Plan, Shared Truth. [To be detailed by scene-beat-designer]",
+  "locationsPrimary": [
+    "Reunion point, planning the final approach"
+  ],
+  "charactersPresent": [
+    "CHAR-001",
+    "CHAR-002"
+  ],
+  "upstreamRefs": [
+    "../../plot/plot-structure.json",
+    "../../characters/CHAR-001.json",
+    "../../plot/dual-arc-timeline.json",
+    "../../plot/tension-map.json"
+  ]
+}

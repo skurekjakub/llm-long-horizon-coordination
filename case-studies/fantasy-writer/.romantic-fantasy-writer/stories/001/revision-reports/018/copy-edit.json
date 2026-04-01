@@ -1,0 +1,155 @@
+{
+  "chapter": 18,
+  "title": "The Taxonomy of Choice",
+  "pov": "CHAR-002",
+  "povName": "Lirien Dael",
+  "copyEditor": "romantic-fantasy-writer-copy-editor",
+  "timestamp": "2025-07-30T14:00:00Z",
+  "overallAssessment": "Chapter 18 demonstrates exceptionally high factual integrity across naming, magic system compliance, cultural consistency, and world-rule adherence. All proper nouns — character names (Kaelith Maren, Lirien Dael, Enforcer Seldric, Tessen), place names (the Narrowing, Duskhaven, Serath Dûn, the Quietus), and magical terms (Oathbrand, Pallor, Lessened, resonance bond, Seep, Ashborne Fourth) — are spelled correctly and used consistently with continuity tracker and world-bible sources. The Oathbrand removal details (six years of suppression, silver-black sigil on collarbone, three hours of fae precision magic at Tessen's shelter, seven layers) are precisely consistent with ch11 continuity. The 43-completed-contracts count matches the Seep profile exactly. British English is maintained throughout (categorise, organisational, stabilisation, harbour, colour, destabilise, recognised, memorised, authorised). Past tense is consistent. Dialogue formatting is clean with no punctuation errors. POV voice is distinctively Lirien's analytical register throughout — classification systems, water metaphors, operational language for emotional states. Five findings identified, none critical, one moderate.",
+  "findings": [
+    {
+      "id": "COPY-001",
+      "severity": "moderate",
+      "category": "timeline",
+      "description": "Ledger entry dates Enforcer Seldric's capture disruption to 'day three,' but the continuity tracker places ch3 events (including Seldric's arrival and the scaffolding collapse) on Day 2 of the story timeline. Ch3 day field explicitly reads 'day: 2.' Ch6 is the first chapter designated 'day: 3' (departure from Duskhaven). The ledger entry's 'day three' is one day later than established.",
+      "lineRef": "25",
+      "currentText": "Decision: disrupt Enforcer Seldric's capture of target, day three.",
+      "correction": "Change 'day three' to 'day two' to match the continuity tracker's ch3 timeline.",
+      "sourceReference": "continuity/continuity-tracker.json — ch3 (day: 2); ch6 (day: 3)",
+      "invariant": "INV-002, INV-011"
+    },
+    {
+      "id": "COPY-002",
+      "severity": "minor",
+      "category": "timeline",
+      "description": "The Ashborne contact states Lirien has 'exceeded the compliance window by nearly two months.' The Court communiqué intercepted in ch16 specified '47-day overdue.' Ch18 takes place approximately 2 days after ch16 (second dawn after Kaelith's departure), putting the overdue total at approximately 49 days (~7 weeks). 'Nearly two months' implies approximately 55–60 days, overstating the actual overdue period by roughly 1.5–2 weeks. While the Ashborne contact may be approximating from independent intelligence, the discrepancy is notable against the precise figure in the ch16 communiqué.",
+      "lineRef": "155",
+      "currentText": "You've exceeded the compliance window by nearly two months.",
+      "correction": "Consider 'exceeded the compliance window by seven weeks' or 'exceeded the compliance window by well over a month' to better align with the ~49-day overdue figure. Alternatively, if the Ashborne contact's intelligence predates the ch16 communiqué or uses a different baseline calculation (e.g., counting from contract inception rather than compliance deadline), add a brief internal note from Lirien registering the temporal discrepancy as a data point about the contact's information sources.",
+      "sourceReference": "continuity/continuity-tracker.json — ch16 ('47-day overdue'); ch18 timeline ('second day after Ch16 separation')",
+      "invariant": "INV-002, INV-011"
+    },
+    {
+      "id": "COPY-003",
+      "severity": "minor",
+      "category": "factual",
+      "description": "The resonance bond is established as transmitting emotional states and physical sensations (continuity-tracker.json naming section: 'Does NOT transmit thoughts, words, or factual information'). Two passages attribute spatial/directional information to the bond: (1) 'she could feel distance. Kaelith was alive. Moving.' (line 49) — 'moving' conveys physical activity information beyond emotional state; (2) 'the bond transmitted Lirien's direction with a fidelity that no cipher could match' (line 243) — direction is spatial data, not emotional quality. The ch17 copy edit (COPY-005) previously flagged a similar overreach ('felt her change direction'). The pattern of the bond transmitting positional data recurs across chapters and may warrant explicit rules clarification. However, 'feeling distance' and 'direction' could be interpreted as qualitative emotional impressions rather than precise spatial data — the prose keeps this ambiguous enough to be defensible.",
+      "lineRef": "49, 243",
+      "currentText": "(Line 49) she could feel distance. Kaelith was alive. Moving. / (Line 243) the bond transmitted Lirien's direction with a fidelity that no cipher could match.",
+      "correction": "To stay strictly within established bond mechanics, consider reframing spatial claims as emotional quality: (Line 49) 'she could feel the particular quality of Kaelith's absence — alive, purposeful' rather than 'Moving'; (Line 243) 'the bond transmitted something — not direction but intention, the quality of a person choosing to move toward rather than away' rather than attributing literal directional fidelity. Alternatively, acknowledge and codify that the bond transmits vague spatial awareness (presence/distance/bearing) as an extension of emotional resonance, and update the continuity tracker's bond mechanics entry.",
+      "sourceReference": "continuity/continuity-tracker.json — resonance bond definition; revision-reports/017/copy-edit.json — COPY-005",
+      "invariant": "INV-002"
+    },
+    {
+      "id": "COPY-004",
+      "severity": "minor",
+      "category": "factual",
+      "description": "The term 'threadbone' (a fae composite material: 'part biological, part alchemical, part something that resisted clean classification') is introduced for the first time in this chapter as the material of Lirien's Seep encryption cipher. The term does not appear in world-bible/magic-system.json, world-bible/culture.json, or any prior chapter. While the material is introduced naturally and fits the established fae aesthetic of precise, functional craftsmanship, it represents new world-building not anchored in any upstream artifact. If retained, it should be added to the world-bible (likely magic-system.json under fae tools/materials or culture.json under fae customs).",
+      "lineRef": "201, 207, 221",
+      "currentText": "Made of a composite the fae called *threadbone* — part biological, part alchemical, part something that resisted clean classification.",
+      "correction": "No change required to the prose — the in-context introduction is well-handled. Recommendation: add a 'threadbone' entry to world-bible/magic-system.json or world-bible/culture.json (fae material culture section) to canonise the term for downstream consistency enforcement. Description should include: composite material, part biological, part alchemical; used for Seep encoding devices; contains magical encoding matrices; has designed stress points for self-destruction; surface shows faint iridescence under Pallor light.",
+      "sourceReference": "world-bible/magic-system.json (term absent); world-bible/culture.json (term absent)",
+      "invariant": "INV-029"
+    },
+    {
+      "id": "COPY-005",
+      "severity": "minor",
+      "category": "timeline",
+      "description": "The first ledger entry dates Lirien's delay decision to 'day two,' but the continuity tracker places the Pallor-Oathbrand correlation discovery and the delay decision on Day 1 (ch2 events: 'Afternoon: Lirien intercepts Seep intelligence packet' and 'Evening: Lirien decides to delay execution'). 'Day two' could be interpreted as when the delay took practical effect (the first full day of delay implementation rather than the decision itself), which is a defensible reading in an operational ledger format. However, if Lirien's ledger is recording decision dates, the entry should read 'day one.' The ambiguity is minor because the ledger format may prioritise implementation date over decision date.",
+      "lineRef": "17",
+      "currentText": "Decision: accept delay in target execution following Pallor-Oathbrand correlation, day two.",
+      "correction": "If the ledger records decision dates: change to 'day one.' If the ledger records implementation dates (first day the delay was actively in effect): 'day two' is correct but would benefit from a brief Lirien-internal note establishing this convention. Alternatively, remove the day number entirely: 'Decision: accept delay in target execution following Pallor-Oathbrand correlation' — the date is not essential to the entry's analytical function.",
+      "sourceReference": "continuity/continuity-tracker.json — ch2 (day: 1, evening delay decision)",
+      "invariant": "INV-011"
+    }
+  ],
+  "verifiedCorrect": [
+    {
+      "category": "naming",
+      "details": "All character names verified correct: Kaelith Maren/Kaelith (CHAR-001), Lirien Dael/Lirien (CHAR-002), Enforcer Seldric (ch3 reference), Tessen (Tessen Vael, ch11 reference), Ashborne Fourth (Kaelith's unit). No misspellings, no variant forms."
+    },
+    {
+      "category": "naming",
+      "details": "All place names verified correct: the Narrowing (LOC-008), Duskhaven (LOC-001), Serath Dûn (LOC-010, circumflex diacritic matches geography.json), the Quietus (LOC-013), Duskhaven harbour (British spelling consistent). No spatial/directional errors."
+    },
+    {
+      "category": "naming",
+      "details": "All magical/institutional terms verified correct: Oathbrand, Pallor, resonance bond, Lessened/Lessening, Seep, Cerith Court, Hand/Hands, Architects, Ashborne Fourth/Ashborne Legion, binding/kill contract, kinetic memory, Dimming rites."
+    },
+    {
+      "category": "factual",
+      "details": "Oathbrand removal details precisely match ch11 continuity: six years of suppression (MAG-008), silver-black sigil on collarbone (MAG-008), three hours duration (within ch11's '3-4 hours'), removal at location associated with Tessen Vael. Binding directive analysis (should have generated resistance, did not) is consistent with MAG-005 binding mechanics."
+    },
+    {
+      "category": "factual",
+      "details": "Contract details verified: 43 completed contracts matches Seep profile (FAC-003). Blood-sealed binding consistent with MAG-005 and ch16 communiqué. Physiological deterioration as compliance incentive consistent with binding architecture. Kill contract paradox (killing Kaelith makes seal inaccessible) correctly understood."
+    },
+    {
+      "category": "factual",
+      "details": "Ashborne Fourth details verified: Kaelith's unit at Calwrath, 300 civilians burned to save 800 soldiers (matches geography.json Calwrath description), commander branded and exiled (consistent with Oathbrand backstory). 'Twelve years ago' for mountain operations is consistent with Ossya Thenndal's kinetic memory planting timeline."
+    },
+    {
+      "category": "factual",
+      "details": "Recognition protocol described as pre-Court, designed during border stabilisation campaigns for fae-human intelligence interoperability. Consistent with established history of fae-human diplomatic relations (politics.json FAC-001/FAC-002). Court retiring the protocol when Seep consolidated is consistent with Seep's evolution as described in FAC-003."
+    },
+    {
+      "category": "factual",
+      "details": "Ashborne contact's intelligence about binding vulnerability at Quietus (substrate thinning exposes anchor points) is validated by ch20 continuity events (contract dissolved at forward shelter via loophole, binding architecture unravels). Three independent intelligence sources (defected Court Architect, Pallor scholar, field operative) are consistent with established world infrastructure."
+    },
+    {
+      "category": "factual",
+      "details": "Ch16 communiqué referenced correctly: Court enforcement escalation, secondary operative deployment threat. Bond wall by Kaelith (ch16: 'Bond goes cold — walled by Kaelith, not severed') correctly described as reducing signal to 'a thin, aching pulse' rather than eliminating it."
+    },
+    {
+      "category": "factual",
+      "details": "'Not Lessened — not an absence wearing the shape of what had been removed' correctly quotes the canonical Lessened definition from continuity tracker naming section."
+    },
+    {
+      "category": "grammar",
+      "details": "British English consistent throughout: categorise, organisational, stabilisation, harbour, colour, destabilise, recognised, memorised, authorised. No American English intrusions detected."
+    },
+    {
+      "category": "grammar",
+      "details": "Past tense maintained consistently throughout all three scenes. No tense shifts detected."
+    },
+    {
+      "category": "formatting",
+      "details": "Dialogue punctuation correct throughout all Ashborne contact exchange: speech tags with commas ('\"Inside,\" she said'), terminal periods within quotes, em dashes not needed (no interruptions in this chapter's dialogue). Scene breaks (---) correctly placed between all three scenes."
+    },
+    {
+      "category": "formatting",
+      "details": "Italics used appropriately and consistently: *ambiguous*, *Free choice. Confidence: high.*, *prevent*, *I trust you*, *I will do this*, *threadbone*, *presumed Lessened*, *free choice, confidence: high*. No missing or spurious emphasis."
+    },
+    {
+      "category": "anachronism",
+      "details": "No anachronistic concepts, technologies, or idioms detected. Accounting ledger, financial metaphors, ratio assessments, and classification systems are all consistent with the established world's institutional sophistication. 'Data point' (line 227) is borderline modern but defensible within Lirien's fae analytical voice — the Cerith Court's systematic culture (completion rates, contract precision, operational variables) supports this register."
+    },
+    {
+      "category": "timeline",
+      "details": "'The second dawn since Kaelith had walked into the treeline' correctly places ch18 on the second day after ch16 separation, matching the continuity tracker's ch18 timeline ('second day after Ch16 separation')."
+    },
+    {
+      "category": "timeline",
+      "details": "Bond breach during the night correctly parallels ch17 events ('Night: Bond pulse — Lirien's grief breaches wall'). The quality shift Lirien detects aligns with Kaelith's ch17 processing."
+    },
+    {
+      "category": "factual",
+      "details": "Pronoun clarity maintained throughout. SCN-51 (Ashborne contact scene) clearly distinguishes 'he' (contact) from 'she' (Lirien) with no ambiguous referents despite extended dialogue exchange."
+    }
+  ],
+  "findingSummary": {
+    "total": 5,
+    "critical": 0,
+    "major": 0,
+    "moderate": 1,
+    "minor": 4,
+    "categories": {
+      "naming": 0,
+      "timeline": 3,
+      "factual": 2,
+      "grammar": 0,
+      "formatting": 0,
+      "anachronism": 0
+    }
+  }
+}

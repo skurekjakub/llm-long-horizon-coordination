@@ -1,0 +1,89 @@
+{
+  "chapterNum": 8,
+  "pov": "CHAR-002",
+  "wordCount": 4089,
+  "sceneCount": 3,
+  "scenes": [
+    {
+      "id": "SCN-022",
+      "title": "Approaching Veldrane",
+      "valueShift": "From 'Kaelith is operationally necessary' to 'Kaelith is dying and I cannot accept that'",
+      "craftToolsApplied": [
+        "T1: Scene-Sequel Structure (Goal: reach Veldrane, Conflict: Oathbrand flares, Disaster: realizes deterioration is critical)",
+        "T14: MRU structure (Kaelith's flare → Lirien's observation → assessment → action)",
+        "T22: Opening hook with medical crisis"
+      ],
+      "wordCount": 1347
+    },
+    {
+      "id": "SCN-023", 
+      "title": "The Healer",
+      "valueShift": "From 'we have time to reach the Quietus' to 'we are in a race against Kaelith's body shutting down'",
+      "craftToolsApplied": [
+        "T1: Scene-Sequel Structure (Goal: get diagnosis, Conflict: worse than expected, Disaster: four months to live)",
+        "T14: MRU throughout examination sequence",
+        "Diagnostic mirror as concrete worldbuilding detail"
+      ],
+      "wordCount": 1876
+    },
+    {
+      "id": "SCN-024",
+      "title": "Lirien's Reckoning", 
+      "valueShift": "From 'I am protecting an asset' to 'I am caring for someone I cannot afford to lose'",
+      "craftToolsApplied": [
+        "T1: Sequel structure (Reaction to diagnosis → Dilemma about feelings → Decision to care without justification)",
+        "T22: Closing with quiet devotion",
+        "Voice evolution: Lirien's analytical language breaking down"
+      ],
+      "wordCount": 866
+    }
+  ],
+  "emotionalArc": {
+    "startState": "Observational concern (tactical notation of Kaelith's deterioration)",
+    "pivotMoment": "Marin's diagnosis - 'four months, perhaps six' triggers fear that Lirien cannot classify as operational",
+    "endState": "Acknowledged care (terrified of Kaelith dying, terror is personal not professional)"
+  },
+  "fantasyBeats": [
+    "Oathbrand crisis revelation - remote refresh means active surveillance and intent to kill",
+    "Magical pressure fractures visible in diagnostic mirror",
+    "Timeline established: four to six months until systemic magical necrosis"
+  ],
+  "romanceBeats": [
+    "Care without strategy - Lirien begins adjusting for Kaelith's needs beyond contract requirements",
+    "Recognition of personal investment: 'I do not want her to die...because I require it'",
+    "Protective watching while Kaelith sleeps - devotion without tactical justification"
+  ],
+  "continuityUpdates": {
+    "characterLocations": {
+      "CHAR-001": "Veldrane frontier settlement, common house",
+      "CHAR-002": "Veldrane frontier settlement, common house"  
+    },
+    "timelineEvents": [
+      {
+        "event": "Oathbrand flares force medical consultation",
+        "timestamp": "Day 12 of journey, evening",
+        "participants": ["CHAR-001", "CHAR-002", "CHAR-008"]
+      }
+    ],
+    "knowledgeStates": {
+      "CHAR-002": "Now knows Kaelith has 4-6 months to live, brand is actively refreshed, acknowledges personal care for Kaelith"
+    },
+    "activeStoryPromises": [
+      "Race against Kaelith's deterioration timeline",
+      "Identity of who is refreshing the brand"
+    ]
+  },
+  "foreshadowingElements": {
+    "planted": [
+      "Remote brand refresh suggests active surveillance and high-level Imperial involvement",
+      "Magical pressure fractures as measurable progression toward death"
+    ],
+    "resolved": []
+  },
+  "craftProfileCompliance": {
+    "T1_SceneSequel": "Applied to all three scenes with clear Goal-Conflict-Disaster progression",
+    "T14_MRU": "Used throughout, especially in examination sequence and Lirien's internal processing",
+    "T22_ChapterHooks": "Medical crisis opening, quiet devotion closing",
+    "Voice_Distinctness": "Lirien's analytical precision maintained but starting to break down under emotional pressure"
+  }
+}

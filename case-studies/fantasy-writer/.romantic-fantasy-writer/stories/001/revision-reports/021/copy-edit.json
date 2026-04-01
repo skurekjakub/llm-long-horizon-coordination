@@ -1,0 +1,195 @@
+{
+  "chapter": 21,
+  "title": "What the Stone Remembers",
+  "pov": "Kaelith Maren (CHAR-001)",
+  "editor": "copy-editor",
+  "timestamp": "2025-07-31T16:00:00Z",
+  "referencesConsulted": [
+    "continuity/continuity-tracker.json",
+    "characters/index.json",
+    "world-bible/geography.json",
+    "world-bible/magic-system.json",
+    "world-bible/culture.json",
+    "world-bible/politics.json",
+    "style/style-guide.json",
+    "plot/chapter-outlines/chapter-021.json",
+    "chapters/011/draft.md (Tessen Vael gender verification)",
+    "chapters/011/revised.md (Tessen Vael gender verification)"
+  ],
+  "overallAssessment": "Copy-edit review identifies three major factual/continuity errors and seven minor issues. The most critical finding is a gender pronoun reversal for Tessen Vael (male in ch11 and politics.json, female in ch21). Two timeline arithmetic errors exist in Iryse's testimony — the Thenndal kinetic memory date and Iryse's stewardship duration both contradict world-bible dates. Naming consistency is otherwise strong. Magic system compliance is excellent — Warden mechanics, bond behavior, and seal architecture all conform to established rules. Grammar and punctuation are clean. A small cluster of vocabulary choices ('clock,' 'signal-without-static,' 'frequency') introduce modern-technical connotations that sit slightly outside the world's established register.",
+  "findingSummary": {
+    "critical": 0,
+    "major": 3,
+    "moderate": 1,
+    "minor": 6,
+    "total": 10
+  },
+  "findings": [
+    {
+      "id": "COPY-221",
+      "severity": "major",
+      "category": "naming",
+      "description": "Tessen Vael gender pronoun reversal. Chapter 21, line 158 uses female pronoun 'She' for Tessen Vael: 'She met Kaelith's eyes and nodded once.' In chapter 11, Tessen is consistently male throughout both draft and revised versions — 'He sat on a stool across from her,' 'the posture of a man who'd held military discipline,' 'the careful of a man assessing ground,' 'a man who understood that what was happening in this room was not his to witness.' The world-bible/politics.json also uses male pronouns: 'He would recognize Kaelith as former Legion.' This is a clear gender inconsistency that must be resolved.",
+      "lineRef": "L158",
+      "excerpt": "She met Kaelith's eyes and nodded once. The nod of someone who had done her part and was present for the rest.",
+      "correction": "He met Kaelith's eyes and nodded once. The nod of someone who had done his part and was present for the rest.",
+      "sourceRef": "chapters/011/draft.md L24,58,156,218; chapters/011/revised.md L60,96,284; world-bible/politics.json FAC-007 Tessen Vael profile"
+    },
+    {
+      "id": "COPY-222",
+      "severity": "major",
+      "category": "timeline",
+      "description": "Thenndal kinetic memory date discrepancy. Line 28 states Ossya Thenndal planted the kinetic memory 'twelve years ago.' The world-bible/magic-system.json specifies this occurred in YK 734 (kineticMemoryAndTheQuietusPath section: 'Kaelith was walked through the path in YK 734 by Commander Ossya Thenndal'). The present story year is YK 742 (magic-system.json: 'It is now YK 742'). YK 742 minus YK 734 equals 8 years, not 12. Either the draft should read 'eight years ago' (to match the world-bible) or the world-bible date should be revised to YK 730 (to match the draft's 'twelve years'). Note: the continuity tracker echoes '12 years ago' from the draft, indicating this was not caught during continuity tracking.",
+      "lineRef": "L28",
+      "excerpt": "The knowledge Ossya Thenndal had planted in her twelve years ago",
+      "correction": "The knowledge Ossya Thenndal had planted in her eight years ago [if world-bible YK 734 is authoritative] OR update magic-system.json kineticMemoryAndTheQuietusPath.kaelithsSpecificSituation to YK 730 [if '12 years' is authoritative]",
+      "sourceRef": "world-bible/magic-system.json: kineticMemoryAndTheQuietusPath ('YK 734'); world-bible/magic-system.json: theOathbrand ('It is now YK 742')"
+    },
+    {
+      "id": "COPY-223",
+      "severity": "major",
+      "category": "timeline",
+      "description": "Iryse stewardship duration arithmetic error. Line 190, Iryse testifies: 'Eighteen years of my stewardship, corrupted.' She also states modifications began 'in Year of the Keel 726.' The present story year is YK 742. YK 742 minus YK 726 equals 16 years, not 18. Either: (a) change 'Year of the Keel 726' to 'Year of the Keel 724' to produce 18 years, or (b) change 'Eighteen years' to 'Sixteen years,' or (c) revise the present year to YK 744 (which would require broader manuscript changes).",
+      "lineRef": "L190",
+      "excerpt": "the Dimming rites beginning in Year of the Keel 726 [...] Eighteen years of my stewardship, corrupted",
+      "correction": "Either change 'Year of the Keel 726' to 'Year of the Keel 724' (making the arithmetic 742 − 724 = 18 years), or change 'Eighteen years' to 'Sixteen years.'",
+      "sourceRef": "world-bible/magic-system.json: theOathbrand ('It is now YK 742'); line 190 internal arithmetic"
+    },
+    {
+      "id": "COPY-224",
+      "severity": "moderate",
+      "category": "factual",
+      "description": "Thalen Reyvas seat designation. Chapter uses 'Seventh Seat' (lines 50, 166, 190). The world-bible/politics.json assigns Thalen the 'Sixth Seat — Fae Relations and Border Diplomacy,' while 'Seventh Seat — Archives and Knowledge Stewardship' belongs to Vairen Ethis. However, the continuity tracker documents this as DISC-001 and notes ALL chapter drafts (ch9, 10, 12, 13, 15, 21) consistently use 'Seventh Seat,' recommending politics.json be updated rather than the chapters. No change required in this chapter; flagged for cross-manuscript alignment.",
+      "lineRef": "L50, L166, L190",
+      "excerpt": "The Seventh Seat of the High Conclave",
+      "correction": "No change in chapter — politics.json should be updated per DISC-001 recommendation to assign Thalen to Seventh Seat.",
+      "sourceRef": "continuity/continuity-tracker.json: DISC-001; world-bible/politics.json: FAC-001 currentSeats"
+    },
+    {
+      "id": "COPY-225",
+      "severity": "minor",
+      "category": "continuity",
+      "description": "Frozen fingers and full-palm contact. Line 86 describes 'Her palms pressed flat against the seal's surface.' Kaelith has three frozen fingers on her left hand — the Pallor's permanent mark established in ch17 and referenced on line 118 of this chapter. Pressing a full palm 'flat' would be mechanically incomplete with three non-functional fingers. Kaelith's proprioceptive awareness (her primary sensory channel) would register the incomplete contact.",
+      "lineRef": "L86",
+      "excerpt": "Her palms pressed flat against the seal's surface and she felt the entirety of it.",
+      "correction": "Acknowledge the compromised left hand, e.g.: 'Her palms pressed against the seal's surface — the right flat, the left incomplete where the three frozen fingers held their permanent angle against the stone — and she felt the entirety of it.'",
+      "sourceRef": "continuity/continuity-tracker.json: CHAR-001 physical state; line 118 same chapter"
+    },
+    {
+      "id": "COPY-226",
+      "severity": "minor",
+      "category": "continuity",
+      "description": "Frozen fingers trembling. Line 136: 'Her fingers — all ten of them, including the three the Pallor had claimed — trembled against the floor.' If the three fingers are 'frozen' (non-functional, as described on line 118), the narrative act of noting their trembling creates a slight logical tension. The text may intend to show the seal-work temporarily overriding the Pallor's grip, which would be significant — but this should be made explicit rather than left ambiguous.",
+      "lineRef": "L136",
+      "excerpt": "Her fingers — all ten of them, including the three the Pallor had claimed — trembled against the floor.",
+      "correction": "If intended as significant (seal-work temporarily restoring function): make the recovery explicit. If not intended: adjust to 'Her seven functional fingers trembled against the floor; the three the Pallor had claimed held their stillness, cold and fixed.'",
+      "sourceRef": "Line 118 same chapter ('three frozen fingers'); continuity/continuity-tracker.json: CHAR-001 physical state"
+    },
+    {
+      "id": "COPY-227",
+      "severity": "minor",
+      "category": "anachronism",
+      "description": "Clockwork metaphor. Line 60: 'The clock was running.' The world's established timekeeping system uses 'bell-marks' (world-bible/culture.json, CUL-003: 'garrison coast retains military timekeeping — meals at bell-marks'). No clockwork mechanisms are established in this world. While the metaphor is intelligible and commonly accepted in fantasy, it introduces a technological concept not present in the setting (INV-018).",
+      "lineRef": "L60",
+      "excerpt": "The clock was running.",
+      "correction": "Consider world-appropriate alternatives: 'The count was running.' 'Time was draining.' 'The window was closing.' Or retain if the world allows mechanical clocks — but no evidence of clockwork exists in the world-bible.",
+      "sourceRef": "world-bible/culture.json: CUL-003 customs (bell-marks); INV-018 (no anachronisms)"
+    },
+    {
+      "id": "COPY-228",
+      "severity": "minor",
+      "category": "anachronism",
+      "description": "Radio-domain metaphor. Line 24: 'the signal-without-static quality that had persisted since the binding's dissolution.' 'Signal' and 'static' in compound evoke radio/electronics transmission, a technological domain not established in this world. This phrasing was carried over from ch20 bond description for continuity, so changing it here would require a matching change in ch20. Additionally, the compound sits outside Kaelith's architectural metaphor domain (INV-018, T17).",
+      "lineRef": "L24",
+      "excerpt": "the signal-without-static quality that had persisted since the binding's dissolution",
+      "correction": "Consider domain-appropriate alternatives: 'the clean-current quality,' 'the resonance-without-interference quality,' 'the clarity that had persisted.' Any change must also be applied in ch20 where the phrasing originated.",
+      "sourceRef": "world-bible/magic-system.json (no radio/electronics in world); style/style-guide.json: Kaelith metaphor domain (architecture/fortification); continuity/continuity-tracker.json ch20 bond description"
+    },
+    {
+      "id": "COPY-229",
+      "severity": "minor",
+      "category": "anachronism",
+      "description": "Technical vocabulary: 'frequency.' Used three times in Kaelith's narration — line 14 ('a frequency she had been tuned to carry'), line 40 ('at the frequency it had been built for — not the frequency imposed by binding'), line 106 ('Lirien's particular frequency of determined focus'). While 'frequency' can refer to sound/vibration concepts available in any world with music, its repeated use as a psychological/relational metaphor is distinctly modern-scientific. The term is also outside Kaelith's established architectural metaphor domain. Low-priority, but the density of usage (3×) makes it noticeable.",
+      "lineRef": "L14, L40, L106",
+      "excerpt": "a frequency she had been tuned to carry without knowing / at the frequency it had been built for / Lirien's particular frequency of determined focus",
+      "correction": "Consider reducing to one usage and replacing others with domain-appropriate alternatives: 'resonance' (more natural for a world with bells and vibration), 'pitch,' or 'register' (which Kaelith already uses for voice — 'Command register').",
+      "sourceRef": "style/style-guide.json: Kaelith metaphor domain; INV-018"
+    },
+    {
+      "id": "COPY-230",
+      "severity": "minor",
+      "category": "naming",
+      "description": "Diacritical mark cross-reference. The chapter consistently uses 'Serath Dún' (with acute accent on the u), which matches the authoritative source geography.json (LOC-010: 'Serath Dún'). However, the continuity tracker's naming consistency section uses 'Serath Dun' (without accent). The chapter is correct per geography.json; the continuity tracker naming section should be updated for alignment.",
+      "lineRef": "L14",
+      "excerpt": "Serath Dún",
+      "correction": "No change in chapter. Update continuity/continuity-tracker.json naming section to 'Serath Dún' (with accent) to match geography.json.",
+      "sourceRef": "world-bible/geography.json LOC-010; continuity/continuity-tracker.json namingConsistency.locations"
+    }
+  ],
+  "verifiedCorrect": [
+    {
+      "item": "Character name spellings",
+      "details": "Kaelith Maren, Lirien Dael, Ossya Thenndal, Thalen Reyvas, Iryse, Tessen Vael — all spelled consistently with continuity tracker."
+    },
+    {
+      "item": "Place name spellings",
+      "details": "Serath Dún, Quietus, Pallor, Calwrath, Graymarket, Rivenmarch, Ashborne Fourth — all consistent with geography.json and continuity tracker."
+    },
+    {
+      "item": "Magic system compliance",
+      "details": "Warden magic (certainty as reinforcement, kinetic memory activation), resonance bond mechanics (emotional transmission without thought/word transmission), seal architecture (boundary between actuality and potential), Lirien's Tier 4 fae combat magic — all consistent with magic-system.json rules MAG-001, MAG-006, MAG-007, MAG-009. No deus ex machina (INV-009). No new abilities without prior establishment."
+    },
+    {
+      "item": "Bond description post-dissolution",
+      "details": "Bond described as 'clean, sharp' without binding interference — consistent with ch20 dissolution event where binding was removed and bond persisted cleaner."
+    },
+    {
+      "item": "Pallor silver on forearm",
+      "details": "Silver thread on left forearm tracking ulna from wrist to elbow — consistent with ch17/ch20 continuity. Thinning after seal work but not vanishing — consistent with metadata."
+    },
+    {
+      "item": "Oathbrand timeline",
+      "details": "'five years past its dissolution date' — brand applied YK 736, should dissolve YK 737, current YK 742 = 5 years past. Correct."
+    },
+    {
+      "item": "Ashborne veteran count",
+      "details": "'Eight of them' — consistent with ch19 continuity establishing 8+ Ashborne veterans at Rivenmarch."
+    },
+    {
+      "item": "Lirien wound location",
+      "details": "Burn across 'left shoulder' — consistent across lines 124, 148, 206 within the chapter and with ch22 metadata."
+    },
+    {
+      "item": "Iryse title — full form",
+      "details": "'keeper of the Dimming rites' used on line 156 and 'Dimming rites keeper' on line 190 — consistent with established usage."
+    },
+    {
+      "item": "Tense consistency",
+      "details": "Past tense maintained throughout. No tense shifts detected."
+    },
+    {
+      "item": "Dialogue formatting",
+      "details": "Em dashes for interruptions ('Because they would not have understood —'), correct comma placement with speech tags, consistent spaced em-dash format throughout."
+    },
+    {
+      "item": "Pronoun clarity",
+      "details": "With Thalen (male) as the only male character in scenes with Kaelith and Lirien (both female), pronoun disambiguation is naturally handled. No ambiguous pronoun references detected."
+    },
+    {
+      "item": "Scene break markers",
+      "details": "'---' used consistently for both scene breaks (after SCN-59 and SCN-60). Properly placed."
+    },
+    {
+      "item": "Intentional voice cross-contamination",
+      "details": "Line 112: 'water that finds every crack' — Kaelith notices herself using a water metaphor (Lirien's domain). Explicitly flagged as self-aware in the text ('The thought surfaced without permission'). This is intentional per style-guide crossContaminationRules and correctly implemented."
+    },
+    {
+      "item": "Style guide banned phrases",
+      "details": "None of the 15 banned phrases from style-guide.json proseQualityFloor.bannedPhrases appear in this chapter."
+    },
+    {
+      "item": "Cultural consistency",
+      "details": "Iryse in 'Conclave formal dress,' Ashborne veterans entering 'in pairs' with military cadence, Kaelith's 'Commander's voice' register, Tessen as Rivenmarch freeholder — all culturally appropriate per world-bible/culture.json."
+    }
+  ]
+}

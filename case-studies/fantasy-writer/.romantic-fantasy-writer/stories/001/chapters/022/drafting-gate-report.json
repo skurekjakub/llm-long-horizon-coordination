@@ -1,0 +1,422 @@
+{
+  "gateId": "GATE-DRAFT-CH022",
+  "phase": "drafting",
+  "chapter": 22,
+  "title": "What the Water Chose",
+  "pov": "Lirien Dael (CHAR-002)",
+  "auditDate": "2025-07-25",
+  "auditor": "drafting-auditor",
+  "verdict": "passed",
+  "verdictRationale": "Chapter 22 passes the drafting gate. Zero critical findings, two warnings (below the 3-warning threshold). The chapter delivers on all outline requirements, maintains voice integrity, correctly applies all 16 craft tools, and provides an earned HFN resolution for both arcs. The warnings identified are genuine craft observations that the revision pipeline should address but are not quality-bar failures. This is a strong final chapter that closes the book with emotional authenticity and thematic precision.",
+
+  "upstreamReportVerification": {
+    "voiceReport": {
+      "status": "VERIFIED",
+      "notes": "Voice report (9.4/10) is consistent with my independent findings. Lirien's voice is immediately identifiable from opening sentence, water/classification metaphor domains are maintained, and voice evolution arc is complete. No voice contamination from Kaelith detected. I concur with the PASS."
+    },
+    "continuityReport": {
+      "status": "VERIFIED",
+      "notes": "Continuity report PASS is consistent. One minor spelling note (Serath Dún vs Dûn) confirmed — appropriate for polish phase. Character positions, knowledge states, and timeline progression all verified. DISC-001 (Thalen seat number) is a pre-existing cross-book issue that does not affect this chapter."
+    },
+    "craftEnforcementReport": {
+      "status": "VERIFIED",
+      "notes": "Craft enforcement 100% compliance (16/16 tools) is consistent with my assessment. All tools are demonstrably applied. I flag two areas where application could be tightened (see warnings below) but agree these do not constitute failures."
+    }
+  },
+
+  "outlineComplianceCheck": {
+    "verdict": "PASS",
+    "povCharacter": {
+      "status": "COMPLIANT",
+      "evidence": "Lirien Dael (CHAR-002) is the POV throughout. Opening sentence 'The first thing she classified was the light' immediately establishes her operative-analytical perspective. No POV drift detected."
+    },
+    "sceneGoals": {
+      "SCN-62": {
+        "status": "FULLY DELIVERED",
+        "outlineGoal": "World stabilizes — Pallor thinned but holding, magic more accessible, crisis contained. Lirien processes new reality through operative's eyes",
+        "draftEvidence": "Lines 12-70: Lirien wakes, inventories body damage, registers binding absence, observes thinned Pallor, catalogues changed world with intelligence-analyst precision, receives situation report from Ashborne scout. All outline beats present: body inventory, classification system failure, world assessment, scout exchange.",
+        "fiveCommandments": {
+          "incitingIncident": "PRESENT — Lirien wakes in aftermath, body aching, binding gone, Pallor thinner (lines 12-14)",
+          "complication": "PRESENT — Reports confirm permanent alteration, magic more accessible, political implications vast (lines 44-58)",
+          "crisis": "PRESENT — 'Who is Lirien Dael, when no one is telling her what to do?' (line 70)",
+          "climax": "PRESENT — Implicit choice: she chooses the present, processes rather than grieves (lines 58-70)",
+          "resolution": "PRESENT — Fantasy arc closes with cautious hope; world different, not destroyed (lines 56-58)"
+        }
+      },
+      "SCN-63": {
+        "status": "FULLY DELIVERED",
+        "outlineGoal": "Institutional reckoning begins — Conclave hedges on Kaelith's exile, vindication comes from people not institutions",
+        "draftEvidence": "Lines 74-130: Conclave response analyzed, Kaelith reads it, 'I stopped needing their permission when I started needing something real,' Lirien assesses institutional behaviour, Pallor described overhead. All outline beats present.",
+        "fiveCommandments": {
+          "incitingIncident": "PRESENT — Conclave relay arrives with hedged response (lines 74-80)",
+          "complication": "PRESENT — Kaelith not angry but released; doesn't need approval (lines 92-100)",
+          "crisis": "PRESENT — Fight for vindication or accept people's recognition? (implicit lines 100-108)",
+          "climax": "PRESENT — 'I stopped needing their permission when I started needing something real' (line 106)",
+          "resolution": "PRESENT — Institutional arc closes without triumph; vindication is personal (lines 112-130)"
+        }
+      },
+      "SCN-64": {
+        "status": "FULLY DELIVERED",
+        "outlineGoal": "HFN resolution — Kaelith and Lirien choose to stay together because they want to, bond persists as chosen connection",
+        "draftEvidence": "Lines 134-222: Allies disperse, quiet moment, 'I don't know what to do,' Rivenmarch conversation, 'I stay because I want to' / 'I know. I want it too,' hand-holding, star through Pallor, river metaphor. All outline beats delivered.",
+        "fiveCommandments": {
+          "incitingIncident": "PRESENT — Allies leave, two people alone without crisis (lines 134-144)",
+          "complication": "PRESENT — Without mission, who are they to each other? Must be chosen (lines 148-156)",
+          "crisis": "PRESENT — Stay because chosen or separate because crisis is over? (lines 176-184)",
+          "climax": "PRESENT — 'I stay because I want to. Not because I was sent. Not because the world needs it. Because I want this.' (line 186)",
+          "resolution": "PRESENT — Bond hums chosen, star through Pallor, river deciding (lines 198-222)"
+        }
+      }
+    },
+    "emotionalArc": {
+      "status": "COMPLIANT",
+      "startState": "DELIVERED — quiet aftermath, body processing freedom, classification system encountering the unclassifiable",
+      "endState": "DELIVERED — chosen love, river deciding its own course, 'She was deciding this. Every day. Starting now.'",
+      "pivotMoment": "DELIVERED — 'I stay because I want to' exchange (lines 186-192)"
+    },
+    "fantasyBeats": {
+      "status": "PRESENT",
+      "evidence": "Pallor stabilization, thinned membrane, enhanced magical capacity, Conclave emergency session, Thalen custody, freeholder adaptation — all delivered"
+    },
+    "romanceBeats": {
+      "status": "PRESENT",
+      "evidence": "'I stay because I want to' / 'I know. I want it too.' — HFN declaration delivered with emotional weight and thematic resolution"
+    },
+    "hookType": {
+      "status": "COMPLIANT",
+      "outline": "quiet-aftermath",
+      "evidence": "Chapter opens with Lirien classifying light, body inventory, binding absence — gentlest opening in the book, as specified"
+    },
+    "closeType": {
+      "status": "COMPLIANT",
+      "outline": "earned-hope",
+      "evidence": "Closes with river metaphor, hand-holding, 'She was deciding this. Every day. Starting now.' — earned hope without triumphalism"
+    }
+  },
+
+  "proseQualityAudit": {
+    "verdict": "PASS",
+    "bannedPhrases": {
+      "status": "CLEAN",
+      "count": 0,
+      "evidence": "All 15 banned phrases checked. Zero found."
+    },
+    "clicheFantasyPhrases": {
+      "status": "CLEAN",
+      "count": 0,
+      "evidence": "Scanned for 18 common cliche patterns (eyes like pools, power coursing, darkness threatening, heart hammered, blood ran cold, etc.). Zero found. Metaphors are consistently from Lirien's established domains (water, classification, surfaces, light)."
+    },
+    "repeatedSentenceStructures": {
+      "status": "WARN — see W-001",
+      "details": "Several structural patterns repeat beyond normal frequency: 'Through the bond' (7 instances), 'Not X' fragments (21 instances), 'the way she X' (5 instances), 'the way she X everything' (4 instances). Most are voice-consistent (Lirien's classification/negation patterns) but 'Through the bond' and 'the way she X everything' verge on tic."
+    },
+    "tellNotShow": {
+      "status": "PASS — with observation",
+      "details": "18 uses of 'felt' — but nearly all are mediated through the resonance bond mechanism ('Through the bond, she felt...') or physical sensation rather than emotional labeling. Zero instances of direct emotion-naming for major beats. Key emotional moments (Kaelith's release line 94, Lirien's declaration line 186, hand-holding line 194) are all shown through action, dialogue, and physical response. Show-to-tell ratio easily meets 90:10 for key scenes."
+    },
+    "purpleProse": {
+      "status": "CLEAN",
+      "details": "No excessive adjective stacking detected. Longest descriptive passages (Pallor description lines 38-42, star imagery lines 200-202) serve narrative function (world-state assessment, thematic resolution). Prose is lush but controlled — 'literary-formal, restrained' register maintained."
+    },
+    "modernSlang": {
+      "status": "CLEAN",
+      "details": "One 'whatever' detected in the river metaphor ('whatever material lay between the source and the sea') — standard English usage, not modern slang. Zero anachronisms."
+    },
+    "passiveVoice": {
+      "status": "CLEAN",
+      "details": "0.4% passive voice — well below 8% threshold."
+    },
+    "adverbs": {
+      "status": "CLEAN",
+      "details": "1.4 per page — well below 3 per page threshold."
+    },
+    "dialogueTags": {
+      "status": "CLEAN",
+      "details": "12 'said', 2 'asked'. Minimal and appropriate. No purple tag substitutions."
+    },
+    "emDashUsage": {
+      "status": "NOTE",
+      "details": "69 em-dashes across 4343 words (1 per ~63 words). This is high but consistent with Lirien's voice fingerprint — she thinks in parenthetical qualifications and analytical asides. 12 long em-dash parentheticals (50+ chars) are characteristic of her flowing, cascading sentence structure. Consistent with established voice across 22 chapters."
+    }
+  },
+
+  "voiceAndPOVAudit": {
+    "verdict": "PASS",
+    "identificationTest": {
+      "status": "PASS — immediate identification",
+      "evidence": "Opening: 'The first thing she classified was the light. Not the quality she had trained her eyes to assess in a thousand operational mornings...' — 'classified,' 'trained,' 'operational mornings' = unmistakably Lirien within 2 sentences. Water metaphor ('surface tension releasing,' line 32), classification system ('Threat level: low. Mission status: complete,' line 28), and visual dominance ('She saw it the way she saw everything: details first, then pattern, then implication,' line 38) all confirm."
+    },
+    "voiceConsistency": {
+      "status": "PASS",
+      "details": "Voice fingerprint maintained across all three scenes. Classification vocabulary present in Scene 1 (full power), Scene 2 (applied to political assessment), Scene 3 (breaking down as vulnerability increases). Water metaphors thread through: 'surface tension releasing' (32), 'water adjusted to a new gradient' (44), 'water finds every crack' (122), extended river metaphor (212-218). Zero voice contamination from Kaelith's architecture/stone domain."
+    },
+    "voiceEvolution": {
+      "status": "EARNED",
+      "details": "The progression from operative precision ('Threat level: low') through system failure ('Something she did not have a category for') to vulnerability acceptance ('I don't know what to do') to naked declaration ('I stay because I want to') is tracked and earned through the three scenes. The classification system doesn't vanish — it becomes insufficient, and Lirien chooses to speak beyond it."
+    }
+  },
+
+  "sceneStructureAudit": {
+    "SCN-62_QuietAftermath": {
+      "wordCount": 1395,
+      "sceneType": "sequel (as outlined)",
+      "valueShift": "PRESENT — from 'crisis contained' to 'the world survives changed — and so do we'",
+      "microTension": "PASS — identity question ('Who is Lirien without a mission?'), binding absence processing, changed-world uncertainty sustain engagement throughout. Low-tension span at words 875-1000 (Conclave governance assessment) is Lirien's intelligence-analyst processing — functional, not dead.",
+      "sceneSequelStructure": "Reaction (body inventory, binding absence) → Dilemma (who is she now?) → Decision (implicit: face the new world). Correctly executed for sequel type."
+    },
+    "SCN-63_InstitutionalResponse": {
+      "wordCount": 1172,
+      "sceneType": "scene (as outlined)",
+      "valueShift": "PRESENT — from 'waiting for vindication' to 'vindication comes from people, not institutions'",
+      "microTension": "PASS — institutional cowardice creates anger on behalf of Kaelith, Kaelith's unexpected response creates surprise, the question of whether incomplete vindication is enough sustains. Low-tension span at words 1500-1625 (Conclave document analysis) serves the plot's institutional critique — functional exposition.",
+      "sceneSequelStructure": "Goal (process Conclave response) → Conflict (institutional hedge vs personal reality) → Outcome (vindication is personal). Turning point: 'I stopped needing their permission when I started needing something real.'"
+    },
+    "SCN-64_ChosenLove": {
+      "wordCount": 1753,
+      "sceneType": "sequel (as outlined)",
+      "valueShift": "PRESENT — from 'what now?' to 'now we choose — every day, we choose this'",
+      "microTension": "PASS — vulnerability of choosing without crisis, hope-fear tension in 'You'd stay,' the terrifying space of freedom sustain engagement. Low-tension spans at words 2250-2375 and 3750-3875 are reflective passages in the emotional climax — appropriate for a resolution chapter's most intimate beats.",
+      "sceneSequelStructure": "Reaction (quiet, allies gone) → Dilemma (stay or separate?) → Decision ('I stay because I want to'). The final scene-sequel closes the entire book."
+    }
+  },
+
+  "darlingsHunt": {
+    "verdict": "WARN — see W-002",
+    "findings": [
+      {
+        "id": "D-001",
+        "location": "Lines 200-202",
+        "passage": "A real star — small and sharp and ancient, burning with the hard light of something that had existed before the membrane and would exist after it and did not require anyone's permission to shine.",
+        "assessment": "BORDERLINE — This is the most ornate single sentence in the chapter. The star imagery is beautiful and thematically resonant ('did not require anyone's permission to shine' mirrors Kaelith's 'stopped needing their permission'). It serves thematic resolution. Verdict: earned, not a darling. The sentence could be tightened by removing 'small and sharp and' without losing meaning, but this is polish-level refinement."
+      },
+      {
+        "id": "D-002",
+        "location": "Lines 212-218",
+        "passage": "Extended river metaphor — 'A river that had been dammed and diverted and forced through channels carved by someone else's purpose — when that river broke free...'",
+        "assessment": "EARNED — This is the payoff for Lirien's water metaphor arc across the entire book. The extended metaphor is the thematic climax of her character. It advances character (Lirien choosing her own course) and theme (TP-3 chosen vs only). Not a darling."
+      },
+      {
+        "id": "D-003",
+        "location": "Lines 207-210",
+        "passage": "The Pallor was damaged... the particular stubbornness of people who built outside the boundaries of approval and trusted what they made to stand.",
+        "assessment": "BORDERLINE — This paragraph edges toward editorial summary ('the particular stubbornness of people who built outside the boundaries of approval'). The sentiment is earned by the freeholder arc, but the phrasing is more authorial commentary than Lirien's voice. The 'particular stubbornness' framing is broad rather than precise. Revision could sharpen this to something more specifically Lirien. Flagged as warning-level."
+      }
+    ]
+  },
+
+  "finalChapterSpecificChecks": {
+    "romanceArcResolution": {
+      "status": "FULLY RESOLVED — HFN delivered",
+      "evidence": "Love declaration ('I stay because I want to'), mutual commitment ('I know. I want it too'), physical grounding (hand-holding), bond described as 'clean and warm and chosen.' The HFN is earned: love proven through crisis, then re-chosen in freedom. Both women envision a shared future (Rivenmarch) with individual purposes (Kaelith: fortifications; Lirien: intelligence network). The romance resolves as chosen partnership, not codependence."
+    },
+    "fantasyArcResolution": {
+      "status": "RESOLVED with sequel hooks",
+      "evidence": "Pallor stabilized but permanently thinned. Thalen in custody. Conclave reckoning begun but incomplete. Freeholder communities adapting. Magic more accessible. The world changed but surviving. No deus ex machina. Fantasy resolution is earned through cost (Kaelith's frozen fingers, thinner Pallor) and consequences (institutions failing, new age beginning)."
+    },
+    "characterArcCompletion": {
+      "lirienDael": {
+        "status": "COMPLETE",
+        "evidence": "Arc from operative-defined-by-mission → choosing-her-own-identity. Opening question: 'Who is Lirien when no one is telling her what to do?' Final answer: 'She was deciding this. Every day. Starting now.' The classification system evolves from totalising framework to one tool among many. Water metaphor resolves from channeled current to self-directed river. Vulnerability ladder reaches final rung: declaration without analytical scaffolding."
+      },
+      "kaelithMaren": {
+        "status": "COMPLETE (observed through Lirien's POV)",
+        "evidence": "Kaelith's arc (guilt/exile → earned vindication → outgrowing the need for vindication) completes in Scene 2: 'I stopped needing their permission when I started needing something real.' Observed through Lirien but physically embodied: the exhale (line 94), the folded relay (line 104), the silver fingers catching light (line 84, 180). Kaelith's wound (Calwrath guilt) doesn't vanish — it's integrated. She adjusts her grip. She continues."
+      }
+    },
+    "danglingPlotThreads": {
+      "intentionalSeriesHooks": [
+        "Conclave review of Calwrath still pending — institutional reckoning will take years",
+        "Pallor permanently thinner — long-term magical/political implications",
+        "Cerith Court's reaction to Lirien's defection — unaddressed",
+        "Ythara the Unfinished remains sealed but the seal is thinner",
+        "Iryse reviewing 18 years of corrupted stewardship — implications ongoing"
+      ],
+      "assessment": "All major story promises are resolved. Remaining threads are clearly positioned as sequel material, not forgotten obligations. The Conclave response (lines 78-82) explicitly establishes institutional reckoning as ongoing. No reader should feel cheated by unresolved questions."
+    },
+    "dualArcIntersection": {
+      "status": "REINFORCING — as designed",
+      "evidence": "Fantasy resolution (world survives) enables romance resolution (external reasons to stay removed, only choice remains). The arcs close in alignment: Pallor holds → world safe → no crisis keeping them together → love must be actively chosen. The dual-arc timeline specified 'reinforcing' intersection and the draft delivers exactly that."
+    },
+    "thematicResolution": {
+      "TP1_Trust": "RESOLVED — Trust rests on proven architecture. Binding dissolved; trust remains. 'Being seen by someone whose judgment you trusted completely' (line 128)",
+      "TP2_RightChoice": "RESOLVED — Staying when leaving is easy. Kaelith chooses Rivenmarch over fighting for vindication. Lirien chooses staying over operational identity. Cost: certainty. Gain: authenticity.",
+      "TP3_ChosenVsOnly": "RESOLVED — The story's central thematic argument answered: 'I stay because I want to.' The cage is open. Both women stay. The river decides."
+    }
+  },
+
+  "criticalFindings": [],
+
+  "majorFindings": [],
+
+  "warnings": [
+    {
+      "id": "W-001",
+      "severity": "warning",
+      "invariant": "INV-017 (Prose Quality Floor — repeated structures)",
+      "location": "Throughout chapter",
+      "finding": "'Through the bond' appears 7 times (lines 26, 88, 110, 128, 156, 160, 188). While the resonance bond is a central story mechanism, 7 instances in 4343 words creates a detectable pattern. Combined with 'the way she X everything' (4 instances) and 'Not X' fragments (21 instances), the chapter has structural tics that the revision phase should vary.",
+      "evidence": "Bond references: 'Through the bond, Lirien could feel her' (26), 'Through the bond, Lirien felt the quality' (88), 'Through the bond, Lirien felt her considering' (156), 'Through the bond, she felt her own amusement' (160), 'Through the bond, she felt Kaelith receive the words' (188). 'The way she' pattern: 'the way she saw everything' (38), 'the way she adjusted everything' (84), 'the way she tested everything' (line 108 region), 'the way she rebuilt everything' (180).",
+      "recommendation": "Vary the bond-access phrasing. Replace 2-3 instances with indirect rendering: instead of 'Through the bond, she felt X,' try 'The bond carried X' or simply render the felt sensation without naming the channel. Similarly, vary the 'the way she X everything' pattern — it risks becoming a verbal tic rather than a voice feature."
+    },
+    {
+      "id": "W-002",
+      "severity": "warning",
+      "invariant": "INV-081 (Kill Your Darlings) / INV-073 (Publication-Ready Prose)",
+      "location": "Lines 207-210",
+      "finding": "The paragraph beginning 'Not perfect. The Pallor was damaged...' shifts briefly into authorial editorial mode. The phrase 'the particular stubbornness of people who built outside the boundaries of approval and trusted what they made to stand' is thematically apt but reads as the author's thesis statement rather than Lirien's thought. Lirien is precise and specific; this is broad and abstract.",
+      "evidence": "'The future would take years of work, compromise, and the particular stubbornness of people who built outside the boundaries of approval and trusted what they made to stand.'",
+      "recommendation": "Ground this in Lirien's specificity. Instead of abstract 'people who built outside boundaries of approval,' invoke specific names or images she's already catalogued: Tessen's relay points, Sedara's patience, the Ashborne doctrine rebuilt without permission. Make the thesis concrete through her operative's eye."
+    }
+  ],
+
+  "minorFindings": [
+    {
+      "id": "M-001",
+      "severity": "minor",
+      "category": "Prose pattern",
+      "location": "Throughout",
+      "finding": "'Something' appears 25 times across 4343 words (once per ~174 words). While several instances are precise and effective ('Something she did not have a category for,' 'Something real'), others are vague placeholders that Lirien's precision-oriented voice should avoid: 'Something in Kaelith's chest opened' (line 188), 'something that had existed before the membrane' (line 200). A precision character saying 'something' this often creates micro-tension between voice claim and prose execution.",
+      "recommendation": "Review 'something' usage in polish. Keep the instances where vagueness is deliberate (classification system failing) but sharpen those where Lirien would be more specific."
+    },
+    {
+      "id": "M-002",
+      "severity": "minor",
+      "category": "Repetition",
+      "location": "Lines 14, 206",
+      "finding": "'Grey and gold(en)' appears twice: 'grey and gold simultaneously' (line 14) and 'grey and golden and real' (line 206). This is a deliberate bookend — opening and closing the chapter with the same image. As a structural choice it works. As a minor note: the payoff of the repetition should be explicit enough that it reads as intentional echo, not lazy recycling. The addition of 'and real' in the closing makes this sufficiently distinct.",
+      "recommendation": "No action needed — this is effective bookending. Note for polish: ensure the echo reads as intentional."
+    },
+    {
+      "id": "M-003",
+      "severity": "minor",
+      "category": "Spelling consistency",
+      "location": "Throughout",
+      "finding": "Serath Dún (with acute accent on u) in draft vs Serath Dûn (with circumflex) in world-bible. Flagged by continuity report as MINOR-001. Pre-existing issue.",
+      "recommendation": "Standardize in polish phase."
+    },
+    {
+      "id": "M-004",
+      "severity": "minor",
+      "category": "Em-dash density",
+      "location": "Throughout",
+      "finding": "69 em-dashes in 4343 words (1 per ~63 words) is notably high. While consistent with Lirien's parenthetical, qualifying voice, the density may challenge reader flow in a resolution chapter that should breathe more easily. 12 em-dash parentheticals exceed 50 characters.",
+      "recommendation": "Consider converting 5-8 longer em-dash parentheticals to independent sentences or semicolons during revision, particularly in Scene 3 where the emotional register shifts toward simplicity."
+    }
+  ],
+
+  "observations": [
+    {
+      "id": "OBS-001",
+      "category": "Craft mastery",
+      "observation": "The 'I stopped needing their permission' callback from Scene 2 (line 106) to Scene 3 (line 168) is exceptionally well-executed. Same sentence, different context — institutional rejection in Scene 2 becomes personal construction in Scene 3. This is T24 (Subtext in Dialogue) and T25 (Thematic Argument) working in concert."
+    },
+    {
+      "id": "OBS-002",
+      "category": "Voice evolution",
+      "observation": "The classification system's degradation arc within a single chapter (line 28: 'Threat level: low. Mission status: complete' → line 32: 'Something she did not have a category for' → line 148: 'I don't know what to do' → line 186: 'I stay because I want to') mirrors Lirien's character arc across the entire book compressed into 22 pages. This is voice serving character, not just differentiating POV."
+    },
+    {
+      "id": "OBS-003",
+      "category": "Thematic closure",
+      "observation": "The river metaphor (lines 212-218) resolves Lirien's water imagery arc and delivers TP-3 (chosen vs only) simultaneously. 'That was not flowing. That was deciding.' is the thematic climax of the entire book. The distinction between flowing (passive, gravity-driven) and deciding (active, chosen) is the argument the story has been building toward."
+    },
+    {
+      "id": "OBS-004",
+      "category": "Physical cost",
+      "observation": "The chapter correctly maintains Kaelith's physical cost: three frozen silver fingers (lines 84, 180, 194), mentioned twice but not dwelled upon. The detail that Kaelith 'simply adjusted her grip' and 'compensated, rebuilt around the damage' demonstrates character through action rather than telling. The physical cost of the fantasy climax is present and respected."
+    },
+    {
+      "id": "OBS-005",
+      "category": "Dialogue economy",
+      "observation": "Kaelith speaks only 12 lines in the entire chapter — consistent with her military brevity. Her two key lines ('I stopped needing their permission when I started needing something real' and 'I know. I want it too.') are the two most important sentences in the chapter. Dialogue economy is masterful."
+    },
+    {
+      "id": "OBS-006",
+      "category": "Subtext execution",
+      "observation": "The Rivenmarch conversation (lines 158-172) operates on two levels simultaneously: surface (practical planning — fortifications, ward-work, intelligence infrastructure) and subtext (building a life together, each person being useful, each person having purpose). 'Useful' as a love language is specific to these characters. T24 (Subtext in Dialogue) is correctly applied."
+    },
+    {
+      "id": "OBS-007",
+      "category": "Tone contract compliance",
+      "observation": "The chapter maintains the prohibited-tone exclusions. No melodrama in the HFN declaration — 'I stay because I want to' is domestic, not dramatic. No triumphalism in the fantasy resolution — the world is changed, not saved. No sentimentality — the hand-holding moment (lines 194-196) is grounded in physical specificity ('firm. Not desperate, not clinging') rather than emotional abstraction. T5 (Tone Contract) is correctly enforced."
+    },
+    {
+      "id": "OBS-008",
+      "category": "Final chapter structure",
+      "observation": "The three-scene structure descends from external (world assessment, Scene 1) through institutional (Conclave response, Scene 2) to personal (chosen love, Scene 3), matching the outline's 'decreasing external stakes and increasing emotional resolution' instruction. Pacing is deliberately slow and warm — appropriate for a resolution chapter at tension level 4/10."
+    },
+    {
+      "id": "OBS-009",
+      "category": "Micro-tension in resolution",
+      "observation": "Despite being the lowest-tension chapter in the book (level 4), micro-tension is sustained through: identity crisis ('Who is Lirien without a mission?'), institutional cowardice creating indignation, vulnerability of choosing without external pressure, and the terrifying freedom of 'what now?' Four half-page spans flagged as potentially low-tension are all functional: analytical processing, political assessment, reflective interiority, and emotional climax stillness."
+    },
+    {
+      "id": "OBS-010",
+      "category": "Bookending",
+      "observation": "The chapter uses effective bookending: 'grey and gold' opens and closes. Classification opens the chapter; 'deciding' closes it. The Pallor is observed thinning at the start and holds at the end. The bond is felt as warm presence at waking and humming as chosen connection at close. These structural echoes create satisfying closure."
+    },
+    {
+      "id": "OBS-011",
+      "category": "Sequel hooks",
+      "observation": "Series sequel hooks are naturally embedded without forcing: Conclave review pending, Pallor permanently altered, Cerith Court reaction unaddressed, Ythara sealed but thinner, Iryse's 18-year review ongoing. These are positioned as story-world consequences, not cliffhangers. The chapter closes as a complete narrative unit while leaving the world open."
+    },
+    {
+      "id": "OBS-012",
+      "category": "Sensory signature",
+      "observation": "Lirien's visual dominance is maintained: 'The first thing she classified was the light' (opening), 'She saw it the way she saw everything' (line 38), 'Kaelith's face in the late-afternoon light' (line 180), 'watching hand movement' (implied line 202). Every space and every emotional moment is processed through sight first. Zero tactile-dominant processing (which would be Kaelith's channel)."
+    },
+    {
+      "id": "OBS-013",
+      "category": "Information asymmetry resolution",
+      "observation": "T18 (Information Asymmetry) is fully resolved: both women have complete knowledge. No character acts on information they shouldn't have. The Conclave document (lines 78-82) introduces new information through established channels. Information asymmetry between protagonists is zero — appropriate for a post-revelation, post-crisis resolution."
+    },
+    {
+      "id": "OBS-014",
+      "category": "Vulnerability ladder",
+      "observation": "T21 (Vulnerability Ladder) reaches its final rung: Lirien declares love as daily choice without operational framing ('I stay because I want to. Not because I was sent.'). This is the highest-vulnerability statement possible for a character whose entire identity was operational framework. Kaelith's 'I know. I want it too.' matches it — allowing hope without bracing for loss, from a woman who learned wanting leads to losing."
+    },
+    {
+      "id": "OBS-015",
+      "category": "Word count",
+      "observation": "Draft at 4343 words vs outline target of 4100 words (5.9% over). Within acceptable range for a final chapter carrying resolution weight."
+    }
+  ],
+
+  "passFailGateChecklist": {
+    "automaticFailChecks": {
+      "povCharacterMatch": "PASS — Lirien Dael throughout",
+      "sceneGoalsPresent": "PASS — all 3 scene goals from outline delivered",
+      "clicheCount": "PASS — 0 cliche fantasy phrases (threshold: 2)",
+      "microTensionGaps": "PASS — no dead half-pages; all low-tension spans are functional",
+      "povIdentifiable": "PASS — identifiable in 2 sentences",
+      "unestablishedMagic": "PASS — no new magic introduced; bond, Pallor, fae senses all pre-established",
+      "knowledgeStateViolation": "PASS — no character references information they don't have",
+      "arcPresence": "PASS — both fantasy and romance arcs present and resolved",
+      "tellingMajorEmotions": "PASS — all major emotional beats shown through action, dialogue, physicality"
+    },
+    "warningChecks": {
+      "voiceInconsistencies": "CLEAN — no voice breaks detected",
+      "craftToolPartialApplication": "CLEAN — all 16 tools fully applied per craft enforcement report",
+      "turningPointWeight": "ADEQUATE — all turning points carry appropriate weight for resolution chapter",
+      "dialogueFunction": "CLEAN — all dialogue serves narrative function; no decorative exchanges",
+      "motifDensity": "ON TARGET — water, classification, Pallor, bond motifs all present at appropriate density",
+      "emotionalThroughline": "CLEAR — three-scene progression from aftermath → institutional reckoning → chosen love",
+      "darlings": "W-002 — one borderline passage identified (lines 207-210)",
+      "sceneSequelStructure": "PRESENT — beats appropriate for resolution pace",
+      "hookCloseQuality": "DESIGNED — quiet-aftermath hook and earned-hope close match outline exactly"
+    },
+    "warningCount": 2,
+    "warningThreshold": 3,
+    "verdictBasis": "0 critical findings, 0 major findings, 2 warnings (below 3-warning threshold), 4 minor findings, 15 documented observations. Chapter meets all automatic pass criteria and falls below warning threshold."
+  },
+
+  "remediationNotes": [
+    "W-001: Vary 'Through the bond' phrasing — replace 2-3 of 7 instances with indirect rendering",
+    "W-002: Ground lines 207-210 editorial passage in Lirien-specific detail",
+    "M-001: Review 'something' frequency — sharpen where Lirien's precision would demand specificity",
+    "M-003: Standardize Serath Dún/Dûn spelling in polish",
+    "M-004: Consider converting 5-8 longer em-dash parentheticals to independent sentences in Scene 3"
+  ],
+
+  "summary": "Chapter 22 'What the Water Chose' passes the drafting gate with a strong performance. The chapter delivers on every outline requirement, maintains Lirien's voice with exceptional consistency, correctly applies all 16 active craft tools, resolves both the romance and fantasy arcs with earned emotional weight, and completes all three thematic pillars. The two warnings (repetitive bond-access phrasing and one borderline authorial-voice paragraph) are genuine craft observations appropriate for the revision pipeline but do not rise to the level of quality-bar failures. The final chapter provides an emotionally authentic HFN that refuses triumphalism, grounds love in daily choice, and closes the book with thematic precision. The chapter is cleared to exit the drafting pipeline and enter revision."
+}

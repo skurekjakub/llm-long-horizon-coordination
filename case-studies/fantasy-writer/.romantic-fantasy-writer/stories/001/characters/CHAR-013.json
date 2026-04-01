@@ -1,0 +1,110 @@
+{
+  "id": "CHAR-013",
+  "name": "Iryse Caleth",
+  "role": "supporting",
+  "isPOV": false,
+  "psychologicalProfile": {
+    "wound": "Iryse built a life around the conviction that ritual can hold frightened people together when certainty fails.",
+    "desire": "Stabilize the Pallor, preserve civic faith, and keep fear from becoming panic.",
+    "fear": "That the rites have become empty form and she is stewarding reverence over an already-failing sky.",
+    "lie": "More observance and more precision can solve damage caused by sabotage and concealment.",
+    "ghost": "A regional Dimming failure in her youth taught her that ceremony is often the last barrier between fear and order.",
+    "need": "To accept that sincere faith can still be manipulated and that truth may require breaking sacred procedure open."
+  },
+  "arc": {
+    "type": "positive",
+    "startState": "A devout administrator increasing ritual pressure because it is the only cure she knows.",
+    "endState": "A horrified witness willing to expose how her office was used against the Pallor.",
+    "turningPoints": [
+      {
+        "chapter": 5,
+        "event": "Advocates stronger rites, worsening the sabotage route without knowing it."
+      },
+      {
+        "chapter": 19,
+        "event": "Learns the offering fires carried poison."
+      },
+      {
+        "chapter": 21,
+        "event": "Uses ritual authority to authenticate the mechanism publicly."
+      }
+    ]
+  },
+  "voiceFingerprint": {
+    "vocabularyLevel": "Formal liturgical with sincere conviction. Iryse's vocabulary is drawn from ritual, faith, and celestial observation: 'offering,' 'observance,' 'the Pallor's will,' 'stewardship,' 'the keeping,' 'communion,' 'consecration.' She does not use these words as decoration — they are the framework through which she genuinely understands the world. She says 'the sky tells us' the way a scientist says 'the data shows.' She says 'we are entrusted' rather than 'we are required' — obligation is sacred, not bureaucratic.",
+    "sentenceLength": "Medium-to-long with ceremonial cadence, with a rhythmic quality that echoes liturgical recitation. Her sentences have the rise-and-fall pattern of invocation: statement, expansion, return. 'The rites sustain us. They have sustained us since the first Dimming. They will sustain us still.' The triadic structure is habitual — she thinks in threes because ritual requires it.",
+    "metaphorDensity": "Moderate, drawn from celestial observation, flame, and shelter. The Pallor is 'the sky's promise.' Faith is 'a flame tended through the dark hours.' Duty is 'shelter raised against the storm.' She gravitates away from garden (Thalen's domain), architecture-as-fortification (Kaelith's domain), water (Lirien's domain), medical (Marin's domain), and terrain (Tessen's domain) metaphors, though occasional natural crossover is expected — rigid domain walls create artificiality. Her world is the canopy overhead — flame, light, sky, and the sacred act of watching.",
+    "emotionalRegister": "Earnest, reverent, and increasingly frightened. Iryse's sincerity is her defining characteristic and her vulnerability. She feels everything through the lens of stewardship — fear becomes 'the sky is telling us something we are failing to hear.' Her distress manifests not as panic but as intensified devotion: more rites, more careful observance, more fervent prayer. When devotion itself is compromised, she has little secondary register to fall back on — the silence of someone whose framework has failed.",
+    "thoughtPatterns": "Symbolic and interpretive. Iryse reads the world as a text written by forces greater than herself — most events have ritual meaning, most crises are failures of observance. She interprets rather than analyzes, finding spiritual significance in patterns that others would call coincidence. This makes her both wise (she sees connections others miss) and exploitable (her interpretation can be redirected by anyone who controls the ritual inputs).",
+    "dialectMarkers": "Prayer-inflected phrasing — sentences that begin or end with invocatory rhythms: 'By the Pallor's light,' 'In the keeping's name.' Careful invocations: she names things formally before discussing them, as though naming confers protection. She uses 'we' communally — the 'we' of the congregation, not the 'we' of the Conclave.",
+    "humorStyle": "Gentle and self-aware — the humor of a devout person who knows how devotion looks from the outside. 'I know. Another rite. Another hour of watching the sky for signs it cannot give. But what else do we have?' Her humor acknowledges doubt without surrendering faith.",
+    "attentionPriority": "What Iryse notices first: (1) The sky — the Pallor's color, thickness, luminance. She reads the membrane the way others read faces. (2) Flame behavior — how the offering fires burn, their color, their smoke patterns. (3) The congregation's state — are people frightened? Are they coming to the rites? (4) Sacred protocol — is the observance being performed correctly?",
+    "deflectionPattern": "Returns to liturgical framing. Asked about politics: 'The keeping is not a political instrument. The keeping is a covenant.' Asked about doubt: 'Doubt is the wind that makes the flame burn brighter.' She deflects by elevating the conversation from political to spiritual, which protects her from confronting the political instrumentalization of her faith.",
+    "stressResponse": "Liturgical cadence intensifies — sentences become more rhythmic, more invocatory, as though the form of prayer can contain the terror the content cannot address. Under extreme stress: the cadence breaks and plain, frightened speech emerges — 'Someone used my fire. Someone used it to burn the sky.' The simplicity is devastating because she has never spoken simply before."
+  },
+  "sensorySig": {
+    "dominantChannel": "visual",
+    "signature": "Pallor-light quality, flame color, the silver-shift of sky at dusk",
+    "emotionalTriggers": [
+      "the Pallor thinning to translucence at the edges",
+      "offering-fire burning with wrong-colored smoke",
+      "silver light failing in a room that should be bright"
+    ]
+  },
+  "relationships": [
+    {
+      "withCharId": "CHAR-003",
+      "type": "unwitting-instrument",
+      "dynamicArc": "Her trust in Thalen makes her office the delivery path for sabotage."
+    },
+    {
+      "withCharId": "CHAR-004",
+      "type": "colleague-foil",
+      "dynamicArc": "Ritual meaning and evidence discipline collide, then align."
+    },
+    {
+      "withCharId": "CHAR-014",
+      "type": "conclave-peer",
+      "dynamicArc": "Daerin trusts her sincerity more than her solutions."
+    },
+    {
+      "withCharId": "CHAR-001",
+      "type": "belated-ally",
+      "dynamicArc": "Kaelith's survival becomes tied to Iryse's willingness to admit compromise."
+    }
+  ],
+  "physicalDescription": {
+    "apparentAge": "mid-fifties",
+    "build": "graceful and upright",
+    "distinguishingFeatures": "silver-threaded dark hair and pale worried eyes",
+    "usualPresentation": "moon-silver vestments over practical layers",
+    "movement": "measured and practiced"
+  },
+  "agency": "Iryse first worsens the crisis in good faith by escalating the rites, then becomes one of the few people able to validate the sabotage from inside the Keeping. Her choices matter on both sides of the revelation.",
+  "upstreamRefs": [
+    "story-concept.json",
+    "world-bible/politics.json",
+    "world-bible/history.json",
+    "world-bible/culture.json",
+    "world-bible/magic-system.json"
+  ],
+  "dialoguePatterns": {
+    "initiationStyle": "Opens with liturgical acknowledgment. 'By the Pallor's light, colleagues.' Or: 'The evening's observance showed something I must share.' She frames most conversations as continuous with the sacred. Even urgent warnings carry ritual preamble.",
+    "responseStyle": "Interprets before she responds. Someone states a fact and Iryse says: 'Then the offering pattern has been disrupted — which means the keeping itself may be compromised.' She rarely discusses bare facts; she reads them as signs. Agreement from Iryse sounds like confirmation of prophecy.",
+    "underPressure": "Invocatory rhythm accelerates — triadic structures compress, repetitions multiply. 'The fire is wrong. The fire has been wrong. The fire has always been wrong.' When the cadence finally breaks: stripped, declarative speech — 'They poisoned it. Through me. Through my office.' — carrying the weight of a faith collapsing in real time.",
+    "verbalTics": [
+      "Uses triadic structures: three parallel clauses or phrases",
+      "Opens with 'By the Pallor's light' or 'In the keeping's name'",
+      "Refers to the Pallor as though it has will: 'The sky tells us'",
+      "Says 'we are entrusted' rather than 'we are required'",
+      "Uses 'the keeping' as both a practice and a spiritual state"
+    ],
+    "favoriteExpressions": [
+      "By the Pallor's light.",
+      "The keeping endures.",
+      "We are entrusted, not entitled.",
+      "The sky tells us what the record cannot.",
+      "Doubt is the wind that makes the flame burn brighter."
+    ]
+  }
+}

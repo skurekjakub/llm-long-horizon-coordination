@@ -1,0 +1,50 @@
+{
+  "agent": "supporting-cast-developer",
+  "iteration": 2,
+  "result": "completed",
+  "summary": "Remediated CHAR-008 (Tavik Soren) agency violation per CHAR-GATE-001-F003. Added agencyDecisions array with 3 specific decision points documenting choices, alternatives, consequences, and psychological justification. Each decision reframes Tavik's arc turningPoints as active choices rather than passive patterns, satisfying INV-008 requirement.",
+  "startTime": "2025-01-15T18:30:00Z",
+  "endTime": "2025-01-15T18:35:00Z",
+  "artifactsProduced": [
+    "characters/CHAR-008.json"
+  ],
+  "artifactsModified": [
+    "characters/CHAR-008.json"
+  ],
+  "metadata": {
+    "remediationType": "agency-decision-points",
+    "auditFindingAddressed": "CHAR-GATE-001-F003",
+    "invariantSatisfied": "INV-008",
+    "decisionPointsAdded": 3,
+    "decisionSummary": [
+      "Ch 3: Mark Kaelith's departure as reportable (vs delay/ignore/confront)",
+      "Ch 4: File formal escalation report (vs minimal notation/wait/frame favorably)",
+      "Ch 20: Maintain neutrality despite conspiracy evidence (vs testify/obstruct/warn/resign)"
+    ]
+  },
+  "previousIterations": [
+    {
+      "iteration": 1,
+      "result": "completed",
+      "summary": "Created supporting-cast profiles for CHAR-003 through CHAR-014, corrected characters/index.json to the requested roster, and prepended a manifest entry.",
+      "startTime": "2026-03-18T00:43:25.249119Z",
+      "endTime": "2026-03-18T00:44:22.351910Z",
+      "artifactsProduced": [
+        "characters/CHAR-003.json",
+        "characters/CHAR-004.json",
+        "characters/CHAR-005.json",
+        "characters/CHAR-006.json",
+        "characters/CHAR-007.json",
+        "characters/CHAR-008.json",
+        "characters/CHAR-009.json",
+        "characters/CHAR-010.json",
+        "characters/CHAR-011.json",
+        "characters/CHAR-012.json",
+        "characters/CHAR-013.json",
+        "characters/CHAR-014.json",
+        "characters/index.json",
+        "manifest.json"
+      ]
+    }
+  ]
+}

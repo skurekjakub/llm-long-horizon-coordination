@@ -1,0 +1,207 @@
+{
+  "chapterNum": 13,
+  "pov": "CHAR-001",
+  "povTransitionMotivation": "Return to Kaelith for the Calwrath confession and first kiss — earned through vulnerability about her greatest shame",
+  "scenes": [
+    {
+      "id": "SCN-34",
+      "goal": "Kaelith and Lirien secure temporary camp while processing the threat of Thalen's hunters closing in",
+      "conflict": "The resonance bond makes it impossible for Kaelith to hide her agitation and fear — Lirien feels everything",
+      "disaster": "Lirien asks directly what Kaelith is afraid of, and Kaelith realizes she must choose: deflect or trust",
+      "valueShift": "From 'keep Calwrath buried' to 'Lirien is asking and I can't hide anymore'",
+      "fiveCommandments": {
+        "incitingIncident": "Camp secured but Kaelith's emotional state is radiating through the bond — anxiety, shame, old grief",
+        "complication": "Lirien notices physical tells Kaelith doesn't realize she's showing — defensive posture, avoiding eye contact",
+        "crisis": "Answer the question honestly, or maintain the sanitized version of Calwrath she's lived with for six years?",
+        "climax": "Kaelith makes the choice: 'You want to know what I'm afraid of? I'll tell you about Calwrath.'",
+        "resolution": "The story begins — not the public version, the truth"
+      },
+      "beats": [
+        {
+          "type": "action",
+          "content": "Camp setup in wilderness refuge — defensible position, sight lines, Kaelith's military training visible in every choice",
+          "emotionalRegister": "controlled but tense",
+          "wordAllocation": 400,
+          "microTension": "Every sound could be Thalen's hunters. They are not safe",
+          "voiceNote": "Kaelith notices terrain tactically: cover, escape routes, kill zones"
+        },
+        {
+          "type": "internal",
+          "content": "Kaelith feels Lirien's awareness through the bond — curiosity, concern, the edge of a question forming",
+          "emotionalRegister": "defensive, cornered",
+          "wordAllocation": 300,
+          "microTension": "The bond betrays her. Lirien knows something is wrong",
+          "voiceNote": "Kaelith's internal monologue: cost-benefit analysis of vulnerability vs continued concealment"
+        },
+        {
+          "type": "dialogue",
+          "content": "Lirien asks what Kaelith is afraid of — direct, no deflection. 'I can feel you. What's wrong?'",
+          "emotionalRegister": "careful, non-judgmental",
+          "wordAllocation": 500,
+          "microTension": "Kaelith can lie, but Lirien will feel the lie through the bond",
+          "voiceNote": "Lirien's precision in questioning. Kaelith's evasion attempts failing",
+          "subtextLayer": "Surface: concern. Subtext: 'The bond means we cannot hide anymore. Choose to trust or admit you won't'"
+        },
+        {
+          "type": "reaction",
+          "content": "Kaelith's decision point — the moment she chooses to tell the truth instead of the survival lie",
+          "emotionalRegister": "terrified resolve",
+          "wordAllocation": 400,
+          "microTension": "What if Lirien walks away after hearing this?",
+          "voiceNote": "Kaelith thinking in command decisions: assess risk, make the call, live with consequences"
+        }
+      ],
+      "sceneType": "sequel",
+      "sceneSequelNotes": "Reaction to pursuit and bond exposure from chapter 12. Kaelith processing what trust costs."
+    },
+    {
+      "id": "SCN-35",
+      "goal": "Kaelith tells Lirien the unsanitized truth about Calwrath — that she ordered the strike, that civilians died, that she was right tactically and morally catastrophic",
+      "conflict": "Kaelith must walk Lirien through the choice in real time — show her the impossible math of lives",
+      "disaster": "Kaelith admits her deepest fear: she would make the same choice again, and that terrifies her about herself",
+      "valueShift": "From 'hide the unforgivable parts' to 'show her everything and see if she stays'",
+      "fiveCommandments": {
+        "incitingIncident": "Kaelith begins the story: 'Six years ago at Calwrath, I had eight minutes to decide three hundred lives'",
+        "complication": "The details are worse than the public version — children in the market, magical accelerant, no clean choice",
+        "crisis": "Stop before admitting she'd do it again, or give Lirien the full truth?",
+        "climax": "Kaelith says it: 'If I had those eight minutes again, I would make the same call. And I hate that about myself.'",
+        "resolution": "Silence. Kaelith waits for judgment. Lirien does not leave"
+      },
+      "beats": [
+        {
+          "type": "dialogue",
+          "content": "Calwrath confession — Kaelith walks through the tactical situation, the time constraint, the impossible math",
+          "emotionalRegister": "clinical recitation masking devastation",
+          "wordAllocation": 900,
+          "microTension": "Lirien is listening without expression. What is she thinking?",
+          "voiceNote": "Kaelith tells it like a mission briefing: objective, constraints, decision matrix, outcome. Emotion leaks through restraint",
+          "subtextLayer": "Surface: tactical debrief. Subtext: 'This is who I am. I am capable of terrible necessary things'"
+        },
+        {
+          "type": "internal",
+          "content": "Kaelith's internal experience during confession — shame, defiance, grief, the wound that never healed",
+          "emotionalRegister": "raw, barely controlled",
+          "wordAllocation": 600,
+          "microTension": "She is saying this aloud for the first time in six years. It feels like skinning herself",
+          "voiceNote": "Kaelith's thoughts fracture between military justification and moral horror"
+        },
+        {
+          "type": "action",
+          "content": "Physical tells during confession — Kaelith's hands, her breathing, the way she can't look at Lirien",
+          "emotionalRegister": "body betraying the cost of restraint",
+          "wordAllocation": 300,
+          "microTension": "If she looks at Lirien, she'll see judgment, and that will break her",
+          "voiceNote": "Kaelith notices her own body like an enemy: the shake in her hands, the tightness in her throat"
+        },
+        {
+          "type": "reaction",
+          "content": "Lirien's silence after the confession — not judgment, not absolution, just witness",
+          "emotionalRegister": "still, attentive, present",
+          "wordAllocation": 400,
+          "microTension": "The silence stretches. What is Lirien deciding?",
+          "voiceNote": "From Kaelith's POV: reading Lirien's micro-expressions, searching for revulsion and finding... what?"
+        }
+      ],
+      "sceneType": "scene",
+      "sceneSequelNotes": "Goal: confess Calwrath. Disaster: the truth is worse than silence, and now Lirien knows."
+    },
+    {
+      "id": "SCN-36",
+      "goal": "Lirien responds to the confession — she does not absolve, does not recoil, but stays and witnesses",
+      "conflict": "Kaelith expects judgment or comfort; Lirien offers neither, only presence and truth",
+      "disaster": "The kiss happens — not as reward but as mutual recognition that restraint has reached its breaking point",
+      "valueShift": "From 'I showed her my worst and she stayed' to 'she wants this — wants me — knowing everything'",
+      "fiveCommandments": {
+        "incitingIncident": "Lirien speaks: 'I don't think you're wrong. I think you're carrying something you can't put down.'",
+        "complication": "Lirien admits her own version of this: operative kills that were tactically perfect and morally devastating",
+        "crisis": "Acknowledge the attraction that has been building for weeks, or stay in the safe distance of shared trauma?",
+        "climax": "The kiss — not gentle, not desperate, but deliberate. Recognition and surrender",
+        "resolution": "Aftermath: they separate, shaken, both knowing they crossed a line that cannot be uncrossed"
+      },
+      "beats": [
+        {
+          "type": "dialogue",
+          "content": "Lirien's response — not absolution, but recognition. 'You're not asking for forgiveness. You're asking if I flinch.'",
+          "emotionalRegister": "calm, precise, unflinching",
+          "wordAllocation": 600,
+          "microTension": "Kaelith is terrified this is the beginning of Lirien's withdrawal",
+          "voiceNote": "Lirien's operator clarity cutting through Kaelith's shame spiral",
+          "subtextLayer": "Surface: tactical assessment. Subtext: 'I see exactly who you are, and I'm not leaving'"
+        },
+        {
+          "type": "dialogue",
+          "content": "Lirien shares her own version — a contract kill that saved dozens but destroyed her certainty about her own hands",
+          "emotionalRegister": "quiet admission, equal vulnerability",
+          "wordAllocation": 500,
+          "microTension": "This is Lirien offering equivalent trust — her hands are not clean either",
+          "voiceNote": "Lirien's restraint cracking enough to show the human under the operative",
+          "vulnerabilityLadder": "Step 4: Sharing the unforgivable parts of themselves"
+        },
+        {
+          "type": "action",
+          "content": "The moment before the kiss — eye contact, proximity, accumulated tension finding release point",
+          "emotionalRegister": "charged, inevitable",
+          "wordAllocation": 400,
+          "microTension": "Who moves first? Does it matter?",
+          "voiceNote": "Kaelith notices: Lirien's breathing changes, the distance closing, permission implicit"
+        },
+        {
+          "type": "action",
+          "content": "The kiss — earned through confession, not relief. Restraint breaking. Recognition that they want this",
+          "emotionalRegister": "intense, deliberate, frightening",
+          "wordAllocation": 700,
+          "microTension": "This is the first thing they've done that isn't survival necessity. It's choice, and choice is terrifying",
+          "voiceNote": "Sensation and implication without purple prose. What this kiss means, not just what it feels like",
+          "heatLevel": "Steamy but not explicit — kiss as emotional tipping point, not endpoint"
+        },
+        {
+          "type": "reaction",
+          "content": "Aftermath — they separate, process what just happened, neither apologizing or pretending it didn't",
+          "emotionalRegister": "shaken, awed, uncertain",
+          "wordAllocation": 400,
+          "microTension": "What now? They cannot unsee this possibility",
+          "voiceNote": "Kaelith and Lirien thinking in parallel: tactical assessment of intimacy as new threat surface",
+          "chapterClose": "Kiss aftermath lingers. Pursuit still active. Emotional landscape permanently shifted"
+        }
+      ],
+      "sceneType": "scene",
+      "sceneSequelNotes": "Goal: respond to confession. Disaster: intimacy happens, and neither can pretend anymore."
+    }
+  ],
+  "emotionalArc": {
+    "startState": "Kaelith begins in defensive fear — the bond is exposing her, and Lirien is about to ask the question Kaelith has avoided for six years",
+    "endState": "Kaelith ends in terrified hope — she showed Lirien everything and Lirien stayed, kissed her, chose her",
+    "pivotMoment": "Lirien's response to the confession: 'I don't think you're wrong. I think you're carrying something you can't put down.'"
+  },
+  "fantasyBeats": [
+    "Thalen's Network — Conclave Pursuit Escalates"
+  ],
+  "romanceBeats": [
+    "First Kiss — Witness Without Flinching"
+  ],
+  "hookType": "confession-courage",
+  "hookTypeDescription": "Chapter opens with Kaelith choosing to tell the truth about Calwrath — immediate emotional stakes",
+  "closeType": "kiss-aftermath",
+  "closeTypeDescription": "Chapter closes with kiss as emotional tipping point and implied pursuit still active — dual tension",
+  "targetWordCount": 4000,
+  "tensionLevel": 7,
+  "pacingNotes": "Chapter 13 — Thalen's Network / First Kiss. High romance tension (confession, kiss) balanced against mid-level fantasy tension (pursuit background threat). Tension 7: emotional intensity without combat. This is the earned vulnerability beat.",
+  "locationsPrimary": [
+    "Wilderness camp, evidence of Thalen's agents nearby"
+  ],
+  "charactersPresent": [
+    "CHAR-001",
+    "CHAR-002"
+  ],
+  "upstreamRefs": [
+    "../../plot/plot-structure.json",
+    "../../characters/CHAR-001.json",
+    "../../plot/dual-arc-timeline.json",
+    "../../plot/tension-map.json"
+  ],
+  "thematicWeight": {
+    "TP1_trust": "Kaelith chooses vulnerability knowing Lirien could weaponize it — trust through deliberate risk",
+    "TP2_rightChoice": "Calwrath confession dramatizes this pillar: right tactically, devastating morally, and Kaelith would choose it again",
+    "TP3_chosenVsOnly": "The kiss is the first freely chosen intimacy — not necessity, not bond-compulsion, but want"
+  }
+}

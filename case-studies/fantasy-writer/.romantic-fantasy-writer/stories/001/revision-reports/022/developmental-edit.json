@@ -1,0 +1,214 @@
+{
+  "artifactType": "developmental-edit",
+  "storyId": "001",
+  "chapter": 22,
+  "chapterTitle": "What the Water Chose",
+  "pov": "CHAR-002 (Lirien Dael)",
+  "act": "Act III",
+  "generatedAt": "2025-07-31T22:00:00Z",
+  "wordCount": 4322,
+  "targetWordCount": 4100,
+  "upstreamRefs": [
+    "chapters/022/draft.md",
+    "chapters/022/metadata.json",
+    "plot/chapter-outlines/chapter-022.json",
+    "plot/plot-structure.json",
+    "plot/dual-arc-timeline.json",
+    "plot/tension-map.json",
+    "romance-arc.json",
+    "story-concept.json",
+    "craft-profile.json",
+    "chapters/021/metadata.json"
+  ],
+
+  "overallAssessment": {
+    "verdict": "STRONG — resolution chapter delivers an earned HFN with full thematic closure across both arcs",
+    "summary": "Chapter 22 must accomplish four things simultaneously: decompress from the climax's maximum tension, resolve the fantasy arc's world-state, deliver the romance arc's Happy For Now, and close all three thematic pillars. The draft succeeds at all four. The three-scene architecture (SCN-62: aftermath/changed world → SCN-63: institutional reckoning/outgrowing → SCN-64: HFN/chosen love) is precisely calibrated for a resolution chapter — escalating emotional intimacy while external stakes remain at rest. Lirien's POV voice progressively surrenders its classificatory framework across the chapter: beginning in full operative-analyst mode ('She lay still and let her body report'), arriving at the unclassifiable ('something she did not have a category for'), and resolving in the novel's thematic capstone where classification yields to decision ('That was not flowing. That was deciding'). This arc within the chapter mirrors Lirien's arc across the entire novel. The river metaphor closing is the book's strongest single passage. Primary concerns are refinement-level: the Conclave analysis in SCN-63 runs ~500 words of institutional deconstruction that slows emotional momentum; several passages over-explain beats the reader has earned the right to interpret; and Kaelith's Rivenmarch speech slightly exceeds her established voice cadence. All addressable through line-level cuts without structural revision.",
+    "structuralHealth": "excellent",
+    "arcProgressionHealth": "excellent",
+    "dualArcInterleaveHealth": "excellent",
+    "voiceHealth": "strong with minor Kaelith concern"
+  },
+
+  "arcPositionAnalysis": {
+    "actPosition": "Act III, chapter 6 of 6 — FINAL CHAPTER. BEAT-019 (Resolution — The World Holds, Because They Chose It) per plot-structure.json.",
+    "fantasyArcPosition": "Full resolution. Pallor stabilized but permanently thinned — not restored. Magic more accessible, institutions scrambling, freeholder communities adapting faster. Fantasy resolves through transformation rather than restoration: the world is harder, more honest, more real. This is the correct anti-triumphalist ending per the tone contract (T5). Subplots: SUB-003 (Ashborne Legacy) closes here — 'Commander Maren' restored through popular recognition, not institutional decree. SUB-001 (Pallor Sabotage) final status conveyed through Ashborne scout report. SUB-006 (Iryse's Complicity) acknowledged through her continued presence in the evidence chamber.",
+    "romanceArcPosition": "Final commitment stage per romance-arc.json. HFN resolution achieved. The romance resolves through freely chosen partnership in the complete absence of external compulsion: contract dissolved (ch20), binding gone, mission complete, crisis contained. 'I stay because I want to' directly answers the TP-3 thematic question ('Can love that begins as necessity become something freely given?'). The vulnerability ladder reaches its final rung — Lirien declares love as daily choice without any operational framing; Kaelith allows hope without bracing for loss.",
+    "tryFailCycleStatus": "No active try-fail cycles. All four challenge arcs (keep Kaelith alive, prove sabotage, escape contract, build trust) reached success in chapters 20-21. This chapter's work is emotional integration and thematic closure, not obstacle navigation. INV-042 N/A.",
+    "tensionMapPosition": "Tension 4/10 per tension-map.json — lowest in the book. Following ch21 at tension 10 (peak-climax). The 10→4 decompression is textbook resolution pacing. Micro-tension sustained through identity questions ('Who is Lirien Dael, when no one is telling her what to do?'), institutional uncertainty (Conclave response), and the emotional vulnerability of choosing without compulsion."
+  },
+
+  "sceneAnalysis": {
+    "SCN-62": {
+      "type": "sequel",
+      "valueShift": "From 'crisis contained' to 'the world survives changed — and so do we'",
+      "assessment": "Strong opening. Lirien's body-inventory establishes the cost of chapter 21, then the binding's absence is registered as the true shift. The 'changed world' passage (Pallor thinned, ambient magic, scrub trees reaching) is atmospheric and specific. The Ashborne scout exchange is economical and closes the military subplot thread. The only over-explanation is 'Commander Maren' (see DEV-222). The scene successfully transitions from operative-mode assessment to something the classification system cannot contain — the arc of the entire novel in microcosm.",
+      "valueShiftVerified": true
+    },
+    "SCN-63": {
+      "type": "scene",
+      "valueShift": "From 'waiting for vindication' to 'vindication comes from the people, not the institution'",
+      "assessment": "Thematically essential but pacing-heavy. Kaelith's line 'I stopped needing their permission when I started needing something real' is the scene's structural peak and one of the novel's best. The institutional analysis that frames it, however, runs long (see DEV-221). The scene's best moments are observational — Lirien watching for Kaelith's expected anger and receiving release instead — and the weakest moments are expository (cataloguing Conclave bureaucratic language). The Ashborne-led public tribunal thread and the information-distribution guarantee ('water finds every crack') are well-handled closures.",
+      "valueShiftVerified": true
+    },
+    "SCN-64": {
+      "type": "sequel",
+      "valueShift": "From 'what now?' to 'now we choose — every day, we choose this'",
+      "assessment": "The novel's emotional landing and thematic capstone. Structurally near-perfect. The departure inventory at the opening is the only mechanical passage (see DEV-223). From 'I don't know what to do' through the Rivenmarch conversation to 'I stay because I want to,' the pacing is exquisite — each beat earns the next. The closing river metaphor ('That was not flowing. That was deciding.') resolves MOT-003 (water imagery) with the same precision Lirien brings to everything: the Seep's channelled current becomes a river choosing its own course. The final image (held hands, bond humming, star through the Pallor) is small, grounded, and earns its weight without sentimentality.",
+      "valueShiftVerified": true
+    }
+  },
+
+  "invariantCompliance": {
+    "INV-004_earnedEmotionalBeats": {
+      "status": "PASS",
+      "analysis": "The HFN declaration ('I stay because I want to') is the culmination of 21 chapters of buildup: the kill contract, the binding, the black moment, the loophole, the climax partnership. No emotional beat in this chapter arrives without prior investment. The Kaelith line ('I stopped needing their permission') is earned through the Calwrath wound → exile → Oathbrand → institutional betrayal → Ashborne loyalty arc. Both beats feel structurally inevitable rather than declarative."
+    },
+    "INV-005_showDontTell": {
+      "status": "PASS with minor concerns",
+      "analysis": "The chapter predominantly shows through body, action, analytical process, and bond. The classification-system-as-character-device works beautifully — Lirien's emotions are rendered through what she can and cannot classify. Three passages slightly over-explain: 'Commander Maren' landing (line 64), 'I don't know what to do' interpretation (lines 150-151), and the 'first time she had chosen it in advance' gloss (line 186). The closing pages are exemplary show-don't-tell — the river metaphor, the held hands, the star through the Pallor convey everything through image rather than statement."
+    },
+    "INV-009_deusExMachina": {
+      "status": "PASS",
+      "analysis": "No new information, abilities, allies, or convenient arrivals. Every element in the resolution was established in prior chapters: Ashborne veterans (ch18-19), Conclave institutional behavior (established throughout), Tessen's evidence satchel (ch19), freeholder communities (ch8-18), bond mechanics (ch11+), Rivenmarch as destination (ch9-18). The Conclave's response is realistic institutional hedging, not convenient absolution."
+    },
+    "INV-020_pacingVariation": {
+      "status": "PASS",
+      "analysis": "Ch20 (tension 9) → Ch21 (tension 10) → Ch22 (tension 4). The 10→4 drop is the correct decompression curve for a resolution following a peak climax. No INV-020 violation. Within the chapter, internal tension escalates (operative detachment → identity crisis → emotional arrival) while external tension remains at baseline — proper resolution dynamics."
+    },
+    "INV-021_romanceArcPacing": {
+      "status": "PASS",
+      "analysis": "The romance has progressed through all required stages: awareness (1-3) → attraction (4-10) → resistance (11-14, 16-18) → surrender (14-16) → commitment (19-22). Chapter 22 is solidly in the final commitment stage. The HFN declaration is the romance arc's natural terminus. Vulnerability has escalated appropriately — from operative delay (ch2) through physical care (ch8) through intimacy (ch14-15) through the black moment (ch16) through trust-as-death (ch20) to chosen love without compulsion (ch22)."
+    },
+    "INV-036_thematicCoherence": {
+      "status": "PASS — all three pillars dramatized and resolved",
+      "analysis": "TP-1 (Trust as structural failure): The bond's clean signal and the absence of compulsion demonstrate trust proven through what remains when nothing requires it. Kaelith's 'I stopped needing their permission' shows trust transferred from institution to person. Trust is now resting, not being tested — the architecture holds under daily weight, not crisis load. TP-2 (Price of the right choice): Staying when leaving is easy — Lirien's choice costs her the Cerith Court, her operative identity, and every framework that previously defined her. Kaelith's choice costs her the possibility of institutional vindication. Both accept the price. TP-3 (Chosen vs only): The central thematic resolution. Every external structure has been removed. What remains is purely chosen. 'I stay because I want to' directly answers the thematic question and closes the cage-metaphor arc."
+    },
+    "INV-037_emotionalStateVariety": {
+      "status": "PASS",
+      "analysis": "Ch21 (Kaelith POV): exits with 'exhausted earned satisfaction' (CHAR-001) and 'proud exhaustion' (CHAR-002). Ch22 (Lirien POV): CHAR-002 dominant emotion is 'chosen love' — distinct from 'proud exhaustion.' CHAR-001 dominant emotion is 'hard-won peace' — distinct from 'exhausted earned satisfaction' (satisfaction is about accomplishment; peace is about release from need). No emotional state repetition across consecutive chapters for either character."
+    },
+    "INV-040_sceneValueShifts": {
+      "status": "PASS",
+      "analysis": "All three scenes shift at least one value: SCN-62 shifts from 'crisis contained' to 'the world survives changed.' SCN-63 shifts from 'waiting for vindication' to 'vindication comes from people, not institutions.' SCN-64 shifts from 'what now?' to 'now we choose.' Each shift is visible in the prose and advances the chapter's overall arc from assessment → outgrowing → arrival."
+    },
+    "INV-044_stakesEscalation": {
+      "status": "N/A — resolution chapter",
+      "analysis": "Chapter 22 is the final chapter in a 22-chapter novel. Stakes escalation was verified through ch21 (the climax). This chapter's stakes are emotional rather than escalating — the vulnerability of choosing without compulsion carries its own quiet danger, but it is not required to exceed prior chapters' stakes. Act III stakes (existential) correctly exceeded Act I stakes (personal) per the plot-structure.json stakesEscalation mapping."
+    },
+    "INV-045_blackMoment": {
+      "status": "N/A — resolution chapter (payoff verified)",
+      "analysis": "The black moment (ch16) is fully resolved. This chapter is the payoff: love survives after the cage opens. The distance between ch16's devastation ('every feeling was built on a lie') and ch22's arrival ('I stay because I want to') is the novel's central emotional arc. The payoff is proportional to the devastation."
+    },
+    "INV-050_dualArcInterleave": {
+      "status": "PASS — full convergence at resolution",
+      "analysis": "Fantasy and romance arcs resolve in deliberate synchrony. The changed world (fantasy resolution) is the context that makes the chosen partnership (romance resolution) meaningful — external reasons to stay together have fallen away because the crisis is over, making the choice to remain purely personal. 'The world held. And the love held.' The arcs are not merely parallel — they are structurally interdependent: the world survived because they chose each other, and their choice is validated because the world it produced is worth inhabiting. Genre balance per dual-arc-timeline: romance-dominant chapter as specified (romance 'dominant', fantasy 'moderate')."
+    }
+  },
+
+  "findings": [
+    {
+      "id": "DEV-221",
+      "severity": "major",
+      "category": "pacing",
+      "location": "Lines 76-106 (Conclave response analysis, SCN-63 first half)",
+      "description": "The institutional analysis in SCN-63 runs approximately 500 words — Lirien's intelligence-analyst deconstruction of the Conclave's response is thorough but over-detailed for a resolution chapter. Specifically: (a) the direct quotation of Conclave language ('actions undertaken in contradiction to the Conclave's stewardship mandate') is effective but is then paraphrased and re-analyzed for another 200 words; (b) the 'under review, noted, established channels' catalogue (line 82) repeats the point already made by the first quotation; (c) Lirien's prediction of the Conclave's multi-year delay process (lines 96-102) functions as a policy analysis essay embedded in the resolution's emotional current. The reader's momentum after SCN-62's awed discovery of the changed world is interrupted by bureaucratic deconstruction before reaching the emotional payoff of Kaelith's 'I stopped needing their permission.' While the institutional failure is thematically essential (TP-2, the right choice vs institutional cowardice), the point lands with fewer words. The chapter is also 222 words over its 4100-word target; this section is the primary source of overshoot.",
+      "recommendation": "Tighten by 100-150 words. Retain the first Conclave quotation and Lirien's single-line synthesis ('language designed to acknowledge truth without accepting consequence'). Cut the redundant catalogue at line 82. Compress lines 96-102 (Lirien's delay prediction) to 2-3 sentences — the intelligence-analyst register is character-appropriate but the full policy analysis can be implied through her tone rather than enumerated. This brings the word count closer to target and sharpens the transition to Kaelith's thematic line."
+    },
+    {
+      "id": "DEV-222",
+      "severity": "minor",
+      "category": "show-dont-tell",
+      "location": "Line 64 ('Commander Maren' passage)",
+      "description": "'The title landed in Lirien's chest with unexpected weight' names the emotion and locates it. The subsequent explanatory sentences (lines 64-65) tell the reader what the title's significance is — information the reader has accumulated across 20 chapters through Sedara's loyalty, the freeholders' recognition, and the Ashborne veterans' restoration of the rank. By chapter 22, the emotional freight of 'Commander Maren' is self-evident. The passage would be stronger if Lirien registered the title through her body rather than through explicit emotional labelling.",
+      "recommendation": "Cut 'with unexpected weight.' Replace with a physical response consistent with Lirien's voice — a pause in breathing, a slight adjustment of posture, a moment where her classification system stalls. Let the bond carry an unlabelled resonance. The reader will supply the emotional weight; trust them."
+    },
+    {
+      "id": "DEV-223",
+      "severity": "minor",
+      "category": "pacing",
+      "location": "Lines 134-140 (SCN-64 opening, departure inventory)",
+      "description": "The transition from SCN-63's political scene to SCN-64's personal scene reads as a logistics report. The departure inventory catalogues four separate groups (Sedara + veterans + Thalen, Tessen Vael, Iryse, the Conclave administrator) with destination and purpose for each. While the operative-reflex framing ('Lirien catalogued the departures') is character-appropriate, the inventory's completeness creates a paragraph of transition mechanics that delays arrival at the chapter's emotional destination: 'By late afternoon, the shelter at the base of Serath Dún held two people.' That sentence is the scene's true opening — everything before it is runway.",
+      "recommendation": "Compress to 3-4 lines. Retain Sedara's departure (closes Thalen custody thread) and Tessen's (evidence chain integrity). Fold Iryse and the administrator into a single phrase. Reach 'By late afternoon, the shelter held two people' within 4 lines of the scene break. The key emotional shift — from 'allies dispersing' to 'two people alone' — should arrive as close to the scene break as possible."
+    },
+    {
+      "id": "DEV-224",
+      "severity": "minor",
+      "category": "characterization",
+      "location": "Lines 148-151 ('I don't know what to do' and its explanation)",
+      "description": "Lirien's confession is perfect in placement and effect — the woman who always knows what to do confronting the absence of mission parameters. But lines 150-151 immediately explain the words ('The words arrived without the analytical scaffolding she normally constructed... No operational context. No intelligence framing. Just the thing itself: the honest confession of a woman who had been trained to know exactly what to do in every conceivable situation and who now, for the first time, faced a situation with no mission parameters'). This is the narrator interpreting the confession for the reader. By chapter 22, the reader knows Lirien's operational identity — the contrast between 'always knows what to do' and 'I don't know what to do' is self-evidently devastating. The explanation reduces the statement's impact by replacing the reader's emotional recognition with authorial explication.",
+      "recommendation": "Cut lines 150-151 entirely. Let 'I don't know what to do' land in silence. Follow immediately with Kaelith's warm deadpan ('With the afternoon?'). The silence between the confession and the response is where the reader's emotion lives. Trust the 21 chapters of investment to make the contrast land without annotation."
+    },
+    {
+      "id": "DEV-225",
+      "severity": "minor",
+      "category": "voice",
+      "location": "Lines 158-168 (Kaelith's Rivenmarch speech)",
+      "description": "Kaelith's established voice fingerprint (T17) is percussive, clipped, architectural — few words, each load-bearing. Her typical speech pattern across 21 chapters is 1-2 sentences per turn, often fragments, with emotional content conveyed through what she doesn't say. In this passage, Kaelith speaks 4+ complete sentences with elaboration and emotional extension: 'The freeholders built something that works. Outside the Conclave. Outside the empire's approval. And they got the watch positions wrong, and I can help them get it right.' followed by a second extended speech: 'That's something I would like to do.' The content is perfect — Kaelith's vision of the future IS fixing fortifications, and 'usefulness as love language' is the right emotional register. But the speech length exceeds her established cadence. The narrator even flags this internally ('the slight lengthening of Kaelith's sentences that Lirien read as emotional territory'), which partially justifies the deviation. However, Kaelith's emotional territory moments in prior chapters typically extended to 2-3 sentences, not 4+. A slight compression would maintain the emotional expansion while respecting the voice pattern the reader has internalized.",
+      "recommendation": "Trim by 1-2 sentences. Consider folding the 'Outside the Conclave. Outside the empire's approval.' fragment pair into a single phrase. The key emotional beat is 'I can help them get it right' and 'That's something I would like to do' — protect those. The structural contrast with Lirien's flowing, multi-clause responses is one of the chapter's strengths; keeping Kaelith's speech tighter preserves the contrast."
+    },
+    {
+      "id": "DEV-226",
+      "severity": "suggestion",
+      "category": "structure",
+      "location": "Lines 208-211 ('the world held. And the love held.')",
+      "description": "This passage is the novel's thematic synthesis statement. It works. The only suggestion is rhythmic: the sentence 'Both had been tested to failure and beyond failure and had come through changed but intact — thinner in places, more honest, letting more light through than they had before' is strong but runs as a single compound clause. Splitting it would create a structural echo of the dual-arc architecture it describes — two separate statements that resolve into one image, mirroring the fantasy and romance arcs converging.",
+      "recommendation": "Consider splitting: 'Both had been tested to failure and beyond failure. Both had come through changed but intact — thinner in places, more honest, letting more light through than they had before.' The repetition of 'Both' at sentence starts creates a rhythmic callback to the dual-arc structure. Optional — the existing version is functional."
+    }
+  ],
+
+  "strengths": [
+    {
+      "id": "STR-01",
+      "description": "The classification-system-as-character-arc device. Lirien begins the chapter in full operative mode ('She lay still and let her body report'), encounters something 'she did not have a category for,' files it as 'unclassified,' and by the chapter's end arrives at 'No classification. No analytical framework. No operational language to mediate between what she felt and what she said.' The dissolution of the classification system IS the character arc. This is structural storytelling at a high level."
+    },
+    {
+      "id": "STR-02",
+      "description": "The river metaphor capstone (lines 212-220). The Seep's water imagery — 'the water that finds every crack' — has operated as infiltration-as-intimacy throughout the novel. In the closing paragraphs, it resolves into free choice: a dammed river finding its own shape. 'That was not flowing. That was deciding.' The motif completes its arc from institutional function to personal agency. This is the novel's strongest single passage."
+    },
+    {
+      "id": "STR-03",
+      "description": "Kaelith's 'I stopped needing their permission when I started needing something real.' This line resolves the Calwrath wound without erasing it — Kaelith has outgrown the need for institutional vindication. The repetition later in the chapter ('I stopped needing their permission,' extended from institutional to personal) demonstrates how a single structural truth scales. The reader recognizes the callback; it deepens without explaining."
+    },
+    {
+      "id": "STR-04",
+      "description": "The tone contract is perfectly maintained. The resolution is earned-hope, not triumphalism. The Pallor is still damaged. The institutions are still failing. The future requires work. But the world holds, and the love holds. The refusal of neat resolution honors the novel's moral complexity while delivering emotional satisfaction. No forbidden tones (sentimental, melodramatic, triumphalist, whimsical) surface."
+    },
+    {
+      "id": "STR-05",
+      "description": "The physical cost is visible and undiminished. Kaelith's three frozen fingers, the silver on her forearm, Lirien's shoulder burn. The resolution does not erase the price. Kaelith 'simply adjusted her grip.' This detail carries the entire TP-2 argument (the price of the right choice) in a single physical gesture."
+    },
+    {
+      "id": "STR-06",
+      "description": "The HFN resolution is structurally earned. The cage opens (contract dissolved ch20, crisis resolved ch21), and both women stay. The six uses of bond-perception across the chapter are not exposition — they track Lirien's shift from analytical assessment to emotional reception. By the closing paragraphs, the bond is 'clean and warm and chosen' — the progression from 'static-laden, binding-contaminated signal' to this is the romance arc's final evolution, rendered through a magical system the reader has learned to read."
+    }
+  ],
+
+  "subplotClosure": {
+    "SUB-003_AshborneLegacy": {
+      "status": "closed",
+      "how": "'Commander Maren' restored through popular use; Ashborne veterans escorting Thalen; scout reporting with military discipline. Vindication comes from the people, not the institution."
+    },
+    "SUB-005_FreeholderRefuge": {
+      "status": "thematically extended",
+      "how": "Formally closed in ch18, but Rivenmarch named as concrete future destination. The freeholder model proven viable — life outside institutional approval demonstrated as possible and chosen."
+    },
+    "SUB-002_DeathContract": {
+      "status": "closed (ch20)",
+      "how": "Binding absence registered as the first thing Lirien notices upon waking. The contract's ghost is exorcised through the chapter's central movement: from 'the binding was gone' to 'I stay because I want to.'"
+    },
+    "SUB-006_IryseComplicity": {
+      "status": "acknowledged",
+      "how": "Single reference: 'Iryse hasn't left the evidence chamber. She's reviewing every Dimming rite she performed for the last eighteen years.' Economical and sufficient."
+    }
+  },
+
+  "summary": {
+    "criticalFindings": 0,
+    "majorFindings": 1,
+    "minorFindings": 4,
+    "suggestions": 1,
+    "totalFindings": 6,
+    "overallVerdict": "Chapter 22 is an excellent resolution chapter that delivers the novel's HFN through structural precision and thematic depth. The single major finding (Conclave analysis length) is a pacing refinement; the four minor findings (over-explanation in three passages, Kaelith voice cadence) are line-level adjustments. No structural changes required. The river metaphor capstone, the classification-system-as-character-arc device, and the 'I stay because I want to' declaration are among the novel's strongest passages. The draft achieves what a final chapter must: it makes the reader feel the weight of 21 chapters arriving at a destination that was earned, not given."
+  }
+}

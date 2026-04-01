@@ -1,0 +1,310 @@
+{
+  "storyId": "001",
+  "chapterId": "003",
+  "revisionAgent": "chapter-reviser",
+  "createdAt": "2026-03-20T08:06:48Z",
+  "sourceFindings": {
+    "developmental": [
+      "DEV-001",
+      "DEV-002",
+      "DEV-003",
+      "DEV-004"
+    ],
+    "line": [
+      "LINE-001",
+      "LINE-002",
+      "LINE-003",
+      "LINE-004",
+      "LINE-005",
+      "LINE-006",
+      "LINE-007",
+      "LINE-008",
+      "LINE-009",
+      "LINE-010"
+    ],
+    "copy": [
+      "COPY-001",
+      "COPY-002",
+      "COPY-003",
+      "COPY-004",
+      "COPY-005"
+    ]
+  },
+  "changes": [
+    {
+      "id": "REV-001",
+      "findingIds": [
+        "COPY-001"
+      ],
+      "type": "continuity-fix",
+      "description": "Corrected exile duration from 'five years' to 'six years' in three locations",
+      "details": [
+        {
+          "line": 14,
+          "original": "She'd watched him do it for five years",
+          "revised": "She'd watched him do it for six years"
+        },
+        {
+          "line": 96,
+          "original": "a siege five years ago",
+          "revised": "a siege six years ago"
+        },
+        {
+          "line": 326,
+          "original": "Five years of exile",
+          "revised": "Six years of exile"
+        }
+      ],
+      "preserved": [
+        "Line 56 'five years ago' (correct: brand overdue by 5 years)",
+        "Line 90 'five years' (correct: illegal maintenance duration)",
+        "Line 146 'five years ago' (correct: evaluation at end of 1-year term)"
+      ]
+    },
+    {
+      "id": "REV-002",
+      "findingIds": [
+        "LINE-003"
+      ],
+      "type": "voice-compliance",
+      "description": "Replaced water-domain metaphor with structural metaphor in Kaelith's POV",
+      "details": [
+        {
+          "line": 14,
+          "original": "routine as tide, predictable as stone",
+          "revised": "routine as brickwork, predictable as stone"
+        }
+      ]
+    },
+    {
+      "id": "REV-003",
+      "findingIds": [
+        "LINE-007",
+        "LINE-001"
+      ],
+      "type": "INV-005-compliance",
+      "description": "Replaced blade metaphor and emotion-naming with structural metaphor and physical sensation",
+      "details": [
+        {
+          "line": 50,
+          "original": "Felt something cold and sharp settle in her chest like a blade finding space between ribs.",
+          "revised": "Something cold settled behind her sternum \u2014 the specific weight of a keystone locking into an arch that would never open again."
+        },
+        {
+          "line": 88,
+          "original": "She should be feeling something \u2014 rage, fear, betrayal, anything. But what she felt instead was the cold, clear focus",
+          "revised": "Her body should have been reacting \u2014 heat in the sternum, pressure behind the jaw, the expected inventory of a soldier betrayed. Instead: nothing. Just the cold, clear focus"
+        }
+      ]
+    },
+    {
+      "id": "REV-004",
+      "findingIds": [
+        "LINE-002"
+      ],
+      "type": "INV-005-compliance",
+      "description": "Removed 'felt' framing and blade metaphor from line 282",
+      "details": [
+        {
+          "line": 282,
+          "original": "Kaelith felt the cold blade-sharp clarity settle deeper.",
+          "revised": "The cold settled deeper \u2014 load-bearing now, the kind of weight that held a wall together when the ground shifted."
+        }
+      ]
+    },
+    {
+      "id": "REV-005",
+      "findingIds": [
+        "COPY-002"
+      ],
+      "type": "continuity-fix",
+      "description": "Clarified quarters location \u2014 Kaelith walks back to the Listing Mast from the garrison",
+      "details": [
+        {
+          "line": 112,
+          "original": "She reached her quarters. Closed the door. Locked it. Sat on the edge of her narrow bed",
+          "revised": "She left the garrison through the side entrance and crossed the empty market square to the Listing Mast. The tavern was dark, the barkeeper long since gone to bed. She climbed the back stairs to her room. Closed the door. Locked it. Sat on the edge of her narrow bed"
+        }
+      ]
+    },
+    {
+      "id": "REV-006",
+      "findingIds": [
+        "DEV-001"
+      ],
+      "type": "pacing-expansion",
+      "description": "Added processing beat between Scenes 1 and 2 to show passage of time from midnight to dawn",
+      "details": [
+        {
+          "lineRange": [
+            114,
+            118
+          ],
+          "change": "Added 5 lines after 'They were shaking now.' showing Kaelith unable to sleep, running tactical assessment of her situation, dawn arriving. This bridges the midnight-to-dawn gap and earns her tactical composure in Scene 2."
+        }
+      ]
+    },
+    {
+      "id": "REV-007",
+      "findingIds": [
+        "LINE-006"
+      ],
+      "type": "INV-005-compliance",
+      "description": "Replaced bare emotion label 'Fear.' with body-language observation",
+      "details": [
+        {
+          "line": 128,
+          "original": "Fear. Not the reactive fear of immediate threat but the chronic fear of someone who'd learned",
+          "revised": "His shoulders had drawn inward. His hands held too still. His gaze fixed on the enforcer's chest \u2014 the posture of a man who'd learned"
+        }
+      ]
+    },
+    {
+      "id": "REV-008",
+      "findingIds": [
+        "COPY-003"
+      ],
+      "type": "magic-system-compliance",
+      "description": "Replaced magical artifact terms with alchemical/mechanical equivalents consistent with strong-Pallor region",
+      "details": [
+        {
+          "line": 122,
+          "original": "binding sigils, suppression wards, paralytic charms",
+          "revised": "alchemical restraints, suppression compounds calibrated to Oathbrand frequencies, paralytic tinctures"
+        }
+      ]
+    },
+    {
+      "id": "REV-009",
+      "findingIds": [
+        "LINE-005"
+      ],
+      "type": "voice-compliance",
+      "description": "Replaced tagline/trailer language with Kaelith's tactical voice",
+      "details": [
+        {
+          "line": 318,
+          "original": "Two operatives. Two targets. One conspiracy neither of them had chosen.",
+          "revised": "Neither of them had chosen this. That didn't make it less real."
+        }
+      ]
+    },
+    {
+      "id": "REV-010",
+      "findingIds": [
+        "LINE-004"
+      ],
+      "type": "voice-compliance",
+      "description": "Replaced analytical vocabulary with Kaelith's tactical vocabulary",
+      "details": [
+        {
+          "line": 320,
+          "original": "The parameters were clear. The outcome was not.",
+          "revised": "The situation was clear. The terrain ahead was not."
+        }
+      ]
+    },
+    {
+      "id": "REV-011",
+      "findingIds": [
+        "LINE-009"
+      ],
+      "type": "voice-compliance",
+      "description": "Replaced classificatory vocabulary with tactical language",
+      "details": [
+        {
+          "line": 244,
+          "original": "The categories were breaking. Enemy. Ally. Threat. Protection.",
+          "revised": "Enemy. Ally. Threat. Protection. Five minutes ago she'd known what Lirien was. Now the lines had collapsed."
+        }
+      ]
+    },
+    {
+      "id": "REV-012",
+      "findingIds": [
+        "LINE-010"
+      ],
+      "type": "INV-005-compliance",
+      "description": "Replaced emotion labels with observable physical shift",
+      "details": [
+        {
+          "line": 310,
+          "original": "She looked at Kaelith with something that might have been respect or might have been professional reassessment.",
+          "revised": "Something shifted in the way Lirien looked at her. Not warmer. Recalibrated."
+        }
+      ]
+    },
+    {
+      "id": "REV-013",
+      "findingIds": [
+        "LINE-008",
+        "DEV-004"
+      ],
+      "type": "structural-revision",
+      "description": "Revised chapter close to avoid repeating Behind/Ahead parallel construction from Scene 2",
+      "details": [
+        {
+          "lineRange": [
+            334,
+            340
+          ],
+          "change": "Replaced reflective summary close with grounded sensory ending focused on the port, the Oathbrand, and forward motion. Retained the 'enemy-turned-ally' concept but expressed through physical proximity rather than summary."
+        }
+      ]
+    },
+    {
+      "id": "REV-014",
+      "findingIds": [
+        "DEV-002",
+        "DEV-003"
+      ],
+      "type": "pacing-revision",
+      "description": "Added environmental pressure to Scene 3 warehouse discussion",
+      "details": [
+        {
+          "lineRange": [
+            250,
+            320
+          ],
+          "change": "Layered environmental threat throughout the dialogue: distant shouts, boots on cobblestones, a patrol passing nearby. Added physical action beats (watching exits, checking windows) to break up verbal exchange. Compressed some exposition exchanges to increase urgency."
+        }
+      ]
+    },
+    {
+      "id": "REV-015",
+      "findingIds": [
+        "COPY-005"
+      ],
+      "type": "continuity-fix",
+      "description": "Adjusted Lirien's surveillance duration to match Ch1 timeline",
+      "details": [
+        {
+          "line": 66,
+          "original": "Cerith Court liaison arrived Duskhaven 6 days prior",
+          "revised": "Cerith Court liaison arrived Duskhaven 3 days prior"
+        },
+        {
+          "line": 292,
+          "original": "I've been following you for six days",
+          "revised": "I've been watching you since I arrived. Three days."
+        }
+      ]
+    }
+  ],
+  "wordCountChange": {
+    "original": 4523,
+    "revised": 4681,
+    "delta": 158,
+    "reason": "Net increase due to processing beat addition (DEV-001, ~50 words), quarters transition expansion (COPY-002, ~30 words), and environmental pressure additions in Scene 3 (DEV-002/003, ~80 words). Partially offset by Scene 3 dialogue compression."
+  },
+  "unaddressedFindings": [
+    {
+      "findingId": "COPY-004",
+      "reason": "The term 'Consolidation Wars' is retained as-is. While not in history.json, it is not contradicted by existing world-bible and provides a useful historical anchor for the Warden order's dissolution. Flagged for world-bible addition rather than chapter revision."
+    },
+    {
+      "findingId": "COPY-006",
+      "reason": "The 14-day refresh interval is retained as introduced. Flagged for continuity tracker addition."
+    }
+  ]
+}

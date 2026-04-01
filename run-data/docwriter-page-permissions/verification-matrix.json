@@ -1,0 +1,178 @@
+{
+  "version": 1,
+  "generatedBy": "docwriter-cross-ref-updater",
+  "timestamp": "2026-03-18T20:21:49Z",
+  "affectedPages": [
+    "_documentation/developers-and-admins/configuration/users/role-management/page-permission-management.md",
+    "_documentation/business-users/website-content/edit-and-publish-pages.md",
+    "_documentation/developers-and-admins/configuration/workflows.md",
+    "_documentation/business-users/website-content/create-pages.md",
+    "_documentation/business-users/website-content/delete-pages.md",
+    "_documentation/developers-and-admins/security-guidelines.md",
+    "_documentation/developers-and-admins/configuration/content-versioning-configuration.md",
+    "_documentation/business-users/content-sync.md"
+  ],
+  "referringPagesChecked": 40,
+  "updates": [],
+  "outgoingLinkChecks": [
+    {
+      "page": "_documentation/developers-and-admins/configuration/users/role-management/page-permission-management.md",
+      "identifier": "permissions_pagelevel_xp",
+      "totalLinks": 10,
+      "valid": 10,
+      "broken": 0,
+      "notes": "Hub page. Outgoing links to 8oouCw, 8ASiCQ, shareable_preview_xp, 7IVwCg (×3), content_sync_xp, workflows_xp (×2). All identifiers resolve. No anchored outgoing links."
+    },
+    {
+      "page": "_documentation/business-users/website-content/edit-and-publish-pages.md",
+      "identifier": "MAKQC",
+      "totalLinks": 28,
+      "valid": 28,
+      "broken": 0,
+      "notes": "References permissions_pagelevel_xp with anchors 'Page permissions for publishing pages', 'Permission requirements for page operations', 'Page permissions for unpublishing pages', 'Page permissions for moving pages' — all anchors exist in T-001 hub page. Other links to workflows_xp, versioning_configuration_xp, I4XWCQ, JwKQC, content_items_xp, etc. all valid."
+    },
+    {
+      "page": "_documentation/developers-and-admins/configuration/workflows.md",
+      "identifier": "workflows_xp",
+      "totalLinks": 24,
+      "valid": 24,
+      "broken": 0,
+      "notes": "References permissions_pagelevel_xp (no anchors, link text only). References 7IVwCg with anchor 'Assign permissions to roles'. Other links to notifications_xp, JwKQC, barWCQ, xIWOD, IaDWCQ, eBT_Cw, saas_xp, wovWCQ, custom_workflow_notifications_xp, shareable_preview_xp — all valid."
+    },
+    {
+      "page": "_documentation/business-users/website-content/create-pages.md",
+      "identifier": "LwKQC",
+      "totalLinks": 15,
+      "valid": 15,
+      "broken": 0,
+      "notes": "References permissions_pagelevel_xp with anchor 'Page permissions for creating pages' — exists in T-001 hub page. References MAKQC with anchor 'Publish pages' — exists. Other links to JwKQC, gYHWCQ, KZnWCQ, 6QWiCQ, 8oouCw, I4XWCQ — all valid."
+    },
+    {
+      "page": "_documentation/business-users/website-content/delete-pages.md",
+      "identifier": "XofWCQ",
+      "totalLinks": 12,
+      "valid": 12,
+      "broken": 0,
+      "notes": "References permissions_pagelevel_xp (no anchor, link text only). References MAKQC with anchors 'Unpublishing or deleting pages targeted by redirects', 'Redirects from unpublished and deleted pages', 'Unpublish pages' — all exist. Other links to content_recycle_bin_xp, I4XWCQ, track_page_usages_xp, custom_redirects_xp — all valid."
+    },
+    {
+      "page": "_documentation/developers-and-admins/security-guidelines.md",
+      "identifier": "security_guidelines_xp",
+      "totalLinks": 32,
+      "valid": 32,
+      "broken": 0,
+      "notes": "References permissions_pagelevel_xp with anchors 'Permission requirements for page operations' and 'Edit page permissions' — both exist in T-001 hub page. Other links to 7IVwCg, 8ILWCQ, 9YLWCQ, oAL9Cg, workspaces_xp, 34HFC, 8IKyCg, GwKQC, tYouCw, etc. — all valid. The security_checklists_guides identifier uses collection='guides' qualifier and resolves to _guides collection."
+    },
+    {
+      "page": "_documentation/developers-and-admins/configuration/content-versioning-configuration.md",
+      "identifier": "versioning_configuration_xp",
+      "totalLinks": 14,
+      "valid": 14,
+      "broken": 0,
+      "notes": "References permissions_pagelevel_xp with anchor 'Edit page permissions' — exists in T-001 hub page. References page_versioning_xp with anchors 'Restore previously published versions' and 'View version history' — both valid. Other links to content_items_xp, JwKQC, xIWOD, barWCQ, workflows_xp — all valid."
+    },
+    {
+      "page": "_documentation/business-users/content-sync.md",
+      "identifier": "content_sync_xp",
+      "totalLinks": 55,
+      "valid": 55,
+      "broken": 0,
+      "notes": "References permissions_pagelevel_xp with anchor 'Permission requirements for page operations' — exists in T-001 hub page. References MAKQC with anchors 'Unpublish pages' and 'Move pages' — both exist. Other links to content_items_xp, JwKQC, I4XWCQ, WgKiCQ, WAKiCQ, workflows_xp, content_hub_folders_xp, etc. — all valid."
+    }
+  ],
+  "incomingLinkChecks": [
+    {
+      "targetPage": "permissions_pagelevel_xp",
+      "totalIncoming": 27,
+      "fromModifiedPages": 7,
+      "fromNonModifiedPages": 10,
+      "fromChangelog": 10,
+      "anchoredRefsValid": true,
+      "notes": "All 7 modified pages (T-002 through T-008) correctly reference the hub page. 10 non-modified pages reference it — none use anchors that target new sections. All non-modified references use bare identifier or pre-existing anchors ('Edit page permissions', which is unchanged)."
+    },
+    {
+      "targetPage": "MAKQC",
+      "totalIncoming": 28,
+      "fromModifiedPages": 4,
+      "fromNonModifiedPages": 9,
+      "fromChangelog": 15,
+      "anchoredRefsValid": true,
+      "notes": "Referenced from create-pages.md, delete-pages.md, content-sync.md (modified) and 9 non-modified pages. All anchors ('Publish pages', 'Unpublish pages', 'Scheduled publishing', 'Revert changes', 'Move pages', 'Rename pages', 'Redirects from unpublished and deleted pages', 'Unpublishing or deleting pages targeted by redirects') exist as headings."
+    },
+    {
+      "targetPage": "workflows_xp",
+      "totalIncoming": 36,
+      "fromModifiedPages": 4,
+      "fromNonModifiedPages": 14,
+      "fromChangelog": 18,
+      "anchoredRefsValid": true,
+      "notes": "Referenced from page-permission-management.md, edit-and-publish-pages.md, content-versioning-configuration.md, content-sync.md (modified) and 14 non-modified pages. 7 non-modified pages use anchor 'Workflow notifications' — heading exists at line 79."
+    },
+    {
+      "targetPage": "LwKQC",
+      "totalIncoming": 11,
+      "fromModifiedPages": 0,
+      "fromNonModifiedPages": 3,
+      "fromChangelog": 8,
+      "anchoredRefsValid": true,
+      "notes": "No modified pages link to create-pages.md with anchors. Hub page does not directly link back to create-pages.md — this is acceptable because the hub's 'Page permissions for creating pages' section documents the permission facts inline without needing to reference the user-facing page."
+    },
+    {
+      "targetPage": "XofWCQ",
+      "totalIncoming": 10,
+      "fromModifiedPages": 0,
+      "fromNonModifiedPages": 4,
+      "fromChangelog": 6,
+      "anchoredRefsValid": true,
+      "notes": "No modified pages link to delete-pages.md with anchors. Same pattern as create-pages.md — the hub documents permission facts inline."
+    },
+    {
+      "targetPage": "security_guidelines_xp",
+      "totalIncoming": 2,
+      "fromModifiedPages": 0,
+      "fromNonModifiedPages": 2,
+      "fromChangelog": 0,
+      "anchoredRefsValid": true,
+      "notes": "Only 2 incoming links (developers-and-admins.md, vulnerabilities-in-transitive-dependencies.md). No anchors used — both reference the page by bare identifier."
+    },
+    {
+      "targetPage": "versioning_configuration_xp",
+      "totalIncoming": 7,
+      "fromModifiedPages": 1,
+      "fromNonModifiedPages": 3,
+      "fromChangelog": 3,
+      "anchoredRefsValid": true,
+      "notes": "Referenced from edit-and-publish-pages.md (modified) with bare identifier (no anchor). 3 non-modified pages reference it without anchors."
+    },
+    {
+      "targetPage": "content_sync_xp",
+      "totalIncoming": 30,
+      "fromModifiedPages": 1,
+      "fromNonModifiedPages": 11,
+      "fromChangelog": 18,
+      "anchoredRefsValid": true,
+      "notes": "Referenced from page-permission-management.md (modified) with bare identifier. 1 non-modified page (deploy-to-the-saas-environment.md) uses anchor 'Supported content' — heading exists at line 29."
+    }
+  ],
+  "crossReferencePatternConsistency": {
+    "hubToOperationPages": "The hub page (T-001) references workflows_xp and content_sync_xp directly. It does not directly link to the business-user operation pages (create-pages, delete-pages, edit-and-publish-pages) because the hub is the authoritative reference — the operation pages link TO the hub, not the other way around. This unidirectional pattern is consistent and intentional.",
+    "operationToHub": "All 7 non-hub modified pages (T-002 through T-008) reference the hub page (permissions_pagelevel_xp). Anchors used are specific to the relevant operation section: 'Page permissions for publishing pages', 'Page permissions for creating pages', 'Page permissions for unpublishing pages', 'Page permissions for moving pages', 'Permission requirements for page operations', 'Edit page permissions'. All anchors resolve correctly.",
+    "anchorPattern": "Cross-references consistently use descriptive link text (e.g., 'page permissions', 'page permission management') with operation-specific anchors. The pattern is uniform across all modified pages.",
+    "inpageLinkConsistency": "All inpage_link references (within-page anchors) in all 8 modified pages resolve to existing headings within those pages."
+  },
+  "summary": {
+    "pagesChecked": 48,
+    "modifiedPagesChecked": 8,
+    "nonModifiedReferringPagesChecked": 40,
+    "updatesApplied": 0,
+    "brokenLinksFixed": 0,
+    "anchorsFixed": 0,
+    "newLinksAdded": 0,
+    "noChangeNeeded": 48,
+    "allIdentifiersValid": true,
+    "allAnchorsValid": true,
+    "allInpageLinksValid": true,
+    "bidirectionalRefsComplete": true,
+    "verdict": "All cross-references are valid. No updates needed."
+  }
+}

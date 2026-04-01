@@ -1,0 +1,164 @@
+{
+  "auditType": "character-phase-gate-iteration-2",
+  "storyId": "001",
+  "iteration": 2,
+  "auditor": "character-auditor",
+  "timestamp": "2026-03-18T00:53:03Z",
+  "verdict": "PASSED",
+  "summary": "All three critical blockers from iteration 1 have been successfully remediated. (1) Vulnerability ladder expanded from 8 to 11 moments (6 for Kaelith, 5 for Lirien), satisfying INV-059/T21. (2) Obstacle inventory created with 16 obstacles (9 internal, 7 external = 56.25% internal), exceeding INV-046/T8 requirement of 50%+. (3) CHAR-008 (Tavik Soren) agencyDecisions array added with 3 documented decision points including alternatives and consequences, satisfying INV-008. Character profiles remain psychologically coherent, voice fingerprints are excellently distinct across all POV and supporting cast, romance arc is emotionally earned with proper staging, antagonist has comprehensible motivation, and all characters serve documented narrative functions. No new critical or major issues detected. Minor advisory retained for chapter-drafter regarding CHAR-006/007 (no longer applicable; characters renumbered and differentiated). Phase passes gate.",
+  "invariantsChecked": [
+    "INV-003 (Voice Distinctness)",
+    "INV-004 (Earned Emotional Beats)",
+    "INV-006 (Narrative Purpose)",
+    "INV-008 (Character Agency)",
+    "INV-021 (Romance Arc Pacing)",
+    "INV-022 (Antagonist Motivation)",
+    "INV-027 (Adversarial Phase Gates)",
+    "INV-029 (Upstream References)",
+    "INV-034 (3-4 Sentence Test)",
+    "INV-046/T8 (Internal Resistance)",
+    "INV-055 (Voice Fingerprint Completeness)",
+    "INV-059/T21 (Vulnerability Ladder)",
+    "INV-081 (Kill Your Darlings)"
+  ],
+  "remediationVerification": [
+    {
+      "findingId": "CHAR-GATE-001-F001",
+      "originalSeverity": "CRITICAL",
+      "originalIssue": "Vulnerability ladder contained only 8 moments total (4 per lead), failing requirement of 5-8 escalating vulnerability moments PER LEAD.",
+      "remediationRequired": "Add minimum 2 additional vulnerability moments (1 per lead) to reach 10 total.",
+      "remediationApplied": "Vulnerability ladder expanded to 11 moments: 6 for CHAR-001 (Kaelith), 5 for CHAR-002 (Lirien). New moments added: (Step 5) Lirien provides aid beyond contract necessity in Ch 9; (Step 6) Kaelith asks Lirien a tactically irrelevant question in Ch 10; (Step 10) Kaelith admits fear aloud in Ch 19. All new moments include emotionalCost field and maintain escalating vulnerability pattern.",
+      "verification": "PASS — romance-arc.json vulnerabilityLadder array now contains 11 entries with proper distribution and escalation. Kaelith's 6 moments: steps 2, 4, 6, 8, 10, 11. Lirien's 5 moments: steps 1, 3, 5, 7, 9. Each moment has step number, chapter reference, character ID, moment description, and emotionalCost. Escalation pattern verified: early moments are relational (choosing proximity, revealing partial truths), mid-arc moments are somatic/tactile (showing damage, removing Oathbrand), late moments are verbally/emotionally explicit (naming fear, naming desire, consent to heart-stopping). INV-059/T21 requirement met and exceeded.",
+      "evidence": "romance-arc.json vulnerabilityLadder length = 11; distribution = 6:5 (CHAR-001:CHAR-002)"
+    },
+    {
+      "findingId": "CHAR-GATE-001-F002",
+      "originalSeverity": "CRITICAL",
+      "originalIssue": "Romance arc documented internal resistance qualitatively but did not enumerate or categorize specific obstacles to verify at least 50% are internal/psychological per INV-046/T8.",
+      "remediationRequired": "Create explicit obstacle inventory with internal/external tags, verify at least 50% are internal.",
+      "remediationApplied": "romance-arc.json now contains obstacleInventory array with 16 obstacles. Each obstacle has id, type (internal/external), character assignment where applicable, description, manifestsIn (which arc stages), and resolutionPoint. Internal obstacles enumerate specific psychological barriers: guilt-as-identity, fear of competence, isolation-as-penance lie, inability to distinguish obedience from loyalty, fear that home is ownership, contract binding physiology creating emotional contamination, distrust of institutional actors, operative detachment training, refusal to ask for help. External obstacles are structural: live kill contract, Conclave pursuit, Oathbrand suppression, Pallor crisis, Seep oversight, cultural incompatibility, Ythara's destabilizing influence.",
+      "verification": "PASS — obstacleInventory contains 16 obstacles: 9 internal (56.25%), 7 external (43.75%). Internal percentage exceeds INV-046/T8 requirement of 50%+. Obstacles are properly distributed across both leads: CHAR-001 has 4 solo internal obstacles (OBS-001, 002, 003, 015), CHAR-002 has 4 solo internal obstacles (OBS-004, 005, 006, 008), plus 1 shared internal obstacle (OBS-007 affects CHAR-001's relationship with CHAR-002). All internal obstacles press on documented character wounds and lies. Black moment (OBS-009, the live contract reveal) functions as the collision point where internal and external obstacles become indistinguishable, satisfying the dual-arc design requirement.",
+      "evidence": "romance-arc.json obstacleInventory: 16 total, 9 internal (56.25%), 7 external (43.75%)"
+    },
+    {
+      "findingId": "CHAR-GATE-001-F003",
+      "originalSeverity": "MAJOR",
+      "originalIssue": "CHAR-004 (Tavik Soren, now CHAR-008) agency statement described systemic complicity pattern but did not document specific decision points with alternatives and consequences per INV-008.",
+      "remediationRequired": "Revise CHAR-004 (now CHAR-008) agency statement to document 3 specific decision points with alternatives and consequences.",
+      "remediationApplied": "characters/CHAR-008.json now includes agencyDecisions array with 3 documented decision points: (1) Ch 3 — chooses to mark Kaelith's departure as reportable irregularity rather than authorized leave, delay, confrontation, or ignoring it; (2) Ch 4 — chooses to file formal escalation report rather than minimal notation, waiting for command request, neutral framing, or consulting peers; (3) Ch 20 — chooses to maintain procedural neutrality rather than testify, obstruct, warn, or resign. Each decision includes alternativesConsidered array, choiceMade field, consequences description, and psychologicalJustification that ties to character's wound/fear/lie.",
+      "verification": "PASS — characters/CHAR-008.json contains complete agencyDecisions array. Each decision point documents: (a) what choice was made, (b) 4 alternative paths explicitly named and considered, (c) concrete consequences of the choice (how it advances plot, affects other characters, serves or subverts institutions), (d) psychological justification rooted in Tavik's wound ('initiative punished faster than mediocrity'), fear ('being forced into visible courage and abandoned'), and lie ('procedure is neutrality'). The third decision point (Ch 20) confirms Tavik's flat arc — he achieves understanding ('realizes too late whose agenda his neutrality served') without transformation, which is thematically consistent with the story's exploration of systemic complicity. INV-008 requirement satisfied.",
+      "evidence": "characters/CHAR-008.json agencyDecisions array contains 3 decision points with full documentation"
+    }
+  ],
+  "findings": [
+    {
+      "id": "CHAR-GATE-002-F001",
+      "severity": "ADVISORY",
+      "category": "voice-distinctness-edge-case-obsolete",
+      "invariantViolated": "none",
+      "finding": "Previous audit (GATE-001-F004) flagged CHAR-006 (Vairen Ethis) and CHAR-007 (Corven Taleth) for potential voice blur in dual-character scenes due to similar elevated-legal vocabulary and long sentences. This finding is now OBSOLETE. The character roster has been revised: CHAR-006 is now Tessen Vael (mentor, plain border vernacular, short-to-mixed sentences, weather/ground metaphors) and CHAR-007 is now Marin Savel (mentor, plain clinical with black humor, mixed sentences, anatomy/rot metaphors). These voices are clearly distinct. The original Vairen Ethis now appears as CHAR-004 and is the only elevated-scholarly voice in the roster, eliminating the previous edge case.",
+      "evidence": "characters/CHAR-006.json vocabularyLevel = 'plain border vernacular'; characters/CHAR-007.json vocabularyLevel = 'plain clinical with black humor'; CHAR-004 is sole elevated-scholarly voice",
+      "requiredRemediation": "None. Advisory no longer applies. Flag retained only for audit continuity documentation."
+    }
+  ],
+  "strengths": [
+    {
+      "category": "psychological-coherence",
+      "observation": "All 14 character profiles demonstrate exceptional psychological coherence. Both leads (CHAR-001 Kaelith, CHAR-002 Lirien) maintain internally consistent wound→fear→lie→need chains with no contradictions. Kaelith's chain (guilt over being right → fear of her own competence → lie that isolation is penance → need to accept moral complexity without self-destruction) is structurally sound and generates compelling internal obstacles. Lirien's chain (made into tool and told it was belonging → fear that home is ownership → lie that obedience is loyalty → need to choose independently) is equally coherent and thematically resonant with story concept TP-3 (chosen versus only). All 12 supporting characters have complete psychological profiles with documented wounds, desires, fears, lies/ghosts, and needs. No character contains contradictory motivations or unmotivated behaviors. The psychological architecture of this cast is publication-ready."
+    },
+    {
+      "category": "voice-distinctness",
+      "observation": "Voice distinctiveness between CHAR-001 and CHAR-002 remains exemplary and exceeds INV-003/INV-034 requirements. Kaelith: formal-military vocabulary, 70% short declarative sentences (3-8 words), low structural metaphors (architecture/fortification), suppressed-to-physical emotional register, linear-tactical thought patterns. Lirien: precise observational-operative vocabulary, mixed varied sentences (10-18 words with cataloging bursts), moderate water/infiltration metaphors, calculated-to-overwhelmed emotional register, associative-comparative thought patterns. These voices are audibly distinct across every dimension. A reader could identify POV character within 2 sentences without being told (exceeding the 3-4 sentence INV-034 requirement). Supporting cast voices (CHAR-003 through CHAR-014) are well-differentiated with clear vocabulary/rhythm/metaphor distinctions. No two characters occupy identical voice-space. CHAR-003 (Thalen, antagonist): elevated diplomatic, long measured sentences, ash/pruning metaphors. CHAR-004 (Vairen, mentor): elevated scholarly, long nested sentences, margins/catalogues metaphors. CHAR-005 (Sendra, supporting): moderate-agile, quick bursts, threads/palimpsests metaphors. CHAR-006 (Tessen, mentor): plain border vernacular, short-mixed, weather/ground metaphors. CHAR-007 (Marin, mentor): plain clinical with black humor, mixed, anatomy/rot metaphors. CHAR-008 (Tavik, supporting): bureaucratic-military moderate, medium report-shaped, very sparse metaphors. Voice fingerprint completeness verified for all 14 characters (INV-055 satisfied)."
+    },
+    {
+      "category": "romance-arc-structure",
+      "observation": "Romance arc design is emotionally earned, properly staged per INV-004/INV-021, and now fully compliant with INV-046/T8 and INV-059/T21. All 7 required stages present: (1) awareness (adversarial assessment, Ch 1-3), (2) attraction (reluctant proximity, Ch 4-7), (3) attraction-continued (shared working as trust crisis, Ch 8-10), (4) resistance (intimacy despite contract logic, Ch 11-12), (5) surrender (physical intimacy as vulnerability, Ch 13-15), (6) resistance-black-moment (live contract revelation, Ch 16-18), (7) commitment (contract loophole and free choice, Ch 19-22). Each stage has clear targetChapters, fantasy interleave explanation, and thematic function. Black moment (Ch 16-18) presses directly on both characters' wounds: Kaelith's fear of being used by institutions she trusted (echoes Calwrath), Lirien's inability to distinguish structural obligation from genuine choice (proves Court shaped her all the way down). The resolution (Ch 19-22, contract loophole allowing heart-stopping as contract satisfaction) honors TP-3 by providing the 'second act of free choice' — the moment when the cage opens and both women must decide whether they would walk toward each other if they could walk away. Arc structure honors slow-burn enemies-to-lovers requirements and steamy heat level progression. Obstacle inventory (16 obstacles, 56.25% internal) ensures psychological depth rather than reliance on external action to drive romance beats."
+    },
+    {
+      "category": "antagonist-motivation",
+      "observation": "CHAR-003 (Thalen Reyvas) continues to satisfy INV-022 with comprehensible, non-evil motivation. Wound: witnessed empire's stagnation across 40 years, concluded Pallor's gift of fixedness became curse of ossification. Desire: restore world's capacity for transformation by releasing Ythara. Lie: renewal and annihilation are the same thing; one mind acting alone can save the world. Need: recognize world's right to exist supersedes any individual vision. This is ideological villainy rooted in genuine grief over cultural stagnation — Thalen is wrong but not monstrous. The reader can understand the logic ('stagnation is a slower death, only radical transformation can restore vitality') without endorsing the conclusion ('therefore release the unraveling god'). Thalen's agency statement confirms active conspiracy: selected poisoning method, hid it inside Dimming rites, kept Kaelith neutralized, restricted archives, escalates when discovery nears. Thalen's arc is negative (beloved diplomat → exposed zealot who refuses repentance), which is structurally sound for a primary antagonist. No mustache-twirling detected. Motivation is tragic rather than sadistic."
+    },
+    {
+      "category": "narrative-purpose",
+      "observation": "Every character serves documented narrative function per INV-006. CHAR-001/002: romantic leads + dual-POV protagonists. CHAR-003: primary antagonist + thematic foil for TP-2 (the price of the right choice). CHAR-004 (Vairen): intellectual ally + fantasy plot catalyst (archival evidence). CHAR-005 (Sendra): active interpreter + corroborating witness (turns buried materials into usable proof). CHAR-006 (Tessen): field mentor + practical validation (bridges archive and practice). CHAR-007 (Marin): medical support + black-humor grounding. CHAR-008 (Tavik): systemic complicity personified + romantic obstacle (reporting creates institutional pressure). CHAR-009 (Sethis): Legion loyalty test (decides whether institution becomes obstacle or cover). CHAR-010 (Erys): Kaelith's surviving command legacy (moral witness). CHAR-011 (Kethran): fae antagonist who sets death-order logic and tightens pursuit. CHAR-012 (Serath): metaphysical cage designer (creates binding exactness that enables late loophole). CHAR-013 (Iryse): unwitting sabotage amplifier + eventual validator. CHAR-014 (Daerin): past complicity + belated correction opportunity. No character exists without purpose. No 'darlings' detected (INV-081) — every character trait, relationship, and arc turning point serves plot, romance, or theme. Cast size (14) is appropriate for 22-chapter novel with dual-POV structure and political conspiracy elements."
+    },
+    {
+      "category": "upstream-references",
+      "observation": "All 14 character files contain upstreamRefs arrays citing story-concept, world-bible files, and other characters per INV-029. Reference counts range from 4-13 refs per character (leads have 12-13 refs including detailed magic-system and geography cross-references; supporting characters have 4-7 refs appropriate to their narrative scope). CHAR-001 cites 13 upstream sources including magic-system (Oathbrand, kinetic memory, Quietus path), geography (Duskhaven, Calwrath), culture, politics (High Conclave, Ashborne Legion), history. CHAR-002 cites 12 upstream sources including politics (Seep, Cerith Court), culture (binding contracts), magic-system (resonance bond). CHAR-003 cites politics (High Conclave), history (Second Accords, Renewal Debate), magic-system (Pallor poisoning mechanics), story-concept (Ythara, conspiracy). All supporting characters similarly cite relevant world-bible sections. Reference hygiene is excellent. Previous audit's minor note (CHAR-GATE-001-F005) regarding nameRegistry cross-references was advisory-only and remains unaddressed, which is acceptable — the nameRegistry in story-concept.json only lists the two leads (Kaelith Maren, Lirien Dael), and all other character names are consistent across files even without explicit nameRegistry entries. No name inconsistencies detected across 14 characters."
+    },
+    {
+      "category": "world-consistency",
+      "observation": "All characters fit their cultural, political, and institutional contexts. CHAR-001 (Kaelith) profile aligns with world-bible/politics (Ashborne Legion, High Conclave), culture (Imperial Heartland + Garrison Coast), geography (Duskhaven, Calwrath), and history (Siege of Calwrath consequences). CHAR-002 (Lirien) profile aligns with politics (Seep, Cerith Court), culture (fae binding contracts, operative training), and magic-system (resonance bond, contract physiology). CHAR-003 (Thalen) aligns with politics (High Conclave Sixth Seat, diplomatic service), history (Second Accords, border relations), and magic-system (Pallor mechanics, ritual sabotage). CHAR-008 (Tavik) aligns with politics (garrison command structure), culture (procedural compliance norms). All character backgrounds, vocabularies, thought patterns, relationships, and decision-making reflect their institutional contexts. No anachronisms or culture-breaking behaviors detected. The fae characters (CHAR-002 Lirien, CHAR-011 Kethran, CHAR-012 Serath) consistently use binding/contract/obligation vocabulary and demonstrate cultural difference from human characters in how they conceptualize choice, loyalty, and home. Human characters from different institutional backgrounds (Legion vs Conclave vs garrison vs archives vs healing) have distinct professional vocabularies and priorities."
+    },
+    {
+      "category": "agency-and-decision-architecture",
+      "observation": "Character agency is well-documented across the cast. CHAR-001 (Kaelith) drives plot through active choices at every critical juncture: identifies Lirien as threat and confronts, chooses to flee Duskhaven with Lirien (tactical partnership), chooses to allow Oathbrand removal (vulnerability), walks away when kill contract revealed (Black Moment is her decision), returns and chooses to trust Lirien with heart-stopping (Act III commitment). Her kinetic memory of Quietus path means the journey depends on her body's choices. CHAR-002 (Lirien) demonstrates agency through: does not take clean kill (Ch 2), reveals Quietus paradox (information dominance sacrifice), removes Oathbrand (choosing to empower the woman she must kill), names desire as her own (Ch 15), chooses to stay after contract satisfied (proves choice over necessity). CHAR-003 (Thalen) agency: selected poisoning method, hid sabotage inside rites, maintained Kaelith's suppression, restricted archives, chooses acceleration over confession (Ch 21). CHAR-008 (Tavik) now has fully documented agency via agencyDecisions array (remediated finding F003). Supporting characters show agency appropriate to narrative scope: CHAR-004 (Vairen) controls when evidence becomes accusation, CHAR-005 (Sendra) chooses to testify publicly rather than remain archivally cautious, CHAR-010 (Erys) chooses not to report and later to witness, CHAR-013 (Iryse) first worsens crisis in good faith then validates sabotage. No character is reduced to passive recipient of plot events. INV-008 satisfied across entire cast."
+    }
+  ],
+  "passCriteria": {
+    "psychologicalCoherence": "PASS — all 14 characters have internally consistent wound/desire/fear/lie/need chains with no contradictions",
+    "voiceDistinctiveness": "PASS — POV characters (CHAR-001, CHAR-002) audibly distinct across all voice dimensions; supporting cast well-differentiated; previous edge case (CHAR-006/007) obsolete due to character roster revision",
+    "romanceArcQuality": "PASS — arc structure excellent, vulnerability ladder now 11 moments (6 Kaelith, 5 Lirien) exceeding INV-059/T21 requirement, obstacle inventory created with 56.25% internal obstacles satisfying INV-046/T8",
+    "characterWorldConsistency": "PASS — all 14 characters fit cultural/political/institutional contexts; no anachronisms",
+    "narrativePurpose": "PASS — all characters serve documented functions; no darlings detected per INV-081",
+    "agency": "PASS — CHAR-001/002 excellent; CHAR-003 strong; CHAR-008 remediated with documented decision points; all supporting characters demonstrate agency appropriate to narrative scope",
+    "nameConsistency": "PASS — all names consistent across files; nameRegistry contains leads only (acceptable pattern)",
+    "antagonistMotivation": "PASS — CHAR-003 (Thalen) has comprehensible ideological motivation per INV-022",
+    "upstreamReferences": "PASS — all 14 characters have upstreamRefs arrays per INV-029; reference counts appropriate to character scope"
+  },
+  "blockers": [],
+  "advisories": [
+    {
+      "category": "voice-monitoring",
+      "note": "While current voice fingerprints are well-differentiated, the chapter-drafter should remain alert to voice maintenance across 14 characters during actual prose production. The voice fingerprint system provides excellent guardrails, but 22 chapters with 2 POV characters plus 12 distinct supporting voices is a substantial continuity challenge. Recommend that pov-voice-maintainer and continuity-integrator agents pay special attention to: (a) Kaelith's sentence length staying 70% short declarative even as emotional openness increases, (b) Lirien's shift from clinical classification language to simpler emotional language being gradual and motivated, (c) supporting characters maintaining vocabulary/metaphor consistency across multiple scenes. This is not a gate-blocking concern — it is a flagged complexity for downstream phases."
+    },
+    {
+      "category": "vulnerability-ladder-execution",
+      "note": "The vulnerability ladder now contains 11 well-designed moments with clear escalation. However, the ladder is a blueprint, not prose. The chapter-drafter must ensure each moment lands with the documented emotionalCost — the reader must feel the vulnerability, not just observe it described. Particular attention required for: Step 6 (Ch 10, Kaelith's tactically-irrelevant question) — must be written so the reader understands this is Kaelith breaking her own pattern, not just making conversation; Step 9 (Ch 15, Lirien abandons contract-language) — the linguistic shift must be audible in the prose; Step 11 (Ch 20, heart-stopping consent) — the physical and emotional stakes must both register clearly. This is not a character-phase concern; flagged for drafting-phase attention."
+    }
+  ],
+  "gateDecision": {
+    "result": "PASSED",
+    "reasoning": "All three critical blockers from iteration 1 have been fully remediated: (1) Vulnerability ladder expanded to 11 moments exceeding INV-059/T21 requirement (needed 10+, achieved 11 with 6:5 distribution between leads). (2) Obstacle inventory created with 16 obstacles achieving 56.25% internal obstacles, exceeding INV-046/T8 requirement of 50%+. (3) CHAR-008 (Tavik Soren) agencyDecisions array added with 3 complete decision points including alternatives, consequences, and psychological justification, satisfying INV-008. All previous strengths maintained: psychological coherence excellent, voice distinctiveness exemplary (exceeds 3-4 sentence test), romance arc properly staged with all 7 stages present, black moment presses on both characters' wounds, antagonist has comprehensible non-evil motivation, all 14 characters serve documented narrative functions, no darlings detected, upstream references complete. No new critical or major issues identified. Two advisory notes flagged for downstream phases (voice maintenance complexity during drafting, vulnerability ladder execution quality) but these are not gate-blocking concerns. Character phase is production-ready. Proceed to plotting.",
+    "estimatedRemediationEffort": "N/A — iteration 2 passed without additional remediation required",
+    "canProceedWithWarnings": true,
+    "mustReviseBefore": null,
+    "proceedTo": "plotting"
+  },
+  "auditMetadata": {
+    "artifactsReviewed": [
+      "audit-reports/character/GATE-character-001.json (iteration 1 findings)",
+      "characters/CHAR-001.json through CHAR-014.json (14 character files)",
+      "characters/index.json",
+      "romance-arc.json (including vulnerabilityLadder and obstacleInventory)",
+      "story-concept.json (thematic pillars, romance arc type, tone contract, genre balance, nameRegistry)",
+      "craft-profile.json (selected tools and invariants)",
+      "world-bible/culture.json (referenced for character-world consistency)",
+      "world-bible/politics.json (referenced for institutional context verification)"
+    ],
+    "invariantsVerified": 13,
+    "findingsCount": {
+      "critical": 0,
+      "major": 0,
+      "minor": 0,
+      "advisory": 1
+    },
+    "totalCharactersAudited": 14,
+    "charactersByRole": {
+      "lead-romantic": 2,
+      "antagonist": 3,
+      "mentor": 3,
+      "supporting": 6
+    },
+    "povCharacters": 2,
+    "auditDurationEstimate": "90 minutes",
+    "previousIterationComparison": {
+      "iteration1Verdict": "FAILED",
+      "iteration1Blockers": 3,
+      "iteration2Verdict": "PASSED",
+      "iteration2Blockers": 0,
+      "allBlockersResolved": true
+    },
+    "nextGate": "plotting-auditor"
+  }
+}

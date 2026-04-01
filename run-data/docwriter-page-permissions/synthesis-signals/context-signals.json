@@ -1,0 +1,223 @@
+{
+  "version": 1,
+  "timestamp": "2026-03-18T22:13:16Z",
+  "gapSignals": [
+    {
+      "gapId": "GAP-001",
+      "gapType": "coverage-gap-operation-missing",
+      "predictable": true,
+      "predictableDetail": "Clone was explicitly listed in risk register T-001 notes as 'out of scope' but gap hunter found it needed documentation. The code-analysis permissionSummary included clonePage with full permission requirements. The scope boundary was drawn too narrowly — risk register flagged clone as out of scope instead of flagging the scope exclusion as a risk.",
+      "reEntryTarget": "pass4",
+      "signal": {
+        "type": "candidate-anti-pattern",
+        "strength": "medium",
+        "description": "Task planner excluded operations from scope (clone, synchronize) that code-analysis had fully documented. When code-analysis enumerates operations with distinct permission requirements, all such operations should be in scope or the exclusion should be a documented risk with re-entry likelihood estimate. The risk register noted clone as out-of-scope but didn't flag the exclusion as a gap risk."
+      }
+    },
+    {
+      "gapId": "GAP-002",
+      "gapType": "encoding-violation-pre-existing",
+      "predictable": false,
+      "predictableDetail": "ANTI-002 in the knowledge brief warned about writer-introduced em/en dash issues, but GAP-002 was about pre-existing Unicode en dashes (U+2013) in files the pipeline was editing. No risk register entry or anti-pattern covers pre-existing encoding violations in files modified by the pipeline.",
+      "reEntryTarget": "pass4",
+      "signal": {
+        "type": "candidate-domain-insight",
+        "strength": "low",
+        "description": "Files modified by the pipeline may contain pre-existing encoding violations (Unicode en dashes, curly quotes, non-ASCII whitespace) that the writer cannot reasonably detect without tooling. A pre-submission encoding check step or invariant-scanner extension could catch these before gap-hunting."
+      }
+    },
+    {
+      "gapId": "GAP-003",
+      "gapType": "coverage-gap-operation-missing",
+      "predictable": true,
+      "predictableDetail": "Synchronize was fully documented in code-analysis permissionSummary with unique ancestor-chain ACL check behavior. The initial task scope enumerated 6 operations but omitted synchronize despite it having unique permission semantics. Risk register T-001 did not list synchronize in either the in-scope or out-of-scope sets.",
+      "reEntryTarget": "pass4",
+      "signal": {
+        "type": "candidate-anti-pattern",
+        "strength": "medium",
+        "description": "Same root cause as GAP-001: incomplete operation enumeration. The code-analysis permissionSummary contained 18 operations, task planner scoped 6. Operations with unique permission semantics (ancestor-chain checks, subtree checks) were missed. Task planner should cross-check scoped operations against the full permissionSummary and explicitly justify each exclusion."
+      }
+    }
+  ],
+  "domainInsights": [
+    {
+      "observation": "Multi-layer permission models (application → ACL → workflow) require per-layer documentation sections with explicit interaction rules",
+      "source": "code-analysis",
+      "evidence": "The Xperience page permission model has 3 interacting layers. The Read prerequisite rule (granting Update/Create/Delete/Synchronize without Read has no effect) is enforced at ACL layer (WebPageAclPermissionEvaluator.cs lines 118-123) but affects all operations documented at the workflow layer. T-001 required 19 acceptance criteria and 2 initial cycles to correctly document these interactions. Channel admin bypass adds a fourth dimension (skips ACL entirely).",
+      "strength": "medium"
+    },
+    {
+      "observation": "Permission documentation tasks require exhaustive operation enumeration from code analysis, not manual scoping",
+      "source": "code-analysis + gap-analysis",
+      "evidence": "Code analysis documented 18 operations in permissionSummary. Task planner scoped 6. Gap hunter found 2 missing operations (clone, synchronize) that had unique permission semantics — clone requires READ on source + CREATE on target parent; synchronize requires ancestor-chain ACL checks. Both were recoverable via re-entry but cost an extra verification cycle.",
+      "strength": "medium"
+    },
+    {
+      "observation": "Operations with non-standard permission checking patterns (ancestor-chain, subtree evaluation) require dedicated documentation callouts",
+      "source": "code-analysis",
+      "evidence": "Three operations deviate from the standard 'READ + X on the page' pattern: (1) synchronize checks READ + SYNCHRONIZE on the page AND all ancestors; (2) delete-with-children checks DELETE on all child pages with broken ACL inheritance via evaluateChildPages=true; (3) create/clone check permissions on the PARENT page, not the page being created. All three required special documentation treatment — GAP-003 was specifically about the synchronize ancestor-chain pattern.",
+      "strength": "medium"
+    },
+    {
+      "observation": "Workflow step role checks are asymmetric across operations sharing the same ACL permission",
+      "source": "code-analysis",
+      "evidence": "Both publish and unpublish require READ + UPDATE ACL permissions, but publish requires CanWorkWithContentItemInCurrentStep (workflow step role check) while unpublish does NOT. This asymmetry was flagged in risk register T-002 ('the unpublish/revert distinction — workflow step check vs. no check — could be mischaracterized'). T-003 (workflows page) had high technical accuracy risk specifically because of this 3-layer interaction.",
+      "strength": "low"
+    },
+    {
+      "observation": "Permission-requirement prose triggers systematic style violations for 'must' directed at people (INV-style-132)",
+      "source": "task-signals",
+      "evidence": "3 of 8 tasks (T-001, T-002, T-005 — all 3 multi-cycle outcomes) were rejected for INV-style-132 violations. The permission documentation context naturally produces phrases like 'users must have Read permission' which violates the 'must directed at people' rule. CAPAT-001 in task signals confirms this as a systematic writer tendency specifically triggered by permission-requirement content. The knowledge brief included ANTI-002 (em/en dash) but did not have a specific anti-pattern for permission-prose style traps.",
+      "strength": "medium"
+    },
+    {
+      "observation": "Cross-cutting code architecture (4 areas, full interconnection) predicts multi-page documentation impact for permission changes",
+      "source": "code-analysis",
+      "evidence": "The crossCuttingMap shows AREA-001 (ACL evaluator) connects to AREA-002 (commands) and AREA-004 (application framework); AREA-002 connects to AREA-001 and AREA-003 (workflow); AREA-003 connects back to AREA-002; AREA-004 connects to AREA-001 and AREA-002. This full interconnection meant 14 source files across 4 areas produced 38 impacts across 8 documentation pages. The hub-and-spoke documentation pattern (T-001 as hub, T-002–T-008 as spokes with cross-references) mirrors the code architecture.",
+      "strength": "low"
+    }
+  ],
+  "sourceObservations": [
+    {
+      "predictor": "When code-analysis permissionSummary enumerates N operations with distinct permission combinations, task planner must scope all N or explicitly risk-assess each exclusion",
+      "codeCharacteristic": "permission-operation-count",
+      "predictedDocNeed": "exhaustive-operation-coverage",
+      "evidence": "permissionSummary contained 18 operations. Task planner scoped 6. 2 excluded operations (clone, synchronize) had unique permission semantics and required re-entry gap fixes. Operations with standard patterns (save, discard, rename — all READ+UPDATE) were safely excluded. The predictor is: operations with UNIQUE permission combinations (different from the READ+X baseline) predict mandatory documentation coverage.",
+      "strength": "low",
+      "source": "code-analysis + gap-analysis"
+    },
+    {
+      "predictor": "Operations with evaluateChildPages=true or ancestor-chain checks predict documentation need for scope-of-check callouts",
+      "codeCharacteristic": "recursive-permission-check",
+      "predictedDocNeed": "permission-scope-callout",
+      "evidence": "3 operations use non-page-local permission checks: delete (evaluateChildPages=true → checks child pages with broken ACL inheritance), move (evaluateChildPages=true on source), synchronize (ancestor-chain check). GAP-003 specifically arose because the synchronize ancestor-chain pattern was not documented. Delete subtree check was in risk register (T-005 mitigation) and documented correctly first-attempt.",
+      "strength": "low",
+      "source": "code-analysis"
+    },
+    {
+      "predictor": "Hub pages absorbing >40% of total impacts predict critical-risk tasks requiring 2+ review cycles",
+      "codeCharacteristic": "impact-concentration",
+      "predictedDocNeed": "hub-page-decomposition-or-extra-review",
+      "evidence": "T-001 (page-permission-management.md) absorbed 17 of 38 impacts (44.7%), had 19 acceptance criteria, and was the only critical-risk task. It required 2 initial review cycles plus 1 re-entry cycle. All other tasks (1-6 impacts each) had 80% first-attempt success. Impact concentration >40% reliably predicted multi-cycle outcome in this run.",
+      "strength": "low",
+      "source": "impact-matrix + task-signals"
+    },
+    {
+      "predictor": "Cross-reference update tasks with ≤8 acceptance criteria and no heading changes predict first-attempt acceptance",
+      "codeCharacteristic": "crossref-scope-narrowness",
+      "predictedDocNeed": "minimal-review-overhead",
+      "evidence": "5 cross-reference tasks (T-003, T-004, T-006, T-007, T-008) with 4-8 acceptance criteria all achieved first-attempt acceptance in initial execution. T-005 (6 criteria) was the exception but its rejection was from INV-style-132, not cross-reference issues. CPAT-001 in task-signals confirms this as a candidate pattern with 5 occurrences.",
+      "strength": "low",
+      "source": "task-signals + impact-matrix"
+    }
+  ],
+  "researchEffectiveness": {
+    "sourcesEvaluated": 5,
+    "runCitationRate": 0.1,
+    "runCitationDetail": "1 of 10 approved/adapted recommendations (REC-005) was explicitly cited by tasks. 4 additional recommendations were blocked by invariant gate. Overall citation rate: 10%.",
+    "sources": {
+      "SRC-001-crossrefs": {
+        "url": "https://developers.google.com/style/cross-references",
+        "recommendationsOriginated": ["REC-005", "REC-006"],
+        "recommendationsUsed": ["REC-005"],
+        "usedByTasks": ["T-002", "T-005", "T-007"],
+        "effectiveness": 0.5,
+        "detail": "REC-005 (descriptive link text) cited by 3 tasks. T-007 (first-attempt) and T-002/T-005 both had correct cross-ref structure — rejections were from unrelated INV-style-132. REC-006 (selective linking) not cited but implicitly followed. Most effective source for this run."
+      },
+      "SRC-001-notices": {
+        "url": "https://developers.google.com/style/notices",
+        "recommendationsOriginated": ["REC-001", "REC-008", "REC-009"],
+        "recommendationsUsed": [],
+        "usedByTasks": [],
+        "effectiveness": 0.0,
+        "detail": "3 recommendations, 0 explicitly cited. REC-001 (warning for irreversible consequences) likely internalized — T-001 used warning callout for Read prerequisite. REC-009 (adapted — prerequisites as intro text) was noted in risk register but not cited by writer. The callout/notice guidance overlaps heavily with existing invariants (INV-style-139, INV-style-132)."
+      },
+      "SRC-001-tables": {
+        "url": "https://developers.google.com/style/tables",
+        "recommendationsOriginated": ["REC-002"],
+        "recommendationsUsed": [],
+        "usedByTasks": [],
+        "effectiveness": 0.0,
+        "detail": "REC-002 (adapted — summary table format) not cited. T-001 used per-operation sections instead of a summary table, which was the adapted approach. The table recommendation was adapted to fit existing section-based patterns."
+      },
+      "SRC-001-api": {
+        "url": "https://developers.google.com/style/api-reference-comments",
+        "recommendationsOriginated": ["REC-003"],
+        "recommendationsUsed": [],
+        "usedByTasks": [],
+        "effectiveness": 0.0,
+        "detail": "REC-003 (document dependencies and missing-dependency behavior) not cited. The permission documentation task was not API reference documentation — this recommendation's domain didn't match the task type."
+      },
+      "SRC-002": {
+        "url": "https://diataxis.fr/how-to-guides/",
+        "recommendationsOriginated": ["REC-004"],
+        "recommendationsUsed": [],
+        "usedByTasks": [],
+        "effectiveness": 0.0,
+        "detail": "REC-004 (goal-oriented, conditional imperatives) not cited. The task was reference/gap-fill documentation, not how-to guide writing. Diataxis how-to guidance had low relevance for this task type."
+      }
+    },
+    "newSourceCandidates": [
+      {
+        "name": "Role-based access control (RBAC) documentation patterns",
+        "rationale": "This run documented a multi-layer permission model (application → ACL → workflow) with non-obvious interaction rules. No consulted source addressed RBAC/permission documentation patterns specifically. A source covering permission matrix documentation, prerequisite-chain documentation, and bypass-rule documentation would have been directly applicable to T-001 (19 acceptance criteria, 3 layers to disambiguate).",
+        "domains": ["content-security", "authentication", "reference"],
+        "priority": "medium"
+      }
+    ]
+  },
+  "metaKnowledgeEffectiveness": {
+    "patternsFromBrief": 6,
+    "patternsActuallyUsed": 1,
+    "patternsUsedDetail": {
+      "PAT-009": {
+        "citedByTasks": ["T-002", "T-004", "T-005", "T-007"],
+        "outcome": "3 of 4 citing tasks achieved first-attempt acceptance. PAT-009 (cross-reference tasks achieve near-perfect first-attempt rates) was validated: cross-ref tasks had 80% first-attempt rate (4/5, with T-005 failing for unrelated style issue). Pattern directly applicable and correctly predicted outcomes."
+      }
+    },
+    "patternsNotUsed": ["PAT-001", "PAT-002", "PAT-004", "PAT-010", "PAT-011"],
+    "patternsNotUsedAnalysis": "PAT-001 (single-persona developer update) was implicitly relevant to T-003, T-006, T-007 (all first-attempt, all developer/admin pages) but not explicitly cited. PAT-002 (high invariant count → first-attempt) was partially contradicted: T-001 had many invariants but failed first attempt. PAT-004, PAT-010, PAT-011 were correctly flagged as low applicability in the brief.",
+    "antiPatternsFromBrief": 4,
+    "antiPatternsViolated": 2,
+    "antiPatternsViolatedDetail": {
+      "ANTI-001": {
+        "description": "Create-action pages have higher rejection rates than updates",
+        "violation": "T-001 added 6 new sections (analogous to create-within-update) and required 2 initial cycles. The brief predicted this: 'Writers need explicit guidance on structural conventions.' Despite awareness, the writer still produced style violations in the new content. The anti-pattern accurately predicted difficulty but did not prevent it.",
+        "preventable": false,
+        "reason": "The rejections were style-level (INV-style-132, INV-style-139), not structural. The anti-pattern warning was about structural conventions and cross-ref identifiers. Different failure mode than predicted."
+      },
+      "ANTI-004": {
+        "description": "Acceptance criteria without explicit enumeration lead to missed items",
+        "violation": "GAP-001 (clone) and GAP-003 (synchronize) demonstrate exactly this pattern. The task scope said 'document permission requirements for page operations' without exhaustively enumerating which operations. The brief correctly warned: 'code analysis should feed explicit checklists into task planning.' This was not fully followed.",
+        "preventable": true,
+        "reason": "If the task planner had cross-checked the 18-operation permissionSummary from code-analysis against the scoped 6 operations, clone and synchronize would have been caught before execution."
+      }
+    },
+    "antiPatternsNotViolated": ["ANTI-002", "ANTI-010"],
+    "antiPatternsNotViolatedDetail": "ANTI-002 (em/en dash) was partially relevant — GAP-002 found pre-existing en dashes, but this is a different failure mode (pre-existing content, not writer behavior). ANTI-010 (phantom method calls) was correctly flagged as low applicability and was not relevant.",
+    "overIncluded": 5,
+    "overIncludedEntries": [
+      {
+        "id": "PAT-010",
+        "reason": "Code-sample mechanical conversion pattern — task was prose documentation, not code sample transformation. Brief correctly flagged as 'Low applicability' but still included."
+      },
+      {
+        "id": "PAT-011",
+        "reason": "Minimal-scope code-only updates — task involved prose updates, not code block modifications. Brief noted 'Low direct applicability.'"
+      },
+      {
+        "id": "ANTI-010",
+        "reason": "Phantom method calls in pre-existing code examples — task added permission requirement prose, not code examples. Brief noted 'Low applicability.'"
+      },
+      {
+        "id": "DOM-018",
+        "reason": "Phantom API method calls in .md code blocks — not relevant to permission documentation task. Brief noted 'Low applicability.'"
+      },
+      {
+        "id": "SRC-OBS-001",
+        "reason": "3+ similar-type parameters needing named parameter syntax — task was prose documentation. Brief noted 'Low applicability.'"
+      }
+    ],
+    "overInclusionAnalysis": "All 5 over-included entries were correctly flagged as 'low applicability' in the brief itself, suggesting the curator's relevance threshold (0.4) is too permissive. A threshold of 0.55 would have excluded all 5 entries (all had relevanceScore ≤ 0.5393) while retaining the 15 entries that were actually relevant. The curator over-included code-sample-oriented entries for a prose-documentation task."
+  }
+}

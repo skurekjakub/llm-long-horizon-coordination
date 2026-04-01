@@ -1,0 +1,209 @@
+{
+  "storyId": "001",
+  "chapterId": "006",
+  "revisionAgent": "chapter-reviser",
+  "createdAt": "2025-07-26T09:30:00Z",
+  "updatedAt": "2025-07-27T16:45:00Z",
+  "revisionVersion": 2,
+  "sourceFindings": {
+    "developmental": [
+      "DEV-006-001",
+      "DEV-006-002",
+      "DEV-006-003",
+      "DEV-006-004",
+      "DEV-006-005",
+      "DEV-006-006"
+    ],
+    "line": [
+      "LINE-006-001",
+      "LINE-006-002",
+      "LINE-006-003",
+      "LINE-006-004",
+      "LINE-006-005",
+      "LINE-006-006",
+      "LINE-006-007",
+      "LINE-006-008"
+    ],
+    "copy": [
+      "COPY-006-001",
+      "COPY-006-002",
+      "COPY-006-003",
+      "COPY-006-004",
+      "COPY-006-005",
+      "COPY-006-006",
+      "COPY-006-007",
+      "COPY-006-008"
+    ]
+  },
+  "changes": [
+    {
+      "id": "REV-006-001",
+      "findingIds": [
+        "DEV-006-001",
+        "COPY-006-001"
+      ],
+      "type": "continuity-arithmetic-fix",
+      "revisionVersion": 2,
+      "description": "v2 CORRECTED: Completely reworked the binding timeline dialogue for cross-chapter consistency with Ch4. The v1 revision introduced a 'completion deadline at 3 days from acceptance' mechanism that, while internally consistent within Ch6, created a ~24-hour discrepancy with Ch4's established countdown (Ch4 ends with '45 hours before pain' approximately 24 hours before Ch6's dialogue). v2 uses the mechanism established in Ch4: the binding sets an 'expected execution timeline' which, when exceeded, begins an enforcement countdown. The threshold was crossed approximately 26 hours before the Ch6 dialogue (aligning with Ch4's binding awareness at 'forty-seven hours remaining' = 1 hour past threshold). Pain begins 48 hours after threshold \u2192 48-26 = 22 hours remaining at dialogue. Kaelith derives this: 'Twenty-two hours before pain starts.' This is consistent with Ch4's progression (47\u219246\u219245h remaining across Ch4's scenes, minus ~24h of travel to Ch6). Also added a binding enforcement progression thread across the chapter: monitoring pulse at dialogue \u2192 counting during shared watch \u2192 pain onset at dawn \u2192 established pain in Scene 3. This physical thread replaces the abstract 'one hundred eighteen hours' reference with embodied experience.",
+      "details": [
+        {
+          "section": "Binding disclosure dialogue (lines 222-230)",
+          "original": "'The binding operates on a completion deadline. Three days from contract acceptance. The deadline passed two hours ago.' ... 'Forty-six hours before the pain starts.' 'Correct.'",
+          "revised": "'The binding enforces compliance through escalation. When the expected execution timeline is exceeded, enforcement begins.' [sternum pulse] 'The threshold passed twenty-six hours ago. Forty-eight hours from the threshold, pain begins. Seventy-two, incapacitating. Ninety-six, motor function loss. One hundred twenty, the Lessening.' ... 'Twenty-two hours before pain starts.' 'Approximately.'"
+        },
+        {
+          "section": "Shared watch awareness (line 340)",
+          "original": "it was incompatible with the contract that required Kaelith's death within one hundred eighteen hours.",
+          "revised": "it was incompatible with the binding's pulse behind her sternum, counting the hours until enforcement arrived."
+        },
+        {
+          "section": "Dawn transition (line 380, NEW)",
+          "original": "[no binding beat at dawn]",
+          "revised": "Something shifted behind her sternum in the hour before dawn \u2014 sharper than the monitoring pulse, more insistent. The first thread of enforcement. She processed it as data. The data was pain."
+        },
+        {
+          "section": "Scene 3 opening (line 400, NEW)",
+          "original": "[no binding pain reference]",
+          "revised": "The ache behind her sternum had settled into constant pressure \u2014 no longer the binding's warning but its enforcement. Low-grade. Persistent. The kind of pain she could work through. She had worked through worse."
+        }
+      ],
+      "crossChapterReconciliation": {
+        "ch4References": {
+          "line71": "Forty-eight hours from submission before the Seep processed the report... evaluation clock reset",
+          "line157": "Forty-seven hours remaining",
+          "line263": "Forty-six hours before pain. Five days before the Lessening.",
+          "line413": "Forty-five hours before pain"
+        },
+        "mechanism": "Ch4 establishes the binding's enforcement threshold. At Ch4's first scene, the threshold has just been crossed (~1h ago, binding at 47h remaining). Ch4 progresses through 47\u219246\u219245h across its scenes (~2h of story time). Ch6 dialogue occurs ~24h later. Pain countdown: 48h from threshold - 26h elapsed = 22h remaining. Lessening: 120h from threshold - 26h elapsed = 94h \u2248 4 days (consistent with Kaelith's later 'four days' line).",
+        "v1Problem": "v1 introduced a 'completion deadline at 3 days from acceptance' that gave 46h remaining. This doubled the expected time because it pushed the enforcement trigger forward by ~24h relative to Ch4's established countdown."
+      }
+    },
+    {
+      "id": "REV-006-002",
+      "findingIds": [
+        "DEV-006-002",
+        "LINE-006-001",
+        "COPY-006-003"
+      ],
+      "type": "voice-register-fix",
+      "description": "Replaced both instances of 'forced proximity engine' with Lirien-appropriate vocabulary. Line 334 area: replaced with mechanism described without metanarrative naming \u2014 shows Lirien avoiding the classification rather than importing workshop terminology. Line 438 area: removed entirely as part of closing paragraph compression (REV-006-006)."
+    },
+    {
+      "id": "REV-006-003",
+      "findingIds": [
+        "DEV-006-003",
+        "COPY-006-002"
+      ],
+      "type": "geographical-direction-fix",
+      "description": "Corrected all directional references from east to south/southwest, consistent with geography.json (Thornway runs 'south and west from Duskhaven'). Five changes made: 'walked east'\u2192'walked south', 'road east'\u2192'road south', 'east-southeast'\u2192'south-southwest', 'fog swallowed'\u2192'fog closed like water filling a channel', road closing confirmed south."
+    },
+    {
+      "id": "REV-006-004",
+      "findingIds": [
+        "LINE-006-002"
+      ],
+      "type": "inv-005-compliance",
+      "description": "Replaced 'This created intimacy whether the participants intended it or not' (direct emotional labeling) with somatic registration followed by failed classification: disrupted focus, elevated spatial awareness, attention to breathing pattern that exceeded surveillance protocol, classification as professional vigilance that held for approximately four minutes before failing. Shows Lirien's analytical mind trying and failing to contain the response."
+    },
+    {
+      "id": "REV-006-005",
+      "findingIds": [
+        "DEV-006-004",
+        "DEV-006-005"
+      ],
+      "type": "scene-dramatization",
+      "description": "Strengthened Scene 3 (Seep report filing) with sensory detail and dramatized tension. Added compound smell, physical writing act, 'the report was a lie' awareness, dead-drop walk with career context ('thirty-eighth contract, first chosen to fail'), and Kaelith's partial wakefulness tracking Lirien's hands for tremor."
+    },
+    {
+      "id": "REV-006-006",
+      "findingIds": [
+        "DEV-006-006",
+        "LINE-006-003"
+      ],
+      "type": "closing-compression",
+      "description": "Cut the over-explicit thematic statement (lines 438-440). Chapter now closes with the sensory contradiction: 'She did not look at Kaelith as they walked. / She was aware of her with every step.' \u2014 dramatizes the contradiction between action and awareness."
+    },
+    {
+      "id": "REV-006-007",
+      "findingIds": [
+        "LINE-006-004"
+      ],
+      "type": "metaphor-domain-addition",
+      "description": "Added water metaphor to two key scenes: (1) 'fog closed behind them like water filling a channel' (2) 'Something had breached \u2014 not dramatically, no flood, no break. A seep.' Both use Lirien's water/infiltration domain."
+    },
+    {
+      "id": "REV-006-008",
+      "findingIds": [
+        "LINE-006-005"
+      ],
+      "type": "sentence-rhythm-adjustment",
+      "description": "Added compressed field-note assessment before Tavik confrontation: 'Three targets. One confirmed hostile. Two unknowns. Fog at forty paces.' Shows Lirien's combat-mode clipped fragments."
+    },
+    {
+      "id": "REV-006-009",
+      "findingIds": [
+        "LINE-006-006"
+      ],
+      "type": "word-repetition-reduction",
+      "description": "Reduced 'operational/operationally/operative' density from approximately 17 instances to 5 (1 'operational' + 4 'operative'). Retained only the most character-defining uses: 'Court operative?' (dialogue), 'Fae operatives' (institutional reference), 'operative could not maintain/be trusted' (training doctrine). All other instances replaced with varied alternatives: 'professional', 'tactical', 'parameters', or cut entirely."
+    },
+    {
+      "id": "REV-006-010",
+      "findingIds": [
+        "LINE-006-007"
+      ],
+      "type": "pattern-variation",
+      "description": "Varied the 'could not classify' pattern from 4 identical instances to 2 retained + 2 varied. Changed to 'each arrived at a conclusion they were not yet prepared to articulate' and 'The thing that had outlasted every label she had tried to apply.'"
+    },
+    {
+      "id": "REV-006-011",
+      "findingIds": [
+        "COPY-006-004"
+      ],
+      "type": "continuity-fix",
+      "description": "Changed 'five years' to 'six years' in both Kaelith dialogue instances (lines 100, 132), consistent with Chapters 1-3 revised."
+    },
+    {
+      "id": "REV-006-012",
+      "findingIds": [
+        "LINE-006-008"
+      ],
+      "type": "sensory-addition",
+      "description": "Added Pallor visual observation during shared watch: 'the Pallor turned starlight diffuse and uncertain \u2014 each point of light wearing a faint corona, as though the sky itself had lost the ability to hold anything sharp.' Serves triple duty: atmospheric Pallor, Lirien's visual sensitivity, thematic mirror of dissolving professional edges."
+    }
+  ],
+  "findingsNotAddressed": [
+    {
+      "id": "COPY-006-005",
+      "reason": "Tavik's rank as 'garrison commander' verified consistent with Ch3 and Ch5. No change required."
+    },
+    {
+      "id": "COPY-006-006",
+      "reason": "Word count updated in YAML frontmatter (4696). Informational finding \u2014 addressed through metadata."
+    },
+    {
+      "id": "COPY-006-007",
+      "reason": "Scene break consistency verified \u2014 '---' markers consistent with previous chapters. No change required."
+    },
+    {
+      "id": "COPY-006-008",
+      "reason": "Continuity registration note for Seep report text and dead-drop network. No textual change required \u2014 flagged for continuity tracker."
+    }
+  ],
+  "wordCountChange": {
+    "draft": 4396,
+    "revised": 4696,
+    "delta": "+300",
+    "note": "Net increase from Scene 3 dramatization (+~180 words), sensory/metaphor additions (+~120 words), binding enforcement progression beats (+~55 words), partially offset by closing compression (-~80 words) and dialogue streamlining in binding exchange."
+  },
+  "styleCompliance": {
+    "cliches": 0,
+    "adverbsPerPage": 1.7,
+    "passiveVoiceRate": "2.3%",
+    "operationalFamilyCount": 5,
+    "classificationPatternCount": 6,
+    "waterMetaphors": 3,
+    "sternumReferences": 4,
+    "bannedPhrases": 0
+  }
+}

@@ -1,0 +1,153 @@
+{
+  "agent": "docwriter-persona-reviewer",
+  "taskId": "T-001",
+  "attempt": 2,
+  "verdict": "approved",
+  "targetFile": "_documentation/developers-and-admins/configuration/users/role-management/page-permission-management.md",
+  "previousVerdict": "rejected",
+  "previousRejectionReason": "Front matter declared `persona: admin` but required `persona: admin, developer` per INV-persona-002.",
+  "fixVerification": {
+    "issue": "Front matter persona tag incomplete — declared `admin` only, missing `developer`",
+    "fixed": true,
+    "evidence": "Line 3 of front matter now reads `persona: admin, developer`. Both target personas are declared."
+  },
+  "personaChecks": [
+    {
+      "check": "front-matter-personas",
+      "result": "pass",
+      "declaredPersonas": ["admin", "developer"],
+      "requiredPersonas": ["admin", "developer"],
+      "evidence": "Front matter line 3 declares `persona: admin, developer`, matching the task graph targetPersonas and INV-persona-002 strategy (config/user roles → admin, developer). Previously declared only `admin` — this is now fixed. Both values are valid per INV-persona-001."
+    },
+    {
+      "check": "tone-admin",
+      "result": "pass",
+      "evidence": "Admin-oriented content uses clear procedural language with numbered step-by-step instructions. Examples: 'Open the website channel application' (step 2), 'Add roles that should have access' (step 4), 'Save permissions' (step 6). The 'Edit page permissions' and 'Restore page permission inheritance' sections follow the same operational pattern. The warning callout about Read prerequisite uses direct, actionable language ('If you grant Update, Create, Delete, or Synchronize without also granting Read, the granted permission has no effect'). Appropriate operational depth for admins configuring permissions."
+    },
+    {
+      "check": "tone-developer",
+      "result": "pass",
+      "evidence": "Developer-oriented reference content in the 'Permission requirements for page operations' section and per-operation subsections uses precise, structured language. The multi-layer model (application permission, page permission, workflow step role) is introduced with exact system terminology. Per-operation sections document specific permission combinations consistently (e.g., 'Read and Update for the page they want to publish'). System behaviors are described factually: 'the system also checks the Delete permission on all child pages that have broken the permission inheritance'. No implementation internals (class names, method signatures) leak into the content — docFacts inform the writing without exposing source-level details. Appropriate depth for developers understanding the permission model."
+    },
+    {
+      "check": "depth-calibration-admin",
+      "result": "pass",
+      "evidence": "Admin content provides sufficient operational detail without technical overwhelm. Procedures include specific UI navigation paths ('Properties -> Channel permissions tab', 'Properties -> Permissions tab'). Results are described after procedures ('The users in the selected roles can now access and work with all pages in the channel'). The 60-minute cache TTL is surfaced as an operational concern ('changes to these role assignments may not take effect immediately') rather than an implementation detail. The Role hierarchy tip provides a concrete operational scenario (Editor vs Products editor roles)."
+    },
+    {
+      "check": "depth-calibration-developer",
+      "result": "pass",
+      "evidence": "Developer reference content provides exact permission combinations needed to understand system behavior without diving into C# internals. The workflow interaction detail covers the block ('direct publishing is not available'), the mechanism ('the page needs to be advanced through the workflow steps'), and the alternatives (step role assignment, Full Control role, Draft step exception). Not too shallow (specific permission names and combinations for each operation) and not too deep (no class names, cache implementation, or internal method details)."
+    },
+    {
+      "check": "multi-persona-layering",
+      "result": "pass",
+      "evidence": "Page layers content effectively for a dual admin+developer audience. Opens with accessible context (introduction explaining why page permissions matter — content editors, multiple teams, sensitive content). Progresses to admin procedures (Allow users to work with website channel content, Edit page permissions, Restore page permission inheritance). Then transitions to structured developer-oriented reference (Permission requirements for page operations, per-operation subsections). Admins read the procedures and skim the reference; developers reference the permission requirements directly. No abrupt tone shifts between sections."
+    }
+  ],
+  "classificationCheck": {
+    "declared": "reference (per task graph contentType)",
+    "actual": "hybrid — procedural (first half) + reference (second half)",
+    "result": "pass",
+    "evidence": "The project does not use a front matter `classification` field — neighbor pages (role-management.md, workspaces.md, user-management.md) all omit it. The task graph declares contentType 'reference', and the new sections added by this task are reference material (permission requirements per operation). The pre-existing procedural sections were preserved unchanged. The hybrid nature is appropriate for this page's role as both a setup guide and a centralized permission reference."
+  },
+  "taxonomyChecks": [
+    {
+      "field": "title",
+      "result": "pass",
+      "value": "Page permission management"
+    },
+    {
+      "field": "persona",
+      "result": "pass",
+      "value": "admin, developer",
+      "notes": "Fix verified — was `admin` only in attempt 1."
+    },
+    {
+      "field": "identifier",
+      "result": "pass",
+      "value": "permissions_pagelevel_xp"
+    },
+    {
+      "field": "order",
+      "result": "pass",
+      "value": 100
+    },
+    {
+      "field": "license",
+      "result": "pass",
+      "value": 1
+    },
+    {
+      "field": "toc",
+      "result": "pass",
+      "value": "minHeadingLevel: 2, maxHeadingLevel: 3"
+    },
+    {
+      "field": "related_pages",
+      "result": "pass",
+      "value": ["7IVwCg", "JwKQC"]
+    },
+    {
+      "field": "redirect_from",
+      "result": "pass",
+      "value": "x/permissions_pagelevel_xp"
+    },
+    {
+      "field": "classification",
+      "result": "not-applicable",
+      "notes": "No classification field used in this project's front matter schema. Neighbor pages also omit it."
+    }
+  ],
+  "consistencyCheck": {
+    "result": "pass",
+    "notes": "Neighboring pages in the role-management cluster use multi-persona tagging where appropriate: workspaces.md declares `persona: admin, architect`; role-management.md declares `persona: admin`; user-management.md declares `persona: admin`. Multi-persona front matter is established practice in this cluster. The page-permission-management page's dual admin+developer targeting is consistent with how the cluster handles pages relevant to multiple audiences. The added `developer` persona is justified by the reference-oriented permission requirements sections that developers need."
+  },
+  "invariantResults": [
+    {
+      "invariantId": "TINV-001",
+      "result": "pass",
+      "evidence": "The context instruction says 'Task must cover both developer and business user scenarios.' The task planner mapped 'business user' to 'admin' persona, targeting admin+developer. The content covers admin scenarios (procedural permission configuration steps in 3 main sections) and developer scenarios (structured permission requirements reference for 5 page operations). Both audiences have content directly addressing their needs."
+    },
+    {
+      "invariantId": "INV-persona-001",
+      "result": "pass",
+      "evidence": "Valid persona values are `developer`, `admin`, `business`, `architect`, `all`. The front matter declares `persona: admin, developer` — both are valid values in the comma-separated format. Previously failed (was `admin` only, valid but incomplete) — now passes with the fix."
+    },
+    {
+      "invariantId": "INV-persona-002",
+      "result": "pass",
+      "evidence": "The persona assignment strategy states 'config/user roles → admin, developer'. This page is at developers-and-admins/configuration/users/role-management/page-permission-management.md — squarely in the config/user roles domain. The front matter now declares `persona: admin, developer` per this strategy. Previously failed — now passes with the fix."
+    },
+    {
+      "invariantId": "INV-persona-007",
+      "result": "pass",
+      "evidence": "Content uses simple, everyday words throughout. Technical terms are handled appropriately: 'access-control list' is linked to a Wikipedia definition, permission names are consistently italicized for clarity, and system behaviors are described in plain language ('the system also checks', 'direct publishing is not available', 'changes may not take effect immediately'). No unnecessarily complex vocabulary that would disadvantage non-native English speakers."
+    },
+    {
+      "invariantId": "INV-persona-012",
+      "result": "pass",
+      "evidence": "The content demonstrates clear understanding of both target personas. Admin sections provide operational procedures with UI navigation paths. Developer-relevant sections provide structured reference material about exact permission combinations and system behavior. The writer-output.json confirms intentional persona targeting through invariants applied (INV-persona-001, INV-persona-002)."
+    },
+    {
+      "invariantId": "INV-persona-015",
+      "result": "pass",
+      "evidence": "Dev/admin documentation appropriately combines related steps. Example: step 4 in 'Allow users to work with website channel content' combines adding roles with understanding the channel admin bypass in a single step context. The procedures are not over-granular — related actions are grouped naturally."
+    },
+    {
+      "invariantId": "INV-persona-016",
+      "result": "pass",
+      "evidence": "The page stays within the admin/developer terminology domain. Terms used ('roles', 'permissions', 'ACL', 'content tree', 'workflow', 'website channel') are appropriate for both admin and developer audiences. No business-user specific terminology ('campaigns', 'segments', 'marketing automation') is introduced without explanation. The term 'content editors' in the introduction is used naturally and is understood across all personas."
+    }
+  ],
+  "summary": {
+    "personaChecksPassed": 6,
+    "personaChecksFailed": 0,
+    "classificationCorrect": true,
+    "taxonomyComplete": true,
+    "invariantsPassed": 7,
+    "invariantsFailed": 0,
+    "fixVerified": true,
+    "regressions": "none"
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "chapterNum": 10,
+  "pov": "CHAR-002",
+  "povTransitionMotivation": "Switch to Lirien for the investigation chapter and the first question that has no tactical value — showing her emotional vulnerability emerging",
+  "scenes": [
+    {
+      "id": "SCN-028",
+      "goal": "Lirien and Kaelith reach Aranthem, a city with archives that may contain evidence of the Pallor sabotage",
+      "conflict": "Accessing the archives requires navigating bureaucracy and avoiding attention",
+      "disaster": "They discover suppressed reports documenting systematic Pallor degradation and Dimming rites — ceremonial magic that weakens the membrane. Evidence points to High Conclave involvement spanning decades",
+      "valueShift": "From 'the sabotage is theoretical' to 'the conspiracy has documented history and institutional protection'",
+      "fiveCommandments": {
+        "incitingIncident": "Lirien gains access to restricted archive section",
+        "complication": "Reports have been partially redacted, but patterns remain visible",
+        "crisis": "Copy the evidence and risk detection, or memorize key details?",
+        "climax": "Lirien copies critical documents covertly while Kaelith provides cover",
+        "resolution": "They leave with evidence implicating someone named Thalen Reyvas in the High Conclave"
+      }
+    },
+    {
+      "id": "SCN-029",
+      "goal": "They make camp outside Aranthem to process the archive findings",
+      "conflict": "The evidence is overwhelming — forty years of deliberate Pallor poisoning by someone in institutional power",
+      "disaster": "Lirien realizes the conspiracy is not opportunistic; it is ideological. Someone wants Ythara to wake",
+      "valueShift": "From 'we must reach the Quietus' to 'we must expose the saboteur or reaching the seal is meaningless'",
+      "fiveCommandments": {
+        "incitingIncident": "Lirien reviews the copied documents by firelight",
+        "complication": "The Dimming rites follow a precise schedule — the next one is weeks away",
+        "crisis": "Pursue the saboteur now, or continue to the Quietus first?",
+        "climax": "Kaelith argues the Quietus is priority — stopping the next ritual means nothing if the seal fails",
+        "resolution": "Lirien agrees, but files the saboteur information for future action. Thalen Reyvas has a name now"
+      }
+    },
+    {
+      "id": "SCN-030",
+      "goal": "Lirien asks Kaelith a question that serves no operational purpose: 'What do fae call the stars?'",
+      "conflict": "The question is personal, curious, intimate — not intelligence gathering",
+      "disaster": "Kaelith answers, and then asks a question back. They have a conversation about something other than survival for the first time",
+      "valueShift": "From 'we speak only of tactics and threats' to 'we are people having a conversation because we want to'",
+      "fiveCommandments": {
+        "incitingIncident": "Silence by the fire becomes comfortable rather than tense",
+        "complication": "Lirien asks about stars — genuinely curious",
+        "crisis": "Maintain professional distance, or allow the intimacy?",
+        "climax": "They talk about stars, about fae language, about Kaelith's childhood on the coast. The conversation is quiet and slow",
+        "resolution": "They fall asleep near each other, the distance between them narrower than ever before"
+      }
+    }
+  ],
+  "emotionalArc": {
+    "startState": "Lirien begins in investigative focus — solving the conspiracy puzzle, gathering evidence, maintaining operational discipline",
+    "endState": "She ends in curiosity and intimacy — she asks Kaelith a personal question because she wants to know her, not because the mission requires it. She is allowing herself to care openly",
+    "pivotMoment": "The stars question. The moment Lirien realizes she wants to know what Kaelith thinks about something that has nothing to do with the Pallor or the Quietus. She wants to know Kaelith as a person"
+  },
+  "fantasyBeats": [
+    "Conspiracy Clues Accumulate — Archive Evidence: Investigation in Aranthem yields documentary proof of forty-year sabotage program. Thalen Reyvas is named as key figure in Dimming rites"
+  ],
+  "romanceBeats": [
+    "The Question With No Tactical Value — 'What Do Fae Call the Stars?': Lirien asks something that serves no mission purpose. Kaelith answers. They have their first conversation about something other than danger. The distance between them narrows"
+  ],
+  "hookType": "investigative-discovery",
+  "hookTypeDescription": "Opens in the archives — dusty, cold, the thrill of finding hidden evidence. The hook is the discovery of systematic documentation of the conspiracy",
+  "closeType": "intimate-quiet",
+  "closeTypeDescription": "Closes with both women by the fire, having just talked about stars for no reason except that they wanted to. They fall asleep closer than necessary, and neither moves away",
+  "targetWordCount": 4100,
+  "tensionLevel": 5,
+  "pacingNotes": "Recovery and investigation chapter. Tension comes from archive infiltration and conspiracy revelation, then releases into intimacy. Pacing allows emotional connection to deepen",
+  "locationsPrimary": ["Aranthem — city archives, wilderness camp outside the city"],
+  "charactersPresent": ["CHAR-002 (Lirien)", "CHAR-001 (Kaelith)", "archive staff (minor)"],
+  "upstreamRefs": [
+    "../../plot/plot-structure.json",
+    "../../characters/CHAR-002.json",
+    "../../plot/dual-arc-timeline.json",
+    "../../plot/tension-map.json"
+  ]
+}

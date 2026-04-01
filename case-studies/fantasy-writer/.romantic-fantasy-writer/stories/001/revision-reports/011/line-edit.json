@@ -1,0 +1,298 @@
+{
+  "chapter": 11,
+  "pov": "CHAR-001",
+  "wordCount": 5135,
+  "overallAssessment": "This is an emotionally devastating chapter — the Oathbrand removal and resonance bond formation are the story's intimacy threshold, and the prose lands the emotional weight convincingly. Scene 1's dialogue is excellent: Tessen is vivid, the trust-decision beats are earned, and the subtext operates on multiple layers. The procedure scene achieves genuine intensity. However, two systemic prose issues undercut the chapter's power: architectural voice-marker saturation has reached the point where the voice reads as a tic rather than a person, and the 'the way' comparative construction has become the chapter's dominant syntactic pattern. Both were flagged as critical in chapter 10; both are worse here. The voice fingerprint's own density guidance warns: 'If the voice markers are identifiable on every page, the voice is likely over-applied. Seasoning, not the main ingredient.' In this chapter, the seasoning IS the main ingredient. The strongest moments — the stone-counting, the keystone metaphor, 'a wall worth saving' — would land harder if they emerged from plainer surrounding prose.",
+  "findingCounts": {
+    "critical": 2,
+    "major": 6,
+    "minor": 7,
+    "suggestion": 4,
+    "total": 19
+  },
+  "findings": [
+    {
+      "id": "LINE-001",
+      "severity": "critical",
+      "category": "repetition",
+      "description": "Architectural/structural voice-marker saturation. The chapter contains 30+ architectural metaphors, structural comparisons, and engineering terms across 5135 words — roughly one every 170 words, present in virtually every paragraph. Examples span every section: 'structural integrity' (L14), 'load distribution' (L14, L56, L92, L158, L228), 'load-bearing' (L56, L126, L228), 'keystone' (L92), 'foundation' (L86, L92, L200), 'compromising' (L86), 'architecture' (L86, L136), 'wall worth saving' (L142), 'structure under repair' (L202, L228), 'structural elements' (L230), 'shared wall' (L232), 'structural rather than decorative' (L234), 'held walls' (L244). The voice fingerprint explicitly states: 'Architectural metaphors — sparse; most prose should be plain and direct' and 'If the voice markers are identifiable on every page, the voice is likely over-applied.' This chapter has markers on every page multiple times. The cumulative effect is that the reader begins to anticipate the next construction metaphor rather than feeling its impact. The powerful moments (keystone, wall worth saving, stripped to the studs) are diluted by the saturation.",
+      "lineRef": { "start": 12, "end": 274 },
+      "suggestedFix": "Reduce architectural metaphors to 12-15 total (roughly half), concentrated at the chapter's key emotional pivots: the trust decision (L86-92), the 'wall worth saving' moment (L142), the final release (L170), and the post-bond assessment (L228). Strip structural metaphors from transitional passages, routine observations, and moments where plain prose would be more effective. In particular, the procedure scene (L118-170) should shed architectural framing progressively — as Kaelith's tactical assessment breaks down (which the prose describes at L158), the architectural metaphors should thin, leaving rawer, plainer language at the emotional peaks. Currently the prose tells us her defenses are breaking while the voice continues to deploy architectural metaphors at the same density. Show the breakdown through the voice itself."
+    },
+    {
+      "id": "LINE-002",
+      "severity": "critical",
+      "category": "repetition",
+      "description": "'The way' comparative construction saturation. The chapter contains 21+ instances of 'the way [X] [verbed]' as a comparative structure. Lines with this construction include: 20, 36, 38, 82, 130 (×2), 146, 166, 176 (×3), 186 (×2), 188, 198, 200, 208, 212 (×2), 228, 230 (×2), 232, 244, 266. This was flagged as critical in chapter 10 at 14 instances and mandated for reduction. Chapter 11 contains 50% more instances in a comparable word count. The construction has become a prose tic — a default syntactic pattern for every comparison, every analogy, every simile. Its ubiquity flattens the prose rhythm because every figurative moment arrives through the same grammatical doorway. The reader begins to feel the pattern rather than the content.",
+      "lineRef": { "start": 12, "end": 274 },
+      "suggestedFix": "Reduce to 8-10 instances maximum. Retain 'the way' where it is structurally essential or creates genuine rhythmic effect (e.g., the triple at L176 where the anaphora is intentional and the accumulation is the point). Eliminate it from routine comparisons by restructuring the sentence: 'She tested it the way she tested structural elements' → 'She leaned weight against it. Checked if it held.' 'She could feel the other woman's emotional state the way she felt her own heartbeat' → 'Lirien's emotional state arrived with the same involuntary constancy as her own heartbeat.' Vary the comparative syntax: use 'as,' direct metaphor, or eliminate the comparison entirely when the thing itself is vivid enough."
+    },
+    {
+      "id": "LINE-003",
+      "severity": "major",
+      "category": "repetition",
+      "description": "'Felt/feel/could feel' repetition. At least 22 instances of 'she felt,' 'she could feel,' 'Kaelith felt,' or 'felt [the thing]' across the chapter. Particularly dense in the magic-return and resonance-bond sections (L170-232), where 'felt' appears in nearly every sentence. The word becomes invisible through overuse, which is the opposite of its intended effect — these are supposed to be the most sensorially overwhelming moments of Kaelith's life, and the verb that carries them has gone numb. Notable clusters: L92 ('She felt... Felt... Felt...'), L170 ('She felt... Felt... Felt...'), L200 ('Kaelith felt... She felt... she felt...').",
+      "lineRef": { "start": 38, "end": 266 },
+      "suggestedFix": "Reduce to 10-12 instances by varying the construction. Replace with direct perception: instead of 'she could feel their crystalline structure' → 'their crystalline structure registered under her returned awareness.' Use the body as subject: instead of 'She felt the ward material separate from tissue' → 'The ward material separated from tissue — a tactile release so precise she could track each thread's dissolution.' Reserve 'felt' for the 2-3 most important emotional-physical moments where the plainness of the verb is the point."
+    },
+    {
+      "id": "LINE-004",
+      "severity": "major",
+      "category": "repetition",
+      "description": "Negation-pattern density ('Not X. Y.' / 'Not X but Y'). The chapter uses the 'Not X' rhetorical structure approximately 18-20 times: lines 42, 76, 84, 86 (×2), 122 (×2), 130 (×2), 136, 148, 164, 174 (×3), 180, 194 (×2), 198 (×2), 208, 212 (×2), 214, 228 (×2), 244 (×2). This pattern was flagged at critical severity in ch10 (~40 instances reduced to ~12). Here the absolute count is lower but the density per word is comparable. The pattern is most concentrated in Scene 3 (L170-244), where it appears in nearly every paragraph. The rhetorical effect — defining by elimination, arriving at truth by ruling out alternatives — is powerful in moderation but becomes predictable at this frequency. When every revelation arrives through negation, the reader learns to read ahead: 'Not [this thing]. [That thing].'",
+      "lineRef": { "start": 76, "end": 266 },
+      "suggestedFix": "Reduce to 8-10 instances total. Preserve the pattern where the negation is genuinely doing work — where what the experience is NOT is as important as what it IS (e.g., L130 where pain and heat are components but not the point, L122 where the breath stops not from pain but from touch). Cut negation-framing from moments where direct statement would be stronger: L174 'Not gently. Not gradually.' → Open directly with the furnace-door simile. L194 'Not in the room. Not in the air. In her.' → 'In her. Not the room, not the air — in the space behind her sternum.' (Places the discovery first, then the negation as clarification rather than runway.)"
+    },
+    {
+      "id": "LINE-005",
+      "severity": "major",
+      "category": "repetition",
+      "description": "'Six years' phrase repetition. The exact phrase 'six years' appears 15 times in the chapter (lines 26, 50, 62, 86, 124, 126, 144, 158, 162, 170, 176, 188, 194, 214, 228). While the temporal reference is thematically essential — the chapter is about undoing six years of suppression — the specific two-word phrase has become a verbal tic. By the fifth occurrence the reader has internalized the number; by the tenth it reads as a refrain that hasn't earned its repetition (unlike the intentional 'one way in, one way out' motif). The phrase competes with the crafted refrains rather than complementing them.",
+      "lineRef": { "start": 26, "end": 228 },
+      "suggestedFix": "Reduce to 6-8 instances. Preserve 'six years' at the major structural beats: the initial diagnosis (L26), the trust decision (L50), the first touch (L124), the deepest-layer Calwrath memory (L162), the magic return (L176), and the post-bond assessment (L228). Replace the remainder with varied phrasing: 'the duration of her exile,' 'since Calwrath,' 'half a decade,' 'the years between,' or simply cut the temporal reference when context makes it redundant."
+    },
+    {
+      "id": "LINE-006",
+      "severity": "major",
+      "category": "prose",
+      "description": "Triple simile stacking at line 170 creates purple prose. The sentence 'Felt six years of accumulated magical suppression lift from her collarbone like a siege being broken, like a wall coming down, like the removal of a load she had been bearing so long...' uses three consecutive 'like' similes, each from the same domain (structural/weight), each saying approximately the same thing (something heavy being lifted). The stacking dilutes rather than intensifies: the first simile is strong, the second is redundant, and the third dissolves into a run-on clause. The style guide forbids 'ornament for ornament's sake' and limits extended metaphors to two linked clauses.",
+      "lineRef": { "start": 170, "end": 170 },
+      "suggestedFix": "Pick one simile and let it carry the full weight: 'Felt six years of accumulated magical suppression lift from her collarbone like a siege being broken — the sudden, devastating lightness of a weight she had forgotten she was bearing until the weight was gone and her body surged upward with the release.' The single simile lands harder because the reader isn't choosing between three nearly-identical images."
+    },
+    {
+      "id": "LINE-007",
+      "severity": "major",
+      "category": "show-tell",
+      "description": "Told emotion at line 148: 'this was the most intimate experience of her life.' This is a direct emotion-label that announces the scene's significance rather than letting the reader feel it. The surrounding prose — the tactile detail, the breath-stopping, the stone-counting as deflection — demonstrates the intimacy effectively. The label is redundant at best and undercuts the showing at worst, because it tells the reader how to feel about what they are already feeling. The voice fingerprint explicitly states: 'Never let Kaelith narrate herself as feeling first.'",
+      "lineRef": { "start": 148, "end": 148 },
+      "suggestedFix": "Cut the labeling sentence and let the following sentence carry the paragraph: 'She was aware — tactilely, physically, in the nerve endings of her skin and the pulse in her throat — of the trust. The held-still, deliberate, sustained vulnerability of remaining exposed while someone worked on the worst part of her with hands that shook and then did not shake and then shook again.' The trust and intimacy are implicit in the physical detail without requiring a superlative declaration."
+    },
+    {
+      "id": "LINE-008",
+      "severity": "major",
+      "category": "voice",
+      "description": "Voice-marker density doesn't thin as internal monologue explicitly breaks down (lines 158-170). The prose tells us at L158 that 'Kaelith's internal monologue — the tactical assessment that had been keeping her tethered — was breaking apart.' But the voice continues to deploy architectural metaphors at the same or greater density: 'wall thickness and load distribution' (L158), 'architecture settled under redistributed weight' (L136, just before), 'wall worth saving' (L142), 'siegebeing broken, wall coming down' (L170). The prose describes a psychological event (defenses collapsing) that the voice itself should enact. This is a show-vs-tell failure at the level of voice: the text says the tactical assessment is failing while the voice continues to assess tactically.",
+      "lineRef": { "start": 158, "end": 170 },
+      "suggestedFix": "After L158's declaration that the assessment is breaking apart, progressively strip architectural language from the prose. L158's closing ('What was left was: Lirien's hands. The heat where they pressed. The unbearable precision...') already begins this well — the Lirien-focused prose is plainer. Extend that approach: let the final layers (L160-170) use fewer structural comparisons and more raw physical sensation. The triple simile at L170 should arrive as the LAST structural metaphor, the final gasp of the assessment voice before the magic floods in and the prose shifts register entirely."
+    },
+    {
+      "id": "LINE-009",
+      "severity": "minor",
+      "category": "prose",
+      "description": "Line 44: 'The implication had its own structural integrity' is a clever wordplay that draws attention to itself as a witticism. In a chapter operating at this emotional intensity, the pun-adjacent quality (implication as a structure — structural integrity) momentarily pulls the reader out of the scene to appreciate the construction rather than the content. The voice fingerprint warns against metaphors that 'announce theme instead of embodying it.'",
+      "lineRef": { "start": 44, "end": 44 },
+      "suggestedFix": "Replace with plainer prose that lets the implication land through silence rather than architectural commentary: 'He didn't need to elaborate.' (Full stop. The following white space IS the implication.) Or: 'He let that settle. The elaboration was unnecessary.'"
+    },
+    {
+      "id": "LINE-010",
+      "severity": "minor",
+      "category": "prose",
+      "description": "Line 234: 'some things were structural rather than decorative — they held weight, they did not need labels' is meta-commentary on the prose's own strategy. The narrator is explaining to the reader that Kaelith's refusal to name the emotion is itself meaningful — effectively labeling the technique of not labeling. This breaks the fictional illusion by making the reader aware of the authorial choice rather than the character's experience. The style guide prohibits metaphors that 'announce theme instead of embodying it.'",
+      "lineRef": { "start": 234, "end": 234 },
+      "suggestedFix": "Cut the explanatory clause and end on the refusal to name: 'The thing beneath both that she did not name because naming it would require a precision she did not currently possess.' Full stop. The reader understands the avoidance without being told it is structural."
+    },
+    {
+      "id": "LINE-011",
+      "severity": "minor",
+      "category": "repetition",
+      "description": "Line 176: Triple 'the way' anaphora in a single sentence — 'The way her muscles had once held... the way her skin had once registered... the way her mind had once contained...' While anaphora is an intentional rhetorical device here, it occurs within the chapter's most 'the way'-saturated section. In isolation the triple would be effective; in context it is the 17th-19th instance of the construction and reads as another repetition of the default syntactic pattern rather than a purposeful escalation.",
+      "lineRef": { "start": 176, "end": 176 },
+      "suggestedFix": "If 'the way' frequency is reduced globally to 8-10 instances, this triple can remain as an intentional, earned anaphora. If the global count stays high, restructure: 'Her muscles remembered shape-awareness. Her skin remembered the grain of reality's flexibility. Her mind remembered the paradox of finished and unfinished simultaneously.' Direct statement rather than comparative framing."
+    },
+    {
+      "id": "LINE-012",
+      "severity": "minor",
+      "category": "repetition",
+      "description": "Line 144: Triple 'grain' repetition — 'the grain of the wood under her fingers and the grain of the stone through the wood and beneath all of that the grain of her own body's awareness.' Three uses of 'grain' in one sentence. The accumulation is intentional (from physical to abstract), but the word-repetition is conspicuous. In a chapter already saturated with repeated constructions, another triple draws attention to the pattern.",
+      "lineRef": { "start": 144, "end": 144 },
+      "suggestedFix": "Keep two uses, vary the third: 'the grain of the wood under her fingers and the texture of the stone through the wood and beneath all of that the grain of her own body's awareness.' Or use the triple only if other repetition patterns in the chapter are reduced enough that this one reads as a deliberate choice rather than another instance of the default mode."
+    },
+    {
+      "id": "LINE-013",
+      "severity": "minor",
+      "category": "repetition",
+      "description": "Line 218: 'His expression was careful, the careful of a man assessing ground.' The word 'careful' appears twice in the same sentence. The second use ('the careful of a man') is an unusual nominalization that draws attention to itself. The construction feels labored rather than precise.",
+      "lineRef": { "start": 218, "end": 218 },
+      "suggestedFix": "'His expression was measured — the assessment of a man reading ground.' Or: 'His expression was careful. The care of a man assessing ground, not people.'"
+    },
+    {
+      "id": "LINE-014",
+      "severity": "minor",
+      "category": "show-tell",
+      "description": "Line 252: 'the specific gentleness of a man who was being careful not to name what he was seeing.' The phrase 'specific gentleness' labels the quality of Tessen's voice without demonstrating what it sounds like. 'Specific' as a modifier for an emotion is telling rather than showing — it asks the reader to trust that the gentleness was distinctive without hearing the distinction.",
+      "lineRef": { "start": 252, "end": 252 },
+      "suggestedFix": "Show the gentleness through the words or their delivery: 'Tessen's voice from the doorway carried the deliberate softness of a man choosing not to name what he was seeing.' Or better: let the dialogue itself carry the gentleness (which it largely does — 'Rest before you move' and 'The body needs to remember what it's carrying' are gentle lines) and reduce the tag to: 'Tessen's voice from the doorway, quiet.'"
+    },
+    {
+      "id": "LINE-015",
+      "severity": "minor",
+      "category": "cliché",
+      "description": "Line 120: 'Kaelith's breath stopped.' This is a mild romance cliché — the breath-catching/stopping response is one of the most frequently used reactions in romantic fiction. It's not on the banned-phrases list, and the sentence is effective in its brevity and placement, but in a chapter that otherwise avoids genre conventions, this one-liner reads as a stock romance beat rather than a Kaelith-specific physical response. Her sensory signature would register this through tactile/proprioceptive channels rather than respiratory ones.",
+      "lineRef": { "start": 120, "end": 120 },
+      "suggestedFix": "Replace with a tactile-proprioceptive response consistent with Kaelith's sensory signature: 'Kaelith's body locked.' Or: 'Something seized behind her ribs.' Or simply let the following paragraph carry the reaction without a separate one-line declaration — the 'Not because of pain...' paragraph effectively explains the stop."
+    },
+    {
+      "id": "LINE-016",
+      "severity": "suggestion",
+      "category": "prose",
+      "description": "Line 200: The paragraph beginning 'Kaelith felt —' is 1022 characters, the longest in the chapter by a significant margin. It covers Lirien's relief, Lirien's fear, and the unnamed warm thing, all perceived through the resonance bond. The emotional density is appropriate for the moment, but the paragraph length means the reader must hold three distinct emotional perceptions plus two extended metaphors in a single unbroken block. The style guide recommends a maximum of 6 sentences without break 'unless the prose is carrying sustained interior logic.' This paragraph pushes that limit.",
+      "lineRef": { "start": 200, "end": 200 },
+      "suggestedFix": "Break after 'neither of them had planned for.' Let the fear and the unnamed thing each get their own paragraph — each perception deserves its own beat of reader attention rather than being subordinated to a single continuous flow. Three shorter paragraphs would also allow the final revelation (the warm thing with no name) to land as a new paragraph's opening rather than being buried in a dependent clause."
+    },
+    {
+      "id": "LINE-017",
+      "severity": "suggestion",
+      "category": "dialogue",
+      "description": "Lines 256-262: The narrated silence that 'says' three specific, articulate things ('I felt what you felt...' / 'You held me together...' / 'I trust you') risks over-explaining a moment the resonance bond has already established. The bond transmits emotion continuously; the reader already knows both women feel what the other feels. Translating silence into italicized speech converts subtext into text — precisely the move the dialogue standards prohibit. The first italicized statement adds nothing the bond hasn't already shown. The third ('I trust you') echoes line 90 in a register that risks sentimentality.",
+      "lineRef": { "start": 256, "end": 262 },
+      "suggestedFix": "Reduce to one italicized line or eliminate the translation entirely. Option A: Keep only the second statement (the most specific and visceral) and cut the other two. Option B: Replace all three with a single line of narrated perception: 'The silence said everything the bond had already transmitted. Said it again. Deliberately.' Then let 'The lamp guttered...' close the scene. Trust the reader to carry the emotional content from the bond without re-articulation."
+    },
+    {
+      "id": "LINE-018",
+      "severity": "suggestion",
+      "category": "prose",
+      "description": "Lines 92-93: The keystone metaphor is the chapter's strongest single image — 'The sentence left her body like a keystone being set.' But it is then extended across four sentences ('She felt the rearrangement happen. Felt walls settle onto new foundations. Felt load distribution shift in ways she could not reverse.'), and the extension dilutes the metaphor's impact by over-explaining the architectural comparison. The keystone image is vivid enough to carry the moment alone; the sequel sentences are engineering footnotes on a poetic observation. They also contribute to the 'felt' repetition problem (LINE-003).",
+      "lineRef": { "start": 92, "end": 93 },
+      "suggestedFix": "Cut to two sentences: 'The sentence left her body like a keystone being set — a structural element so essential that everything it touched rearranged around it. She felt the rearrangement happen.' Full stop. Trust the reader to understand that a keystone rearranges load without being told about foundations and load distribution in the following breath."
+    },
+    {
+      "id": "LINE-019",
+      "severity": "suggestion",
+      "category": "repetition",
+      "description": "Lines 82-83: 'were not steady' appears three times in two sentences — 'they were not steady. Kaelith noticed this the way she noticed all structural details — involuntarily, completely. Lirien's hands, which were always precise, always controlled, were not steady.' The triple repetition is clearly intentional (building emphasis), but the third instance arrives through a relative clause that also repeats 'always' twice. The density of repetition in a single paragraph (three identical phrases plus two 'always' constructions) creates a noticeable pattern.",
+      "lineRef": { "start": 82, "end": 82 },
+      "suggestedFix": "Keep two instances. Cut or vary the third: 'Her hands were at her sides and they were not steady. Kaelith noticed this the way she noticed all structural details — involuntarily, completely. Lirien's hands, which were always precise, always controlled, trembled.' The variation at the end reframes the observation from negation to direct statement, and 'trembled' is a more specific physical description."
+    }
+  ],
+  "strengths": [
+    {
+      "category": "dialogue",
+      "description": "Tessen Vael is immediately vivid — his speech patterns (technical confidence, architectural matching, deliberate pauses) create a fully realized character in minimal space. The 'Fae magic' / 'Fae magic' echo (L34-36) is perfect subtext: two people who understand each other's pragmatism without needing to discuss it.",
+      "lineRef": { "start": 20, "end": 48 }
+    },
+    {
+      "category": "dialogue",
+      "description": "The Kaelith/Lirien trust exchange (L68-90) is the chapter's finest dialogue sequence. 'The case is not mine to make' is a masterclass in subtext — Lirien's restraint says more about her feelings than any declaration could. 'I trust you' lands as a four-word detonation precisely because the surrounding prose has been showing the cost of saying it.",
+      "lineRef": { "start": 68, "end": 90 }
+    },
+    {
+      "category": "voice",
+      "description": "The stone-counting motif (L126, L134) is brilliant characterization — Kaelith deflecting through inventory is perfectly in-voice and simultaneously reveals her vulnerability. This is voice operating at its best: character-specific behavior that shows emotional state without labeling it.",
+      "lineRef": { "start": 126, "end": 134 }
+    },
+    {
+      "category": "mru",
+      "description": "MRU structure is consistently well-maintained at all key emotional beats. The Lirien-touch sequence (L118-126) follows the correct pattern: stimulus (hands on collarbone) → involuntary reaction (breath stops) → emotional processing (not pain, not magic — the touch itself) → rational deflection (count the stones). Textbook execution.",
+      "lineRef": { "start": 118, "end": 126 }
+    },
+    {
+      "category": "tension",
+      "description": "No dead spots found. Micro-tension is sustained throughout all three scenes through overlapping sources: procedural danger, physical vulnerability, emotional exposure, the resonance bond's implications, and the Quietus activation. Even the quiet aftermath (L226-274) maintains tension through the resonance bond's mutual emotional exposure.",
+      "lineRef": { "start": 12, "end": 274 }
+    },
+    {
+      "category": "prose",
+      "description": "The Calwrath memory integration at L162 — 'the one that was placed on her collarbone while she knelt in the Calwrath ash and did not cry, because commanders did not cry' — is restrained, devastating, and perfectly timed. It arrives at the deepest layer of the brand removal, linking physical and emotional stratigraphy without over-explaining the connection.",
+      "lineRef": { "start": 162, "end": 162 }
+    },
+    {
+      "category": "prose",
+      "description": "Tessen's discretion (L156: 'the careful inattention of a man who understood that what was happening in this room was not his to witness') is a beautiful character detail that also manages the reader's awareness of the third person in the room. His exit at L250 is perfectly timed and executed.",
+      "lineRef": { "start": 156, "end": 156 }
+    },
+    {
+      "category": "prose",
+      "description": "The magic-return perceptual shift (L178-186) is the chapter's most original writing. The granite walls gaining depth, the lamp flame becoming 'legible,' the stone table as 'a geological sentence she could suddenly parse' — these are fresh, character-specific images that show the magic's nature through Kaelith's specific perception rather than generic power-awakening language.",
+      "lineRef": { "start": 178, "end": 186 }
+    }
+  ],
+  "invariantCompliance": {
+    "INV-017_proseQualityFloor": {
+      "status": "FAIL",
+      "detail": "Repetition thresholds exceeded: 'the way' construction appears 21+ times (severely exceeds 3/page limit); architectural metaphors appear 30+ times (voice-marker saturation). Cliché count is at threshold (2: L120 breath-stopping, L96 amber eyes). Purple prose present at L170 (triple simile stacking). Chapter cannot pass INV-017 without addressing the two critical repetition findings."
+    },
+    "INV-005_showDontTell": {
+      "status": "MARGINAL PASS",
+      "detail": "One clear show-tell violation (L148 'most intimate experience of her life'), one borderline meta-commentary (L234). The majority of emotional content is conveyed through physical sensation, gesture, and behavior — the chapter's show-to-tell ratio is strong outside the flagged instances."
+    },
+    "INV-019_dialogueNaturalism": {
+      "status": "PASS",
+      "detail": "Dialogue is consistently naturalistic. Tessen speaks with technical confidence and appropriate imperfection. Kaelith/Lirien exchanges are sparse, charged, and subtextual. No overly formal or unnatural phrasing detected."
+    },
+    "INV-035_microTension": {
+      "status": "PASS",
+      "detail": "No dead spots found. Tension is sustained through all three scenes via overlapping sources."
+    },
+    "INV-047_dialogueSubtext": {
+      "status": "PASS",
+      "detail": "Subtext operates effectively throughout: 'The case is not mine to make,' the 'Fae magic' echo, 'Rest before you move,' and the trust declaration all carry meaning beyond their literal content."
+    },
+    "INV-003_voiceDistinctness": {
+      "status": "CONDITIONAL PASS",
+      "detail": "Voice is unmistakably Kaelith's — the architectural framing, tactical assessment, physical-emotional register are all correctly deployed. However, the voice is over-applied to the point of saturation, which is a different kind of voice failure: the character sounds like a caricature of herself rather than a person. The voice is distinct but not credibly human at this density."
+    },
+    "INV-064_sensorySignature": {
+      "status": "PASS",
+      "detail": "Tactile/proprioceptive channel dominates correctly. Kaelith experiences the chapter primarily through touch (stone surfaces, Lirien's hands, the brand), body awareness (weight, stillness, jaw tension), and heat. One minor exception at L120 where breath-stopping is respiratory rather than tactile."
+    },
+    "INV-073_publicationReadyProse": {
+      "status": "CONDITIONAL PASS",
+      "detail": "Prose is lush, emotionally authentic, and genre-appropriate. Several passages are publication-quality (the Calwrath memory, the magic-return perception shift, the trust dialogue). However, the repetition saturation (LINE-001, LINE-002, LINE-003) prevents the chapter from meeting the 'publication-ready' standard in its current form. With the repetition addressed, this chapter could be exceptional."
+    }
+  },
+  "revisionPriority": [
+    {
+      "rank": 1,
+      "findingId": "LINE-001",
+      "rationale": "Architectural metaphor saturation is the chapter's primary prose quality problem. Reducing density will simultaneously improve LINE-008 (voice not thinning during breakdown), make LINE-018 (keystone extension) less redundant, and create breathing room for the strongest metaphors to land."
+    },
+    {
+      "rank": 2,
+      "findingId": "LINE-002",
+      "rationale": "'The way' saturation is the chapter's secondary syntactic problem. Reducing it will improve prose rhythm variety and make the intentional anaphora at L176 more effective."
+    },
+    {
+      "rank": 3,
+      "findingId": "LINE-003",
+      "rationale": "'Felt/feel' repetition is concentrated in the chapter's most important section (magic return and bond formation). Varying the construction will make each perception more distinct."
+    },
+    {
+      "rank": 4,
+      "findingId": "LINE-004",
+      "rationale": "Negation pattern reduction is a continuation of ch10's revision mandate. Reducing will improve rhythmic variety."
+    },
+    {
+      "rank": 5,
+      "findingId": "LINE-005",
+      "rationale": "'Six years' phrase repetition can be addressed during the global repetition pass alongside items 1-4."
+    },
+    {
+      "rank": 6,
+      "findingId": "LINE-006",
+      "rationale": "Triple simile at L170 is a targeted cut within the architectural-saturation reduction."
+    },
+    {
+      "rank": 7,
+      "findingId": "LINE-007",
+      "rationale": "Show-tell fix at L148 is a targeted revision that improves the procedure scene's integrity."
+    },
+    {
+      "rank": 8,
+      "findingId": "LINE-008",
+      "rationale": "Voice thinning during breakdown requires careful coordination with LINE-001's global reduction."
+    }
+  ],
+  "metadata": {
+    "editor": "line-editor",
+    "chapter": 11,
+    "timestamp": "2025-07-28T18:00:00Z",
+    "draftVersion": "draft",
+    "referencedArtifacts": [
+      "chapters/011/draft.md",
+      "chapters/011/metadata.json",
+      "style/style-guide.json",
+      "craft-profile.json",
+      "characters/CHAR-001.json"
+    ]
+  }
+}

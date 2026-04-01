@@ -1,0 +1,156 @@
+{
+  "reportType": "copy-edit",
+  "chapter": 10,
+  "pov": "CHAR-002",
+  "generatedAt": "2025-07-18T15:00:00Z",
+  "findings": [
+    {
+      "id": "COPY-010-001",
+      "severity": "major",
+      "category": "naming",
+      "location": "Lines 66, 118",
+      "description": "Thalen Reyvas is identified as 'High Conclave, Seventh Seat' (line 66) and referenced via 'Seventh Seat authorization' (line 118). However, world-bible/politics.json canonically assigns Thalen Reyvas to the 'Sixth Seat — Fae Relations and Border Diplomacy.' The Seventh Seat in politics.json belongs to Vairen Ethis (Archives and Knowledge Stewardship). This is a pre-existing cross-document discrepancy already flagged in continuity-tracker.json (DISC-001) — all chapter drafts (ch10, ch12, ch13, ch15, ch21) consistently use 'Seventh Seat,' while politics.json says 'Sixth Seat.' The continuity tracker recommends updating politics.json to align with the chapters.",
+      "evidence": "world-bible/politics.json line 38: 'Sixth Seat — Fae Relations and Border Diplomacy' → Thalen Reyvas. world-bible/politics.json line 43: 'Seventh Seat — Archives and Knowledge Stewardship' → Vairen Ethis. continuity-tracker.json namingConsistency: 'NOTE: world-bible/politics.json says Sixth Seat (Fae Relations), but chapters 10/12/13 consistently use Seventh Seat. Cross-chapter discrepancy requires global resolution.'",
+      "recommendation": "No change needed in chapter draft — the chapter is internally consistent with all other chapters. However, world-bible/politics.json must be updated globally to swap Sixth/Seventh Seat assignments. This is a cross-document discrepancy that requires resolution at the world-bible level, not the chapter level."
+    },
+    {
+      "id": "COPY-010-002",
+      "severity": "major",
+      "category": "naming",
+      "location": "Line 140",
+      "description": "The text references 'the Dawnward Range' as a location near the Quietus approach where the next Dimming rite will be performed. This location name does not appear anywhere in world-bible/geography.json, which establishes the 'Vireth Range' as the mountain system containing the Quietus and Serath Dûn. 'Dawnward Range' is not mentioned in any other world-bible file, character profile, or plot document. It appears only in the chapter 10 draft and its metadata.",
+      "evidence": "world-bible/geography.json: LOC-008 'The Narrowing' is defined as 'The only traversable pass through the Vireth Range.' LOC-010 'Serath Dûn' is 'carved into the granite shoulder of a peak on the Vireth Range's western face.' No 'Dawnward Range' appears in any canonical geography document. Grep confirms zero world-bible hits for 'Dawnward.'",
+      "recommendation": "Either (a) change 'the Dawnward Range' to 'the Vireth Range' to align with established geography, or (b) add 'Dawnward Range' to geography.json as a named sub-range or local name for part of the Vireth system near the Quietus approach. Option (a) is simpler and recommended unless there is a narrative reason for the distinct name."
+    },
+    {
+      "id": "COPY-010-003",
+      "severity": "major",
+      "category": "factual",
+      "location": "Line 108",
+      "description": "The Oathbrand's glow is described as 'silver-blue' ('The Oathbrand's silver-blue glow was steadier in darkness'). The canonical description in both the magic system and the character profile establishes the brand and its glow as 'silver-black.' Chapter 8 revised (line 53) specifically describes 'familiar silver-black light through the linen weave.' The CHAR-001 physical description states: 'a silver-black sigil burned into the skin above her left collarbone.' No canonical source uses 'silver-blue' for the Oathbrand.",
+      "evidence": "world-bible/magic-system.json MAG-008: 'Silver-black sigil burned into the skin above the collarbone, roughly two inches in diameter.' characters/CHAR-001.json physicalDescription.skin: 'a silver-black sigil burned into the skin above her left collarbone.' chapters/008/revised.md line 53: 'casting familiar silver-black light through the linen weave.'",
+      "recommendation": "Change 'silver-blue glow' to 'silver-black glow' to maintain consistency with all established canonical descriptions. Alternatively, 'silver glow' would also be acceptable as the silver component is canonical."
+    },
+    {
+      "id": "COPY-010-004",
+      "severity": "major",
+      "category": "factual",
+      "location": "Line 212",
+      "description": "The text states 'the firelight caught the Oathbrand's glow through her sleeve.' The Oathbrand is canonically located on the left collarbone (CHAR-001 physical description: 'above her left collarbone'). A sleeve covers the arm, not the collarbone area. The brand's glow would be visible through the shirt fabric at the collar/chest area, not through a sleeve. Previous chapters describe the glow correctly: ch8 revised (line 53) says 'light through the linen weave' (shirt fabric); ch2 revised (line 87) describes 'The Oathbrand scar at Kaelith's collarbone where her shirt collar sat open.' The clothing description confirms Kaelith 'wears her collar high enough to cover the Oathbrand in public.'",
+      "evidence": "characters/CHAR-001.json physicalDescription.skin: 'above her left collarbone.' physicalDescription.clothing: 'She wears her collar high enough to cover the Oathbrand in public.' chapters/008/revised.md line 53: 'silver-black light through the linen weave.' chapters/002/revised.md line 87: 'Oathbrand scar at Kaelith's collarbone where her shirt collar sat open.'",
+      "recommendation": "Change 'through her sleeve' to 'through the fabric at her collar' or 'through the linen at her collarbone.' In the camp setting, Kaelith may have a looser collar making the glow visible through shirt fabric near the collarbone."
+    },
+    {
+      "id": "COPY-010-005",
+      "severity": "minor",
+      "category": "grammar",
+      "location": "Line 70",
+      "description": "The word 'timber' is used where 'timbre' is intended: 'listening for footsteps, for the specific timber of a door hinge that indicated approach rather than adjustment.' 'Timber' refers to wood/lumber. 'Timbre' (pronounced TAM-ber) refers to the distinctive quality or character of a sound. Since Lirien is listening for the specific sound quality of a door hinge, 'timbre' is the correct word.",
+      "evidence": "Context makes the intended meaning unambiguous — Lirien is in operative mode, listening for specific sound characteristics.",
+      "recommendation": "Change 'timber' to 'timbre' on line 70."
+    },
+    {
+      "id": "COPY-010-006",
+      "severity": "minor",
+      "category": "formatting",
+      "location": "Line 188",
+      "description": "The sentence '\"What were they like,\" Lirien said, \"from the coast.\"' ends with a period rather than a question mark. The full reconstructed quote is 'What were they like from the coast' — an interrogative sentence beginning with 'What.' Regardless of the split attribution, the terminal punctuation should reflect the sentence type. Per INV-019 (Dialogue Naturalism), dialogue punctuation must be grammatically correct.",
+      "evidence": "INV-019 requires correct dialogue punctuation. The sentence is syntactically interrogative ('What were they like').",
+      "recommendation": "Change the period to a question mark: '\"What were they like,\" Lirien said, \"from the coast?\"'"
+    },
+    {
+      "id": "COPY-010-007",
+      "severity": "minor",
+      "category": "naming",
+      "location": "Line 16",
+      "description": "The text references 'the Chancellor's pennant' flying from the municipal archive building in Aranthem. No 'Chancellor' role or title is established anywhere in world-bible/politics.json, world-bible/culture.json, or any other canonical source. The High Conclave governs through seven seats; Aranthem is described as the seat of the High Conclave. If 'Chancellor' is intended as a municipal title distinct from the Conclave, it needs establishment in the world-bible. Currently, it is an unverified reference.",
+      "evidence": "Grep for 'Chancellor' across all world-bible files returns zero results. world-bible/politics.json describes Aranthem's governance through the High Conclave and its seven seats. No municipal governance layer is described.",
+      "recommendation": "Either (a) replace 'the Chancellor's pennant' with 'the Conclave's pennant' or 'the imperial pennant' to use established terminology, or (b) establish 'Chancellor' as a municipal title in world-bible/politics.json or culture.json."
+    },
+    {
+      "id": "COPY-010-008",
+      "severity": "minor",
+      "category": "formatting",
+      "location": "Lines 214, 222",
+      "description": "Two instances of 'What else' formatted as declarative statements with periods rather than question marks. Line 214: '\"What else,\" Kaelith said. \"About the coast.\"' Line 222: '\"What else,\" Lirien amended...' 'What else' is syntactically interrogative and should end with a question mark. However, this may be a deliberate voice choice for Kaelith (whose voice profile specifies 'Statements, not questions') — 'What else' functioning as a command ('tell me what else') rather than a question. If intentional, Lirien's repetition on line 222 is itself a tracked voice-contamination marker (Lirien mirroring Kaelith's phrasing).",
+      "evidence": "characters/index.json voiceDistinctionGuide.kaelith.dialogue: 'Statements, not questions. Tactical questions only.' This could justify formatting 'What else' as a statement. Lirien's repetition is noted in narration as deliberate mirroring.",
+      "recommendation": "If intentional voice choice: no change needed, but acknowledge this is deliberate voice formatting (Kaelith's statements-not-questions pattern, Lirien's mirroring). If unintentional: change to '\"What else?\" Kaelith said. \"About the coast.\"' and '\"What else?\" Lirien amended...'"
+    },
+    {
+      "id": "COPY-010-009",
+      "severity": "suggestion",
+      "category": "factual",
+      "location": "Chapter end (line 252)",
+      "description": "The continuity tracker for chapter 10 lists an event 'Night: Kaelith practices tier-two magic. Rebuilding capacity' that does not appear in the chapter draft. The draft ends with both characters falling asleep. No magic practice is described. Additionally, this event would be a magic-system violation: the Oathbrand is not removed until ch11, and per MAG-008 and the power levels section, Kaelith is suppressed to Tier 1 while Oathbranded. She cannot practice tier-two magic until after removal.",
+      "evidence": "continuity-tracker.json chapter 10 events: 'Night: Kaelith practices tier-two magic. Rebuilding capacity.' chapters/010/draft.md: chapter ends with sleep scene. world-bible/magic-system.json: Kaelith is 'Tier 1 (Oathbranded)' until removal in ch11.",
+      "recommendation": "Remove 'Night: Kaelith practices tier-two magic. Rebuilding capacity' from the continuity tracker's ch10 entry. This event is either a forward-looking error (belonging to a post-ch11 chapter) or a magic-system violation. The draft correctly omits it."
+    },
+    {
+      "id": "COPY-010-010",
+      "severity": "suggestion",
+      "category": "factual",
+      "location": "Scene 2 (lines 104-156)",
+      "description": "The continuity tracker records 'Evening: Shares findings with Kaelith (withholds third page)' for chapter 10, but the draft does not mention a specific 'third page' being withheld. The draft shows Lirien sharing the core intelligence and Kaelith catching that Lirien had the Reyvas name earlier than disclosed. The 'third page' detail is not dramatized.",
+      "evidence": "continuity-tracker.json ch10: 'Evening: Shares findings with Kaelith (withholds third page).' No 'third page' reference in draft.md.",
+      "recommendation": "Update the continuity tracker to remove 'withholds third page' and instead note 'withholds earlier knowledge of Reyvas name — caught by Kaelith' to match the draft."
+    }
+  ],
+  "continuityVerification": {
+    "namingConsistency": {
+      "status": "verified with 3 findings",
+      "details": "All character names verified against characters/index.json: Kaelith Maren (CHAR-001) correct, Lirien Dael (CHAR-002) correct, Thalen Reyvas (CHAR-003) correct. Place names verified against geography.json: Aranthem correct, Veldrane correct (Station Veldrane-7 reference), the Wending correct, the Quietus correct. One unestablished location: 'Dawnward Range' (COPY-010-002). One unestablished title: 'Chancellor' (COPY-010-007). Magical terms verified: Oathbrand correct, Pallor correct, Dimming rites correct. Pre-existing Thalen Reyvas seat discrepancy noted (COPY-010-001)."
+    },
+    "timelineProgression": {
+      "status": "verified — consistent",
+      "details": "Chapter 10 takes place '3 days after Wending' per continuity tracker. Draft opens with 'The Wending was three days behind them' — consistent. Ch9 places characters in the Wending on the 14th of Ashfall. Three days of travel covering 45-60 miles is plausible at 15-20 miles/day. The 7-minute infiltration window matches metadata. Characters camp '2 miles northeast of Aranthem's walls' — consistent with metadata."
+    },
+    "characterKnowledgeStates": {
+      "status": "verified — no violations",
+      "details": "Lirien correctly knows: Pallor sabotage (FACT-004, ch4), waystation documents referencing Reyvas (ch9), unshared full intelligence. She does NOT reference: resonance bond (forms ch11), Kaelith's Warden lineage (FACT-006, not yet known), kill contract loophole (FACT-008, discovered ch14). Kaelith correctly deduces 'Reyvas' from waystation 'Seventh Seat authorization.' Information asymmetry maintained and partially resolved per metadata."
+    },
+    "geographyCompliance": {
+      "status": "verified with 1 finding",
+      "details": "Route from Wending (LOC-006) to Aranthem (LOC-007) is correct per geography.json. Camp '2 miles northeast' is plausible. Unestablished 'Dawnward Range' flagged (COPY-010-002). Aranthem's municipal archive is distinct from the great Archive described in geography.json — acceptable as a separate municipal institution."
+    }
+  },
+  "magicSystemCompliance": {
+    "status": "one color discrepancy found",
+    "details": {
+      "oathbrandBehavior": "Correctly depicted as active (pre-removal ch11). Glow behavior (dimmer in daylight, steadier in darkness) consistent with MAG-008. Color discrepancy: 'silver-blue' vs canonical 'silver-black' (COPY-010-003). Anatomical discrepancy: glow 'through her sleeve' vs collarbone placement (COPY-010-004).",
+      "pallorDescription": "Correctly described as 'wounded membrane/veil/skin.' Thinning near Aranthem consistent with central Pallor zone gradient (LOC-007).",
+      "faePerception": "Lirien's stellar perception as 'resonance/frequency' is new worldbuilding detail consistent with fae magical sensitivity. Enriches world without contradicting MAG rules.",
+      "dimmingRites": "Correctly described: astronomical schedule, targeting membrane permeability peaks, authorization chain to Reyvas. Mechanism consistent with politics.json conspiracy description."
+    }
+  },
+  "anachronismCheck": {
+    "status": "no anachronisms detected",
+    "details": "Technology references period-appropriate: charcoal-on-paper copying, forged paper authorization, preservation wax, binding glue. Metaphors from Lirien's established water/infiltration domain. No modern jargon. 'Astronomical schedule' acceptable — astronomy exists in this world (fae navigational charts). 'Waterproof lining' consistent with intelligence tradecraft."
+  },
+  "grammarAndPunctuation": {
+    "status": "minor issues found",
+    "details": {
+      "tenseConsistency": "Past tense maintained throughout all 252 lines. No violations.",
+      "dialogueFormatting": "Generally correct. Comma placement with speech tags correct throughout. Two question-mark omissions flagged (COPY-010-006, COPY-010-008). No interrupted dialogue in this chapter to test em-dash conventions.",
+      "pronounClarity": "Well-managed despite two female characters. Proper names used frequently. Oathbrand/branded-arm identifiers disambiguate Kaelith.",
+      "paragraphStructure": "Within acceptable limits. Scene 3 longer paragraphs serve Kaelith's coast memories. No excessively long paragraphs in investigation scenes.",
+      "sceneBreaks": "Three scene breaks using '---' markers at appropriate transitions. Consistent formatting.",
+      "parentheticalAnnotations": "Lirien's classification system consistent. Empty/terminated parentheticals are intentional emotional-breakdown markers."
+    }
+  },
+  "findingSummary": {
+    "critical": 0,
+    "major": 4,
+    "minor": 4,
+    "suggestions": 2,
+    "total": 10,
+    "byCategory": {
+      "naming": 3,
+      "factual": 4,
+      "grammar": 1,
+      "formatting": 2,
+      "timeline": 0,
+      "anachronism": 0
+    }
+  },
+  "overallAssessment": "Chapter 10 demonstrates strong factual integrity in its conspiracy investigation, timeline progression, information asymmetry, and character knowledge states. The archive infiltration is consistent with Lirien's Tier 4 operative capabilities. The 40-year conspiracy, Dimming rites mechanism, and Reyvas identification align with world-bible sources. Two major factual issues (Oathbrand color and glow-through-sleeve) are localized description errors requiring simple correction. Two naming issues (Dawnward Range, Chancellor) need either world-bible additions or text corrections. The pre-existing Seventh/Sixth Seat discrepancy requires world-bible-level resolution. Grammar and formatting are clean with only minor punctuation corrections. No anachronisms detected."
+}

@@ -1,0 +1,236 @@
+{
+  "chapter": 17,
+  "povCharacter": "Kaelith Maren",
+  "povCharacterId": "CHAR-001",
+  "voiceConsistencyScore": 9,
+  "distinctnessScore": 10,
+  "compressionArcScore": 9,
+  "sensorySignatureScore": 9,
+  "povTransitionScore": 10,
+  "overallVerdict": "passed",
+  "recognitionTest": {
+    "passed": true,
+    "analysis": "The opening 3 sentences — 'Fire first. Perimeter second. Don't think about the rest.' — are unmistakably Kaelith within a single line. Military imperative voice, short declaratives, tactical inventory structure, the deliberate suppression of emotional content through task-focus. The sentences that follow — 'Arranged the kindling. Same way she had a thousand times, in a thousand places. Her hands remembered the geometry.' — confirm through tactile sensory dominance ('hands remembered'), structural vocabulary ('geometry'), and the percussive rhythm of 3-8 word sentences. A reader familiar with both leads would identify this as Kaelith immediately. Lirien would never open with an imperative command sequence or feel the world through her hands."
+  },
+  "povTransitionMotivation": {
+    "passed": true,
+    "analysis": "Chapter 16 (Lirien) ends with devastating stillness: 'Lirien sat with the ruins and the message and the absence of the only person she might have loved freely, and she did not move, and she did not weep, and she did not know if the grief was hers or the contract's... The bond carried nothing but pain. Matched. Shared. Inescapable. The silence between them was the loudest thing she had ever heard.' Chapter 17 opens with 'Fire first. Perimeter second. Don't think about the rest.' The switch from Lirien's flowing polysyndeton and visual/auditory stillness to Kaelith's clipped imperatives is a tonal shift that mirrors the story's emotional split. The reader MUST be in Kaelith's POV for the betrayal processing, the bond pulse reception, and the tactical assessment of her own decline — all of which require Kaelith's internal voice. The switch is structurally necessary: the reader needs to see how Kaelith reframes the revelation through the Calwrath pattern, and only Kaelith's POV provides that lens."
+  },
+  "voiceFingerprintAudit": {
+    "vocabulary": {
+      "score": 9,
+      "analysis": "Strong formal-military register throughout. Kaelith-coded vocabulary density: 'mission' (14), 'tactical' (4), 'compromised' (4), 'garrison' (2), 'discipline' (2), 'perimeter' (2), 'defensive' (2), 'efficiency' (2), 'sightlines' (1), 'position' (1), 'sound' (2). Engineering/fortification terms dominate: 'load-bearing' (4), 'structure/structural' (3), 'wall/walls' (20), 'foundation/foundations' (2), 'architecture' (3), 'subsidence' (1), 'rubble' (1), 'shoring' (1). The word 'operative' appears 10 times, all correctly describing Lirien-as-threat rather than Kaelith adopting intelligence vocabulary for her own processing. Post-edit: 'intelligence' replaced with 'tactical information' and 'dual-operative capability' replaced with 'Two. Minimum.' — both corrections restore military register. One minor note: 'catalogued' (1x, describing Lirien's behavior) is acceptable as Kaelith labeling the enemy's methods."
+    },
+    "sentenceRhythm": {
+      "score": 8,
+      "analysis": "Overall distribution: 58.7% short (1-8 words), 20.9% medium (9-15), 12.0% long (16-25), 8.5% very long (25+). This falls below the 70%+ short target for Kaelith's default voice, but the deviation is contextually justified: Chapter 17 is post-black-moment at maximum emotional breach. The metadata explicitly notes 'longer sentences appear when defences breach,' and this entire chapter IS the breach. Scene-by-scene: Scene 1 (isolation/memory) 58.2% short — includes the memory-testing passages where defences crack; Scene 2 (bond pulse) 55.9% short — the core emotional breach, lowest short percentage as expected; Scene 3 (combat + direction change) 60.5% short — highest, with combat fragments ('Slower. Compensate left.' / 'She shifted her stance. More weight right.') pulling the average up. The tactical and combat sections are properly compressed; the reflective passages appropriately lengthen as defences fail. Post-edit improvements: opening paragraph compressed (34-word sentence broken into three), Narrowing ecology sentence compressed (37 words to three shorter sentences), combat sequence broken into staccato fragments, closing 44-word polysyndeton sentence broken into 4 sentences. The 8/10 reflects that while the deviation is justified, a few more sentence breaks in Scene 1's non-breach passages would further strengthen the percussion."
+    },
+    "metaphorDensity": {
+      "score": 9,
+      "analysis": "Architecture and fortification metaphors dominate with 54 references — exactly right for Kaelith's voice at maximum compression. Key metaphors all draw from the correct domain: 'load-bearing wall' for anger, 'architectural blueprint of her guilt,' 'subsidence' for grief, 'rubble' for collapsed understanding, 'shoring up' for defensive maintenance, 'stones falling into a foundation' for tactical reality settling. Post-edit: three unauthorized water metaphors removed — 'A wave' → 'A breach' (structural), 'like watching water seep through fabric' → 'like watching a crack spread through glass' (material science), 'seeped through the cracks' → 'bled through the cracks' (physical/body). The one deliberately preserved water exception — 'grief came through like floodwater through a crack in a dam' — now stands alone as the sole water intrusion, correctly signaling Lirien's influence leaking through Kaelith's structural framework. Remaining water references are all literal: 'sound carried across water' (Calwrath geography), 'Pallor's silver had seeped through the skin' (physical description of vorakh). No organic, garden, or dreamlike metaphors present. Metaphor hygiene is excellent."
+    },
+    "emotionalRegister": {
+      "score": 9,
+      "analysis": "Consistently suppressed-to-physical throughout. Emotions expressed as body events: anger as jaw tension and heat (implied through military control), grief as 'pressure behind the sternum' and 'heaviness across the shoulders,' the bond as physical impact against the chest ('hand went to her sternum without conscious decision'), fear as cold spreading through joints and delayed reaction time. Kaelith never names an emotion before its physical manifestation. The grief arrives as 'the physical impact of feeling someone else's devastation as if it were her own' — physical framing first. The word 'felt' appears 20 times, but 15 instances describe bond-mechanic sensory reception (a physical phenomenon), not emotional naming. Post-edit: 'confusion had felt like wisdom' → 'confusion had passed for wisdom' — removes the one instance of abstract feeling-as-feeling and replaces with assessment language. The emotional register correctly shifts from controlled anger (Scene 1) through reluctant grief (Scene 2) to grim pragmatism (Scene 3), with the physical channel remaining dominant throughout."
+    },
+    "thoughtPatterns": {
+      "score": 10,
+      "analysis": "Linear tactical assessment consistently applied to emotional situations — exactly as specified in the voice profile. Kaelith processes the betrayal as a tactical problem: 'Every memory was evidence now.' She tests memories sequentially (Oathbrand removal → Calwrath confession → loophole proposal), evaluates each for manipulation, reaches assessment. The Calwrath pattern provides the interpretive framework through direct tactical analogy: 'People you trust will use you for institutional purposes.' Under stress, thought fragments into inventory mode: 'Silver at the wrist. Cold tracking the veins. Timeline revised.' / 'Functional impairment. Minor. Compensatable. For now.' / 'Military assessment. Clinical. Honest.' The post-combat tactical chain — 'The mission required the Quietus. The Quietus required reaching it alive. Reaching it alive required slowing the Pallor's progression. Slowing the progression required magical resonance. Magical resonance required Lirien.' — is textbook Kaelith linear logic, building an airtight chain of tactical necessity that arrives at an emotional conclusion through pure reason. The subtext ('The lie was so obvious she almost laughed') is masterful — Kaelith applying tactical framing to emotional need and seeing through her own cover."
+    }
+  },
+  "sensorySignature": {
+    "score": 9,
+    "analysis": "Tactile dominance confirmed and strong. 'Cold' appears 21 times — the chapter's dominant sensory thread, expressing absence and Pallor progression through Kaelith's primary channel. Tactile markers: 'hands' (6), 'fingers' (6), 'palm/palms' (2), 'chest' (3), 'fist' (2), 'grip' (1), 'weight' (10). Kaelith feels the Pallor through her hands ('Silver traced the veins from her wrist to her first knuckle'), registers grief through her body ('hand went to her sternum without conscious decision'), processes combat through proprioception ('More weight right' / 'her left arm did not respond the way she expected'). The Oathbrand is referenced through tactile memory ('Lirien's hands on her collarbone'). The fire is registered as warmth that doesn't reach her ('The warmth did not reach her fingers'). Proprioceptive secondary channel strong: stance adjustments, weight distribution, the body knowing the path before the mind ('Her feet chose it'). Visual descriptions are minimal and tactical (sightlines, terrain assessment) rather than aesthetic — correctly subordinated to the tactile/proprioceptive primary. Contrast with Lirien's visual dominance (Ch16 opens by reading faces and light) is maximal."
+  },
+  "voiceDistinctnessFromLirien": {
+    "score": 10,
+    "analysis": "Strongly distinct on every axis. (1) Opening: Kaelith opens with military imperative ('Fire first. Perimeter second.'); Ch16 Lirien opened with intelligence tradecraft ('The dead drop had been serviced.'). (2) Sentence rhythm: Kaelith's percussive 3-8 word declaratives and inventory fragments ('Silver at the wrist. Cold tracking the veins. Timeline revised.') vs. Lirien's medium-length observation→assessment chains. (3) Metaphor domain: post-edit, Kaelith's metaphors are exclusively architecture/fortification/material science (load-bearing walls, rubble, subsidence, cracks in glass, foundations, blueprints); Lirien's are water/surface-depth/infiltration (currents, seals, depths, covers, leaks). (4) Emotional processing: Kaelith endures, walls, processes through body; Lirien classifies, catalogues, processes through taxonomy. (5) Attention priority: Kaelith reads structures first (two exits, stone floor, ceiling condition); Lirien reads people first. (6) Thought pattern: Kaelith's linear tactical chains vs. Lirien's branching cross-references. (7) Sensory channel: Kaelith tactile/proprioceptive (cold in fingers, weight on shoulders, grip strength); Lirien visual/auditory (light quality, micro-expressions, voice register). No reader could confuse these chapters."
+  },
+  "compressionArc": {
+    "score": 9,
+    "analysis": "The compression arc across three scenes correctly tracks Kaelith's emotional state. Scene 1: maximum compression — tasks as anchors, inventory fragments, military efficiency masking devastation. Sentences are shortest here in the non-breach passages ('The fire caught. She fed it until the flames were steady.' / 'Shelter assessment. Rock overhang, south-facing.'). Scene 2: compression begins to crack — the bond pulse forces longer sentences as defences breach ('The anger had made sense. The anger had been architecture — solid, supportive, the framework she needed to walk away without looking back.'). The shift from short to long signals breach exactly as specified. Scene 3: mixed rhythm — combat returns to staccato ('Slower. Compensate left.' / 'Kaelith moved.'), then the post-combat reflection allows medium sentences as pragmatism replaces anger, and the final movement gains a cautious lengthening (fragile hope). The 52-word sentence about emotional truth at the chapter's core ('It transmitted emotional truth whether she consented to the transmission or not...') is the longest in the chapter and represents maximum breach — the wall cracking completely. This is correctly the single longest sentence."
+  },
+  "issuesFound": [
+    {
+      "id": "VF-017-001",
+      "severity": "major",
+      "type": "lirien-voice-bleed",
+      "description": "Three unauthorized water metaphors in the original draft: 'A wave' describing grief arrival (line 131), 'like watching water seep through fabric' describing Pallor spread (line 263), and 'seeped through the cracks' describing grief passing through the bond wall (line 193). The metadata explicitly notes water imagery should be absent except one preserved instance ('floodwater through a crack'). These three additional instances violated Kaelith's structural-only metaphor domain.",
+      "resolution": "Replaced all three with domain-appropriate alternatives: 'A wave' → 'A breach' (military/structural), 'like watching water seep through fabric' → 'like watching a crack spread through glass' (material science), 'seeped through the cracks' → 'bled through the cracks' (physical/body — also connects to blood-sealed contract motif)."
+    },
+    {
+      "id": "VF-017-002",
+      "severity": "moderate",
+      "type": "lirien-voice-bleed",
+      "description": "'Source of intelligence' (line 195) and 'dual-operative capability' (line 309) are intelligence/spy vocabulary. 'Intelligence' is Lirien's domain — she collects intelligence; Kaelith collects tactical information. 'Dual-operative' is Seep jargon; Kaelith would state the requirement with military bluntness.",
+      "resolution": "Replaced 'source of intelligence' with 'source of tactical information' and 'dual-operative capability' with 'two. Minimum.' — both restore Kaelith's military register."
+    },
+    {
+      "id": "VF-017-003",
+      "severity": "moderate",
+      "type": "lirien-voice-bleed",
+      "description": "'Interior landscape' (line 159) to describe Lirien's grief quality. 'Landscape' is terrain/visual vocabulary more natural to Lirien's observational register. Kaelith would frame interior states structurally.",
+      "resolution": "Replaced with 'interior structure' — Kaelith processes everything as structures, including other people's emotional states."
+    },
+    {
+      "id": "VF-017-004",
+      "severity": "moderate",
+      "type": "sentence-compression",
+      "description": "Opening paragraph contained a 34-word sentence ('Kaelith crouched beside... a thousand such places') and a 37-word ecology description, both in non-breach camp-setup context where Kaelith's voice should be at maximum compression. Combat sequence contained a 37-word comma-chain ('She shifted her stance, put more weight...') violating the staccato combat voice note. Closing paragraph contained a 44-word polysyndeton sentence more characteristic of Lirien's flowing rhythm.",
+      "resolution": "Opening sentence broken into three (14 + 3 + 10 words). Ecology sentence compressed from one 37-word sentence to three (10 + 11 + 8 words). Combat sentence broken into staccato fragments (4 + 3 + 12 + 9 words). Closing sentence broken into four (4 + 4 + 10 + 24 words). Line 349 sentence broken at natural period (21 + 14 words)."
+    },
+    {
+      "id": "VF-017-005",
+      "severity": "minor",
+      "type": "vocabulary-register",
+      "description": "'An infinite regression of doubt' (line 69) is philosophical/academic vocabulary outside Kaelith's register. She processes patterns spatially and structurally, not abstractly.",
+      "resolution": "Replaced with 'a corridor of doubt that circled back to the same locked door' — architectural metaphor (corridor, locked door) consistent with Kaelith's structural vocabulary."
+    },
+    {
+      "id": "VF-017-006",
+      "severity": "minor",
+      "type": "emotion-naming",
+      "description": "'The confusion had felt like wisdom' (line 305) names an emotion abstractly through 'felt like.' Kaelith's profile specifies she does not say 'feel' — she says 'notice' or assesses.",
+      "resolution": "Replaced 'felt like' with 'passed for' — assessment language (something that appeared to be but wasn't), consistent with Kaelith's evaluative register."
+    },
+    {
+      "id": "VF-017-007",
+      "severity": "observation",
+      "type": "sentence-length-deviation",
+      "description": "Overall short-sentence percentage (58.7%) falls below the 70%+ target for Kaelith's default voice. However, Chapter 17 is specifically the post-black-moment chapter where defences are breaching throughout. The metadata explicitly authorizes longer sentences during breach ('Voice maintains compression but longer sentences appear when defences breach'). Per-scene analysis confirms the pattern is correct: tactical/combat sections are most compressed (60.5%+), the bond-pulse breach section is least compressed (55.9%). The remaining very long sentences (25+ words) all occur during emotional breach moments, dream sequences, or the climactic direction change.",
+      "status": "noted-not-corrected",
+      "rationale": "The deviation from 70% to 59% is expected for this chapter's emotional content. Forcing 70% short sentences in a chapter that is entirely about defensive collapse would contradict the voice profile's own rule that length signals breach. The compression arc — short in tactical passages, longer during emotional breaks — is correctly executed."
+    },
+    {
+      "id": "VF-017-008",
+      "severity": "observation",
+      "type": "closing-rhythm",
+      "description": "The final four paragraphs (lines 355-375) have a slightly more flowing quality than typical Kaelith, with polysyndeton in 'One step at a time. One breath at a time. The cold spreading through her veins and the grief spreading through the bond...' The parallelism and rhythm here leans toward a more lyrical register.",
+      "status": "noted-not-corrected",
+      "rationale": "The closing represents the moment where Kaelith's rigid structural voice begins to accommodate grief — the first hint that Lirien's influence has changed how she processes the world. This subtle voice softening is thematically intentional (the wall is no longer being actively reinforced) and mirrors the trajectory toward eventual reunion. The final two lines ('She did not know the answers. / She walked anyway.') correctly snap back to pure Kaelith compression."
+    }
+  ],
+  "refinementsMade": [
+    {
+      "location": "L19 (opening paragraph)",
+      "original": "Kaelith crouched beside the shallow pit she had scraped into the rocky soil and arranged the kindling with the efficiency of someone who had made a thousand such arrangements in a thousand such places.",
+      "revised": "Kaelith crouched beside the shallow pit she had scraped into rocky soil. Arranged the kindling. Same way she had a thousand times, in a thousand places.",
+      "rationale": "34-word non-breach sentence broken into three (14 + 3 + 10). Camp setup is Kaelith's comfort zone — her voice should be at maximum compression here."
+    },
+    {
+      "location": "L19 (Narrowing ecology)",
+      "original": "The Narrowing's treeline had plenty of deadfall — the Pallor's thinning here meant the forest grew strangely, trees that flourished in bursts and then died when the membrane thickened again, leaving bone-dry wood scattered across the granite slopes.",
+      "revised": "The Narrowing's treeline had plenty of deadfall. The Pallor's thinning here killed trees in cycles — grow, die, dry out. Bone-dry wood scattered across the granite slopes.",
+      "rationale": "37-word naturalistic description compressed to three tactical observations. Kaelith would assess resources, not describe ecology."
+    },
+    {
+      "location": "L69 (doubt metaphor)",
+      "original": "an infinite regression of doubt that led nowhere except back to the fundamental problem",
+      "revised": "a corridor of doubt that circled back to the same locked door",
+      "rationale": "'Infinite regression' is philosophical/academic. 'Corridor' and 'locked door' are architectural — Kaelith's domain."
+    },
+    {
+      "location": "L131 (grief arrival)",
+      "original": "Not a pulse. A wave.",
+      "revised": "Not a pulse. A breach.",
+      "rationale": "'Wave' is water vocabulary (Lirien's domain). 'Breach' is military/structural — a wall breached. Also sets up the preserved floodwater simile that follows: breach → floodwater through the crack."
+    },
+    {
+      "location": "L159 (interior description)",
+      "original": "a new permanent feature of the interior landscape",
+      "revised": "a new permanent feature of the interior structure",
+      "rationale": "'Landscape' is terrain/visual vocabulary. Kaelith processes interior states structurally."
+    },
+    {
+      "location": "L193 (grief through wall)",
+      "original": "If some of Lirien's grief seeped through the cracks",
+      "revised": "If some of Lirien's grief bled through the cracks",
+      "rationale": "'Seeped' is water vocabulary (the Seep). 'Bled' is physical/body — connects to the blood-sealed contract motif and Kaelith's body-forward emotional register."
+    },
+    {
+      "location": "L195 (bond as source)",
+      "original": "The bond was a source of intelligence.",
+      "revised": "The bond was a source of tactical information.",
+      "rationale": "'Intelligence' is spy vocabulary (Lirien collects intelligence). Kaelith would say 'tactical information' — military framing."
+    },
+    {
+      "location": "L249 (combat sequence)",
+      "original": "She shifted her stance, put more weight on her right, let the creature's momentum carry it past her first strike and used the opening to cut at the exposed joint where the foreleg met the shoulder.",
+      "revised": "She shifted her stance. More weight right. Let the creature's momentum carry it past her first strike. Cut at the exposed joint where foreleg met shoulder.",
+      "rationale": "37-word comma-chain broken into staccato fragments (4 + 3 + 12 + 9). Combat voice should be 'staccato, assessment-action pairs' per outline."
+    },
+    {
+      "location": "L263 (Pallor spread)",
+      "original": "like watching water seep through fabric",
+      "revised": "like watching a crack spread through glass",
+      "rationale": "Water simile replaced with material-science simile. 'Crack spread through glass' is visual-structural and consistent with Kaelith's metaphor domain."
+    },
+    {
+      "location": "L305 (wisdom assessment)",
+      "original": "the confusion had felt like wisdom, and the wisdom had nearly killed her",
+      "revised": "the confusion had passed for wisdom, and the wisdom had nearly killed her",
+      "rationale": "'Felt like' is emotional naming. 'Passed for' is assessment language — something that appeared to be but wasn't. Kaelith evaluates; she doesn't feel."
+    },
+    {
+      "location": "L309 (mission requirement)",
+      "original": "The mission requires dual-operative capability.",
+      "revised": "The mission requires two. Minimum.",
+      "rationale": "'Dual-operative' is intelligence jargon. 'Two. Minimum.' is military bluntness — short, declarative, a commander stating force requirements."
+    },
+    {
+      "location": "L349 (mission sentence)",
+      "original": "Toward the seal. Toward the mission that required two people who had built something real inside a cage and broken it and might be able to build it again if they could survive the conversation that was coming.",
+      "revised": "Toward the seal. Toward the mission that required two people who had built something real inside a cage and broken it. Who might build it again — if they survived the conversation that was coming.",
+      "rationale": "38-word sentence broken into two (21 + 14). Hard period break is more Kaelith."
+    },
+    {
+      "location": "L371 (closing sentence)",
+      "original": "Kaelith walked north, and the cold spread, and the bond carried two people's grief across the distance between them, and somewhere ahead the Quietus waited with all its questions about trust and surrender and whether the cage could be opened from the inside.",
+      "revised": "Kaelith walked north. The cold spread. The bond carried two griefs across the distance between them. Somewhere ahead, the Quietus waited — with all its questions about trust, about surrender, about whether the cage could be opened from the inside.",
+      "rationale": "44-word polysyndeton sentence (the longest in the chapter) broken into four (4 + 4 + 10 + 24). The polysyndeton rhythm was more Lirien than Kaelith. Revised version is clipped and accumulative — Kaelith's drum rhythm rather than Lirien's current."
+    }
+  ],
+  "voiceMetricsPostEdit": {
+    "totalSentences": 484,
+    "shortSentences": 284,
+    "shortPercentage": "58.7%",
+    "shortPercentageNote": "Below 70% target but contextually justified — entire chapter is emotional breach",
+    "wallReferences": 20,
+    "architectureReferences": 3,
+    "architectureContext": "All correctly used: 'architectural blueprint of her guilt,' 'the anger had been architecture,' 'controlled architecture of an operative collapsing' (Kaelith applying her framework to Lirien's state)",
+    "loadBearingReferences": 4,
+    "fortificationReferences": 54,
+    "waterMetaphors": 1,
+    "waterMetaphorContext": "The single preserved deliberate exception: 'grief came through like floodwater through a crack in a dam' — showing Lirien's influence",
+    "literalWaterReferences": 2,
+    "literalWaterContext": "'sound carried across water' (Calwrath geography), 'Pallor's silver had seeped through the skin' (vorakh physical description)",
+    "operativeVocabulary": 10,
+    "operativeContext": "All 10 instances describe Lirien — Kaelith labeling the betrayer, not adopting intelligence vocabulary for her own processing",
+    "tactileSensoryTerms": 51,
+    "tactileTermDetail": "cold (21), weight (10), hands (6), fingers (6), chest (3), palm (2), fist (2), sternum (1)",
+    "missionReferences": 14,
+    "trueContractions": 1,
+    "contractionContext": "Only 'Don't' in the opening imperative — formality maintained throughout emotional intensity",
+    "feltUsage": 20,
+    "feltBreakdown": "15 bond-mechanic sensory reception, 4 physical/structural ('felt the first crack', 'felt the tactical reality settle'), 1 post-edit assessment ('passed for')"
+  },
+  "deliberateExceptions": [
+    {
+      "element": "Water metaphor — 'grief came through like floodwater through a crack in a dam'",
+      "rationale": "Preserved per metadata T16 note. This single water intrusion into Kaelith's structural metaphor space shows Lirien's influence leaking through Kaelith's defences — the metaphor IS the theme. The fact that Kaelith reaches for a water image unconsciously demonstrates that Lirien has changed how she processes the world."
+    },
+    {
+      "element": "Sentence length below 70% short",
+      "rationale": "Chapter 17 is post-black-moment with defences breaching throughout. The voice profile's own rule — longer sentences signal breach — means the 59% short percentage is correct for this chapter. Forcing 70% would contradict the emotional content."
+    },
+    {
+      "element": "52-word sentence about emotional truth",
+      "rationale": "The sentence 'It transmitted emotional truth whether she consented to the transmission or not, and the emotional truth was that Kaelith Maren — who had walked away from everything, who had built a wall and retreated behind it, who had told herself she was safer alone — did not want to lose Lirien entirely' is the longest in the chapter and represents maximum defensive breach. The em-dash parenthetical is Kaelith inventory mode embedded in a confession — the structural framework trying and failing to contain emotional truth. This is intentional and should be preserved."
+    }
+  ],
+  "crossChapterConsistency": {
+    "comparisonWithCh15": "Ch15 voice report not available. However, the voice parameters in this chapter align with the Kaelith voice fingerprint defined in CHAR-001.json and the per-POV calibration in the style guide. The compression level is appropriately more extreme than a typical Kaelith chapter — the metadata notes this should be 'shortest sentences in the book' for combat fragments, which is achieved ('Slower. Compensate left.' / 'More weight right.' / 'Cut.').",
+    "comparisonWithCh16Lirien": "Maximum distinctness confirmed. Ch16 Lirien used water metaphors (26), operative vocabulary (62), visual sensory terms (45), observation→assessment cadence, and polysyndeton flowing rhythm. Ch17 Kaelith uses architecture metaphors (54), military vocabulary (30+), tactile sensory terms (51), linear tactical assessment, and percussive staccato rhythm. The two voices are complementary opposites — stone and water, touching and watching, building and infiltrating."
+  },
+  "timestamp": "2025-07-17T17:15:00Z"
+}

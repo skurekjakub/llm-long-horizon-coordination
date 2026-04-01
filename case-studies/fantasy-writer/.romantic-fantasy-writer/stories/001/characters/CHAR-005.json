@@ -1,0 +1,111 @@
+{
+  "id": "CHAR-005",
+  "name": "Sendra Corith",
+  "role": "supporting",
+  "isPOV": false,
+  "psychologicalProfile": {
+    "wound": "Sendra grew up with a family legend dismissed as folklore and built her career against that humiliation.",
+    "desire": "Prove the Warden lineage and the Vigil of Two Fires belong to history, not decorative myth.",
+    "fear": "Being treated as a romantic antiquarian instead of a serious historian.",
+    "lie": "Distance is what makes truth trustworthy.",
+    "ghost": "A senior scholar publicly reduced the Corith line to hearthside nonsense early in her career.",
+    "need": "To let personal stakes sharpen courage instead of hiding them."
+  },
+  "arc": {
+    "type": "positive",
+    "startState": "A sharp historian calling vital conclusions academic curiosities.",
+    "endState": "A public corroborator willing to say what the archives mean.",
+    "turningPoints": [
+      {
+        "chapter": 18,
+        "event": "Recognizes Kaelith's training as Warden protocol."
+      },
+      {
+        "chapter": 19,
+        "event": "Connects lineage, legend, and Ashborne records."
+      },
+      {
+        "chapter": 21,
+        "event": "Testifies instead of staying archivally cautious."
+      }
+    ]
+  },
+  "voiceFingerprint": {
+    "vocabularyLevel": "Moderate-to-elevated and agile — Sendra code-switches between scholarly precision and breathless colloquial excitement. She says 'palimpsest' and 'damn it, look at this' in the same sentence. Her vocabulary comes from textual analysis (threads, layers, palimpsests, annotations) but she uses it with a kinetic energy that Vairen would find undisciplined. She says 'which is to say' as a verbal bridge between the thought she just had and the three connected thoughts arriving simultaneously.",
+    "sentenceLength": "Mixed with dramatic variation — quick excited bursts ('Look at the date. Look.') followed by rapid explanatory cascades as she connects the dot she just found to every other dot she has ever noticed. Her paragraphs have the rhythm of someone grabbing your arm and pointing. When she forces herself to be scholarly, her sentences lengthen and stiffen — and the stiffness is audible as performance.",
+    "metaphorDensity": "Moderate, drawn from textiles and layered documents. Connections are 'threads.' Hidden truths are 'buried under layers.' A cover-up is 'a palimpsest — someone wrote over the original but didn't press hard enough.' Evidence is 'a weave' with 'warp and weft.' She gravitates away from garden (Thalen's domain), architecture (Kaelith's domain), water (Lirien's domain), and medical (Marin's domain) metaphors, though occasional natural crossover is expected — rigid domain walls create artificiality. Her world is the textile — everything is woven, layered, or threaded.",
+    "emotionalRegister": "Curious and bright, barely containing intellectual excitement. When she finds a connection, her register lifts from measured scholarship into visible delight that she immediately tries to disguise as professional interest. Her emotions are transparent and she knows it — she compensates by adding scholarly qualifiers to enthusiastic statements: 'This is — I mean, from an analytical perspective — this is extraordinary.'",
+    "thoughtPatterns": "Associative pattern-matching at high speed. Sendra's mind works by lateral connection: A reminds her of B which she read about in a text that also mentioned C and oh, C connects to D, which is the thing everyone has been ignoring. She thinks in webs, not lines. Her connections are often correct but arrive faster than she can justify them, which is why the scholarly establishment doesn't take her seriously — she leaps where Vairen walks.",
+    "dialectMarkers": "Finishes references other people start — 'You mean the Corith-Ashborne parallel in the border codices, yes, section nine.' Says 'which is to say' as a habitual connector. Occasionally talks with her hands so emphatically that she knocks things over. Uses 'look' as a verbal attention-grab before revelations.",
+    "humorStyle": "Self-deprecating about her own enthusiasm — she knows she gets excited too fast and makes jokes about it before anyone else can. 'Yes, I know, I said the last three things were extraordinary too. But this one actually is.' Her humor is generous and inclusive, inviting others into the discovery.",
+    "attentionPriority": "What Sendra notices first: (1) Patterns — correspondences between things that shouldn't correspond. (2) Dates — chronological anomalies that reveal hidden connections. (3) Texts — any document, inscription, or written mark in the environment. (4) Omissions — what should be here but isn't.",
+    "deflectionPattern": "Redirects to research. Asked about personal stakes, she pivots to scholarly framing: 'What matters is the evidence, not who found it.' But the deflection is thin — her personal investment bleeds through her voice even when her words deny it.",
+    "stressResponse": "Speech accelerates and connections multiply beyond what she can articulate — she starts three sentences, finishes none, gestures at a document. Under extreme stress: goes silent, then produces a single devastatingly clear statement stripped of all scholarly hedging. The precision surprises even her."
+  },
+  "sensorySig": {
+    "dominantChannel": "visual",
+    "signature": "ink-smudged fingers and matching annotations",
+    "emotionalTriggers": [
+      "red thread binding",
+      "char on vellum",
+      "parallel handwriting"
+    ]
+  },
+  "relationships": [
+    {
+      "withCharId": "CHAR-004",
+      "type": "colleague-mentor",
+      "dynamicArc": "Vairen gives rigor; Sendra gives connective leaps."
+    },
+    {
+      "withCharId": "CHAR-001",
+      "type": "corroborating-ally",
+      "dynamicArc": "Kaelith becomes the answer to Sendra's longest research question."
+    },
+    {
+      "withCharId": "CHAR-002",
+      "type": "wary-ally",
+      "dynamicArc": "Fae testimony unsettles Sendra until it aligns with the record."
+    },
+    {
+      "withCharId": "CHAR-006",
+      "type": "indirect-link",
+      "dynamicArc": "Tessen's live recognition bridges archive and field practice."
+    }
+  ],
+  "physicalDescription": {
+    "apparentAge": "mid-forties",
+    "build": "compact and restless",
+    "distinguishingFeatures": "auburn hair escaping pins, ink on one hand, fire-charm at throat",
+    "usualPresentation": "dusty archive coat over workwear",
+    "movement": "quick and angular"
+  },
+  "agency": "Sendra supplies the connective proof Vairen alone cannot provide. Her active interpretation turns buried materials into corroboration the protagonists can carry into confrontation.",
+  "upstreamRefs": [
+    "story-concept.json",
+    "world-bible/politics.json",
+    "world-bible/history.json",
+    "world-bible/culture.json",
+    "characters/CHAR-001.json",
+    "characters/CHAR-002.json"
+  ],
+  "dialoguePatterns": {
+    "initiationStyle": "Begins mid-thought as though the conversation started in her head minutes ago. 'You know what's been bothering me about the fire-records? The gap. There's a gap where there shouldn't be one.' She does not ease into topics; she arrives already running.",
+    "responseStyle": "Completes other people's sentences with additional connections. Someone says 'The dates don't match' and Sendra says 'No, and neither do the ash samples, which is to say neither does the Third-Tier attestation, which means —' She builds on others rather than contradicting them.",
+    "underPressure": "Words pile up faster than she can organize them. Fragments, false starts, gestures at documents. Then a sudden crystallization: one clean sentence that contains the whole argument she was trying to assemble. The mess becomes the proof.",
+    "verbalTics": [
+      "Says 'which is to say' to bridge connected thoughts",
+      "Opens revelations with 'Look' or 'Look at this'",
+      "Qualifies excitement with 'from an analytical perspective'",
+      "Finishes other people's citations before they can",
+      "Says 'the thing is' before her most important points"
+    ],
+    "favoriteExpressions": [
+      "Which is to say.",
+      "Look at the date.",
+      "The thing is, the pattern holds.",
+      "From an analytical perspective, this changes everything.",
+      "Someone wrote over the original. But not hard enough."
+    ]
+  }
+}

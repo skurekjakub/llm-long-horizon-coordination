@@ -1,0 +1,17 @@
+{
+  "result": "passed",
+  "summary": "Style guide passed audit gate with one major tone-alignment issue and one minor quality-floor issue.",
+  "startTime": "2026-03-18T03:19:13Z",
+  "endTime": "2026-03-18T03:19:13Z",
+  "artifactsProduced": [
+    "audit-reports/style-audit.json"
+  ],
+  "metadata": {
+    "totalFindings": 2,
+    "criticalFindings": 0,
+    "majorFindings": 1,
+    "minorFindings": 1,
+    "voiceDistinctivenessScore": "strong",
+    "qualityFloorEnforceability": "adequate"
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "storyId": "001",
+  "chapterId": "003",
+  "editType": "developmental",
+  "editorAgent": "developmental-editor",
+  "createdAt": "2026-03-20T08:06:48Z",
+  "chapterMetrics": {
+    "wordCount": 4523,
+    "sceneCount": 3,
+    "povCharacter": "CHAR-001",
+    "timelineSpan": "Day 2: midnight through late morning",
+    "primaryArc": "fantasy",
+    "secondaryArc": "romance"
+  },
+  "outlineCompliance": [
+    {
+      "sceneId": "SCN-007",
+      "outlineGoal": "Kaelith breaks into Tavik's office, discovers encrypted Conclave messages revealing deliberate Oathbrand maintenance and Warden-lineage designation",
+      "compliance": "full",
+      "notes": "Scene executes all five commandments from the outline. The inciting incident (unlocked door), escalation (three messages of increasing severity), crisis (identity revelation), climax (memorization and evidence cleanup), and resolution (shaking hands in quarters) all land as specified. Pacing is excellent \u2014 the three messages build in stakes from surveillance to maintenance to containment rationale."
+    },
+    {
+      "sceneId": "SCN-008",
+      "outlineGoal": "Kaelith processes discovery, Enforcer Seldric arrives demanding transfer to Aranthem for medical evaluation",
+      "compliance": "partial",
+      "notes": "The processing beat is severely compressed \u2014 the outline calls for Kaelith returning to quarters to plan her next move, but the draft gives this only 4 lines (112-114) before jumping to the enforcer's dawn arrival. The enforcer confrontation itself is well-executed and matches the outline's specifications. The compression weakens Kaelith's tactical credibility in Scene 2 \u2014 her calm assessment of Seldric reads better if we've seen her spend the intervening hours thinking."
+    },
+    {
+      "sceneId": "SCN-009",
+      "outlineGoal": "Lirien disrupts capture via scaffolding collapse, Kaelith escapes, first tactical cooperation established",
+      "compliance": "partial",
+      "notes": "The disruption and escape sequence matches the outline well. However, the outline's close specification \u2014 'unstable-alliance' with 'Neither has admitted it aloud' \u2014 is exceeded by the draft's Scene 3, which includes a full 90-line dialogue where they openly discuss alliance, Lirien admits to being an operative, and they agree to flee together. The continuity tracker supports these events occurring in Ch3, so the content is valid, but the openness of communication exceeds the chapter's planned emotional restraint."
+    }
+  ],
+  "arcProgression": {
+    "fantasyArc": {
+      "status": "strong",
+      "beatDelivered": "Conspiracy reveal \u2014 Oathbrand maintenance, Warden-lineage designation, prevention protocol",
+      "assessment": "The conspiracy reveal is the chapter's strongest element. The three-message escalation structure in Scene 1 is expertly paced \u2014 each message raises the stakes from surveillance to active suppression to containment rationale. The enforcer arrival in Scene 2 converts the discovery from intellectual to physical threat. The fantasy arc serves both plot advancement and character revelation: Kaelith's understanding of her own exile transforms completely."
+    },
+    "romanceArc": {
+      "status": "on-track",
+      "beatDelivered": "Shared Watch \u2014 first tactical cooperation without coordination, mutual recognition of competence under pressure",
+      "assessment": "The scaffolding collapse sequence delivers the correct romance beat: indirect, deniable, and effective. Lirien acts without being asked; Kaelith recognizes the intervention without acknowledging it. The post-escape dialogue pushes slightly beyond the 'awareness' stage boundaries \u2014 'Because I need you alive' is more direct than the planned emotional restraint calls for \u2014 but the tactical framing keeps it from feeling premature."
+    },
+    "dualArcInterleave": {
+      "status": "effective",
+      "assessment": "Fantasy crisis (enforcer arrival) creates the necessary conditions for the romance beat (tactical cooperation). The arcs reinforce each other: the conspiracy's escalation forces proximity, and proximity forces the first honest exchange. The interleave is the chapter's structural backbone."
+    }
+  },
+  "findings": [
+    {
+      "id": "DEV-001",
+      "severity": "major",
+      "type": "pacing",
+      "lineRange": [
+        112,
+        118
+      ],
+      "title": "Processing beat compressed below outline specification",
+      "description": "The outline (SCN-008) specifies Kaelith returns to quarters to process the discovery and plan her next move. The draft compresses this to 4 lines \u2014 'She reached her quarters. Closed the door. Locked it. Sat on the edge of her narrow bed and stared at her hands. They were shaking now.' \u2014 before jumping directly to 'The enforcer arrived at dawn.' The intervening hours between midnight and dawn are unaccounted for. This compression weakens Scene 2's tactical credibility: Kaelith's calm assessment of Seldric reads as earned experience only if we understand she's already spent hours processing the shock and shifting into operational mode.",
+      "recommendation": "Expand the Scene 1-to-2 transition by 3-5 lines showing the passage of time \u2014 Kaelith unable to sleep, running tactical assessment, dawn arriving. This need not be a full scene; a brief paragraph bridge after the scene break will suffice. The 'shaking hands' beat should remain as the emotional anchor, with the processing lines following the scene break."
+    },
+    {
+      "id": "DEV-002",
+      "severity": "moderate",
+      "type": "outline-compliance",
+      "lineRange": [
+        250,
+        341
+      ],
+      "title": "Scene 3 dialogue exceeds outline's emotional restraint specification",
+      "description": "The chapter outline's close specifies an 'unstable-alliance' type with the note: 'Neither has admitted it aloud.' The draft's Scene 3 includes explicit verbal acknowledgment of alliance \u2014 Lirien admits to being an operative (line 276), Kaelith shares intelligence (lines 302-308), and they agree to a joint escape plan (lines 314-328). While the continuity tracker validates these events as occurring in Ch3, the candor of the exchange exceeds the outline's intended emotional register. Two people who met as potential killer and target should not reach full operational briefing in their first extended conversation.",
+      "recommendation": "Maintain the scene's content (these events must occur per continuity tracker) but compress the dialogue, increase Lirien's deflection and reluctance, and add environmental interruptions (distant search sounds, time pressure) that force information exchange to feel extracted rather than offered. The alliance should feel like a tactical necessity that neither character is comfortable with, not a briefing between colleagues."
+    },
+    {
+      "id": "DEV-003",
+      "severity": "moderate",
+      "type": "pacing",
+      "lineRange": [
+        260,
+        316
+      ],
+      "title": "Scene 3 exposition weight risks stalling dramatic momentum",
+      "description": "Lines 260-316 are predominantly dialogue-driven information exchange \u2014 Lirien explains her mission, Kaelith shares the dispatch contents, and they analyze implications together. While individual lines are well-crafted, the cumulative effect is closer to a briefing than a dramatic scene. The environmental setting (abandoned warehouse) provides no escalating pressure, and the characters remain stationary for the duration.",
+      "recommendation": "Layer environmental threat throughout the dialogue: distant shouts from search parties, the sound of boots on cobblestones, a patrol passing the warehouse entrance. Give the characters physical tasks \u2014 watching exits, checking windows \u2014 that break up the verbal exchange with action beats. The information exchange should feel stolen from diminishing time rather than conducted in safety."
+    },
+    {
+      "id": "DEV-004",
+      "severity": "minor",
+      "type": "structure",
+      "lineRange": [
+        334,
+        340
+      ],
+      "title": "Chapter close repeats Scene 2's structural technique",
+      "description": "Lines 334-338 use a 'Behind them / Ahead' parallel construction that mirrors lines 233-236 at the end of Scene 2. The technique is effective on first use; its repetition within the same chapter diminishes impact and suggests the chapter is ending the same way twice.",
+      "recommendation": "Revise the chapter close to use a different structural approach. End on a single concrete image or physical sensation rather than a parallel summary. The Oathbrand's burn or a sensory detail of the port would ground the ending more effectively."
+    },
+    {
+      "id": "DEV-005",
+      "severity": "positive",
+      "type": "structure",
+      "lineRange": [
+        40,
+        100
+      ],
+      "title": "Three-message escalation structure is excellent",
+      "description": "The three encrypted messages build in stakes with precision: Message 1 (surveillance/maintenance), Message 2 (reporting/external threat noted), Message 3 (prevention protocol/Warden-lineage rationale). Each message recontextualizes everything Kaelith believed about her exile. The pacing between messages \u2014 read, process, reach \u2014 creates a rhythm of discovery that sustains tension across 60 lines of a character reading documents, which is structurally difficult to make compelling."
+    },
+    {
+      "id": "DEV-006",
+      "severity": "positive",
+      "type": "romance-arc",
+      "lineRange": [
+        180,
+        246
+      ],
+      "title": "First tactical cooperation beat lands effectively",
+      "description": "The scaffolding collapse sequence delivers the romance arc's 'Shared Watch' beat with appropriate indirection. Lirien acts without coordination; Kaelith recognizes the intervention through tactical assessment rather than emotional gratitude. The power dynamic is correctly calibrated \u2014 Lirien creates the opening, Kaelith executes the escape, and neither depends entirely on the other. The parallel walking (line 232) is a strong physical metaphor for the emerging partnership."
+    }
+  ],
+  "overallAssessment": {
+    "qualityRating": "strong-draft",
+    "primaryStrengths": [
+      "Conspiracy reveal pacing in Scene 1",
+      "Dual-arc interleave \u2014 fantasy crisis enabling romance beat",
+      "Kaelith's tactical voice in action sequences",
+      "Physical-emotional tells (shaking hands, jaw tightening, Oathbrand flares)"
+    ],
+    "primaryConcerns": [
+      "Processing beat compression between Scenes 1 and 2",
+      "Scene 3 exposition weight and emotional over-disclosure",
+      "Chapter close technique repetition"
+    ],
+    "revisionPriority": "Address DEV-001 and DEV-002 first. DEV-003 can be partially addressed through environmental layering. DEV-004 is a polish-level concern."
+  }
+}

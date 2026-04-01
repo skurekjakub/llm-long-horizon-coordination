@@ -1,0 +1,119 @@
+{
+  "chapterNumber": 7,
+  "editorType": "line",
+  "generatedAt": "2024-12-28T12:15:30Z",
+  "overallProseAssessment": "Chapter 7 demonstrates strong sentence-level craft with proper voice distinction between narrative sections and dialogue, but contains several critical violations that compromise the established voice fingerprint. The chapter maintains good tension throughout three distinct scenes (cliff rescue, camp setup, night watch) and uses restraint effectively in emotional moments. However, the repeated use of a water metaphor directly contradicts Kaelith's established voice domain (architecture/stone/fire) and represents the most serious prose violation. Additionally, some sentences exceed the established rhythm parameters for Kaelith's staccato military register, and there are instances of telling over showing in key emotional moments. The dialogue subtext is well-executed, and the show-don't-tell balance generally meets standards, though some emotional labeling could be converted to embodied sensation.",
+  "findings": [
+    {
+      "id": "LINE-007-001",
+      "severity": "critical",
+      "category": "voice",
+      "location": "Line 250: 'proximity eroded refusal the way water eroded stone'",
+      "finding": "Direct violation of Kaelith's voice fingerprint. Water metaphors are explicitly forbidden for Kaelith ('that is Lirien's domain') per style guide. This metaphor appears twice in the chapter (lines 250 and 428), making it a pattern violation.",
+      "currentText": "But proximity eroded refusal the way water eroded stone. Slowly. Inevitably. You did not notice until the foundation had shifted.",
+      "recommendation": "Replace with architectural/structural metaphor from Kaelith's domain: 'But proximity compromised structural integrity the way constant pressure found every weak joint. Load by load. Until the foundation shifted and the wall was no longer sound.'"
+    },
+    {
+      "id": "LINE-007-002",
+      "severity": "critical",
+      "category": "voice",
+      "location": "Line 428: 'proximity was eroding safety the way water eroded stone'",
+      "finding": "Second instance of the same water metaphor violation. This repetition indicates a systematic voice consistency failure.",
+      "currentText": "But proximity was eroding safety the way water eroded stone. Slowly. Inevitably. Until the foundation shifted and the structure was no longer sound.",
+      "recommendation": "Replace with architectural metaphor: 'But proximity was testing load-bearing capacity the way persistent stress found every flaw. Gradually. Relentlessly. Until the supports gave way and the structure failed.'"
+    },
+    {
+      "id": "LINE-007-003",
+      "severity": "major",
+      "category": "show-tell",
+      "location": "Lines 232-234",
+      "finding": "Direct emotional labeling violates show-don't-tell discipline in a key moment. 'This was attraction' tells rather than shows.",
+      "currentText": "This was attraction. Unwanted. Undeniable. Structurally compromising.",
+      "recommendation": "Convert to embodied sensation: 'Heat pulsed beneath her sternum—unwanted, undeniable, compromising every defensive position she had built.'"
+    },
+    {
+      "id": "LINE-007-004",
+      "severity": "major",
+      "category": "voice",
+      "location": "Lines 117, 205",
+      "finding": "Two instances of water-based metaphors in Kaelith's narrative voice ('like the underside of a breaking wave', 'rope could not measure'). Less severe than primary violations but still inconsistent with architectural domain.",
+      "currentText": "Just smooth granite curving away from her like the underside of a breaking wave... The distance between them had collapsed in ways rope could not measure.",
+      "recommendation": "Replace with structural metaphors: 'Just smooth granite curving away from her like an impossible arch' and 'The distance between them had collapsed in ways no measurement could quantify.'"
+    },
+    {
+      "id": "LINE-007-005",
+      "severity": "major",
+      "category": "voice",
+      "location": "Lines 258-260",
+      "finding": "Sentence length exceeds Kaelith's established rhythm. The 31-word sentence contradicts her 'short declarative, staccato' pattern.",
+      "currentText": "She looked tired. Not physically exhausted, but tired in the way operatives got tired when the mission exceeded the parameters they had been trained to handle.",
+      "recommendation": "Break into Kaelith's staccato rhythm: 'She looked tired. Not physically. Operationally. The exhaustion that came when a mission exceeded all trained parameters.'"
+    },
+    {
+      "id": "LINE-007-006",
+      "severity": "major",
+      "category": "repetition",
+      "location": "Multiple instances throughout",
+      "finding": "Overuse of 'the way' construction (15 instances). Creates repetitive sentence structure that violates max 3 repeated structures per page guideline.",
+      "currentText": "Various instances: 'the way water always went', 'the way routes always did', 'the way she watched anyone', etc.",
+      "recommendation": "Vary construction: use direct statements, 'as', 'like', or restructure to avoid pattern repetition."
+    },
+    {
+      "id": "LINE-007-007",
+      "severity": "minor",
+      "category": "show-tell",
+      "location": "Line 292",
+      "finding": "Direct emotional statement could be converted to embodied sensation for stronger effect.",
+      "currentText": "She was attracted to this woman. The attraction was a liability.",
+      "recommendation": "Convert to embodied: 'Heat gathered in her chest when she watched Lirien move. The heat was a liability—a structural weakness she couldn't reinforce.'"
+    },
+    {
+      "id": "LINE-007-008",
+      "severity": "minor",
+      "category": "dialogue",
+      "location": "Lines 274-276",
+      "finding": "Dialogue exchange lacks sufficient subtext for a charged moment between the leads.",
+      "currentText": "'And I am?' 'Competent.'",
+      "recommendation": "Add layers of meaning. Lirien's question could probe deeper: 'And what am I to you?' with Kaelith's response carrying unspoken weight."
+    },
+    {
+      "id": "LINE-007-009",
+      "severity": "minor",
+      "category": "repetition",
+      "location": "Lines 151, 280, 367",
+      "finding": "Overuse of 'operational' family words (operational, operative, operatives) - 8 instances in chapter.",
+      "currentText": "Multiple uses of operative/operational terminology",
+      "recommendation": "Vary with synonyms: agent, intelligence work, field training, professional, tactically trained, etc."
+    },
+    {
+      "id": "LINE-007-010",
+      "severity": "suggestion",
+      "category": "prose",
+      "location": "Line 116",
+      "finding": "Mixed metaphor potential in granite description.",
+      "currentText": "Just smooth granite curving away from her like the underside of a breaking wave.",
+      "recommendation": "Keep within architectural domain: 'Just smooth granite curving away from her like an inverted arch with no purchase.'"
+    }
+  ],
+  "voiceAssessment": {
+    "overallConsistency": "Generally strong voice distinction with Kaelith's military-tactical register maintained in most scenes. However, critical violations in metaphor domain (water metaphors) compromise the established fingerprint.",
+    "vocabularyCompliance": "Strong adherence to formal-military vocabulary with appropriate precision and tactical terminology. Some overuse of 'operational' family words.",
+    "sentenceRhythm": "Mostly maintains Kaelith's short declarative pattern, with appropriate fragments under stress. Some sentences exceed length parameters for her staccato rhythm.",
+    "metaphorDomain": "Critical failure: multiple water metaphors violate Kaelith's architectural/stone/fire domain. Otherwise good use of structural imagery.",
+    "emotionalRegister": "Good use of body-forward emotional expression, though some direct labeling could be converted to embodied sensation.",
+    "dialogueConsistency": "Maintains Kaelith's statement-over-question preference and blunt delivery style. Some exchanges could use deeper subtext.",
+    "contrastWithLirien": "Voice distinction is clear when both characters are present. Kaelith's tactical orientation vs. Lirien's people-first observation maintained."
+  },
+  "clicheAudit": {
+    "count": 1,
+    "threshold": 2,
+    "verdict": "Within acceptable limits",
+    "instances": [
+      "Line 183: 'the heat pulsing through her left wrist where Lirien's hand had been' - borderline romance cliché but contextually justified"
+    ]
+  },
+  "bannedPhraseCheck": "No banned phrases detected from the style guide's prohibited list.",
+  "adverbDensityEstimate": "Low density, approximately 1-2 adverbs per page, well within the 3 per page limit.",
+  "passiveVoiceEstimate": "Approximately 4-5% passive voice usage, well within the 8% limit.",
+  "showTellRatio": "Approximately 85:15 show-to-tell ratio, meeting the 80:20 target. Some key emotional moments could benefit from additional embodiment."
+}

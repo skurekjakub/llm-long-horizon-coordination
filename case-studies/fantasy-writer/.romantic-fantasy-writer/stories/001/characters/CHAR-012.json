@@ -1,0 +1,105 @@
+{
+  "id": "CHAR-012",
+  "name": "Serath Vyn",
+  "role": "antagonist",
+  "isPOV": false,
+  "psychologicalProfile": {
+    "wound": "Serath's oldest terror is ambiguity so deep it has become philosophy: if terms blur, worlds break.",
+    "desire": "Preserve the authority of fae binding through exact, absolute, precedent-safe design.",
+    "fear": "That compassion or reinterpretation will reintroduce the instability the Court was built to survive.",
+    "lie": "Process can remain morally pure even when outcomes become monstrous.",
+    "ghost": "Serath remembers post-war bindings that failed under imprecise wording and hardened into a zealot for perfect legal architecture.",
+    "need": "To recognize that law exists to protect life rather than punish complexity."
+  },
+  "arc": {
+    "type": "negative",
+    "startState": "A contract architect who values procedural perfection above strategic sense.",
+    "endState": "An absolutist whose own wording becomes the loophole against him.",
+    "turningPoints": [
+      {
+        "chapter": 1,
+        "event": "Designs Lirien's binding with full awareness of the paradox."
+      },
+      {
+        "chapter": 18,
+        "event": "Rejects changed context as irrelevant."
+      },
+      {
+        "chapter": 20,
+        "event": "Sees exact wording become Kaelith's survival path."
+      }
+    ]
+  },
+  "voiceFingerprint": {
+    "vocabularyLevel": "Archaic juridical — the vocabulary of fae contract law, a language designed to eliminate ambiguity at the cost of all human warmth. Serath speaks in terms, clauses, precedents, and binding conditions: 'pursuant to,' 'notwithstanding,' 'the terms as ratified,' 'the binding condition obtains,' 'the subject is bound until such time as.' His vocabulary does not describe the world — it defines the world, and the definition is legally enforceable. He says 'the contract provides' the way a human might say 'the sun rises' — as a statement of physical law.",
+    "sentenceLength": "Long and conditional, with multiple dependent clauses that narrow meaning with each addition. His sentences are contracts in miniature: a main clause establishing the principle, followed by conditions, exceptions, and binding qualifications. 'The subject, having accepted the terms as presented — and having done so in full knowledge of the obligations therein specified — remains bound until such time as the conditions of dissolution are met.' He tends not to speak so much as legislate.",
+    "metaphorDensity": "Near-absent — Serath prefers definition to imagery. Where others use metaphor to illustrate, he uses precise terminology to delimit. If pressed into figurative language, his metaphors come from architecture of a very specific kind: frameworks, foundations, structural specifications — but as engineering blueprints, not Kaelith's lived experience of walls. He speaks of 'the architecture of obligation,' not 'the wall held.'",
+    "emotionalRegister": "Formal, austere, and procedurally sublime. Serath tends not to experience emotion as emotion — he experiences it as procedural deviation. Anger is 'a response disproportionate to the stimulus.' Satisfaction is 'the terms performing as designed.' The austerity is not affectation; it is the product of centuries of believing that precision is the only protection against chaos. Beneath it: a terror so old it has become philosophy.",
+    "thoughtPatterns": "Deductive and precedent-bound. Serath reasons from established principles to necessary conclusions, almost never the reverse. He tends not to observe and then generalize — he states the law and then determines whether reality conforms. When reality deviates, the error is reality's, not the law's. This is both his strength (nothing in his work is arbitrary) and his fatal flaw (he struggles to adapt to conditions the precedent did not foresee).",
+    "dialectMarkers": "Ritual legal phrasing — 'pursuant to,' 'notwithstanding the foregoing,' 'the binding condition obtains.' Recursive clarifications: he clarifies his clarifications. He uses 'one notes' rather than 'I see' — the first person is typically reserved for formal declarations of binding intent. He speaks in complete paragraphs, not sentences.",
+    "humorStyle": "Structurally impossible within his framework. Humor requires ambiguity; Serath's entire existence is built on eliminating ambiguity. He does not misunderstand jokes (like Kethran) — he recognizes them as imprecise communication and dismisses them as beneath the dignity of the proceedings.",
+    "attentionPriority": "What Serath notices first: (1) Terms — are the contractual conditions being met? (2) Precedent — has this situation occurred before, and how was it adjudicated? (3) Precision — is the language being used with sufficient exactness? (4) Loopholes — not to exploit them, but to close them. His tragedy is that he cannot close them all.",
+    "deflectionPattern": "Cites procedure. 'The matter is governed by the terms as ratified. Personal sentiment does not constitute a basis for revision.' He deflects by denying that personal response is a category the proceedings recognize. The deflection is absolute — there is no personal Serath in formal proceedings. There may not be a personal Serath at all.",
+    "stressResponse": "Sentences become longer, more conditional, more recursively qualified — as though more precision can contain the chaos he feels approaching. Under extreme stress: the qualifications become so dense that communication fails entirely, and he falls back on reciting the exact terms of the original binding — retreating to the last thing he is certain of."
+  },
+  "sensorySig": {
+    "dominantChannel": "auditory",
+    "signature": "measured recitation and clauses clicking shut",
+    "emotionalTriggers": [
+      "misquoted terms",
+      "voices overlapping in formal speech",
+      "silence after an incomplete oath"
+    ]
+  },
+  "relationships": [
+    {
+      "withCharId": "CHAR-002",
+      "type": "contract-author-subject",
+      "dynamicArc": "Lirien's suffering is irrelevant to Serath beside enforceability."
+    },
+    {
+      "withCharId": "CHAR-011",
+      "type": "aligned-authority",
+      "dynamicArc": "Kethran supplies variables; Serath turns them into obligation."
+    },
+    {
+      "withCharId": "CHAR-001",
+      "type": "abstract-target",
+      "dynamicArc": "Kaelith matters as an object required by wording, not as a person."
+    }
+  ],
+  "physicalDescription": {
+    "apparentAge": "centuries old, visibly timeless",
+    "build": "willowy and still",
+    "distinguishingFeatures": "white-gold hair and memory-jewelry",
+    "usualPresentation": "geometric architect-order robes",
+    "movement": "glacially smooth"
+  },
+  "agency": "Serath designs the metaphysical cage around Lirien and resists every attempt to reinterpret it. The late-story loophole matters because Serath made the language exact enough to exploit.",
+  "upstreamRefs": [
+    "story-concept.json",
+    "world-bible/politics.json",
+    "world-bible/culture.json",
+    "world-bible/magic-system.json",
+    "characters/CHAR-002.json"
+  ],
+  "dialoguePatterns": {
+    "initiationStyle": "Opens with formal procedural framing. 'The matter before the Triad, pursuant to the terms established in the seventh ratification, concerns the operational status of binding contract reference four-seven-one.' He rarely enters a conversation — he convenes a proceeding.",
+    "responseStyle": "Responds by ruling rather than discussing. 'The terms are not subject to revision based on subsequent emotional developments.' He rarely engages with arguments — he adjudicates them. Most responses are precedent-establishing declarations.",
+    "underPressure": "Qualifications multiply exponentially. Sentences become impenetrably dense legal constructions — not because he is confused but because he is terrified that imprecision will let chaos through the cracks. When the density finally collapses: a single short sentence — 'The terms hold.' — said like a prayer.",
+    "verbalTics": [
+      "Uses 'pursuant to' and 'notwithstanding' in casual speech",
+      "Says 'one notes' rather than 'I see'",
+      "Recursively clarifies: 'That is to say — and I specify for the record —'",
+      "Refers to emotions as 'developments subsequent to ratification'",
+      "Says 'the binding condition obtains' to close arguments"
+    ],
+    "favoriteExpressions": [
+      "The terms are clear.",
+      "The binding condition obtains.",
+      "Pursuant to the ratification.",
+      "One notes the deviation from established precedent.",
+      "Precision is the only protection against the alternative."
+    ]
+  }
+}

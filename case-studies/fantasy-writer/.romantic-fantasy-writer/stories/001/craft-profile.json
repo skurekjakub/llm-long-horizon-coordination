@@ -1,0 +1,157 @@
+{
+  "storyId": "001",
+  "selectedTools": [
+    {
+      "toolId": "T5",
+      "name": "Tone Contract",
+      "rationale": "This story defines an explicit tone contract with six forbidden tones (whimsical/twee, grimdark nihilism, sentimental/melodramatic, campy/self-aware, epic-triumphant, expository/pedagogical). The primary tone — morally complex and atmospherically taut — and secondary — darkly romantic with dry, understated wit — require active enforcement because the subject matter (gods unraveling reality, a kill contract between lovers) constantly tempts toward grimdark or melodrama. T5 makes the tone contract a binding constraint that every downstream agent can verify against.",
+      "enforcementPhases": ["style", "drafting", "revision", "beta-reading", "polish"]
+    },
+    {
+      "toolId": "T6",
+      "name": "Stakes Escalation",
+      "rationale": "The story moves from personal stakes (Kaelith's exile, Lirien's kill contract) through relational stakes (the paradox of needing alive the person you must kill) to existential stakes (the Pallor tearing, Ythara waking, reality dissolving into raw potential). Across 22 chapters, this escalation must be deliberate and trackable — each act must raise the cost of failure without front-loading the apocalyptic threat so heavily that later chapters cannot escalate further. T6 ensures the drafting and plotting phases map stakes progression explicitly.",
+      "enforcementPhases": ["plotting", "drafting", "revision"]
+    },
+    {
+      "toolId": "T7",
+      "name": "Black Moment",
+      "rationale": "Enemies-to-lovers demands a devastating Black Moment where the romance appears permanently destroyed. This story has extraordinary Black Moment potential: the kill contract is not a metaphor — Lirien's survival literally requires Kaelith's death, and the moment when Kaelith discovers this truth (that the woman she has learned to trust was sent to execute her) must be the emotional nadir from which recovery seems impossible. T7 ensures the Black Moment is designed during plotting, earned through the vulnerability ladder during drafting, and audited for emotional devastation during revision.",
+      "enforcementPhases": ["plotting", "drafting", "revision", "beta-reading"]
+    },
+    {
+      "toolId": "T8",
+      "name": "Internal and External Resistance",
+      "rationale": "Both protagonists carry layered resistance. Kaelith: internal (guilt over Calwrath, self-punishment through exile, distrust of anyone with institutional authority) and external (the Oathbrand throttling her magic, the High Conclave's interest in her death, the physical deterioration she doesn't recognize). Lirien: internal (fae operative conditioning against attachment, the question of whether she can be more than a weapon) and external (the Cerith Court's kill order binding her return, the Seep's expectations, being a fae in hostile human territory). T8 maps these resistance layers so the romance must overcome specific, named obstacles rather than vague reluctance.",
+      "enforcementPhases": ["character", "plotting", "drafting", "revision"]
+    },
+    {
+      "toolId": "T10",
+      "name": "Sanderson's Laws of Magic",
+      "rationale": "The story features at least four distinct magical systems or phenomena: the Oathbrand (a disciplinary brand that should dissolve but persists), the Pallor (a metaphysical membrane that is the flayed skin of a defeated god), the Quietus (an ancient sealing mechanism accessed through kinetic/embodied memory), and fae magic (the Seep's operational capabilities). Sanderson's First Law is critical — magic used to resolve conflict must be understood by the reader beforehand. Since the climax likely involves the Quietus and potentially the Pallor, the rules governing these must be established early and clearly. T10 prevents deus ex machina (INV-009) and ensures the magic serves as emotional metaphor (the Oathbrand as self-punishment, the Quietus as trust-through-surrender).",
+      "enforcementPhases": ["worldbuilding", "plotting", "drafting", "revision"]
+    },
+    {
+      "toolId": "T12",
+      "name": "Dual-Arc Interleave",
+      "rationale": "At 0.55 fantasy / 0.45 romance, this story must weave its arcs so tightly that they feel like one story told through two lenses. The fantasy arc (reach the Quietus before the Pallor tears completely) and the romance arc (transform a kill contract into chosen love) must reinforce each other at every major beat — a fantasy crisis should be a romantic inflection point, and romantic vulnerability should create fantasy-relevant consequences. T12 is the structural backbone that prevents the arcs from alternating like parallel monologues. Every chapter outline must show how both arcs advance or at minimum how one arc's movement creates pressure on the other.",
+      "enforcementPhases": ["plotting", "drafting", "revision"]
+    },
+    {
+      "toolId": "T13",
+      "name": "Tension Mapping",
+      "rationale": "22 chapters with dual arcs, an enemies-to-lovers slow burn, multiple conspiracy threads, and a ticking clock (the Pallor tearing) require explicit tension diagnostics. Without T13, the story risks three consecutive high-tension chapters without emotional recovery (reader fatigue) or three consecutive quiet chapters during the slow-burn middle (reader disengagement). The tension map provides a visual diagnostic during plotting and a compliance check during revision, ensuring rhythm and pacing serve both the romance's slow-burn patience and the fantasy's escalating urgency.",
+      "enforcementPhases": ["plotting", "drafting", "revision"]
+    },
+    {
+      "toolId": "T15",
+      "name": "Foreshadowing and Payoff Ledger",
+      "rationale": "This story plants numerous seeds that must pay off: the Oathbrand's persistence (someone is maintaining it deliberately), the Pallor's forty-year poisoning (implicating someone on the High Conclave), Kaelith's kinetic memory of the path to the Quietus (walked once, blindfolded — why? by whom?), Lirien's relationship to the Cerith Court, and the nature of Ythara the Unfinished. Every plant must have a payoff; every payoff must have a plant. T15 creates a formal ledger that the craft tracker maintains and auditors verify, preventing dangling threads (INV-033) and unearned revelations.",
+      "enforcementPhases": ["plotting", "drafting", "revision", "beta-reading"]
+    },
+    {
+      "toolId": "T16",
+      "name": "Symbolic Motif Weaving",
+      "rationale": "The story's imagery is rich with symbolic potential: the Pallor as a membrane between order and chaos (flayed divine skin — protection born from violence), the Oathbrand as externalized guilt that burns fresh (the wound that will not heal because someone profits from the bleeding), water imagery through the Seep ('water that finds every crack' — infiltration as intimacy), the Quietus as a seal that can only be reached through embodied memory (trust requires the body, not just the mind). Three thematic pillars need recurring visual anchors woven through prose, not stated as theme. T16 tracks motif deployment to ensure symbolic coherence without heavy-handedness.",
+      "enforcementPhases": ["style", "plotting", "drafting", "revision"]
+    },
+    {
+      "toolId": "T17",
+      "name": "Voice Fingerprinting",
+      "rationale": "Dual-POV between Kaelith (disgraced military commander — likely thinks in tactical assessments, cost-benefit analysis, defensive postures) and Lirien (fae intelligence operative — likely thinks in leverage, exits, information value, the gap between what is shown and what is true). The emotionally restrained prose style means differentiation cannot rely on emotional declaration; it must emerge from what each character notices, how they frame observations, their sentence rhythm, and their relationship to silence. T17 ensures that a reader can identify the POV character within the first paragraph without being told, and that voice remains consistent across 22 chapters.",
+      "enforcementPhases": ["character", "style", "drafting", "revision"]
+    },
+    {
+      "toolId": "T18",
+      "name": "Information Asymmetry",
+      "rationale": "Information asymmetry is the engine of this story's tension. Kaelith doesn't know the Oathbrand is killing her. Kaelith doesn't know she carries the Quietus path. Lirien knows about the kill contract but not (initially) about the Quietus. The reader may know things both characters don't (dramatic irony). The High Conclave knows things the reader doesn't (mystery). The Seep knows things Lirien may not. Every chapter must be auditable for who-knows-what — a character cannot act on information they haven't received, and reader tension depends on the gap between what we know and what the characters know. T18 makes this trackable across all 22 chapters.",
+      "enforcementPhases": ["plotting", "drafting", "revision"]
+    },
+    {
+      "toolId": "T20",
+      "name": "Emotional Throughline",
+      "rationale": "The emotionally restrained prose style means characters' internal states are shown through what they notice, avoid, and do — not through explicit emotional narration. This makes tracking emotional progression across chapters critical, because the signals are subtle. Without T20, two chapters might accidentally show the same emotional state for a character (stalling the arc) or skip an emotional beat that makes a later shift feel unearned. T20 provides a per-character emotional state map at chapter boundaries, ensuring both Kaelith's and Lirien's emotional arcs progress consistently even when the prose never names what they feel.",
+      "enforcementPhases": ["character", "plotting", "drafting", "revision"]
+    },
+    {
+      "toolId": "T21",
+      "name": "Vulnerability Ladder",
+      "rationale": "Enemies-to-lovers with a live kill contract requires the most carefully calibrated vulnerability escalation in the romance toolbox. Each step must feel earned — Lirien cannot show softness in chapter 3 that contradicts her operative training; Kaelith cannot offer trust in chapter 8 that her Calwrath trauma wouldn't permit. The ladder must track specific acts of vulnerability (sharing information, physical proximity, admitting need, revealing wounds) and ensure each is a higher-stakes surrender than the last. The steamy heat level means physical vulnerability must escalate in parallel with emotional vulnerability, not ahead of it. T21 is the structural guarantee that the romance earns its resolution.",
+      "enforcementPhases": ["character", "plotting", "drafting", "revision", "beta-reading"]
+    },
+    {
+      "toolId": "T23",
+      "name": "Mystery Box Inventory",
+      "rationale": "The story opens with at least six active mystery boxes: (1) Why hasn't the Oathbrand dissolved? (2) Who on the High Conclave has been poisoning the Pallor for forty years? (3) How did Kaelith walk the path to the Quietus blindfolded, and who took her? (4) What exactly is Ythara the Unfinished, and what happens if it wakes? (5) What is the Seep's true agenda beyond the Cerith Court's kill contract? (6) What really happened at the Siege of Calwrath? T23 inventories these questions, tracks when each is opened and answered, and ensures the reader always has 2-3 active questions driving them forward. Mystery boxes that stay open too long frustrate; boxes that close too quickly deflate tension.",
+      "enforcementPhases": ["plotting", "drafting", "revision"]
+    },
+    {
+      "toolId": "T24",
+      "name": "Subtext in Dialogue",
+      "rationale": "The style patterns explicitly call for 'dry, understated humor in dialogue — characters deflect with wit under pressure' and 'internal monologue that shows what characters notice and avoid, not what they feel directly.' Between an intelligence operative trained to reveal nothing and a disgraced commander who has learned that honesty is punished, virtually every conversation will have a surface meaning and a subterranean one. T24 ensures dialogue scenes are audited for the gap between what is said and what is meant, preventing characters from becoming too transparent too early (which would undercut the slow burn) or too opaque too long (which would alienate the reader).",
+      "enforcementPhases": ["style", "drafting", "revision", "beta-reading"]
+    },
+    {
+      "toolId": "T25",
+      "name": "Thematic Argument Scaffolding",
+      "rationale": "Three thematic pillars — trust as structural failure, the price of the right choice, chosen versus only — each carry an explicit argument that the story must dramatize rather than state. TP-1 argues that real trust requires vulnerability to someone who can destroy you; this must be embodied through Kaelith and Lirien's specific choices, not summarized in narration. TP-2 argues there is no clean resolution between right and good; this must be tested through at least two irreconcilable dilemmas. TP-3 argues love born from necessity demands a 'second act' of free choice; the story must dramatize the cage opening. T25 scaffolds these arguments into specific scenes, ensuring each pillar is advanced through action and tested through conflict across all three acts.",
+      "enforcementPhases": ["plotting", "drafting", "revision", "beta-reading"]
+    }
+  ],
+  "excludedTools": [
+    {
+      "toolId": "T1",
+      "name": "Scene Value Shift",
+      "reason": "Scene value shifts are fundamental craft that the drafting agents apply as baseline discipline. For this story, the critical structural enforcement comes from T12 (Dual-Arc Interleave) and T13 (Tension Mapping), which implicitly require value shifts to function. Formal T1 tracking would add audit overhead without proportional story-specific value."
+    },
+    {
+      "toolId": "T2",
+      "name": "Five Commandments of Storytelling",
+      "reason": "The Five Commandments (inciting incident, progressive complication, crisis, climax, resolution) are expected as baseline scene competence from the chapter drafter. Formal enforcement would add mechanical rigidity to a story whose restrained prose style benefits from scenes that sometimes end before the 'resolution' beat — leaving the reader in the unresolved space that mirrors the characters' emotional states."
+    },
+    {
+      "toolId": "T3",
+      "name": "Sequel/Reaction Beats",
+      "reason": "The emotionally restrained style ('reveals through omission and gesture, not declaration') means sequel beats in this story are not emotion→thought→decision sequences but rather silences, deflections, and physical actions that imply processing. Formal sequel beat enforcement risks pushing the prose toward more explicit interiority than the style permits. T20 (Emotional Throughline) tracks the arc-level emotional progression without prescribing the mechanism."
+    },
+    {
+      "toolId": "T4",
+      "name": "Try-Fail Cycles",
+      "reason": "The journey across a failing empire naturally generates try-fail sequences. Formal try-fail cycle tracking is most valuable for single-thread adventure plots; this story's complexity — dual arcs, conspiracy threads, interpersonal negotiations — means 'failure' often manifests as information gain or relationship shift rather than clean Goal→Attempt→Failure loops. T6 (Stakes Escalation) and T8 (Internal+External Resistance) provide the structural backbone that try-fail cycles serve in simpler narratives."
+    },
+    {
+      "toolId": "T9",
+      "name": "Scene-Type Tone Palettes",
+      "reason": "T5 (Tone Contract) enforces the macro-level tone with explicit forbidden tones. Scene-level tone palettes would add granularity, but this story's tonal range is deliberately narrow — 'morally complex and atmospherically taut' with 'darkly romantic wit' covers almost every scene type. The few scene types that might need distinct treatment (intimate scenes, action sequences) are better handled through the style guide than through a formal scene-type palette system."
+    },
+    {
+      "toolId": "T11",
+      "name": "Kill Your Darlings",
+      "reason": "Kill Your Darlings is a universal revision principle, not a story-specific structural tool. It applies to all fiction and does not require formal binding status. The revision and polish phases apply this discipline inherently. Binding it formally would create audit busywork ('prove you killed a darling') without improving the manuscript."
+    },
+    {
+      "toolId": "T14",
+      "name": "MRU (Motivation-Reaction Units)",
+      "reason": "MRUs structure prose at the sentence level (stimulus→involuntary response→voluntary response). While valuable for show-don't-tell, this story's restrained style often deliberately breaks MRU sequence — a character might suppress the involuntary response entirely, showing only the voluntary action, with the suppression itself being the characterization. Formal MRU enforcement could conflict with the prose voice. The style guide provides sentence-level guidance better suited to this story's specific approach."
+    },
+    {
+      "toolId": "T19",
+      "name": "Sensory Detail",
+      "reason": "General sensory richness is a prose quality handled by the style guide and enforced through voice fingerprinting (T17). T19 as a standalone tool is most useful for stories with immersive-world-first prose (lush high fantasy, sensory-dominant literary fiction). This story's emotionally restrained style uses sensory detail sparingly and strategically — what a character notices reveals character, not atmosphere for its own sake."
+    },
+    {
+      "toolId": "T22",
+      "name": "Hook and Close Catalogue",
+      "reason": "Strong chapter hooks and closes are essential but are implicitly enforced by T13 (Tension Mapping), which tracks chapter-boundary tension levels, and T23 (Mystery Box), which ensures active reader questions at all times. The story's spy-thriller DNA and enemies-to-lovers structure generate natural chapter-end hooks. A formal hook/close catalogue would duplicate what T13 and T23 already provide."
+    },
+    {
+      "toolId": "T26",
+      "name": "Sensory Signature Anchoring",
+      "reason": "Sensory signatures per character are incorporated into T17 (Voice Fingerprinting) for this story. What Kaelith notices (defensive positions, structural weaknesses, military logistics) and what Lirien notices (exits, leverage, the gap between appearance and truth) are part of their voice fingerprints rather than standalone sensory signatures. Separating them into a distinct tool would fragment character work that should be unified."
+    }
+  ],
+  "toolCount": 16,
+  "selectionRationale": "This story demands a dense craft toolkit because it operates simultaneously as morally complex epic fantasy, slow-burn enemies-to-lovers romance, conspiracy thriller, and thematically ambitious literary fiction. The 16 selected tools cluster into four functional groups: (1) STRUCTURAL — T6, T7, T8, T12, T13 ensure the dual-arc architecture, stakes progression, and resistance mapping that prevent the story from collapsing into one genre at the other's expense; (2) TRACKING — T15, T18, T20, T23 maintain the ledgers and inventories that a 22-chapter story with multiple conspiracies, information gaps, and emotional arcs requires to stay internally consistent; (3) THEMATIC/SYMBOLIC — T16, T25 scaffold the three dense thematic pillars into dramatic action and recurring imagery rather than letting them remain abstract intentions; (4) VOICE/TONE — T5, T17, T24 enforce the specific prose character this story demands: restrained, subtextual, tonally precise, with distinct dual-POV voices. T21 (Vulnerability Ladder) bridges structure and romance, ensuring the enemies-to-lovers arc earns every step. The 10 excluded tools are either baseline craft (T1, T2, T11), subsumed by selected tools (T9→T5, T19/T26→T17, T22→T13+T23), or structurally incompatible with the emotionally restrained prose style (T3, T14).",
+  "bindingFrom": "concept",
+  "upstreamRef": "story-concept.json"
+}

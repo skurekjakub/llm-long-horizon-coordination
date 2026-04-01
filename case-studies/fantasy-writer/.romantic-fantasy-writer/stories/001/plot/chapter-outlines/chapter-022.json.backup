@@ -1,0 +1,80 @@
+{
+  "chapterNum": 22,
+  "pov": "CHAR-002",
+  "povTransitionMotivation": "Close with Lirien's POV for resolution \u2014 the world holds, the love is chosen freely, and both women face the future together",
+  "scenes": [
+    {
+      "id": "SCN-62",
+      "goal": "[To be detailed by scene-beat-designer]",
+      "conflict": "[To be detailed by scene-beat-designer]",
+      "disaster": "[To be detailed by scene-beat-designer]",
+      "valueShift": "[To be detailed by scene-beat-designer]",
+      "fiveCommandments": {
+        "incitingIncident": "[To be detailed]",
+        "complication": "[To be detailed]",
+        "crisis": "[To be detailed]",
+        "climax": "[To be detailed]",
+        "resolution": "[To be detailed]"
+      }
+    },
+    {
+      "id": "SCN-63",
+      "goal": "[To be detailed by scene-beat-designer]",
+      "conflict": "[To be detailed by scene-beat-designer]",
+      "disaster": "[To be detailed by scene-beat-designer]",
+      "valueShift": "[To be detailed by scene-beat-designer]",
+      "fiveCommandments": {
+        "incitingIncident": "[To be detailed]",
+        "complication": "[To be detailed]",
+        "crisis": "[To be detailed]",
+        "climax": "[To be detailed]",
+        "resolution": "[To be detailed]"
+      }
+    },
+    {
+      "id": "SCN-64",
+      "goal": "[To be detailed by scene-beat-designer]",
+      "conflict": "[To be detailed by scene-beat-designer]",
+      "disaster": "[To be detailed by scene-beat-designer]",
+      "valueShift": "[To be detailed by scene-beat-designer]",
+      "fiveCommandments": {
+        "incitingIncident": "[To be detailed]",
+        "complication": "[To be detailed]",
+        "crisis": "[To be detailed]",
+        "climax": "[To be detailed]",
+        "resolution": "[To be detailed]"
+      }
+    }
+  ],
+  "emotionalArc": {
+    "startState": "[To be detailed by scene-beat-designer]",
+    "endState": "[To be detailed by scene-beat-designer]",
+    "pivotMoment": "[To be detailed by scene-beat-designer]"
+  },
+  "fantasyBeats": [
+    "Resolution \u2014 The World Holds, Pallor Stabilizes, Institutional Reckoning Begins"
+  ],
+  "romanceBeats": [
+    "Chosen Love \u2014 'I Stay Because I Want To'"
+  ],
+  "hookType": "quiet-aftermath",
+  "hookTypeDescription": "[To be detailed by scene-beat-designer]",
+  "closeType": "earned-hope",
+  "closeTypeDescription": "[To be detailed by scene-beat-designer]",
+  "targetWordCount": 4100,
+  "tensionLevel": 5,
+  "pacingNotes": "Chapter 22 \u2014 Resolution \u2014 The World Holds, Because They Chose It. [To be detailed by scene-beat-designer]",
+  "locationsPrimary": [
+    "Aftermath \u2014 returning from Quietus, new beginning"
+  ],
+  "charactersPresent": [
+    "CHAR-002",
+    "CHAR-001"
+  ],
+  "upstreamRefs": [
+    "../../plot/plot-structure.json",
+    "../../characters/CHAR-002.json",
+    "../../plot/dual-arc-timeline.json",
+    "../../plot/tension-map.json"
+  ]
+}
