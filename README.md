@@ -274,13 +274,13 @@ The next obvious move is to split some of that work out into subagents. The intu
 
 That does help, but only up to a point.
 
-The naive agent to subagent pattern still has a major flaw: the subagent may do its work in an isolated context window, but when it finishes, its findings usually get pushed right back into the main agent's context. So you get temporary isolation during execution, but you do not get a clean handoff model. You just move the context problem one level down and then re-import it into the parent.
+The naive agent to subagent pattern still has a major flaw: the subagent may do its work in an isolated context window, but when it finishes, its findings usually get pushed right back into the main agent's context.
 
-That means the main agent still gradually turns into a dumping ground for exploration results, review notes, implementation summaries, and partial findings from multiple child runs. It is better than doing everything in one thread, but it still does not really protect the controller's [context purity](#context-purity).
+That means the main agent still gradually turns into a dumping ground for exploration results, review notes, implementation summaries, and partial findings from multiple child runs.
 
 ![context flow between agents and subagents](assets/agent-subagent-context-flow.drawio.svg)
 
-The important detail in this diagram is that both subagent calls eventually feed back into the same top-level context window. So while the subagents may be isolated during execution, the parent still accumulates their outputs and has to reason over the growing aggregate, leading to the same doom loop of compaction -> summarization -> invocation with incomplete information -> task drift.
+The important detail in this diagram is that both subagent calls eventually feed back into the same top-level context window, leading to the same doom loop of compaction -> summarization -> invocation with incomplete information -> task drift.
 
 ## Result: Not good enough
 
