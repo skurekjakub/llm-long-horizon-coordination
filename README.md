@@ -122,6 +122,7 @@ Table of contents:
     - [The bootstrap sequence](#the-bootstrap-sequence)
     - [What makes this different from AutoGen/CrewAI-style dynamic teams](#what-makes-this-different-from-autogencrewai-style-dynamic-teams)
     - [The spectrum of autonomy](#the-spectrum-of-autonomy)
+- [llm-long-horizon-coordination](#llm-long-horizon-coordination)
 
 
 # Primary constraints and assumptions
@@ -1132,6 +1133,16 @@ Several categories:
 **Timestamp integrity.** Agents that write timestamps are instructed to run `date -u` in the terminal rather than guessing. LLMs are unreliable at generating accurate timestamps from training data. This is a small guard that prevents a surprisingly common class of artifact corruption.
 
 **Discovery containment.** Execution agents that notice [out-of-scope observations](#initial-discovery) write them to discovery files rather than expanding their own task scope. The execution coordinator's prompt explicitly says not to read or modify discovery files — they are exclusively consumed by the gap-hunter. This prevents scope creep during execution while preserving the observations for the completeness audit.
+
+**Zero-yap protocol.** In a multi-hour autonomous pipeline, the top-level orchestrator spends most of its life waiting — dispatching a coordinator, waiting for it to finish, reading its status file, updating progress, dispatching the next one. Between these dispatches, the orchestrator has nothing meaningful to say. 
+
+But LLMs are trained to produce text, and an idle orchestrator with a growing context will start narrating: recapping what just happened, explaining what it is about to do, summarizing the routing table, or producing status reports nobody asked for. This is not just noise — it is actively dangerous. Every token of narration enters the context window and displaces signal. 
+
+Worse, after enough idle turns of producing only text with no tool calls, the model can convince itself the task is "done" or that it should stop and ask the user for guidance. In long pipelines, this manifests as the orchestrator spontaneously terminating mid-workflow — not because of an error, but because it ran out of things to narrate and interpreted the silence as completion.
+
+The zero-yap protocol eliminates this by imposing a hard structural constraint: **every orchestrator response must contain a tool call.** No exceptions. If the orchestrator would produce a text-only response, it must instead find a tool call to make — there is always a status file to read, a progress file to update, or a coordinator to dispatch. The protocol bans narration, summaries between passes, thinking out loud, and status reports unless the pipeline is fully complete or halted on error. The orchestrator becomes a pure state machine: read state, update state, dispatch next action. The manifest file serves as the audit trail, not the orchestrator's output stream.
+
+This has a secondary stabilizing effect: by requiring a tool call on every turn, the orchestrator stays in "acting" mode rather than drifting into "reflecting" mode. The model's attention remains on the routing table and the current pipeline state rather than on generating increasingly ungrounded commentary about what it thinks is happening. The result is that orchestrators running under zero-yap reliably complete multi-hour pipelines that would otherwise terminate.
 
 ## Further generalization
 
