@@ -620,6 +620,8 @@ It then uses inputs from this intermediate state to inform its actions and produ
 
 To summarize: artifacts produced by upstream agents naturally turn into prompts for the downstream agents, slowly transforming abstract and declarative artifacts into more imperative, tanglible outputs.
 
+> This is a super cool emergent feature of the architecture and mega nice!
+
 Information and completness flows top down and downstream. From completely abstract to functionality indistinguishable from boots on the ground work.
 
 ![information flow](assets/agent-fractal.drawio.svg)
