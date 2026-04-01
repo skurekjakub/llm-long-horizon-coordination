@@ -1,0 +1,65 @@
+{
+  "taskId": "DOC-2847",
+  "completedAt": "2026-03-15T18:03:22Z",
+  "totalTasks": 10,
+  "firstAttemptRate": 0.7,
+  "reviewCycles": 14,
+  "patternsDiscovered": 2,
+  "patternsConfirmed": 3,
+  "antiPatternsDiscovered": 2,
+  "domainInsightsDiscovered": 4,
+  "sourceObservationsDiscovered": 4,
+  "styleEvolutionsDiscovered": 0,
+  "entriesUpdated": 5,
+  "entriesNew": 12,
+  "discarded": 2,
+  "discardedDetails": [
+    {
+      "signal": "IncludeUrlPath cache key generation at 7 call sites",
+      "reason": "FAIL reusability — hyper-specific to one property on one API; generalizable insight captured by SRC-OBS-002"
+    },
+    {
+      "signal": "UrlPathColumns() page-only asymmetry",
+      "reason": "FAIL reusability — hyper-specific to one API method's absence on content query parameters; generalizable insight captured by SRC-OBS-003"
+    }
+  ],
+  "confidenceChanges": {
+    "promotions": [
+      {"id": "PAT-002", "from": "medium", "to": "high", "reason": "3rd pipeline run confirmation + acceptance >80%"},
+      {"id": "PAT-004", "from": "medium", "to": "high", "reason": "3rd pipeline run confirmation + acceptance >80%"},
+      {"id": "PAT-009", "from": "low", "to": "medium", "reason": "2nd pipeline run confirmation (T-005 first-attempt)"}
+    ],
+    "demotions": [
+      {"id": "ANTI-002", "from": "medium", "to": "low", "reason": "Violated in run 3 (T-008 dash-type variant not covered by brief); variant gap in description"}
+    ],
+    "held": [
+      {"id": "PAT-001", "at": "medium", "reason": "80% acceptance rate meets but does not exceed >80% threshold for high promotion"}
+    ]
+  },
+  "researchRecommendationsUsed": 9,
+  "researchRecommendationsNotCited": 3,
+  "researchCitationRate": 0.75,
+  "metaKnowledgeEffectiveness": {
+    "patternsUsageRate": 1.0,
+    "antiPatternViolationRate": 0.2,
+    "overInclusionRate": 0.25,
+    "overIncludedEntries": ["DOM-008", "DOM-013", "DOM-014", "DOM-015", "ANTI-007"]
+  },
+  "styleGuideConvergence": "Intentional style guide file deletions fully absorbed by invariant inventory (146 rules, 15 source files). No enforcement gaps. Scanner converged cleanly.",
+  "handoffBrief": {
+    "summary": "DOC-2847 pipeline run integrated 12 new knowledge entries (2 patterns, 2 anti-patterns, 4 domain insights, 4 source observations) and updated 5 existing entries (2 promoted to high, 1 promoted to medium, 1 demoted, 1 reference-updated). Two hyper-specific signals were discarded for failing the reusability quality gate. The knowledge base grew from 40 to 52 entries.",
+    "coreFindings": [
+      "PAT-010: INV-codesamples-* suite + build verification = 100% first-attempt for compilable code-sample transformations (3 tasks confirmed)",
+      "ANTI-010: .md code blocks bypass build verification, enabling phantom API method propagation (6 phantoms across 2 tasks, 5 review cycles)",
+      "DOM-019: code_link dependency graph spans multiple directory trees — impact mapper must trace all consumers",
+      "DOM-020: Style guide → invariant convergence confirmed; deleted guide files produced zero enforcement gaps"
+    ],
+    "codeTraceability": {
+      "RetrieveParametersBase.cs:56": "IncludeUrlPath property — 3-layer architecture root (DOM-017)",
+      "RetrievePagesQueryParametersBase.cs:188": "UrlPathColumns() method — page-only asymmetry (DOM-017, SRC-OBS-003)",
+      "RetrieveQueryParametersBase.cs": "Lacks TopN(), lacks OrderByDescending() — phantom method source (ANTI-010, DOM-018)",
+      "ContentRetriever.cs:105,153,278,347,402,471,522": "IncludeUrlPath → GetCacheItemName at 7 sites — high-fanout predictor (SRC-OBS-002)",
+      "ProductService.cs + ProductDataRetriever.cs": "Digital commerce consumers missed by impact mapper (DOM-019, SRC-OBS-004)"
+    }
+  }
+}

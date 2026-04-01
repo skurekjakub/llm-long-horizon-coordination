@@ -1,0 +1,619 @@
+{
+  "version": 1,
+  "timestamp": "2026-03-20T08:50:18Z",
+  "pipelineContext": {
+    "issue": "DOC-3167",
+    "branch": "docs/doc-3203-roleexpiraion",
+    "topic": "Role expiration documentation for Xperience by Kentico"
+  },
+  "runStats": {
+    "totalTasks": 18,
+    "firstAttemptAcceptance": 13,
+    "multiCycleAcceptance": 5,
+    "reviewerRejected": 3,
+    "gapRemediationReEntry": 2,
+    "blocked": 0,
+    "totalReviewCycles": 24,
+    "averageAttemptsPerTask": 1.33,
+    "gapHuntingCycles": 2,
+    "gapHuntingConverged": true,
+    "gapsFound": 2,
+    "gapsResolved": 2,
+    "taskBreakdown": {
+      "create": 1,
+      "update": 17,
+      "crossRefUpdate": 16,
+      "gapRemediation": 3
+    }
+  },
+  "tasks": [
+    {
+      "taskId": "T-001",
+      "action": "create",
+      "contentType": "scenario",
+      "targetPersonas": ["developer"],
+      "result": "multi-cycle",
+      "attempts": 2,
+      "invariantsApplied": 100,
+      "invariantHighlights": ["INV-style-125", "INV-style-126", "INV-style-130", "INV-general-012", "INV-crossref-002", "INV-crossref-003", "INV-jekyll-004", "INV-jekyll-005", "INV-structure-034", "INV-structure-035"],
+      "metaPatternsUsed": ["PAT-002"],
+      "researchRecommendationsUsed": [],
+      "acceptanceCriteria": 23,
+      "signal": {
+        "type": "candidate-anti-pattern",
+        "strength": "medium",
+        "description": "Only 'create' task in the run required 2 attempts. Style rejection for INV-style-125 (contraction inconsistency), INV-style-126 (contraction mixing), INV-style-130 (wrong UI verb 'check' vs 'select'). Accuracy rejection for wrong using directives (CODE-IMPORT-001: CMS.Core doesn't resolve IDateTimeNowService; CODE-IMPORT-002: CMS doesn't resolve RegisterScheduledTaskAttribute). Additionally, IDateTimeNowService was in CMS.Core.Internal namespace, conflicting with INV-general-012 — docFact FIND-051 was discarded and DateTime.UtcNow used instead. High invariant count (100) and acceptance criteria (23) correlated with multi-cycle outcome."
+      },
+      "rejectionAnalysis": {
+        "cycle1Rejectors": ["style", "accuracy"],
+        "rootCauses": [
+          {
+            "category": "style",
+            "invariants": ["INV-style-125", "INV-style-126"],
+            "description": "Contraction mixing in same sentence — inconsistent use of contractions",
+            "fix": "Made contractions consistent throughout affected sentences"
+          },
+          {
+            "category": "style",
+            "invariants": ["INV-style-130"],
+            "description": "Used 'check' instead of 'select' for UI interaction description",
+            "fix": "Replaced with input-agnostic verb per style guide"
+          },
+          {
+            "category": "accuracy",
+            "description": "Wrong using directive: 'using CMS;' doesn't resolve RegisterScheduledTaskAttribute",
+            "fix": "Changed to 'using CMS.Scheduler;'"
+          },
+          {
+            "category": "accuracy",
+            "description": "IDateTimeNowService lives in CMS.Core.Internal namespace — conflicts with INV-general-012 (.Internal APIs must not be documented)",
+            "fix": "Removed all IDateTimeNowService references; used DateTime.UtcNow with testability tip recommending .NET TimeProvider"
+          }
+        ]
+      }
+    },
+    {
+      "taskId": "T-002",
+      "action": "update",
+      "contentType": "howto",
+      "targetPersonas": ["developer"],
+      "result": "first-attempt",
+      "attempts": 1,
+      "invariantsApplied": 34,
+      "invariantHighlights": ["INV-crossref-002", "INV-crossref-003", "INV-style-059", "INV-style-096", "INV-style-125"],
+      "metaPatternsUsed": ["PAT-001"],
+      "researchRecommendationsUsed": [],
+      "acceptanceCriteria": 9,
+      "signal": {
+        "type": "candidate-pattern",
+        "strength": "low",
+        "description": "First-attempt acceptance with approved-with-notes verdict from style reviewer. Notes flagged minor contraction inconsistency ('is not' vs 'doesn't' read as intentional emphasis) and pre-existing gerund heading not introduced by this task. PAT-001 (focused single-persona developer update) confirmed effective."
+      },
+      "styleNotes": [
+        "Minor contraction inconsistency: 'is not' (line 127) vs 'doesn't' (lines 65, 129) — reads as intentional emphasis, not a pattern of formality",
+        "Pre-existing heading 'Changing role assignments for signed-in members' uses gerund form, not imperative — not a T-002 change, noted for future cleanup"
+      ]
+    },
+    {
+      "taskId": "T-003",
+      "action": "update",
+      "contentType": "overview",
+      "targetPersonas": ["developer", "admin"],
+      "result": "multi-cycle",
+      "attempts": 3,
+      "invariantsApplied": 3,
+      "invariantHighlights": ["INV-style-096"],
+      "metaPatternsUsed": [],
+      "researchRecommendationsUsed": [],
+      "acceptanceCriteria": 5,
+      "gapRemediation": {
+        "gapId": "GAP-001",
+        "description": "Converted 7 preexisting en-dash (U+2013) characters to -- per INV-style-096",
+        "fixCount": 7,
+        "resolvedAtAttempt": 3
+      },
+      "signal": {
+        "type": "candidate-anti-pattern",
+        "strength": "medium",
+        "description": "Required 3 attempts: (1) duplicate card insertion — two info blocks linking to same page, rejected by both style and accuracy reviewers; (2) duplicate removed; (3) gap remediation for 7 pre-existing en-dashes. The duplicate card issue is a structural error where the writer inserted the new content at two locations instead of one."
+      },
+      "rejectionAnalysis": {
+        "cycle1Rejectors": ["style", "accuracy"],
+        "rootCauses": [
+          {
+            "category": "structural",
+            "description": "Inserted duplicate card — two info blocks both linking to member_role_expiration_xp. Second card also had inconsistent collection parameter.",
+            "fix": "Removed the second duplicate card block (lines 99-105), kept only the first at lines 83-89"
+          }
+        ]
+      }
+    },
+    {
+      "taskId": "T-004",
+      "action": "update",
+      "contentType": "howto",
+      "targetPersonas": ["developer"],
+      "result": "first-attempt",
+      "attempts": 1,
+      "invariantsApplied": 14,
+      "invariantHighlights": ["INV-crossref-002", "INV-crossref-003", "INV-style-096", "INV-style-138", "INV-style-139", "INV-style-140"],
+      "metaPatternsUsed": ["PAT-009"],
+      "researchRecommendationsUsed": [],
+      "acceptanceCriteria": 5,
+      "signal": {
+        "type": "candidate-pattern",
+        "strength": "medium",
+        "description": "Narrow cross-reference update (5 acceptance criteria) with PAT-009 achieved first-attempt acceptance. Tip callout added near scheduled tasks section pointing to role expiration as real-world example. Matches PAT-009 pattern for cross-ref update tasks."
+      }
+    },
+    {
+      "taskId": "T-005",
+      "action": "update",
+      "contentType": "howto",
+      "targetPersonas": ["developer"],
+      "result": "multi-cycle",
+      "attempts": 2,
+      "invariantsApplied": 1,
+      "invariantHighlights": ["INV-style-096"],
+      "metaPatternsUsed": [],
+      "researchRecommendationsUsed": [],
+      "acceptanceCriteria": 4,
+      "signal": {
+        "type": "candidate-anti-pattern",
+        "strength": "medium",
+        "description": "Rejected solely for INV-style-096 — 3 pre-existing en-dashes in the page that the writer's initial pass did not convert. The new callout content itself was clean. This matches the en-dash detection anti-pattern: writers must scan the ENTIRE page for pre-existing en-dashes when modifying any page, not just the new content."
+      },
+      "rejectionAnalysis": {
+        "cycle1Rejectors": ["style"],
+        "rootCauses": [
+          {
+            "category": "style",
+            "invariants": ["INV-style-096"],
+            "description": "3 pre-existing en-dashes (U+2013) at lines 17, 35, 260 were not converted. New callout was clean but the full-page scan requirement of INV-style-096 was not met.",
+            "fix": "Replaced all 3 en-dash characters with --"
+          }
+        ]
+      }
+    },
+    {
+      "taskId": "T-006",
+      "action": "update",
+      "contentType": "howto",
+      "targetPersonas": ["developer"],
+      "result": "multi-cycle",
+      "attempts": 2,
+      "invariantsApplied": 4,
+      "invariantHighlights": ["INV-style-096", "INV-crossref-005"],
+      "metaPatternsUsed": ["PAT-001"],
+      "researchRecommendationsUsed": [],
+      "acceptanceCriteria": 6,
+      "gapRemediation": {
+        "gapId": "GAP-002",
+        "description": "Verified en-dash conversion already performed by T-018. Full-file scan confirmed zero en-dashes remain.",
+        "coordinatedTask": "T-018",
+        "resolvedAtAttempt": 2
+      },
+      "signal": {
+        "type": "observation",
+        "strength": "low",
+        "description": "First attempt was reviewer-approved. Second attempt was gap remediation verification — confirmed T-018 had already converted en-dashes in this file. No actual content changes needed in attempt 2. Effectively a first-attempt success with gap verification overhead."
+      }
+    },
+    {
+      "taskId": "T-007",
+      "action": "update",
+      "contentType": "howto",
+      "targetPersonas": ["developer"],
+      "result": "multi-cycle",
+      "attempts": 2,
+      "invariantsApplied": 21,
+      "invariantHighlights": ["INV-crossref-002", "INV-crossref-003", "INV-crossref-009", "INV-style-096", "INV-style-139", "INV-taxonomy-006"],
+      "metaPatternsUsed": ["PAT-001", "PAT-012"],
+      "researchRecommendationsUsed": [],
+      "acceptanceCriteria": 4,
+      "signal": {
+        "type": "observation",
+        "strength": "low",
+        "description": "First attempt was reviewer-approved. Second attempt was a voluntary enhancement adding explicit statement about shared page/content-item access check mechanism (FIND-030). Not a rejection-driven multi-cycle — coordinator requested tighter alignment with acceptance criterion #2. PAT-012 (mirror existing page structure) and PAT-001 cited."
+      }
+    },
+    {
+      "taskId": "T-008",
+      "action": "update",
+      "contentType": "howto",
+      "targetPersonas": ["business"],
+      "result": "first-attempt",
+      "attempts": 1,
+      "invariantsApplied": 16,
+      "invariantHighlights": ["INV-persona-013", "INV-persona-014", "INV-crossref-002", "INV-crossref-003", "INV-style-096", "INV-jekyll-010"],
+      "metaPatternsUsed": ["PAT-009"],
+      "researchRecommendationsUsed": [],
+      "acceptanceCriteria": 6,
+      "signal": {
+        "type": "candidate-pattern",
+        "strength": "medium",
+        "description": "Business-persona cross-reference update achieved first-attempt acceptance. Applied INV-persona-013/014 for business user tone. Used business-friendly language ('premium subscription for 30 days') rather than technical jargon. PAT-009 cited. Demonstrates that persona-appropriate language + narrow scope enables first-attempt success even for cross-persona tasks."
+      }
+    },
+    {
+      "taskId": "T-009",
+      "action": "update",
+      "contentType": "reference",
+      "targetPersonas": ["business"],
+      "result": "first-attempt",
+      "attempts": 1,
+      "invariantsApplied": 26,
+      "invariantHighlights": ["INV-persona-007", "INV-persona-012", "INV-persona-013", "INV-persona-014", "INV-persona-016", "INV-crossref-002", "INV-crossref-003", "INV-style-096"],
+      "metaPatternsUsed": ["PAT-009"],
+      "researchRecommendationsUsed": [],
+      "acceptanceCriteria": 4,
+      "signal": {
+        "type": "candidate-pattern",
+        "strength": "medium",
+        "description": "Business-persona reference update with comprehensive persona invariant application (5 persona invariants). First-attempt acceptance. Applied the most persona invariants of any task in the run, correlating with clean persona review."
+      }
+    },
+    {
+      "taskId": "T-010",
+      "action": "update",
+      "contentType": "reference",
+      "targetPersonas": ["developer"],
+      "result": "first-attempt",
+      "attempts": 1,
+      "invariantsApplied": 15,
+      "invariantHighlights": ["INV-general-012", "INV-crossref-002", "INV-crossref-003", "INV-style-096"],
+      "metaPatternsUsed": [],
+      "researchRecommendationsUsed": [],
+      "acceptanceCriteria": 4,
+      "signal": {
+        "type": "candidate-pattern",
+        "strength": "low",
+        "description": "Minimal-scope reference page update (4 acceptance criteria) with first-attempt acceptance. Applied INV-general-012 (.Internal API boundary) proactively, avoiding the namespace issue that caught T-001."
+      }
+    },
+    {
+      "taskId": "T-011",
+      "action": "update",
+      "contentType": "howto",
+      "targetPersonas": ["business"],
+      "result": "first-attempt",
+      "attempts": 1,
+      "invariantsApplied": 9,
+      "invariantHighlights": ["INV-persona-013", "INV-persona-014", "INV-style-096", "INV-crossref-002"],
+      "metaPatternsUsed": [],
+      "researchRecommendationsUsed": [],
+      "acceptanceCriteria": 4,
+      "signal": {
+        "type": "candidate-pattern",
+        "strength": "low",
+        "description": "Business-persona update with first-attempt acceptance. Subscription example language matches T-008 approach. Minimal scope (4 criteria) with focused persona invariant application."
+      }
+    },
+    {
+      "taskId": "T-012",
+      "action": "update",
+      "contentType": "howto",
+      "targetPersonas": ["developer"],
+      "result": "first-attempt",
+      "attempts": 1,
+      "invariantsApplied": 14,
+      "invariantHighlights": ["INV-style-059", "INV-style-148", "INV-style-096", "INV-crossref-002", "INV-crossref-003"],
+      "metaPatternsUsed": ["PAT-009"],
+      "researchRecommendationsUsed": [],
+      "acceptanceCriteria": 5,
+      "signal": {
+        "type": "candidate-pattern",
+        "strength": "low",
+        "description": "First-attempt acceptance with approved-with-notes. Style reviewer verified sign-in/sign-out terminology correctness (INV-style-059, INV-style-148). Zero issues detected in new content."
+      }
+    },
+    {
+      "taskId": "T-013",
+      "action": "update",
+      "contentType": "reference",
+      "targetPersonas": ["developer"],
+      "result": "first-attempt",
+      "attempts": 1,
+      "invariantsApplied": 14,
+      "invariantHighlights": ["INV-crossref-002", "INV-crossref-003", "INV-crossref-005", "INV-crossref-009", "INV-style-096", "INV-jekyll-010"],
+      "metaPatternsUsed": [],
+      "researchRecommendationsUsed": [],
+      "acceptanceCriteria": 3,
+      "signal": {
+        "type": "candidate-pattern",
+        "strength": "low",
+        "description": "Minimum-scope reference update (3 acceptance criteria) with first-attempt acceptance. Style reviewer noted pre-existing INV-style-140 violation in note callout on line 49 — not attributable to T-013 content-writer. Approved-with-notes."
+      },
+      "styleNotes": [
+        "Pre-existing INV-style-140 violation in note callout on line 49 — not attributable to T-013 content-writer, noted for future cleanup"
+      ]
+    },
+    {
+      "taskId": "T-014",
+      "action": "update",
+      "contentType": "howto",
+      "targetPersonas": ["developer"],
+      "result": "first-attempt",
+      "attempts": 1,
+      "invariantsApplied": 13,
+      "invariantHighlights": ["INV-crossref-002", "INV-crossref-003", "INV-style-096", "INV-style-138", "INV-style-139", "INV-style-140"],
+      "metaPatternsUsed": ["PAT-009"],
+      "researchRecommendationsUsed": [],
+      "acceptanceCriteria": 3,
+      "signal": {
+        "type": "candidate-pattern",
+        "strength": "low",
+        "description": "Narrow update (3 criteria) with PAT-009, first-attempt acceptance. Clarified that binding-style classes can have additional columns beyond FK pairs."
+      }
+    },
+    {
+      "taskId": "T-015",
+      "action": "update",
+      "contentType": "reference",
+      "targetPersonas": ["developer", "admin"],
+      "result": "first-attempt",
+      "attempts": 1,
+      "invariantsApplied": 30,
+      "invariantHighlights": ["INV-crossref-002", "INV-crossref-003", "INV-crossref-004", "INV-crossref-005", "INV-crossref-009", "INV-structure-001", "INV-structure-002", "INV-jekyll-002", "INV-jekyll-010"],
+      "metaPatternsUsed": ["PAT-009"],
+      "researchRecommendationsUsed": [],
+      "acceptanceCriteria": 3,
+      "signal": {
+        "type": "candidate-pattern",
+        "strength": "low",
+        "description": "Multi-persona (developer+admin) reference update with highest invariant count (30) among cross-ref tasks. First-attempt acceptance. Comprehensive cross-reference invariant coverage (5 INV-crossref-* rules including INV-crossref-004 placeholder check)."
+      }
+    },
+    {
+      "taskId": "T-016",
+      "action": "update",
+      "contentType": "howto",
+      "targetPersonas": ["developer"],
+      "result": "first-attempt",
+      "attempts": 1,
+      "invariantsApplied": 8,
+      "invariantHighlights": ["INV-crossref-002", "INV-crossref-003", "INV-style-096", "INV-structure-002"],
+      "metaPatternsUsed": ["PAT-009"],
+      "researchRecommendationsUsed": [],
+      "acceptanceCriteria": 3,
+      "signal": {
+        "type": "candidate-pattern",
+        "strength": "low",
+        "description": "Minimal cross-reference update (3 criteria, 8 invariants) with first-attempt acceptance. Contrasted standalone CRUD example with binding-style + scheduled processing."
+      }
+    },
+    {
+      "taskId": "T-017",
+      "action": "update",
+      "contentType": "howto",
+      "targetPersonas": ["developer"],
+      "result": "first-attempt",
+      "attempts": 1,
+      "invariantsApplied": 26,
+      "invariantHighlights": ["INV-crossref-002", "INV-crossref-003", "INV-crossref-005", "INV-crossref-009", "INV-persona-007", "INV-persona-012", "INV-style-096", "INV-structure-002", "INV-structure-009"],
+      "metaPatternsUsed": ["PAT-009", "PAT-012"],
+      "researchRecommendationsUsed": [],
+      "acceptanceCriteria": 3,
+      "signal": {
+        "type": "candidate-pattern",
+        "strength": "low",
+        "description": "First-attempt acceptance using both PAT-009 (cross-ref update) and PAT-012 (mirror existing page structure). Contrasted event-driven vs scheduled task approach."
+      }
+    },
+    {
+      "taskId": "T-018",
+      "action": "update",
+      "contentType": "reference",
+      "targetPersonas": ["developer"],
+      "result": "first-attempt",
+      "attempts": 1,
+      "invariantsApplied": 6,
+      "invariantHighlights": ["INV-style-096", "INV-crossref-005", "INV-structure-030", "INV-crossref-002"],
+      "metaPatternsUsed": [],
+      "researchRecommendationsUsed": [],
+      "acceptanceCriteria": 0,
+      "gapRemediation": {
+        "gapId": "GAP-002",
+        "description": "Converted en-dashes in heading 'Attribute Tag Helpers -- Images' in reference-tag-helpers.md and updated corresponding anchor= attributes in retrieve-content-items.md and content-types.md",
+        "deferredTasks": {
+          "count": 2,
+          "reason": "INV-structure-030 prohibits modifying _guides collection files",
+          "affectedFile": "_guides/architecture/content-modeling/content-modeling-guide/store-files.md",
+          "lines": [246, 260]
+        }
+      },
+      "signal": {
+        "type": "observation",
+        "strength": "low",
+        "description": "Gap remediation task for en-dash conversion in heading + anchor updates. First-attempt acceptance. Properly identified 2 deferred tasks in _guides collection that cannot be modified per INV-structure-030. Demonstrates correct invariant-aware scoping."
+      }
+    }
+  ],
+  "candidatePatterns": [
+    {
+      "id": "CPAT-001",
+      "name": "narrow-scope-crossref-update-with-PAT-009",
+      "strength": "high",
+      "occurrences": 10,
+      "tasks": ["T-002", "T-004", "T-008", "T-009", "T-012", "T-014", "T-015", "T-016", "T-017", "T-018"],
+      "description": "Cross-reference update tasks with narrow scope (3-9 acceptance criteria) consistently achieved first-attempt acceptance. PAT-009 was cited by 8 of 10 first-attempt update tasks. The pattern combines minimal content insertion (single callout, tip box, or paragraph) with rigorous cross-reference invariant application (INV-crossref-002/003/005/009). All 10 tasks passed without reviewer rejection.",
+      "invariantCombination": ["INV-crossref-002", "INV-crossref-003", "INV-crossref-009", "INV-style-096"],
+      "confirmsExisting": "PAT-009"
+    },
+    {
+      "id": "CPAT-002",
+      "name": "comprehensive-persona-invariant-application",
+      "strength": "medium",
+      "occurrences": 3,
+      "tasks": ["T-008", "T-009", "T-011"],
+      "description": "Business-persona tasks that applied INV-persona-013/014 (business user tone) with persona-appropriate language examples (e.g., 'premium subscription for 30 days' instead of technical terms) achieved 100% first-attempt acceptance. T-009 applied the most persona invariants (5) and achieved the cleanest result. Proactive persona invariant application prevents persona reviewer rejections.",
+      "invariantCombination": ["INV-persona-013", "INV-persona-014", "INV-persona-007"],
+      "confirmsExisting": "PAT-001"
+    },
+    {
+      "id": "CPAT-003",
+      "name": "mirror-existing-structure-with-PAT-012",
+      "strength": "low",
+      "occurrences": 2,
+      "tasks": ["T-007", "T-017"],
+      "description": "Tasks citing PAT-012 (mirror existing page structure when inserting callouts) both achieved reviewer approval on first attempt. When new content follows the existing page's structural patterns, style reviewers have fewer friction points.",
+      "confirmsExisting": "PAT-012"
+    },
+    {
+      "id": "CPAT-004",
+      "name": "docfact-vs-invariant-conflict-resolution",
+      "strength": "medium",
+      "occurrences": 1,
+      "tasks": ["T-001"],
+      "description": "T-001 successfully resolved a docFact-vs-invariant conflict (FIND-051 mandated IDateTimeNowService but INV-general-012 prohibits .Internal APIs). The writer correctly applied invariant supremacy, discarded the docFact, and substituted DateTime.UtcNow with a testability tip. This resolution was accepted on attempt 2. Pattern: when docFacts conflict with invariants, always apply invariant supremacy and document the discarded fact with reasoning.",
+      "invariantCombination": ["INV-general-012"]
+    }
+  ],
+  "candidateAntiPatterns": [
+    {
+      "id": "CAPAT-001",
+      "name": "en-dash-detection-failure-in-existing-content",
+      "strength": "high",
+      "occurrences": 3,
+      "tasks": ["T-003", "T-005", "T-006"],
+      "description": "INV-style-096 requires converting ALL en-dashes on a page, not just in new content. T-005 was rejected because 3 pre-existing en-dashes at lines 17, 35, 260 were not converted. T-003 required gap remediation (attempt 3) to convert 7 pre-existing en-dashes. T-006 required verification that T-018 had already converted en-dashes. The writer consistently failed to perform full-page Unicode scanning before submission. This is the most impactful anti-pattern in this run — it caused 3 of the 5 multi-cycle outcomes.",
+      "rootCause": "style",
+      "invariant": "INV-style-096",
+      "fix": "Writers must perform a full-page binary scan (grep -P '\\x{2013}') for en-dash characters before marking any update task as complete, regardless of whether the new content contains dashes."
+    },
+    {
+      "id": "CAPAT-002",
+      "name": "duplicate-content-block-insertion",
+      "strength": "low",
+      "occurrences": 1,
+      "tasks": ["T-003"],
+      "description": "T-003 inserted TWO card blocks linking to the same target page — duplicate content at two locations in the file. Both style and accuracy reviewers independently flagged the issue. The second card also had an inconsistent collection parameter. Root cause: writer inserted content at what appeared to be two valid insertion points without checking that both reference the same target.",
+      "rootCause": "structural",
+      "fix": "Before inserting content blocks, scan the entire target section for existing references to the same identifier. Only insert at one location."
+    },
+    {
+      "id": "CAPAT-003",
+      "name": "code-sample-import-resolution-errors",
+      "strength": "medium",
+      "occurrences": 1,
+      "tasks": ["T-001"],
+      "description": "T-001 had two code import errors: (1) 'using CMS;' doesn't resolve RegisterScheduledTaskAttribute (correct: 'using CMS.Scheduler;'), (2) 'using CMS.Core;' doesn't resolve IDateTimeNowService (it's in CMS.Core.Internal). These are compilation-breaking errors that the accuracy reviewer caught. The 'create' task with code samples is particularly vulnerable to namespace resolution errors because the writer must construct complete, compilable code examples.",
+      "rootCause": "accuracy",
+      "fix": "For code samples, verify each using directive resolves the referenced types. Cross-check against docFacts for namespace information. When a type's namespace is .Internal, do not document it at all per INV-general-012."
+    }
+  ],
+  "styleEvolutions": [
+    {
+      "observation": "Pre-existing gerund headings detected in T-002 style review — 'Changing role assignments for signed-in members' uses gerund form instead of imperative (INV-style-103 requires imperative)",
+      "occurrences": 1,
+      "strength": "low",
+      "description": "Style reviewer noted a pre-existing heading that uses gerund form ('Changing...') instead of imperative ('Change...'). Not introduced by this pipeline run. Flagged for future cleanup. Only 1 occurrence in reviewed content — insufficient to establish a pattern."
+    },
+    {
+      "observation": "Pre-existing INV-style-140 violation detected in T-013 style review — callout title that duplicates the callout type name",
+      "occurrences": 1,
+      "strength": "low",
+      "description": "Style reviewer flagged pre-existing INV-style-140 violation in note callout on line 49 of IInfoProvider reference page. Not attributable to T-013 content-writer. Signals pre-existing technical debt in documentation."
+    },
+    {
+      "observation": "INV-style-096 (en-dash normalization) is the most frequently enforced invariant across the entire run — triggered rejections, gap remediation, and verification cycles",
+      "occurrences": 18,
+      "strength": "high",
+      "description": "Every single task in the run applied INV-style-096. It was the sole or contributing cause of rejection in T-005 (3 en-dashes), drove gap remediation in T-003 (7 en-dashes) and T-006/T-018 (anchor en-dashes). The invariant is correctly specified but the full-page scanning requirement is systematically under-applied by the content-writer. This is not a style evolution but a persistent enforcement gap. Suggests adding an automated pre-submission encoding check."
+    }
+  ],
+  "gapResolutionAnalysis": {
+    "gapsTotal": 2,
+    "gapsResolved": 2,
+    "gapHuntingCycles": 2,
+    "convergenceAchieved": true,
+    "gapDetails": [
+      {
+        "gapId": "GAP-001",
+        "description": "7 preexisting en-dashes in registration-and-authentication.md",
+        "affectedTasks": ["T-003"],
+        "resolution": "T-003 attempt 3 converted all 7 en-dashes. Full binary scan confirmed 0 remaining.",
+        "discoveredBy": "gap-hunter cycle 1"
+      },
+      {
+        "gapId": "GAP-002",
+        "description": "En-dashes in 'Attribute Tag Helpers – Images' heading and corresponding anchors across 4 files",
+        "affectedTasks": ["T-006", "T-018"],
+        "resolution": "T-018 converted heading in reference-tag-helpers.md and anchors in retrieve-content-items.md and content-types.md. T-006 verified conversion in retrieve-content-items.md. 2 deferred tasks in _guides collection per INV-structure-030.",
+        "discoveredBy": "gap-hunter cycle 1",
+        "deferredWork": "2 anchor references in store-files.md (_guides collection) cannot be updated — deferred per INV-structure-030"
+      }
+    ],
+    "signal": {
+      "type": "observation",
+      "description": "Both gaps were Unicode encoding issues (en-dashes) rather than content coverage gaps. The gap-hunter detected them via binary grep scanning that the content-writer's initial passes missed. All gaps resolved in a single re-entry cycle with 100% first-attempt acceptance. GAP-002 spanned 4 files including 2 in the off-limits _guides collection — proper INV-structure-030 compliance produced deferred tasks rather than violations. Confirms that automated encoding checks should be part of the pre-submission workflow."
+    }
+  },
+  "complexityCorrelation": {
+    "observation": "Task complexity (acceptance criteria count + content type) correlates with multi-cycle likelihood",
+    "data": {
+      "createTasks": {
+        "count": 1,
+        "avgCriteria": 23,
+        "firstAttemptRate": 0.0,
+        "avgAttempts": 2.0,
+        "note": "Only task type with code samples — vulnerable to import/namespace accuracy errors"
+      },
+      "updateTasksHighCriteria": {
+        "count": 2,
+        "criteriaRange": "5-9",
+        "firstAttemptRate": 0.5,
+        "tasks": ["T-002 (9, first-attempt)", "T-003 (5, multi-cycle)"],
+        "note": "T-003's multi-cycle was structural error (duplicate insertion) not complexity-driven"
+      },
+      "updateTasksLowCriteria": {
+        "count": 15,
+        "criteriaRange": "0-6",
+        "firstAttemptRate": 0.8,
+        "multiCycleTasks": ["T-005 (en-dash)", "T-006 (gap verification)", "T-007 (enhancement)"],
+        "note": "All 3 multi-cycle outcomes were mechanical (en-dash detection, gap verification, enhancement) not content quality failures"
+      }
+    },
+    "analysis": "The single 'create' task (T-001) with 23 acceptance criteria and code samples was the most challenging and the only task with both style AND accuracy rejections. Update tasks with ≤6 criteria achieved 80% first-attempt success. The 3 multi-cycle update tasks in the low-criteria group were caused by encoding issues (en-dashes) or voluntary enhancement, not content quality failures. This confirms PAT-009: narrow-scope update tasks are inherently lower-risk."
+  },
+  "patternEffectiveness": {
+    "PAT-001": {
+      "cited": 3,
+      "tasks": ["T-002", "T-006", "T-007"],
+      "firstAttemptRate": 0.33,
+      "note": "T-006 and T-007 had multi-cycle outcomes but for gap remediation/enhancement, not content failures. Effective for focused developer updates."
+    },
+    "PAT-002": {
+      "cited": 1,
+      "tasks": ["T-001"],
+      "firstAttemptRate": 0.0,
+      "note": "Used in the most complex task. Multi-cycle outcome driven by accuracy issues (code imports) not pattern failure."
+    },
+    "PAT-009": {
+      "cited": 8,
+      "tasks": ["T-004", "T-008", "T-009", "T-012", "T-014", "T-015", "T-016", "T-017"],
+      "firstAttemptRate": 1.0,
+      "note": "100% first-attempt acceptance across all 8 tasks citing PAT-009. Strongest signal in the run. Confirms PAT-009 effectiveness."
+    },
+    "PAT-012": {
+      "cited": 2,
+      "tasks": ["T-007", "T-017"],
+      "firstAttemptRate": 0.5,
+      "note": "T-007 had multi-cycle for enhancement, not rejection. Effectively 100% first-attempt reviewer approval."
+    }
+  },
+  "crossRunSignals": {
+    "enDashAntiPattern": {
+      "currentRun": "3 tasks affected by en-dash detection failures (CAPAT-001)",
+      "priorRuns": "Prior run's task-signals.json also documented en-dash persistence as ANTI-002 and GAP-002",
+      "strength": "confirm-existing",
+      "recommendation": "Promote to a mandatory pre-submission check in the content-writer workflow. Add automated grep -P '\\x{2013}' scan before writer-output.json submission."
+    },
+    "crossRefUpdatePattern": {
+      "currentRun": "PAT-009 achieved 100% first-attempt rate across 8 tasks (CPAT-001)",
+      "priorRuns": "Prior run confirmed PAT-009 with 'near-perfect first-attempt rates'",
+      "strength": "confirm-existing",
+      "recommendation": "PAT-009 is now validated across 2 consecutive runs. Promote to stable pattern."
+    }
+  }
+}

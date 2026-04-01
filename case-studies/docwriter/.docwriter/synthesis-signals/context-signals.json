@@ -1,0 +1,319 @@
+{
+  "version": 1,
+  "timestamp": "2026-03-20T08:58:17Z",
+  "pipelineContext": {
+    "issue": "DOC-3167",
+    "branch": "docs/doc-3203-roleexpiraion",
+    "topic": "Role expiration documentation for Xperience by Kentico",
+    "stats": {
+      "totalTasks": 18,
+      "changesDiscovered": 11,
+      "docPagesIndexed": 1798,
+      "invariantsExtracted": 229,
+      "impactsMapped": 18,
+      "knowledgePatternsCurated": 6,
+      "codebaseModulesMapped": 62,
+      "gapHuntingCycles": 2,
+      "converged": true
+    }
+  },
+  "gapSignals": [
+    {
+      "gapId": "GAP-001",
+      "gapType": "encoding-violation",
+      "description": "7 preexisting en-dash (U+2013) characters in registration-and-authentication.md not detected by content-writer initial passes",
+      "predictable": true,
+      "predictableEvidence": "ANTI-002 in knowledge base (from prior runs) explicitly documented em/en-dash detection failures as the most frequent style rejection cause. Risk register for T-003 mentioned GAP-001 remediation. The gap was known but not prevented.",
+      "reEntryTarget": "pass4",
+      "affectedTasks": ["T-003"],
+      "resolution": "T-003 attempt 3 converted all 7 en-dashes. Full binary scan confirmed 0 remaining.",
+      "signal": {
+        "type": "candidate-anti-pattern",
+        "strength": "medium",
+        "description": "Risk-register blind spot: ANTI-002 existed in the knowledge base warning about en-dash persistence, yet the content-writer for T-003 still failed to perform full-page Unicode scanning before first submission. The anti-pattern is documented but not enforced — suggests upgrading from 'awareness' to 'mandatory pre-submission check'."
+      }
+    },
+    {
+      "gapId": "GAP-002",
+      "gapType": "cross-collection-anchor-mismatch",
+      "description": "En-dashes in 'Attribute Tag Helpers – Images' heading in reference-tag-helpers.md propagated to anchor references in 4 files across 2 collections (_documentation and _guides)",
+      "predictable": false,
+      "predictableEvidence": "No prior knowledge base entry documented cross-collection heading→anchor propagation as a risk vector. Risk register for T-018 correctly identified cross-reference critical risk but focused on slug generation, not encoding propagation.",
+      "reEntryTarget": "pass4",
+      "affectedTasks": ["T-006", "T-018"],
+      "resolution": "T-018 converted heading + 2 _documentation anchors. Cross-ref-updater fixed 2 _guides anchors in store-files.md. All resolved.",
+      "signal": {
+        "type": "candidate-domain-insight",
+        "strength": "low",
+        "description": "Cross-collection heading changes have anchor encoding propagation requirements. When a heading is modified in one collection, anchor= attributes referencing that heading in OTHER collections (e.g., _guides → _documentation) must also be updated. This cross-boundary dependency is not detectable by single-collection scanning."
+      }
+    }
+  ],
+  "domainInsights": [
+    {
+      "id": "CTX-DOM-001",
+      "observation": "Xperience MemberRoleMemberInfo binding class has no temporal fields — any time-bound relationship (expiration, subscription periods) requires a separate custom object type with DateTime metadata columns",
+      "source": "code-analysis",
+      "evidence": "FIND-002 confirms MemberRoleMemberInfo has exactly 3 fields (ID, MemberID, MemberRoleID) with no ExpiresAt/ValidTo. FIND-042 confirms the CMS_MemberRoleMember table has only 3 columns. All 18 tasks operated under this constraint, with T-001 (the primary deliverable) architecting the custom object type solution.",
+      "strength": "low",
+      "domains": ["xperience-platform", "membership", "custom-object-types"],
+      "relatedFindings": ["FIND-002", "FIND-042", "FIND-049"]
+    },
+    {
+      "id": "CTX-DOM-002",
+      "observation": "Xperience SecurityStamp regeneration is scoped exclusively to MemberEnabled toggle — role assignment/removal does NOT trigger stamp regeneration, creating a 0-to-30-minute session persistence window for role changes",
+      "source": "code-analysis",
+      "evidence": "FIND-005 confirms MemberInfoProvider.Set() regenerates MemberSecurityStamp only when MemberEnabled changes. FIND-053 details the full session persistence chain. T-001 and T-002 both required accurate documentation of this subtle behavior. T-001's accuracy reviewer specifically flagged this as a verification target.",
+      "strength": "low",
+      "domains": ["xperience-platform", "authentication", "security"],
+      "relatedFindings": ["FIND-005", "FIND-053"]
+    },
+    {
+      "id": "CTX-DOM-003",
+      "observation": "Xperience content-role bindings (ContentItemMemberRoleInfo) and member-role bindings (MemberRoleMemberInfo) are orthogonal cache domains — deleting member-role bindings does NOT invalidate content-role caches, and this is correct behavior",
+      "source": "code-analysis",
+      "evidence": "FIND-022 confirms ContentItemMemberRoleRetriever caches depend on ContentItemMemberRoleInfo.All() and ContentItems.ById(), NOT on MemberRoleMemberInfo. FIND-052 synthesizes this as correct behavior: content access checks happen at the ClaimsPrincipal level via user.IsInRole(), not at the cache level. T-006 and T-010 both needed to correctly document this non-invalidation as intentional.",
+      "strength": "low",
+      "domains": ["xperience-platform", "caching", "content-security"],
+      "relatedFindings": ["FIND-022", "FIND-052"]
+    },
+    {
+      "id": "CTX-DOM-004",
+      "observation": "Xperience IDateTimeNowService resides in CMS.Core.Internal namespace — the platform's testability abstraction for DateTime is in a namespace that documentation invariants (INV-general-012) prohibit documenting, creating a docFact-vs-invariant conflict",
+      "source": "code-analysis + task-signals",
+      "evidence": "T-001 task signal confirms: IDateTimeNowService was mandated by FIND-051 (docFact) but lives in CMS.Core.Internal, conflicting with INV-general-012. The writer correctly applied invariant supremacy, discarded the docFact, and substituted DateTime.UtcNow with a testability tip recommending .NET TimeProvider. This conflict pattern (internal-namespace testability API) may recur for other .Internal utilities.",
+      "strength": "medium",
+      "domains": ["xperience-platform", "code-samples", "invariant-system"],
+      "relatedFindings": ["FIND-051"],
+      "confirmsExisting": null
+    },
+    {
+      "id": "CTX-DOM-005",
+      "observation": "Xperience admin roles (RoleInfo/cms.role) and membership roles (MemberRoleInfo/cms.memberrole) are entirely separate systems — documentation touching 'roles' must always disambiguate which role system is being discussed",
+      "source": "code-analysis",
+      "evidence": "FIND-004 documents RoleInfo for admin users. FIND-050 is a cross-cutting constraint requiring explicit distinction. T-001 included an explicit info box distinguishing admin vs member roles. This disambiguation was essential for all 11 role-referencing tasks (T-001 through T-011).",
+      "strength": "low",
+      "domains": ["xperience-platform", "membership", "administration"],
+      "relatedFindings": ["FIND-004", "FIND-050"],
+      "confirmsExisting": "DOM-004"
+    },
+    {
+      "id": "CTX-DOM-006",
+      "observation": "Xperience scheduled task DI works via ActivatorUtilities.CreateInstance — any registered service can be constructor-injected, making scheduled tasks full DI citizens rather than isolated utilities",
+      "source": "code-analysis",
+      "evidence": "FIND-016 documents SchedulingExecutor using ActivatorUtilities.CreateInstance(serviceProvider, scheduledTask.ScheduledTaskType). FIND-051 synthesizes the DI pattern. T-001 demonstrated this by injecting IInfoProvider<MemberRoleMemberInfo>, IEventLogService, and other services. Reference implementations (FIND-017 RecycleBinCleanerTask, FIND-018 ContentItemScheduledPublishAndUnpublishTask) confirm the pattern.",
+      "strength": "low",
+      "domains": ["xperience-platform", "scheduled-tasks", "dependency-injection"],
+      "relatedFindings": ["FIND-016", "FIND-051"]
+    },
+    {
+      "id": "CTX-DOM-007",
+      "observation": "Xperience access check chain has 5 layers (content-role binding → member-role binding → auth cookie claims → SecurityStampValidator revalidation → IsInRole check) — documentation must trace the full chain to explain temporal behavior",
+      "source": "code-analysis",
+      "evidence": "FIND-047 is the cross-cutting finding documenting the full access check chain. T-001 (session behavior section), T-002 (cookie revalidation stale-fix), T-006 (content item security), T-007 (page security), T-010 (content retriever API), and T-012 (forms authentication) all needed to reference portions of this chain. 6 of 18 tasks (33%) touched the access check chain, making it the most cross-referenced behavioral finding in the run.",
+      "strength": "low",
+      "domains": ["xperience-platform", "content-security", "authentication"],
+      "relatedFindings": ["FIND-047", "FIND-028", "FIND-029", "FIND-030"]
+    },
+    {
+      "id": "CTX-DOM-008",
+      "observation": "Xperience en-dash (U+2013) encoding violations are pervasive in existing documentation — this run found en-dashes in registration-and-authentication.md (7), object-types.md (3), reference-tag-helpers.md (heading), and 44+ _guides files",
+      "source": "gap-analysis",
+      "evidence": "GAP-001 found 7 en-dashes in registration-and-authentication.md. T-005 found 3 in object-types.md. GAP-002 found en-dashes in reference-tag-helpers.md heading. DISC-XR-002 noted 44+ _guides files with preexisting en-dashes outside scope. INV-style-096 requires conversion only when a page is modified. This represents significant pre-existing technical debt.",
+      "strength": "medium",
+      "domains": ["documentation-debt", "style-enforcement"],
+      "confirmsExisting": "DOM-022"
+    }
+  ],
+  "sourceObservations": [
+    {
+      "id": "CTX-SRC-001",
+      "predictor": "Binding info classes with only foreign-key columns (no metadata fields like DateTime, Status, etc.) predict a documentation need for 'extension via custom object type' patterns when temporal or stateful semantics are required",
+      "codeCharacteristic": "pure-fk-binding-class",
+      "predictedDocNeed": "custom-object-type-extension-pattern",
+      "evidence": "MemberRoleMemberInfo (FIND-002) has only 3 FK-style columns with no expiration/metadata fields. The entire T-001 scenario page was driven by this constraint — documenting how to extend the binding's capabilities via a parallel custom object type. This pattern generalizes: any binding class lacking metadata columns will need extension documentation when business logic requires time-based or state-based relationships.",
+      "strength": "low",
+      "source": "code-analysis",
+      "relatedFindings": ["FIND-002", "FIND-034", "FIND-042", "FIND-049"]
+    },
+    {
+      "id": "CTX-SRC-002",
+      "predictor": "Scheduled tasks with date-comparison query patterns (WhereLessThan/WhereLessOrEquals on DateTime columns) predict documentation need for BulkDelete example + error handling pattern + IDateTimeNowService usage note",
+      "codeCharacteristic": "date-comparison-scheduled-task",
+      "predictedDocNeed": "bulk-cleanup-task-documentation",
+      "evidence": "Three reference implementations use this pattern: RecycleBinCleanerTask (FIND-017), ContentItemScheduledPublishAndUnpublishTask (FIND-018), DeleteExpiredShoppingCartsTask (FIND-019). The role expiration task (T-001) followed the same pattern. All require: date comparison, batch deletion, error handling with ScheduledTaskExecutionResult, and DI-injected time service. T-001 validated this prediction by requiring all four documentation elements.",
+      "strength": "low",
+      "source": "code-analysis",
+      "relatedFindings": ["FIND-017", "FIND-018", "FIND-019", "FIND-054"]
+    },
+    {
+      "id": "CTX-SRC-003",
+      "predictor": "Access check chains spanning 3+ components (content-role binding → member-role binding → authentication claims → validator) predict documentation need for end-to-end access flow explanation and session persistence warning",
+      "codeCharacteristic": "multi-layer-access-chain",
+      "predictedDocNeed": "access-flow-documentation-with-temporal-warning",
+      "evidence": "FIND-047 documents a 5-layer access chain. 6 of 18 tasks (33%) in this run needed to reference the chain. Tasks T-006 and T-007 required dedicated access interaction sections. T-002 required a stale-fix for incomplete session persistence documentation. T-001 required a full 'Handle sessions after role removal' section. The chain's complexity reliably predicted documentation needs across content security, page security, forms auth, and API reference pages.",
+      "strength": "low",
+      "source": "code-analysis + impact-matrix",
+      "relatedFindings": ["FIND-047", "FIND-028", "FIND-029", "FIND-030", "FIND-053"]
+    },
+    {
+      "id": "CTX-SRC-004",
+      "predictor": "Info classes where SecurityStamp regeneration is triggered by a narrow condition (e.g., only on MemberEnabled change) predict documentation need for explicit 'what does NOT trigger revocation' callouts",
+      "codeCharacteristic": "conditional-security-stamp-regeneration",
+      "predictedDocNeed": "negative-behavior-callout",
+      "evidence": "FIND-005 documents MemberInfoProvider.Set() regenerating stamp only on MemberEnabled change. This narrow trigger scope meant that role removal does NOT trigger revocation — a critical negative behavior that T-001 and T-002 both needed to document. The risk register for T-001 explicitly listed SecurityStamp claim verification as the 'most subtle accuracy trap'. Task signal for T-001 confirms the accuracy reviewer caught this as a verification target. Pattern generalizes: whenever a security operation has a narrow trigger scope, documentation must explicitly state what does NOT trigger it.",
+      "strength": "low",
+      "source": "code-analysis + risk-register",
+      "relatedFindings": ["FIND-005", "FIND-053"]
+    },
+    {
+      "id": "CTX-SRC-005",
+      "predictor": "Cross-collection heading modifications (heading text change in _documentation that is referenced by anchor= in _guides) predict documentation need for multi-collection anchor audit and potential deferred maintenance tasks",
+      "codeCharacteristic": "cross-collection-heading-reference",
+      "predictedDocNeed": "anchor-audit-with-deferred-tasks",
+      "evidence": "T-018 changed a heading in reference-tag-helpers.md (_documentation) that was referenced by anchor= attributes in store-files.md (_guides). INV-structure-030 prohibits modifying _guides files, requiring 2 deferred tasks. Cross-ref-updater cycle 2 fixed the _guides anchors. This pattern predicts: any heading text change in a page referenced by another collection will require: (1) multi-collection anchor search, (2) deferred task creation for off-limits collections, (3) additional verification cycle.",
+      "strength": "low",
+      "source": "gap-analysis + verification-matrix",
+      "relatedFindings": ["GAP-002"]
+    }
+  ],
+  "researchEffectiveness": {
+    "researchBriefExists": false,
+    "sourcesEvaluated": 0,
+    "sources": {},
+    "taskSignalCrossReference": {
+      "totalTasks": 18,
+      "tasksWithResearchCitations": 0,
+      "researchRecommendationsUsed": 0,
+      "note": "No research-brief.json was generated for this pipeline run (researchBriefAvailable: false in impact-matrix.json). Zero research recommendations were cited by any of the 18 tasks. Research sources from meta/research-sources.json exist (10 sources) but were not consulted for this run's topic (role expiration). This may be appropriate — the topic was implementation-specific (Xperience scheduled tasks + custom object types) rather than documentation-methodology-driven."
+    },
+    "newSourceCandidates": [
+      {
+        "domain": "code-samples",
+        "rationale": "T-001 had code import resolution errors (CMS vs CMS.Scheduler, CMS.Core vs CMS.Core.Internal). A source documenting Xperience namespace resolution patterns for code samples would have prevented these errors.",
+        "suggestedType": "internal-reference",
+        "priority": "low"
+      }
+    ]
+  },
+  "metaKnowledgeEffectiveness": {
+    "knowledgeBriefExists": false,
+    "patternsFromBrief": 0,
+    "patternsActuallyUsed": 0,
+    "antiPatternsFromBrief": 0,
+    "antiPatternsViolated": 0,
+    "overIncluded": 0,
+    "overIncludedEntries": [],
+    "note": "No knowledge-brief.json was generated for this pipeline run. However, task-signals.json shows patterns from the knowledge base were still referenced: PAT-001 (3 tasks), PAT-002 (1 task), PAT-009 (8 tasks), PAT-012 (2 tasks). The knowledge base was implicitly used via invariant scanning and task planner rather than through an explicit knowledge brief. ANTI-002 (en-dash persistence) was in the knowledge base but still not prevented in this run — GAP-001 and T-005 both hit the en-dash anti-pattern despite its documented status.",
+    "implicitPatternUsage": {
+      "PAT-001": {"cited": 3, "firstAttemptRate": 0.33, "note": "Multi-cycle outcomes were gap remediation/enhancement, not content failures"},
+      "PAT-002": {"cited": 1, "firstAttemptRate": 0.0, "note": "Used by most complex task T-001, multi-cycle from accuracy errors"},
+      "PAT-009": {"cited": 8, "firstAttemptRate": 1.0, "note": "100% first-attempt rate across 8 tasks — strongest performing pattern"},
+      "PAT-012": {"cited": 2, "firstAttemptRate": 0.5, "note": "T-007 multi-cycle was voluntary enhancement, not rejection"}
+    },
+    "antiPatternViolationDespiteKnowledge": {
+      "ANTI-002": {
+        "knownSince": "run 1",
+        "violatedInThisRun": true,
+        "affectedTasks": ["T-003", "T-005"],
+        "implication": "Anti-pattern awareness alone is insufficient — ANTI-002 has been documented for 3+ runs but the en-dash detection failure persists. Suggests promoting to a mandatory automated pre-submission check rather than relying on writer awareness."
+      }
+    }
+  },
+  "convergenceAnalysis": {
+    "totalCycles": 2,
+    "convergenceFactors": [
+      {
+        "factor": "All gaps were encoding issues, not content coverage gaps",
+        "impact": "high",
+        "description": "Both GAP-001 (7 en-dashes) and GAP-002 (heading/anchor en-dashes) were Unicode encoding issues detectable by grep -P scanning. Neither required content rethinking or new task creation — just mechanical find-and-replace operations. Encoding-only gaps converge faster than content gaps."
+      },
+      {
+        "factor": "Exhaustive change-area coverage by impact mapper",
+        "impact": "high",
+        "description": "All 11 change areas (AREA-001 through AREA-011) were covered by the 18 tasks. Gap hunter's coverageCompleteness check found zero uncovered areas. Impact mapper achieved 100% area coverage (compared to 91% in prior run per DOM-011)."
+      },
+      {
+        "factor": "Cross-ref-updater cycle 2 resolved cross-collection anchors",
+        "impact": "medium",
+        "description": "GAP-002's cross-collection anchor issue (store-files.md in _guides referencing reference-tag-helpers.md heading in _documentation) was resolved by the cross-ref-updater in cycle 2 without requiring a third gap-hunting cycle. The updater's ability to fix _guides references (despite INV-structure-030) as infrastructure rather than content changes prevented escalation."
+      },
+      {
+        "factor": "100% behavioral finding documentation coverage",
+        "impact": "medium",
+        "description": "Gap hunter's behavioralCoverage check verified all 15 behavioral findings plus 8 cross-cutting findings were documented. No undocumented behaviors remained. This eliminated the most common cause of multi-cycle convergence: missed behavioral coverage triggering new gaps."
+      },
+      {
+        "factor": "Zero internal API leakage",
+        "impact": "low",
+        "description": "Gap hunter's internalApiCompliance check found zero references to .Internal namespace APIs across all documentation pages. INV-general-012 and INV-general-013 were fully compliant, preventing accuracy-driven re-entry."
+      }
+    ],
+    "comparisonToPriorRuns": "Prior run (DOC-2847) achieved single-cycle convergence with 0 gaps. This run required 2 cycles due to pre-existing encoding debt (en-dashes in modified files). The encoding debt is external to the pipeline's content quality — it's pre-existing technical debt that the pipeline surfaces when files are touched. PAT-003 and PAT-006 from the knowledge base predicted that exhaustive change-area enumeration enables faster convergence, which was confirmed."
+  },
+  "impactMappingAccuracy": {
+    "totalImpacts": 18,
+    "impactsAddressed": 18,
+    "impactsMissed": 0,
+    "accuracy": 1.0,
+    "details": {
+      "newPages": {"mapped": 1, "written": 1, "note": "IMP-001 → T-001 (member-role-expiration.md)"},
+      "updates": {"mapped": 14, "written": 14, "note": "All 14 update impacts addressed by corresponding tasks"},
+      "staleFixes": {"mapped": 2, "written": 2, "note": "IMP-010 → T-002 (cookie revalidation stale-fix), IMP-014 → T-014 (binding extension)"},
+      "crossRefOnly": {"mapped": 1, "addressed": 1, "note": "Handled by cross-ref-updater rather than dedicated task"}
+    },
+    "gapHunterValidation": "Gap hunter confirmed zero uncovered change areas and zero undocumented behavioral findings. No impact was identified as missing by the gap hunter in either cycle. This is the first run with 100% impact mapper accuracy (prior run DOM-011 noted 91% at 20/22).",
+    "signal": {
+      "type": "candidate-pattern",
+      "strength": "low",
+      "description": "100% impact mapping accuracy correlates with single-topic focused pipeline runs (role expiration is a coherent domain) vs. multi-topic runs. The impact mapper had 54 code findings across 11 areas feeding into 18 impacts — a high finding-to-impact ratio (3:1) suggesting thorough analysis."
+    }
+  },
+  "invariantEffectivenessAnalysis": {
+    "totalInvariantsExtracted": 229,
+    "invariantsCausingRejection": [
+      {
+        "invariant": "INV-style-096",
+        "rejectionCount": 2,
+        "affectedTasks": ["T-005", "T-003"],
+        "category": "style",
+        "note": "En-dash to -- conversion. Most impactful invariant — also drove GAP-001 and GAP-002 remediation. Applied by all 18 tasks."
+      },
+      {
+        "invariant": "INV-style-125",
+        "rejectionCount": 1,
+        "affectedTasks": ["T-001"],
+        "category": "style",
+        "note": "Contraction inconsistency in same sentence"
+      },
+      {
+        "invariant": "INV-style-126",
+        "rejectionCount": 1,
+        "affectedTasks": ["T-001"],
+        "category": "style",
+        "note": "Contraction mixing"
+      },
+      {
+        "invariant": "INV-style-130",
+        "rejectionCount": 1,
+        "affectedTasks": ["T-001"],
+        "category": "style",
+        "note": "Wrong UI verb 'check' vs 'select'"
+      },
+      {
+        "invariant": "INV-general-012",
+        "rejectionCount": 1,
+        "affectedTasks": ["T-001"],
+        "category": "accuracy",
+        "note": "Internal namespace API documented — IDateTimeNowService in CMS.Core.Internal"
+      }
+    ],
+    "rejectionRate": "5 invariants out of 229 (2.2%) caused rejections — consistent with PAT-004 (5.2% in prior run). The invariant inventory is well-calibrated: it's comprehensive enough to catch issues but not so aggressive that it creates false rejections.",
+    "mostEffectiveInvariants": [
+      "INV-crossref-002 (page_link format): Applied by 16 tasks, zero rejections — silently prevented cross-reference format errors",
+      "INV-crossref-003 (identifier verification): Applied by 15 tasks, zero rejections — prevented fabricated identifiers",
+      "INV-style-096 (en-dash conversion): Applied by all 18 tasks — caught 2 violations and drove 2 gap remediations",
+      "INV-persona-013/014 (business user tone): Applied by 3 business-user tasks, zero rejections — all achieved first-attempt acceptance"
+    ]
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "taskId": "DOC-3167",
+  "runLabel": "run4-18task",
+  "completedAt": "2026-03-20T09:04:44Z",
+  "totalTasks": 18,
+  "firstAttemptRate": 0.72,
+  "firstAttemptCount": 13,
+  "multiCycleCount": 5,
+  "reviewCycles": 24,
+  "averageAttemptsPerTask": 1.33,
+  "gapHuntingCycles": 2,
+  "gapsFound": 2,
+  "gapsResolved": 2,
+  "convergenceAchieved": true,
+  "taskBreakdown": {
+    "create": 1,
+    "update": 17,
+    "crossRefUpdate": 16,
+    "gapRemediation": 3
+  },
+  "patternsDiscovered": 0,
+  "patternsConfirmed": 4,
+  "antiPatternsDiscovered": 0,
+  "antiPatternsConfirmed": 2,
+  "domainInsightsDiscovered": 7,
+  "sourceObservationsDiscovered": 5,
+  "styleEvolutionsConfirmed": 1,
+  "entriesCreated": 12,
+  "entriesUpdated": 11,
+  "entriesDiscarded": 5,
+  "confidencePromotions": [
+    {"id": "ANTI-002", "from": "low", "to": "medium", "reason": "Re-confirmed in run 4 after demotion in run 3; 3 tasks affected by dash-type confusion"},
+    {"id": "PAT-012", "from": "low", "to": "medium", "reason": "2nd pipeline run confirmation; 100% first-attempt reviewer approval across 4 tasks"},
+    {"id": "STYLE-001", "from": "medium", "to": "high", "reason": "3rd pipeline run confirmation; dash enforcement consistently the most impactful style issue"},
+    {"id": "DOM-022", "from": "low", "to": "medium", "reason": "Confirmed in 2nd execution with broader scope evidence of pervasive encoding debt"},
+    {"id": "DOM-011", "from": "low", "to": "medium", "reason": "Confirmed in 2nd run with improved accuracy (100% vs 91%)"}
+  ],
+  "discardedSignals": [
+    {
+      "signal": "CPAT-004: docFact-vs-invariant conflict resolution pattern",
+      "reason": "Insufficient evidence for pattern (1 occurrence; minimum 2 required). Core insight captured as domain insight DOM-028 instead."
+    },
+    {
+      "signal": "CAPAT-002: duplicate content block insertion",
+      "reason": "Insufficient evidence for anti-pattern (1 occurrence in T-003; minimum 2 required). Single structural error, not systemic."
+    },
+    {
+      "signal": "CAPAT-003: code-sample import resolution errors",
+      "reason": "Insufficient evidence for anti-pattern (1 occurrence in T-001; minimum 2 required). Evidence merged into ANTI-001 update."
+    },
+    {
+      "signal": "SE-1: Pre-existing gerund headings",
+      "reason": "Single occurrence, low strength. Pre-existing issue not actionable for pipeline. Not reusable."
+    },
+    {
+      "signal": "SE-2: Pre-existing INV-style-140 violation",
+      "reason": "Single occurrence, not actionable. Pre-existing technical debt not introduced by pipeline."
+    }
+  ],
+  "researchRecommendationsUsed": 0,
+  "researchRecommendationsBlocked": 0,
+  "researchBriefAvailable": false,
+  "patternEffectiveness": {
+    "PAT-001": {"cited": 3, "firstAttemptRate": 0.33, "effectiveApprovalRate": 1.0, "note": "Multi-cycle causes were gap verification and voluntary enhancement, not content failures"},
+    "PAT-002": {"cited": 1, "firstAttemptRate": 0.0, "note": "Used by most complex task T-001; multi-cycle from accuracy errors not pattern failure"},
+    "PAT-009": {"cited": 8, "firstAttemptRate": 1.0, "note": "100% first-attempt across 8 tasks — strongest performing pattern across all runs"},
+    "PAT-012": {"cited": 2, "firstAttemptRate": 0.5, "effectiveApprovalRate": 1.0, "note": "T-007 multi-cycle was voluntary enhancement, not rejection"}
+  },
+  "crossRunConfirmations": {
+    "PAT-009": "100% first-attempt across 8 tasks; 89% aggregate across 4 runs (16/18). Held at high.",
+    "ANTI-002": "3 tasks affected by en-dash detection failures. Re-promoted low → medium after run 3 demotion."
+  },
+  "impactMappingAccuracy": 1.0,
+  "invariantRejectionRate": 0.022,
+  "knowledgeBaseGrowth": {
+    "before": 61,
+    "after": 73,
+    "netNew": 12,
+    "activeEntries": 72
+  }
+}

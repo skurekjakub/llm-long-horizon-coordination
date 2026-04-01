@@ -1,0 +1,42 @@
+{
+  "version": 2,
+  "lastUpdated": null,
+  "currentPass": 0,
+  "passStatus": {
+    "pass0_knowledgeCuration": "not-started",
+    "pass05_codebaseOrientation": "not-started",
+    "pass1_discovery": "not-started",
+    "pass2_analysis": "not-started",
+    "pass3_planning": "not-started",
+    "pass4_execution": "not-started",
+    "pass5_verification": "not-started",
+    "pass6_gapHunting": "not-started",
+    "pass65_knowledgeSynthesis": "not-started",
+    "pass7_delivery": "not-started"
+  },
+  "counts": {
+    "changesDiscovered": 0,
+    "docPagesIndexed": 0,
+    "invariantsExtracted": 0,
+    "impactsMapped": 0,
+    "tasksPlanned": 0,
+    "tasksWritten": 0,
+    "tasksVerified": 0,
+    "tasksBlocked": 0,
+    "knowledgePatternsCurated": 0,
+    "codebaseModulesMapped": 0,
+    "researchRecommendationsApproved": 0,
+    "knowledgeEntriesNew": 0,
+    "skillFilesRegenerated": 0
+  },
+  "gapHunting": {
+    "cyclesCompleted": 0,
+    "newItemsPerCycle": [],
+    "converged": false,
+    "reEntryTarget": null
+  },
+  "directives": {
+    "activeCount": 0,
+    "lastReadAt": null
+  }
+}

@@ -1,0 +1,315 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": "SRC-001",
+      "name": "Google Developer Documentation Style Guide",
+      "url": "https://developers.google.com/style",
+      "domains": [
+        "style",
+        "api-reference",
+        "general"
+      ],
+      "addedBy": "bootstrap",
+      "addedDate": null,
+      "usageCount": 8,
+      "lastUsed": "2026-03-18T22:24:04Z",
+      "effectiveness": 0.45,
+      "deprecated": false,
+      "assessmentDetail": "Run 1: Highly effective (1.0). Run 2 (DOC-3137): Zero explicit citations, effectiveness 0.5. Run 3 (DOC-2847): Effectiveness 0.67 — REC-001 (boolean documentation) and REC-005 (defaults) cited by T-001. REC-006 (action verb method descriptions) not cited. Weighted effectiveness across 3 runs: 0.56. Run 4 (DOC-3167): REC-005 (descriptive link text) cited by T-002, T-005, T-007. Other sub-sources (notices, tables, api) had 0 citations. Overall citation rate: 10% (1 of 10 approved recommendations). Weighted effectiveness across 4 runs: 0.45."
+    },
+    {
+      "id": "SRC-002",
+      "name": "Diátaxis Documentation Framework",
+      "url": "https://diataxis.fr/",
+      "domains": [
+        "structure",
+        "conceptual",
+        "tutorial",
+        "howto",
+        "reference"
+      ],
+      "addedBy": "bootstrap",
+      "addedDate": null,
+      "usageCount": 8,
+      "lastUsed": "2026-03-18T22:24:04Z",
+      "effectiveness": 0.24,
+      "deprecated": false,
+      "assessmentDetail": "Run 1: Effective (0.71). Run 2 (DOC-3137): 0.25 explicit. Run 3 (DOC-2847): 0.0 — REC-007 and REC-008 not cited by any task. Structural guidance implicitly followed via INV-structure-* invariants. Framework value is in initial classification (reference vs how-to), not per-task execution. Weighted effectiveness across 3 runs: 0.32. Run 4 (DOC-3167): REC-004 (goal-oriented imperatives) not cited. Task was reference/gap-fill documentation, not how-to guides. Weighted effectiveness across 4 runs: 0.24.",
+      "subSourceBreakdown": {
+        "tutorials": {
+          "effectiveness": 0.33,
+          "used": 1,
+          "total": 3
+        },
+        "howTo": {
+          "effectiveness": 1.0,
+          "used": 3,
+          "total": 3
+        },
+        "reference": {
+          "effectiveness": 1.0,
+          "used": 1,
+          "total": 1
+        }
+      }
+    },
+    {
+      "id": "SRC-003",
+      "name": "Microsoft Writing Style Guide",
+      "url": "https://learn.microsoft.com/en-us/style-guide/welcome/",
+      "domains": [
+        "style",
+        "accessibility",
+        "general"
+      ],
+      "addedBy": "bootstrap",
+      "addedDate": null,
+      "usageCount": 5,
+      "lastUsed": "2026-03-15T06:23:39Z",
+      "effectiveness": 0.5,
+      "deprecated": false,
+      "assessmentDetail": "Run 1: Highly effective (1.0) — step-by-step, reference, code examples all contributed. Run 2 (DOC-3137): Zero explicit citations. Code example patterns (REC-014) likely internalized. Step-by-step guidance less relevant for developer-focused API documentation run. Effectiveness adjusted to 0.5 reflecting mixed explicit/implicit use across 2 runs.",
+      "subSourceBreakdown": {
+        "stepByStep": {
+          "effectiveness": 1.0,
+          "used": 2,
+          "total": 2
+        },
+        "reference": {
+          "effectiveness": 1.0,
+          "used": 1,
+          "total": 1
+        },
+        "codeExamples": {
+          "effectiveness": 1.0,
+          "used": 2,
+          "total": 2
+        }
+      }
+    },
+    {
+      "id": "SRC-004",
+      "name": "Write the Docs — Documentation Guide",
+      "url": "https://www.writethedocs.org/guide/",
+      "domains": [
+        "general",
+        "structure",
+        "style"
+      ],
+      "addedBy": "bootstrap",
+      "addedDate": null,
+      "usageCount": 0,
+      "lastUsed": null,
+      "effectiveness": null,
+      "deprecated": false,
+      "assessmentDetail": "Unused across 2 pipeline runs. Low priority for API reference and how-to documentation tasks. May become relevant for community-facing or contribution guide documentation."
+    },
+    {
+      "id": "SRC-005",
+      "name": "Kentico Xperience admin UI component reference — icon classes, interaction verbs, field behaviors",
+      "url": null,
+      "domains": [
+        "admin-ui"
+      ],
+      "addedBy": "knowledge-integrator",
+      "addedDate": "2026-03-14T16:06:35+00:00",
+      "usageCount": 0,
+      "lastUsed": null,
+      "effectiveness": null,
+      "deprecated": false,
+      "status": "pending-review",
+      "rationale": "Business-user pages (TASK-011, TASK-012, TASK-013) faced unique challenges around UI interaction vocabulary and icon accuracy that weren't covered by any research source. A Kentico-specific admin UI style reference would help.",
+      "assessmentDetail": "Run 2 (DOC-3137): T-012 (business-user page) passed first attempt without needing this source. Need is less acute but still relevant for future business-user-heavy runs. Keeping as pending-review with low priority."
+    },
+    {
+      "id": "SRC-WEB-001",
+      "name": "Web research — registration pattern documentation practices",
+      "url": null,
+      "domains": [
+        "api-reference",
+        "registration-patterns"
+      ],
+      "addedBy": "research-scout",
+      "addedDate": "2026-03-15T06:23:39Z",
+      "usageCount": 0,
+      "lastUsed": "2026-03-15T06:23:39Z",
+      "effectiveness": 0.0,
+      "deprecated": false,
+      "assessmentDetail": "Run 2 (DOC-3137): REC-012 (registration pattern documentation) originated from this source but was internalized without explicit citation. T-001 correctly documented the ActivityEvaluationRegister pattern.",
+      "status": "active"
+    },
+    {
+      "id": "SRC-WEB-002",
+      "name": "Web research — lifecycle hook documentation patterns",
+      "url": null,
+      "domains": [
+        "api-reference",
+        "lifecycle-hooks"
+      ],
+      "addedBy": "research-scout",
+      "addedDate": "2026-03-15T06:23:39Z",
+      "usageCount": 0,
+      "lastUsed": "2026-03-15T06:23:39Z",
+      "effectiveness": 0.0,
+      "deprecated": false,
+      "assessmentDetail": "Run 2 (DOC-3137): REC-009 (explicit 'not called when' documentation) and REC-010 (pipeline flow with dual paths) both originated here and were internalized by T-001 without explicit citation. Valuable source for lifecycle/pipeline documentation.",
+      "status": "active"
+    },
+    {
+      "id": "SRC-006",
+      "name": "Microsoft .NET C# Coding Conventions",
+      "url": "https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/coding-conventions",
+      "domains": [
+        "code-samples",
+        "api-reference"
+      ],
+      "addedBy": "research-scout",
+      "addedDate": "2026-03-15T18:03:22Z",
+      "usageCount": 1,
+      "lastUsed": "2026-03-15T18:03:22Z",
+      "effectiveness": 1.0,
+      "deprecated": false,
+      "assessmentDetail": "Run 3 (DOC-2847): REC-012 (object initializers) cited by T-001, T-003, T-004. All parameter object construction uses object initializer syntax. Direct 1:1 recommendation→output match. Effectiveness: 1.0.",
+      "status": "active"
+    },
+    {
+      "id": "SRC-007",
+      "name": "Microsoft Named and Optional Arguments Guide",
+      "url": "https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/named-and-optional-arguments",
+      "domains": [
+        "code-samples",
+        "api-reference"
+      ],
+      "addedBy": "research-scout",
+      "addedDate": "2026-03-15T18:03:22Z",
+      "usageCount": 1,
+      "lastUsed": "2026-03-15T18:03:22Z",
+      "effectiveness": 1.0,
+      "deprecated": false,
+      "assessmentDetail": "Run 3 (DOC-2847): REC-003 (named parameters in 3+ param calls) cited by 5 tasks (T-001, T-003, T-004, T-007, T-009) with 4/5 first-attempt. REC-010 (named arguments for skipping optionals) cited by same 5 tasks. Top-performing source for this run. Effectiveness: 1.0.",
+      "status": "active"
+    },
+    {
+      "id": "SRC-008",
+      "name": "Microsoft Code Examples Style Guide",
+      "url": "https://learn.microsoft.com/en-us/style-guide/procedures-instructions/code-examples",
+      "domains": [
+        "code-samples"
+      ],
+      "addedBy": "research-scout",
+      "addedDate": "2026-03-15T18:03:22Z",
+      "usageCount": 1,
+      "lastUsed": "2026-03-15T18:03:22Z",
+      "effectiveness": 1.0,
+      "deprecated": false,
+      "assessmentDetail": "Run 3 (DOC-2847): REC-009 (start simple, build complexity) cited by T-001. REC-011 (comment Kentico-specific methods) cited by T-001, T-003, T-004, T-007, T-009. High alignment with INV-codesamples-* suite. Effectiveness: 1.0.",
+      "status": "active"
+    },
+    {
+      "id": "SRC-WEB-003",
+      "name": "Enhancing code clarity through named parameters in C#",
+      "url": null,
+      "domains": [
+        "code-samples"
+      ],
+      "addedBy": "research-scout",
+      "addedDate": "2026-03-15T18:03:22Z",
+      "usageCount": 0,
+      "lastUsed": "2026-03-15T18:03:22Z",
+      "effectiveness": 0.0,
+      "deprecated": false,
+      "assessmentDetail": "Run 3 (DOC-2847): Source consulted but no independent recommendations originated. Content overlapped with SRC-007 (Microsoft guide). Redundant source.",
+      "status": "active"
+    },
+    {
+      "id": "SRC-WEB-004",
+      "name": "Fluent Builder Pattern — wolfsys.net",
+      "url": null,
+      "domains": [
+        "code-samples",
+        "api-reference"
+      ],
+      "addedBy": "research-scout",
+      "addedDate": "2026-03-15T18:03:22Z",
+      "usageCount": 1,
+      "lastUsed": "2026-03-15T18:03:22Z",
+      "effectiveness": 1.0,
+      "deprecated": false,
+      "assessmentDetail": "Run 3 (DOC-2847): REC-004 (minimal and maximal fluent chain examples) cited by T-001. Applicable to additionalQueryConfiguration lambda chains. Niche but directly useful.",
+      "status": "active"
+    },
+    {
+      "id": "SRC-WEB-005",
+      "name": "Naming guidelines for boolean variables — Serendipidata",
+      "url": null,
+      "domains": [
+        "api-reference"
+      ],
+      "addedBy": "research-scout",
+      "addedDate": "2026-03-15T18:03:22Z",
+      "usageCount": 1,
+      "lastUsed": "2026-03-15T18:03:22Z",
+      "effectiveness": 1.0,
+      "deprecated": false,
+      "assessmentDetail": "Run 3 (DOC-2847): REC-002 (property vs method disambiguation) cited by T-001. Directly addressed IncludeUrlPath vs UrlPathColumns() confusion. Niche but precisely targeted.",
+      "status": "active"
+    },
+    {
+      "id": "SRC-CAND-001",
+      "name": "Code sample accuracy verification / documentation code block linting strategies",
+      "url": null,
+      "domains": [
+        "code-sample-accuracy"
+      ],
+      "addedBy": "knowledge-integrator",
+      "addedDate": "2026-03-15T18:03:22Z",
+      "usageCount": 0,
+      "lastUsed": null,
+      "effectiveness": null,
+      "deprecated": false,
+      "status": "pending-review",
+      "rationale": "Run 3 exposed pre-existing non-existent API method calls in documentation code blocks (TopN, OrderByDescending). No existing source addresses doc-embedded code verification strategies. Priority: medium.",
+      "assessmentDetail": "Candidate from DOC-2847 context signal analysis. Would help future accuracy reviews catch phantom API calls in .md code blocks."
+    },
+    {
+      "id": "SRC-CAND-002",
+      "name": "Role-based access control (RBAC) documentation patterns",
+      "url": null,
+      "domains": [
+        "content-security",
+        "authentication",
+        "reference"
+      ],
+      "addedBy": "knowledge-integrator",
+      "addedDate": "2026-03-18T22:24:04Z",
+      "usageCount": 0,
+      "lastUsed": null,
+      "effectiveness": null,
+      "deprecated": false,
+      "status": "pending-review",
+      "rationale": "DOC-3167 documented a multi-layer permission model (application → ACL → workflow) with non-obvious interaction rules. No consulted source addressed RBAC/permission documentation patterns specifically. A source covering permission matrix documentation, prerequisite-chain documentation, and bypass-rule documentation would have been directly applicable to T-001 (19 acceptance criteria, 3 layers to disambiguate). Priority: medium.",
+      "assessmentDetail": "Candidate from DOC-3167 context signal analysis. Would help future permission documentation tasks with multi-layer models. Run 4 (DOC-3167 continued): Not consulted (no research brief generated). Still pending review."
+    },
+    {
+      "id": "SRC-CAND-003",
+      "name": "Xperience namespace resolution patterns for code samples",
+      "url": null,
+      "domains": [
+        "code-samples",
+        "xperience-platform"
+      ],
+      "addedBy": "knowledge-integrator",
+      "addedDate": "2026-03-20T09:04:44Z",
+      "usageCount": 0,
+      "lastUsed": null,
+      "effectiveness": null,
+      "deprecated": false,
+      "status": "pending-review",
+      "rationale": "DOC-3167 T-001 had code import resolution errors (CMS vs CMS.Scheduler, CMS.Core vs CMS.Core.Internal). An internal reference documenting Xperience namespace resolution patterns would prevent these compilation-breaking errors in code samples.",
+      "assessmentDetail": "Candidate from DOC-3167 run 4 context signal analysis. Priority: low — code import issues are catchable by accuracy reviewer."
+    }
+  ],
+  "lastUpdated": "2026-03-20T09:04:44Z",
+  "lastRunUsageRate": 0.0
+}

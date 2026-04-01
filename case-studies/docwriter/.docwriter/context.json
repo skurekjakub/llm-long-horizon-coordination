@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "task": {
+    "id": "DOC-3167",
+    "description": "The task description is at .docwriter/resources/task-desc.md",
+    "instructions": [
+    ]
+  },
+  "source": {
+    "repoPath": "resources/repositories/xperience",
+    "diffRef": "Already merged to main, this is a docuemntation gap fill, search and correlated the API facts directly on master. Workers must fetch latest first to ensure synchronization with origin and latest data.",
+    "baseBranch": "master"
+  },
+  "docs": {
+    "workspacePath": "./src/_documentation",
+    "contentCollections": ["./_documentation (primary Xperience by Kentico documentation jekyll collection path, ignore _guides and all the other collections, they are not part of this task)"]
+  },
+  "invariants": {
+    "guidelinesPath": "./.github/resources/guidelines/"
+  },
+  "output": {
+    "branch": "docs/doc-3203-roleexpiraion - do not commit changes"
+  }
+}
