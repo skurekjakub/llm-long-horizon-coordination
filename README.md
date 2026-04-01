@@ -1,6 +1,6 @@
 # Coordination mechanisms for long-horizon, self-converging, autonomous LLM systems 
 
-This repository describes and showcases a large language model (LLM) coordination architecture I use to manage long-horizon, self-converging, autonomous tasks.
+This repository describes and showcases a large language model (LLM) coordination architecture I use to manage long-horizon agentic AI tasks.
 
 A couple of definitions to get started:
 
