@@ -586,6 +586,8 @@ At each layer, the parent stays as pure as possible and the child layer absorbs 
 
 This produces a pyramid of purity and abstraction.
 
+![Pyramid of purity and abstraction](assets/agent-fractal-pyramid.drawio.svg)
+
 At the top, the session orchestrator should know almost nothing about the task domain beyond which phase is complete and which one should run next. Mid-level coordinators know more about one slice of the workflow, but they still mostly route and aggregate. Leaf specialists are the ones that actually touch code, documents, tools, and source material.
 
 That layered exposure is a form of progressive disclosure. Instead of giving one agent the whole problem and asking it to hold every constraint in its head for hours, and run against the ever present nemesis of context compaction, the system reveals only the amount of problem space that each layer actually needs.

@@ -1,0 +1,162 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1200px" height="740px" viewBox="-0.5 -0.5 1200 740" style="background-color: transparent;" content="&lt;mxfile&gt;&lt;diagram name=&quot;Page-1&quot; id=&quot;fractal-pyramid-1&quot;&gt;&lt;mxGraphModel dx=&quot;1200&quot; dy=&quot;740&quot; grid=&quot;1&quot; gridSize=&quot;10&quot; guides=&quot;1&quot; tooltips=&quot;1&quot; connect=&quot;1&quot; arrows=&quot;1&quot; fold=&quot;1&quot; page=&quot;0&quot; pageScale=&quot;1&quot; pageWidth=&quot;1200&quot; pageHeight=&quot;740&quot;&gt;&lt;root&gt;&lt;mxCell id=&quot;0&quot;/&gt;&lt;mxCell id=&quot;1&quot; parent=&quot;0&quot;/&gt;&lt;mxCell id=&quot;2&quot; value=&quot;Orchestrator&quot; style=&quot;rounded=1;whiteSpace=wrap;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=13;&quot; vertex=&quot;1&quot; parent=&quot;1&quot;&gt;&lt;mxGeometry x=&quot;500&quot; y=&quot;40&quot; width=&quot;160&quot; height=&quot;50&quot; as=&quot;geometry&quot;/&gt;&lt;/mxCell&gt;&lt;mxCell id=&quot;3&quot; value=&quot;Coordinator&amp;#xa;(Discovery)&quot; style=&quot;rounded=1;whiteSpace=wrap;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=11;&quot; vertex=&quot;1&quot; parent=&quot;1&quot;&gt;&lt;mxGeometry x=&quot;140&quot; y=&quot;180&quot; width=&quot;140&quot; height=&quot;50&quot; as=&quot;geometry&quot;/&gt;&lt;/mxCell&gt;&lt;mxCell id=&quot;4&quot; value=&quot;Coordinator&amp;#xa;(Execution)&quot; style=&quot;rounded=1;whiteSpace=wrap;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=11;&quot; vertex=&quot;1&quot; parent=&quot;1&quot;&gt;&lt;mxGeometry x=&quot;510&quot; y=&quot;180&quot; width=&quot;140&quot; height=&quot;50&quot; as=&quot;geometry&quot;/&gt;&lt;/mxCell&gt;&lt;mxCell id=&quot;5&quot; value=&quot;Coordinator&amp;#xa;(Verification)&quot; style=&quot;rounded=1;whiteSpace=wrap;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=11;&quot; vertex=&quot;1&quot; parent=&quot;1&quot;&gt;&lt;mxGeometry x=&quot;880&quot; y=&quot;180&quot; width=&quot;140&quot; height=&quot;50&quot; as=&quot;geometry&quot;/&gt;&lt;/mxCell&gt;&lt;mxCell id=&quot;6&quot; value=&quot;Subcoordinator&amp;#xa;(Write Loop)&quot; style=&quot;rounded=1;whiteSpace=wrap;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;fontSize=10;&quot; vertex=&quot;1&quot; parent=&quot;1&quot;&gt;&lt;mxGeometry x=&quot;410&quot; y=&quot;340&quot; width=&quot;130&quot; height=&quot;50&quot; as=&quot;geometry&quot;/&gt;&lt;/mxCell&gt;&lt;mxCell id=&quot;7&quot; value=&quot;Subcoordinator&amp;#xa;(Review Gate)&quot; style=&quot;rounded=1;whiteSpace=wrap;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;fontSize=10;&quot; vertex=&quot;1&quot; parent=&quot;1&quot;&gt;&lt;mxGeometry x=&quot;620&quot; y=&quot;340&quot; width=&quot;130&quot; height=&quot;50&quot; as=&quot;geometry&quot;/&gt;&lt;/mxCell&gt;&lt;mxCell id=&quot;10&quot; value=&quot;Diff&amp;#xa;Analyzer&quot; style=&quot;rounded=1;whiteSpace=wrap;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;&quot; vertex=&quot;1&quot; parent=&quot;1&quot;&gt;&lt;mxGeometry x=&quot;70&quot; y=&quot;500&quot; width=&quot;100&quot; height=&quot;44&quot; as=&quot;geometry&quot;/&gt;&lt;/mxCell&gt;&lt;mxCell id=&quot;11&quot; value=&quot;Corpus&amp;#xa;Scanner&quot; style=&quot;rounded=1;whiteSpace=wrap;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;&quot; vertex=&quot;1&quot; parent=&quot;1&quot;&gt;&lt;mxGeometry x=&quot;190&quot; y=&quot;500&quot; width=&quot;100&quot; height=&quot;44&quot; as=&quot;geometry&quot;/&gt;&lt;/mxCell&gt;&lt;mxCell id=&quot;12&quot; value=&quot;Invariant&amp;#xa;Scanner&quot; style=&quot;rounded=1;whiteSpace=wrap;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;&quot; vertex=&quot;1&quot; parent=&quot;1&quot;&gt;&lt;mxGeometry x=&quot;310&quot; y=&quot;500&quot; width=&quot;100&quot; height=&quot;44&quot; as=&quot;geometry&quot;/&gt;&lt;/mxCell&gt;&lt;mxCell id=&quot;13&quot; value=&quot;Content&amp;#xa;Writer&quot; style=&quot;rounded=1;whiteSpace=wrap;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;&quot; vertex=&quot;1&quot; parent=&quot;1&quot;&gt;&lt;mxGeometry x=&quot;430&quot; y=&quot;500&quot; width=&quot;100&quot; height=&quot;44&quot; as=&quot;geometry&quot;/&gt;&lt;/mxCell&gt;&lt;mxCell id=&quot;14&quot; value=&quot;Style&amp;#xa;Reviewer&quot; style=&quot;rounded=1;whiteSpace=wrap;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;&quot; vertex=&quot;1&quot; parent=&quot;1&quot;&gt;&lt;mxGeometry x=&quot;570&quot; y=&quot;500&quot; width=&quot;100&quot; height=&quot;44&quot; as=&quot;geometry&quot;/&gt;&lt;/mxCell&gt;&lt;mxCell id=&quot;15&quot; value=&quot;Accuracy&amp;#xa;Reviewer&quot; style=&quot;rounded=1;whiteSpace=wrap;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;&quot; vertex=&quot;1&quot; parent=&quot;1&quot;&gt;&lt;mxGeometry x=&quot;690&quot; y=&quot;500&quot; width=&quot;100&quot; height=&quot;44&quot; as=&quot;geometry&quot;/&gt;&lt;/mxCell&gt;&lt;mxCell id=&quot;16&quot; value=&quot;Cross-Ref&amp;#xa;Updater&quot; style=&quot;rounded=1;whiteSpace=wrap;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;&quot; vertex=&quot;1&quot; parent=&quot;1&quot;&gt;&lt;mxGeometry x=&quot;830&quot; y=&quot;500&quot; width=&quot;100&quot; height=&quot;44&quot; as=&quot;geometry&quot;/&gt;&lt;/mxCell&gt;&lt;mxCell id=&quot;17&quot; value=&quot;Gap&amp;#xa;Hunter&quot; style=&quot;rounded=1;whiteSpace=wrap;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;&quot; vertex=&quot;1&quot; parent=&quot;1&quot;&gt;&lt;mxGeometry x=&quot;950&quot; y=&quot;500&quot; width=&quot;100&quot; height=&quot;44&quot; as=&quot;geometry&quot;/&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;&lt;/diagram&gt;&lt;/mxfile&gt;">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666666"/>
+    </marker>
+    <marker id="arrowup" markerWidth="8" markerHeight="6" refX="4" refY="0" orient="auto">
+      <polygon points="0 6, 4 0, 8 6" fill="#999999"/>
+    </marker>
+    <marker id="arrowdown" markerWidth="8" markerHeight="6" refX="4" refY="6" orient="auto">
+      <polygon points="0 0, 4 6, 8 0" fill="#999999"/>
+    </marker>
+  </defs>
+
+  <!-- Background pyramid shape (subtle) -->
+  <polygon points="580,30 30,560 1130,560" fill="none" stroke="#e0e0e0" stroke-width="1.5" stroke-dasharray="8,4" opacity="0.6"/>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- LEVEL 0: ORCHESTRATOR                   -->
+  <!-- ═══════════════════════════════════════ -->
+  <rect x="500" y="40" width="160" height="50" rx="8" ry="8" fill="#dae8fc" stroke="#6c8ebf" stroke-width="1.5"/>
+  <text x="580" y="62" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" fill="#333333">Orchestrator</text>
+  <text x="580" y="78" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" fill="#666666">pure router — no domain knowledge</text>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- LEVEL 1: COORDINATORS                   -->
+  <!-- ═══════════════════════════════════════ -->
+  <!-- Discovery Coordinator -->
+  <rect x="120" y="180" width="160" height="50" rx="8" ry="8" fill="#d5e8d4" stroke="#82b366" stroke-width="1.5"/>
+  <text x="200" y="200" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#333333">Coordinator</text>
+  <text x="200" y="216" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" fill="#555555">(Discovery)</text>
+
+  <!-- Execution Coordinator -->
+  <rect x="500" y="180" width="160" height="50" rx="8" ry="8" fill="#d5e8d4" stroke="#82b366" stroke-width="1.5"/>
+  <text x="580" y="200" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#333333">Coordinator</text>
+  <text x="580" y="216" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" fill="#555555">(Execution)</text>
+
+  <!-- Verification Coordinator -->
+  <rect x="880" y="180" width="160" height="50" rx="8" ry="8" fill="#d5e8d4" stroke="#82b366" stroke-width="1.5"/>
+  <text x="960" y="200" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#333333">Coordinator</text>
+  <text x="960" y="216" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" fill="#555555">(Verification)</text>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- LEVEL 2: SUBCOORDINATORS                -->
+  <!-- ═══════════════════════════════════════ -->
+  <!-- Write Loop Subcoordinator -->
+  <rect x="400" y="340" width="140" height="50" rx="8" ry="8" fill="#fff2cc" stroke="#d6b656" stroke-width="1.5"/>
+  <text x="470" y="360" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="bold" fill="#333333">Subcoordinator</text>
+  <text x="470" y="376" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" fill="#555555">(Write Loop)</text>
+
+  <!-- Review Gate Subcoordinator -->
+  <rect x="620" y="340" width="140" height="50" rx="8" ry="8" fill="#fff2cc" stroke="#d6b656" stroke-width="1.5"/>
+  <text x="690" y="360" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="bold" fill="#333333">Subcoordinator</text>
+  <text x="690" y="376" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" fill="#555555">(Review Gate)</text>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- LEVEL 3: SPECIALISTS                    -->
+  <!-- ═══════════════════════════════════════ -->
+  <!-- Under Discovery Coordinator -->
+  <rect x="60" y="500" width="110" height="44" rx="6" ry="6" fill="#f8cecc" stroke="#b85450" stroke-width="1.2"/>
+  <text x="115" y="517" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="10" fill="#333333">Diff</text>
+  <text x="115" y="531" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="10" fill="#333333">Analyzer</text>
+
+  <rect x="190" y="500" width="110" height="44" rx="6" ry="6" fill="#f8cecc" stroke="#b85450" stroke-width="1.2"/>
+  <text x="245" y="517" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="10" fill="#333333">Corpus</text>
+  <text x="245" y="531" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="10" fill="#333333">Scanner</text>
+
+  <rect x="320" y="500" width="110" height="44" rx="6" ry="6" fill="#f8cecc" stroke="#b85450" stroke-width="1.2"/>
+  <text x="375" y="517" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="10" fill="#333333">Invariant</text>
+  <text x="375" y="531" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="10" fill="#333333">Scanner</text>
+
+  <!-- Under Write Loop Subcoordinator -->
+  <rect x="430" y="500" width="110" height="44" rx="6" ry="6" fill="#f8cecc" stroke="#b85450" stroke-width="1.2"/>
+  <text x="485" y="517" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="10" fill="#333333">Content</text>
+  <text x="485" y="531" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="10" fill="#333333">Writer</text>
+
+  <!-- Under Review Gate Subcoordinator -->
+  <rect x="570" y="500" width="110" height="44" rx="6" ry="6" fill="#f8cecc" stroke="#b85450" stroke-width="1.2"/>
+  <text x="625" y="517" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="10" fill="#333333">Style</text>
+  <text x="625" y="531" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="10" fill="#333333">Reviewer</text>
+
+  <rect x="700" y="500" width="110" height="44" rx="6" ry="6" fill="#f8cecc" stroke="#b85450" stroke-width="1.2"/>
+  <text x="755" y="517" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="10" fill="#333333">Accuracy</text>
+  <text x="755" y="531" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="10" fill="#333333">Reviewer</text>
+
+  <!-- Under Verification Coordinator -->
+  <rect x="840" y="500" width="110" height="44" rx="6" ry="6" fill="#f8cecc" stroke="#b85450" stroke-width="1.2"/>
+  <text x="895" y="517" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="10" fill="#333333">Cross-Ref</text>
+  <text x="895" y="531" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="10" fill="#333333">Updater</text>
+
+  <rect x="970" y="500" width="110" height="44" rx="6" ry="6" fill="#f8cecc" stroke="#b85450" stroke-width="1.2"/>
+  <text x="1025" y="517" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="10" fill="#333333">Gap</text>
+  <text x="1025" y="531" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="10" fill="#333333">Hunter</text>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- EDGES: Orchestrator → Coordinators      -->
+  <!-- ═══════════════════════════════════════ -->
+  <line x1="540" y1="90" x2="240" y2="180" stroke="#666666" stroke-width="1.2" marker-end="url(#arrowhead)"/>
+  <line x1="580" y1="90" x2="580" y2="180" stroke="#666666" stroke-width="1.2" marker-end="url(#arrowhead)"/>
+  <line x1="620" y1="90" x2="920" y2="180" stroke="#666666" stroke-width="1.2" marker-end="url(#arrowhead)"/>
+
+  <!-- Coordinator → Subcoordinators / Specialists -->
+  <!-- Discovery → its specialists -->
+  <line x1="160" y1="230" x2="115" y2="500" stroke="#888888" stroke-width="1" marker-end="url(#arrowhead)"/>
+  <line x1="200" y1="230" x2="245" y2="500" stroke="#888888" stroke-width="1" marker-end="url(#arrowhead)"/>
+  <line x1="240" y1="230" x2="375" y2="500" stroke="#888888" stroke-width="1" marker-end="url(#arrowhead)"/>
+
+  <!-- Execution → Subcoordinators -->
+  <line x1="550" y1="230" x2="470" y2="340" stroke="#666666" stroke-width="1.2" marker-end="url(#arrowhead)"/>
+  <line x1="610" y1="230" x2="690" y2="340" stroke="#666666" stroke-width="1.2" marker-end="url(#arrowhead)"/>
+
+  <!-- Write Loop Subcoordinator → Content Writer -->
+  <line x1="470" y1="390" x2="485" y2="500" stroke="#888888" stroke-width="1" marker-end="url(#arrowhead)"/>
+
+  <!-- Review Gate Subcoordinator → Reviewers -->
+  <line x1="660" y1="390" x2="625" y2="500" stroke="#888888" stroke-width="1" marker-end="url(#arrowhead)"/>
+  <line x1="720" y1="390" x2="755" y2="500" stroke="#888888" stroke-width="1" marker-end="url(#arrowhead)"/>
+
+  <!-- Verification → its specialists -->
+  <line x1="930" y1="230" x2="895" y2="500" stroke="#888888" stroke-width="1" marker-end="url(#arrowhead)"/>
+  <line x1="990" y1="230" x2="1025" y2="500" stroke="#888888" stroke-width="1" marker-end="url(#arrowhead)"/>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- LEVEL LABELS (left side)                -->
+  <!-- ═══════════════════════════════════════ -->
+  <text x="16" y="68" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" fill="#999999" transform="rotate(-90, 16, 68)">L0</text>
+  <text x="16" y="208" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" fill="#999999" transform="rotate(-90, 16, 208)">L1</text>
+  <text x="16" y="368" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" fill="#999999" transform="rotate(-90, 16, 368)">L2</text>
+  <text x="16" y="525" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" fill="#999999" transform="rotate(-90, 16, 525)">L3</text>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- LEFT ANNOTATION: Abstraction arrow      -->
+  <!-- ═══════════════════════════════════════ -->
+  <line x1="36" y1="540" x2="36" y2="50" stroke="#999999" stroke-width="1" marker-end="url(#arrowup)"/>
+  <text x="28" y="300" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="10" fill="#999999" transform="rotate(-90, 28, 300)">Abstraction / Context purity</text>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- RIGHT ANNOTATION: Domain detail arrow   -->
+  <!-- ═══════════════════════════════════════ -->
+  <line x1="1155" y1="50" x2="1155" y2="540" stroke="#999999" stroke-width="1" marker-end="url(#arrowdown)"/>
+  <text x="1170" y="300" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="10" fill="#999999" transform="rotate(90, 1170, 300)">Domain knowledge / Concreteness</text>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- BOTTOM LEGEND                           -->
+  <!-- ═══════════════════════════════════════ -->
+  <rect x="280" y="610" width="600" height="105" rx="6" ry="6" fill="none" stroke="#e0e0e0" stroke-width="1"/>
+
+  <!-- Row 1 -->
+  <rect x="300" y="622" width="24" height="14" rx="3" ry="3" fill="#dae8fc" stroke="#6c8ebf" stroke-width="0.8"/>
+  <text x="334" y="634" font-family="Helvetica, Arial, sans-serif" font-size="10" fill="#555555">Orchestrator — reads status files, dispatches next phase. Zero domain knowledge.</text>
+
+  <!-- Row 2 -->
+  <rect x="300" y="646" width="24" height="14" rx="3" ry="3" fill="#d5e8d4" stroke="#82b366" stroke-width="0.8"/>
+  <text x="334" y="658" font-family="Helvetica, Arial, sans-serif" font-size="10" fill="#555555">Coordinator — routes within a sub-workflow. Validates specialist outputs.</text>
+
+  <!-- Row 3 -->
+  <rect x="300" y="670" width="24" height="14" rx="3" ry="3" fill="#fff2cc" stroke="#d6b656" stroke-width="0.8"/>
+  <text x="334" y="682" font-family="Helvetica, Arial, sans-serif" font-size="10" fill="#555555">Subcoordinator — manages iteration loops (write→review cycles).</text>
+
+  <!-- Row 4 -->
+  <rect x="300" y="694" width="24" height="14" rx="3" ry="3" fill="#f8cecc" stroke="#b85450" stroke-width="0.8"/>
+  <text x="334" y="706" font-family="Helvetica, Arial, sans-serif" font-size="10" fill="#555555">Specialist — leaf agent. Reads artifacts, does work, writes artifacts.</text>
+</svg>
