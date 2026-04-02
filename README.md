@@ -97,8 +97,12 @@ Table of contents:
   - [Migrator](#migrator)
   - [Fantasy writer](#fantasy-writer)
 - [Fractal factory](#fractal-factory)
-  - [Bootstrapping a new agent family](#bootstrapping-a-new-agent-family)
-    - [Refine specialists based on output](#refine-specialists-based-on-output)
+  - [Manual bootstrapping](#manual-bootstrapping)
+  - [The factory pipeline](#the-factory-pipeline)
+    - [Production-graph-driven execution](#production-graph-driven-execution)
+    - [Oracle verification](#oracle-verification)
+    - [What the factory produces](#what-the-factory-produces)
+  - [Refine specialists based on output](#refine-specialists-based-on-output)
 - [Debug](#debug)
   - [Known bottlenecks](#known-bottlenecks)
     - [Diagnostic approach](#diagnostic-approach)
@@ -1446,7 +1450,13 @@ Agent family for writing fantasy books (romantasy genre) given artifacts produce
 
 Building a fractal agent family from scratch follows a repeatable process. The structure is consistent across domains — the variation is in the specialists, not the architecture.
 
-## Bootstrapping a new agent family
+The [fractal factory](case-studies/fractal-factory/) is itself an agent family that automates this process. It is a meta-level fractal orchestrator — 36 agents organized as 1 guide, 1 session orchestrator, 8 coordinators, and 26 specialists — that takes a domain description, supporting documents, and behavioral invariants as input, and produces a complete, validated agent family as output: orchestrator, coordinators, specialists, artifact schemas, bootstrap script, golden tests, and documentation. The factory follows the same fractal pattern it produces: session orchestrator → coordinators → specialists, running an 8-pass pipeline from knowledge curation through delivery with gap-hunting re-entry loops.
+
+The full case study is available in [fractal-factory-case-study.md](case-studies/fractal-factory-case-study.md).
+
+## Manual bootstrapping
+
+The factory automates family creation, but the underlying process is worth understanding because it is the same process the factory follows internally — and the same process you would follow if building a family by hand.
 
 The minimum viable fractal is five files: an orchestrator, one coordinator, two specialists, and a context file.
 
@@ -1464,9 +1474,50 @@ Then write the agents top-down:
 
 The top-down approach matters because it avoids a common trap: writing specialists first and then trying to wire them together. Specialists written in isolation tend to produce output shapes that do not compose well. When the routing table and artifact contracts exist first, each specialist is constrained to produce exactly what the downstream consumer expects.
 
-### Refine specialists based on output
+## The factory pipeline
 
-The first run of a new agent family is always rough. Specialist prompts are undertested, artifact schemas have edge cases, and the routing table may have ordering mistakes. The refinement loop is:
+The factory's own pipeline is an 8-pass instantiation of the [phase decomposition](#long-horizon-autonomous-system-decomposition) described earlier, with domain-specific specializations for the "produce an agent family" task:
+
+```
+Pass 0: Knowledge Curation     — curate meta-knowledge from prior factory runs
+Pass 1: Discovery               — scan domain brief, extract invariants, audit assets, analyze exemplars
+Pass 2: Analysis                 — design pipeline architecture, artifact schemas, depth decisions
+Pass 3: Planning                 — plan agent roster, routing tables, test scenarios, production graph
+Pass 4: Execution                — write and review each agent prompt (dependency-gated, write→review loop)
+Pass 5: Verification             — checklist validation + oracle audit against structural/workflow rules
+Pass 6: Gap Hunting              — 3 specialist hunters (coverage, artifact, infrastructure) mutate the production graph
+Synthesis: Meta-Knowledge        — extract reusable patterns from the run for future factory invocations
+Pass 7: Delivery                 — package, document, and report
+```
+
+### Production-graph-driven execution
+
+The factory's execution phase uses a production graph rather than a flat task list. The `production-graph.json` artifact is the sole runtime-state artifact: the production-graph-planner creates it during Pass 3, and it is then mutated by the execution coordinator (status transitions), verification (hook results), and gap hunters (new tasks, annotations).
+
+The execution coordinator selects the next eligible task — one with status `planned` whose `dependsOn` tasks are all `verified` — dispatches the prompt-writer, then the prompt-reviewer. On rejection, the writer is re-dispatched with feedback (max 3 retries). Exhausted tasks are marked `blocked`. The loop continues until all tasks are terminal.
+
+This design means gap-hunting re-entry requires no pass resets or roster mutations. Gap hunters add new task nodes directly to `production-graph.json` with `addedBy` and `addedInCycle` fields. The execution coordinator naturally picks them up on re-entry. Convergence is reached when a gap-hunting cycle produces zero new tasks or annotations. Maximum 3 cycles before forced delivery.
+
+### Oracle verification
+
+Produced agents are validated at two levels. The checklist-validator checks structural requirements (frontmatter format, status contract, write rules, input declarations). The audit-oracle applies the perspectives from the `agent-as-function-audit` and `fractal-workflow-eval` evaluation frameworks — checking routing purity, artifact contract consistency, instruction propagation, and re-entry safety. Pass 5 is strict: any issue from either verifier fails the pass.
+
+### What the factory produces
+
+A complete factory run outputs:
+
+- **Agent prompts** (`.agent.md` files) — orchestrator, coordinators, specialists, and a guide agent for the produced family
+- **Artifact schemas** — JSON schema documentation for every artifact in the produced pipeline
+- **A shared workflow skill** — progressive disclosure router with per-specialist phase reference files
+- **Golden test scenarios** — structured test cases derived from domain invariants
+- **Bootstrap script** — `bootstrap.sh` that seeds the artifact directory for the produced family
+- **Documentation** — architecture overview, agent roster reference, user guide
+
+The produced agents follow the same structural patterns: pure-router orchestrators and coordinators, specialist prompts with progressive disclosure via a shared workflow skill, status contracts, manifest logging, and bounded iteration on all loops.
+
+## Refine specialists based on output
+
+Whether the factory produced the family or you wrote it by hand, the first run is always rough. Specialist prompts are undertested, artifact schemas have edge cases, and the routing table may have ordering mistakes. The refinement loop is:
 
 1. Run the pipeline end-to-end on a representative task
 2. Inspect every artifact at every phase boundary — is the output what the next phase expects?
